@@ -1,0 +1,25 @@
+---
+permalink: install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
+sidebar: sidebar
+keywords: 
+summary: 'You should create an ONTAP cluster role with minimum privileges so that you do not have to use the ONTAP admin role to perform operations in SnapCenter. You can run several ONTAP CLI commands to create the ONTAP cluster role and assign minimum privileges.'
+---
+= Create an ONTAP cluster role with minimum privileges
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should create an ONTAP cluster role with minimum privileges so that you do not have to use the ONTAP admin role to perform operations in SnapCenter. You can run several ONTAP CLI commands to create the ONTAP cluster role and assign minimum privileges.
+
+. On the storage system, create a role and assign all the permissions to the role. `security login role create –vserver <cluster_name\>- role <role_name\> -cmddirname <permission\>`
++
+NOTE: You should repeat this command for each permission.
++
+For information about the list of permissions, see "`ONTAP CLI commands for creating roles and assigning permissions`".
+
+. Create a user and assign the role to that user. `security login create -user <user_name\> -vserver <cluster_name\> -application ontapi -authmethod password -role <role_name\>`
+. Unlock the user.`security login unlock -user <user_name\> -vserver <cluster_name\>`
+
+*Related information*
+
+xref:reference_ontap_cli_commands_for_creating_svm_roles.adoc[ONTAP CLI commands for creating roles and assigning permissions]

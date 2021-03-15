@@ -1,0 +1,14 @@
+---
+permalink: protect-sco/concept_install_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html
+sidebar: sidebar
+keywords: 
+summary: 'You can install SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX locally on the Linux or AIX host respectively. You can use the command-line interface to install the plug-ins package.'
+---
+= Install SnapCenter Plug-ins Package for Linux or AIX using the command-line interface
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX locally on the Linux or AIX host respectively. You can use the command-line interface to install the plug-ins package.
+
+The SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX should be installed on each Linux or AIX hosts respectively, where the Oracle database resides.

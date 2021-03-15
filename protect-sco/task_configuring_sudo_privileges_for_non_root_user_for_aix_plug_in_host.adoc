@@ -1,0 +1,62 @@
+---
+permalink: protect-sco/task_configuring_sudo_privileges_for_non_root_user_for_aix_plug_in_host.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter 4.4 allows a non-root user to install the SnapCenter Plug-ins Package for AIX and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.'
+---
+= Configuring sudo privileges for non-root user for AIX plug-in host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter 4.4 allows a non-root user to install the SnapCenter Plug-ins Package for AIX and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
+
+* You should be using Sudo 1.8.7 or later.
+* You should have ensured that the non-root user is part of the Oracle installation group.
+* You should have edited the /etc/ssh/sshd_config file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
++
+Restart the sshd service after updating the configuration file.
++
+Example:
++
+----
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+#Legacy changes
+#KexAlgorithms diffie-hellman-group1-sha1
+#Ciphers aes128-cbc
+#The default requires explicit activation of protocol
+Protocol 2
+HostKey/etc/ssh/ssh_host_rsa_key
+MACs hmac-sha2-256
+----
+
+You should configure sudo privileges for the non-root user to provide access to the following paths:
+
+* /home/AIXUSER/.sc_netapp/snapcenter_aix_host_plugin.bsx
+* /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
+* /custom_location/NetApp/snapcenter/spl/bin/spl
+
+. Log in to the AIX host on which you want to install the SnapCenter Plug-ins Package for AIX.
+. Add the following lines to the /etc/sudoers file by using the visudo Linux utility.
++
+----
+Cmnd_Alias HPPACMD = sha224:checksum_value== /home/AIXUSER
+/.sc_netapp/snapcenter_aix_host_plugin.bsx,
+/opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
+/opt/NetApp/snapcenter/spl/bin/spl
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/AIXUSER/.sc_netapp/AIX_Prechecks.sh
+AIXUSER ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
+Defaults:AIXUSER !visiblepw
+Defaults:AIXUSER !requiretty
+----
++
+AIXUSER is the name of the non-root user that you created.
++
+You can obtain the checksum value from the oracle_checksum.txt file, which is located at C:\ProgramData\NetApp\SnapCenter\Package Repository. If you have specified a custom location, the location will be custom_path\NetApp\SnapCenter\Package Repository.
++
+IMPORTANT: The example should be used only as a reference for creating your own data.
+
+*Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.

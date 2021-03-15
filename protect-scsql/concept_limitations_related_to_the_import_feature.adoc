@@ -1,0 +1,15 @@
+---
+permalink: protect-scsql/concept_limitations_related_to_the_import_feature.html
+sidebar: sidebar
+keywords: 
+summary: 'Understanding limitations before you import archived backups from SnapManager for Microsoft SQL Server to SnapCenter will help you complete the import successfully. These backups must have been archived with SnapVault technology.'
+---
+= Limitations related to the import feature
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Understanding limitations before you import archived backups from SnapManager for Microsoft SQL Server to SnapCenter will help you complete the import successfully. These backups must have been archived with SnapVault technology.
+
+* You cannot manage clones created using SnapManager for Microsoft SQL Server in SnapCenter. You must manage the clones in SnapManager for Microsoft SQL Server.
+* You cannot import backups from the SnapCenter graphical user interface (GUI).

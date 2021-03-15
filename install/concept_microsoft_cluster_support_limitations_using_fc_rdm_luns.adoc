@@ -1,0 +1,23 @@
+---
+permalink: install/concept_microsoft_cluster_support_limitations_using_fc_rdm_luns.html
+sidebar: sidebar
+keywords: 
+summary: 'The Plug-in for Windows supports Microsoft clusters using FC/iSCSI RDM LUNs on different virtual machines belonging to different ESX or ESXi servers.'
+---
+= Microsoft cluster support limitations when using FC/iSCSI RDM LUNs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Plug-in for Windows supports Microsoft clusters using FC/iSCSI RDM LUNs on different virtual machines belonging to different ESX or ESXi servers.
+
+NOTE: This feature is not supported in releases before ESX 5.5i.
+
+* The Plug-in for Windows does not support clusters on ESX iSCSI and NFS datastores.
+* The Plug-in for Windows does not support mixed initiators in a cluster environment.
++
+Initiators must be either FC or Microsoft iSCSI, but not both.
+
+* ESX iSCSI initiators and HBAs are not supported on shared disks in a Microsoft cluster.
+* The Plug-in for Windows does not support virtual machine migration with vMotion if the virtual machine is part of a Microsoft cluster.
+* The Plug-in for Windows does not support MPIO on virtual machines in a Microsoft cluster.

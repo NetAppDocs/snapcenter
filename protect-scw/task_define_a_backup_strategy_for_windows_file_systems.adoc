@@ -1,0 +1,23 @@
+---
+permalink: protect-scw/task_define_a_backup_strategy_for_windows_file_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'Defining a backup strategy before you create your backups provides you with the backups that you require to successfully restore or clone your file systems. Your service-level agreement \(SLA\), recovery time objective \(RTO\), and recovery point objective \(RPO\) largely determine your backup strategy.'
+---
+= Define a backup strategy for Windows file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a backup strategy before you create your backups provides you with the backups that you require to successfully restore or clone your file systems. Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.
+
+An SLA defines the level of service that is expected and addresses many service-related issues, including the availability and performance of the service. RTO is the time by which a business process must be restored after a disruption in service. RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. SLA, RTO, and RPO contribute to the data protection strategy.
+
+Perform the following steps for each of your Windows file systems.
+
+. Determine when you should back up your file systems.
+. Decide how many backups you require.
+. Decide how to tag your backups.
+. Determine for how long you want to retain backup copies on the source storage system and the SnapMirror destination.
+. Decide whether you want to use NetApp SnapMirror disaster recovery or SnapVault archiving technology in conjunction with the SnapCenter Plug-in for Microsoft Windows.
+. Determine the supported prescripts and postscripts.

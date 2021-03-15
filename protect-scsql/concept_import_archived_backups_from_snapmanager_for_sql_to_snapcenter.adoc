@@ -1,0 +1,14 @@
+---
+permalink: protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html
+sidebar: sidebar
+keywords: 
+summary: 'Importing data from SnapManager for Microsoft SQL Server to SnapCenter enables you to continue to use your data from previous versions. You can import only those backups that were archived using SnapVault technology from SnapManager for Microsoft SQL Server to SnapCenter.'
+---
+= Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Importing data from SnapManager for Microsoft SQL Server to SnapCenter enables you to continue to use your data from previous versions. You can import only those backups that were archived using SnapVault technology from SnapManager for Microsoft SQL Server to SnapCenter.
+
+SnapCenter does not support Data ONTAP operating in 7-Mode. You can use the 7-Mode Transition Tool to migrate data and configurations that are stored on a system running Data ONTAP operating in 7-Mode to an ONTAP system.

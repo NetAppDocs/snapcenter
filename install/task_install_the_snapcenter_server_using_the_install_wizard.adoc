@@ -1,0 +1,56 @@
+---
+permalink: install/task_install_the_snapcenter_server_using_the_install_wizard.html
+sidebar: sidebar
+keywords: 
+summary: 'You can run the SnapCenter Server installer executable to install the SnapCenter Server.'
+---
+= Install the SnapCenter Server using the install wizard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can run the SnapCenter Server installer executable to install the SnapCenter Server.
+
+* The SnapCenter Server host must be up to date with Windows updates with no pending system restarts.
+* You should have ensured that MySQL Server is not installed on the host where you plan to install the SnapCenter Server.
+* You should have enabled Windows installer debugging.
++
+See the Microsoft web site for information about enabling Windows Installer logging.
++
+https://support.microsoft.com/kb/223300[Microsoft Support Article 223300: How to enable Windows Installer logging]
+
+* You should not install the SnapCenter Server on a host that has Microsoft Exchange Server, Active Directory, or Domain Name Servers.
+
+image::../media/install_snapcenter_server.gif[]
+
+You can optionally perform several installation and configuration procedures by using PowerShell cmdlets. For details, use the SnapCenter cmdlet help or see the cmdlet reference information.
+
+NOTE: Silent installation of the SnapCenter Server from the command-line is not supported.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+
+. Download the SnapCenter Server installation package from NetApp Support Site.
++
+https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
+
+. Initiate the SnapCenter Server installation by double-clicking the downloaded .exefile.
++
+After you initiate the installation, all the prechecks are performed and if the minimum requirements are not met appropriate error or warning messages are displayed.
++
+You can ignore the warning messages and proceed with installation; however, errors should be fixed.
+
+. Review the pre-populated values required for the SnapCenter Server installation and modify if required.
++
+You do not have to specify the password for MySQL Server repository database. During SnapCenter Server installation the password is auto generated.
++
+NOTE: The special character "`%`" is not supported in the custom path for the repository database. If you include "`%`" in the path, installation fails.
+
+. Click *Install Now*.
++
+If you have specified any values that are invalid, appropriate error messages will be displayed. You should reenter the values, and then initiate the installation.
++
+NOTE: If you click the *Cancel* button, the step that is being executed will be completed, and then start the rollback operation. The SnapCenter Server will be completely removed from the host.
++
+However, if you click *Cancel* when "`SnapCenter Server site restart`" or "`Waiting for SnapCenter Server to start`" operations are being performed, installation will proceed without cancelling the operation.
++
+Log files are always listed (oldest first) in the %temp% folder of the admin user. If you want to redirect the log locations, initiate the SnapCenter Server installation from the command prompt by running:``C:\installer_location\installer_name.exe /log"C:\"``

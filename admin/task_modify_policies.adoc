@@ -1,0 +1,46 @@
+---
+permalink: admin/task_modify_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can modify the replication options, Snapshot copy retention settings, error retry count, or scripts information while a policy is attached to a resource or resource group. You can modify the schedule type \(frequency\) only after you detach a policy.'
+---
+= Modify policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can modify the replication options, Snapshot copy retention settings, error retry count, or scripts information while a policy is attached to a resource or resource group. You can modify the schedule type (frequency) only after you detach a policy.
+
+Modifying the schedule type in a policy requires additional steps because the SnapCenter Server registers the schedule type only at the time the policy is attached to a resource or resource group.
+
+|===
+| If you want to...| Then...
+a|
+Add an additional schedule type
+a|
+Create a new policy and attach it to the necessary resources or resource groups.For example, if a resource group policy specifies only hourly backups and you want to add daily backups also, you can create a policy with a daily schedule type and add it to the resource group. The resource group would then have two policies: hourly and daily.
+
+a|
+Remove or change a schedule type
+a|
+
+. Detach the policy from every resource and resource group that uses that policy.
+. Modify the schedule type.
+. Attach the policy again to all the resources and resource groups.
+
+For example, if a policy specifies hourly backups and you want to change that to daily backups, you must detach the policy first.
+
+NOTE: You cannot detach the last remaining policy from a individual resource because every resource must have at least one policy attached. Therefore, if you want to modify the schedule type of the only policy attached to a resource, you must perform the following:
+
+. Attach a second placeholder policy.
+. Detach the original policy from every resource and resource group that uses that policy.
+. Modify the schedule type.
+. Attach the modified policy again to all the resources and resource groups.
+. Detach the placeholder policy.
+
+|===
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. Select the policy, and then click *Modify*.
+. Modify the information, and then click *Finish*.

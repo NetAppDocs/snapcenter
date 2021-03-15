@@ -1,0 +1,25 @@
+---
+permalink: install/task_secure_the_snapcenter_web_server_by_disabling_ssl_3_0.html
+sidebar: sidebar
+keywords: 
+summary: 'For security purposes, you should disable Secure Socket Layer \(SSL\) 3.0 protocol in Microsoft IIS if it is enabled on your SnapCenter web server.'
+---
+= Secure the SnapCenter web server by disabling SSL 3.0
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For security purposes, you should disable Secure Socket Layer (SSL) 3.0 protocol in Microsoft IIS if it is enabled on your SnapCenter web server.
+
+There are flaws in the SSL 3.0 protocol that an attacker can use to cause connection failures, or to perform man-in-the-middle attacks and observe the encryption traffic between your website and its visitors.
+
+. To launch Registry Editor on the SnapCenter web server host, click *Start* > *Run*, and then enter regedit.
+. In Registry Editor, navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\.
+ ** If the Server key already exists:
+  ... Select the Enabled DWORD, and then click *Edit* > *Modify*.
+  ... Change the value to 0, and then click *OK*.
+ ** If the Server key does not exist:
+  ... Click *Edit* > *New* > *Key*, and then name the key Server.
+  ... With the new Server key selected, click *Edit* > *New* > *DWORD*.
+  ... Name the new DWORD Enabled, and then enter 0 as the value.
+. Close Registry Editor.

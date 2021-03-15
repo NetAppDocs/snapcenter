@@ -1,0 +1,18 @@
+---
+permalink: protect-sco/reference_types_of_cloning_supported_for_oracle_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'In an Oracle database environment, SnapCenter supports cloning of a database backup. You can clone the backup from primary and secondary storage systems.'
+---
+= Types of cloning supported for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In an Oracle database environment, SnapCenter supports cloning of a database backup. You can clone the backup from primary and secondary storage systems.
+
+The SnapCenter Server uses NetApp FlexClone technology to clone backups.
+
+You can refresh a clone by running the "`Refresh-SmClone`" command. This command creates a backup of the database, deletes the existing clone, and creates a clone with the same name.
+
+NOTE: The clone refresh operation can only be performed using the UNIX commands.

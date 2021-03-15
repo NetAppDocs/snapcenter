@@ -1,0 +1,26 @@
+---
+permalink: install/task_generate_a_netapp_license_file.html
+sidebar: sidebar
+keywords: 
+summary: 'If you prefer not to enter your NetApp Support Site credentials and the SnapCenter license serial number in the SnapCenter GUI, or if you do not have internet access to the NetApp Support Site from SnapCenter, you can generate a NetApp license file, and then download and store the file in a location accessible from the SnapCenter host.'
+---
+= Generate a NetApp license file
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you prefer not to enter your NetApp Support Site credentials and the SnapCenter license serial number in the SnapCenter GUI, or if you do not have internet access to the NetApp Support Site from SnapCenter, you can generate a NetApp license file, and then download and store the file in a location accessible from the SnapCenter host.
+
+* You must be using SnapCenter with either ONTAP Select or Cloud Volumes ONTAP.
+* You must have valid NetApp Support Site login credentials.
+* You must have your nine-digit SnapCenter license serial number in the format 51xxxxxxx.
+
+. Navigate to the NetApp License File Generator.
++
+https://register.netapp.com/register/eclg.xwic[NetApp License File Generator]
+
+. Enter the required information.
+. In the Product Line field, select *SnapCenter Standard (capacity-based)* from the pull-down menu.
+. In the Product Serial Number field, enter the SnapCenter license serial number
+. Read and accept the NetApp Data Privacy Policy, and then click *Submit*.
+. Save the license file, and then record the file location.

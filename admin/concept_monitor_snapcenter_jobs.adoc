@@ -1,0 +1,22 @@
+---
+permalink: admin/concept_monitor_snapcenter_jobs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view information about SnapCenter backup, clone, restore, and verification jobs. You can filter this view based on start and end date, type of job, resource group, policy, or SnapCenter plug-in. You can also get additional details and log files for specified jobs.'
+---
+= Monitor SnapCenter jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view information about SnapCenter backup, clone, restore, and verification jobs. You can filter this view based on start and end date, type of job, resource group, policy, or SnapCenter plug-in. You can also get additional details and log files for specified jobs.
+
+You can also monitor jobs related to SnapMirror and SnapVault operations.
+
+You can monitor only the jobs that you created and that are relevant to you unless you are assigned SnapCenter Admin or another super user role.
+
+You can perform the following tasks related to monitoring jobs:
+
+* Monitor backup, clone, restore, and verification operations.
+* View job details and reports.
+* Stop a scheduled job.

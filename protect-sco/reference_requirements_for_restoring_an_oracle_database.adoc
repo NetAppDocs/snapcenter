@@ -1,0 +1,30 @@
+---
+permalink: protect-sco/reference_requirements_for_restoring_an_oracle_database.html
+sidebar: sidebar
+keywords: 
+summary: 'Before restoring an Oracle database, you should ensure that prerequisites are completed.'
+---
+= Requirements for restoring an Oracle database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before restoring an Oracle database, you should ensure that prerequisites are completed.
+
+* You should have defined your restore and recovery strategy.
++
+See the _Concepts Guide_.
++
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
+
+* The SnapCenter administrator should have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes if you are replicating Snapshot copies to a mirror or vault.
+* If archive logs are pruned as part of backup, you should have manually mounted the required archive log backups.
+* If you want to restore Oracle databases that are residing on a Virtual Machine Disk (VMDK), you should ensure that the guest machine has the required number of free slots for allocating the cloned VMDKs.
+* You should ensure that all data volumes and archive log volumes belonging to the database are protected if secondary protection is enabled for that database.
+* You should ensure that the RAC One Node database is in "`nomount`" state to perform control file or full database restore.
+* If you have an ASM database instance in NFS environment, you should add the ASM disk path /var/opt/snapcenter/scu/clones/*/* to the existing path defined in the asm_diskstring parameter to successfully mount the ASM log backups as part of recovery operation.
+* You should configure the static listener in the listener.ora file available at $ORACLE_HOME/ network/admin if you have disabled OS authentication and enabled Oracle database authentication for an Oracle database, and want to restore the datafiles and control files of that database.
+* You should increase value of SCORestoreTimeout parameter by running the Set- SmConfigSettings command if the database size is in terabytes (TB).
+* You should ensure that all the licenses required for vCenter are installed and up to date.
++
+If the licenses are not installed or up to date, a warning message is displayed. If you ignore the warning and proceed, restore from RDM fails.

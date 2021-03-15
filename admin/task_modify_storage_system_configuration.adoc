@@ -1,0 +1,48 @@
+---
+permalink: admin/task_modify_storage_system_configuration.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'You can use SnapCenter to modify your storage system configuration if you want to change the user name, password, platform, port, protocol, timeout period, preferred IP address, or messaging options.'
+---
+= Modify storage system configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to modify your storage system configuration if you want to change the user name, password, platform, port, protocol, timeout period, preferred IP address, or messaging options.
+
+You can modify storage connections for an individual user or for a group. If you belong to one or more groups with permission to the same storage system, the storage connection name is displayed multiple times in the storage connection list, once for each group with permission to the storage system.
+
+. In the left navigation pane, click *Storage Systems*.
+. On the Storage Systems page, from the *Type* drop-down perform one of the following actions:
++
+|===
+| Select...| Steps...
+a|
+*ONTAP SVMs*
+a|
+To view all the storage virtual machines (SVMs) that were added, and to modify the required SVM configuration.
+
+ .. On the Storage Connections page, click the appropriate SVM name.
+ .. Perform one of the following actions:
+  *** If the SVM is not part of any cluster, on the Modify Storage System page, modify the configurations such as user name, password, EMS and AutoSupport settings, platform, protocol, port, timeout, and preferred IP.
+  *** If the SVM is part of a cluster, then on the Modify Storage System page, select *Manage SVM Independently* and modify the configurations such as user name, password, EMS and AutoSupport settings, platform, protocol, port, timeout, and preferred IP.
++
+After modifying the SVM to be managed independently, if you decide to manage it through cluster, you should delete the SVM and then click *Rediscover*. The SVM will be added to the ONTAP cluster.
++
+NOTE: When a storage system password is updated on SnapCenter GUI, you should restart the SMCore services of the respective plug-in or the server host because the updated password does not reflect in SMCore, and the backup jobs will fail with an incorrect credential error.
+
+a|
+*ONTAP Clusters*
+a|
+To view all the clusters that were added and modify the required cluster configuration.
+
+ .. On the Storage Connections page, click the cluster name.
+ .. On the Modify Storage System page, click the edit icon next to Username and modify the user name and password.
+ .. Select or clear the EMS and AutoSupport settings.
+ .. Click *More Options* and modify other configurations such as platform, protocol, port, timeout, and preferred IP.
+
++
+|===
+
+. Click *Submit*.

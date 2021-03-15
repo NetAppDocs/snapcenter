@@ -1,0 +1,39 @@
+---
+permalink: admin/task_modify_the_untrusted_domain.html
+sidebar: sidebar
+keywords: 
+summary: 'You can modify an untrusted domain when you want to update the domain controller IP addresses or the fully qualified domain name \(FQDN\).'
+---
+= Modify untrusted domains
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can modify an untrusted domain when you want to update the domain controller IP addresses or the fully qualified domain name (FQDN).
+
+After you modify the FQDN, the associated assets (hosts, users, and groups) might not function as expected.
+
+To modify an untrusted domain, you can use either the SnapCenter user interface or PowerShell cmdlets.
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Global Settings*.
+. In the Global Settings page, click *Domain Settings*.
+. Click image:../media/edit_icon.gif[Edit icon], and then provide the following details:
++
+|===
+| For this field...| Do this...
+a|
+Domain FQDN
+a|
+Specify the FQDN, and click *Resolve*.
+a|
+Domain controller IP addresses
+a|
+If the domain FQDN is not resolvable, specify one or more domain controller IP addresses.
+|===
+
+. Click *OK*.
+
+*Related information*
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

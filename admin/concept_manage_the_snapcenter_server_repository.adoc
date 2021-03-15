@@ -1,0 +1,21 @@
+---
+permalink: admin/concept_manage_the_snapcenter_server_repository.html
+sidebar: sidebar
+keywords: 
+summary: 'Information related to various operations performed from SnapCenter is stored in the SnapCenter Server database repository. You must create backups of the repository to protect the SnapCenter Server from data loss.'
+---
+= Manage the SnapCenter Server repository
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Information related to various operations performed from SnapCenter is stored in the SnapCenter Server database repository. You must create backups of the repository to protect the SnapCenter Server from data loss.
+
+You can perform the following tasks to protect the SnapCenter Server repository:
+
+* Set the configuration that is required to create repository backups.
+* Obtain the SnapCenter repository backups that were backed up on schedule.
+* Restore the SnapCenter repository when required.
+* Migrate the SnapCenter repository to a different disk.
+
+The SnapCenter Server repository is sometimes referred to as the NSM database.

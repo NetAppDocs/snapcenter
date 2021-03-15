@@ -1,0 +1,108 @@
+---
+permalink: protect-scsql/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows_and_for_microsoft_sql_server.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.'
+---
+= Storage types supported by SnapCenter Plug-ins for Microsoft Windows and for Microsoft SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.
+
+SnapCenter provisioning and data protection support is available on Windows Server. For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
+
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+
+|===
+| Machine| Storage type| Provision using| Support notes
+a|
+Physical server
+a|
+FC-connected LUNs
+a|
+SnapCenter graphical user interface (GUI) or PowerShell cmdlets
+a|
+ 
+a|
+Physical server
+a|
+iSCSI-connected LUNs
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+ 
+a|
+Physical server
+a|
+SMB3 (CIFS) shares residing on a storage virtual machine (SVM)
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+Support for provisioning only. You cannot use SnapCenter to back up any data or shares using the SMB protocol.
+a|
+VMware VM
+a|
+RDM LUNs connected by an FC or iSCSI HBA
+a|
+PowerShell cmdlets
+a|
+ 
+a|
+VMware VM
+a|
+iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+ 
+a|
+VMware VM
+a|
+Virtual Machine File Sytems (VMFS) on VMFS or NFS datastores
+a|
+VMware vSphere or VSC cloning utility
+a|
+ 
+a|
+VMware VM
+a|
+A guest system connected to SMB3 shares residing on an SVM
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+Support for provisioning only. You cannot use SnapCenter to back up any data or shares using the SMB protocol.
+a|
+Hyper-V VM
+a|
+Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+You must use Hyper-V Manager to provision Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch.*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+a|
+Hyper-V VM
+a|
+iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+a|
+Hyper-V VM
+a|
+A guest system connected to SMB3 shares residing on an SVM
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+Support for provisioning only. You cannot use SnapCenter to back up any data or shares using the SMB protocol.*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+|===
+*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+*Related information*
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]

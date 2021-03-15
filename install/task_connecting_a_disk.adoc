@@ -1,0 +1,124 @@
+---
+permalink: install/task_connecting_a_disk.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the Connect Disk wizard to connect an existing LUN to a host, or to reconnect a LUN that has been disconnected.'
+---
+= Connecting a disk
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the Connect Disk wizard to connect an existing LUN to a host, or to reconnect a LUN that has been disconnected.
+
+* You must have started the FC or iSCSI service on the storage system.
+* If you are using iSCSI, you must have established an iSCSI session with the storage system.
+* You cannot connect a LUN to more than one host unless the LUN is shared by hosts in a Windows Server failover cluster.
+* If the LUN is shared by hosts in a Windows Server failover cluster that uses CSV (Cluster Shared Volumes), then you must connect the disk on the host that owns the cluster group.
+* The Plug-in for Windows needs to be installed only on the host on which you are connecting the disk.
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Disks*.
+. Select the host from the *Host* drop-down list.
+. Click *Connect*.
++
+The Connect Disk wizard opens.
+
+. On the LUN Name page, identify the LUN to connect to:
++
+|===
+| In this field...| Do this...
+a|
+Storage System
+a|
+Select the SVM for the LUN.
+a|
+LUN path
+a|
+Click *Browse* to select the full path of the volume containing the LUN.
+a|
+LUN name
+a|
+Enter the name of the LUN.
+a|
+Cluster size
+a|
+Select the LUN block allocation size for the cluster. Cluster size depends upon the operating system and applications.
+a|
+LUN label
+a|
+Optionally, enter descriptive text for the LUN.
+|===
+
+. On the Disk Type page, select the disk type:
++
+|===
+| Select...| If...
+a|
+Dedicated disk
+a|
+The LUN can be accessed by only one host.
+a|
+Shared disk
+a|
+The LUN is shared by hosts in a Windows Server failover cluster.     You need only connect the disk to one host in the failover cluster.
+a|
+Cluster Shared Volume (CSV)
+a|
+The LUN is shared by hosts in a Windows Server failover cluster that uses CSV.     Make sure that the host on which you are connecting to the disk is the owner of the cluster group.
++
+|===
+
+. On the Drive Properties page, specify the drive properties:
++
+|===
+| Property| Description
+a|
+Auto assign
+a|
+Let SnapCenter automatically assign a volume mount point based on the system drive. For example, if your system drive is C:, the auto assign property creates a volume mount point under your C: drive (C:\scmnpt\).     The auto assign property is not supported for shared disks.
+a|
+Assign drive letter
+a|
+Mount the disk to the drive you select in the adjoining drop-down list.
+a|
+Use volume mount point
+a|
+Mount the disk to the drive path you specify in the adjoining field.    The root of the volume mount point must be owned by the host on which you are creating the disk.
+a|
+Do not assign drive letter or volume mount point
+a|
+Choose this option if you prefer to mount the disk manually in Windows.
+|===
+
+. On the Map LUN page, select the iSCSI or FC initiator on the host:
++
+|===
+| In this field...| Do this...
+a|
+Host
+a|
+Double-click the cluster group name to display a drop-down list that shows the hosts that belong to the cluster, then select the host for the initiator.     This field is displayed only if the LUN is shared by hosts in a Windows Server failover cluster.
+a|
+Choose host initiator
+a|
+Select *Fibre Channel* or *iSCSI*, and then select the initiator on the host. You can select multiple FC initiators if you are using FC with MPIO.
+|===
+
+. On the Group Type page, specify whether you want to map an existing igroup to the LUN or create a new igroup:
++
+|===
+| Select...| If...
+a|
+Create new igroup for selected initiators
+a|
+You want to create a new igroup for the selected initiators.
+a|
+Choose an existing igroup or specify a new igroup for selected initiators
+a|
+You want to specify an existing igroup for the selected initiators, or create a new igroup with the name you specify. Type the igroup name in the *igroup name* field. Type the first few letters of the existing igroup name to automatically complete the field.
+|===
+
+. On the Summary page, review your selections and click *Finish*.
++
+SnapCenter connects the LUN to the specified drive or drive path on the host.

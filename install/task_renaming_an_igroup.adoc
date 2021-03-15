@@ -1,0 +1,18 @@
+---
+permalink: install/task_renaming_an_igroup.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use SnapCenter to rename an existing igroup.'
+---
+= Renaming an igroup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to rename an existing igroup.
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Igroup*.
+. In the Initiator Groups page, click in the *Storage Virtual Machine* field to display a list of available SVMs, and then select the SVM for the igroup you want to rename.
+. In the list of igroups for the SVM, select the igroup you want to rename and click *Rename*.
+. In the Rename igroup dialog box, enter the new name for the igroup and click *Rename*.

@@ -1,0 +1,120 @@
+---
+permalink: protect-scw/task_create_backup_policies_for_windows_file_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.'
+---
+= Create backup policies for Windows file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.
+
+* You must have defined your backup strategy.
++
+For details, see the information about defining a data protection strategy for Windows file systems.
++
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
+
+* You must have prepared for data protection.
++
+To prepare for data protection, you must complete tasks such as installing SnapCenter, adding hosts, discovering resources, and creating storage virtual machine (SVM) connections.
+
+* If you are replicating Snapshot copies to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
++
+For information about how administrators assign resources to users, see the SnapCenter installation information.
++
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
+
+* If you want to run the PowerShell scritps in prescripts and postscripts, you should set the value of the usePowershellProcessforScripts parameter to true in the web.config file.
++
+The default value is false
+
+Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. To determine if you can use an existing policy, select the policy name and then click *Details*.
++
+After reviewing the existing policies, you can perform one of the following:
+
+ ** Use an existing policy.
+ ** Copy an existing policy and modify the policy configuration.
+ ** Create a new policy.
+
+. To create a new policy, click *New*.
+. On the Name page, enter the policy name and a description.
+. On the Backup Options page, perform the following tasks:
+ .. Select a backup setting.
++
+|===
+| Option| Description
+a|
+File System Consistent Backup
+a|
+Choose this option if you want SnapCenter to quiesce the disk drive on which the file system resides before the backup operation begins and then resume the disk drive after the backup operation ends.
+a|
+File System Crash-consistent Backup
+a|
+Choose this option if you do not want SnapCenter to quiesce the disk drive on which the file system resides.
+|===
+
+ .. Select a schedule frequency (also called a policy type).
++
+The policy specifies the backup frequency only. The specific protection schedule for backing up is defined in the resource group. Therefore, two or more resource groups can share the same policy and backup frequency but have different backup schedules.
++
+NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
+. On the Retention page, specify the retention settings for on-demand backups and for each schedule frequency you selected.
++
+|===
+| Option| Description
+a|
+Total Snapshot copies to retain
+a|
+Choose this option if you want to specify the number of Snapshot copies SnapCenter stores before automatically deleting them.
+a|
+Delete Snapshot copies older than
+a|
+Choose this option if you want to specify the number of days SnapCenter retains a backup copy before deleting it.
+|===
+*Important:* You should set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the replication count to 1, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
++
+NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+
+. On the Replication page, specify replication to the secondary storage system:
++
+|===
+| For this field...| Do this...
+a|
+Update SnapMirror after creating a local Snapshot copy
+a|
+Select this option to create mirror copies of backup sets on another volume (SnapMirror).
+a|
+Update SnapVault after creating a Snapshot copy
+a|
+Select this option to perform disk-to-disk backup replication.
+a|
+Secondary policy label
+a|
+Select a Snapshot label.     Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
++
+NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+a|
+Error retry count
+a|
+Enter the number of replication attempts that should occur before the process halts.
+|===
+*Note:* You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+
+. On the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
++
+For example, you can run a script to update SNMP traps, automate alerts, and send logs.
+
+. Review the summary, and then click *Finish*.
+
+*Related information*
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]

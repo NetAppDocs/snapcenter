@@ -1,0 +1,173 @@
+---
+permalink: admin/concept_what_operations_can_be_performed_from_the_resource_page.html
+sidebar: sidebar
+keywords: 
+summary: 'You can discover resources and perform data protection operations from the Resources page. The operations you can perform differ based on the plug-in you are using to manage your resources.'
+---
+= What operations can be performed from the Resources page
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can discover resources and perform data protection operations from the Resources page. The operations you can perform differ based on the plug-in you are using to manage your resources.
+
+From the Resources page, you can perform the following tasks:
+
+|===
+| You can perform these tasks...| For Microsoft Exchange Server| For Microsoft SQL Server| For Microsoft Windows| For Oracle Database| For SAP HANA Database| For Custom Plug-ins
+a|
+Determine whether resources are available for backup
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Perform on-demand backup of a resource
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Restore from backups
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Clone backups
+a|
+ 
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Manage backups
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Manage clones
+a|
+ 
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Manage policies
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Manage storage connections
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Mount backups
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Unmount backups
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+View details
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+|===
+See the Data Protection Guide for your specific plug-in for the steps to perform these tasks.

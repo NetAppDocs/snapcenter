@@ -1,0 +1,27 @@
+---
+permalink: admin/task_filter_your_report.html
+sidebar: sidebar
+keywords: 
+summary: 'You might want to filter your report data according to a range of parameters, depending on the level of detail and time span of information you require.'
+---
+= Filter your report data
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You might want to filter your report data according to a range of parameters, depending on the level of detail and time span of information you require.
+
+. In the left navigation pane, click *Reports*.
+. If the Parameter view is not displayed, click the *Toggle Parameters Area* icon from the report toolbar.
+. Specify the time range for which you want to run your report.
++
+If you omit the end date, you retrieve all available information.
+
+. Filter your report information based on any of the following criteria:
+ ** Resource group
+ ** Host
+ ** Policy
+ ** Resource
+ ** Status
+ ** Plug-in Name
+. Click *Apply*.

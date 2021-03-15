@@ -1,0 +1,47 @@
+---
+permalink: protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_features.html
+sidebar: sidebar
+keywords: 
+summary: 'The Plug-in for SQL Server integrates with Microsoft SQL Server on the Windows host and with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for SQL Server, you use the SnapCenter interface.'
+---
+= SnapCenter Plug-in for Microsoft SQL Server features
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Plug-in for SQL Server integrates with Microsoft SQL Server on the Windows host and with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for SQL Server, you use the SnapCenter interface.
+
+The Plug-in for SQL Server includes these major features:
+
+* *Unified graphical user interface powered by SnapCenter*
++
+The SnapCenter interface provides you with standardization and consistency across plug-ins and environments. The SnapCenter interface enables you to complete consistent backup and restore processes across plug-ins, use centralized reporting, use at-a-glance dashboard views, set up role-based access control (RBAC), and monitor jobs across all plug-ins. SnapCenter also offers centralized scheduling and policy management to support backup and clone operations.
+
+* *Automated central administration*
++
+You can schedule routine SQL Server backups, configure policy-based backup retention, and set up point-in-time and up-to-the-minute restore operations. You can also proactively monitor your SQL Server environment by configuring SnapCenter to send email alerts.
+
+* *Nondisruptive NetApp Snapshot copy technology*
++
+The Plug-in for SQL Server uses NetApp Snapshot copy technology with the NetAppSnapCenter Plug-in for Microsoft Windows. This enables you to back up databases in seconds and restore them quickly without taking SQL Server offline. Snapshot copies consume minimal storage space.
+
+In addition to these major features, the Plug-in for SQL Server offers the following benefits:
+
+* Backup, restore, clone, and verification workflow support
+* RBAC-supported security and centralized role delegation
+* Creation of space-efficient, point-in-time copies of production databases for testing or data extraction by using NetApp FlexClone technology
++
+A FlexClone license is required on the storage system holding the clone.
+
+* Nondisruptive and automated backup verification
+* Ability to run multiple backups at the same time across multiple servers
+* PowerShell cmdlets for scripting of backup, verify, restore, and clone operations
+* Support for AlwaysOn Availability Groups (AGs) in SQL Server to accelerate AG setup, backup, and restore operations
+* In-memory database and Buffer Pool Extension (BPE) as part of SQL Server 2014
+* Support for backup of LUNs and virtual machine disks (VMDKs)
+* Support for physical and virtualized infrastructures
+* Support for iSCSI, Fibre Channel, FCoE, raw device mapping (RDM), and VMDK over NFS and VMFS
++
+NOTE: NAS volumes should have a default export policy in storage virtual machine (SVM).
+
+* Support for FileStream and file group in SQL Server standalone databases.

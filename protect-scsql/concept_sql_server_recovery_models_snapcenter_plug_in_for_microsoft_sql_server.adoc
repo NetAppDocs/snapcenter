@@ -1,0 +1,26 @@
+---
+permalink: protect-scsql/concept_sql_server_recovery_models_snapcenter_plug_in_for_microsoft_sql_server.html
+sidebar: sidebar
+keywords: 
+summary: 'Specific recovery models are assigned to each database type by default. The SQL Server database administrator can reassign each database to a different recovery model.'
+---
+= SQL Server recovery models supported by SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Specific recovery models are assigned to each database type by default. The SQL Server database administrator can reassign each database to a different recovery model.
+
+SnapCenter supports three types of SQL Server recovery models:
+
+* Simple recovery model
++
+When you use the simple recovery model, you cannot back up the transaction logs.
+
+* Full recovery model
++
+When you use the full recovery model, you can restore a database to its previous state from the point of failure.
+
+* Bulk logged recovery model
++
+When you use the bulk logged recovery model, you must manually re-execute the bulk logged operation. You must perform the bulk logged operation if the transaction log that contains the operation's commit record has not been backed up before restore. If the bulk logged operation inserts 10 million rows in a database, and the database fails before the transaction log is backed up, then the restored database will not contain the rows that were inserted by the bulk logged operation.

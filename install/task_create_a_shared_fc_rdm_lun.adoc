@@ -1,0 +1,18 @@
+---
+permalink: install/task_create_a_shared_fc_rdm_lun.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you can use FC RDM LUNs to share storage between nodes in a Microsoft cluster, you must first create the shared quorum disk and shared storage disk, and then add them to both virtual machines in the cluster.'
+---
+= Create a shared FC RDM LUN
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you can use FC RDM LUNs to share storage between nodes in a Microsoft cluster, you must first create the shared quorum disk and shared storage disk, and then add them to both virtual machines in the cluster.
+
+The shared disk is not created using the Plug-in for Windows.
+
+. Create and then add the shared LUN to each virtual machine in the cluster, as documented in the VMware _Setup for Failover Clustering and Microsoft Cluster Service_.
++
+See the section that describes how to cluster virtual machines across physical hosts.

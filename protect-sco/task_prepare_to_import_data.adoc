@@ -1,0 +1,54 @@
+---
+permalink: protect-sco/task_prepare_to_import_data.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you import data to SnapCenter, you must perform certain tasks to run the import operation successfully.'
+---
+= Prepare to import data
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you import data to SnapCenter, you must perform certain tasks to run the import operation successfully.
+
+. Identify the database that you want to import.
+. Using SnapCenter, add the database host and install SnapCenter Plug-ins Package for Linux.
+. Using SnapCenter, set up the connections for the storage virtual machines (SVMs) used by the databases on the host.
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. On the Resources page, ensure that the database to be imported is discovered and displayed.
++
+When you want to run the import tool, the database must be accessible or else the resource group creation fails.
++
+If the database has credentials configured, you must create a corresponding credential in SnapCenter, assign the credential to the database, and then re-run discovery of the database. If the database is residing on Automatic Storage Management (ASM), you must create credentials for the ASM instance, and assign the credential to the database.
+
+. Ensure that the user running the import tool has sufficient privileges to run SnapManager for Oracle or SnapManager for SAP CLI commands (such as the command to suspend schedules) from SnapManager for Oracle or SnapManager for SAP host.
+. Run the following commands on the SnapManager for Oracle or SnapManager for SAP host to suspend the schedules:
++
+|===
+| If you want to...| Then run the following commands...
+a|
+Suspend the schedules on the SnapManager for Oracle host
+a|
+
+ ** `smo credential set -repository -dbname repository_database_name -host host_name -port port_number -login -username user_name_for_repository_database`
+ ** `smo profile sync -repository -dbname repository_database_name -host host_name -port port_number -login -username host_user_name_for_repository_database`
+ ** `smo credential set -profile -name profile_name`
++
+You must run the smo credential set command for each profile on the host.
+
+a|
+Suspend the schedules on the SnapManager for SAP host
+a|
+
+ ** `smsap credential set -repository -dbname repository_database_name -host host_name -port port_number -login -username user_name_for_repository_database`
+ ** `smsap profile sync -repository -dbname repository_database_name -host host_name -port port_number -login -username host_user_name_for_repository_database`
+ ** `smsap credential set -profile -name profile_name`
++
+You must run the smsap credential set command for each profile on the host.
+
++
+|===
+
+. Ensure that fully qualified domain name (FQDN) of the database host is displayed when you run hostname -f.
++
+If FQDN is not displayed, you must modify /etc/hosts to specify the FQDN of the host.

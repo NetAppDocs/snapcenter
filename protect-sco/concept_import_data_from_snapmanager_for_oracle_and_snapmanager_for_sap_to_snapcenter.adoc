@@ -1,0 +1,26 @@
+---
+permalink: protect-sco/concept_import_data_from_snapmanager_for_oracle_and_snapmanager_for_sap_to_snapcenter.html
+sidebar: sidebar
+keywords: 
+summary: 'Importing data from SnapManager for Oracle and SnapManager for SAP to SnapCenter enables you to continue to use your data from previous versions.'
+---
+= Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Importing data from SnapManager for Oracle and SnapManager for SAP to SnapCenter enables you to continue to use your data from previous versions.
+
+You can import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter by running the import tool from the command-line interface (Linux host CLI).
+
+The import tool creates policies and resource groups in SnapCenter. The policies and resource groups created in SnapCenter correspond to the profiles and operations performed using those profiles in SnapManager for Oracle and SnapManager for SAP. The SnapCenter import tool interacts with the SnapManager for Oracle and SnapManager for SAP repository databases and the database that you want to import.
+
+* Retrieves all the profiles, schedules, and operations performed using the profiles.
+* Creates a SnapCenter backup policy for each unique operation and each schedule attached to a profile.
+* Creates a resource group for each target database.
+
+You can run the import tool by executing the sc-migrate script located at /opt/NetApp/snapcenter/spl/bin. When you install the SnapCenter Plug-ins Package for Linux on the database host that you want to import, the sc-migrate script is copied to /opt/NetApp/snapcenter/spl/bin.
+
+NOTE: Importing data is not supported from SnapCenter graphical user interface (GUI).
+
+SnapCenter does not support Data ONTAP operating in 7-Mode. You can use the 7-Mode Transition Tool to migrate data and configurations that are stored on a system running Data ONTAP operating in 7-Mode to an ONTAP system.

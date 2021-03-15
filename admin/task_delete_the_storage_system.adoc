@@ -1,0 +1,27 @@
+---
+permalink: admin/task_delete_the_storage_system.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'You can use SnapCenter to delete any unused storage system.'
+---
+= Delete the storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to delete any unused storage system.
+
+You can delete storage connections for an individual user or for a group. If you belong to one or more groups with permission to the same storage system, the storage system name is displayed multiple times in the storage connection list, once for each group with permission to the storage system.
+
+IMPORTANT: When you are deleting a storage system, all operations that are being performed on that storage system will fail.
+
+. In the left navigation pane, click *Storage Systems*.
+. In the Storage Systems page, from the *Type* drop-down, select either *ONTAP SVMs* or *ONTAP Clusters*.
+. In the Storage Connections page, either select the check box next to the SVM, or the cluster that you want to delete.
++
+NOTE: You cannot select the SVM that is part of a cluster.
+
+. Click *Delete*.
+. In the Delete Storage System Connection Settings page, click *OK*.
++
+NOTE: If an SVM is deleted from ONTAP cluster using ONTAP GUI, in the SnapCenter GUI click *Rediscover* to update the SVM list.

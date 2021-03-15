@@ -1,0 +1,82 @@
+---
+permalink: concept/concept_snapcenter_overview.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter Software is a simple, centralized, scalable platform that provides application-consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud.'
+---
+= SnapCenter overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter Software is a simple, centralized, scalable platform that provides application-consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud.
+
+SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and SnapVault technologies to provide the following:
+
+* Fast, space-efficient, application-consistent, disk-based backups
+* Rapid, granular restore and application-consistent recovery
+* Quick, space-efficient cloning
+
+SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate deployment of plug-ins to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
+
+SnapCenter can be deployed in the following ways:
+
+* On premise to protect the following:
+ ** Data that is on ONTAP FAS or AFF primary systems and replicated to ONTAP FAS or AFF secondary systems
+ ** Data that is on ONTAP Select primary systems
+* On premise in a Hybrid Cloud to protect the following:
+ ** Data that is on ONTAP FAS or AFF primary systems and replicated to Cloud Volumes ONTAP or NetApp Private Storage secondary systems
+* In a public cloud to protect the following:
+ ** Data that is on Cloud Volumes ONTAP (formerly ONTAP Cloud) primary systems
+
+SnapCenter includes the following key features:
+
+* Centralized, application-consistent data protection
++
+Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, and Windows Host Filesystems running on ONTAP systems.
++
+Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter custom plug-ins for IBM DB2, MongoDB, MySQL etc. on the NetApp Automation Store.
+
+* Policy-based backups
++
+Policy-based backups leverage NetApp Snapshot copy technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally. you can automate protection of these backups to secondary storage by updates to existing protection relationships.
+
+* Back ups for multiple resources
++
+You can back up multiple resources (applications, databases, or host file systems) of the same type, at the same time, by using SnapCenter resource groups.
+
+* Restore and recovery
++
+SnapCenter provides rapid, granular restores of backups and application-consistent, time-based recovery. You can restore from any destination in the Hybrid Cloud.
+
+* Cloning
++
+SnapCenter provides quick, space-efficient, application-consistent cloning, which enables accelerated software development. You can clone on any destination in the Hybrid Cloud.
+
+* Single user management graphical user interface (GUI)
++
+The SnapCenter GUI provides a single, one-stop interface for managing backups and clones of a resource in any destination in the Hybrid Cloud.
+
+* REST APIs, Windows cmdlets, UNIX commands
++
+SnapCenter includes REST APIs for most functionality for integration with any orchestration software, and use of Windows PowerShell cmdlets and command-line interface.
+
+* Centralized data protection Dashboard and reporting
+* Role-Based Access Control (RBAC) for security and delegation.
+* Repository database with High Availability
++
+SnapCenter provides a built-in repository database with High Availability to store all backup metadata.
+
+* Automated push install of plug-ins
++
+You can automate a remote push of SnapCenter plug-ins from the SnapCenter Server host to application hosts.
+
+* Load balancing and High Availability
++
+Load balancing and High Availability for the SnapCenter Server is provided by an integration with Application Request Routing (ARR) and Microsoft Windows Network Load Balancing (NLB), with support for horizontal scaling.
+
+For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
+
+* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
+* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2872190[SnapCenter Plug-in for VMware vSphere Release Notes]

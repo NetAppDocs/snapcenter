@@ -1,0 +1,25 @@
+---
+permalink: admin/task_back_up_the_snapcenter_repository.html
+sidebar: sidebar
+keywords: 
+summary: 'Backing up the SnapCenter Server repository helps protect it from data loss. You can back up the repository by running the Protect-SmRepository cmdlet.'
+---
+= Back up the SnapCenter repository
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Backing up the SnapCenter Server repository helps protect it from data loss. You can back up the repository by running the Protect-SmRepository cmdlet.
+
+The Protect-SmRepository cmdlet accomplishes the following tasks:
+
+* Creates a resource group and a policy
+* Creates a backup schedule for the SnapCenter repository
+
+. Launch PowerShell.
+. On the SnapCenter Server host, establish a session using the Open-SmConnection cmdlet, and then enter your credentials.
+. Back up the repository using the Protect-SmRepository cmdlet and the required parameters.
++
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

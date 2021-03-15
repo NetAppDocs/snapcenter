@@ -1,0 +1,12 @@
+---
+permalink: admin/concept_manage_the_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'After adding the storage system, you can modify the storage system configuration and connections, or delete the storage system.'
+---
+= Manage the storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After adding the storage system, you can modify the storage system configuration and connections, or delete the storage system.

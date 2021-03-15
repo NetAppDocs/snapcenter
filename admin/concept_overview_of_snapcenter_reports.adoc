@@ -1,0 +1,39 @@
+---
+permalink: admin/concept_overview_of_snapcenter_reports.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter provides a variety of reporting options that enable you to monitor and manage your system health and operation success.'
+---
+= Overview of SnapCenter reporting capabilities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter provides a variety of reporting options that enable you to monitor and manage your system health and operation success.
+
+|===
+| Report type| Description
+a|
+Backup Report
+a|
+The Backup Report provides overall data about backup trends for your SnapCenter environment, the backup success rate, and some information about each backup performed during the specified time. If a backup is deleted, the report does not display any status information for the deleted backup. The Backup Detail Report provides detailed information about a specified backup job and lists the resources successfully backed up and any that have failed.
+a|
+Clone Report
+a|
+The Clone Report provides overall data about clone trends for your SnapCenter environment, the clone success rate, and some information about each clone job performed during the specified time. If a clone is deleted, the report does not display any status information for the deleted clone. The Clone Detail Report provides details about the specified clone, clone host, and clone job task status. If a task fails, the Clone Detail Report displays information about the failure.
+a|
+Restore Report
+a|
+The Restore Report provides overall information about restore jobs. The Restore Detail Report provides details about a specified restore job, including host name, backup name, job start and duration, and the status of individual job tasks. If a task fails, the Restore Detail Report displays information about the failure.
+a|
+Protection Report
+a|
+These reports provide protection details for resources managed by all SnapCenter plug-in instances. This report provides protection details for resources managed by all plug-in instances. You can see an overview, details of unprotected resources, resources that have not been backed up when the report was generated, resources of a resource group for which backup operations have failed, and SnapVault status.
+a|
+Scheduled Report
+a|
+These reports are scheduled to run periodically like daily, weekly or monthly. The reports are generated automatically on the specified date and time and the report is sent to the respective people through e-mail. You can enable, disable, modify, or delete the schedules. The enabled schedule can be run on demand by clicking on the *Run Now* button. The administrator can run any schedule, but the generated report will contain data based on the permission provided by the user who created the schedule.
+
+Any other user other than Administrator will be able to see or modify schedule based on their permission .If All members of this role can see other members' objects option is selected in the Add Role page, then other members of the role will be able to see and modify.
+
+|===

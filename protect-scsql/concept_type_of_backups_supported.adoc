@@ -1,0 +1,45 @@
+---
+permalink: protect-scsql/concept_type_of_backups_supported.html
+sidebar: sidebar
+keywords: 
+summary: 'Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups \(AG\). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
+---
+= Type of backups supported
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups (AG). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
+
+You can select the copy-only option to specify that the SQL Server does not truncate transaction logs. You should use this option when you are also managing the SQL Server with other backup applications. Keeping the transaction logs intact enables any backup application to restore the system databases. Copy-only backups are independent of the sequence of scheduled backups, and they do not affect the backup and restore procedures of the database.
+
+|===
+| Backup type| Description| Copy-only option with backup type
+a|
+Full backup and log backup
+a|
+Backs up the system database and truncates the transaction logs. The SQL Server truncates the transaction logs by removing the entries that are already committed to the database.
+
+After the full backup is complete, this option creates a transaction log that captures transaction information. Typically, you should choose this option. However, if your backup time is short, you can choose not to run a transaction log backup with full backup.
+
+You cannot create a log backup for master and msdb system databases. However, you can create log backups for model system database.
+
+a|
+Backs up the system database files and the transaction logs without truncating the logs. A copy-only backup cannot serve as a differential base or differential backup, and does not affect the differential base. Restoring a copy-only full backup is the same as restoring any other full backup.
+
+a|
+Full database backup
+a|
+Backs up the system database files. You can create full database backup for master, model, and msdb system databases.
+
+a|
+Backs up the system database files.
+a|
+Transaction log backup
+a|
+Backs up the truncated transaction logs, copying only the transactions that were committed since the most recent transaction log was backed up.If you schedule frequent transaction log backups alongside full database backups, you can choose granular recovery points.
+
+a|
+Backs up the transaction logs without truncating them. This backup type does not affect the sequencing of regular log backups. Copy-only log backups are useful for performing online restore operations.
+
+|===

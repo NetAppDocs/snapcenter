@@ -1,0 +1,57 @@
+---
+permalink: protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX.'
+---
+= Storage types supported by SnapCenter Plug-in for Oracle Database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX.
+
+SnapCenter does not support storage provisioning for Linux and AIX.
+
+|===
+| Machine| Storage type
+a|
+Physical server
+a|
+FC-connected LUNs
+a|
+Physical server
+a|
+iSCSI-connected LUNs
+a|
+Physical server
+a|
+NFS-connected volumes
+a|
+VMware ESXi
+a|
+RDM LUNs connected by an FC or iSCSI ESXi HBAScanning of host bus adapters (HBAs) might take long time to complete because SnapCenter scans all the host bus adaptors present in the host. You can edit the LinuxConfig.pm file located at /opt/NetApp/snapcenter/spl/plugins/scu/scucore/modules/SCU/Config to set the value of the SCSI_HOSTS_OPTIMIZED_RESCAN parameter to 1 to rescan only those HBAs that are listed in HBA_DRIVER_NAMES.
+
+a|
+VMware ESXi
+a|
+iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+a|
+VMware ESXi
+a|
+VMDKs on VMFS or NFS datastores
+a|
+VMware ESXi
+a|
+NFS volumes connected directly to the guest system
+|===
+|===
+| Machine| Storage type
+a|
+Physical server
+a|
+FC-connected and iSCSI-connected LUNsIn a SAN environment, only ASM is supported.
+
+NOTE: NFS on AIX and filesystem or LVM on AIX is not supported.
+
+|===

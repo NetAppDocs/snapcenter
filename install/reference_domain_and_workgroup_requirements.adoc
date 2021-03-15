@@ -1,0 +1,21 @@
+---
+permalink: install/reference_domain_and_workgroup_requirements.html
+sidebar: sidebar
+keywords: 
+summary: 'The SnapCenter Server can be installed on systems that are either in a domain or in workgroup. The user used for installation should have admin privileges on the machine in case of both workgroup and domain.'
+---
+= Domain and workgroup requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapCenter Server can be installed on systems that are either in a domain or in workgroup. The user used for installation should have admin privileges on the machine in case of both workgroup and domain.
+
+For installing SnapCenter Server and SnapCenter plug-ins on Windows hosts, you should use one of the following:
+
+* If you are using an Active Directory domain: You must use a Domain user with local administrator rights. The Domain user must be a member of the local Administrator group on the Windows host.
+* If you are using workgroups: You must use a local account that has local administrator rights.
+
+While domain trusts, multi-domain forests, and cross-domain trusts are supported, cross-forest domains are not supported. The Microsoft documentation about Active Directory Domains and Trusts contains more information.
+
+NOTE: After installing the SnapCenter Server, you should not change the domain in which the SnapCenter host is located. If you remove the SnapCenter Server host from the domain it was in when the SnapCenter Server was installed and then try to uninstall SnapCenter Server, the uninstall operation fails.

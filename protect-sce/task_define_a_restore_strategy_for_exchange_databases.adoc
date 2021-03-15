@@ -1,0 +1,16 @@
+---
+permalink: protect-sce/task_define_a_restore_strategy_for_exchange_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'Defining a restoration strategy for Exchange Server enables you to restore your database successfully.'
+---
+= Define a restore strategy for Exchange databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a restoration strategy for Exchange Server enables you to restore your database successfully.
+
+. Determine whether you want to restore a backup of an active or passive copy.
+. Determine the requirements for restoring the database.
+. Decide the type of restore you require.

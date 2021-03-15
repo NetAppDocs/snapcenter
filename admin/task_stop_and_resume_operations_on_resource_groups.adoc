@@ -1,0 +1,19 @@
+---
+permalink: admin/task_stop_and_resume_operations_on_resource_groups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can temporarily disable scheduled operations from starting on a resource group. Later when you want, you can enable those operations.'
+---
+= Stop and resume operations on resource groups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can temporarily disable scheduled operations from starting on a resource group. Later when you want, you can enable those operations.
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Resource Group* from the *View* list.
+. Select the resource group and click *Maintenance*.
+. Click *OK*.
+
+If you want to resume operations on the resource group that you had put on maintenance mode, select the resource group and click *Production*.

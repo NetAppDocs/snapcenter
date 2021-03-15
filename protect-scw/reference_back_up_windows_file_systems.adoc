@@ -1,0 +1,24 @@
+---
+permalink: protect-scw/reference_back_up_windows_file_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'When you install the SnapCenter Plug-in for Microsoft Windows in your environment, you can use SnapCenter to back up Windows file systems. You can back up a single file system or a resource group that contains multiple file systems. You can back up on demand or according to a defined protection schedule.'
+---
+= Back up Windows file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you install the SnapCenter Plug-in for Microsoft Windows in your environment, you can use SnapCenter to back up Windows file systems. You can back up a single file system or a resource group that contains multiple file systems. You can back up on demand or according to a defined protection schedule.
+
+You can schedule multiple backups to run across servers simultaneously.
+
+Backup and restore operations cannot be performed simultaneously on the same resource.
+
+The following workflow shows the sequence in which you must perform the backup operations:
+
+image::../media/sce_backup_workflow.gif[]
+
+You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help or the cmdlet reference information contains detailed information about PowerShell cmdlets.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

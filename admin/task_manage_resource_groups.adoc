@@ -1,0 +1,32 @@
+---
+permalink: admin/task_manage_resource_groups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can perform various operations on resource groups.'
+---
+= Manage resource groups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform various operations on resource groups.
+
+You can perform the following tasks related to resource groups:
+
+* Modify a resource group by selecting the resource group and clicking *Modify Resource Group* to edit the information you provided while creating the resource group.
++
+NOTE: You can change the schedule while modifying the resource group. However, to change the schedule type you must modify the policy.
++
+NOTE: If you remove resources from a resource group, the backup retention settings defined in the policies currently attached to the resource group will continue to be applied to the removed resources.
+
+* Create a backup of a resource group.
+* Create a clone of a backup.
++
+You can clone from the existing backups of SQL, Oracle, Windows file systems, custom applications, and SAP HANA database resources or resource groups.
+
+* Create a clone of a resource group.
++
+This operation is supported only for SQL resource groups (which contains only databases). You can configure a schedule for cloning a resource group (clone lifecycle).
+
+* Prevent scheduled operations on resource groups from starting.
+* Delete a resource group.

@@ -1,0 +1,23 @@
+---
+permalink: install/task_create_and_manage_disks.html
+sidebar: sidebar
+keywords: 
+summary: 'The Windows host sees LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.'
+---
+= Create and manage disks
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Windows host sees LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.
+
+Using SnapCenter, you can perform the following disk-related tasks:
+
+* View the lists of disks on a host.
+* Create a disk.
+* Resize a disk.
+* Connect to a disk.
+* Disconnect from a disk.
+* Delete a disk.
+
+NOTE: SnapCenter does not support renaming a disk. If a disk that is managed by SnapCenter is renamed, SnapCenter operations will not succeed.
