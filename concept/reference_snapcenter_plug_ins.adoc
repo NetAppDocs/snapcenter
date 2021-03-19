@@ -1,0 +1,133 @@
+---
+permalink: concept/reference_snapcenter_plug_ins.html
+sidebar: sidebar
+keywords: architecture
+summary: 'Each SnapCenter plug-in supports specific environments, databases, and applications.'
+---
+= SnapCenter plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Each SnapCenter plug-in supports specific environments, databases, and applications.
+
+|===
+| Plug-in Name| Included in install package| Requires other plug-ins| Installed on host| Supports
+a|
+Plug-in for SQL Server
+a|
+Plug-ins Package for Windows
+a|
+Plug-in for Windows
+a|
+SQL Server host
+a|
+Windows
+a|
+Plug-in for Windows
+a|
+Plug-ins Package for Windows
+a|
+ 
+a|
+Windows host
+a|
+Windows
+a|
+Plug-in for Exchange
+a|
+Plug-ins Package for Windows
+a|
+Plug-in for Windows
+a|
+Exchange Server host
+a|
+Windows
+a|
+Plug-in for Oracle Database
+a|
+Plug-ins Package for Linux and Plug-ins Package for AIX
+a|
+Plug-in for UNIX
+a|
+Oracle host
+a|
+Linux or AIX
+a|
+Plug-in for SAP HANA Database
+a|
+Plug-ins Package for Linux and Plug-ins Package for Windows
+a|
+Plug-in for UNIX or Plug-in for Windows
+a|
+HDBSQL client host
+a|
+Linux or Windows
+a|
+Custom Plug-ins
+a|
+https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store]
+a|
+For file system backups, Plug-in for Windows
+a|
+Custom application host
+a|
+Linux or Windows
+|===
+*Note:* The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs), and it supports the SnapCenter application-specific plug-ins to protect application-consistent backup and restore operations for virtualized databases and file systems.
+
+For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
+
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+
+== SnapCenter Plug-in for Microsoft SQL Server features
+
+* Automates application-aware backup, restore, and clone operations for Microsoft SQL Server databases in your SnapCenter environment.
+* Supports Microsoft SQL Server databases on VMDK and raw device mapping (RDM) LUNs when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter
+* Supports provisioning SMB shares only. Support is not provided for backing up SQL Server databases on SMB shares.
+* Supports importing backups from SnapManager for Microsoft SQL Server to SnapCenter.
+
+== SnapCenter Plug-in for Microsoft Windows features
+
+* Enables application-aware data protection for other plug-ins that are running in Windows hosts in your SnapCenter environment
+* Automates application-aware backup, restore, and clone operations for Microsoft file systems in your SnapCenter environment
+* Supports storage provisioning, Snapshot copy consistency, and space reclamation for Windows hosts
++
+NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on physical and RDM LUNs but does not support backup operations for Windows file systems on SMB shares.
+
+== SnapCenter Plug-in for Microsoft Exchange Server features
+
+* Automates application-aware backup and restore operations for Microsoft Exchange Server databases and Database Availability Groups (DAGs) in your SnapCenter environment
+* Supports virtualized Exchange Servers on RDM LUNs when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter
+* Supports migrating backups from SnapManager 7.x to SnapCenter
+
+== SnapCenter Plug-in for Oracle Database features
+
+* Automates application-aware backup, restore, recovery, verify, mount, unmount, and clone operations for Oracle databases in your SnapCenter environment
+* Supports Oracle databases for SAP, however, SAP BR*Tools integration is not provided
+* Supports importing backups from SnapManager for Oracle and SnapManager for SAP to SnapCenter
+
+== SnapCenter Plug-in for UNIX features
+
+* Enables the Plug-in for Oracle Database to perform data protection operations on Oracle databases by handling the underlying host storage stack on Linux or AIX systems
+* Supports Network File System (NFS) and storage area network (SAN) protocols on a storage system that is running ONTAP
++
+For AIX systems, only SAN native devices are supported. The file systems and LVM layouts built on SAN devices are not supported.
+
+* For Linux systems, Oracle databases on VMDK and RDM LUNs is supported when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
+
+== SnapCenter Plug-in for SAP HANA Database features
+
+* Automates application-aware backup, restore, and cloning of SAP HANA databases in your SnapCenter environment
+
+== SnapCenter Custom Plug-ins features
+
+* Supports custom plug-ins to manage applications or databases that are not supported by otherSnapCenter plug-ins. Custom plug-ins are not provided as part of the SnapCenter installation.
+* Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
+* Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
+
+MySQL, DB2, and MongoDB custom plug-in samples for SnapCenter Software can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store]. You can create your own custom plug-ins by referring to the developer's guide for creating custom plug-ins.
+
+NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
+
+NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.

@@ -1,0 +1,19 @@
+---
+permalink: protect-sce/concept_what_you_can_do_with_snapcenter_plug_in_for_microsoft_exchange_server.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the Plug-in for Exchange to back up and restore Exchange Server databases.'
+---
+= What you can do with SnapCenter Plug-in for Microsoft Exchange Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the Plug-in for Exchange to back up and restore Exchange Server databases.
+
+* View and manage an active inventory of Exchange Database Availability Groups (DAGs), databases, and replica sets
+* Define policies that provide the protection settings for backup automation
+* Assign policies to resource groups
+* Protect individual DAGs and databases
+* Back up primary and secondary Exchange mailbox databases
+* Restore databases from primary and secondary backups

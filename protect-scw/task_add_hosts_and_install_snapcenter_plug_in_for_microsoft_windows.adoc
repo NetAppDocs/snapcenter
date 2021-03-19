@@ -1,0 +1,122 @@
+---
+permalink: protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html
+sidebar: sidebar
+keywords: installing
+summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The SnapCenter Plug-in for Microsoft Windows is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.'
+---
+= Add hosts and install SnapCenter Plug-in for Microsoft Windows
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the SnapCenterAdd Host page to add Windows hosts. The SnapCenter Plug-in for Microsoft Windows is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
+
+* You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
+* The SnapCenter user should be added to the "`Log on as a service`" role of the Windows Server.
+* You should ensure that the message queueing service is in running state.
+* If you are using group Managed Service Account (gMSA):
+ ** The domain controller should be Windows Server 2012 or later.
+ ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+* You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+* Windows plug-ins
+ ** Microsoft Windows
+ ** Microsoft SQL Server
+ ** SAP HANA
+ ** Custom plug-ins
+* Installing plug-ins on a cluster
++
+If you install plug-ins on a cluster (WSFC, Oracle RAC, or Exchange DAG), they are installed on all of the nodes of the cluster.
+
+* E-series storage
++
+You cannot install the Plug-in for Windows on a Windows host connected to E-series storage.
+
+The administration documentation has more information on managing hosts..
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+
+. In the left navigation pane, click *Hosts*.
+. Ensure that *Managed Hosts* is selected at the top.
+. Click *Add*.
+. On the Hosts page, do the following:
++
+|===
+| For this field...| Do this...
+a|
+Host Type
+a|
+Select the *Windows* type of host.    SnapCenter Server adds the host and then installs the Plug-in for Windows if it is not already installed on the host.
++
+If you also select the Microsoft SQL Server option on the Plug-ins page, SnapCenter Server also installs the Plug-in for SQL Server.
+a|
+Host name
+a|
+Enter the fully qualified domain name (FQDN) or the IP address of the host.    SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
++
+You can enter the IP addresses or FQDN of one of the following:
+
+ ** Stand-alone host
+ ** Windows Server Failover Clustering (WSFC)
+If you are adding a host using SnapCenter and it is part of a subdomain, you must provide the FQDN.
+
+a|
+Credentials
+a|
+Select the credential name that you created or create the new credentials.     The credential must have administrative rights on the remote host. For details, see information about creating a credential.
++
+Details about credentials, including the user name, domain, and host type, are displayed by placing your cursor over the credential name you provided.
++
+NOTE: credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
++
+|===
+
+. In the Select Plug-ins to Install section, select the plug-ins to install.
++
+For new deployments, no plug-in packages are listed.
+
+. (Optional) Click *More Options*.
++
+|===
+| For this field...| Do this...
+a|
+Port
+a|
+Either retain the default port number or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
++
+NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+a|
+Installation Path
+a|
+The default path is C:\Program Files\NetApp\SnapCenter. You can optionally customize the path.    For SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter. However, if you want, you can customize the default path.
+a|
+Add all hosts in the cluster
+a|
+Select this check box to add all of the cluster nodes in a WSFC or a SQL Availability Group.
+a|
+Skip preinstall checks
+a|
+Select this check box if you already installed the plug-ins manually and you do not want to validate whether the host meets the requirements for installing the plug-in.
+a|
+Use group Managed Service Account (gMSA) to run the plug-in services
+a|
+Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.     *Note:*
+
+ ** The domain controller should be Windows Server 2012 or later.
+ ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+Provide the domain or service account name.
+
++
+|===
+
+. Click *Submit*.
++
+If you have not selected the *Skip prechecks* checkbox, the host is validated to see whether it meets the requirements to install the plug-in. The disk space, RAM, PowerShell version, .NET version, and location are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
++
+If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
++
+NOTE: In an NLB setup, if you are updating web.config file, you must update the file on both nodes.
+
+. Monitor the installation progress.
+
+The configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.

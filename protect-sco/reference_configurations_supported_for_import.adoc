@@ -1,0 +1,14 @@
+---
+permalink: protect-sco/reference_configurations_supported_for_import.html
+sidebar: sidebar
+keywords: Interoperability Matrix Tool
+summary: 'Before you import data from SnapManager 3.4.x for Oracle and SnapManager 3.4.x for SAP to SnapCenter, you should be aware of the configurations that are supported with the SnapCenter Plug-in for Oracle Database.'
+---
+= Configurations supported for importing data
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you import data from SnapManager 3.4.x for Oracle and SnapManager 3.4.x for SAP to SnapCenter, you should be aware of the configurations that are supported with the SnapCenter Plug-in for Oracle Database.
+
+The configurations that are supported with the SnapCenter Plug-in for Oracle Database are listed in the NetAppInteroperability Matrix Tool.

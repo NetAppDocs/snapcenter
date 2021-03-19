@@ -1,0 +1,34 @@
+---
+permalink: protect-sco/task_clone_oracle_database_backups.html
+sidebar: sidebar
+keywords: clone operation
+summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
+---
+= Clone Oracle database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The clone workflow includes planning, performing the clone operation, and monitoring the operation.
+
+You might clone databases for the following reasons:
+
+* To test functionality that has to be implemented using the current database structure and content during application development cycles.
+* To populate data warehouses using data extraction and manipulation tools.
+* To recover data that was mistakenly deleted or changed.
+
+The following workflow shows the sequence in which you must perform the clone operation:
+
+image::../media/sco_scc_wfs_clone_workflow.gif[clone workflow]
+
+You can also use commands to perform clone operation. For detailed information about the commands, use the SnapCenter command help or see the command reference information.
+
+*Related information*
+
+xref:task_clone_oracle_database_backups_using_unix_commands.adoc[Clone Oracle database backups using UNIX commands]
+
+xref:task_refresh_a_clone.adoc[Refresh a clone]
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]

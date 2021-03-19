@@ -1,0 +1,67 @@
+---
+permalink: protect-scw/task_restore_windows_file_system_backups.html
+sidebar: sidebar
+keywords: restore
+summary: 'You can use SnapCenter to restore file system backups. File system restoration is a multiphase process that copies all the data from a specified backup to the original location of the file system.'
+---
+= Restore Windows file system backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to restore file system backups. File system restoration is a multiphase process that copies all the data from a specified backup to the original location of the file system.
+
+* You must have backed up the file system.
+* If a scheduled operation, such as a backup operation, is currently in progress for a file system, then that operation must be cancelled before you can start a restore operation.
+* You can only restore a file system backup to the original location, not to an alternate path.
++
+You cannot restore a single file from a backup because the restored file system overwrites any data on the original location of the file system. To restore a single file from a file system backup, you must clone the backup and access the file in the clone.
+
+* You cannot restore a system or boot volume.
+* SnapCenter can restore file systems in a Windows cluster without taking the cluster group offline.
+
+Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. To filter the list of resources, select the File System and Resource Group options.
+. Select a resource group from the list, and then click *Restore*.
+. In the Backups page, select whether you want to restore from primary or secondary storage systems, and then select a backup to restore.
+. Select your options in the Restore wizard.
+. You can enter the path and the arguments of the prescript or postscript that you want SnapCenter to run before or after the restore operation, respectively.
++
+For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
+
+. In the Notification page, select one of the following options:
++
+|===
+| For this field...| Do this...
+a|
+Log SnapCenter server events to storage system syslog
+a|
+Select this option to log SnapCenter Server events to the syslog of the storage system.
+a|
+Send AutoSupport notification for failed operations to storage system
+a|
+Select this option to send information about any failed operations to NetApp using AutoSupport.
+a|
+Email preference
+a|
+Select *Always*, *On Failure*, or *On failure or warning* to send email messages to recipients after restoring backups. Enter the SMTP server, default email subject line, and To and From email addresses.
+|===
+
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+IMPORTANT: If the restored file system contains a database, then you must also restore the database. If you do not restore the database, then your database might be in an invalid state. For information on restoring databases, see the Data Protection Guide for that database.
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-mssql/home.html[Protecting Microsoft SQL Server databases]
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-exchange/home.html[Protecting Microsoft Exchange Server databases]
+
+*Related information*
+
+link:[Monitoring restore operations]
+
+link:[Restoring and recovering resources using PowerShell cmdlets]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

@@ -1,0 +1,25 @@
+---
+permalink: install/concept_snapcenter_standard_capacity_based_licenses.html
+sidebar: sidebar
+keywords: 
+summary: 'You use a SnapCenter Standard capacity license to protect data on ONTAP Select and Cloud Volumes ONTAP platforms.'
+---
+= SnapCenter Standard capacity-based licenses
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You use a SnapCenter Standard capacity license to protect data on ONTAP Select and Cloud Volumes ONTAP platforms.
+
+The license has the following characteristics:
+
+* Composed of a nine-digit serial number with the format 51xxxxxxx
++
+You use the license serial number and valid NetApp Support Site login credentials to enable the license using the SnapCenter GUI.
+
+* Available as a separate, perpetual license, with the cost based on either the used storage capacity or the size of the data you want protected, whichever is lower, and the data is managed by SnapCenter
+* Available per terabyte
++
+For example, you can obtain a capacity-based license for 1 TB, 2 TBs, 4 TBs, and so on.
+
+* Available as a 90-day trial license with 100 TB capacity entitlement

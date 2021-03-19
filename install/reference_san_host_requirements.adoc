@@ -1,0 +1,30 @@
+---
+permalink: install/reference_san_host_requirements.html
+sidebar: sidebar
+keywords: 
+summary: 'If your SnapCenter host is part of a FC/iSCSI environment, you might need to install additional software on the system to enable access to ONTAP storage.'
+---
+= SAN host requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If your SnapCenter host is part of a FC/iSCSI environment, you might need to install additional software on the system to enable access to ONTAP storage.
+
+SnapCenter does not include Host Utilities or a DSM. If your SnapCenter host is part of a SAN environment, you might need to install and configure the following software:
+
+* Host Utilities
++
+The Host Utilities support FC and iSCSI, and it enables you to use MPIO on your Windows Servers.
+
+* ONTAP DSM for Windows MPIO
++
+This software works with Windows MPIO drivers to manage multiple paths between NetApp and Windows host computers.
++
+A DSM is required for high availability configurations.
+
+For more information, see the Host Utilities and ONTAP DSM for Windows MPIO product documentation and the Interoperability Matrix Tool on the NetApp Support Site.
+
+http://mysupport.netapp.com/portal/documentation[NetApp Documentation]
+
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]

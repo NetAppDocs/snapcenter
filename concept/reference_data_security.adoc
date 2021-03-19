@@ -1,0 +1,28 @@
+---
+permalink: concept/reference_data_security.html
+sidebar: sidebar
+keywords: security,authentication
+summary: 'SnapCenter employs strict security and authentication features to enable you to keep your data secure.'
+---
+= Data security
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter employs strict security and authentication features to enable you to keep your data secure.
+
+SnapCenter includes the following security features:
+
+* All communication to SnapCenter uses HTTP over SSL (HTTPS).
+* All credentials in SnapCenter are protected using Advanced Encryption Standard (AES) encryption.
+* SnapCenter uses security algorithms that are compliant with the Federal Information Processing Standard (FIPS).
+* SnapCenter 4.1.1 supports Transport Layer Security (TLS) 1.2 communication with ONTAP. You can also use TLS 1.2 communication between clients and servers.
+* SnapCenter is installed inside your company's firewall to enable access to the SnapCenter Server and to enable communication between the SnapCenter Server and the plug-ins.
+* SnapCenter API and operation access uses tokens, which expire after 24 hours.
++
+Tokens are also encrypted with AES encryption.
+
+* SnapCenter integrates with Windows Active Directory for login and role-based access control (RBAC) that govern access permissions.
+* SnapCenter PowerShell cmdlets are session secured.
+* After a default period of 15 minutes of inactivity, SnapCenter warns you that you will be logged out in 5 minutes. After 20 minutes of inactivity, SnapCenter logs you out, and you must log in again. You can modify the log out period.
+* Login is temporarily disabled after 5 or more incorrect login attempts.

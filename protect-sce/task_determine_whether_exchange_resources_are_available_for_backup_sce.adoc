@@ -1,0 +1,46 @@
+---
+permalink: protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html
+sidebar: sidebar
+keywords: credentials
+summary: 'Resources are the databases, Exchange Database Availability Groups that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.'
+---
+= Determine whether Exchange resources are available for backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Resources are the databases, Exchange Database Availability Groups that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.
+
+* You must have already completed tasks such as installing SnapCenter Server, adding hosts, creating storage system connections, adding credentials, and installing Plug-in for Exchange.
+* To take advantage of Single Mailbox Recovery software features, you must have located your active database on the Exchange Server where Single Mailbox Recovery software is installed.
+* If databases reside on VMware RDM LUNs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
++
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
+
+* You cannot back up databases when the *Overall Status* option in the Details page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
+ ** Databases are not on a NetApp LUN.
+ ** Databases are not in normal state.
++
+Databases are not in normal state when they are offline, restoring, recovery pending, suspend, and so on.
+* If you have a Database Availability Group (DAG), you can back up all databases in the group by running the backup job from the DAG.
+
+. In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server* from the plug-ins drop-down list located in the upper left corner of the Resources page.
+. In the Resources page select *Database*, or *Database Availability Group*, or *Resource Group*, from the *View* drop-down list.
++
+Click image:../media/filter_icon.gif[] and select the host name and the Exchange Server to filter the resources. You can then click image:../media/filter_icon.gif[] to close the filter pane.
+
+. Click *Refresh Resources*.
++
+The newly added, renamed, or deleted resources are updated to the SnapCenter Server inventory.
+
+The resources are displayed along with information such as resource name, Database Availability Group name, time of last backup, and overall status.
+
+* If the database is on a non-NetApp storage, Not available for backup is displayed in the Overall Status column.
++
+In a DAG, if the active database copy is on non-NetApp storage and if at least one passive database copy is on NetApp storage, Not protected is displayed in the Overall Status column.
++
+You cannot perform data protection operations on a database that is on a non-NetApp storage type.
+
+* If the database is on NetApp storage and is not protected, Not protected is displayed in the Overall Status column.
+* If the database is on a NetApp storage system and protected, the user interface displays the Backup not run message in the Overall Status column.
+* If the database is on a NetApp storage system and is protected and if the backup is triggered for the database, the user interface displays the Backup succeeded message in the Overall Status column.

@@ -1,0 +1,15 @@
+---
+permalink: protect-sco/task_define_a_clone_strategy_for_oracle_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'Defining a strategy before cloning your database ensures that the cloning operation is successful.'
+---
+= Define a clone strategy for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a strategy before cloning your database ensures that the cloning operation is successful.
+
+. Determine the backups that can be used for cloning.
+. Decide the type of cloning that you require.

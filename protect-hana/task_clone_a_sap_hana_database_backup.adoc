@@ -1,0 +1,77 @@
+---
+permalink: protect-hana/task_clone_a_sap_hana_database_backup.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database,run as
+summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'
+---
+= Clone a SAP HANA database backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.
+
+* You should have backed up the resources or resource group.
+* You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
+* You cannot clone file-based backups.
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. On the Resources page, filter resources from the *View* drop-down list based on resource type.
++
+The resources are displayed along with information such as type, host, associated resource groups and policies, and status.
+
+. Select the resource or resource group.
++
+You must select a resource if you select a resource group.
++
+The resource or resource group topology page is displayed.
+
+. From the Manage Copies view, select *Backups* either from the primary or secondary (mirrored or vaulted) storage systems.
+. Select the data backup from the table, and then click image:../media/clone_icon.gif[clone icon].
+. On the Location page, perform the following actions:
++
+|===
+| For this field...| Do this...
+a|
+Clone server
+a|
+Select the host on which the clone should be mounted and the plug-in is installed.
+a|
+NFS Export IP Address
+a|
+Enter IP addresses or the host names on which the cloned volumes will be exported.
+a|
+iSCSI Initiator
+a|
+Enter iSCSI initiator name of the host to which the LUNs are exported.     This option is available only if you selected LUN resource type.
+a|
+Protocol
+a|
+Enter the LUN protocol.    This option is available only if you selected LUN resource type.
++
+|===
+If the resource selected is a LUN and you are cloning from a secondary backup, then the destination volumes are listed. A single source can have multiple destination volumes.
++
+NOTE: Before cloning, you must ensure that the iSCSI initiator or the FCP is present and are configured and logged into alternate hosts.
+
+. On the Scripts page, perform the following steps: .
+ .. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
+  *** Pre clone command: delete existing databases with the same name
+  *** Post clone command: verify a database or start a database.
+ .. Enter the mount command to mount a file system to a host.
++
+Mount command for a volume or qtree on a Linux machine:
++
+mount VSERVER_DATA_IP:$\{VOLUME_NAME_Clone} /mnt
+. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email.
+
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+*Related information*
+
+xref:task_clone_sap_hana_database_backups_using_powershell_cmdlets.adoc[Clone SAP HANA database backups using PowerShell cmdlets]
+
+xref:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]

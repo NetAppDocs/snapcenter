@@ -1,0 +1,30 @@
+---
+permalink: protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your databases. Your service-level agreement \(SLA\), recovery time objective \(RTO\), and recovery point objective \(RPO\) largely determine your backup strategy.'
+---
+= Define a backup strategy for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your databases. Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.
+
+An SLA defines the level of service that is expected and addresses many service-related issues, including the availability and performance of the service. RTO is the time by which a business process must be restored after a disruption in service. RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. SLA, RTO, and RPO contribute to the data protection strategy.
+
+Perform the following steps for each of your databases.
+
+. Determine the supported database configurations.
+. Decide the type of backup that you require.
+. Decide on which node in a RAC environment you want to create your backup.
+. Determine when you should back up your databases.
+. Decide how to name your backups.
+. Decide if you want to catalog or uncatalog your backups.
+. Determine the retention period for the Snapshot copies on the source storage system and the SnapMirror destination.
++
+SnapMirror retention is implicitly defined based on the Snapshot copy retention of the primary storage. SnapVault retention has to be defined explicitly on the ONTAP storage system.
+
+. Decide whether you want to verify the backup copies using the primary or secondary storage volume.
+. Determine the supported prescripts and postscripts.
+. Decide whether you want to use NetApp SnapMirror technology for replication or NetApp SnapVault technology for long term retention.

@@ -1,0 +1,17 @@
+---
+permalink: protect-scsql/task_define_a_restoration_strategy_for_sql_server.html
+sidebar: sidebar
+keywords: 
+summary: 'Defining a restoration strategy for SQL Server enables you to restore your database successfully.'
+---
+= Define a restoration strategy for SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a restoration strategy for SQL Server enables you to restore your database successfully.
+
+. Determine the source and destination for the restore operation.
+. Determine the requirements for restoring the database.
+. Determine the SQL Server recovery models.
+. Decide the type of restore you require.

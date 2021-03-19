@@ -1,0 +1,47 @@
+---
+permalink: protect-sco/task_import_data.html
+sidebar: sidebar
+keywords: 
+summary: 'You can import data by running the import tool from the database host. Before you start importing data, you must complete the pre-requisites.'
+---
+= Import data
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can import data by running the import tool from the database host. Before you start importing data, you must complete the pre-requisites.
+
+The SnapCenter backup policies that are created after importing have different naming formats:
+
+* Policies created for the profiles without any operations and schedules have the SM_PROFILENAME_ONLINE_FULL_DEFAULT_MIGRATED format.
++
+When no operation is performed using a profile, the corresponding policy is created with default backup type as online and backup scope as full.
+
+* Policies created for the profiles with one or more operations have the SM_PROFILENAME_BACKUPMODE_BACKUPSCOPE_MIGRATED format.
+* Policies created for the schedules attached to the profiles have the SM_PROFILENAME_SMOSCHEDULENAME_BACKUPMODE_BACKUPSCOPE_MIGRATED format.
+
+. Log in to the database host that you want to import.
+. Run the import tool by executing the sc-migrate script located at /opt/NetApp/snapcenter/spl/bin.
+. Enter the SnapCenter Server user name and password.
++
+After validating the credentials, a connection is established with SnapCenter.
+
+. Enter the SnapManager for Oracle or SnapManager for SAP repository database details.
++
+The repository database lists the databases that are available on the host.
+
+. Enter the target database details.
++
+If you want to import all the databases on the host, enter all.
+
+. If you want to generate a system log or send ASUP messages for failed operations, you must enable them either by running the Add-SmStorageConnection or Set-SmStorageConnection command.
+
+The SnapCenter backup policies are created for profiles, schedules, and operations performed using the profiles. Resource groups are also created for each target database.
+
+After importing the data successfully, the schedules associated with the imported database are suspended in SnapManager for Oracle and SnapManager for SAP.
+
+NOTE: After importing, you must manage the imported database or file system using SnapCenter.
+
+If you want to cancel an import operation, either while running the import tool or after importing, you must manually delete the SnapCenter policies, credentials, and resource groups that were created as part of import operation.
+
+The logs for every execution of the import tool are stored in the /var/opt/snapcenter/spl/logs directory with the name spl_migration_timestamp.log. You can refer to this log to review import errors and troubleshoot them.

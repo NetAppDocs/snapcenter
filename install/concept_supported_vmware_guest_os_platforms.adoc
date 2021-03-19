@@ -1,0 +1,27 @@
+---
+permalink: install/concept_supported_vmware_guest_os_platforms.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the Plug-in for Windows for LUN provisioning and Snapshot copy management support on x64 guest operating systems running on supported versions of VMware ESXi.'
+---
+= Supported VMware guest OS platforms
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the Plug-in for Windows for LUN provisioning and Snapshot copy management support on x64 guest operating systems running on supported versions of VMware ESXi.
+
+The Plug-in for Windows supports the following VMware guest OS configurations:
+
+* Supported versions of Windows Server
+* Microsoft cluster configurations
++
+Support for up to a maximum of 16 nodes supported on VMware when using the Microsoft iSCSI Software Initiator, or up to two nodes using FC
+
+* RDM LUNs
++
+Support for a maximum of 56 RDM LUNs with four LSI Logic SCSI controllers for normal RDMS, or 42 RDM LUNs with three LSI Logic SCSI controllers on a VMware VM MSCS box-to-box Plug-in for Windows configuration
+
+For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
+
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]

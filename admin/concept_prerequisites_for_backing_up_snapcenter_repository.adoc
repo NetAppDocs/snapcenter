@@ -1,0 +1,30 @@
+---
+permalink: admin/concept_prerequisites_for_backing_up_snapcenter_repository.html
+sidebar: sidebar
+keywords: 
+summary: 'Your environment must meet certain prerequisites to protect the SnapCenter repository.'
+---
+= Prerequisites for protecting the SnapCenter repository
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Your environment must meet certain prerequisites to protect the SnapCenter repository.
+
+* Managing storage virtual machine (SVM) connections
++
+You must configure the storage credentials.
+
+* Provisioning hosts
++
+At least one NetApp storage disk should be present on the SnapCenter repository host. If a NetApp disk is not present on the SnapCenter repository host, you must create one.
++
+For details about adding hosts, setting up SVM connections, and provisioning hosts, see the installation instructions.
+
+* Provisioning iSCSI LUN or VMDK
++
+For a network load balance balancing (NLB) configuration, you can provision either a iSCSI LUN or a VMDK in one of the SnapCenter Servers.
+
+*Related information*
+
+link:[Provisioning storage on Windows hosts]

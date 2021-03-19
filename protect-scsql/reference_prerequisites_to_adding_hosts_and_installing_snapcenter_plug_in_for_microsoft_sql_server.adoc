@@ -1,0 +1,28 @@
+---
+permalink: protect-scsql/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.html
+sidebar: sidebar
+keywords: credentials
+summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements.'
+---
+= Prerequisites to adding hosts and installing SnapCenter Plug-in for Microsoft SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you add a host and install the plug-ins packages, you must complete all the requirements.
+
+* If you are using iSCSI, the iSCSI service must be running.
+* You must have a user with local administrator privileges with local login permissions on the remote host.
+* If you manage cluster nodes in SnapCenter, you must have a user with administrative privileges to all the nodes in the cluster.
+* You must have a user with sysadmin permissions on the SQL Server.
++
+SnapCenter Plug-in for Microsoft SQL Server uses Microsoft VDI Framework, which requires sysadmin access.
++
+http://support.microsoft.com/kb/2926557/[Microsoft Support Article 2926557: SQL Server VDI backup and restore operations require Sysadmin privileges]
+
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
+* If SnapManager for Microsoft SQL Server is installed, you must have stopped or disabled the service and schedules.
++
+If you plan to import backup or clone jobs into SnapCenter, do not uninstall SnapManager for Microsoft SQL Server.
+
+* The host must be resolvable to the fully qualified domain name (FQDN) from the server. If the hosts file is modified to make it resolvable and if both the short name and the FQDN are specified in the hosts file, create a entry in the SnapCenter hosts file in the following format: <ip_address> <host_fqdn> <host_name>

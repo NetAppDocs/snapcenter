@@ -1,0 +1,43 @@
+---
+permalink: protect-hana/concept_snapcenter_plug_in_for_sap_hana_database_features.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with the Plug-in for SAP HANA Database, you use the SnapCenter graphical user interface.'
+---
+= SnapCenter Plug-in for SAP HANA Database features
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with the Plug-in for SAP HANA Database, you use the SnapCenter graphical user interface.
+
+* *Unified graphical user interface*
++
+The SnapCenter interface provides standardization and consistency across plug-ins and environments. The SnapCenter interface enables you to complete consistent backup, restore, and clone operations across plug-ins, use centralized reporting, use at-a-glance dashboard views, set up role-based access control (RBAC), and monitor jobs across all plug-ins.
+
+* *Automated central administration*
++
+You can schedule backup operations, configure policy-based backup retention, and perform restore operations. You can also proactively monitor your environment by configuring SnapCenter to send email alerts.
+
+* *Nondisruptive NetApp Snapshot copy technology*
++
+SnapCenter uses NetApp Snapshot copy technology with the Plug-in for SAP HANA Database to back up resources.
+
+Using the Plug-in for SAP HANA Database also offers the following benefits:
+
+* Support for backup, restore, and clone workflows
+* RBAC-supported security and centralized role delegation
++
+You can also set the credentials so that the authorized SnapCenter users have application-level permissions.
+
+* Creation of space-efficient and point-in-time copies of resources for testing or data extraction by using NetApp FlexClone technology
++
+A FlexClone license is required on the storage system where you want to create the clone.
+
+* Support for the consistency group (CG) Snapshot copy feature of ONTAP as part of creating backups.
+* Capability to run multiple backups simultaneously across multiple resource hosts
++
+In a single operation, Snapshot copies are consolidated when resources in a single host share the same volume.
+
+* Capability to create Snapshot copies using external commands.
+* Support for file-based backup

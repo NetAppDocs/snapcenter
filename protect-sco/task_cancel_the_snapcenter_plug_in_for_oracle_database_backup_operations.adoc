@@ -1,0 +1,52 @@
+---
+permalink: protect-sco/task_cancel_the_snapcenter_plug_in_for_oracle_database_backup_operations.html
+sidebar: sidebar
+keywords: 
+summary: 'You can cancel backup operations that are either running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.'
+---
+= Cancel backup operations of Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can cancel backup operations that are either running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.
+
+* You must be logged in as the SnapCenter Admin or job owner to cancel restore operations.
+* You can cancel only the log or full backup operation that are queued or running.
+* You cannot cancel the operation after the verification has started.
++
+If you cancel the operation before verification, the operation is canceled, and the verification operation will not be performed.
+
+* You cannot cancel the backup operation after the catalog operations has started.
+* You can cancel a backup operation from either the Monitor page or the Activity pane.
+* In addition to using the SnapCenter GUI, you can use CLI commands to cancel operations.
+* The *Cancel Job* button is disabled for operations that cannot be canceled.
+* If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued backup operations of other members while using that role.
+
+. Perform one of the following actions:
++
+|===
+| From the...| Action
+a|
+Monitor page
+a|
+
+ .. In the left navigation pane, click *Monitor* > *Jobs*.
+ .. Select the operation and click *Cancel Job*.
+
+a|
+Activity pane
+a|
+
+ .. After initiating the backup job, click image:../media/activity_pane_icon.gif[] on the Activity pane to view the five most recent operations.
+ .. Select the operation.
+ .. In the Job Details page, click *Cancel Job*.
+
++
+|===
+
+The operation is canceled, and the resource is reverted to the original state. If the operation you canceled is non-responsive in the canceling or running state, you should run the Cancel-SmJob -JobID <int> -Force to forcefully stop the backup operation.
+
+*Related information*
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]

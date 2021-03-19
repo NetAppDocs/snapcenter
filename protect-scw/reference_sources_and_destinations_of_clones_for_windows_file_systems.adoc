@@ -1,0 +1,25 @@
+---
+permalink: protect-scw/reference_sources_and_destinations_of_clones_for_windows_file_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'You can clone a file system backup from primary storage or secondary storage. You also can choose the destination that supports your requirements; either the original backup location or a different destination on the same host or on a different host. The destination must be on the same volume as the clone source backup.'
+---
+= Sources and destinations of clones for Windows file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can clone a file system backup from primary storage or secondary storage. You also can choose the destination that supports your requirements; either the original backup location or a different destination on the same host or on a different host. The destination must be on the same volume as the clone source backup.
+
+|===
+| Clone destination| Description
+a|
+Original, source, location
+a|
+By default, SnapCenter stores the clone on the same location and the same host as the backup being cloned.
+a|
+Different location
+a|
+You can store the clone on a different location on the same host or on a different host. The host must have a configured connection to the storage virtual machine (SVM).
+|===
+You can rename the clone after the clone operation is complete.

@@ -1,0 +1,12 @@
+---
+permalink: admin/concept_monitor_jobs_schedules_events_and_logs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can monitor the progress of your jobs, get information about scheduled jobs, and review events and logs from the Monitor page.'
+---
+= Monitor jobs, schedules, events, and logs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can monitor the progress of your jobs, get information about scheduled jobs, and review events and logs from the Monitor page.

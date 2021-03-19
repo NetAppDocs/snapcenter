@@ -1,0 +1,51 @@
+---
+permalink: install/task_create_an_smb_share.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the SnapCenter Shares page to create an SMB3 share on a storage virtual machine \(SVM\).'
+---
+= Create an SMB share
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the SnapCenterShares page to create an SMB3 share on a storage virtual machine (SVM).
+
+You cannot use SnapCenter to back up databases on SMB shares. SMB support is limited to provisioning only.
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Shares*.
+. Select the SVM from the *Storage Virtual Machine* drop-down list.
+. Click *New*.
++
+The New Share dialog opens.
+
+. In the New Share dialog, define the share:
++
+|===
+| In this field...| Do this...
+a|
+Description
+a|
+Enter descriptive text for the share.
+a|
+Share name
+a|
+Enter the share name, for example, test_share. The name you enter for the share will also be used as the volume name.     The share name:
+
+ ** Must be a UTF-8 string.
+ ** Must not include the following characters: control characters from 0x00 to 0x1F (both inclusive), 0x22 (double quotes), and the special characters `\ / [ ] : | < > + = ; , ?`
+
+a|
+Share path
+a|
+
+ ** Click in the field to enter a new file system path, for example, /.
+ ** Double-click in the field to select from a list of existing file system paths.
+
++
+|===
+
+. When you are satisfied with your entries, click *OK*.
++
+SnapCenter creates the SMB share on the SVM.

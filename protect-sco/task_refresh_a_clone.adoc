@@ -1,0 +1,50 @@
+---
+permalink: protect-sco/task_refresh_a_clone.html
+sidebar: sidebar
+keywords: best practices
+summary: 'You can refresh the clone by running the “Refresh-SmClone” command. This command creates a backup of the database, deletes the existing clone, and creates a clone with the same name.'
+---
+= Refresh a clone
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can refresh the clone by running the "`Refresh-SmClone`" command. This command creates a backup of the database, deletes the existing clone, and creates a clone with the same name.
+
+You should be aware of some of best practices that you should follow before performing this operation.
+
+* Create an online full backup or an offline data backup policy with no scheduled backups enabled.
+* Configure the email notification in the policy for backup failures only.
+* Define the retention count for the on-demand backups appropriately to ensure that there are no unwanted backups.
+* Ensure that only an online full backup or an offline data backup policy is associated with resource group which is identified for refresh clone operation.
+* Create a resource group with only one database.
+* If a cron job is created for the clone refresh command, ensure that the SnapCenter schedules and the cron schedules are not overlapping for the database resource group.
++
+For a cron job created for the clone refresh command, ensure that you run Open-SmConnection after every 24hrs.
+
+* Ensure that the clone SID is unique for a host.
++
+If multiple refresh clone operations use the same clone specification file or use the clone specification file with same clone SID, existing clone with the SID on the host will be deleted and then the clone will be created.
+
+* Ensure that the backup policy is enabled with secondary protection and the clone specification file is created with "`-IncludeSecondaryDetails`" to create the clones using secondary backups.
+ ** If the primary clone specification file is specified but the policy has secondary update option selected, the backup will be created, and update will get transferred to secondary. However, the clone will be created from the primary backup.
+ ** If the primary clone specification file is specified and the policy does not have secondary update option selected, the backup will be created on primary and clone will be created from primary.
+
+You cannot refresh a PDB clone.
+
+. Initiate a connection session with the SnapCenter Server for a specified user: Open-SmConnection
+. Create an Oracle database clone specification from a specified backup: New-SmOracleCloneSpecification
++
+NOTE: If secondary data protection policy is unified mirror-vault, then specify only -IncludeSecondaryDetails. You do not have to specify -SecondaryStorageType.
++
+This command automatically creates an Oracle database clone specification file for the specified source database and its backup. You must also provide a clone database SID so that the specification file created has the automatically generated values for the clone database which you will be creating.
++
+NOTE: The clone specification file is created at /var/opt/snapcenter/sco/clone_specs.
+
+. Run Refresh-SmClone.
++
+If the operation fails with the PL-SCO-20032: canExecute operation failed with error: PL-SCO-30031: Redo log file +SC_2959770772_clmdb/clmdb/redolog/redo01_01.log exists error messages, specify a higher value for "`-WaitToTriggerClone`"
++
+For detailed information on UNIX commands, use the SnapCenter command help or see the command reference information.
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]

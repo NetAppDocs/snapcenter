@@ -1,0 +1,16 @@
+---
+permalink: admin/task_access_snapcenter_reports.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the SnapCenter Dashboard to get a quick overview of the health of your system. From the Dashboard you can drill into more details. Alternatively, you can access the detailed reports directly.'
+---
+= Access SnapCenter reports
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the SnapCenter Dashboard to get a quick overview of the health of your system. From the Dashboard you can drill into more details. Alternatively, you can access the detailed reports directly.
+
+. Access reports by one of the following methods:
+ ** In the left navigation pane, click *Dashboard*, and then click *Last Protection Summary* pie chart to see more details in the Reports page.
+ ** In the left navigation pane, click *Reports*.

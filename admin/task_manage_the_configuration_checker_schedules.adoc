@@ -1,0 +1,23 @@
+---
+permalink: admin/task_manage_the_configuration_checker_schedules.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create a new schedule, modify, delete, disable, or run the schedules for multiple hosts simultaneously. The SnapCenter administrator can modify or disable the SnapCenter Server.'
+---
+= Manage the Configuration Checker schedules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a new schedule, modify, delete, disable, or run the schedules for multiple hosts simultaneously. The SnapCenter administrator can modify or disable the SnapCenter Server.
+
+* The SnapCenter Server default schedule cannot be deleted.
+
+. In the left navigation pane, click *Settings* > *Scheduled Configuration Checker*.
+. In the Scheduled Configuration Checker page, filter the schedules according to the entity type.
+. Select the entity name to create, modify, disable, or run the Configuration Checker schedule.
++
+NOTE: The *Run configuration checker schedule* option is disabled in the drop-down list for AIX hosts.
+
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+. In the left navigation pane, click *Alerts*, and then select an alert to see the details.

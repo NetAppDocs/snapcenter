@@ -1,0 +1,33 @@
+---
+permalink: protect-sce/concept_types_of_backups_supported_for_exchange_database.html
+sidebar: sidebar
+keywords: 
+summary: 'Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups \(DAG\). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
+---
+= Types of backups supported for Exchange database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups (DAG). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
+
+|===
+| Backup type| Description
+a|
+Full and log backup
+a|
+Backs up the databases and all transaction logs, including the truncated logs.After a full backup is complete, the Exchange Server truncates the transaction logs that are already committed to the database.
+
+Typically, you should choose this option. However, if your backup time is short, you can choose not to run a transaction log backup with full backup.
+
+a|
+Full backup
+a|
+Backs up databases and transaction logs. The truncated transaction logs are not backed up.
+
+a|
+Log backup
+a|
+Backs up all the transaction logs. The truncated logs that are already committed to the database are not backed up. If you schedule frequent transaction log backups between full database backups, you can choose granular recovery points.
+
+|===

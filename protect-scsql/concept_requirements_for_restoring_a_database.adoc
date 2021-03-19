@@ -1,0 +1,46 @@
+---
+permalink: protect-scsql/concept_requirements_for_restoring_a_database.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you restore a SQL Server database from a SnapCenter Plug-in for Microsoft SQL Server backup, you must ensure that several requirements are met.'
+---
+= Requirements for restoring a database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you restore a SQL Server database from a SnapCenter Plug-in for Microsoft SQL Server backup, you must ensure that several requirements are met.
+
+* The SQL Server instance must be online and running before you can restore a database.
++
+This applies to both user database restore operations and system database restore operations.
+
+* SnapCenter operations that are scheduled to run against the SQL Server data you are restoring must be disabled, including any jobs scheduled on remote management or remote verification servers.
+* If system databases are not functional, you must first rebuild the system databases using a SQL Server utility.
+* If you are installing the plug-in, ensure that you grant permissions for other roles to restore the Availability Group (AG) backups.
++
+Restoring AG fails when one of the following conditions are met:
+
+ ** If the plug-in is installed by RBAC user and an admin tries to restore an AG backup
+ ** If the plug-in is installed by an admin and a RBAC user tries to restore an AG backup
+
+* If you are restoring custom log directory backups to an alternate host, the SnapCenter Server and the plug-in host must have the same SnapCenter version installed.
+* You must have installed Microsoft hotfix, KB2887595. The Microsoft Support Site contains more information about KB2887595.
++
+https://support.microsoft.com/kb/2887595[Microsoft Support Article 2887595: Windows RT 8.1, Windows 8.1, and Windows Server 2012 R2 update rollup: November 2013]
+
+* You must have backed up the resource groups or database.
+* If you are replicating Snapshot copies to a mirror or vault, the SnapCenter administrator must have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes.
++
+For information about how administrators assign resources to users, see the SnapCenter installation information.
+
+* All backup and clone jobs must be stopped before restoring the database.
+* The restore operation might timeout if the database size is in terabytes (TB).
++
+You must increase the value of the RESTTimeout parameter of SnapCenter Server to 20000000 ms by running the following command: Set-SmConfigSettings -Agent -configSettings @{"RESTTimeout" = "2000000"}. According to the size of the database, the timeout value can be changed and the maximum value that you can set is 2147483648.
+
+If you want to restore while the databases are online, the online restore option should be enabled in the Restore page.
+
+*Related information*
+
+link:[Stopping and resuming operations on resource groups]

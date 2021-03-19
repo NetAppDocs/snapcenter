@@ -1,0 +1,17 @@
+---
+permalink: protect-sco/concept_clone_naming_conventions_for_oracle_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'From SnapCenter 3.0, the naming convention used for clones of file systems is different from the clones of ASM disk groups.'
+---
+= Clone naming conventions for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+From SnapCenter 3.0, the naming convention used for clones of file systems is different from the clones of ASM disk groups.
+
+* The naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_CLONESID.
+* The naming convention for ASM disk groups is SC_HASHCODEofDISKGROUP_CLONESID.
++
+HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digits) that is unique for each ASM disk group.
