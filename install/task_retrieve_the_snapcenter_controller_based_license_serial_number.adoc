@@ -1,5 +1,5 @@
 ---
-permalink: install/task_retriev_the_snapcenter_controller_based_licenses.html
+permalink: install/task_retrieve_the_snapcenter_controller_based_license_serial_number.html
 sidebar: sidebar
 keywords: 
 summary: 'If you are using FAS or AFF storage, you can retrieve the SnapCenter controller-based license from the NetApp Support Site before you can install it using the ONTAP command line.'

@@ -277,7 +277,7 @@ entries:
       - title: Retrieve the controller serial number
         url: "/install/task_retrieve_the_controller_serial_number.html"
       - title: Retrieve SnapCenter controller-based license serial number
-        url: "/install/task_retriev_the_snapcenter_controller_based_licenses.html"
+        url: "/install/task_retrieve_the_snapcenter_controller_based_license_serial_number.html"
       - title: Add a SnapCenter Standard controller-based license
         url: "/install/task_add_a_snapcenter_controller_based_license.html"
       - title: Remove the trial license
@@ -290,7 +290,7 @@ entries:
       - title: Calculate capacity requirements for a SnapCenter capacity-based license
         url: "/install/task_calculate_capacity_requirements_for_a_snapcenter_capacity_based_license.html"
       - title: RetrieveSnapCenter capacity-based license serial number
-        url: "/install/task_retrieve_snapcenter_controller_based_license_serial_number.html"
+        url: "/install/task_retrieve_snapcenter_capacity_based_license_serial_number.html"
       - title: Generate a NetApp license file
         url: "/install/task_generate_a_netapp_license_file.html"
       - title: Add SnapCenter capacity-based licenses
