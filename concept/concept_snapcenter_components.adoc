@@ -1,0 +1,35 @@
+---
+permalink: concept/concept_snapcenter_components.html
+sidebar: sidebar
+keywords: architecture
+summary: 'SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should install only the plug-ins that are appropriate for the data you want to protect.'
+---
+= SnapCenter components
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should install only the plug-ins that are appropriate for the data you want to protect.
+
+* SnapCenter Server
+* SnapCenter Plug-ins Package for Windows, which includes the following plug-ins:
+ ** SnapCenter Plug-in for Microsoft SQL Server
+ ** SnapCenter Plug-in for Microsoft Windows
+ ** SnapCenter Plug-in for Microsoft Exchange Server
+ ** SnapCenter Plug-in for SAP HANA Database
+* SnapCenter Plug-ins Package for Linux, which includes the following plug-ins:
+ ** SnapCenter Plug-in for Oracle Database
+ ** SnapCenter Plug-in for SAP HANA Database
+ ** SnapCenter Plug-in for UNIX
++
+NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be installed independently. This plug-in is automatically installed when you install either SnapCenter Plug-in for Oracle Database or SnapCenter Plug-in for SAP HANA Database.
+* SnapCenter Plug-ins Package for AIX, which includes the following plug-ins:
+ ** SnapCenter Plug-in for Oracle Database
+ ** SnapCenter Plug-in for UNIX
++
+NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be installed independently. This plug-in is automatically installed when you install SnapCenter Plug-in for Oracle Database.
+* SnapCenter Custom Plug-ins
++
+Custom plug-ins are community-supported and can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store].
+
+SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.

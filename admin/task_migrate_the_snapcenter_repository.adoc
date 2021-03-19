@@ -1,0 +1,28 @@
+---
+permalink: admin/task_migrate_the_snapcenter_repository.html
+sidebar: sidebar
+keywords: 
+summary: 'You can migrate the SnapCenter Server database repository from the default location to another disk. You might migrate the repository when you want to relocate it to a disk with more space.'
+---
+= Migrate the SnapCenter repository
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can migrate the SnapCenter Server database repository from the default location to another disk. You might migrate the repository when you want to relocate it to a disk with more space.
+
+. Stop the MYSQL57 service in Windows.
+. Locate the MySQL data directory.
++
+You can usually find the data directory at C:\ProgramData\MySQL\MySQL Server 5.7\Data.
+
+. Copy the MySQL data directory to the new location, for example, E:\Data\nsm.
+. Right click on the new directory, and then select *Properties* > *Security* to add the Network Service local server account to the new directory, and then assign the account full control.
+. Rename the original database directory, for example, nsm_copy.
+. From a Windows command prompt, create a symbolic directory link by using the mklink command.
++
+`"mklink /d "C:\ProgramData\MySQL\MySQL Server 5.7\Data\nsm" "E:\Data\nsm" "`
+
+. Start the MYSQL57 service in Windows.
+. Verify that the database location change is successful by logging in to SnapCenter and checking repository entries, or by logging in to the MySQL utility and connecting to the new repository.
+. Delete the original, renamed, database repository directory (nsm_copy).

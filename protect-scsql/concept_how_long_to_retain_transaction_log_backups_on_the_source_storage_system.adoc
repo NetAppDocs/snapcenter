@@ -1,0 +1,16 @@
+---
+permalink: protect-scsql/concept_how_long_to_retain_transaction_log_backups_on_the_source_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter Plug-in for Microsoft SQL Server needs transaction log backups to perform up-to-the-minute restore operations, which restore your database to a time between two full backups.'
+---
+= How long to retain transaction log backups on the source storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter Plug-in for Microsoft SQL Server needs transaction log backups to perform up-to-the-minute restore operations, which restore your database to a time between two full backups.
+
+For example, if Plug-in for SQL Server took a full backup at 8:00 a.m. and another full backup at 5:00 p.m, it could use the latest transaction log backup to restore the database to any time between 8:00 a.m. and 5:00 p.m. If transaction logs are not available, Plug-in for SQL Server can perform point-in-time restore operations only, which restore a database to the time that Plug-in for SQL Server completed a full backup.
+
+Typically, you require up-to-the-minute restore operations for only a day or two. By default, SnapCenter retains a minimum of two days.

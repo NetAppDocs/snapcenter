@@ -1,0 +1,153 @@
+---
+permalink: install/task_creating_fc_connected_or_iscsi_connected_luns_or_disks.html
+sidebar: sidebar
+keywords: 
+summary: 'The Windows host sees the LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.'
+---
+= Creating FC-connected or iSCSI-connected LUNs or disks
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Windows host sees the LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.
+
+* You must have created a volume for the LUN on your storage system.
++
+The volume should hold LUNs only, and only LUNs created with SnapCenter.
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
++
+NOTE: You cannot create a LUN on a SnapCenter-created clone volume unless the clone has already been split.
+
+* You must have started the FC or iSCSI service on the storage system.
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide]
+
+* If you are using iSCSI, you must have established an iSCSI session with the storage system.
++
+xref:task_establish_an_iscsi_session.adoc[Starting an iSCSI session]
+
+* You cannot connect a LUN to more than one host unless the LUN is shared by hosts in a Windows Server failover cluster.
+* If a LUN is shared by hosts in a Windows Server failover cluster that uses CSV (Cluster Shared Volumes), you must create the disk on the host that owns the cluster group.
+* The SnapCenter Plug-ins Package for Windows must be installed only on the host on which you are creating the disk.
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Disks*.
+. Select the host from the *Host* drop-down list.
+. Click *New*.
++
+The Create Disk wizard opens.
+
+. On the LUN Name page, identify the LUN:
++
+|===
+| In this field...| Do this...
+a|
+Storage System
+a|
+Select the SVM for the LUN.
+a|
+LUN path
+a|
+Click *Browse* to select the full path of the folder containing the LUN.
+a|
+LUN name
+a|
+Enter the name of the LUN.
+a|
+Cluster size
+a|
+Select the LUN block allocation size for the cluster. Cluster size depends upon the operating system and applications.
+a|
+LUN label
+a|
+Optionally, enter descriptive text for the LUN.
+|===
+
+. On the Disk Type page, select the disk type:
++
+|===
+| Select...| If...
+a|
+Dedicated disk
+a|
+The LUN can be accessed by only one host. Ignore the *Resource Group* field.
+a|
+Shared disk
+a|
+The LUN is shared by hosts in a Windows Server failover cluster. Enter the name of the cluster resource group in the *Resource Group* field.    You need to create the disk on only one host in the failover cluster.
+a|
+Cluster Shared Volume (CSV)
+a|
+The LUN is shared by hosts in a Windows Server failover cluster that uses CSV. Enter the name of the cluster resource group in the *Resource Group* field.    Make sure that the host on which you are creating the disk is the owner of the cluster group.
++
+|===
+
+. On the Drive Properties page, specify the drive properties:
++
+|===
+| Property| Description
+a|
+Auto assign mount point
+a|
+SnapCenter automatically assigns a volume mount point based on the system drive. For example, if your system drive is C:, auto assign creates a volume mount point under your C: drive (C:\scmnpt\).     Auto assign is not supported for shared disks.
+a|
+Assign drive letter
+a|
+Mount the disk to the drive you select in the adjacent drop-down list.
+a|
+Use volume mount point
+a|
+Mount the disk to the drive path you specify in the adjacent field.    The root of the volume mount point must be owned by the host on which you are creating the disk.
+a|
+Do not assign drive letter or volume mount point
+a|
+Choose this option if you prefer to mount the disk manually in Windows.
+a|
+LUN size
+a|
+Specify the LUN size; 150 MB minimum. Select MB, GB, or TB in the adjoining drop-down list.
+a|
+Use thin provisioning for the volume hosting this LUN
+a|
+Thin provision the LUN. Thin provisioning allocates only as much storage space as is needed at one time, allowing the LUN to grow efficiently to the maximum available capacity.    Make sure there is enough space available on the volume to accommodate all the LUN storage you think you will need.
+a|
+Choose partition type
+a|
+Select GPT partition for a GUID Partition Table, or MBR partition for a Master Boot Record.    MBR partitions might cause misalignment issues in Windows Server failover clusters.
++
+NOTE: Unified extensible firmware interface (UEFI) partition disks are not supported.
++
+|===
+
+. On the Map LUN page, select the iSCSI or FC initiator on the host:
++
+|===
+| In this field...| Do this...
+a|
+Host
+a|
+Double-click the cluster group name to display a drop-down list that shows the hosts that belong to the cluster, and then select the host for the initiator.     This field is displayed only if the LUN is shared by hosts in a Windows Server failover cluster.
+a|
+Choose host initiator
+a|
+Select *Fibre Channel* or *iSCSI*, and then select the initiator on the host. You can select multiple FC initiators if you are using FC with multipath I/O (MPIO).
+|===
+
+. On the Group Type page, specify whether you want to map an existing igroup to the LUN, or create a new igroup:
++
+|===
+| Select...| If...
+a|
+Create new igroup for selected initiators
+a|
+You want to create a new igroup for the selected initiators.
+a|
+Choose an existing igroup or specify a new igroup for selected initiators
+a|
+You want to specify an existing igroup for the selected initiators, or create a new igroup with the name you specify. Type the igroup name in the *igroup name* field. Type the first few letters of the existing igroup name to autocomplete the field.
+|===
+
+. On the Summary page, review your selections and then click *Finish*.
++
+SnapCenter creates the LUN and connects it to the specified drive or drive path on the host.

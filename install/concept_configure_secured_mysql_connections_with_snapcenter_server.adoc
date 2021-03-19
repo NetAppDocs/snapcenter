@@ -1,0 +1,12 @@
+---
+permalink: install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
+sidebar: sidebar
+keywords: 
+summary: 'You can generate Secure Sockets Layer \(SSL\) certificates and key files if you want to secure the communication between SnapCenter Server and MySQL Server in standalone configurations or Network Load Balancing \(NLB\) configurations.'
+---
+= Configure secured MySQL connections with SnapCenter Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can generate Secure Sockets Layer (SSL) certificates and key files if you want to secure the communication between SnapCenter Server and MySQL Server in standalone configurations or Network Load Balancing (NLB) configurations.

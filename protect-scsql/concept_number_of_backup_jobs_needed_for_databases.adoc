@@ -1,0 +1,14 @@
+---
+permalink: protect-scsql/concept_number_of_backup_jobs_needed_for_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'Factors that determine the number of backup jobs that you need include the size of the database, the number of volumes used, the rate of change of the database, and your Service Level Agreement \(SLA\).'
+---
+= Number of backup jobs needed for databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Factors that determine the number of backup jobs that you need include the size of the database, the number of volumes used, the rate of change of the database, and your Service Level Agreement (SLA).
+
+For database backups, the number of backup jobs that you choose typically depends on the number of volumes on which you placed your databases. For example, if you placed a group of small databases on one volume and a large database on another volume, you might create one backup job for the small databases and one backup job for the large database.

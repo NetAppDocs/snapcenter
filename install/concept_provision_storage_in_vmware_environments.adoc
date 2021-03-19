@@ -1,0 +1,12 @@
+---
+permalink: install/concept_provision_storage_in_vmware_environments.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the SnapCenter Plug-in for Microsoft Windows in VMware environments to create and manage LUNs and manage Snapshot backup copies.'
+---
+= Provision storage in VMware environments
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the SnapCenter Plug-in for Microsoft Windows in VMware environments to create and manage LUNs and manage Snapshot backup copies.

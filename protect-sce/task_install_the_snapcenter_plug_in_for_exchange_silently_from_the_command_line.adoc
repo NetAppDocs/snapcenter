@@ -1,0 +1,70 @@
+---
+permalink: protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html
+sidebar: sidebar
+keywords: 
+summary: 'You should install Plug-in for Exchange from within the SnapCenter user interface. However, if you cannot for some reason, you can run the Plug-in for Exchange installation program unattended in silent mode from the Windows command line.'
+---
+= Install the SnapCenter Plug-in for Exchange silently from the command line
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should install Plug-in for Exchange from within the SnapCenter user interface. However, if you cannot for some reason, you can run the Plug-in for Exchange installation program unattended in silent mode from the Windows command line.
+
+* You must have backed up your Microsoft Exchange Server resources.
+* You must have installed the SnapCenter plug-in packages.
+* You must delete the earlier release of SnapCenter Plug-in for Microsoft SQL Server before installing.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Install_a_SnapCenter_Plug-In_manually_and_directly_from_thePlug-In_Host[How to Install a SnapCenter Plug-In manually and directly from thePlug-In Host]
+
+. Validate whether C:\temp folder exists on the plug-in host and the logged in user has full access to it.
+. Download the SnapCenter Plug-in for Microsoft Windows from C:\ProgramData\NetApp\SnapCenter\Package Repository.
++
+This path is accessible from the host where the SnapCenter Server is installed.
+
+. Copy the installation file to the host on which you want to install the plug-in.
+. From a Windows command prompt on the local host, navigate to the directory to which you saved the plug-in installation files.
+. Enter the following command to install replacing the variables with your data:
++
+`"snapcenter_windows_host_plugin.exe"/silent /debuglog"<Debug_Log_Path>" /log"<Log_Path>" BI_SNAPCENTER_PORT=<Num> SUITE_INSTALLDIR="<Install_Directory_Path>" BI_SERVICEACCOUNT=<domain\administrator> BI_SERVICEPWD=<password> ISFeatureInstall=HPPW,SCW,SCE`
++
+For example, `"C:\ProgramData\NetApp\SnapCenter\Package Repository\snapcenter_windows_host_plugin.exe"/silent /debuglog"C:\HPPW_SCSQL_Install.log" /log"C:\temp" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C:\Program Files\NetApp\SnapCenter" BI_SERVICEACCOUNT=domain\administrator BI_SERVICEPWD=password ISFeatureInstall=HPPW,SCW,SCE`
++
+NOTE: All the parameters passed during the installation of Plug-in for Exchange are case sensitive.
+
+ .. " /silent /debuglog"C:\Installdebug.log" /log"C:\temp" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C:\Program Files" BI_SERVICEACCOUNT=demo\administrator BI_SERVICEPWD=Netapp1! ISFeatureInstall=HPPW,SCW
+Enter the following values for the variables:
+
++
+|===
+| Variable| Value
+a|
+/debuglog"<Debug_Log_Path>
+a|
+Specify the name and location of the suite installer log file, as in the following example: Setup.exe /debuglog"C:\PathToLog\setupexe.log".
+a|
+BI_SNAPCENTER_PORT
+a|
+Specify the port on which SnapCenter communicates with SMCore.
+a|
+SUITE_INSTALLDIR
+a|
+Specify host plug-in package installation directory.
+a|
+BI_SERVICEACCOUNT
+a|
+Specify SnapCenter Plug-in for Microsoft Windows web service account.
+a|
+BI_SERVICEPWD
+a|
+Specify the password for SnapCenter Plug-in for Microsoft Windows web service account.
+a|
+ISFeatureInstall
+a|
+Specify the solution to be deployed by SnapCenter on remote host.
+|===
+
+. Monitor the Windows task scheduler, the main installation log file C:\Installdebug.log, and the additional installation files in C:\Temp.
+. Monitor the %temp% directory to check if the msiexe.exe installers are installing the software without errors.
++
+NOTE: The installation of Plug-in for Exchange registers the plug-in on the host and not on the SnapCenter Server. You can register the plug-in on theSnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the plug-in is automatically discovered.

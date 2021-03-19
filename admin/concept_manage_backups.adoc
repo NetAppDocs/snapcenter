@@ -1,0 +1,12 @@
+---
+permalink: admin/concept_manage_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can rename and delete backups. You can also delete multiple backups simultaneously.'
+---
+= Manage backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can rename and delete backups. You can also delete multiple backups simultaneously.

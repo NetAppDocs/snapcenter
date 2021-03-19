@@ -1,0 +1,12 @@
+---
+permalink: admin/concept_manage_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can detach policies from a resource or resource group, modify, delete, view, and copy.'
+---
+= Manage policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can detach policies from a resource or resource group, modify, delete, view, and copy.

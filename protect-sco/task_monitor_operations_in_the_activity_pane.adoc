@@ -1,0 +1,19 @@
+---
+permalink: protect-sco/task_monitor_operations_in_the_activity_pane.html
+sidebar: sidebar
+keywords: SnapCenter Server
+summary: 'The Activity pane displays the five most recent operations performed. The Activity pane also displays when the operation was initiated and the status of the operation.'
+---
+= Monitor operations in the Activity pane
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Activity pane displays the five most recent operations performed. The Activity pane also displays when the operation was initiated and the status of the operation.
+
+The Activity pane displays information regarding backup, restore, clone, and scheduled backup operations.
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. Click image:../media/activity_pane_icon.gif[] on the Activity pane to view the five most recent operations.
++
+When you click one of the operations, the operation details are listed in the Job Details page.

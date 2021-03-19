@@ -1,0 +1,20 @@
+---
+permalink: protect-sce/concept_requirements_for_restoring_an_exchange_database.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you restore a Exchange Server database from a SnapCenter Plug-in for Microsoft Exchange Server backup, you must ensure that several requirements are met.'
+---
+= Requirements for restoring an Exchange database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you restore a Exchange Server database from a SnapCenter Plug-in for Microsoft Exchange Server backup, you must ensure that several requirements are met.
+
+* The Exchange Server must be online and running before you can restore a database.
+* The databases must exist on the Exchange Server.
++
+NOTE: Restoring deleted databases is not supported.
+
+* SnapCenter schedules for the database must be suspended.
+* The SnapCenter Server and the SnapCenter Plug-in for Microsoft Exchange Server host must be connected to the primary and secondary storage that contains the backups you want to restore.

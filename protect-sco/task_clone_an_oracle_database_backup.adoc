@@ -1,0 +1,216 @@
+---
+permalink: protect-sco/task_clone_an_oracle_database_backup.html
+sidebar: sidebar
+keywords: Credentials,alternate host
+summary: 'You can use SnapCenter to clone an Oracle database using the backup of the database.'
+---
+= Clone an Oracle database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to clone an Oracle database using the backup of the database.
+
+The cloning operation creates a copy of the database data files, and creates new online redo log files and control files. The database can be optionally recovered to a specified time, based on the specified recovery options.
+
+NOTE: Cloning fails if you try to clone a backup that was created on a Linux host to an AIX host or vice-versa.
+
+SnapCenter creates a stand-alone database when cloned from an Oracle RAC database backup. SnapCenter supports creating clone from the backup of a Data Guard standby and Active Data Guard standby databases.
+
+During cloning, SnapCenter mounts the log backup for recovery operations. After recovery, the log backup is unmounted. All such clones are mounted under /var/opt/snapcenter/scu/clones/. If you are using ASM over NFS, you should add /var/opt/snapcenter/scu/clones/*/* to the existing path defined in the asm_diskstring parameter.
+
+While cloning a backup of an ASM database in a SAN environment, udev rules for the cloned host devices are created at /etc/udev/rules.d/999-scu-netapp.rules. These udev rules associated with the cloned host devices are deleted when you delete the clone.
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
+. Select the database either from the database details view or from the resource group details view.
++
+The database topology page is displayed.
+
+. From the Manage Copies view, select the backups either from Local copies (primary), Mirror copies (secondary), or Vault copies (secondary).
+. Select the Data backup from the table, and then click *image:../media/clone_icon.gif[clone icon]*.
+. On the Name page, perform one of the following actions:
++
+|===
+| If you want to...| Steps...
+a|
+*Clone a database (CDB or non CDB)*
+a|
+
+ .. Specify the SID of the clone.
++
+The clone SID is not available by default, and the maximum length of the SID is 8 characters.
++
+NOTE: You should ensure that no database with the same SID exists on the host where the clone will be created.
+
+a|
+*Clone a pluggable database (PDB)*
+a|
+
+ .. Select *PDB Clone*.
+ .. Specify the PDB that you want to clone.
+ .. Specify the name of cloned PDB.
+ For the detailed steps to clone a PDB, see xref:task_clone_a_pluggable_database.adoc[Clone a pluggable database].
+
++
+|===
+
+. On the Locations page, perform the following actions:
++
+|===
+| For this field...| Do this...
+a|
+Clone host
+a|
+By default, the source database host is populated.    If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
+a|
+Datafile locations
+a|
+By default, the datafile location is populated.    The SnapCenter default naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_CLONESID.
++
+The SnapCenter default naming convention for ASM disk groups is SC_HASHCODEofDISKGROUP_CLONESID. The HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digits) that is unique for each ASM disk group.
++
+NOTE: If you are customizing the ASM disk group name, ensure that the name length adheres to the maximum length supported by Oracle.
++
+If you want to specify a different path, you must enter the datafile mount points or ASM disk group names for clone database. When you customize the datafile path, you must also change the control file and redo log file ASM disk group names or file system either to the same name used for data files or to an existing ASM disk groups or file system.
+a|
+Control files
+a|
+By default, the control file path is populated.    The control files are placed in the same ASM disk group or file system as that of the data files. If you want to override the control file path, you can provide a different control file path.
++
+NOTE: The file system or the ASM disk group should exist on the host.
++
+By default, the number of control files will be same as that of the source database. You can modify the number of control files but a minimum of one control file is required to clone the database.
++
+You can customize the control file path to a different file system (existing) than that of the source database.
+a|
+Redo logs
+a|
+By default, the redo log file group, path, and their sizes are populated.    The redo logs are placed in the same ASM disk group or file system as that of the data files of the cloned database. If you want to override the redo log file path, you can customize the redo log file path to a different file system than that of the source database..
++
+NOTE: The new file system or the ASM disk group should exist on the host.
++
+By default, the number of redo log groups, redo log files, and their sizes will be same as that of the source database. You can modify the following parameters:
+
+ ** Number of redo log groups
++
+NOTE: A minimum of three redo log groups are required to clone the database.
+
+ ** Redo log files in each group and their path
++
+NOTE: A minimum of one redo log file is required in the redo log group to clone the database.
++
+You can customize the redo log file path to a different file system (existing) than that of the source database.
+
+ ** Sizes of the redo log file
+
++
+|===
+
+. On the Credentials page, perform the following actions:
++
+|===
+| For this field...| Do this...
+a|
+Credential name for sys user
+a|
+Select the Credential to be used for defining the sys user password of the clone database.     If SQLNET.AUTHENTICATION_SERVICES is set to NONE in sqlnet.ora file on the target host, you should not select *None* as the Credential in the SnapCenter GUI.
+a|
+ASM Instance Credential name
+a|
+Select *None* if OS authentication is enabled for connecting to the ASM instance on the clone host.     Otherwise, select the Oracle ASM credential configured with either "`sys`" user or an user having "`sysasm`" privilege applicable to the clone host.
++
+|===
+The Oracle home, user name, and group details are automatically populated from the source database. You can change the values based on the Oracle environment of the host where the clone will be created.
+
+. On the PreOps page, perform the following steps:
+ .. Enter the path and the arguments of the prescript that you want to run before the clone operation.
++
+You must store the prescript either in /var/opt/snapcenter/spl/scripts or in any folder inside this path. By default, the /var/opt/snapcenter/spl/scripts path is populated. If you have placed the script in any folder inside this path, you need to provide the complete path up to the folder where the script is placed.
+
+ .. In the Database Parameter settings section, modify the values of prepopulated database parameters that are used to initialize the database.
++
+You can add additional parameters by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
++
+If you are using Oracle Standard Edition and the database is running in Archive log mode or you want restore a database from archive redo log, add the parameters and specify the path.
+
+  *** LOG_ARCHIVE_DEST
+  *** LOG_ARCHIVE_DUPLEX_DEST
+*Note:* Fast recovery area (FRA) is not defined is the prepopulated database parameters. You can configure FRA by adding the related parameters.
+
++
+NOTE: The default value of log_archive_dest_1 is $ORACLE_HOME/clone_sid and the archive logs of the cloned database will be created in this location. If you have deleted the log_archive_dest_1 parameter, the archive log location is determined by Oracle. You can define a new location for archive log by editing log_archive_dest_1 but ensure that the file system or disk group should be existing and made available on the host.
++
+[Cloning fails with the message "ORA-00308: cannot open archived log '/ORA_LOG/arch1__123_456789012.arc](https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log__'%2F%2FORA_LOG%2F%2Farch1_123_456789012.arc')
++
+Click *Reset* to get the default database parameter settings.
+. On the PostOps page, *Recover database* and *Until Cancel* are selected by default to perform recovery of the cloned database.
++
+SnapCenter performs recovery by mounting the latest log backup that have the unbroken sequence of archive logs after the data backup that was selected for cloning. The log and data backup should be on primary storage to perform the clone on primary storage and log and data backup should be on secondary storage to perform the clone on secondary storage.
++
+The *Recover database* and *Until Cancel* options are not selected if SnapCenter fails to find the appropriate log backups. You can provide the external archive log location if log backup is not available in *Specify external archive log locations*. You can specify multiple log locations.
++
+NOTE: If you want to clone a source database that is configured to support flash recovery area (FRA) and Oracle Managed Files (OMF), the log destination for recovery must also adhere to OMF directory structure.
++
+The PostOps page is not displayed if the source database is a Data Guard standby or an Active Data Guard standby database. For Data Guard standby or an Active Data Guard standby database, SnapCenter does not provide an option to select the type of recovery in the SnapCenter GUI but the database is recovered using Until Cancel recovery type without applying any logs.
++
+|===
+| Field name| Description
+a|
+Until Cancel
+a|
+SnapCenter performs recovery by mounting the latest log backup having the unbroken sequence of archive logs after that data backup that was selected for cloning.    The cloned database is recovered till the missing or corrupt log file.
+a|
+Date and time
+a|
+SnapCenter recovers the database up to a specified date and time. The accepted format is mm/dd/yyyy hh:mm:ss.    *Note:* The time can be specified in 24 hour format.
+a|
+Until SCN (System Change Number)
+a|
+SnapCenter recovers the database up to a specified system change number (SCN).
+a|
+Specify external archive log locations
+a|
+Specify the external archive log location.
+a|
+Create new DBID
+a|
+By default *Create new DBID* check box is selected to generate a unique number (DBID) for the cloned database differentiating it from the source database.    Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
+a|
+Enter sql entries to apply when clone is created
+a|
+Add the sql entries that you want to apply when the clone is created.
+a|
+Enter scripts to run after clone operation
+a|
+Specify the path and the arguments of the postscript that you want to run after the clone operation.    You should store the postscript either in /var/opt/snapcenter/spl/scripts or in any folder inside this path. By default, the /var/opt/snapcenter/spl/scripts path is populated. If you have placed the script in any folder inside this path, you need to provide the complete path up to the folder where the script is placed.
++
+|===
+
+. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.
++
+NOTE: While performing recovery as part of clone create operation, even if recovery fails, the clone is created with a warning. You can perform manual recovery on this clone to bring the clone database to consistent state.
+
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+After cloning the database you can refresh the resources page to list the cloned database as one of the resource available for backup. The cloned database can be protected like any other database using the standard backup workflow or can be included in a resource group (either newly created or existing). The cloned database can be further cloned (clone of clones).
+
+After cloning, you should never rename the cloned database.
+
+NOTE: If you have not performed recovery while cloning, the backing up of the cloned database might fail due to improper recovery and you might have to perform manual recovery. The log backup can also fail if default location which was populated for archive logs is on a non-NetApp storage or if the storage system is not configured with SnapCenter.
+
+In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disk groups on which the cloned database resided.
+
+Locking or renaming of devices will not affect the clone deletion operation.
+
+*Related information*
+
+xref:task_view_oracle_databse_backups_and_clones_in_the_topology_page.adoc[View Oracle database backups and clones in the Topology page]
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_recover_a_cloned_database[Failed to recover a cloned database]

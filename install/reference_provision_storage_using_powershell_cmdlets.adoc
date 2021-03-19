@@ -1,0 +1,18 @@
+---
+permalink: install/reference_provision_storage_using_powershell_cmdlets.html
+sidebar: sidebar
+keywords: 
+summary: 'If you do not want to use the SnapCenter GUI to perform host provisioning and space reclamation jobs, you can use the PowerShell cmdlets that are provided by SnapCenter Plug-in for Microsoft Windows. You can use cmdlets directly or add them to scripts.'
+---
+= Provision storage using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you do not want to use the SnapCenter GUI to perform host provisioning and space reclamation jobs, you can use the PowerShell cmdlets that are provided by SnapCenter Plug-in for Microsoft Windows. You can use cmdlets directly or add them to scripts.
+
+If you are running the cmdlets on a remote plug-in host, you must run the SnapCenterOpen-SMConnection cmdlet to open a connection to the SnapCenter Server.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

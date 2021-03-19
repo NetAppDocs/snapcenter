@@ -1,0 +1,14 @@
+---
+permalink: protect-scc/task_install_snapcenter_custom_plug_in.html
+sidebar: sidebar
+keywords: installing
+summary: 'You should install and set up SnapCenter Custom Plug-ins if you want to protect custom plug-in resources.'
+---
+= Install SnapCenter Custom Plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should install and set up SnapCenter Custom Plug-ins if you want to protect custom plug-in resources.
+
+image::../media/scc_install_configure_workflow.gif[]

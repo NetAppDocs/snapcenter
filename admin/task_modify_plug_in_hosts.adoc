@@ -1,0 +1,40 @@
+---
+permalink: admin/task_modify_plug_in_hosts.html
+sidebar: sidebar
+keywords: SnapCenter,plug-in port
+summary: 'After installing a plug-in, you can modify the plug-in hosts details if required. You can modify credentials, installation path, plug-ins, log directory details for SnapCenter Plug-in for Microsoft SQL Server and the plug-in port.'
+---
+= Modify plug-in hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing a plug-in, you can modify the plug-in hosts details if required. You can modify credentials, installation path, plug-ins, log directory details for SnapCenter Plug-in for Microsoft SQL Server and the plug-in port.
+
+Ensure that the plug-in version is the same as that of the SnapCenter Server version.
+
+You can modify a plug-in port only after the plug-in is installed. If you are 2.x or earlier versions of SnapCenter Server and SnapCenter plug-ins, you must upgrade both SnapCenter Server and SnapCenter plug-ins to be able to modify the plug-in port. You cannot modify the plug-in port while upgrade operations are in progress.
+
+While modifying a plug-in port, you must be aware of the following port rollback scenarios:
+
+* In a standalone setup, if SnapCenter fails to change the port of one of the components, the operation fails and the old port is retained for all of the components.
++
+If the port was changed for all of the components but one of the components fails to start with the new port, then the old port is retained for all of the components. For example, if you want to change the port for two plug-ins on the stand-alone host and SnapCenter fails to apply the new port to one of the plug-ins, the operation fails (with an appropriate error message) and the old port is retained for both the plug-ins.
+
+* In a clustered setup, if SnapCenter fails to change the port of the plug-in that is installed on one of the nodes, the operation fails and the old port is retained for all of the nodes.
++
+For example, if the plug-in is installed on four nodes in a clustered setup, and if the port is not changed for one of the nodes, the old port is retained for all of the nodes.
+
+When plug-ins are installed with group Managed Service Account (gMSA), you can modify in the More Options windows. When plug-ins are installed without gMSA, you can specify the gMSA account to use it as the plug-in service account.
+
+. In the left navigation pane, click *Hosts*.
+. Verify that *Managed Hosts* is selected at the top.
+. Select the host for which you want to modify and modify any one field.
++
+Only one field can be modified at a time.
+
+. Click *Submit*.
+
+The host is validated and added to SnapCenter Server.
+
+The configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.

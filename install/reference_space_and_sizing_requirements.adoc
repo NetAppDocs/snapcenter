@@ -1,0 +1,54 @@
+---
+permalink: install/reference_space_and_sizing_requirements.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Before you install the SnapCenter Server, you should be familiar with the space and sizing requirements. You should also apply the available system and security updates.'
+---
+= Space and sizing requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you install the SnapCenter Server, you should be familiar with the space and sizing requirements. You should also apply the available system and security updates.
+
+|===
+| Item| Requirements
+a|
+Operating Systems
+a|
+Microsoft WindowsOnly English, German, Japanese, and simplified Chinese version of the operating systems are supported.
+
+For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
+
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+
+a|
+Minimum CPU count
+a|
+4 cores
+a|
+Minimum RAM
+a|
+8 GB**Note:** The MySQL Server buffer pool uses 20 percent of the total RAM.
+
+a|
+Minimum hard drive space for the SnapCenter Server software and logs
+a|
+4 GB
+a|
+Minimum hard drive space for the SnapCenter repository
+a|
+6 GB
+a|
+Required software packages
+a|
+
+* Microsoft .NET Framework 4.5.2 or later
+* Windows Management Framework (WMF) 4.0 or later
+* PowerShell 4.0 or later
+
+For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
+
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+
+|===

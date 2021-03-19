@@ -1,0 +1,27 @@
+---
+permalink: protect-sco/reference_types_of_restore_operations_supported_for_oracle_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter enables you to perform different types of restore operations for Oracle databases.'
+---
+= Types of restore operations supported for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter enables you to perform different types of restore operations for Oracle databases.
+
+Before restoring the database, backups are validated to identify whether any files are missing when compared to the actual database files.
+
+== Full restore
+
+* Restores only the datafiles
+* Restores only the control files
+* Restores the datafiles and control files
+* Restores datafiles, control files, and redo log files in Data Guard standby and Active Data Guard standby databases
+
+== Partial restore
+
+* Restores only the selected tablespaces
+* Restores only the selected pluggable databases (PDBs)
+* Restores only the selected tablespaces of a PDB

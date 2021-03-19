@@ -1,0 +1,18 @@
+---
+permalink: protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recover operations successfully.'
+---
+= Define a restore and recovery strategy for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must define a strategy before you restore and recover your database so that you can perform restore and recover operations successfully.
+
+. Determine the backups that can be used for restore and recovery operations.
+. Know the limitations that are related to the restore and recovery operations.
+. Determine the restore methods that are supported.
+. Decide the type of restore and recovery operations that you want to perform.
+. Determine the source and destination for the restore operation.

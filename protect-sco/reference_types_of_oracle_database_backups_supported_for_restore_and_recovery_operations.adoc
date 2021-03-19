@@ -1,0 +1,24 @@
+---
+permalink: protect-sco/reference_types_of_oracle_database_backups_supported_for_restore_and_recovery_operations.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter supports restore and recovery of different types of Oracle database backups.'
+---
+= Types of Oracle database backups supported for restore and recovery operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports restore and recovery of different types of Oracle database backups.
+
+* Online data backup
+* Offline shutdown data backup
+* Offline mount data backup
+* Full backup
+* Offline (mount or shutdown) backups of Data Guard standby databases
+* Data-only online backups of Active Data Guard standby databases
++
+NOTE: You cannot perform recovery of Active Data Guard standby databases.
+
+* Online data backups, online full backups, offline mount backups, and offline shutdown backups in a Real Application Clusters (RAC) configuration
+* Online data backups, online full backups, offline mount backups, and offline shutdown backups in an Automatic Storage Management (ASM) configuration

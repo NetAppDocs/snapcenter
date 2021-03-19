@@ -1,0 +1,73 @@
+---
+permalink: concept/reference_role_based_access_control_permissions_and_roles.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapCenter role-based access control \(RBAC\) enables you to create roles and add permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.'
+---
+= Role-based access control permissions and roles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter role-based access control (RBAC) enables you to create roles and add permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.
+
+== SnapCenter roles
+
+SnapCenter ships with the following predefined roles. You can either assign users and groups to these roles or create new roles.
+
+When you assign a role to a user, only jobs that are relevant to that user are visible in the Jobs page unless you assigned the SnapCenter Admin role.
+
+* App Backup and Clone Admin
+* Backup and Clone Viewer
+* Infrastructure Admin
+* SnapCenterAdmin
+
+== SnapCenter Plug-in for VMware vSphere roles
+
+For managing VM-consistent data protection of VMs, VMDKs, and datastores, the following roles are created in vCenter by the SnapCenter Plug-in for VMware vSphere:
+
+* SCV Administrator
+* SCV View
+* SCV Backup
+* SCV Restore
+* SCV Guest File Restore
+
+The SnapCenter Plug-in for VMware vSphere documentation has more information.
+
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+
+|===
+a|
+*Best Practice:* NetApp recommends that you create one ONTAP role for SnapCenter Plug-in for VMware vSphere operations and assign it all the required privileges.
+
+|===
+
+== SnapCenter permissions
+
+SnapCenter provides the following permissions:
+
+* Resource Group
+* Policy
+* Backup
+* Host
+* Storage Connection
+* Clone
+* Provision (only for Microsoft SQL database)
+* Dashboard
+* Reports
+* Restore
+ ** Full Volume Restore (only for Custom Plug-ins)
+* Resource
++
+Plug-in privileges are required from the administrator for non-administrators to perform resource discovery operation.
+
+* Plug-in Install\Uninstall
++
+NOTE: When you enable Plug-in Installation permissions, you must also modify the Host permission to enable reads and updates.
+
+* Migration
+* Mount (only for Oracle database)
+* Unmount (only for Oracle database)
+* Job Monitor
++
+Job Monitor permission enables members of different roles to see the operations on all the objects to which they are assigned.

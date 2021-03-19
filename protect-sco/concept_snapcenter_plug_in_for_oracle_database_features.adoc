@@ -1,0 +1,56 @@
+---
+permalink: protect-sco/concept_snapcenter_plug_in_for_oracle_database_features.html
+sidebar: sidebar
+keywords: 
+summary: 'The Plug-in for Oracle Database integrates with the Oracle database on the Linux or AIX host and with NetApp technologies on the storage system.'
+---
+= SnapCenter Plug-in for Oracle Database features
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Plug-in for Oracle Database integrates with the Oracle database on the Linux or AIX host and with NetApp technologies on the storage system.
+
+* *Unified graphical user interface*
++
+The SnapCenter interface provides standardization and consistency across plug-ins and environments. The SnapCenter interface enables you to complete consistent backup, restore, recovery, and clone operations across plug-ins, use centralized reporting, use at-a-glance dashboard views, set up role-based access control (RBAC), and monitor jobs across all plug-ins.
+
+* *Automated central administration*
++
+You can schedule backup and clone operations, configure policy-based backup retention, and perform restore operations. You can also proactively monitor your environment by configuring SnapCenter to send email alerts.
+
+* *Nondisruptive NetApp Snapshot copy technology*
++
+SnapCenter uses NetApp Snapshot copy technology with the Plug-in for Oracle Database and Plug-in for UNIX to back up databases. Snapshot copies consume minimal storage space.
+
+The Plug-in for Oracle Database also offers the following benefits:
+
+* Support for backup, restore, clone, mount, unmount, and verification workflows
+* Automatically discover Oracle databases configured on the host
+* Support for cataloging and uncataloging using Oracle Recovery Manager (RMAN)
+* RBAC-supported security and centralized role delegation
++
+You can also set the credentials so that the authorized SnapCenter users have application-level permissions.
+
+* Creation of space-efficient and point-in-time copies of production databases for testing or data extraction by using NetApp FlexClone technology
++
+A FlexClone license is required on the storage system where you want create the clone.
+
+* Support for consistency group (CG) feature of ONTAP as part of creating backups in SAN and ASM environments
+* Nondisruptive and automated backup verification
+* Capability to run multiple backups simultaneously across multiple database hosts
++
+In a single operation, Snapshot copies are consolidated when databases in a single host share the same volume.
+
+* Support for physical and virtualized infrastructures
+* Support for NFS, iSCSI, Fibre Channel (FC), RDM, VMDK over NFS and VMFS, and ASM over NFS, SAN, RDM, and VMDK
+* Support for the Selective LUN Map (SLM) feature of ONTAP
++
+Enabled by default, the SLM feature periodically discovers the LUNs that do not have optimized paths and fixes them. You can configure SLM by modifying the parameters in the scu.properties file located at /var/opt/snapcenter/scu/etc.
+
+ ** You can disable this by setting the value of ENABLE_LUNPATH_MONITORING to false.
+ ** You can specify the frequency in which the LUN paths will be fixed automatically by assigning the value (in hours) to LUNPATH_MONITORING_INTERVAL.
+For information about SLM, see the ONTAP administration information.
+
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide]

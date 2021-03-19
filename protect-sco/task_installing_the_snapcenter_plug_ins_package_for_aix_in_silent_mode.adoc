@@ -1,0 +1,27 @@
+---
+permalink: protect-sco/task_installing_the_snapcenter_plug_ins_package_for_aix_in_silent_mode.html
+sidebar: sidebar
+keywords: 
+summary: 'You can install the SnapCenter Plug-ins Package for AIX in silent mode by using the command-line interface \(CLI\).'
+---
+= Installing the SnapCenter Plug-ins Package for AIX in silent mode
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install the SnapCenter Plug-ins Package for AIX in silent mode by using the command-line interface (CLI).
+
+* You should review the prerequisites for installing the plug-ins package.
+* You should ensure that the DISPLAY environment variable is not set.
++
+If the DISPLAY environment variable is set, you should run unset DISPLAY, and then try to manually install the plug-in.
+
+. Download the SnapCenter Plug-ins Package for AIX from the SnapCenter Server installation location.
++
+The default installation path is C:\ProgramData\NetApp\SnapCenter\Package Repository. This path is accessible from the host where the SnapCenter Server is installed.
+
+. From the command prompt, navigate to the directory where you downloaded the installation file.
+. Run `./snapcenter_aix_host_plugin.bsx-i silent-DPORT=8145-DSERVER_IP=SnapCenter_Server_FQDN-DSERVER_HTTPS_PORT=SnapCenter_Server_Port-DUSER_INSTALL_DIR==/opt/custom_path-DINSTALL_LOG_NAME=SnapCenter_AIX_Host_Plug-in_Install_MANUAL.log-DCHOSEN_FEATURE_LIST=CUSTOMDSPL_USER=install_user`
+. Edit the spl.properties file located at /var/opt/snapcenter/spl/etc/ to add SPL_ENABLED_PLUGINS=SCO,SCU, and then restart the SnapCenter Plug-in Loader service.
+
+The installation of the plug-ins package registers the plug-ins on the host and not on the SnapCenter Server. You should register the plug-ins on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the installed plug-ins are automatically discovered.

@@ -1,0 +1,24 @@
+---
+permalink: install/concept_snapcenter_standard_controller_based_licenses.html
+sidebar: sidebar
+keywords: 
+summary: 'A SnapCenter Standard controller-based license is required if you are using FAS or AFF storage controllers.'
+---
+= SnapCenter Standard controller-based licenses
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A SnapCenter Standard controller-based license is required if you are using FAS or AFF storage controllers.
+
+The controller-based license has the following characteristics:
+
+* SnapCenter Standard entitlement included with purchase of Premium or Flash Bundle (not with the base pack)
+* Unlimited storage usage
+* Enabled by adding it directly to the FAS or AFF storage controller by using either the ONTAP System Manager or the storage cluster command line
++
+NOTE: You do not enter any license information in the SnapCenter GUI for the SnapCenter controller-based licenses.
+
+* Is locked to the controller's serial number
+
+NOTE: If you already have a SnapManagerSuite license on your controller, SnapCenter Standard controller-based license entitlement is provided automatically. The names SnapManagerSuite license and SnapCenter Standard controller-based license are used interchangeably, but they refer to the same license.

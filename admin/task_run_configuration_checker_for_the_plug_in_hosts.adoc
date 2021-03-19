@@ -1,0 +1,28 @@
+---
+permalink: admin/task_run_configuration_checker_for_the_plug_in_hosts.html
+sidebar: sidebar
+keywords: 
+summary: 'The Configuration Checker operation is triggered when a plug-in host is added to SnapCenter Server and provides alerts. After resolving the issues, you can either perform an on-demand configuration check, or you can schedule recurring configuration checks of the host from the Host Details page.'
+---
+= Run Configuration Checker on the plug-in hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Configuration Checker operation is triggered when a plug-in host is added to SnapCenter Server and provides alerts. After resolving the issues, you can either perform an on-demand configuration check, or you can schedule recurring configuration checks of the host from the Host Details page.
+
+. In the left navigation pane, click *Hosts*.
+. Select the host whose configuration you want to check.
++
+If you want to perform an on-demand configuration check, or schedule a configuration check for multiple hosts simultaneously, select multiple hosts, and then click the image:../media/more_icon.gif[] icon.
+
+. In the Host Details page, click either *See All* or the alert to see the alert details.
+. Click the *Configuration Checker* link.
++
+NOTE: The *Configuration Checker* link is not available for AIX hosts.
+
+. In the Set Configuration Checker page, select when to check the configuration:
+ ** If you want to check the configuration immediately, select *Run now*.
+ ** If you want to schedule the configuration check, select *Configure schedule*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+. In the left navigation pane, click *Alerts*, and then select an alert to see the details.

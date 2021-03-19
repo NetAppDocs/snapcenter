@@ -1,0 +1,39 @@
+---
+permalink: protect-scw/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Data Protection Guide
+:icons: font
+:imagesdir: ../media/
+
+* xref:concept_snapcenter_plug_in_for_microsoft_windows_overview.adoc[SnapCenter Plug-in for Microsoft Windows overview]
+ ** xref:reference_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_windows.adoc[What you can do with the SnapCenter Plug-in for Microsoft Windows]
+ ** xref:concept_snapcenter_plug_in_for_windows_features.adoc[SnapCenter Plug-in for Windows features]
+ ** xref:concept_how_snapcenter_backs_up_windows_file_systems.adoc[How SnapCenter backs up Windows file systems]
+ ** xref:reference_minimum_ontap_privileges_required_for_windows_plug_in.adoc[Minimum ONTAP privileges required for Windows plug-in]
+ ** xref:task_define_a_backup_strategy_for_windows_file_systems.adoc[Define a backup strategy for Windows file systems]
+  *** xref:concept_backup_schedules_for_windows_file_systems.adoc[Backup schedules for Windows file systems]
+  *** xref:concept_number_of_backup_jobs_needed_for_windows_file_systems.adoc[Number of backups needed for Windows file systems]
+  *** xref:concept_backup_naming_convention_for_windows_file_systems.adoc[Backup naming convention for Windows file systems]
+ ** xref:reference_sources_and_destinations_of_clones_for_windows_file_systems.adoc[Sources and destinations of clones for Windows file systems]
+* xref:concept_install_snapcenter_plug_in_for_microsoft_windows.adoc[Install SnapCenter Plug-in for Microsoft Windows]
+ ** xref:reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.adoc[Installation requirements for SnapCenter Plug-in for Microsoft Windows]
+  *** xref:task_set_up_your_credentials_for_the_plug_in_for_windows.adoc[Set up your credentials for the Plug-in for Windows]
+ ** xref:task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.adoc[Add hosts and install SnapCenter Plug-in for Microsoft Windows]
+  *** xref:task_install_on_multiple_remote_hosts_using_powershell_cmdlets.adoc[Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts using PowerShell cmdlets]
+  *** xref:task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.adoc[Install the SnapCenter Plug-in for Microsoft Windows silently from the command line]
+* xref:reference_back_up_windows_file_systems.adoc[Back up Windows file systems]
+ ** xref:task_determine_resource_availability_for_windows_file_systems.adoc[Determine resource availability for Windows file systems]
+ ** xref:task_create_backup_policies_for_windows_file_systems.adoc[Create backup policies for Windows file systems]
+ ** xref:task_create_resource_groups_for_windows_file_systems.adoc[Create resource groups for Windows file systems]
+ ** xref:task_back_up_a_single_resource_on_demand_for_windows_file_systems.adoc[Back up a single resource on demand for Windows file systems]
+ ** xref:task_back_up_resource_groups_for_windows_file_systems.adoc[Back up resource groups for Windows file systems]
+ ** xref:task_view_related_backups_and_clones_in_the_topology_page.adoc[View related backups and clones in the Topology page]
+* xref:task_restore_windows_file_system_backups.adoc[Restore Windows file system backups]
+* xref:task_clone_from_a_windows_file_system_backup.adoc[Clone from a Windows file system backup]
+* xref:reference_copyright_and_trademark.adoc[Copyright, trademark, and machine translation]
+ ** xref:reference_copyright.adoc[Copyright]
+ ** xref:reference_trademark.adoc[Trademark]
+ ** xref:generic_machine_translation_disclaimer.adoc[Machine translation]

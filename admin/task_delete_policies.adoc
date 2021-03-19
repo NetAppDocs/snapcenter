@@ -1,0 +1,19 @@
+---
+permalink: admin/task_delete_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'If you no longer require policies, you might want to delete them.'
+---
+= Delete policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you no longer require policies, you might want to delete them.
+
+You must have detached the policy from resource groups if the policy is associated with any resource group.
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. Select the policy, and then click *Delete*.
+. Click *Yes*.

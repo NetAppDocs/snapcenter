@@ -1,0 +1,26 @@
+---
+permalink: admin/task_detach_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can detach policies from a resource or resource group any time that you no longer want those policies to govern data protection for the resources. You must detach a policy before you can delete it or before you modify the schedule type.'
+---
+= Detach policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can detach policies from a resource or resource group any time that you no longer want those policies to govern data protection for the resources. You must detach a policy before you can delete it or before you modify the schedule type.
+
+IMPORTANT: You cannot detach a policy from a resource or resource group if it is the only policy attached.
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Resource Group* from the *View* list.
+. Select the resource group, and then click *Modify Resource Group*.
+. In the Policies page of the Modify Resource Group wizard, from the drop-down list, clear the check mark next to the policies you want to detach.
++
+NOTE: You cannot detach the last remaining policy from an individual resource because every resource must have at least one policy attached. Therefore, if you want to delete or modify the only policy attached to a resource, you must perform the following:
+
+ .. Attach a second placeholder policy.
+ .. Detach the original policy from the resource.
+
+. Make any additional modifications to the resource group in the rest of the wizard, and then click *Finish*.

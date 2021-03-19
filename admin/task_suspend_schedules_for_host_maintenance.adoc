@@ -1,0 +1,29 @@
+---
+permalink: admin/task_suspend_schedules_for_host_maintenance.html
+sidebar: sidebar
+keywords: 
+summary: 'When you want to prevent the host from running any SnapCenter scheduled jobs, you can place your host in maintenance mode. You must do this before you upgrade the plug-ins. You might want to do this if you are performing maintenance tasks on hosts.'
+---
+= Suspend schedules for host maintenance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you want to prevent the host from running any SnapCenter scheduled jobs, you can place your host in maintenance mode. You must do this before you upgrade the plug-ins. You might want to do this if you are performing maintenance tasks on hosts.
+
+You cannot suspend the schedules on a host that is down because SnapCenter cannot communicate with that host.
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. In the Managed Hosts page, select the host that you want to suspend.
+. Click the image:../media/more_icon.gif[] icon, and then click *Suspend Schedule* to place the host for this plug-in in maintenance mode.
++
+You can suspend the schedule of multiple hosts simultaneously.
++
+NOTE: You do not have to stop the plug-in service first. The plug-in service can be in a running or stopped state.
++
+After you suspend the schedules on the host, the Managed Hosts page shows "`Suspended`" in the Overall status field for the host.
+
+After you complete host maintenance, bring the host out of maintenance mode by clicking *Activate Schedule*.
+
+You can activate the schedule of multiple hosts simultaneously.

@@ -1,0 +1,12 @@
+---
+permalink: protect-hana/concept_number_of_backup_jobs_needed_for_sap_hana_databases.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement \(SLA\).'
+---
+= Number of backup jobs needed for SAP HANA databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement (SLA).

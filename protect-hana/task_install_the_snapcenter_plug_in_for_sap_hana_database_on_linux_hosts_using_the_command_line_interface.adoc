@@ -1,0 +1,37 @@
+---
+permalink: protect-hana/task_install_the_snapcenter_plug_in_for_sap_hana_database_on_linux_hosts_using_the_command_line_interface.html
+sidebar: sidebar
+keywords: 
+summary: 'You should install the SnapCenter Plug-in for SAP HANA Database by using the SnapCenter user interface \(UI\). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for SAP HANA Database either in console mode or in silent mode by using the command-line interface \(CLI\).'
+---
+= Install the SnapCenter Plug-in for SAP HANA Database on Linux hosts by using the command-line interface
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should install the SnapCenter Plug-in for SAP HANA Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for SAP HANA Database either in console mode or in silent mode by using the command-line interface (CLI).
+
+. Copy the SnapCenter Plug-ins Package for Linux installation file (snapcenter_linux_host_plugin.bin) from C:\ProgramData\NetApp\SnapCenter\Package Repository to the host where you want to install the Plug-in for SAP HANA Database.
++
+You can access this path from the host where the SnapCenter Server is installed.
+
+. From the command prompt, navigate to the directory where you copied the installation file.
+. Install the plug-in: `path_to_installation_bin_file/snapcenter_linux_host_plugin.bin -i silent -DPORT=port_number_for_host -DSERVER_IP=server_name_or_ip_address -DSERVER_HTTPS_PORT=port_number_for_server`
+ ** -DPORT specifies the SMCore HTTPS communication port.
+ ** -DSERVER_IP specifies the SnapCenter Server IP address.
+ ** -DSERVER_HTTPS_PORT specifies the SnapCenter Server HTTPS port.
+ ** -DUSER_INSTALL_DIR specifies the directory where you want to install the SnapCenter Plug-ins Package for Linux.
+ ** DINSTALL_LOG_NAME specifies the name of the log file.
+
++
+----
+tmp/sc-plugin-installer/snapcenter_linux_host_plugin.bin -i silent  -DPORT=8145 -DSERVER_IP=scserver.domain.com -DSERVER_HTTPS_PORT=8146 -DUSER_INSTALL_DIR=/opt -DINSTALL_LOG_NAME=SnapCenter_Linux_Host_Plugin_Install_2.log -DCHOSEN_FEATURE_LIST=CUSTOM
+----
+. Edit the /<installation directory>/NetApp/snapcenter/scc/etc/SC_SMS_Services.properties file, and then add the PLUGINS_ENABLED = hana:3.0 parameter.
+. Add the host to the SnapCenter Server using the Add-Smhost cmdlet and the required parameters.
++
+NOTE: You can add a host only from the command-line interface.
++
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running helpcommand_name. Alternatively, you can also refer to the _Command Reference Guide_.
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]

@@ -1,0 +1,663 @@
+---
+permalink: concept/reference_pre_defined_snapcenter_roles_and_permissions.html
+sidebar: sidebar
+keywords: RBAC
+summary: 'SnapCenter ships with pre-defined roles, each with a set of permissions already enabled. When setting up and administering role-based access control \(RBAC\), you can either use these pre-defined roles or create new ones.'
+---
+= Pre-defined SnapCenter roles and permissions
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter ships with pre-defined roles, each with a set of permissions already enabled. When setting up and administering role-based access control (RBAC), you can either use these pre-defined roles or create new ones.
+
+SnapCenter includes the following pre-defined roles:
+
+* SnapCenter Admin role
+* Backup and Clone Viewer role
+* App Backup and Clone Admin role
+* Infrastructure Admin role
+
+When you add a user to a role, you must assign either the StorageConnection permission to enable storage virtual machine (SVM) communication, or assign an SVM to the user to enable permission to use the SVM. The Storage Connection permission enables users to create SVM connections.
+
+For example, a user with the SnapCenter Admin role can create SVM connections and assign them to a user with the App Backup and Clone Admin role, which by default does not have permission to create or edit SVM connections. Without an SVM connection, users cannot complete any backup, clone, or restore operations.
+
+== SnapCenter Admin role
+
+The SnapCenter Admin role has all permissions enabled. You cannot modify the permissions for this role. You can add users and groups to the role or remove them.
+
+== App Backup and Clone Admin role
+
+The App Backup and Clone Admin role has the permissions required to perform administrative actions for application backups and clone-related tasks. This role does not have permissions for host management, provisioning, storage connection management, or remote installation.
+
+|===
+| Permissions| Enabled| Create| Read| Update| Delete
+a|
+Resource Group
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Policy
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Backup
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Host
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Storage Connection
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Clone
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Provision
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Dashboard
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Reports
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Restore
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Resource
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Plug-in Install/Uninstall
+a|
+No
+a|
+Not applicable
+a|
+ 
+a|
+Not applicable
+a|
+Not applicable
+a|
+Migration
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Mount
+a|
+Yes
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Unmount
+a|
+Yes
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Full Volume Restore
+a|
+No
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Job Monitor
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+|===
+
+== Backup and Clone Viewer role
+
+The Backup and Clone Viewer role has read-only view of all permissions. This role also has permissions enabled for discovery, reporting, and access to the Dashboard.
+
+|===
+| Permissions| Enabled| Create| Read| Update| Delete
+a|
+Resource Group
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Policy
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Backup
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Host
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Storage Connection
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Clone
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Provision
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Dashboard
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Reports
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Restore
+a|
+No
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Resource
+a|
+No
+a|
+No
+a|
+Yes
+a|
+Yes
+a|
+No
+a|
+Plug-in Install/Uninstall
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Migration
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Mount
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Unmount
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Full Volume Restore
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Job Monitor
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+|===
+
+== Infrastructure Admin role
+
+The Infrastructure Admin role has permissions enabled for host management, storage management, provisioning, resource groups, remote installation reports, and access to the Dashboard.
+
+|===
+| Permissions| Enabled| Create| Read| Update| Delete
+a|
+Resource Group
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Policy
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Backup
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Host
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Storage Connection
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Clone
+a|
+Not applicable
+a|
+No
+a|
+Yes
+a|
+No
+a|
+No
+a|
+Provision
+a|
+Not applicable
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Dashboard
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Reports
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Restore
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Resource
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Plug-in Install/Uninstall
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Migration
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Mount
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Unmount
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Full Volume Restore
+a|
+No
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Job Monitor
+a|
+Yes
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+|===

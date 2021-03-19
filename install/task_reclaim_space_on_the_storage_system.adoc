@@ -1,0 +1,30 @@
+---
+permalink: install/task_reclaim_space_on_the_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'Although NTFS tracks the available space on a LUN when files are deleted or modified, it does not report the new information to the storage system. You can run the space reclamation PowerShell cmdlet on the Plug-in for Windows host to ensure that newly freed blocks are marked as available in storage.'
+---
+= Reclaim space on the storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Although NTFS tracks the available space on a LUN when files are deleted or modified, it does not report the new information to the storage system. You can run the space reclamation PowerShell cmdlet on the Plug-in for Windows host to ensure that newly freed blocks are marked as available in storage.
+
+If you are running the cmdlet on a remote plug-in host, you must have run the SnapCenterOpen-SMConnection cmdlet to open a connection to the SnapCenter Server.
+
+* You must ensure that the space reclamation process has completed before performing a restore operation.
+* If the LUN is shared by hosts in a Windows Server failover cluster, you must perform space reclamation on the host that owns the cluster group.
+* For optimum storage performance, you should perform space reclamation as often as possible.
++
+You should ensure that the entire NTFS file system has been scanned.
+
+* Space reclamation is time-consuming and CPU-intensive, so it is usually best to run the operation when storage system and Windows host usage is low.
+* Space reclamation reclaims nearly all available space, but not 100 percent.
+* You should not run disk defragmentation at the same time as you are performing space reclamation.
++
+Doing so can slow the reclamation process.
+
+. From the application server PowerShell command prompt, enter the following command: `Invoke-SdHostVolumeSpaceReclaim -Path drive_path`
++
+drive_path is the drive path mapped to the LUN.

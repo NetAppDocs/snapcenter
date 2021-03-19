@@ -1,0 +1,14 @@
+---
+permalink: protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html
+sidebar: sidebar
+keywords: installing
+summary: 'You should install and set up the SnapCenter Plug-in for Microsoft SQL Server if you want to protect SQL Server databases.'
+---
+= Install SnapCenter Plug-in for Microsoft SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should install and set up the SnapCenter Plug-in for Microsoft SQL Server if you want to protect SQL Server databases.
+
+image::../media/scsql_install_configure_workflow.gif[]

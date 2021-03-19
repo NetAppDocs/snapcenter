@@ -1,0 +1,16 @@
+---
+permalink: install/concept_configure_lun_storage.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use SnapCenter to configure an FC-connected or iSCSI-connected LUN. You can also use SnapCenter to connect an existing LUN to a Windows host.'
+---
+= Configure LUN storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to configure an FC-connected or iSCSI-connected LUN. You can also use SnapCenter to connect an existing LUN to a Windows host.
+
+LUNs are the basic unit of storage in a SAN configuration. The Windows host sees LUNs on your system as virtual disks. For more information, see the information on ONTAP 9 SAN configuration.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanconf/home.html[ONTAP 9 SAN Configuration Guide]

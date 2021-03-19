@@ -1,0 +1,74 @@
+---
+permalink: protect-hana/task_clone_sap_hana_database_backups_using_powershell_cmdlets.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
+---
+= Clone SAP HANA database backups using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The clone workflow includes planning, performing the clone operation, and monitoring the operation.
+
+You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
++
+----
+Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+----
+
+. Retrieve the backups to perform the clone operation by using the Get-SmBackup cmdlet.
++
+This example shows that two backups are available for cloning:
++
+----
+ C:\PS> Get-SmBackup
+
+        BackupId                      BackupName                    BackupTime                    BackupType
+        --------                      ----------                    ----------                    ----------
+         1                     Payroll Dataset_vise-f6_08... 8/4/2015 11:02:32 AM          Full Backup
+         2                     Payroll Dataset_vise-f6_08... 8/4/2015 11:23:17 AM
+----
+
+. Initiate a clone operation from an existing backup and specify the NFS export IP addresses on which the cloned volumes are exported.
++
+This example shows that the backup to be cloned has an NFSExportIPs address of 10.232.206.169:
++
+----
+New-SmClone -AppPluginCode hana -BackupName scsccore1_sccore_test_com_hana_H73_scsccore1_06-07-2017_02.54.29.3817 -Resources @{"Host"="scsccore1.sccore.test.com";"Uid"="H73"}  -CloneToInstance shivscc4.sccore.test.com -Suffix '_c12' -mountcommand 'mount 10.232.206.169:%hana73data_Clone /hana83data' -preclonecreatecommands '/home/scripts/scpre_clone.sh' -postclonecreatecommands '/home/scripts/scpost_clone.sh'
+----
++
+NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.
+
+. Verify that the backups were cloned successfully by using the Get-SmCloneReport cmdlet to view the clone job details.
++
+You can view details such as clone ID, start date and time, end date and time.
++
+----
+PS C:\> Get-SmCloneReport -JobId 186
+
+    SmCloneId           : 1
+    SmJobId             : 186
+    StartDateTime       : 8/3/2015 2:43:02 PM
+    EndDateTime         : 8/3/2015 2:44:08 PM
+    Duration            : 00:01:06.6760000
+    Status              : Completed
+    ProtectionGroupName : Draper
+    SmProtectionGroupId : 4
+    PolicyName          : OnDemand_Clone
+    SmPolicyId          : 4
+    BackupPolicyName    : OnDemand_Full_Log
+    SmBackupPolicyId    : 1
+    CloneHostName       : SCSPR0054212005.mycompany.com
+    CloneHostId         : 4
+    CloneName           : Draper__clone__08-03-2015_14.43.53
+    SourceResources     : {Don, Betty, Bobby, Sally}
+    ClonedResources     : {Don_DRAPER, Betty_DRAPER, Bobby_DRAPER, Sally_DRAPER}
+    SmJobError          :
+----

@@ -1,0 +1,30 @@
+---
+permalink: protect-hana/task_clone_sap_hana_resource_backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
+---
+= Clone SAP HANA resource backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The clone workflow includes performing the clone operation and monitoring the operation.
+
+You might clone resource backups for the following reasons:
+
+* To test functionality that has to be implemented using the current resource structure and content during application development cycles
+* For data extraction and manipulation tools when populating data warehouses
+* To recover data that was mistakenly deleted or changed
+
+The following workflow shows the sequence in which you must perform the clone operation:
+
+image::../media/clone_workflow.gif[Clone workflow]
+
+You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain detailed information about PowerShell cmdlets.
+
+*Related information*
+
+xref:task_clone_sap_hana_database_backups_using_powershell_cmdlets.adoc[Clone SAP HANA database backups using PowerShell cmdlets]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

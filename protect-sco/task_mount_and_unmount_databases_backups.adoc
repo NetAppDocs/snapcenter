@@ -1,0 +1,18 @@
+---
+permalink: protect-sco/task_mount_and_unmount_databases_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can mount a single or multiple data and log only backups if you want to access the files in the backup. You can either mount the backup to the same host where the backup was created or to a remote host having same type of Oracle and host configurations. If you have manually mounted the backups, you should manually unmount the backups after completing the operation. You can mount the database backup only once on a host for a specific database. While performing an operation, you can mount only a single backup.'
+---
+= Mount and unmount database backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can mount a single or multiple data and log only backups if you want to access the files in the backup. You can either mount the backup to the same host where the backup was created or to a remote host having same type of Oracle and host configurations. If you have manually mounted the backups, you should manually unmount the backups after completing the operation. You can mount the database backup only once on a host for a specific database. While performing an operation, you can mount only a single backup.
+
+*Related information*
+
+xref:task_mount_a_database_backup.adoc[Mount a database backup]
+
+xref:task_unmount_a_database_backup.adoc[Unmount a database backup]

@@ -1,0 +1,23 @@
+---
+permalink: admin/task_view_configuration_checker_alerts.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view a list of Configuration Checker alerts that are generated when the configuration checker operation is performed on SnapCenter Server or plug-in hosts. You can view the alert details and delete the alerts when you no longer need them.'
+---
+= View Configuration Checker alerts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view a list of Configuration Checker alerts that are generated when the configuration checker operation is performed on SnapCenter Server or plug-in hosts. You can view the alert details and delete the alerts when you no longer need them.
+
+* The SnapCenter Server alerts can be deleted only by the SnapCenter administrator.
+* You can use the Set-SmConfigSettingsPowerShell cmdlet to modify the number of days that the new and resolved alerts are retained in the system.
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+
+. In the left navigation pane, click *Alerts*.
+. In the Alerts page, filter the alerts according to their severity levels.
+. If you want to see the alert details, click the *Alert Name* link.
+. If you want to delete the alert, select the alert, and then click *Delete*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.

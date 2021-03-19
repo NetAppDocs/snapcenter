@@ -1,0 +1,21 @@
+---
+permalink: install/concept_create_and_manage_smb_shares.html
+sidebar: sidebar
+keywords: 
+summary: 'To configure an SMB3 share on a storage virtual machine \(SVM\), you can use either the SnapCenter user interface or PowerShell cmdlets.'
+---
+= Create and manage SMB shares
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To configure an SMB3 share on a storage virtual machine (SVM), you can use either the SnapCenter user interface or PowerShell cmdlets.
+
+|===
+a|
+*Best Practice:* Using the cmdlets is recommended because it enables you to take advantage of templates provided with SnapCenter to automate share configuration.
+
+|===
+The templates encapsulate best practices for volume and share configuration. You can find the templates in the Templates folder in the installation folder for the SnapCenter Plug-ins Package for Windows.
+
+TIP: If you feel comfortable doing so, you can create your own templates following the models provided. You should review the parameters in the cmdlet documentation before creating a custom template.

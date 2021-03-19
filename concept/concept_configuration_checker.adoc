@@ -1,0 +1,24 @@
+---
+permalink: concept/concept_configuration_checker.html
+sidebar: sidebar
+keywords: 
+summary: 'The Configuration Checker enables you to validate the configuration of SnapCenter Server and the plug-in hosts. The Configuration Checker identifies the issues in your environment and provides recommendations, corrective actions, and notifications to resolve the issues.'
+---
+= Configuration Checker
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Configuration Checker enables you to validate the configuration of SnapCenter Server and the plug-in hosts. The Configuration Checker identifies the issues in your environment and provides recommendations, corrective actions, and notifications to resolve the issues.
+
+After installing SnapCenter Server when you log in for the first time, a default configuration checker schedule is created with the following characteristics:
+
+* You cannot create additional schedules for SnapCenter Server.
+* You cannot delete the default schedule.
+* Only a SnapCenter administrator can modify or disable the default schedule.
+
+After you add a plug-in host to the SnapCenter Server, Configuration Checker is triggered and alerts are generated. You can create a Configuration Checker schedule for the plug-in host, which you can modify, delete, or disable.
+
+The _Installation and Setup Guide_ contains more information.
+
+http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
