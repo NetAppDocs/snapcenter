@@ -1,14 +1,16 @@
 ---
 permalink: concept/index.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords:snapcenter, architecture, snapcenter plug-ins, features, repository, configuration checker, resources, resource groups, policies, RBAC, REST APIs
+summary: Concepts related to SnapCenter, including architecture, features, and concepts related to the SnapCenter plug-ins.
 ---
 = Concepts
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 Describes the concepts related to SnapCenter, including architecture, features, and concepts related to the SnapCenter plug-ins.
+
 * xref:concept_snapcenter_overview.adoc[SnapCenter overview]
 * xref:concept_configuration_checker.adoc[Configuration Checker]
 * xref:reference_data_security.adoc[Data security]
