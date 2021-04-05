@@ -1,7 +1,7 @@
 ---
 permalink: concept/concept_snapcenter_role_based_access_control_rbac.html
 sidebar: sidebar
-keywords: 
+keywords: role-based access control, RBAC
 summary: 'SnapCenter RBAC enables you to delegate control of SnapCenter resources to different users or groups of users. You can create and modify roles, and add resource access to users at any time, but when you are setting up SnapCenter for the first time, you should at least add Active Directory users or group to roles, and then add resource access to those users or groups.'
 ---
 = SnapCenter role-based access control (RBAC)
@@ -11,4 +11,4 @@ summary: 'SnapCenter RBAC enables you to delegate control of SnapCenter resource
 [.lead]
 SnapCenter RBAC enables you to delegate control of SnapCenter resources to different users or groups of users. You can create and modify roles, and add resource access to users at any time, but when you are setting up SnapCenter for the first time, you should at least add Active Directory users or group to roles, and then add resource access to those users or groups.
 
-Note that you cannot use SnapCenter to create user or group accounts. You must create those in Active Directory in the operating system or database.
+NOTE: You cannot use SnapCenter to create user or group accounts. You should create user or group accounts in Active Directory of the operating system or database.

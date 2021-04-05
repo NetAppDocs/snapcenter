@@ -1,7 +1,7 @@
 ---
 permalink: concept/concept_prescripts_and_postscripts.html
 sidebar: sidebar
-keywords: 
+keywords: prescript, postscript, script path, script timeout, script types supported
 summary: 'You can use custom prescripts and postscripts as part of your data protection operations. These scripts enable automation either before your data protection job or after. For example, you might include a script that automatically notifies you of data protection job failures or warnings. Before you set up your prescripts and postscripts, you should understand some of the requirements for creating these scripts.'
 ---
 = Prescripts and postscripts

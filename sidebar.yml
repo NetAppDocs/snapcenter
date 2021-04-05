@@ -7,34 +7,23 @@ entries:
   entries:
   - title: SnapCenter overview
     url: "/concept/concept_snapcenter_overview.html"
-    entries:
-    - title: SnapCenter architecture
-      url: "/concept/reference_snapcenter_architecture.html"
-    - title: SnapCenter components
-      url: "/concept/concept_snapcenter_components.html"
-    - title: SnapCenter Server
-      url: "/concept/reference_snapcenter_server.html"
-    - title: SnapCenter plug-ins
-      url: "/concept/reference_snapcenter_plug_ins.html"
-    - title: SnapCenter repository
-      url: "/concept/concept_snapcenter_repository.html"
-  - title: Configuration Checker
-    url: "/concept/concept_configuration_checker.html"
-  - title: Data security
+  - title: Security features
     url: "/concept/reference_data_security.html"
-  - title: Resources, resource groups, and policies
-    url: "/concept/concept_resources_resource_groups_and_policies.html"
   - title: SnapCenter role-based access control (RBAC)
     url: "/concept/concept_snapcenter_role_based_access_control_rbac.html"
     entries:
-    - title: Types of role-based access control in SnapCenter
+    - title: Types of RBAC
       url: "/concept/concept_types_of_role_based_access_control_in_snapcenter.html"
-    - title: Role-based access control permissions and roles
+    - title: RBAC permissions and roles
       url: "/concept/reference_role_based_access_control_permissions_and_roles.html"
     - title: Pre-defined SnapCenter roles and permissions
       url: "/concept/reference_pre_defined_snapcenter_roles_and_permissions.html"
+  - title: Resources, resource groups, and policies
+    url: "/concept/concept_resources_resource_groups_and_policies.html"
   - title: Prescripts and postscripts
     url: "/concept/concept_prescripts_and_postscripts.html"
+  - title: Configuration Checker
+    url: "/concept/concept_configuration_checker.html"
   - title: SnapCenter REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: install

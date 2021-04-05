@@ -1,7 +1,7 @@
 ---
 permalink: concept/concept_resources_resource_groups_and_policies.html
 sidebar: sidebar
-keywords: 
+keywords: reource, resource group, policy
 summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.'
 ---
 = Resources, resource groups, and policies
@@ -15,7 +15,7 @@ Before you use SnapCenter, it is helpful to understand basic concepts related to
 +
 However, depending on your environment, resources might be database instances, Microsoft SQL Server availability groups, Oracle databases, Oracle RAC databases, Windows file systems, or a group of custom applications.
 
-* A SnapCenterresource group, is typically a collection of resources on a host or cluster. However, a resource group can contain a single resource.
+* A SnapCenter resource group, is typically a collection of resources on a host or cluster. However, a resource group can contain a single resource.
 +
 When you perform an operation on a resource group, you perform that operation on all the resources defined in the resource group according to the schedule you specify for the resource group.
 +

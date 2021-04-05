@@ -75,12 +75,6 @@ You can automate a remote push of SnapCenter plug-ins from the SnapCenter Server
 +
 Load balancing and High Availability for the SnapCenter Server is provided by an integration with Application Request Routing (ARR) and Microsoft Windows Network Load Balancing (NLB), with support for horizontal scaling.
 
-For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
-
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2872190[SnapCenter Plug-in for VMware vSphere Release Notes]
-
 == SnapCenter architecture
 
 The SnapCenter platform is based on a multitiered architecture that includes a centralized management server (SnapCenter Server) and a SnapCenter plug-in host.
@@ -195,7 +189,7 @@ Linux or Windows
 a|
 Custom Plug-ins
 a|
-https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store]
+https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]
 a|
 For file system backups, Plug-in for Windows
 a|
@@ -205,9 +199,7 @@ Linux or Windows
 |===
 *Note:* The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs), and it supports the SnapCenter application-specific plug-ins to protect application-consistent backup and restore operations for virtualized databases and file systems.
 
-For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
-
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For users using SnapCenter 4.3 or later, the https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation^] has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
 
 === SnapCenter Plug-in for Microsoft SQL Server features
 
@@ -255,11 +247,11 @@ For AIX systems, only SAN native devices are supported. The file systems and LVM
 * Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
 * Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
 
-MySQL, DB2, and MongoDB custom plug-in samples for SnapCenter Software can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store]. You can create your own custom plug-ins by referring to the developer's guide for creating custom plug-ins.
+MySQL, DB2, and MongoDB custom plug-in samples for SnapCenter Software can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]. You can also create your own custom plug-ins.
 
 NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
 
-NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
+NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp. SnapCenter can back up its own repository.
 
 == SnapCenter repository
 
@@ -277,8 +269,4 @@ The SnapCenter repository stores the following information and metadata:
 * Role, user, and permission details
 * Storage system connection information
 
-SnapCenter can back up its own repository by using the SnapCenter repository management features. The _Administration Guide_ or the _Windows Cmdlet Reference Guide_ contain the details.
-
-The NetAppInteroperability Matrix Tool (IMT) contains the latest information about the MySQL supported versions.
-
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+The http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT) contains the latest information about the MySQL supported versions.
