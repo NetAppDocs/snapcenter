@@ -2,7 +2,7 @@
 entries:
 - title: Home
   url: "/index.html"
-- title: concept
+- title: Concepts
   url: "/concept/index.html"
   entries:
   - title: SnapCenter overview
@@ -26,7 +26,7 @@ entries:
     url: "/concept/concept_configuration_checker.html"
   - title: SnapCenter REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
-- title: install
+- title: Install SnapCenter Server
   url: "/install/index.html"
   entries:
   - title: Prepare for installing the SnapCenter Server
@@ -199,7 +199,7 @@ entries:
       url: "/install/task_configure_secured_mysql_connections_for_network_load_balancing_nlb.html"
   - title: Features enabled on your Windows host during installation
     url: "/install/reference_features_enabled_on_your_windows_host_during_installation.html"
-- title: protect-scsql
+- title: Protect Microsoft SQL Server databases
   url: "/protect-scsql/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft SQL Server overview
@@ -352,7 +352,7 @@ entries:
       url: "/protect-scsql/task_perform_clone_lifecycle_management.html"
     - title: Split a clone
       url: "/protect-scsql/task_split_a_clone.html"
-- title: protect-scw
+- title: Protect Windows File systems
   url: "/protect-scw/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft Windows overview
@@ -413,7 +413,7 @@ entries:
     url: "/protect-scw/task_restore_windows_file_system_backups.html"
   - title: Clone from a Windows file system backup
     url: "/protect-scw/task_clone_from_a_windows_file_system_backup.html"
-- title: protect-sco
+- title: Protect Oracle databases
   url: "/protect-sco/index.html"
   entries:
   - title: SnapCenter Plug-in for Oracle Database overview
@@ -640,7 +640,7 @@ entries:
       url: "/protect-sco/task_refresh_a_clone.html"
     - title: Delete clone of a pluggable database
       url: "/protect-sco/task_delete_clone_of_a_pluggable_database.html"
-- title: protect-sce
+- title: Protect Microsoft Exchange Server databases
   url: "/protect-sce/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft Exchange Server overview
@@ -734,7 +734,7 @@ entries:
       url: "/protect-sce/task_reseed_a_passive_exchange_node_replica.html"
     - title: Reseed a replica using PowerShell cmdlets for Exchange database
       url: "/protect-sce/task_reseed_a_replica_using_powershell_cmdlets_for_exchange_database.html"
-- title: protect-hana
+- title: Protect SAP HANA databases
   url: "/protect-hana/index.html"
   entries:
   - title: SnapCenter Plug-in for SAP HANA Database overview
@@ -851,7 +851,7 @@ entries:
       url: "/protect-hana/task_clone_sap_hana_database_backups_using_powershell_cmdlets.html"
     - title: Delete or split SAP HANA database clones after upgrading SnapCenter
       url: "/protect-hana/task_delete_or_split_sap_hana_database_clones_after_upgrading_snapcenter.html"
-- title: protect-scc
+- title: Protect Custom applications
   url: "/protect-scc/index.html"
   entries:
   - title: SnapCenter Custom Plug-ins overview
@@ -925,7 +925,7 @@ entries:
       url: "/protect-scc/task_clone_from_a_backup.html"
     - title: Clone backups using PowerShell cmdlets
       url: "/protect-scc/task_clone_backups_using_powershell_cmdlets.html"
-- title: admin
+- title: Manage SnapCenter Server and plug-ins
   url: "/admin/index.html"
   entries:
   - title: Overview of dashboard

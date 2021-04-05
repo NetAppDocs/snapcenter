@@ -24,7 +24,8 @@ https://<OVA_IP_address_or_host_name>:8144/api/swagger-ui.html#
 |===
 
 For more information on SnapCenter REST APIs, see:
-* link:reference_plug_ins_that_support_rest_apis.html[Plug-ins supporting REST APIs^]
-* link:task_access_rest_apis_using_the_swagger_api_web_page.html[Access REST APIs using swagger^]
+
+* link:reference_plug_ins_that_support_rest_apis.html[Plug-ins supporting REST APIs]
+* link:task_access_rest_apis_using_the_swagger_api_web_page.html[Access REST APIs using swagger]
 
 For information on SnapCenter Plug-in for VMware vSphere REST APIs, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere REST APIs^]
