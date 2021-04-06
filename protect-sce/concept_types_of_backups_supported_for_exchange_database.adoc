@@ -1,8 +1,8 @@
 ---
 permalink: protect-sce/concept_types_of_backups_supported_for_exchange_database.html
 sidebar: sidebar
-keywords: 
-summary: 'Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups \(DAG\). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
+keywords:
+summary: 'Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups (DAG). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
 ---
 = Types of backups supported for Exchange database
 :icons: font
@@ -13,6 +13,7 @@ Backing up Exchange mailboxes using SnapCenter requires that you choose the reso
 
 |===
 | Backup type| Description
+
 a|
 Full and log backup
 a|

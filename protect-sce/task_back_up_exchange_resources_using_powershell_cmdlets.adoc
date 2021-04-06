@@ -15,9 +15,7 @@ Backing up an Exchange Server database includes establishing a connection with t
 * You must have added the storage system connection and created a credential.
 * You must have added hosts and discovered resources.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
 
 NOTE: Plug-in for Exchange does not support clone operations; therefore, the CloneType parameter for the Add-SmPolicy cmdlet is not supported for Plug-in for Exchange
 

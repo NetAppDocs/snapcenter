@@ -9,16 +9,12 @@ summary: 'The SnapCenter Plug-in for Microsoft Exchange Server is a host-side co
 :imagesdir: ../media/
 
 [.lead]
-The SnapCenter Plug-in for Microsoft Exchange Server is a host-side component of the NetAppSnapCenter Software that enables application-aware data protection management of Exchange databases. The Plug-in for Exchange automates the backup and restore of Exchange databases in your SnapCenter environment.
+The SnapCenter Plug-in for Microsoft Exchange Server is a host-side component of the NetApp SnapCenter Software that enables application-aware data protection management of Exchange databases. The Plug-in for Exchange automates the backup and restore of Exchange databases in your SnapCenter environment.
 
 When the Plug-in for Exchange is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume and with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance or archival purposes.
-
-The Data Protection Guide for your plug-in has information about data protection operations.
 
 The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.
 
 *Related information*
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
+link:concept/index.html[Concepts]

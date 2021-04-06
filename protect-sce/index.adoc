@@ -1,10 +1,10 @@
 ---
 permalink: protect-sce/index.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
-= Data Protection Guide
+= Data Protection for SnapCenter Plug-in for Microsoft Exchange Server
 :icons: font
 :imagesdir: ../media/
 

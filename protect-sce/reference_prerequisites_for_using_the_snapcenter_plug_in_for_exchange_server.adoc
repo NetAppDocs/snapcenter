@@ -28,6 +28,4 @@ NOTE: VMDKs are not supported.
 
 For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
 
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
-
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for VMware vSphere documentation^]
