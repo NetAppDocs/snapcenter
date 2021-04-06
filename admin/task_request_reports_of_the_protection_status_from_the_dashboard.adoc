@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_request_reports_of_the_protection_status_from_the_dashboard.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can request protection details for resources managed by specific plug-ins using the Dashboard.'
 ---
 = Request reports of the protection status from the dashboard
@@ -9,21 +9,22 @@ summary: 'You can request protection details for resources managed by specific p
 :imagesdir: ../media/
 
 [.lead]
-You can request protection details for resources managed by specific plug-ins using the Dashboard.
+You can request protection details for resources managed by specific plug-ins using the Dashboard. Only data backups are considered for data protection summary.
 
-Only data backups are considered for data protection summary.
-
+*Steps*
+.Steps
 . In the left navigation pane, click *Dashboard*.
 . Locate the Latest Protection Summary tile in the Dashboard and use the pull-down menu to select a plug-in.
 +
 The Dashboard displays a donut chart for resources backed up to Primary storage and, if applicable to the plug-in, a donut chart for resources backed up to secondary storage.
 +
-NOTE: Data protection reports are available only for specific plug-ins types. Specifying "`All Plug-ins`" is not supported.
+NOTE: Data protection reports are available only for specific plug-ins types. Specifying *All Plug-ins* is not supported.
 
 . Click the donut slice representing the status for which you want a report.
 +
-NOTE: Redirection to the Reports page for SnapMirror donut chart is not supported.
+When you click the donut chart, you are redirected from Dashboard page to the Reports, and then to the Plug-in page. The report displays only status for the plug-in you selected. You can review the report or download it to your local system.
 +
-NOTE: Redirection to the Reports page for File-based SAP HANA backup is not supported.
-
-When you click the donut chart, you are redirected from Dashboard page to the Reports, and then to the Plug-inpage. The report displays only status for the plug-in you selected. You can review the report or download it to your local system.
+NOTE:
++
+* Redirection to the Reports page for SnapMirror donut chart is not supported.
+* Redirection to the Reports page for File-based SAP HANA backup is not supported.
