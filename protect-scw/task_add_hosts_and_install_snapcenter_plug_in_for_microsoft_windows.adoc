@@ -11,13 +11,18 @@ summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Snap
 [.lead]
 You can use the SnapCenterAdd Host page to add Windows hosts. The SnapCenter Plug-in for Microsoft Windows is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
 
+*What you will need*
+
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The SnapCenter user should be added to the "`Log on as a service`" role of the Windows Server.
 * You should ensure that the message queueing service is in running state.
-* If you are using group Managed Service Account (gMSA):
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+* You should configure gMSA with administrative privileges.
+
+link:task_configure_group_managed_service_account_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later]
+
+*About this task*
+
 * You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 * Windows plug-ins
  ** Microsoft Windows
@@ -100,11 +105,10 @@ Select this check box if you already installed the plug-ins manually and you do 
 a|
 Use group Managed Service Account (gMSA) to run the plug-in services
 a|
-Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.     *Note:*
+Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
-Provide the domain or service account name.
+Provide the gMSA name in the following format: domainName\accountName$.
+*Note:* If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
 
 +
 |===

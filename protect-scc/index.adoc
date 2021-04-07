@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/index.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Data Protection Guide
@@ -20,6 +20,7 @@ summary: ''
 * xref:task_install_snapcenter_custom_plug_in.adoc[Install SnapCenter Custom Plug-ins]
  ** xref:reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.adoc[Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins]
   *** xref:task_set_up_credentials_for_snapcenter_custom_plug_in.adoc[Set up credentials for SnapCenter Custom Plug-ins]
+  *** xref:task_configure_group_managed_service_account_on_windows_server_2012_or_later.adoc[Configure group Managed Service Account on Windows Server 2012 or later]
  ** xref:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.adoc[Add hosts and install plug-in packages on remote hosts]
   *** xref:task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.adoc[Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets]
 * xref:reference_prerequisites_for_using_snapcenter_custom_plug_ins.adoc[Prerequisites for using the SnapCenter Custom Plug-ins]

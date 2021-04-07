@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/index.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Data Protection Guide
@@ -21,6 +21,7 @@ summary: ''
  ** xref:reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.adoc[Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft Exchange Server]
   *** xref:reference_exchange_server_cluster_node_privileges_required.adoc[Exchange Server privileges required]
   *** xref:task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.adoc[Set up credentials for SnapCenter Plug-in for Windows]
+  *** xref:task_configure_group_managed_service_account_on_windows_server_2012_or_later.adoc[Configure group Managed Service Account on Windows Server 2012 or later]
  ** xref:task_add_hosts_and_install_plug_in_for_exchange.adoc[Add hosts and install Plug-in for Exchange]
   *** xref:task_install_plug_in_for_exchange_from_the_snapcenter_server_host_using_powershell_cmdlets.adoc[Install Plug-in for Exchange from the SnapCenter Server host using PowerShell cmdlets]
   *** xref:task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.adoc[Install the SnapCenter Plug-in for Exchange silently from the command line]

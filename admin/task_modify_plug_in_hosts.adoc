@@ -9,7 +9,7 @@ summary: 'After installing a plug-in, you can modify the plug-in hosts details i
 :imagesdir: ../media/
 
 [.lead]
-After installing a plug-in, you can modify the plug-in hosts details if required. You can modify credentials, installation path, plug-ins, log directory details for SnapCenter Plug-in for Microsoft SQL Server and the plug-in port.
+After installing a plug-in, you can modify the plug-in hosts details if required. You can modify credentials, installation path, plug-ins, log directory details for SnapCenter Plug-in for Microsoft SQL Server, group Managed Service Account (gMSA), and the plug-in port.
 
 Ensure that the plug-in version is the same as that of the SnapCenter Server version.
 
@@ -25,7 +25,7 @@ If the port was changed for all of the components but one of the components fail
 +
 For example, if the plug-in is installed on four nodes in a clustered setup, and if the port is not changed for one of the nodes, the old port is retained for all of the nodes.
 
-When plug-ins are installed with group Managed Service Account (gMSA), you can modify in the More Options windows. When plug-ins are installed without gMSA, you can specify the gMSA account to use it as the plug-in service account.
+When plug-ins are installed with gMSA, you can modify in the More Options windows. When plug-ins are installed without gMSA, you can specify the gMSA account to use it as the plug-in service account.
 
 . In the left navigation pane, click *Hosts*.
 . Verify that *Managed Hosts* is selected at the top.

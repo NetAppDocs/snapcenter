@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_back_up_sql_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
 ---
 = Back up SQL resources
@@ -10,6 +10,18 @@ summary: 'If a resource is not yet part of any resource group, you can back up t
 
 [.lead]
 If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
+
+*About this task*
+
+* For Windows credentials authentication, you must set up your credential before installing the plug-ins.
+
+* For SQL Server instance authentication, you must add the credential after installing the plug-ins.
+
+* For gMSA authentication, you must setup gMSA while registering the host with SnapCenter in the *Add Host* or *Modify Host* page to enable and use the gMSA.
+
+* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . On the Resources page, select *Database* ,or *Instance*, or *Availability Group* from the *View* drop-down list.
