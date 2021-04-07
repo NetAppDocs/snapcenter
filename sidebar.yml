@@ -429,8 +429,8 @@ entries:
       url: "/protect-sco/concept_snapcenter_plug_in_for_oracle_database_features.html"
     - title: Storage types supported by SnapCenter Plug-in for Oracle Database
       url: "/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html"
-    - title: Prepare storage systems for SnapMirror and SnapVault replication
-      url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication.html"
+    - title: Prepare storage systems for SnapMirror and SnapVault replication for plug-in for Oracle
+      url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_oracle.html"
     - title: Minimum ONTAP privileges required for Oracle plug-in
       url: "/protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html"
     - title: Define a backup strategy for Oracle databases
