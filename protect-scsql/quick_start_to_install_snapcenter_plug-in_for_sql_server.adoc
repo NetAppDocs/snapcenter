@@ -1,19 +1,19 @@
 ---
-permalink: SnapCenter_Software_4.5_Quick_Start_Guide_for_SnapCenter_Plug-in_for_Microsoft_SQL_Server.html
+permalink: protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html
 sidebar: sidebar
 keywords: credentials
 summary: Provides instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 ---
 = Installing SnapCenter Plug-in for SQL Server
 :icons:font
-:imagesdir:../media/
+:imagesdir: ../media/
 
 [.lead]
-SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. This Quick Start Guide is a condensed set of installation instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server. For more details, see the http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html [SnapCenter Installation and Setup Guide.^]
+SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. This Quick Start Guide is a condensed set of installation instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 
 == Preparing for installation
 
-.Domain and workgroup requirements
+=== Domain and workgroup requirements
 
 SnapCenter Server can be installed on systems that are either in a domain or in a workgroup.
 
@@ -21,7 +21,7 @@ If you are using an Active Directory domain, you should use a Domain user with l
 
 If you are using workgroups, you should use a local account that has local administrator rights.
 
-== Licensing requirements
+=== Licensing requirements
 
 The type of licenses you install depends on your environment.
 
@@ -43,43 +43,55 @@ Either SnapMirror or SnapVault license is required if replication is enabled in 
 | See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2874308 [SnapCenter Release Notes.^]
 | SnapCenter Standard licenses (optional)
 | Secondary destinations
-NOTE: It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary destinations, you cannot use SnapCenter to backup resources on the secondary destination after performing a failover operation. However, a FlexClone license is required on secondary destinations to perform clone and verification operations.
+*NOTE* It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary destinations, you cannot use SnapCenter to backup resources on the secondary destination after performing a failover operation. However, a FlexClone license is required on secondary destinations to perform clone and verification operations.
 |===
 
-== Additional requirements
+=== Additional requirements
 
 |===
 |Storage and applications |Minimum requirements
+
 |ONTAP and application plug-in
 |See http://mysupport.netapp.com/matrix [Interoperability Matrix Tool (IMT)^]
 |===
 
 |===
 |Hosts |Minimum requirements
+
 |Operating System (64-bit)
-|See http://mysupport.netapp.com/matrix [Interoperability Matrix Tool (IMT)^]
+|See http://mysupport.netapp.com/matrix
+
 |CPU
-|*Server host: 4 cores
-*Plug-in host: 1 core
+|Server host: 4 cores
+
+Plug-in host: 1 core
 |RAM
-|*Server host: 8 GB
-*Plug-in host: 1 GB
+|Server host: 8 GB
+
+Plug-in host: 1 GB
 |Hard drive space
-|*Server host:
-  **4 GB for SnapCenter Server software and logs
-  **6 GB for SnapCenter repository
-*Each plug-in host: 2 GB for plug-in installation and logs, this is required only if plug-in is installed on a dedicated host.
+|Server host:
+
+4 GB for SnapCenter Server software and logs
+
+6 GB for SnapCenter repository
+
+Each plug-in host: 2 GB for plug-in installation and logs, this is required only if plug-in is installed on a dedicated host.
 |Third-party libraries
 |Required on SnapCenter Server host and plug-in host:
-* Microsoft .NET Framework 4.5.2 or later
-* Windows Management Framework (WMF) 4.0 or later
-* PowerShell 4.0 or later
+
+Microsoft .NET Framework 4.5.2 or later
+
+Windows Management Framework (WMF) 4.0 or later
+
+PowerShell 4.0 or later
 |Browsers
 |Chrome, Internet Explorer, and Microsoft Edge
 |===
 
 |===
 |Port type |Default port
+
 |SnapCenter port
 |8146 (HTTPS), bidirectional, customizable, as in the URL `https://server:8146`
 |SnapCenter SMCore communication port
@@ -100,9 +112,12 @@ The port is used for communication between the SnapCenter Server host, plug-in h
 
 |===
 |SnapCenter Plug-in for Microsoft SQL Server requirements
-|* You should have a user with local administrator privileges with local login permissions on the remote host. If you manage cluster nodes, you need a user with administrative privileges to all the nodes in the cluster.
-* You should have a user with sysadmin permissions on the SQL Server. The plug-in uses Microsoft VDI Framework, which requires sysadmin access.
-* If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see the http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html [SnapCenter Installation and Setup Guide.^]
+
+|You should have a user with local administrator privileges with local login permissions on the remote host. If you manage cluster nodes, you need a user with administrative privileges to all the nodes in the cluster.
+
+You should have a user with sysadmin permissions on the SQL Server. The plug-in uses Microsoft VDI Framework, which requires sysadmin access.
+
+If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see the http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html [SnapCenter Installation and Setup Guide.^]
 |===
 
 == Installing SnapCenter Server
@@ -170,13 +185,3 @@ The special character “%” is not supported in the custom path for installati
   .. Add all hosts in the cluster: Select this check box if you are using SQL in WSFC.
   .. Skip preinstall checks: Select this check box if you already installed the plug-ins manually or you do not want to validate whether the host meets the requirements for installing the plug-in.
 . Click *Submit*.
-
-== Where to find additional information
-
-* https://www.netapp.com/us/documentation/snapcenter-software.aspx [SnapCenter Resources^] page for accessing product documentation, technical reports, videos, and other resources.
-* http://docs.netapp.com/ocsc-44/index.jsp [SnapCenter Documentation Center^] for accessing product documentation.
-* http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-mssql/home.html [SnapCenter Data Protection Guide For Microsoft SQL Server^] for information on how to protect Microsoft SQL server databases.
-* https://www.netapp.com/us/media/tr-4714.pdf [Best Practices Guide for Microsoft SQL Server^] for the best practices on how to protect Microsoft SQL Server databases.
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html [Deployment for SnapCenter Plug-in for VMware vSphere^] for information on how to deploy the SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html [Data Protection for VMs, Datastores, and VMDKs^] for information on how to protect Microsoft SQL server databases that are on VMware environment.
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_quick_start_overview.html [Quick Start for SnapCenter Plug-in for VMware vSphere^] for a condensed set of instructions for deploying the SnapCenter Plug-in for VMware vSphere virtual appliance.

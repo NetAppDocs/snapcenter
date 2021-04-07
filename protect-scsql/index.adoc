@@ -28,7 +28,7 @@ summary: ''
  ** xref:task_define_a_clone_strategy_for_sql_server.adoc[Define a cloning strategy for SQL Server]
   *** xref:concept_limitations_related_to_cloning_of_oracle_databases.adoc[Limitations of clone operations]
   *** xref:reference_types_of_clone_operations.adoc[Types of clone operations]
-* xref:quick_start_guide_for_snapcenter_plug_in_for_SQL_server.adoc[Quick start to protect SQL Server databases]
+* xref:quick_start_to_install_snapcenter_plug-in_for_sql_server.adoc[Quick start to protect SQL Server databases]
 * xref:task_install_snapcenter_plug_in_for_microsoft_sql_server_database.adoc[Install SnapCenter Plug-in for Microsoft SQL Server]
  ** xref:reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.adoc[Prerequisites to adding hosts and installing SnapCenter Plug-in for Microsoft SQL Server]
   *** xref:reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.adoc[Host requirements to install SnapCenter Plug-ins Package for Windows]
