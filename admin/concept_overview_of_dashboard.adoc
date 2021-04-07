@@ -39,12 +39,13 @@ NOTE: If you are using a mirror-vault protection policy, the counters for the pr
 
 Protection status for individual plug-ins is available by selecting a plug-in from the drop-down menu. A donut chart shows the percentage of protected resources for the selected plug-in. Clicking a donut slice redirects you to the *Reports* > *Plug-in* page, which provides a detailed report of all primary and secondary storage activity for the specified plug-in.
 
-NOTE:
-* Reports about secondary storage apply to SnapVault only; SnapMirror reports are not supported.
-* SAP HANA provides protection status information for primary and secondary storage for Snapshot copies. Only primary storage protection status is available for file-based backups.
+NOTE: Reports about secondary storage apply to SnapVault only; SnapMirror reports are not supported.
+
+NOTE: SAP HANA provides protection status information for primary and secondary storage for Snapshot copies. Only primary storage protection status is available for file-based backups.
 
 |===
 | Protection status | Primary storage | Secondary storage
+
 a|
 Failed
 a|
@@ -81,6 +82,7 @@ Backup, restore, and clone job information is displayed in donut charts. Clickin
 
 |===
 | Job status | Description
+
 a|
 Failed
 a|
@@ -123,6 +125,7 @@ The Host configuration state is presented as red (critical), yellow (warning), a
 
 |===
 | Configuration status | Description
+
 a|
 Upgrade mandatory
 a|
@@ -185,6 +188,7 @@ NOTE: This display appears only if you are using SnapCenter Standard capacity-ba
 
 |===
 | License status | Description
+
 a|
 In use
 a|
