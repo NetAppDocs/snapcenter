@@ -109,7 +109,7 @@ NOTE: The Storage Virtual Machine (SVM) administrator has no access to AutoSuppo
 
 *For more information*
 
-* link:link:concept_manage_ems_data_collection.html[Manage EMS data collection^]
+* link:concept_manage_ems_data_collection.html[Manage EMS data collection^]
 
 * link:concept_manage_the_storage_system.html[Manage storage systems^]
 
