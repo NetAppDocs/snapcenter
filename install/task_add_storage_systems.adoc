@@ -27,18 +27,12 @@ SnapCenter does not support multiple storage systems with the same name on diffe
 * When you configure storage systems, you can also enable Event Management System (EMS) & AutoSupport features. The AutoSupport tool collects data about the health of your system and automatically sends the data to NetApp technical support, enabling them to troubleshoot your system.
 +
 If you enable these features, SnapCenter sends AutoSupport information to the storage system and EMS messages to the storage system syslog when a resource is protected, a restore operation finishes successfully, or an operation fails.
-+
-The administrative documentation contains details about managing EMS data collection.
-+
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
 
 * If you are planning to replicate Snapshot copies to a SnapMirror destination or SnapVault destination, you must set up storage system connections for the destination SVM or Cluster as well as the source SVM or Cluster.
 
 * SnapCenter 4.5 and later supports application databases on ONTAP large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter recommends only thick provisioned LUNs to avoid latency.
 
 NOTE: If you change the storage system password, scheduled jobs, on demand backup, and restore operations might fail. After you change the storage system password, you should remove and add the storage system.
-
-*Steps*
 
 .Steps
 . In the left navigation pane, click *Storage Systems*.
@@ -51,14 +45,16 @@ NOTE: If you change the storage system password, scheduled jobs, on demand backu
 a|
 Storage System
 a|
-Enter the storage system name or IP address.    *Note:* Storage system names, not including the domain name, must have 15 or fewer characters , and the names must be resolvable. To create storage system connections with names that have more than 15 characters, you can use the Add-SmStorageConnectionPowerShell cmdlet.
-+
+Enter the storage system name or IP address.
+
+NOTE: Storage system names, not including the domain name, must have 15 or fewer characters , and the names must be resolvable. To create storage system connections with names that have more than 15 characters, you can use the Add-SmStorageConnectionPowerShell cmdlet.
+
 NOTE: For storage systems with MetroCluster configuration (MCC), it is recommended to register both local and peer clusters for non-disruptive operations.
-+
+
 SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM that is supported by SnapCenter must have a unique name.
-+
+
 NOTE: After adding the storage connection to SnapCenter, you should not rename the SVM or the Cluster using ONTAP.
-+
+
 NOTE: If SVM is added with a short name or FQDN then it has to be resolvable from both the SnapCenter and the plug-in host.
 a|
 User name/Password
@@ -71,8 +67,9 @@ Enter the credentials that are used to access the storage system.
 a|
 Event Management System (EMS) & AutoSupport Settings
 a|
-If you want to send EMS messages to the storage system syslog or if you want to have AutoSupport messages sent to the storage system for applied protection, completed restore operations, or failed operations, select the appropriate checkbox.    When you select the *Send AutoSupport Notification for failed operations to storage system* checkbox, the**Log SnapCenter Server events to syslog** checkbox is also selected because EMS messaging is required to enable AutoSupport notifications.
-+
+If you want to send EMS messages to the storage system syslog or if you want to have AutoSupport messages sent to the storage system for applied protection, completed restore operations, or failed operations, select the appropriate checkbox.
+
+When you select the *Send AutoSupport Notification for failed operations to storage system* checkbox, the *Log SnapCenter Server events to syslog* checkbox is also selected because EMS messaging is required to enable AutoSupport notifications.
 |===
 
 . Click *More Options* if you want to modify the default values assigned to platform, protocol, port, and timeout.
@@ -83,7 +80,7 @@ If the SVM is the secondary storage system in a backup relationship, select the 
  .. In Protocol, select the protocol that was configured during SVM or Cluster setup, typically HTTPS.
  .. Enter the port that the storage system accepts.
 +
-The default port 443 typically works. See the connection and ports requirements information.
+The default port 443 typically works.
 
  .. Enter the time in seconds that should elapse before communication attempts are halted.
 +
@@ -106,16 +103,16 @@ If a new SVM is added to the ONTAP cluster using ONTAP GUI, click *Rediscover* t
 
 *After you finish*
 
-A cluster administrator must enable AutoSupport on each storage system node to send email notifications from all storage systems to which SnapCenter has access, by running the following command from the storage system command line:``autosupport trigger modify -node nodename -autosupport-message client.app.info enable -noteto enable``.
+A cluster administrator must enable AutoSupport on each storage system node to send email notifications from all storage systems to which SnapCenter has access, by running the following command from the storage system command line: ``autosupport trigger modify -node nodename -autosupport-message client.app.info enable -noteto enable``
 
 NOTE: The Storage Virtual Machine (SVM) administrator has no access to AutoSupport.
 
-For information on managing storage systems, see the _Administration Guide_.
+*For more information*
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+* link:link:concept_manage_ems_data_collection.html[Manage EMS data collection^]
 
-*Related information*
+* link:concept_manage_the_storage_system.html[Manage storage systems^]
 
-xref:reference_connection_and_port_requirements.adoc[Connection and port requirements]
+* link:reference_connection_and_port_requirements.html[Connection and port requirements^]
 
-xref:task_add_snapcenter_licenses.adoc[Add SnapCenter licenses]
+* link:task_add_snapcenter_licenses.html[Add SnapCenter licenses^]
