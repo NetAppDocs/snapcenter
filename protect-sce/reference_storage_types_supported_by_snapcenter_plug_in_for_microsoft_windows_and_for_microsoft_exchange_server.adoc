@@ -41,7 +41,9 @@ a|
 PowerShell cmdlets
 a|
 Physical compatibility only
-**Note:** VMDKs are not supported.
+
+NOTE: VMDKs are not supported.
+
 a|
 VMware VM
 a|
@@ -49,7 +51,8 @@ iSCSI LUNs connected directly to the guest system by the iSCSI initiator
 a|
 SnapCenter GUI or PowerShell cmdlets
 a|
-*Note:* VMDKs are not supported.
+
+NOTE: VMDKs are not supported.
 
 a|
 Hyper-V VM
@@ -67,6 +70,7 @@ iSCSI LUNs connected directly to the guest system by the iSCSI initiator
 a|
 SnapCenter GUI or PowerShell cmdlets
 a|
-*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+NOTE: Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
 
 |===

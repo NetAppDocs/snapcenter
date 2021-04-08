@@ -115,11 +115,11 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 a|
 Retain only a specific number of log backups
 a|
-Select *Number of full backups for which logs are retained*, and specify the number of full backups for which you want up-to-the-minute restorability.       Up-to-the-minute (UTM) works only for backups created using the log backup policy. For example, if UTM retention settings is configured to retain log backups of the last 5 full backups, then the log backups of the last 5 full backups are retained.
+Select *Number of full backups for which logs are retained*, and specify the number of full backups for which you want up-to-the-minute restorability. Up-to-the-minute (UTM) works only for backups created using the log backup policy. For example, if UTM retention settings is configured to retain log backups of the last 5 full backups, then the log backups of the last 5 full backups are retained.
+
+You can set UTM retention value as 0, if you do not want to perform up-to-the-minute restore. This will enable point-in-time restore operation.
 
 The log folders created as part of full and log backups are not automatically deleted as part of UTM. You cannot delete the log folders manually. These log folders are required to successfully perform the point-in-time restore operation. For example, if the retention setting of full or full and log backup is set for 1 month, the log backups created as part of these backups will not be deleted as per UTM. These log backups are deleted as part of full backup retention.
-
-You can set *Number of full backups for which logs are retained* value as 0, if you do not want perform up-to-the-minute restore. This will enable point-in-time restore operation.
 
 *Best Practice:* It's best that the setting must be equal to the setting for Total Snapshot copies (full backups) in the Full backup retention settings section. This ensures that log files are retained for each full backup.
 a|
