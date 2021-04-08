@@ -13,6 +13,7 @@ Describes the prerequisites for installing SnapCenter Server, steps to install t
 
 * xref:concept_prepare_for_installing_the_snapcenter_server.adoc[Prepare for installing the SnapCenter Server]
 * xref:task_install_the_snapcenter_server_using_the_install_wizard.adoc[Install the SnapCenter Server using the install wizard]
+* xref:concept_CA_certificate_overview.adoc[CA Certificate Overview]
 * xref:task_log_in_to_snapcenter.adoc[Log in to SnapCenter]
 * xref:task_register_untrusted_active_directory_domains.adoc[Register untrusted Active Directory domains]
 * xref:concept_configure_snapcenter_servers_for_high_availabiity_using_f5.adoc[Configure SnapCenter Servers for High Availability using F5]
