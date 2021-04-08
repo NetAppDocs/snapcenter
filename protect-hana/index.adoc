@@ -29,7 +29,7 @@ summary: ''
  ** xref:reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.adoc[Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database]
   *** xref:reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.adoc[Host requirements for installing the SnapCenter Plug-ins Package for Linux]
   *** xref:task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.adoc[Set up credentials for the SnapCenter Plug-in for SAP HANA Database]
-  *** xref:task_configure_gMSA_on_windows_server_2012_or_later_for_sap_hana.adoc[Configure group Managed Service Account on Windows Server 2012 or later]
+  *** xref:task_configure_gMSA_on_windows_server_2012_or_later_for_sap_hana.adoc[Configure group Managed Service Account on Windows Server 2012 or later for SAP HANA]
  ** xref:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.adoc[Add hosts and install plug-in packages on remote hosts]
   *** xref:task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_sap_hana.adoc[Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets]
   *** xref:concept_install_snapcenter_plug_in_for_sap_hana_database_independently_on_the_linux_host.adoc[Install SnapCenter Plug-in for SAP HANA Database independently on the Linux host]

@@ -22,7 +22,8 @@ http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing
 
 * You should configure gMSA with administrative privileges.
 
-link:task_configure_group_managed_service_account_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later]
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_sap_hana.html
+[Configure group Managed Service Account on Windows Server 2012 or later for SAP HANA]
 
 *About this task*
 

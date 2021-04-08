@@ -19,7 +19,7 @@ You can use the SnapCenterAdd Host page to add Windows hosts. The SnapCenter Plu
 * You should ensure that the message queueing service is in running state.
 * You should configure gMSA with administrative privileges.
 
-link:task_configure_group_managed_service_account_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later]
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_windows_file_system.html[Configure group Managed Service Account on Windows Server 2012 or later for Windows File System]
 
 *About this task*
 
