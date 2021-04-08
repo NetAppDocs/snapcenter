@@ -136,6 +136,7 @@ Each SnapCenter plug-in supports specific environments, databases, and applicati
 
 |===
 | Plug-in Name| Included in install package| Requires other plug-ins| Installed on host| Platform supported
+
 a|
 Plug-in for SQL Server
 a|
@@ -233,9 +234,14 @@ NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on 
 * Enables the Plug-in for Oracle Database to perform data protection operations on Oracle databases by handling the underlying host storage stack on Linux or AIX systems
 * Supports Network File System (NFS) and storage area network (SAN) protocols on a storage system that is running ONTAP
 +
-For AIX systems, only SAN native devices are supported. The file systems and LVM layouts built on SAN devices are not supported.
+For AIX systems, SAN native devices, filesystems and LVM layouts built on SAN devices are supported.
+// [SD]: Updated the above statement and included the below three bullets for BURT 1391312 in 4.5
 
 * For Linux systems, Oracle databases on VMDK and RDM LUNs is supported when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
+* Supports Mount Guard for AIX on LVM layout.
+* Supports Enhanced Journaled File System (JFS2) with inline logging on SAN filesystems and LVM layout.
++
+JFS2 is supported with external log device but not with GPFS or NFS filesystems.
 
 === SnapCenter Plug-in for SAP HANA Database features
 
