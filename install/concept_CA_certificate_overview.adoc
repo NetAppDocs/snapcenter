@@ -2,7 +2,7 @@
 permalink: install/concept_CA_certificate_overview.html
 sidebar: sidebar
 keywords: SnapCenter
-summary: 'SnapCenter Software can be used on multiple browsers.'
+summary: 'CA Certificate Overview.'
 ---
 = CA Certificate Overview
 

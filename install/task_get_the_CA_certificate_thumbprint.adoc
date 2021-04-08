@@ -5,6 +5,8 @@ keywords: SnapCenter
 summary: 'Get the CA certificate thumbprint.'
 ---
 = Get the CA certificate thumbprint
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
 A certificate thumbprint is a hexadecimal string that identifies a certificate. A thumbprint is calculated from the content of the certificate using a thumbprint algorithm.

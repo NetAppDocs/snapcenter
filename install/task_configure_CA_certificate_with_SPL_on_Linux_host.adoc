@@ -5,6 +5,8 @@ keywords: SnapCenter
 summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Linux host'
 ---
 = Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
 

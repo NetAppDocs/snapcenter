@@ -5,6 +5,8 @@ keywords: SnapCenter
 summary: 'You should configure the CA certificate with SnapCenter site on Windows host.'
 ---
 = Configure CA certificate with SnapCenter site
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
 You should configure the CA certificate with SnapCenter site on Windows host.
