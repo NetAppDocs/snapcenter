@@ -9,11 +9,11 @@ summary: 'You can use the Remove-SmBackup cmdlet to delete Exchange backups if y
 :imagesdir: ../media/
 
 [.lead]
-You can use the Remove-SmBackup cmdlet to delete Exchange backups if you no longer require them for other data protection operations.
+You can use the `Remove-SmBackup` cmdlet to delete Exchange backups if you no longer require them for other data protection operations.
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running `Get-Helpcommand_name`. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
 
@@ -23,7 +23,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Softwar
 Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
 ----
 
-. Delete one or more backup using the Remove-SmBackup cmdlet.
+. Delete one or more backup using the `Remove-SmBackup` cmdlet.
 +
 This example deletes two backups using their backup IDs:
 +

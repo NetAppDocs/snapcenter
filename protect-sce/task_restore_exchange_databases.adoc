@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_restore_exchange_databases.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use SnapCenter to restore backed-up Exchange databases.'
 ---
 = Restore Exchange databases
@@ -19,7 +19,7 @@ For information about how administrators assign resources to users, see the Snap
 
 * In a DAG, if an active database copy is on a non-NetApp storage and you want to restore from the passive database copy backup that is on a NetApp storage, make the passive copy (NetApp storage) as active copy, refresh the resources and perform the restore operation.
 +
-Run the Move-ActiveMailboxDatabase command to make the passive database copy as active database copy.
+Run the `Move-ActiveMailboxDatabase` command to make the passive database copy as active database copy.
 +
 The Microsoft documentation contains information about this command.
 +
@@ -42,6 +42,7 @@ Plug-in for Exchange does not perform a full restore on a disk if the disk conta
 +
 |===
 | Option| Description
+
 a|
 All log backups
 a|
@@ -49,7 +50,9 @@ Choose *All log backups* to perform up-to-the-minute backup restore operation to
 a|
 By log backups until
 a|
-Choose *By log backups until* to perform a point-in-time restore operation, which restores the database based on log backups until the selected log.     *Note:* The number of logs displayed in the drop-down list are based on UTM. For example, if full backup retention is 5 and UTM retention is 3, the number of log backups available are 5 but in the drop-down only 3 logs will be listed to perform restore operation.
+Choose *By log backups until* to perform a point-in-time restore operation, which restores the database based on log backups until the selected log.
+
+NOTE: The number of logs displayed in the drop-down list are based on UTM. For example, if full backup retention is 5 and UTM retention is 3, the number of log backups available are 5 but in the drop-down only 3 logs will be listed to perform restore operation.
 a|
 By specific date until
 a|

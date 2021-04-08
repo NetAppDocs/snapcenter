@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_create_backup_policies_for_exchange_server_databases.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can create a backup policy for the Exchange resources or for the resource groups before you use SnapCenter to back up Microsoft Exchange Server resources, or you can create a backup policy at the time you create a resource group or back up a single resource.'
 ---
 = Create backup policies for Exchange Server databases
@@ -14,8 +14,7 @@ You can create a backup policy for the Exchange resources or for the resource gr
 * You must have defined your data protection strategy.
 +
 For details, see the information about defining a data protection strategy for Exchange databases.
-+
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
+
 
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, identifying resources, and creating storage system connections.
 * You must have refreshed (discovered) the Exchange Server resources.
@@ -25,7 +24,7 @@ The _Administration Guide_ has more information about how administrators assign 
 +
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
 
-* If you want to run the PowerShell scritps in prescripts and postscripts, you should set the value of the usePowershellProcessforScripts parameter to true in the web.config file.
+* If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the `usePowershellProcessforScripts` parameter to true in the `web.config` file.
 +
 The default value is false
 
@@ -51,51 +50,55 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 +
 |===
 | If you want to...| Do this...
+
 a|
 Back up the database files and the required transaction logs
 a|
-Select *Full backup and Log backup*.        Databases are backed up with log truncation, and all logs are backed up, including the truncated logs.
-+
+Select *Full backup and Log backup*. Databases are backed up with log truncation, and all logs are backed up, including the truncated logs.
+
 NOTE: This is the recommended backup type.
+
 a|
 Back up the database files and the uncommitted transaction logs
 a|
-Select *Full backup*.        Databases are backed up with log truncation, and truncated logs are not backed up.
+Select *Full backup*. Databases are backed up with log truncation, and truncated logs are not backed up.
 a|
 Back up all the transaction logs
 a|
-Select *Log backup*.        All transaction logs on the active file system are backed up, and there is no log truncation. A scebackupinfo directory is created on the same disk as the live log. This directory contains the pointer to the incremental changes for the Exchange database and it is not equivalent to the complete log files.
+Select *Log backup*. All transaction logs on the active file system are backed up, and there is no log truncation. A `scebackupinfo` directory is created on the same disk as the live log. This directory contains the pointer to the incremental changes for the Exchange database and it is not equivalent to the complete log files.
 a|
 Back up all database files and transaction logs without truncating the transaction log files
 a|
-Select *Copy Backup*.        All databases and all logs are backed up, and there is no log truncation. You typically use this backup type for reseeding a replica or for testing or diagnosing a problem.
-+
+Select *Copy Backup*. All databases and all logs are backed up, and there is no log truncation. You typically use this backup type for reseeding a replica or for testing or diagnosing a problem.
 |===
-*Note:* You should define the space required for log backups based on the full backup retention and not based on Up-to-the-minute (UTM) retention.
+[NOTE]
+You should define the space required for log backups based on the full backup retention and not based on Up-to-the-minute (UTM) retention.
 
  .. In the Database Availability Group Settings section, select an action:
 +
 |===
 | For this field...| Do this...
+
 a|
 Back up active copies
 a|
 Select this option to back up only the active copies of the selected database.         For database availability groups (DAGs), this option backs up only active copies of all databases in the DAG.
-+
+
 Passive copies are not backed up.
 a|
 Back up copies on servers to be selected at backup job creation time
 a|
-Select this option to back up any copies of the databases on the selected servers, both active and passive.         For DAGs, this option backs up both active and passive copies of all databases on the selected servers.
-+
+Select this option to back up any copies of the databases on the selected servers, both active and passive. For DAGs, this option backs up both active and passive copies of all databases on the selected servers.
 |===
-*Note:* In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the cluster changes, the backups of the previous owner node will be retained. The retention is applicable only at the node level.
+[NOTE]
+In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the cluster changes, the backups of the previous owner node will be retained. The retention is applicable only at the node level.
 
  .. In the Schedule frequency section, select one or more of the frequency types: *On demand*, *Hourly*, *Daily*, *Weekly*, and *Monthly*.
 +
 NOTE: You can specify the schedule (start date, end date) for backup operations while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
+
 . On the Retention page, configure the retention settings.
 +
 The options displayed depend upon the backup type and frequency type you previously selected.
@@ -108,19 +111,22 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 +
 |===
 | If you want to...| Do this...
+
 a|
 Retain only a specific number of log backups
 a|
-Select *Number of full backups for which logs are retained*, and specify the number of full backups for which you want up-to-the-minute restorability.        Up-to-the-minute (UTM) works only for backups created using the log backup policy. For example, if UTM retention settings is configured to retain log backups of the last 5 full backups, then the log backups of the last 5 full backups are retained.
-+
+Select *Number of full backups for which logs are retained*, and specify the number of full backups for which you want up-to-the-minute restorability.       Up-to-the-minute (UTM) works only for backups created using the log backup policy. For example, if UTM retention settings is configured to retain log backups of the last 5 full backups, then the log backups of the last 5 full backups are retained.
+
 The log folders created as part of full and log backups are not automatically deleted as part of UTM. You cannot delete the log folders manually. These log folders are required to successfully perform the point-in-time restore operation. For example, if the retention setting of full or full and log backup is set for 1 month, the log backups created as part of these backups will not be deleted as per UTM. These log backups are deleted as part of full backup retention.
-+
+
+You can set *Number of full backups for which logs are retained* value as 0, if you do not want perform up-to-the-minute restore. This will enable point-in-time restore operation.
+
 *Best Practice:* It's best that the setting must be equal to the setting for Total Snapshot copies (full backups) in the Full backup retention settings section. This ensures that log files are retained for each full backup.
 a|
 Retain the backup copies for a specific number of days
 a|
-Select the *Keep log backups for last* option, and specify the number of days to keep the log backup copies.         The log backups up to the number of days of full backups are retained.
-+
+Select the *Keep log backups for last* option, and specify the number of days to keep the log backup copies. The log backups up to the number of days of full backups are retained.
+
 |===
 If you selected *Log backup* as the backup type, log backups are retained as part of the up-to-the-minute retention settings for full backups.
 
@@ -128,10 +134,11 @@ If you selected *Log backup* as the backup type, log backups are retained as par
 +
 |===
 | For this field...| Do this...
+
 a|
 *Retain only a specific number of Snapshot copies*
 a|
-If you want to specify the number of full backups to keep, select the *Total Snapshot copies to keep* option, and specify the number of Snapshot copies (full backups) to retain.        If the number of full backups exceeds the specified number, the full backups that exceed the specified number are deleted, with the oldest copies deleted first.
+If you want to specify the number of full backups to keep, select the *Total Snapshot copies to keep* option, and specify the number of Snapshot copies (full backups) to retain. If the number of full backups exceeds the specified number, the full backups that exceed the specified number are deleted, with the oldest copies deleted first.
 a|
 *Retain full backups for a specific number of days*
 a|
@@ -140,7 +147,7 @@ Select the *Keep Snapshot copies for* option, and specify the number of days to 
 *Note:* If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
 
   *** By default, SnapCenter finds the oldest full backup for this database in all the other hosts in the DAG, and deletes all log backups on this host that were taken before the full backup.
-  *** You can override the above default retention behavior for a database on a host in a DAG with only log backups by adding the key "MaxLogBackupOnlyCountWithoutFullBackup" in the C:\Program Files\NetApp\SnapCenter WebApp\web.config file. For example, `<add key="MaxLogBackupOnlyCountWithoutFullBackup" value="10">`
+  *** You can override the above default retention behavior for a database on a host in a DAG with only log backups by adding the key `"MaxLogBackupOnlyCountWithoutFullBackup"` in the `C:\Program Files\NetApp\SnapCenter WebApp\web.config` file. For example, `<add key="MaxLogBackupOnlyCountWithoutFullBackup" value="10">`
 +
 In the example, the value 10 means you keep up to 10 log backups on the host.
 
@@ -148,6 +155,7 @@ In the example, the value 10 means you keep up to 10 log backups on the host.
 +
 |===
 | For this field...| Do this...
+
 a|
 *Update SnapMirror after creating a local Snapshot copy*
 a|
@@ -159,15 +167,17 @@ Select this option to perform disk-to-disk backup replication.
 a|
 *Secondary policy label*
 a|
-Select a Snapshot label.     Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
-+
+Select a Snapshot label. Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
 a|
 *Error retry count*
 a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
-*Note:* You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+[NOTE]
+You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
 
 . On the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +

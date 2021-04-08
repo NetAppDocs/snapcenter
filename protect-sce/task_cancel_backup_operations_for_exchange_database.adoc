@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_cancel_backup_operations_for_exchange_database.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can cancel backup operations that are queued.'
 ---
 = Cancel backup operations for Exchange database
@@ -12,7 +12,7 @@ summary: 'You can cancel backup operations that are queued.'
 You can cancel backup operations that are queued.
 
 * You must be logged in as the SnapCenter Admin or job owner to cancel operations.
-* You can cancel a backup operation from either the Monitor page or the Activity pane.
+* You can cancel a backup operation from either the *Monitor* page or the *Activity* pane.
 * You cannot cancel a running backup operation.
 * You can use the SnapCenter GUI, PowerShell cmdlets, or CLI commands to cancel the backup operations.
 * The *Cancel Job* button is disabled for operations that cannot be canceled.
@@ -22,6 +22,7 @@ You can cancel backup operations that are queued.
 +
 |===
 | From the...| Action
+
 a|
 Monitor page
 a|

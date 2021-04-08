@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_configure_snapmanager_7_x_for_exchange_and_snapcenter_plug_in_for_exchange_to_coexist.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'To enable SnapCenter Plug-in for Microsoft Exchange Server to coexist with SnapManager for Microsoft Exchange Server, you need to install SnapCenter Plug-in for Microsoft Exchange Server on the same Exchange Server on which SnapManager for Microsoft Exchange Server is installed, disable SnapManager for Exchange schedules, and configure new schedules and backups using SnapCenter Plug-in for Microsoft Exchange Server.'
 ---
 = Configure SnapManager 7.x for Exchange and SnapCenter to coexist
@@ -63,4 +63,4 @@ If you do not uninstall SnapManager for Microsoft Exchange Server now and later 
 C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows>navssprv.exe -r service -u
 ----
 
- .. From the C:\Program Files\NetApp\SnapDrive\ directory, register SnapDrive for Windows on all DAG nodes: `navssprv.exe -r service -a hostname\\username -p password`
+ .. From the `C:\Program Files\NetApp\SnapDrive\` directory, register SnapDrive for Windows on all DAG nodes: `navssprv.exe -r service -a hostname\\username -p password`

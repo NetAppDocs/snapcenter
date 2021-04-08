@@ -13,9 +13,7 @@ Resources are the databases, Exchange Database Availability Groups that are main
 
 * You must have already completed tasks such as installing SnapCenter Server, adding hosts, creating storage system connections, adding credentials, and installing Plug-in for Exchange.
 * To take advantage of Single Mailbox Recovery software features, you must have located your active database on the Exchange Server where Single Mailbox Recovery software is installed.
-* If databases reside on VMware RDM LUNs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
-+
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
+* If databases reside on VMware RDM LUNs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere documentation] has more information.
 
 * You cannot back up databases when the *Overall Status* option in the Details page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
  ** Databases are not on a NetApp LUN.
@@ -37,10 +35,10 @@ The resources are displayed along with information such as resource name, Databa
 
 * If the database is on a non-NetApp storage, Not available for backup is displayed in the Overall Status column.
 +
-In a DAG, if the active database copy is on non-NetApp storage and if at least one passive database copy is on NetApp storage, Not protected is displayed in the Overall Status column.
+In a DAG, if the active database copy is on non-NetApp storage and if at least one passive database copy is on NetApp storage, Not protected is displayed in the *Overall Status* column.
 +
 You cannot perform data protection operations on a database that is on a non-NetApp storage type.
 
-* If the database is on NetApp storage and is not protected, Not protected is displayed in the Overall Status column.
-* If the database is on a NetApp storage system and protected, the user interface displays the Backup not run message in the Overall Status column.
-* If the database is on a NetApp storage system and is protected and if the backup is triggered for the database, the user interface displays the Backup succeeded message in the Overall Status column.
+* If the database is on NetApp storage and is not protected, Not protected is displayed in the *Overall Status* column.
+* If the database is on a NetApp storage system and protected, the user interface displays the Backup not run message in the *Overall Status* column.
+* If the database is on a NetApp storage system and is protected and if the backup is triggered for the database, the user interface displays the Backup succeeded message in the *Overall Status* column.

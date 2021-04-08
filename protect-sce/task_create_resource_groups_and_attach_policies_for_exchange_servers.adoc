@@ -21,19 +21,21 @@ NOTE: If you have recently added a resource to SnapCenter, click *Refresh Resour
 +
 |===
 | For this field...| Do this...
+
 a|
 Name
 a|
-Enter the resource group name.    *Note:* The resource group name should not exceed 250 characters.
+Enter the resource group name.
+*Note:* The resource group name should not exceed 250 characters.
 a|
 Tags
 a|
-Enter one or more labels that will help you later search for the resource group.    For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
+Enter one or more labels that will help you later search for the resource group. For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
 a|
 Use custom name format for Snapshot copy
 a|
-Optional: Enter a custom Snapshot copy name and format.     For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
-+
+Optional: Enter a custom Snapshot copy name and format. For example, `customtext_resourcegroup_policy_hostname` or `resourcegroup_hostname`. By default, a timestamp is appended to the Snapshot copy name.
+
 |===
 
 . On the Resources page, perform the following steps:
@@ -58,10 +60,10 @@ NOTE: If a policy contains the *Back up copies on servers to be selected at back
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
- .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the *Configure Schedules* column for the policy for which you want to configure the schedule.
  .. In the Add schedules for policypolicy_name dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *OK*.
 +
-You must do this for each frequency listed in the policy. The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
+You must do this for each frequency listed in the policy. The configured schedules are listed in the *Applied Schedules* column in the Configure schedules for selected policies section.
 
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
@@ -69,10 +71,8 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
 +
-For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command Set-SmSmtpServer.
+For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command `Set-SmSmtpServer`.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running `Get-Helpcommand_name`. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide^]
 
 . Review the summary, and then click *Finish*.
