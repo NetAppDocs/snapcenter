@@ -35,6 +35,7 @@ For example, you can run a script to update SNMP traps, automate alerts, send lo
 +
 |===
 | For this field...| Do this...
+
 a|
 Log SnapCenter server events to storage system syslog
 a|
@@ -59,9 +60,5 @@ http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-mssql/home.html[Pro
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-exchange/home.html[Protecting Microsoft Exchange Server databases]
 
 *Related information*
-
-link:[Monitoring restore operations]
-
-link:[Restoring and recovering resources using PowerShell cmdlets]
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

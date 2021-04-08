@@ -21,14 +21,18 @@ NOTE: If you have recently added a file system to SnapCenter, click *Refresh Res
 +
 |===
 | For this field...| Do this...
+
 a|
 Name
 a|
-Enter the resource group name.    *Note:* The resource group name should not exceed 250 characters.
+Enter the resource group name.
+
+NOTE: The resource group name should not exceed 250 characters.
+
 a|
 Use custom name format for Snapshot copy
 a|
-Optional: Enter a custom Snapshot copy name and format.     For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
+Optional: Enter a custom Snapshot copy name and format. For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
 a|
 Tag
 a|
@@ -66,6 +70,7 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 +
 |===
 | For this field...| Do this...
+
 a|
 Email preference
 a|
@@ -87,7 +92,3 @@ Default email subject line
 . Review the summary, and then click *Finish*.
 +
 You can perform a backup on demand or wait for the scheduled backup to occur.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]

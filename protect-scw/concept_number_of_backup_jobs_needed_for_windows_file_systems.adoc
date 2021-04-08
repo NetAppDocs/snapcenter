@@ -1,8 +1,8 @@
 ---
 permalink: protect-scw/concept_number_of_backup_jobs_needed_for_windows_file_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'Factors that determine the number of backups that you need include the size of the Windows file system, the number of volumes used, the rate of change of the file system, and your Service Level Agreement \(SLA\).'
+keywords:
+summary: 'Factors that determine the number of backups that you need include the size of the Windows file system, the number of volumes used, the rate of change of the file system, and your Service Level Agreement (SLA).'
 ---
 = Number of backups needed for Windows file systems
 :icons: font

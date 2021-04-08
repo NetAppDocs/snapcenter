@@ -36,6 +36,7 @@ The topology view is automatically displayed if the resource is protected.
 +
 |===
 | For this field...| Do this...
+
 a|
 Clone server
 a|
@@ -53,11 +54,3 @@ Choose an archive location if you are cloning a secondary backup.
 . In the Script page, specify any prescripts or postscripts you want to execute.
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
-
-*Related information*
-
-link:[Monitoring clone operations in SnapCenter]
-
-link:[Cloning backups using PowerShell cmdlets]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

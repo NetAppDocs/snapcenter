@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_create_backup_policies_for_windows_file_systems.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.'
 ---
 = Create backup policies for Windows file systems
@@ -50,6 +50,7 @@ After reviewing the existing policies, you can perform one of the following:
 +
 |===
 | Option| Description
+
 a|
 File System Consistent Backup
 a|
@@ -67,8 +68,10 @@ The policy specifies the backup frequency only. The specific protection schedule
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 . On the Retention page, specify the retention settings for on-demand backups and for each schedule frequency you selected.
 +
+
 |===
 | Option| Description
+
 a|
 Total Snapshot copies to retain
 a|
@@ -86,6 +89,7 @@ NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, a
 +
 |===
 | For this field...| Do this...
+
 a|
 Update SnapMirror after creating a local Snapshot copy
 a|
@@ -112,9 +116,3 @@ Enter the number of replication attempts that should occur before the process ha
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
 
 . Review the summary, and then click *Finish*.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]

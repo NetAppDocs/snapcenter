@@ -1,8 +1,8 @@
 ---
 permalink: protect-scw/concept_how_snapcenter_backs_up_windows_file_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapCenter uses Snapshot copy technology to back up Windows file system resources that reside on LUNs, CSVs \(cluster shared volumes\), RDM \(raw device mapping\) volumes, ALM \(asymmetric LUN mapping\) in Windows clusters, and VMDKs based on VMFS/NFS \(VMware Virtual Machine File System using NFS\).'
+keywords:
+summary: 'SnapCenter uses Snapshot copy technology to back up Windows file system resources that reside on LUNs, CSVs (cluster shared volumes), RDM (raw device mapping) volumes, ALM (asymmetric LUN mapping) in Windows clusters, and VMDKs based on VMFS/NFS (VMware Virtual Machine File System using NFS).'
 ---
 = How SnapCenter backs up Windows file systems
 :icons: font
