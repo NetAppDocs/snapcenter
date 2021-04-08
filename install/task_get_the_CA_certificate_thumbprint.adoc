@@ -1,0 +1,25 @@
+---
+permalink: install/task_get_the_CA_certificate_thumbprint.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Get the CA certificate thumbprint.'
+---
+= Get the CA certificate thumbprint
+
+[.lead]
+A certificate thumbprint is a hexadecimal string that identifies a certificate. A thumbprint is calculated from the content of the certificate using a thumbprint algorithm.
+
+*Steps*
+
+. GUI
+.. Double-click the certificate.
+.. In the Certificate dialog box, click the Details tab.
+.. Scroll through the list of fields and click Thumbprint.
+.. Copy the hexadecimal characters from the box.
+.. Remove the spaces between the hexadecimal numbers.
++
+For example, if the thumbprint is: "a9 09 50 2d d8 2a e4 14 33 e6 f8 38 86 b0 0d 42 77 a3 2a 7b", after removing the spaces, it will be: "a909502dd82ae41433e6f83886b00d4277a32a7b".
+. PowerShell
+.. Run the following command to list the thumbprint of the installed certificate and identify the recently installed certificate by the subject name.
+Get-ChildItem -Path Cert:\LocalMachine\My
+.. Copy the thumbprint.

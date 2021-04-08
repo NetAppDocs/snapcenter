@@ -1,0 +1,45 @@
+---
+permalink: install/task_import_CA_certificates.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'
+---
+= Import CA certificates
+
+[.lead]
+You must import the CA certificates of the SnapCenter Server and the Windows host plug-ins using the Microsoft management console (MMC).
+
+*Steps*
+
+. Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
+. In the *Add or Remove Snap-ins* window, select *Certificates* and then click *Add*.
+. In the *Certificates snap-in* window, select the *Computer account* option, and then click *Finish*.
+. Click *Console Root* > *Certificates – Local Computer* > *Trusted Root Certification Authorities* > *Certificates*.
+. Right-click on the folder “Trusted Root Certification Authorities”, and then select *All Tasks* > *Import* to start the import wizard.
+. Complete the wizard, as follows:
++
+|===
+| In this wizard window...| Do the following...
+
+a|
+Import Private Key
+a|
+Select the option *Yes*, import the private key, and then click *Next*.
+a|
+Import File Format
+a|
+Make no changes; click *Next*.
+a|
+Security
+a|
+Specify the new password to be used for the exported certificate, and then click *Next*.
+a|
+Completing the Certificate Import Wizard
+a|
+Review the summary, and then click *Finish* to start the import.
++
+|===
++
+NOTE: Importing certificate should be bundled with the private key (supported formats are: *.pfx, * p12, *.p7b).
+
+. Repeat Step 5 for the “Personal” folder.

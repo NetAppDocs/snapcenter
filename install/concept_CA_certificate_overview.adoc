@@ -1,0 +1,10 @@
+---
+permalink: install/concept_CA_certificate_overview.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'SnapCenter Software can be used on multiple browsers.'
+---
+= CA Certificate Overview
+
+[.lead]
+The SnapCenter Server installer enables the Centralized SSL Certificate Support during installation.  To enhance the secured communication between the server and the plug-in, SnapCenter supports using the authorized CA certificates provided by the customer.
