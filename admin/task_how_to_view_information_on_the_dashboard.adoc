@@ -12,7 +12,7 @@ summary: 'From the SnapCenter left navigation pane, you can view various Dashboa
 From the SnapCenter left navigation pane, you can view various Dashboard tiles, or displays, along with associated system details. The number of displays available in the Dashboard is fixed and cannot be changed. The content provided within each display is dependent on role-based access control (RBAC).
 
 *Steps*
-.Steps
+
 . In the left navigation pane, click *Dashboard*.
 . Click the active areas on each display to obtain additional information.
 +

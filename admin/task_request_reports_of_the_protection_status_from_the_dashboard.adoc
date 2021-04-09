@@ -12,7 +12,7 @@ summary: 'You can request protection details for resources managed by specific p
 You can request protection details for resources managed by specific plug-ins using the Dashboard. Only data backups are considered for data protection summary.
 
 *Steps*
-.Steps
+
 . In the left navigation pane, click *Dashboard*.
 . Locate the Latest Protection Summary tile in the Dashboard and use the pull-down menu to select a plug-in.
 +
@@ -24,7 +24,4 @@ NOTE: Data protection reports are available only for specific plug-ins types. Sp
 +
 When you click the donut chart, you are redirected from Dashboard page to the Reports, and then to the Plug-in page. The report displays only status for the plug-in you selected. You can review the report or download it to your local system.
 +
-NOTE:
-+
-* Redirection to the Reports page for SnapMirror donut chart is not supported.
-* Redirection to the Reports page for File-based SAP HANA backup is not supported.
+NOTE: Redirection to the Reports page for SnapMirror donut chart and File-based SAP HANA backup is not supported.

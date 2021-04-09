@@ -25,7 +25,7 @@ a|
 
 For more information on SnapCenter REST APIs, see:
 
-* link:/admin/reference_plug_ins_that_support_rest_apis.html[Plug-ins supporting REST APIs^]
-* link:/admin/task_access_rest_apis_using_the_swagger_api_web_page.html[Access REST APIs using swagger^]
+* link: reference_plug_ins_that_support_rest_apis.html[Plug-ins supporting REST APIs^]
+* link: task_access_rest_apis_using_the_swagger_api_web_page.html[Access REST APIs using swagger^]
 
 For information on SnapCenter Plug-in for VMware vSphere REST APIs, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere REST APIs^]
