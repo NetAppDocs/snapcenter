@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_configuring_sudo_privileges_for_non_root_user_for_linux_plug_in_host.html
 sidebar: sidebar
-keywords: 
+keywords: non-root user, sudo privileges
 summary: 'SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.'
 ---
 = Configuring sudo privileges for non-root users for Linux plug-in host
@@ -11,9 +11,11 @@ summary: 'SnapCenter 2.0 and later releases allow a non-root user to install the
 [.lead]
 SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
 
-* You should be using Sudo 1.8.7 or later.
-* You should have ensured that the non-root user is part of the Oracle installation group.
-* You should have edited the /etc/ssh/sshd_config file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
+*What you will need*
+
+* Sudo 1.8.7 or later.
+* Ensure that the non-root user is part of the Oracle installation group.
+* Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.
 +
@@ -33,30 +35,35 @@ HostKey/etc/ssh/ssh_host_rsa_key
 MACs hmac-sha2-256
 ----
 
+*About this task*
+
 You should configure sudo privileges for the non-root user to provide access to the following paths:
 
 * /tmp/sc-plugin-installer/snapcenter_linux_host_plugin.bin
 * /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
 * /custom_location/NetApp/snapcenter/spl/bin/spl
 
+*Steps*
+
 . Log in to the Linux host on which you want to install the SnapCenter Plug-ins Package for Linux.
 . Add the following lines to the /etc/sudoers file by using the visudo Linux utility.
 +
 ----
-Cmnd_Alias SCCMD = sha224:checksum_value== /tmp/sc-plugin
--installer/snapcenter_linux_host_plugin.bin,
+Cmnd_Alias SCCMD = sha224:checksum_value== /home/SUDO_USER/.sc_netapp/snapcenter_linux_host_plugin.bin,
 /opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
 /opt/NetApp/snapcenter/spl/bin/spl
-Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /tmp/netapp/Linux_Prechecks.sh
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/SUDO_USER/.sc_netapp/Linux_Prechecks.sh
 non_root_user ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
 env_keep=JAVA_HOME
 Defaults:non_root_user !visiblepw
 Defaults:non_root_user !requiretty
 ----
 +
-non_root_user is the name of the non-root user that you created.
+_non_root_user_ is the name of the non-root user that you created.
 +
-You can obtain the checksum value from the oracle_checksum.txt file, which is located at C:\ProgramData\NetApp\SnapCenter\Package Repository. If you have specified a custom location, the location will be custom_path\NetApp\SnapCenter\Package Repository.
+You can obtain the checksum value from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
++
+If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
 +
 IMPORTANT: The example should be used only as a reference for creating your own data.
 

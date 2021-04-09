@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can request reports about backup, restore, and clone jobs from the Dashboard page. This is useful if you want to identify the total number of successful or failed jobs in your SnapCenter environment.'
 ---
 = Request status reports of the jobs from the dashboard
@@ -11,6 +11,8 @@ summary: 'You can request reports about backup, restore, and clone jobs from the
 [.lead]
 You can request reports about backup, restore, and clone jobs from the Dashboard page. This is useful if you want to identify the total number of successful or failed jobs in your SnapCenter environment.
 
+*Steps*
+.Steps
 . In the left navigation pane, click *Dashboard*
 . Locate the Jobs tile in the Dashboard, and then select *Backup*, *Restore*, or *Clone*.
 . Using the pull-down menu, select the time frame for which you want Jobs information: 24 hours, 7 days, or 30 days.
@@ -24,4 +26,5 @@ When you click the donut chart, you are redirected from the Dashboard page to th
 . From the Monitor page list, click on a specific job to select it.
 . At the top of the Monitor page, click *Reports*.
 
+*Results*
 The report displays information only for the job you selected. You can review the report or download it to your local system.

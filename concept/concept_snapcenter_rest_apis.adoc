@@ -1,7 +1,7 @@
 ---
 permalink: concept/concept_snapcenter_rest_apis.html
 sidebar: sidebar
-keywords: 
+keywords: REST APIs
 summary: 'You can use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the REST API documentation, as well as to manually issue an API call. You can use REST APIs to help manage your SnapCenter Server or your SnapCenter vSphere host.'
 ---
 = SnapCenter REST APIs
@@ -22,8 +22,10 @@ SnapCenter Plug-in for VMware vSphere
 a|
 https://<OVA_IP_address_or_host_name>:8144/api/swagger-ui.html#
 |===
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
 
-The SnapCenter Plug-in for VMware vSphere documentation has more information.
+For more information on SnapCenter REST APIs, see:
 
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+* link:reference_plug_ins_that_support_rest_apis.html[Plug-ins supporting REST APIs^]
+* link:task_access_rest_apis_using_the_swagger_api_web_page.html[Access REST APIs using swagger^]
+
+For information on SnapCenter Plug-in for VMware vSphere REST APIs, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere REST APIs^]

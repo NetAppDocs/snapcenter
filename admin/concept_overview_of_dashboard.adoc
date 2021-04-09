@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_overview_of_dashboard.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'From the SnapCenter left navigation pane, the Dashboard gives you a first glance into the health of your system, including recent job activity, alerts, protection summary, storage efficiency and usage, status of SnapCenter jobs \(Backup, Clone, Restore\), configuration status for standalone and Windows cluster hosts, number of Storage Virtual Machines \(SVMs\) managed by SnapCenter, and license capacity.'
 ---
 = Overview of dashboard
@@ -29,9 +29,7 @@ The Alerts tile displays the latest unresolved Critical and Warning alerts for t
 
 The total count of Critical and Warning category alerts is shown at the top of the display. Clicking the Critical or Warning totals redirects you to the Alerts page with the specific filter applied in the Alerts page.
 
-Clicking a specific alert redirects you to the Alerts page for details about that alert.
-
-Clicking *See All* at the bottom of the display redirects you to the Alerts page for a list of all alerts.
+Clicking a specific alert redirects you to the Alerts page for details about that alert. Clicking *See All* at the bottom of the display redirects you to the Alerts page for a list of all alerts.
 
 == Latest Protection Summary
 
@@ -46,33 +44,35 @@ NOTE: Reports about secondary storage apply to SnapVault only; SnapMirror report
 NOTE: SAP HANA provides protection status information for primary and secondary storage for Snapshot copies. Only primary storage protection status is available for file-based backups.
 
 |===
-| Primary and secondary storage resource protection states
+| Protection status | Primary storage | Secondary storage
+
 a|
 Failed
 a|
-Primary: Count of entities that are part of a Resource Group, where the Resource Group has run a backup, but the backup failed.
+Count of entities that are part of a Resource Group, where the Resource Group has run a backup, but the backup failed.
 a|
-Secondary: Count of entities with backups that have failed to transfer to a Secondary destination.
+Count of entities with backups that have failed to transfer to a Secondary destination.
 a|
 Successful
 a|
-Primary: Count of entities in a resource group, where the Resource Group has been successfully backed up.
+Count of entities in a resource group, where the Resource Group has been successfully backed up.
 a|
-Secondary: Count of entities with backups that have been successfully transferred to a Secondary destination.
+Count of entities with backups that have been successfully transferred to a Secondary destination.
 a|
 Not configured
 a|
-Primary: Count of entities that are not part of any Resource Group and have not been backed up.
+Count of entities that are not part of any Resource Group and have not been backed up.
 a|
-Secondary: Count of entities that are part of one or more Resource Groups that are not configured for backups to be transferred to a Secondary destination.
+ Count of entities that are part of one or more Resource Groups that are not configured for backups to be transferred to a Secondary destination.
 a|
 Not initiated
 a|
-Primary: Count of entities that are part of a Resource Group, but no backup has been run.
+Count of entities that are part of a Resource Group, but no backup has been run.
 a|
-Secondary: Not applicable.
+ Not applicable.
 |===
-*Note:* If you use SnapCenter Server 4.2 and an earlier version of the plug-in (earlier than 4.2) to create backups, the Latest Protection Summary tile does not display the SnapMirror protection status of these backups.
+
+NOTE: If you are using SnapCenter Server 4.2 and an earlier version of the plug-in (earlier than 4.2) to create backups, the *Latest Protection Summary* tile does not display the SnapMirror protection status of these backups.
 
 == Jobs
 
@@ -81,7 +81,8 @@ The Jobs tile provides you with a summary of backup, restore, and clone jobs tha
 Backup, restore, and clone job information is displayed in donut charts. Clicking a donut slice redirects you to the Monitor page with job filters pre-applied to the selection.
 
 |===
-| Backup, restore, and clone job status
+| Job status | Description
+
 a|
 Failed
 a|
@@ -110,7 +111,7 @@ The Storage Savings factor for primary storage is the ratio of logical capacity 
 
 The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Hovering over the charts provides detailed day-by-day results.
 
-NOTE: If you use SnapCenter Server 4.2 and an earlier version of the plug-in (earlier than 4.2) to create backups, the Storage tile does not display the number of backups, the storage consumed by these backups, the Snapshot savings, the clone savings, and the Snapshot size.
+NOTE: If you use SnapCenter Server 4.2 and an earlier version of the plug-in (earlier than 4.2) to create backups, the *Storage* tile does not display the number of backups, the storage consumed by these backups, the Snapshot savings, the clone savings, and the Snapshot size.
 
 == Configuration
 
@@ -123,7 +124,8 @@ Additionally, this display shows the sum of Standalone ONTAP SVMs and Cluster ON
 The Host configuration state is presented as red (critical), yellow (warning), and green (active), along with the number of hosts in each state. Status messages are provided for each state.
 
 |===
-| Host configuration status
+| Configuration status | Description
+
 a|
 Upgrade mandatory
 a|
@@ -185,7 +187,8 @@ The Licensed Capacity tile displays information about total licensed capacity, u
 NOTE: This display appears only if you are using SnapCenter Standard capacity-based licenses on Cloud Volumes ONTAP or ONTAP Select platforms. For FAS or AFF platforms, the SnapCenter license is controller-based and licensed for unlimited capacity, and no capacity license is required.
 
 |===
-| Licensed Capacity
+| License status | Description
+
 a|
 In use
 a|

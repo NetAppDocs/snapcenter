@@ -1,10 +1,10 @@
 ---
 permalink: concept/concept_types_of_role_based_access_control_in_snapcenter.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapCenter role-based access control \(RBAC\) and ONTAP permissions enable SnapCenter administrators to create roles and set access permissions. This centrally managed access empowers application administrators to work securely within delegated environments.'
 ---
-= Types of role-based access control in SnapCenter
+= Types of RBAC
 :icons: font
 :imagesdir: ../media/
 
@@ -49,10 +49,10 @@ Similarly, if you want to perform data protection operations on an Oracle databa
 
 If you are using the SnapCenter VMware plug-in for VM-consistent data protection, the vCenter Server provides an additional level of RBAC. tHE SnapCenter VMware plug-in supports both vCenter Server RBAC and Data ONTAP RBAC.
 
-NOTE: The SnapCenter Plug-in for VMware vSphere is deployed as a standalone virtual appliance (Open Virtual Appliance format). The SnapCenter Plug-in for VMware vSphere documentation has more information.
-
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_role_based_access_control.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+For information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_role_based_access_control.html[SnapCenter Plug-in for VMware vSphere RBAC^]
 
 == ONTAP permissions
 
-You must have vsadmin account permissions to access the storage system. A list is minimum required ONTAP privileges is included in the SnapCenter Server installation guide.
+You should create vsadmin account with required permissions to access the storage system.
+
+For information to create the account and assign permissions, see link:task_create_an_ontap_cluster_role_with_minimum_privileges.html[Create an ONTAP cluster role with minimum privileges^]

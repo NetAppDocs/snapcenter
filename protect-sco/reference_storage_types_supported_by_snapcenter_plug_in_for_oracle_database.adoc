@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html
 sidebar: sidebar
-keywords: 
+keywords: storage types, iSCSI, NFS, RDM, VMDK, NFS, LVM, ASM, SAN filesystem
 summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX.'
 ---
 = Storage types supported by SnapCenter Plug-in for Oracle Database
@@ -14,44 +14,43 @@ SnapCenter supports a wide range of storage types on both physical and virtual m
 SnapCenter does not support storage provisioning for Linux and AIX.
 
 |===
-| Machine| Storage type
-a|
-Physical server
-a|
-FC-connected LUNs
-a|
-Physical server
-a|
-iSCSI-connected LUNs
-a|
-Physical server
-a|
-NFS-connected volumes
-a|
-VMware ESXi
-a|
-RDM LUNs connected by an FC or iSCSI ESXi HBAScanning of host bus adapters (HBAs) might take long time to complete because SnapCenter scans all the host bus adaptors present in the host. You can edit the LinuxConfig.pm file located at /opt/NetApp/snapcenter/spl/plugins/scu/scucore/modules/SCU/Config to set the value of the SCSI_HOSTS_OPTIMIZED_RESCAN parameter to 1 to rescan only those HBAs that are listed in HBA_DRIVER_NAMES.
+| Machine | Storage type supported on Linux
 
 a|
-VMware ESXi
+Physical server
 a|
-iSCSI LUNs connected directly to the guest system by the iSCSI initiator
-a|
-VMware ESXi
-a|
-VMDKs on VMFS or NFS datastores
+* FC-connected LUNs
+* iSCSI-connected LUNs
+* NFS-connected volumes
 a|
 VMware ESXi
 a|
-NFS volumes connected directly to the guest system
+* RDM LUNs connected by an FC or iSCSI ESXi HBAScanning of host bus adapters (HBAs) might take long time to complete because SnapCenter scans all the host bus adaptors present in the host.
++
+You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/plugins/scu/scucore/modules/SCU/Config_ to set the value of the *SCSI_HOSTS_OPTIMIZED_RESCAN* parameter to 1 to rescan only those HBAs that are listed in HBA_DRIVER_NAMES.
+* iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+* VMDKs on VMFS or NFS datastores
+* NFS volumes connected directly to the guest system
 |===
 |===
-| Machine| Storage type
+| Machine | Storage type supported on AIX
+
 a|
 Physical server
 a|
-FC-connected and iSCSI-connected LUNsIn a SAN environment, only ASM is supported.
+* FC-connected and iSCSI-connected LUNs.
++
+In a SAN environment, ASM, LVM, and SAN file systems are supported.
+// [SD]: Updated for BURT 1391312 in 4.5
++
+NOTE: NFS on AIX and filesystem is not supported.
 
-NOTE: NFS on AIX and filesystem or LVM on AIX is not supported.
+// [SD]: Updated for BURT 1391312 in 4.5
 
+* Enhanced Journaled File System (JFS2)
+// [SD]: Included for BURT 1391312 in 4.5
++
+Supports inline logging on SAN filesystems and LVM layout.
++
+JFS2 is supported with external log device but not with GPFS or NFS filesystems.
 |===
