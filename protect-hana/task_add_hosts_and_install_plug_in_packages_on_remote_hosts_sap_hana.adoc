@@ -11,6 +11,8 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts, and then instal
 [.lead]
 You must use the SnapCenterAdd Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install plug-in packages either for an individual host or for a cluster.
 
+*What you will need*
+
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * You should ensure that the message queueing service is running.
@@ -18,11 +20,16 @@ You must use the SnapCenterAdd Host page to add hosts, and then install the plug
 +
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
 
-* For Windows host, if you are using group Managed Service Account (gMSA):
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+* You should configure gMSA with administrative privileges.
+
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_sap_hana.html
+[Configure group Managed Service Account on Windows Server 2012 or later for SAP HANA]
+
+*About this task*
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
@@ -85,9 +92,8 @@ Use group Managed Service Account (gMSA) to run the plug-in services
 a|
 For Windows host, select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.     *Note:*
 
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
-Provide the domain or service account name.
+Provide the gMSA name in the following format: domainName\accountName$.
+*Note:* gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 
 +
 |===

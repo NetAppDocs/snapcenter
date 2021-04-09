@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_how_long_to_retain_transaction_log_backups_on_the_source_storage_system.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapCenter Plug-in for Microsoft SQL Server needs transaction log backups to perform up-to-the-minute restore operations, which restore your database to a time between two full backups.'
 ---
 = How long to retain transaction log backups on the source storage system

@@ -11,15 +11,19 @@ summary: 'Resources are the databases, application instances, Availability Group
 [.lead]
 Resources are the databases, application instances, Availability Groups, and similar components that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.
 
+*What you will need*
+
 * You must have already completed tasks such as installing SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
 * To discover the Microsoft SQL databases, one of the following conditions should be met.
- ** The user who has logged into SnapCenter should have the required permissions (sysadmin) on the Microsoft SQL Server.
  ** The user that was used to add the plug-in host to SnapCenter Server should have the required permissions (sysadmin) on the Microsoft SQL Server.
- ** If the above two conditions are not met, in the SnapCenter Server you should configure the user that has the required permissions (sysadmin) on the Microsoft SQL Server. The user should be configured at the Microsoft SQL Server instance level and the user can be a SQL or Windows user.
+ ** If the above condition is not met, in the SnapCenter Server you should configure the user that has the required permissions (sysadmin) on the Microsoft SQL Server. The user should be configured at the Microsoft SQL Server instance level and the user can be a SQL or Windows user.
 * To discover the Microsoft SQL databases in a Windows cluster, you must unblock the Failover Cluster Instance (FCI) TCP/IP port.
 * If databases reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
+* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
 +
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+
+*About this task*
 
 You cannot back up databases when the *Overall Status* option in the Details page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
 
@@ -33,6 +37,8 @@ Databases are not in normal state when they are offline, restoring, recovery pen
 For example, if a user has only view access to the database, files and properties of the database cannot be identified and hence cannot be backed up.
 
 NOTE: SnapCenter can backup only the primary database if you have a availability group configuration on SQL Server Standard Edition.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page select *Database*, or *Instance*, or *Availability Group*, from the *View* drop-down list.

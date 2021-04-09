@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/index.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Data Protection Guide
@@ -28,12 +28,13 @@ summary: ''
  ** xref:task_define_a_clone_strategy_for_sql_server.adoc[Define a cloning strategy for SQL Server]
   *** xref:concept_limitations_related_to_cloning_of_oracle_databases.adoc[Limitations of clone operations]
   *** xref:reference_types_of_clone_operations.adoc[Types of clone operations]
+* xref:quick_start_to_install_snapcenter_plug-in_for_sql_server.adoc[Quick start to protect SQL Server databases]
 * xref:task_install_snapcenter_plug_in_for_microsoft_sql_server_database.adoc[Install SnapCenter Plug-in for Microsoft SQL Server]
  ** xref:reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.adoc[Prerequisites to adding hosts and installing SnapCenter Plug-in for Microsoft SQL Server]
   *** xref:reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.adoc[Host requirements to install SnapCenter Plug-ins Package for Windows]
   *** xref:task_set_up_credentials_for_snapcenter_plug_ins_package_for_windows.adoc[Set up credentials for the SnapCenter Plug-ins Package for Windows]
   *** xref:task_configure_credentials_for_an_individual_sql_server_resource.adoc[Configure credentials for an individual SQL Server resource]
-  *** xref:task_configure_group_managed_service_account_on_windows_server_2012_or_later.adoc[Configure group Managed Service Account on Windows Server 2012 or later]
+  *** xref:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.adoc[Configure group Managed Service Account on Windows Server 2012 or later for SQL]
  ** xref:task_add_hosts_and_install_snapcenter_plug_ins_package_for_windows.adoc[Add hosts and install the SnapCenter Plug-ins Package for Windows]
   *** xref:task_install_snapcenter_plug_in_package_for_windows_on_multiple_remote_hosts_using_cmdlets_scsql.adoc[Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts by using cmdlets]
   *** xref:task_install_the_snapcenter_plug_in_for_sql_server_silently.adoc[Install the SnapCenter Plug-in for Microsoft SQL Server silently from the command line]

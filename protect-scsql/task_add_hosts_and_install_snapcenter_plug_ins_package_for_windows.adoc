@@ -1,5 +1,5 @@
 ---
-permalink: protect-scsql/task_add_hosts_and_install_snapcenter_plug_ins_package_for_windows.html
+permalink: protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html
 sidebar: sidebar
 keywords: credentials
 summary: 'You must use the SnapCenterAdd Host page to add hosts and install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.'
@@ -9,14 +9,17 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts and install the 
 :imagesdir: ../media/
 
 [.lead]
-You must use the SnapCenterAdd Host page to add hosts and install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.
+You must use the SnapCenter Add Host page to add hosts and install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.
+
+*What you will need*
 
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, you should disable UAC on the host.
 * You should ensure that the message queueing service is in running state.
-* If you are using group Managed Service Account (gMSA):
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+* You should configure gMSA with administrative privileges.
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL]
+
+*About this task*
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
@@ -25,6 +28,8 @@ You can add a host and install the plug-in packages either for an individual hos
 For information on managing hosts, see the administration documentation.
 
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
@@ -89,11 +94,10 @@ Select this check box if you already installed the plug-ins manually and you do 
 a|
 Use group Managed Service Account (gMSA) to run the plug-in services
 a|
-Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.     *Note:*
+Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
-Provide the domain or service account name.
+Provide the gMSA name in the following format: domainName\accountName$.
+*Note:* If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
 
 +
 |===

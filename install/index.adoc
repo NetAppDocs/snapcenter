@@ -1,7 +1,7 @@
 ---
 permalink: install/index.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Installation and Setup Guide
@@ -17,7 +17,7 @@ summary: ''
  ** xref:reference_connection_and_port_requirements.adoc[Connection and port requirements]
  ** xref:concept_snapcenter_licenses.adoc[SnapCenter licenses]
  ** xref:concept_authentication_methods_for_your_credentials.adoc[Authentication methods for your credentials]
- ** xref:concept_svm_connections_and_credentials.adoc[Storage Virtual Machine connections and credentials]
+ ** xref:concept_svm_connections_and_credentials.CA Certificate Overviewadoc[Storage Virtual Machine connections and credentials]
  ** xref:concept_network_load_balanacing_and_application_request_routing_requirements.adoc[Requirements for Network Load Balancing and Application Request Routing]
  ** xref:concept_high_availability_for_snapcenter_mysql_repository.adoc[High availability for the SnapCenter MySQL repository]
 * xref:task_install_the_snapcenter_server_using_the_install_wizard.adoc[Install the SnapCenter Server using the install wizard]
