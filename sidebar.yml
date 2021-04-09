@@ -60,17 +60,17 @@ entries:
     url: "/install/concept_CA_certificate_overview.html"
     entries:
     - title: Generate CA Certificate CSR file
-      url: "install/reference_generate_CA_certificate_CSR_file.html"
+      url: "/install/reference_generate_CA_certificate_CSR_file.html"
     - title: Import CA certificates
-      url: "install/task_import_CA_certificates.html"
+      url: "/install/task_import_CA_certificates.html"
     - title: Get the CA certificate thumbprint
-      url: "install/task_get_the_CA_certificate_thumbprint.html"
+      url: "/install/task_get_the_CA_certificate_thumbprint.html"
     - title: Configure CA certificate with SnapCenter site
-      url: "install/task_configure_CA_certificate_with_snapcenter_site.html"
+      url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
     - title: Configure CA certificate with Windows host plug-in services
-      url: "install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
+      url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
     - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
-      url: "install/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
+      url: "/install/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
   - title: Log in to SnapCenter
     url: "/install/task_log_in_to_snapcenter.html"
     entries:
@@ -264,7 +264,7 @@ entries:
       - title: Types of clone operations
         url: "/protect-scsql/reference_types_of_clone_operations.html"
   - title: Quick start to install SnapCenter Plug-in for Microsoft SQL Server
-    url: "protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html"
+    url: "/protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html"
   - title: Install SnapCenter Plug-in for Microsoft SQL Server
     url: "/protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html"
     entries:

@@ -1,13 +1,8 @@
 ---
 permalink: install/index.html
 sidebar: sidebar
-<<<<<<< HEAD
-keywords:
-summary: ''
-=======
 keywords: install, snapcenter server, license, storage system, RBAC, provision storage
 summary: 'Describes how to prepare for installing SnapCenter Servers, steps to install, add licenses, add storage system, and configuring your environment.'
->>>>>>> f059524773a29d507d15c61b1d25dd77c67a8379
 ---
 = Install SnapCenter Server
 :icons: font
@@ -17,20 +12,6 @@ summary: 'Describes how to prepare for installing SnapCenter Servers, steps to i
 Describes the prerequisites for installing SnapCenter Server, steps to install the server, add licenses, add storage system, and steps to configure your environment.
 
 * xref:concept_prepare_for_installing_the_snapcenter_server.adoc[Prepare for installing the SnapCenter Server]
-<<<<<<< HEAD
- ** xref:reference_domain_and_workgroup_requirements.adoc[Domain and workgroup requirements]
- ** xref:reference_space_and_sizing_requirements.adoc[Space and sizing requirements]
- ** xref:reference_san_host_requirements.adoc[SAN host requirements]
- ** xref:reference_supported_storage_systems_and_applications.adoc[Supported storage systems and applications]
- ** xref:reference_supported_browsers.adoc[Supported browsers]
- ** xref:reference_connection_and_port_requirements.adoc[Connection and port requirements]
- ** xref:concept_snapcenter_licenses.adoc[SnapCenter licenses]
- ** xref:concept_authentication_methods_for_your_credentials.adoc[Authentication methods for your credentials]
- ** xref:concept_svm_connections_and_credentials.CA Certificate Overviewadoc[Storage Virtual Machine connections and credentials]
- ** xref:concept_network_load_balanacing_and_application_request_routing_requirements.adoc[Requirements for Network Load Balancing and Application Request Routing]
- ** xref:concept_high_availability_for_snapcenter_mysql_repository.adoc[High availability for the SnapCenter MySQL repository]
-=======
->>>>>>> f059524773a29d507d15c61b1d25dd77c67a8379
 * xref:task_install_the_snapcenter_server_using_the_install_wizard.adoc[Install the SnapCenter Server using the install wizard]
 * xref:concept_CA_certificate_overview.adoc[CA Certificate Overview]
 * xref:task_log_in_to_snapcenter.adoc[Log in to SnapCenter]
