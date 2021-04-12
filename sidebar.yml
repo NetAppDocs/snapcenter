@@ -367,7 +367,7 @@ entries:
       url: "/protect-scsql/task_perform_clone_lifecycle_management.html"
     - title: Split a clone
       url: "/protect-scsql/task_split_a_clone.html"
-- title: Protect Windows File systems
+- title: Protect Windows file systems
   url: "/protect-scw/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft Windows overview
