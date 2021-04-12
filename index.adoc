@@ -2,4 +2,4 @@
 permalink: index.html
 sidebar: sidebar
 ---
-= Main
+= SnapCenter Software documentation
