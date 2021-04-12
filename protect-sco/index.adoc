@@ -2,14 +2,14 @@
 permalink: protect-sco/index.html
 sidebar: sidebar
 keywords: snapcenter, snapcenter plug-in for Oracle database, backup, restore, clone, mount, unmount
-summary: 'Describes how to install the SnapCenter plug-in for Oracle database and then perform backup, restore, and clone operations on the Oracle databases.'
+summary: 'Describes how to install the SnapCenter Plug-in for Oracle database and then perform backup, restore, and clone operations on the Oracle databases.'
 ---
 = Protect Oracle databases
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Describes how to install the SnapCenter plug-in for Oracle database and then perform backup, restore, and clone operations on the Oracle databases.
+Describes how to install the SnapCenter Plug-in for Oracle database and then perform backup, restore, and clone operations on the Oracle databases.
 
 * xref:concept_snapcenter_plug_in_for_oracle_database_overview.adoc[SnapCenter Plug-in for Oracle Database overview]
 * xref:task_install_snapcenter_plug_in_for_oracle_databases.adoc[Install SnapCenter Plug-in for Oracle Database]

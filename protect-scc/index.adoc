@@ -2,44 +2,19 @@
 permalink: protect-scc/index.html
 sidebar: sidebar
 keywords:
-summary: ''
+summary: 'Describes how to install the SnapCenter Plug-in for custom applications and then perform backup, restore, and clone operations on custom applications'
 ---
-= Data Protection Guide
+= Protect custom applications
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Describes how to install the SnapCenter Plug-in for custom applications and then perform backup, restore, and clone operations on custom applications
+
 * xref:concept_snapcenter_custom_plug_ins_overview.adoc[SnapCenter Custom Plug-ins overview]
- ** xref:concept_what_you_can_do_with_the_snapcenter_custom_plug_ins.adoc[What you can do with the SnapCenter Custom Plug-ins]
- ** xref:concept_snapcenter_custom_plug_ins_features.adoc[SnapCenter Custom Plug-ins features]
- ** xref:reference_storage_types_supported_by_snapcenter_custom_plug_in.adoc[Storage types supported by SnapCenter Custom Plug-ins]
- ** xref:reference_minimum_ontap_privileges_required_for_custom_plug_in.adoc[Minimum ONTAP privileges required for custom plug-in]
- ** xref:task_define_a_backup_strategy.adoc[Define a backup strategy]
-  *** xref:reference_backup_schedules_of_custom_plug_in_resources.adoc[Backup schedules of custom plug-in resources]
-  *** xref:concept_number_of_backup_jobs_needed.adoc[Number of backup jobs needed]
- ** xref:reference_types_of_restore_strategies_supported_for_manually_added_sap_hana_resources.adoc[Types of restore strategies supported for manually added SAP HANA resources]
 * xref:task_install_snapcenter_custom_plug_in.adoc[Install SnapCenter Custom Plug-ins]
- ** xref:reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.adoc[Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins]
-  *** xref:task_set_up_credentials_for_snapcenter_custom_plug_in.adoc[Set up credentials for SnapCenter Custom Plug-ins]
-  *** xref:task_configure_gMSA_on_windows_server_2012_or_later_for_custom_applications.html.adoc[Configure group Managed Service Account on Windows Server 2012 or later for custom applications]
- ** xref:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.adoc[Add hosts and install plug-in packages on remote hosts]
-  *** xref:task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.adoc[Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets]
 * xref:reference_prerequisites_for_using_snapcenter_custom_plug_ins.adoc[Prerequisites for using the SnapCenter Custom Plug-ins]
-* xref:concept_how_resources_resource_groups_and_policies_are_used_for_protecting_custom_plug_in_resources.adoc[How resources, resource groups, and policies are used for protecting custom plug-in resources]
 * xref:task_back_up_resources_using_powershell_cmdlets.adoc[Back up resources using PowerShell cmdlets]
 * xref:task_back_up_custom_plug_in_resources.adoc[Back up custom plug-in resources]
- ** xref:task_add_resources_to_snapcenter_custom_plug_ins.adoc[Add resources to SnapCenter Custom Plug-ins]
- ** xref:task_create_policies_for_custom_plug_in_resources.adoc[Create policies for custom plug-in resources]
- ** xref:task_back_up_individual_custom_plug_in_resources.adoc[Back up individual custom plug-in resources]
- ** xref:task_back_up_resource_groups_of_custom_plug_in_resources.adoc[Back up resource groups of custom plug-in resources]
- ** xref:task_back_up_resources_using_powershell_cmdlets.adoc[Back up resources using PowerShell cmdlets]
- ** xref:task_view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.adoc[View custom plug-in resource related backups and clones in the Topology page]
 * xref:task_restore_custom_plug_in_resources.adoc[Restore custom plug-in resources]
- ** xref:task_restore_a_resource_backup.adoc[Restore a resource backup]
- ** xref:task_restore_and_recover_resources_using_powershell_cmdlets.adoc[Restore resources using PowerShell cmdlets]
 * xref:task_clone_custom_plug_in_resource_backups.adoc[Clone custom plug-in resource backups]
- ** xref:task_clone_from_a_backup.adoc[Clone from a backup]
- ** xref:task_clone_backups_using_powershell_cmdlets.adoc[Clone backups using PowerShell cmdlets]
-* xref:reference_copyright_and_trademark.adoc[Copyright, trademark, and machine translation]
- ** xref:reference_copyright.adoc[Copyright]
- ** xref:reference_trademark.adoc[Trademark]
- ** xref:generic_machine_translation_disclaimer.adoc[Machine translation]
