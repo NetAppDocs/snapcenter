@@ -13,8 +13,10 @@ SnapCenter supports a wide range of storage types on both physical and virtual m
 
 SnapCenter does not support storage provisioning for Linux and AIX.
 
+== Storage types supported on Linux
+
 |===
-| Machine | Storage type supported on Linux
+| Machine | Storage type
 
 a|
 Physical server
@@ -32,8 +34,11 @@ You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/pl
 * VMDKs on VMFS or NFS datastores
 * NFS volumes connected directly to the guest system
 |===
+
+== Storage types supported on AIX
+
 |===
-| Machine | Storage type supported on AIX
+| Machine | Storage type
 
 a|
 Physical server
