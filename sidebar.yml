@@ -960,10 +960,8 @@ entries:
       url: "/admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html"
     - title: Request reports of the protection status from the dashboard
       url: "/admin/task_request_reports_of_the_protection_status_from_the_dashboard.html"
-  - title: Modify a role
-    url: "/admin/task_modify_a_role.html"
-  - title: Modify users or groups
-    url: "/admin/task_modify_users_or_groups.html"
+  - title: Manage RBAC
+    url: "admin/task_manage_rbac.html"
   - title: Manage hosts
     url: "/admin/concept_manage_hosts.html"
     entries:
