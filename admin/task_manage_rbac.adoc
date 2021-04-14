@@ -1,0 +1,44 @@
+---
+permalink: admin/task_manage_rbac.html
+sidebar: sidebar
+keywords: modify RBAC, role, users, groups
+summary: 'SnapCenter allows you to modify roles, users, and groups.'
+---
+= Manage RBAC
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter allows you to modify roles, users, and groups.
+
+== Modify a role
+
+You can modify a SnapCenter role to remove users or groups and change the permissions associated with the role. It is especially useful to modify roles when you want to change or eliminate the permissions used by an entire role.
+
+You must have logged in as the "SnapCenterAdmin" role.
+
+You cannot modify or remove permissions for the SnapCenterAdmin role.
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Roles*.
+. From the Role name field, click the role you want to modify.
+. In the Role Details page alter the permissions or unassign the members as needed.
+. Select *All members of this role can see other members' objects* to enable other members of the role to see resources such as volumes and hosts after they refresh the resources list.
++
+Deselect this option if you do not want members of this role to see objects to which other members are assigned.
++
+NOTE: When this option is enabled, assigning users access to objects or resources is not required if users belong to the same role as the user who created the objects or resources.
+
+. Click *Submit*.
+
+== Modify users and groups
+
+You can modify SnapCenter users or groups to alter their roles and assets.
+
+You must be logged in as the SnapCenter administrator.
+
+. In the left navigation pane, click *Settings*.
+. On the Settings page, click *Users and Access*.
+. From the User or Group name list, click the user or group that you want to modify.
+. On the User or Group details page, alter roles and assets.
+. Click *Submit*.

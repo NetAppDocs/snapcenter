@@ -47,7 +47,7 @@ Similarly, if you want to perform data protection operations on an Oracle databa
 
 == SnapCenter Plug-in for VMware vSphere RBAC
 
-If you are using the SnapCenter VMware plug-in for VM-consistent data protection, the vCenter Server provides an additional level of RBAC. tHE SnapCenter VMware plug-in supports both vCenter Server RBAC and Data ONTAP RBAC.
+If you are using the SnapCenter VMware plug-in for VM-consistent data protection, the vCenter Server provides an additional level of RBAC. The SnapCenter VMware plug-in supports both vCenter Server RBAC and Data ONTAP RBAC.
 
 For information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_role_based_access_control.html[SnapCenter Plug-in for VMware vSphere RBAC^]
 

@@ -14,8 +14,7 @@ Describes how to manage SnapCenter by managing your hosts, the SnapCenter Server
 reports.
 
 * xref:concept_overview_of_dashboard.adoc[Overview of dashboard]
-* xref:task_modify_a_role.adoc[Modify a role]
-* xref:task_modify_users_or_groups.adoc[Modify users or groups]
+* xref:task_manage_rbac.adoc[Manage RBAC]
 * xref:concept_manage_hosts.adoc[Manage hosts]
 * xref:concept_what_operations_can_be_performed_from_the_resource_page.adoc[What operations can be performed from the Resources page]
 * xref:concept_manage_policies.adoc[Manage policies]
@@ -32,4 +31,4 @@ reports.
 * xref:concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.adoc[Uninstall SnapCenter plug-ins and plug-in packages]
 * xref:task_uninstalling_the_snapcenter_server.adoc[Uninstall the SnapCenter Server]
 * xref:concept_manage_ems_data_collection.adoc[Manage EMS data collection]
-* xref:reference_plug_ins_that_support_rest_apis.adoc[Plug-in that support REST APIs]
+* xref:reference_plug_ins_that_support_rest_apis.adoc[Plug-ins that support REST APIs]

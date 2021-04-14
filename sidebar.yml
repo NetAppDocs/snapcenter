@@ -316,8 +316,6 @@ entries:
   - title: Back up SQL Server database, or instance, or availability group
     url: "/protect-scsql/reference_back_up_sql_server_database_or_instance_or_availability_group.html"
     entries:
-    - title: Configure credentials for an individual SQL Server resource
-      url: "/protect-scsql/task_configure_credentials_for_an_individual_sql_server_resource.html"
     - title: Determine whether resources are available for backup
       url: "/protect-scsql/task_determine_whether_resources_are_available_for_backup.html"
     - title: Migrate resources to NetApp storage system
@@ -369,7 +367,7 @@ entries:
       url: "/protect-scsql/task_perform_clone_lifecycle_management.html"
     - title: Split a clone
       url: "/protect-scsql/task_split_a_clone.html"
-- title: Protect Windows File systems
+- title: Protect Windows file systems
   url: "/protect-scw/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft Windows overview
@@ -962,10 +960,8 @@ entries:
       url: "/admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html"
     - title: Request reports of the protection status from the dashboard
       url: "/admin/task_request_reports_of_the_protection_status_from_the_dashboard.html"
-  - title: Modify a role
-    url: "/admin/task_modify_a_role.html"
-  - title: Modify users or groups
-    url: "/admin/task_modify_users_or_groups.html"
+  - title: Manage RBAC
+    url: "/admin/task_manage_rbac.html"
   - title: Manage hosts
     url: "/admin/concept_manage_hosts.html"
     entries:

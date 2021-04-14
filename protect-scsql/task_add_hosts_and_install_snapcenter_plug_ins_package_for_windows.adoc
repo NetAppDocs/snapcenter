@@ -1,5 +1,5 @@
 ---
-permalink: protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html
+permalink: protect-scsql/task_add_hosts_and_install_snapcenter_plug_ins_package_for_windows.html
 sidebar: sidebar
 keywords: credentials
 summary: 'You must use the SnapCenterAdd Host page to add hosts and install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.'
@@ -38,6 +38,7 @@ http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing
 +
 |===
 | For this field...| Do this...
+
 a|
 Host Type
 a|

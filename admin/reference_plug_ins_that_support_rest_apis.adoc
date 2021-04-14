@@ -1,10 +1,10 @@
 ---
 permalink: admin/reference_plug_ins_that_support_rest_apis.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Support for REST APIs depends on which SnapCenter plug-ins you have installed.'
 ---
-= Plug-in that support REST APIs
+= Plug-ins that support REST APIs
 :icons: font
 :imagesdir: ../media/
 
