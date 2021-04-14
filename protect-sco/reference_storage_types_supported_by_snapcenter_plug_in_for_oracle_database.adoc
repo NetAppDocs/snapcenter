@@ -15,6 +15,8 @@ SnapCenter does not support storage provisioning for Linux and AIX.
 
 == Storage types supported on Linux
 
+The following table lists the storage types supported on Linux.
+
 |===
 | Machine | Storage type
 
@@ -37,6 +39,8 @@ You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/pl
 
 == Storage types supported on AIX
 
+The following table lists the storage types supported on Linux.
+
 |===
 | Machine | Storage type
 
@@ -56,6 +60,4 @@ NOTE: NFS on AIX and filesystem is not supported.
 // [SD]: Included for BURT 1391312 in 4.5
 +
 Supports inline logging on SAN filesystems and LVM layout.
-+
-JFS2 is supported with external log device but not with GPFS or NFS filesystems.
 |===
