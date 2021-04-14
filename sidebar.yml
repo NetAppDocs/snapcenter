@@ -961,7 +961,7 @@ entries:
     - title: Request reports of the protection status from the dashboard
       url: "/admin/task_request_reports_of_the_protection_status_from_the_dashboard.html"
   - title: Manage RBAC
-    url: "admin/task_manage_rbac.html"
+    url: "/admin/task_manage_rbac.html"
   - title: Manage hosts
     url: "/admin/concept_manage_hosts.html"
     entries:

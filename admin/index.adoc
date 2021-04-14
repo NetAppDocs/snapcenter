@@ -14,7 +14,7 @@ Describes how to manage SnapCenter by managing your hosts, the SnapCenter Server
 reports.
 
 * xref:concept_overview_of_dashboard.adoc[Overview of dashboard]
-* xref:task_managing_rbac.adoc[Managing RBAC]
+* xref:task_manage_rbac.adoc[Manage RBAC]
 * xref:concept_manage_hosts.adoc[Manage hosts]
 * xref:concept_what_operations_can_be_performed_from_the_resource_page.adoc[What operations can be performed from the Resources page]
 * xref:concept_manage_policies.adoc[Manage policies]
