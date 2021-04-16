@@ -49,7 +49,7 @@ You should configure sudo privileges for the non-root user to provide access to 
 . Add the following lines to the /etc/sudoers file by using the visudo Linux utility.
 +
 ----
-Cmnd_Alias HPPACMD = sha224:checksum_value== /home/AIXUSER/.sc_netapp/snapcenter_aix_host_plugin.bsx,
+Cmnd_Alias SCCMD = sha224:checksum_value== /home/AIXUSER/.sc_netapp/snapcenter_aix_host_plugin.bsx,
 /opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
 /opt/NetApp/snapcenter/spl/bin/spl
 Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/AIXUSER/.sc_netapp/AIX_Prechecks.sh
@@ -58,7 +58,7 @@ Defaults:AIXUSER !visiblepw
 Defaults:AIXUSER !requiretty
 ----
 +
-AIXUSER is the name of the non-root user that you created.
+_AIXUSER_ is the name of the non-root user that you created.
 +
 You can obtain the checksum value from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
 +
