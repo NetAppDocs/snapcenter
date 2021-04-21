@@ -1,5 +1,5 @@
 ---
-permalink: perl/reference_perl.html
+permalink: protect-scc/reference_perl.html
 sidebar: sidebar
 keywords:
 summary: 'Develop the plug-in using PERL.'

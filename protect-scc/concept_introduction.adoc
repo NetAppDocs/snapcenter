@@ -1,5 +1,5 @@
 ---
-permalink: dev_guide/concept_introduction.html
+permalink: protect-scc/concept_introduction.html
 sidebar: sidebar
 keywords:
 summary: 'The SnapCenter Server enables you to deploy and manage your applications as plug-ins to SnapCenter.'
