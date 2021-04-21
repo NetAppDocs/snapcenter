@@ -107,11 +107,11 @@ a|
 Failed operation, skip unquiesce, and exit. Unquiesce is by default.
 a|
 101
-|a
+a|
 Failed operation, continue with backup operation.
-|a
+a|
 other
-|a
+a|
 Failed operation, run unquiesce, and exit.
 |===
 
