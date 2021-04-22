@@ -886,6 +886,17 @@ entries:
         url: "/protect-scc/concept_number_of_backup_jobs_needed.html"
     - title: Types of restore strategies supported for manually added SAP HANA resources
       url: "/protect-scc/reference_types_of_restore_strategies_supported_for_manually_added_sap_hana_resources.html"
+  - title: Develop a plug-in for your application
+    url: "/protect-scc/concept_develop_a_plug_in_for_your_application.html"
+    entries:
+    - title: PERL-based development
+      url: "/protect-scc/reference_perl.html"
+    - title: Native style
+      url: "/protect-scc/reference_native.html"
+    - title: Java style
+      url: "/protect-scc/reference_java.html"
+    - title: Custom plug-in in SnapCenter
+      url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"      
   - title: Install SnapCenter Custom Plug-ins
     url: "/protect-scc/task_install_snapcenter_custom_plug_in.html"
     entries:
