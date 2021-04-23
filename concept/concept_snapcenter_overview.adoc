@@ -221,13 +221,11 @@ NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on 
 
 * Automates application-aware backup and restore operations for Microsoft Exchange Server databases and Database Availability Groups (DAGs) in your SnapCenter environment
 * Supports virtualized Exchange Servers on RDM LUNs when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter
-* Supports migrating backups from SnapManager 7.x to SnapCenter
 
 === SnapCenter Plug-in for Oracle Database features
 
 * Automates application-aware backup, restore, recovery, verify, mount, unmount, and clone operations for Oracle databases in your SnapCenter environment
 * Supports Oracle databases for SAP, however, SAP BR*Tools integration is not provided
-* Supports importing backups from SnapManager for Oracle and SnapManager for SAP to SnapCenter
 
 === SnapCenter Plug-in for UNIX features
 
@@ -271,5 +269,3 @@ The SnapCenter repository stores the following information and metadata:
 * Host and plug-in information
 * Role, user, and permission details
 * Storage system connection information
-
-The http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT) contains the latest information about the MySQL supported versions.

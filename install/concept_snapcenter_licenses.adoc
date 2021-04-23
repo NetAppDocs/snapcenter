@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_snapcenter_licenses.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.'
 ---
 = SnapCenter licenses
@@ -17,7 +17,7 @@ Required if you are using FAS or AFF storage controllers
 
 * SnapCenter Standard capacity-based licenses
 +
-Required to protect data on ONTAP Select and ONTAP Cloud platforms
+Required to protect data on ONTAP Select and Cloud Volumes ONTAP
 
 * ONTAP licenses, one of the following:
  ** SnapMirror license
