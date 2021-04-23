@@ -12,7 +12,11 @@ summary: 'Describes how to install the SnapCenter Plug-in for custom application
 Describes how to install the SnapCenter Plug-in for custom applications and then perform backup, restore, and clone operations on custom applications
 
 * xref:concept_snapcenter_custom_plug_ins_overview.adoc[SnapCenter Custom Plug-ins overview]
+<<<<<<< HEAD
 * xref:concept_concept_develop_a_plug_in_for_your_application.adoc[Develop a plug-in for your application]
+=======
+* xref:concept_develop_a_plug_in_for_your_application.adoc[Develop a plug-in for your application]
+>>>>>>> 6632c47d3e355d1c3ef00efc5b7d0a321787d3f2
 * xref:task_install_snapcenter_custom_plug_in.adoc[Install SnapCenter Custom Plug-ins]
 * xref:reference_prerequisites_for_using_snapcenter_custom_plug_ins.adoc[Prerequisites for using the SnapCenter Custom Plug-ins]
 * xref:task_back_up_resources_using_powershell_cmdlets.adoc[Back up resources using PowerShell cmdlets]
