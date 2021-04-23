@@ -27,7 +27,7 @@ For information about how administrators assign resources to users, see the Snap
 +
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
 
-* If you want to run the PowerShell scritps in prescripts and postscripts, you should set the value of the usePowershellProcessforScripts parameter to true in the web.config file.
+* If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the usePowershellProcessforScripts parameter to true in the web.config file.
 +
 The default value is false
 
