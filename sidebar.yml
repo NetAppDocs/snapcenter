@@ -463,9 +463,9 @@ entries:
         url: "/protect-sco/concept_backup_schedules_for_plugin_for_oracle.html"
       - title: Backup naming conventions for plug-in for Oracle
         url: "/protect-sco/concept_backup_naming_conventions_for_plugin_for_oracle.html"
-      - title: Backup retention options
+      - title: Backup retention options for plug-in for Oracle
         url: "/protect-sco/concept_backup_retention_options_for_plugin_for_oracle.html"
-      - title: Backup copy verification using the primary or secondary storage volume
+      - title: Backup copy verification using the primary or secondary storage volume for plug-in for Oracle
         url: "/protect-sco/concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume_for_plugin_for_oracle.html"
     - title: Define a restore and recovery strategy for Oracle databases
       url: "/protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html"
