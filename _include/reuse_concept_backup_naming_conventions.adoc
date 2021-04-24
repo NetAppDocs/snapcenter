@@ -1,14 +1,3 @@
----
-permalink: protect-sco/concept_backup_naming_conventions.html
-sidebar: sidebar
-keywords: 
-summary: 'You can either use the default Snapshot copy naming convention or use a customized naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.'
----
-= Backup naming conventions
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
 You can either use the default Snapshot copy naming convention or use a customized naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.
 
 The Snapshot copy uses the following default naming convention: `resourcegroupname_hostname_timestamp`
