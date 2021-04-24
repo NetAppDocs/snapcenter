@@ -460,7 +460,7 @@ entries:
       - title: How to catalog backups with Oracle Recovery Manager
         url: "/protect-sco/reference_how_to_catalog_backups_with_oracle_recovery_manager.html"
       - title: Backup schedules for plug-in for Oracle
-        url: "/protect-sco\concept_backup_schedules_for_plugin_for_oracle.html"
+        url: "/protect-sco/concept_backup_schedules_for_plugin_for_oracle.html"
       - title: Backup naming conventions
         url: "/protect-sco/concept_backup_naming_conventions.html"
       - title: Backup retention options
