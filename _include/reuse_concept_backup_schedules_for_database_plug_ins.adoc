@@ -1,14 +1,3 @@
----
-permalink: protect-sco/concept_backup_schedules_for_database_plug_ins.html
-sidebar: sidebar
-keywords: 
-summary: 'Backup frequency \(schedule type\) is specified in policies; a backup schedule is specified in the resource group configuration. The most critical factor in determining a backup frequency or schedule is the rate of change for the resource and the importance of the data. You might back up a heavily used resource every hour, while you might back up a rarely used resource once a day. Other factors include the importance of the resource to your organization, your Service Level Agreement \(SLA\), and your Recover Point Objective \(RPO\).'
----
-= Backup schedules for database plug-ins
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
 Backup frequency (schedule type) is specified in policies; a backup schedule is specified in the resource group configuration. The most critical factor in determining a backup frequency or schedule is the rate of change for the resource and the importance of the data. You might back up a heavily used resource every hour, while you might back up a rarely used resource once a day. Other factors include the importance of the resource to your organization, your Service Level Agreement (SLA), and your Recover Point Objective (RPO).
 
 An SLA defines the level of service expected and addresses many service-related issues, including the availability and performance of service. An RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. The SLA and RPO contribute to the data protection strategy.

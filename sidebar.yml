@@ -459,8 +459,8 @@ entries:
         url: "/protect-sco/reference_preferred_nodes_in_rac_setup.html"
       - title: How to catalog backups with Oracle Recovery Manager
         url: "/protect-sco/reference_how_to_catalog_backups_with_oracle_recovery_manager.html"
-      - title: Backup schedules for database plug-ins
-        url: "/protect-sco/concept_backup_schedules_for_database_plug_ins.html"
+      - title: Backup schedules for plug-in for Oracle
+        url: "/protect-sco\concept_backup_schedules_for_plugin_for_oracle.html"
       - title: Backup naming conventions
         url: "/protect-sco/concept_backup_naming_conventions.html"
       - title: Backup retention options
@@ -896,7 +896,7 @@ entries:
     - title: Java style
       url: "/protect-scc/reference_java.html"
     - title: Custom plug-in in SnapCenter
-      url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"      
+      url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"
   - title: Install SnapCenter Custom Plug-ins
     url: "/protect-scc/task_install_snapcenter_custom_plug_in.html"
     entries:
