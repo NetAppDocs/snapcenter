@@ -93,10 +93,6 @@ In large configurations for optimum performance, you should set the log settings
 
 NOTE: To access health or configuration information after a failover job finishes, run the cmdlet Get-SmRepositoryConfig.
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running helpcommand_name. Alternatively, you can also refer to the _Command Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide]
-
 == Remove jobs and logs from SnapCenter
 
 You can remove backup, restore, clone, and verification jobs and logs from SnapCenter. SnapCenter stores successful and failed job logs indefinitely unless you remove them. You might want to remove them to replenish storage.
@@ -108,9 +104,7 @@ You can remove a specific job by providing a Job ID or you can remove jobs withi
 
 You do not need to place the host in maintenance mode to remove jobs.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide]
+*Steps*
 
 . Launch PowerShell.
 . From the command prompt, enter:
@@ -128,3 +122,9 @@ Remove-SmJobs
 . In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Jobs*.
 . In the Jobs page, review the status of the job.
+
+*Related information*
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide^]

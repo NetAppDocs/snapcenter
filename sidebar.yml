@@ -982,44 +982,12 @@ entries:
     url: "/admin/concept_overview_of_snapcenter_reports.html"
   - title: Manage the SnapCenter Server repository
     url: "/admin/concept_manage_the_snapcenter_server_repository.html"
-    entries:
-    - title: Prerequisites for protecting the SnapCenter repository
-      url: "/admin/concept_prerequisites_for_backing_up_snapcenter_repository.html"
-    - title: Back up the SnapCenter repository
-      url: "/admin/task_back_up_the_snapcenter_repository.html"
-    - title: View backups of the SnapCenter repository
-      url: "/admin/task_view_backups_of_the_snapcenter_repository.html"
-    - title: Restore the SnapCenter database repository
-      url: "/admin/task_restore_a_snapcenter_database_repository_backup.html"
-    - title: Migrate the SnapCenter repository
-      url: "/admin/task_migrate_the_snapcenter_repository.html"
-    - title: Reset theSnapCenter repository password
-      url: "/admin/task_reset_the_snapcenter_repository_password.html"
   - title: Manage resources of untrusted domains
     url: "/admin/concept_manage_resources_of_untrusted_domains.html"
-    entries:
-    - title: Modify untrusted domains
-      url: "/admin/task_modify_the_untrusted_domain.html"
-    - title: Unregister untrusted Active Directory domains
-      url: "/admin/task_unregister_the_untrusted_domain.html"
   - title: Manage the storage system
     url: "/admin/concept_manage_the_storage_system.html"
-    entries:
-    - title: Modify storage system configuration
-      url: "/admin/task_modify_storage_system_configuration.html"
-    - title: Delete the storage system
-      url: "/admin/task_delete_the_storage_system.html"
   - title: Manage EMS data collection
     url: "/admin/concept_manage_ems_data_collection.html"
-    entries:
-    - title: Stop EMS data collection
-      url: "/admin/task_stop_ems_data_collection.html"
-    - title: Start EMS data collection
-      url: "/admin/task_start_ems_data_collection.html"
-    - title: Change EMS data collection schedule and target SVM
-      url: "/admin/task_change_ems_data_collection.html"
-    - title: Monitor EMS data collection status
-      url: "/admin/task_monitor_ems_data_collection_status.html"
 - title: Upgrade SnapCenter Server and plug-ins
   url: "/upgrade/index.html"
   entries:
