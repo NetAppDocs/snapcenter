@@ -24,7 +24,7 @@ entries:
     url: "/concept/concept_prescripts_and_postscripts.html"
   - title: Configuration Checker
     url: "/concept/concept_configuration_checker.html"
-  - title: SnapCenter Automation
+  - title: SnapCenter REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: Install SnapCenter Server
   url: "/install/index.html"
@@ -966,68 +966,20 @@ entries:
     url: "/admin/task_manage_rbac.html"
   - title: Manage hosts
     url: "/admin/concept_manage_hosts.html"
-    entries:
-    - title: Refresh virtual machine information
-      url: "/admin/task_refresh_virutal_machine_information.html"
-    - title: Modify plug-in hosts
-      url: "/admin/task_modify_plug_in_hosts.html"
-    - title: Start or restart plug-in services
-      url: "/admin/task_start_or_restart_plug_in_services.html"
-    - title: Suspend schedules for host maintenance
-      url: "/admin/task_suspend_schedules_for_host_maintenance.html"
-  - title: What operations can be performed from the Resources page
+  - title: Operation supported from the Resources page
     url: "/admin/concept_what_operations_can_be_performed_from_the_resource_page.html"
   - title: Manage policies
     url: "/admin/concept_manage_policies.html"
-    entries:
-    - title: Detach policies
-      url: "/admin/task_detach_policies.html"
-    - title: Modify policies
-      url: "/admin/task_modify_policies.html"
-    - title: Delete policies
-      url: "/admin/task_delete_policies.html"
   - title: Manage resource groups
     url: "/admin/task_manage_resource_groups.html"
-    entries:
-    - title: Stop and resume operations on resource groups
-      url: "/admin/task_stop_and_resume_operations_on_resource_groups.html"
-    - title: Delete resource groups
-      url: "/admin/task_delete_resource_groups.html"
   - title: Manage backups
     url: "/admin/concept_manage_backups.html"
-    entries:
-    - title: Rename backups
-      url: "/admin/task_rename_backups.html"
-    - title: Delete backups
-      url: "/admin/task_delete_backups.html"
   - title: Delete clones
     url: "/admin/task_delete_clones.html"
   - title: Monitor jobs, schedules, events, and logs
     url: "/admin/concept_monitor_jobs_schedules_events_and_logs.html"
-    entries:
-    - title: Monitor SnapCenter jobs
-      url: "/admin/concept_monitor_snapcenter_jobs.html"
-    - title: Monitor SnapCenter schedules
-      url: "/admin/concept_monitor_snapcenter_schedules.html"
-    - title: Monitor SnapCenter events
-      url: "/admin/concept_monitor_snapcenter_events.html"
-    - title: Monitor SnapCenter logs
-      url: "/admin/concept_monitor_snapcenter_logs.html"
-    - title: Remove jobs and logs from SnapCenter
-      url: "/admin/task_remove_jobs_and_logs_from_snapcenter.html"
   - title: Overview of SnapCenter reporting capabilities
     url: "/admin/concept_overview_of_snapcenter_reports.html"
-    entries:
-    - title: Access SnapCenter reports
-      url: "/admin/task_access_snapcenter_reports.html"
-    - title: Filter your report data
-      url: "/admin/task_filter_your_report.html"
-    - title: Export or print reports
-      url: "/admin/task_export_or_print_reports.html"
-    - title: Set the SMTP server for email notifications
-      url: "/admin/task_set_the_smtp_server_for_email_notifications.html"
-    - title: Configure the option to email reports
-      url: "/admin/task_configure_the_option_to_email_reports.html"
   - title: Manage the SnapCenter Server repository
     url: "/admin/concept_manage_the_snapcenter_server_repository.html"
     entries:
@@ -1043,15 +995,6 @@ entries:
       url: "/admin/task_migrate_the_snapcenter_repository.html"
     - title: Reset theSnapCenter repository password
       url: "/admin/task_reset_the_snapcenter_repository_password.html"
-  - title: Manage Configuration Checker
-    url: "/admin/concept_manage_configuration_checker.html"
-    entries:
-    - title: View Configuration Checker alerts
-      url: "/admin/task_view_configuration_checker_alerts.html"
-    - title: Run Configuration Checker on the plug-in hosts
-      url: "/admin/task_run_configuration_checker_for_the_plug_in_hosts.html"
-    - title: Manage the Configuration Checker schedules
-      url: "/admin/task_manage_the_configuration_checker_schedules.html"
   - title: Manage resources of untrusted domains
     url: "/admin/concept_manage_resources_of_untrusted_domains.html"
     entries:

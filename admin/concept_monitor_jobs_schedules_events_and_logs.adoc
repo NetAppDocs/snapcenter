@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_monitor_jobs_schedules_events_and_logs.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can monitor the progress of your jobs, get information about scheduled jobs, and review events and logs from the Monitor page.'
 ---
 = Monitor jobs, schedules, events, and logs
@@ -10,3 +10,121 @@ summary: 'You can monitor the progress of your jobs, get information about sched
 
 [.lead]
 You can monitor the progress of your jobs, get information about scheduled jobs, and review events and logs from the Monitor page.
+
+== Monitor jobs
+
+You can view information about SnapCenter backup, clone, restore, and verification jobs. You can filter this view based on start and end date, type of job, resource group, policy, or SnapCenter plug-in. You can also get additional details and log files for specified jobs.
+
+You can also monitor jobs related to SnapMirror and SnapVault operations.
+
+You can monitor only the jobs that you created and that are relevant to you unless you are assigned SnapCenter Admin or another super user role.
+
+You can perform the following tasks related to monitoring jobs:
+
+* Monitor backup, clone, restore, and verification operations.
+* View job details and reports.
+* Stop a scheduled job.
+
+== Monitor schedules
+
+You might want to view current schedules to determine when the operation starts, when it was last run, and when it runs next. You can also determine the host on which the operation runs, along with the operation's resource group and policy information.
+
+*Steps*
+
+. In the left navigation pane, click *Monitor*..
+. In the Monitor page, click *Schedules*.
+. Select the resource group and the schedule type.
+. View the list of scheduled operations.
+
+== Monitor events
+
+You can view a list of SnapCenter events in the system, such as when a user creates a resource group or when the system initiates activities, such as creating a scheduled backup. You might want to view events to determine if an operation such as a backup or a restore operation is currently in progress.
+
+*About this task*
+
+All job information appears in the Events page. For example, when a backup job starts, a "`backup start`" event appears. When the backup completes, a "`backup complete`" event appears.
+
+*Steps*
+
+. In the left navigation pane, click *Monitor*.
+. In the Monitor page, click *Events*.
+. Optional. In the Filter box, enter the start or end date, category of event (such as backup, resource group, or policy) and severity level, and click *Apply*. Alternatively, enter characters in the Search box.
+. View the list of events.
+
+== Monitor logs
+
+You can view and download SnapCenter Server logs, SnapCenter host agent logs, and plug-in logs. You might want to view the logs to help with troubleshooting.
+
+*About this task*
+
+You can filter the logs to show only a specific log severity level:
+
+* Debug
+* Info
+* Warn
+* Error
+* Fatal
+
+You can also obtain job level logs: for example, logs that help you troubleshoot the reason for a backup job failure. For job level logs, use the *Monitor* > *Jobs* option.
+
+*Steps*
+
+. In the left navigation pane, click *Monitor*.
+. In the Jobs page, select a job and click Download logs.
++
+The downloaded zipped folder contains the job logs and the common logs. The zipped folder name contains the job id and job type selected.
+
+. In the Monitor page, click *Logs*.
+. Select the log type, host, and instance.
++
+If you select log type is *plugin*, you can select a host or SnapCenter plug-in. You cannot do this if the log type is *server*.
+
+. To filter the logs by a specific source, message, or log level, click the filter icon at the top of the column heading.
++
+To show all logs, choose *Greater than or equal to* as the "`Debug`" level.
+
+. Click *Refresh*.
+. View the list of logs.
+. Click *Download* to download the logs.
++
+The downloaded zipped folder contains the job logs and the common logs. The zipped folder name contains the job id and job type selected.
+
+In large configurations for optimum performance, you should set the log settings for SnapCenter to minimal level by using the PowerShell cmdlet. `Set-SmLogSettings -LogLevel All -MaxFileSize 10MB -MaxSizeRollBackups 10 -JobLogsMaxFileSize 10MB -Server`
+
+NOTE: To access health or configuration information after a failover job finishes, run the cmdlet Get-SmRepositoryConfig.
+
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running helpcommand_name. Alternatively, you can also refer to the _Command Reference Guide_.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide]
+
+== Remove jobs and logs from SnapCenter
+
+You can remove backup, restore, clone, and verification jobs and logs from SnapCenter. SnapCenter stores successful and failed job logs indefinitely unless you remove them. You might want to remove them to replenish storage.
+
+*About this task*
+
+There must be no jobs currently in operation.
+You can remove a specific job by providing a Job ID or you can remove jobs within a specified period.
+
+You do not need to place the host in maintenance mode to remove jobs.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide]
+
+. Launch PowerShell.
+. From the command prompt, enter:
++
+----
+Open-SMConnection
+----
+
+. From the command prompt, enter:
++
+----
+Remove-SmJobs
+----
+
+. In the left navigation pane, click *Monitor*.
+. In the Monitor page, click *Jobs*.
+. In the Jobs page, review the status of the job.
