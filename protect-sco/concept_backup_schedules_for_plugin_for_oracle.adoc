@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Backup frequency \(schedule type\) is specified in policies; a backup schedule is specified in the resource group configuration.'
 ---
-= Backup schedules for plug-in for Oracle
+= Backup schedules for Plug-in for Oracle
 :icons: font
 :imagesdir: ../media/
 

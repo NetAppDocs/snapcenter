@@ -278,8 +278,8 @@ entries:
         url: "/protect-scsql/task_set_up_credentials_for_snapcenter_plug_ins_package_for_windows.html"
       - title: Configure credentials for an individual SQL Server resource
         url: "/protect-scsql/task_configure_credentials_for_an_individual_sql_server_resource.html"
-      - title: Configure gMSA on Windows Server 2012 or later for SQL
-        url: "/protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for SQL
+        url: "/protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_sql.html"
     - title: Add hosts and install the SnapCenter Plug-ins Package for Windows
       url: "/protect-scsql/task_add_hosts_and_install_snapcenter_plug_ins_package_for_windows.html"
       entries:
@@ -400,8 +400,8 @@ entries:
       entries:
       - title: Set up your credentials for the Plug-in for Windows
         url: "/protect-scw/task_set_up_your_credentials_for_the_plug_in_for_windows.html"
-      - title: Configure gMSA on Windows Server 2012 or later for Windows file system
-        url: "/protect-scw/task_configure_gMSA_on_windows_server_2012_or_later_for_windows_file_system.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for Windows
+        url: "/protect-scw/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_windows.html"
     - title: Add hosts and install SnapCenter Plug-in for Microsoft Windows
       url: "/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html"
       entries:
@@ -442,7 +442,7 @@ entries:
       url: "/protect-sco/concept_snapcenter_plug_in_for_oracle_database_features.html"
     - title: Storage types supported by SnapCenter Plug-in for Oracle Database
       url: "/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html"
-    - title: Prepare storage systems for SnapMirror and SnapVault replication for plug-in for Oracle
+    - title: Prepare storage systems for SnapMirror and SnapVault replication for Plug-in for Oracle
       url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_oracle.html"
     - title: Minimum ONTAP privileges required for Oracle plug-in
       url: "/protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html"
@@ -459,13 +459,13 @@ entries:
         url: "/protect-sco/reference_preferred_nodes_in_rac_setup.html"
       - title: How to catalog backups with Oracle Recovery Manager
         url: "/protect-sco/reference_how_to_catalog_backups_with_oracle_recovery_manager.html"
-      - title: Backup schedules for plug-in for Oracle
+      - title: Backup schedules for Plug-in for Oracle
         url: "/protect-sco/concept_backup_schedules_for_plugin_for_oracle.html"
-      - title: Backup naming conventions for plug-in for Oracle
+      - title: Backup naming conventions for Plug-in for Oracle
         url: "/protect-sco/concept_backup_naming_conventions_for_plugin_for_oracle.html"
-      - title: Backup retention options for plug-in for Oracle
+      - title: Backup retention options for Plug-in for Oracle
         url: "/protect-sco/concept_backup_retention_options_for_plugin_for_oracle.html"
-      - title: Backup copy verification using the primary or secondary storage volume for plug-in for Oracle
+      - title: Backup copy verification using the primary or secondary storage volume for Plug-in for Oracle
         url: "/protect-sco/concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume_for_plugin_for_oracle.html"
     - title: Define a restore and recovery strategy for Oracle databases
       url: "/protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html"
@@ -685,8 +685,8 @@ entries:
         url: "/protect-sce/reference_exchange_server_cluster_node_privileges_required.html"
       - title: Set up credentials for SnapCenter Plug-in for Windows
         url: "/protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html"
-      - title: Configure gMSA on Windows Server 2012 or later for Exchange Server
-        url: "/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for Exchange
+        url: "/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_exchange.html"
     - title: Add hosts and install Plug-in for Exchange
       url: "/protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html"
       entries:
@@ -798,8 +798,8 @@ entries:
         url: "/protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html"
       - title: Set up credentials for the SnapCenter Plug-in for SAP HANA Database
         url: "/protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html"
-      - title: Configure gMSA on Windows Server 2012 or later for SAP HANA
-        url: "/protect-hana/task_configure_gMSA_on_windows_server_2012_or_later_for_sap_hana.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for HANA
+        url: "/protect-hana/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_hana.html"
     - title: Add hosts and install plug-in packages on remote hosts
       url: "/protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html"
       entries:
@@ -905,8 +905,8 @@ entries:
       entries:
       - title: Set up credentials for SnapCenter Custom Plug-ins
         url: "/protect-scc/task_set_up_credentials_for_snapcenter_custom_plug_in.html"
-      - title: Configure gMSA on Windows Server 2012 or later for custom applications
-        url: "/protect-scc/task_configure_gMSA_on_windows_server_2012_or_later_for_custom_applications.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for custom applications
+        url: "/protect-scc/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_custom_applications.html"
     - title: Add hosts and install plug-in packages on remote hosts
       url: "/protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html"
       entries:

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can verify backup copies on the primary storage volume or on either the SnapMirror or SnapVault secondary storage volume. Verification using a secondary storage volume reduces load on the primary storage volume.'
 ---
-= Backup copy verification using the primary or secondary storage volume for plug-in for Oracle
+= Backup copy verification using the primary or secondary storage volume for Plug-in for Oracle
 :icons: font
 :imagesdir: ../media/
 
