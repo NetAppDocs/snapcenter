@@ -1,0 +1,20 @@
+---
+permalink: upgrade/index.html
+sidebar: sidebar
+keywords: upgrade, snapcenter server, plug-ins
+summary: 'Describes how to upgrade SnapCenter Server and the plug-ins'
+---
+= Upgrade SnapCenter Server and plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Describes how to upgrade SnapCenter Server and the plug-ins.
+
+Each release of SnapCenter contains an updated SnapCenter Server and plug-in package updates. Plug-in package updates are distributed with the SnapCenter installer. You can configure SnapCenter to check for available updates. Then, you must install them.
+
+image::../media/upgrade_workflow.gif[]
+
+* xref:task_configure_snapcenter_to_check_for_available_updates.adoc[Configure SnapCenter to check for available updates]
+* xref:task_upgrade_your_plug_in_packages.adoc[Upgrade your plug-in packages]
+* xref:task_upgrade_snapcenter.adoc[Upgrade the SnapCenter Server]

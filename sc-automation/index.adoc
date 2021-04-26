@@ -1,0 +1,22 @@
+---
+permalink: sc-automation/index.html
+sidebar: sidebar
+keywords: REST APIs, swagger
+summary: 'Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.'
+---
+= SnapCenter Automation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.
+
+The plug-ins that support REST APIs are:
+
+* Plug-in for SQL Server
+* Plug-in for SAP HANA Database
+* Custom Plug-ins
+
+If you encounter unexpected behavior when executing SnapCenter REST APIs, you can use the log files to identify the cause and resolve the problem.
+
+You can download the log files from the SnapCenter user interface by clicking *Monitor* > *Logs* > *Download*.

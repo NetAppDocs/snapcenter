@@ -1,5 +1,7 @@
 Windows Server 2012 or later enables you to create a group Managed Service Account (gMSA) that provides automated service account password management from a managed domain account.
 
+*What you will need*
+
 * You should have a Windows Server 2012 or later domain controller.
 * You should have a Windows Server 2012 or later host, which is a member of the domain.
 * The specified gMSA account will be used to run the plug-in services such as SnapCenter Plug-in for Microsoft Windows and SnapCenter Plug-in for Microsoft SQL Server services.
@@ -9,9 +11,11 @@ Windows Server 2012 or later enables you to create a group Managed Service Accou
 * SQL deployments with gMSA is supported.
 * gMSA can be used to login to SQL Server instance.
 
+*Steps*
+
 . Create a KDS root key to generate unique passwords for each object in your gMSA.
 . For each domain, run the following command from the Windows domain controller: Add-KDSRootKey -EffectiveImmediately
-. Create and configure your gMSA:.
+. Create and configure your gMSA:
  .. Create a user group account.
  .. Add computer objects to the group.
  .. Use the user group you just created to create the gMSA.

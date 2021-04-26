@@ -24,7 +24,7 @@ entries:
     url: "/concept/concept_prescripts_and_postscripts.html"
   - title: Configuration Checker
     url: "/concept/concept_configuration_checker.html"
-  - title: SnapCenter REST APIs
+  - title: SnapCenter Automation
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: Install SnapCenter Server
   url: "/install/index.html"
@@ -1052,15 +1052,6 @@ entries:
       url: "/admin/task_run_configuration_checker_for_the_plug_in_hosts.html"
     - title: Manage the Configuration Checker schedules
       url: "/admin/task_manage_the_configuration_checker_schedules.html"
-  - title: Upgrade SnapCenter Server and plug-ins
-    url: "/admin/concept_upgrade_snapcenter_server_and_plug_ins.html"
-    entries:
-    - title: ConfigureSnapCenter to check for available updates
-      url: "/admin/task_configure_snapcenter_to_check_for_available_updates.html"
-    - title: Upgrade the SnapCenter Server
-      url: "/admin/task_upgrade_snapcenter.html"
-    - title: Upgrade your plug-in packages
-      url: "/admin/task_upgrade_your_plug_in_packages.html"
   - title: Manage resources of untrusted domains
     url: "/admin/concept_manage_resources_of_untrusted_domains.html"
     entries:
@@ -1075,24 +1066,6 @@ entries:
       url: "/admin/task_modify_storage_system_configuration.html"
     - title: Delete the storage system
       url: "/admin/task_delete_the_storage_system.html"
-  - title: Uninstall SnapCenter plug-ins and plug-in packages
-    url: "/admin/concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.html"
-    entries:
-    - title: Prerequisites for removing a host
-      url: "/admin/reference_prerequisites_for_removing_a_host.html"
-    - title: Remove a host
-      url: "/admin/task_remove_a_host.html"
-    - title: Uninstall plug-ins using the SnapCenter GUI
-      url: "/admin/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html"
-    - title: Uninstall Windows plug-ins using the PowerShell cmdlet
-      url: "/admin/task_uninstalling_windows_plug_ins_using_the_command_line_interface_on_the_snapcenter_server_host.html"
-    - title: Uninstall plug-ins locally on a host
-      url: "/admin/task_uninstall_plug_ins_locally_on_a_host.html"
-    - title: Uninstall SnapCenter Plug-ins Package for Linux or AIX using the command-line
-        interface
-      url: "/admin/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html"
-  - title: Uninstall the SnapCenter Server
-    url: "/admin/task_uninstalling_the_snapcenter_server.html"
   - title: Manage EMS data collection
     url: "/admin/concept_manage_ems_data_collection.html"
     entries:
@@ -1104,10 +1077,35 @@ entries:
       url: "/admin/task_change_ems_data_collection.html"
     - title: Monitor EMS data collection status
       url: "/admin/task_monitor_ems_data_collection_status.html"
-  - title: Plug-in that support REST APIs
-    url: "/admin/reference_plug_ins_that_support_rest_apis.html"
-    entries:
-    - title: Access REST APIs using the Swagger API web page
-      url: "/admin/task_access_rest_apis_using_the_swagger_api_web_page.html"
-    - title: Troubleshoot issues related to REST APIs
-      url: "/admin/reference_troubleshoot_issues_related_to_rest_apis.html"
+- title: Upgrade SnapCenter Server and plug-ins
+  url: "/upgrade/index.html"
+  entries:
+    - title: ConfigureSnapCenter to check for available updates
+      url: "/upgrade/task_configure_snapcenter_to_check_for_available_updates.html"
+    - title: Upgrade the SnapCenter Server
+      url: "/upgrade/task_upgrade_snapcenter.html"
+    - title: Upgrade your plug-in packages
+      url: "/upgrade/task_upgrade_your_plug_in_packages.html"
+- title: Uninstall SnapCenter Server and plug-ins
+  url: "/uninstall/index.html"
+  entries:
+    - title: Uninstall SnapCenter plug-ins and plug-in packages
+      url: "/uninstall/concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.html"
+      entries:
+      - title: Prerequisites for removing a host
+        url: "/uninstall/reference_prerequisites_for_removing_a_host.html"
+      - title: Remove a host
+        url: "/uninstall/task_remove_a_host.html"
+      - title: Uninstall plug-ins using the SnapCenter GUI
+        url: "/uninstall/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html"
+      - title: Uninstall Windows plug-ins using the PowerShell cmdlet
+        url: "/uninstall/task_uninstalling_windows_plug_ins_using_the_command_line_interface_on_the_snapcenter_server_host.html"
+      - title: Uninstall plug-ins locally on a host
+        url: "/uninstall/task_uninstall_plug_ins_locally_on_a_host.html"
+      - title: Uninstall SnapCenter Plug-ins Package for Linux or AIX using the command-line
+          interface
+        url: "/uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html"
+    - title: Uninstall the SnapCenter Server
+      url: "/uninstall/task_uninstalling_the_snapcenter_server.html"
+- title: SnapCenter Automation
+  url: "/sc-automation/index.html"
