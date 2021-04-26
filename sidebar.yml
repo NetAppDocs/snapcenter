@@ -1052,3 +1052,5 @@ entries:
       url: "/uninstall/task_uninstalling_the_snapcenter_server.html"
 - title: SnapCenter Automation
   url: "/sc-automation/index.html"
+- title: Legal notices
+  url: /reference_legal_notices.html
