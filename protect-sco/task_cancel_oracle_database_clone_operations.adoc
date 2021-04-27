@@ -1,0 +1,11 @@
+---
+permalink: protect-sco/task_cancel_oracle_database_clone_operations.html
+sidebar: sidebar
+keywords:
+summary: 'You can cancel clone operations that are queued.'
+---
+= Cancel Oracle database clone operations
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_task_cancel_clone_operations.adoc[]

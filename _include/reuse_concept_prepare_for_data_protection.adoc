@@ -1,14 +1,3 @@
----
-permalink: protect-sco/concept_prepare_for_data_protection.html
-sidebar: sidebar
-keywords: 
-summary: 'Before performing any data protection operation such as backup, clone, or restore operations, you must define your strategy and set up the environment. You can also set up the SnapCenter Server to use SnapMirror and SnapVault technology.'
----
-= Prepare for data protection
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
 Before performing any data protection operation such as backup, clone, or restore operations, you must define your strategy and set up the environment. You can also set up the SnapCenter Server to use SnapMirror and SnapVault technology.
 
 To take advantage of SnapVault and SnapMirror technology, you must configure and initialize a data protection relationship between the source and destination volumes on the storage device. You can use NetAppSystem Manager or you can use the storage console command line to perform these tasks.

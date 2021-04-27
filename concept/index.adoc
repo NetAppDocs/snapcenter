@@ -16,5 +16,4 @@ Describes the concepts related to SnapCenter, including architecture, features, 
 * xref:concept_snapcenter_role_based_access_control_rbac.adoc[SnapCenter role-based access control (RBAC)]
 * xref:concept_resources_resource_groups_and_policies.adoc[Resources, resource groups, and policies]
 * xref:concept_prescripts_and_postscripts.adoc[Prescripts and postscripts]
-* xref:concept_configuration_checker.adoc[Configuration Checker]
 * xref:concept_snapcenter_rest_apis.adoc[SnapCenter REST APIs]

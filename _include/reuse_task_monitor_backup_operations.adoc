@@ -1,15 +1,6 @@
----
-permalink: protect-sco/task_monitor_backup_operations.html
-sidebar: sidebar
-keywords: SnapCenter Server
-summary: 'You can monitor the progress of different backup operations by using the SnapCenterJobs page. You might want to check the progress to determine when it is complete or if there is an issue.'
----
-= Monitor backup operations
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
 You can monitor the progress of different backup operations by using the SnapCenterJobs page. You might want to check the progress to determine when it is complete or if there is an issue.
+
+*About this task*
 
 The following icons appear on the Jobs page and indicate the corresponding state of the operations:
 
@@ -19,6 +10,8 @@ The following icons appear on the Jobs page and indicate the corresponding state
 * image:../media/warning_icon.gif[Completed with warnings icon] Completed with warnings or could not start due to warnings
 * image:../media/verification_job_in_queue.gif[Verification job is queued] Queued
 * image:../media/cancel_icon.gif[] Canceled
+
+*Steps*
 
 . In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Jobs*.

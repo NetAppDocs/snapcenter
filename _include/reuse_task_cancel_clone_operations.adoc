@@ -1,26 +1,20 @@
----
-permalink: protect-sco/task_cancel_clone_operations.html
-sidebar: sidebar
-keywords: 
-summary: 'You can cancel clone operations that are queued.'
----
-= Cancel clone operations
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
 You can cancel clone operations that are queued.
 
-* You must be logged in as the SnapCenter Admin or job owner to cancel operations.
+*What you will need*
+
+* You should be logged in as the SnapCenter Admin or job owner to cancel operations.
 * You can cancel a clone operation from either the Monitor page or the Activity pane.
 * You cannot cancel a running clone operation.
 * You can use the SnapCenter GUI, PowerShell cmdlets, or CLI commands to cancel the clone operations.
 * If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued backup operations of other members while using that role.
 
+*Steps*
+
 . Perform one of the following actions:
 +
 |===
 | From the...| Action
+
 a|
 Monitor page
 a|
@@ -35,10 +29,4 @@ a|
  .. After initiating the clone operation, click image:../media/activity_pane_icon.gif[] on the Activity pane to view the five most recent operations.
  .. Select the operation.
  .. In the Job Details page, click *Cancel Job*.
-
-+
 |===
-
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]

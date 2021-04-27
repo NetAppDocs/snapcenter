@@ -1,27 +1,21 @@
----
-permalink: protect-sco/task_cancel_restore_operations.html
-sidebar: sidebar
-keywords: 
-summary: 'You can cancel restore jobs that are queued.'
----
-= Cancel restore operations
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
 You can cancel restore jobs that are queued.
 
-* You must be logged in as the SnapCenter Admin or job owner to cancel restore operations.
+*What you will need*
+
+* You should be logged in as the SnapCenter Admin or job owner to cancel restore operations.
 * You can cancel a restore operation from either the Monitor page or the Activity pane.
 * You cannot cancel a running restore operation.
 * You can use the SnapCenter GUI, PowerShell cmdlets, or CLI commands to cancel the restore operations.
 * The *Cancel Job* button is disabled for restore operations that cannot be canceled.
 * If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued backup operations of other members while using that role.
 
+*Steps*
+
 . Perform one of the following actions:
 +
 |===
 | From the...| Action
+
 a|
 Monitor page
 a|
@@ -39,7 +33,3 @@ a|
 
 +
 |===
-
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]

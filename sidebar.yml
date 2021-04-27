@@ -22,8 +22,6 @@ entries:
     url: "/concept/concept_resources_resource_groups_and_policies.html"
   - title: Prescripts and postscripts
     url: "/concept/concept_prescripts_and_postscripts.html"
-  - title: Configuration Checker
-    url: "/concept/concept_configuration_checker.html"
   - title: SnapCenter REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: Install SnapCenter Server
@@ -530,8 +528,8 @@ entries:
           url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_linux_in_silent_or_console_mode.html"
         - title: Installing the SnapCenter Plug-ins Package for AIX in silent mode
           url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_aix_in_silent_mode.html"
-      - title: Monitor SnapCenter plug-in package installation status
-        url: "/protect-sco/task_monitor_snapcenter_plug_in_package_installation_status.html"
+      - title: Monitor the status of installing Plug-in for Oracle
+        url: "/protect-sco/task_monitor_the_status_of_installing_plugin_for_Oracle.html"
     - title: Configure the SnapCenter Plug-in Loader service
       url: "/protect-sco/task_configure_snapcenter_plug_in_loader_service.html"
     - title: Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
@@ -564,8 +562,8 @@ entries:
       url: "/protect-sco/task_import_data.html"
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: "/protect-sco/concept_install_snapcenter_plug_in_for_vmware_vsphere.html"
-  - title: Prepare for data protection
-    url: "/protect-sco/concept_prepare_for_data_protection.html"
+  - title: Prepare for protecting Oracle databases
+    url: "/protect-sco/concept_prepare_for_protecting_oracle_databases.html"
     entries:
     - title: Prerequisites for using the SnapCenter Plug-in for Oracle Database
       url: "/protect-sco/reference_prerequisites_for_using_the_snapcenter_plug_in_for_oracle_database.html"
@@ -589,11 +587,11 @@ entries:
       url: "/protect-sco/task_back_up_oracle_database_resource_groups.html"
     - title: Back up Oracle databases using UNIX commands
       url: "/protect-sco/task_back_up_oracle_databases_using_unix_commands.html"
-    - title: Monitor backup operations
-      url: "/protect-sco/task_monitor_backup_operations.html"
+    - title: Monitor Oracle database backup operations
+      url: "/protect-sco/task_monitor_oracle_database_backup_operations.html"
       entries:
-      - title: Monitor operations in the Activity pane
-        url: "/protect-sco/task_monitor_operations_in_the_activity_pane.html"
+      - title: Monitor data protection operations on Oracle database in the Activity pane
+        url: "/protect-sco/task_monitor_dataprotection_operations_on_oracle_database_in_the_activity_pane.html"
     - title: Cancel backup operations of Oracle databases
       url: "/protect-sco/task_cancel_the_snapcenter_plug_in_for_oracle_database_backup_operations.html"
     - title: View Oracle database backups and clones in the Topology page
@@ -619,10 +617,10 @@ entries:
         url: "/protect-sco/task_restore_and_recover_pluggable_database_using_point_in_time_recovery.html"
     - title: Restore and recover Oracle databases using UNIX commands
       url: "/protect-sco/task_restore_and_recover_oracle_databases_using_unix_commands.html"
-    - title: Monitor restore operations
-      url: "/protect-sco/task_monitor_restore_operations.html"
-    - title: Cancel restore operations
-      url: "/protect-sco/task_cancel_restore_operations.html"
+    - title: Monitor Oracle database restore operations
+      url: "/protect-sco/task_monitor_oracle_database_restore_operations.html"
+    - title: Cancel Oracle database restore operations
+      url: "/protect-sco/task_cancel_oracle_database_restore_operations.html"
   - title: Clone Oracle database
     url: "/protect-sco/task_clone_oracle_database_backups.html"
     entries:
@@ -635,10 +633,10 @@ entries:
         url: "/protect-sco/task_clone_a_pluggable_database.html"
     - title: Clone Oracle database backups using UNIX commands
       url: "/protect-sco/task_clone_oracle_database_backups_using_unix_commands.html"
-    - title: Monitor clone operations in SnapCenter
-      url: "/protect-sco/task_monitor_clone_operations_in_snapcenter.html"
-    - title: Cancel clone operations
-      url: "/protect-sco/task_cancel_clone_operations.html"
+    - title: Monitor Oracle database clone operations
+      url: "/protect-sco/task_monitor_oracle_database_clone_operations.html"
+    - title: Cancel Oracle database clone operations
+      url: "/protect-sco/task_cancel_oracle_database_clone_operations.html"
     - title: Split an Oracle Database Clone
       url: "/protect-sco/task_split_an_oracle_database_clone.html"
       entries:
@@ -903,6 +901,8 @@ entries:
     - title: Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
       url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"
       entries:
+      - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
+        url: "/protect-scc/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html"
       - title: Set up credentials for SnapCenter Custom Plug-ins
         url: "/protect-scc/task_set_up_credentials_for_snapcenter_custom_plug_in.html"
       - title: Configure gMSA on Windows Server 2012 or later for Plug-in for custom applications
