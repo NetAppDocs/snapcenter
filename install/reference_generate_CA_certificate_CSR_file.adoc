@@ -9,4 +9,13 @@ summary: 'You can generate a Certificate Signing Request (CSR) and import the ce
 [.lead]
 You can generate a Certificate Signing Request (CSR) and import the certificate that can be obtained from a Certificate Authority (CA) using the generated CSR. The certificate will have a private key associated with it.
 
-For more information to Generate a Certificate Signing Request (CSR), generate a CSR using the configuration file, and to import the signed certificate see KB article. <link to be provided>
+CSR is a block of encoded text that is given to a CA to procure the signed CA certificate from the concerned authorized vendor.
+
+For more information to generate a CSR, see How to generate CA Certificate CSR file article.
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_generate_CA_Certificate_CSR_file[How to generate CA Certificate CSR file]
+
+[NOTE]
+If you own the CA certificate for your domain (*.domain.company.com) or your system (machine1.domain.company.com), you can skip generating the CA Certificate CSR file.  You can deploy the CA certificate with SnapCenter.
+
+For cluster configurations, the cluster name and the respective host names should be mentioned in the CA certificate.  The certificate can be updated by filling the  Subject Alternative Name (SAN) field before procuring the certificate.  If it is a wild card certificate (*.domain.company.com), the certificate will be updated implicitly.

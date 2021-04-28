@@ -11,9 +11,15 @@ summary: 'Configure the CA certificate with Windows host plug-in services'
 [.lead]
 You should configure the CA certificate with Windows host plug-in services to activate the installed digital certificate.
 
+Perform the following step on the SnapCenter Server and all the plug-in hosts where CA certificates are already deployed.
+
 *Steps*
 
-1. Bind the newly installed certificate with the Windows host plug-in services, by running the running the following command:
+. Remove the existing certificate binding with SMCore default port 8145, by running the following command: 
+
+  netsh http delete sslcert ipport=0.0.0.0:<SMCore Port>
+
+. Bind the newly installed certificate with the Windows host plug-in services, by running the following commands:
 +
 ``> $cert = “<certificate thumbprint>”``
 +
