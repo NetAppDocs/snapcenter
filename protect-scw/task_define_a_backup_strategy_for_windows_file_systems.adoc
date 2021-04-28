@@ -21,3 +21,42 @@ Perform the following steps for each of your Windows file systems.
 . Determine for how long you want to retain backup copies on the source storage system and the SnapMirror destination.
 . Decide whether you want to use NetApp SnapMirror disaster recovery or SnapVault archiving technology in conjunction with the SnapCenter Plug-in for Microsoft Windows.
 . Determine the supported prescripts and postscripts.
+
+== Backup schedules for Windows file systems
+Backup frequency is specified in policies; a backup schedule is specified in the resource group configuration. The most critical factor in determining a backup frequency or schedule is the rate of change for the resource and the importance of the data. You might back up a heavily used resource every hour, while you might back up a rarely used resource once a day. Other factors include the importance of the resource to your organization, your Service Level Agreement (SLA), and your Recover Point Objective (RPO).
+
+An SLA defines the level of service expected and addresses many service-related issues, including the availability and performance of service. An RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. The SLA and RPO contribute to the data protection strategy.
+
+Even for a heavily used resource, there is no requirement to run a full backup more than once or twice a day.
+
+Backup schedules have two parts, as follows:
+
+* Backup frequency
++
+Backup frequency (how often backups are to be performed), called _schedule type_ for some plug-ins, is part of a policy configuration. For example, you might configure the backup frequency as hourly, daily, weekly, or monthly, or you can specify *None* which makes the policy an on-demand-only policy. You can access policies by clicking *Settings* > *Policies*.
+
+* Backup schedules
++
+Backup schedules (exactly when backups are to be performed) are part of a resource group configuration. For example, if you have a resource group that has a policy configured for weekly backups, you might configure the schedule to back up every Thursday at 10:00 PM. You can access resource group schedules by clicking *Resources* > *Resource Groups*.
+
+== Number of backups needed for Windows file systems
+Factors that determine the number of backups that you need include the size of the Windows file system, the number of volumes used, the rate of change of the file system, and your Service Level Agreement (SLA).
+
+== Backup schedules for Windows file systems
+Windows file system backups use the default Snapshot copy naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.
+
+The Snapshot copy uses the following default naming convention: `resourcegroupname_hostname_timestamp`
+
+You should name your backup resource groups logically, as in the following example:
+
+----
+dts1_mach1x88_03-12-2015_23.17.26
+----
+
+In this example, the syntax elements have the following meanings:
+
+* `dts1` is the resource group name.
+* `mach1x88` is the host name.
+* `03-12-2016_23.17.26` is the date and timestamp.
+
+When creating a backup, you can also add a descriptive tag to help identify the backup. In contrast, if you want to use a customized backup naming convention, you need to rename the backup after the backup operation is complete.
