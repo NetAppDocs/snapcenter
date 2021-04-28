@@ -381,13 +381,6 @@ entries:
       url: "/protect-scw/reference_minimum_ontap_privileges_required_for_windows_plug_in.html"
     - title: Define a backup strategy for Windows file systems
       url: "/protect-scw/task_define_a_backup_strategy_for_windows_file_systems.html"
-      entries:
-      - title: Backup schedules for Windows file systems
-        url: "/protect-scw/concept_backup_schedules_for_windows_file_systems.html"
-      - title: Number of backups needed for Windows file systems
-        url: "/protect-scw/concept_number_of_backup_jobs_needed_for_windows_file_systems.html"
-      - title: Backup naming convention for Windows file systems
-        url: "/protect-scw/concept_backup_naming_convention_for_windows_file_systems.html"
     - title: Sources and destinations of clones for Windows file systems
       url: "/protect-scw/reference_sources_and_destinations_of_clones_for_windows_file_systems.html"
   - title: Install SnapCenter Plug-in for Microsoft Windows
@@ -659,19 +652,8 @@ entries:
       url: "/protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html"
     - title: Define a backup strategy for Exchange Server resources
       url: "/protect-sce/task_define_a_backup_strategy_for_exchange_server_resources.html"
-      entries:
-      - title: Types of backups supported for Exchange database
-        url: "/protect-sce/concept_types_of_backups_supported_for_exchange_database.html"
-      - title: How long to retain transaction log backups on the source storage volume
-          for Exchange Server
-        url: "/protect-sce/concept_how_long_to_retain_transaction_log_backups_on_the_source_storage_volume_for_exchange_database.html"
     - title: Define a restore strategy for Exchange databases
       url: "/protect-sce/task_define_a_restore_strategy_for_exchange_databases.html"
-      entries:
-      - title: Sources for a restore operation in Exchange Server
-        url: "/protect-sce/reference_sources_for_a_restore_operation_in_exchange_server.html"
-      - title: Types of restore operations supported for Exchange Server
-        url: "/protect-sce/reference_types_of_restore_operations_supported_for_exchange_server.html"
   - title: Install SnapCenter Plug-in for Microsoft Exchange Server
     url: "/protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
     entries:
