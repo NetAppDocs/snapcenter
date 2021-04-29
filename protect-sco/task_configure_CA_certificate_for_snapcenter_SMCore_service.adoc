@@ -2,8 +2,9 @@
 permalink: protect-sco/task_configure_CA_certificate_for_snapcenter_SMCore_service.html
 sidebar: sidebar
 keywords: SnapCenter
-summary: 'Configure CA certificate for the SnapCenter SMCore service ''
+summary: 'Configure CA certificate for the SnapCenter SMCore service '
 ---
+
 = Configure the CA Certificate for the SnapCenter SMCore service
 :icons: font
 :imagesdir: ../media/

@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/task_configure_CA_certificate_with_SPL_on_Linux_host.html
+permalink: protect-sco/task_configure_CA_certificate_with_SPL_on_Linux_host.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Linux host'
@@ -11,7 +11,6 @@ summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Lin
 [.lead]
 
 You should manage the password of SPL keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to SPL trust-store, and configure CA signed key pair to SPL trust-store  with SnapCenter Plug-in Loader service to activate the installed digital certificate.
-
 SPL uses the file 'keystore.jks', which is located at ‘/var/opt/snapcenter/spl/etc’ both as its trust-store and key-store.
 
 == Manage password for SPL keystore and alias of the CA signed key pair in use

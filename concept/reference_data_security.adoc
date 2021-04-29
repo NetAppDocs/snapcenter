@@ -24,3 +24,9 @@ SnapCenter includes the following security features:
 * SnapCenter PowerShell cmdlets are session secured.
 * After a default period of 15 minutes of inactivity, SnapCenter warns you that you will be logged out in 5 minutes. After 20 minutes of inactivity, SnapCenter logs you out, and you must log in again. You can modify the log out period.
 * Login is temporarily disabled after 5 or more incorrect login attempts.
+
+== CA Certificate Overview
+
+The SnapCenter Server installer enables the Centralized SSL Certificate Support during installation.  To enhance the secured communication between the server and the plug-in, SnapCenter supports using the authorized CA certificates provided by the customer.
+
+NOTE: You must deploy CA certificates after installing the SnapCenter Server and the  respective plug-ins.

@@ -54,21 +54,15 @@ entries:
       url: "/install/concept_high_availability_for_snapcenter_mysql_repository.html"
   - title: Install the SnapCenter Server using the install wizard
     url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
-  - title: CA Certificate Overview
-    url: "/install/concept_CA_certificate_overview.html"
     entries:
     - title: Generate CA Certificate CSR file
       url: "/install/reference_generate_CA_certificate_CSR_file.html"
-    - title: Import CA certificates
-      url: "/install/task_import_CA_certificates.html"
+    - title: Configure CA certificate with Windows host plug-in services
+      url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
     - title: Get the CA certificate thumbprint
       url: "/install/task_get_the_CA_certificate_thumbprint.html"
     - title: Configure CA certificate with SnapCenter site
       url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
-    - title: Configure CA certificate with Windows host plug-in services
-      url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
-    - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
-      url: "/install/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
   - title: Log in to SnapCenter
     url: "/install/task_log_in_to_snapcenter.html"
     entries:
@@ -525,6 +519,13 @@ entries:
         url: "/protect-sco/task_monitor_the_status_of_installing_plugin_for_Oracle.html"
     - title: Configure the SnapCenter Plug-in Loader service
       url: "/protect-sco/task_configure_snapcenter_plug_in_loader_service.html"
+    - title: Import CA certificates
+      url: "/protect-sco/task_import_CA_certificates.html"
+      entries:
+      - title: Configure the CA Certificate for the SnapCenter SMCore service
+        url: "/protect-sco/task_configure_CA_certificate_for_snapcenter_SMCore_service.html"
+      - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
+        url: "/protect-sco/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
     - title: Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
       url: "/protect-sco/concept_import_data_from_snapmanager_for_oracle_and_snapmanager_for_sap_to_snapcenter.html"
       entries:
@@ -895,6 +896,10 @@ entries:
       - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple
           remote hosts by using cmdlets
         url: "/protect-scc/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.html"
+    - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host
+      url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html"
+    - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
+      url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_windows_host.html"
   - title: Prerequisites for using the SnapCenter Custom Plug-ins
     url: "/protect-scc/reference_prerequisites_for_using_snapcenter_custom_plug_ins.html"
   - title: How resources, resource groups, and policies are used for protecting custom

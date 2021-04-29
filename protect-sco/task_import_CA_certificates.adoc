@@ -41,7 +41,7 @@ a|
 Review the summary, and then click *Finish* to start the import.
 +
 |===
-+
+
 NOTE: Importing certificate should be bundled with the private key (supported formats are: *.pfx, * p12, *.p7b).
 
 . Repeat Step 5 for the “Personal” folder.
