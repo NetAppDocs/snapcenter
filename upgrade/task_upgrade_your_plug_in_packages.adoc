@@ -1,0 +1,90 @@
+---
+permalink: upgrade/task_upgrade_your_plug_in_packages.html
+sidebar: sidebar
+keywords:
+summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade.'
+---
+= Upgrade your plug-in packages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The plug-in packages are distributed as part of the SnapCenter upgrade.
+
+*What you will need*
+
+* If you are a non-root user with access to the Linux machines, you should update the /etc/sudoers file with the latest checksum values before performing the upgrade operation.
+* By default SnapCenter detects JAVA_HOME from the environment. If you want to use a fixed JAVA_HOME and if you are upgrading the plug-ins on a Linux host, you should manually add the SKIP_JAVAHOME_UPDATE parameter in the spl.properties file located at /var/opt/snapcenter/spl/etc/ and set the value to TRUE.
++
+The value of JAVA_HOME gets updated when the plug-in is upgraded or when the SnapCenter plug-in loader (SPL) service restarts. Before upgrading or restarting the SPL, if you add the SKIP_JAVAHOME_UPDATE parameter and set the value to TRUE, the value of JAVA_HOME is not updated.
+
+* You should have backed up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
++
+Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
+
+* SQL host plug-in upgrade fails if the ISO path is unavailable for Windows roles and features.
+* You can only upgrade one host at a time.
++
+NOTE: If your hosts are in a Microsoft cluster, you can upgrade the SQL and Windows plug-ins on all the hosts in the cluster at one time.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Upgrading_the_plug-ins_for_Microsoft_Windows_and_Microsoft_SQL_Server_might_fail_on_a_host_with_SQL_database_on_VMDK[Upgrade might fail on hosts with SQL databases on VMDK]
+
+* The upgrade procedure places your Windows or Linux host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
+
+|===
+| If using...| You can...
+
+a|
+4.0.x
+a|
+
+* Directly upgrade to 4.1.x
+* Upgrade to 4.2.x by first upgrading to 4.1.x, and then upgrade to 4.2.x
+* Upgrade to 4.3.x by first upgrading to 4.1.x, then upgrade to 4.2.x, and then upgrade to 4.3.x
+* Upgrade to 4.4.x by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, and then upgrade to 4.4.x
+
+a|
+4.1.x
+a|
+
+* Directly upgrade to 4.2.x
+* Upgrade to 4.3.x by first upgrading to 4.2.x, and then upgrade to 4.3.x
+* Upgrade to 4.4.x by first upgrading to 4.2.x, then upgrade to 4.3.x, and then upgrade to 4.4.x
+
+a|
+4.2.x
+a|
+
+* Directly upgrade to 4.3.x
+* Upgrade to 4.4.x by first upgrading to 4.3.x, and then upgrade to 4.4.x
+
+a|
+4.3.x
+a|
+Directly upgrade to 4.4.x
+|===
+
+NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide^].
+
+*Steps*
+
+. In the left navigation pane, click *Hosts* > *Managed Hosts*.
+. Upgrade the hosts by performing one of the following tasks:
+  * If the Overall Status column displays "`Upgrade available`" for one of the hosts, click the host name and perform the following:
+    .. Click *More Options*.
+    .. Select *Skip prechecks* if you do not want to validate whether the host meets the requirements to upgrade the plug-in.
+    .. Click *Upgrade*.
+
+NOTE: After upgrading SnapCenter Plug-in for Microsoft SQL Server, you must refresh the resources to view the Availability Group type, and you must also provide new values for *Repeat every* option for monthly schedules because the values are not retained.
+
+  * If you want to upgrade multiple hosts, select all the hosts, click image:../media/more_icon.gif[], and then click *Upgrade* > *OK*.
+
+NOTE: All the plug-ins in the package gets selected, but only the plug-ins that were installed with the earlier version of SnapCenter are upgraded, and the remaining plug-ins are not installed. You must use the *Add plug-ins* option to install any new plug-in.
+
+If you have not selected the *Skip prechecks* check box, the host is validated to see if it meets the requirements to install the plug-in. If the minimum requirements are not met, appropriate error or warning messages are displayed. After fixing the issue, click *Validate* to re-validate the requirements.
+
+NOTE: If the error is related to disk space or RAM, you can update either the web.config located at C:\Program Files\NetApp\SnapCenter WebApp, or the PowerShell config files located at C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SnapCenter\ to modify the default values. If the error is related to remaining parameters then you must fix the issue, and then validate the requirements again.
+
+*After you finish*
+
+You should bring the host out of maintenance mode by clicking *Activate Schedule*.

@@ -22,9 +22,7 @@ entries:
     url: "/concept/concept_resources_resource_groups_and_policies.html"
   - title: Prescripts and postscripts
     url: "/concept/concept_prescripts_and_postscripts.html"
-  - title: Configuration Checker
-    url: "/concept/concept_configuration_checker.html"
-  - title: SnapCenter REST APIs
+  - title: SnapCenter Automation using REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: Install SnapCenter Server
   url: "/install/index.html"
@@ -278,8 +276,8 @@ entries:
         url: "/protect-scsql/task_set_up_credentials_for_snapcenter_plug_ins_package_for_windows.html"
       - title: Configure credentials for an individual SQL Server resource
         url: "/protect-scsql/task_configure_credentials_for_an_individual_sql_server_resource.html"
-      - title: Configure gMSA on Windows Server 2012 or later for SQL
-        url: "/protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for SQL
+        url: "/protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_sql.html"
     - title: Add hosts and install the SnapCenter Plug-ins Package for Windows
       url: "/protect-scsql/task_add_hosts_and_install_snapcenter_plug_ins_package_for_windows.html"
       entries:
@@ -383,13 +381,6 @@ entries:
       url: "/protect-scw/reference_minimum_ontap_privileges_required_for_windows_plug_in.html"
     - title: Define a backup strategy for Windows file systems
       url: "/protect-scw/task_define_a_backup_strategy_for_windows_file_systems.html"
-      entries:
-      - title: Backup schedules for Windows file systems
-        url: "/protect-scw/concept_backup_schedules_for_windows_file_systems.html"
-      - title: Number of backups needed for Windows file systems
-        url: "/protect-scw/concept_number_of_backup_jobs_needed_for_windows_file_systems.html"
-      - title: Backup naming convention for Windows file systems
-        url: "/protect-scw/concept_backup_naming_convention_for_windows_file_systems.html"
     - title: Sources and destinations of clones for Windows file systems
       url: "/protect-scw/reference_sources_and_destinations_of_clones_for_windows_file_systems.html"
   - title: Install SnapCenter Plug-in for Microsoft Windows
@@ -400,8 +391,8 @@ entries:
       entries:
       - title: Set up your credentials for the Plug-in for Windows
         url: "/protect-scw/task_set_up_your_credentials_for_the_plug_in_for_windows.html"
-      - title: Configure gMSA on Windows Server 2012 or later for Windows file system
-        url: "/protect-scw/task_configure_gMSA_on_windows_server_2012_or_later_for_windows_file_system.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for Windows
+        url: "/protect-scw/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_windows.html"
     - title: Add hosts and install SnapCenter Plug-in for Microsoft Windows
       url: "/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html"
       entries:
@@ -442,7 +433,7 @@ entries:
       url: "/protect-sco/concept_snapcenter_plug_in_for_oracle_database_features.html"
     - title: Storage types supported by SnapCenter Plug-in for Oracle Database
       url: "/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html"
-    - title: Prepare storage systems for SnapMirror and SnapVault replication for plug-in for Oracle
+    - title: Prepare storage systems for SnapMirror and SnapVault replication for Plug-in for Oracle
       url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_oracle.html"
     - title: Minimum ONTAP privileges required for Oracle plug-in
       url: "/protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html"
@@ -459,14 +450,14 @@ entries:
         url: "/protect-sco/reference_preferred_nodes_in_rac_setup.html"
       - title: How to catalog backups with Oracle Recovery Manager
         url: "/protect-sco/reference_how_to_catalog_backups_with_oracle_recovery_manager.html"
-      - title: Backup schedules for database plug-ins
-        url: "/protect-sco/concept_backup_schedules_for_database_plug_ins.html"
-      - title: Backup naming conventions
-        url: "/protect-sco/concept_backup_naming_conventions.html"
-      - title: Backup retention options
-        url: "/protect-sco/concept_backup_retention_options.html"
-      - title: Backup copy verification using the primary or secondary storage volume
-        url: "/protect-sco/concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume.html"
+      - title: Backup schedules for Plug-in for Oracle
+        url: "/protect-sco/concept_backup_schedules_for_plugin_for_oracle.html"
+      - title: Backup naming conventions for Plug-in for Oracle
+        url: "/protect-sco/concept_backup_naming_conventions_for_plugin_for_oracle.html"
+      - title: Backup retention options for Plug-in for Oracle
+        url: "/protect-sco/concept_backup_retention_options_for_plugin_for_oracle.html"
+      - title: Backup copy verification using the primary or secondary storage volume for Plug-in for Oracle
+        url: "/protect-sco/concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume_for_plugin_for_oracle.html"
     - title: Define a restore and recovery strategy for Oracle databases
       url: "/protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html"
       entries:
@@ -530,8 +521,8 @@ entries:
           url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_linux_in_silent_or_console_mode.html"
         - title: Installing the SnapCenter Plug-ins Package for AIX in silent mode
           url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_aix_in_silent_mode.html"
-      - title: Monitor SnapCenter plug-in package installation status
-        url: "/protect-sco/task_monitor_snapcenter_plug_in_package_installation_status.html"
+      - title: Monitor the status of installing Plug-in for Oracle
+        url: "/protect-sco/task_monitor_the_status_of_installing_plugin_for_Oracle.html"
     - title: Configure the SnapCenter Plug-in Loader service
       url: "/protect-sco/task_configure_snapcenter_plug_in_loader_service.html"
     - title: Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
@@ -564,8 +555,8 @@ entries:
       url: "/protect-sco/task_import_data.html"
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: "/protect-sco/concept_install_snapcenter_plug_in_for_vmware_vsphere.html"
-  - title: Prepare for data protection
-    url: "/protect-sco/concept_prepare_for_data_protection.html"
+  - title: Prepare for protecting Oracle databases
+    url: "/protect-sco/concept_prepare_for_protecting_oracle_databases.html"
     entries:
     - title: Prerequisites for using the SnapCenter Plug-in for Oracle Database
       url: "/protect-sco/reference_prerequisites_for_using_the_snapcenter_plug_in_for_oracle_database.html"
@@ -589,11 +580,11 @@ entries:
       url: "/protect-sco/task_back_up_oracle_database_resource_groups.html"
     - title: Back up Oracle databases using UNIX commands
       url: "/protect-sco/task_back_up_oracle_databases_using_unix_commands.html"
-    - title: Monitor backup operations
-      url: "/protect-sco/task_monitor_backup_operations.html"
+    - title: Monitor Oracle database backup operations
+      url: "/protect-sco/task_monitor_oracle_database_backup_operations.html"
       entries:
-      - title: Monitor operations in the Activity pane
-        url: "/protect-sco/task_monitor_operations_in_the_activity_pane.html"
+      - title: Monitor data protection operations on Oracle database in the Activity pane
+        url: "/protect-sco/task_monitor_dataprotection_operations_on_oracle_database_in_the_activity_pane.html"
     - title: Cancel backup operations of Oracle databases
       url: "/protect-sco/task_cancel_the_snapcenter_plug_in_for_oracle_database_backup_operations.html"
     - title: View Oracle database backups and clones in the Topology page
@@ -619,10 +610,10 @@ entries:
         url: "/protect-sco/task_restore_and_recover_pluggable_database_using_point_in_time_recovery.html"
     - title: Restore and recover Oracle databases using UNIX commands
       url: "/protect-sco/task_restore_and_recover_oracle_databases_using_unix_commands.html"
-    - title: Monitor restore operations
-      url: "/protect-sco/task_monitor_restore_operations.html"
-    - title: Cancel restore operations
-      url: "/protect-sco/task_cancel_restore_operations.html"
+    - title: Monitor Oracle database restore operations
+      url: "/protect-sco/task_monitor_oracle_database_restore_operations.html"
+    - title: Cancel Oracle database restore operations
+      url: "/protect-sco/task_cancel_oracle_database_restore_operations.html"
   - title: Clone Oracle database
     url: "/protect-sco/task_clone_oracle_database_backups.html"
     entries:
@@ -635,10 +626,10 @@ entries:
         url: "/protect-sco/task_clone_a_pluggable_database.html"
     - title: Clone Oracle database backups using UNIX commands
       url: "/protect-sco/task_clone_oracle_database_backups_using_unix_commands.html"
-    - title: Monitor clone operations in SnapCenter
-      url: "/protect-sco/task_monitor_clone_operations_in_snapcenter.html"
-    - title: Cancel clone operations
-      url: "/protect-sco/task_cancel_clone_operations.html"
+    - title: Monitor Oracle database clone operations
+      url: "/protect-sco/task_monitor_oracle_database_clone_operations.html"
+    - title: Cancel Oracle database clone operations
+      url: "/protect-sco/task_cancel_oracle_database_clone_operations.html"
     - title: Split an Oracle Database Clone
       url: "/protect-sco/task_split_an_oracle_database_clone.html"
       entries:
@@ -661,19 +652,8 @@ entries:
       url: "/protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html"
     - title: Define a backup strategy for Exchange Server resources
       url: "/protect-sce/task_define_a_backup_strategy_for_exchange_server_resources.html"
-      entries:
-      - title: Types of backups supported for Exchange database
-        url: "/protect-sce/concept_types_of_backups_supported_for_exchange_database.html"
-      - title: How long to retain transaction log backups on the source storage volume
-          for Exchange Server
-        url: "/protect-sce/concept_how_long_to_retain_transaction_log_backups_on_the_source_storage_volume_for_exchange_database.html"
     - title: Define a restore strategy for Exchange databases
       url: "/protect-sce/task_define_a_restore_strategy_for_exchange_databases.html"
-      entries:
-      - title: Sources for a restore operation in Exchange Server
-        url: "/protect-sce/reference_sources_for_a_restore_operation_in_exchange_server.html"
-      - title: Types of restore operations supported for Exchange Server
-        url: "/protect-sce/reference_types_of_restore_operations_supported_for_exchange_server.html"
   - title: Install SnapCenter Plug-in for Microsoft Exchange Server
     url: "/protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
     entries:
@@ -685,8 +665,8 @@ entries:
         url: "/protect-sce/reference_exchange_server_cluster_node_privileges_required.html"
       - title: Set up credentials for SnapCenter Plug-in for Windows
         url: "/protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html"
-      - title: Configure gMSA on Windows Server 2012 or later for Exchange Server
-        url: "/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for Exchange
+        url: "/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_exchange.html"
     - title: Add hosts and install Plug-in for Exchange
       url: "/protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html"
       entries:
@@ -798,8 +778,8 @@ entries:
         url: "/protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html"
       - title: Set up credentials for the SnapCenter Plug-in for SAP HANA Database
         url: "/protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html"
-      - title: Configure gMSA on Windows Server 2012 or later for SAP HANA
-        url: "/protect-hana/task_configure_gMSA_on_windows_server_2012_or_later_for_sap_hana.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for HANA
+        url: "/protect-hana/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_hana.html"
     - title: Add hosts and install plug-in packages on remote hosts
       url: "/protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html"
       entries:
@@ -896,17 +876,19 @@ entries:
     - title: Java style
       url: "/protect-scc/reference_java.html"
     - title: Custom plug-in in SnapCenter
-      url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"      
+      url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"
   - title: Install SnapCenter Custom Plug-ins
     url: "/protect-scc/task_install_snapcenter_custom_plug_in.html"
     entries:
     - title: Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
       url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"
       entries:
+      - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
+        url: "/protect-scc/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html"
       - title: Set up credentials for SnapCenter Custom Plug-ins
         url: "/protect-scc/task_set_up_credentials_for_snapcenter_custom_plug_in.html"
-      - title: Configure gMSA on Windows Server 2012 or later for custom applications
-        url: "/protect-scc/task_configure_gMSA_on_windows_server_2012_or_later_for_custom_applications.html"
+      - title: Configure gMSA on Windows Server 2012 or later for Plug-in for custom applications
+        url: "/protect-scc/task_configure_gMSA_on_windows_server_2012_or_later_for_plugin_for_custom_applications.html"
     - title: Add hosts and install plug-in packages on remote hosts
       url: "/protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html"
       entries:
@@ -966,148 +948,59 @@ entries:
     url: "/admin/task_manage_rbac.html"
   - title: Manage hosts
     url: "/admin/concept_manage_hosts.html"
-    entries:
-    - title: Refresh virtual machine information
-      url: "/admin/task_refresh_virutal_machine_information.html"
-    - title: Modify plug-in hosts
-      url: "/admin/task_modify_plug_in_hosts.html"
-    - title: Start or restart plug-in services
-      url: "/admin/task_start_or_restart_plug_in_services.html"
-    - title: Suspend schedules for host maintenance
-      url: "/admin/task_suspend_schedules_for_host_maintenance.html"
-  - title: What operations can be performed from the Resources page
+  - title: Operation supported from the Resources page
     url: "/admin/concept_what_operations_can_be_performed_from_the_resource_page.html"
   - title: Manage policies
     url: "/admin/concept_manage_policies.html"
-    entries:
-    - title: Detach policies
-      url: "/admin/task_detach_policies.html"
-    - title: Modify policies
-      url: "/admin/task_modify_policies.html"
-    - title: Delete policies
-      url: "/admin/task_delete_policies.html"
   - title: Manage resource groups
     url: "/admin/task_manage_resource_groups.html"
-    entries:
-    - title: Stop and resume operations on resource groups
-      url: "/admin/task_stop_and_resume_operations_on_resource_groups.html"
-    - title: Delete resource groups
-      url: "/admin/task_delete_resource_groups.html"
   - title: Manage backups
     url: "/admin/concept_manage_backups.html"
-    entries:
-    - title: Rename backups
-      url: "/admin/task_rename_backups.html"
-    - title: Delete backups
-      url: "/admin/task_delete_backups.html"
   - title: Delete clones
     url: "/admin/task_delete_clones.html"
   - title: Monitor jobs, schedules, events, and logs
     url: "/admin/concept_monitor_jobs_schedules_events_and_logs.html"
-    entries:
-    - title: Monitor SnapCenter jobs
-      url: "/admin/concept_monitor_snapcenter_jobs.html"
-    - title: Monitor SnapCenter schedules
-      url: "/admin/concept_monitor_snapcenter_schedules.html"
-    - title: Monitor SnapCenter events
-      url: "/admin/concept_monitor_snapcenter_events.html"
-    - title: Monitor SnapCenter logs
-      url: "/admin/concept_monitor_snapcenter_logs.html"
-    - title: Remove jobs and logs from SnapCenter
-      url: "/admin/task_remove_jobs_and_logs_from_snapcenter.html"
   - title: Overview of SnapCenter reporting capabilities
     url: "/admin/concept_overview_of_snapcenter_reports.html"
-    entries:
-    - title: Access SnapCenter reports
-      url: "/admin/task_access_snapcenter_reports.html"
-    - title: Filter your report data
-      url: "/admin/task_filter_your_report.html"
-    - title: Export or print reports
-      url: "/admin/task_export_or_print_reports.html"
-    - title: Set the SMTP server for email notifications
-      url: "/admin/task_set_the_smtp_server_for_email_notifications.html"
-    - title: Configure the option to email reports
-      url: "/admin/task_configure_the_option_to_email_reports.html"
   - title: Manage the SnapCenter Server repository
     url: "/admin/concept_manage_the_snapcenter_server_repository.html"
-    entries:
-    - title: Prerequisites for protecting the SnapCenter repository
-      url: "/admin/concept_prerequisites_for_backing_up_snapcenter_repository.html"
-    - title: Back up the SnapCenter repository
-      url: "/admin/task_back_up_the_snapcenter_repository.html"
-    - title: View backups of the SnapCenter repository
-      url: "/admin/task_view_backups_of_the_snapcenter_repository.html"
-    - title: Restore the SnapCenter database repository
-      url: "/admin/task_restore_a_snapcenter_database_repository_backup.html"
-    - title: Migrate the SnapCenter repository
-      url: "/admin/task_migrate_the_snapcenter_repository.html"
-    - title: Reset theSnapCenter repository password
-      url: "/admin/task_reset_the_snapcenter_repository_password.html"
-  - title: Manage Configuration Checker
-    url: "/admin/concept_manage_configuration_checker.html"
-    entries:
-    - title: View Configuration Checker alerts
-      url: "/admin/task_view_configuration_checker_alerts.html"
-    - title: Run Configuration Checker on the plug-in hosts
-      url: "/admin/task_run_configuration_checker_for_the_plug_in_hosts.html"
-    - title: Manage the Configuration Checker schedules
-      url: "/admin/task_manage_the_configuration_checker_schedules.html"
-  - title: Upgrade SnapCenter Server and plug-ins
-    url: "/admin/concept_upgrade_snapcenter_server_and_plug_ins.html"
-    entries:
-    - title: ConfigureSnapCenter to check for available updates
-      url: "/admin/task_configure_snapcenter_to_check_for_available_updates.html"
-    - title: Upgrade the SnapCenter Server
-      url: "/admin/task_upgrade_snapcenter.html"
-    - title: Upgrade your plug-in packages
-      url: "/admin/task_upgrade_your_plug_in_packages.html"
   - title: Manage resources of untrusted domains
     url: "/admin/concept_manage_resources_of_untrusted_domains.html"
-    entries:
-    - title: Modify untrusted domains
-      url: "/admin/task_modify_the_untrusted_domain.html"
-    - title: Unregister untrusted Active Directory domains
-      url: "/admin/task_unregister_the_untrusted_domain.html"
   - title: Manage the storage system
     url: "/admin/concept_manage_the_storage_system.html"
-    entries:
-    - title: Modify storage system configuration
-      url: "/admin/task_modify_storage_system_configuration.html"
-    - title: Delete the storage system
-      url: "/admin/task_delete_the_storage_system.html"
-  - title: Uninstall SnapCenter plug-ins and plug-in packages
-    url: "/admin/concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.html"
-    entries:
-    - title: Prerequisites for removing a host
-      url: "/admin/reference_prerequisites_for_removing_a_host.html"
-    - title: Remove a host
-      url: "/admin/task_remove_a_host.html"
-    - title: Uninstall plug-ins using the SnapCenter GUI
-      url: "/admin/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html"
-    - title: Uninstall Windows plug-ins using the PowerShell cmdlet
-      url: "/admin/task_uninstalling_windows_plug_ins_using_the_command_line_interface_on_the_snapcenter_server_host.html"
-    - title: Uninstall plug-ins locally on a host
-      url: "/admin/task_uninstall_plug_ins_locally_on_a_host.html"
-    - title: Uninstall SnapCenter Plug-ins Package for Linux or AIX using the command-line
-        interface
-      url: "/admin/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html"
-  - title: Uninstall the SnapCenter Server
-    url: "/admin/task_uninstalling_the_snapcenter_server.html"
   - title: Manage EMS data collection
     url: "/admin/concept_manage_ems_data_collection.html"
-    entries:
-    - title: Stop EMS data collection
-      url: "/admin/task_stop_ems_data_collection.html"
-    - title: Start EMS data collection
-      url: "/admin/task_start_ems_data_collection.html"
-    - title: Change EMS data collection schedule and target SVM
-      url: "/admin/task_change_ems_data_collection.html"
-    - title: Monitor EMS data collection status
-      url: "/admin/task_monitor_ems_data_collection_status.html"
-  - title: Plug-in that support REST APIs
-    url: "/admin/reference_plug_ins_that_support_rest_apis.html"
-    entries:
-    - title: Access REST APIs using the Swagger API web page
-      url: "/admin/task_access_rest_apis_using_the_swagger_api_web_page.html"
-    - title: Troubleshoot issues related to REST APIs
-      url: "/admin/reference_troubleshoot_issues_related_to_rest_apis.html"
+- title: Upgrade SnapCenter Server and plug-ins
+  url: "/upgrade/index.html"
+  entries:
+    - title: ConfigureSnapCenter to check for available updates
+      url: "/upgrade/task_configure_snapcenter_to_check_for_available_updates.html"
+    - title: Upgrade the SnapCenter Server
+      url: "/upgrade/task_upgrade_snapcenter.html"
+    - title: Upgrade your plug-in packages
+      url: "/upgrade/task_upgrade_your_plug_in_packages.html"
+- title: Uninstall SnapCenter Server and plug-ins
+  url: "/uninstall/index.html"
+  entries:
+    - title: Uninstall SnapCenter plug-ins and plug-in packages
+      url: "/uninstall/concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.html"
+      entries:
+      - title: Prerequisites for removing a host
+        url: "/uninstall/reference_prerequisites_for_removing_a_host.html"
+      - title: Remove a host
+        url: "/uninstall/task_remove_a_host.html"
+      - title: Uninstall plug-ins using the SnapCenter GUI
+        url: "/uninstall/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html"
+      - title: Uninstall Windows plug-ins using the PowerShell cmdlet
+        url: "/uninstall/task_uninstalling_windows_plug_ins_using_the_command_line_interface_on_the_snapcenter_server_host.html"
+      - title: Uninstall plug-ins locally on a host
+        url: "/uninstall/task_uninstall_plug_ins_locally_on_a_host.html"
+      - title: Uninstall SnapCenter Plug-ins Package for Linux or AIX using the command-line
+          interface
+        url: "/uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html"
+    - title: Uninstall the SnapCenter Server
+      url: "/uninstall/task_uninstalling_the_snapcenter_server.html"
+- title: SnapCenter Automation
+  url: "/sc-automation/index.html"
+- title: Legal notices
+  url: /reference_legal_notices.html

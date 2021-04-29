@@ -1,0 +1,36 @@
+---
+permalink: uninstall/task_remove_a_host.html
+sidebar: sidebar
+keywords: uninstall
+summary: 'When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenterResources page, and then it uninstalls the plug-in packages on the host.'
+---
+= Remove a host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenterResources page, and then it uninstalls the plug-in packages on the host.
+
+*What you will need*
+
+* You should be assigned a role with the required permissions to remove all of the objects associated with the host. Otherwise, the remove operation fails.
+* You should confirm the fingerprint if the SSH key was modified after adding the host to SnapCenter.
+* You should confirm the fingerprint if the SnapCenter host is upgraded to a later version of SnapCenter but the plug-in host is still running an earlier version of the plug-in.
+* If you delete a host, the backups, clones, and resource groups associated with the host are also deleted.
+* When you remove the resource groups, all the associated schedules are also removed.
+* If the host has a resource group that is shared with another host and you delete the host, then the resource group is also deleted.
+* You should use PowerShell cmdlet to remove the decommissioned or unreachable SnapCenter Server hosts.
+* The time required to remove a host depends on the number of backups and the retention settings. This is because the Snapshot copies are deleted from each of the controllers and the metadata is cleaned.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. Select the host you want to remove, and then click *Remove*.
+. For Oracle RAC clusters, to remove SnapCenter software from all the hosts in the cluster, select *Include all the hosts of cluster*.
++
+You can also remove one node of a cluster and in that way remove all the nodes one by one. However, if there are no backups associated with a node, select *Delete backups* to remove the host from the RAC cluster.
+
+. Click *OK*.
++
+NOTE: When you uninstall and reinstall host plug-ins on a cluster, the cluster resources are not automatically discovered. Select the cluster hostname, and then click *Refresh Resources* to automatically discover the cluster resources.

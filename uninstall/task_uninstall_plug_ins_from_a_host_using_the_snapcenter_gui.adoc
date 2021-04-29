@@ -1,0 +1,46 @@
+---
+permalink: uninstall/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html
+sidebar: sidebar
+keywords: uninstall
+summary: 'When you decide that you no longer require an individual plug-in or a plug-in package, you can uninstall it using the SnapCenter interface.'
+---
+= Uninstall plug-ins using the SnapCenter GUI
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you decide that you no longer require an individual plug-in or a plug-in package, you can uninstall it using the SnapCenter interface.
+
+*What you will need*
+
+* You should have removed the resource groups for the plug-in package that you are uninstalling.
+* You should have detached the policies associated with the resource groups for the plug-in package that you are uninstalling.
+
+*About this task*
+
+You can uninstall an individual plug-in. For example, you might need to uninstall the SnapCenter Plug-in for Microsoft SQL Server because a host is running out of resources and you want to move that plug-in to a more powerful host. You can also uninstall an entire plug-in package. For example, you might need to uninstall the SnapCenter Plug-ins Package for Linux, which includes SnapCenter Plug-in for Oracle Database and SnapCenter Plug-in for UNIX.
+
+* Removing a host includes uninstalling all plug-ins.
++
+When you remove a host from SnapCenter, SnapCenter uninstalls all the plug-in packages on the host before removing the host.
+
+* SnapCenter GUI removes plug-ins from one host at a time.
++
+When you use the SnapCenter GUI, you can uninstall plug-ins on only one host at a time. However, you can have several uninstall operations running at the same time.
++
+You can also uninstall a plug-in from multiple hosts by using the command-line interface (CLI).
+
+IMPORTANT: Uninstalling the SnapCenter Plug-ins Package for Windows from a host on which the SnapCenter Server is installed will damage the SnapCenter Server installation. Do not uninstall the SnapCenter Plug-ins Package for Windows unless you are certain that you no longer require the SnapCenter Server.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. In the Managed Hosts page, select the host from which you want to uninstall the plug-in or plug-in package.
+. Adjacent to the plug-in that you want to remove, click *Remove* > *Submit*.
+
+*After you finish*
+
+You should wait for 5 minutes before you reinstall the plug-in on that host. This time period is sufficient for the SnapCenter GUI to refresh the status of the managed host. The installation fails if you immediately reinstall the plug-in.
+
+If you are uninstalling SnapCenter Plug-ins Package for Linux, uninstallation-specific log files are available at: _/custom_location/snapcenter/log_.

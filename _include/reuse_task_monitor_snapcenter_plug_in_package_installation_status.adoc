@@ -1,0 +1,24 @@
+You can monitor the progress of SnapCenter plug-in package installation by using the Jobs page. You might want to check the progress of installation to determine when it is complete or if there is an issue.
+
+*About this task*
+
+The following icons appear on the Jobs page and indicate the state of the operation:
+
+* image:../media/progress_icon.gif[In progress icon] In progress
+* image:../media/success_icon.gif[Completed icon] Completed successfully
+* image:../media/failed_icon.gif[Failed icon] Failed
+* image:../media/warning_icon.gif[Completed with warnings icon] Completed with warnings or could not start due to warnings
+* image:../media/verification_job_in_queue.gif[Verification job is queued] Queued
+
+*Steps*
+
+. In the left navigation pane, click *Monitor*.
+. In the Monitor page, click *Jobs*.
+. On the Jobs page, to filter the list so that only plug-in installation operations are listed, do the following:
+ .. Click *Filter*.
+ .. Optional: Specify the start and end date.
+ .. From the Type drop-down menu, select *Plug-in installation*.
+ .. From the Status drop-down menu, select the installation status.
+ .. Click *Apply*.
+. Select the installation job and click *Details* to view the job details.
+. In the Job Details page, click *View logs*.

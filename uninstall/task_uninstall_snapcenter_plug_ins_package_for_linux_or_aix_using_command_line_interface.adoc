@@ -1,0 +1,16 @@
+---
+permalink: uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html
+sidebar: sidebar
+keywords:
+summary: 'You can uninstall SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX by using the command-line interface.'
+---
+= Uninstall SnapCenter Plug-ins Package for Linux or AIX using the command-line interface
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can uninstall SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX by using the command-line interface.
+
+Before uninstalling, you should delete the scheduled jobs and ensure that running jobs are completed.
+
+Run `/custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall` to uinstall.

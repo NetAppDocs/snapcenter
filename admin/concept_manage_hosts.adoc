@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_hosts.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can add hosts and install SnapCenter plug-in packages, add a verification server, remove hosts, migrate backup jobs, and update host to upgrade plug-in packages or add new plug-in packages. Depending on the plug-in you are using, you can also provision disks, manage SMB shares, manage initiator groups \(igroups\), manage iSCSI sessions, and migrate data.'
 ---
 = Manage hosts
@@ -13,6 +13,7 @@ You can add hosts and install SnapCenter plug-in packages, add a verification se
 
 |===
 | You can perform these tasks...| For Microsoft Exchange Server| For Microsoft SQL Server| For Microsoft Windows| For Oracle Database| For SAP HANA Database| For Custom Plug-ins
+
 a|
 Add hosts and install plug-in package
 a|
@@ -30,17 +31,17 @@ Yes
 a|
 Update ESXi information for a host
 a|
- 
+
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 Suspend schedules and place hosts in maintenance mode
 a|
@@ -98,66 +99,151 @@ Yes
 a|
 Yes
 a|
-Provision disks: create, resize, connect to, and delete disks
+Provision disks
 a|
- 
+
 a|
- 
-a|
-Yes
-a|
- 
-a|
- 
-a|
- 
-a|
-Manage SMB shares: create, delete, and get information about
-a|
- 
-a|
- 
+
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
-Manage iGroups: create, rename, delete, and get information about
+Manage SMB shares
 a|
- 
+
 a|
- 
-a|
-Yes
-a|
- 
-a|
- 
-a|
- 
-a|
-Manage iSCSI sessions: establish and disconnect from an iSCSI session, and get information about
-a|
- 
-a|
- 
+
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
+a|
+Manage iGroups
+a|
+
+a|
+
+a|
+Yes
+a|
+
+a|
+
+a|
+
+a|
+Manage iSCSI sessions
+a|
+
+a|
+
+a|
+Yes
+a|
+
+a|
+
+a|
+
 |===
-For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
 
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+== Refresh virtual machine information
 
-*Related information*
+You should refresh your virtual machine information when VMware vCenter credentials change or the database or file system host restarts. Refreshing your virtual machine information in SnapCenter initiates communication with the VMware vSphere vCenter and obtains vCenter credentials.
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
+NOTE: RDM-based disks are managed by the SnapCenter Plug-in for Microsoft Windows, which is installed on the database host. To manage RDMs, the SnapCenter Plug-in for Microsoft Windows communicates with the vCenter server that manages the database host.
+
+*Steps*
+
+. In the SnapCenter left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. In the Managed Hosts page, select the host you want to update.
+. Click *Refresh VM*.
+
+== Modify plug-in hosts
+
+After installing a plug-in, you can modify the plug-in hosts details if required. You can modify credentials, installation path, plug-ins, log directory details for SnapCenter Plug-in for Microsoft SQL Server, group Managed Service Account (gMSA), and the plug-in port.
+
+NOTE: Ensure that the plug-in version is the same as that of the SnapCenter Server version.
+
+*About this task*
+
+* You can modify a plug-in port only after the plug-in is installed.
++
+If you are 2.x or earlier versions of SnapCenter Server and SnapCenter plug-ins, you must upgrade both SnapCenter Server and SnapCenter plug-ins to be able to modify the plug-in port. You cannot modify the plug-in port while upgrade operations are in progress.
+
+* While modifying a plug-in port, you should be aware of the following port rollback scenarios:
+
+** In a standalone setup, if SnapCenter fails to change the port of one of the components, the operation fails and the old port is retained for all of the components.
++
+If the port was changed for all of the components but one of the components fails to start with the new port, then the old port is retained for all of the components. For example, if you want to change the port for two plug-ins on the stand-alone host and SnapCenter fails to apply the new port to one of the plug-ins, the operation fails (with an appropriate error message) and the old port is retained for both the plug-ins.
+
+** In a clustered setup, if SnapCenter fails to change the port of the plug-in that is installed on one of the nodes, the operation fails and the old port is retained for all of the nodes.
++
+For example, if the plug-in is installed on four nodes in a clustered setup, and if the port is not changed for one of the nodes, the old port is retained for all of the nodes.
+
+When plug-ins are installed with gMSA, you can modify in the *More Options* windows. When plug-ins are installed without gMSA, you can specify the gMSA account to use it as the plug-in service account.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. Verify that *Managed Hosts* is selected at the top.
+. Select the host for which you want to modify and modify any one field.
++
+Only one field can be modified at a time.
+
+. Click *Submit*.
+
+*Results*
+
+The host is validated and added to SnapCenter Server.
+
+== Start or restart plug-in services
+
+Starting the SnapCenter plug-in services enable you to start services if they are not running or restart them if they are running. You might want to restart services after maintenance has been performed.
+
+*What you will need*
+
+* You should ensure that no jobs are running when restarting the services.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. In the Managed Hosts page, select the host you want to start.
+. Click image:../media/more_icon.gif[] icon and click *Start Service* or *Restart Service*.
++
+You can start or restart service of multiple hosts simultaneously.
+
+== Suspend schedules for host maintenance
+
+When you want to prevent the host from running any SnapCenter scheduled jobs, you can place your host in maintenance mode. You should do this before you upgrade the plug-ins or if you are performing maintenance tasks on hosts.
+
+NOTE: You cannot suspend the schedules on a host that is down because SnapCenter cannot communicate with that host.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. In the Managed Hosts page, select the host that you want to suspend.
+. Click the image:../media/more_icon.gif[] icon, and then click *Suspend Schedule* to place the host for this plug-in in maintenance mode.
++
+You can suspend the schedule of multiple hosts simultaneously.
++
+NOTE: You do not have to stop the plug-in service first. The plug-in service can be in a running or stopped state.
+
+*Results*
+
+After you suspend the schedules on the host, the Managed Hosts page shows "`Suspended`" in the Overall status field for the host.
+
+After you complete host maintenance, you can bring the host out of maintenance mode by clicking *Activate Schedule*.
+You can activate the schedule of multiple hosts simultaneously.

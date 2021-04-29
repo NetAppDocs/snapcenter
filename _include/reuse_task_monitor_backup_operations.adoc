@@ -1,0 +1,30 @@
+You can monitor the progress of different backup operations by using the SnapCenterJobs page. You might want to check the progress to determine when it is complete or if there is an issue.
+
+*About this task*
+
+The following icons appear on the Jobs page and indicate the corresponding state of the operations:
+
+* image:../media/progress_icon.gif[In progress icon] In progress
+* image:../media/success_icon.gif[Completed icon] Completed successfully
+* image:../media/failed_icon.gif[Failed icon] Failed
+* image:../media/warning_icon.gif[Completed with warnings icon] Completed with warnings or could not start due to warnings
+* image:../media/verification_job_in_queue.gif[Verification job is queued] Queued
+* image:../media/cancel_icon.gif[] Canceled
+
+*Steps*
+
+. In the left navigation pane, click *Monitor*.
+. In the Monitor page, click *Jobs*.
+. On the Jobs page, perform the following steps:
+ .. Click image:../media/filter_icon.gif[] to filter the list so that only backup operations are listed.
+ .. Specify the start and end dates.
+ .. From the *Type* drop-down list, select *Backup*.
+ .. From the *Status* drop-down, select the backup status.
+ .. Click *Apply* to view the operations completed successfully.
+. Select a backup job, and then click *Details* to view the job details.
++
+NOTE: Though the backup job status displaysimage:../media/success_icon.gif[Completed icon], when you click on job details you might see that some of the child tasks of the backup operation are still in progress or marked with warning signs.
+
+. On the Job Details page, click *View logs*.
++
+The *View logs* button displays the detailed logs for the selected operation.

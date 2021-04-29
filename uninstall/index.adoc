@@ -1,0 +1,15 @@
+---
+permalink: uninstall/index.html
+sidebar: sidebar
+keywords: uninstall, snapcenter server, plug-ins, host
+summary: 'Describes how to uninstall SnapCenter plug-ins and the SnapCenter Server.'
+---
+= Uninstall SnapCenter Server and plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Describes how to uninstall SnapCenter plug-ins and the SnapCenter Server.
+
+* xref:concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.adoc[Uninstall SnapCenter plug-ins and plug-in packages]
+* xref:task_uninstalling_the_snapcenter_server.adoc[Uninstall the SnapCenter Server]

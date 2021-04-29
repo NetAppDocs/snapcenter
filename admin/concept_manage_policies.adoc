@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_policies.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can detach policies from a resource or resource group, modify, delete, view, and copy.'
 ---
 = Manage policies
@@ -10,3 +10,80 @@ summary: 'You can detach policies from a resource or resource group, modify, del
 
 [.lead]
 You can detach policies from a resource or resource group, modify, delete, view, and copy.
+
+== Modify policies
+You can modify the replication options, Snapshot copy retention settings, error retry count, or scripts information while a policy is attached to a resource or resource group. You can modify the schedule type (frequency) only after you detach a policy.
+
+*About this task*
+
+Modifying the schedule type in a policy requires additional steps because the SnapCenter Server registers the schedule type only at the time the policy is attached to a resource or resource group.
+
+|===
+| If you want to...| Then...
+
+a|
+Add an additional schedule type
+a|
+Create a new policy and attach it to the necessary resources or resource groups.For example, if a resource group policy specifies only hourly backups and you want to add daily backups also, you can create a policy with a daily schedule type and add it to the resource group. The resource group would then have two policies: hourly and daily.
+
+a|
+Remove or change a schedule type
+a|
+
+. Detach the policy from every resource and resource group that uses that policy.
+. Modify the schedule type.
+. Attach the policy again to all the resources and resource groups.
+
+For example, if a policy specifies hourly backups and you want to change that to daily backups, you must detach the policy first.
+
+You cannot detach the last remaining policy from a individual resource because every resource must have at least one policy attached. Therefore, if you want to modify the schedule type of the only policy attached to a resource, you must perform the following:
+
+. Attach a second placeholder policy.
+. Detach the original policy from every resource and resource group that uses that policy.
+. Modify the schedule type.
+. Attach the modified policy again to all the resources and resource groups.
+. Detach the placeholder policy.
+
+|===
+
+*Steps*
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. Select the policy, and then click *Modify*.
+. Modify the information, and then click *Finish*.
+
+== Detach policies
+
+You can detach policies from a resource or resource group any time that you no longer want those policies to govern data protection for the resources. You must detach a policy before you can delete it or before you modify the schedule type.
+
+IMPORTANT: You cannot detach a policy from a resource or resource group if it is the only policy attached.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Resource Group* from the *View* list.
+. Select the resource group, and then click *Modify Resource Group*.
+. In the Policies page of the Modify Resource Group wizard, from the drop-down list, clear the check mark next to the policies you want to detach.
++
+NOTE: You cannot detach the last remaining policy from an individual resource because every resource must have at least one policy attached. Therefore, if you want to delete or modify the only policy attached to a resource, you must perform the following:
+
+ .. Attach a second placeholder policy.
+ .. Detach the original policy from the resource.
+
+. Make any additional modifications to the resource group in the rest of the wizard, and then click *Finish*.
+
+== Delete policies
+
+If you no longer require policies, you might want to delete them.
+
+*What you will need*
+
+You should detach the policy from resource groups if the policy is associated with any resource group.
+
+*Steps*
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. Select the policy, and then click *Delete*.
+. Click *Yes*.

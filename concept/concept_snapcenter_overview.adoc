@@ -248,11 +248,13 @@ SAN native devices, filesystems, and LVM layouts built on SAN devices are suppor
 * Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
 * Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
 
-MySQL, DB2, and MongoDB custom plug-in samples for SnapCenter Software can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]. You can also create your own custom plug-ins.
+MySQL, DB2, and MongoDB custom plug-in samples for SnapCenter Software can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
 
 NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
 
-NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp. SnapCenter can back up its own repository.
+NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
+
+For more information, see link:protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^]
 
 == SnapCenter repository
 
