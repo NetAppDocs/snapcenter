@@ -11,6 +11,10 @@ summary: 'You should configure the CA certificate with SnapCenter site on Window
 [.lead]
 You should configure the CA certificate with SnapCenter site on Windows host.
 
+If SnapCenter is configured with the F5 load balancer, see Configure the F5 load balancer SSL settings article.
+
+Link to KB article to be provided
+
 *Steps*
 
 . Open IIS Manager on the Windows Server where SnapCenter is installed.

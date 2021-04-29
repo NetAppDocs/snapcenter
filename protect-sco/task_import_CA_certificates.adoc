@@ -1,5 +1,5 @@
 ---
-permalink: install/task_import_CA_certificates.html
+permalink: protect-sco/task_import_CA_certificates.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'
@@ -9,7 +9,7 @@ summary: 'Import the CA certificates of the SnapCenter Server and the Windows ho
 :imagesdir: ../media/
 
 [.lead]
-You must import the CA certificates of the SnapCenter Server and the Windows host plug-ins using the Microsoft management console (MMC).
+You must import the CA certificates to the SnapCenter Server and the Windows host plug-ins using the Microsoft management console (MMC).
 
 *Steps*
 
