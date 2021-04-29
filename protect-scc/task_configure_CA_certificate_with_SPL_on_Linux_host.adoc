@@ -1,0 +1,95 @@
+---
+permalink: protect-scc/task_configure_CA_certificate_with_SPL_on_Linux_host.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Linux host'
+---
+= Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You should manage the password of SPL keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to SPL trust-store, and configure CA signed key pair to SPL trust-store  with SnapCenter Plug-in Loader service to activate the installed digital certificate.
+
+SPL uses the file 'keystore.jks', which is located at ‘/var/opt/snapcenter/spl/etc’ both as its trust-store and key-store.
+
+== Manage password for SPL keystore and alias of the CA signed key pair in use
+
+*Steps*
+
+. You can retrieve SPL keystore default password from SPL property file.
++
+It is the value corresponding to the key 'SPL_KEYSTORE_PASS'.
+
+. Change the keystore password:
++
+    keytool -storepasswd -keystore keystore.jks
+
+. Change the password for all aliases of private key entries in the keystore to the same password used for the keystore:
++
+  keytool -keypasswd -alias "alias_name_in_cert" -keystore keystore.jks
+
++
+Update the same for the key SPL_KEYSTORE_PASS in spl.properties file.
+.  Restart the service after changing the password.
+
+[NOTE]
+
+Password for SPL keystore and for all the associated alias password of the private key should be same.
+
+== Configure root or intermediate certificates to SPL trust-store
+
+You should configure the root or intermediate certificates without the private key to SPL trust-store.
+
+. Navigate to the folder containing the SPL keystore:  /var/opt/snapcenter/spl/etc.
+
+. Locate the file 'keystore.jks'.
+
+. List the added certificates in the keystore:
++
+`keytool -list -v -keystore keystore.jks`
+
+. Add a root or intermediate certificate:
+
+  keytool -import -trustcacerts -alias myRootCA -file /root/USERTrustRSA_Root.cer -keystore keystore.jks
+
+[NOTE]
+
+You should add the root CA certificate and then the intermediate CA certificates.
+
+== Configure CA signed key pair to SPL trust-store
+
+You should configure the CA signed key pair to the SPL trust-store.
+
+. Navigate to the folder containing the SPL's keystore /var/opt/snapcenter/spl/etc.
+
+. Locate the file 'keystore.jks'.
+
+. List the added certificates in the keystore:
++
+`keytool -list -v -keystore keystore.jks`
+
+. Add the CA certificate having both private and public key.
++
+`keytool -importkeystore -srckeystore /root/snapcenter.ssl.test.netapp.com.pfx -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype JKS`
+
+. List the added certificates in the keystore.
++
+`keytool -list -v -keystore keystore.jks`
+
+.  Verify that the keystore contains the alias corresponding to the new CA certificate, which was added to the keystore.
+
+. Change the added private key password for CA certificate to the keystore password.
++
+Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in spl.properties file.
+
+  keytool -keypasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks
+
+. If the alias name in the CA certificate is long and contains space or special characters ("*",","), change the alias name to a simple name:
+
+  keytool -changealias -alias "long_alias_name" -destalias "simple_alias" -keystore keystore.jks
+
+. Configure the alias name from the keystore located in spl.properties file.
++
+Update this value against the key SPL_CERTIFICATE_ALIAS.
