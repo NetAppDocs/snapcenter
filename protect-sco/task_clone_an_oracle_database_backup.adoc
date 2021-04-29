@@ -185,12 +185,12 @@ By default *Create new DBID* check box is selected to generate a unique number (
 
 Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
 a|
-Create temp tablespace
+Create tempfile for temporary tablespace
 //[SD]: Included this for BURT 1391437 in 4.5//
 a|
-Select the check box if you want to create temporary tablespaces for Oracle database.
+Select the check box if you want to create a tempfile for the default temporary tablespace of the cloned database.
 
-If the check box is not selected, the cloned database will be created without temporary tablespaces.
+If the check box is not selected, the database clone will be created without the tempfile.
 a|
 Enter sql entries to apply when clone is created
 a|
@@ -233,8 +233,8 @@ Locking or renaming of devices will not affect the clone deletion operation. For
 
 *Related information*
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Cloning fails with the message "ORA-00308: cannot open archived log '/ORA_LOG/arch1__123_456789012.arc^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Restore or cloning fails with ORA-00308 error message^]
 
-* xref:task_view_oracle_databse_backups_and_clones_in_the_topology_page.adoc[View Oracle database backups and clones in the Topology page^]
+* xref:protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html[View Oracle database backups and clones in the Topology page^]
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_recover_a_cloned_database[Failed to recover a cloned database^]

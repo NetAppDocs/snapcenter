@@ -22,7 +22,7 @@ entries:
     url: "/concept/concept_resources_resource_groups_and_policies.html"
   - title: Prescripts and postscripts
     url: "/concept/concept_prescripts_and_postscripts.html"
-  - title: SnapCenter REST APIs
+  - title: SnapCenter Automation using REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: Install SnapCenter Server
   url: "/install/index.html"
