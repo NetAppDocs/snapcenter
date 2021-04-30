@@ -26,15 +26,17 @@ a|
 
 For information on SnapCenter REST APIs, see link:/sc-automation/automation_index.html[SnapCenter Automation^]
 
-* link:https://sc-automation/automation_index.html[SnapCenter Automation^]
+* link:https://sc-automation/automation_index.html[SnapCenter Automation]
 
-* xref:/sc-automation/automation_index.adoc[SnapCenter Automation^]
+* xref:/sc-automation/automation_index.adoc[SnapCenter Automation]
 
-* xref:sc-automation/automation_index.adoc[SnapCenter Automation^]
+* xref:sc-automation/automation_index.adoc[SnapCenter Automation]
 
-* xref:/sc-automation/automation_index.html[SnapCenter Automation^]
+* xref:/sc-automation/automation_index.html[SnapCenter Automation]
 
-* xref:sc-automation:automation_index.adoc[SnapCenter Automation^]
+* xref:sc-automation:automation_index.adoc[SnapCenter Automation]
+
+sc-automation/automation_index.html
 
 
 For information on SnapCenter Plug-in for VMware vSphere REST APIs, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere REST APIs^]
