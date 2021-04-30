@@ -1,5 +1,5 @@
 ---
-permalink: sc-automation/index.html
+permalink: sc-automation/automation_index.html
 sidebar: sidebar
 keywords: REST APIs, swagger
 summary: 'Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.'

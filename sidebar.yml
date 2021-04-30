@@ -1006,6 +1006,6 @@ entries:
     - title: Uninstall the SnapCenter Server
       url: "/uninstall/task_uninstalling_the_snapcenter_server.html"
 - title: SnapCenter Automation
-  url: "/sc-automation/index.html"
+  url: "/sc-automation/automation_index.html"
 - title: Legal notices
   url: /reference_legal_notices.html
