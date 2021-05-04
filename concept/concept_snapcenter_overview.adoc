@@ -17,6 +17,10 @@ SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and Sn
 * Rapid, granular restore and application-consistent recovery
 * Quick, space-efficient cloning
 
+link:../concept/concept_snapcenter_rest_apis.html[rest apis^]
+
+link:concept_snapcenter_rest_apis.html[rest apis^]
+
 SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate deployment of plug-ins to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
 
 SnapCenter can be deployed in the following ways:
