@@ -255,7 +255,7 @@ NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp commu
 NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
 
 For more information, see link:protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^]
-
+link:concept/concept_prescripts_and_postscripts.html[prescripts]
 == SnapCenter repository
 
 The SnapCenter repository, sometimes referred to as the NSM database, stores information and metadata for every SnapCenter operation.
