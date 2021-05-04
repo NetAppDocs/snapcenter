@@ -42,7 +42,7 @@ Backup schedules (exactly when backups are to be performed) are part of a resour
 == Number of backups needed for Windows file systems
 Factors that determine the number of backups that you need include the size of the Windows file system, the number of volumes used, the rate of change of the file system, and your Service Level Agreement (SLA).
 
-== Backup schedules for Windows file systems
+== Backup naming convention for Windows file systems
 Windows file system backups use the default Snapshot copy naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.
 
 The Snapshot copy uses the following default naming convention: `resourcegroupname_hostname_timestamp`
@@ -60,3 +60,7 @@ In this example, the syntax elements have the following meanings:
 * `03-12-2016_23.17.26` is the date and timestamp.
 
 When creating a backup, you can also add a descriptive tag to help identify the backup. In contrast, if you want to use a customized backup naming convention, you need to rename the backup after the backup operation is complete.
+
+== Backup retention options
+
+include::_include/reuse_concept_backup_retention_options.adoc[]

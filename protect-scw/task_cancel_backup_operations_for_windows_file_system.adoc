@@ -1,10 +1,10 @@
 ---
-permalink: protect-sce/task_cancel_backup_operations_for_exchange_database.html
+permalink: protect-scw/task_cancel_backup_operations_for_windows_file_system.html
 sidebar: sidebar
 keywords:
 summary: 'You can cancel backup operations that are queued.'
 ---
-= Cancel backup operations for Exchange database
+= Cancel backup operations
 :icons: font
 :imagesdir: ../media/
 

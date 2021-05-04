@@ -1,0 +1,11 @@
+---
+permalink: protect-sce/task_cancel_restore_operations.html
+sidebar: sidebar
+keywords:
+summary: 'You can cancel restore jobs that are queued.'
+---
+= Cancel restore operations for Exchange database
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_task_cancel_restore_operations.adoc[]
