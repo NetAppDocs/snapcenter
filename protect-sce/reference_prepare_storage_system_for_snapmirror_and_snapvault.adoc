@@ -1,0 +1,11 @@
+---
+permalink: protect-sce/reference_prepare_storage_system_for_snapmirror_and_snapvault.html
+sidebar: sidebar
+keywords: requirements
+summary:
+---
+= Prepare storage systems for SnapMirror and SnapVault replication
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication.adoc[]
