@@ -17,10 +17,6 @@ SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and Sn
 * Rapid, granular restore and application-consistent recovery
 * Quick, space-efficient cloning
 
-link:../concept/concept_snapcenter_rest_apis.html[rest apis^]
-
-link:concept_snapcenter_rest_apis.html[rest apis^]
-
 SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate deployment of plug-ins to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
 
 SnapCenter can be deployed in the following ways:
@@ -258,7 +254,7 @@ NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp commu
 
 NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
 
-For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^]
+For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 
 
 == SnapCenter repository
