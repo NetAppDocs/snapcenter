@@ -42,6 +42,8 @@ Password for custom plug-in keystore and for all the associated alias password o
 
 You should configure the root or intermediate certificates without the private key to custom plug-in trust-store.
 
+*Steps*
+
 . Navigate to the folder containing the custom plug-in keystore:  /opt/NetApp/snapcenter/scc/etc.
 
 . Locate the file 'keystore.jks'.
@@ -61,6 +63,8 @@ You should add the root CA certificate and then the intermediate CA certificates
 == Configure CA signed key pair to custom plug-in trust-store
 
 You should configure the CA signed key pair to the custom plug-in trust-store.
+
+*Steps*
 
 . Navigate to the folder containing the custom plug-in keystore /opt/NetApp/snapcenter/scc/etc.
 
@@ -89,3 +93,17 @@ Default SPL keystore password is the value of the key KEYSTORE_PASS in agent.pro
 . Configure the alias name from CA certificate in agent.properties file.
 +
 Update this value against the key SCC_CERTIFICATE_ALIAS.
+
+
+== Configure certificate revocation list (CRL) for SnapCenter Custom Plug-ins
+
+*About this task*
+
+* SnapCenter Custom Plug-ins will search for the CRL files in a pre-configured directory.
+* Default directory for the CRL files for SnapCenter Custom Plug-ins is ' opt/NetApp/snapcenter/scc/etc/crl'.
+
+*Steps*
+
+. You can modify and update the default directory in agent.properties file against the key CRL_PATH.
++
+You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL. 
