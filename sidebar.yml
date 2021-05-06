@@ -395,9 +395,10 @@ entries:
       - title: Install SnapCenter Plug-in for Microsoft Windows on multiple remote
           hosts using PowerShell cmdlets
         url: "/protect-scw/task_install_on_multiple_remote_hosts_using_powershell_cmdlets.html"
-      - title: Install the SnapCenter Plug-in for Microsoft Windows silently from
-          the command line
+      - title: Install the SnapCenter Plug-in for Microsoft Windows silently from the command line
         url: "/protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html"
+      - title: Monitor SnapCenter plug-in package installation status
+        url: "/protect-scw/task_monitor_snapcenter_plug_in_package_installation_status.html"
   - title: Back up Windows file systems
     url: "/protect-scw/reference_back_up_windows_file_systems.html"
     entries:
@@ -695,6 +696,8 @@ entries:
       - title: Install the SnapCenter Plug-in for Exchange silently from the command
           line
         url: "/protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html"
+      - title: Monitor SnapCenter plug-in package installation status
+        url: "/protect-sce/task_monitor_snapcenter_plug_in_package_installation_status.html"
     - title: Configure SnapManager 7.x for Exchange and SnapCenter to coexist
       url: "/protect-sce/task_configure_snapmanager_7_x_for_exchange_and_snapcenter_plug_in_for_exchange_to_coexist.html"
   - title: Prepare for data protection
