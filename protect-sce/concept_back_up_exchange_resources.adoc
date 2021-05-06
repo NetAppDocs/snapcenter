@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/concept_back_up_exchange_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you install the SnapCenter Plug-in for Microsoft Exchange Server in your environment, you can use SnapCenter to back up Exchange resources.'
 ---
 = Back up Exchange resources
@@ -18,11 +18,3 @@ Backup and restore operations cannot be performed simultaneously on the same res
 Active and passive backup copies on the same volume are not supported.
 
 The following workflow shows the sequence of backup operations:image:../media/sce_backup_workflow.gif[]
-
-*Related information*
-
-xref:task_create_backup_policies_for_exchange_server_databases.adoc[Create backup policies for Exchange Server databases]
-
-link:[Monitoring backup operations]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

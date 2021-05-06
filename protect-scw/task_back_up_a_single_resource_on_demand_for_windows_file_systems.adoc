@@ -78,11 +78,3 @@ If the policy selected for the on-demand backup is associated with a backup sche
 
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
-
-*Related information*
-
-link:[Monitoring backup operations]
-
-link:[Backing up resources using PowerShell cmdlets]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

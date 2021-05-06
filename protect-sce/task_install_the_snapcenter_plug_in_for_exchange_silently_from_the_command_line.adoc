@@ -34,7 +34,6 @@ NOTE: All the parameters passed during the installation of Plug-in for Exchange 
 
  .. `" /silent /debuglog"C:\Installdebug.log" /log"C:\temp" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C:\Program Files" BI_SERVICEACCOUNT=demo\administrator BI_SERVICEPWD=Netapp1! ISFeatureInstall=HPPW,SCW`
  Enter the following values for the variables:
-
 +
 |===
 | Variable| Value

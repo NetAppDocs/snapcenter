@@ -13,8 +13,4 @@ The SnapCenter Plug-in for Microsoft Exchange Server is a host-side component of
 
 When the Plug-in for Exchange is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume and with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance or archival purposes.
 
-The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.
-
-*Related information*
-
-link:concept/index.html[Concepts]
+The SnapCenter link:concept/index.html[Concepts documentation] has information about the SnapCenter architecture, features, and benefits.

@@ -61,7 +61,9 @@ Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch
 a|
 SnapCenter GUI or PowerShell cmdlets
 a|
-You must use Hyper-V Manager to provision Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch.*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+You must use Hyper-V Manager to provision Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch.
+
+NOTE: Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
 
 a|
 Hyper-V VM
