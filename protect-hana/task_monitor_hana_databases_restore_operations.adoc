@@ -1,0 +1,11 @@
+---
+permalink: protect-hana/task_monitor_hana_databases_restore_operations.html
+sidebar: sidebar
+keywords: restore
+summary: 'You can monitor the progress of different SnapCenter restore operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
+---
+= Monitor SAP HANA databases restore operations
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_task_monitor_restore_operations.adoc[]
