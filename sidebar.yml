@@ -966,7 +966,7 @@ entries:
       entries:
       - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
         url: "/protect-scc/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.html"
-      - title: Monitor SnapCenter plug-in package installation status r
+      - title: Monitor SnapCenter plug-in package installation status
         url: "/protect-scc/task_monitor_the_status_of_installing_plugin_for_scc.html"
     - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host
       url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html"
