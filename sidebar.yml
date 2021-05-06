@@ -430,7 +430,7 @@ entries:
     - title: Monitor clone operations
       url: "/protect-scw/task_monitor_clone_operations.html"
     - title: Cancel clone operations
-      url: "/protect-scw/task_cancel_clone_operations.html" 
+      url: "/protect-scw/task_cancel_clone_operations.html"
 - title: Protect Oracle databases
   url: "/protect-sco/index.html"
   entries:
@@ -702,8 +702,7 @@ entries:
     entries:
     - title: Prerequisites for using the SnapCenter Plug-in for Microsoft Exchange Server
       url: "/protect-sce/reference_prerequisites_for_using_the_snapcenter_plug_in_for_exchange_server.html"
-    - title: How resources, resource groups, and policies are used for protecting Exchange
-      Server
+    - title: How resources, resource groups, and policies are used for protecting Exchange Server
       url: "/protect-sce/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_exchange_server.html"
   - title: Back up Exchange resources
     url: "/protect-sce/concept_back_up_exchange_resources.html"
