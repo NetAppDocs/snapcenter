@@ -373,6 +373,8 @@ entries:
       url: "/protect-scw/concept_how_snapcenter_backs_up_windows_file_systems.html"
     - title: Minimum ONTAP privileges required for Windows plug-in
       url: "/protect-scw/reference_minimum_ontap_privileges_required_for_windows_plug_in.html"
+    - title: Prepare storage systems for SnapMirror and SnapVault replication
+      url: "/protect-scw/reference_prepare_storage_system_for_snapmirror_and_snapvault.html"
     - title: Define a backup strategy for Windows file systems
       url: "/protect-scw/task_define_a_backup_strategy_for_windows_file_systems.html"
     - title: Sources and destinations of clones for Windows file systems
@@ -409,12 +411,26 @@ entries:
       url: "/protect-scw/task_back_up_a_single_resource_on_demand_for_windows_file_systems.html"
     - title: Back up resource groups for Windows file systems
       url: "/protect-scw/task_back_up_resource_groups_for_windows_file_systems.html"
+    - title: Monitor backup operations
+      url: "/protect-scw/task_monitor_backup_operations.html"
+    - title: Cancel the backup operations
+      url: "/protect-scw/task_cancel_backup_operations_for_windows_file_system.html"
     - title: View related backups and clones in the Topology page
       url: "/protect-scw/task_view_related_backups_and_clones_in_the_topology_page.html"
   - title: Restore Windows file system backups
     url: "/protect-scw/task_restore_windows_file_system_backups.html"
+    entries:
+    - title: Monitor restore operations
+      url: "/protect-scw/task_monitor_restore_operations.html"
+    - title: Cancel restore operations
+      url: "/protect-scw/task_cancel_restore_operations.html"
   - title: Clone from a Windows file system backup
     url: "/protect-scw/task_clone_from_a_windows_file_system_backup.html"
+    entries:
+    - title: Monitor clone operations
+      url: "/protect-scw/task_monitor_clone_operations.html"
+    - title: Cancel clone operations
+      url: "/protect-scw/task_cancel_clone_operations.html" 
 - title: Protect Oracle databases
   url: "/protect-sco/index.html"
   entries:
@@ -651,6 +667,8 @@ entries:
     - title: Storage types supported by SnapCenter Plug-in for Microsoft Windows and
         for Microsoft Exchange Server
       url: "/protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html"
+    - title: Prepare storage systems for SnapMirror and SnapVault replication
+      url: "/protect-sce/reference_prepare_storage_system_for_snapmirror_and_snapvault.html"
     - title: Define a backup strategy for Exchange Server resources
       url: "/protect-sce/task_define_a_backup_strategy_for_exchange_server_resources.html"
     - title: Define a restore strategy for Exchange databases
@@ -679,11 +697,14 @@ entries:
         url: "/protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html"
     - title: Configure SnapManager 7.x for Exchange and SnapCenter to coexist
       url: "/protect-sce/task_configure_snapmanager_7_x_for_exchange_and_snapcenter_plug_in_for_exchange_to_coexist.html"
-  - title: Prerequisites for using the SnapCenter Plug-in for Microsoft Exchange Server
-    url: "/protect-sce/reference_prerequisites_for_using_the_snapcenter_plug_in_for_exchange_server.html"
-  - title: How resources, resource groups, and policies are used for protecting Exchange
+  - title: Prepare for data protection
+    url: "/protect-sce/concept_prepare_for_data_protection.html"
+    entries:
+    - title: Prerequisites for using the SnapCenter Plug-in for Microsoft Exchange Server
+      url: "/protect-sce/reference_prerequisites_for_using_the_snapcenter_plug_in_for_exchange_server.html"
+    - title: How resources, resource groups, and policies are used for protecting Exchange
       Server
-    url: "/protect-sce/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_exchange_server.html"
+      url: "/protect-sce/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_exchange_server.html"
   - title: Back up Exchange resources
     url: "/protect-sce/concept_back_up_exchange_resources.html"
     entries:
@@ -702,6 +723,8 @@ entries:
     - title: Create a storage system connection and a credential using PowerShell
         cmdlets for Exchange Server
       url: "/protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html"
+    - title: Monitor backup operations
+      url: "/protect-sce/task_monitor_backup_operations.html"
     - title: Back up Exchange resources using PowerShell cmdlets
       url: "/protect-sce/task_back_up_exchange_resources_using_powershell_cmdlets.html"
     - title: Cancel backup operations for Exchange database
@@ -725,6 +748,10 @@ entries:
       url: "/protect-sce/task_reseed_a_passive_exchange_node_replica.html"
     - title: Reseed a replica using PowerShell cmdlets for Exchange database
       url: "/protect-sce/task_reseed_a_replica_using_powershell_cmdlets_for_exchange_database.html"
+    - title: Monitor restore operations
+      url: "/protect-sce/task_monitor_restore_operations.html"
+    - title: Cancel restore operations
+      url: "/protect-sce/task_cancel_restore_operations.html"
 - title: Protect SAP HANA databases
   url: "/protect-hana/index.html"
   entries:
