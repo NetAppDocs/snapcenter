@@ -1,5 +1,5 @@
 ---
-permalink: protect-sco/task_import_CA_certificates.html
+permalink: install/task_import_CA_certificates.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'

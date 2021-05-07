@@ -1,0 +1,11 @@
+---
+permalink: protect-scsql/concept_backup_schedules_for_plugin_for_sql.html
+sidebar: sidebar
+keywords:
+summary: 'Backup frequency \(schedule type\) is specified in policies; a backup schedule is specified in the resource group configuration.'
+---
+= Backup schedules for Plug-in for SQL server
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]

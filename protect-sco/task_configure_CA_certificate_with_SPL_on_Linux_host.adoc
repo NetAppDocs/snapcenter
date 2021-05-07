@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Linux host'
 ---
-= Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
+= Configure CA certificate with SnapCenter Plug-in Loader (SPL) service on Linux host
 :icons: font
 :imagesdir: ../media/
 
@@ -41,6 +41,8 @@ Password for SPL keystore and for all the associated alias password of the priva
 
 You should configure the root or intermediate certificates without the private key to SPL trust-store.
 
+*Steps*
+
 . Navigate to the folder containing the SPL keystore:  /var/opt/snapcenter/spl/etc.
 
 . Locate the file 'keystore.jks'.
@@ -60,6 +62,8 @@ You should add the root CA certificate and then the intermediate CA certificates
 == Configure CA signed key pair to SPL trust-store
 
 You should configure the CA signed key pair to the SPL trust-store.
+
+*Steps*
 
 . Navigate to the folder containing the SPL's keystore /var/opt/snapcenter/spl/etc.
 
@@ -92,3 +96,18 @@ Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in spl.p
 . Configure the alias name from the keystore located in spl.properties file.
 +
 Update this value against the key SPL_CERTIFICATE_ALIAS.
+
+== Configure certificate revocation list (CRL) for SPL
+
+You should configure the CRL for SPL
+
+*About this task*
+
+* SPL will look for the CRL files in a pre-configured directory.
+* Default directory for the CRL files for SPL is '/var/opt/snapcenter/spl/etc/crl'.
+
+*Steps*
+
+. You can modify and update the default directory in spl.properties file against the key SPL_CRL_PATH.
++
+You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL.
