@@ -18,4 +18,4 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 [NOTE]
 If you own the CA certificate for your domain (*.domain.company.com) or your system (machine1.domain.company.com), you can skip generating the CA Certificate CSR file.  You can deploy the existing CA certificate with SnapCenter.
 
-For cluster configurations, the cluster name and the respective host names should be mentioned in the CA certificate.  The certificate can be updated by filling the  Subject Alternative Name (SAN) field before procuring the certificate.  If it is a wild card certificate (*.domain.company.com), the certificate will contain all the hostnames of the domain implicitly.
+For cluster configurations, the cluster name (virtual cluster FQDN), and the respective host names should be mentioned in the CA certificate.  The certificate can be updated by filling the  Subject Alternative Name (SAN) field before procuring the certificate.  For a wild card certificate (*.domain.company.com), the certificate will contain all the hostnames of the domain implicitly.
