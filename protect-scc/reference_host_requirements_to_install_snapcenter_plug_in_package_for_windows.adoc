@@ -1,5 +1,5 @@
 ---
-permalink: protect-scsql/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_sql.html
+permalink: protect-scc/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_scc.html
 sidebar: sidebar
 keywords: SAP HANA,Custom plug-ins
 summary: 'Before you install the SnapCenter Plug-ins Package for Windows, you should be familiar with some basic host system space requirements and sizing requirements.'

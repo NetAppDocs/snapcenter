@@ -12,7 +12,7 @@ summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins servic
 
 You should manage the password of the custom plug-ins keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to the custom plug-ins trust-store, and configure CA signed key pair to custom plug-ins trust-store  with SnapCenter Custom Plug-ins service to activate the installed digital certificate.
 
-Custom plug-ins uses the file 'keystore.jks', which is located at ‘/opt/NetApp/snapcenter/scc/etc’ both as its trust-store and key-store.
+SPL uses the file 'keystore.jks', which is located at ‘_/var/opt/snapcenter/spl/etc_’ both as its trust-store and key-store.
 
 == Manage password for custom plug-in keystore and alias of the CA signed key pair in use
 
@@ -31,7 +31,7 @@ It is the value corresponding to the key 'KEYSTORE_PASS'.
   keytool -keypasswd -alias "alias_name_in_cert" -keystore keystore.jks
 
 +
-Update the same for the key KEYSTORE_PASS in agent.properties file.
+Update the same for the key KEYSTORE_PASS in _agent.properties_ file.
 .  Restart the service after changing the password.
 
 [NOTE]
@@ -86,9 +86,13 @@ You should configure the CA signed key pair to the custom plug-in trust-store.
 
 . Change the added private key password for CA certificate to the keystore password.
 +
-Default SPL keystore password is the value of the key KEYSTORE_PASS in agent.properties file.
+Default custom plug-in keystore password is the value of the key KEYSTORE_PASS in agent.properties file.
 
   keytool -keypasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks
+
+. If the alias name in the CA certificate is long and contains space or special characters ("*",","), change the alias name to a simple name:
+
+    keytool -changealias -alias "long_alias_name" -destalias "simple_alias" -keystore keystore.jks
 
 . Configure the alias name from CA certificate in agent.properties file.
 +
@@ -106,4 +110,4 @@ Update this value against the key SCC_CERTIFICATE_ALIAS.
 
 . You can modify and update the default directory in agent.properties file against the key CRL_PATH.
 +
-You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL. 
+You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL.

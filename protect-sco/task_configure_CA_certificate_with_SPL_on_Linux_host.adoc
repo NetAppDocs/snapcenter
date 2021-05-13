@@ -11,6 +11,7 @@ summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Lin
 [.lead]
 
 You should manage the password of SPL keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to SPL trust-store, and configure CA signed key pair to SPL trust-store  with SnapCenter Plug-in Loader service to activate the installed digital certificate.
+
 SPL uses the file 'keystore.jks', which is located at ‘/var/opt/snapcenter/spl/etc’ both as its trust-store and key-store.
 
 == Manage password for SPL keystore and alias of the CA signed key pair in use
@@ -109,5 +110,6 @@ You should configure the CRL for SPL
 *Steps*
 
 . You can modify and update the default directory in spl.properties file against the key SPL_CRL_PATH.
+. You can place more than one CRL file in this directory.
 +
-You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL.
+The incoming certificates will be verified against each CRL.
