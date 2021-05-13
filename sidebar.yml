@@ -275,7 +275,7 @@ entries:
       url: "/protect-scsql/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.html"
       entries:
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-        url: "/protect-scsql/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.html"
+        url: "/protect-scsql/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_sql.html"
       - title: Set up credentials for the SnapCenter Plug-ins Package for Windows
         url: "/protect-scsql/task_set_up_credentials_for_snapcenter_plug_ins_package_for_windows.html"
       - title: Configure credentials for an individual SQL Server resource
@@ -339,17 +339,17 @@ entries:
       - title: Monitor operations in the Activity pane
         url: "/protect-scsql/task_monitor_dataprotection_operations_on_sql_resources_in_the_activity_pane.html"
     - title: Create a storage system connection and a credential using PowerShell cmdlets
-      url: "/protect-scsql/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html"
+      url: "/protect-scsql/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_sql.html"
     - title: Back up resources using PowerShell cmdlets
-      url: "/protect-scsql/task_back_up_resources_using_powershell_cmdlets.html"
+      url: "protect-scsql/task_back_up_resources_using_powershell_cmdlets_for_sql.html"
     - title: Cancel the SnapCenter Plug-in for Microsoft SQL Server backup operations
       url: "/protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html"
     - title: View SQL Server backups and clones in the Topology page
       url: "/protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html"
     - title: Remove backups using PowerShell cmdlets
-      url: "/protect-scsql/task_remove_backups_using_powershell_cmdlets.html"
+      url: "/protect-scsql/task_remove_backups_using_powershell_cmdlets_for_sql.html"
     - title: Clean up the secondary backup count using PowerShell cmdlets
-      url: "/protect-scsql/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets.html"
+      url: "/protect-scsql/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_sql.html"
   - title: Restore SQL Server resources
     url: "/protect-scsql/reference_restore_sql_server_resources.html"
     entries:
@@ -362,7 +362,7 @@ entries:
     - title: Reseed Availability Group databases
       url: "/protect-scsql/task_reseed_availability_group_databases.html"
     - title: Restore and recover resources using PowerShell cmdlets
-      url: "/protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets.html"
+      url: "/protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html"
     - title: Monitor restore operations
       url: "/protect-scsql/task_monitor_sql_resources_restore_operations.html"
     - title: Cancel restore operations
@@ -373,7 +373,7 @@ entries:
     - title: Clone from a SQL Server database backup
       url: "/protect-scsql/task_clone_from_a_sql_server_database_backup.html"
     - title: Clone backups using PowerShell cmdlets
-      url: "/protect-scsql/task_clone_backups_using_powershell_cmdlets.html"
+      url: "protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html"
     - title: Perform Clone Lifecycle
       url: "/protect-scsql/task_perform_clone_lifecycle_management.html"
     - title: Monitor clone operations in SnapCenter
@@ -381,7 +381,7 @@ entries:
     - title: Cancel clone operations
       url: "/protect-scsql/task_cancel_sql_resource_clone_operations.html"
     - title: Split a clone
-      url: "/protect-scsql/task_split_a_clone.html"
+      url: "/protect-scsql/task_split_a_clone_for_sql.html"
 - title: Protect Windows file systems
   url: "/protect-scw/index.html"
   entries:
@@ -825,8 +825,9 @@ entries:
         SAP HANA Database
       url: "/protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html"
       entries:
-      - title: Host requirements for installing the SnapCenter Plug-ins Package for
-          Linux
+      - title: Host requirements to install SnapCenter Plug-ins Package for Windows
+        url: "/protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_hana.html"
+      - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
         url: "/protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html"
       - title: Set up credentials for the SnapCenter Plug-in for SAP HANA Database
         url: "/protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html"
@@ -885,6 +886,8 @@ entries:
       entries:
       - title: Monitor operations in the Activity pane
         url: "/protect-hana/task_monitor_dataprotection_operations_on_hana_databases_in_the_activity_pane.html"
+    - title: Cancel the backup operations
+      url: "/protect-hana/task_cancel_backup_operations_for_sap_hana.html"
     - title: View SAP HANA database backups and clones in the Topology page
       url: "/protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html"
   - title: Restore SAP HANA databases
@@ -896,6 +899,8 @@ entries:
       url: "/protect-hana/task_restore_and_recover_an_auto_discovered_database_backup.html"
     - title: Restore SAP HANA database using PowerShell cmdlets
       url: "/protect-hana/task_restore_sap_hana_database_using_powershell_cmdlets.html"
+    - title: Restore resources using PowerShell cmdlets
+      url: "/protect-hana/task_restore_and_recover_resources_using_powershell_cmdlets_hana.html"
     - title: Monitor restore operations
       url: "/protect-hana/task_monitor_hana_databases_restore_operations.html"
     - title: Cancel restore operations
@@ -955,6 +960,8 @@ entries:
     - title: Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
       url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"
       entries:
+      - title: Host requirements to install SnapCenter Plug-ins Package for Windows
+        url: "/protect-scc/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_scc.html"
       - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
         url: "/protect-scc/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html"
       - title: Set up credentials for SnapCenter Custom Plug-ins
@@ -992,10 +999,14 @@ entries:
       url: "/protect-scc/task_back_up_individual_custom_plug_in_resources.html"
     - title: Back up resource groups of custom plug-in resources
       url: "/protect-scc/task_back_up_resource_groups_of_custom_plug_in_resources.html"
+    - title: Create a storage system connection and a credential using PowerShell cmdlets
+      url: "/protect-scc/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_scc.html"
     - title: Back up resources using PowerShell cmdlets
       url: "/protect-scc/task_back_up_resources_using_powershell_cmdlets.html"
     - title: Monitor backup operations
       url: "/protect-scc/task_monitor_scc_resources_backup_operations.html"
+    - title: Cancel the backup operations
+      url: "/protect-scc/task_cancel_backup_operations_for_scc.html"
     - title: View custom plug-in resource related backups and clones in the Topology page
       url: "/protect-scc/task_view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html"
   - title: Restore custom plug-in resources
@@ -1004,7 +1015,7 @@ entries:
     - title: Restore a resource backup
       url: "/protect-scc/task_restore_a_resource_backup.html"
     - title: Restore resources using PowerShell cmdlets
-      url: "/protect-scc/task_restore_and_recover_resources_using_powershell_cmdlets.html"
+      url: "/protect-scc/task_restore_and_recover_resources_using_powershell_cmdlets_scc.html"
     - title: Monitor restore operations
       url: "/protect-scc/task_monitor_scc_resources_restore_operations.html"
     - title: Cancel restore operations
