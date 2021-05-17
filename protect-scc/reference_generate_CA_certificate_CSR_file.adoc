@@ -1,5 +1,5 @@
 ---
-permalink: install/reference_generate_CA_certificate_CSR_file.html
+permalink: protect-scc/reference_generate_CA_certificate_CSR_file.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate.'
