@@ -17,7 +17,7 @@ You can use the SnapCenter Add Host page to add Windows hosts. The SnapCenter Pl
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The SnapCenter user should be added to the "`Log on as a service`" role of the Windows Server.
 * You should ensure that the message queueing service is in running state.
-* You should configure gMSA with administrative privileges.
+* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 
 link:task_configure_gMSA_on_windows_server_2012_or_later_for_windows_file_system.html[Configure group Managed Service Account on Windows Server 2012 or later for Windows File System]
 
@@ -108,7 +108,7 @@ a|
 Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
 Provide the gMSA name in the following format: domainName\accountName$.
-*Note:* If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
+*Note:* gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 
 +
 |===
