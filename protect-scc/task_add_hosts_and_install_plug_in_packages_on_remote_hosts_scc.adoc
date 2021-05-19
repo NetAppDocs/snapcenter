@@ -105,7 +105,7 @@ The custom plug-ins that are uploaded to the SnapCenter Server are listed.
 +
 If you want to manage MySQL or DB2 applications, you can use the MySQL and DB2 custom plug-ins that are provided by NetApp. The MySQL and DB2 custom plug-ins are available at the NetApp Tool Chest.
 +
-http://mysupport.netapp.com/tools/info/ECMLP2633631I.html?productID=62127[NetApp Tool Chest]
+https://automationstore.netapp.com/home.shtml[NetApp Automation Store]
 
 a|
 Skip preinstall checks
