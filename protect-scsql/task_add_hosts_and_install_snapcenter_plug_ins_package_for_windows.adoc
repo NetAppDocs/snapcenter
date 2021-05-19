@@ -9,7 +9,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts and install the 
 :imagesdir: ../media/
 
 [.lead]
-You must use the SnapCenter Add Host page to add hosts and install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.
+You must use the SnapCenter *Add Host* page to add hosts and install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.
 
 *What you will need*
 
@@ -17,7 +17,7 @@ You must use the SnapCenter Add Host page to add hosts and install the plug-ins 
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, you should disable UAC on the host.
 * You should ensure that the message queueing service is in running state.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
-link:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL]
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL]
 
 *About this task*
 
@@ -64,21 +64,22 @@ a|
 Select the credential name that you created or create new credentials.     The credential must have administrative rights on the remote host. For details, see the information about creating credentials.
 +
 You can view details about the credentials by positioning your cursor over the credential name that you specified.
-+
+
 NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
 +
 |===
 
-. In the Select Plug-ins to Install section, select the plug-ins to install.
+. In the *Select Plug-ins to Install* section, select the plug-ins to install.
 . Click *More Options*.
 +
 |===
 | For this field...| Do this...
+
 a|
 Port
 a|
 Either retain the default port number or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
-+
+
 NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
 a|
 Installation Path
@@ -98,8 +99,8 @@ a|
 Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
 Provide the gMSA name in the following format: domainName\accountName$.
-*Note:* If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
 
+NOTE: If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
 +
 |===
 

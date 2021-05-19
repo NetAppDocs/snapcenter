@@ -12,7 +12,7 @@ summary: 'The SnapCenter Plug-in for Microsoft SQL Server is a host-side compone
 The SnapCenter Plug-in for Microsoft SQL Server is a host-side component of the NetAppSnapCenter Software that enables application-aware data protection management of Microsoft SQL Server databases. The Plug-in for SQL Server automates SQL Server database backup, verify, restore, and cloning operations in your SnapCenter environment.
 
 ____
-*Success story*:"`We have many Microsoft SQL databases in production with Agile development currently using DB copies that are over a week old and taking 5 to 6 hours to provision. With SnapCenter, cloning takes minutes to provision a Dev environment that is typically one day old.`"
+*Success story*: We have many Microsoft SQL databases in production with Agile development currently using DB copies that are over a week old and taking 5 to 6 hours to provision. With SnapCenter, cloning takes minutes to provision a Dev environment that is typically one day old.
 ____
 
 ____
