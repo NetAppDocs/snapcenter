@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/task_clone_backups_using_powershell_cmdlets_for_windows.html
+sidebar: sidebar
+keywords: clone
+summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
+---
+= Clone backups using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_task_clone_backups_using_powershell_cmdlets.adoc[]

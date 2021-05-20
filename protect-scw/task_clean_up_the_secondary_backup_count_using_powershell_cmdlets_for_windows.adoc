@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_windows.html
+sidebar: sidebar
+keywords: backups
+summary: 'You can use the Remove-SmBackup cmdlet to clean up the backup count for secondary backups that have no Snapshot copies. You might want use this cmdlet when the total Snapshot copies displayed in the Manage Copies topology do not match the secondary storage Snapshot copy retention setting.'
+---
+= Clean up the secondary backup count using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+include::_include/reuse_task_clean_up_the_secondary_backup_count_using_powershell_cmdlets.adoc[]

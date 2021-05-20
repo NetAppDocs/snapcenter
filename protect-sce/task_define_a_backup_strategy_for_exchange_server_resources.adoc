@@ -53,11 +53,15 @@ Backs up all the transaction logs. The truncated logs that are already committed
 
 include::_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]
 
+== Number of backup jobs needed for databases
+
+Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement (SLA).
+
 == Backup naming conventions
 
 include::_include/reuse_concept_backup_naming_conventions.adoc[]
 
-== Backup retention options 
+== Backup retention options
 
 include::_include/reuse_concept_backup_retention_options.adoc[]
 

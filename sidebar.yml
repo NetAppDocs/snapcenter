@@ -394,6 +394,8 @@ entries:
       url: "/protect-scw/concept_snapcenter_plug_in_for_windows_features.html"
     - title: How SnapCenter backs up Windows file systems
       url: "/protect-scw/concept_how_snapcenter_backs_up_windows_file_systems.html"
+    - title: Storage types supported by SnapCenter Plug-ins for Microsoft Windows
+      url: "/protect-scw/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows.html"
     - title: Minimum ONTAP privileges required for Windows plug-in
       url: "/protect-scw/reference_minimum_ontap_privileges_required_for_windows_plug_in.html"
     - title: Prepare storage systems for SnapMirror and SnapVault replication
@@ -408,6 +410,8 @@ entries:
     - title: Installation requirements for SnapCenter Plug-in for Microsoft Windows
       url: "/protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html"
       entries:
+      - title: Host requirements to install SnapCenter Plug-ins Package for Windows
+        url: "/protect-scw/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.html"
       - title: Set up your credentials for the Plug-in for Windows
         url: "/protect-scw/task_set_up_your_credentials_for_the_plug_in_for_windows.html"
       - title: Configure gMSA on Windows Server 2012 or later for Plug-in for Windows
@@ -435,15 +439,25 @@ entries:
       url: "/protect-scw/task_back_up_a_single_resource_on_demand_for_windows_file_systems.html"
     - title: Back up resource groups for Windows file systems
       url: "/protect-scw/task_back_up_resource_groups_for_windows_file_systems.html"
+    - title: Create a storage system connection and a credential using PowerShell cmdlets
+      url: "/protect-scw/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_windows.html"
+    - title: Back up resources using PowerShell cmdlets
+      url: "/protect-scw/task_back_up_resources_using_powershell_cmdlets_for_windows.html"
     - title: Monitor backup operations
       url: "/protect-scw/task_monitor_backup_operations.html"
     - title: Cancel the backup operations
       url: "/protect-scw/task_cancel_backup_operations_for_windows_file_system.html"
     - title: View related backups and clones in the Topology page
       url: "/protect-scw/task_view_related_backups_and_clones_in_the_topology_page.html"
+    - title: Remove backups using PowerShell cmdlets
+      url: "/protect-scw/task_remove_backups_using_powershell_cmdlets_for_windows.html"
+    - title: Clean up the secondary backup count using PowerShell cmdlets
+      url: "/protect-scw/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_windows.html"
   - title: Restore Windows file system backups
     url: "/protect-scw/task_restore_windows_file_system_backups.html"
     entries:
+    - title: Restore and recover resources using PowerShell cmdlets
+      url: "/protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html"
     - title: Monitor restore operations
       url: "/protect-scw/task_monitor_restore_operations.html"
     - title: Cancel restore operations
@@ -451,10 +465,14 @@ entries:
   - title: Clone from a Windows file system backup
     url: "/protect-scw/task_clone_from_a_windows_file_system_backup.html"
     entries:
+    - title: Clone backups using PowerShell cmdlets
+      url: "/protect-scw/task_clone_backups_using_powershell_cmdlets_for_windows.html"
     - title: Monitor clone operations
       url: "/protect-scw/task_monitor_clone_operations.html"
     - title: Cancel clone operations
       url: "/protect-scw/task_cancel_clone_operations.html"
+    - title: Split a clone
+      url: "/protect-scw/task_split_a_clone_for_windows.html"
 - title: Protect Oracle databases
   url: "/protect-sco/index.html"
   entries:
@@ -688,9 +706,10 @@ entries:
     entries:
     - title: What you can do with SnapCenter Plug-in for Microsoft Exchange Server
       url: "/protect-sce/concept_what_you_can_do_with_snapcenter_plug_in_for_microsoft_exchange_server.html"
-    - title: Storage types supported by SnapCenter Plug-in for Microsoft Windows and
-        for Microsoft Exchange Server
+    - title: Storage types supported by SnapCenter Plug-in for Microsoft Windows and for Microsoft Exchange Server
       url: "/protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html"
+    - title: Minimum ONTAP privileges required
+      url: "/protect-sce/concept_minimum_privileges_required_exchange_plug_in.html"
     - title: Prepare storage systems for SnapMirror and SnapVault replication
       url: "/protect-sce/reference_prepare_storage_system_for_snapmirror_and_snapvault.html"
     - title: Define a backup strategy for Exchange Server resources
@@ -700,10 +719,11 @@ entries:
   - title: Install SnapCenter Plug-in for Microsoft Exchange Server
     url: "/protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
     entries:
-    - title: Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft
-        Exchange Server
+    - title: Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft Exchange Server
       url: "/protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
       entries:
+      - title: Host requirements to install SnapCenter Plug-ins Package for Windows
+        url: "/protect-sce/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.html"
       - title: Exchange Server privileges required
         url: "/protect-sce/reference_exchange_server_cluster_node_privileges_required.html"
       - title: Set up credentials for SnapCenter Plug-in for Windows
