@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_limitations_related_to_cloning_of_oracle_databases.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should be aware of the limitations of clone operations before you clone the databases.'
 ---
 = Limitations of clone operations
