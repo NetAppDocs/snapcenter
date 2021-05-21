@@ -1,5 +1,5 @@
 ---
-permalink: install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html
+permalink: protect-sce/task_configure_CA_certificate_with_Windows_host_plug-in_services.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA certificate with Windows host plug-in services'

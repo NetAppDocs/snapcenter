@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_clone_from_a_sql_server_database_backup.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.'
 ---
 = Clone from a SQL Server database backup
@@ -11,11 +11,16 @@ summary: 'You can use SnapCenter to clone a SQL Server database backup. If you w
 [.lead]
 You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.
 
+*What you will need*
+
 * You should have prepared for data protection by completing tasks such as adding hosts, identifying resources, and creating storage system connections.
 * You should have backed up databases or resource groups.
 * The protection type such as mirror, vault, or mirror-vault for data LUN and log LUN should be same to discover secondary locators during cloning to an alternate host using log backups.
 * If the mounted clone drive cannot be found during a SnapCenter clone operation, you should change the CloneRetryTimeout parameter of SnapCenter Server to 300.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
+
+*About this task*
+
 * While cloning to a standalone database instance, ensure that the mount point path exists and it is a dedicated disk.
 * While cloning to a Failover Cluster Instance (FCI), ensure that the mount points exists, it is a shared disk, and the path and the FCI should belong to the same SQL resource group.
 * Ensure that there is only one vFC or FC initiator attached to each host. This is because, SnapCenter supports only one initiator per host.
@@ -23,18 +28,23 @@ You can use SnapCenter to clone a SQL Server database backup. If you want to acc
 
 NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedicated disk.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.
 +
 NOTE: Cloning of a backup of an instance is not supported.
 
+*Steps*
+
 . Select the database or resource group.
-. From the Manage Copies view page, select the backup either from primary or secondary (mirrored or vaulted) storage system.
+. From the *Manage Copies* view page, select the backup either from primary or secondary (mirrored or vaulted) storage system.
 . Select the backup, and then click *image:../media/clone_icon.gif[]*.
-. On the Clone Options page, perform the following actions:
+. On the *Clone Options* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 Clone server
 a|
@@ -54,10 +64,11 @@ Choose whether to automatically assign a mount point or a volume mount point und
 +
 |===
 
-. On the Logs page, select one of the following options:
+. On the *Logs* page, select one of the following options:
 +
 |===
 | For this field...| Do this...
+
 a|
 None
 a|
@@ -77,13 +88,13 @@ Specify the date and time after which the transaction logs are not applied to th
 +
 |===
 
-. On the Script page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
+. On the *Script* page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
 +
 The default script timeout is 60 seconds.
 
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, select *Attach Job Report*.
 +
@@ -92,14 +103,16 @@ NOTE: For email notification, you must have specified the SMTP server details us
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
+*After you finish*
+
 After the clone is created, you should never rename it.
 
 *Related information*
 
-xref:reference_back_up_sql_server_database_or_instance_or_availability_group.adoc[Back up SQL Server database, or instance, or availability group]
+link:reference_back_up_sql_server_database_or_instance_or_availability_group.adoc[Back up SQL Server database, or instance, or availability group]
 
-xref:task_clone_backups_using_powershell_cmdlets.adoc[Clone backups using PowerShell cmdlets]
+link:task_clone_backups_using_powershell_cmdlets.adoc[Clone backups using PowerShell cmdlets]
 
-link:Clone operation might fail or take longer time to complete with default TCP_TIMEOUT valuehttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Clone operation might fail or take longer time to complete with default TCP_TIMEOUT value]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Clone operation might fail or take longer time to complete with default TCP_TIMEOUT value]
 
-link:The failover cluster instance database clone failshttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/The_failover_cluster_instance_database_clone_fails[The failover cluster instance database clone fails]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/The_failover_cluster_instance_database_clone_fails[The failover cluster instance database clone fails]

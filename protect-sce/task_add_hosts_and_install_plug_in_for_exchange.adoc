@@ -14,7 +14,7 @@ You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Ex
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The message queueing service must be running.
-* You should configure gMSA with administrative privileges.
+* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html[Configure group Managed Service Account on Windows Server 2012 or later]
 * If you are using group Managed Service Account (gMSA):
  ** The domain controller should be Windows Server 2012 or later.

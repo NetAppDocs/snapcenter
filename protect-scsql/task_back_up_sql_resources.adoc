@@ -34,7 +34,7 @@ In the topology view, you cannot differentiate whether the backup status, timest
 +
 For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
 
-. On the Policies page, perform the following tasks:
+. On the *Policies* page, perform the following tasks:
  .. In the Policies section, select one or more policies from the drop-down list.
 +
 You can create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
@@ -49,7 +49,7 @@ Here policy_name is the name of the policy that you have selected.
 The configured schedules are listed in the Applied Schedules column.
 
  .. Select the *Use Microsoft SQL Server scheduler*, and then select the scheduler instance from the *Scheduler Instance* drop-down list that is associated with the scheduling policy.
-. On the Verification page, perform the following steps:
+. On the *Verification* page, perform the following steps:
  .. Select the verification server from the *Verification server* drop-down list.
 +
 You can select multiple verification servers (local host or remote host).
@@ -62,6 +62,7 @@ NOTE: The verification server version should match the version and edition of th
 +
 |===
 | If you want to...| Do this...
+
 a|
 Run verification after backup
 a|
@@ -71,12 +72,12 @@ Schedule a verification
 a|
 Select *Run scheduled verification*.
 |===
-*Note:* If the verification server does not have a storage connection, the verification operation fails with error: Failed to mount disk.
+NOTE: If the verification server does not have a storage connection, the verification operation fails with error: Failed to mount disk.
 
  .. Click *OK*.
 +
 The configured schedules are listed in the Applied Schedules column.
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
 +
@@ -87,7 +88,7 @@ NOTE: For email notification, you must have specified the SMTP server details ei
 The database topology page is displayed.
 
 . Click *Back up Now*.
-. On the Backup page, perform the following steps:
+. On the *Backup* page, perform the following steps:
  .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
@@ -114,8 +115,8 @@ link:[Monitoring backup operations]
 
 xref:task_back_up_resources_using_powershell_cmdlets.adoc[Back up resources using PowerShell cmdlets]
 
-link:Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUThttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUT]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUT]
 
-link:Backup fails with Windows scheduler errorhttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Backup_fails_with_Windows_scheduler_error[Backup fails with Windows scheduler error]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Backup_fails_with_Windows_scheduler_error[Backup fails with Windows scheduler error]
 
-link:Quiesce or grouping resources operations failhttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]

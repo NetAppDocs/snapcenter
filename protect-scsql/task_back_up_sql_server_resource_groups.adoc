@@ -11,6 +11,8 @@ summary: 'You can back up a resource group on demand from the Resources page. If
 [.lead]
 You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Resource Group* from the *View* list.
 +
@@ -39,6 +41,6 @@ link:[Monitoring backup operations]
 
 xref:task_back_up_resources_using_powershell_cmdlets.adoc[Back up resources using PowerShell cmdlets]
 
-link:Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUThttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUT]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUT]
 
-link:Backup fails with Windows scheduler errorhttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Backup_fails_with_Windows_scheduler_error[Backup fails with Windows scheduler error]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Backup_fails_with_Windows_scheduler_error[Backup fails with Windows scheduler error]

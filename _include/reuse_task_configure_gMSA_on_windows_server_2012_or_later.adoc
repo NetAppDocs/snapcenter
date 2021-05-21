@@ -4,12 +4,6 @@ Windows Server 2012 or later enables you to create a group Managed Service Accou
 
 * You should have a Windows Server 2012 or later domain controller.
 * You should have a Windows Server 2012 or later host, which is a member of the domain.
-* The specified gMSA account will be used to run the plug-in services such as SnapCenter Plug-in for Microsoft Windows and SnapCenter Plug-in for Microsoft SQL Server services.
-* For Windows cluster, the specified gMSA should have the administrative rights on all the nodes of the cluster.
-* For SnapCenter Plug-in for Exchange, SnapCenter Plug-in for SAP HANA databases, and SnapCenter Custom Plug-ins, gMSA is applicable to only on the Windows machine (local system).
-* Configuring a gMSA eliminates the need for administrators to manually administer passwords for these accounts.
-* SQL deployments with gMSA is supported.
-* gMSA can be used to login to SQL Server instance.
 
 *Steps*
 

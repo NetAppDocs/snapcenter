@@ -1,5 +1,5 @@
 ---
-permalink: install/task_get_the_CA_certificate_thumbprint.html
+permalink: protect-scc/task_get_the_CA_certificate_thumbprint.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Get the CA certificate thumbprint.'
