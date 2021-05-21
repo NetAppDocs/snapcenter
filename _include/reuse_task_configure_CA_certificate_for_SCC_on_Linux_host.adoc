@@ -1,6 +1,6 @@
 You should manage the password of the custom plug-ins keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to the custom plug-ins trust-store, and configure CA signed key pair to custom plug-ins trust-store  with SnapCenter Custom Plug-ins service to activate the installed digital certificate.
 
-SPL uses the file 'keystore.jks', which is located at ‘_/var/opt/snapcenter/spl/etc_’ both as its trust-store and key-store.
+Custom plug-ins uses the file 'keystore.jks', which is located at ‘/opt/NetApp/snapcenter/scc/etc’ both as its trust-store and key-store.
 
 == Manage password for custom plug-in keystore and alias of the CA signed key pair in use
 

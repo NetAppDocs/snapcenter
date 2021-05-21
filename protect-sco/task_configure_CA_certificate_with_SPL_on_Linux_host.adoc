@@ -28,7 +28,7 @@ It is the value corresponding to the key 'SPL_KEYSTORE_PASS'.
 
 . Change the password for all aliases of private key entries in the keystore to the same password used for the keystore:
 +
-  keytool -keypasswd -alias "alias_name_in_cert" -keystore keystore.jks
+  keytool -keypasswd -alias "<alias_name>" -keystore keystore.jks
 
 +
 Update the same for the key SPL_KEYSTORE_PASS in spl.properties file.
@@ -54,7 +54,7 @@ You should configure the root or intermediate certificates without the private k
 
 . Add a root or intermediate certificate:
 
-  keytool -import -trustcacerts -alias myRootCA -file /root/USERTrustRSA_Root.cer -keystore keystore.jks
+  keytool -import -trustcacerts -alias <AliasNameForCerticateToBeImported> -file /<CertificatePath> -keystore keystore.jks
 
 [NOTE]
 
@@ -76,7 +76,7 @@ You should configure the CA signed key pair to the SPL trust-store.
 
 . Add the CA certificate having both private and public key.
 +
-`keytool -importkeystore -srckeystore /root/snapcenter.ssl.test.netapp.com.pfx -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype JKS`
+`keytool -importkeystore -srckeystore <CertificatePathToImport> -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype JKS`
 
 . List the added certificates in the keystore.
 +
@@ -88,11 +88,11 @@ You should configure the CA signed key pair to the SPL trust-store.
 +
 Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in spl.properties file.
 
-  keytool -keypasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks
+  keytool -keypasswd -alias "<aliasNameOfAddedCertInKeystore>" -keystore keystore.jks
 
 . If the alias name in the CA certificate is long and contains space or special characters ("*",","), change the alias name to a simple name:
 
-  keytool -changealias -alias "long_alias_name" -destalias "simple_alias" -keystore keystore.jks
+  keytool -changealias -alias "<OrignalAliasName>" -destalias "<NewAliasName>" -keystore keystore.jks
 
 . Configure the alias name from the keystore located in spl.properties file.
 +
