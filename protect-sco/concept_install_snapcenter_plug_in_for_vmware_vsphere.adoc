@@ -22,6 +22,6 @@ To configure the CA Certificate with SnapCenter Plug-in for VMware vSphere, refe
 .Configure the CRL file for SnapCenter plug-in for VMware vSphere
 
 * SnapCenter Plug-in for VMware vSphere will look for the CRL files in a pre-configured directory.
-* Default directory of the CRL files for SnapCenter Plug-in for VMware vSphere is '/opt/netapp/config/crl'
+* Default directory of the CRL files for SnapCenter Plug-in for VMware vSphere is `/opt/netapp/config/crl`
 
 You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL.
