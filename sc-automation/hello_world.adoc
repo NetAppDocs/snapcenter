@@ -1,0 +1,11 @@
+---
+permalink: sc-automation/hello_world.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= Hello World
+:icons: font
+:imagesdir: ../media/
+
+[.lead]

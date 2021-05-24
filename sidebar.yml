@@ -1173,5 +1173,14 @@ entries:
         url: "/sc-automation/rest_web_services_foundation.html"
       - title: Interpretation of an API response
         url: "/sc-automation/interpreting_an_api_response.html"
+    - title: Supported REST APIs
+      url: "/sc-automation/supported_rest_apis.html"
+    - title: Get started with the REST API
+      url: "/sc-automation/get_started_with_the_rest_api.html"
+      entries:
+      - title: Hello World
+        url:"/sc-automation/hello_world.html"
+      - title: Example workflows using REST APIs
+        url:"/sc-automation/example_workflows_using_rest_apis.html"
 - title: Legal notices
   url: /reference_legal_notices.html

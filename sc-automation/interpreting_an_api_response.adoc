@@ -17,39 +17,48 @@ Each API request generates a response back to the client. You should examine the
 The HTTP status codes used by the SnapCenter REST API are described below.
 
 |===
-|Code | |Description
+|Code | Description
 
 |200
 |OK
-|Indicates success for calls that do not create a new object.
+
+Indicates success for calls that do not create a new object.
 |201
 |Created
-|An object is successfully created. The location header in the response includes the unique identifier for the object.
+
+An object is successfully created. The location header in the response includes the unique identifier for the object.
 |202
 |Accepted
-|A background job has been started to perform the request, but has not completed yet.
+
+A background job has been started to perform the request, but has not completed yet.
 |400
 |Bad request
-|The request input is not recognized or is inappropriate.
+
+The request input is not recognized or is inappropriate.
 |401
 |Unauthorized
-|User authentication has failed.
+
+User authentication has failed.
 |403
 |Forbidden
-|Access is denied due to an authorization (RBAC) error.
+
+Access is denied due to an authorization (RBAC) error.
 |404
 |Not found
-|The resource referred to in the request does not exist.
+
+The resource referred to in the request does not exist.
 |405
 |Method not allowed
-|The HTTP method in the request is not supported for the resource.
+
+The HTTP method in the request is not supported for the resource.
 |409
 |Conflict
-|An attempt to create an object failed because a different object must be created first or the requested object already exists.
 
+An attempt to create an object failed because a different object must be created first or the requested object already exists.
 |500
 |Internal error
-|A general internal error occurred at the server.
+
+A general internal error occurred at the server.
 |===
 
 == Response headers
@@ -107,24 +116,18 @@ Common error codes::
 The common error codes are described in the following table. Specific API calls can include additional error codes.
 +
 |===
-|Code | |Description
+|Code | Description
 
-|1
 |409
 |An object with the same identifier already exists.
-|2
 |400
 |The value for a field has an invalid value or is missing, or an extra field was provided.
-|3
 |400
 |The operation is not supported.
-|4
 |405
 |An object with the specified identifier cannot be not found.
-|6
 |403
 |Permission to perform the request is denied.
-|8
 |409
 |The resource is in use.
 |===
