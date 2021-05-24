@@ -16,3 +16,5 @@ You can use this API call to log into the SnapCenter Server.
 
 == Domains
 You can use these API calls to retrieve all the domains, retrieve details of a specific domain, register a domain, modify a domain, and unregister a domain.
+
+== Jobs

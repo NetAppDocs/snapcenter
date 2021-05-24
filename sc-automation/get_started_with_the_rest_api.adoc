@@ -10,4 +10,4 @@ summary: You can quickly get started using the SnapCenter REST API
 :imagesdir: ./media/
 
 [.lead]
-You can quickly get started using the SnapCenter REST API. Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live system.
+You can quickly get started using the SnapCenter REST API. Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live setup.
