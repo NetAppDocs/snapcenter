@@ -27,6 +27,8 @@ SnapCenter includes the following security features:
 
 == CA Certificate Overview
 
-The SnapCenter Server installer enables the Centralized SSL Certificate Support during installation.  To enhance the secured communication between the server and the plug-in, SnapCenter supports using the authorized CA certificates provided by the customer.
+The SnapCenter Server installer enables the Centralized SSL Certificate Support during installation. To enhance the secured communication between the server and the plug-in, SnapCenter supports using the authorized CA certificates provided by the customer.
+
+You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere.  
 
 NOTE: You must deploy CA certificates after installing the SnapCenter Server and the  respective plug-ins.
