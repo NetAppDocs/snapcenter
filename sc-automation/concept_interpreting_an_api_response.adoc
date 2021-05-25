@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: sc-automation/interpreting_an_api_response.html
+permalink: sc-automation/concept_interpreting_an_api_response.html
 keywords: http status code, error code
 summary: Each API request generates a response back to the client. You should examine the response to determine whether it was successful and retrieve additional data as needed.
 ---

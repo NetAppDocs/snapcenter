@@ -1162,25 +1162,25 @@ entries:
   url: "/sc-automation/automation_index.html"
   entries:
     - title: How to access SnapCenter REST API natively
-      url: "/sc-automation/how_to_access_snapcenter_rest_api_natively.html"
+      url: "/sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html"
     - title: Understanding the SnapCenter REST APIs
       entries:
       - title: REST web services foundation
-        url: "/sc-automation/rest_web_services_foundation.html"
+        url: "/sc-automation/concept_rest_web_services_foundation.html"
       - title: Basic operational characteristics
-        url: "/sc-automation/basic_operational_characterstics.html"
+        url: "/sc-automation/concept_basic_operational_characterstics.html"
       - title: Input variables controlling an API request
-        url: "/sc-automation/rest_web_services_foundation.html"
+        url: "/sc-automation/concept_rest_web_services_foundation.html"
       - title: Interpretation of an API response
-        url: "/sc-automation/interpreting_an_api_response.html"
+        url: "/sc-automation/concept_interpreting_an_api_response.html"
     - title: Supported REST APIs
-      url: "/sc-automation/supported_rest_apis.html"
+      url: "/sc-automation/reference_supported_rest_apis.html"
     - title: Get started with the REST API
-      url: "/sc-automation/get_started_with_the_rest_api.html"
+      url: "/sc-automation/task_get_started_with_the_rest_api.html"
       entries:
       - title: Hello World
-        url: "/sc-automation/hello_world.html"
+        url: "/sc-automation/task_hello_world.html"
       - title: Example workflows using REST APIs
-        url: "/sc-automation/example_workflows_using_rest_apis.html"
+        url: "/sc-automation/reference_example_workflows_using_rest_apis.html"
 - title: Legal notices
   url: /reference_legal_notices.html

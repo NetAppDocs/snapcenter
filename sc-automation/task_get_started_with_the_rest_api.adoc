@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: sc-automation/get_started_with_the_rest_api.html
+permalink: sc-automation/task_get_started_with_the_rest_api.html
 keywords:
 summary: You can quickly get started using the SnapCenter REST API
 ---

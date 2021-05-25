@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: sc-automation/rest_web_services_foundation.html
+permalink: sc-automation/concept_input_variables_controlling_an_api_request.html
 keywords: http methods, request headers, request body, filtering objects, size, pagination
 summary: You can control how an API call is processed through parameters and variables set in the HTTP request.
 ---
