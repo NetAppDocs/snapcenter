@@ -1179,8 +1179,8 @@ entries:
       url: "/sc-automation/get_started_with_the_rest_api.html"
       entries:
       - title: Hello World
-        url:"/sc-automation/hello_world.html"
+        url: "/sc-automation/hello_world.html"
       - title: Example workflows using REST APIs
-        url:"/sc-automation/example_workflows_using_rest_apis.html"
+        url: "/sc-automation/example_workflows_using_rest_apis.html"
 - title: Legal notices
   url: /reference_legal_notices.html

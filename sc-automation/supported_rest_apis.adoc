@@ -1,0 +1,20 @@
+---
+permalink: sc-automation/supported_rest_apis.html
+sidebar: sidebar
+keywords: REST API categories
+summary: 'The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page.'
+---
+= Supported REST APIs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
+
+== Auth
+You can use this API call to log into the SnapCenter Server.
+
+== Domains
+You can use these API calls to retrieve all the domains, retrieve details of a specific domain, register a domain, modify a domain, and unregister a domain.
+
+== Jobs
