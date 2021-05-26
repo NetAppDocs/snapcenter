@@ -11,7 +11,7 @@ summary: 'You can uninstall individual plug-ins or uninstall plug-ins packages f
 [.lead]
 You can uninstall individual plug-ins or uninstall plug-ins packages from one or more hosts by using the Uninstall-SmHostPackage cmdlet on the SnapCenter Server host command-line interface.
 
-*Before you begin*
+*What you will need*
 
 You should have logged in to SnapCenter as a domain user with local administrator rights on each host on which you want to uninstall the plug-ins.
 

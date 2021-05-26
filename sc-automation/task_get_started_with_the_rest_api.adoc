@@ -1,0 +1,13 @@
+---
+sidebar: sidebar
+permalink: sc-automation/task_get_started_with_the_rest_api.html
+keywords:
+summary: You can quickly get started using the SnapCenter REST API
+---
+
+= Get started with the REST API
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can quickly get started using the SnapCenter REST API. Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live setup.

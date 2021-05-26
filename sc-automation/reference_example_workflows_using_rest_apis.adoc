@@ -1,0 +1,12 @@
+---
+permalink: sc-automation/reference_example_workflows_using_rest_apis.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= Example workflows using REST APIs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Need info from Engineering/Manohar. We need to add a link to github where Engineering plan to publish some sample python scripts to call REST API.

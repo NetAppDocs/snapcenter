@@ -48,10 +48,6 @@ entries:
       url: "/install/concept_authentication_methods_for_your_credentials.html"
     - title: Storage Virtual Machine connections and credentials
       url: "/install/concept_svm_connections_and_credentials.html"
-    - title: Requirements for Network Load Balancing and Application Request Routing
-      url: "/install/concept_network_load_balanacing_and_application_request_routing_requirements.html"
-    - title: High availability for the SnapCenter MySQL repository
-      url: "/install/concept_high_availability_for_snapcenter_mysql_repository.html"
   - title: Install the SnapCenter Server using the install wizard
     url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
     entries:
@@ -77,6 +73,10 @@ entries:
   - title: Configure SnapCenter Servers for High Availability using F5
     url: "/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html"
     entries:
+    - title: Requirements for Network Load Balancing and Application Request Routing
+      url: "/install/concept_network_load_balanacing_and_application_request_routing_requirements.html"
+    - title: High availability for the SnapCenter MySQL repository
+      url: "/install/concept_high_availability_for_snapcenter_mysql_repository.html"
     - title: Export SnapCenter certificates
       url: "/install/task_export_snapcenter_certificates.html"
     - title: Switch from NLB to F5 for high availability
@@ -889,7 +889,7 @@ entries:
       - title: Monitor SnapCenter plug-in package installation status
         url: "/protect-hana/task_monitor_the_status_of_installing_plugin_for_sap_hana.html"
     - title: Generate CA Certificate CSR file
-      url:
+      url: "/protect-hana/reference_generate_CA_certificate_CSR_file.html"
       entires:
       - title: Import CA certificates
         url: "/protect-hana/task_import_CA_certificates.html"
@@ -1160,5 +1160,27 @@ entries:
       url: "/uninstall/task_uninstalling_the_snapcenter_server.html"
 - title: SnapCenter Automation
   url: "/sc-automation/automation_index.html"
+  entries:
+    - title: Understanding the SnapCenter REST APIs
+      entries:
+      - title: How to access SnapCenter REST API natively
+        url: "/sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html"
+      - title: REST web services foundation
+        url: "/sc-automation/concept_rest_web_services_foundation.html"
+      - title: Basic operational characteristics
+        url: "/sc-automation/concept_basic_operational_characterstics.html"
+      - title: Input variables controlling an API request
+        url: "/sc-automation/concept_rest_web_services_foundation.html"
+      - title: Interpretation of an API response
+        url: "/sc-automation/concept_interpreting_an_api_response.html"
+    - title: Supported REST APIs
+      url: "/sc-automation/reference_supported_rest_apis.html"
+    - title: Get started with the REST API
+      url: "/sc-automation/task_get_started_with_the_rest_api.html"
+      entries:
+      - title: Hello World
+        url: "/sc-automation/task_hello_world.html"
+      - title: Example workflows using REST APIs
+        url: "/sc-automation/reference_example_workflows_using_rest_apis.html"
 - title: Legal notices
   url: /reference_legal_notices.html

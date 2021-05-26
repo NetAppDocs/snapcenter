@@ -1,0 +1,72 @@
+---
+permalink: sc-automation/reference_supported_rest_apis.html
+sidebar: sidebar
+keywords: REST API categories
+summary: 'The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page.'
+---
+= Supported REST APIs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
+
+== Auth
+You can use this API call to log into the SnapCenter Server.
+
+== Domains
+You can use these API calls to retrieve all the domains, retrieve details of a specific domain, register a domain, modify a domain, and unregister a domain.
+
+== Jobs
+You can use these API calls to retrieve all the jobs, retrieve status of a job, cancel or stop a job.
+
+== Settings
+You can use these API calls to view, register, modify or remove a credential, and configure server settings.
+
+== Hosts
+You can use these API calls to retrieve host details, retrieve plug-in and their resource details, add or modify a plug-in host, install plug-ins, and upgrade.
+
+== Resources
+You can use these API calls to retrieve, create, modify, or remove resources, back up a resource, restore and clone a resource.
+
+== Backups
+You can use these API calls to retrieve backup details, rename, and delete backups.
+
+== Clones
+You can use these API calls to retrieve clone details and delete clones.
+
+== Clonesplit
+You can use these API calls to retrieve the status, start, and stop a clone split operation.
+
+== Resource Groups
+You can use these API calls to retrieve details of a resource group, create, modify, delete a resource group, and back up a resource group.
+
+== Policies
+You can use these API calls to retrieve policy details, create, modify, and delete policies.
+
+== Storage
+You can use these API calls to retrieve storage details, create, modify, and delete a storage, discover resources on a storage, create and delete a share on the storage system.
+
+== share
+You can use these API calls to retrieve the details of a share, create and delete a share on the storage system.
+
+== Plugins
+You can use these API calls to retrieve all the plug-ins on a host and perform different operations.
+
+== Reports
+You can use these API calls to backup, clone, or restore reports and add, run, delete, or modify schedules.
+
+== Alerts
+You can use these API calls to retrieve all the alerts and delete alerts.
+
+== Rbac
+You can use these API calls to retrieve details of users, groups, and roles, add users, create, modify, or delete roles, assign or unassign roles and groups.
+
+== Configuration
+You can use these API calls to view the configuration settings and modify them.
+
+== CertificateSettings
+You can use these API calls to view the certificate status and modify the certificate settings.
+
+== Repository
+You can use these API calls to view the backups of the repository, remove protection, and failover the repository.
