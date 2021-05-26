@@ -1,5 +1,5 @@
 ---
-permalink: admin/task_uninstall_plug_ins_locally_on_a_host.html
+permalink: uninstall/task_uninstall_plug_ins_locally_on_a_host.html
 sidebar: sidebar
 keywords: uninstall
 summary: 'You can uninstall SnapCenter plug-ins locally on a host if you cannot reach the host from the SnapCenter Server.'
