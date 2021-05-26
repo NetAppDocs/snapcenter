@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_restore_a_sql_server_database_from_secondary_storage.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can restore the backed-up SQL Server databases from the physical LUNs \(RDM, iSCSI, or FCP\) on a secondary storage system. The Restore feature is a multiphase process that copies all of the data and the log pages from a specified SQL Server backup residing on the secondary storage system to a specified database.'
 ---
 = Restore an SQL Server database from secondary storage
@@ -11,11 +11,15 @@ summary: 'You can restore the backed-up SQL Server databases from the physical L
 [.lead]
 You can restore the backed-up SQL Server databases from the physical LUNs (RDM, iSCSI, or FCP) on a secondary storage system. The Restore feature is a multiphase process that copies all of the data and the log pages from a specified SQL Server backup residing on the secondary storage system to a specified database.
 
-You must have replicated the Snapshot copies from primary to secondary storage system.
+*What you will need*
 
-You must ensure that the SnapCenter Server and the plug-in host are able to connect to the secondary storage system.
+* You must have replicated the Snapshot copies from primary to secondary storage system.
 
-Most of the fields on the Restore wizard pages are explained in the basic restore process. The following information describes some of the fields for which you might need guidance.
+* You must ensure that the SnapCenter Server and the plug-in host are able to connect to the secondary storage system.
+
+* Most of the fields on the Restore wizard pages are explained in the basic restore process. The following information describes some of the fields for which you might need guidance.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . On the Resources page, select *Database* or *Resource Group* from the *View* drop-down list.
@@ -25,7 +29,7 @@ The database or resource group topology page is displayed.
 
 . In the Manage Copies section, select *Backups* from the secondary storage system (mirrored or vault).
 . Select the backup from the list, and then click image:../media/restore_icon.gif[restore icon].
-. On the Location page, choose the destination volume for restoring selected resource.
+. On the *Location* page, choose the destination volume for restoring selected resource.
 . Complete the Restore wizard, review the summary, and then click *Finish*.
 
 If you restored a database to a different path that is shared by other databases, you should perform a full backup and backup verification to confirm that your restored database is free of physical-level corruption.
