@@ -902,19 +902,6 @@ entries:
         url: "/protect-hana/task_configure_CA_certificate_for_saphana_on_Linux_host.html"
       - title: Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Windows host
         url: "/protect-hana/task_configure_CA_certificate_for_saphana_on_windows_host.html"
-    - title: Generate CA Certificate CSR file
-      url: "/protect-scc/reference_generate_CA_certificate_CSR_file.html"
-      entries:
-      - title: Import CA certificates
-        url: "/protect-scc/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/protect-scc/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
-      - title: Get the CA certificate thumbprint
-        url: "/protect-scc/task_get_the_CA_certificate_thumbprint.html"
-      - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host
-        url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html"
-      - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
-        url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_windows_host.html"
   - title: Prepare for data protection
     url: "/protect-hana/concept_prepare_for_protecting_hana_databases.html"
     entries:
