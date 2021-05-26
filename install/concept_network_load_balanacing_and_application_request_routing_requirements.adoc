@@ -1,22 +1,23 @@
 ---
 permalink: install/concept_network_load_balanacing_and_application_request_routing_requirements.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should manually configure NLB and ARR outside of SnapCenter installation for high availability \(HA\) from SnapCenter 4.2 .'
 ---
-= Requirements for Network Load Balancing and Application Request Routing
+= Requirements for Network Load Balancing
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should manually configure NLB and ARR outside of SnapCenter installation for high availability (HA) from SnapCenter 4.2 .
+You should manually configure NLB outside of SnapCenter installation for high availability (HA) from SnapCenter 4.2.
 
-_How to configure NLB and ARR with SnapCenter_ has information about how to configure Network Load Balancing (NLB) and Application Request Routing (ARR) with SnapCenter.
+_How to configure NLB with SnapCenter_ has information about how to configure Network Load Balancing (NLB) with SnapCenter.
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_NLB_and_ARR_with_SnapCenter[How to configure NLB and ARR with SnapCenter]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_NLB_and_ARR_with_SnapCenter[How to configure NLB with SnapCenter]
 
-NOTE: SnapCenter 4.1.1 or earlier supported configuration of Network Load Balancing (NLB) and Application Request Routing (ARR) while installing SnapCenter.
+NOTE: SnapCenter 4.1.1 or earlier supported configuration of Network Load Balancing (NLB) while installing SnapCenter.
 
+// Removed ARR as per Manohar's comments
 *Related information*
 
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
