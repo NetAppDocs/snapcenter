@@ -889,7 +889,7 @@ entries:
       - title: Monitor SnapCenter plug-in package installation status
         url: "/protect-hana/task_monitor_the_status_of_installing_plugin_for_sap_hana.html"
     - title: Generate CA Certificate CSR file
-      url:
+      url: "/protect-hana/reference_generate_CA_certificate_CSR_file.html"
       entires:
       - title: Import CA certificates
         url: "/protect-hana/task_import_CA_certificates.html"
