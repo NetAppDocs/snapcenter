@@ -1171,7 +1171,7 @@ entries:
       - title: Basic operational characteristics
         url: "/sc-automation/concept_basic_operational_characterstics.html"
       - title: Input variables controlling an API request
-        url: "/sc-automation/concept_rest_web_services_foundation.html"
+        url: "/sc-automation/concept_input_variables_controlling_an_api_request.html"
       - title: Interpretation of an API response
         url: "/sc-automation/concept_interpreting_an_api_response.html"
     - title: Supported REST APIs
