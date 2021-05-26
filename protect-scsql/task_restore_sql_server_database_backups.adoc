@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_restore_sql_server_database_backups.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use SnapCenter to restore backed-up SQL Server databases. Database restoration is a multiphase process that copies all of the data and log pages from a specified SQL Server backup to a specified database.'
 ---
 = Restore SQL Server database backups
@@ -10,6 +10,8 @@ summary: 'You can use SnapCenter to restore backed-up SQL Server databases. Data
 
 [.lead]
 You can use SnapCenter to restore backed-up SQL Server databases. Database restoration is a multiphase process that copies all of the data and log pages from a specified SQL Server backup to a specified database.
+
+*About this task*
 
 * You can restore the backed-up SQL Server databases to a different SQL Server instance on the same host where the backup was created.
 +
@@ -21,8 +23,10 @@ You can use SnapCenter to restore the backed-up SQL Server databases to an alter
 * You cannot restore system databases to an alternate path.
 * Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
+. In the *Resources* page, select either *Database* or *Resource Group* from the *View* list.
 . Select the database or the resource group from the list.
 +
 The topology page is displayed.
@@ -32,10 +36,11 @@ The topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. On the Restore Scope page, select one of the following options:
+. On the *Restore Scope* page, select one of the following options:
 +
 |===
 | Option| Description
+
 a|
 Restore the database to the same host where the backup was created
 a|
@@ -55,10 +60,11 @@ Select this option if you want the database to be restored to an alternate SQL S
 +
 |===
 
-. On the Recovery Scope page, select one of the following options:
+. On the *Recovery Scope* page, select one of the following options:
 +
 |===
 | Option| Description
+
 a|
 None
 a|
@@ -82,8 +88,8 @@ If you have selected *All log backups*, *By log backups*, or *By specific date u
 +
 |===
 
-. On the Pre Ops page, perform the following steps:
- .. On the Pre Restore Options page, select one of the following options:
+. On the *Pre Ops* page, perform the following steps:
+ .. On the *Pre Restore Options* page, select one of the following options:
   *** Select *Overwrite the database with same name during restore* to restore the database with the same name.
   *** Select *Retain SQL database replication settings* to restore the database and retain the existing replication settings.
   *** Select *Create transaction log backup before restore* to create a transaction log before the restore operation begins.
@@ -91,7 +97,7 @@ If you have selected *All log backups*, *By log backups*, or *By specific date u
  .. Specify optional scripts to run before performing a restore job.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
-. On the Post Ops page, perform the following steps:
+. On the *Post Ops* page, perform the following steps:
  .. In the Choose database state after restore completes section, select one of the following options:
   *** Select *Operational, but unavailable for restoring additional transaction logs* if you are restoring all of the necessary backups now.
 +
@@ -109,7 +115,7 @@ If the Undo directory option is enabled, more transaction logs are restored. If 
  .. Specify optional scripts to run after performing a restore job.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email.
 
@@ -118,8 +124,6 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 *Related information*
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
+link:task_restore_and_recover_resources_using_powershell_cmdlets.adoc[Restore and recover resources using PowerShell cmdlets]
 
-xref:task_restore_and_recover_resources_using_powershell_cmdlets.adoc[Restore and recover resources using PowerShell cmdlets]
-
-xref:task_restore_a_sql_server_database_from_secondary_storage.adoc[Restore an SQL Server database from secondary storage]
+link:task_restore_a_sql_server_database_from_secondary_storage.adoc[Restore an SQL Server database from secondary storage]

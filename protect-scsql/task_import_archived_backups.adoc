@@ -11,6 +11,8 @@ summary: 'You can import only those backups that were archived using SnapVault t
 [.lead]
 You can import only those backups that were archived using SnapVault technology from SnapManager for Microsoft SQL Server to SnapCenter from the command-line interface.
 
+*What you will need*
+
 * Both the SnapCenter Plug-in for Microsoft SQL Server and SnapManager for Microsoft SQL Server 7.x must be installed on the same host.
 * For cluster support, both the plug-in and 7.x product must have been installed on each node in the cluster.
 * You must have added the host or cluster to SnapCenter and discovered the resources available for backup on the host or cluster.
@@ -26,6 +28,8 @@ a|
 For information on SnapCenter installation and configuration tasks, see the SnapCenter installation information. For information on SnapManager for Microsoft SQL Server installation and configuration tasks, see the SnapManager installation information.
 
 After the archived backups have been imported to SnapCenter from SnapManager for Microsoft SQL Server, you can perform restore and clone operations on these backups from SnapCenter. Simultaneously, you can also continue to perform backup, restore, and clone operations using SnapManager for Microsoft SQL Server.
+
+*Steps*
 
 . Perform the following steps to create schedules similar to SnapManager for Microsoft SQL Server schedules manually in SnapCenter:
  .. Retrieve the schedule information from SnapManager for Microsoft SQL Server by using the Get-SmSchedule cmdlet.

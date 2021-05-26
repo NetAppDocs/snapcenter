@@ -11,15 +11,19 @@ summary: 'After you have provisioned your NetApp storage system using SnapCenter
 [.lead]
 After you have provisioned your NetApp storage system using SnapCenter Plug-in for Microsoft Windows, you can migrate your resources to the NetApp storage system or from one NetApp LUN to another NetApp LUN using either the SnapCenter graphical user interface (GUI) or using the PowerShell cmdlets.
 
+*What you will need*
+
 * You must have added storage systems to SnapCenter Server.
 * You must have refreshed (discovered) the SQL Server resources.
 
 Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, select *Database* or *Instance* from the *View* drop-down list.
+. In the *Resources* page, select *Database* or *Instance* from the *View* drop-down list.
 . Select either the database or the instance from the list and click Migrate.
-. In the Resources page, perform the following actions:
+. In the *Resources* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -69,7 +73,3 @@ Select **TABLOCK** option to limit the checks and obtain locks instead of using 
 |===
 
 .  Review the summary, and then click **Finish**.
-
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
