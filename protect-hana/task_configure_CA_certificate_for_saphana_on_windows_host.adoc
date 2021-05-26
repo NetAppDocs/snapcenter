@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_configure_CA_certificate_for_SCC_on_windows_host.html
+permalink: protect-hana/task_configure_CA_certificate_for_saphana_on_windows_host.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
+= Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Windows host
 :icons: font
 :imagesdir: ../media/
 

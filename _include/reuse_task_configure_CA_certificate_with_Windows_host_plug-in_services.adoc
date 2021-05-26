@@ -6,7 +6,7 @@ Perform the following step on the SnapCenter Server and all the plug-in hosts wh
 
 . Remove the existing certificate binding with SMCore default port 8145, by running the following command:
 +
-``> netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>_``
+``_> netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>_``
 +
 For example:
 +

@@ -2,11 +2,8 @@ You can generate a Certificate Signing Request (CSR) and import the certificate 
 
 CSR is a block of encoded text that is given to an authorized certificate vendor to procure the signed CA certificate.
 
-For more information to generate a CSR, see How to generate CA Certificate CSR file article.
+For more information to generate a CSR, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_generate_CA_Certificate_CSR_file[How to generate CA Certificate CSR file].
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_generate_CA_Certificate_CSR_file[How to generate CA Certificate CSR file]
-
-[NOTE]
-If you own the CA certificate for your domain (*.domain.company.com) or your system (machine1.domain.company.com), you can skip generating the CA Certificate CSR file.  You can deploy the existing CA certificate with SnapCenter.
+NOTE: If you own the CA certificate for your domain (*.domain.company.com) or your system (machine1.domain.company.com), you can skip generating the CA Certificate CSR file.  You can deploy the existing CA certificate with SnapCenter.
 
 For cluster configurations, the cluster name (virtual cluster FQDN), and the respective host names should be mentioned in the CA certificate.  The certificate can be updated by filling the  Subject Alternative Name (SAN) field before procuring the certificate.  For a wild card certificate (*.domain.company.com), the certificate will contain all the hostnames of the domain implicitly.

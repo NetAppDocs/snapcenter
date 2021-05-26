@@ -28,7 +28,6 @@ a|
 Completing the Certificate Import Wizard
 a|
 Review the summary, and then click *Finish* to start the import.
-+
 |===
 +
 NOTE: Importing certificate should be bundled with the private key (supported formats are: *.pfx, * p12, *.p7b).
