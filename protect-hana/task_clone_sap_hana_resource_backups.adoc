@@ -11,6 +11,8 @@ summary: 'The clone workflow includes performing the clone operation and monitor
 [.lead]
 The clone workflow includes performing the clone operation and monitoring the operation.
 
+*About this task*
+
 You might clone resource backups for the following reasons:
 
 * To test functionality that has to be implemented using the current resource structure and content during application development cycles

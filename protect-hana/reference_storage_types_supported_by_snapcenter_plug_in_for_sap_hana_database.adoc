@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/reference_storage_types_supported_by_snapcenter_plug_in_for_sap_hana_database.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines \(VMs\). You must verify the support for your storage type before installing SnapCenter Plug-in for SAP HANA Database.'
 ---
 = Storage types supported by SnapCenter Plug-in for SAP HANA Database
@@ -13,6 +13,7 @@ SnapCenter supports a wide range of storage types on both physical machines and 
 
 |===
 | Machine| Storage type
+
 a|
 Physical and virtual servers
 a|

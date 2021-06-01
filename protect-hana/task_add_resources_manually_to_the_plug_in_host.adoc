@@ -11,7 +11,11 @@ summary: 'Automatic discovery is not supported for certain HANA instances. You m
 [.lead]
 Automatic discovery is not supported for certain HANA instances. You must add these resources manually.
 
+*What you will need*
+
 You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
+
+*About this task*
 
 Automatic discovery is not supported for the following configurations:
 
@@ -23,12 +27,15 @@ NOTE: In case the above resources are discovered, the data protection operations
 * HANA System Replication
 * Multiple instances on the same host
 
+*Steps*
+
 . In the left navigation pane, select the SnapCenter Plug-in for SAP HANA Database from the drop-down list, and then click *Resources*.
-. On the Resources page, click *Add SAP HANA Database*.
-. On the Provide Resource Details page, perform the following actions:
+. On the *Resources* page, click *Add SAP HANA Database*.
+. On the *Provide Resource Details* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 Resource Type
 a|
@@ -60,7 +67,7 @@ Enter the resource name.    This option is available only if you selected the No
 +
 |===
 
-. On the Provide Storage Footprint page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
+. On the *Provide Storage Footprint* page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
 +
 Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
 
@@ -77,7 +84,3 @@ You cannot modify the following if the SAP HANA resource has backups associated 
 * Multitenant database containers (MDC): SID, or HDBSQL Client Host
 * Single Container: SID or HDBSQL Client Host
 * Non-data Volume: Resource name, Associated SID, or Plug-in Host
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]

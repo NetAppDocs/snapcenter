@@ -34,10 +34,11 @@ You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Serve
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the Hosts page, perform the following actions:
+. On the *Hosts* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 Host Type
 a|
@@ -60,7 +61,8 @@ Either select the credential name that you created or create new credentials.   
 +
 You can view details about the credentials by positioning your cursor over the credential name that you provided.
 +
-NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
+[NOTE]
+The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
 +
 |===
 
@@ -69,6 +71,7 @@ NOTE: The credentials authentication mode is determined by the host type that yo
 +
 |===
 | For this field...| Do this...
+
 a|
 Port
 a|
