@@ -18,9 +18,3 @@ When the Plug-in for SAP HANA Database is installed, you can use SnapCenter with
 The Data Protection Guide for your plug-in has information about data protection operations.
 
 The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]

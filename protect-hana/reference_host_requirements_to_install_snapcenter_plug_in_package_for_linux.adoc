@@ -13,6 +13,7 @@ Before you install the SnapCenter Plug-ins Package for Linux, you should be fami
 
 |===
 | Item| Requirements
+
 a|
 Operating systems
 a|
