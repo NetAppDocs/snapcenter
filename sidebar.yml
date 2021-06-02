@@ -263,11 +263,6 @@ entries:
         url: "/protect-scsql/reference_types_of_restore_operations.html"
     - title: Define a cloning strategy for SQL Server
       url: "/protect-scsql/task_define_a_clone_strategy_for_sql_server.html"
-      entries:
-      - title: Limitations of clone operations
-        url: "/protect-scsql/concept_limitations_related_to_cloning_of_oracle_databases.html"
-      - title: Types of clone operations
-        url: "/protect-scsql/reference_types_of_clone_operations.html"
   - title: Quick start to install SnapCenter Plug-in for Microsoft SQL Server
     url: "/protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html"
   - title: Install SnapCenter Plug-in for Microsoft SQL Server

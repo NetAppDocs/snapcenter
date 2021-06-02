@@ -18,7 +18,7 @@ Defining a cloning strategy enables you to clone your database successfully.
 You should be aware of the limitations of clone operations before you clone the databases.
 
 * If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the clone operation will be in
-hung state when you run the renamedg command. You can apply the Oracle patch 195447733
+hung state when you run the renamedg command. You can apply the Oracle patch 19544733
 to fix this issue.
 
 * Cloning of databases from a LUN that is directly attached to a host (for instance, by using
