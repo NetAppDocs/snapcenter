@@ -87,5 +87,8 @@ a|
 
 * If the plug-in is installed using a sudo user, you should copy the sha224 keys available at C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt to update the /etc/sudoers file.
 * You should perform a fresh discovery of resources on the hosts.
++
+If the status of the host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.
+//Included the above statement for BURT 1399849 for 4.5
 * If the upgrade fails, you should clean up the failed installation, reinstall the earlier version of SnapCenter, and then restore the NSM database to it's previous state.
 * After upgrading the SnapCenter Server host, you must also upgrade the plug-ins before adding any storage system.

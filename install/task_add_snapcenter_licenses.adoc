@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_snapcenter_licenses.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The SnapCenter Standard license enables the protection of applications, databases, files systems, and virtual machines. Before you add a storage system to SnapCenter, you must install one or more SnapCenter licenses.'
 ---
 = Add SnapCenter licenses
@@ -15,21 +15,12 @@ The type of SnapCenter licenses you install depends on your storage environment 
 
 To enable protection of applications, databases, file systems, and virtual machines, you must have either a Standard controller-based license installed on your FAS or AFF storage system, or a Standard capacity-based license installed on your ONTAP Select and Cloud Volumes ONTAP platforms.
 
+NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available.
+
 A SnapCenter Standard controller-based or Standard capacity license enables you add an SVM to a SnapCenter instance to provide support for all data protection operations provided by SnapCenter plug-ins on ONTAP storage.
 
 |===
 a|
-*Best Practice:* It is recommended, but not required, that you also add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary systems, you cannot use SnapCenter after performing a failover operation. However, FlexClone license on secondary is required to perform clone and verification operations.
+*Best Practice*: It is recommended, but not required, that you also add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary systems, you cannot use SnapCenter after performing a failover operation. However, FlexClone license on secondary is required to perform clone and verification operations.
 
 |===
-*Note:* SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available.
-
-You can view information about your currently installed capacity-based licenses on the Dashboard Licensed Capacity tile. See the administrative documentation for details.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
-
-xref:concept_snapcenter_standard_controller_based_licenses.adoc[SnapCenter Standard controller-based licenses]
-
-xref:concept_snapcenter_standard_capacity_based_licenses.adoc[SnapCenter Standard capacity-based licenses]

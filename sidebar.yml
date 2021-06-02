@@ -103,6 +103,8 @@ entries:
   - title: Add SnapCenter licenses
     url: "/install/task_add_snapcenter_licenses.html"
     entries:
+    - title: Type of licenses required
+      url: "/install/reference_type_of_licenses_required.html"
     - title: SnapCenter Standard controller-based licenses
       url: "/install/concept_snapcenter_standard_controller_based_licenses.html"
       entries:
