@@ -25,19 +25,18 @@ You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Serve
 
 If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
-Th _Administration Guide_ contains more information on managing hosts.
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+For more information on managing hosts see the link:admin\concept_manage_hosts.adoc[Manage hosts] section.
 
 *Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the Hosts page, perform the following actions:
+. On the *Hosts* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 Host Type
 a|
@@ -73,12 +72,14 @@ NOTE: The credentials authentication mode is determined by the host type that yo
 +
 |===
 | For this field...| Do this...
+
 a|
 Port
 a|
 Either retain the default port number, or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
 +
-NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+[NOTE] 
+If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
 a|
 Installation Path
 a|

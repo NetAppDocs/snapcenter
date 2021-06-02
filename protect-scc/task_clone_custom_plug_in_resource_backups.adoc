@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_clone_custom_plug_in_resource_backups.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
 = Clone custom plug-in resource backups
@@ -10,6 +10,8 @@ summary: 'The clone workflow includes performing the clone operation and monitor
 
 [.lead]
 The clone workflow includes performing the clone operation and monitoring the operation.
+
+*About this task*
 
 You might clone resource backups for the following reasons:
 
@@ -22,11 +24,3 @@ The following workflow shows the sequence in which you must perform the clone op
 image::../media/clone_workflow.gif[Clone workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the cmdlet reference information.
-
-*Target*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
-
-*Source*
-
-link:[Data protection workflow for SnapCenter Custom Plug-ins resources]

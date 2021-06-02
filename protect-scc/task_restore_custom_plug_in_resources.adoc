@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_restore_custom_plug_in_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
 = Restore custom plug-in resources
@@ -11,16 +11,10 @@ summary: 'The restore and recovery workflow includes planning, performing the re
 [.lead]
 The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.
 
+*About this task*
+
 The following workflow shows the sequence in which you must perform the restore operation:
 
 image::../media/restore_workflow.gif[Restore workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain detailed information about PowerShell cmdlets.
-
-*Source*
-
-link:[Data protection workflow for SnapCenter Custom Plug-ins resources]
-
-*Target*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
