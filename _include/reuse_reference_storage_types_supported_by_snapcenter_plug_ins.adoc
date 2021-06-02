@@ -91,7 +91,3 @@ Support for provisioning only. You cannot use SnapCenter to back up any data or 
 
 |===
 *Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
