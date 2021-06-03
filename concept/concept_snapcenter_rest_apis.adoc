@@ -17,11 +17,11 @@ You can use REST APIs to perform several SnapCenter management operations. REST 
 a|
 SnapCenter Server
 a|
-\https://<SnapCenter_IP_address_or_name>:8146/swagger/
+\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/
 a|
 SnapCenter Plug-in for VMware vSphere
 a|
-\https://<OVA_IP_address_or_host_name>:8144/api/swagger-ui.html#
+\https://<OVA_IP_address_or_host_name>:<scv_plugin_port>/api/swagger-ui.html#
 |===
 
 For information on SnapCenter REST APIs, see link:../sc-automation/automation_index.html[SnapCenter Automation]

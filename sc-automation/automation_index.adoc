@@ -11,7 +11,7 @@ summary: 'Describes how to use REST APIs to perform several SnapCenter managemen
 [.lead]
 Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.
 
-You can access the Swagger web page available at \https://<SnapCenter_IP_address_or_name>:8146/swagger/ to display the REST API documentation, as well as to manually issue an API call.
+You can access the Swagger web page available at \https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/ to display the REST API documentation, as well as to manually issue an API call.
 
 The plug-ins that support REST APIs are:
 
