@@ -282,8 +282,6 @@ The information regarding the parameters that can be used with the cmdlet and th
 descriptions can be obtained by running Get-Help command_name. Alternatively, you can
 also refer to the Cmdlet Reference Guide.
 
-SnapCenter Software 4.5 Windows Cmdlet Reference Guide <link to be provided>
-
 *Steps*
 
 . In the left navigation pane, click *Hosts*.

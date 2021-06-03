@@ -115,8 +115,6 @@ If you have not selected the Skip prechecks check box, the host is validated to 
 +
 If the error is related to disk space or RAM, you can update the web.config file located at `C:\Program Files\NetApp\SnapCenter` WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
-NOTE: In an NLB setup, if you are updating web.config file, you must update the file on both nodes.
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . Monitor the installation progress.
-
-The configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.

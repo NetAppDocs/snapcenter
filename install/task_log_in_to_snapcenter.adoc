@@ -1,7 +1,7 @@
 ---
 permalink: install/task_log_in_to_snapcenter.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapCenter supports role-based access control \(RBAC\). SnapCenter admin assigns roles and resources through SnapCenter RBAC to either a user in workgroup or active directory, or to groups in active directory. The RBAC user can now log in to SnapCenter with the assigned roles.'
 ---
 = Log in to SnapCenter
@@ -66,20 +66,6 @@ https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Protection_and_Se
 
 After logging to SnapCenter Server for the first time, refresh the resources list.
 
-After logging to SnapCenter Server for the first time, the SnapCenter Server Configuration Checker schedule is created. The default values are Weekly and Every Sunday at 11:59 pm. To modify the schedule or run the SnapCenter Server schedule, click *Settings* > *Scheduled Configuration Checker*.
+*After you finish*
 
 If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. The administration documentation has more details.
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
-
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]
-
-link:[Viewing Configuration Checker alerts]
-
-link:[Running Configuration Check]
-
-link:[Managing the configuration check schedules]

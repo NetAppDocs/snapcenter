@@ -91,7 +91,7 @@ NOTE: The precheck script does not validate the plug-in port firewall status if 
 +
 Appropriate error or warning messages are displayed if the minimum requirements are not met. If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you should fix the issue.
 +
-NOTE: In an NLB setup, if you are updating web.config file, you must update the file on both nodes.
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . Verify the fingerprint, and then click *Confirm and Submit*.
 +
@@ -104,9 +104,5 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 . Monitor the installation progress.
 +
 The installation-specific log files are located at /custom_location/snapcenter/logs.
-
-If you have installed the SnapCenter Plug-ins Package for Linux on a Linux host, the configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.
-
-NOTE: The *Configuration Checker* link is disabled for an AIX host.
 
 After installing the plug-in, all of the databases on that host are automatically discovered and displayed in the Resources page. If nothing is displayed, click *Refresh Resources*.
