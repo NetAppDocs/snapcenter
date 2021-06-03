@@ -207,7 +207,7 @@ entries:
     - title: Configure secured MySQL connections for standalone SnapCenter Server
         configurations
       url: "/install/task_configure_secured_mysql_connections_for_standalone_snapcenter_server.html"
-    - title: Configure secured MySQL connections for NLB configurations
+    - title: Configure secured MySQL connections for HA configurations
       url: "/install/task_configure_secured_mysql_connections_for_network_load_balancing_nlb.html"
   - title: Features enabled on your Windows host during installation
     url: "/install/reference_features_enabled_on_your_windows_host_during_installation.html"

@@ -27,34 +27,37 @@ During upgrade, the host is automatically put into maintenance mode that prevent
 However, before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 
 |===
-| If using...| You can...
+| If you are using... | You can...
 
 a|
 4.0.x
 a|
-
 * Directly upgrade to 4.1.x or 4.2.x
 * Upgrade to 4.3.x by first upgrading to 4.1.x or 4.2.x, and then upgrade to 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.2.x, and then upgrade to 4.4.x
-
+* Upgrade to 4.5 by first upgrading to 4.2.x, then upgrade to 4.4.x, and then upgrade to 4.5
 a|
 4.1.x
 a|
-
 * Directly upgrade to 4.2.x or 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.2.x or 4.3.x, and then upgrade to 4.4.x
-
+* Upgrade to 4.5 by first upgrading to 4.3.x and then upgrade to 4.5
 a|
 4.2.x
 a|
-Directly upgrade to 4.3.x or 4.4.x
+* Directly upgrade to 4.3.x or 4.4.x
+* Upgrade to 4.5 by first upgrading to 4.3.x or 4.4.x and then upgrade to 4.5
 a|
 4.3.x
 a|
-Directly upgrade to 4.4.x
+Directly upgrade to 4.4.x or 4.5
+a|
+4.4.x
+a|
+Directly upgrade to 4.5
 |===
 
-NOTE: The existing Configuration Checker alerts are deleted after upgrading the SnapCenter Server to 4.3 or later.
+*Steps*
 
 . Download the SnapCenter Server installation package from the NetApp Support Site.
 +
