@@ -46,6 +46,10 @@ NFS Export IP Address
 a|
 Enter IP addresses or the host names on which the cloned volumes will be exported.
 a|
+Target Clone SID
+a|
+Enter the SAP HANA instance ID to clone from the existing backups.
+a|
 iSCSI Initiator
 a|
 Enter iSCSI initiator name of the host to which the LUNs are exported.     This option is available only if you selected LUN resource type.
