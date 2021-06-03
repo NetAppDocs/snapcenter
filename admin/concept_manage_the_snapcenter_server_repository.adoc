@@ -29,7 +29,7 @@ For details about adding hosts, setting up SVM connections, and provisioning hos
 
 * Provisioning iSCSI LUN or VMDK
 +
-For a network load balance balancing (NLB) configuration, you can provision either a iSCSI LUN or a VMDK in one of the SnapCenter Servers.
+For high availability (HA) configuration, you can provision either a iSCSI LUN or a VMDK in one of the SnapCenter Servers.
 
 == Back up the SnapCenter repository
 

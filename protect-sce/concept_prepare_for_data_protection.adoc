@@ -35,7 +35,7 @@ https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for V
 
 == How resources, resource groups, and policies are used for protecting Exchange Server
 
-Before you use SnapCenter, it is helpful to understand basic concepts related to the backup and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.
+Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, restore, and reseed operations you want to perform. You interact with resources, resource groups, and policies for different operations.
 
 * Resources are typically mailbox databases or Microsoft Exchange Database Availability Group (DAG) that you back up with SnapCenter.
 * A SnapCenter resource group, is a collection of resources on a host or Exchange DAG, and the resource group can include either a whole DAG or individual databases.

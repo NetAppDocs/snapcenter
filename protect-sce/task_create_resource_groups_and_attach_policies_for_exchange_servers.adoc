@@ -11,7 +11,7 @@ summary: 'A resource group is required for any data protection job. You must als
 [.lead]
 A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform and the protection schedule.
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, click *Resources*, and then select the Microsoft Exchange Server plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
 +
 NOTE: If you have recently added a resource to SnapCenter, click *Refresh Resources* to view the newly added resource.
@@ -50,7 +50,7 @@ In the Available Resources and Selected Resources sections, the database name is
 
  ** Select *Autoselect all resources on same storage volume* to move all of the resources on the same volume to the Selected Resources section.
  ** Select the resources from the Available Resources section and then click the right arrow to move them to the Selected Resources section.
-Resource groups of SnapManager for Microsoft Exchange Server cannot have more than 30 databases per Snapshot copy. If there are more than 30 databases in one resource group, a second Snapshot copy is created for the additional databases. Therefore, 2 sub jobs are created under the main backup job. For backups having secondary replication, while Snapmirror or Snapvault update is in progress, there could be scenarios where the update for both the sub-jobs overlap. The main backup job keeps on running forever even if the logs indicate that the job is completed.
+Resource groups of SnapCenter for Microsoft Exchange Server cannot have more than 30 databases per Snapshot copy. If there are more than 30 databases in one resource group, a second Snapshot copy is created for the additional databases. Therefore, 2 sub jobs are created under the main backup job. For backups having secondary replication, while Snapmirror or Snapvault update is in progress, there could be scenarios where the update for both the sub-jobs overlap. The main backup job keeps on running forever even if the logs indicate that the job is completed.
 . On the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
