@@ -16,9 +16,6 @@ You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Ex
 * The message queueing service must be running.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html[Configure group Managed Service Account on Windows Server 2012 or later]
-* If you are using group Managed Service Account (gMSA):
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Windows Server 2012 or later enables you to create a group Managed Service Account \(gMSA\) that provides automated service account password management from a managed domain account.'
 ---
-= Configure gMSA on Windows Server 2012 or later for Plug-in for Windows
+= Configure gMSA on Windows Server 2012 or later 
 :icons: font
 :imagesdir: ../media/
 
