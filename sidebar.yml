@@ -62,6 +62,8 @@ entries:
         url: "/install/task_get_the_CA_certificate_thumbprint.html"
       - title: Configure CA certificate with SnapCenter site
         url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
+      - title: Enable CA Certificates for SnapCenter Server
+        url: "/install/task_enable_ca_certificates_for_snapcenter.html"
   - title: Log in to SnapCenter
     url: "/install/task_log_in_to_snapcenter.html"
     entries:
@@ -300,6 +302,8 @@ entries:
         url: "/protect-scsql/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-scsql/task_get_the_CA_certificate_thumbprint.html"
+      - title: Enable CA Certificates for plug-ins
+        url: "/protect-scsql/task_enable_ca_certificates_for_plug-ins.html"
     - title: Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
       url: "/protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html"
       entries:
@@ -435,6 +439,8 @@ entries:
         url: "/protect-scw/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-scw/task_get_the_CA_certificate_thumbprint.html"
+      - title: Enable CA Certificates for plug-ins
+        url: "/protect-scw/task_enable_ca_certificates_for_plug-ins.html"
   - title: Back up Windows file systems
     url: "/protect-scw/reference_back_up_windows_file_systems.html"
     entries:
@@ -590,6 +596,8 @@ entries:
       url: "/protect-sco/task_configure_CA_certificate_for_snapcenter_SMCore_service.html"
     - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
       url: "/protect-sco/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
+    - title: Enable CA Certificates for plug-ins
+      url: "/protect-sco/task_enable_ca_certificates_for_plug-ins.html"
     - title: Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
       url: "/protect-sco/concept_import_data_from_snapmanager_for_oracle_and_snapmanager_for_sap_to_snapcenter.html"
       entries:
@@ -656,11 +664,6 @@ entries:
       url: "/protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html"
   - title: Mount and unmount database backups
     url: "/protect-sco/task_mount_and_unmount_databases_backups.html"
-    entries:
-    - title: Mount a database backup
-      url: "/protect-sco/task_mount_a_database_backup.html"
-    - title: Unmount a database backup
-      url: "/protect-sco/task_unmount_a_database_backup.html"
   - title: Restore and recover Oracle databases
     url: "/protect-sco/task_restore_oracle_databases.html"
     entries:
@@ -756,6 +759,8 @@ entries:
         url: "/protect-sce/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-sce/task_get_the_CA_certificate_thumbprint.html"
+      - title: Enable CA Certificates for plug-ins
+        url: "/protect-sce/task_enable_ca_certificates_for_plug-ins.html"
     - title: Configure SnapManager 7.x for Exchange and SnapCenter to coexist
       url: "/protect-sce/task_configure_snapmanager_7_x_for_exchange_and_snapcenter_plug_in_for_exchange_to_coexist.html"
   - title: Prepare for data protection
@@ -899,6 +904,8 @@ entries:
         url: "/protect-hana/task_configure_CA_certificate_for_saphana_on_Linux_host.html"
       - title: Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Windows host
         url: "/protect-hana/task_configure_CA_certificate_for_saphana_on_windows_host.html"
+      - title: Enable CA Certificates for plug-ins
+        url: "/protect-hana/task_enable_ca_certificates_for_plug-ins.html"
   - title: Prepare for data protection
     url: "/protect-hana/concept_prepare_for_protecting_hana_databases.html"
     entries:
@@ -1036,6 +1043,8 @@ entries:
         url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html"
       - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
         url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_windows_host.html"
+      - title: Enable CA Certificates for plug-ins
+        url: "/protect-scc/task_enable_ca_certificates_for_plug-ins.html"
   - title: Prepare for data protection
     url: "/protect-scc/concept_prepare_for_protecting_scc_resources.html"
     entries:
@@ -1175,10 +1184,5 @@ entries:
       url: "/sc-automation/reference_supported_rest_apis.html"
     - title: Get started with the REST API
       url: "/sc-automation/task_get_started_with_the_rest_api.html"
-      entries:
-      - title: Hello World
-        url: "/sc-automation/task_hello_world.html"
-      - title: Example workflows using REST APIs
-        url: "/sc-automation/reference_example_workflows_using_rest_apis.html"
 - title: Legal notices
   url: /reference_legal_notices.html

@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/reference_requirements_for_cloning_an_oracle_database.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Before cloning an Oracle database, you should ensure that prerequisites are completed.'
 ---
 = Requirements for cloning an Oracle database
@@ -18,6 +18,11 @@ You should have successfully created online data and log backups or offline (mou
 * If you want to customize the control file or redo log file paths, you should have preprovisioned the required file system or Automatic Storage Management (ASM) disk group.
 +
 By default, redo log and control files of the cloned database are created on the ASM disk group or the file system provisioned by SnapCenter for the data files of the clone database.
+
+* If you are using ASM over NFS, you should add _/var/opt/snapcenter/scu/clones/*/*_ to the existing path defined in the asm_diskstring parameter.
+* If you are using ASMFD or ASMLIB, you should use _AFD:*_ and _ORCL:*_ in the asm_diskstring parameter.
+
+NOTE: For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring]
 
 * If you are creating the clone on an alternate host, the alternate host should meet the following requirements:
  ** SnapCenter Plug-in for Oracle Database should be installed on the alternate host.
@@ -46,7 +51,7 @@ If control and redo log files are under data mount point, you should modify the 
 +
 NOTE: You can manually register the new cloned mount points with the autofs subsystem. The new cloned mount points will not be registered automatically.
 
-* If you have a TDE (auto login) and want to clone the database on the same or alternate host, you should copy wallet (key files) under /etc/ORACLE/WALLET/$ORACLE_SID from the source database to the cloned database.
-* You should set the value of use_lvmetad = 0 in /etc/lvm/lvm.conf and stop the lvm2-lvmetad service to successfully perform cloning in storage area network (SAN) environments on Oracle Linux 7 or later or Red Hat Enterprise Linux (RHEL) 7 or later.
+* If you have a TDE (auto login) and want to clone the database on the same or alternate host, you should copy wallet (key files) under _/etc/ORACLE/WALLET/$ORACLE_SID_ from the source database to the cloned database.
+* You should set the value of use_lvmetad = 0 in _/etc/lvm/lvm.conf_ and stop the lvm2-lvmetad service to successfully perform cloning in storage area network (SAN) environments on Oracle Linux 7 or later or Red Hat Enterprise Linux (RHEL) 7 or later.
 * You should install the 13366202 Oracle patch if you are using Oracle database 11.2.0.3 or later and the database ID for the auxiliary instance is changed using an NID script.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
