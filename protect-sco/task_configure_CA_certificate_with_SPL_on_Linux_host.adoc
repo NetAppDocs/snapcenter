@@ -56,6 +56,8 @@ You should configure the root or intermediate certificates without the private k
 
   keytool -import -trustcacerts -alias <AliasNameForCerticateToBeImported> -file /<CertificatePath> -keystore keystore.jks
 
+. Restart the service after configuring the root or intermediate certificates to SPL trust-store.
+
 [NOTE]
 
 You should add the root CA certificate and then the intermediate CA certificates.
@@ -97,6 +99,8 @@ Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in spl.p
 . Configure the alias name from the keystore located in spl.properties file.
 +
 Update this value against the key SPL_CERTIFICATE_ALIAS.
+
+. Restart the service after configuring the CA signed key pair to SPL trust-store.
 
 == Configure certificate revocation list (CRL) for SPL
 

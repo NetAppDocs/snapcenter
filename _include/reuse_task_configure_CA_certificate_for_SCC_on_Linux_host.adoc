@@ -44,6 +44,8 @@ You should configure the root or intermediate certificates without the private k
 
   keytool -import -trustcacerts -alias myRootCA -file /root/USERTrustRSA_Root.cer -keystore keystore.jks
 
+. Restart the service after configuring the root or intermediate certificates to custom plug-in trust-store.
+
 [NOTE]
 
 You should add the root CA certificate and then the intermediate CA certificates.
@@ -86,6 +88,7 @@ Default custom plug-in keystore password is the value of the key KEYSTORE_PASS i
 +
 Update this value against the key SCC_CERTIFICATE_ALIAS.
 
+. Restart the service after configuring the CA signed key pair to custom plug-in trust-store.
 
 == Configure certificate revocation list (CRL) for SnapCenter Custom Plug-ins
 
