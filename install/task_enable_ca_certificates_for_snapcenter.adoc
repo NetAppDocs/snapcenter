@@ -2,9 +2,9 @@
 permalink: install/task_enable_ca_certificates_for_snapcenter.html
 sidebar: sidebar
 keywords: SnapCenter
-summary: 'Configure the CA certificate with Windows host plug-in services'
+summary: 'You should configure the CA certificates and enable the CA certificate validation for the SnapCenter Server.'
 ---
-= Configure CA certificate with Windows host plug-in services
+= Enable CA certificates for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

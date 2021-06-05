@@ -1,8 +1,8 @@
 ---
-permalink:protect-scc/task_enable_ca_certificates_for_plug-ins.html
-sidebar:sidebar
-keywords:SnapCenter
-summary:'You should configure the CA certificates and deploy the CA certificates in the SnapCenter Server and the corresponding plug-in hosts.'
+permalink: protect-scc/task_enable_ca_certificates_for_plug-ins.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'You should configure the CA certificates and deploy the CA certificates in the SnapCenter Server and the corresponding plug-in hosts.'
 ---
 = Enable CA Certificates for plug-ins
 :icons:font
