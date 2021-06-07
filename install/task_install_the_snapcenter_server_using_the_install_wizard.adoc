@@ -23,7 +23,7 @@ See the Microsoft web site for information about enabling https://support.micros
 
 *About this task*
 
-image::../media/install_snapcenter_server.png[]
+image::../media/install_snapcenter_server.png[install Snapcenter Server]
 
 You can optionally perform several installation and configuration procedures by using PowerShell cmdlets. For details, use the SnapCenter cmdlet help or see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide].
 
