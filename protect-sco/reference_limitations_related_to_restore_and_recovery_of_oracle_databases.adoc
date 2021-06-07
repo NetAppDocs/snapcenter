@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/reference_limitations_related_to_restore_and_recovery_of_oracle_databases.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Before you perform restore and recovery operations, you must be aware of the limitations.'
 ---
 = Limitations related to restore and recovery of Oracle databases
@@ -11,7 +11,7 @@ summary: 'Before you perform restore and recovery operations, you must be aware 
 [.lead]
 Before you perform restore and recovery operations, you must be aware of the limitations.
 
-If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the restore operation will be in hung state when you run the renamedg command. You can apply the Oracle patch 195447733 to fix this issue.
+If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the restore operation will be in hung state when you run the renamedg command. You can apply the Oracle patch 19544733 to fix this issue.
 
 The following restore and recovery operations are not supported:
 

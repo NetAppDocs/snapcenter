@@ -11,10 +11,13 @@ summary: 'To configure role-based access control for SnapCenter users, you can a
 [.lead]
 To configure role-based access control for SnapCenter users, you can add users or groups and assign role. The role determines the options that SnapCenter users can access.
 
+*What you will need*
+
 * You must have logged in as the "`SnapCenterAdmin`" role.
 * You must have created the user or group accounts in Active Directory in the operating system or database. You cannot use SnapCenter to create these accounts.
+//Updated this note for BURT 1389838 for 4.5
 +
-NOTE: The group names should not include /\[ ] :;|=,+*?< >' characters.
+NOTE: The user names and group names should not include /\[ ];|=,+*?< >' characters.
 
 * SnapCenter includes several predefined roles.
 +
@@ -30,7 +33,8 @@ This enables users to perform the actions for which they have permissions on the
 * The minimum assets that you should assign an user to perform certain operations are as follows:
 +
 |===
-| Operation| Assets assignment
+| Operation | Assets assignment
+
 a|
 Protect resources
 a|
@@ -67,20 +71,24 @@ You should add assets before assigning access to the users.
 
 IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions, to protect VMs, VMDKs, or datastores, you use the VMware vSphere GUI to add a vCenter user to a SnapCenter Plug-in for VMware vSphere role. The vCenter documentation contains information about adding a user to a role in vCenter
 
+*Steps*
+
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Users and Access* > *image:../media/add_icon_configure_database.gif[add icon in configuring database screen]*.
 . In the Add Users/Groups from Active Directory or Workgroup page:
 +
 |===
-| For this field...| Do this...
+| For this field... | Do this...
+
 a|
 Access Type
 a|
 Select either Domain or workgroup    For Domain authentication type, you should specify the domain name of the user or group to which you want to add the user to a role.
-+
+
 By default, it is pre-populated with the logged in domain name.
-+
+
 NOTE: You must register the untrusted domain in the *Settings* > *Global Settings* > *Domain Settings* page.
+
 a|
 Type
 a|
@@ -90,13 +98,13 @@ User Name
 a|
 
  .. Type the partial user name, and then click *Add*.
-+
+
 NOTE: The user name is case-sensitive.
 
  .. Select the user name from the search list.
- *Note:* When you add users from a different domain or an untrusted domain, you should type the user name fully because there is no search list for cross domain users.
 
-+
+NOTE: When you add users from a different domain or an untrusted domain, you should type the user name fully because there is no search list for cross domain users.
+
 Repeat this step to add additional users or groups to the selected role.
 a|
 Roles
@@ -113,11 +121,5 @@ The assets are listed only if the user has added the assets to SnapCenter.
  .. Repeat this procedure for all of the required assets.
  .. Click *Save*.
 . Click *Submit*.
-
++
 After adding users or groups and assigning roles, refresh the resources list.
-
-*Related information*
-
-xref:task_add_an_rbac_role_using_security_login_commands.adoc[Add an ONTAP RBAC role using security login commands]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

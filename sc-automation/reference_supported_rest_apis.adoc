@@ -12,7 +12,7 @@ summary: 'The resources available through the SnapCenter REST API are organized 
 The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
 
 == Auth
-You can use this API call to log into the SnapCenter Server.
+You can use this API call to log into the SnapCenter Server. This API returns a user authorization token that is used to authenticate subsequent requests.
 
 == Domains
 You can use these API calls to retrieve all the domains, retrieve details of a specific domain, register a domain, modify a domain, and unregister a domain.
@@ -21,13 +21,13 @@ You can use these API calls to retrieve all the domains, retrieve details of a s
 You can use these API calls to retrieve all the jobs, retrieve status of a job, cancel or stop a job.
 
 == Settings
-You can use these API calls to view, register, modify or remove a credential, and configure server settings.
+You can use these API calls to view, register, modify or remove a credential, and configure notification settings.
 
 == Hosts
-You can use these API calls to retrieve host details, retrieve plug-in and their resource details, add or modify a plug-in host, install plug-ins, and upgrade.
+You can use these API calls to retrieve host details, retrieve plug-in and their resource details, add, remove, or modify a plug-in host, install plug-ins, and upgrade.
 
 == Resources
-You can use these API calls to retrieve, create, modify, or remove resources, back up a resource, restore and clone a resource.
+You can use these API calls to retrieve, create, modify, or remove resources, protect a resource, back up a resource, restore and clone a resource.
 
 == Backups
 You can use these API calls to retrieve backup details, rename, and delete backups.
@@ -54,7 +54,7 @@ You can use these API calls to retrieve the details of a share, create and delet
 You can use these API calls to retrieve all the plug-ins on a host and perform different operations.
 
 == Reports
-You can use these API calls to backup, clone, or restore reports and add, run, delete, or modify schedules.
+You can use these API calls to generate the backup, restore, clone, and plug-in reports. You can also use these API calls to add, run, delete, or modify schedules.
 
 == Alerts
 You can use these API calls to retrieve all the alerts and delete alerts.
@@ -69,4 +69,4 @@ You can use these API calls to view the configuration settings and modify them.
 You can use these API calls to view the certificate status and modify the certificate settings.
 
 == Repository
-You can use these API calls to view the backups of the repository, remove protection, and failover the repository.
+You can use these API calls to protect, backup, restore, unprotect, failover, and rebuild the NSM repository.

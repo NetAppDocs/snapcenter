@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_back_up_oracle_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'If a resource is not part of any resource group, you can back up the resource from the Resources page.'
 ---
 = Back up Oracle resources
@@ -10,6 +10,8 @@ summary: 'If a resource is not part of any resource group, you can back up the r
 
 [.lead]
 If a resource is not part of any resource group, you can back up the resource from the Resources page.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
@@ -24,7 +26,8 @@ The Database-Protect page is displayed.
 . On the Resource page, perform the following actions:
 +
 |===
-| For this field...| Do this...
+| For this field... | Do this...
+
 a|
 Use custom name format for Snapshot copy
 a|
@@ -45,16 +48,17 @@ In the Configure schedules for selected policies section, the selected policies 
  .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure a schedule.
  .. In the Add schedules for policypolicy_name window, configure the schedule, and then click *OK*.
 +
-policy_name is the name of the policy that you have selected.
+_policy_name_ is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
 . On the Verification page, perform the following steps:
  .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
  .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column to configure the verification schedule for all of the schedule types of the policy.
- .. In the Add Verification Schedulespolicy_name dialog box, perform the following actions:
+ .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
 +
 |===
-| If you want to...| Do this...
+| If you want to... | Do this...
+
 a|
 Run verification after backup
 a|
@@ -63,6 +67,9 @@ a|
 Schedule a verification
 a|
 Select *Run scheduled verification*, and then select the schedule type from the drop-down list.
+
+//Included the below info for BURT 1348035 for 4.5
+NOTE: In a Flex ASM setup, you cannot perform verification operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
 |===
 
  .. Select *Verify on secondary location* to verify your backups on secondary storage.
@@ -88,6 +95,8 @@ If the policy selected for the on-demand backup is associated with a backup sche
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
+*After you finish*
+
 * In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disk groups on which the database that was backed up was residing.
 +
 Locking or renaming of devices will not affect the restore operation when you restore using that backup.
@@ -106,16 +115,8 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 
 * If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail. To increase the Java heap size, locate the script file /opt/netapp/init_scripts/scvservice. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
 
-*Related information*
+*For more information*
 
-xref:task_create_backup_policies_for_oracle_database.adoc[Create backup policies for Oracle databases]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations]
 
-xref:task_monitor_backup_operations.adoc[Monitor backup operations]
-
-xref:task_view_oracle_databse_backups_and_clones_in_the_topology_page.adoc[View Oracle database backups and clones in the Topology page]
-
-xref:task_back_up_oracle_databases_using_unix_commands.adoc[Back up Oracle databases using UNIX commands]
-
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations]
-
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_change_the_state_of_an_Oracle_12c_ASM_database_from_shutdown_to_mount[Failed to change the state of an Oracle 12c ASM database]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_change_the_state_of_an_Oracle_12c_ASM_database_from_shutdown_to_mount[Failed to change the state of an Oracle 12c ASM database]

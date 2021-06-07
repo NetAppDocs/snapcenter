@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/reference_how_snapcenter_discovers_oracle_databases.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: '“Resources” are Oracle databases on the host that are maintained by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available. You should be aware of the process that SnapCenter follows to discover different types and versions of Oracle databases.'
 ---
 = How SnapCenter discovers Oracle databases
@@ -12,14 +12,22 @@ summary: '“Resources” are Oracle databases on the host that are maintained b
 "`Resources`" are Oracle databases on the host that are maintained by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available. You should be aware of the process that SnapCenter follows to discover different types and versions of Oracle databases.
 
 |===
-| For Oracle versions 11__g__ to 12__c__R1| For Oracle versions 12__c__R2 to 18__c__
+| For Oracle versions 11__g__ to 12__c__R1 | For Oracle versions 12__c__R2 to 18__c__
+
 a|
-*RAC database*: The RAC databases are discovered only on the basis of /etc/oratab entries.You should have the database entries in the /etc/oratab file.
+*RAC database*: The RAC databases are discovered only on the basis of /etc/oratab entries.
+
+You should have the database entries in the /etc/oratab file.
+
+//Included this for the BURT 1391253 for 4.5
+NOTE: If you have relocated a database from one node to another node, the oratab entry of the earlier node is not deleted. You should manually delete the oratab entry otherwise the same database will be displayed twice.
 
 a|
 *RAC database*: The RAC databases are discovered using the srvctl config command.
 a|
-*Standalone*: The standalone databases are discovered only on the basis of /etc/oratab entries.You should have the database entries in the /etc/oratab file.
+*Standalone*: The standalone databases are discovered only on the basis of /etc/oratab entries.
+
+You should have the database entries in the /etc/oratab file.
 
 a|
 *Standalone*: The standalone databases are discovered based on the entries in the /etc/oratab file and the output of the srvctl config command.
@@ -28,7 +36,9 @@ a|
 a|
 *ASM*: The ASM instance entry need not be in the /etc/oratab file.
 a|
-*RAC One Node*: The RAC One Node databases are discovered only on the basis of /etc/oratab entries. The databases should be either in `nomount`, `mount`, or `open` state.You should have the database entries in the /etc/oratab file.
+*RAC One Node*: The RAC One Node databases are discovered only on the basis of /etc/oratab entries.
+
+The databases should be either in `nomount`, `mount`, or `open` state.You should have the database entries in the /etc/oratab file.
 
 The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
 
@@ -41,7 +51,9 @@ You should perform the following steps if the database is relocated:
 . Perform the SnapCenter operations.
 
 a|
-*RAC One Node*: The RAC One Node databases are discovered using the srvctl config command only. The databases should be either in `nomount`, `mount`, or `open` state.The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
+*RAC One Node*: The RAC One Node databases are discovered using the srvctl config command only.
+
+The databases should be either in `nomount`, `mount`, or `open` state.The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
 
 You should perform the following steps if the database is relocated:
 
