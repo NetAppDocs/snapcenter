@@ -11,18 +11,25 @@ summary: 'You should configure the CA certificates and enable the CA certificate
 [.lead]
 You should configure the CA certificates and enable the CA certificate validation for the SnapCenter Server.
 
-*Before you begin*
+*What you will need*
 
-* You can enable or disable the CA certificates using the run Set-SmCertificateSettings cmdlet.
-
+* You can enable or disable the CA certificates using the Set-SmCertificateSettings cmdlet.
 * You can display the certificate status for the SnapCenter Server using the Get-SmCertificateSettings cmdlet.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the Cmdlet Reference Guide.
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help <command_name>. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide].
 
 *Steps*
 
 . In the Settings page, navigate to *Settings* > *Global Settings* > *CA Certificate Settings*.
-
 . Select *Enable Certificate Validation*.
-
 . Click *Apply*.
+
+*After you finish*
+
+The Managed Hosts tab host displays a padlock and the color of the padlock indicates the status of the connection between SnapCenter Server and the plug-in host.
+
+* The yellow color (default) indicates that there is no certificate enabled or assigned to the plug-in host.
+* The green color indicates that the certificate is successfully validated.
+* The red color indicates the certificate could not be validated.
+
+NOTE: When the status is yellow or green, the data protection operations completes successfully.
