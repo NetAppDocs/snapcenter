@@ -122,14 +122,8 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 
 . Monitor the installation progress.
 +
-<<<<<<< HEAD
-The installation-specific log files are located at /custom_location/snapcenter/logs.
-
-After installing the plug-in, all of the databases on that host are automatically discovered and displayed in the Resources page. If nothing is displayed, click *Refresh Resources*.
-=======
 The installation-specific log files are located at _/custom_location/snapcenter/logs_.
 
 *After you finish*
 
 All the databases on the host are automatically discovered and displayed in the Resources page. If nothing is displayed, click *Refresh Resources*.
->>>>>>> 68a785c3d2c79982371c3b978713c9b2601d1629

@@ -69,12 +69,9 @@ After logging to SnapCenter Server for the first time, refresh the resources lis
 *After you finish*
 
 If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. The administration documentation has more details.
-<<<<<<< HEAD
 
 http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
 
 *Related information*
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
-=======
->>>>>>> 9191b3f9cecc72a8ecc679eec75ab80edbf5268b

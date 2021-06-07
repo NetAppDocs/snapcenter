@@ -57,11 +57,8 @@ a|
 Directly upgrade to 4.5
 |===
 
-<<<<<<< HEAD
-=======
 *Steps*
 
->>>>>>> 68a785c3d2c79982371c3b978713c9b2601d1629
 . Download the SnapCenter Server installation package from the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab

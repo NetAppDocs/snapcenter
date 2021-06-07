@@ -14,16 +14,3 @@ The restore workflow includes planning, performing the restore operations, and m
 The following workflow shows the sequence in which you must perform the restore operation:
 
 image::../media/all_plug_ins_restore_workflow.png[all_plug-ins_restore_workflow]
-<<<<<<< HEAD
-
-You can also use commands manually or in scripts to perform restore operation. For detailed information about the commands, use the SnapCenter command help or see the command reference information.
-
-*Related information*
-
-xref:task_restore_and_recover_oracle_databases_using_unix_commands.adoc[Restore and recover Oracle databases using UNIX commands]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]
-=======
->>>>>>> 68a785c3d2c79982371c3b978713c9b2601d1629
