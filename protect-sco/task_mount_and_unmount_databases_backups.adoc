@@ -19,8 +19,8 @@ You should manually mount a database backup if you want to access the files in t
 
 *What you will need*
 
-* If you have an Automatic Storage Management (ASM) database instance in an NFS environment and want to mount the ASM backups, you should have added the ASM disk path _/var/opt/snapcenter/sco/backup_*/*/*/*/*_ to the existing path defined in the asm_diskstring parameter.
-* If you have an ASM database instance in an NFS environment and want to mount the ASM log backups as part of a recovery operation, you should have added the ASM disk path _/var/opt/snapcenter/scu/clones/*/*_ to the existing path defined in the asm_diskstring parameter.
+* If you have an Automatic Storage Management (ASM) database instance in an NFS environment and want to mount the ASM backups, you should have added the ASM disk path _/var/opt/snapcenter/sco/backup_*/_*_/_*_/_*_/_*_ to the existing path defined in the asm_diskstring parameter.
+* If you have an ASM database instance in an NFS environment and want to mount the ASM log backups as part of a recovery operation, you should have added the ASM disk path _/var/opt/snapcenter/scu/clones/_*_/_*_ to the existing path defined in the asm_diskstring parameter.
 * If you are using ASMFD or ASMLIB, you should use _AFD:*_ and _ORCL:*_ in the asm_diskstring parameter.
 
 NOTE: For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring]
