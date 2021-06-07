@@ -11,7 +11,7 @@ summary: 'To support High Availability \(HA\) in SnapCenter, you can install the
 [.lead]
 To support High Availability (HA) in SnapCenter, you can install the F5 load balancer. F5 enables the SnapCenter Server to support active-passive configurations in up to two hosts that are in the same location. To use F5 Load Balancer in SnapCenter, you should configure the SnapCenter Servers and configure F5 load balancer.
 
-NOTE: If you have upgraded from SnapCenter 4.2.x and were previously using Network Load Balancing (NLB), you can continue to use that configuration or switch to F5.
+NOTE: If you have upgraded from SnapCenter 4.2.x and were previously using Network Load Balancing (NLB), you can continue to use that configuration or switch to F5. For more information to configure NLB, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_NLB_and_ARR_with_SnapCenter[How to configure NLB with SnapCenter]
 
 image::../media/sc_f5_configure_workflow.gif[]
 

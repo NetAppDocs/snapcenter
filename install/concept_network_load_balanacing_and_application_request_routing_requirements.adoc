@@ -9,6 +9,10 @@ summary: 'You should manually configure NLB and ARR outside of SnapCenter instal
 :imagesdir: ../media/
 
 [.lead]
+
+[NOTE]
+You can also configure Microsoft NLB to set up SnapCenter High Availability (HA).
+
 You should manually configure NLB outside of SnapCenter installation for high availability (HA) from SnapCenter 4.2.
 
 _How to configure NLB with SnapCenter_ has information about how to configure Network Load Balancing (NLB) with SnapCenter.
