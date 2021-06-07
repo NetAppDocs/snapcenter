@@ -1,7 +1,7 @@
 ---
 permalink: uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html
 sidebar: sidebar
-keywords:
+keywords: uninstall plug-ins, linux, aix, command-line interface, cli
 summary: 'You can uninstall SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX by using the command-line interface.'
 ---
 = Uninstall SnapCenter Plug-ins Package for Linux or AIX using the command-line interface

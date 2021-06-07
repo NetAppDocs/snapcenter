@@ -1,7 +1,7 @@
 ---
 permalink: uninstall/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html
 sidebar: sidebar
-keywords: uninstall
+keywords: uninstall, gui
 summary: 'When you decide that you no longer require an individual plug-in or a plug-in package, you can uninstall it using the SnapCenter interface.'
 ---
 = Uninstall plug-ins using the SnapCenter GUI

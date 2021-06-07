@@ -1,7 +1,7 @@
 ---
 permalink: upgrade/task_configure_snapcenter_to_check_for_available_updates.html
 sidebar: sidebar
-keywords:
+keywords: configure, snapcenter server, updates, software updates
 summary: 'SnapCenter periodically communicates with the NetApp Support Site to notify you of available software updates. You can also create a schedule to specify the interval in which you want to receive information about available updates.'
 ---
 = Configure SnapCenter to check for available updates

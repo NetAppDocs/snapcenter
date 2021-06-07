@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: sc-automation/concept_basic_operational_characterstics.html
-keywords: request and response, object identifiers, synchronous and asynchronous operations
-summary: While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.
+keywords: request and response, object identifiers, synchronous, asynchronous
+summary: 'While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.'
 ---
 
 = Basic operational characteristics
@@ -35,8 +35,7 @@ Each resource instance or object is assigned a unique identifier when it is crea
 
 After issuing an API call that creates a new object instance, a URL with the associated ID is returned to the caller in the location header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
 
-[IMPORTANT]
-The content and internal structure of the object identifiers can change at any time. You should only use the identifiers on the applicable API calls as needed when referring to the associated objects.
+IMPORTANT: The content and internal structure of the object identifiers can change at any time. You should only use the identifiers on the applicable API calls as needed when referring to the associated objects.
 
 == Object instances and collections
 
@@ -46,12 +45,14 @@ Depending on the resource path and HTTP method, an API call can apply to a speci
 
 SnapCenter performs an HTTP request received from a client either synchronously or asynchronously.
 
-Synchronous processing::
+* Synchronous processing
++
 SnapCenter performs the request immediately and responds with an HTTP status code of 200 or 201 if it is successful.
 +
 Every request using the method GET is always performed synchronously. In addition, requests that use POST are designed to run synchronously if they are expected to complete in less than two seconds.
 
-Asynchronous processing::
+* Asynchronous processing
++
 If an asynchronous request is valid, SnapCenter creates a background task to process the request and a job object to anchor the task. The HTTP status code 202 is returned to the caller along with the job object. You should retrieve the state of the job to determine success or failure.
 +
 Requests that use the methods POST and DELETE are designed to run asynchronously if they are expected to take more than two seconds to complete.

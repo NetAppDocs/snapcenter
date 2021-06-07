@@ -1,7 +1,7 @@
 ---
 permalink: uninstall/reference_prerequisites_for_removing_a_host.html
 sidebar: sidebar
-keywords: uninstall
+keywords: uninstall, prereqiuisites
 summary: 'You can remove a host if you no longer want to use SnapCenter to manage its data protection jobs. For example, you might want to remove a host if it no longer has data that needs to be protected. Before you remove a host from SnapCenter Server, you must perform the prerequisite tasks.'
 ---
 = Prerequisites for removing a host
@@ -9,13 +9,16 @@ summary: 'You can remove a host if you no longer want to use SnapCenter to manag
 :imagesdir: ../media/
 
 [.lead]
-You can remove a host if you no longer want to use SnapCenter to manage its data protection jobs. For example, you might want to remove a host if it no longer has data that needs to be protected. Before you remove a host from SnapCenter Server, you must perform the prerequisite tasks.
+You can remove a host if you no longer want to use SnapCenter to manage its data protection jobs. For example, you might want to remove a host if it no longer has data that needs to be protected. Before you remove a host from SnapCenter Server, you should complete the prerequisites.
 
-*What you will need*
+== Prerequisites
 
 * You should log in as an administrator.
 * If you are using SnapCenter Custom Plug-ins, you should delete all the clones that are associated with the host from SnapCenter.
 * You should ensure that discovery jobs are not running on the host.
+* You should be assigned a role with the required permissions to remove all of the objects associated with the host. Otherwise, the remove operation fails.
+* You should confirm the fingerprint if the SSH key was modified after adding the host to SnapCenter.
+* You should confirm the fingerprint if the SnapCenter host is upgraded to a later version of SnapCenter but the plug-in host is still running an earlier version of the plug-in.
 
 == Prerequisites to remove a host using role-based access control
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: sc-automation/concept_rest_web_services_foundation.html
 keywords: uri endpoints, http messages, json format
-summary: REST is a style for creating distributed web applications.
+summary: 'REST is a style for creating distributed web applications. When applied to the design of a web services API, it establishes a set of technologies and best practices for exposing server-based resources and managing their states. It uses mainstream protocols and standards to provide a flexible foundation for managing SnapCenter.'
 ---
 
 = REST web services foundation

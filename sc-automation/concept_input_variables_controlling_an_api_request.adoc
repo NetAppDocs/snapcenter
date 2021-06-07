@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: sc-automation/concept_input_variables_controlling_an_api_request.html
 keywords: http methods, request headers, request body, filtering objects, size, pagination
-summary: You can control how an API call is processed through parameters and variables set in the HTTP request.
+summary: 'You can control how an API call is processed through parameters and variables set in the HTTP request.'
 ---
 
 = Input variables controlling an API request
@@ -16,8 +16,7 @@ You can control how an API call is processed through parameters and variables se
 
 The HTTP methods supported by the SnapCenter REST API are shown in the following table.
 
-[NOTE]
-Not all the HTTP methods are available at each of the REST endpoints.
+NOTE: Not all the HTTP methods are available at each of the REST endpoints.
 
 |===
 |HTTP method |Description
@@ -36,13 +35,16 @@ Not all the HTTP methods are available at each of the REST endpoints.
 
 You should include several headers in the HTTP request.
 
-Content-type::
+* Content-type
++
 If the request body includes JSON, this header should be set to `application/json`.
 
-Accept::
+* Accept
++
 This header should be set to `application/json`.
 
-Authorization::
+* Authorization
++
 Basic authentication should be set with the user name and password encoded as a base64 string.
 
 == Request body
@@ -83,8 +85,7 @@ In addition to an exact match, other operators are available to return a set of 
 
 You can also return a collection of objects based on whether a specific field is set or not set by using the `null` keyword or its negation `!null` as part of the query.
 
-[NOTE]
-Any fields that are not set are generally excluded from matching queries.
+NOTE: Any fields that are not set are generally excluded from matching queries.
 
 == Requesting specific object fields
 
@@ -102,8 +103,7 @@ Specify `fields=**` to retrieve all the object fields, including those requiring
 +
 Use `fields=<field_name>` to specify the exact field you want. When requesting multiple fields, the values must be separated using commas without spaces.
 +
-[IMPORTANT]
-As a best practice, you should always identify the specific fields you want. You should only retrieve the set of common fields or all fields when needed. Which fields are classified as common, and returned using `fields=*`, is determined by NetApp based on internal performance analysis. The classification of a field might change in future releases.
+IMPORTANT: As a best practice, you should always identify the specific fields you want. You should only retrieve the set of common fields or all fields when needed. Which fields are classified as common, and returned using `fields=*`, is determined by NetApp based on internal performance analysis. The classification of a field might change in future releases.
 
 == Sorting objects in the output set
 
@@ -115,8 +115,6 @@ For example, you can sort the type field in descending order followed by id in a
 
 `order_by=type desc, id asc`
 
-Note the following:
-
 * If you specify a sort field but don’t provide a direction, the values are sorted in ascending order.
 * When including multiple parameters, you must separate the fields with a comma.
 
@@ -124,24 +122,26 @@ Note the following:
 
 When issuing an API call using GET to access a collection of objects of the same type, SnapCenter attempts to return as many objects as possible based on two constraints. You can control each of these constraints using additional query parameters on the request. The first constraint reached for a specific GET request terminates the request and therefore limits the number of records returned.
 
-[NOTE]
-If a request ends before iterating over all the objects, the response contains the link needed to retrieve the next batch of records.
+NOTE: If a request ends before iterating over all the objects, the response contains the link needed to retrieve the next batch of records.
 
-Limiting the number of objects::
+* Limiting the number of objects
++
 By default, SnapCenter returns a maximum of 10,000 objects for a GET request. You can change this limit using the `max_records` query parameter. For example:
 +
 `max_records=20`
 +
 The number of objects actually returned can be less than the maximum in effect, based on the related time constraint as well as the total number of objects in the system.
 
-Limiting the time used to retrieve the objects::
+* Limiting the time used to retrieve the objects
++
 By default, SnapCenter returns as many objects as possible within the time allowed for the GET request. The default timeout is 15 seconds. You can change this limit using the `return_timeout` query parameter. For example:
 +
 `return_timeout=5`
 +
 The number of objects actually returned can be less than the maximum in effect, based on the related constraint on the number of objects as well as the total number of objects in the system.
 
-Narrowing the result set::
+* Narrowing the result set
++
 If needed, you can combine these two parameters with additional query parameters to narrow the result set. For example, the following returns up to 10 ems events generated after the specified time:
 +
 `time=> 2018-04-04T15:41:29.140265Z&max_records=10`

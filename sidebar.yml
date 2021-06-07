@@ -93,9 +93,6 @@ entries:
       url: "/install/task_add_an_rbac_role_using_security_login_commands.html"
     - title: Create an ONTAP cluster role with minimum privileges
       url: "/install/task_create_an_ontap_cluster_role_with_minimum_privileges.html"
-      entries:
-      - title: ONTAP CLI commands for creating roles and assigning permissions
-        url: "/install/reference_ontap_cli_commands_for_creating_svm_roles.html"
     - title: Configure IIS Application Pools to enable Active Directory read permissions
       url: "/install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html"
   - title: Add storage systems
