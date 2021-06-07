@@ -58,10 +58,16 @@ a|
  .. Select *PDB Clone*.
  .. Specify the PDB that you want to clone.
  .. Specify the name of cloned PDB.
- For the detailed steps to clone a PDB, see xref:task_clone_a_pluggable_database.adoc[Clone a pluggable database].
-
-+
+ For the detailed steps to clone a PDB, see link:../protect-sco/task_clone_a_pluggable_database.html[Clone a pluggable database^].
 |===
++
+//Included this for BURT 1376783 for 4.5
+When you select a mirrored or vault data:
+
+* if there are no log backup at mirror or vault, nothing is selected and the locators are empty.
+* if log backups exist in mirror or vault, the latest log backup is selected and corresponding locator is displayed.
++
+NOTE: If the selected log backup exists in both mirror and vault location, both the locators are displayed.
 
 . On the Locations page, perform the following actions:
 +

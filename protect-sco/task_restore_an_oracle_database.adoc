@@ -33,6 +33,13 @@ The database topology page is displayed.
 . Select the backup from the table, and then click *image:../media/restore_icon.gif[restore icon]*.
 . On the Restore Scope page, perform the following tasks:
  .. If you have selected a backup of a database in a Real Application Clusters (RAC) environment, select the RAC node.
+//Included this for BURT 1376783 for 4.5
+ .. When you select a mirrored or vault data:
+ * if there are no log backup at mirror or vault, nothing is selected and the locators are empty.
+ * if log backups exist in mirror or vault, the latest log backup is selected and corresponding locator is displayed.
++
+NOTE: If the selected log backup exists in both mirror and vault location, both the locators are displayed.
+
  .. Perform the following actions:
 +
 |===
