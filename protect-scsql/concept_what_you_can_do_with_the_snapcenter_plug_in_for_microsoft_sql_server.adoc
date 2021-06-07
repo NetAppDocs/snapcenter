@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_sql_server.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When the SnapCenter Plug-in for Microsoft SQL Server is installed in your environment, you can use SnapCenter to back up, restore, and clone SQL Server databases.'
 ---
 = What you can do with the SnapCenter Plug-in for Microsoft SQL Server
@@ -17,11 +17,13 @@ You can perform the following tasks that support backup operations, restore oper
 +
 You cannot create a log backup for master and msdb system databases. However, you can create log backups for model system database.
 
-* Restore database resources, including databases, instances, or Availability Groups
+* Restore database resources.
 +
-You can restore master system databases, msdb system databases, and model system databases.
+** You can restore master system databases, msdb system databases, and model system databases.
 +
-You cannot restore the system database to an alternate path.
+** You cannot restore Multiple databases, instances, and availability groups.
++
+** You cannot restore the system database to an alternate path.
 
 * Create point-in-time clones of production databases
 +

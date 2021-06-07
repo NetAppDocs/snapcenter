@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_clone_from_a_backup.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup. The capabilities of the clone operations depends upon the plug-in that you use.'
 ---
 = Clone from a backup
@@ -11,12 +11,16 @@ summary: 'You can use SnapCenter to clone a backup. You can clone from primary o
 [.lead]
 You can use SnapCenter to clone a backup. You can clone from primary or secondary backup. The capabilities of the clone operations depends upon the plug-in that you use.
 
+*What you will need*
+
 * You must have backed up the resources or resource group.
 * The default clone operation only clones storage objects. Clone operations at the application level can only be performed if the custom plug-in provides that capability.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, filter resources from the *View* drop-down list based on resource type.
+. In the *Resources* page, filter resources from the *View* drop-down list based on resource type.
 +
 The resources are displayed along with information such as type, host or cluster name, associated resource groups and policies, and status.
 
@@ -26,12 +30,13 @@ You must select a resource if you select a resource group.
 +
 The resource or resource group topology page is displayed.
 
-. From the Manage Copies view, select *Backups* either from the primary or secondary (mirrored or vaulted) storage systems.
+. From the *Manage Copies* view, select *Backups* either from the primary or secondary (mirrored or vaulted) storage systems.
 . Select the data backup from the table, and then click image:../media/clone_icon.gif[clone icon].
 . In the Locations page, perform the following:
 +
 |===
 | For this field...| Do this...
+
 a|
 Clone server
 a|
@@ -44,10 +49,11 @@ This is mandatory when the clone destination is the same as the source. Enter a 
 |===
 If the resource selected is a LUN and if you are cloning from a secondary backup, then the destination volumes are listed. Single source can have multiple destination volumes.
 
-. In the Settings page, perform the following:
+. In the *Settings* page, perform the following:
 +
 |===
 | For this field...| Do this...
+
 a|
 Initiator name
 a|
@@ -57,9 +63,9 @@ Igroup protocol
 a|
 Select Igroup protocol.
 |===
-*Note:* Settings page is displayed only if the storage type is LUN.
+NOTE: Settings page is displayed only if the storage type is LUN.
 
-. In the Scripts page, enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively. Enter the mount command to mount a file system to a host.
+. In the *Scripts* page, enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively. Enter the mount command to mount a file system to a host.
 +
 For example:
 +
@@ -69,7 +75,7 @@ Post clone command: verify a database or start a database.
 +
 Mount command for a volume or qtree on a Linux machine: mount<VSERVER_NAME>:%<VOLUME_NAME_Clone /mnt>
 
-. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email.
 

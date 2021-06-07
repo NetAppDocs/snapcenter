@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_restore_oracle_databases.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The restore workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
 = Restore and recover Oracle databases
@@ -13,7 +13,7 @@ The restore workflow includes planning, performing the restore operations, and m
 
 The following workflow shows the sequence in which you must perform the restore operation:
 
-image::../media/all_plug_ins_restore_workflow.gif[all_plug-ins_restore_workflow]
+image::../media/all_plug_ins_restore_workflow.png[all_plug-ins_restore_workflow]
 
 You can also use commands manually or in scripts to perform restore operation. For detailed information about the commands, use the SnapCenter command help or see the command reference information.
 

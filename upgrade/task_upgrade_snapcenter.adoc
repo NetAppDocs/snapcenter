@@ -54,8 +54,6 @@ a|
 Directly upgrade to 4.4.x
 |===
 
-NOTE: The existing Configuration Checker alerts are deleted after upgrading the SnapCenter Server to 4.3 or later.
-
 . Download the SnapCenter Server installation package from the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab

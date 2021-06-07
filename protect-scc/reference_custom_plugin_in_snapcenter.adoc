@@ -167,5 +167,4 @@ The uploaded custom plug-in is now available for deployment on the desired host 
 *Add* and *Modify Host* workflow. You can have multiple version of plug-ins uploaded to the
 SnapCenter Server and you can select the desired version to deploy on a specific host.
 
-For more information on how to upload the plug-in see, SnapCenter Software Installation and
-Setup Guide.
+For more information on how to upload the plug-in see, SnapCenter Software Installation section.

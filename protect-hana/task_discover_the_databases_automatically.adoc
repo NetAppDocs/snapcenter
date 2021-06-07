@@ -11,27 +11,31 @@ summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host
 [.lead]
 Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.
 
+*What you will need*
+
 * You must have already completed tasks such as installing the SnapCenter Server, adding HDB User Store Key, adding hosts, and setting up the storage system connections.
 * You must have configured the HDB Secure User Store Key and HDB SQL OS user on the Linux host.
  ** You must configure the HDB User Store Key with SID adm user. For example, for HANA system with A22 as the SID, the HDB User Store Key must be configured with a22adm.
 * SnapCenter Plug-in for SAP HANA Database does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
 
+*About this task*
+
 After installing the plug-in, all the resources on that Linux host are automatically discovered and displayed on the Resources page.
 
 The automatically discovered resources cannot be modified or deleted.
 
-The SnapCenter concepts documentation has information about the supported and unsupported resources for auto discovery.
+For information about the supported and unsupported resources for auto discovery see link:task_discover_the_databases_automatically.adoc[Automatic discovery of resources on Linux host].
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Plug-in for SAP HANA Database from the list.
-. On the Resources page select the resource type from the View list.
+. On the *Resources* page select the resource type from the View list.
 . (Optional) Click *image:../media/filter_icon.gif[]*, and then select the host name.
 +
 You can then click *image:../media/filter_icon.gif[]* to close the filter pane.
 
 . Click *Refresh Resources* to discover the resources available on the host.
-
++
 The resources are displayed along with information such as resource type, host name, associated resource groups, backup type, policies and overall status.
 
 * If the database is on a NetApp storage and not protected, then Not protected is displayed in the Overall Status column.
@@ -39,10 +43,12 @@ The resources are displayed along with information such as resource type, host n
 
 NOTE: If the SAP HANA database does not have a HDB Secure User Store Key configured, a red lock icon appears next to the resource. If during a subsequent discovery operation, the configured HDB Secure User Store Key was found to be incorrect or did not provide access to the database itself, then the red lock icon will reappear.
 
+*After you finish*
+
 You must configure the HDB Secure User Store Key and HDBSQL OS User to be able to protect the database or add it to the resource group to perform data protection operations.
 
 *Related information*
 
-xref:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.adoc[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
+link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.adoc[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
 
-xref:task_create_resource_groups_and_attach_policies.adoc[Create resource groups and attach policies]
+link:task_create_resource_groups_and_attach_policies.adoc[Create resource groups and attach policies]

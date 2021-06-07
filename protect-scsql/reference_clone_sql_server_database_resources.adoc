@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_clone_sql_server_database_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must perform several tasks using SnapCenter Server before cloning database resources from a backup. Database cloning is the process of creating a point-in-time copy of a production database or its backup set. You can clone databases to test functionality that has to be implemented using the current database structure and content during application development cycles, to use the data extraction and manipulation tools when populating data warehouses, or to recover data that was mistakenly deleted or changed.'
 ---
 = Clone SQL Server database resources
@@ -15,7 +15,7 @@ A database cloning operation generates reports based on the job IDs.
 
 The following workflow shows the sequence in which you must perform the cloning operations:
 
-image::../media/scsql_clone_workflow.gif[Clone Workflow Diagram]
+image::../media/scsql_clone_workflow.png[Clone Workflow Diagram]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, recovery, verify, and clone operations. For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the cmdlet reference information.
 

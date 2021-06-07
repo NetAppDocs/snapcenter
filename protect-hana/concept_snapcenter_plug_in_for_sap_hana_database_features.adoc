@@ -40,4 +40,5 @@ A FlexClone license is required on the storage system where you want to create t
 In a single operation, Snapshot copies are consolidated when resources in a single host share the same volume.
 
 * Capability to create Snapshot copies using external commands.
-* Support for file-based backup
+* Support for file-based backup.
+* Support for Linux LVM on XFS file system.

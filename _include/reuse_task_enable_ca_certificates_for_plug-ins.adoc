@@ -1,0 +1,19 @@
+You should configure the CA certificates and deploy the CA certificates in the SnapCenter Server and the corresponding plug-in hosts.  You should enable the CA certificate validation for the plug-ins.
+
+*Before you begin*
+
+* You can enable or disable the CA certificates using the run Set-SmCertificateSettings cmdlet.
+
+* You can display the certificate status for the plug-ins using the Get-SmCertificateSettings.
+
+The information regarding the parameters that can be used with the cmdlet and their
+descriptions can be obtained by running Get-Help command_name. Alternatively, you can
+also refer to the Cmdlet Reference Guide.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Managed Hosts*.
+. Select single or multiple plug-in hosts.
+.	Click *More options*.
+. Select *Enable Certificate Validation*.

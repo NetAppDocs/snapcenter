@@ -29,7 +29,3 @@ You must set the Java path in the environmental path variable of the host machin
 * Install the HDBSQL client on the host where you will install the Plug-in for SAP HANA Database.
 +
 Configure the user store keys for the SAP HANA nodes that you will manage through this host.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]

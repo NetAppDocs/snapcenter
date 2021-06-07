@@ -17,6 +17,7 @@ You must use the SnapCenter *Add Host* page to add hosts and install the plug-in
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, you should disable UAC on the host.
 * You should ensure that the message queueing service is in running state.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
++
 link:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL]
 
 *About this task*
@@ -122,8 +123,6 @@ If you have not selected the *Skip prechecks* check box, the host is validated t
 +
 If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
-NOTE: In an NLB setup, if you are updating web.config file, you must update the file on both nodes.
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . Monitor the installation progress.
-
-The configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.

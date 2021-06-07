@@ -31,7 +31,3 @@ a|
 |===
 
 The operation is canceled, and the resource is reverted to the previous state.
-
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
