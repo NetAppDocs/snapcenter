@@ -119,6 +119,7 @@ SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standal
 The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 
 SnapCenter enables high availability and horizontal scaling across multiple SnapCenter Servers within a single user interface. You can accomplish high availability by using external load balancer (F5). For larger environments with thousands of hosts, adding multiple SnapCenter Servers can help balance the load.
+
 // Updated as per Manohar's comments
 * If you are using the SnapCenter Plug-ins Package for Windows, the host agent runs on the SnapCenter Server and Windows plug-in host. The host agent executes the schedules natively on the remote Windows host, or for Microsoft SQL Servers, the schedule is executed on the local SQL instance.
 +
@@ -256,7 +257,7 @@ NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp commu
 
 NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
 
-For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
+For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^]
 
 
 == SnapCenter repository

@@ -35,7 +35,6 @@ For managing VM-consistent data protection of VMs, VMDKs, and datastores, the fo
 For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html[Types of RBAC for SnapCenter Plug-in for VMware vSphere users^]
 
 |===
-a|
 *Best Practice:* NetApp recommends that you create one ONTAP role for SnapCenter Plug-in for VMware vSphere operations and assign it all the required privileges.
 |===
 
@@ -58,7 +57,7 @@ SnapCenter provides the following permissions:
 +
 Plug-in privileges are required from the administrator for non-administrators to perform resource discovery operation.
 
-* Plug-in Install\Uninstall
+* Plug-in Install or Uninstall
 +
 NOTE: When you enable Plug-in Installation permissions, you must also modify the Host permission to enable reads and updates.
 

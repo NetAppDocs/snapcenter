@@ -55,4 +55,4 @@ For information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpi
 
 You should create vsadmin account with required permissions to access the storage system.
 
-For information to create the account and assign permissions, see link:task_create_an_ontap_cluster_role_with_minimum_privileges.html[Create an ONTAP cluster role with minimum privileges^]
+For information to create the account and assign permissions, see link:../install/task_create_an_ontap_cluster_role_with_minimum_privileges.html[Create an ONTAP cluster role with minimum privileges^]

@@ -19,7 +19,7 @@ The following type of scripts are supported:
 * PowerShell scripts
 * Perl scripts
 
-== Script path location
+== Script path
 
 All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host. Therefore, the scripts must be located on the plug-in host or on a SMB share accessible by the plug-in host.
 
