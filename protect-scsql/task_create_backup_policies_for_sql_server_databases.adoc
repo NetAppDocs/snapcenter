@@ -49,7 +49,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 | If you want to...| Do this...
 
 a|
-Back up the database files and transaction logs and also truncate the transaction logs
+Back up the database files and transaction logs and to truncate the transaction logs
 a|
 
   ... Select *Full backup and Log backup*.
