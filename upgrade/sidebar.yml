@@ -1,0 +1,10 @@
+section: upgrade
+- title: Upgrade SnapCenter Server and plug-ins
+  url: "/upgrade/index.html"
+  entries:
+    - title: ConfigureSnapCenter to check for available updates
+      url: "/upgrade/task_configure_snapcenter_to_check_for_available_updates.html"
+    - title: Upgrade the SnapCenter Server
+      url: "/upgrade/task_upgrade_snapcenter.html"
+    - title: Upgrade your plug-in packages
+      url: "/upgrade/task_upgrade_your_plug_in_packages.html"
