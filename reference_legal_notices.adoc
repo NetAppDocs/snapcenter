@@ -44,4 +44,4 @@ https://www.netapp.com/company/legal/machine-translation/[https://www.netapp.com
 
 Provides information about third-party copyright and licenses used in this product. Your product does not necessarily use all the software components referred to below.
 
-https://docs.netapp.com/us-en/snapcenter/media/notice_snapcenter_4.5.pdf[Notice for SnapCenter 4.5^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877145[Notice for SnapCenter 4.5^]

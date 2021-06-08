@@ -1,7 +1,22 @@
 ---
 entries:
-- title: Home
+- title: SnapCenter Software documentation
   url: "/index.html"
+  tiles:
+    - title: Get started
+      #image: ./media/outline_directions_run_black_18dp.png
+      links:
+        - title: Learn about Astra
+          summary: Get an overview of Astra before you get started.
+          url: /get-started/intro.html
+        - title: Quick start
+          summary: Get started quickly with Astra.
+          url: /get-started/quick-start.html
+        - title: FAQ
+          summary: Read frequently asked questions.
+          url: /get-started/faq.html
+- title: Release notes
+  url: "/reference_release_notes.html"
 - title: Concepts
   url: "/concept/index.html"
   entries:
