@@ -29,3 +29,9 @@ You must set the Java path in the environmental path variable of the host machin
 * Install the HDBSQL client on the host where you will install the Plug-in for SAP HANA Database.
 +
 Configure the user store keys for the SAP HANA nodes that you will manage through this host.
+
+* For SAP HANA database 2.0SPS05, if you are using a SAP HANA database user account, ensure that you have the following permissions to perform backup, restore, and clone operations in SnapCenter Server:
+** Backup admin
+** Catalog read
+** Database backup admin
+** Database recovery operator
