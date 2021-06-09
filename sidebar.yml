@@ -1,7 +1,9 @@
 ---
 entries:
-- title: Home
+- title: SnapCenter Software documentation
   url: "/index.html"
+- title: Release notes
+  url: "/reference_release_notes.html"
 - title: Concepts
   url: "/concept/index.html"
   entries:
