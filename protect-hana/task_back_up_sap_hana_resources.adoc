@@ -19,20 +19,20 @@ You can also use PowerShell cmdlets manually or in scripts to perform backup, re
 
 *For more information*
 
-link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.adoc[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
+link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
 
-link:task_discover_the_databases_automatically.adoc[Discover the databases automatically]
+link:task_discover_the_databases_automatically.html[Discover the databases automatically]
 
-link:task_add_resources_manually_to_the_plug_in_host.adoc[Add resources manually to the plug-in host]
+link:task_add_resources_manually_to_the_plug_in_host.html[Add resources manually to the plug-in host]
 
-link:task_create_backup_policies_for_sap_hana_databases.adoc[Create backup policies for SAP HANA databases]
+link:task_create_backup_policies_for_sap_hana_databases.html[Create backup policies for SAP HANA databases]
 
-link:task_create_resource_groups_and_attach_policies.adoc[Create resource groups and attach policies]
+link:task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies]
 
-link:task_back_up_sap_hana_databases.adoc[Back up SAP HANA databases]
+link:task_back_up_sap_hana_databases.html[Back up SAP HANA databases]
 
-link:task_monitor_hana_databases_backup_operations.adoc[Monitoring backup operations]
+link:task_monitor_hana_databases_backup_operations.html[Monitoring backup operations]
 
-link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]
+link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page]
 
-link:task_back_up_databases_using_powershell_cmdlets_sap_hana.adoc[Back up databases using PowerShell cmdlets]
+link:task_back_up_databases_using_powershell_cmdlets_sap_hana.html[Back up databases using PowerShell cmdlets]

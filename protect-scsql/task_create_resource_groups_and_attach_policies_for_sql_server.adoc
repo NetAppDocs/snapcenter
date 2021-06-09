@@ -108,4 +108,4 @@ NOTE: For email notification, you must have specified the SMTP server details ei
 
 *Related information*
 
-link:task_create_backup_policies_for_sql_server_databases.adoc[Create backup policies for SQL Server databases]
+link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]

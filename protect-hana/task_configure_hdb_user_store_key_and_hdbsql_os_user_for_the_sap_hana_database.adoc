@@ -35,4 +35,4 @@ You can modify the database configuration from the Topology page.
 
 *For more information*
 
-link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]
+link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page]

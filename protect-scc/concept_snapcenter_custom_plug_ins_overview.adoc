@@ -19,8 +19,6 @@ NetApp provides MySQL and DB2 custom plug-ins with SnapCenter Software 2.0 and l
 
 NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
 
-You can create your own custom plug-ins by referring to the Developer's Guide for Creating Custom Plug-ins.
+You can create your own custom plug-ins by referring to Develop a plug-in for your application section.
 
-The Data Protection Guide for your plug-in has information about data protection operations.
-
-The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.
+link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]

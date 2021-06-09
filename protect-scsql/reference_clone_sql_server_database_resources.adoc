@@ -19,16 +19,12 @@ image::../media/scsql_clone_workflow.png[Clone Workflow Diagram]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, recovery, verify, and clone operations. For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the cmdlet reference information.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
 *Related information*
 
-xref:task_clone_from_a_sql_server_database_backup.adoc[Clone from a SQL Server database backup]
+link:task_clone_from_a_sql_server_database_backup.html[Clone from a SQL Server database backup]
 
-xref:task_perform_clone_lifecycle_management.adoc[Perform Clone Lifecycle]
+link:task_perform_clone_lifecycle_management.html[Perform Clone Lifecycle]
 
-link:[Monitoring clone operations in SnapCenter]
-
-link:[Backing up, restoring, cloning, and removing backups using PowerShell cmdlets]
-
-link:Clone operation might fail or take longer time to complete with default TCP_TIMEOUT valuehttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Clone operation might fail or take longer time to complete with default TCP_TIMEOUT value]
+link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Clone operation might fail or take longer time to complete with default TCP_TIMEOUT value]

@@ -71,4 +71,4 @@ You must also specify the sender and receiver email addresses and the subject of
 
 *For more information*
 
-link:task_restore_sap_hana_database_using_powershell_cmdlets.adoc[Restore SAP HANA database using PowerShell cmdlets]
+link:task_restore_sap_hana_database_using_powershell_cmdlets.html[Restore SAP HANA database using PowerShell cmdlets]

@@ -19,10 +19,10 @@ You can also use PowerShell cmdlets manually or in scripts to perform backup, re
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
 
-*Related information*
+*For more information*
 
-xref:task_restore_a_sql_server_database_from_secondary_storage.adoc[Restore an SQL Server database from secondary storage]
+link:task_restore_a_sql_server_database_from_secondary_storage.html[Restore an SQL Server database from secondary storage]
 
-xref:task_restore_and_recover_resources_using_powershell_cmdlets.adoc[Restore and recover resources using PowerShell cmdlets]
+link:task_restore_and_recover_resources_using_powershell_cmdlets.html[Restore and recover resources using PowerShell cmdlets]
 
-link:Restore operation might fail on Windows 2008 R2https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Restore_operation_might_fail_on_Windows_2008_R2[Restore operation might fail on Windows 2008 R2]
+link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Restore_operation_might_fail_on_Windows_2008_R2[Restore operation might fail on Windows 2008 R2]

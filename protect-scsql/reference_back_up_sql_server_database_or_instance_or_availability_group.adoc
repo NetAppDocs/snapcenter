@@ -23,7 +23,7 @@ NOTE: The Backup Now, Restore, Manage Backups, and Clone options on the Resource
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, recovery, verify, and clone operations. For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the cmdlet reference information.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
 == How SnapCenter backs up databases
 
@@ -39,10 +39,8 @@ When SnapCenter creates a Snapshot copy, the entire storage system volume is cap
 
 If data from other SQL host servers resides on the same volume, this data cannot be restored from the Snapshot copy.
 
-*Related information*
+*For more information*
 
-link:[Logging in to SnapCenter]
+link:task_back_up_resources_using_powershell_cmdlets.html[Back up resources using PowerShell cmdlets]
 
-xref:task_back_up_resources_using_powershell_cmdlets.adoc[Back up resources using PowerShell cmdlets]
-
-link:Quiesce or grouping resources operations failhttps://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]
+link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]

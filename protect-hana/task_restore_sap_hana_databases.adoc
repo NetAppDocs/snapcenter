@@ -19,6 +19,6 @@ You can also use PowerShell cmdlets manually or in scripts to perform backup, re
 
 *For more information*
 
-link:task_restore_sap_hana_database_using_powershell_cmdlets.adoc[Restore SAP HANA database using PowerShell cmdlets]
+link:task_restore_sap_hana_database_using_powershell_cmdlets.html[Restore SAP HANA database using PowerShell cmdlets]
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
