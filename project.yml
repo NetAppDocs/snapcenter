@@ -19,10 +19,10 @@ sidebar:
     - title: Legal notices
       url: /reference_legal_notices.html
 
-
 homepage:
   tiles:
     - title: Get started
+      #image: ./media/outline_directions_run_black_18dp.png
       links:
         - title: Learn about SnapCenter
           summary: Get an overview of SnapCenter before you get started.
