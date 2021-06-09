@@ -11,4 +11,4 @@ summary: 'You can remove hosts and uninstall individual plug-ins or plug-in pack
 [.lead]
 You can remove hosts and uninstall individual plug-ins or plug-in packages using the SnapCenter GUI. You can also uninstall individual plug-ins or plug-in packages on remote hosts using the command-line interface (CLI) on your SnapCenter Server host or using the Windows *Uninstall a program* option locally on any host.
 
-For information about uninstalling the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere[SnapCenter Plug-in for VMware vSphere Deployment Guide^].
+For information about uninstalling the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere[Remove SnapCenter Plug-in for VMware vSphere^].

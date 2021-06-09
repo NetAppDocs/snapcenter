@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: REST APIs, swagger
 summary: 'Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.'
 ---
-= SnapCenter Automation
+= Automation using REST APIs
 :icons: font
 :imagesdir: ../media/
 
