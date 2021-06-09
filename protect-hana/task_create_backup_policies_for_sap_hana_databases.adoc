@@ -16,9 +16,6 @@ Before you use SnapCenter to back up SAP HANA database resources, you must creat
 * You must have defined your backup strategy.
 +
 For details, see the information about defining a data protection strategy for SAP HANA databases.
-+
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
-
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, setting up storage system connections, and adding resources.
 * The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshot copies to a mirror or vault.
 
@@ -108,6 +105,6 @@ Enter the maximum number of replication attempts that can be allowed before the 
 
 . Review the summary, and then click *Finish*.
 
-*Related information*
+*For more information*
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]

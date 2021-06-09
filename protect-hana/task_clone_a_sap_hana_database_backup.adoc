@@ -42,11 +42,11 @@ Plug-in host
 a|
 Select the host on which the clone should be mounted and the plug-in is installed.
 a|
-NFS Export IP Address
+Target Clone SID
 a|
 Enter IP addresses or the host names on which the cloned volumes will be exported.
 a|
-Target Clone SID
+NFS Export IP Address
 a|
 Enter the SAP HANA instance ID to clone from the existing backups.
 a|
@@ -79,7 +79,7 @@ You must also specify the sender and receiver email addresses, and the subject o
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
-*Related information*
+*For more information*
 
 link:task_clone_sap_hana_database_backups_using_powershell_cmdlets.adoc[Clone SAP HANA database backups using PowerShell cmdlets]
 

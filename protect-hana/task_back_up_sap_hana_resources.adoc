@@ -17,7 +17,7 @@ image::../media/sap_hana_backup_workflow.png[SAP_HANA Backup workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain more information about PowerShell cmdlets.
 
-*Related information*
+*For more information*
 
 link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.adoc[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
 

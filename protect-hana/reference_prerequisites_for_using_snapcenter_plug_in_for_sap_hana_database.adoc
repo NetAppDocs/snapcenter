@@ -15,9 +15,7 @@ Before you use SnapCenter Plug-in for SAP HANA Database, the SnapCenter administ
 * Log in to SnapCenter Server.
 * If you are using SnapCenter Server to protect SAP HANA databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
 +
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
-+
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for VMware vSphere documentation]
 
 * Configure the SnapCenter environment by adding storage system connections and creating credentials, if applicable.
 * Add hosts, and then install and upload the plug-ins.

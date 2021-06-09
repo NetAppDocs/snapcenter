@@ -116,7 +116,7 @@ link:task_create_backup_policies_for_sap_hana_databases.adoc[Create backup polic
 
 link:task_create_resource_groups_and_attach_policies.adoc[Create resource groups and attach policies]
 
-link:[Monitoring backup operations]
+link:task_monitor_hana_databases_backup_operations.html[Monitoring backup operations]
 
 link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]
 

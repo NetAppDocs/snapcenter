@@ -14,7 +14,3 @@ The SnapCenter Plug-in for SAP HANA Database is a host-side component of the Net
 SnapCenter supports single container and multitenant database containers (MDC). You can use the Plug-in for SAP HANA Database in both Windows and Linux environments. The plug-in that is not installed on the HANA database host is known as the centralized host plug-in. The centralized host plug-in can manage multiple HANA databases across different hosts.
 
 When the Plug-in for SAP HANA Database is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume. You can also use the plug-in with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance.
-
-The Data Protection Guide for your plug-in has information about data protection operations.
-
-The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.

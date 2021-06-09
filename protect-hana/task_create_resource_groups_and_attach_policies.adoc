@@ -95,7 +95,6 @@ The policies are listed in the Configure schedules for selected policies section
 Where, policy_name is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
-
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
 . On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
@@ -104,6 +103,6 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 . Review the summary, and then click *Finish*.
 
-*Related information*
+*For more information*
 
 link:task_create_backup_policies_for_sap_hana_databases.adoc[Create backup policies for SAP HANA databases]

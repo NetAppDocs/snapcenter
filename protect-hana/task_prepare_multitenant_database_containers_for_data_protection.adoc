@@ -37,7 +37,7 @@ If the resource is part of a resource group, place the resource group in "`maint
 +
 For example, if the primary Snapshot copies retention period is 7 days and secondary Snapshot copies retention is 45 days, after 45 days are complete and after all the backups are deleted, you must delete the resource group and the old MDC resource.
 
-*Related information*
+*For more information*
 
 link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.adoc[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
 

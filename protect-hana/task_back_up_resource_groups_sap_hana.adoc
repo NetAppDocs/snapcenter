@@ -36,13 +36,13 @@ If the policy selected for the on-demand backup is associated with a backup sche
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
-*Related information*
+*For more information*
 
 link:task_create_resource_groups_and_attach_policies.adoc[Create resource groups and attach policies]
 
 link:task_create_backup_policies_for_sap_hana_databases.adoc[Create backup policies for SAP HANA databases]
 
-link:[Monitoring backup operations]
+link:task_monitor_hana_databases_backup_operations.adoc[Monitoring backup operations]
 
 link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]
 
