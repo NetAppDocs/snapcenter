@@ -26,10 +26,9 @@ NOTE: If your credentials include special characters, you need to format them in
 
 *Step*
 
-. At the command line interface, retrieve the plug-in information:
-+
+At the command line interface, run the following to retrieve the plug-in information:
+
 `curl -X GET -u username:password -k "https://<ip_address>/api/hosts?fields=IncludePluginInfo"`
-+
-*Example*
-+
+
+Example:
 `curl -X GET -u admin:password -k "'https://10.225.87.97/api/hosts?fields=IncludePluginInfo"`

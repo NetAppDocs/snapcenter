@@ -15,58 +15,126 @@ The resources available through the SnapCenter REST API are organized in categor
 You can use this API call to log into the SnapCenter Server. This API returns a user authorization token that is used to authenticate subsequent requests.
 
 == Domains
-You can use these API calls to retrieve all the domains, retrieve details of a specific domain, register a domain, modify a domain, and unregister a domain.
+You can use these API calls to perform the following:
+
+* retrieve all the domains
+* retrieve details of a specific domain
+* register or unregister a domain
+* modify a domain
 
 == Jobs
-You can use these API calls to retrieve all the jobs, retrieve status of a job, cancel or stop a job.
+You can use these API calls to perform the following:
+
+* retrieve all the jobs
+* retrieve status of a job
+* cancel or stop a job
 
 == Settings
-You can use these API calls to view, register, modify or remove a credential, and configure notification settings.
+You can use these API calls to perform the following:
+
+* register, view, modify, or remove a credential
+* configure notification settings
 
 == Hosts
-You can use these API calls to retrieve host details, retrieve plug-in and their resource details, add, remove, or modify a plug-in host, install plug-ins, and upgrade.
+You can use these API calls to perform the following:
+
+* retrieve host details
+* retrieve the plug-in installed and their resource details
+* add, remove, or modify a plug-in host
+* install or upgrade plug-ins
 
 == Resources
-You can use these API calls to retrieve, create, modify, or remove resources, protect a resource, back up a resource, restore and clone a resource.
+You can use these API calls to perform the following:
+
+* retrieve resources
+* create, modify, or remove resources
+* protect a resource
+* back up, restore, or clone a resource
 
 == Backups
-You can use these API calls to retrieve backup details, rename, and delete backups.
+You can use these API calls to perform the following:
+
+* retrieve backup details
+* rename or delete backups
 
 == Clones
-You can use these API calls to retrieve clone details and delete clones.
+You can use these API calls to perform the following:
+
+* retrieve clone details
+* delete clones
 
 == Clonesplit
-You can use these API calls to retrieve the status, start, and stop a clone split operation.
+You can use these API calls to perform the following:
+
+* retrieve the status of a clone split operation
+* start or stop a clone split operation
 
 == Resource Groups
-You can use these API calls to retrieve details of a resource group, create, modify, delete a resource group, and back up a resource group.
+You can use these API calls to perform the following:
+
+* retrieve details of a resource group
+* create, modify, or delete a resource group
+* back up a resource group
 
 == Policies
-You can use these API calls to retrieve policy details, create, modify, and delete policies.
+You can use these API calls to perform the following:
+
+* retrieve policy details
+* create, modify, or delete policies
 
 == Storage
-You can use these API calls to retrieve storage details, create, modify, and delete a storage, discover resources on a storage, create and delete a share on the storage system.
+You can use these API calls to perform the following:
+
+* retrieve storage details
+* create, modify, or delete a storage
+* discover resources on a storage
+* create or delete a share on the storage
 
 == share
-You can use these API calls to retrieve the details of a share, create and delete a share on the storage system.
+You can use these API calls to perform the following:
+
+* retrieve the details of a share
+* create or delete a share on the storage
 
 == Plugins
 You can use these API calls to retrieve all the plug-ins on a host and perform different operations.
 
 == Reports
-You can use these API calls to generate the backup, restore, clone, and plug-in reports. You can also use these API calls to add, run, delete, or modify schedules.
+You can use these API calls to perform the following:
+
+* generate backup, restore, clone, and plug-in reports
+* add, run, delete, or modify schedules
 
 == Alerts
-You can use these API calls to retrieve all the alerts and delete alerts.
+You can use these API calls to perform the following:
+
+* retrieve all the alerts
+* delete alerts
 
 == Rbac
-You can use these API calls to retrieve details of users, groups, and roles, add users, create, modify, or delete roles, assign or unassign roles and groups.
+You can use these API calls to perform the following:
+
+* retrieve details of users, groups, and roles
+* add users
+* create, modify, or delete roles
+* assign or unassign roles and groups
 
 == Configuration
-You can use these API calls to view the configuration settings and modify them.
+You can use these API calls to perform the following:
+
+* view the configuration settings
+* modify the configuration settings
 
 == CertificateSettings
-You can use these API calls to view the certificate status and modify the certificate settings.
+You can use these API calls to perform the following:
+
+* view the certificate status
+* modify the certificate settings
 
 == Repository
-You can use these API calls to protect, backup, restore, unprotect, failover, and rebuild the NSM repository.
+You can use these API calls to perform the following:
+
+* backup and restore the NSM repository
+* protect and unprotect the NSM repository
+* failover
+* rebuild the NSM repository

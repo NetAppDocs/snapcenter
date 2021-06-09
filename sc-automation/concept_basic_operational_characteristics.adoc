@@ -27,7 +27,7 @@ Each of the resources available through the SnapCenter REST API is accessed base
 * Update
 * Delete
 
-For some of the resources, only a subset of the operations is supported. You should review the SnapCenter API documentation page on your SnapCenter Server system for more information about each resource.
+For some of the resources, only a subset of the operations is supported.
 
 == Object identifiers
 
@@ -45,26 +45,26 @@ Depending on the resource path and HTTP method, an API call can apply to a speci
 
 SnapCenter performs an HTTP request received from a client either synchronously or asynchronously.
 
-* Synchronous processing
-+
+=== Synchronous processing
+
 SnapCenter performs the request immediately and responds with an HTTP status code of 200 or 201 if it is successful.
-+
+
 Every request using the method GET is always performed synchronously. In addition, requests that use POST are designed to run synchronously if they are expected to complete in less than two seconds.
 
-* Asynchronous processing
-+
+=== Asynchronous processing
+
 If an asynchronous request is valid, SnapCenter creates a background task to process the request and a job object to anchor the task. The HTTP status code 202 is returned to the caller along with the job object. You should retrieve the state of the job to determine success or failure.
-+
+
 Requests that use the methods POST and DELETE are designed to run asynchronously if they are expected to take more than two seconds to complete.
 
 == Security
 
 The security provided with the REST API is based primarily on the existing security features available with SnapCenter. The following security is used by the API:
 
-* Transport Layer Security
-+
+=== Transport Layer Security
+
 All traffic sent over the network between the SnapCenter Server and client is typically encrypted using TLS, based on the SnapCenter configuration settings.
 
-* HTTP authentication
-+
+=== HTTP authentication
+
 At an HTTP level, basic authentication is used for the API transactions. An HTTP header with the user name and password in a base64 string is added to each request.

@@ -16,12 +16,12 @@ Representational State Transfer (REST) is a style for creating distributed web a
 
 Resources are the basic components of a web-based system. When creating a REST web services application, early design tasks include:
 
-* Identification of system or server-based resources
-+
+=== Identification of system or server-based resources
+
 Every system uses and maintains resources. A resource can be a file, business transaction, process, or administrative entity. One of the first tasks in designing an application based on REST web services is to identify the resources.
 
-* Definition of resource states and associated state operations
-+
+=== Definition of resource states and associated state operations
+
 Resources are always in one of a finite number of states. The states, as well as the associated operations used to affect the state changes, should be clearly defined.
 
 == URI endpoints

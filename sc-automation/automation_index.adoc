@@ -15,10 +15,9 @@ You can access the Swagger web page available at _\https://<SnapCenter_IP_addres
 
 The plug-ins that support REST APIs are:
 
-* Plug-in for SQL Server
+* Plug-in for Microsoft SQL Server
 * Plug-in for SAP HANA Database
 * Custom Plug-ins
 
 If you encounter unexpected behavior when executing SnapCenter REST APIs, you can use the log files to identify the cause and resolve the problem.
-
 You can download the log files from the SnapCenter user interface by clicking *Monitor* > *Logs* > *Download*.
