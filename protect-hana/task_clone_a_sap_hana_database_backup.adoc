@@ -16,6 +16,7 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 * You should have backed up the resources or resource group.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
 * You cannot clone file-based backups.
+* The target clone server should have the same SAP HANA instance SID that is provided in the Target Clone SID field.
 
 *Steps*
 
@@ -38,17 +39,17 @@ The resource or resource group topology page is displayed.
 | For this field...| Do this...
 
 a|
-Clone server
+Plug-in host
 a|
 Select the host on which the clone should be mounted and the plug-in is installed.
-a|
-NFS Export IP Address
-a|
-Enter IP addresses or the host names on which the cloned volumes will be exported.
 a|
 Target Clone SID
 a|
 Enter the SAP HANA instance ID to clone from the existing backups.
+a|
+NFS Export IP Address
+a|
+Enter IP addresses or the host names on which the cloned volumes will be exported.
 a|
 iSCSI Initiator
 a|
@@ -79,8 +80,8 @@ You must also specify the sender and receiver email addresses, and the subject o
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
-*Related information*
+*For more information*
 
-link:task_clone_sap_hana_database_backups_using_powershell_cmdlets.adoc[Clone SAP HANA database backups using PowerShell cmdlets]
+link:task_clone_sap_hana_database_backups_using_powershell_cmdlets.html[Clone SAP HANA database backups using PowerShell cmdlets]
 
-link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]
+link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page]

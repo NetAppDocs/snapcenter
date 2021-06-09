@@ -15,9 +15,7 @@ Before you use SnapCenter Plug-in for SAP HANA Database, the SnapCenter administ
 * Log in to SnapCenter Server.
 * If you are using SnapCenter Server to protect SAP HANA databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
 +
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
-+
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for VMware vSphere documentation]
 
 * Configure the SnapCenter environment by adding storage system connections and creating credentials, if applicable.
 * Add hosts, and then install and upload the plug-ins.
@@ -29,3 +27,9 @@ You must set the Java path in the environmental path variable of the host machin
 * Install the HDBSQL client on the host where you will install the Plug-in for SAP HANA Database.
 +
 Configure the user store keys for the SAP HANA nodes that you will manage through this host.
+
+* For SAP HANA database 2.0SPS05, if you are using a SAP HANA database user account, ensure that you have the following permissions to perform backup, restore, and clone operations in SnapCenter Server:
+** Backup admin
+** Catalog read
+** Database backup admin
+** Database recovery operator

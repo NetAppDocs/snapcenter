@@ -33,6 +33,6 @@ NOTE: The Plug-in host name is displayed and HDB SQL OS User is automatically po
 
 You can modify the database configuration from the Topology page.
 
-*Related information*
+*For more information*
 
-link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.adoc[View SAP HANA database backups and clones in the Topology page]
+link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page]

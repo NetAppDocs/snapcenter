@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_requirements_for_restoring_a_database.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Before you restore a SQL Server database from a SnapCenter Plug-in for Microsoft SQL Server backup, you must ensure that several requirements are met.'
 ---
 = Requirements for restoring a database
@@ -40,7 +40,3 @@ For information about how administrators assign resources to users, see the Snap
 You must increase the value of the RESTTimeout parameter of SnapCenter Server to 20000000 ms by running the following command: Set-SmConfigSettings -Agent -configSettings @{"RESTTimeout" = "2000000"}. According to the size of the database, the timeout value can be changed and the maximum value that you can set is 2147483648.
 
 If you want to restore while the databases are online, the online restore option should be enabled in the Restore page.
-
-*Related information*
-
-link:[Stopping and resuming operations on resource groups]

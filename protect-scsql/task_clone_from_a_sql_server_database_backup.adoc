@@ -107,7 +107,7 @@ NOTE: For email notification, you must have specified the SMTP server details us
 
 After the clone is created, you should never rename it.
 
-*Related information*
+*For more information*
 
 link:reference_back_up_sql_server_database_or_instance_or_availability_group.adoc[Back up SQL Server database, or instance, or availability group]
 

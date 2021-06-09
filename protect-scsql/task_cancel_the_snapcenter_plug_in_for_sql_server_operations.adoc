@@ -52,6 +52,6 @@ a|
 
 The operation is canceled, and the resource is reverted to the previous state. If the operation you canceled is non-responsive in the canceling or running state, you should run the Cancel-SmJob -JobID <int> -Force cmdlet to forcefully stop the backup operation.
 
-*Related information*
+*For more information*
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
