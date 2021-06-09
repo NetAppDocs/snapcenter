@@ -38,7 +38,7 @@ The resource or resource group topology page is displayed.
 | For this field...| Do this...
 
 a|
-Clone server
+Plug-in host
 a|
 Select the host on which the clone should be mounted and the plug-in is installed.
 a|
