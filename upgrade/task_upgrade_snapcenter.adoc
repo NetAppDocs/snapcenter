@@ -14,18 +14,22 @@ You can use the SnapCenter Server installer executable file to upgrade the SnapC
 *What you will need*
 
 * The SnapCenter Server host must be up to date with Windows updates, with no pending system restarts.
-* You should ensure that no other operations are in running state before initiating the upgrade operation.
-* You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are in running state.
+* You should ensure that no other operations are running before initiating the upgrade operation.
+* You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running.
++
+For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
 * You should back up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
 +
 Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
 
 *About this task*
 
-During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
+* During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
 
-However, before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
+* Before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 
+* Supported upgrade paths:
++
 |===
 | If you are using... | You can...
 
@@ -86,7 +90,7 @@ At any stage if you click the *Cancel* button, the upgrade workflow will be canc
 
 *After you finish*
 
-* If the plug-in is installed using a sudo user, you should copy the sha224 keys available at C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt to update the /etc/sudoers file.
+* If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt_ to update the _/etc/sudoers_ file.
 * You should perform a fresh discovery of resources on the hosts.
 +
 If the status of the host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.

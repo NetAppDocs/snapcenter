@@ -14,8 +14,8 @@ SnapCenter ships with pre-defined roles, each with a set of permissions already 
 SnapCenter includes the following pre-defined roles:
 
 * SnapCenter Admin role
-* Backup and Clone Viewer role
 * App Backup and Clone Admin role
+* Backup and Clone Viewer role
 * Infrastructure Admin role
 
 When you add a user to a role, you must assign either the StorageConnection permission to enable storage virtual machine (SVM) communication, or assign an SVM to the user to enable permission to use the SVM. The Storage Connection permission enables users to create SVM connections.
@@ -31,7 +31,8 @@ The SnapCenter Admin role has all permissions enabled. You cannot modify the per
 The App Backup and Clone Admin role has the permissions required to perform administrative actions for application backups and clone-related tasks. This role does not have permissions for host management, provisioning, storage connection management, or remote installation.
 
 |===
-| Permissions| Enabled| Create| Read| Update| Delete
+| Permissions | Enabled | Create | Read | Update | Delete
+
 a|
 Resource Group
 a|
@@ -243,7 +244,8 @@ Not applicable
 The Backup and Clone Viewer role has read-only view of all permissions. This role also has permissions enabled for discovery, reporting, and access to the Dashboard.
 
 |===
-| Permissions| Enabled| Create| Read| Update| Delete
+| Permissions | Enabled | Create | Read | Update | Delete
+
 a|
 Resource Group
 a|
@@ -455,7 +457,8 @@ Not applicable
 The Infrastructure Admin role has permissions enabled for host management, storage management, provisioning, resource groups, remote installation reports, and access to the Dashboard.
 
 |===
-| Permissions| Enabled| Create| Read| Update| Delete
+| Permissions | Enabled | Create | Read | Update | Delete
+
 a|
 Resource Group
 a|

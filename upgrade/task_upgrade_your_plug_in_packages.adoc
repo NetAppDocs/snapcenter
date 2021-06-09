@@ -13,8 +13,8 @@ The plug-in packages are distributed as part of the SnapCenter upgrade.
 
 *What you will need*
 
-* If you are a non-root user with access to the Linux machines, you should update the /etc/sudoers file with the latest checksum values before performing the upgrade operation.
-* By default SnapCenter detects JAVA_HOME from the environment. If you want to use a fixed JAVA_HOME and if you are upgrading the plug-ins on a Linux host, you should manually add the SKIP_JAVAHOME_UPDATE parameter in the spl.properties file located at /var/opt/snapcenter/spl/etc/ and set the value to TRUE.
+* If you are a non-root user with access to the Linux machines, you should update the _/etc/sudoers_ file with the latest checksum values before performing the upgrade operation.
+* By default SnapCenter detects JAVA_HOME from the environment. If you want to use a fixed JAVA_HOME and if you are upgrading the plug-ins on a Linux host, you should manually add the SKIP_JAVAHOME_UPDATE parameter in the _spl.properties_ file located at _/var/opt/snapcenter/spl/etc/_ and set the value to TRUE.
 +
 The value of JAVA_HOME gets updated when the plug-in is upgraded or when the SnapCenter plug-in loader (SPL) service restarts. Before upgrading or restarting the SPL, if you add the SKIP_JAVAHOME_UPDATE parameter and set the value to TRUE, the value of JAVA_HOME is not updated.
 
@@ -22,15 +22,19 @@ The value of JAVA_HOME gets updated when the plug-in is upgraded or when the Sna
 +
 Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
 
-* SQL host plug-in upgrade fails if the ISO path is unavailable for Windows roles and features.
+*About this task*
+
 * You can only upgrade one host at a time.
 +
 NOTE: If your hosts are in a Microsoft cluster, you can upgrade the SQL and Windows plug-ins on all the hosts in the cluster at one time.
+
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Upgrading_the_plug-ins_for_Microsoft_Windows_and_Microsoft_SQL_Server_might_fail_on_a_host_with_SQL_database_on_VMDK[Upgrade might fail on hosts with SQL databases on VMDK]
+For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Upgrading_the_plug-ins_for_Microsoft_Windows_and_Microsoft_SQL_Server_might_fail_on_a_host_with_SQL_database_on_VMDK[Upgrade might fail on hosts with SQL databases on VMDK]
 
-* The upgrade procedure places your Windows or Linux host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
-
+* The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
+* SQL host plug-in upgrade fails if the ISO path is unavailable for Windows roles and features.
+* Supported upgrade paths:
++
 |===
 | If using are using... | You can...
 
@@ -65,7 +69,7 @@ a|
 a| Directly upgrade to 4.5
 |===
 
-NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide^].
+NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
 
 *Steps*
 

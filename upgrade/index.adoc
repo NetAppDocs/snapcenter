@@ -11,7 +11,7 @@ summary: 'Describes how to upgrade SnapCenter Server and the plug-ins'
 [.lead]
 Describes how to upgrade SnapCenter Server and the plug-ins.
 
-Each release of SnapCenter contains an updated SnapCenter Server and plug-in package updates. Plug-in package updates are distributed with the SnapCenter installer. You can configure SnapCenter to check for available updates. Then, you must install them.
+Each release of SnapCenter contains an updated SnapCenter Server and plug-in package. Plug-in package updates are distributed with the SnapCenter installer. You can configure SnapCenter to check for available updates.
 
 image::../media/upgrade_workflow.gif[]
 
