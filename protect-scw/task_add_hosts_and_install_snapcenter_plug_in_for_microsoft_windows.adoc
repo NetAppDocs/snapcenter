@@ -37,9 +37,8 @@ If you install plug-ins on a cluster (WSFC, Oracle RAC, or Exchange DAG), they a
 +
 You cannot install the Plug-in for Windows on a Windows host connected to E-series storage.
 
-The administration documentation has more information on managing hosts..
+link:../admin/index.html[Manage SnapCenter Server and plug-ins] section has more information on managing hosts.
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
 
 . In the left navigation pane, click *Hosts*.
 . Ensure that *Managed Hosts* is selected at the top.
@@ -52,7 +51,7 @@ a|
 Host Type
 a|
 Select the *Windows* type of host.    SnapCenter Server adds the host and then installs the Plug-in for Windows if it is not already installed on the host.
-+
+
 If you also select the Microsoft SQL Server option on the Plug-ins page, SnapCenter Server also installs the Plug-in for SQL Server.
 a|
 Host name
@@ -69,11 +68,12 @@ a|
 Credentials
 a|
 Select the credential name that you created or create the new credentials.     The credential must have administrative rights on the remote host. For details, see information about creating a credential.
-+
+
 Details about credentials, including the user name, domain, and host type, are displayed by placing your cursor over the credential name you provided.
-+
-NOTE: credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
-+
+
+[NOTE]
+credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
+
 |===
 
 . In the Select Plug-ins to Install section, select the plug-ins to install.
@@ -87,9 +87,11 @@ For new deployments, no plug-in packages are listed.
 a|
 Port
 a|
-Either retain the default port number or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
-+
-NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+Either retain the default port number or specify the port number. The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+
+[NOTE]
+If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+
 a|
 Installation Path
 a|
@@ -108,9 +110,11 @@ a|
 Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
 Provide the gMSA name in the following format: domainName\accountName$.
-*Note:* gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 
-+
+[NOTE]
+gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
+
+
 |===
 
 . Click *Submit*.

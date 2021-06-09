@@ -75,7 +75,7 @@ By default, SnapCenter verifies the integrity of transaction logs in a backup be
 |===
 a|
         *Best Practice:* You should not select this option.
-+
+
 |===
 
 . On the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the restore operation, respectively.
@@ -99,4 +99,4 @@ When you restore an active database from a backup, the passive database might go
 
 *Related information*
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]

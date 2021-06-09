@@ -19,7 +19,7 @@ You must have logged in to SnapCenter as a domain user with local administrator 
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
 . Install the plug-in on multiple hosts using the `Install-SmHostPackage` cmdlet and the required parameters.
 +

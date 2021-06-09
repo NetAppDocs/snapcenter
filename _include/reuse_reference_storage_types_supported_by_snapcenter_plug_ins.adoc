@@ -90,4 +90,6 @@ a|
 Support for provisioning only. You cannot use SnapCenter to back up any data or shares using the SMB protocol.*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
 
 |===
-*Note:* Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+[NOTE]
+Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
