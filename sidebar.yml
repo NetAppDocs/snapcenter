@@ -1,7 +1,9 @@
 ---
 entries:
-- title: Home
+- title: SnapCenter Software documentation
   url: "/index.html"
+- title: Release notes
+  url: "/reference_release_notes.html"
 - title: Concepts
   url: "/concept/index.html"
   entries:
@@ -1045,8 +1047,6 @@ entries:
       url: "/protect-scc/reference_prerequisites_for_using_snapcenter_custom_plug_ins.html"
     - title: How resources, resource groups, and policies are used for protecting custom plug-in resources
       url: "/protect-scc/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_custom_plug_in_resources.html"
-  - title: Back up resources using PowerShell cmdlets
-    url: "/protect-scc/task_back_up_resources_using_powershell_cmdlets.html"
   - title: Back up custom plug-in resources
     url: "/protect-scc/task_back_up_custom_plug_in_resources.html"
     entries:
@@ -1054,6 +1054,8 @@ entries:
       url: "/protect-scc/task_add_resources_to_snapcenter_custom_plug_ins.html"
     - title: Create policies for custom plug-in resources
       url: "/protect-scc/task_create_policies_for_custom_plug_in_resources.html"
+    - title: Create resource groups and attach policies
+      url: "protect-scc/task_create_resource_groups_and_attach_policies.html"
     - title: Back up individual custom plug-in resources
       url: "/protect-scc/task_back_up_individual_custom_plug_in_resources.html"
     - title: Back up resource groups of custom plug-in resources

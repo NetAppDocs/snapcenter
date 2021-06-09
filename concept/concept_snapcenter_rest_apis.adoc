@@ -25,6 +25,6 @@ a|
 \https://<OVA_IP_address_or_host_name>:<scv_plugin_port>/api/swagger-ui.html#
 |===
 
-For information on SnapCenter REST APIs, see link:../sc-automation/automation_index.html[SnapCenter Automation^]
+For information on SnapCenter REST APIs, see link:../sc-automation/automation_index.html[Automation using REAT APIs^]
 
 For information on SnapCenter Plug-in for VMware vSphere REST APIs, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere REST APIs^]

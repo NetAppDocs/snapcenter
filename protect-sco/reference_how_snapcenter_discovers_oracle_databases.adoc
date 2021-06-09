@@ -19,9 +19,6 @@ a|
 
 You should have the database entries in the /etc/oratab file.
 
-//Included this for the BURT 1391253 for 4.5
-NOTE: If you have relocated a database from one node to another node, the oratab entry of the earlier node is not deleted. You should manually delete the oratab entry otherwise the same database will be displayed twice.
-
 a|
 *RAC database*: The RAC databases are discovered using the srvctl config command.
 a|
@@ -49,6 +46,9 @@ You should perform the following steps if the database is relocated:
 . Select the RAC One Node database from the resource page, and then click *Database Settings*.
 . Configure the database to set the preferred cluster nodes to the RAC node currently hosting the database.
 . Perform the SnapCenter operations.
+
+//Included this for the BURT 1391253 for 4.5
+NOTE: If you have relocated a database from one node to another node and if the oratab entry in the earlier node is not deleted, you should manually delete the oratab entry to avoid the same database being displayed twice.
 
 a|
 *RAC One Node*: The RAC One Node databases are discovered using the srvctl config command only.

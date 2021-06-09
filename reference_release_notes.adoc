@@ -1,0 +1,15 @@
+---
+permalink: reference_release_notes.html
+sidebar: sidebar
+keywords: release notes, snapcenter
+summary: 'Provides important information about this release of SnapCenter Server and the SnapCenter plug-in packages, including fixed issues, known issues, cautions, and limitations.'
+---
+= Release notes
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+Provides important information about this release of SnapCenter Server and the SnapCenter plug-in packages, including fixed issues, known issues, cautions, and limitations.
+
+For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877281[SnapCenter Software 4.5 Release Notes^].
