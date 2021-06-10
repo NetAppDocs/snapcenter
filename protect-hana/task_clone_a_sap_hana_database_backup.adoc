@@ -64,7 +64,10 @@ If the resource selected is a LUN and you are cloning from a secondary backup, t
 +
 NOTE: Before cloning, you must ensure that the iSCSI initiator or the FCP is present and are configured and logged into alternate hosts.
 
-. On the *Scripts* page, perform the following steps: .
+. On the *Scripts* page, perform the following steps:
+[NOTE]
+The scripts are run on the plug-in host.
+
  .. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
   *** Pre clone command: delete existing databases with the same name
   *** Post clone command: verify a database or start a database.
@@ -72,7 +75,10 @@ NOTE: Before cloning, you must ensure that the iSCSI initiator or the FCP is pre
 +
 Mount command for a volume or qtree on a Linux machine:
 +
-mount VSERVER_DATA_IP:$\{VOLUME_NAME_Clone} /mnt
+Example for NFS:
++
+  mount VSERVER_DATA_IP:$\{VOLUME_NAME_Clone} /mnt
+
 . On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email.

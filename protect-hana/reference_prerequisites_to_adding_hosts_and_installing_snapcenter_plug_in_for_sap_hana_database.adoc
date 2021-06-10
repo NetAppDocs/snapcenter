@@ -13,9 +13,6 @@ Before you add a host and install the plug-in packages, you must complete all th
 
 * You must have installed Java 1.8 64-bit on your host.
 * You must have installed SAP HANA database interactive terminal (HDBSQL client) on the host.
-+
-For Windows, the HDBSQL client must be running using the "`SYSTEM`" Windows user.
-
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for SAP HANA Database is installed as domain administrator.
 * For Windows, user store keys should be created as SYSTEM user.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the SAP HANA plug-in on Windows hosts.
@@ -28,8 +25,6 @@ For Windows, the HDBSQL client must be running using the "`SYSTEM`" Windows user
 * While installing Plug-in for SAP HANA Database on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 1.8 64-bit on your Windows host.
-+
-If you are using Windows 2016 for the SnapCenter Server host, you must install Java 1.8, 64-bit.
 +
 The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
 +
