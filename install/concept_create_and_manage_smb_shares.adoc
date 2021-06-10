@@ -1,8 +1,8 @@
 ---
 permalink: install/concept_create_and_manage_smb_shares.html
 sidebar: sidebar
-keywords: 
-summary: 'To configure an SMB3 share on a storage virtual machine \(SVM\), you can use either the SnapCenter user interface or PowerShell cmdlets.'
+keywords:
+summary: 'To configure an SMB3 share on a storage virtual machine (SVM), you can use either the SnapCenter user interface or PowerShell cmdlets.'
 ---
 = Create and manage SMB shares
 :icons: font

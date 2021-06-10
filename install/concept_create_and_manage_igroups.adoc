@@ -1,8 +1,8 @@
 ---
 permalink: install/concept_create_and_manage_igroups.html
 sidebar: sidebar
-keywords: 
-summary: 'You create initiator groups \(igroups\) to specify which hosts can access a given LUN on the storage system. You can use SnapCenter to create, rename, modify, or delete an igroup on a Windows host.'
+keywords:
+summary: 'You create initiator groups (igroups) to specify which hosts can access a given LUN on the storage system. You can use SnapCenter to create, rename, modify, or delete an igroup on a Windows host.'
 ---
 = Create and manage igroups
 :icons: font
