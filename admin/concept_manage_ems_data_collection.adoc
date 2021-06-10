@@ -15,23 +15,23 @@ NOTE: System CPU utilization is high when data-collection task is in progress. C
 
 == Stop EMS data collection
 
-EMS data collection is enabled by default and runs every seven days after your installation date. You can disable data collection at any time by using the PowerShell cmdlet Disable-SmDataCollectionEMS.
+EMS data collection is enabled by default and runs every seven days after your installation date. You can disable data collection at any time by using the PowerShell cmdlet `Disable-SmDataCollectionEMS`.
 
 *Steps*
 
-. From a PowerShell command line, establish a session with SnapCenter by entering Open-SmConnection.
-. Disable EMS data collection by entering Disable-SmDataCollectionEms.
+. From a PowerShell command line, establish a session with SnapCenter by entering `Open-SmConnection`.
+. Disable EMS data collection by entering `Disable-SmDataCollectionEms`.
 
 == Start EMS data collection
 
-EMS data collection is enabled by default and is scheduled to run every seven days from the installation date. If you have disabled it, you can start EMS data collection again by using the Enable-SmDataCollectionEMS cmdlet.
+EMS data collection is enabled by default and is scheduled to run every seven days from the installation date. If you have disabled it, you can start EMS data collection again by using the `Enable-SmDataCollectionEMS` cmdlet.
 
 The Data ONTAP event generate-autosupport-log permission has been granted to the storage virtual machine (SVM) user.
 
 *Steps*
 
-. From a PowerShell command line, establish a session with SnapCenter by entering Open-SmConnection.
-. Enable EMS data collection by entering Enable-SmDataCollectionEMS.
+. From a PowerShell command line, establish a session with SnapCenter by entering `Open-SmConnection`.
+. Enable EMS data collection by entering `Enable-SmDataCollectionEMS`.
 
 == Change EMS data collection schedule and target SVM
 
@@ -39,9 +39,9 @@ You can use PowerShell cmdlets to change the EMS data collection schedule or the
 
 *Steps*
 
-. From a PowerShell command line, to establish a session with SnapCenter, enter the Open-SmConnection cmdlet.
-. To change the EMS data collection target, enter the Set-SmDataCollectionEmsTarget cmdlet.
-. To change the EMS data collection schedule, enter the Set-SmDataCollectionEmsSchedule cmdlet.
+. From a PowerShell command line, to establish a session with SnapCenter, enter the `Open-SmConnection` cmdlet.
+. To change the EMS data collection target, enter the `Set-SmDataCollectionEmsTarget` cmdlet.
+. To change the EMS data collection schedule, enter the `Set-SmDataCollectionEmsSchedule` cmdlet.
 
 == Monitor EMS data collection status
 
@@ -49,13 +49,11 @@ You can monitor the status of your EMS data collection using several PowerShell 
 
 *Steps*
 
-. From a PowerShell command line, establish a session with SnapCenter by entering Open-SmConnection.
-. Retrieve information about the EMS data collection schedule by entering Get-SmDataCollectionEmsSchedule.
-. Retrieve information about the EMS data collection status by entering Get-SmDataCollectionEmsStatus.
-. Retrieve information about the EMS data collection target by entering Get-SmDataCollectionEmsTarget.
+. From a PowerShell command line, establish a session with SnapCenter by entering `Open-SmConnection`.
+. Retrieve information about the EMS data collection schedule by entering `Get-SmDataCollectionEmsSchedule`.
+. Retrieve information about the EMS data collection status by entering `Get-SmDataCollectionEmsStatus`.
+. Retrieve information about the EMS data collection target by entering `Get-SmDataCollectionEmsTarget`.
 
-*Related information*
+*Find more infromation*
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide^]
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].

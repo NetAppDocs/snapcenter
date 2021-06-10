@@ -15,9 +15,13 @@ SnapCenter allows you to modify roles, users, and groups.
 
 You can modify a SnapCenter role to remove users or groups and change the permissions associated with the role. It is especially useful to modify roles when you want to change or eliminate the permissions used by an entire role.
 
+*What you will need*
+
 You must have logged in as the "SnapCenterAdmin" role.
 
-You cannot modify or remove permissions for the SnapCenterAdmin role.
+NOTE: You cannot modify or remove permissions for the SnapCenterAdmin role.
+
+*Steps*
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Roles*.
@@ -35,7 +39,11 @@ NOTE: When this option is enabled, assigning users access to objects or resource
 
 You can modify SnapCenter users or groups to alter their roles and assets.
 
+*What you will need*
+
 You must be logged in as the SnapCenter administrator.
+
+*Steps*
 
 . In the left navigation pane, click *Settings*.
 . On the Settings page, click *Users and Access*.

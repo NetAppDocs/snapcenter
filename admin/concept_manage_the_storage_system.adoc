@@ -26,10 +26,10 @@ You can modify storage connections for an individual user or for a group. If you
 . On the Storage Systems page, from the *Type* drop-down perform one of the following actions:
 +
 |===
-| Select...| Steps...
+| Select... | Steps...
 
 a|
-*ONTAP SVMs*
+ONTAP SVMs
 a|
 To view all the storage virtual machines (SVMs) that were added, and to modify the required SVM configuration.
 
@@ -43,7 +43,7 @@ After modifying the SVM to be managed independently, if you decide to manage it 
 NOTE: When a storage system password is updated on SnapCenter GUI, you should restart the SMCore services of the respective plug-in or the server host because the updated password does not reflect in SMCore, and the backup jobs will fail with an incorrect credential error.
 
 a|
-*ONTAP Clusters*
+ONTAP Clusters
 a|
 To view all the clusters that were added and modify the required cluster configuration.
 

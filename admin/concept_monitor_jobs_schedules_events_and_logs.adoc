@@ -17,7 +17,7 @@ You can view information about SnapCenter backup, clone, restore, and verificati
 
 You can also monitor jobs related to SnapMirror and SnapVault operations.
 
-You can monitor only the jobs that you created and that are relevant to you unless you are assigned SnapCenter Admin or another super user role.
+NOTE: You can monitor only the jobs that you created and that are relevant to you unless you are assigned SnapCenter Admin or another super user role.
 
 You can perform the following tasks related to monitoring jobs:
 
@@ -31,7 +31,7 @@ You might want to view current schedules to determine when the operation starts,
 
 *Steps*
 
-. In the left navigation pane, click *Monitor*..
+. In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Schedules*.
 . Select the resource group and the schedule type.
 . View the list of scheduled operations.
@@ -48,7 +48,7 @@ All job information appears in the Events page. For example, when a backup job s
 
 . In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Events*.
-. Optional. In the Filter box, enter the start or end date, category of event (such as backup, resource group, or policy) and severity level, and click *Apply*. Alternatively, enter characters in the Search box.
+. (Optional) In the Filter box, enter the start or end date, category of event (such as backup, resource group, or policy) and severity level, and click *Apply*. Alternatively, enter characters in the Search box.
 . View the list of events.
 
 == Monitor logs
@@ -65,7 +65,7 @@ You can filter the logs to show only a specific log severity level:
 * Error
 * Fatal
 
-You can also obtain job level logs: for example, logs that help you troubleshoot the reason for a backup job failure. For job level logs, use the *Monitor* > *Jobs* option.
+You can also obtain job level logs, for example, logs that help you troubleshoot the reason for a backup job failure. For job level logs, use the *Monitor* > *Jobs* option.
 
 *Steps*
 
@@ -81,7 +81,7 @@ If you select log type is *plugin*, you can select a host or SnapCenter plug-in.
 
 . To filter the logs by a specific source, message, or log level, click the filter icon at the top of the column heading.
 +
-To show all logs, choose *Greater than or equal to* as the "`Debug`" level.
+To show all logs, choose *Greater than or equal to* as the `Debug` level.
 
 . Click *Refresh*.
 . View the list of logs.
@@ -89,9 +89,11 @@ To show all logs, choose *Greater than or equal to* as the "`Debug`" level.
 +
 The downloaded zipped folder contains the job logs and the common logs. The zipped folder name contains the job id and job type selected.
 
-In large configurations for optimum performance, you should set the log settings for SnapCenter to minimal level by using the PowerShell cmdlet. `Set-SmLogSettings -LogLevel All -MaxFileSize 10MB -MaxSizeRollBackups 10 -JobLogsMaxFileSize 10MB -Server`
+In large configurations for optimum performance, you should set the log settings for SnapCenter to minimal level by using the PowerShell cmdlet.
 
-NOTE: To access health or configuration information after a failover job finishes, run the cmdlet Get-SmRepositoryConfig.
+`Set-SmLogSettings -LogLevel All -MaxFileSize 10MB -MaxSizeRollBackups 10 -JobLogsMaxFileSize 10MB -Server`
+
+NOTE: To access health or configuration information after a failover job finishes, run the cmdlet `Get-SmRepositoryConfig`.
 
 == Remove jobs and logs from SnapCenter
 
@@ -107,24 +109,12 @@ You do not need to place the host in maintenance mode to remove jobs.
 *Steps*
 
 . Launch PowerShell.
-. From the command prompt, enter:
-+
-----
-Open-SMConnection
-----
-
-. From the command prompt, enter:
-+
-----
-Remove-SmJobs
-----
-
+. From the command prompt, enter: `Open-SMConnection`
+. From the command prompt, enter: `Remove-SmJobs`
 . In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Jobs*.
 . In the Jobs page, review the status of the job.
 
-*Related information*
+*Find more information*
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.5 Cmdlet Reference Guide^]
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
