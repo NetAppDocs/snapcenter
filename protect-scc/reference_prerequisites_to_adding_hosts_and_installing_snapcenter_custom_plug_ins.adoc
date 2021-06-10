@@ -46,5 +46,3 @@ Cmnd_Alias SCCMD = /opt/NetApp/snapcenter/scc/bin/scc <non_root_user> ALL=(ALL) 
 ----
 +
 non_root_user is the name of the non-root user that you created.
-
-* You should always have read/write permission for the "`/tmp`" folder on the plug-in host.
