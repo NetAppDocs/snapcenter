@@ -8,4 +8,4 @@ summary: 'You can use the PowerShell cmdlets to backup SQL Server databases or W
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_back_up_resources_using_powershell_cmdlets.adoc[]
+include::../_include/reuse_task_back_up_resources_using_powershell_cmdlets.adoc[]

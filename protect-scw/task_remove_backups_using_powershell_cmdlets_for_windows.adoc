@@ -8,4 +8,4 @@ summary: 'You can use the Remove-SmBackup cmdlet to delete backups if you no lon
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_remove_backups_using_powershell_cmdlets.adoc[]
+include::../_include/reuse_task_remove_backups_using_powershell_cmdlets.adoc[]

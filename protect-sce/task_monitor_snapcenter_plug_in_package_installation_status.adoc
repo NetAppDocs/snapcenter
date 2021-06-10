@@ -8,4 +8,4 @@ summary: 'You can monitor the progress of SnapCenter plug-in package installatio
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_monitor_snapcenter_plug_in_package_installation_status.adoc[]
+include::../_include/reuse_task_monitor_snapcenter_plug_in_package_installation_status.adoc[]

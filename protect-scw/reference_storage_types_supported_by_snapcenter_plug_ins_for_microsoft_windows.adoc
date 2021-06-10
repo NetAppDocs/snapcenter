@@ -8,4 +8,4 @@ summary: 'SnapCenter supports a wide range of storage types on both physical mac
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_reference_storage_types_supported_by_snapcenter_plug_ins.adoc[]
+include::../_include/reuse_reference_storage_types_supported_by_snapcenter_plug_ins.adoc[]

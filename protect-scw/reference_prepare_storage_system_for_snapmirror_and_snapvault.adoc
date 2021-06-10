@@ -8,4 +8,4 @@ summary: 'You can use a SnapCenter plug-in with ONTAP SnapMirror technology to c
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication.adoc[]
+include::../_include/reuse_reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication.adoc[]
