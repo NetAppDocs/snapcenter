@@ -1,7 +1,7 @@
 ---
-permalink: admin/task_how to_access_rest_apis_using_the_swagger_api_web_page.html
+permalink: sc-automation/task_how to_access_rest_apis_using_the_swagger_api_web_page.html
 sidebar: sidebar
-keywords:
+keywords: REST API, Swagger
 summary: 'REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server REST APIs, as well as to manually issue an API call. You can use REST APIs to help manage your SnapCenter Server or to perform data protection operations.'
 ---
 = How to access REST APIs using the Swagger API web page
@@ -15,12 +15,17 @@ You should know the management IP address or domain name of the SnapCenter Serve
 
 You do not need special permissions to run the REST API client. Any user can access the Swagger web page. The respective permissions on the objects that are accessed via the REST API are based on the user who generates the token to login to the REST API.
 
-. From a browser, enter the URL to access the Swagger web page in the format \https://<SnapCenter_IP_address_or_name>:8146/swagger/.
+*Steps*
+
+. From a browser, enter the URL to access the Swagger web page in the format _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/_.
 +
 NOTE: Ensure that the REST API URL does not have the following characters: +, ., %, and &.
 
-. In the *Swagger Explore* field, if the Swagger API documentation does not display automatically, type the URL to the location of the Swagger documentation: \https://<SnapCenter_IP_address_or_name>:8146/Content/swagger/SnapCenter.yaml or \https://<vCenter_host_IP_address>:8146/Content/swagger/SnapCenter.yaml, and click *Explore*.
+. In the *Swagger Explore* field, if the Swagger API documentation does not display automatically, type the URL to the location of the Swagger documentation: _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/Content/swagger/SnapCenter.yaml_, and click *Explore*.
 +
 A list of API resource types or categories are displayed.
 
 . Click an API resource type to display the APIs in that resource type.
+
+If you encounter unexpected behavior when executing SnapCenter REST APIs, you can use the log files to identify the cause and resolve the problem.
+You can download the log files from the SnapCenter user interface by clicking *Monitor* > *Logs* > *Download*.

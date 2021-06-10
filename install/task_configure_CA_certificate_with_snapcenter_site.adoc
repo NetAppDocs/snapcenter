@@ -29,4 +29,4 @@ https://kb.netapp.com/Advice_and_Troubleshooting%2FData_Protection_and_Security%
 
 NOTE: If the recently deployed CA certificate is not listed in the drop-down menu, check if the CA certificate is associated with the private key.
 
-NOTE: Ensure that the certificate is added using the following path: *Console Root > Certificates – Local Computer > Trusted Root Certification Authorities > Certificates*.
+IMPORTANT: Ensure that the certificate is added using the following path: *Console Root > Certificates – Local Computer > Trusted Root Certification Authorities > Certificates*.

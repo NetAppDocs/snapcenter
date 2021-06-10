@@ -1,7 +1,7 @@
 ---
 permalink: install/reference_connection_and_port_requirements.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should ensure that the connections and ports requirements are met before installing the SnapCenter Server and application or database plug-ins.'
 ---
 = Connection and port requirements
@@ -31,7 +31,7 @@ SnapCenter uses the following default ports:
 a|
 SnapCenter port
 a|
-8146 (HTTPS), bidirectional, customizable, as in the URL https://server:8146Used for communication between the SnapCenter client (the SnapCenter user) and the SnapCenter Server. Also used for communication from the plug-in hosts to the SnapCenter Server.
+8146 (HTTPS), bidirectional, customizable, as in the URL https://server:8146 Used for communication between the SnapCenter client (the SnapCenter user) and the SnapCenter Server. Also used for communication from the plug-in hosts to the SnapCenter Server.
 
 a|
 SnapCenter SMCore communication port

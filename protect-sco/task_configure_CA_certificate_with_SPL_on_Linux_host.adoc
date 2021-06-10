@@ -34,9 +34,7 @@ It is the value corresponding to the key 'SPL_KEYSTORE_PASS'.
 Update the same for the key SPL_KEYSTORE_PASS in spl.properties file.
 .  Restart the service after changing the password.
 
-[NOTE]
-
-Password for SPL keystore and for all the associated alias password of the private key should be same.
+NOTE: Password for SPL keystore and for all the associated alias password of the private key should be same.
 
 == Configure root or intermediate certificates to SPL trust-store
 

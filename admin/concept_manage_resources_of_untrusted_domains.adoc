@@ -33,7 +33,7 @@ To modify an untrusted domain, you can use either the SnapCenter user interface 
 . Click image:../media/edit_icon.gif[Edit icon], and then provide the following details:
 +
 |===
-| For this field...| Do this...
+| For this field... | Do this...
 
 a|
 Domain FQDN

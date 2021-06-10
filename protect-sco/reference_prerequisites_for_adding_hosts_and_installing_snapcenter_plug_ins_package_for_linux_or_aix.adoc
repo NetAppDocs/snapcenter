@@ -23,17 +23,18 @@ The SnapCenter Plug-ins Package for AIX automatically resolves the file level sy
 * Create credentials with authentication mode as Linux or AIX for the install user.
 * You must have installed Java 1.8.x, 64-bit, on your Linux or AIX host.
 +
-The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
+The http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] contains the latest information about requirements.
 +
-http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
-+
-https://www.ibm.com/support/pages/java-sdk-aix[IBM Java for AIX]
-+
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+For information to download JAVA, see:
+
+** http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems^]
+
+** https://www.ibm.com/support/pages/java-sdk-aix[IBM Java for AIX^]
+
+
 
 * For Oracle databases that are running on a Linux or AIX host, you should install both SnapCenter Plug-in for Oracle Database and SnapCenter Plug-in for UNIX.
 +
 NOTE: You can use the Plug-in for Oracle Database to manage Oracle databases for SAP as well. However, SAP BR*Tools integration is not supported.
 
 * If you are using Oracle database 11.2.0.3 or later, you must install the 13366202 Oracle patch.
-* You should always have read or write permission for the "`/tmp`" folder on the plug-in host.

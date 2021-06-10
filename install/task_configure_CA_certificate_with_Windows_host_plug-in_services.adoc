@@ -1,11 +1,12 @@
 ---
 permalink: install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html
 sidebar: sidebar
-keywords: SnapCenter
-summary: 'Configure the CA certificate with Windows host plug-in services'
+keywords: SnapCenter, ca certificate, activate, digital certificate
+summary: 'You should configure the CA certificate with Windows host plug-in services to activate the installed digital certificate.'
 ---
 = Configure CA certificate with Windows host plug-in services
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_configure_CA_certificate_with_Windows_host_plug-in_services.adoc[]
+[.lead]
+include::../_include/reuse_task_configure_CA_certificate_with_Windows_host_plug-in_services.adoc[]

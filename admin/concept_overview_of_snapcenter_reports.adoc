@@ -12,7 +12,7 @@ summary: 'SnapCenter provides a variety of reporting options that enable you to 
 SnapCenter provides a variety of reporting options that enable you to monitor and manage your system health and operation success.
 
 |===
-| Report type| Description
+| Report type | Description
 
 a|
 Backup Report

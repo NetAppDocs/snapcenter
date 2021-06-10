@@ -48,6 +48,8 @@ If you want to resume operations on the resource group that you had put on maint
 
 You can delete a resource group if you no longer need to protect the resources in the resource group. You must ensure that resource groups are deleted before you remove plug-ins from SnapCenter.
 
+*About this task*
+
 If you are managing SQL or Windows file system resources, you must have manually deleted all clones created for any of the resources in the resource group.
 
 You can optionally force the deletion of all backups, metadata, policies, and Snapshot copies associated with the resource group.

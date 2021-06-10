@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/concept_backup_retention_options_for_plugin_for_oracle.html
 sidebar: sidebar
-keywords:
+keywords: retention, backup retention, days, copies
 summary: 'You can choose either the number of days for which to retain backup copies or specify the number of backup copies you want to retain, up to a ONTAP maximum of 255 copies. For example, your organization might require that you retain 10 days of backup copies or 130 backup copies.'
 ---
 = Backup retention options for Plug-in for Oracle
@@ -9,5 +9,4 @@ summary: 'You can choose either the number of days for which to retain backup co
 :imagesdir: ../media/
 
 [.lead]
-
-include::_include/reuse_concept_backup_retention_options.adoc[]
+include::../_include/reuse_concept_backup_retention_options.adoc[]

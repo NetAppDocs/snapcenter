@@ -1,11 +1,12 @@
 ---
 permalink: install/task_import_CA_certificates.html
 sidebar: sidebar
-keywords: SnapCenter
-summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'
+keywords: SnapCenter, import, import ca certificate, mmc, microsoft management console
+summary: 'You must import the CA certificates to the SnapCenter Server and the Windows host plug-ins using the Microsoft management console (MMC).'
 ---
 = Import CA certificates
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_import_CA_certificates.adoc[]
+[.lead]
+include::../_include/reuse_task_import_CA_certificates.adoc[]

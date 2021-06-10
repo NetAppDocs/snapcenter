@@ -1,9 +1,12 @@
 ---
 permalink: install/reference_generate_CA_certificate_CSR_file.html
 sidebar: sidebar
-keywords: SnapCenter
-summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate.'
+keywords: SnapCenter, certificate signing request, ca,
+summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate that can be obtained from a Certificate Authority (CA) using the generated CSR. The certificate will have a private key associated with it.'
 ---
 = Generate CA Certificate CSR file
+:icons: font
+:imagesdir: ../media
 
-include::_include/reuse_reference_generate_CA_certificate_CSR_file.adoc[]
+[.lead]
+include::../_include/reuse_reference_generate_CA_certificate_CSR_file.adoc[]
