@@ -16,9 +16,9 @@ Resources are Oracle databases on the host that are managed by SnapCenter. You c
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
 * If the databases reside on a Virtual Machine Disk (VMDK) or raw device mapping (RDM), you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
 +
-For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
+For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html[Deploy SnapCenter Plug-in for VMware vSphere^].
 
-* If databases reside on a VMDK file system, you must have logged in to vCenter and navigated to *VM options* > *Advanced* > *Edit configuration* to set the value of disk.enableUUID to true for the VM.
+* If databases reside on a VMDK file system, you must have logged in to vCenter and navigated to *VM options* > *Advanced* > *Edit configuration* to set the value of _disk.enableUUID_ to true for the VM.
 * You must have reviewed the process that SnapCenter follows to discover different types and versions of Oracle databases.
 
 *About this task*
@@ -51,4 +51,4 @@ You cannot perform data protection operations on the database that is on a non-N
 * If the database is on a NetApp storage system and not protected, the user interface displays a Not protected message in the Overall Status column.
 * If the database is on a NetApp storage system and protected, the user interface displays an Available for backup message in the Overall Status column.
 
-NOTE: If you have enabled an Oracle database authentication, a red lock icon is shown in the resources view. You must configure database credentials to be able to protect the database or add it to the resource group to perform data protection operations.
+NOTE: If you have enabled an Oracle database authentication, a red padlock icon is shown in the resources view. You must configure database credentials to be able to protect the database or add it to the resource group to perform data protection operations.

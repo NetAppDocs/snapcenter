@@ -18,10 +18,11 @@ Resources are the databases, application instances, Availability Groups, and sim
  ** The user that was used to add the plug-in host to SnapCenter Server should have the required permissions (sysadmin) on the Microsoft SQL Server.
  ** If the above condition is not met, in the SnapCenter Server you should configure the user that has the required permissions (sysadmin) on the Microsoft SQL Server. The user should be configured at the Microsoft SQL Server instance level and the user can be a SQL or Windows user.
 * To discover the Microsoft SQL databases in a Windows cluster, you must unblock the Failover Cluster Instance (FCI) TCP/IP port.
-* If databases reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
-* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
+* If databases reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
 +
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html[Deploy SnapCenter Plug-in for VMware vSphere^]
+* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
+
 
 *About this task*
 
@@ -59,6 +60,6 @@ You cannot perform data protection operations on a database that is on a non Net
 * If the database is on a NetApp storage system and protected, the user interface displays Backup not run message in the Overall Status column.
 * If the database is on a NetApp storage system and protected and if the backup is triggered for the database, the user interface displays Backup succeeded message in the Overall Status column.
 
-NOTE: If you have enabled an SQL authentication while setting up the credentials, the discovered instance or database is shown with a red color lock icon. If the lock icon appears, you must specify the instance or database credentials for successfully adding the instance or database to a resource group.
+NOTE: If you have enabled an SQL authentication while setting up the credentials, the discovered instance or database is shown with a red color padlock icon. If the padlock icon appears, you must specify the instance or database credentials for successfully adding the instance or database to a resource group.
 
 After the SnapCenter administrator assigns the resources to a RBAC user, the RBAC user must log in and click *Refresh Resources* to see the latest Overall Status of the resources.
