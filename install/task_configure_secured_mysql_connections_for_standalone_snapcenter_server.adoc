@@ -11,7 +11,7 @@ summary: 'You can generate Secure Sockets Layer \(SSL\) certificates and key fil
 [.lead]
 You can generate Secure Sockets Layer (SSL) certificates and key files, if you want to secure the communication between SnapCenter Server and MySQL Server. You must configure the certificates and key files in the MySQL Server and SnapCenter Server.
 
-SnapCenter Server must be installed.
+*About this task*
 
 The following certificates are generated:
 
@@ -19,16 +19,17 @@ The following certificates are generated:
 * Server public certificate and private key file
 * Client public certificate and private key file
 
+*Steps*
+
 . Set up the SSL certificates and key files for MySQL servers and clients on Windows by using the openssl command.
 +
 https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-files-using-openssl.html[MySQL Version 5.7: Creating SSL Certificates and Keys Using openssl]
 +
 NOTE: The common name value that is used for the server certificate, client certificate, and key files must each differ from the common name value that is used for the CA certificate. If the common name values are the same, the certificate and key files fail for servers that are compiled by using OpenSSL.
 +
+
 |===
-a|
-    *Best Practice:* You should use the server fully qualified domain name (FQDN) as the common name for the server certificate.
-+
+*Best Practice:* You should use the server fully qualified domain name (FQDN) as the common name for the server certificate.
 |===
 
 . Copy the SSL certificates and key files to the MySQL Data folder.

@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_snapcenter_licenses.html
 sidebar: sidebar
-keywords:
+keywords: license
 summary: 'The SnapCenter Standard license enables the protection of applications, databases, files systems, and virtual machines. Before you add a storage system to SnapCenter, you must install one or more SnapCenter licenses.'
 ---
 = Add SnapCenter licenses
@@ -11,4 +11,4 @@ summary: 'The SnapCenter Standard license enables the protection of applications
 [.lead]
 The SnapCenter Standard license enables the protection of applications, databases, files systems, and virtual machines. Before you add a storage system to SnapCenter, you must install one or more SnapCenter licenses.
 
-For information on the licenses required, see link:..//install/concept_snapcenter_licenses.html[SnapCenter licenses].
+For information on the licenses required, see link:../install/concept_snapcenter_licenses.html[SnapCenter licenses^].

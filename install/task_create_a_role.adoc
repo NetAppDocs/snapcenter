@@ -1,7 +1,7 @@
 ---
 permalink: install/task_create_a_role.html
 sidebar: sidebar
-keywords:
+keywords: role, create, permission
 summary: 'In addition to using the existing SnapCenter roles, you can create your own roles and customize the permissions.'
 ---
 = Create a role

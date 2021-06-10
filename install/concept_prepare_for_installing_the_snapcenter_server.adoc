@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_prepare_for_installing_the_snapcenter_server.html
 sidebar: sidebar
-keywords: 
+keywords: prerequisites, requirements, install, snapcenter server
 summary: 'You should be aware of the requirements and prerequisites before installing the SnapCenter Server.'
 ---
 = Prepare for installing the SnapCenter Server

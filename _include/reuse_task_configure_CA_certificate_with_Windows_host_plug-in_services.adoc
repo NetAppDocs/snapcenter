@@ -6,7 +6,7 @@ Perform the following step on the SnapCenter Server and all the plug-in hosts wh
 
 . Remove the existing certificate binding with SMCore default port 8145, by running the following command:
 +
-``_> netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>_``
+`> netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>`
 +
 For example:
 +
@@ -14,11 +14,11 @@ For example:
 
 . Bind the newly installed certificate with the Windows host plug-in services, by running the following commands:
 +
-``> $cert = “_<certificate thumbprint>_”``
+`> $cert = “_<certificate thumbprint>_”`
 +
-``> $guid = [guid]::NewGuid().ToString("B")``
+`> $guid = [guid]::NewGuid().ToString("B")`
 +
-``> netsh http add sslcert ipport=0.0.0.0: _<SMCore Port>_ certhash=$cert appid="$guid"``
+`> netsh http add sslcert ipport=0.0.0.0: _<SMCore Port>_ certhash=$cert appid="$guid"`
 +
 For example:
 +

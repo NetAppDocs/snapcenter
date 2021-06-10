@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_snapcenter_licenses.html
 sidebar: sidebar
-keywords:
+keywords: licenses, FAS, AFF, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery
 summary: 'SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.'
 ---
 = SnapCenter licenses
@@ -42,7 +42,7 @@ SnapRestore
 a|
 Required to restore and verify backups.
 
-Primary storage systems
+On primary storage systems
 
 * Required on SnapVault destination systems to perform remote verification and to restore from a backup.
 * Required on SnapMirror destination systems to perform remote verification.
@@ -52,7 +52,7 @@ FlexClone
 a|
 Required to clone databases and verification operations.
 
-Primary and secondary storage systems
+On primary and secondary storage systems
 
 * Required on SnapVault destination systems to create clones from secondary vault backup.
 * Required on SnapMirror destination systems to create clones from secondary SnapMirror backup.
@@ -78,9 +78,11 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available.
 
-For information on how to add licenses, see link:..//install/task_add_snapcenter_licenses.html[Add SnapCenter licenses]
+For information on how to add licenses, see link:..//install/task_add_snapcenter_licenses.html[Add SnapCenter licenses^].
 
 == Single Mailbox Recovery (SMBR) licenses
-If you are using SnapCenter Plug-in for Exchange to manage Microsoft Exchange Server databases and Single Mailbox Recovery (SMBR), you would need additional license for SMBR which needs to be purchased separately based on user mailbox. Contact your NetApp sales representative to purchase SMBR licenses which are available as units of bundle of 1000, 5000, 15000 and 25000 mailboxes. After purchasing the SKU, you can obtain the license by following the instructions in https://library.netapp.com/ecm/ecm_download_file/ECMLP2863893[SMBR Release Notes^].
+If you are using SnapCenter Plug-in for Exchange to manage Microsoft Exchange Server databases and Single Mailbox Recovery (SMBR), you would need additional license for SMBR which needs to be purchased separately based on user mailbox.
+
+Contact your NetApp sales representative to purchase SMBR licenses which are available as units of bundle of 1000, 5000, 15000 and 25000 mailboxes. After purchasing the SKU, you can obtain the license by following the instructions in https://library.netapp.com/ecm/ecm_download_file/ECMLP2863893[SMBR Release Notes^].
 
 When you submit the request for license key, Kroll Ontrack will issue 50 mailbox license keys. Based on your entitlement, the Kroll Ontrack will upgrade the licenses for mailbox after verification.

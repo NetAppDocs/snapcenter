@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_create_and_manage_igroups.html
 sidebar: sidebar
-keywords:
+keywords: igroup
 summary: 'You create initiator groups (igroups) to specify which hosts can access a given LUN on the storage system. You can use SnapCenter to create, rename, modify, or delete an igroup on a Windows host.'
 ---
 = Create and manage igroups
@@ -10,3 +10,82 @@ summary: 'You create initiator groups (igroups) to specify which hosts can acces
 
 [.lead]
 You create initiator groups (igroups) to specify which hosts can access a given LUN on the storage system. You can use SnapCenter to create, rename, modify, or delete an igroup on a Windows host.
+
+== Create an igroup
+
+You can use SnapCenter to create an igroup on a Windows host. The igroup will be available in the Create Disk or Connect Disk wizard when you map the igroup to a LUN.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Igroup*.
+. In the Initiator Groups page, click *New*.
+. In the Create Igroup dialog box, define the igroup:
++
+|===
+| In this field... | Do this...
+
+a|
+Storage System
+a|
+Select the SVM for the LUN you will map to the igroup.
+a|
+Host
+a|
+Select the host on which you want to create the igroup.
+a|
+Igroup Name
+a|
+Enter the name of the igroup.
+a|
+Initiators
+a|
+Select the initiator.
+a|
+Type
+a|
+Select the initiator type, iSCSI, FCP, or mixed (FCP and iSCSI).
+|===
+
+. When you are satisfied with your entries, click *OK*.
++
+SnapCenter creates the igroup on the storage system.
+
+== Rename an igroup
+
+You can use SnapCenter to rename an existing igroup.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Igroup*.
+. In the Initiator Groups page, click in the *Storage Virtual Machine* field to display a list of available SVMs, and then select the SVM for the igroup you want to rename.
+. In the list of igroups for the SVM, select the igroup you want to rename and click *Rename*.
+. In the Rename igroup dialog box, enter the new name for the igroup and click *Rename*.
+
+== Modify an igroup
+
+You can use SnapCenter to add igroup initiators to an existing igroup. While creating an igroup you can add only one host. If you want to create an igroup for a cluster, you can modify the igroup to add other nodes to that igroup.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Igroup*.
+. In the Initiator Groups page, click in the *Storage Virtual Machine* field to display a drop-down list of available SVMs, then select the SVM for the igroup you want to modify.
+. In the list of igroups, select an igroup and click *Add Initiator to igroup*.
+. Select a host.
+. Select the initiators and click *OK*.
+
+== Delete an igroup
+
+You can use SnapCenter to delete an igroup when you no longer need it.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Igroup*.
+. In the Initiator Groups page, click in the *Storage Virtual Machine* field to display a drop-down list of available SVMs, then select the SVM for the igroup you want to delete.
+. In the list of igroups for the SVM, select the igroup you want to delete and click *Delete*.
+. In the Delete igroup dialog box, click *OK*.
++
+SnapCenter deletes the igroup.

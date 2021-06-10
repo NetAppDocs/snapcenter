@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_a_user_or_group_and_assign_role_and_assets.html
 sidebar: sidebar
-keywords: RBAC
+keywords: RBAC, add user, add group, assign role, assign assets
 summary: 'To configure role-based access control for SnapCenter users, you can add users or groups and assign role. The role determines the options that SnapCenter users can access.'
 ---
 = Add a user or group and assign role and assets
@@ -13,7 +13,7 @@ To configure role-based access control for SnapCenter users, you can add users o
 
 *What you will need*
 
-* You must have logged in as the "`SnapCenterAdmin`" role.
+* You must have logged in as the "SnapCenterAdmin" role.
 * You must have created the user or group accounts in Active Directory in the operating system or database. You cannot use SnapCenter to create these accounts.
 //Updated this note for BURT 1389838 for 4.5
 +
@@ -69,7 +69,7 @@ You should reassign the RBAC user or group to the cluster or DAG to include the 
 +
 You should add assets before assigning access to the users.
 
-IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions, to protect VMs, VMDKs, or datastores, you use the VMware vSphere GUI to add a vCenter user to a SnapCenter Plug-in for VMware vSphere role. The vCenter documentation contains information about adding a user to a role in vCenter
+IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions, to protect VMs, VMDKs, or datastores, you use the VMware vSphere GUI to add a vCenter user to a SnapCenter Plug-in for VMware vSphere role.
 
 *Steps*
 
@@ -83,7 +83,9 @@ IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions,
 a|
 Access Type
 a|
-Select either Domain or workgroup    For Domain authentication type, you should specify the domain name of the user or group to which you want to add the user to a role.
+Select either Domain or workgroup
+
+For Domain authentication type, you should specify the domain name of the user or group to which you want to add the user to a role.
 
 By default, it is pre-populated with the logged in domain name.
 
@@ -92,13 +94,16 @@ NOTE: You must register the untrusted domain in the *Settings* > *Global Setting
 a|
 Type
 a|
-Select either User or Group    *Note:* SnapCenter supports only security group and not the distribution group.
+Select either User or Group
+
+NOTE: SnapCenter supports only security group and not the distribution group.
+
 a|
 User Name
 a|
 
  .. Type the partial user name, and then click *Add*.
-
++
 NOTE: The user name is case-sensitive.
 
  .. Select the user name from the search list.

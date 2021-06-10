@@ -1,7 +1,7 @@
 ---
 permalink: install/task_disconnect_an_iscsi_session.html
 sidebar: sidebar
-keywords: 
+keywords: iSCSI session
 summary: 'Occasionally, you might require to disconnect an iSCSI session from a target with which you have multiple sessions.'
 ---
 = Disconnect an iSCSI session
@@ -10,6 +10,8 @@ summary: 'Occasionally, you might require to disconnect an iSCSI session from a 
 
 [.lead]
 Occasionally, you might require to disconnect an iSCSI session from a target with which you have multiple sessions.
+
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . In the Hosts page, click *iSCSI Session*.

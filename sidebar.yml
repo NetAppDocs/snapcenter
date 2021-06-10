@@ -53,26 +53,25 @@ entries:
   - title: Install the SnapCenter Server using the install wizard
     url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
     entries:
+    - title: Log in to SnapCenter
+      url: "/install/task_log_in_to_snapcenter.html"
+      entries:
+      - title: Modify the SnapCenter default GUI session timeout
+        url: "/install/task_modify_the_snapcenter_default_log_out_period.html"
+      - title: Secure the SnapCenter web server by disabling SSL 3.0
+        url: "/install/task_secure_the_snapcenter_web_server_by_disabling_ssl_3_0.html"
     - title: Generate CA Certificate CSR file
       url: "/install/reference_generate_CA_certificate_CSR_file.html"
-      entries:
-      - title: Import CA Certificates
-        url: "/install/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
-      - title: Get the CA certificate thumbprint
-        url: "/install/task_get_the_CA_certificate_thumbprint.html"
-      - title: Configure CA certificate with SnapCenter site
-        url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
-      - title: Enable CA Certificates for SnapCenter Server
-        url: "/install/task_enable_ca_certificates_for_snapcenter.html"
-  - title: Log in to SnapCenter
-    url: "/install/task_log_in_to_snapcenter.html"
-    entries:
-    - title: Modify the SnapCenter default GUI session timeout
-      url: "/install/task_modify_the_snapcenter_default_log_out_period.html"
-    - title: Secure the SnapCenter web server by disabling SSL 3.0
-      url: "/install/task_secure_the_snapcenter_web_server_by_disabling_ssl_3_0.html"
+    - title: Import CA Certificates
+      url: "/install/task_import_CA_certificates.html"
+    - title: Configure CA certificate with Windows host plug-in services
+      url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
+    - title: Get the CA certificate thumbprint
+      url: "/install/task_get_the_CA_certificate_thumbprint.html"
+    - title: Configure CA certificate with SnapCenter site
+      url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
+    - title: Enable CA Certificates for SnapCenter Server
+      url: "/install/task_enable_ca_certificates_for_snapcenter.html"
   - title: Register untrusted Active Directory domains
     url: "/install/task_register_untrusted_active_directory_domains.html"
   - title: Configure SnapCenter Servers for High Availability using F5
@@ -124,7 +123,7 @@ entries:
         url: "/install/concept_how_snapcenter_calculates_capacity_usage.html"
       - title: Calculate capacity requirements for a SnapCenter capacity-based license
         url: "/install/task_calculate_capacity_requirements_for_a_snapcenter_capacity_based_license.html"
-      - title: RetrieveSnapCenter capacity-based license serial number
+      - title: Retrieve SnapCenter capacity-based license serial number
         url: "/install/task_retrieve_snapcenter_capacity_based_license_serial_number.html"
       - title: Generate a NetApp license file
         url: "/install/task_generate_a_netapp_license_file.html"
@@ -142,37 +141,10 @@ entries:
         url: "/install/task_disconnect_an_iscsi_session.html"
       - title: Create and manage igroups
         url: "/install/concept_create_and_manage_igroups.html"
-        entries:
-        - title: Creating an igroup
-          url: "/install/task_creating_an_igroup.html"
-        - title: Renaming an igroup
-          url: "/install/task_renaming_an_igroup.html"
-        - title: Modifying an igroup
-          url: "/install/task_modifying_an_igroup.html"
-        - title: Deleting an igroup
-          url: "/install/task_deleting_an_igroup.html"
       - title: Create and manage disks
         url: "/install/task_create_and_manage_disks.html"
-        entries:
-        - title: Viewing the disks on a host
-          url: "/install/task_viewing_the_disks_on_a_host.html"
-        - title: Creating FC-connected or iSCSI-connected LUNs or disks
-          url: "/install/task_creating_fc_connected_or_iscsi_connected_luns_or_disks.html"
-        - title: Resizing a disk
-          url: "/install/task_resizing_a_disk.html"
-        - title: Connecting a disk
-          url: "/install/task_connecting_a_disk.html"
-        - title: Disconnecting a disk
-          url: "/install/task_disconnecting_a_disk.html"
-        - title: Deleting a disk
-          url: "/install/task_deleting_a_disk.html"
     - title: Create and manage SMB shares
       url: "/install/concept_create_and_manage_smb_shares.html"
-      entries:
-      - title: Create an SMB share
-        url: "/install/task_create_an_smb_share.html"
-      - title: Delete an SMB share
-        url: "/install/task_delete_an_smb_share.html"
     - title: Reclaim space on the storage system
       url: "/install/task_reclaim_space_on_the_storage_system.html"
     - title: Provision storage using PowerShell cmdlets
@@ -196,8 +168,6 @@ entries:
         url: "/install/concept_microsoft_cluster_support_limitations_using_fc_rdm_luns.html"
       - title: Create a shared FC RDM LUN
         url: "/install/task_create_a_shared_fc_rdm_lun.html"
-    - title: Issues while creating RDM LUN
-      url: "/install/reference_issues_while_creating_rdm_lun.html"
   - title: Configure secured MySQL connections with SnapCenter Server
     url: "/install/concept_configure_secured_mysql_connections_with_snapcenter_server.html"
     entries:

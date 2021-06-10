@@ -1,7 +1,7 @@
 ---
 permalink: install/reference_supported_storage_systems_and_applications.html
 sidebar: sidebar
-keywords: 
+keywords: storage system, ONTAP version
 summary: 'You should know the supported storage system, applications and databases.'
 ---
 = Supported storage systems and applications
@@ -9,15 +9,9 @@ summary: 'You should know the supported storage system, applications and databas
 :imagesdir: ../media/
 
 [.lead]
-You should know the supported storage system, applications and databases.
+You should know the supported storage system, applications, and databases.
 
 * SnapCenter supports ONTAP 8.3.0 and later to protect your data.
 * SnapCenter supports protection of different applications and databases.
 +
-For detailed information about the supported applications and databases, see the Interoperability Matrix Tool (IMT).
-+
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
-
-*Related information*
-
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30048[NetApp Documentation: Virtual Storage Console for VMware vSphere]
+For detailed information about the supported applications and databases, see http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].

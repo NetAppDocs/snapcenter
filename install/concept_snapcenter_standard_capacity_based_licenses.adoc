@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_snapcenter_standard_capacity_based_licenses.html
 sidebar: sidebar
-keywords: 
+keywords: capacity-based licenses
 summary: 'You use a SnapCenter Standard capacity license to protect data on ONTAP Select and Cloud Volumes ONTAP platforms.'
 ---
 = SnapCenter Standard capacity-based licenses

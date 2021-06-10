@@ -1,7 +1,7 @@
 ---
 permalink: install/task_view_the_licenses_installed_on_the_controller.html
 sidebar: sidebar
-keywords: 
+keywords: view licenses, controller
 summary: 'You can use the ONTAP command line to view all the licenses installed on your controller to determine whether you have the SnapManagerSuite license already installed.'
 ---
 = View the licenses installed on the controller
@@ -14,6 +14,8 @@ You can use the ONTAP command line to view all the licenses installed on your co
 You must be a cluster administrator on the FAS or AFF system.
 
 NOTE: The SnapCenter Standard controller-based license displays as SnapManagerSuite license on the controller.
+
+*Steps*
 
 . Log in to the NetApp controller using the ONTAP command line.
 . Enter the license show command, and then view the output to determine whether the SnapManagerSuite license is installed.
@@ -44,5 +46,5 @@ SnapManagerSuite  license  SnapManagerSuite License -
 ----
 +
 In the example, the SnapManagerSuite license is installed, therefore, no additional SnapCenter licensing action is required.
-
++
 If no SnapManagerSuite license is displayed, you must obtain your controller serial number, and then retrieve your license from the NetApp Support Site.

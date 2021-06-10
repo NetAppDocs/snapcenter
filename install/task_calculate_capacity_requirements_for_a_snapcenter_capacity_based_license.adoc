@@ -1,7 +1,7 @@
 ---
 permalink: install/task_calculate_capacity_requirements_for_a_snapcenter_capacity_based_license.html
 sidebar: sidebar
-keywords:
+keywords: capacity requirements, capacity-based license
 summary: 'Before you obtain a SnapCenter capacity-based license, you should calculate the amount of capacity on a host that is to be managed by SnapCenter.'
 ---
 = Calculate capacity requirements for a SnapCenter capacity-based license
@@ -22,7 +22,7 @@ SnapCenter calculates the actual capacity used. If the size of the file system o
 *Steps*
 
 . Log in to the NetApp controller using the ONTAP command line.
-. To view the volume capacity used, enter the vol show -field used -volume <volume1>,<volume2> command.
+. To view the volume capacity used, enter the command.
 +
 ----
 select::> vol show -fields used -volume Engineering,Marketing

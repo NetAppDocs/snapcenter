@@ -11,7 +11,7 @@ summary: 'You can generate Secure Sockets Layer (SSL) certificates and key files
 [.lead]
 You can generate Secure Sockets Layer (SSL) certificates and key files for both the High Availability (HA) nodes if you want to secure the communication between SnapCenter Server and MySQL servers. You must configure the certificates and key files in the MySQL servers and on the HA nodes.
 
-SnapCenter Server must be installed.
+*About this task*
 
 The following certificates are generated:
 
@@ -22,27 +22,29 @@ A CA certificate is generated on one of the HA nodes, and this CA certificate is
 * Server public certificate and server private key files for both the HA nodes
 * Client public certificate and client private key files for both the HA nodes
 
+*Steps*
+
 . For the first HA node, set up the SSL certificates and key files for MySQL servers and clients on Windows by using the openssl command.
 +
 https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-files-using-openssl.html[MySQL Version 5.7: Creating SSL Certificates and Keys Using openssl]
 +
 NOTE: The common name value that is used for the server certificate, client certificate, and key files must each differ from the common name value that is used for the CA certificate. If the common name values are the same, the certificate and key files fail for servers that are compiled by using OpenSSL.
 +
+
 |===
-a|
-    *Best Practice:* You should use the server fully qualified domain name (FQDN) as the common name for the server certificate.
-+
+*Best Practice:* You should use the server fully qualified domain name (FQDN) as the common name for the server certificate.
 |===
 
- .. Copy the SSL certificates and key files to the MySQL Data folder.
+. Copy the SSL certificates and key files to the MySQL Data folder.
 +
 The default MySQL Data folder path is C:\ProgramData\NetApp\SnapCenter\MySQL Data\Data\.
 
- .. Update the CA certificate, server public certificate, client public certificate, server private key, and client private key paths in the MySQL server configuration file (my.ini).
+. Update the CA certificate, server public certificate, client public certificate, server private key, and client private key paths in the MySQL server configuration file (my.ini).
 +
 The default MySQL server configuration file (my.ini) path is C:\ProgramData\NetApp\SnapCenter\MySQL Data\my.ini.
 +
 NOTE: You must specify CA certificate, server public certificate, and server private key paths in the [mysqld] section of the MySQL server configuration file (my.ini).
+
 +
 You must specify CA certificate, client public certificate, and client private key paths in the [client] section of the MySQL server configuration file (my.ini).
 +

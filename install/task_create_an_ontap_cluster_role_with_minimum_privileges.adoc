@@ -1,7 +1,7 @@
 ---
 permalink: install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
 sidebar: sidebar
-keywords:
+keywords: ONTAP cluster role, privileges
 summary: 'You should create an ONTAP cluster role with minimum privileges so that you do not have to use the ONTAP admin role to perform operations in SnapCenter. You can run several ONTAP CLI commands to create the ONTAP cluster role and assign minimum privileges.'
 ---
 = Create an ONTAP cluster role with minimum privileges

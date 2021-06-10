@@ -1,7 +1,7 @@
 ---
 permalink: install/task_verify_if_the_snapmanager_suite_storage_controller_license_is_installed.html
 sidebar: sidebar
-keywords: 
+keywords: SnapManager Suite license, FAS, AFF
 summary: 'You can use the SnapCenter GUI to view whether a SnapManager Suite license is installed on FAS or AFF primary storage systems, and to identify which storage systems might require SnapManager Suite licenses. SnapManager Suite licenses apply only to FAS and AFF SVMs or clusters on primary storage systems.'
 ---
 = Verify if the SnapManager Suite storage controller license is installed
@@ -10,6 +10,8 @@ summary: 'You can use the SnapCenter GUI to view whether a SnapManager Suite lic
 
 [.lead]
 You can use the SnapCenter GUI to view whether a SnapManager Suite license is installed on FAS or AFF primary storage systems, and to identify which storage systems might require SnapManager Suite licenses. SnapManager Suite licenses apply only to FAS and AFF SVMs or clusters on primary storage systems.
+
+*Steps*
 
 . In the left navigation pane, click *Storage Systems*.
 . On the Storage Systems page, from the *Type* drop-down, select whether to view all the SVMs or clusters that were added:
@@ -20,25 +22,14 @@ When you click the cluster name, all of the SVMs that are part of the cluster ar
 . In the *Storage Connections* list, locate the Controller License column.
 +
 The Controller License column displays the following statuses:
-+
-|===
-a|
-image:../media/controller_licensed_icon.gif[]
-a|
-    Indicates that a SnapManager Suite license is installed on a FAS or AFF primary storage system.
-a|
-image:../media/controller_not_licensed_icon.gif[]
-a|
-    Indicates that a SnapManager Suite license is not installed on a FAS or AFF primary storage system.
-a|
-Not applicable
-a|
-    Indicates that a SnapManager Suite license is not applicable for this controller. This message is displayed for the following platforms:
+
+* image:../media/controller_licensed_icon.gif[] indicates that a SnapManager Suite license is installed on a FAS or AFF primary storage system.
+* image:../media/controller_not_licensed_icon.gif[] indicates that a SnapManager Suite license is not installed on a FAS or AFF primary storage system.
+* Not applicable - indicates that a SnapManager Suite license is not applicable for this controller.
+
+This message is displayed for the following platforms:
 
  ** Cloud Volumes ONTAP
  ** ONTAP Select
  ** Secondary storage
  ** MetroCluster
-
-+
-|===

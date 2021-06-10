@@ -1,7 +1,7 @@
 ---
 permalink: install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
 sidebar: sidebar
-keywords: 
+keywords: IIS application pool, active directory, enable
 summary: 'You can configure Internet Information Services \(IIS\) on your Windows Server to create a custom Application Pool account when you need to enable Active Directory read permissions for SnapCenter.'
 ---
 = Configure IIS Application Pools to enable Active Directory read permissions
@@ -10,6 +10,8 @@ summary: 'You can configure Internet Information Services \(IIS\) on your Window
 
 [.lead]
 You can configure Internet Information Services (IIS) on your Windows Server to create a custom Application Pool account when you need to enable Active Directory read permissions for SnapCenter.
+
+*Steps*
 
 . Open IIS Manager on the Windows Server where SnapCenter is installed.
 . In the left navigation pane, click *Application Pools*.

@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_snapcenter_standard_controller_based_licenses.html
 sidebar: sidebar
-keywords: 
+keywords: controller-based licenses, standard license
 summary: 'A SnapCenter Standard controller-based license is required if you are using FAS or AFF storage controllers.'
 ---
 = SnapCenter Standard controller-based licenses

@@ -13,6 +13,7 @@ The SnapCenter Server installer enables the Windows features and roles on your W
 
 |===
 | Category| Feature
+
 a|
 Web Server
 a|

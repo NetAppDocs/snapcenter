@@ -11,6 +11,8 @@ summary: 'Describes how to prepare for installing SnapCenter Servers, steps to i
 [.lead]
 Describes the prerequisites for installing SnapCenter Server, steps to install the server, add licenses, add storage system, and steps to configure your environment.
 
+image::../media/install_snapcenter_server.png[Install SnapCenter Server]
+
 * xref:concept_prepare_for_installing_the_snapcenter_server.adoc[Prepare for installing the SnapCenter Server]
 * xref:task_install_the_snapcenter_server_using_the_install_wizard.adoc[Install the SnapCenter Server using the install wizard]
 * xref:task_log_in_to_snapcenter.adoc[Log in to SnapCenter]

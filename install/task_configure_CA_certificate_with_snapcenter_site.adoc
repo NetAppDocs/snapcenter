@@ -1,7 +1,7 @@
 ---
 permalink: install/task_configure_CA_certificate_with_snapcenter_site.html
 sidebar: sidebar
-keywords: SnapCenter
+keywords: SnapCenter, configure, CA certificate
 summary: 'You should configure the CA certificate with SnapCenter site on Windows host.'
 ---
 = Configure CA certificate with SnapCenter site
@@ -11,9 +11,7 @@ summary: 'You should configure the CA certificate with SnapCenter site on Window
 [.lead]
 You should configure the CA certificate with SnapCenter site on Windows host.
 
-If SnapCenter is configured with the F5 load balancer, see the following article.
-
-https://kb.netapp.com/Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FHow_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[How to configure SnapCenter Servers for high availability using F5 Load Balancer]
+If SnapCenter is configured with the F5 load balancer, see https://kb.netapp.com/Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FHow_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[How to configure SnapCenter Servers for high availability using F5 Load Balancer^].
 
 *Steps*
 

@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_storage_systems.html
 sidebar: sidebar
-keywords:
+keywords: add, storage system, SVM
 summary: 'You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand alone SVM or a cluster comprising of multiple SVMs.'
 ---
 = Add storage systems
@@ -34,13 +34,14 @@ If you enable these features, SnapCenter sends AutoSupport information to the st
 
 NOTE: If you change the storage system password, scheduled jobs, on demand backup, and restore operations might fail. After you change the storage system password, you should remove and add the storage system.
 
-.Steps
+*Steps*
+
 . In the left navigation pane, click *Storage Systems*.
 . In the Storage Systems page, click *New*.
 . In the Add Storage System page, provide the following information:
 +
 |===
-| For this field...| Do this...
+| For this field... | Do this...
 
 a|
 Storage System
@@ -56,6 +57,7 @@ SnapCenter does not support multiple SVMs with the same name on different cluste
 NOTE: After adding the storage connection to SnapCenter, you should not rename the SVM or the Cluster using ONTAP.
 
 NOTE: If SVM is added with a short name or FQDN then it has to be resolvable from both the SnapCenter and the plug-in host.
+
 a|
 User name/Password
 a|
@@ -103,16 +105,8 @@ If a new SVM is added to the ONTAP cluster using ONTAP GUI, click *Rediscover* t
 
 *After you finish*
 
-A cluster administrator must enable AutoSupport on each storage system node to send email notifications from all storage systems to which SnapCenter has access, by running the following command from the storage system command line: ``autosupport trigger modify -node nodename -autosupport-message client.app.info enable -noteto enable``
+A cluster administrator must enable AutoSupport on each storage system node to send email notifications from all storage systems to which SnapCenter has access, by running the following command from the storage system command line:
+
+`autosupport trigger modify -node nodename -autosupport-message client.app.info enable -noteto enable`
 
 NOTE: The Storage Virtual Machine (SVM) administrator has no access to AutoSupport.
-
-*For more information*
-
-* link:concept_manage_ems_data_collection.html[Manage EMS data collection^]
-
-* link:concept_manage_the_storage_system.html[Manage storage systems^]
-
-* link:reference_connection_and_port_requirements.html[Connection and port requirements^]
-
-* link:task_add_snapcenter_licenses.html[Add SnapCenter licenses^]
