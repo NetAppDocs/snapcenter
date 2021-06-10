@@ -8,4 +8,4 @@ summary: 'You can monitor the progress of different SnapCenter restore operation
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_monitor_restore_operations.adoc[]
+include::../_include/reuse_task_monitor_restore_operations.adoc[]

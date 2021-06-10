@@ -8,4 +8,4 @@ summary: 'The Activity pane displays the five most recent operations performed. 
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]
+include::../_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]

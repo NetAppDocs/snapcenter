@@ -8,4 +8,4 @@ summary: 'You can cancel restore jobs that are queued.'
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_cancel_restore_operations.adoc[]
+include::../_include/reuse_task_cancel_restore_operations.adoc[]

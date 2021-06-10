@@ -8,4 +8,4 @@ summary: 'Before performing any data protection operation such as backup, clone,
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_concept_prepare_for_data_protection.adoc[]
+include::../_include/reuse_concept_prepare_for_data_protection.adoc[]

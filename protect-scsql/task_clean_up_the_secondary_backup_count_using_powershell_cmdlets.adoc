@@ -8,4 +8,4 @@ summary: 'You can use the Remove-SmBackup cmdlet to clean up the backup count fo
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_clean_up_the_secondary_backup_count_using_powershell_cmdlets.adoc[]
+include::../_include/reuse_task_clean_up_the_secondary_backup_count_using_powershell_cmdlets.adoc[]

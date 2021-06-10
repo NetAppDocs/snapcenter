@@ -8,4 +8,4 @@ summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins servic
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_task_configure_CA_certificate_for_SCC_on_windows_host.adoc[]
+include::../_include/reuse_task_configure_CA_certificate_for_SCC_on_windows_host.adoc[]

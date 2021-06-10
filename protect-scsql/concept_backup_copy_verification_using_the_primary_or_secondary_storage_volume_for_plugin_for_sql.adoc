@@ -8,4 +8,4 @@ summary: 'You can verify backup copies on the primary storage volume or on eithe
 :icons: font
 :imagesdir: ../media/
 
-include::_include/reuse_concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume.adoc[]
+include::../_include/reuse_concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume.adoc[]
