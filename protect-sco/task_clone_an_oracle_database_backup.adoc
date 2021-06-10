@@ -77,11 +77,15 @@ NOTE: If the selected log backup exists in both mirror and vault location, both 
 a|
 Clone host
 a|
-By default, the source database host is populated.    If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
+By default, the source database host is populated.
+
+If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
 a|
 Datafile locations
 a|
-By default, the datafile location is populated.    The SnapCenter default naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_CLONESID.
+By default, the datafile location is populated.
+
+The SnapCenter default naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_CLONESID.
 
 The SnapCenter default naming convention for ASM disk groups is SC_HASHCODEofDISKGROUP_CLONESID. The HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digits) that is unique for each ASM disk group.
 
@@ -91,7 +95,9 @@ If you want to specify a different path, you must enter the datafile mount point
 a|
 Control files
 a|
-By default, the control file path is populated.    The control files are placed in the same ASM disk group or file system as that of the data files. If you want to override the control file path, you can provide a different control file path.
+By default, the control file path is populated.
+
+The control files are placed in the same ASM disk group or file system as that of the data files. If you want to override the control file path, you can provide a different control file path.
 
 NOTE: The file system or the ASM disk group should exist on the host.
 
@@ -101,7 +107,9 @@ You can customize the control file path to a different file system (existing) th
 a|
 Redo logs
 a|
-By default, the redo log file group, path, and their sizes are populated.    The redo logs are placed in the same ASM disk group or file system as that of the data files of the cloned database. If you want to override the redo log file path, you can customize the redo log file path to a different file system than that of the source database..
+By default, the redo log file group, path, and their sizes are populated.
+
+The redo logs are placed in the same ASM disk group or file system as that of the data files of the cloned database. If you want to override the redo log file path, you can customize the redo log file path to a different file system than that of the source database..
 
 NOTE: The new file system or the ASM disk group should exist on the host.
 
@@ -112,13 +120,12 @@ By default, the number of redo log groups, redo log files, and their sizes will 
 NOTE: A minimum of three redo log groups are required to clone the database.
 
  ** Redo log files in each group and their path
++
 You can customize the redo log file path to a different file system (existing) than that of the source database.
 
 NOTE: A minimum of one redo log file is required in the redo log group to clone the database.
 
  ** Sizes of the redo log file
-
-+
 |===
 
 . On the Credentials page, perform the following actions:
@@ -129,11 +136,15 @@ NOTE: A minimum of one redo log file is required in the redo log group to clone 
 a|
 Credential name for sys user
 a|
-Select the Credential to be used for defining the sys user password of the clone database.     If SQLNET.AUTHENTICATION_SERVICES is set to NONE in sqlnet.ora file on the target host, you should not select *None* as the Credential in the SnapCenter GUI.
+Select the Credential to be used for defining the sys user password of the clone database.
+
+If SQLNET.AUTHENTICATION_SERVICES is set to NONE in sqlnet.ora file on the target host, you should not select *None* as the Credential in the SnapCenter GUI.
 a|
 ASM Instance Credential name
 a|
-Select *None* if OS authentication is enabled for connecting to the ASM instance on the clone host.     Otherwise, select the Oracle ASM credential configured with either "`sys`" user or an user having "`sysasm`" privilege applicable to the clone host.
+Select *None* if OS authentication is enabled for connecting to the ASM instance on the clone host.
+
+Otherwise, select the Oracle ASM credential configured with either "`sys`" user or an user having "`sysasm`" privilege applicable to the clone host.
 
 |===
 The Oracle home, user name, and group details are automatically populated from the source database. You can change the values based on the Oracle environment of the host where the clone will be created.
@@ -165,9 +176,9 @@ SnapCenter performs recovery by mounting the latest log backup that have the unb
 The *Recover database* and *Until Cancel* options are not selected if SnapCenter fails to find the appropriate log backups. You can provide the external archive log location if log backup is not available in *Specify external archive log locations*. You can specify multiple log locations.
 +
 NOTE: If you want to clone a source database that is configured to support flash recovery area (FRA) and Oracle Managed Files (OMF), the log destination for recovery must also adhere to OMF directory structure.
-+
+
 The PostOps page is not displayed if the source database is a Data Guard standby or an Active Data Guard standby database. For Data Guard standby or an Active Data Guard standby database, SnapCenter does not provide an option to select the type of recovery in the SnapCenter GUI but the database is recovered using Until Cancel recovery type without applying any logs.
-+
+
 |===
 | Field name| Description
 
@@ -178,7 +189,10 @@ SnapCenter performs recovery by mounting the latest log backup having the unbrok
 a|
 Date and time
 a|
-SnapCenter recovers the database up to a specified date and time. The accepted format is mm/dd/yyyy hh:mm:ss.    *Note:* The time can be specified in 24 hour format.
+SnapCenter recovers the database up to a specified date and time. The accepted format is mm/dd/yyyy hh:mm:ss.
+
+NOTE: The time can be specified in 24 hour format.
+
 a|
 Until SCN (System Change Number)
 a|
@@ -240,10 +254,10 @@ In AIX setup, you can use the lkdev command to lock and the rendev command to re
 Locking or renaming of devices will not affect the clone deletion operation. For AIX LVM layouts built on SAN devices, renaming of devices will not be supported for the cloned SAN devices.
 // [SD]: Included the second sentence in the above line for BURT 1391312 in 4.5
 
-*Related information*
+*Find more information*
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Restore or cloning fails with ORA-00308 error message^]
 
-* xref:protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html[View Oracle database backups and clones in the Topology page^]
-
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_recover_a_cloned_database[Failed to recover a cloned database^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]

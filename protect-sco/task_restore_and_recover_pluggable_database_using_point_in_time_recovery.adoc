@@ -1,8 +1,8 @@
 ---
 permalink: protect-sco/task_restore_and_recover_pluggable_database_using_point_in_time_recovery.html
 sidebar: sidebar
-keywords: 
-summary: 'You can restore and recover a pluggable database \(PDB\) that has been corrupted or dropped without impacting the other PDBs in the container database \(CDB\). SnapCenter uses RMAN to perform point-in-time recovery \(PITR\) of the PDB.'
+keywords: PDB, pluggable database, restore, CDB, PITR, point-in-time recovery, RMAN
+summary: 'You can restore and recover a pluggable database (PDB) that has been corrupted or dropped without impacting the other PDBs in the container database \(CDB\). SnapCenter uses RMAN to perform point-in-time recovery \(PITR\) of the PDB.'
 ---
 = Restore and recover pluggable database using point-in-time recovery
 :icons: font
@@ -11,9 +11,13 @@ summary: 'You can restore and recover a pluggable database \(PDB\) that has been
 [.lead]
 You can restore and recover a pluggable database (PDB) that has been corrupted or dropped without impacting the other PDBs in the container database (CDB). SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the PDB.
 
+*What you will need*
+
 The backups that are required to perform PITR of a PDB should be cataloged and mounted.
 
 NOTE: In a RAC setup, you should manually close the PDB (changing the state to MOUNTED) on all the nodes of the RAC setup.
+
+*About this task*
 
 During PITR operation, RMAN creates an auxiliary instance at the specified auxiliary destination. The auxiliary destination could be a mount point or ASM disk group. If there is sufficient space in the mounted location, you can reuse one of the mounted locations instead of a dedicated mount point.
 
@@ -25,7 +29,9 @@ You can restore and recover only:
 * one tablespace in a PDB
 * multiple tablespaces of the same PDB
 
-In a RAC setup, you can perform PITR of tablespaces from any node of the RAC.
+NOTE: In a RAC setup, you can perform PITR of tablespaces from any node of the RAC.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.

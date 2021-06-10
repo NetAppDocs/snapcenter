@@ -35,11 +35,15 @@ NOTE: You can clone only one PDB at a time.
 a|
 Clone host
 a|
-By default, the source database host is populated.    If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
+By default, the source database host is populated.
+
+If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
 a|
 Target CDB
 a|
-Select the CDB where you want to include the cloned PDB.    You should ensure that the target CDB is running.
+Select the CDB where you want to include the cloned PDB.
+
+You should ensure that the target CDB is running.
 a|
 Database State
 a|
@@ -47,7 +51,9 @@ Select the *Open the PDB to be cloned in READ-WRITE mode* checkbox if you want t
 a|
 Datafile locations
 a|
-By default, the datafile location is populated.    The SnapCenter default naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_SCJOBID.
+By default, the datafile location is populated.
+
+The SnapCenter default naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_SCJOBID.
 
 The SnapCenter default naming convention for ASM disk groups is SC_HASHCODEofDISKGROUP_SCJOBID. The HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digits) that is unique for each ASM disk group.
 
@@ -91,11 +97,16 @@ NOTE: If you want to clone a source database that is configured to support flash
 a|
 Until Cancel
 a|
-SnapCenter performs recovery by mounting the latest log backup having the unbroken sequence of archive logs after that data backup that was selected for cloning. The log and data backup should be on primary storage to perform the clone on primary storage and log and data backup should be on secondary storage to perform the clone on secondary storage.    The cloned database is recovered till the missing or corrupt log file.
+SnapCenter performs recovery by mounting the latest log backup having the unbroken sequence of archive logs after that data backup that was selected for cloning.
+
+The log and data backup should be on primary storage to perform the clone on primary storage and log and data backup should be on secondary storage to perform the clone on secondary storage.    The cloned database is recovered till the missing or corrupt log file.
 a|
 Date and time
 a|
-SnapCenter recovers the database up to a specified date and time.    *Note:* The time can be specified in 24 hour format.
+SnapCenter recovers the database up to a specified date and time.
+
+NOTE: The time can be specified in 24 hour format.
+
 a|
 Until SCN (System Change Number)
 a|
@@ -107,7 +118,9 @@ Specify the external archive log location.
 a|
 Create new DBID
 a|
-By default *Create new DBID* check box is selected to generate a unique number (DBID) for the cloned database differentiating it from the source database.    Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
+By default *Create new DBID* check box is selected to generate a unique number (DBID) for the cloned database differentiating it from the source database.
+
+Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
 a|
 Create tempfile for temporary tablespace
 //[SD]: Included this for BURT 1391437 in 4.5//
@@ -145,6 +158,8 @@ If you want to create a backup of the cloned PDB, you should backup the target C
 
 In a RAC setup the storage for cloned PDB is attached only to the node where the PDB clone was performed. The other nodes of the RAC are in MOUNTED state. If you want the cloned PDB to be accessible from the other nodes, you should manually attach the storage to the other nodes.
 
-*Related information*
+*Find more information*
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Restore or cloning fails with ORA-00308 error message^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Restore or cloning fails with ORA-00308 error message^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]

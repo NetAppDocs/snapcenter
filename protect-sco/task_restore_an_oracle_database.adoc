@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_restore_an_oracle_database.html
 sidebar: sidebar
-keywords:
+keywords: restore, recover, Oracle
 summary: 'In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.'
 ---
 = Restore Oracle database
@@ -159,8 +159,10 @@ NOTE: For email notification, you must have specified the SMTP server details by
 
 *For more information*
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations^]
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_from_a_secondary_SnapMirror_or_SnapVault_location[Failed to restore from a secondary SnapMirror or SnapVault location]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_from_a_secondary_SnapMirror_or_SnapVault_location[Failed to restore from a secondary SnapMirror or SnapVault location^]
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_when_a_backup_of_an_orphan_incarnation_is_selected[Failed to restore from a backup of an orphan incarnation]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_when_a_backup_of_an_orphan_incarnation_is_selected[Failed to restore from a backup of an orphan incarnation^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]

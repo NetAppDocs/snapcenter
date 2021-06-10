@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_back_up_oracle_resources.html
 sidebar: sidebar
-keywords:
+keywords: backup, Oracle database, policy, schedule, verification
 summary: 'If a resource is not part of any resource group, you can back up the resource from the Resources page.'
 ---
 = Back up Oracle resources
@@ -31,7 +31,9 @@ The Database-Protect page is displayed.
 a|
 Use custom name format for Snapshot copy
 a|
-Select this check box, and then enter a custom name format that you want to use for the Snapshot copy name.    For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
+Select this check box, and then enter a custom name format that you want to use for the Snapshot copy name.
+
+For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
 a|
 Exclude archive log destinations from backup
 a|
@@ -46,7 +48,7 @@ NOTE: You can also create a policy by clicking *image:../media/add_policy_from_r
 In the Configure schedules for selected policies section, the selected policies are listed.
 
  .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure a schedule.
- .. In the Add schedules for policypolicy_name window, configure the schedule, and then click *OK*.
+ .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then click *OK*.
 +
 _policy_name_ is the name of the policy that you have selected.
 +
@@ -110,13 +112,17 @@ After modifying the value of the parameters, restart the SnapCenter Plug-in Load
 After modifying the value of the parameters, restart the SnapCenter Plug-in Loader (SPL) service by running the following command `/opt/NetApp/snapcenter/spl/bin/spl restart`
 
 * In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
+
+* If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail.
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover]
+To increase the Java heap size, locate the script file _/opt/netapp/init_scripts/scvservice_. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
 
-* If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail. To increase the Java heap size, locate the script file /opt/netapp/init_scripts/scvservice. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
+*Find more information*
 
-*For more information*
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^]
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations^]
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_change_the_state_of_an_Oracle_12c_ASM_database_from_shutdown_to_mount[Failed to change the state of an Oracle 12c ASM database]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_change_the_state_of_an_Oracle_12c_ASM_database_from_shutdown_to_mount[Failed to change the state of an Oracle 12c ASM database^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]

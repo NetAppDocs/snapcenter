@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_restore_and_recovere_tablespaces_using_point_in_time_recovery.html
 sidebar: sidebar
-keywords: 
+keywords: restore, PITR, point-in-time recovery, RMAN, tablespaces
 summary: 'You can restore a subset of tablespaces that has been corrupted or dropped without impacting the other tablespaces in the database. SnapCenter uses RMAN to perform point-in-time recovery \(PITR\) of the tablespaces.'
 ---
 = Restore and recover tablespaces using point-in-time recovery
@@ -11,7 +11,11 @@ summary: 'You can restore a subset of tablespaces that has been corrupted or dro
 [.lead]
 You can restore a subset of tablespaces that has been corrupted or dropped without impacting the other tablespaces in the database. SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the tablespaces.
 
+*What you will need*
+
 The backups that are required to perform PITR of tablespaces should be cataloged and mounted.
+
+*About this task*
 
 During PITR operation, RMAN creates an auxiliary instance at the specified auxiliary destination. The auxiliary destination could be a mount point or ASM disk group. If there is sufficient space in the mounted location, you can reuse one of the mounted locations instead of a dedicated mount point.
 
@@ -19,7 +23,9 @@ You should specify the date and time or SCN and the tablespace is restored on th
 
 You can select and restore multiple tablespaces residing on ASM, NFS, and SAN environments. For example, if tablespaces TS2 and TS3 reside on NFS and TS4 reside on SAN, you can perform on single PITR operation to restore all the tablespaces.
 
-In a RAC setup, you can perform PITR of tablespaces from any node of the RAC.
+NOTE: In a RAC setup, you can perform PITR of tablespaces from any node of the RAC.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.
