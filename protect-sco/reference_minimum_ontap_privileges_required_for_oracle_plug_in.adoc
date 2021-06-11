@@ -1,10 +1,10 @@
 ---
 permalink: protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords: ONTAP privileges
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'
 ---
-= Minimum ONTAP privileges required for Oracle plug-in
+= Minimum ONTAP privileges required for Plug-in for Oracle
 :icons: font
 :imagesdir: ../media/
 
@@ -13,148 +13,148 @@ The minimum ONTAP privileges that are required vary according to the SnapCenter 
 
 |===
 | All-access commands: Minimum privileges required for ONTAP 8.2._x_ and later
-a|
-event generate-autosupport-log
 
 a|
-job history show
-
-job stop
+* event generate-autosupport-log
 
 a|
-lun
+* job history show
 
-lun attribute show
-
-lun create
-
-lun delete
-
-lun geometry
-
-lun igroup add
-
-lun igroup create
-
-lun igroup delete
-
-lun igroup rename
-
-lun igroup show
-
-lun mapping add-reporting-nodes
-
-lun mapping create
-
-lun mapping delete
-
-lun mapping remove-reporting-nodes
-
-lun mapping show
-
-lun modify
-
-lun move-in-volume
-
-lun offline
-
-lun online
-
-lun persistent-reservation clear
-
-lun resize
-
-lun serial
-
-lun show
+* job stop
 
 a|
-snapmirror policy add-rule
+* lun
 
-snapmirror policy modify-rule
+* lun attribute show
 
-snapmirror policy remove-rule
+* lun create
 
-snapmirror policy show
+* lun delete
 
-snapmirror restore
+* lun geometry
 
-snapmirror show
+* lun igroup add
 
-snapmirror show-history
+* lun igroup create
 
-snapmirror update
+* lun igroup delete
 
-snapmirror update-ls-set
+* lun igroup rename
 
-snapmirror list-destinations
+* lun igroup show
 
-a|
-version
+* lun mapping add-reporting-nodes
 
-a|
-volume clone create
+* lun mapping create
 
-volume clone show
+* lun mapping delete
 
-volume clone split start
+* lun mapping remove-reporting-nodes
 
-volume clone split stop
+* lun mapping show
 
-volume create
+* lun modify
 
-volume destroy
+* lun move-in-volume
 
-volume file clone create
+* lun offline
 
-volume file show-disk-usage
+* lun online
 
-volume offline
+* lun persistent-reservation clear
 
-volume online
+* lun resize
 
-volume modify
+* lun serial
 
-volume qtree create
-
-volume qtree delete
-
-volume qtree modify
-
-volume qtree show
-
-volume restrict
-
-volume show
-
-volume snapshot create
-
-volume snapshot delete
-
-volume snapshot modify
-
-volume snapshot rename
-
-volume snapshot restore
-
-volume snapshot restore-file
-
-volume snapshot show
-
-volume unmount
+* lun show
 
 a|
-vserver
+* snapmirror policy add-rule
 
-vserver cifs
+* snapmirror policy modify-rule
 
-vserver cifs shadowcopy show
+* snapmirror policy remove-rule
 
-vserver show
+* snapmirror policy show
+
+* snapmirror restore
+
+* snapmirror show
+
+* snapmirror show-history
+
+* snapmirror update
+
+* snapmirror update-ls-set
+
+* snapmirror list-destinations
 
 a|
-network interface
+* version
 
-network interface show
+a|
+* volume clone create
 
+* volume clone show
+
+* volume clone split start
+
+* volume clone split stop
+
+* volume create
+
+* volume destroy
+
+* volume file clone create
+
+* volume file show-disk-usage
+
+* volume offline
+
+* volume online
+
+* volume modify
+
+* volume qtree create
+
+* volume qtree delete
+
+* volume qtree modify
+
+* volume qtree show
+
+* volume restrict
+
+* volume show
+
+* volume snapshot create
+
+* volume snapshot delete
+
+* volume snapshot modify
+
+* volume snapshot rename
+
+* volume snapshot restore
+
+* volume snapshot restore-file
+
+* volume snapshot show
+
+* volume unmount
+
+a|
+* vserver
+
+* vserver cifs
+
+* vserver cifs shadowcopy show
+
+* vserver show
+
+a|
+* network interface
+
+* network interface show
 |===

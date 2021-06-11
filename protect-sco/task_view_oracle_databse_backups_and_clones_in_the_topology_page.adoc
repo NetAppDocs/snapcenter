@@ -11,6 +11,8 @@ summary: 'When you are preparing to back up or clone a resource, you might find 
 [.lead]
 When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage.
 
+*About this task*
+
 In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.
 
 You can review the following icons in the Manage Copies view to determine whether the backups and clones are available on the primary or secondary storage (Mirror copies or Vault copies).
@@ -22,6 +24,8 @@ You can review the following icons in the Manage Copies view to determine whethe
 The number of backups displayed includes the backups deleted from the secondary storage. For example, if you created 6 backups using a policy to retain only 4 backups, the number of backups displayed is 6.
 
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view, but the mirror backup count in the topology view does not include the version-flexible backup.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, either select the resource or resource group from the *View* drop-down list.
@@ -48,8 +52,8 @@ NOTE: You cannot rename or delete backups that are on the secondary storage.
 
 . If you want to delete a clone, select the clone from the table, and then click image:../media/delete_icon.gif[].
 
-If the value assigned to SnapmirrorStatusUpdateWaitTime is less, the Mirror and Vault backup copies are not listed on the topology page even if data and log volumes are successfully protected. You should increase the value assigned to SnapmirrorStatusUpdateWaitTime using Set-SmConfigSettings Powershell cmdlet.
+If the value assigned to SnapmirrorStatusUpdateWaitTime is less, the Mirror and Vault backup copies are not listed on the topology page even if data and log volumes are successfully protected. You should increase the value assigned to SnapmirrorStatusUpdateWaitTime using _Set-SmConfigSettings_ Powershell cmdlet.
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running helpcommand_name. Alternatively, you can also refer to the _Command Reference Guide_.
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]
+Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^] or https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].

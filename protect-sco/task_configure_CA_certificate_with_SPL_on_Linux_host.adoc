@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_configure_CA_certificate_with_SPL_on_Linux_host.html
 sidebar: sidebar
-keywords: SnapCenter
+keywords: SnapCenter, SPL, Plug-in loader service, CA certificate, certificate
 summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Linux host'
 ---
 = Configure CA certificate with SnapCenter Plug-in Loader (SPL) service on Linux host
@@ -12,7 +12,7 @@ summary: 'Configure CA certificate with SnapCenter Plug-in Loader service on Lin
 
 You should manage the password of SPL keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to SPL trust-store, and configure CA signed key pair to SPL trust-store  with SnapCenter Plug-in Loader service to activate the installed digital certificate.
 
-SPL uses the file 'keystore.jks', which is located at ‘/var/opt/snapcenter/spl/etc’ both as its trust-store and key-store.
+IMPORTANT: SPL uses the file 'keystore.jks', which is located at ‘/var/opt/snapcenter/spl/etc’ both as its trust-store and key-store.
 
 == Manage password for SPL keystore and alias of the CA signed key pair in use
 
@@ -42,23 +42,21 @@ You should configure the root or intermediate certificates without the private k
 
 *Steps*
 
-. Navigate to the folder containing the SPL keystore:  /var/opt/snapcenter/spl/etc.
+. Navigate to the folder containing the SPL keystore: _/var/opt/snapcenter/spl/etc_.
 
 . Locate the file 'keystore.jks'.
 
 . List the added certificates in the keystore:
-+
-`keytool -list -v -keystore keystore.jks`
+
+ keytool -list -v -keystore keystore.jks
 
 . Add a root or intermediate certificate:
 
-  keytool -import -trustcacerts -alias <AliasNameForCerticateToBeImported> -file /<CertificatePath> -keystore keystore.jks
+ keytool -import -trustcacerts -alias <AliasNameForCerticateToBeImported> -file /<CertificatePath> -keystore keystore.jks
 
 . Restart the service after configuring the root or intermediate certificates to SPL trust-store.
 
-[NOTE]
-
-You should add the root CA certificate and then the intermediate CA certificates.
+NOTE: You should add the root CA certificate and then the intermediate CA certificates.
 
 == Configure CA signed key pair to SPL trust-store
 
@@ -71,16 +69,16 @@ You should configure the CA signed key pair to the SPL trust-store.
 . Locate the file 'keystore.jks'.
 
 . List the added certificates in the keystore:
-+
-`keytool -list -v -keystore keystore.jks`
+
+ keytool -list -v -keystore keystore.jks
 
 . Add the CA certificate having both private and public key.
-+
-`keytool -importkeystore -srckeystore <CertificatePathToImport> -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype JKS`
+
+ keytool -importkeystore -srckeystore <CertificatePathToImport> -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype JKS
 
 . List the added certificates in the keystore.
-+
-`keytool -list -v -keystore keystore.jks`
+
+ keytool -list -v -keystore keystore.jks
 
 .  Verify that the keystore contains the alias corresponding to the new CA certificate, which was added to the keystore.
 
@@ -107,7 +105,7 @@ You should configure the CRL for SPL
 *About this task*
 
 * SPL will look for the CRL files in a pre-configured directory.
-* Default directory for the CRL files for SPL is '/var/opt/snapcenter/spl/etc/crl'.
+* Default directory for the CRL files for SPL is _/var/opt/snapcenter/spl/etc/crl_.
 
 *Steps*
 

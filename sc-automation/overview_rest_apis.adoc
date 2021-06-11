@@ -1,15 +1,15 @@
 ---
-permalink: sc-automation/automation_index.html
+permalink: sc-automation/overview_rest_apis.html
 sidebar: sidebar
 keywords: REST APIs, swagger
 summary: 'Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.'
 ---
-= Automation using REST APIs
+= Overview of REST APIs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.
+REST APIs can be used to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.
 
 You can access the Swagger web page available at _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/_ to display the REST API documentation, as well as to manually issue an API call.
 

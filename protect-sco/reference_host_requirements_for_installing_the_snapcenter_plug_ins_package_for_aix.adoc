@@ -1,10 +1,10 @@
 ---
 permalink: protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_ins_package_for_aix.html
 sidebar: sidebar
-keywords: SnapCenter
+keywords: SnapCenter, host requirements for AIX, sudo privileges, non-root user
 summary: 'You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for AIX.'
 ---
-= Host requirements for installing the SnapCenter Plug-ins Package for AIX
+= Host requirements for installing Plug-ins Package for AIX
 :icons: font
 :imagesdir: ../media/
 
@@ -37,7 +37,7 @@ Java 1.8.x (64-bit)IBM Java
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
 |===
-For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 == Configure sudo privileges for non-root user for AIX plug-in host
 

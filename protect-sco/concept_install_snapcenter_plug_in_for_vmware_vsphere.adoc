@@ -1,8 +1,8 @@
 ---
 permalink: protect-sco/concept_install_snapcenter_plug_in_for_vmware_vsphere.html
 sidebar: sidebar
-keywords:
-summary: 'If your database is stored on virtual machines \(VMs\), or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance.'
+keywords: install, VMware vSphere
+summary: 'If your database is stored on virtual machines (VMs), or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance.'
 ---
 = Install SnapCenter Plug-in for VMware vSphere
 :icons: font
@@ -11,15 +11,12 @@ summary: 'If your database is stored on virtual machines \(VMs\), or if you want
 [.lead]
 If your database is stored on virtual machines (VMs), or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance.
 
-The https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere documentation] has more information.
+The https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere documentation^] has more information.
 
-== Deploying CA certificate for SnapCenter plug-in for VMware vSphere
+To configure the CA Certificate with SnapCenter Plug-in for VMware vSphere, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[Create or import SSL certificate^].
 
-To configure the CA Certificate with SnapCenter Plug-in for VMware vSphere, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[How to create and/or import an SSL certificate to SnapCenter Plug-in for VMware vSphere].
+== Configure the CRL file
 
-.Configure the CRL file for SnapCenter plug-in for VMware vSphere
-
-* SnapCenter Plug-in for VMware vSphere looks for the CRL files in a pre-configured directory.
-* Default directory of the CRL files for SnapCenter Plug-in for VMware vSphere is `/opt/netapp/config/crl`
+SnapCenter Plug-in for VMware vSphere looks for the CRL files in a pre-configured directory. Default directory of the CRL files for SnapCenter Plug-in for VMware vSphere is _/opt/netapp/config/crl_.
 
 You can place more than one CRL file in this directory. The incoming certificates will be verified against each CRL.

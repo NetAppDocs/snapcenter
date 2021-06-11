@@ -5,11 +5,11 @@ keywords: credentials
 summary: Provides instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 ---
 = Installing SnapCenter Plug-in for SQL Server
-:icons:font
+:icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. This Quick Start Guide is a condensed set of installation instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
+Provides a condensed set of installation instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 
 == Preparing for installation
 
@@ -28,22 +28,27 @@ The type of licenses you install depends on your environment.
 |===
 | License | Where required
 
-| SnapCenter Standard controller-based
-| Required for FAS or AFF storage controllers
+a| SnapCenter Standard controller-based
+a| Required for FAS or AFF storage controllers
+
 SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement.
 If you want to install SnapCenter on a trial basis with FAS or AFF storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
-| SnapCenter Standard capacity-based
-| SnapCenter Standard capacity-based
+a| SnapCenter Standard capacity-based
+a| Required with ONTAP Select and Cloud Volumes ONTAP
+
 If you are a Cloud Volumes ONTAP or ONTAP Select customer, you need to procure a per TB capacity-based license based on the data managed by SnapCenter.
 By default, SnapCenter ships a built-in 90-day 100 TB SnapCenter Standard capacity-based trial license. For other details, contact the sales representative.
-| SnapMirror or SnapVault
-| ONTAP
+a| SnapMirror or SnapVault
+a| ONTAP
+
 Either SnapMirror or SnapVault license is required if replication is enabled in SnapCenter.
-| Additional licenses (optional)
-| See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2874308 [SnapCenter Release Notes.^]
-| SnapCenter Standard licenses (optional)
-| Secondary destinations
-*NOTE* It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary destinations, you cannot use SnapCenter to backup resources on the secondary destination after performing a failover operation. However, a FlexClone license is required on secondary destinations to perform clone and verification operations.
+a| Additional licenses (optional)
+a| See link:../install/concept_snapcenter_licenses.html[SnapCenter licenses^].
+a| SnapCenter Standard licenses (optional)
+a| Secondary destinations
+
+NOTE: It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary destinations, you cannot use SnapCenter to backup resources on the secondary destination after performing a failover operation. However, a FlexClone license is required on secondary destinations to perform clone and verification operations.
+
 |===
 
 === Additional requirements
@@ -51,106 +56,120 @@ Either SnapMirror or SnapVault license is required if replication is enabled in 
 |===
 |Storage and applications |Minimum requirements
 
-|ONTAP and application plug-in
-|See http://mysupport.netapp.com/matrix [Interoperability Matrix Tool (IMT)^]
+a|ONTAP and application plug-in
+a|See http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
 |===
 
 |===
 |Hosts |Minimum requirements
 
-|Operating System (64-bit)
-|See http://mysupport.netapp.com/matrix
+a|Operating System (64-bit)
+a|See http://mysupport.netapp.com/matrix
 
-|CPU
-|Server host: 4 cores
+a|CPU
+a|
+* Server host: 4 cores
 
-Plug-in host: 1 core
-|RAM
-|Server host: 8 GB
+* Plug-in host: 1 core
+a|RAM
+a|
+* Server host: 8 GB
 
-Plug-in host: 1 GB
-|Hard drive space
-|Server host:
+* Plug-in host: 1 GB
+a|Hard drive space
+a|Server host:
 
-4 GB for SnapCenter Server software and logs
+* 4 GB for SnapCenter Server software and logs
 
-6 GB for SnapCenter repository
+* 6 GB for SnapCenter repository
 
-Each plug-in host: 2 GB for plug-in installation and logs, this is required only if plug-in is installed on a dedicated host.
-|Third-party libraries
-|Required on SnapCenter Server host and plug-in host:
+* Each plug-in host: 2 GB for plug-in installation and logs, this is required only if plug-in is installed on a dedicated host.
+a|Third-party libraries
+a|Required on SnapCenter Server host and plug-in host:
 
-Microsoft .NET Framework 4.5.2 or later
+* Microsoft .NET Framework 4.5.2 or later
 
-Windows Management Framework (WMF) 4.0 or later
+* Windows Management Framework (WMF) 4.0 or later
 
-PowerShell 4.0 or later
-|Browsers
-|Chrome, Internet Explorer, and Microsoft Edge
+* PowerShell 4.0 or later
+a|Browsers
+a|Chrome, Internet Explorer, and Microsoft Edge
 |===
 
 |===
 |Port type |Default port
 
-|SnapCenter port
-|8146 (HTTPS), bidirectional, customizable, as in the URL `https://server:8146`
-|SnapCenter SMCore communication port
-|8145 (HTTPS), bidirectional, customizable
-|Repository database
-|3306 (HTTPS), bidirectional
-|Windows plug-in hosts
-|135, 445 (TCP)
+a|SnapCenter port
+a|8146 (HTTPS), bidirectional, customizable, as in the URL _\https://server:8146_
+a|SnapCenter SMCore communication port
+a|8145 (HTTPS), bidirectional, customizable
+a|Repository database
+a|3306 (HTTPS), bidirectional
+a|Windows plug-in hosts
+a|135, 445 (TCP)
+
 In addition to ports 135 and 445, the dynamic port range specified by Microsoft should also be open. Remote install operations use the Windows Management Instrumentation (WMI) service, which dynamically searches this port range.
-For information on the dynamic port range supported, see https://docs.microsoft.com/en-US/troubleshoot/windows-server/networking/service-overview-and-network-port-requirements [Microsoft Support Article 832017: Service overview and network port requirements for Windows.^]
-|SnapCenter Plug-in for Windows
-|8145 (HTTPS), bidirectional, customizable
-|ONTAP cluster or SVM communication port
-|443 (HTTPS), bidirectional
+
+For information on the dynamic port range supported, see https://docs.microsoft.com/en-US/troubleshoot/windows-server/networking/service-overview-and-network-port-requirements[Service overview and network port requirements for Windows^].
+a|SnapCenter Plug-in for Windows
+a|8145 (HTTPS), bidirectional, customizable
+a|ONTAP cluster or SVM communication port
+a|443 (HTTPS), bidirectional;
 80 (HTTP), bidirectional
+
 The port is used for communication between the SnapCenter Server host, plug-in host, and SVM or ONTAP Cluster.
 |===
 
-|===
-|SnapCenter Plug-in for Microsoft SQL Server requirements
+=== SnapCenter Plug-in for Microsoft SQL Server requirements
 
-|You should have a user with local administrator privileges with local login permissions on the remote host. If you manage cluster nodes, you need a user with administrative privileges to all the nodes in the cluster.
+You should have a user with local administrator privileges with local login permissions on the remote host. If you manage cluster nodes, you need a user with administrative privileges to all the nodes in the cluster.
 
 You should have a user with sysadmin permissions on the SQL Server. The plug-in uses Microsoft VDI Framework, which requires sysadmin access.
 
-If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see the http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html [SnapCenter Installation and Setup Guide.^]
-|===
+If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see link:../protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html[Import archived backups^]
 
 == Installing SnapCenter Server
 
 === Downloading and installing SnapCenter Server
 
-. Download the SnapCenter Server installation package from the https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab [NetApp Support Site^] and then double-click the exe.
+. Download the SnapCenter Server installation package from the https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] and then double-click the exe.
 +
 After you initiate the installation, all the prechecks are performed and if the minimum requirements are not met appropriate error or warning messages are displayed. You can ignore the warning messages and proceed with installation; however, errors should be fixed.
 . Review the pre-populated values required for the SnapCenter Server installation and modify if required.
 +
 You do not have to specify the password for MySQL Server repository database. During SnapCenter Server installation the password is auto generated.
++
+NOTE: The special character “%” is not supported in the custom path for installation. If you include “%” in the path, installation fails.
 
-[NOTE]
-The special character “%” is not supported in the custom path for installation. If you include “%” in the path, installation fails.
 . Click *Install Now*.
 
 === Logging in to SnapCenter
 
-. Launch SnapCenter from a shortcut on the host desktop or from the URL provided by the installation (`https://server:8146` for default port 8146 where SnapCenter Server is installed).
-. Enter the credentials. For a built-in domain admin username format, use: `NetBIOS\<username>` or `<username>@<domain>` or `<DomainFQDN>\<username>`. For a built-in local admin username format, use `<username>`.
+. Launch SnapCenter from a shortcut on the host desktop or from the URL provided by the installation (_\https://server:8146_ for default port 8146 where SnapCenter Server is installed).
+. Enter the credentials.
++
+For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<username>@<domain>_ or _<DomainFQDN>\<username>_.
++
+For a built-in local admin username format, use _<username>_.
 . Click *Sign In*.
 
 === Adding SnapCenter licenses
 
 ==== Adding a SnapCenter Standard controller-based license
-. Log in to the controller using the ONTAP command line and enter: `system license add -license-code <license_key>`
-. Verify the license: `license show`
+. Log in to the controller using the ONTAP command line and enter:
++
+`system license add -license-code <license_key>`
+. Verify the license:
++
+`license show`
 
 ==== Adding a SnapCenter capacity-based license
 
 . In the SnapCenter GUI left pane, click *Settings > Software*, and then in the License section, click *+*.
-. Select one of two methods for obtaining the license: either enter your NetApp Support Site login credentials to import licenses or browse to the location of the NetApp License File and click *Open*.
+. Select one of two methods for obtaining the license:
++
+** Enter your NetApp Support Site login credentials to import licenses.
+** Browse to the location of the NetApp License File and click *Open*.
 . On the *Notifications* page of the wizard, use the default capacity threshold of 90 percent.
 . Click *Finish*.
 
@@ -169,7 +188,11 @@ The special character “%” is not supported in the custom path for installati
 === Setting up Run As Credentials
 
 . In the left pane, click *Settings > Credentials > New*.
-. Enter the credentials. For a built-in domain admin username format, use: `NetBIOS\<username>` or `<username>@<domain>` or `<DomainFQDN>\<username>`. For a built-in local admin username format, use `<username>`.
+. Enter the credentials.
++
+For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<username>@<domain>_ or _<DomainFQDN>\<username>_.
++
+For a built-in local admin username format, use _<username>_.
 
 === Adding a host and installing the Plug-in for Microsoft SQL Server
 
@@ -181,7 +204,8 @@ The special character “%” is not supported in the custom path for installati
 . In the Select Plug-ins to Install section, select *Microsoft SQL Server*.
 . Click *More Options* to specify the following details:
   .. Port: Either retain the default port number or specify the port number.
-  .. Installation Path: The default path is `C:\Program Files\NetApp\SnapCenter`. You can optionally customize the path.
+  .. Installation Path: The default path is _C:\Program Files\NetApp\SnapCenter_.
+  You can optionally customize the path.
   .. Add all hosts in the cluster: Select this check box if you are using SQL in WSFC.
   .. Skip preinstall checks: Select this check box if you already installed the plug-ins manually or you do not want to validate whether the host meets the requirements for installing the plug-in.
 . Click *Submit*.
