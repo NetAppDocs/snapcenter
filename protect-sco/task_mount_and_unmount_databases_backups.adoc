@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_mount_and_unmount_databases_backups.html
 sidebar: sidebar
-keywords:
+keywords: mount, unmount, backup, ASM, asm_diskstring
 summary: 'You can mount a single or multiple data and log only backups if you want to access the files in the backup. You can either mount the backup to the same host where the backup was created or to a remote host having same type of Oracle and host configurations. If you have manually mounted the backups, you should manually unmount the backups after completing the operation. You can mount the database backup only once on a host for a specific database. While performing an operation, you can mount only a single backup.'
 ---
 = Mount and unmount database backups
@@ -23,7 +23,7 @@ You should manually mount a database backup if you want to access the files in t
 * If you have an ASM database instance in an NFS environment and want to mount the ASM log backups as part of a recovery operation, you should have added the ASM disk path _/var/opt/snapcenter/scu/clones/_*_/_*_ to the existing path defined in the asm_diskstring parameter.
 * If you are using ASMFD or ASMLIB, you should use _AFD:*_ and _ORCL:*_ in the asm_diskstring parameter.
 
-NOTE: For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring]
+NOTE: For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring^].
 
 * If you want to mount to an alternate host, you must verify that the alternate host meets the following requirements:
  ** Same UID and GID as that of the original host
@@ -42,7 +42,7 @@ The database topology page is displayed.
 . Select the backup from the table, and then click image:../media/mount_icon.gif[mount icon].
 . In the Mount backups page, select the host on which you want to mount the backup from the *Choose the host to mount the backup* drop-down list.
 +
-The mount path /var/opt/snapcenter/sco/backup_mount/backup_name/database_name is displayed.
+The mount path _/var/opt/snapcenter/sco/backup_mount/backup_name/database_name_ is displayed.
 +
 If you are mounting the backup of an ASM database, the mount path +diskgroupname_SID_backupid is displayed.
 
@@ -50,11 +50,20 @@ If you are mounting the backup of an ASM database, the mount path +diskgroupname
 
 *After you finish*
 
-You can run the following command to retrieve the information related to the mounted backup: `./sccli Get-SmBackup -BackupName backup_name -ListMountInfo`
+* You can run the following command to retrieve the information related to the mounted backup:
++
+`./sccli Get-SmBackup -BackupName backup_name -ListMountInfo`
 
-If you have mounted an ASM database, you can run the following command to retrieve the information related to the mounted backup: `./sccli Get-Smbackup -BackupNamediskgroupname_SID_backupid-listmountinfo`
+* If you have mounted an ASM database, you can run the following command to retrieve the information related to the mounted backup:
++
+`./sccli Get-Smbackup -BackupNamediskgroupname_SID_backupid-listmountinfo`
 
-To retrieve the backup ID, run the following command: `./sccli Get-Smbackup-BackupNamebackup_name`
+* To retrieve the backup ID, run the following command:
++
+`./sccli Get-Smbackup-BackupNamebackup_name`
++
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_.
+Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^].
 
 == Unmount a database backup
 

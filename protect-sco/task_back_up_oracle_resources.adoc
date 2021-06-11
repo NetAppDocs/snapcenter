@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_back_up_oracle_resources.html
 sidebar: sidebar
-keywords: backup, Oracle database, policy, schedule, verification
+keywords: backup, Oracle database, policy, schedule, verification, resources
 summary: 'If a resource is not part of any resource group, you can back up the resource from the Resources page.'
 ---
 = Back up Oracle resources

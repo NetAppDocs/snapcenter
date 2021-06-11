@@ -5,7 +5,6 @@ entries:
 - title: Release notes
   url: "/reference_release_notes.html"
 - title: Concepts
-  url: "/concept/index.html"
   entries:
   - title: SnapCenter overview
     url: "/concept/concept_snapcenter_overview.html"
@@ -27,8 +26,9 @@ entries:
   - title: SnapCenter Automation using REST APIs
     url: "/concept/concept_snapcenter_rest_apis.html"
 - title: Install SnapCenter Server
-  url: "/install/index.html"
   entries:
+  - title: Install Workflow
+    url: "/install/install_workflow.html"
   - title: Prepare for installing the SnapCenter Server
     url: "/install/concept_prepare_for_installing_the_snapcenter_server.html"
     entries:
@@ -179,7 +179,6 @@ entries:
   - title: Features enabled on your Windows host during installation
     url: "/install/reference_features_enabled_on_your_windows_host_during_installation.html"
 - title: Protect Microsoft SQL Server databases
-  url: "/protect-scsql/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft SQL Server overview
     url: "/protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_overview.html"
@@ -352,7 +351,6 @@ entries:
     - title: Split a clone
       url: "/protect-scsql/task_split_a_clone_for_sql.html"
 - title: Protect Windows file systems
-  url: "/protect-scw/index.html"
   entries:
   - title: SnapCenter Plug-in for Microsoft Windows overview
     url: "/protect-scw/concept_snapcenter_plug_in_for_microsoft_windows_overview.html"
@@ -454,7 +452,6 @@ entries:
     - title: Split a clone
       url: "/protect-scw/task_split_a_clone_for_windows.html"
 - title: Protect Oracle databases
-  url: "/protect-sco/index.html"
   entries:
   - title: Overview of SnapCenter Plug-in for Oracle Database
     url: "/protect-sco/concept_snapcenter_plug_in_for_oracle_database_overview.html"
@@ -500,35 +497,20 @@ entries:
         url: "/protect-sco/task_monitor_the_status_of_installing_plugin_for_Oracle.html"
     - title: Configure the SnapCenter Plug-in Loader service
       url: "/protect-sco/task_configure_snapcenter_plug_in_loader_service.html"
-    - title: Configure the CA Certificate for the SnapCenter SMCore service
-      url: "/protect-sco/task_configure_CA_certificate_for_snapcenter_SMCore_service.html"
     - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
       url: "/protect-sco/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
     - title: Enable CA Certificates for plug-ins
       url: "/protect-sco/task_enable_ca_certificates_for_plug-ins.html"
     - title: Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
       url: "/protect-sco/concept_import_data_from_snapmanager_for_oracle_and_snapmanager_for_sap_to_snapcenter.html"
-      entries:
-      - title: Configurations supported for importing data
-        url: "/protect-sco/reference_configurations_supported_for_import.html"
-        entries:
-        - title: What gets imported to SnapCenter
-          url: "/protect-sco/reference_what_gets_imported_to_snapcenter.html"
-        - title: What does not get imported to SnapCenter
-          url: "/protect-sco/reference_what_does_not_get_imported_to_snapcenter.html"
-      - title: Prepare to import data
-        url: "/protect-sco/task_prepare_to_import_data.html"
-      - title: Import data
-        url: "/protect-sco/task_import_data.html"
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: "/protect-sco/concept_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Prepare for protecting Oracle databases
     url: "/protect-sco/concept_prepare_for_protecting_oracle_databases.html"
     entries:
-    - title: Prerequisites for using the SnapCenter Plug-in for Oracle Database
+    - title: Prerequisites for using Plug-in for Oracle Database
       url: "/protect-sco/reference_prerequisites_for_using_the_snapcenter_plug_in_for_oracle_database.html"
-    - title: How resources, resource groups, and policies are used for protecting
-        Oracle databases
+    - title: How resources, resource groups, and policies are used for protecting Oracle databases
       url: "/protect-sco/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_oracle_databases.html"
   - title: Back up Oracle databases
     url: "/protect-sco/task_back_up_oracle_databases.html"
@@ -707,7 +689,6 @@ entries:
     - title: Cancel restore operations
       url: "/protect-sce/task_cancel_restore_operations.html"
 - title: Protect SAP HANA databases
-  url: "/protect-hana/index.html"
   entries:
   - title: SnapCenter Plug-in for SAP HANA Database overview
     url: "/protect-hana/concept_snapcenter_plug_in_for_sap_hana_database_overview.html"
@@ -868,7 +849,6 @@ entries:
     - title: Delete or split SAP HANA database clones after upgrading SnapCenter
       url: "/protect-hana/task_delete_or_split_sap_hana_database_clones_after_upgrading_snapcenter.html"
 - title: Protect Custom applications
-  url: "/protect-scc/index.html"
   entries:
   - title: SnapCenter Custom Plug-ins overview
     url: "/protect-scc/concept_snapcenter_custom_plug_ins_overview.html"
@@ -992,7 +972,6 @@ entries:
     - title: Cancel clone operations
       url: "/protect-scc/task_cancel_scc_resource_clone_operations.html"
 - title: Manage SnapCenter Server and plug-ins
-  url: "/admin/index.html"
   entries:
   - title: Overview of dashboard
     url: "/admin/concept_overview_of_dashboard.html"
@@ -1030,8 +1009,9 @@ entries:
   - title: Manage EMS data collection
     url: "/admin/concept_manage_ems_data_collection.html"
 - title: Upgrade SnapCenter Server and plug-ins
-  url: "/upgrade/index.html"
   entries:
+    - title: Upgrade Workflow
+      url: "/upgrade/upgrade_workflow.html"
     - title: ConfigureSnapCenter to check for available updates
       url: "/upgrade/task_configure_snapcenter_to_check_for_available_updates.html"
     - title: Upgrade the SnapCenter Server
@@ -1039,7 +1019,6 @@ entries:
     - title: Upgrade your plug-in packages
       url: "/upgrade/task_upgrade_your_plug_in_packages.html"
 - title: Uninstall SnapCenter Server and plug-ins
-  url: "/uninstall/index.html"
   entries:
     - title: Uninstall SnapCenter plug-ins and plug-in packages
       url: "/uninstall/concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.html"
@@ -1059,9 +1038,9 @@ entries:
     - title: Uninstall the SnapCenter Server
       url: "/uninstall/task_uninstalling_the_snapcenter_server.html"
 - title: Automation using REST APIs
-  url: "/sc-automation/automation_index.html"
   entries:
-    - title: Understanding the SnapCenter REST APIs
+    - title: Overview of REST APIs
+      url: "/sc-automation/overview_rest_apis.html"
       entries:
       - title: How to access SnapCenter REST API natively
         url: "/sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html"
