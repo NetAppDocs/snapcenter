@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_clone_an_oracle_database_backup.html
 sidebar: sidebar
-keywords: Credentials,alternate host
+keywords: Credentials, alternate host, clone, FRA, OMF
 summary: 'You can use SnapCenter to clone an Oracle database using the backup of the database.'
 ---
 = Clone an Oracle database backup
@@ -177,8 +177,9 @@ The *Recover database* and *Until Cancel* options are not selected if SnapCenter
 +
 NOTE: If you want to clone a source database that is configured to support flash recovery area (FRA) and Oracle Managed Files (OMF), the log destination for recovery must also adhere to OMF directory structure.
 
++
 The PostOps page is not displayed if the source database is a Data Guard standby or an Active Data Guard standby database. For Data Guard standby or an Active Data Guard standby database, SnapCenter does not provide an option to select the type of recovery in the SnapCenter GUI but the database is recovered using Until Cancel recovery type without applying any logs.
-
++
 |===
 | Field name| Description
 
@@ -226,7 +227,6 @@ Specify the path and the arguments of the postscript that you want to run after 
 You should store the postscript either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated.
 
 If you have placed the script in any folder inside this path, you need to provide the complete path up to the folder where the script is placed.
-
 |===
 
 . On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.

@@ -547,11 +547,10 @@ entries:
       url: "/protect-sco/reference_requirements_for_restoring_an_oracle_database.html"
     - title: Restore Oracle database
       url: "/protect-sco/task_restore_an_oracle_database.html"
-      entries:
-      - title: Restore and recover tablespaces using point-in-time recovery
-        url: "/protect-sco/task_restore_and_recovere_tablespaces_using_point_in_time_recovery.html"
-      - title: Restore and recover pluggable database using point-in-time recovery
-        url: "/protect-sco/task_restore_and_recover_pluggable_database_using_point_in_time_recovery.html"
+    - title: Restore and recover tablespaces using point-in-time recovery
+      url: "/protect-sco/task_restore_and_recovere_tablespaces_using_point_in_time_recovery.html"
+    - title: Restore and recover pluggable database using point-in-time recovery
+      url: "/protect-sco/task_restore_and_recover_pluggable_database_using_point_in_time_recovery.html"
     - title: Restore and recover Oracle databases using UNIX commands
       url: "/protect-sco/task_restore_and_recover_oracle_databases_using_unix_commands.html"
     - title: Monitor Oracle database restore operations
@@ -565,20 +564,18 @@ entries:
       url: "/protect-sco/reference_requirements_for_cloning_an_oracle_database.html"
     - title: Clone an Oracle database
       url: "/protect-sco/task_clone_an_oracle_database_backup.html"
-      entries:
-      - title: Clone a pluggable database
-        url: "/protect-sco/task_clone_a_pluggable_database.html"
+    - title: Clone a pluggable database
+      url: "/protect-sco/task_clone_a_pluggable_database.html"
     - title: Clone Oracle database backups using UNIX commands
       url: "/protect-sco/task_clone_oracle_database_backups_using_unix_commands.html"
+    - title: Split an Oracle Database Clone
+      url: "/protect-sco/task_split_an_oracle_database_clone.html"
+    - title: Split clone of a pluggable database
+      url: "/protect-sco/task_split_clone_of_a_pluggable_database.html"
     - title: Monitor Oracle database clone operations
       url: "/protect-sco/task_monitor_oracle_database_clone_operations.html"
     - title: Cancel Oracle database clone operations
       url: "/protect-sco/task_cancel_oracle_database_clone_operations.html"
-    - title: Split an Oracle Database Clone
-      url: "/protect-sco/task_split_an_oracle_database_clone.html"
-      entries:
-      - title: Split clone of a pluggable database
-        url: "/protect-sco/task_split_clone_of_a_pluggable_database.html"
     - title: Refresh a clone
       url: "/protect-sco/task_refresh_a_clone.html"
     - title: Delete clone of a pluggable database

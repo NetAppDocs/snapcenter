@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_split_clone_of_a_pluggable_database.html
 sidebar: sidebar
-keywords: 
+keywords: split, PDB, cloned PDB
 summary: 'You can use SnapCenter to split a cloned pluggable database \(PDB\).'
 ---
 = Split clone of a pluggable database
@@ -11,9 +11,13 @@ summary: 'You can use SnapCenter to split a cloned pluggable database \(PDB\).'
 [.lead]
 You can use SnapCenter to split a cloned pluggable database (PDB).
 
+*About this task*
+
 If you created a backup of the target CDB where the PDB is cloned, when you split the PDB clone, the cloned PDB is also removed from the backup of the target CDB.
 
 NOTE: The PDB clones are not displayed in the inventory or resources view.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . Select the source container database (CDB) from the resource or resource group view.

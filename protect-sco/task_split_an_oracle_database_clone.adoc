@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_split_an_oracle_database_clone.html
 sidebar: sidebar
-keywords: 
+keywords: split a clone, split
 summary: 'You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.'
 ---
 = Split an Oracle Database Clone
@@ -11,6 +11,8 @@ summary: 'You can use SnapCenter to split a cloned resource from the parent reso
 [.lead]
 You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.
 
+*About this task*
+
 * You cannot perform the clone split operation on an intermediate clone.
 +
 For example, after you create clone1 from a database backup, you can create a backup of clone1, and then clone this backup (clone2). After you create clone2, clone1 is an intermediate clone, and you cannot perform the clone split operation on clone1. However, you can perform the clone split operation on clone2.
@@ -18,11 +20,10 @@ For example, after you create clone1 from a database backup, you can create a ba
 After splitting clone2, you can perform the clone split operation on clone1 because clone1 is no longer the intermediate clone.
 
 * When you split a clone, the backup copies of the clone are deleted.
-* For information about clone split operation limitations, see the _Logical Storage Management Guide_.
-+
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
-
+* For information about clone split operation limitations, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
 * Ensure that the volume or aggregate on the storage system is online.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
@@ -30,18 +31,14 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 
 . Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 +
-The clone split operation stops responding if the SMCore service restarts and the databases on which the clone split operation was performed are listed as clones in the Resources page. You should run the Stop-SmJob cmdlet to stop the clone split operation, and then retry the clone split operation.
-
+The clone split operation stops responding if the SMCore service restarts and the databases on which the clone split operation was performed are listed as clones in the Resources page. You should run the _Stop-SmJob_ cmdlet to stop the clone split operation, and then retry the clone split operation.
++
 If you want a longer poll time or shorter poll time to check whether the clone is split or not, you can change the value of CloneSplitStatusCheckPollTime parameter in SMCoreServiceHost.exe.config file to set the time interval for SMCore to poll for the status of the clone split operation. The value is in milliseconds and the default value is 5 minutes.
-
++
 For example,
-
++
 ----
 <add key="CloneSplitStatusCheckPollTime" value="300000" />
 ----
 
-The clone split start operation fails if backup, restore, or anther clone split is in progress. You should restart the clone split operation only after the running operations are complete.
-
-*Related information*
-
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_clone_or_verfication_fails_with_aggregate_does_not_exist[SnapCenter clone or verification fails with aggregate does not exist]
+IMPORTANT: The clone split start operation fails if backup, restore, or anther clone split is in progress. You should restart the clone split operation only after the running operations are complete.

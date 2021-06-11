@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_clone_a_pluggable_database.html
 sidebar: sidebar
-keywords:
+keywords: clone, pluggable database, PDB
 summary: 'You can clone a pluggable database \(PDB\) to a different or same target CDB on the same host or alternate host. You can also recover the cloned PDB to a desired SCN or date and time.'
 ---
 = Clone a pluggable database

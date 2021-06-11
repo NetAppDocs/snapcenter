@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_clone_oracle_database_backups_using_unix_commands.html
 sidebar: sidebar
-keywords:
+keywords: clone, CLI, commands
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
 = Clone Oracle database backups using UNIX commands
@@ -11,28 +11,24 @@ summary: 'The clone workflow includes planning, performing the clone operation, 
 [.lead]
 The clone workflow includes planning, performing the clone operation, and monitoring the operation.
 
-*What you will need*
-
-You should have established the connection session with the SnapCenter Server.
-
 *About this task*
+
 You should execute the following commands to create the Oracle database clone specification file and initiate the clone operation.
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running helpcommand_name. Alternatively, you can also refer to the _Command Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.5 Command Reference Guide]
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^].
 
 *Steps*
 
-. Create an Oracle database clone specification from a specified backup: New-SmOracleCloneSpecification
+. Create an Oracle database clone specification from a specified backup: _New-SmOracleCloneSpecification_
 +
 NOTE: If secondary data protection policy is unified mirror-vault, then specify only -IncludeSecondaryDetails. You do not have to specify -SecondaryStorageType.
+
 +
 This command automatically creates an Oracle database clone specification file for the specified source database and its backup. You must also provide a clone database SID so that the specification file created has the automatically generated values for the clone database which you will be creating.
 +
-NOTE: The clone specification file is created at /var/opt/snapcenter/sco/clone_specs.
+NOTE: The clone specification file is created at _/var/opt/snapcenter/sco/clone_specs_.
 
-. Initiate a clone operation from a clone resource group or an existing backup: New-SmClone
+. Initiate a clone operation from a clone resource group or an existing backup: _New-SmClone_
 +
 This command initiates a clone operation. You must also provide an Oracle clone specification file path for the clone operation. You can also specify the recovery options, host where the clone operation to be performed, prescripts, postscripts, and other details.
 +

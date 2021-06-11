@@ -1,6 +1,7 @@
 You can monitor the progress of different SnapCenter restore operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.
 
 *About this task*
+
 Post-restore states describe the conditions of the resource after a restore operation and any further restore actions that you can take.
 
 The following icons appear on the Jobs page, and indicate the state of the operation:
@@ -27,4 +28,4 @@ The following icons appear on the Jobs page, and indicate the state of the opera
 +
 The *View logs* button displays the detailed logs for the selected operation.
 +
-After the volume based restore operation, the backup metadata is deleted from the SnapCenter repository but the backup catalog entries remain in SAP HANA catalog. Though the backup job status displaysimage:../media/success_icon.gif[Completed icon], you should click on job details to see the warning sign of some of the child tasks. Click on the warning sign and delete the indicated backup catalog entries.
+IMPORTANT: After the volume based restore operation, the backup metadata is deleted from the SnapCenter repository but the backup catalog entries remain in SAP HANA catalog. Though the backup job status displaysimage:../media/success_icon.gif[Completed icon], you should click on job details to see the warning sign of some of the child tasks. Click on the warning sign and delete the indicated backup catalog entries.

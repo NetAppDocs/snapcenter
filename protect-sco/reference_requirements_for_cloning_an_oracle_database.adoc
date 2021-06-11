@@ -20,16 +20,16 @@ You should have successfully created online data and log backups or offline (mou
 By default, redo log and control files of the cloned database are created on the ASM disk group or the file system provisioned by SnapCenter for the data files of the clone database.
 
 * If you are using ASM over NFS, you should add _/var/opt/snapcenter/scu/clones/*/*_ to the existing path defined in the asm_diskstring parameter.
-* If you are using ASMFD or ASMLIB, you should use _AFD:*_ and _ORCL:*_ in the asm_diskstring parameter.
-
-NOTE: For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring]
+* In the asm_diskstring parameter, you should configure _AFD:*_ if you are using ASMFD or configure _ORCL:*_ if you are using ASMLIB.
++
+For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring^].
 
 * If you are creating the clone on an alternate host, the alternate host should meet the following requirements:
  ** SnapCenter Plug-in for Oracle Database should be installed on the alternate host.
  ** The clone host should be able to discover LUNs from primary or secondary storage.
   *** If you are cloning from primary storage or secondary (Vault or Mirror) storage to an alternate host, then make sure that an iSCSI session is either established between the secondary storage and the alternate host, or zoned properly for FC.
-   **** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Host Utilities Installation and Setup Guide]
-   **** https://library.netapp.com/ecm/ecm_download_file/ECMP1119223[AIX Host Utilities Installation and Setup Guide]
+   **** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Host Utilities Installation and Setup Guide^]
+   **** https://library.netapp.com/ecm/ecm_download_file/ECMP1119223[AIX Host Utilities Installation and Setup Guide^]
   *** If you are cloning from Vault or Mirror storage to the same host, then make sure that an iSCSI session is either established between the Vault or Mirror storage and the host, or zoned properly for FC.
   *** If you are cloning in a virtualized environment, ensure that an iSCSI session is either established between the primary or secondary storage and the ESX server hosting the alternate host, or zoned properly for FC.
  ** If the source database is an ASM database:

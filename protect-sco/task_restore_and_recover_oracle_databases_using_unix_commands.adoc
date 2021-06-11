@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_restore_and_recover_oracle_databases_using_unix_commands.html
 sidebar: sidebar
-keywords: 
+keywords: restore, recover, CLI
 summary: 'The restore and recovery workflow includes planning, performing the restore and recovery operations, and monitoring the operations.'
 ---
 = Restore and recover Oracle databases using UNIX commands
@@ -11,18 +11,18 @@ summary: 'The restore and recovery workflow includes planning, performing the re
 [.lead]
 The restore and recovery workflow includes planning, performing the restore and recovery operations, and monitoring the operations.
 
-* You should have established the connection session with the SnapCenter Server.
+*About this task*
 
 You should execute the following commands to establish the connection with the SnapCenter Server, list the backups and retrieve its information, and restore the backup.
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running helpcommand_name. Alternatively, you can also refer to the _Command Reference Guide_.
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^].
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]
+*Steps*
 
-. Initiate a connection session with the SnapCenter Server for a specified user: Open-SmConnection
-. Retrieve the information about the backups that you want to restore: Get-SmBackup
-. Retrieve the detailed information about the specified backup: Get-SmBackupDetails
+. Initiate a connection session with the SnapCenter Server for a specified user: _Open-SmConnection_
+. Retrieve the information about the backups that you want to restore: _Get-SmBackup_
+. Retrieve the detailed information about the specified backup: _Get-SmBackupDetails_
 +
 This command retrieves the detailed information about the backup of a specified resource with a given backup ID. The information includes database name, version, home, start and end SCN, tablespaces, pluggable databases, and its tablespaces.
 
-. Restore data from the backup: Restore-SmBackup
+. Restore data from the backup: _Restore-SmBackup_
