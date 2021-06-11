@@ -124,8 +124,6 @@ archive logs are located under
 subdirectories.
 a|
 |===
-[NOTE]
-The custom key-value pairs are supported for Custom plug-in for Linux systems and not supported for custom plug-in registered as a centralized windows plug-in.
 * Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
 +
 |===
