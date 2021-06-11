@@ -71,8 +71,60 @@ image:../media/application_settings.gif[]
 * Click the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 
 * Click the Custom Configurations arrow and enter the custom key-value pairs required for all data protection operations using this resource.
++
+|===
+| Parameter | Setting | Description
 
-* Click the Snapshot Copy Tool arrow to select the tool to create Snapshot copies:
+a|
+ARCHIVE_LOG_ENABLE
+a|
+(Y/N)
+a|
+Enables the archive log management
+to delete the archive logs.
+a|
+ARCHIVE_LOG_RETENTION
+a|
+number_of_days
+a|
+Specifies the number of days the
+archive logs are retained. This setting
+must be equal to or greater than
+NTAP_SNAPSHOT_
+RETENTIONS.
+a|
+ARCHIVE_LOG_DIR
+a|
+change_info_directory/logs
+a|
+Specifies the path to the directory that
+contains the archive logs.
+a|
+ARCHIVE_LOG_EXT
+a|
+file_extension
+a|
+Specifies the archive log file
+extension length. For example, if the
+archive log is
+log_backup_0_0_0_0.161518551942
+9 and if the file_extension value is 5,
+then the extension of the log will
+retain 5 digits, which is 16151.
+a|
+ARCHIVE_LOG_RECURSIVE_SE
+ARCH
+a|
+(Y/N)
+a|
+Enables the management of archive
+logs within subdirectories. You
+should use this parameter if the
+archive logs are located under
+subdirectories.
+a|
+|===
+* Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
 +
 |===
 | If you want...| Then...
@@ -113,4 +165,4 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. The SMTP server must be configured in *Settings* > *Global Settings*.
 
-* Review the summary, and then click *Finish*. 
+* Review the summary, and then click *Finish*.
