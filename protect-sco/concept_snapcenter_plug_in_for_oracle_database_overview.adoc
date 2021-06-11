@@ -1,10 +1,10 @@
 ---
 permalink: protect-sco/concept_snapcenter_plug_in_for_oracle_database_overview.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for Oracle Databases
+keywords: SnapCenter Plug-in for Oracle Databases, overview, Oracle, Oracle database
 summary: 'The SnapCenter Plug-in for Oracle Database is a host-side component of the NetAppSnapCenter Software that enables application-aware data protection management of Oracle databases.'
 ---
-= SnapCenter Plug-in for Oracle Database overview
+= Overview of SnapCenter Plug-in for Oracle Database
 :icons: font
 :imagesdir: ../media/
 
@@ -12,15 +12,6 @@ summary: 'The SnapCenter Plug-in for Oracle Database is a host-side component of
 The SnapCenter Plug-in for Oracle Database is a host-side component of the NetAppSnapCenter Software that enables application-aware data protection management of Oracle databases.
 
 The Plug-in for Oracle Database automates the backup, cataloging and uncataloging with Oracle RMAN, verification, mounting, unmounting, restore, recovery, and cloning of Oracle databases in your SnapCenter environment.
-
 The Plug-in for Oracle Database installs SnapCenter Plug-in for UNIX to perform all the data protection operations.
 
 You can use the Plug-in for Oracle Database to manage backups of Oracle databases running SAP applications. However, SAP BR*Tools integration is not supported.
-
-The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
