@@ -473,68 +473,30 @@ entries:
       url: "/protect-sco/task_define_a_backup_strategy_for_oracle_databases.html"
     - title: Define a restore and recovery strategy for Oracle databases
       url: "/protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html"
-      entries:
-      - title: Types of Oracle database backups supported for restore and recovery
-          operations
-        url: "/protect-sco/reference_types_of_oracle_database_backups_supported_for_restore_and_recovery_operations.html"
-      - title: Types of restore methods supported for Oracle databases
-        url: "/protect-sco/reference_types_of_restore_methods_supported_for_oracle_databases.html"
-      - title: Types of restore operations supported for Oracle databases
-        url: "/protect-sco/reference_types_of_restore_operations_supported_for_oracle_databases.html"
-      - title: Types of recovery operations supported for Oracle databases
-        url: "/protect-sco/reference_types_of_recovery_operations_supported_for_oracle_database.html"
-      - title: Limitations related to restore and recovery of Oracle databases
-        url: "/protect-sco/reference_limitations_related_to_restore_and_recovery_of_oracle_databases.html"
-      - title: Sources and destinations for restoring Oracle databases
-        url: "/protect-sco/reference_sources_and_destinations_for_restoring_oracle_databases.html"
     - title: Define a clone strategy for Oracle databases
       url: "/protect-sco/task_define_a_clone_strategy_for_oracle_databases.html"
-      entries:
-      - title: Types of Oracle database backups supported for cloning
-        url: "/protect-sco/reference_types_of_oracle_database_backups_supported_for_cloning.html"
-      - title: Types of cloning supported for Oracle databases
-        url: "/protect-sco/reference_types_of_cloning_supported_for_oracle_databases.html"
-      - title: Clone naming conventions for Oracle databases
-        url: "/protect-sco/concept_clone_naming_conventions_for_oracle_databases.html"
-      - title: Limitations of cloning Oracle databases
-        url: "/protect-sco/concept_limitations_related_to_cloning_of_oracle_databases.html"
   - title: Install SnapCenter Plug-in for Oracle Database
     url: "/protect-sco/task_install_snapcenter_plug_in_for_oracle_databases.html"
     entries:
-    - title: Prerequisites for adding hosts and installing the SnapCenter Plug-ins
-        Package for Linux or AIX
+    - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux or AIX
       url: "/protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html"
       entries:
-      - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
+      - title: Host requirements for installing Plug-ins Package for Linux
         url: "/protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux.html"
-      - title: Host requirements for installing the SnapCenter Plug-ins Package for AIX
+      - title: Host requirements for installing Plug-ins Package for AIX
         url: "/protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_ins_package_for_aix.html"
-      - title: Set up credentials for installing the SnapCenter Plug-ins Package for
-          Linux or AIX
+      - title: Set up credentials for installing Plug-ins Package for Linux or AIX
         url: "/protect-sco/task_set_up_credentials_for_installing_the_plug_in_package_for_linux_or_aix.html"
       - title: Configure credentials for an Oracle database
         url: "/protect-sco/task_configure_credentials_for_oracle_database.html"
-    - title: Add hosts and install the SnapCenter Plug-ins Package for Linux or AIX
+    - title: Add hosts and install Plug-ins Package for Linux or AIX
       url: "/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html"
       entries:
-      - title: Install SnapCenter Plug-ins Package for Linux or AIX on multiple remote
-          hosts using cmdlets
+      - title: Install Plug-ins Package for Linux or AIX on multiple remote hosts using cmdlets
         url: "/protect-sco/task_install_snapcenter_plug_ins_package_for_linux_or_aix_on_multiple_remote_hosts_using_cmdlets.html"
-      - title: Install SnapCenter Plug-ins Package for Linux or AIX using the command-line
-          interface
+      - title: Install Plug-ins Package for Linux or AIX using the command-line interface
         url: "/protect-sco/concept_install_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html"
-        entries:
-        - title: Installing the SnapCenter Plug-ins Package for Linux interactively
-          url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_linux_interactively.html"
-        - title: Installing SnapCenter Plug-ins Package for Linux or AIX on cluster
-            host
-          url: "/protect-sco/task_installing_snapcenter_plug_ins_package_for_linux_or_aix_on_cluster_host.html"
-        - title: Installing the SnapCenter Plug-ins Package for Linux in silent mode
-            or console mode
-          url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_linux_in_silent_or_console_mode.html"
-        - title: Installing the SnapCenter Plug-ins Package for AIX in silent mode
-          url: "/protect-sco/task_installing_the_snapcenter_plug_ins_package_for_aix_in_silent_mode.html"
-      - title: Monitor the status of installing Plug-in for Oracle
+      - title: Monitor the status of installing Plug-ins Package for Linux or AIX
         url: "/protect-sco/task_monitor_the_status_of_installing_plugin_for_Oracle.html"
     - title: Configure the SnapCenter Plug-in Loader service
       url: "/protect-sco/task_configure_snapcenter_plug_in_loader_service.html"
@@ -558,20 +520,6 @@ entries:
         url: "/protect-sco/task_prepare_to_import_data.html"
       - title: Import data
         url: "/protect-sco/task_import_data.html"
-  - title: Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
-    url: "/protect-sco/concept_import_data_from_snapmanager_for_oracle_and_snapmanager_for_sap_to_snapcenter.html"
-    entries:
-    - title: Configurations supported for importing data
-      url: "/protect-sco/reference_configurations_supported_for_import.html"
-      entries:
-      - title: What gets imported to SnapCenter
-        url: "/protect-sco/reference_what_gets_imported_to_snapcenter.html"
-      - title: What does not get imported to SnapCenter
-        url: "/protect-sco/reference_what_does_not_get_imported_to_snapcenter.html"
-    - title: Prepare to import data
-      url: "/protect-sco/task_prepare_to_import_data.html"
-    - title: Import data
-      url: "/protect-sco/task_import_data.html"
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: "/protect-sco/concept_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Prepare for protecting Oracle databases

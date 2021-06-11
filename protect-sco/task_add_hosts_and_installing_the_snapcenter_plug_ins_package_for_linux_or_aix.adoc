@@ -1,15 +1,15 @@
 ---
 permalink: protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html
 sidebar: sidebar
-keywords: credentials
-summary: 'You can use the SnapCenterAdd Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX. The plug-ins are automatically installed on the remote hosts.'
+keywords: credentials, install plug-in, Linux, AIX
+summary: 'You can use the SnapCenter Add Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX. The plug-ins are automatically installed on the remote hosts.'
 ---
-= Add hosts and install the SnapCenter Plug-ins Package for Linux or AIX
+= Add hosts and install Plug-ins Package for Linux or AIX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the SnapCenterAdd Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX. The plug-ins are automatically installed on the remote hosts.
+You can use the Add Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX. The plug-ins are automatically installed on the remote hosts.
 
 *What you will need*
 
@@ -92,6 +92,7 @@ a|
 Add all hosts in the Oracle RAC
 a|
 Select this check box to add all the cluster nodes in an Oracle RAC.
+
 //Included the below info for BURT 1348035 for 4.5
 In a Flex ASM setup, all the nodes irrespective of whether it is a Hub or Leaf node, will be added.
 a|
@@ -107,7 +108,7 @@ If you have not selected the Skip prechecks checkbox, the host is validated to v
 NOTE: The precheck script does not validate the plug-in port firewall status if it is specified in the firewall reject rules.
 
 +
-Appropriate error or warning messages are displayed if the minimum requirements are not met. If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you should fix the issue.
+Appropriate error or warning messages are displayed if the minimum requirements are not met. If the error is related to disk space or RAM, you can update the web.config file located at _C:\Program Files\NetApp\SnapCenter WebApp_ to modify the default values. If the error is related to other parameters, you should fix the issue.
 +
 NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
