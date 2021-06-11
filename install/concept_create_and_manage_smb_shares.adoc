@@ -52,7 +52,7 @@ The name you enter for the share will also be used as the volume name.
 The share name:
 
 ** Must be a UTF-8 string.
-** Must not include the following characters: control characters from 0x00 to 0x1F (both inclusive), 0x22 (double quotes), and the special characters `\ / [ ] : | < > + = ; , ?`
+** Must not include the following characters: control characters from 0x00 to 0x1F (both inclusive), 0x22 (double quotes), and the special characters `\ / [ ] : (vertical bar) < > + = ; , ?`
 a|
 Share path
 a|

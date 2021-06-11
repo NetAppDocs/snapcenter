@@ -2,7 +2,7 @@
 permalink: install/task_configure_secured_mysql_connections_for_standalone_snapcenter_server.html
 sidebar: sidebar
 keywords: SSL
-summary: 'You can generate Secure Sockets Layer \(SSL\) certificates and key files, if you want to secure the communication between SnapCenter Server and MySQL Server. You must configure the certificates and key files in the MySQL Server and SnapCenter Server.'
+summary: 'You can generate Secure Sockets Layer (SSL) certificates and key files, if you want to secure the communication between SnapCenter Server and MySQL Server. You must configure the certificates and key files in the MySQL Server and SnapCenter Server.'
 ---
 = Configure secured MySQL connections for standalone SnapCenter Server configurations
 :icons: font
@@ -34,17 +34,17 @@ NOTE: The common name value that is used for the server certificate, client cert
 
 . Copy the SSL certificates and key files to the MySQL Data folder.
 +
-The default MySQL Data folder path is C:\ProgramData\NetApp\SnapCenter\MySQL Data\Data\.
+The default MySQL Data folder path is `C:\ProgramData\NetApp\SnapCenter\MySQL Data\Data\`.
 
 . Update the CA certificate, server public certificate, client public certificate, server private key, and client private key paths in the MySQL server configuration file (my.ini).
 +
-The default MySQL server configuration file (my.ini) path is C:\ProgramData\NetApp\SnapCenter\MySQL Data\my.ini.
+The default MySQL server configuration file (my.ini) path is `C:\ProgramData\NetApp\SnapCenter\MySQL Data\my.ini`.
 +
 NOTE: You must specify the CA certificate, server public certificate, and server private key paths in the [mysqld] section of the MySQL server configuration file (my.ini).
 +
 You must specify the CA certificate, client public certificate, and client private key paths in the [client] section of the MySQL server configuration file (my.ini).
 +
-The following example shows the certificates and key files copied to the [mysqld] section of the my.ini file in the default folder C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data.
+The following example shows the certificates and key files copied to the [mysqld] section of the my.ini file in the default folder `C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data`.
 +
 ----
 ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
