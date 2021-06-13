@@ -45,7 +45,7 @@ Factors that determine the number of backups that you need include the size of t
 == Backup naming convention for Windows file systems
 Windows file system backups use the default Snapshot copy naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.
 
-The Snapshot copy uses the following default naming convention: `resourcegroupname_hostname_timestamp`
+The Snapshot copy uses the following default naming convention: resourcegroupname_hostname_timestamp
 
 You should name your backup resource groups logically, as in the following example:
 
@@ -63,4 +63,4 @@ When creating a backup, you can also add a descriptive tag to help identify the 
 
 == Backup retention options
 
-include::_include/reuse_concept_backup_retention_options.adoc[]
+include::../_include/reuse_concept_backup_retention_options.adoc[]

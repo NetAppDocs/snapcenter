@@ -51,7 +51,7 @@ Backs up all the transaction logs. The truncated logs that are already committed
 
 == Backup schedules for database plug-ins
 
-include::_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]
+include::../_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]
 
 == Number of backup jobs needed for databases
 
@@ -59,11 +59,11 @@ Factors that determine the number of backup jobs that you need include the size 
 
 == Backup naming conventions
 
-include::_include/reuse_concept_backup_naming_conventions.adoc[]
+include::../_include/reuse_concept_backup_naming_conventions.adoc[]
 
 == Backup retention options
 
-include::_include/reuse_concept_backup_retention_options.adoc[]
+include::../_include/reuse_concept_backup_retention_options.adoc[]
 
 == How long to retain transaction log backups on the source storage volume for Exchange Server
 
