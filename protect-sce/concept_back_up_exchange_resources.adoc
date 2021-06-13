@@ -11,10 +11,8 @@ summary: 'When you install the SnapCenter Plug-in for Microsoft Exchange Server 
 [.lead]
 When you install the SnapCenter Plug-in for Microsoft Exchange Server in your environment, you can use SnapCenter to back up Exchange resources.
 
-You can schedule multiple backups to run across servers simultaneously.
+You can schedule multiple backups to run across servers simultaneously. Backup and restore operations cannot be performed simultaneously on the same resource. Active and passive backup copies on the same volume are not supported.
 
-Backup and restore operations cannot be performed simultaneously on the same resource.
+The following workflow shows the sequence in which you must perform the backup operation:
 
-Active and passive backup copies on the same volume are not supported.
-
-The following workflow shows the sequence of backup operations:image:../media/sce_backup_workflow.gif[]
+image:../media/sce_backup_workflow.gif[]
