@@ -11,4 +11,6 @@ summary: 'You should install and set up SnapCenter Custom Plug-ins if you want t
 [.lead]
 You should install and set up SnapCenter Custom Plug-ins if you want to protect custom plug-in resources.
 
-image::../media/scc_install_configure_workflow.gif[]
+image::../media/scc_install_configure_workflow.png[]
+
+link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]

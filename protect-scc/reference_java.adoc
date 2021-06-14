@@ -16,7 +16,6 @@ A Java custom plug-in interacts directly with an application like database, inst
 
 There are certain limitations that you should be aware of while developing a plug-in using Java programing language.
 
-+
 |===
 | Plug-in characteristic | Java plug-in
 
@@ -50,7 +49,6 @@ running in the same JVM as the SnapCenter Agent itself. When the plug-in crashes
 
 == Supported methods
 
-+
 |===
 | Method | Required | Description | Called when and by whom?
 
@@ -231,7 +229,6 @@ The method gets passed in a Context object. This contains multiple helpers, for 
 
 The Result object contains the following parameters:
 
-+
 |===
 | Parameter | Default | Description
 
@@ -301,7 +298,6 @@ For example, set exit code to 0, set lists for Stdout and Stderr, set config par
 The VersionResult informs the SnapCenter Server the plug-in version. As it also inherits
 from Result, it contains the config, exitCode, stdout, stderr, and messages parameters.
 
-+
 |===
 |Parameter |Default |Description
 
@@ -344,7 +340,7 @@ For example:
 === Using the Context Object
 
 The context object provides the following methods:
-+
+
 |===
 |Context method |Purpose
 

@@ -37,7 +37,6 @@ Format:
 === Using plug-in stubs
 SnapCenter plug-ins must implement plug-in stubs. These are methods that the SnapCenter Server calls based on a specific workflow.
 
-+
 |===
 | Plug-in Stub | Optional/Required | Purpose
 

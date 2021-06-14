@@ -50,24 +50,24 @@ a|
 Host name
 a|
 Enter the fully qualified domain name (FQDN) or the IP address of the host.    SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
-+
+
 For Windows environments, the IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
-+
+
 You can enter the IP addresses or FQDN of a stand-alone host.
-+
+
 If you are adding a host by using SnapCenter and the host is part of a subdomain, you must provide the FQDN.
 a|
 Credentials
 a|
 Either select the credential name that you created, or create new credentials.     The credentials must have administrative rights on the remote host. For details, see the information about creating credentials.
-+
+
 You can view details about the credentials by positioning your cursor over the credential name that you specified.
-+
-NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
-+
+
+[NOTE]
+ The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
 |===
 
-. In the Select Plug-ins to Install section, select the plug-ins to install.
+. In the *Select Plug-ins to Install* section, select the plug-ins to install.
 . (Optional) Click *More Options*.
 +
 |===
@@ -77,7 +77,7 @@ a|
 Port
 a|
 Either retain the default port number, or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
-+
+
 [NOTE]
 If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
 a|
@@ -119,8 +119,6 @@ For Windows host, select this check box if you want to use group Managed Service
 
 Provide the gMSA name in the following format: domainName\accountName$.
 *Note:* gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
-
-+
 |===
 
 . Click *Submit*.

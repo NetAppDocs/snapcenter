@@ -44,8 +44,8 @@ Select the host.
 a|
 Type
 a|
-Select the type.     Type is user defined as per the plug-in description file. For example, database and instance.
-+
+Select the type. Type is user defined as per the plug-in description file. For example, database and instance.
+
 In case the type selected has a parent, enter the details of the parent. For example, if the type is Database and the parent is Instance, enter the details of the Instance.
 a|
 Credential name
@@ -55,7 +55,6 @@ a|
 Mount Points
 a|
 Enter the mount paths where the resource is mounted.    This is applicable only for a Windows host.
-+
 |===
 image:../media/adding_resources.gif[]
 

@@ -37,7 +37,7 @@ For every API call, use the following information:
 === Use Plug-in parameters
 
 A set of parameters are passed to the plug-in as part of every API call made. The following table lists the specific information for the parameters.
-+
+
 |===
 | Parameter| Purpose
 
@@ -89,7 +89,6 @@ code has a specific meaning and the plug-in uses the right exit code to indicate
 
 The following table depicts error codes and their meaning.
 
-+
 |===
 | Exit code | Purpose
 
@@ -122,7 +121,7 @@ The error messages are passed from the plug-in to the SnapCenter Server. The mes
 includes the message, log level, and time stamp.
 
 The following table lists levels and their purposes.
-+
+
 |===
 | Parameter| Purpose
 

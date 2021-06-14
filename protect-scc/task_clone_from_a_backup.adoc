@@ -50,7 +50,6 @@ This is mandatory when the clone destination is the same as the source. Enter a 
 If the resource selected is a LUN and if you are cloning from a secondary backup, then the destination volumes are listed. Single source can have multiple destination volumes.
 
 . In the *Settings* page, perform the following:
-+
 |===
 | For this field...| Do this...
 

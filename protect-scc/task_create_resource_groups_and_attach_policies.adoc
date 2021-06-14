@@ -31,15 +31,14 @@ a|
 Tags
 a|
 Enter one or more labels that will help you later search for the resource group.
-+
+
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
 a|
 Use custom name format for Snapshot copy
 a|
 Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
-+
+
 For example, _customtext_resource group_policy_hostname or resource group_hostname_. By default, a timestamp is appended to the Snapshot copy name.
-+
 |===
 
 . Optional:   On the *Resources* page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
@@ -65,7 +64,6 @@ a|
 Disable WAFL Sync
 a|
 Select this to avoid forcing a WAFL consistency point.
-+
 |===
 image:../media/application_settings.gif[]
 * Click the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
@@ -143,7 +141,6 @@ a|
 To enter the command to be executed on the host to create Snapshot copies.
 a|
 Select Other, and then enter the command to be executed on the host to create a Snapshot copy.
-+
 |===
 . On the *Policies* page, perform the following steps:
 * Select one or more policies from the drop-down list.

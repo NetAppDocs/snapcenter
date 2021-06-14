@@ -30,9 +30,9 @@ The resources are displayed along with information such as type, host or cluster
 +
 NOTE: Although a backup might be for a resource group, when you restore, you must select the individual resources you want to restore.
 +
-If the resource is not protected,_Not protected_ is displayed in the Overall Status column.
+If the resource is not protected, _Not protected_ is displayed in the *Overall Status* column.
 +
-The status _Not protected_ in the Overall Status column can mean either that the resource is not protected, or that the resource was backed up by a different user.
+The status _Not protected_ in the *Overall Status* column can mean either that the resource is not protected, or that the resource was backed up by a different user.
 
 . Select the resource or select a resource group and then select a resource in that group.
 +
@@ -52,7 +52,7 @@ If the resource contains volumes or qtrees as Storage Footprint, then newer Snap
   *** You can select multiple volumes and qtrees.
   *** If resource type is LUN, entire LUN is restored. You can select multiple LUNs.
 *Note:* If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
-. In the Recovery Type page, perform the following steps: select option to apply logs. Make sure your plugin supports All logs and Logs until restore type before selecting it.
+. In the *Recovery Type* page, perform the following steps: select option to apply logs. Make sure your plugin supports All logs and Logs until restore type before selecting it.
 +
 |===
 | If you want to...| Do this...

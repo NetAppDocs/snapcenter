@@ -26,7 +26,7 @@ Click image:../media/filter_icon.gif[], and then select the host name and the re
 . Click the resource that you want to back up.
 . In the *Resource* page, if you want to use a custom name, select the *Use custom name format for Snapshot copy* check box , and then enter a custom name format for the Snapshot copy name.
 +
-For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name
+For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
 
 . In the *Application Settings* page, do the following:
  ** Click the *Backups* arrow to set additional backup options:

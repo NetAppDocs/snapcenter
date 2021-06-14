@@ -54,10 +54,10 @@ a|
 Keep a certain number of Snapshot copies
 a|
 Select *Total Snapshot copies to keep*, and then specify the number of Snapshot copies that you want to keep.    If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
-+
+
 [NOTE]
  You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
-+
+
 [NOTE]
  The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 a|
@@ -83,7 +83,7 @@ a|
 *Secondary policy label*
 a|
 Select a Snapshot label.     Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
-+
+
 [NOTE]
  If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 a|

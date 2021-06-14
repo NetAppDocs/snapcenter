@@ -20,7 +20,6 @@ For every plug-in created, you must have a description file. The description fil
 
 ==== Using plug-in descriptor file attributes and its significance
 
-+
 |===
 |Attribute | Description
 

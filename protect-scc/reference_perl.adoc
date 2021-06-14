@@ -95,8 +95,6 @@ Apply messages to the results object:
 
 Custom plug-ins must expose plug-in stubs. These are methods that the SnapCenter Server calls, based on a workflow.
 
-+
-===
 |===
 | Plug-in Stub| Optional/Required | Purpose
 
