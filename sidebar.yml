@@ -64,10 +64,10 @@ entries:
       url: "/install/reference_generate_CA_certificate_CSR_file.html"
     - title: Import CA Certificates
       url: "/install/task_import_CA_certificates.html"
-    - title: Configure CA certificate with Windows host plug-in services
-      url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
     - title: Get the CA certificate thumbprint
       url: "/install/task_get_the_CA_certificate_thumbprint.html"
+    - title: Configure CA certificate with Windows host plug-in services
+      url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
     - title: Configure CA certificate with SnapCenter site
       url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
     - title: Enable CA Certificates for SnapCenter Server
@@ -262,10 +262,10 @@ entries:
       entries:
       - title: Import CA certificate
         url: "/protect-scsql/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/protect-scsql/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-scsql/task_get_the_CA_certificate_thumbprint.html"
+      - title: Configure CA certificate with Windows host plug-in services
+        url: "/protect-scsql/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Enable CA Certificates for plug-ins
         url: "/protect-scsql/task_enable_ca_certificates_for_plug-ins.html"
     - title: Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
@@ -398,10 +398,10 @@ entries:
       entries:
       - title: Import CA certificates
         url: "/protect-scw/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/protect-scw/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-scw/task_get_the_CA_certificate_thumbprint.html"
+      - title: Configure CA certificate with Windows host plug-in services
+        url: "/protect-scw/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Enable CA Certificates for plug-ins
         url: "/protect-scw/task_enable_ca_certificates_for_plug-ins.html"
   - title: Back up Windows file systems
@@ -627,10 +627,10 @@ entries:
       entries:
       - title: Import CA certificates
         url: "/protect-sce/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/protect-sce/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-sce/task_get_the_CA_certificate_thumbprint.html"
+      - title: Configure CA certificate with Windows host plug-in services
+        url: "/protect-sce/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Enable CA Certificates for plug-ins
         url: "/protect-sce/task_enable_ca_certificates_for_plug-ins.html"
     - title: Configure SnapManager 7.x for Exchange and SnapCenter to coexist
@@ -767,10 +767,10 @@ entries:
       entries:
       - title: Import CA certificates
         url: "/protect-hana/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/protect-hana/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-hana/task_get_the_CA_certificate_thumbprint.html"
+      - title: Configure CA certificate with Windows host plug-in services
+        url: "/protect-hana/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Linux host
         url: "/protect-hana/task_configure_CA_certificate_for_saphana_on_Linux_host.html"
       - title: Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Windows host
@@ -905,10 +905,10 @@ entries:
       entries:
       - title: Import CA certificates
         url: "/protect-scc/task_import_CA_certificates.html"
-      - title: Configure CA certificate with Windows host plug-in services
-        url: "/protect-scc/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Get the CA certificate thumbprint
         url: "/protect-scc/task_get_the_CA_certificate_thumbprint.html"
+      - title: Configure CA certificate with Windows host plug-in services
+        url: "/protect-scc/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host
         url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html"
       - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
