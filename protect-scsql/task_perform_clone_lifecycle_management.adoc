@@ -9,7 +9,7 @@ summary: 'Using SnapCenter, you can create clones from a resource group or datab
 :imagesdir: ../media/
 
 [.lead]
-Using SnapCenter, you can create clones from a resource group or database. You can either perform on-demand clone or you can schedule recurring clone operations of a resource group or database . If you clone a backup periodically, you can use the clone to develop applications, populate data, or recover data.
+Using SnapCenter, you can create clones from a resource group or database. You can either perform on-demand clone or you can schedule recurring clone operations of a resource group or database. If you clone a backup periodically, you can use the clone to develop applications, populate data, or recover data.
 
 SnapCenter enables you to schedule multiple clone operations to run simultaneously across multiple servers.
 
@@ -51,7 +51,6 @@ a|
 Auto assign mount point or Auto assign volume mount point under path
 a|
 Choose whether to automatically assign a mount point or volume mount point under a path.     Choosing to auto assign a volume mount point under a path enables you to provide a specific directory. The mount points will be created within that directory. Before you choose this option, you must ensure that the directory is empty. If there is a database in the directory, the database will be in an invalid state after the mount operation.
-+
 |===
 
 . In the *Location* page, select a storage location to create a clone.

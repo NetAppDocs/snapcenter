@@ -14,9 +14,11 @@ Windows Server 2012 or later enables you to create a group Managed Service Accou
  .. Add computer objects to the group.
  .. Use the user group you just created to create the gMSA.
 +
-For example, `New-ADServiceAccount -name <ServiceAccountName> -DNSHostName <fqdn> -PrincipalsAllowedToRetrieveManagedPassword <group> -ServicePrincipalNames <SPN1,SPN2,…>`
+For example,
++
+  New-ADServiceAccount -name <ServiceAccountName> -DNSHostName <fqdn> -PrincipalsAllowedToRetrieveManagedPassword <group> -ServicePrincipalNames <SPN1,SPN2,…>
 
- .. Run Get-ADServiceAccount command to verify the service account.
+ .. Run `Get-ADServiceAccount` command to verify the service account.
 . Configure the gMSA on your hosts:
  .. Enable the Active Directory module for Windows PowerShell on the host where you want to use the gMSA account.
 +
@@ -41,8 +43,8 @@ automatically updated, turn on Windows Update.
 
 
  .. Restart your host.
- .. Install the gMSA on your host by running the following command from the PowerShell command prompt:Install-AdServiceAccount <gMSA>
- .. Verify your gMSA account by running the following command: Test-AdServiceAccount <gMSA>
+ .. Install the gMSA on your host by running the following command from the PowerShell command prompt: `Install-AdServiceAccount <gMSA>`
+ .. Verify your gMSA account by running the following command: `Test-AdServiceAccount <gMSA>`
 . Assign the administrative privileges to the configured gMSA on the host.
 . Add the Windows host by specifying the configured gMSA account in the SnapCenter Server.
 +

@@ -90,7 +90,6 @@ a|
 Backup priority (Minimum and Maximum backup priority)
 a|
 Specify a minimum backup priority number, and a maximum backup priority number that decide the AG replica for backup.        For example, you can have a minimum priority of 10 and a maximum priority of 50. In this case, all the AG replicas with a priority more than 10 and less than 50 are considered for backup.
-+
 |===
 +
 NOTE: In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the AG changes, the backups are taken according to the retention settings and the backups of the previous owner node will be retained. The retention for AG is applicable only at the node level.
@@ -121,7 +120,7 @@ a|
 Select the *Keep log backups applicable to last <number> days of full backups* option, and specify the number of days to keep the log backup copies.
 |===
 
- .. In the Full backup retentions settings section for the On Demand retention settings, perform the following actions:
+ .. In the *Full backup retentions settings* section for the On Demand retention settings, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -143,7 +142,7 @@ a|
 If you want specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 |===
 
- .. In the Full backup retentions settings section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected on Backup Type page.
+ .. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected on *Backup Type* page.
 +
 |===
 | For this field...| Do this...
@@ -163,10 +162,12 @@ The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cm
 
 +
 This example sets the log Snapshot copy retention to 2:
+
 +
 ----
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
 ----
+
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
 
@@ -202,8 +203,8 @@ For example, you can run a script to update SNMP traps, automate alerts, and sen
 NOTE: You must configure the SnapMirror retention policy in ONTAP so that the secondary storage does not reach the maximum limit of Snapshot copies.
 
 . On the *Verification* page, perform the following steps:
- .. In the Run verification for following backup schedules section, select the schedule frequency.
- .. In the Database consistency check options section, perform the following actions:
+ .. In the *Run verification for following backup schedules* section, select the schedule frequency.
+ .. In the *Database consistency check options* section, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -230,6 +231,6 @@ a|
 Select *Limit the checks and obtain the looks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
 |===
 
- .. In the Log Backup section, select *Verify log backup upon completion* to verify the log backup upon completion.
- .. In the Verification script settings section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
+ .. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.
+ .. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
 . Review the summary, and then click *Finish*.

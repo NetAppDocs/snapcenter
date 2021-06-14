@@ -13,12 +13,12 @@ The following icons appear on the Jobs page and indicate the state of the operat
 *Steps*
 
 . In the left navigation pane, click *Monitor*.
-. In the Monitor page, click *Jobs*.
-. On the Jobs page, to filter the list so that only plug-in installation operations are listed, do the following:
+. In the *Monitor* page, click *Jobs*.
+. On the *Jobs* page, to filter the list so that only plug-in installation operations are listed, do the following:
  .. Click *Filter*.
  .. Optional: Specify the start and end date.
  .. From the Type drop-down menu, select *Plug-in installation*.
  .. From the Status drop-down menu, select the installation status.
  .. Click *Apply*.
 . Select the installation job and click *Details* to view the job details.
-. In the Job Details page, click *View logs*.
+. In the *Job Details* page, click *View logs*.

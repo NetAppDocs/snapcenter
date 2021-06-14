@@ -35,7 +35,7 @@ http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the Hosts page do the following:
+. On the *Hosts* page do the following:
 +
 |===
 | For this field...| Do this...
@@ -44,15 +44,15 @@ a|
 Host Type
 a|
 Select Windows as the host type.    The SnapCenter Server adds the host, and then installs the Plug-in for Windows if the plug-in is not already installed on the host.
-+
+
 If you select the Microsoft SQL Server option on the Plug-ins page, the SnapCenter Server installs the Plug-in for SQL Server.
 a|
 Host name
 a|
 Enter the fully qualified domain name (FQDN) or the IP address of the host.    IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
-+
+
 SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
-+
+
 You can enter the IP addresses or FQDN of one of the following:
 
  ** Stand-alone host
@@ -63,11 +63,10 @@ a|
 Credentials
 a|
 Select the credential name that you created or create new credentials.     The credential must have administrative rights on the remote host. For details, see the information about creating credentials.
-+
+
 You can view details about the credentials by positioning your cursor over the credential name that you specified.
 
 NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
-+
 |===
 
 . In the *Select Plug-ins to Install* section, select the plug-ins to install.
@@ -102,12 +101,11 @@ Select this check box if you want to use group Managed Service Account (gMSA) to
 Provide the gMSA name in the following format: domainName\accountName$.
 
 NOTE: If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
-+
 |===
 
 . Click *Submit*.
 . For SQL Plug-in, select the host to configure the log directory.
-. Click *Configure log directory* and on the Configure host log directory page, click *Browse* and complete the following steps:
+. Click *Configure log directory* and on the *Configure host log directory* page, click *Browse* and complete the following steps:
 +
 Only NetApp LUNs (drives) are listed for selection. SnapCenter backs up and replicates the host log directory as part of the backup operation.
 +

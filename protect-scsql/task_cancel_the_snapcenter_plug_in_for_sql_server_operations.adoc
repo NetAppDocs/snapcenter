@@ -30,6 +30,7 @@ If you cancel the operation before verification, the operation is canceled, and 
 +
 |===
 | From the...| Action
+
 a|
 Monitor page
 a|

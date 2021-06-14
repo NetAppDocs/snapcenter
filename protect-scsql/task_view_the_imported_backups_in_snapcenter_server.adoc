@@ -17,6 +17,6 @@ After you have imported your SnapManager for Microsoft SQL Server archived backu
 . Create a resource group with all the databases.
 . Select the resource group.
 . Protect the resource group.
-. In the Topology page, Manage Copies view, click backups from Vault copies.
+. In the *Topology* page, *Manage Copies* view, click backups from Vault copies.
 +
 The details of the backups are displayed.

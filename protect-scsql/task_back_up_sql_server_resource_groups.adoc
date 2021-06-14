@@ -18,8 +18,8 @@ You can back up a resource group on demand from the Resources page. If a resourc
 +
 You can search the resource group either by entering the resource group name in the search box, or by clicking *image:../media/filter_icon.gif[]*, and then selecting the tag. You can then click *image:../media/filter_icon.gif[]* to close the filter pane.
 
-. On the Resource Groups page, select the resource group that you want to back up, and then click *Back up Now*.
-. On the Backup page, perform the following steps:
+. On the *Resource Groups* page, select the resource group that you want to back up, and then click *Back up Now*.
+. On the *Backup* page, perform the following steps:
  .. If you have associated multiple policies with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.

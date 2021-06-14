@@ -64,7 +64,6 @@ a|
 Resource Name
 a|
 Enter the resource name.    This option is available only if you selected the Non-data Volume as the resource type.
-+
 |===
 
 . On the *Provide Storage Footprint* page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.

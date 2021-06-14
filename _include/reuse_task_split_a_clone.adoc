@@ -14,10 +14,11 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 
 * Ensure that the volume or aggregate on the storage system is online.
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the Resources page, select the appropriate option from the View list:
+. On the *Resources* page, select the appropriate option from the View list:
 +
 |===
 | Option| Description
+
 a|
 For database applications
 a|
@@ -48,6 +49,6 @@ For example:
 
 The clone split start operation fails if backup, restore, or anther clone split is in progress. You should restart the clone split operation only after the running operations are complete.
 
-*Related information*
+*For more information*
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_clone_or_verfication_fails_with_aggregate_does_not_exist[SnapCenter clone or verification fails with aggregate does not exist]

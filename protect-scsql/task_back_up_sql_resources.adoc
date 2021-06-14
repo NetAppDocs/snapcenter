@@ -30,23 +30,23 @@ If a resource is not yet part of any resource group, you can back up the resourc
 When you take a backup of an instance, the information about the last backup status or the timestamp of that instance will not be available in the resources page.
 +
 In the topology view, you cannot differentiate whether the backup status, timestamp, or backup is for an instance or a database.
-. On the Resources page, select the *custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
+. On the *Resources* page, select the *custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
 +
 For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
 
 . On the *Policies* page, perform the following tasks:
- .. In the Policies section, select one or more policies from the drop-down list.
+ .. In the *Policies* section, select one or more policies from the drop-down list.
 +
 You can create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
 +
-In the Configure schedules for selected policies section, the selected policies are listed.
+In the *Configure schedules for selected policies* section, the selected policies are listed.
 
  .. Click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
- .. In the Add schedules for policypolicy_name dialog box, configure the schedule, and then click *OK*.
+ .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then click *OK*.
 +
-Here policy_name is the name of the policy that you have selected.
+Here `policy_name` is the name of the policy that you have selected.
 +
-The configured schedules are listed in the Applied Schedules column.
+The configured schedules are listed in the *Applied Schedules* column.
 
  .. Select the *Use Microsoft SQL Server scheduler*, and then select the scheduler instance from the *Scheduler Instance* drop-down list that is associated with the scheduling policy.
 . On the *Verification* page, perform the following steps:
@@ -58,7 +58,7 @@ NOTE: The verification server version should match the version and edition of th
 
  .. Select *Load secondary locators to verify backups on secondary* to verify your backups on secondary storage system.
  .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
- .. In the Add Verification Schedulespolicy_name dialog box, perform the following actions:
+ .. In the *Add Verification Schedules* `policy_name` dialog box, perform the following actions:
 +
 |===
 | If you want to...| Do this...

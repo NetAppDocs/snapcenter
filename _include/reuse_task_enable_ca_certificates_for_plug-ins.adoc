@@ -20,7 +20,7 @@ The information regarding the parameters that can be used with the cmdlet and th
 
 The Managed Hosts tab host displays a padlock and the color of the padlock indicates the status of the connection between SnapCenter Server and the plug-in host.
 
-* *image:../media/enable_ca_issues_icon.png[]* yellow (default) indicates that there is no certificate enabled or assigned to the plug-in host.
+* *image:../media/enable_ca_issues_icon.png[]* yellow (default) indicates that the certificate is neither enabled nor assigned to the plug-in host.
 * *image:../media/enable_ca_good_icon.png[]* green indicates that the certificate is successfully validated.
 
 * *image:../media/enable_ca_failed_icon.png[]* red with a cross (x) symbol indicates that the certificate could not be validated.

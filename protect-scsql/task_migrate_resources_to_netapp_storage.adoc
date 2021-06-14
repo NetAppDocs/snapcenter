@@ -22,7 +22,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the *Resources* page, select *Database* or *Instance* from the *View* drop-down list.
-. Select either the database or the instance from the list and click Migrate.
+. Select either the database or the instance from the list and click *Migrate*.
 . In the *Resources* page, perform the following actions:
 +
 |===
@@ -39,18 +39,20 @@ Select the target location for data and log files.     The data and log files ar
 a|
 *Show database file details* (optional)
 a|
-Select this option when you want to migrate multiple files of a single database.    *Note:* This option is not displayed when you select the *Instance* resource.
+Select this option when you want to migrate multiple files of a single database.
+[NOTE]
+This option is not displayed when you select the *Instance* resource.
 a|
 *Options*
 a|
 Select *Delete copy of Migrated Database at Original Location* to delete copy of database from the source.    Optional: *RUN UPDATE STATISTICS on tables before detaching the database*.
-+
 |===
 
-. In the Verify page, perform the following actions:
+. In the *Verify* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 *Database Consistency Check Options*
 a|

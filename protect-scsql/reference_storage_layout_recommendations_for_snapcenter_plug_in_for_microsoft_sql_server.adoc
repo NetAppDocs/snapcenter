@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_storage_layout_recommendations_for_snapcenter_plug_in_for_microsoft_sql_server.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'A well-designed storage layout allows SnapCenter Server to back up your databases to meet your recovery objectives. You should consider several factors while defining your storage layout, including the size of the database, the rate of change of the database, and the frequency with which you perform backups.'
 ---
 = Storage layout recommendations for SnapCenter Plug-in for Microsoft SQL Server
@@ -14,8 +14,6 @@ A well-designed storage layout allows SnapCenter Server to back up your database
 The following sections define the storage layout recommendations and restrictions for LUNs and virtual machine disks (VMDKs) with SnapCenter Plug-in for Microsoft SQL Server installed in your environment.
 
 In this case, LUNs can include VMware RDM disks and iSCSI direct-attached LUNs that are mapped to the guest.
-
-NOTE: VMDK and physical raw device mapping (RDM) disk mapped to a single VM guest is not supported.
 
 == LUN and VMDK requirements
 

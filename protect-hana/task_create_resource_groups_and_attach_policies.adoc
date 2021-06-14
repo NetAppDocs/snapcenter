@@ -35,14 +35,13 @@ a|
 Use custom name format for Snapshot copy
 a|
 Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.    For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
-+
 |===
 
 . On the *Resources* page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
 +
 This helps to filter information on the screen.
 
-. Select the resources from the Available Resources section, and then click the right arrow to move them to the Selected Resources section.
+. Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
 . On the *Application Settings* page, do the following:
  ** Click the *Backups* arrow to set additional backup options:
 +
@@ -118,7 +117,7 @@ archive logs are located under
 subdirectories.
 a|
 |===
-+
+
 [NOTE]
 The custom key-value pairs are supported for SAP HANA Linux plug-in systems and not supported for SAP HANA database registered as a centralized windows plug-in.
 
@@ -148,11 +147,11 @@ NOTE: You can also create a policy by clicking *image:../media/add_policy_from_r
 The policies are listed in the Configure schedules for selected policies section.
 
  .. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
- .. In the Add schedules for policypolicy_name dialog box, configure the schedule, and then click *OK*.
+ .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then click *OK*.
 +
 Where, policy_name is the name of the policy that you have selected.
 +
-The configured schedules are listed in the Applied Schedules column.
+The configured schedules are listed in the *Applied Schedules* column.
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
 . On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.

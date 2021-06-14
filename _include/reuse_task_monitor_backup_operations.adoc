@@ -25,6 +25,6 @@ The following icons appear on the Jobs page and indicate the corresponding state
 +
 NOTE: Though the backup job status displaysimage:../media/success_icon.gif[Completed icon], when you click on job details you might see that some of the child tasks of the backup operation are still in progress or marked with warning signs.
 
-. On the Job Details page, click *View logs*.
+. On the *Job Details* page, click *View logs*.
 +
 The *View logs* button displays the detailed logs for the selected operation.

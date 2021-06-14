@@ -15,7 +15,7 @@ When you are preparing to back up or clone a resource, you might find it helpful
 
 In the *Topology* page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.
 
-You can review the following icons in the Manage Copies view to determine whether the backups and clones are available on the primary or secondary storage (Mirror copies or Vault copies).
+You can review the following icons in the *Manage Copies* view to determine whether the backups and clones are available on the primary or secondary storage (Mirror copies or Vault copies).
 
 * image:../media/topology_primary_storage.gif[primary storage icon] displays the number of backups and clones that are available on the primary storage.
 * image:../media/topology_mirror_secondary_storage.gif[secondary storage Mirror icon] displays the number of backups and clones that are mirrored on the secondary storage using SnapMirror technology.
@@ -38,15 +38,15 @@ NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type vol
 +
 If the resource selected is a cloned database, protect the cloned database, source of the clone is displayed in the Topology page. Click *Details* to view the backup used to clone.
 +
-If the resource is protected, the Topology page of the selected resource is displayed.
+If the resource is protected, the *Topology* page of the selected resource is displayed.
 
 . Review the Summary card to see a summary of the number of backups and clones available on the primary and secondary storage.
 +
-The Summary Card section displays the total number of backups and clones.
+The *Summary Card* section displays the total number of backups and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
 
-. In the Manage Copies view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
+. In the *Manage Copies* view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
 +
 The details of the backups and clones are displayed in a table format.
 

@@ -2,6 +2,7 @@ Before you install the SnapCenter Plug-ins Package for Windows, you should be fa
 
 |===
 | Item| Requirements
+
 a|
 Operating Systems
 a|

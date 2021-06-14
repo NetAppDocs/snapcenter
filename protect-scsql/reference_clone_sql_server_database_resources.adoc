@@ -21,7 +21,7 @@ You can also use PowerShell cmdlets manually or in scripts to perform backup, re
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
-*Related information*
+*For more information*
 
 link:task_clone_from_a_sql_server_database_backup.html[Clone from a SQL Server database backup]
 

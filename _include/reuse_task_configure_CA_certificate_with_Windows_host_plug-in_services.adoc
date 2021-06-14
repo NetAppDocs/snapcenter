@@ -1,6 +1,6 @@
 You should configure the CA certificate with Windows host plug-in services to activate the installed digital certificate.
 
-Perform the following step on the SnapCenter Server and all the plug-in hosts where CA certificates are already deployed.
+Perform the following steps on the SnapCenter Server and all the plug-in hosts where CA certificates are already deployed.
 
 *Steps*
 

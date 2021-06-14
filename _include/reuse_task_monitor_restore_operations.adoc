@@ -16,15 +16,15 @@ The following icons appear on the Jobs page, and indicate the state of the opera
 *Steps*
 
 . In the left navigation pane, click *Monitor*.
-. In the Monitor page, click *Jobs*.
-. On the Jobs page, perform the following steps:
+. In the *Monitor* page, click *Jobs*.
+. On the *Jobs* page, perform the following steps:
  .. Click image:../media/filter_icon.gif[] to filter the list so that only restore operations are listed.
  .. Specify the start and end dates.
  .. From the *Type* drop-down list, select *Restore*.
  .. From the *Status* drop-down list, select the restore status.
  .. Click *Apply* to view the operations that have been completed successfully.
 . Select the restore job, and then click *Details* to view the job details.
-. On the Job Details page, click *View logs*.
+. On the *Job Details* page, click *View logs*.
 +
 The *View logs* button displays the detailed logs for the selected operation.
 +

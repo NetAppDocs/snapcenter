@@ -106,7 +106,6 @@ a|
 Do not want to recover
 a|
 Choose *No recovery*.    You must perform the recovery operation manually from the HANA studio.
-+
 |===
 You can recover only those backups that are taken after upgrading to SnapCenter 4.3, provided both the host and the plug-in are upgraded to SnapCenter 4.3, and the backups selected for restore are taken after the resource is converted or discovered as auto discovered resource.
 

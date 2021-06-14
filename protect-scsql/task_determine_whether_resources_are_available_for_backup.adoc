@@ -26,7 +26,7 @@ For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere
 
 *About this task*
 
-You cannot back up databases when the *Overall Status* option in the Details page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
+You cannot back up databases when the *Overall Status* option in the *Details* page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
 
 * Databases are not on a NetApp LUN.
 * Databases are not in normal state.
@@ -52,14 +52,14 @@ The newly added, renamed, or deleted resources are updated to the SnapCenter Ser
 
 The resources are displayed along with information such as resource type, host or cluster name, associated resource groups, backup type, policies and overall status.
 
-* If the database is on a non NetApp storage, Not available for backup is displayed in the Overall Status column.
+* If the database is on a non NetApp storage, `Not available for backup` is displayed in the *Overall Status* column.
 +
 You cannot perform data protection operations on a database that is on a non NetApp storage.
 
-* If the database is on a NetApp storage and not protected, Not protected is displayed in the Overall Status column.
-* If the database is on a NetApp storage system and protected, the user interface displays Backup not run message in the Overall Status column.
-* If the database is on a NetApp storage system and protected and if the backup is triggered for the database, the user interface displays Backup succeeded message in the Overall Status column.
+* If the database is on a NetApp storage and not protected, `Not protected` is displayed in the *Overall Status* column.
+* If the database is on a NetApp storage system and protected, the user interface displays `Backup not run` message in the *Overall Status* column.
+* If the database is on a NetApp storage system and protected and if the backup is triggered for the database, the user interface displays `Backup succeeded` message in the *Overall Status* column.
 
-NOTE: If you have enabled an SQL authentication while setting up the credentials, the discovered instance or database is shown with a red color padlock icon. If the padlock icon appears, you must specify the instance or database credentials for successfully adding the instance or database to a resource group.
+NOTE: If you have enabled an SQL authentication while setting up the credentials, the discovered instance or database is shown with a red padlock icon. If the padlock icon appears, you must specify the instance or database credentials for successfully adding the instance or database to a resource group.
 
-After the SnapCenter administrator assigns the resources to a RBAC user, the RBAC user must log in and click *Refresh Resources* to see the latest Overall Status of the resources.
+After the SnapCenter administrator assigns the resources to a RBAC user, the RBAC user must log in and click *Refresh Resources* to see the latest *Overall Status* of the resources.
