@@ -2,22 +2,22 @@
 permalink: install/concept_high_availability_for_snapcenter_mysql_repository.html
 sidebar: sidebar
 keywords: SnapCenter, MySQL high availability
-summary: 'MySQL replication is a feature of MySQL Server that enables you to replicate data from one MySQL database server \(“master”\) to another MySQL database server (slave). SnapCenter supports MySQL replication for high availability only on two Network Load Balancing-enabled (NLB-enabled) nodes.'
+summary: 'MySQL replication is a feature of MySQL Server that enables you to replicate data from one MySQL database server (master) to another MySQL database server (slave). SnapCenter supports MySQL replication for high availability only on two Network Load Balancing-enabled (NLB-enabled) nodes.'
 ---
 = High availability for the SnapCenter MySQL repository
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-MySQL replication is a feature of MySQL Server that enables you to replicate data from one MySQL database server ("`master`") to another MySQL database server ("`slave`"). SnapCenter supports MySQL replication for high availability only on two Network Load Balancing-enabled (NLB-enabled) nodes.
+MySQL replication is a feature of MySQL Server that enables you to replicate data from one MySQL database server (master) to another MySQL database server (slave). SnapCenter supports MySQL replication for high availability only on two Network Load Balancing-enabled (NLB-enabled) nodes.
 
 SnapCenter performs read or write operations on the master repository and routes its connection to the slave repository when there is a failure on the master repository. The slave repository then becomes the master repository. SnapCenter also supports reverse replication, which is enabled only during failover.
 
 If you want to use the MySQL high availability (HA) feature, you must enable Application Request Routing (ARR) while installing SnapCenter and configure Network Load Balancing (NLB) on the first node. The MySQL repository is installed on this node as part of the installation. While installing SnapCenter on the second node, you must join to the NLB of the first node and create a copy of the MySQL repository on the second node.
 
-SnapCenter provides the Get-SmRepositoryConfig and Set-SmRepositoryConfig PowerShell cmdlets to manage MySQL replication.
+SnapCenter provides the _Get-SmRepositoryConfig_ and _Set-SmRepositoryConfig_ PowerShell cmdlets to manage MySQL replication.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
 
 You must be aware of the limitations related to the MySQL HA feature:
 
@@ -25,7 +25,7 @@ You must be aware of the limitations related to the MySQL HA feature:
 * Switching from a SnapCenter standalone installation to an NLB installation or vice versa and switching from a MySQL standalone setup to MySQL HA are not supported.
 * Automatic failover is not supported if the slave repository data is not synchronized with the master repository data.
 +
-You can initiate a forced failover by using the Set-SmRepositoryConfig cmdlet.
+You can initiate a forced failover by using the _Set-SmRepositoryConfig_ cmdlet.
 
 * When failover is initiated, jobs that are running might fail.
 +
