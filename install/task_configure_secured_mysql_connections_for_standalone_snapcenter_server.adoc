@@ -11,8 +11,6 @@ summary: 'You can generate Secure Sockets Layer (SSL) certificates and key files
 [.lead]
 You can generate Secure Sockets Layer (SSL) certificates and key files, if you want to secure the communication between SnapCenter Server and MySQL Server. You must configure the certificates and key files in the MySQL Server and SnapCenter Server.
 
-*About this task*
-
 The following certificates are generated:
 
 * CA certificate

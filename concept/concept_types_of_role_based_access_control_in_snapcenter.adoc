@@ -1,8 +1,8 @@
 ---
 permalink: concept/concept_types_of_role_based_access_control_in_snapcenter.html
 sidebar: sidebar
-keywords:
-summary: 'SnapCenter role-based access control \(RBAC\) and ONTAP permissions enable SnapCenter administrators to create roles and set access permissions. This centrally managed access empowers application administrators to work securely within delegated environments.'
+keywords: RBAC, roles, permissions, application-level RBAC, ONTAP permissions
+summary: 'SnapCenter role-based access control (RBAC) and ONTAP permissions enable SnapCenter administrators to create roles and set access permissions. This centrally managed access empowers application administrators to work securely within delegated environments.'
 ---
 = Types of RBAC
 :icons: font
@@ -24,7 +24,7 @@ SnapCenter uses the following types of role-based access control:
 
 SnapCenter ships with predefined roles with permissions already assigned. You can assign users or groups of users to these roles. You can also create new roles and manage permissions and users.
 
-==== Assigning permissions to users or groups
+*Assigning permissions to users or groups*
 
 You can assign permissions to users or groups to access SnapCenter objects such as hosts, storage connections, and resource groups. You cannot change the permissions of the SnapCenterAdmin role.
 

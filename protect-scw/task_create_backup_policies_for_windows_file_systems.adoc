@@ -11,6 +11,8 @@ summary: 'You can create a new backup policy for resources before you use SnapCe
 [.lead]
 You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.
 
+*What you will need*
+
 * You must have defined your backup strategy.
 +
 For details, see the information about defining a data protection strategy for Windows file systems.
@@ -22,14 +24,12 @@ link:task_define_a_backup_strategy_for_windows_file_systems.html[Define a backup
 To prepare for data protection, you must complete tasks such as installing SnapCenter, adding hosts, discovering resources, and creating storage virtual machine (SVM) connections.
 
 * If you are replicating Snapshot copies to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
-+
-For information about how administrators assign resources to users, see link:../admin/index.html[Manage SnapCenter Server and plug-ins].
 
 * If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the usePowershellProcessforScripts parameter to true in the web.config file.
 +
 The default value is false
 
-Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
+*Steps*
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
@@ -79,7 +79,7 @@ Delete Snapshot copies older than
 a|
 Choose this option if you want to specify the number of days SnapCenter retains a backup copy before deleting it.
 |===
-*Important:* You should set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the replication count to 1, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
+IMPORTANT: You should set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the replication count to 1, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
 +
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
@@ -100,7 +100,7 @@ a|
 Secondary policy label
 a|
 Select a Snapshot label.     Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
-+
+
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 a|
 Error retry count

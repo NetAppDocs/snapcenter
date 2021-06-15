@@ -11,11 +11,15 @@ summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug
 [.lead]
 You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
 
+*What you will need*
+
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The message queueing service must be running.
-* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
-link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html[Configure group Managed Service Account on Windows Server 2012 or later]
+* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges. For information, see
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html[Configure group Managed Service Account on Windows Server 2012 or later^].
+
+*About this task*
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
@@ -25,9 +29,7 @@ Plug-in for Exchange depends on SnapCenter Plug-ins Package for Windows, and the
 
 If SnapManager for Microsoft Exchange Server and SnapDrive for Windows are already installed, and you want to install Plug-in for Exchange on the same Exchange Server, you must unregister the VSS Hardware Provider used by SnapDrive for Windows because it is incompatible with the VSS Hardware Provider installed with Plug-in for Exchange and SnapCenter Plug-ins Package for Windows.
 
-The administration documentation contains information about managing hosts.
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Verify that *Managed Hosts* is selected at the top.
@@ -40,13 +42,17 @@ http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing
 a|
 Host Type
 a|
-Select *Windows* as the host type. SnapCenter Server adds the host and then installs on the host the Plug-in for Windows and the Plug-in for Exchange if they are not already installed.
+Select *Windows* as the host type.
+
+SnapCenter Server adds the host and then installs on the host the Plug-in for Windows and the Plug-in for Exchange if they are not already installed.
 
 Plug-in for Windows and Plug-in for Exchange must be the same version. If a different version of Plug-in for Windows was previously installed, SnapCenter updates the version as part of the installation.
 a|
 Host name
 a|
-Enter the fully qualified domain name (FQDN) or the IP address of the host.    SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
+Enter the fully qualified domain name (FQDN) or the IP address of the host.
+
+SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
 
 An IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
 
@@ -61,7 +67,9 @@ You can also add the IP less DAG cluster by providing the IP address or the FQDN
 a|
 Credentials
 a|
-Select the credential name that you created, or create the new credentials. The credential must have administrative rights on the remote host. For details, see information about creating a credential.
+Select the credential name that you created, or create the new credentials.
+
+The credential must have administrative rights on the remote host. For details, see information about creating a credential.
 
 You can view details about the credentials by positioning your cursor over the credential name that you specified.
 
@@ -80,14 +88,18 @@ When you select Plug-in for Exchange, SnapCenter Plug-in for Microsoft SQL Serve
 a|
 Port
 a|
-Either retain the default port number or specify the port number. The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+Either retain the default port number or specify the port number.
+
+The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
 
 NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
 
 a|
 Installation Path
 a|
-The default path is `C:\Program Files\NetApp\SnapCenter`. You can optionally customize the path.
+The default path is `C:\Program Files\NetApp\SnapCenter`.
+
+You can optionally customize the path.
 a|
 Add all hosts in the DAG
 a|
@@ -101,7 +113,7 @@ Use group Managed Service Account (gMSA) to run the plug-in services
 a|
 Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
-Provide the gMSA name in the following format: `domainName\accountName$`.
+Provide the gMSA name in the following format: _domainName\accountName$_.
 
 NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 |===

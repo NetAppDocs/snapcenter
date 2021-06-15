@@ -11,9 +11,7 @@ summary: 'In addition to using the existing SnapCenter roles, you can create you
 [.lead]
 In addition to using the existing SnapCenter roles, you can create your own roles and customize the permissions.
 
-*What you will need*
-
-You must have logged in as the "SnapCenterAdmin" role.
+You should have logged in as the "SnapCenterAdmin" role.
 
 *Steps*
 

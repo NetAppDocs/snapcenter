@@ -19,6 +19,6 @@ The controller-based license has the following characteristics:
 +
 NOTE: You do not enter any license information in the SnapCenter GUI for the SnapCenter controller-based licenses.
 
-* Is locked to the controller's serial number
+* Locked to the controller's serial number
 
 NOTE: If you already have a SnapManagerSuite license on your controller, SnapCenter Standard controller-based license entitlement is provided automatically. The names SnapManagerSuite license and SnapCenter Standard controller-based license are used interchangeably, but they refer to the same license.

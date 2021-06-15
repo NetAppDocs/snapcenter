@@ -11,10 +11,14 @@ summary: 'You can install the SnapCenter Plug-in for Microsoft Windows locally o
 [.lead]
 You can install the SnapCenter Plug-in for Microsoft Windows locally on a Windows host if you are unable to install the plug-in remotely from the SnapCenter GUI. You can run the SnapCenter Plug-in for Microsoft Windows installation program unattended, in silent mode, from the Windows command line.
 
+*What you will need*
+
 * You must have installed Microsoft .Net 4.5.2 or later.
 * You must have installed PowerShell 4.0 or later.
 * You must have turned on Windows message queuing.
 * You must be a local administrator on the host.
+
+*Steps*
 
 . Download the SnapCenter Plug-in for Microsoft Windows from your install location.
 +
@@ -63,9 +67,9 @@ ISFeatureInstall
 a|
 Specify the solution to be deployed by SnapCenter on remote host.
 |===
-
++
 The `debuglog` parameter includes the path of the log file for SnapCenter. Writing to this log file is the preferred method of obtaining troubleshooting information, because the file contains the results of checks that the installation performs for plug-in prerequisites.
-
++
 If necessary, you can find additional troubleshooting information in the log file for the SnapCenter for Windows package. Log files for the package are listed (oldest first) in the `%Temp%` folder, for example, `C:\temp\`.
 +
 NOTE: The installation of Plug-in for Windows registers the plug-in on the host and not on the SnapCenter Server. You can register the plug-in on theSnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the plug-in is automatically discovered.

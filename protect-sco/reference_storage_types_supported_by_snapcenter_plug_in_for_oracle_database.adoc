@@ -39,7 +39,7 @@ You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/pl
 
 == Storage types supported on AIX
 
-The following table lists the storage types supported on Linux.
+The following table lists the storage types supported on AIX.
 
 |===
 | Machine | Storage type

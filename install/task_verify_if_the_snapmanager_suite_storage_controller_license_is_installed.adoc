@@ -21,12 +21,12 @@ You can use the SnapCenter GUI to view whether a SnapManager Suite license is in
 When you click the cluster name, all of the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
 . In the *Storage Connections* list, locate the Controller License column.
 +
-The Controller License column displays the following statuses:
+The Controller License column displays the following status:
 
 * image:../media/controller_licensed_icon.gif[] indicates that a SnapManager Suite license is installed on a FAS or AFF primary storage system.
 * image:../media/controller_not_licensed_icon.gif[] indicates that a SnapManager Suite license is not installed on a FAS or AFF primary storage system.
 * Not applicable - indicates that a SnapManager Suite license is not applicable for this controller.
-
++
 This message is displayed for the following platforms:
 
  ** Cloud Volumes ONTAP

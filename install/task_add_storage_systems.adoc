@@ -63,8 +63,8 @@ User name/Password
 a|
 Enter the credentials that are used to access the storage system.
 
- ** You should use `vsadmin` as the user name to add a SVM.
- ** You should use `admin` as the user name to add a cluster.
+ ** You should use *vsadmin* as the user name to add a SVM.
+ ** You should use *admin* as the user name to add a cluster.
 
 a|
 Event Management System (EMS) & AutoSupport Settings

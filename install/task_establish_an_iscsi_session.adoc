@@ -14,7 +14,7 @@ If you are using iSCSI to connect to a LUN, you must establish an iSCSI session 
 *Before you begin*
 
 * You must have defined the storage system node as an iSCSI target.
-* You must have started the iSCSI service on the storage system. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[Learn more]
+* You must have started the iSCSI service on the storage system. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[Learn more^]
 
 *About this task*
 

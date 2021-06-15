@@ -22,15 +22,12 @@ NOTE: Silent installation of the SnapCenter Server from the command-line is not 
 * You should have enabled Windows installer debugging.
 +
 See the Microsoft web site for information about enabling https://support.microsoft.com/kb/223300[Windows installer logging^].
-
-* You should not install the SnapCenter Server on a host that has Microsoft Exchange Server, Active Directory, or Domain Name Servers.
++
+NOTE: You should not install the SnapCenter Server on a host that has Microsoft Exchange Server, Active Directory, or Domain Name Servers.
 
 *Steps*
 
-. Download the SnapCenter Server installation package from NetApp Support Site.
-+
-https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
-
+. Download the SnapCenter Server installation package from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^].
 . Initiate the SnapCenter Server installation by double-clicking the downloaded .exe file.
 +
 After you initiate the installation, all the prechecks are performed and if the minimum requirements are not met appropriate error or warning messages are displayed.

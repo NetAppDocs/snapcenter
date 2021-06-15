@@ -24,7 +24,7 @@ You can change a plug-in port after installation by using the Modify Host wizard
  ** Firewalls, proxies, or other network devices should not interfere with connections.
  ** If you specify a custom port when you install SnapCenter, you should add a firewall rule on the plug-in host for that port for the SnapCenter Plug-in Loader.
 
-== Default ports
+The following table lists the different ports and their default values.
 
 |===
 | Type of port | Default port

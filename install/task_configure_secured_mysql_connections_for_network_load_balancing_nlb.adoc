@@ -11,8 +11,6 @@ summary: 'You can generate Secure Sockets Layer (SSL) certificates and key files
 [.lead]
 You can generate Secure Sockets Layer (SSL) certificates and key files for both the High Availability (HA) nodes if you want to secure the communication between SnapCenter Server and MySQL servers. You must configure the certificates and key files in the MySQL servers and on the HA nodes.
 
-*About this task*
-
 The following certificates are generated:
 
 * CA certificate

@@ -11,9 +11,11 @@ summary: 'To enable SnapCenter Plug-in for Microsoft Exchange Server to coexist 
 [.lead]
 To enable SnapCenter Plug-in for Microsoft Exchange Server to coexist with SnapManager for Microsoft Exchange Server, you need to install SnapCenter Plug-in for Microsoft Exchange Server on the same Exchange Server on which SnapManager for Microsoft Exchange Server is installed, disable SnapManager for Exchange schedules, and configure new schedules and backups using SnapCenter Plug-in for Microsoft Exchange Server.
 
+*What you will need*
+
 * SnapManager for Microsoft Exchange Server and SnapDrive for Windows are already installed, and SnapManager for Microsoft Exchange Server backups exist on the system and in the SnapInfo directory.
-* You have deleted or reclaimed backups taken by SnapManager for Microsoft Exchange Server that you no longer require.
-* You have suspended or deleted from the Windows scheduler all schedules created by SnapManager for Microsoft Exchange Server.
+* You should have deleted or reclaimed backups taken by SnapManager for Microsoft Exchange Server that you no longer require.
+* You should have suspended or deleted all schedules created by SnapManager for Microsoft Exchange Server from the Windows scheduler.
 * SnapCenter Plug-in for Microsoft Exchange Server and SnapManager for Microsoft Exchange Server can coexist on the same Exchange Server, but you cannot upgrade existing SnapManager for Microsoft Exchange Server installations to SnapCenter.
 +
 SnapCenter does not provide an option for the upgrade.
@@ -21,6 +23,8 @@ SnapCenter does not provide an option for the upgrade.
 * SnapCenter does not support restoring Exchange databases from SnapManager for Microsoft Exchange Server backup.
 +
 If you do not uninstall SnapManager for Microsoft Exchange Server after the SnapCenter Plug-in for Microsoft Exchange Server installation and later want to restore a SnapManager for Microsoft Exchange Server backup, you must perform additional steps.
+
+*Steps*
 
 . Using PowerShell on all DAG nodes, determine whether the SnapDrive for Windows VSS Hardware Provider is registered:``vssadmin list providers``
 +

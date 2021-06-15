@@ -24,6 +24,3 @@ Before you add a host and install the plug-in packages, you must complete all th
 ** Port range 50000 - 51000 for Windows 2016 and Exchange 2016
 ** Port range 6000 - 6500 for Windows 2012 R2 and Exchange 2013
 ** Port range 49152 - 65536 for Windows 2019
-
-
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]

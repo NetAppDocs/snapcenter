@@ -17,6 +17,10 @@ You should ensure that the database having files on the ASM disk groups should b
 
 You should attach one or more policies to the resource group to define the type of data protection job that you want to perform.
 
+The following image illustrates the relationship between resources, resource groups, and policies for databases:
+
+image::../media/sco_resourcegroup_policy.gif[]
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

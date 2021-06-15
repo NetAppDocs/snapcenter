@@ -11,3 +11,5 @@ summary: 'SnapCenter Software is a simple, centralized, scalable platform that p
 
 [.lead]
 SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud.
+
+This site contains the documentation for SnapCenter Software 4.5. The documentation for earlier versions of SnapCenter Software is available in https://docs.netapp.com/ocsc-44/topic/com.netapp.ndc.ocsc-vers/GUID-C35C3D6E-1833-4F73-AE09-38137FC69F8C.html[Documentation Center^].

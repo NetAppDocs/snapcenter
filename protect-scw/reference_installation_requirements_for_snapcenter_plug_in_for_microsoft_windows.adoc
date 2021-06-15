@@ -20,5 +20,3 @@ The SnapCenter admin role must have admin privileges.
 * You must have installed and configured the SnapCenter Server.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * You must set up SnapMirror and SnapVault if you want backup replication.
-+
-For details, see SnapCenter installation information.

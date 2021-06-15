@@ -11,14 +11,8 @@ summary: 'Defining a restoration strategy for Exchange Server enables you to res
 [.lead]
 Defining a restoration strategy for Exchange Server enables you to restore your database successfully.
 
-. Determine whether you want to restore a backup of an active or passive copy.
-. Determine the requirements for restoring the database.
-. Decide the type of restore you require.
-
 == Sources for a restore operation in Exchange Server
 You can restore an Exchange Server database from a backup copy on primary storage.
-
-=== Sources for a restore operation
 
 You can restore databases from primary storage only.
 
@@ -36,18 +30,16 @@ In an up-to-the-minute restore operation, databases are recovered up to the poin
 . Applies all the transaction logs that were backed up, as well as any new logs that were created since the most recent backup.
 +
 Transaction logs are moved ahead and applied to any selected databases.
-
++
 Exchange creates a new log chain after a restore completes.
-
++
 |===
-a|
 *Best Practice:* It is recommended that you perform a new full and log backup after a restore completes.
-
 |===
 An up-to-the-minute restore operation requires a contiguous set of transaction logs.
-
++
 After you perform an up-to-the-minute restore, the backup you used for the restore is available only for point-in-time restore operations.
-
++
 If you do not need to retain up-to-the-minute restore capability for all backups, you can configure your system's transaction log backup retention through the backup policies.
 
 === Restore to a previous point in time

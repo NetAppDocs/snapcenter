@@ -30,7 +30,6 @@ entries:
   - title: Install Workflow
     url: "/install/install_workflow.html"
   - title: Prepare for installing the SnapCenter Server
-    url: "/install/concept_prepare_for_installing_the_snapcenter_server.html"
     entries:
     - title: Domain and workgroup requirements
       url: "/install/reference_domain_and_workgroup_requirements.html"
@@ -468,12 +467,6 @@ entries:
       url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_oracle.html"
     - title: Minimum ONTAP privileges required for Plug-in for Oracle
       url: "/protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html"
-    - title: Define a backup strategy for Oracle databases
-      url: "/protect-sco/task_define_a_backup_strategy_for_oracle_databases.html"
-    - title: Define a restore and recovery strategy for Oracle databases
-      url: "/protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html"
-    - title: Define a clone strategy for Oracle databases
-      url: "/protect-sco/task_define_a_clone_strategy_for_oracle_databases.html"
   - title: Install SnapCenter Plug-in for Oracle Database
     url: "/protect-sco/task_install_snapcenter_plug_in_for_oracle_databases.html"
     entries:
@@ -509,14 +502,11 @@ entries:
     url: "/protect-sco/concept_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Prepare for protecting Oracle databases
     url: "/protect-sco/concept_prepare_for_protecting_oracle_databases.html"
-    entries:
-    - title: Prerequisites for using Plug-in for Oracle Database
-      url: "/protect-sco/reference_prerequisites_for_using_the_snapcenter_plug_in_for_oracle_database.html"
-    - title: How resources, resource groups, and policies are used for protecting Oracle databases
-      url: "/protect-sco/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_oracle_databases.html"
   - title: Back up Oracle databases
     url: "/protect-sco/task_back_up_oracle_databases.html"
     entries:
+    - title: Define a backup strategy for Oracle databases
+      url: "/protect-sco/task_define_a_backup_strategy_for_oracle_databases.html"
     - title: Determine whether Oracle databases are available for backup
       url: "/protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html"
     - title: Create backup policies for Oracle databases
@@ -545,6 +535,8 @@ entries:
   - title: Restore and recover Oracle databases
     url: "/protect-sco/task_restore_oracle_databases.html"
     entries:
+    - title: Define a restore and recovery strategy for Oracle databases
+      url: "/protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html"
     - title: Requirements for restoring an Oracle database
       url: "/protect-sco/reference_requirements_for_restoring_an_oracle_database.html"
     - title: Restore Oracle database
@@ -562,6 +554,8 @@ entries:
   - title: Clone Oracle database
     url: "/protect-sco/task_clone_oracle_database_backups.html"
     entries:
+    - title: Define a clone strategy for Oracle databases
+      url: "/protect-sco/task_define_a_clone_strategy_for_oracle_databases.html"
     - title: Requirements for cloning an Oracle database
       url: "/protect-sco/reference_requirements_for_cloning_an_oracle_database.html"
     - title: Clone an Oracle database

@@ -82,7 +82,7 @@ The default subject reads as follows: "SnapCenter License Capacity Notification"
 . If you want to have Event Management System (EMS) messages sent to the storage system syslog or have AutoSupport messages sent to the storage system for failed operations, select the appropriate check boxes.
 +
 |===
-Best Practice: Enabling AutoSupport is recommended to help troubleshoot issues you might experience.
+*Best Practice*: Enabling AutoSupport is recommended to help troubleshoot issues you might experience.
 |===
 
 . Click *Next*.

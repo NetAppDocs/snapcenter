@@ -37,8 +37,7 @@ If you install plug-ins on a cluster (WSFC, Oracle RAC, or Exchange DAG), they a
 +
 You cannot install the Plug-in for Windows on a Windows host connected to E-series storage.
 
-link:../admin/index.html[Manage SnapCenter Server and plug-ins] section has more information on managing hosts.
-
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Ensure that *Managed Hosts* is selected at the top.
@@ -50,29 +49,35 @@ link:../admin/index.html[Manage SnapCenter Server and plug-ins] section has more
 a|
 Host Type
 a|
-Select the *Windows* type of host.    SnapCenter Server adds the host and then installs the Plug-in for Windows if it is not already installed on the host.
+Select the *Windows* type of host.
+
+SnapCenter Server adds the host and then installs the Plug-in for Windows if it is not already installed on the host.
 
 If you also select the Microsoft SQL Server option on the Plug-ins page, SnapCenter Server also installs the Plug-in for SQL Server.
 a|
 Host name
 a|
-Enter the fully qualified domain name (FQDN) or the IP address of the host.    SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
-+
+Enter the fully qualified domain name (FQDN) or the IP address of the host.
+
+SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
+
 You can enter the IP addresses or FQDN of one of the following:
 
  ** Stand-alone host
  ** Windows Server Failover Clustering (WSFC)
++
 If you are adding a host using SnapCenter and it is part of a subdomain, you must provide the FQDN.
 
 a|
 Credentials
 a|
-Select the credential name that you created or create the new credentials.     The credential must have administrative rights on the remote host. For details, see information about creating a credential.
+Select the credential name that you created or create the new credentials.
+
+The credential must have administrative rights on the remote host. For details, see information about creating a credential.
 
 Details about credentials, including the user name, domain, and host type, are displayed by placing your cursor over the credential name you provided.
 
-[NOTE]
-credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
+NOTE: The authentication mode is determined by the host type that you specify in the Add Host wizard.
 
 |===
 
@@ -87,15 +92,18 @@ For new deployments, no plug-in packages are listed.
 a|
 Port
 a|
-Either retain the default port number or specify the port number. The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+Either retain the default port number or specify the port number.
 
-[NOTE]
-If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+
+NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
 
 a|
 Installation Path
 a|
-The default path is C:\Program Files\NetApp\SnapCenter. You can optionally customize the path.    For SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter. However, if you want, you can customize the default path.
+The default path is C:\Program Files\NetApp\SnapCenter.
+
+You can optionally customize the path.    For SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter. However, if you want, you can customize the default path.
 a|
 Add all hosts in the cluster
 a|
@@ -109,10 +117,9 @@ Use group Managed Service Account (gMSA) to run the plug-in services
 a|
 Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
-Provide the gMSA name in the following format: domainName\accountName$.
+Provide the gMSA name in the following format: _domainName\accountName$_.
 
-[NOTE]
-gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
+NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 
 
 |===

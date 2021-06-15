@@ -21,7 +21,7 @@ If you do not enter valid credentials, no information is returned for your searc
 
 *Steps*
 
-. Log in to the the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com].
+. Log in to the the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
 . Navigate to *Systems* > *Software Licenses*.
 . In the Selection Criteria area, ensure Serial Number (located on back of unit) is selected, enter the controller serial number, and then click *Go!*.
 +
