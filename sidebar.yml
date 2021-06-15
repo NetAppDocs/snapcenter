@@ -672,6 +672,8 @@ entries:
       url: "/protect-sce/concept_requirements_for_restoring_an_exchange_database.html"
     - title: Restore Exchange databases
       url: "/protect-sce/task_restore_exchange_databases.html"
+    - title: Granular recovery of mails and mailbox
+      url: "/protect-sce/reference_granular_recovery_of_mails_and_mailbox.html"
     - title: Restore an Exchange Server database from secondary storage
       url: "/protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html"
     - title: Restore Exchange resources using PowerShell cmdlets

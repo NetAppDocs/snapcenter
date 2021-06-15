@@ -13,4 +13,5 @@ The SnapCenter Plug-in for Microsoft Exchange Server is a host-side component of
 
 When the Plug-in for Exchange is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume and with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance or archival purposes.
 
-The SnapCenter link:concept/index.html[Concepts documentation] has information about the SnapCenter architecture, features, and benefits.
+//Included in 4.5 as per input from Subhash and Manoah
+If you want to restore and recover mails or mailbox instead of the complete Exchange Database, you can use the Single Mailbox Recovery (SMBR) software.
