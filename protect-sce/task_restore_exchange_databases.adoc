@@ -22,7 +22,7 @@ Run the `Move-ActiveMailboxDatabase` command to make the passive database copy a
 +
 The https://docs.microsoft.com/en-us/powershell/module/exchange/move-activemailboxdatabase?view=exchange-ps[Microsoft documentation^] contains information about this command.
 
-*Steps*
+*About this task*
 
 * When restore operation is performed on a database, the database is mounted back on the same host and no new volume is created.
 * DAG-level backups must be restored from individual databases.
@@ -31,6 +31,8 @@ The https://docs.microsoft.com/en-us/powershell/module/exchange/move-activemailb
 Plug-in for Exchange does not perform a full restore on a disk if the disk contains Exchange files such as those used for replication. When a full restore might impact Exchange functionality, Plug-in for Exchange performs a single file restore operation.
 
 * Plug-in for Exchange cannot restore BitLocker encrypted drives.
+
+*Steps*
 
 . On the left navigation pane, click *Resources* in the upper left corner of the Resource page.
 . Select the Exchange Server plug-in from the drop-down list.
@@ -52,6 +54,7 @@ a|
 Choose *By log backups until* to perform a point-in-time restore operation, which restores the database based on log backups until the selected log.
 
 NOTE: The number of logs displayed in the drop-down list are based on UTM. For example, if full backup retention is 5 and UTM retention is 3, the number of log backups available are 5 but in the drop-down only 3 logs will be listed to perform restore operation.
+
 a|
 By specific date until
 a|
@@ -63,18 +66,12 @@ Choose *None* when you need to restore only the full backup without any log back
 |===
 You can perform one of the following actions:
 
- ** "`Recover and mount database after restore`"
-+
-This option is selected by default.
+ ** *Recover and mount database after restore* - This option is selected by default.
 
- ** "`Do not verify the integrity of transaction logs in the backup before restore`"
-+
-By default, SnapCenter verifies the integrity of transaction logs in a backup before performing a restore operation.
+ ** *Do not verify the integrity of transaction logs in the backup before restore* - By default, SnapCenter verifies the integrity of transaction logs in a backup before performing a restore operation.
 +
 |===
-a|
-        *Best Practice:* You should not select this option.
-
+*Best Practice:* You should not select this option.
 |===
 
 . On the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the restore operation, respectively.
@@ -91,7 +88,9 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 . Review the summary, and then click *Finish*.
 . You can view the status of the restore job by expanding the Activity panel at the bottom of the page.
-
++
 You should monitor the restore process by using the *Monitor* > *Jobs* page.
 
-When you restore an active database from a backup, the passive database might go into suspended or failed state if there is a lag between the replica and the active database. The state change can occur when the active database's log chain forks and begins a new branch which breaks replication. Exchange Server attempts to fix the replica, but if it is unable to do so, after restore, you should create a fresh backup, and then reseed the replica.
+When you restore an active database from a backup, the passive database might go into suspended or failed state if there is a lag between the replica and the active database.
+
+The state change can occur when the active database's log chain forks and begins a new branch which breaks replication. Exchange Server attempts to fix the replica, but if it is unable to do so, after restore, you should create a fresh backup, and then reseed the replica.
