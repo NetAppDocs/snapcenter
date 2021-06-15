@@ -13,7 +13,7 @@ MySQL replication is a feature of MySQL Server that enables you to replicate dat
 
 SnapCenter performs read or write operations on the master repository and routes its connection to the slave repository when there is a failure on the master repository. The slave repository then becomes the master repository. SnapCenter also supports reverse replication, which is enabled only during failover.
 
-If you want to use the MySQL high availability (HA) feature, you must configure external load balancer (F5) on the first node. The MySQL repository is installed on this node as part of the installation. While installing SnapCenter on the second node, you must join to the F5 of the first node and create a copy of the MySQL repository on the second node.
+If you want to use the MySQL high availability (HA) feature, you must configure Network Load Balancer (NLB) on the first node. The MySQL repository is installed on this node as part of the installation. While installing SnapCenter on the second node, you must join to the F5 of the first node and create a copy of the MySQL repository on the second node.
 
 SnapCenter provides the _Get-SmRepositoryConfig_ and _Set-SmRepositoryConfig_ PowerShell cmdlets to manage MySQL replication.
 
