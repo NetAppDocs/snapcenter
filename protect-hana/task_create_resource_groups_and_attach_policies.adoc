@@ -147,7 +147,7 @@ NOTE: You can also create a policy by clicking *image:../media/add_policy_from_r
 The policies are listed in the Configure schedules for selected policies section.
 
  .. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
- .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then click *OK*.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click *OK*.
 +
 Where, policy_name is the name of the policy that you have selected.
 +

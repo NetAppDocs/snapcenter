@@ -60,7 +60,7 @@ The selected policies are listed in the Policy column in the Configure schedules
 
  .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
  .. If the policy is associated with multiple schedule types (frequencies), select the frequency that you want to configure.
- .. In the Add schedules for policy `policy_name` dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
 +
 The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
 
