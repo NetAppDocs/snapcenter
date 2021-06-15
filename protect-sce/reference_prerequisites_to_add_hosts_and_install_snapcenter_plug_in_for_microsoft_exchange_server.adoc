@@ -20,5 +20,10 @@ Before you add a host and install the plug-in packages, you must complete all th
 * If SnapManager for Microsoft Exchange Server and SnapDrive for Windows are already installed, you must unregister the VSS Hardware Provider used by SnapDrive for Windows before you and install Plug-in for Exchange on the same Exchange Server to ensure successful data protection using SnapCenter.
 * If SnapManager for Microsoft Exchange Server and Plug-in for Exchange are installed on the same server, you must suspend or delete from the Windows scheduler all schedules created by SnapManager for Microsoft Exchange Server.
 * The host must be resolvable to the fully qualified domain name (FQDN) from the server. If the hosts file is modified to make it resolvable and if both the short name and the FQDN are specified in the hosts file, create a entry in the SnapCenter hosts file in the following format: `<ip_address> <host_fqdn> <host_name>`
+* Ensure the following ports are not blocked in the firewall, otherwise the add host operation fails. To resolve this issue, configure the dynamic port range. For more information, see https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls[Microsoft documentation^].
+** Port range 50000 - 51000 for Windows 2016 and Exchange 2016
+** Port range 6000 - 6500 for Windows 2012 R2 and Exchange 2013
+** Port range 49152 - 65536 for Windows 2019
+
 
 http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
