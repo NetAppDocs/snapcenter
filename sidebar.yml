@@ -988,7 +988,7 @@ entries:
     url: "/admin/task_manage_rbac.html"
   - title: Manage hosts
     url: "/admin/concept_manage_hosts.html"
-  - title: Operation supported from the Resources page
+  - title: Operations supported from the Resources page
     url: "/admin/concept_what_operations_can_be_performed_from_the_resource_page.html"
   - title: Manage policies
     url: "/admin/concept_manage_policies.html"

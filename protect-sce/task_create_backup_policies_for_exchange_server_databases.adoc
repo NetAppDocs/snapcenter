@@ -21,9 +21,6 @@ For details, see the information about defining a data protection strategy for E
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, identifying resources, and creating storage system connections.
 * You must have refreshed (discovered) the Exchange Server resources.
 * If you are replicating Snapshot copies to a mirror or vault, the SnapCenter administrator must have assigned the storage virtual machines (SVMs) for both the source volumes and destination volumes to you.
-+
-link:../admin/index.html[Manage SnapCenter Server and plug-ins] section has more information about how administrators assign resources to users.
-
 * If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the `usePowershellProcessforScripts` parameter to true in the `web.config` file.
 +
 The default value is false

@@ -12,17 +12,3 @@ summary: 'Defining a backup strategy before you create your backup jobs helps en
 Defining a backup strategy before you create your backup jobs helps ensure that you have the backups that you require to successfully restore or clone your databases. Your Service Level Agreement (SLA), Recovery Time Objective (RTO), and Recovery Point Objective (RPO) largely determine your backup strategy.
 
 An SLA defines the level of service expected and addresses many service-related issues, including the availability and performance of service. The RTO is the time by when a business process must be restored after a disruption in service. An RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. The SLA, RTO, and RPO contribute to the backup strategy.
-
-Perform the following steps for each of your databases.
-
-*Steps*
-
-. Decide the type of backup you require.
-. Determine when you should back up your databases.
-. Decide how many backup jobs you require.
-. Decide how to name your backups.
-. Determine when you should verify backup copies.
-. Decide whether you want to verify backup copies using the source volume or a destination volume.
-. Determine for how long you want to retain backup copies on the source storage system and the SnapMirror destination.
-. Determine for how long you want to retain transaction log backups on the source storage system.
-. Decide whether you want to use SnapMirror disaster recovery or SnapVault archiving technology in conjunction with the SnapCenter Plug-in for Microsoft SQL Server.

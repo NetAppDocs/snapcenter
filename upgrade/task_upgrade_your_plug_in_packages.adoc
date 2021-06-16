@@ -29,7 +29,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 NOTE: If your hosts are in a Microsoft cluster, you can upgrade the SQL and Windows plug-ins on all the hosts in the cluster at one time.
 
 +
-For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Upgrading_the_plug-ins_for_Microsoft_Windows_and_Microsoft_SQL_Server_might_fail_on_a_host_with_SQL_database_on_VMDK[Upgrade might fail on hosts with SQL databases on VMDK]
+For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Upgrading_the_plug-ins_for_Microsoft_Windows_and_Microsoft_SQL_Server_might_fail_on_a_host_with_SQL_database_on_VMDK[Upgrade might fail on hosts with SQL databases on VMDK^].
 
 * The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
 * SQL host plug-in upgrade fails if the ISO path is unavailable for Windows roles and features.

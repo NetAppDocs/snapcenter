@@ -16,7 +16,7 @@ For information on how to use SMBR, see https://library.netapp.com/ecm/ecm_downl
 
 *Find more information*
 
-* https://docs.netapp.com/us-en/snapcenter/install/concept_snapcenter_licenses.html#single-mailbox-recovery-smbr-licenses[SMBR licenses^]
+* link:../install/concept_snapcenter_licenses.html#single-mailbox-recovery-smbr-licenses[SMBR licenses^]
 * https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30035[SMBR documentation library^]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Single_Mailbox_Recovery_(SMBR)/How_to_restore_from_secondary_storage_in_SMBR_with_SnapCenter[How to restore from secondary storage in SMBR with SnapCenter^]
 * https://www.youtube.com/watch?v=fOMuaaXrreI&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg&index=3[Recovering Microsoft Exchange Mail From SnapVault Using SMBR^]
