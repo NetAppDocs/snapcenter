@@ -8,11 +8,9 @@ Operating Systems
 a|
 Microsoft Windows
 
-**Note:** You must enable the Cluster Shared Volumes (CSV) feature in Windows Server 2008 R2 SP1 if you want to create CSV-type disks.
+NOTE: You must enable the Cluster Shared Volumes (CSV) feature in Windows Server 2008 R2 SP1 if you want to create CSV-type disks.
 
-For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
-
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum RAM for the SnapCenter plug-in on host
@@ -23,7 +21,7 @@ Minimum install and log space for the SnapCenter plug-in on host
 a|
 5 GB
 
-**Note:** You should allocate sufficient disk space and monitor the storage consumption by the logs folder. The log space required varies depending on the number of the entities to be protected and the frequency of data protection operations. If there is no sufficient disk space, the logs will not be created for the recently run operations.
+NOTE: You should allocate sufficient disk space and monitor the storage consumption by the logs folder. The log space required varies depending on the number of the entities to be protected and the frequency of data protection operations. If there is no sufficient disk space, the logs will not be created for the recently run operations.
 
 a|
 Required software packages
@@ -33,8 +31,5 @@ a|
 * Windows Management Framework (WMF) 4.0 or later
 * PowerShell 4.0 or later
 
-For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
-
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
-
+For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 |===

@@ -13,11 +13,7 @@ You can create a new backup policy for resources before you use SnapCenter to ba
 
 *What you will need*
 
-* You must have defined your backup strategy.
-+
-For details, see the information about defining a data protection strategy for Windows file systems.
-+
-link:task_define_a_backup_strategy_for_windows_file_systems.html[Define a backup strategy for Windows file systems]
+* You must have defined your backup strategy. link:task_define_a_backup_strategy_for_windows_file_systems.html[Learn more^]
 
 * You must have prepared for data protection.
 +
