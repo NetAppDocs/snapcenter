@@ -13,4 +13,4 @@ Each release of SnapCenter contains an updated SnapCenter Server and plug-in pac
 
 The workflow shows the different tasks required to upgrade the SnapCenter Server and the Plug-in packages.
 
-image::../media/upgrade_workflow.gif[]
+image::../media/upgrade_workflow.png[]
