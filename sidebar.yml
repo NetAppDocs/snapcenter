@@ -278,6 +278,8 @@ entries:
         url: "/protect-scsql/task_import_archived_backups.html"
       - title: View the imported backups in SnapCenter Server
         url: "/protect-scsql/task_view_the_imported_backups_in_snapcenter_server.html"
+  - title: Install SnapCenter Plug-in for VMware vSphere
+    url: "/protect-scsql/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Prepare for data protection
     url: "/protect-scsql/concept_prepare_for_protecting_sql_databases.html"
     entries:
@@ -405,6 +407,8 @@ entries:
         url: "/protect-scw/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
       - title: Enable CA Certificates for plug-ins
         url: "/protect-scw/task_enable_ca_certificates_for_plug-ins.html"
+  - title: Install SnapCenter Plug-in for VMware vSphere
+    url: "/protect-scw/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Back up Windows file systems
     url: "/protect-scw/reference_back_up_windows_file_systems.html"
     entries:
@@ -631,6 +635,8 @@ entries:
         url: "/protect-sce/task_enable_ca_certificates_for_plug-ins.html"
     - title: Configure SnapManager 7.x for Exchange and SnapCenter to coexist
       url: "/protect-sce/task_configure_snapmanager_7_x_for_exchange_and_snapcenter_plug_in_for_exchange_to_coexist.html"
+  - title: Install SnapCenter Plug-in for VMware vSphere
+    url: "/protect-sce/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Prepare for data protection
     url: "/protect-sce/concept_prepare_for_data_protection.html"
   - title: Back up Exchange resources
@@ -775,6 +781,8 @@ entries:
         url: "/protect-hana/task_configure_CA_certificate_for_saphana_on_windows_host.html"
       - title: Enable CA Certificates for plug-ins
         url: "/protect-hana/task_enable_ca_certificates_for_plug-ins.html"
+  - title: Install SnapCenter Plug-in for VMware vSphere
+    url: "/protect-hana/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
   - title: Prepare for data protection
     url: "/protect-hana/concept_prepare_for_protecting_hana_databases.html"
     entries:
