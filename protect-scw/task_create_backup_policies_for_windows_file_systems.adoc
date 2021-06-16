@@ -43,7 +43,7 @@ After reviewing the existing policies, you can perform one of the following:
  .. Select a backup setting.
 +
 |===
-| Option| Description
+| Option | Description
 
 a|
 File System Consistent Backup
@@ -64,7 +64,7 @@ NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered du
 +
 
 |===
-| Option| Description
+| Option | Description
 
 a|
 Total Snapshot copies to retain
@@ -82,7 +82,7 @@ NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, a
 . On the Replication page, specify replication to the secondary storage system:
 +
 |===
-| For this field...| Do this...
+| For this field... | Do this...
 
 a|
 Update SnapMirror after creating a local Snapshot copy
@@ -95,15 +95,18 @@ Select this option to perform disk-to-disk backup replication.
 a|
 Secondary policy label
 a|
-Select a Snapshot label.     Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+Select a Snapshot label.
+
+Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
 a|
 Error retry count
 a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
-*Note:* You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
 
 . On the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
 +

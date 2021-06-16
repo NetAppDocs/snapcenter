@@ -24,11 +24,14 @@ Modifying the schedule type in a policy requires additional steps because the Sn
 a|
 Add an additional schedule type
 a|
-Create a new policy and attach it to the necessary resources or resource groups.For example, if a resource group policy specifies only hourly backups and you want to add daily backups also, you can create a policy with a daily schedule type and add it to the resource group. The resource group would then have two policies: hourly and daily.
+Create a new policy and attach it to the necessary resources or resource groups.
+
+For example, if a resource group policy specifies only hourly backups and you want to add daily backups also, you can create a policy with a daily schedule type and add it to the resource group. The resource group would then have two policies: hourly and daily.
 
 a|
 Remove or change a schedule type
 a|
+Perform the following:
 
 . Detach the policy from every resource and resource group that uses that policy.
 . Modify the schedule type.
@@ -36,14 +39,15 @@ a|
 
 For example, if a policy specifies hourly backups and you want to change that to daily backups, you must detach the policy first.
 
-You cannot detach the last remaining policy from a individual resource because every resource must have at least one policy attached. Therefore, if you want to modify the schedule type of the only policy attached to a resource, you must perform the following:
+You cannot detach the last remaining policy from an individual resource because every resource must have at least one policy attached.
+
+Therefore, if you want to modify the schedule type of the only policy attached to a resource, you must perform the following:
 
 . Attach a second placeholder policy.
 . Detach the original policy from every resource and resource group that uses that policy.
 . Modify the schedule type.
 . Attach the modified policy again to all the resources and resource groups.
 . Detach the placeholder policy.
-
 |===
 
 *Steps*

@@ -50,7 +50,7 @@ HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digits) that i
 
 You should be aware of the limitations of clone operations before you clone the databases.
 
-* If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the clone operation will be in hung state when you run the renamedg command. You can apply the Oracle patch 19544733 to fix this issue.
+* If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the clone operation will be in hung state when you run the _renamedg_ command. You can apply the Oracle patch 19544733 to fix this issue.
 * Cloning of databases from a LUN that is directly attached to a host (for instance, by using Microsoft iSCSI Initiator on a Windows host) to a VMDK or an RDM LUN on the same Windows host, or another Windows host, or vice versa, is not supported.
 * The root directory of the volume mount point cannot be a shared directory.
 * If you move a LUN that contains a clone to a new volume, the clone cannot be deleted.

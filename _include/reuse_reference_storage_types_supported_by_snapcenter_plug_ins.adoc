@@ -50,7 +50,7 @@ a|
 a|
 VMware VM
 a|
-Virtual Machine File Sytems (VMFS) on VMFS or NFS datastores
+Virtual Machine File Systems (VMFS) on VMFS or NFS datastores
 a|
 VMware vSphere or VSC cloning utility
 a|

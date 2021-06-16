@@ -128,18 +128,18 @@ Select the *Keep log backups applicable to last <number> days of full backups* o
 a|
 Total Snapshot copies to keep
 a|
-If you want to specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*.         If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
+If you want to specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*.
 
-[NOTE]
-The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
 
-[IMPORTANT]
+NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
-You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+
 a|
 Keep Snapshot copies for
 a|
-If you want specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
+If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 |===
 
  .. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected on *Backup Type* page.
@@ -153,21 +153,20 @@ a|
 If you want to specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*.         If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
 
 IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+
 a|
 Keep Snapshot copies for
 a|
-If you want specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
+If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 |===
++
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
-
 +
 This example sets the log Snapshot copy retention to 2:
-
 +
 ----
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
 ----
-
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
 
@@ -187,9 +186,12 @@ Select this option to perform disk-to-disk backup replication.
 a|
 Secondary policy label
 a|
-Select a Snapshot label.     Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+Select a Snapshot label.
+
+Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
 a|
 Error retry count
 a|

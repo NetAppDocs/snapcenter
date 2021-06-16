@@ -13,7 +13,7 @@ Before backing up an Oracle database, you should ensure that prerequisites are c
 
 * You must have created a resource group with a policy attached.
 * If you want to back up a resource that has a SnapMirror relationship with a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
-* You must have assigned the aggregate that is being used by the backup operation to thestorage virtual machine (SVM) used by the database.
+* You must have assigned the aggregate that is being used by the backup operation to thes torage virtual machine (SVM) used by the database.
 * You should have verified that all data volumes and archive log volumes belonging to the database are protected if secondary protection is enabled for that database.
 * You should have verified that the database that has files on the ASM disk groups should be in either "`MOUNT`" or "`OPEN`" state to verify its backups using the Oracle DBVERIFY utility.
 * You should have verified that the volume mount point length does not exceed 240 characters.

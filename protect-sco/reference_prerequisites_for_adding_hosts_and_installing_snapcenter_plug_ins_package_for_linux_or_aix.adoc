@@ -14,7 +14,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 * If you are using iSCSI, the iSCSI service must be running.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 +
-SnapCenter Plug-in for Oracle Database can be installed by a non-root user. However, you shoulg configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective root user.
+SnapCenter Plug-in for Oracle Database can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective root user.
 
 * If you are installing the SnapCenter Plug-ins Package for AIX on AIX host, you should have manually resolved the directory level symbolic links.
 +

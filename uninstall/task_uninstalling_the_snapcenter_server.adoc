@@ -16,7 +16,7 @@ If you no longer wish to use the SnapCenter Server to manage data protection job
 * Ensure that you have at least 2 GB of free space on the drive where the SnapCenter Server is installed.
 * Ensure that the domain in which the SnapCenter Server is installed is not removed.
 +
-If you remove the domain where the SnapCenter Server was installed and then try to uinstall, the operation fails.
+If you remove the domain where the SnapCenter Server was installed and then try to uninstall, the operation fails.
 
 * You should have backed up the repository database because the repository database will be cleaned up and uninstalled.
 

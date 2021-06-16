@@ -17,7 +17,7 @@ You should install SnapCenter Plug-in for Microsoft SQL Server from within the S
 * SnapCenter plug-in packages must be installed.
 * You must delete the earlier version of SnapCenter Plug-in for Microsoft SQL Server before installing.
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Install_a_SnapCenter_Plug-In_manually_and_directly_from_thePlug-In_Host[How to Install a SnapCenter Plug-In manually and directly from thePlug-In Host]
+For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Install_a_SnapCenter_Plug-In_manually_and_directly_from_thePlug-In_Host[How to Install a SnapCenter Plug-In manually and directly from the Plug-In Host^].
 
 *Steps*
 
@@ -46,4 +46,4 @@ NOTE: All the parameters passed during the installation of Plug-in for SQL Serve
 . Monitor the Windows task scheduler, the main installation log file C:\Installdebug.log, and the additional installation files in C:\Temp.
 . Monitor the %temp% directory to verify that the msiexe.exe installers are installing the software without errors.
 +
-NOTE: The installation of Plug-in for SQL Server registers the plug-in on the host and not on the SnapCenter Server. You can register the plug-in on theSnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the plug-in is automatically discovered.
+NOTE: The installation of Plug-in for SQL Server registers the plug-in on the host and not on the SnapCenter Server. You can register the plug-in on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the plug-in is automatically discovered.

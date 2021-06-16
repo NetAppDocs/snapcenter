@@ -73,7 +73,7 @@ NOTE: You can also forcefully enable in-place restore either using GUI, SnapCent
 
 ==== Performing In-place restore on ASM RAC
 
-In SnapCenter, the node on which you perform restore is termed as primary node and all other nodes of the RAC on which ASM disk group resides are called peer nodes. SnapCenter changes the state of ASM disk group to dismount on all the nodes where the ASM disk group is in mount state before performing the storage restore operation. After the storage restore is complete, SnapCenter chnages the state of ASM disk group as it was before the restore operation.
+In SnapCenter, the node on which you perform restore is termed as primary node and all other nodes of the RAC on which ASM disk group resides are called peer nodes. SnapCenter changes the state of ASM disk group to dismount on all the nodes where the ASM disk group is in mount state before performing the storage restore operation. After the storage restore is complete, SnapCenter changes the state of ASM disk group as it was before the restore operation.
 
 In SAN environments, SnapCenter removes devices from all the peer nodes and performs LUN unmap operation before storage restore operation. After storage restore operation, SnapCenter performs LUN map operation and constructs devices on all the peer nodes. In a SAN environment if the Oracle RAC ASM layout is residing on LUNs, then while restoring SnapCenter performs LUN unmap, LUN restore, and LUN map operations on all the nodes of the RAC cluster where the ASM disk group resides. Before restoring even if all the initiators of the RAC nodes were not used for the LUNs, after restoring SnapCenter creates a new iGroup with all the initiators of all the RAC nodes.
 
@@ -118,7 +118,7 @@ NOTE: The plug-in for Oracle database does not support recovery if you have rest
 
 Before you perform restore and recovery operations, you must be aware of the limitations.
 
-If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the restore operation will be in hung state when you run the renamedg command. You can apply the Oracle patch 19544733 to fix this issue.
+If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the restore operation will be in hung state when you run the _renamedg_ command. You can apply the Oracle patch 19544733 to fix this issue.
 
 The following restore and recovery operations are not supported:
 

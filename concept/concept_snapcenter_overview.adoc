@@ -247,7 +247,7 @@ SAN native devices, filesystems, and LVM layouts built on SAN devices are suppor
 
 === SnapCenter Custom Plug-ins features
 
-* Supports custom plug-ins to manage applications or databases that are not supported by otherSnapCenter plug-ins. Custom plug-ins are not provided as part of the SnapCenter installation.
+* Supports custom plug-ins to manage applications or databases that are not supported by other SnapCenter plug-ins. Custom plug-ins are not provided as part of the SnapCenter installation.
 * Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
 * Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
 

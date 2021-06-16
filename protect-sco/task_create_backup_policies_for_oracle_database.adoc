@@ -122,7 +122,7 @@ Secondary policy label
 a|
 Select a Snapshot label.
 
-Depending on the Snapshot copy label that you select,ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 
@@ -142,7 +142,7 @@ You can also specify the script timeout value. The default value is 60 seconds.
 
 . In the Verification page, perform the following steps:
  .. Select the backup schedule for which you want to perform the verification operation.
- .. In the Verfication script commands section, enter the path and the arguments of the prescript or postscript that you want to run before or after the verification operation, respectively.
+ .. In the Verification script commands section, enter the path and the arguments of the prescript or postscript that you want to run before or after the verification operation, respectively.
 +
 You must store the prescripts and postscripts either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
 +

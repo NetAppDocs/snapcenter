@@ -49,7 +49,7 @@ SKIP_JAVAHOME_UPDATE
 a|
 By default, the SPL service detects the java path and update JAVA_HOME parameter.
 
-Therefore the default value is set to FALSE.You can set to TRUE if you want to disable the default behavior and manually fix the java path.
+Therefore the default value is set to FALSE. You can set to TRUE if you want to disable the default behavior and manually fix the java path.
 
 a|
 SPL_KEYSTORE_PASS
@@ -119,5 +119,5 @@ NOTE: You can use the -force option with the stop command to stop the SnapCenter
  `/custom_location/NetApp/snapcenter/spl/bin/spl status`
 
  ** Find the change in the SnapCenter Plug-in Loader service:
- 
+
  `/custom_location/NetApp/snapcenter/spl/bin/spl change`

@@ -2,14 +2,14 @@
 permalink: uninstall/task_remove_a_host.html
 sidebar: sidebar
 keywords: uninstall, remove, remove host
-summary: 'When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenterResources page, and then it uninstalls the plug-in packages on the host.'
+summary: 'When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenter Resources page, and then it uninstalls the plug-in packages on the host.'
 ---
 = Remove a host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenterResources page, and then it uninstalls the plug-in packages on the host.
+When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenter Resources page, and then it uninstalls the plug-in packages on the host.
 
 *About this task*
 

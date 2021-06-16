@@ -9,7 +9,7 @@ summary: 'You should set up the storage system that gives SnapCenter access to O
 :imagesdir: ../media/
 
 [.lead]
-You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand alone SVM or a cluster comprising of multiple SVMs.
+You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand-alone SVM or a cluster comprising of multiple SVMs.
 
 *What you will need*
 

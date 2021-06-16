@@ -18,4 +18,4 @@ You can uninstall SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins P
 
 *Step*
 
-Run `/custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall` to uinstall.
+Run '/custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall' to uninstall.

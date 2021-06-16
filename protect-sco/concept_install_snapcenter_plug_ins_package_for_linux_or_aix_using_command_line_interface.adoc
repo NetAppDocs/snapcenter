@@ -52,15 +52,9 @@ If SPL_ENABLED_PLUGINS is not specified in spl.properties, you can add it and as
 . In the SnapCenter Server host, add an entry for the cluster IP and corresponding DNS name in _C:\Windows\System32\drivers\etc\hosts_.
 . Add the node to the SnapCenter Server using the _Add-SmHost_ cmdlet by specifying the cluster IP for the host name.
 
-Discover the Oracle database on node 1 (assuming the cluster IP is hosted on node 1) and create a backup of the database. If a fail over happens, you can use the backup created on node 1 to restore the database on node 2. You can also use the backup created on node 1 to create a clone on node 2.
+Discover the Oracle database on node 1 (assuming the cluster IP is hosted on node 1) and create a backup of the database. If a failover happens, you can use the backup created on node 1 to restore the database on node 2. You can also use the backup created on node 1 to create a clone on node 2.
 
-NOTE: There will be stale volumes, directories, and lock file if the fail over happens while any other SnapCenter operations are running.
-
-*Find more information*
-
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^]
-
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^]
+NOTE: There will be stale volumes, directories, and lock file if the failover happens while any other SnapCenter operations are running.
 
 == Install Plug-ins Package for Linux in silent mode or console mode
 

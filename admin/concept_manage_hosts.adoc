@@ -243,7 +243,7 @@ NOTE: You do not have to stop the plug-in service first. The plug-in service can
 
 *Results*
 
-After you suspend the schedules on the host, the Managed Hosts page shows "`Suspended`" in the Overall status field for the host.
+After you suspend the schedules on the host, the Managed Hosts page shows *Suspended* in the Overall status field for the host.
 
 After you complete host maintenance, you can bring the host out of maintenance mode by clicking *Activate Schedule*.
 You can activate the schedule of multiple hosts simultaneously.

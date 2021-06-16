@@ -10,7 +10,7 @@ A certificate thumbprint is a hexadecimal string that identifies a certificate. 
 .. Remove the spaces between the hexadecimal numbers.
 +
 For example, if the thumbprint is: "a9 09 50 2d d8 2a e4 14 33 e6 f8 38 86 b0 0d 42 77 a3 2a 7b", after removing the spaces, it will be: "a909502dd82ae41433e6f83886b00d4277a32a7b".
-. Perfrom the following from PowerShell:
+. Perform the following from PowerShell:
 .. Run the following command to list the thumbprint of the installed certificate and identify the recently installed certificate by the subject name.
 +
 _Get-ChildItem -Path Cert:\LocalMachine\My_

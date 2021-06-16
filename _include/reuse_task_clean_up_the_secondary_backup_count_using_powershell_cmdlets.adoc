@@ -1,4 +1,4 @@
-You can use the Remove-SmBackup cmdlet to clean up the backup count for secondary backups that have no Snapshot copies. You might want use this cmdlet when the total Snapshot copies displayed in the Manage Copies topology do not match the secondary storage Snapshot copy retention setting.
+You can use the Remove-SmBackup cmdlet to clean up the backup count for secondary backups that have no Snapshot copies. You might want to use this cmdlet when the total Snapshot copies displayed in the Manage Copies topology do not match the secondary storage Snapshot copy retention setting.
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 

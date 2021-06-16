@@ -45,7 +45,7 @@ a|
  .. Enter your NSS password.
  .. Enter your SnapCenter license serial number.
 +
-NOTE: This is not your storage controller serial number. If you are using a a storage controller-based capacity license, you must enter it on the storage controller. You do not use the SnapCenter GUI to enter controller-based licenses.
+NOTE: This is not your storage controller serial number. If you are using a storage controller-based capacity license, you must enter it on the storage controller. You do not use the SnapCenter GUI to enter controller-based licenses.
 
 a|
 NetApp License File

@@ -101,7 +101,7 @@ a|
 a|
 *RAC One Node*: The RAC One Node databases are discovered only on the basis of /etc/oratab entries.
 
-The databases should be either in `nomount`, `mount`, or `open` state.You should have the database entries in the /etc/oratab file.
+The databases should be either in _nomount_, _mount_, or _open_ state. You should have the database entries in the /etc/oratab file.
 
 The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
 
@@ -119,12 +119,12 @@ NOTE: If you have relocated a database from one node to another node and if the 
 a|
 *RAC One Node*: The RAC One Node databases are discovered using the srvctl config command only.
 
-The databases should be either in `nomount`, `mount`, or `open` state.The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
+The databases should be either in _nomount_, _mount_, or _open_ state. The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
 
 You should perform the following steps if the database is relocated:
 
 . Manually refresh the resources.
-. Select the RAC One Node database from the resource page, and then click**Database Settings**.
+. Select the RAC One Node database from the resource page, and then click **Database Settings**.
 . Configure the database to set the preferred cluster nodes to the RAC node currently hosting the database.
 . Perform the SnapCenter operations.
 
