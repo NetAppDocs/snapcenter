@@ -25,8 +25,6 @@ You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Serve
 
 If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
-For more information on managing hosts see the link:admin\concept_manage_hosts.adoc[Manage hosts] section.
-
 *Steps*
 
 . In the left navigation pane, click *Hosts*.
