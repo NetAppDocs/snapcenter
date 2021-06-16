@@ -69,7 +69,9 @@ Back up all the transaction logs
 a|
 Select *Log backup*.
 
-All transaction logs on the active file system are backed up, and there is no log truncation. A `scebackupinfo` directory is created on the same disk as the live log. This directory contains the pointer to the incremental changes for the Exchange database and it is not equivalent to the complete log files.
+All transaction logs on the active file system are backed up, and there is no log truncation.
+
+A _scebackupinfo_ directory is created on the same disk as the live log. This directory contains the pointer to the incremental changes for the Exchange database and it is not equivalent to the complete log files.
 a|
 Back up all database files and transaction logs without truncating the transaction log files
 a|
@@ -164,7 +166,9 @@ Select the *Keep Snapshot copies for* option, and specify the number of days to 
 NOTE: If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
 
   *** By default, SnapCenter finds the oldest full backup for this database in all the other hosts in the DAG, and deletes all log backups on this host that were taken before the full backup.
-  *** You can override the above default retention behavior for a database on a host in a DAG with only log backups by adding the key `"MaxLogBackupOnlyCountWithoutFullBackup"` in the `C:\Program Files\NetApp\SnapCenter WebApp\web.config` file. For example, `<add key="MaxLogBackupOnlyCountWithoutFullBackup" value="10">`
+  *** You can override the above default retention behavior for a database on a host in a DAG with only log backups by adding the key *MaxLogBackupOnlyCountWithoutFullBackup* in the _C:\Program Files\NetApp\SnapCenter WebApp\web.config_ file.
+
+  <add key="MaxLogBackupOnlyCountWithoutFullBackup" value="10">
 +
 In the example, the value 10 means you keep up to 10 log backups on the host.
 

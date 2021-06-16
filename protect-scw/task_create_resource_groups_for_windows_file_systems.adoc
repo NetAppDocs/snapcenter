@@ -34,7 +34,9 @@ NOTE: The resource group name should not exceed 250 characters.
 a|
 Use custom name format for Snapshot copy
 a|
-Optional: Enter a custom Snapshot copy name and format. For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
+Optional: Enter a custom Snapshot copy name and format.
+
+For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
 a|
 Tag
 a|

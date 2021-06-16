@@ -103,7 +103,9 @@ setENV
 a|
 required
 a|
-This stub sets the environment and the configuration object. Any environment parsing or handling should be done here. Each time a stub is called, the setENV stub is called just before. It is only required for PERL-style plug-ins.
+This stub sets the environment and the configuration object.
+
+Any environment parsing or handling should be done here. Each time a stub is called, the setENV stub is called just before. It is only required for PERL-style plug-ins.
 a|
 Version
 a|
@@ -115,19 +117,23 @@ Discover
 a|
 Optional
 a|
-This stub is used to discover application objects like instance or database hosted on the agent or host. The plug-in is expected to return discovered application objects in specific format as part of the response. This stub is only used in case the application is integrated with SnapDrive for Unix.
+This stub is used to discover application objects like instance or database hosted on the agent or host.
 
-*Note* Linux file system (Linux Flavors) is supported.
-AIX/Solaris (Unix Flavors) are not supported.
+The plug-in is expected to return discovered application objects in specific format as part of the response. This stub is only used in case the application is integrated with SnapDrive for Unix.
+
+NOTE: Linux file system (Linux Flavors) is supported. AIX/Solaris (Unix Flavors) are not supported.
+
 a|
 discovery_complete
 a|
 Optional
 a|
-This stub is used to discover application objects like instance or database hosted on the agent or host. The plug-in is expected to return discovered application objects in specific format as part of the response. This stub is only used in case the application is integrated with SnapDrive for Unix.
+This stub is used to discover application objects like instance or database hosted on the agent or host.
 
-*Note* Linux file system (Linux flavors) is supported. AIX and
-Solaris (Unix flavors) are not supported.
+The plug-in is expected to return discovered application objects in specific format as part of the response. This stub is only used in case the application is integrated with SnapDrive for Unix.
+
+NOTE: Linux file system (Linux flavors) is supported. AIX and Solaris (Unix flavors) are not supported.
+
 a|
 Quiesce
 a|

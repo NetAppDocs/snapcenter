@@ -88,7 +88,7 @@ You can specify the SMTP server to use for sending data protection job reports t
 
 This option configures the SMTP server for sending all data protection job reports. However, if you want to have regular SnapCenter data protection job updates for a particular resource sent to yourself or to others so that you can monitor the status of those updates, you can configure the option to email the SnapCenter reports when you are creating a resource group.
 
-*steps*
+*Steps*
 
  . In the left navigation pane, click *Settings*.
  . In the Settings page, click *Global Settings*.

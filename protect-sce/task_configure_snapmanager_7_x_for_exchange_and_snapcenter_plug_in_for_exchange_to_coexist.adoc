@@ -26,7 +26,7 @@ If you do not uninstall SnapManager for Microsoft Exchange Server after the Snap
 
 *Steps*
 
-. Using PowerShell on all DAG nodes, determine whether the SnapDrive for Windows VSS Hardware Provider is registered:``vssadmin list providers``
+. Using PowerShell on all DAG nodes, determine whether the SnapDrive for Windows VSS Hardware Provider is registered: _vssadmin list providers_
 +
 ----
 C:\Program Files\NetApp\SnapDrive>vssadmin list providers
@@ -39,10 +39,10 @@ Provider name: 'Data ONTAP VSS Hardware Provider'
    Version: 7. 1. 4. 6845
 ----
 
-. From the SnapDrive directory, unregister the VSS Hardware Provider from SnapDrive for Windows: `navssprv.exe -r service –u`
-. Verify that the VSS Hardware Provider was removed: `vssadmin list providers`
+. From the SnapDrive directory, unregister the VSS Hardware Provider from SnapDrive for Windows: _navssprv.exe -r service –u_
+. Verify that the VSS Hardware Provider was removed: _vssadmin list providers_
 . Add the Exchange host to SnapCenter, and then install the SnapCenter Plug-in for Microsoft Windows and the SnapCenter Plug-in for Microsoft Exchange Server.
-. From the SnapCenter Plug-in for Microsoft Windows directory on all DAG nodes, verify that the VSS Hardware Provider is registered: `vssadmin list providers`
+. From the SnapCenter Plug-in for Microsoft Windows directory on all DAG nodes, verify that the VSS Hardware Provider is registered: _vssadmin list providers_
 +
 ----
 [PS] C:\Windows\system32>vssadmin list providers
@@ -61,10 +61,10 @@ Provider name: 'Data ONTAP VSS Hardware Provider'
 +
 If you do not uninstall SnapManager for Microsoft Exchange Server now and later want to restore a SnapManager for Microsoft Exchange Server backup:
 
- .. Unregister SnapCenter Plug-in for Microsoft Exchange Server from all DAG nodes: `navssprv.exe -r service -u`
+ .. Unregister SnapCenter Plug-in for Microsoft Exchange Server from all DAG nodes: _navssprv.exe -r service -u_
 +
 ----
 C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows>navssprv.exe -r service -u
 ----
 
- .. From the `C:\Program Files\NetApp\SnapDrive\` directory, register SnapDrive for Windows on all DAG nodes: `navssprv.exe -r service -a hostname\\username -p password`
+ .. From the _C:\Program Files\NetApp\SnapDrive\_ directory, register SnapDrive for Windows on all DAG nodes: _navssprv.exe -r service -a hostname\\username -p password_

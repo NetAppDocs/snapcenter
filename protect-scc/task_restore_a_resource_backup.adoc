@@ -49,9 +49,11 @@ image::../media/restoring_resource.gif[restoring resources]
 If the resource contains volumes or qtrees as Storage Footprint, then newer Snapshot copies on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
 
  .. If you selected *File Level*, then you can either select *All*, or select volumes or qtrees, and then enter the path related to the volumes or qtrees that are selected separated by commas.
-  *** You can select multiple volumes and qtrees.
-  *** If resource type is LUN, entire LUN is restored. You can select multiple LUNs.
-*Note:* If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
+* You can select multiple volumes and qtrees.
+* If resource type is LUN, entire LUN is restored. You can select multiple LUNs.
+  +
+NOTE: If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
+
 . In the *Recovery Type* page, perform the following steps: select option to apply logs. Make sure your plugin supports All logs and Logs until restore type before selecting it.
 +
 |===

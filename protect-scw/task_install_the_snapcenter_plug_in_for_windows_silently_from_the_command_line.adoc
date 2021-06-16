@@ -32,7 +32,9 @@ This path is accessible from the host where the SnapCenter Server is installed.
 +
 `"snapcenter_windows_host_plugin.exe"/silent / debuglog"" /log"" BI_SNAPCENTER_PORT= SUITE_INSTALLDIR="" BI_SERVICEACCOUNT= BI_SERVICEPWD= ISFeatureInstall=SCW`
 +
-For example, `"C:\ProgramData\NetApp\SnapCenter\Package Repository \snapcenter_windows_host_plugin.exe"/silent /debuglog"C: \HPPW_SCW_Install.log" /log"C:\" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C: \Program Files\NetApp\SnapCenter" BI_SERVICEACCOUNT=domain\administrator BI_SERVICEPWD=password ISFeatureInstall=SCW`
+For example:
++
+ `"C:\ProgramData\NetApp\SnapCenter\Package Repository \snapcenter_windows_host_plugin.exe"/silent /debuglog"C: \HPPW_SCW_Install.log" /log"C:\" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C: \Program Files\NetApp\SnapCenter" BI_SERVICEACCOUNT=domain\administrator BI_SERVICEPWD=password ISFeatureInstall=SCW`
 +
 NOTE: All the parameters passed during the installation of Plug-in for Windows are case sensitive.
 +
@@ -43,7 +45,7 @@ Enter the values for the following variables:
 | Variable| Value
 
 a|
-`/debuglog"<Debug_Log_Path>`
+_/debuglog"<Debug_Log_Path>_
 a|
 Specify the name and location of the suite installer log file, as in the following example: Setup.exe /debuglog"C:\PathToLog\setupexe.log".
 a|
@@ -68,8 +70,8 @@ a|
 Specify the solution to be deployed by SnapCenter on remote host.
 |===
 +
-The `debuglog` parameter includes the path of the log file for SnapCenter. Writing to this log file is the preferred method of obtaining troubleshooting information, because the file contains the results of checks that the installation performs for plug-in prerequisites.
+The _debuglog_ parameter includes the path of the log file for SnapCenter. Writing to this log file is the preferred method of obtaining troubleshooting information, because the file contains the results of checks that the installation performs for plug-in prerequisites.
 +
-If necessary, you can find additional troubleshooting information in the log file for the SnapCenter for Windows package. Log files for the package are listed (oldest first) in the `%Temp%` folder, for example, `C:\temp\`.
+If necessary, you can find additional troubleshooting information in the log file for the SnapCenter for Windows package. Log files for the package are listed (oldest first) in the _%Temp%_ folder, for example, _C:\temp\_.
 +
 NOTE: The installation of Plug-in for Windows registers the plug-in on the host and not on the SnapCenter Server. You can register the plug-in on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the plug-in is automatically discovered.

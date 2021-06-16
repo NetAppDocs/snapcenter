@@ -21,7 +21,10 @@ You do not need special permissions to run the REST API client. Any user can acc
 +
 NOTE: Ensure that the REST API URL does not have the following characters: +, ., %, and &.
 
-. In the *Swagger Explore* field, if the Swagger API documentation does not display automatically, type the URL to the location of the Swagger documentation: _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/Content/swagger/SnapCenter.yaml_, and click *Explore*.
+. In the *Swagger Explore* field, if the Swagger API documentation does not display automatically, type:
+_\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/Content/swagger/SnapCenter.yaml_
+
+ . Click *Explore*.
 +
 A list of API resource types or categories are displayed.
 

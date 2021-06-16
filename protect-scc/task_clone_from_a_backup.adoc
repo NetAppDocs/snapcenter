@@ -40,16 +40,23 @@ The resource or resource group topology page is displayed.
 a|
 Clone server
 a|
-By default, the source host is populated.     If you want to specify a different host, select the host on which the clone should be mounted and the plug-in is installed.
+By default, the source host is populated.
+
+If you want to specify a different host, select the host on which the clone should be mounted and the plug-in is installed.
 a|
 Clone suffix
 a|
-This is mandatory when the clone destination is the same as the source. Enter a suffix that will be appended to the newly cloned resource name. The suffix ensures that the cloned resource is unique on the host.     For example, rs1_clone. If you are cloning to the same host as the original resource, you must provide a suffix to differentiate the cloned resource from the original resource; otherwise, the operation fails.
-+
+This is mandatory when the clone destination is the same as the source.
+
+Enter a suffix that will be appended to the newly cloned resource name. The suffix ensures that the cloned resource is unique on the host.
+
+For example, rs1_clone. If you are cloning to the same host as the original resource, you must provide a suffix to differentiate the cloned resource from the original resource; otherwise, the operation fails.
+
 |===
 If the resource selected is a LUN and if you are cloning from a secondary backup, then the destination volumes are listed. Single source can have multiple destination volumes.
 
 . In the *Settings* page, perform the following:
++
 |===
 | For this field...| Do this...
 
@@ -68,9 +75,9 @@ NOTE: Settings page is displayed only if the storage type is LUN.
 +
 For example:
 +
-Pre clone command: delete existing databases with the same name
+* Pre clone command: delete existing databases with the same name
 +
-Post clone command: verify a database or start a database.
+* Post clone command: verify a database or start a database.
 +
 Mount command for a volume or qtree on a Linux machine: mount<VSERVER_NAME>:%<VOLUME_NAME_Clone /mnt>
 

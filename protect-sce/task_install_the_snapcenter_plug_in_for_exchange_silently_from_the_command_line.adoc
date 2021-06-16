@@ -21,8 +21,8 @@ For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_
 
 *Steps*
 
-. Validate whether `C:\temp` folder exists on the plug-in host and the logged in user has full access to it.
-. Download the SnapCenter Plug-in for Microsoft Windows from `C:\ProgramData\NetApp\SnapCenter\Package` Repository.
+. Validate whether _C:\temp_ folder exists on the plug-in host and the logged in user has full access to it.
+. Download the SnapCenter Plug-in for Microsoft Windows from _C:\ProgramData\NetApp\SnapCenter\Package_ Repository.
 +
 This path is accessible from the host where the SnapCenter Server is installed.
 
@@ -32,7 +32,9 @@ This path is accessible from the host where the SnapCenter Server is installed.
 +
 `"snapcenter_windows_host_plugin.exe"/silent /debuglog"<Debug_Log_Path>" /log"<Log_Path>" BI_SNAPCENTER_PORT=<Num> SUITE_INSTALLDIR="<Install_Directory_Path>" BI_SERVICEACCOUNT=<domain\administrator> BI_SERVICEPWD=<password> ISFeatureInstall=HPPW,SCW,SCE`
 +
-For example, `"C:\ProgramData\NetApp\SnapCenter\Package Repository\snapcenter_windows_host_plugin.exe"/silent /debuglog"C:\HPPW_SCSQL_Install.log" /log"C:\temp" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C:\Program Files\NetApp\SnapCenter" BI_SERVICEACCOUNT=domain\administrator BI_SERVICEPWD=password ISFeatureInstall=HPPW,SCW,SCE`
+For example:
++
+`"C:\ProgramData\NetApp\SnapCenter\Package Repository\snapcenter_windows_host_plugin.exe"/silent /debuglog"C:\HPPW_SCSQL_Install.log" /log"C:\temp" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C:\Program Files\NetApp\SnapCenter" BI_SERVICEACCOUNT=domain\administrator BI_SERVICEPWD=password ISFeatureInstall=HPPW,SCW,SCE`
 +
 NOTE: All the parameters passed during the installation of Plug-in for Exchange are case sensitive.
 

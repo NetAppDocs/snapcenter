@@ -48,16 +48,19 @@ Select this option if you want to restore the database to the same SQL server wh
 a|
 Restore the database to an alternate host
 a|
-Select this option if you want the database to be restored to a different SQL server in the same or different host where backups are taken.     Select a host name, provide a database name (optional), select an instance, and specify the restore paths.
+Select this option if you want the database to be restored to a different SQL server in the same or different host where backups are taken.
 
-[NOTE]
-The file extension provided in the alternate path must be same as the file extension of the original database file.
+Select a host name, provide a database name (optional), select an instance, and specify the restore paths.
+
+NOTE: The file extension provided in the alternate path must be same as the file extension of the original database file.
 
 If the *Restore the database to an alternate host* option is not displayed in the Restore Scope page, clear the browser cache.
 a|
 Restore the database using existing database files
 a|
-Select this option if you want the database to be restored to an alternate SQL Server in the same or different host where backups are taken. Database files should be already present on the given existing file paths.    Select a host name, provide a database name (optional), select an instance, and specify the restore paths.
+Select this option if you want the database to be restored to an alternate SQL Server in the same or different host where backups are taken.
+
+Database files should be already present on the given existing file paths.    Select a host name, provide a database name (optional), select an instance, and specify the restore paths.
 |===
 
 . On the *Recovery Scope* page, select one of the following options:
@@ -80,11 +83,15 @@ Select *By log backups* to perform a point-in-time restore operation, which rest
 a|
 By specific date until
 a|
-Select *By specific date until* to specify the date and time after which transaction logs are not applied to the restored database.     This point-in-time restore operation halts the restoration of transaction log entries that were recorded after the specified date and time.
+Select *By specific date until* to specify the date and time after which transaction logs are not applied to the restored database.
+
+This point-in-time restore operation halts the restoration of transaction log entries that were recorded after the specified date and time.
 a|
 Use custom log directory
 a|
-If you have selected *All log backups*, *By log backups*, or *By specific date until* and the logs are located at a custom location, select *Use custom log directory*, and then specify the log location.    *Note:* The custom log directory is not supported for availability group database.
+If you have selected *All log backups*, *By log backups*, or *By specific date until* and the logs are located at a custom location, select *Use custom log directory*, and then specify the log location.
+
+NOTE: The custom log directory is not supported for availability group database.
 |===
 
 . On the *Pre Ops* page, perform the following steps:
@@ -121,7 +128,7 @@ You must also specify the sender and receiver email addresses, and the subject o
 . Review the summary, and then click *Finish*.
 . Monitor the restore process by using the *Monitor* > *Jobs* page.
 
-*For more information*
+*Find more information*
 
 link:task_restore_and_recover_resources_using_powershell_cmdlets.html[Restore and recover resources using PowerShell cmdlets]
 

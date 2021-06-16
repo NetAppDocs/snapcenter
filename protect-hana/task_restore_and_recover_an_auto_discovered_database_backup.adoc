@@ -70,9 +70,9 @@ a|
 Want to recover as close as possible to the current time
 a|
 Select *Recover to most recent state*.     For single container resources specify one or more log and catalog backup locations.
-+
+
 For multitenant database container (MDC) resources specify one or more log backup locations and the backup catalog location.
-+
+
 For MDC resources, the path should contain both system database and tenant database logs.
 a|
 Want to recover to the specified point in time

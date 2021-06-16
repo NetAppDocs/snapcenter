@@ -107,4 +107,6 @@ If you have specified a custom location, the location will be _custom_path\NetAp
 +
 IMPORTANT: The example should be used only as a reference for creating your own data.
 
+|===
 *Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
+|===

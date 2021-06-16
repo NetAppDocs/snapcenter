@@ -211,9 +211,7 @@ The host is validated and added to SnapCenter Server.
 
 Starting the SnapCenter plug-in services enable you to start services if they are not running or restart them if they are running. You might want to restart services after maintenance has been performed.
 
-*What you will need*
-
-* You should ensure that no jobs are running when restarting the services.
+You should ensure that no jobs are running when restarting the services.
 
 *Steps*
 

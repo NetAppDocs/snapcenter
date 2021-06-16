@@ -132,6 +132,8 @@ If you were using SnapManager for Microsoft SQL Server and want to import data f
 
 === Downloading and installing SnapCenter Server
 
+*Steps*
+
 . Download the SnapCenter Server installation package from the https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] and then double-click the exe.
 +
 After you initiate the installation, all the prechecks are performed and if the minimum requirements are not met appropriate error or warning messages are displayed. You can ignore the warning messages and proceed with installation; however, errors should be fixed.
@@ -145,6 +147,8 @@ NOTE: The special character “%” is not supported in the custom path for inst
 
 === Logging in to SnapCenter
 
+*Steps*
+
 . Launch SnapCenter from a shortcut on the host desktop or from the URL provided by the installation (_\https://server:8146_ for default port 8146 where SnapCenter Server is installed).
 . Enter the credentials.
 +
@@ -153,9 +157,10 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 For a built-in local admin username format, use _<username>_.
 . Click *Sign In*.
 
-=== Adding SnapCenter licenses
+=== Adding a SnapCenter Standard controller-based license
 
-==== Adding a SnapCenter Standard controller-based license
+*Steps*
+
 . Log in to the controller using the ONTAP command line and enter:
 +
 `system license add -license-code <license_key>`
@@ -163,7 +168,9 @@ For a built-in local admin username format, use _<username>_.
 +
 `license show`
 
-==== Adding a SnapCenter capacity-based license
+=== Adding a SnapCenter capacity-based license
+
+*Steps*
 
 . In the SnapCenter GUI left pane, click *Settings > Software*, and then in the License section, click *+*.
 . Select one of two methods for obtaining the license:
@@ -173,7 +180,9 @@ For a built-in local admin username format, use _<username>_.
 . On the *Notifications* page of the wizard, use the default capacity threshold of 90 percent.
 . Click *Finish*.
 
-==== Setting up storage system connections
+=== Setting up storage system connections
+
+*Steps*
 
 . In the left pane, click *Storage Systems > New*.
 . In the Add Storage System page, perform the following:
@@ -187,6 +196,8 @@ For a built-in local admin username format, use _<username>_.
 
 === Setting up Run As Credentials
 
+*Steps*
+
 . In the left pane, click *Settings > Credentials > New*.
 . Enter the credentials.
 +
@@ -195,6 +206,8 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 For a built-in local admin username format, use _<username>_.
 
 === Adding a host and installing the Plug-in for Microsoft SQL Server
+
+*Steps*
 
 . In the SnapCenter GUI left pane, click *Hosts > Managed Hosts > Add*.
 . On the Hosts page of the wizard, perform the following:

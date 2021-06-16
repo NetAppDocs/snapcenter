@@ -46,6 +46,7 @@ You cannot install the Plug-in for Windows on a Windows host connected to E-seri
 +
 |===
 | For this field...| Do this...
+
 a|
 Host Type
 a|
@@ -89,6 +90,7 @@ For new deployments, no plug-in packages are listed.
 +
 |===
 | For this field...| Do this...
+
 a|
 Port
 a|

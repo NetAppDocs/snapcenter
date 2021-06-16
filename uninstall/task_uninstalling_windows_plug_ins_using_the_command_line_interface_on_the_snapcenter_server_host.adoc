@@ -9,16 +9,14 @@ summary: 'You can uninstall individual plug-ins or uninstall plug-ins packages f
 :imagesdir: ../media/
 
 [.lead]
-You can uninstall individual plug-ins or uninstall plug-ins packages from one or more hosts by using the Uninstall-SmHostPackage cmdlet on the SnapCenter Server host command-line interface.
-
-*What you will need*
+You can uninstall individual plug-ins or uninstall plug-ins packages from one or more hosts by using the _Uninstall-SmHostPackage_ cmdlet on the SnapCenter Server host command-line interface.
 
 You should have logged in to SnapCenter as a domain user with local administrator rights on each host on which you want to uninstall the plug-ins.
 
 *Steps*
 
 . Launch PowerShell.
-. On the SnapCenter Server host, enter: `+Open-SMConnection-SMSbaseUrlhttps://SNAPCENTER_SERVER_NAME/DOMAIN_NAME+` command, and then enter your credentials.
-. Uninstall the Windows plug-ins using the Uninstall-SmHostPackage cmdlet and the required parameters.
+. On the SnapCenter Server host, enter: _Open-SMConnection -SMSbaseUrl \https://SNAPCENTER_SERVER_NAME/DOMAIN_NAME_ command, and then enter your credentials.
+. Uninstall the Windows plug-ins using the _Uninstall-SmHostPackage_ cmdlet and the required parameters.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide].

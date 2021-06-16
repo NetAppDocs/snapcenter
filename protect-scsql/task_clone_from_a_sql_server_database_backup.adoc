@@ -52,16 +52,22 @@ Choose a host on which the clone should be created.
 a|
 Clone instance
 a|
-Choose a clone instance to which you want to clone the database backup.     This SQL instance must be located in the specified clone server.
+Choose a clone instance to which you want to clone the database backup.
+
+This SQL instance must be located in the specified clone server.
 a|
 Clone suffix
 a|
-Enter a suffix that will be appended to the clone file name to identify that the database is a clone.     For example, "`db1_clone`". If you are cloning to the same location as the original database, you must provide a suffix to differentiate the cloned database from the original database. Otherwise, the operation fails.
+Enter a suffix that will be appended to the clone file name to identify that the database is a clone.
+
+For example, _db1_clone_. If you are cloning to the same location as the original database, you must provide a suffix to differentiate the cloned database from the original database. Otherwise, the operation fails.
 a|
-"`Auto assign mount point`" or "`Auto assign volume mount point under path`"
+Auto assign mount point or Auto assign volume mount point under path
 a|
-Choose whether to automatically assign a mount point or a volume mount point under a path.     Auto assign volume mount point under path: The mount point under a path allows you to provide a specific directory. The mount points will be created within that directory. Before you choose this option, you must ensure that the directory is empty. If there is a database in the directory, the database will be in an invalid state after the mount operation.
-+
+Choose whether to automatically assign a mount point or a volume mount point under a path.
+
+Auto assign volume mount point under path: The mount point under a path allows you to provide a specific directory. The mount points will be created within that directory. Before you choose this option, you must ensure that the directory is empty. If there is a database in the directory, the database will be in an invalid state after the mount operation.
+
 |===
 
 . On the *Logs* page, select one of the following options:
@@ -84,8 +90,10 @@ Choose this option to clone the database based on the backup logs that were crea
 a|
 By specific date until
 a|
-Specify the date and time after which the transaction logs are not applied to the cloned database.    This point-in-time clone halts the clone of the transaction log entries that were recorded after the specified date and time.
-+
+Specify the date and time after which the transaction logs are not applied to the cloned database.
+
+This point-in-time clone halts the clone of the transaction log entries that were recorded after the specified date and time.
+
 |===
 
 . On the *Script* page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
@@ -107,7 +115,7 @@ NOTE: For email notification, you must have specified the SMTP server details us
 
 After the clone is created, you should never rename it.
 
-*For more information*
+*Find more information*
 
 link:reference_back_up_sql_server_database_or_instance_or_availability_group.adoc[Back up SQL Server database, or instance, or availability group]
 
