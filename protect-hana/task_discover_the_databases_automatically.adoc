@@ -24,7 +24,7 @@ After installing the plug-in, all the resources on that Linux host are automatic
 
 The automatically discovered resources cannot be modified or deleted.
 
-For information about the supported and unsupported resources for auto discovery see link:task_discover_the_databases_automatically.adoc[Automatic discovery of resources on Linux host].
+For information about the supported and unsupported resources for auto discovery see link:task_discover_the_databases_automatically.html[Automatic discovery of resources on Linux host].
 
 *Steps*
 
@@ -47,8 +47,4 @@ NOTE: If the SAP HANA database does not have a HDB Secure User Store Key configu
 
 You must configure the HDB Secure User Store Key and HDBSQL OS User to be able to protect the database or add it to the resource group to perform data protection operations.
 
-*For more information*
-
-link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.adoc[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
-
-link:task_create_resource_groups_and_attach_policies.adoc[Create resource groups and attach policies]
+link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]

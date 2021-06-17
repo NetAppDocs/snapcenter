@@ -37,13 +37,3 @@ If the policy selected for the on-demand backup is associated with a backup sche
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover]
 
 * If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail. To increase the Java heap size, locate the script file /opt/netapp/init_scripts/scvservice. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
-
-*For more information*
-
-link:task_create_policies_for_custom_plug_in_resources.html[Create policies for custom plug-in resources]
-
-link:task_create_resource_groups_and_attach_policies.html[Creating resource groups and attaching policies]
-
-link:task_monitor_scc_resources_backup_operations.html[Monitoring backup operations]
-
-link:task_view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html[View custom plug-in resource related backups and clones in the Topology page]

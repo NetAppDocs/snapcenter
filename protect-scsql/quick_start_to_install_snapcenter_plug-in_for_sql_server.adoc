@@ -64,7 +64,7 @@ a|See http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
 |Hosts |Minimum requirements
 
 a|Operating System (64-bit)
-a|See http://mysupport.netapp.com/matrix
+a|See http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
 
 a|CPU
 a|

@@ -16,9 +16,7 @@ The clone workflow includes planning, performing the clone operation, and monito
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
 *About this task*
-For information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the cmdlet reference information.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
+For information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide].
 
 *Steps*
 

@@ -20,9 +20,7 @@ NOTE: SnapCenter does not support multiple SVMs with the same name on different 
 * Add hosts, install the plug-ins, discover (refresh) the resources, and configure the plug-ins.
 * Move an existing Microsoft SQL Server database from a local disk to a NetApp LUN or vice versa by running Invoke-SmConfigureResources.
 +
-For information to run the cmdlet, see the information on Windows cmdlets.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
+For information to run the cmdlet, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
 * If you are using SnapCenter Server to protect SQL databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
 +
