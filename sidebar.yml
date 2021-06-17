@@ -344,7 +344,7 @@ entries:
     - title: Clone from a SQL Server database backup
       url: "/protect-scsql/task_clone_from_a_sql_server_database_backup.html"
     - title: Clone backups using PowerShell cmdlets
-      url: "protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html"
+      url: "/protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html"
     - title: Perform Clone Lifecycle
       url: "/protect-scsql/task_perform_clone_lifecycle_management.html"
     - title: Monitor clone operations in SnapCenter
