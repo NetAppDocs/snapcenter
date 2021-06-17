@@ -17,11 +17,11 @@ You can perform the following tasks that support backup operations, restore oper
 +
 You cannot create a log backup for master and msdb system databases. However, you can create log backups for model system database.
 
-* Restore database resources.
+* Restore database resources
 +
 ** You can restore master system databases, msdb system databases, and model system databases.
 +
-** You cannot restore Multiple databases, instances, and availability groups.
+** You cannot restore multiple databases, instances, and availability groups.
 +
 ** You cannot restore the system database to an alternate path.
 

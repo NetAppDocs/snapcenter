@@ -14,7 +14,7 @@ SnapCenter Software is a simple, centralized, scalable platform that provides ap
 SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and SnapVault technologies to provide the following:
 
 * Fast, space-efficient, application-consistent, disk-based backups
-* Rapid, granular restore and application-consistent recovery
+* Rapid, granular restore, and application-consistent recovery
 * Quick, space-efficient cloning
 
 SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate deployment of plug-ins to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
@@ -39,7 +39,7 @@ Data protection is also supported for other standard or custom applications and 
 
 * Policy-based backups
 +
-Policy-based backups leverage NetApp Snapshot copy technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally. you can automate protection of these backups to secondary storage by updates to existing protection relationships.
+Policy-based backups leverage NetApp Snapshot copy technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally, you can automate protection of these backups to secondary storage by updates to existing protection relationships.
 
 * Back ups for multiple resources
 +
@@ -74,7 +74,7 @@ You can automate a remote push of SnapCenter plug-ins from the SnapCenter Server
 * High Availability
 // Removed load balancing as per Manohar's comments
 +
-High availability for SnapCenter is set up using external load balancer (F5). Up to two nodes are supported with in the same datacenter.
+High availability for SnapCenter is set up using external load balancer (F5). Up to two nodes are supported within the same datacenter.
 // Changed the description as per Manohar's comments
 
 == SnapCenter architecture

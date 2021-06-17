@@ -68,7 +68,3 @@ You must also specify the sender and receiver email addresses and the subject of
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
-
-*For more information*
-
-link:task_restore_sap_hana_database_using_powershell_cmdlets.html[Restore SAP HANA database using PowerShell cmdlets]

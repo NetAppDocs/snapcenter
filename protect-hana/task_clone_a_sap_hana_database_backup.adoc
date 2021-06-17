@@ -85,9 +85,3 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
-
-*For more information*
-
-link:task_clone_sap_hana_database_backups_using_powershell_cmdlets.html[Clone SAP HANA database backups using PowerShell cmdlets]
-
-link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page]

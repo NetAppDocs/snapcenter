@@ -111,7 +111,3 @@ Enter the maximum number of replication attempts that can be allowed before the 
  You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
 
 . Review the summary, and then click *Finish*.
-
-*Find more information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^]

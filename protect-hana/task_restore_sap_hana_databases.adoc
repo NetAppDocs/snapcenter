@@ -16,9 +16,3 @@ The following workflow shows the sequence in which you must perform the restore 
 image::../media/restore_workflow.gif[Restore workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain detailed information about PowerShell cmdlets.
-
-*For more information*
-
-link:task_restore_sap_hana_database_using_powershell_cmdlets.html[Restore SAP HANA database using PowerShell cmdlets]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
