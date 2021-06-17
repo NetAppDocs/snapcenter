@@ -163,6 +163,7 @@ vserver show
 |===
 |===
 | Read-only commands: Minimum privileges required for ONTAP 8.2._x_ and later
+
 a|
 network interface
 
