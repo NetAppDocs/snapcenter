@@ -29,7 +29,7 @@ Click image:../media/filter_icon.gif[], and then select the host name and the re
 For example, _customtext_policy_hostname_ or _resource_hostname_. By default, a timestamp is appended to the Snapshot copy name.
 
 . In the *Application Settings* page, do the following:
- ** Click the *Backups* arrow to set additional backup options:
+.. Click the *Backups* arrow to set additional backup options:
 +
 Enable consistency group backup, if needed, and perform the following tasks:
 +
@@ -39,20 +39,23 @@ Enable consistency group backup, if needed, and perform the following tasks:
 a|
 Afford time to wait for Consistency Group Snapshot operation to complete
 a|
-Select Urgent, Medium, or Relaxed to specify the wait time for Snapshot copy operation to complete. Urgent = 5 seconds, Medium = 7 seconds, and Relaxed = 20 seconds.
+Select Urgent, Medium, or Relaxed to specify the wait time for Snapshot copy operation to complete.
+
+Urgent = 5 seconds, Medium = 7 seconds, and Relaxed = 20 seconds.
 a|
 Disable WAFL Sync
 a|
 Select this to avoid forcing a WAFL consistency point.
 |===
++
 image:../media/application_settings.gif[]
 
- ** Click the *Scripts* arrow to run pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also run pre commands before exiting the backup operation.
+.. Click the *Scripts* arrow to run pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also run pre commands before exiting the backup operation.
 +
 Prescripts and postscripts are run in the SnapCenter Server.
 
- ** Click the *Custom Configurations* arrow, and then enter the custom value pairs required for all jobs using this resource.
- ** Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
+.. Click the *Custom Configurations* arrow, and then enter the custom value pairs required for all jobs using this resource.
+.. Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
 +
 |===
 | If you want...| Then...
@@ -74,7 +77,6 @@ Select *Other*, and then enter the command to create a Snapshot copy.
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[].
-
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
@@ -94,9 +96,8 @@ The resources topology page is displayed.
 
 . Click *Back up Now*.
 . In the Backup page, perform the following steps:
- .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
+.. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
-
- .. Click *Backup*.
+.. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.

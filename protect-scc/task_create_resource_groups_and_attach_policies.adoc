@@ -25,8 +25,9 @@ a|
 Name
 a|
 Enter a name for the resource group.
-[NOTE]
-The resource group name should not exceed 250 characters.
+
+NOTE: The resource group name should not exceed 250 characters.
+
 a|
 Tags
 a|
@@ -42,16 +43,16 @@ For example, _customtext_resource group_policy_hostname or resource group_hostna
 |===
 
 . Optional:   On the *Resources* page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
++
 This helps to filter information on the screen.
 
 . Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
 
 . Optional:  On the *Application Settings* page, do the following:
 
-* Click the Backups arrow to set additional backup options:
+.. Click the Backups arrow to set additional backup options:
 +
 Enable consistency group backup and perform the following tasks:
-
 +
 |===
 | For this field...| Do this...
@@ -59,16 +60,20 @@ Enable consistency group backup and perform the following tasks:
 a|
 Afford time to wait for Consistency Group Snapshot operation to complete
 a|
-Select Urgent, Medium, or Relaxed to specify the wait time for Snapshot copy operation to complete. Urgent = 5 seconds, Medium = 7 seconds, and Relaxed = 20 seconds.
+Select Urgent, Medium, or Relaxed to specify the wait time for Snapshot copy operation to complete.
+
+Urgent = 5 seconds, Medium = 7 seconds, and Relaxed = 20 seconds.
 a|
 Disable WAFL Sync
 a|
 Select this to avoid forcing a WAFL consistency point.
 |===
++
 image:../media/application_settings.gif[]
-* Click the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 
-* Click the Custom Configurations arrow and enter the custom key-value pairs required for all data protection operations using this resource.
+.. Click the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+
+.. Click the Custom Configurations arrow and enter the custom key-value pairs required for all data protection operations using this resource.
 +
 |===
 | Parameter | Setting | Description
@@ -78,15 +83,16 @@ ARCHIVE_LOG_ENABLE
 a|
 (Y/N)
 a|
-Enables the archive log management
-to delete the archive logs.
+Enables the archive log management to delete the archive logs.
 a|
 ARCHIVE_LOG_RETENTION
 a|
 number_of_days
 a|
 Specifies the number of days the
-archive logs are retained. This setting
+archive logs are retained.
+
+This setting
 must be equal to or greater than
 NTAP_SNAPSHOT_
 RETENTIONS.
@@ -103,7 +109,9 @@ a|
 file_extension
 a|
 Specifies the archive log file
-extension length. For example, if the
+extension length.
+
+For example, if the
 archive log is
 log_backup_0_0_0_0.161518551942
 9 and if the file_extension value is 5,
@@ -116,13 +124,15 @@ a|
 (Y/N)
 a|
 Enables the management of archive
-logs within subdirectories. You
+logs within subdirectories.
+
+You
 should use this parameter if the
 archive logs are located under
 subdirectories.
 a|
 |===
-* Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
+.. Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
 +
 |===
 | If you want...| Then...
@@ -143,23 +153,23 @@ a|
 Select Other, and then enter the command to be executed on the host to create a Snapshot copy.
 |===
 . On the *Policies* page, perform the following steps:
-* Select one or more policies from the drop-down list.
-
+.. Select one or more policies from the drop-down list.
++
 NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
 +
 The policies are listed in the *Configure schedules for selected policies* section.
 
-* In the *Configure Schedules* column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
+.. In the *Configure Schedules* column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
 
-* In the  Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click OK.
+.. In the  Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click OK.
++
 Where, policy_name is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
-
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
 
-* On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. The SMTP server must be configured in *Settings* > *Global Settings*.
 
-* Review the summary, and then click *Finish*.
+. Review the summary, and then click *Finish*.

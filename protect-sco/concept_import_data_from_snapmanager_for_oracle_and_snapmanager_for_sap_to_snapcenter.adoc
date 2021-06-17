@@ -182,6 +182,8 @@ After importing, you must manually edit the corresponding policy created in Snap
 
 Before you import data to SnapCenter, you must perform certain tasks to run the import operation successfully.
 
+*Steps*
+
 . Identify the database that you want to import.
 . Using SnapCenter, add the database host and install SnapCenter Plug-ins Package for Linux.
 . Using SnapCenter, set up the connections for the storage virtual machines (SVMs) used by the databases on the host.

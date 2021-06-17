@@ -37,6 +37,8 @@ NOTE: SnapCenter does not support volume-based SnapRestore.
 
 If the database layout differs from the backup or if there are any new files after the backup was created, connect-and-copy restore is performed. In the connect-and-copy restore method, the following tasks are performed:
 
+*Steps*
+
 . The volume is cloned from the Snapshot copy and the file system stack is built on the host using the cloned LUNs or volumes.
 . The files are copied from the cloned file systems to the original file systems.
 . The cloned file systems are then unmounted from the host and the cloned volumes are deleted from ONTAP.

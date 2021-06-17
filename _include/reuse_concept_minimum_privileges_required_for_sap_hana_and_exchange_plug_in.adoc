@@ -2,6 +2,7 @@ The minimum ONTAP privileges that are required vary according to the SnapCenter 
 
 |===
 | All-access commands: Minimum privileges required for ONTAP 8.2._x_ and later
+
 a|
 event generate-autosupport-log
 
