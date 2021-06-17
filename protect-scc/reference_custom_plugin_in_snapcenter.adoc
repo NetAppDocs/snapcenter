@@ -160,10 +160,12 @@ For example, PS> Upload-SmPluginPackage -AbsolutePath c:\DB2_1.zip
 For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or
 see the cmdlet reference information.
 
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+
 === Deploying the custom plug-ins
 
 The uploaded custom plug-in is now available for deployment on the desired host as part of the
 *Add* and *Modify Host* workflow. You can have multiple version of plug-ins uploaded to the
 SnapCenter Server and you can select the desired version to deploy on a specific host.
 
-For more information on how to upload the plug-in see, SnapCenter Software Installation section.
+For more information on how to upload the plug-in see, link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html[Add hosts and install plug-in packages on remote hosts]

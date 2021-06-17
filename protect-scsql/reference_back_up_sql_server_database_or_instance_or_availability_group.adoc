@@ -37,7 +37,7 @@ When SnapCenter creates a Snapshot copy, the entire storage system volume is cap
 
 If data from other SQL host servers resides on the same volume, this data cannot be restored from the Snapshot copy.
 
-*For more information*
+*Find more information*
 
 link:task_back_up_resources_using_powershell_cmdlets.html[Back up resources using PowerShell cmdlets]
 
