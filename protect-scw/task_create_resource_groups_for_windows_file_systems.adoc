@@ -1,0 +1,98 @@
+---
+permalink: protect-scw/task_create_resource_groups_for_windows_file_systems.html
+sidebar: sidebar
+keywords: resource groups
+summary: 'A resource group is the container to which you can add multiple file systems that you want to protect. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform, and then specify the backup schedule.'
+---
+= Create resource groups for Windows file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A resource group is the container to which you can add multiple file systems that you want to protect. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform, and then specify the backup schedule.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *File Systems* from the list.
++
+NOTE: If you have recently added a file system to SnapCenter, click *Refresh Resources* to view the newly added resource.
+
+. Click *New Resource Group*.
+. On the Name page in the wizard, do the following:
++
+|===
+| For this field...| Do this...
+
+a|
+Name
+a|
+Enter the resource group name.
+
+NOTE: The resource group name should not exceed 250 characters.
+
+a|
+Use custom name format for Snapshot copy
+a|
+Optional: Enter a custom Snapshot copy name and format.
+
+For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
+a|
+Tag
+a|
+Enter a descriptive tag to help when finding a resource group.
+|===
+
+. On the Resources page, perform the following tasks:
+ .. Select the host to filter the list of resources.
++
+If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
+
+ .. In the Available Resources section, click the file systems that you want to back up, and then click the right arrow to move them to the Added section.
++
+If you select the *Autoselect all resources on same storage volume* option, all of the resources on the same volume are selected. When you move them to the Added section, all of the resources on that volume move together.
++
+To add a single file system, clear the *Autoselect all resources on same storage volume* option and then select the file systems you want to move to the Added section.
+. On the Policies page, perform the following tasks:
+ .. Select one or more policies from the drop-down list.
++
+You can select any existing policy and click *Details* to determine whether you can use that policy.
++
+If no existing policy meets your requirements, you can create a new policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
++
+The selected policies are listed in the Policy column in the Configure schedules for selected policies section.
+
+ .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. If the policy is associated with multiple schedule types (frequencies), select the frequency that you want to configure.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
++
+The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
+
++
+Third party backup schedules are not supported when they overlap with SnapCenter backup schedules. You should not modify the schedules from the Windows task scheduler and SQL Server Agent.
+. On the Notification page, provide notification information, as follows:
++
+|===
+| For this field...| Do this...
+
+a|
+Email preference
+a|
+Select *Always*, *On Failure*, or *On failure or warning*, to send emails to recipients after creating backup resource groups, attaching policies, and configuring schedules. Enter the SMTP server, default email subject line, and the To and From email addresses.
+a|
+From
+a|
+Email address
+a|
+To
+a|
+Email to address
+a|
+Subject
+a|
+Default email subject line
+|===
+
+. Review the summary, and then click *Finish*.
++
+You can perform a backup on demand or wait for the scheduled backup to occur.

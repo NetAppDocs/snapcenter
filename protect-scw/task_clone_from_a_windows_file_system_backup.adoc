@@ -1,0 +1,60 @@
+---
+permalink: protect-scw/task_clone_from_a_windows_file_system_backup.html
+sidebar: sidebar
+keywords: clone
+summary: 'You can use SnapCenter to clone a Windows file system backup. If you want a copy of a single file that was mistakenly deleted or changed, then you can clone a backup and access that file in the clone.'
+---
+= Clone from a Windows file system backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to clone a Windows file system backup. If you want a copy of a single file that was mistakenly deleted or changed, then you can clone a backup and access that file in the clone.
+
+*What you will need*
+
+* You should have prepared for data protection by completing tasks such as adding hosts, identifying resources, and creating storage virtual machine (SVM) connections.
+* You should have a backup of the file system.
+* You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
+* You cannot clone a resource group. You can only clone individual file system backups.
+* If a backup resides on a virtual machine with a VMDK disk, SnapCenter cannot clone the backup to a physical server.
+* If you clone a Windows cluster (for example, a shared LUN or a cluster shared volume (CSV) LUN), the clone is stored as a dedicated LUN on the host that you specify.
+* For a cloning operation, the root directory of the volume mount point cannot be a shared directory.
+* You cannot create a clone on a node that is not the home node for the aggregate.
+* You cannot schedule recurring clone (clone lifecycle) operations for Windows file systems; you can only clone a backup on demand.
+* If you move a LUN that contains a clone to a new volume, SnapCenter can no longer support the clone. For example, you cannot use SnapCenter to delete that clone.
+* You cannot clone across environments. For example, cloning from a physical disk to a virtual disk or vice versa.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *File Systems* from the list.
+. Select the host.
++
+The topology view is automatically displayed if the resource is protected.
+
+. From the resources list, select the backup that you want to clone, and then click the clone icon.
+. In the Options page, do the following:
++
+|===
+| For this field...| Do this...
+
+a|
+Clone server
+a|
+Choose the host on which the clone should be created.
+a|
+"`Auto assign mount point`" or "`Auto assign volume mount point under path`"
+a|
+Choose whether to automatically assign a mount point or a volume mount point under a path.
+
+Auto assign volume mount point under path: The mount point under a path enables you to provide a specific directory in which the mount points will be created. Before you choose this option, you must verify that the directory is empty. If there is a backup in the directory, the backup will be in an invalid state after the mount operation.
+a|
+Archive location
+a|
+Choose an archive location if you are cloning a secondary backup.
+|===
+
+. In the Script page, specify any prescripts or postscripts you want to execute.
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.

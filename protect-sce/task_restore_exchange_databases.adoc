@@ -1,0 +1,96 @@
+---
+permalink: protect-sce/task_restore_exchange_databases.html
+sidebar: sidebar
+keywords:
+summary: 'You can use SnapCenter to restore backed-up Exchange databases.'
+---
+= Restore Exchange databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to restore backed-up Exchange databases.
+
+*What you will need*
+
+* You must have backed up the resource groups, database, or Database Availability Groups (DAGs).
+* When Exchange database is migrated to another location, restore operation does not work for old backups.
+* If you are replicating Snapshot copies to a mirror or vault, the SnapCenter administrator must have assigned you the SVMs for both the source volumes and destination volumes.
+* In a DAG, if an active database copy is on a non-NetApp storage and you want to restore from the passive database copy backup that is on a NetApp storage, make the passive copy (NetApp storage) as active copy, refresh the resources and perform the restore operation.
++
+Run the `Move-ActiveMailboxDatabase` command to make the passive database copy as active database copy.
++
+The https://docs.microsoft.com/en-us/powershell/module/exchange/move-activemailboxdatabase?view=exchange-ps[Microsoft documentation^] contains information about this command.
+
+*About this task*
+
+* When restore operation is performed on a database, the database is mounted back on the same host and no new volume is created.
+* DAG-level backups must be restored from individual databases.
+* Full disk restore is not supported when files other than Exchange database (.edb) file exist.
++
+Plug-in for Exchange does not perform a full restore on a disk if the disk contains Exchange files such as those used for replication. When a full restore might impact Exchange functionality, Plug-in for Exchange performs a single file restore operation.
+
+* Plug-in for Exchange cannot restore BitLocker encrypted drives.
+
+*Steps*
+
+. On the left navigation pane, click *Resources* in the upper left corner of the Resource page.
+. Select the Exchange Server plug-in from the drop-down list.
+. On the Resources page, select *Database* from the View list.
+. Select the database from the list.
+. From the Manage Copies view, select *Backups*, from the Primary Backups table, and then click *image:../media/restore_icon.gif[restore icon]*.
+. On the Options page, select one of the following log backup options:
++
+|===
+| Option| Description
+
+a|
+All log backups
+a|
+Choose *All log backups* to perform up-to-the-minute backup restore operation to restore all of the available log backups after the full backup.
+a|
+By log backups until
+a|
+Choose *By log backups until* to perform a point-in-time restore operation, which restores the database based on log backups until the selected log.
+
+NOTE: The number of logs displayed in the drop-down list are based on UTM. For example, if full backup retention is 5 and UTM retention is 3, the number of log backups available are 5 but in the drop-down only 3 logs will be listed to perform restore operation.
+
+a|
+By specific date until
+a|
+Choose *By specific date until* to specify the date and time up to which transaction logs are applied to the restored database. This point-in-time restore operation restores transaction log entries that were recorded until the last backup on the specified date and time.
+a|
+None
+a|
+Choose *None* when you need to restore only the full backup without any log backups.
+|===
+You can perform one of the following actions:
+
+ ** *Recover and mount database after restore* - This option is selected by default.
+
+ ** *Do not verify the integrity of transaction logs in the backup before restore* - By default, SnapCenter verifies the integrity of transaction logs in a backup before performing a restore operation.
++
+|===
+*Best Practice:* You should not select this option.
+|===
+
+. On the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the restore operation, respectively.
++
+Restore prescript arguments include $Database and $ServerInstance.
++
+Restore postscript arguments include $Database, $ServerInstance, $BackupName, $LogDirectory, and $TargetServerInstance.
++
+You can run a script to update SNMP traps, automate alerts, send logs, and so on.
+
+. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email.
+
+. Review the summary, and then click *Finish*.
+. You can view the status of the restore job by expanding the Activity panel at the bottom of the page.
++
+You should monitor the restore process by using the *Monitor* > *Jobs* page.
+
+When you restore an active database from a backup, the passive database might go into suspended or failed state if there is a lag between the replica and the active database.
+
+The state change can occur when the active database's log chain forks and begins a new branch which breaks replication. Exchange Server attempts to fix the replica, but if it is unable to do so, after restore, you should create a fresh backup, and then reseed the replica.

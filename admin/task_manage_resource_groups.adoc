@@ -1,0 +1,65 @@
+---
+permalink: admin/task_manage_resource_groups.html
+sidebar: sidebar
+keywords:
+summary: 'You can perform various operations on resource groups.'
+---
+= Manage resource groups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform various operations on resource groups.
+
+You can perform the following tasks related to resource groups:
+
+* Modify a resource group by selecting the resource group and clicking *Modify Resource Group* to edit the information you provided while creating the resource group.
++
+NOTE: You can change the schedule while modifying the resource group. However, to change the schedule type you must modify the policy.
++
+NOTE: If you remove resources from a resource group, the backup retention settings defined in the policies currently attached to the resource group will continue to be applied to the removed resources.
+
+* Create a backup of a resource group.
+* Create a clone of a backup.
++
+You can clone from the existing backups of SQL, Oracle, Windows file systems, custom applications, and SAP HANA database resources or resource groups.
+
+* Create a clone of a resource group.
++
+This operation is supported only for SQL resource groups (which contains only databases). You can configure a schedule for cloning a resource group (clone lifecycle).
+
+* Prevent scheduled operations on resource groups from starting.
+* Delete a resource group.
+
+== Stop and resume operations on resource groups
+
+You can temporarily disable scheduled operations from starting on a resource group. Later when you want, you can enable those operations.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Resource Group* from the *View* list.
+. Select the resource group and click *Maintenance*.
+. Click *OK*.
+
+If you want to resume operations on the resource group that you had put on maintenance mode, select the resource group and click *Production*.
+
+== Delete resource groups
+
+You can delete a resource group if you no longer need to protect the resources in the resource group. You must ensure that resource groups are deleted before you remove plug-ins from SnapCenter.
+
+*About this task*
+
+If you are managing SQL or Windows file system resources, you must have manually deleted all clones created for any of the resources in the resource group.
+
+You can optionally force the deletion of all backups, metadata, policies, and Snapshot copies associated with the resource group.
+
+NOTE: In a SnapVault relationship, the last Snapshot copy cannot be deleted; therefore, the resource group cannot be deleted. Before deleting a resource group that is part of a SnapVault relationship, you must remove the SnapVault relationship and then delete the last Snapshot copy.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Resource Group* from the *View* list.
+. Select the resource group, and then click *Delete*.
+. Optional: Select the *Delete backups and detach policies associated with this Resource Group* check box to remove all backups, metadata, policies, and Snapshot copies associated with the resource group.
+. Click *OK*.

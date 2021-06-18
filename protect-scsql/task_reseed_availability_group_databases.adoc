@@ -1,0 +1,33 @@
+---
+permalink: protect-scsql/task_reseed_availability_group_databases.html
+sidebar: sidebar
+keywords:
+summary: 'Reseed is an option to restore Availability Group \(AG\) databases. If a secondary database gets out of synchronization with the primary database in an AG, you can reseed the secondary database.'
+---
+= Reseed Availability Group databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Reseed is an option to restore Availability Group (AG) databases. If a secondary database gets out of synchronization with the primary database in an AG, you can reseed the secondary database.
+
+*What you will need*
+
+* You must have created backup of secondary AG database that you want to restore.
+* The SnapCenter Server and the plug-in host must have the same SnapCenter version installed.
+
+*About this task*
+
+* You cannot perform reseed operation on primary databases.
+
+* You cannot perform a reseed operation if the replica database is removed from the availability group. When the replica is removed, the reseed operation fails.
+
+* While running the reseed operation on SQL Availability Group database, you should not trigger log backups on the replica databases of that availability group database. If you trigger log backups during reseed operation, the reseed operation fails with The mirror database, "database_name" has insufficient transaction log data to preserve the log backup chain of the principal database error message.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the *Resources* page, select *Database* from the *View* list.
+. Select secondary AG database from the list.
+. Click *Reseed*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.

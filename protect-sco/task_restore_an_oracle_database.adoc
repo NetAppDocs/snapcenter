@@ -1,0 +1,168 @@
+---
+permalink: protect-sco/task_restore_an_oracle_database.html
+sidebar: sidebar
+keywords: restore, recover, Oracle
+summary: 'In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.'
+---
+= Restore Oracle database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.
+
+*About this task*
+
+Recovery is performed using the archive logs available at the configured archive log location. If the archive logs required for recovery are not available at the configured location, you should mount the Snapshot copy containing the logs and specify the path as external archive logs.
+
+If you migrate ASM database from ASMLIB to ASMFD, then the backups created with ASMLIB cannot be used to restore the database. You should create backups in the ASMFD configuration and use those backups to restore. Similarly, if ASM database is migrated from ASMFD to ASMLIB, you should create backups in the ASMLIB configuration to restore.
+
+When you restore a database, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the $ORACLE_HOME/dbs directory to avoid multiple operations being executed on the database. After the database has been restored, the operational lock file is automatically removed.
+
+NOTE: Restore of SPFILE and Password file is not supported.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
+. Select the database from either the database details view or the resource group details view.
++
+The database topology page is displayed.
+
+. From the Manage Copies view, select *Backups* from either the primary or the secondary (mirrored or replicated) storage systems.
+. Select the backup from the table, and then click *image:../media/restore_icon.gif[restore icon]*.
+. On the Restore Scope page, perform the following tasks:
+ .. If you have selected a backup of a database in a Real Application Clusters (RAC) environment, select the RAC node.
+//Included this for BURT 1376783 for 4.5
+ .. When you select a mirrored or vault data:
+ * if there are no log backup at mirror or vault, nothing is selected and the locators are empty.
+ * if log backups exist in mirror or vault, the latest log backup is selected and corresponding locator is displayed.
++
+NOTE: If the selected log backup exists in both mirror and vault location, both the locators are displayed.
+
+ .. Perform the following actions:
++
+|===
+| If you want to restore... | Do this...
+
+a|
+All the datafiles of the database
+a|
+Select *All Datafiles*.
+
+Only the datafiles of the database are restored. The control files, archive logs, or redo log files are not restored.
+a|
+Tablespaces
+a|
+Select *Tablespaces*.
+
+You can specify the tablespaces that you want to restore.
+a|
+Control files
+a|
+Select *Control files*.
+a|
+Redo log files
+a|
+Select *Redo log files*.
+
+This option is available only for Data Guard standby or Active Data Guard standby databases.
+
+NOTE: Redo log files are not backed up for non Data Guard databases. For non Data Guard databases the recovery is performed using archive logs.
+
+a|
+Pluggable databases (PDBs)
+a|
+Select *Pluggable databases*, and then specify the PDBs that you want to restore.
+a|
+Pluggable database (PDB) tablespaces
+a|
+Select *Pluggable database (PDB) tablespaces*, and then specify the PDB and the tablespaces of that PDB that you want to restore.
+
+This option is available only if you have selected a PDB for restore.
+|===
+
+ .. Select *Change database state if needed for restore and recovery* to change the state of the database to the state required to perform restore and recovery operations.
++
+The various states of a database from higher to lower are open, mounted, started, and shutdown. You must select this check box if the database is in a higher state but the state must be changed to a lower state to perform a restore operation. If the database is in a lower state but the state must be changed to a higher state to perform the restore operation, the database state is changed automatically even if you do not select the check box.
++
+If a database is in the open state, and for restore the database needs to be in the mounted state, then the database state is changed only if you select this check box.
+
+ .. Select *Force in place restore* if you want to perform in-place restore in the scenarios where new datafiles are added after backup or when LUNs are added, deleted, or re-created to an LVM disk group.
+. On the Recovery Scope page, perform the following actions:
++
+|===
+| If you... | Do this...
+
+a|
+Want to recover to the last transaction
+a|
+Select *All Logs*.
+a|
+Want to recover to a specific System Change Number (SCN)
+a|
+Select *Until SCN (System Change Number)*.
+a|
+Want to recover to a specific data and time
+a|
+Select *Date and Time*.
+
+You must specify the date and time of the database host's time zone.
+a|
+Do not want to recover
+a|
+Select *No recovery*.
+a|
+Want to specify any external archive log locations
+a|
+Select *Specify external archive log locations*, and then specify the location of the external archive log files.
+
+If archive logs are pruned as part of backup, and you have manually mounted the required archive log backups, you must specify the mounted backup path as the external archive log location for recovery.
+
+* http://www.netapp.com/us/media/tr-4591.pdf[NetApp Technical Report 4591: Database Data Protection Backup, Recovery, Replication, and DR^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Operation fails with ORA-00308 error^]
+|===
+You cannot perform restore with recovery from secondary backups if archive log volumes are not protected but data volumes are protected. You can restore only by selecting *No recovery*.
++
+If you are recovering a RAC database with the open database option selected, only the RAC instance where the recovery operation was initiated is brought back to the open state.
++
+NOTE: Recovery is not supported for Data Guard standby and Active Data Guard standby databases.
+
+. On the PreOps page, enter the path and the arguments of the prescript that you want to run before the restore operation.
++
+You must store the prescripts either in the _/var/opt/snapcenter/spl/scripts_ path or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
++
+You can also specify the script timeout value. The default value is 60 seconds.
+
+. On the PostOps page, perform the following steps:
+ .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
++
+You must store the postscripts either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
+
+ .. Select the check box if you want to open the database after recovery.
++
+After restoring a container database (CDB) with or without control files, or after restoring only CDB control files, if you specify to open the database after recovery, then only the CDB is opened and not the pluggable databases (PDB) in that CDB.
++
+In a RAC setup, only the RAC instance that is used for recovery is opened after recovery.
++
+NOTE: After restoring a user tablespace with control files, a system tablespace with or without control files, or a PDB with or without control files, only the state of the PDB related to the restore operation is changed to the original state. The state of the other PDBs that were not used for restore are not changed to the original state because the state of those PDBs were not saved. You must manually change the state of the PDBs that were not used for restore.
+
+. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, you must select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details by using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+*For more information*
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations[Oracle RAC One Node database is skipped for performing SnapCenter operations^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_from_a_secondary_SnapMirror_or_SnapVault_location[Failed to restore from a secondary SnapMirror or SnapVault location^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_when_a_backup_of_an_orphan_incarnation_is_selected[Failed to restore from a backup of an orphan incarnation^]
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]

@@ -1,0 +1,11 @@
+---
+permalink: protect-sce/task_cancel_backup_operations_for_exchange_database.html
+sidebar: sidebar
+keywords:
+summary: 'You can cancel backup operations that are queued.'
+---
+= Cancel backup operations for Exchange database
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/resuse_task_cancel_backup_operations.adoc[]

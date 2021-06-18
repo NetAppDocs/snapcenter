@@ -1,0 +1,65 @@
+---
+permalink: protect-scsql/task_determine_whether_resources_are_available_for_backup.html
+sidebar: sidebar
+keywords: credentials
+summary: 'Resources are the databases, application instances, Availability Groups, and similar components that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.'
+---
+= Determine whether resources are available for backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Resources are the databases, application instances, Availability Groups, and similar components that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.
+
+*What you will need*
+
+* You must have already completed tasks such as installing SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
+* To discover the Microsoft SQL databases, one of the following conditions should be met.
+ ** The user that was used to add the plug-in host to SnapCenter Server should have the required permissions (sysadmin) on the Microsoft SQL Server.
+ ** If the above condition is not met, in the SnapCenter Server you should configure the user that has the required permissions (sysadmin) on the Microsoft SQL Server. The user should be configured at the Microsoft SQL Server instance level and the user can be a SQL or Windows user.
+* To discover the Microsoft SQL databases in a Windows cluster, you must unblock the Failover Cluster Instance (FCI) TCP/IP port.
+* If databases reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
++
+For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html[Deploy SnapCenter Plug-in for VMware vSphere^]
+* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
+
+
+*About this task*
+
+You cannot back up databases when the *Overall Status* option in the *Details* page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
+
+* Databases are not on a NetApp LUN.
+* Databases are not in normal state.
++
+Databases are not in normal state when they are offline, restoring, recovery pending, suspect, and so on.
+
+* Databases have insufficient privileges.
++
+For example, if a user has only view access to the database, files and properties of the database cannot be identified and hence cannot be backed up.
+
+NOTE: SnapCenter can backup only the primary database if you have a availability group configuration on SQL Server Standard Edition.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page select *Database*, or *Instance*, or *Availability Group*, from the *View* drop-down list.
++
+Click image:../media/filter_icon.gif[] and select the host name and the SQL Server Instance to filter the resources. You can then click image:../media/filter_icon.gif[] to close the filter pane.
+
+. Click *Refresh Resources*.
++
+The newly added, renamed, or deleted resources are updated to the SnapCenter Server inventory.
+
+The resources are displayed along with information such as resource type, host or cluster name, associated resource groups, backup type, policies and overall status.
+
+* If the database is on a non NetApp storage, `Not available for backup` is displayed in the *Overall Status* column.
++
+You cannot perform data protection operations on a database that is on a non NetApp storage.
+
+* If the database is on a NetApp storage and not protected, `Not protected` is displayed in the *Overall Status* column.
+* If the database is on a NetApp storage system and protected, the user interface displays `Backup not run` message in the *Overall Status* column.
+* If the database is on a NetApp storage system and protected and if the backup is triggered for the database, the user interface displays `Backup succeeded` message in the *Overall Status* column.
+
+NOTE: If you have enabled an SQL authentication while setting up the credentials, the discovered instance or database is shown with a red padlock icon. If the padlock icon appears, you must specify the instance or database credentials for successfully adding the instance or database to a resource group.
+
+After the SnapCenter administrator assigns the resources to a RBAC user, the RBAC user must log in and click *Refresh Resources* to see the latest *Overall Status* of the resources.

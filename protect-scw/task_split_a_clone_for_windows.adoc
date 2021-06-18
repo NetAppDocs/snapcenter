@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/task_split_a_clone_for_windows.html
+sidebar: sidebar
+keywords:
+summary: 'You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.'
+---
+= Split a clone
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_split_a_clone.adoc[]

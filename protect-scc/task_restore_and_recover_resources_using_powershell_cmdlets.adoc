@@ -1,0 +1,11 @@
+---
+permalink: protect-scc/task_restore_and_recover_resources_using_powershell_cmdlets_scc.html
+sidebar: sidebar
+keywords:
+summary: 'Restoring a resource backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
+---
+= Restore resources using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_restore_and_recover_resources_using_powershell_cmdlets.adoc[]

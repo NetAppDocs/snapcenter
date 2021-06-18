@@ -1,0 +1,208 @@
+---
+permalink: admin/concept_overview_of_dashboard.html
+sidebar: sidebar
+keywords:
+summary: 'From the SnapCenter left navigation pane, the Dashboard gives you a first glance into the health of your system, including recent job activity, alerts, protection summary, storage efficiency and usage, status of SnapCenter jobs \(Backup, Clone, Restore\), configuration status for standalone and Windows cluster hosts, number of Storage Virtual Machines \(SVMs\) managed by SnapCenter, and license capacity.'
+---
+= Overview of dashboard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+From the SnapCenter left navigation pane, the Dashboard gives you a first glance into the health of your system, including recent job activity, alerts, protection summary, storage efficiency and usage, status of SnapCenter jobs (Backup, Clone, Restore), configuration status for standalone and Windows cluster hosts, number of Storage Virtual Machines (SVMs) managed by SnapCenter, and license capacity.
+
+Information displayed in the Dashboard view depends on the role assigned to the user that is currently logged in to SnapCenter. Some content might not be displayed if the user does not have permission to view that information.
+
+In many cases, you can view more information about a display by hovering on *i*. In some cases, information in dashboard displays is linked to detailed source information in SnapCenter GUI pages such as Resources, Monitor, and Reports.
+
+== Recent Job Activities
+
+The Recent Job Activities tile displays the latest job activity from any Backup, Restore, and Clone jobs that you have access to. Jobs in this display have one of the following states: Completed, Warning, Failed, Running, Queued, and Canceled.
+
+Hovering over a job provides more information. You can view additional job information by clicking a specific job number, which redirects you to the Monitor page. From there, you can get job details or log information, and generate a report specific to that job.
+
+Click *See All* to view a history of all SnapCenter jobs.
+
+== Alerts
+
+The Alerts tile displays the latest unresolved Critical and Warning alerts for the hosts and SnapCenter Server.
+
+The total count of Critical and Warning category alerts is shown at the top of the display. Clicking the Critical or Warning totals redirects you to the Alerts page with the specific filter applied in the Alerts page.
+
+Clicking a specific alert redirects you to the Alerts page for details about that alert. Clicking *See All* at the bottom of the display redirects you to the Alerts page for a list of all alerts.
+
+== Latest Protection Summary
+
+The Latest Protection Summary tile gives you the protection status for all entities that you have access to. By default, the display is set to provide the status for all plug-ins. Status information is provided for resources backed up to primary storage as Snapshot copies, and to secondary storage using SnapMirror and SnapVault technologies. The availability of protection status information for secondary storage is based on the selected plug-in type.
+
+NOTE: If you are using a mirror-vault protection policy, the counters for the protection summary are displayed in the SnapVault summary chart and not in the SnapMirror chart.
+
+Protection status for individual plug-ins is available by selecting a plug-in from the drop-down menu. A donut chart shows the percentage of protected resources for the selected plug-in. Clicking a donut slice redirects you to the *Reports* > *Plug-in* page, which provides a detailed report of all primary and secondary storage activity for the specified plug-in.
+
+IMPORTANT: Reports about secondary storage apply to SnapVault only; SnapMirror reports are not supported.
+
+NOTE: SAP HANA provides protection status information for primary and secondary storage for Snapshot copies. Only primary storage protection status is available for file-based backups.
+
+|===
+| Protection status | Primary storage | Secondary storage
+
+a|
+Failed
+a|
+Count of entities that are part of a Resource Group, where the Resource Group has run a backup, but the backup failed.
+a|
+Count of entities with backups that have failed to transfer to a Secondary destination.
+a|
+Successful
+a|
+Count of entities in a resource group, where the Resource Group has been successfully backed up.
+a|
+Count of entities with backups that have been successfully transferred to a Secondary destination.
+a|
+Not configured
+a|
+Count of entities that are not part of any Resource Group and have not been backed up.
+a|
+Count of entities that are part of one or more Resource Groups that are not configured for backups to be transferred to a Secondary destination.
+a|
+Not initiated
+a|
+Count of entities that are part of a Resource Group, but no backup has been run.
+a|
+Not applicable.
+|===
+
+NOTE: If you are using SnapCenter Server 4.2 and an earlier version of the plug-in (earlier than 4.2) to create backups, the *Latest Protection Summary* tile does not display the SnapMirror protection status of these backups.
+
+== Jobs
+
+The Jobs tile provides you with a summary of backup, restore, and clone jobs that you have access to. You can customize the time frame for any report by using the drop-down menu. Time frame options are fixed at last 24 hours, last 7 days, and last 30 days. The default report shows data protection jobs run during the last 7 days.
+
+Backup, restore, and clone job information is displayed in donut charts. Clicking a donut slice redirects you to the Monitor page with job filters pre-applied to the selection.
+
+|===
+| Job status | Description
+
+a|
+Failed
+a|
+Count of jobs that have failed.
+a|
+Warning
+a|
+Count of jobs that have experienced an error.
+a|
+Successful
+a|
+Count of jobs that have completed successfully.
+a|
+Running
+a|
+Count of jobs that are currently running.
+|===
+
+== Storage
+
+The Storage tile displays the primary and secondary storage consumed by protection jobs over a 90-day period, graphically depicts consumption trends, and calculates primary storage savings. Storage information is updated once every 24 hours at 12 a.m.
+
+The day's consumption total, which comprises the total number of backups that are available in SnapCenter and size occupied by these backups, will be displayed at the top of the display. A backup could have multiple Snapshot copies associated with it and the count will reflect the same. This is applicable to both primary and secondary Snapshot copies. For example, you have created 10 backups, out of which 2 are deleted due to policy-based backup retention and 1 backup is explicitly deleted by you. Thus, a count of 7 backups will be displayed along with the size occupied by these 7 backups.
+
+The Storage Savings factor for primary storage is the ratio of logical capacity (clone and Snapshot copy savings plus storage consumed) to the physical capacity of primary storage. A bar chart illustrates the storage savings.
+
+The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Hovering over the charts provides detailed day-by-day results.
+
+NOTE: If you use SnapCenter Server 4.2 and an earlier version of the plug-in (earlier than 4.2) to create backups, the *Storage* tile does not display the number of backups, the storage consumed by these backups, the Snapshot savings, the clone savings, and the Snapshot size.
+
+== Configuration
+
+The Configuration tile provides consolidated status information for all active stand-alone and Windows cluster hosts that SnapCenter is managing, and that you have access to. This includes the plug-in status information associated with those hosts.
+
+Clicking the number adjacent to Hosts redirects you to the Managed Hosts section in the Hosts page. From there, you can obtain detailed information for a selected host.
+
+Additionally, this display shows the sum of Standalone ONTAP SVMs and Cluster ONTAP SVMs that SnapCenter is managing and that you have access to. Clicking the number adjacent to SVM redirects you to the Storage Systems page. From there, you can obtain detailed information for a selected SVM.
+
+The Host configuration state is presented as red (critical), yellow (warning), and green (active), along with the number of hosts in each state. Status messages are provided for each state.
+
+|===
+| Configuration status | Description
+
+a|
+Upgrade mandatory
+a|
+Count of hosts that are running unsupported plug-ins and need an upgrade. An unsupported plug-in is not compatible with this version of SnapCenter.
+a|
+Migration mandatory
+a|
+Count of hosts that are running unsupported plug-ins and need migration. An unsupported plug-in is not compatible with this version of SnapCenter.
+a|
+No plug-ins installed
+a|
+Count of hosts that are added successfully but the plug-ins need to be installed, or the plug-ins installation has failed.
+a|
+Suspended
+a|
+Count of hosts whose schedules are suspended and are under maintenance.
+a|
+Stopped
+a|
+Count of hosts that are up, but the plug-in services are not running.
+a|
+Host down
+a|
+Count of hosts that are down or not reachable.
+a|
+Upgrade available (optional)
+a|
+Count of hosts where a newer version of the plug-in package is available for upgrade.
+a|
+Migration available (optional)
+a|
+Count of hosts where a newer version of the plug-in is available for migration.
+a|
+Configure log directory
+a|
+Count of hosts where the log directory has to be configured for SCSQL to take transaction log backup.
+a|
+Configure VMware plug-ins
+a|
+Count of hosts where the SnapCenter Plug-in for VMware vSphere needs to be added.
+a|
+Unknown
+a|
+Count of hosts that have been registered but the installation is not yet triggered.
+a|
+Running
+a|
+Count of hosts that are up and plug-ins are running. And in the case of SCSQL plug-ins, log directory and hypervisor are configured.
+a|
+Installing\Uninstalling plug-ins
+a|
+Count of hosts where plug-in installation or uninstallation in progress.
+|===
+
+== Licensed Capacity
+
+The Licensed Capacity tile displays information about total licensed capacity, used capacity, capacity threshold alerts, and license expiration alerts for SnapCenter Standard capacity-based licenses.
+
+NOTE: This display appears only if you are using SnapCenter Standard capacity-based licenses on Cloud Volumes ONTAP or ONTAP Select platforms. For FAS or AFF platforms, the SnapCenter license is controller-based and licensed for unlimited capacity, and no capacity license is required.
+
+|===
+| License status | Description
+
+a|
+In use
+a|
+Amount of capacity currently in use.
+a|
+Notify
+a|
+Capacity threshold at which notifications are displayed on the Dashboard, and, if configured, when email notifications are sent.
+a|
+Licensed
+a|
+Amount of licensed capacity.
+a|
+Over
+a|
+Amount of capacity that has exceeded the licensed capacity.
+|===

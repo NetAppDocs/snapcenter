@@ -1,0 +1,45 @@
+---
+permalink: protect-hana/task_prepare_multitenant_database_containers_for_data_protection.html
+sidebar: sidebar
+keywords: multitenant database containers
+summary: 'For SAP HANA hosts directly registered in SnapCenter, installing or upgrading the SnapCenter Plug-in for SAP HANA Database will trigger an automatic discovery for resources on the host. After installing or upgrading the plug-in, for every multitenant database containers \(MDC\) resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in “locked” state.'
+---
+= Prepare multitenant database containers for data protection
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For SAP HANA hosts directly registered in SnapCenter, installing or upgrading the SnapCenter Plug-in for SAP HANA Database will trigger an automatic discovery for resources on the host. After installing or upgrading the plug-in, for every multitenant database containers (MDC) resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in "`locked`" state.
+
+*About this task*
+
+For example, in SnapCenter 4.2, if E90 MDC resource was located on the plug-in host and registered manually, after upgrading to SnapCenter 4.3, another E90 MDC resource with a different GUID will be discovered and registered in SnapCenter.
+
+NOTE: The backups associated with the resource of SnapCenter 4.2 and earlier versions must be retained until the expiry of the retention period. After the retention period expires, you can delete the old MDC resource and continue to manage the new auto discovered MDC resource.
+
+`Old MDC resource` is the MDC resource for a plug-in host that was manually added in SnapCenter 4.2 or earlier releases.
+
+Perform the following steps to start using the new resource discovered in SnapCenter 4.3 for data protection operations:
+
+*Steps*
+
+. On the *Resources* page, select the old MDC resource with backups added to the earlier SnapCenter release, and place it in "`maintenance mode`" from the Topology page.
++
+If the resource is part of a resource group, place the resource group in "`maintenance mode`".
+
+. Configure the new MDC resource discovered after upgrading to SnapCenter 4.3 by selecting the new resource from the Resources page.
++
+"`New MDC resource`" is the newly discovered MDC resource that was discovered once the SnapCenter Server and the plug-in host was upgraded to 4.3. The new MDC resource can be identified as a resource with the same SID as the old MDC resource, for a given host, and with a red padlock icon next to it in the Resources page.
+
+. Protect the new MDC resource discovered after upgrading to SnapCenter 4.3 by selecting protection policies, schedules, and notification settings.
+. Delete the backups taken in SnapCenter 4.2 or earlier releases based on the retention settings.
+. Delete the resource group from the Topology page.
+. Delete the old MDC resource from the Resources page.
++
+For example, if the primary Snapshot copies retention period is 7 days and secondary Snapshot copies retention is 45 days, after 45 days are complete and after all the backups are deleted, you must delete the resource group and the old MDC resource.
+
+*Find more information*
+
+link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
+
+link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page]

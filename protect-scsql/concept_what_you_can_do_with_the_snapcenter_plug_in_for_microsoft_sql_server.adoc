@@ -1,0 +1,39 @@
+---
+permalink: protect-scsql/concept_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_sql_server.html
+sidebar: sidebar
+keywords:
+summary: 'When the SnapCenter Plug-in for Microsoft SQL Server is installed in your environment, you can use SnapCenter to back up, restore, and clone SQL Server databases.'
+---
+= What you can do with the SnapCenter Plug-in for Microsoft SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When the SnapCenter Plug-in for Microsoft SQL Server is installed in your environment, you can use SnapCenter to back up, restore, and clone SQL Server databases.
+
+You can perform the following tasks that support backup operations, restore operations, and clone operations of SQL Server databases and database resources:
+
+* Back up SQL Server databases and associated transaction logs
++
+You cannot create a log backup for master and msdb system databases. However, you can create log backups for model system database.
+
+* Restore database resources
++
+** You can restore master system databases, msdb system databases, and model system databases.
++
+** You cannot restore multiple databases, instances, and availability groups.
++
+** You cannot restore the system database to an alternate path.
+
+* Create point-in-time clones of production databases
++
+You cannot perform backup, restore, clone, and clone lifecycle operations on tempdb system databases.
+
+* Verify backup operations immediately or defer verification until later
++
+Verification of SQL Server system database is not supported. SnapCenter clones the databases to perform verification operation. SnapCenter cannot clone SQL Server system databases, and therefore verification of these databases is not supported.
+
+* Schedule backup operations and clone operations
+* Monitor backup operations, restore operations, and clone operations
+
+NOTE: The Plug-in for SQL Server does not support backup and recovery of SQL Server databases on SMB shares.

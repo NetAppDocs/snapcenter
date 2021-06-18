@@ -1,0 +1,34 @@
+---
+permalink: install/task_create_a_role.html
+sidebar: sidebar
+keywords: role, create, permission
+summary: 'In addition to using the existing SnapCenter roles, you can create your own roles and customize the permissions.'
+---
+= Create a role
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In addition to using the existing SnapCenter roles, you can create your own roles and customize the permissions.
+
+You should have logged in as the "SnapCenterAdmin" role.
+
+*Steps*
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Roles*.
+. Click image:../media/add_icon_configure_database.gif[add icon in configuring database screen].
+. In the Add Role page, specify a name and description for the new role.
+//Included this note for BURT 1389838 for 4.5
++
+NOTE: From SnapCenter 4.5, you cannot have a role name that include /\[ ];|=,+*?< >' characters.
+If you want to use a role that you created in an earlier release of SnapCenter with these special characters, you can disable the validation of the role name by changing the value of 'DisableSQLInjectionValidation' parameter to true.
+
+. Select *All members of this role can see other members' objects* to enable other members of the role to see resources such as volumes and hosts after they refresh the resources list.
++
+You should deselect this option if you do not want members of this role to see objects to which other members are assigned.
++
+NOTE: When this option is enabled, assigning users access to objects or resources is not required if users belong to the same role as the user who created the objects or resources.
+
+. In the Permissions page, select the permissions that you want to assign to the role, or click *Select All* to grant all permissions to the role.
+. Click *Submit*.

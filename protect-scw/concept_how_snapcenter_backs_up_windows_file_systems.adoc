@@ -1,0 +1,20 @@
+---
+permalink: protect-scw/concept_how_snapcenter_backs_up_windows_file_systems.html
+sidebar: sidebar
+keywords:
+summary: 'SnapCenter uses Snapshot copy technology to back up Windows file system resources that reside on LUNs, CSVs (cluster shared volumes), RDM (raw device mapping) volumes, ALM (asymmetric LUN mapping) in Windows clusters, and VMDKs based on VMFS/NFS (VMware Virtual Machine File System using NFS).'
+---
+= How SnapCenter backs up Windows file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter uses Snapshot copy technology to back up Windows file system resources that reside on LUNs, CSVs (cluster shared volumes), RDM (raw device mapping) volumes, ALM (asymmetric LUN mapping) in Windows clusters, and VMDKs based on VMFS/NFS (VMware Virtual Machine File System using NFS).
+
+SnapCenter creates backups by creating Snapshot copies of the file systems. Federated backups, in which a volume contains LUNs from multiple hosts, are faster and more efficient than backups of each individual LUN because only one Snapshot copy of the volume is created compared to individual Snapshots of each file system.
+
+When SnapCenter creates a Snapshot copy, the entire storage system volume is captured in the Snapshot copy. However, the backup is valid only for the host server for which the backup was created.
+
+If data from other host servers resides on the same volume, this data cannot be restored from the Snapshot copy.
+
+NOTE: If a Windows file system contains a database, then backing up the file system is not the same as backing up the database. To back up a database, you must use one of the database plug-ins.

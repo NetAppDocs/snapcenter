@@ -1,0 +1,101 @@
+---
+permalink: protect-scc/task_create_policies_for_custom_plug_in_resources.html
+sidebar: sidebar
+keywords:
+summary: 'Before you use SnapCenter to back up custom plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.'
+---
+= Create policies for custom plug-in resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you use SnapCenter to back up custom plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.
+
+*What you will need*
+
+* You should have defined your backup strategy.
++
+For details, see the information about defining a data protection strategy for custom plug-ins.
+* You should have prepared for data protection.
++
+Preparing for data protection includes tasks such as installing SnapCenter, adding hosts, creating storage system connections, and adding resources.
+* The storage virtual machines (SVMs) should be assigned to you for mirror or vault operations.
++
+The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshot copies to a mirror or vault.
+* You should have manually added the resources that you want to protect.
+
+*About this task*
+
+* A backup policy is a set of rules that governs how you manage, schedule, and retain backups. Additionally, you can specify replication, script, and application settings.
+* Specifying options in a policy saves time when you want to reuse the policy for another resource group.
+
+*Steps*
+
+. In the left navigation pane, click *Settings*.
+. In the *Settings* page, click *Policies*.
+. Click *New*.
+. In the *Name* page, enter the policy name and description.
+. In the *Settings* page, perform the following steps:
+ ** Specify the schedule type by selecting *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
++
+NOTE: You can specify the schedule (start date, end date, and frequency) for the backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but enables you to assign different backup schedules to each policy.
++
+image::../media/backup_settings.gif[]
++
+NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
+
+ ** In the *Custom backup settings* section, provide any specific backup settings that has to be passed to the plug-in in key-value format. You can provide multiple key-values to be passed to the plug-in.
+. On the *Retention* page, specify the retention settings for the backup type and the schedule type selected in the Backup Type page:
++
+|===
+| If you want to...| Then...
+
+a|
+Keep a certain number of Snapshot copies
+a|
+Select *Total Snapshot copies to keep*, and then specify the number of Snapshot copies that you want to keep.
+
+If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
+
+NOTE: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+
+NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+
+a|
+Keep the Snapshot copies for a certain number of days
+a|
+Select *Keep Snapshot copies for*, and then specify the number of days for which you want to keep the Snapshot copies before deleting them.
+|===
+
+. On the *Replication* page, specify the replication settings:
++
+|===
+| For this field...| Do this...
+
+a|
+*Update SnapMirror after creating a local Snapshot copy*
+a|
+Select this field to create mirror copies of the backup sets on another volume (SnapMirror replication).
+
+If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, Snapshot copy created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot copy is selected from the destination to perform a restore operation, then the following error message is displayed: Secondary Location is not available for the selected vaulted/mirrored backup.
+a|
+*Update SnapVault after creating a local Snapshot copy*
+a|
+Select this option to perform disk-to-disk backup replication (SnapVault backups).
+a|
+*Secondary policy label*
+a|
+Select a Snapshot label.
+
+Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+
+NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
+a|
+*Error retry count*
+a|
+Enter the maximum number of replication attempts that can be allowed before the operation stops.
+|===
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+
+. Review the summary, and then click *Finish*.

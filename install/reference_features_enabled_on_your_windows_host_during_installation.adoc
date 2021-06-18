@@ -1,0 +1,95 @@
+---
+permalink: install/reference_features_enabled_on_your_windows_host_during_installation.html
+sidebar: sidebar
+keywords: 
+summary: 'The SnapCenter Server installer enables the Windows features and roles on your Windows host during installation. These might be of interest for troubleshooting and host system maintenance purposes.'
+---
+= Features enabled on your Windows host during installation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapCenter Server installer enables the Windows features and roles on your Windows host during installation. These might be of interest for troubleshooting and host system maintenance purposes.
+
+|===
+| Category| Feature
+
+a|
+Web Server
+a|
+
+* Internet Information Services
+* World Wide Web Services
+* Common HTTP Features
+ ** Default Document
+ ** Directory Browsing
+ ** HTTP Errors
+ ** HTTP Redirection
+ ** Static Content
+ ** WebDAV Publishing
+* Health and Diagnostics
+ ** Custom Logging
+ ** HTTP Logging
+ ** Logging Tools
+ ** Request Monitor
+ ** Tracing
+* Performance Features
+ ** Static Content Compression
+* Security
+ ** IP Security
+ ** Basic Authentication
+ ** Centralized SSL Certificate Support
+ ** Client Certificate Mapping Authentication
+ ** IIS Client Certificate Mapping Authentication
+ ** IP and Domain Restrictions
+ ** Request Filtering
+ ** URL Authorization
+ ** Windows Authentication
+* Application Development Features
+ ** .NET Extensibility 4.5
+ ** Application Initialization
+ ** ASP.NET 4.5
+ ** Server-Side Includes
+ ** WebSocket Protocol
+* Management Tools
+ ** IIS Management Console
+
+a|
+IIS Management Scripts and Tools
+a|
+
+* IIS Management Service
+* Web Management Tools
+
+a|
+.NET Framework 4.5.2 Features
+a|
+
+* .NET Framework 4.5.2
+* ASP.NET 4.5.2
+* Windows Communication Foundation (WCF) HTTP Activation45
+ ** TCP Activation
+ ** HTTP Activation
+ ** Message Queuing (MSMQ) activation
+
+a|
+Message Queuing
+a|
+
+* Message Queuing Services
++
+NOTE: Ensure that no other applications uses the MSMQ service that SnapCenter creates and manages.
+
+* MSMQ Server
+
+a|
+Windows Process Activation Service
+a|
+
+* Process Model
+
+a|
+Configuration APIs
+a|
+All
+|===

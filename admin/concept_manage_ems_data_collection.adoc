@@ -1,0 +1,59 @@
+---
+permalink: admin/concept_manage_ems_data_collection.html
+sidebar: sidebar
+keywords:
+summary: 'You can schedule and manage Event Management System (EMS) data collection using PowerShell cmdlets. EMS data collection involves gathering details about the SnapCenter Server, the installed SnapCenter plug-in packages, the hosts, and similar information, and then sending it to a specified ONTAP storage virtual machine \(SVM\).'
+---
+= Manage EMS data collection
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can schedule and manage Event Management System (EMS) data collection using PowerShell cmdlets. EMS data collection involves gathering details about the SnapCenter Server, the installed SnapCenter plug-in packages, the hosts, and similar information, and then sending it to a specified ONTAP storage virtual machine (SVM).
+
+NOTE: System CPU utilization is high when data-collection task is in progress. CPU utilization remains high as long as the operation is progress irrespective of the data size.
+
+== Stop EMS data collection
+
+EMS data collection is enabled by default and runs every seven days after your installation date. You can disable data collection at any time by using the PowerShell cmdlet _Disable-SmDataCollectionEMS_.
+
+*Steps*
+
+. From a PowerShell command line, establish a session with SnapCenter by entering _Open-SmConnection_.
+. Disable EMS data collection by entering _Disable-SmDataCollectionEms_.
+
+== Start EMS data collection
+
+EMS data collection is enabled by default and is scheduled to run every seven days from the installation date. If you have disabled it, you can start EMS data collection again by using the _Enable-SmDataCollectionEMS_ cmdlet.
+
+The Data ONTAP event generate-autosupport-log permission has been granted to the storage virtual machine (SVM) user.
+
+*Steps*
+
+. From a PowerShell command line, establish a session with SnapCenter by entering _Open-SmConnection_.
+. Enable EMS data collection by entering _Enable-SmDataCollectionEMS_.
+
+== Change EMS data collection schedule and target SVM
+
+You can use PowerShell cmdlets to change the EMS data collection schedule or the target storage virtual machine (SVM).
+
+*Steps*
+
+. From a PowerShell command line, to establish a session with SnapCenter, enter the _Open-SmConnection_ cmdlet.
+. To change the EMS data collection target, enter the _Set-SmDataCollectionEmsTarget_ cmdlet.
+. To change the EMS data collection schedule, enter the _Set-SmDataCollectionEmsSchedule_ cmdlet.
+
+== Monitor EMS data collection status
+
+You can monitor the status of your EMS data collection using several PowerShell cmdlets. You can get information about the schedule, storage virtual machine (SVM) target, and status.
+
+*Steps*
+
+. From a PowerShell command line, establish a session with SnapCenter by entering _Open-SmConnection_.
+. Retrieve information about the EMS data collection schedule by entering _Get-SmDataCollectionEmsSchedule_.
+. Retrieve information about the EMS data collection status by entering _Get-SmDataCollectionEmsStatus_.
+. Retrieve information about the EMS data collection target by entering _Get-SmDataCollectionEmsTarget_.
+
+*Find more information*
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].

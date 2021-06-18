@@ -1,0 +1,22 @@
+---
+permalink: install/concept_minimum_vcenter_privileges_required_for_snapcenter_rdm_operations.html
+sidebar: sidebar
+keywords: minimum privileges, RDM
+summary: 'To perform RDM operations in a guest OS, you must have minimum vCenter privileges.'
+---
+= Minimum vCenter privileges required for SnapCenter RDM operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To perform RDM operations in a guest OS, you must have minimum vCenter privileges.
+
+You must have the following minimum privileges set on the host:
+
+* Datastore: Remove File
+* Host: Configuration > Storage Partition Configuration
+* Virtual Machine: Configuration
+
+You must assign these privileges to a role at the Virtual Center Server level. The role to which you assign these privileges cannot be assigned to any user without root privileges.
+
+After you assign these privileges, you can install the Plug-in for Windows on the guest OS.

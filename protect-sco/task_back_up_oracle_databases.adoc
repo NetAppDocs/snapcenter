@@ -1,0 +1,23 @@
+---
+permalink: protect-sco/task_back_up_oracle_databases.html
+sidebar: sidebar
+keywords: backup, oracle database
+summary: 'You can either create a backup of a resource \(database\) or resource group. The backup workflow includes planning, identifying the resources for backup, creating backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.'
+---
+= Back up Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can either create a backup of a resource (database) or resource group. The backup workflow includes planning, identifying the resources for backup, creating backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.
+
+The following workflow shows the sequence in which you must perform the backup operation:
+
+image::../media/sco_backup_workflow.png[Backup workflow for Oracle]
+
+While creating a backup for Oracle databases, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the $ORACLE_HOME/dbs directory to avoid multiple operations being executed on the database. After the database has been backed up, the operational lock file is automatically removed.
+
+However, if the previous backup was completed with a warning, the operational lock file might not get deleted, and the next backup operation gets into the wait queue. It might eventually get canceled if the sm_lock_dbsid file is not deleted. In such scenario, you must manually delete the operational lock file by running rm -rf .sm_lock_dbsid from $ORACLE_HOME/dbs.
+
+. From the command prompt, navigate to $ORACLE_HOME/dbs.
+. Delete the operational lock:``rm -rf .sm_lock_dbsid.``

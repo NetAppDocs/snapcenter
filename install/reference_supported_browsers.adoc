@@ -1,0 +1,26 @@
+---
+permalink: install/reference_supported_browsers.html
+sidebar: sidebar
+keywords: SnapCenter, browsers, chrome, IE, Edge
+summary: 'SnapCenter Software can be used on multiple browsers.'
+---
+= Supported browsers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter Software can be used on multiple browsers.
+
+* Chrome
++
+If you are using v66, you might fail to launch SnapCenter GUI.
+
+* Internet Explorer
+ ** Only default-level security is supported.
++
+Making changes to Internet Explorer security settings results in significant browser display issues.
+
+ ** Internet Explorer compatibility view must be disabled.
+* Microsoft Edge
+
+For the latest information about supported versions, see http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].

@@ -1,0 +1,40 @@
+---
+permalink: protect-sce/reference_exchange_server_cluster_node_privileges_required.html
+sidebar: sidebar
+keywords: 
+summary: 'To enable SnapCenter to add Exchange Server or DAG, and to install SnapCenter Plug-in for Microsoft Exchange Server on a host or DAG, you must configure SnapCenter with credentials for a user with a minimum set of privileges and permissions.'
+---
+= Exchange Server privileges required
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To enable SnapCenter to add Exchange Server or DAG, and to install SnapCenter Plug-in for Microsoft Exchange Server on a host or DAG, you must configure SnapCenter with credentials for a user with a minimum set of privileges and permissions.
+
+You must have a domain user with local administrator privileges, and with local login permissions on the remote Exchange host, as well as administrative permissions on all the nodes in the DAG. The domain user requires the following minimum permissions:
+
+* Add-MailboxDatabaseCopy
+* Dismount-Database
+* Get-AdServerSettings
+* Get-DatabaseAvailabilityGroup
+* Get-ExchangeServer
+* Get-MailboxDatabase
+* Get-MailboxDatabaseCopyStatus
+* Get-MailboxServer
+* Get-MailboxStatistics
+* Get-PublicFolderDatabase
+* Move-ActiveMailboxDatabase
+* Move-DatabasePath -ConfigurationOnly:$true
+* Mount-Database
+* New-MailboxDatabase
+* New-PublicFolderDatabase
+* Remove-MailboxDatabase
+* Remove-MailboxDatabaseCopy
+* Remove-PublicFolderDatabase
+* Resume-MailboxDatabaseCopy
+* Set-AdServerSettings
+* Set-MailboxDatabase -allowfilerestore:$true
+* Set-MailboxDatabaseCopy
+* Set-PublicFolderDatabase
+* Suspend-MailboxDatabaseCopy
+* Update-MailboxDatabaseCopy

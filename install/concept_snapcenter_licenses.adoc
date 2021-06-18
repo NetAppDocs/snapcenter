@@ -1,0 +1,88 @@
+---
+permalink: install/concept_snapcenter_licenses.html
+sidebar: sidebar
+keywords: licenses, FAS, AFF, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery
+summary: 'SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.'
+---
+= SnapCenter licenses
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.
+
+|===
+| License | Where required
+
+a|
+SnapCenter Standard controller-based
+a|
+Required for FAS or AFF storage controllers
+
+SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS or AFF storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
+
+NOTE: SnapCenter is also offered as part of data protection bundle. If you have purchased A400 or later, you should purchase the data protection bundle.
+
+a|
+SnapCenter Standard capacity-based
+a|
+Required with ONTAP Select and Cloud Volumes ONTAP
+
+If you are a Cloud Volumes ONTAP or ONTAP Select customer, you need to procure a per TB capacity-based license based on the data managed by SnapCenter. By default, SnapCenter ships a built-in 90-day 100 TB SnapCenter Standard capacity-based trial license. For other details, contact the sales representative.
+
+a|
+SnapMirror or SnapVault
+a|
+ONTAP
+
+Either SnapMirror or SnapVault license is required if replication is enabled in SnapCenter.
+
+a|
+SnapRestore
+a|
+Required to restore and verify backups.
+
+On primary storage systems
+
+* Required on SnapVault destination systems to perform remote verification and to restore from a backup.
+* Required on SnapMirror destination systems to perform remote verification.
+
+a|
+FlexClone
+a|
+Required to clone databases and verification operations.
+
+On primary and secondary storage systems
+
+* Required on SnapVault destination systems to create clones from secondary vault backup.
+* Required on SnapMirror destination systems to create clones from secondary SnapMirror backup.
+
+a|
+Protocols
+a|
+
+* iSCSI or FC license for LUNs
+* CIFS license for SMB shares
+* NFS license for NFS type VMDKs
+* iSCSI or FC license for VMFS type VMDKs
+
+Required on SnapMirror destination systems to serve data if a source volume is unavailable.
+
+a|
+SnapCenter Standard licenses (optional)
+a|
+Secondary destinations
+
+NOTE: It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary destinations, you cannot use SnapCenter to backup resources on the secondary destination after performing a failover operation. However, a FlexClone license is required on secondary destinations to perform clone and verification operations.
+|===
+
+NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available.
+
+For information on how to add licenses, see link:..//install/task_add_snapcenter_licenses.html[Add SnapCenter licenses^].
+
+== Single Mailbox Recovery (SMBR) licenses
+If you are using SnapCenter Plug-in for Exchange to manage Microsoft Exchange Server databases and Single Mailbox Recovery (SMBR), you would need additional license for SMBR which needs to be purchased separately based on user mailbox.
+
+Contact your NetApp sales representative to purchase SMBR licenses which are available as units of bundle of 1000, 5000, 15000 and 25000 mailboxes. After purchasing the SKU, you can obtain the license by following the instructions in https://library.netapp.com/ecm/ecm_download_file/ECMLP2863893[SMBR Release Notes^].
+
+When you submit the request for license key, Kroll Ontrack will issue 50 mailbox license keys. Based on your entitlement, the Kroll Ontrack will upgrade the licenses for mailbox after verification.

@@ -1,0 +1,111 @@
+---
+permalink: protect-scsql/task_create_resource_groups_and_attach_policies_for_sql_server.html
+sidebar: sidebar
+keywords: run as
+summary: 'A resource group is a container to which you add resources that you want to back up and protect together. A resource group enables you to back up all of the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.'
+---
+= Create resource groups and attach policies for SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A resource group is a container to which you add resources that you want to back up and protect together. A resource group enables you to back up all of the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.
+
+You can protect resources individually without creating a new resource group. You can take backups on the protected resource.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the *Resources* page, select *Database* from the *View* list.
++
+NOTE: If you have recently added a resource to SnapCenter, click *Refresh Resources* to view the newly added resource.
+
+. Click *New Resource Group*.
+. On the *Name* page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Name
+a|
+Enter the resource group name.
+
+NOTE: The resource group name should not exceed 250 characters.
+a|
+Tags
+a|
+Enter one or more labels that will help you later search for the resource group.    For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
+a|
+Use custom name format for Snapshot copy
+a|
+Optional: Enter a custom Snapshot copy name and format.     For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
+|===
+
+. On the *Resources* page, perform the following steps:
+ .. Select the host name, resource type, and the SQL Server instance from drop-down lists to filter the list of resources.
++
+NOTE: If you have recently added resources, they will appear on the list of Available Resources only after you refresh your resource list.
+
+ .. To move resources from the *Available Resources* section to the Selected Resources section, perform one of the following steps:
+
+ ** Select *Autoselect all resources on same storage volume* to move all of the resources on the same volume to the Selected Resources section.
+ ** Select the resources from the *Available Resources* section and then click the right arrow to move them to the *Selected Resources* section.
+. On the *Policies* page, perform the following steps:
+ .. Select one or more policies from the drop-down list.
++
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
++
+In the *Configure schedules for selected policies* section, the selected policies are listed.
+
+ .. In the *Configure schedules for selected policies* section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *OK*.
++
+You must do this for each frequency listed in the policy. The configured schedules are listed in the Applied Schedules column in the *Configure schedules for selected policies* section.
+
+ .. Select the Microsoft SQL Server scheduler.
++
+You must also select a scheduler instance to associate with the scheduling policy.
++
+If you do not select Microsoft SQL Server scheduler, the default is Microsoft Windows scheduler.
+
++
+Third party backup schedules are not supported when they overlap with SnapCenter backup schedules. You should not modify the schedules from the Windows task scheduler and SQL Server Agent.
+. On the *Verification* page, perform the following steps:
+ .. Select the verification server from the *Verification server* drop-down list.
++
+The list includes all the SQL Servers added in SnapCenter. You can select multiple verification servers (local host or remote host).
++
+NOTE: The verification server version should match the version and edition of the SQL server that is hosting the primary database.
+
+ .. Click *Load locators* to load the SnapMirror and SnapVault volumes to perform verification on secondary storage.
+ .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+ .. In the Add Verification Schedulespolicy_name dialog box, perform the following actions:
++
+|===
+| If you want to...| Do this...
+
+a|
+Run verification after backup
+a|
+Select *Run verification after backup*.
+a|
+Schedule a verification
+a|
+Select *Run scheduled verification*.
+|===
+
+ .. Click *OK*.
++
+The configured schedules are listed in the Applied Schedules column. You can review and then edit by clicking *image:../media/edit_icon.gif[icon to edit configured schedules]* or delete by clicking *image:../media/delete_icon_for_configuringschedule.gif[delete icon]*.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.
+
+*For more information*
+
+link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]

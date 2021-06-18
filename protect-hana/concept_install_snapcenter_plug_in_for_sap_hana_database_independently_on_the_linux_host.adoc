@@ -1,0 +1,14 @@
+---
+permalink: protect-hana/concept_install_snapcenter_plug_in_for_sap_hana_database_independently_on_the_linux_host.html
+sidebar: sidebar
+keywords: 
+summary: 'You can install the SnapCenter Plug-in for SAP HANA Database directly on the Linux host if your environment does not allow remote installation of the plug-in from the SnapCenter Server. You can use an interactive wizard or the command-line interface to install the plug-in.'
+---
+= Install SnapCenter Plug-in for SAP HANA Database independently on the Linux host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install the SnapCenter Plug-in for SAP HANA Database directly on the Linux host if your environment does not allow remote installation of the plug-in from the SnapCenter Server. You can use an interactive wizard or the command-line interface to install the plug-in.
+
+The Plug-in for SAP HANA Database must be installed on each of the Linux host where the HDBSQL client resides.

@@ -1,0 +1,11 @@
+---
+permalink: protect-scc/task_cancel_scc_resource_clone_operations.html
+sidebar: sidebar
+keywords:
+summary: 'You can cancel clone operations that are queued.'
+---
+= Cancel custom plug-in resource clone operations
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_cancel_clone_operations.adoc[]

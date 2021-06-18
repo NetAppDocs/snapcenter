@@ -1,0 +1,27 @@
+You should configure the CA certificate with Windows host plug-in services to activate the installed digital certificate.
+
+Perform the following steps on the SnapCenter Server and all the plug-in hosts where CA certificates are already deployed.
+
+*Steps*
+
+. Remove the existing certificate binding with SMCore default port 8145, by running the following command:
++
+`> netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>`
++
+For example:
++
+  > netsh http delete sslcert ipport=0.0.0.0:8145
+
+. Bind the newly installed certificate with the Windows host plug-in services, by running the following commands:
++
+`> $cert = “_<certificate thumbprint>_”`
++
+`> $guid = [guid]::NewGuid().ToString("B")`
++
+`> netsh http add sslcert ipport=0.0.0.0: _<SMCore Port>_ certhash=$cert appid="$guid"`
++
+For example:
++
+  > $cert = “a909502dd82ae41433e6f83886b00d4277a32a7b”
+  > $guid = [guid]::NewGuid().ToString("B")
+  > netsh http add sslcert ipport=0.0.0.0:8145 certhash=$cert appid="$guid"

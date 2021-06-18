@@ -1,0 +1,77 @@
+---
+permalink: protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html
+sidebar: sidebar
+keywords:
+summary: 'You can install the SnapCenter Plug-in for Microsoft Windows locally on a Windows host if you are unable to install the plug-in remotely from the SnapCenter GUI. You can run the SnapCenter Plug-in for Microsoft Windows installation program unattended, in silent mode, from the Windows command line.'
+---
+= Install the SnapCenter Plug-in for Microsoft Windows silently from the command line
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install the SnapCenter Plug-in for Microsoft Windows locally on a Windows host if you are unable to install the plug-in remotely from the SnapCenter GUI. You can run the SnapCenter Plug-in for Microsoft Windows installation program unattended, in silent mode, from the Windows command line.
+
+*What you will need*
+
+* You must have installed Microsoft .Net 4.5.2 or later.
+* You must have installed PowerShell 4.0 or later.
+* You must have turned on Windows message queuing.
+* You must be a local administrator on the host.
+
+*Steps*
+
+. Download the SnapCenter Plug-in for Microsoft Windows from your install location.
++
+For example, the default installation path is C:\ProgramData\NetApp\SnapCenter\Package Repository.
++
+This path is accessible from the host where the SnapCenter Server is installed.
+
+. Copy the installation file to the host on which you want to install the plug-in.
+. From the command prompt, navigate to the directory where you downloaded the installation file.
+. Enter the following command, replacing variables with your data:
++
+`"snapcenter_windows_host_plugin.exe"/silent / debuglog"" /log"" BI_SNAPCENTER_PORT= SUITE_INSTALLDIR="" BI_SERVICEACCOUNT= BI_SERVICEPWD= ISFeatureInstall=SCW`
++
+For example:
++
+ `"C:\ProgramData\NetApp\SnapCenter\Package Repository \snapcenter_windows_host_plugin.exe"/silent /debuglog"C: \HPPW_SCW_Install.log" /log"C:\" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C: \Program Files\NetApp\SnapCenter" BI_SERVICEACCOUNT=domain\administrator BI_SERVICEPWD=password ISFeatureInstall=SCW`
++
+NOTE: All the parameters passed during the installation of Plug-in for Windows are case sensitive.
++
+Enter the values for the following variables:
++
+
+|===
+| Variable| Value
+
+a|
+_/debuglog"<Debug_Log_Path>_
+a|
+Specify the name and location of the suite installer log file, as in the following example: Setup.exe /debuglog"C:\PathToLog\setupexe.log".
+a|
+BI_SNAPCENTER_PORT
+a|
+Specify the port on which SnapCenter communicates with SMCore.
+a|
+SUITE_INSTALLDIR
+a|
+Specify host plug-in package installation directory.
+a|
+BI_SERVICEACCOUNT
+a|
+Specify SnapCenter Plug-in for Microsoft Windows web service account.
+a|
+BI_SERVICEPWD
+a|
+Specify the password for SnapCenter Plug-in for Microsoft Windows web service account.
+a|
+ISFeatureInstall
+a|
+Specify the solution to be deployed by SnapCenter on remote host.
+|===
++
+The _debuglog_ parameter includes the path of the log file for SnapCenter. Writing to this log file is the preferred method of obtaining troubleshooting information, because the file contains the results of checks that the installation performs for plug-in prerequisites.
++
+If necessary, you can find additional troubleshooting information in the log file for the SnapCenter for Windows package. Log files for the package are listed (oldest first) in the _%Temp%_ folder, for example, _C:\temp\_.
++
+NOTE: The installation of Plug-in for Windows registers the plug-in on the host and not on the SnapCenter Server. You can register the plug-in on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. After the host is added, the plug-in is automatically discovered.

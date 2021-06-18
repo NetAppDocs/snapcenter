@@ -1,0 +1,31 @@
+---
+permalink: protect-scsql/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_sql_server.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SQL Server
+summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.'
+---
+= How resources, resource groups, and policies are used for protecting SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.
+
+* Resources are typically databases, database instances, or Microsoft SQL Server availability groups that you back up or clone with SnapCenter.
+* A SnapCenter resource group, is a collection of resources on a host or cluster.
++
+When you perform an operation on a resource group, you perform that operation on the resources defined in the resource group according to the schedule you specify for the resource group.
++
+You can back up on demand a single resource or a resource group. You also can perform scheduled backups for single resources and resource groups.
++
+The resource groups were formerly known as datasets.
+
+* The policies specify the backup frequency, copy retention, replication, scripts, and other characteristics of data protection operations.
++
+When you create a resource group, you select one or more policies for that group. You can also select a policy when you perform a backup on demand for a single resource.
+
+Think of a resource group as defining _what_ you want to protect and when you want to protect it in terms of day and time. Think of a policy as defining _how_ you want to protect it. If you are backing up all databases or backing up all file systems of a host, for example, you might create a resource group that includes all the databases or all the file systems in the host. You could then attach two policies to the resource group: a daily policy and an hourly policy. When you create the resource group and attach the policies, you might configure the resource group to perform a full backup daily and another schedule that performs log backups hourly.
+
+The following image illustrates the relationship between resources, resource groups, and policies for databases:
+
+image::../media/scsql_resourcegroup_policy.gif[]

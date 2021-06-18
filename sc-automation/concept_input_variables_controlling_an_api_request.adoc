@@ -1,0 +1,168 @@
+---
+sidebar: sidebar
+permalink: sc-automation/concept_input_variables_controlling_an_api_request.html
+keywords: http methods, request headers, request body, filtering objects, size, pagination
+summary: 'You can control how an API call is processed through parameters and variables set in the HTTP request.'
+---
+
+= Input variables controlling an API request
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can control how an API call is processed through parameters and variables set in the HTTP request.
+
+== HTTP methods
+
+The HTTP methods supported by the SnapCenter REST API are shown in the following table.
+
+NOTE: Not all the HTTP methods are available at each of the REST endpoints.
+
+|===
+|HTTP method |Description
+
+|GET
+|Retrieves object properties on a resource instance or collection.
+|POST
+|Creates a new resource instance based on the supplied input.
+|DELETE
+|Deletes an existing resource instance.
+|PUT
+|Modifies an existing resource instance.
+|===
+
+== Request headers
+
+You should include several headers in the HTTP request.
+
+=== Content-type
+
+If the request body includes JSON, this header should be set to _application/json_.
+
+=== Accept
+
+This header should be set to _application/json_.
+
+=== Authorization
+
+Basic authentication should be set with the user name and password encoded as a base64 string.
+
+== Request body
+
+The content of the request body varies depending on the specific call. The HTTP request body consists of one of the following:
+
+* JSON object with input variables
+* Empty
+
+== Filtering objects
+
+When issuing an API call that uses GET, you can limit or filter the returned objects based on any attribute. For example, you can specify an exact value to match:
+
+`<field>=<query value>`
+
+In addition to an exact match, other operators are available to return a set of objects over a range of values. The SnapCenter REST API supports the filtering operators shown in the table below.
+
+|===
+|Operator |Description
+
+|=
+|Equal to
+|<
+|Less than
+|>
+|Greater than
+|<=
+|Less than or equal to
+|>=
+|Greater than or equal to
+|UPDATE
+|Or
+|!
+|Not equal to
+|*
+|Greedy wildcard
+|===
+
+You can also return a collection of objects based on whether a specific field is set or not set by using the *null* keyword or its negation *!null* as part of the query.
+
+NOTE: Any fields that are not set are generally excluded from matching queries.
+
+== Requesting specific object fields
+
+By default, issuing an API call using GET returns only the attributes that uniquely identify the object or objects. This minimum set of fields acts as a key for each object and varies based on the object type. You can select additional object properties using the `fields` query parameter in the following ways:
+
+=== Common or standard fields
+
+Specify *fields=** to retrieve the most commonly used object fields. These fields are typically maintained in local server memory or require little processing to access. These are the same properties returned for an object after using GET with a URL path key (UUID).
+
+=== All fields
+
+Specify *fields=*** to retrieve all the object fields, including those requiring additional server processing to access.
+
+=== Custom field selection
+
+Use *fields=<field_name>* to specify the exact field you want. When requesting multiple fields, the values must be separated using commas without spaces.
+
+IMPORTANT: As a best practice, you should always identify the specific fields you want. You should only retrieve the set of common fields or all fields when needed. Which fields are classified as common, and returned using _fields=*_, is determined by NetApp based on internal performance analysis. The classification of a field might change in future releases.
+
+== Sorting objects in the output set
+
+The records in a resource collection are returned in the default order defined by the object. You can change the order using the `order_by` query parameter with the field name and sort direction as follows:
+
+`order_by=<field name> asc|desc`
+
+For example, you can sort the type field in descending order followed by id in ascending order:
+
+`order_by=type desc, id asc`
+
+* If you specify a sort field but do not provide a direction, the values are sorted in ascending order.
+* When including multiple parameters, you must separate the fields with a comma.
+
+== Pagination when retrieving objects in a collection
+
+When issuing an API call using GET to access a collection of objects of the same type, SnapCenter attempts to return as many objects as possible based on two constraints. You can control each of these constraints using additional query parameters on the request. The first constraint reached for a specific GET request terminates the request and therefore limits the number of records returned.
+
+NOTE: If a request ends before iterating over all the objects, the response contains the link needed to retrieve the next batch of records.
+
+=== Limiting the number of objects
+
+By default, SnapCenter returns a maximum of 10,000 objects for a GET request. You can change this limit using the _max_records_ query parameter. For example:
+
+`max_records=20`
+
+The number of objects actually returned can be less than the maximum in effect, based on the related time constraint as well as the total number of objects in the system.
+
+=== Limiting the time used to retrieve the objects
+
+By default, SnapCenter returns as many objects as possible within the time allowed for the GET request. The default timeout is 15 seconds. You can change this limit using the _return_timeout_ query parameter. For example:
+
+`return_timeout=5`
+
+The number of objects actually returned can be less than the maximum in effect, based on the related constraint on the number of objects as well as the total number of objects in the system.
+
+=== Narrowing the result set
+
+If needed, you can combine these two parameters with additional query parameters to narrow the result set. For example, the following returns up to 10 EMS events generated after the specified time:
+
+`time=> 2018-04-04T15:41:29.140265Z&max_records=10`
+
+You can issue multiple requests to page through the objects. Each subsequent API call should use a new time value based on the latest event in the last result set.
+
+== Size properties
+
+The input values used with some API calls as well as certain query parameters are numeric. Rather than provide an integer in bytes, you can optionally use a suffix as shown in the following table.
+
+|===
+|Suffix |Description
+
+|KB
+|KB Kilobytes (1024 bytes) or kibibytes
+|MB
+|MB Megabytes (KB x 1024 bytes) or mebibytes
+|GB
+|GB Gigabytes (MB x 1024 bytes) or gibibytes
+|TB
+|TB Terabytes (GB x 1024 byes) or tebibytes
+|PB
+|PB Petabytes (TB x 1024 byes) or pebibytes
+|===

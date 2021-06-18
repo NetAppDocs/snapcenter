@@ -1,0 +1,73 @@
+---
+permalink: install/task_log_in_to_snapcenter.html
+sidebar: sidebar
+keywords: log in, logging, SnapCenter UI
+summary: 'SnapCenter supports role-based access control (RBAC). SnapCenter admin assigns roles and resources through SnapCenter RBAC to either a user in workgroup or active directory, or to groups in active directory. The RBAC user can now log in to SnapCenter with the assigned roles.'
+---
+= Log in to SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports role-based access control (RBAC). SnapCenter admin assigns roles and resources through SnapCenter RBAC to either a user in workgroup or active directory, or to groups in active directory. The RBAC user can now log in to SnapCenter with the assigned roles.
+
+*What you will need*
+
+* You should enable Windows Process Activation Service (WAS) in Windows Server Manager.
+* If you want to use Internet Explorer as the browser to log in to the SnapCenter Server, you should ensure that the Protected Mode in Internet Explorer is disabled.
+
+*About this task*
+
+During installation, the SnapCenter Server Install wizard creates a shortcut and places it on the desktop and in the Start menu of the host where SnapCenter is installed. Additionally, at the end of the installation, the Install wizard displays the SnapCenter URL based on the information that you provided during installation, which you can copy if you want to log in from a remote system.
+
+IMPORTANT: If you have multiple tabs open in your web browser, closing just the SnapCenter browser tab does not log you out of SnapCenter. To end your connection with SnapCenter, you must log out of SnapCenter either by clicking the *Sign out* button, or by closing the entire web browser.
+
+|===
+*Best Practice:* For security reasons, it is recommended that you do not enable your browser to save your SnapCenter password.
+|===
+The default GUI URL is a secure connection to the default port 8146 on the server where the SnapCenter Server is installed (_\https://server:8146_). If you provided a different server port during the SnapCenter installation, that port is used instead.
+
+For High Availability (HA) deployment, you must access SnapCenter using the virtual cluster IP _\https://Virtual_Cluster_IP_or_FQDN:8146_. If you do not see the SnapCenter UI when you navigate to _\https://Virtual_Cluster_IP_or_FQDN:8146_ in Internet Explorer (IE), you must add the Virtual Cluster IP address or FQDN as a trusted site in IE on each plug-in host, or you must disable IE Enhanced Security on each plug-in host.
+For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_access_cluster_IP_address_from_outside_network[Unable to access cluster IP address from outside network^].
+
+In addition to using the SnapCenter GUI, you can use PowerShell cmdlets to create scripts to perform configuration, backup, and restore operations. Some cmdlets might have changed with each SnapCenter release. The SnapCenter cmdlet or SnapCenter CLI documentation has the details.
+
+NOTE: If you are logging in to SnapCenter for the first time, you must log in using the credentials that you provided during the install process.
+
+*Steps*
+
+. Launch SnapCenter from the shortcut located on your local host desktop, or from the URL provided at the end of the installation, or from the URL provided by your SnapCenter administrator.
+. Enter user credentials.
++
+|===
+| To specify the following... | Use one of these formats...
+
+a|
+Domain administrator
+a|
+* NetBIOS\UserName
+* UserName@UPN suffix
++
+For example, \username@netapp.com
+* Domain FQDN\UserName
+a|
+Local administrator
+a|
+UserName
+|===
+
+. If you are assigned more than one role, from the Role box, select the role that you want to use for this login session.
++
+Your current user and associated role are shown in the upper right of SnapCenter after you are logged in.
+
+*Results*
+
+If you are using SnapCenter for the first time, the Storage Systems page is displayed, and the Get Started pane is expanded.
+
+If the logging fails with the error that site cannot be reached, you should map the SSL certificate to SnapCenter. https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FSnapCenter_will_not_open_with_error_%2522This_site_can%2527t_be_reached%2522[Learn more^]
+
+*After you finish*
+
+After logging to SnapCenter Server for the first time, refresh the resources list.
+
+If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. link:../install/task_register_untrusted_active_directory_domains.html[Learn more^]

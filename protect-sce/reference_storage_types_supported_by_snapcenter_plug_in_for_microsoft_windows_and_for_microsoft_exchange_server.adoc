@@ -1,0 +1,78 @@
+---
+permalink: protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html
+sidebar: sidebar
+keywords:
+summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.'
+---
+= Storage types supported by SnapCenter Plug-in for Microsoft Windows and for Microsoft Exchange Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.
+
+SnapCenter provisioning and data protection support is available on Windows Server. For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+
+
+|===
+| Machine| Storage type| Provision using| Support notes
+
+a|
+Physical server
+a|
+FC-connected LUNs
+a|
+SnapCenter graphical user interface (GUI) or PowerShell cmdlets
+a|
+
+a|
+Physical server
+a|
+iSCSI-connected LUNs
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+
+a|
+VMware VM
+a|
+RDM LUNs connected by an FC or iSCSI HBA
+a|
+PowerShell cmdlets
+a|
+Physical compatibility only
+
+NOTE: VMDKs are not supported.
+
+a|
+VMware VM
+a|
+iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+
+NOTE: VMDKs are not supported.
+
+a|
+Hyper-V VM
+a|
+Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+You must use Hyper-V Manager to provision Virtual FC (vFC) LUNs connected by a virtual Fibre Channel Switch.
+
+NOTE: Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+a|
+Hyper-V VM
+a|
+iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+a|
+SnapCenter GUI or PowerShell cmdlets
+a|
+
+NOTE: Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
+
+|===

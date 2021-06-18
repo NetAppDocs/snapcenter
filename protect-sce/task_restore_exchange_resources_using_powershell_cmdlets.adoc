@@ -1,0 +1,64 @@
+---
+permalink: protect-sce/task_restore_exchange_resources_using_powershell_cmdlets.html
+sidebar: sidebar
+keywords: restore
+summary: 'Restoring an Exchange database includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
+---
+= Restore Exchange resources using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Restoring an Exchange database includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
+
+You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
+
+*Steps*
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the `Open-SmConnection` cmdlet.
++
+----
+Open-smconnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+----
+
+. Retrieve the information about the one or more backups that you want to restore by using the `Get-SmBackup` cmdlet.
++
+This example displays information about all available backups:
++
+----
+PS C:\> Get-SmBackup
+
+BackupId                      BackupName                    BackupTime                    BackupType
+--------                      ----------                    ----------                    ----------
+341                           ResourceGroup_36304978_UTM... 12/8/2017 4:13:24 PM          Full Backup
+342                           ResourceGroup_36304978_UTM... 12/8/2017 4:16:23 PM          Full Backup
+355                           ResourceGroup_06140588_UTM... 12/8/2017 6:32:36 PM          Log Backup
+356                           ResourceGroup_06140588_UTM... 12/8/2017 6:36:20 PM          Full Backup
+----
+
+. Restore data from the backup by using the `Restore-SmBackup` cmdlet.
++
+This example restores an up-to-the-minute backup:
++
+----
+C:\PS> Restore-SmBackup -PluginCode SCE -AppObjectId 'sce-w2k12-exch.sceqa.com\sce-w2k12-exch_DB_2' -BackupId 341 -IsRecoverMount:$true
+----
++
+This example restores a point-in-time backup:
++
+----
+C:\ PS> Restore-SmBackup -PluginCode SCE -AppObjectId 'sce-w2k12-exch.sceqa.com\sce-w2k12-exch_DB_2' -BackupId 341 -IsRecoverMount:$true -LogRestoreType ByTransactionLogs -LogCount 2
+----
++
+This example restores a backup on secondary storage to primary story:
++
+----
+C:\ PS> Restore-SmBackup -PluginCode 'SCE' -AppObjectId 'DB2' -BackupId 81 -IsRecoverMount:$true -Confirm:$false
+-archive @{Primary="paw_vs:vol1";Secondary="paw_vs:vol1_mirror"} -logrestoretype All
+----
++
+The `-archive` parameter enables you to specify the primary and secondary volumes you want to use for the restore.
++
+The `-IsRecoverMount:$true` parameter enables you to mount the database after the restore.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].

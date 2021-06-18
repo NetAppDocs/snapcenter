@@ -1,0 +1,37 @@
+---
+permalink: protect-scsql/reference_sources_and_destinations_for_a_restore_operation.html
+sidebar: sidebar
+keywords:
+summary: 'You can restore a SQL Server database from a backup copy on either primary or secondary storage. You also can restore the database to different destinations in addition to its original location, enabling you to choose the destination that supports your requirements.'
+---
+= Sources and destinations for a restore operation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can restore a SQL Server database from a backup copy on either primary or secondary storage. You also can restore the database to different destinations in addition to its original location, enabling you to choose the destination that supports your requirements.
+
+== Sources for a restore operation
+
+You can restore databases from primary or secondary storage.
+
+== Destinations for a restore operation
+
+You can restore databases to various destinations:
+
+|===
+| Destination| Description
+a|
+The original location
+a|
+By default, SnapCenter restores the database to the same location on the same SQL Server instance.
+a|
+A different location
+a|
+You can restore the database to a different location on any SQL Server instance within the same host.
+a|
+Original or different location using different database names
+a|
+You can restore the database with a different name to any SQL Server instance on the same host where the backup was created.
+|===
+NOTE: Restore to alternate host across ESX servers for SQL databases on VMDKs (NFS and VMFS datastores) is not supported.

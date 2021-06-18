@@ -1,0 +1,85 @@
+---
+permalink: protect-hana/task_add_resources_manually_to_the_plug_in_host.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'Automatic discovery is not supported for certain HANA instances. You must add these resources manually.'
+---
+= Add resources manually to the plug-in host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Automatic discovery is not supported for certain HANA instances. You must add these resources manually.
+
+*What you will need*
+
+You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
+
+*About this task*
+
+Automatic discovery is not supported for the following configurations:
+
+* RDM and VMDK layouts
++
+NOTE: In case the above resources are discovered, the data protection operations are not supported on these resources.
+
+* HANA multiple-host configuration
+* HANA System Replication
+* Multiple instances on the same host
+
+*Steps*
+
+. In the left navigation pane, select the SnapCenter Plug-in for SAP HANA Database from the drop-down list, and then click *Resources*.
+. On the *Resources* page, click *Add SAP HANA Database*.
+. On the *Provide Resource Details* page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Resource Type
+a|
+Enter the resource type.    Resource types are Single Container, Multitenant Database Container (MDC), and Non-data Volume.
+a|
+SAP HANA System Name
+a|
+Enter the descriptive SAP HANA system name.    This option is available only if you selected Single Container or MDC resource types.
+a|
+SID
+a|
+Enter the system ID (SID).     The installed SAP HANA system is identified by a single SID.
+a|
+HDBSQL Client Host
+a|
+Select the communication host.
+a|
+HDB Secure User Store Keys
+a|
+Enter the key to connect to the SAP HANA system.     The key contains the login information to connect to the database.
+a|
+HDBSQL OS User
+a|
+Enter the user name for whom the HDB Secure User Store Key is configured.     For Windows, it is mandatory for the HDBSQL OS User to be the SYSTEM user. Therefore, you must configure the HDB Secure User Store Key for the SYSTEM user.
+a|
+Resource Name
+a|
+Enter the resource name.    This option is available only if you selected the Non-data Volume as the resource type.
+|===
+
+. On the *Provide Storage Footprint* page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
++
+Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
+
+. Review the summary, and then click *Finish*.
++
+The databases are displayed along with information such as the SID, communication host, associated resource groups and policies, and overall status.
+
+If you want to provide users access to resources, you must assign the resources to the users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
+
+After adding the databases, you can modify the SAP HANA database details.
+
+You cannot modify the following if the SAP HANA resource has backups associated with it:
+
+* Multitenant database containers (MDC): SID, or HDBSQL Client Host
+* Single Container: SID or HDBSQL Client Host
+* Non-data Volume: Resource name, Associated SID, or Plug-in Host

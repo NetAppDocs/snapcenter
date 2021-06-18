@@ -1,0 +1,111 @@
+---
+permalink: admin/concept_overview_of_snapcenter_reports.html
+sidebar: sidebar
+keywords:
+summary: 'SnapCenter provides a variety of reporting options that enable you to monitor and manage your system health and operation success.'
+---
+= Overview of SnapCenter reporting capabilities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter provides a variety of reporting options that enable you to monitor and manage your system health and operation success.
+
+|===
+| Report type | Description
+
+a|
+Backup Report
+a|
+The Backup Report provides overall data about backup trends for your SnapCenter environment, the backup success rate, and some information about each backup performed during the specified time. If a backup is deleted, the report does not display any status information for the deleted backup. The Backup Detail Report provides detailed information about a specified backup job and lists the resources successfully backed up and any that have failed.
+a|
+Clone Report
+a|
+The Clone Report provides overall data about clone trends for your SnapCenter environment, the clone success rate, and some information about each clone job performed during the specified time. If a clone is deleted, the report does not display any status information for the deleted clone. The Clone Detail Report provides details about the specified clone, clone host, and clone job task status. If a task fails, the Clone Detail Report displays information about the failure.
+a|
+Restore Report
+a|
+The Restore Report provides overall information about restore jobs. The Restore Detail Report provides details about a specified restore job, including host name, backup name, job start and duration, and the status of individual job tasks. If a task fails, the Restore Detail Report displays information about the failure.
+a|
+Protection Report
+a|
+These reports provide protection details for resources managed by all SnapCenter plug-in instances. This report provides protection details for resources managed by all plug-in instances. You can see an overview, details of unprotected resources, resources that have not been backed up when the report was generated, resources of a resource group for which backup operations have failed, and SnapVault status.
+a|
+Scheduled Report
+a|
+These reports are scheduled to run periodically like daily, weekly or monthly. The reports are generated automatically on the specified date and time and the report is sent to the respective people through e-mail. You can enable, disable, modify, or delete the schedules. The enabled schedule can be run on demand by clicking on the *Run Now* button. The administrator can run any schedule, but the generated report will contain data based on the permission provided by the user who created the schedule.
+
+Any other user other than Administrator will be able to see or modify schedule based on their permission .If All members of this role can see other members' objects option is selected in the Add Role page, then other members of the role will be able to see and modify.
+|===
+
+== Access reports
+
+You can use the SnapCenter Dashboard to get a quick overview of the health of your system. From the Dashboard you can drill into more details. Alternatively, you can access the detailed reports directly.
+
+You can access reports by one of the following methods:
+
+ * In the left navigation pane, click *Dashboard*, and then click *Last Protection Summary* pie chart to see more details in the Reports page.
+ * In the left navigation pane, click *Reports*.
+
+== Filter your report
+
+You might want to filter your report data according to a range of parameters, depending on the level of detail and time span of information you require.
+
+*Steps*
+
+ . In the left navigation pane, click *Reports*.
+ . If the Parameter view is not displayed, click the *Toggle Parameters Area* icon from the report toolbar.
+ . Specify the time range for which you want to run your report.
+    +
+   If you omit the end date, you retrieve all available information.
+ . Filter your report information based on any of the following criteria:
+  ** Resource group
+  ** Host
+  ** Policy
+  ** Resource
+  ** Status
+  ** Plug-in Name
+ . Click *Apply*.
+
+== Export or print reports
+
+Exporting SnapCenter reports enables you to view the report in a variety of alternative formats. You can also print reports.
+
+*Steps*
+
+ . In the left navigation pane, click *Reports*.
+ . From the reports toolbar, perform one of the following:
+  * Click the *Toggle Print Preview* icon to preview a printable report.
+  * Select a format from the *Export* icon drop-down list to export a report to an alternate format.
+
+
+ . To print a report, click the *Print* icon.
+ . To view a specific report summary, scroll to the appropriate section of the report.
+
+== Set the SMTP server for email notifications
+
+You can specify the SMTP server to use for sending data protection job reports to yourself or to others. You can also send a test email to verify the configuration. The settings are applied globally for any SnapCenter job for which you configure email notification.
+
+This option configures the SMTP server for sending all data protection job reports. However, if you want to have regular SnapCenter data protection job updates for a particular resource sent to yourself or to others so that you can monitor the status of those updates, you can configure the option to email the SnapCenter reports when you are creating a resource group.
+
+*Steps*
+
+ . In the left navigation pane, click *Settings*.
+ . In the Settings page, click *Global Settings*.
+ . Enter the SMTP server and click *Save*.
+ . To send a test email, enter the email address from and to which you will send the email, enter the subject, and click *Send*.
+
+== Configure the option to email reports
+
+If you want to have regular SnapCenter data protection job updates sent to yourself or to others so that you can monitor the status of those updates, you can configure the option to email the SnapCenter reports when you are creating a resource group.
+
+*What you will need*
+
+You must have configured your SMTP server on the Global Settings page under Settings.
+
+*Steps*
+
+ . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+ . Select the type of resource you want to view and click *New Resource Group*, or select an existing resource group and click *Modify* to configure email reports for an existing resource group.
+ . In the Notification panel of the New Resource Group wizard, select from the pull-down menu whether you want to receive reports always, on failure, or on failure or warning.
+ . Enter the address the email is sent from, the address the email is sent to, and the subject of the email.

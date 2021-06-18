@@ -1,0 +1,48 @@
+---
+permalink: protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html
+sidebar: sidebar
+keywords: credentials
+summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements. The Custom Plug-ins can be used in both Windows and Linux environments.'
+---
+= Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you add a host and install the plug-ins packages, you must complete all the requirements. The Custom Plug-ins can be used in both Windows and Linux environments.
+
+* You must have created a custom plug-in. For details, see the developer information.
++
+link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
+* If you want to manage MySQL or DB2 applications, you must have downloaded the MySQL and DB2 Custom Plug-ins that are provided by NetApp.
+* You must have installed Java 1.8, 64-bit on your Linux or Windows host.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
+* The Custom Plug-ins must be available on the client host from where the add host operation is performed.
+
+== General
+
+If you are using iSCSI, the iSCSI service must be running.
+
+== Windows hosts
+
+* You must have a domain user with local administrator privileges with local login permissions on the remote host.
+* If you manage cluster nodes in SnapCenter, you must have a user with administrative privileges to all the nodes in the cluster.
+
+== Linux hosts
+
+* You must have enabled the password-based SSH connection for the root or non-root user.
+* You must have installed Java 1.8 64-bit, on your Linux host.
++
+If you are using Windows 2016 for the SnapCenter Server host, you must install Java 1.8, 64-bit. The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
++
+http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
++
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+
+* You must configure sudo privileges for the non-root user to provide access to several paths. Add the following lines to the /etc/sudoers file by using the visudo Linux utility. For example,
++
+----
+Cmnd_Alias SCCMD = /opt/NetApp/snapcenter/scc/bin/scc <non_root_user> ALL=(ALL) NOPASSWD:SETENV: SCCMD
+----
++
+non_root_user is the name of the non-root user that you created.

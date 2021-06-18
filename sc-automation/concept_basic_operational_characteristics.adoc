@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: sc-automation/concept_basic_operational_characterstics.html
+keywords: request and response, object identifiers, synchronous, asynchronous
+summary: 'While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.'
+---
+
+= Basic operational characteristics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.
+
+== Request and response API transaction
+
+Every REST API call is performed as an HTTP request to the SnapCenter Server system which generates an associated response to the client. This request and response pair is considered an API transaction.
+
+Before using the API, you should be familiar with the input variables available to control a request and the contents of the response output.
+
+== Support for CRUD operations
+
+Each of the resources available through the SnapCenter REST API is accessed based on the CRUD model:
+
+* Create
+* Read
+* Update
+* Delete
+
+For some of the resources, only a subset of the operations is supported.
+
+== Object identifiers
+
+Each resource instance or object is assigned a unique identifier when it is created. In most cases, the identifier is a 128-bit UUID. These identifiers are globally unique within a specific SnapCenter Server.
+
+After issuing an API call that creates a new object instance, a URL with the associated ID is returned to the caller in the location header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
+
+IMPORTANT: The content and internal structure of the object identifiers can change at any time. You should only use the identifiers on the applicable API calls as needed when referring to the associated objects.
+
+== Object instances and collections
+
+Depending on the resource path and HTTP method, an API call can apply to a specific object instance or a collection of objects.
+
+== Synchronous and asynchronous operations
+
+SnapCenter performs an HTTP request received from a client either synchronously or asynchronously.
+
+=== Synchronous processing
+
+SnapCenter performs the request immediately and responds with an HTTP status code of 200 or 201 if it is successful.
+
+Every request using the method GET is always performed synchronously. In addition, requests that use POST are designed to run synchronously if they are expected to complete in less than two seconds.
+
+=== Asynchronous processing
+
+If an asynchronous request is valid, SnapCenter creates a background task to process the request and a job object to anchor the task. The HTTP status code 202 is returned to the caller along with the job object. You should retrieve the state of the job to determine success or failure.
+
+Requests that use the methods POST and DELETE are designed to run asynchronously if they are expected to take more than two seconds to complete.
+
+== Security
+
+The security provided with the REST API is based primarily on the existing security features available with SnapCenter. The following security is used by the API:
+
+=== Transport Layer Security
+
+All traffic sent over the network between the SnapCenter Server and client is typically encrypted using TLS, based on the SnapCenter configuration settings.
+
+=== HTTP authentication
+
+At an HTTP level, basic authentication is used for the API transactions. An HTTP header with the user name and password in a base64 string is added to each request.

@@ -1,0 +1,30 @@
+---
+permalink: protect-sco/concept_what_you_can_do_with_the_snapcenter_plug_in_for_oracle_database.html
+sidebar: sidebar
+keywords: backup, restore, clone, oracle database
+summary: 'You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager (RMAN).'
+---
+= What you can do with the Plug-in for Oracle Database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager (RMAN).
+
+* Back up datafiles, control files, and archive log files.
++
+Backup is supported only at container database (CDB) level.
+
+* Restore and recovery of databases, CDBs, and pluggable databases (PDBs).
++
+Incomplete recovery of PDBs are not supported.
+
+* Create clones of production databases up to a point-in-time.
++
+Cloning is supported only at CDB level.
+
+* Verify backups immediately.
+* Mount and unmount data and log backups for recovery operation.
+* Schedule backup and verification operations.
+* Monitor all operations.
+* View reports for backup, restore, and clone operations.

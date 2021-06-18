@@ -1,0 +1,56 @@
+---
+permalink: protect-sco/task_define_a_clone_strategy_for_oracle_databases.html
+sidebar: sidebar
+keywords: backup types, cloning type, clone name, limitations
+summary: 'Defining a strategy before cloning your database ensures that the cloning operation is successful.'
+---
+= Define a clone strategy for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a strategy before cloning your database ensures that the cloning operation is successful.
+
+== Types of backups supported for cloning
+
+SnapCenter supports cloning of different types of backups of Oracle databases.
+
+* Online data backup
+* Online full backup
+* Offline mount backup
+* Offline shutdown backup
+* Backups of Data Guard standby databases and Active Data Guard standby databases
+* Online data backups, online full backups, offline mount backups, and offline shutdown backups in a Real Application Clusters (RAC) configuration
+* Online data backups, online full backups, offline mount backups, and offline shutdown backups in an Automatic Storage Management (ASM) configuration
++
+IMPORTANT: Oracle ASM configuration is not supported if user_friendly_names option in the multipath configuration file is set to yes and aliases or symbolic links are defined for the Oracle ASM disks using the udev rules file.
+
+NOTE: Cloning of archive log backups is not supported.
+
+== Types of cloning supported for Oracle databases
+
+In an Oracle database environment, SnapCenter supports cloning of a database backup. You can clone the backup from primary and secondary storage systems.
+
+The SnapCenter Server uses NetApp FlexClone technology to clone backups.
+
+You can refresh a clone by running the "Refresh-SmClone" command. This command creates a backup of the database, deletes the existing clone, and creates a clone with the same name.
+
+NOTE: The clone refresh operation can only be performed using the UNIX commands.
+
+== Clone naming conventions for Oracle databases
+
+From SnapCenter 3.0, the naming convention used for clones of file systems is different from the clones of ASM disk groups.
+
+* The naming convention for SAN or NFS file systems is FileSystemNameofsourcedatabase_CLONESID.
+* The naming convention for ASM disk groups is SC_HASHCODEofDISKGROUP_CLONESID.
++
+HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digits) that is unique for each ASM disk group.
+
+== Limitations of cloning Oracle databases
+
+You should be aware of the limitations of clone operations before you clone the databases.
+
+* If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the clone operation will be in hung state when you run the _renamedg_ command. You can apply the Oracle patch 19544733 to fix this issue.
+* Cloning of databases from a LUN that is directly attached to a host (for instance, by using Microsoft iSCSI Initiator on a Windows host) to a VMDK or an RDM LUN on the same Windows host, or another Windows host, or vice versa, is not supported.
+* The root directory of the volume mount point cannot be a shared directory.
+* If you move a LUN that contains a clone to a new volume, the clone cannot be deleted.

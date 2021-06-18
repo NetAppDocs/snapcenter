@@ -1,0 +1,11 @@
+---
+permalink: protect-scsql/task_remove_backups_using_powershell_cmdlets_for_sql.html
+sidebar: sidebar
+keywords: backups
+summary: 'You can use the Remove-SmBackup cmdlet to delete backups if you no longer require them for other data protection operations.'
+---
+= Remove backups using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_remove_backups_using_powershell_cmdlets.adoc[]

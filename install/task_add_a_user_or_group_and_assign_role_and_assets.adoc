@@ -1,0 +1,130 @@
+---
+permalink: install/task_add_a_user_or_group_and_assign_role_and_assets.html
+sidebar: sidebar
+keywords: RBAC, add user, add group, assign role, assign assets
+summary: 'To configure role-based access control for SnapCenter users, you can add users or groups and assign role. The role determines the options that SnapCenter users can access.'
+---
+= Add a user or group and assign role and assets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To configure role-based access control for SnapCenter users, you can add users or groups and assign role. The role determines the options that SnapCenter users can access.
+
+*What you will need*
+
+* You must have logged in as the "SnapCenterAdmin" role.
+* You must have created the user or group accounts in Active Directory in the operating system or database. You cannot use SnapCenter to create these accounts.
+//Updated this note for BURT 1389838 for 4.5
++
+NOTE: The user names and group names should not include /\[ ];|=,+*?< >' characters.
+
+* SnapCenter includes several predefined roles.
++
+You can either assign these roles to the user or create new roles.
+
+* AD Users and AD Groups that are added to SnapCenter RBAC must have the READ permission on the Users Container and the Computers Container in the Active Directory.
+* After you assign a role to a user or group that contains the appropriate permissions, you must assign the user access to SnapCenter assets, such as hosts and storage connections.
++
+This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
+
+* You should assign a role to the user or group at some point to take advantage of RBAC permissions and efficiencies.
+* You can assign assets like host, resource groups, policy, storage connection, plug-in, and credential to the user while creating the user or group.
+* The minimum assets that you should assign an user to perform certain operations are as follows:
++
+|===
+| Operation | Assets assignment
+
+a|
+Protect resources
+a|
+host, policy
+a|
+Backup
+a|
+host, resource group, policy
+a|
+Restore
+a|
+host, resource group
+a|
+Clone
+a|
+host, resource group, policy
+a|
+Clone lifecycle
+a|
+host
+a|
+Create a Resource Group
+a|
+host
+|===
+
+* When a new node is added to a Windows cluster or a DAG (Exchange Server Database Availability Group) asset and if this new node is assigned to a user, you must reassign the asset to the user or group to include the new node to the user or group.
++
+You should reassign the RBAC user or group to the cluster or DAG to include the new node to the RBAC user or group. For example, you have a two-node cluster and you have assigned an RBAC user or group to the cluster. When you add another node to the cluster, you should reassign the RBAC user or group to the cluster to include the new node for the RBAC user or group.
+
+* If you are planning to replicate Snapshot copies, you must assign the storage connection for both the source and destination volume to the user performing the operation.
++
+You should add assets before assigning access to the users.
+
+IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions, to protect VMs, VMDKs, or datastores, you use the VMware vSphere GUI to add a vCenter user to a SnapCenter Plug-in for VMware vSphere role.
+
+*Steps*
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Users and Access* > *image:../media/add_icon_configure_database.gif[add icon in configuring database screen]*.
+. In the Add Users/Groups from Active Directory or Workgroup page:
++
+|===
+| For this field... | Do this...
+
+a|
+Access Type
+a|
+Select either Domain or workgroup
+
+For Domain authentication type, you should specify the domain name of the user or group to which you want to add the user to a role.
+
+By default, it is pre-populated with the logged in domain name.
+
+NOTE: You must register the untrusted domain in the *Settings* > *Global Settings* > *Domain Settings* page.
+
+a|
+Type
+a|
+Select either User or Group
+
+NOTE: SnapCenter supports only security group and not the distribution group.
+
+a|
+User Name
+a|
+
+ .. Type the partial user name, and then click *Add*.
++
+NOTE: The user name is case-sensitive.
+
+ .. Select the user name from the search list.
+
+NOTE: When you add users from a different domain or an untrusted domain, you should type the user name fully because there is no search list for cross domain users.
+
+Repeat this step to add additional users or groups to the selected role.
+a|
+Roles
+a|
+Select the role to which you want to add the user.
+|===
+
+. Click *Assign*, and then in the Assign Assets page:
+ .. Select the type of asset from the *Asset* drop-down list.
+ .. In the Asset table, select the asset.
++
+The assets are listed only if the user has added the assets to SnapCenter.
+
+ .. Repeat this procedure for all of the required assets.
+ .. Click *Save*.
+. Click *Submit*.
++
+After adding users or groups and assigning roles, refresh the resources list.

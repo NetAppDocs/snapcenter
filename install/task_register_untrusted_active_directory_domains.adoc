@@ -1,0 +1,55 @@
+---
+permalink: install/task_register_untrusted_active_directory_domains.html
+sidebar: sidebar
+keywords:
+summary: 'You should register the Active Directory with SnapCenter Server to manage hosts, users, and groups from multiple untrusted Active Directory domains.'
+---
+= Register untrusted Active Directory domains
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should register the Active Directory with SnapCenter Server to manage hosts, users, and groups from multiple untrusted Active Directory domains.
+
+*What you will need*
+
+* The fully qualified domain name (FQDN) should be reachable from SnapCenter Server.
+* If the FQDN is not resolvable, the domain controller IP addresses that are provided should be resolvable from SnapCenter Server.
+* You should have enabled bidirectional communication between the plug-in hosts and the SnapCenter Server.
+* DNS resolution should be set up from the SnapCenter Server to the plug-in hosts and vice-versa.
+
+*About this task*
+
+You can register an untrusted domain with the FQDN. If the FQDN is not resolvable from the SnapCenter Server, you can register with an IP address.
+
+You can use either the SnapCenter user interface or PowerShell cmdlets to register an untrusted domain.
+
+*Steps*
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Global Settings*..
+. In the Global Settings page, click *Domain Settings*.
+. Click image:../media/add_policy_from_resourcegroup.gif[] to register a new domain.
+. In the Register New Domain page, specify the information that is required for registering the untrusted domain:
++
+|===
+| For this field... | Do this...
+
+a|
+Domain Name
+a|
+Specify the NetBIOS name for the domain.
+a|
+Domain FQDN
+a|
+Specify the FQDN and click *Resolve*.
+a|
+Domain controller IP addresses
+a|
+If the domain FQDN is not resolvable from the SnapCenter Server, specify one or more domain controller IP addresses.
+
+For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_does_not_allow_to_add_Domain_Controller_IP_for_untrusted_domain_from_GUI[Add domain controller IP for untrusted domain from GUI^].
+
+|===
+
+. Click *OK*.

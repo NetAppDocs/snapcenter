@@ -1,0 +1,120 @@
+---
+permalink: protect-scsql/task_back_up_sql_resources.html
+sidebar: sidebar
+keywords:
+summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
+---
+= Back up SQL resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
+
+*About this task*
+
+* For Windows credentials authentication, you must set up your credential before installing the plug-ins.
+
+* For SQL Server instance authentication, you must add the credential after installing the plug-ins.
+
+* For gMSA authentication, you must setup gMSA while registering the host with SnapCenter in the *Add Host* or *Modify Host* page to enable and use the gMSA.
+
+* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. On the Resources page, select *Database* ,or *Instance*, or *Availability Group* from the *View* drop-down list.
+ .. Select the database, or instance, or availability group that you want to back up.
++
+When you take a backup of an instance, the information about the last backup status or the timestamp of that instance will not be available in the resources page.
++
+In the topology view, you cannot differentiate whether the backup status, timestamp, or backup is for an instance or a database.
+. On the *Resources* page, select the *custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
++
+For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
+
+. On the *Policies* page, perform the following tasks:
+ .. In the *Policies* section, select one or more policies from the drop-down list.
++
+You can create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
++
+In the *Configure schedules for selected policies* section, the selected policies are listed.
+
+ .. Click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then click *OK*.
++
+Here `policy_name` is the name of the policy that you have selected.
++
+The configured schedules are listed in the *Applied Schedules* column.
+
+ .. Select the *Use Microsoft SQL Server scheduler*, and then select the scheduler instance from the *Scheduler Instance* drop-down list that is associated with the scheduling policy.
+. On the *Verification* page, perform the following steps:
+ .. Select the verification server from the *Verification server* drop-down list.
++
+You can select multiple verification servers (local host or remote host).
++
+NOTE: The verification server version should match the version and edition of the SQL server that is hosting the primary database.
+
+ .. Select *Load secondary locators to verify backups on secondary* to verify your backups on secondary storage system.
+ .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+ .. In the *Add Verification Schedules* `policy_name` dialog box, perform the following actions:
++
+|===
+| If you want to...| Do this...
+
+a|
+Run verification after backup
+a|
+Select *Run Verification after Backup*.
+a|
+Schedule a verification
+a|
+Select *Run scheduled verification*.
+|===
+NOTE: If the verification server does not have a storage connection, the verification operation fails with error: Failed to mount disk.
+
+ .. Click *OK*.
++
+The configured schedules are listed in the Applied Schedules column.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.
++
+The database topology page is displayed.
+
+. Click *Back up Now*.
+. On the *Backup* page, perform the following steps:
+ .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
++
+If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
+
+ .. Select *Verify after backup* to verify your backup.
+ .. Click *Backup*.
++
+If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
++
+An implicit resource group is created. You can view this by selecting the *Resource Group* from the Asset drop-down list on the User Access page. The implicit resource group type is "`Resource`".
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+* In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover]
+
+* If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail. To increase the Java heap size, locate the script file /opt/netapp/init_scripts/scvservice. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
+
+*Find more information*
+
+link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]
+
+link:task_back_up_resources_using_powershell_cmdlets.html[Back up resources using PowerShell cmdlets]
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUT]
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Backup_fails_with_Windows_scheduler_error[Backup fails with Windows scheduler error]
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]

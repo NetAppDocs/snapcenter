@@ -1,0 +1,11 @@
+---
+permalink: protect-hana/task_monitor_dataprotection_operations_on_hana_databases_in_the_activity_pane.html
+sidebar: sidebar
+keywords: SnapCenter Server
+summary: 'The Activity pane displays the five most recent operations performed. The Activity pane also displays when the operation was initiated and the status of the operation.'
+---
+= Monitor data protection operations on SAP HANA databases in the Activity pane
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]

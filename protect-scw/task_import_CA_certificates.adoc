@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/task_import_CA_certificates.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'
+---
+= Import CA certificates
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_import_CA_certificates.adoc[]

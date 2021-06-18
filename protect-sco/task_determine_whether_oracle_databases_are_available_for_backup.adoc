@@ -1,0 +1,54 @@
+---
+permalink: protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html
+sidebar: sidebar
+keywords: credentials,SnapCenter Plug-in for Oracle Databases
+summary: 'Resources are Oracle databases on the host that are managed by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available.'
+---
+= Determine whether Oracle databases are available for backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Resources are Oracle databases on the host that are managed by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available.
+
+*What you will need*
+
+* You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
+* If the databases reside on a Virtual Machine Disk (VMDK) or raw device mapping (RDM), you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
++
+For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html[Deploy SnapCenter Plug-in for VMware vSphere^].
+
+* If databases reside on a VMDK file system, you must have logged in to vCenter and navigated to *VM options* > *Advanced* > *Edit configuration* to set the value of _disk.enableUUID_ to true for the VM.
+* You must have reviewed the process that SnapCenter follows to discover different types and versions of Oracle databases.
+
+*About this task*
+
+After installing the plug-in, all of the databases on that host are automatically discovered and displayed in the Resources page.
+
+The databases should be at least in the mounted state or above for the discovery of the databases to be successful. In an Oracle Real Application Clusters (RAC) environment, the RAC database instance in the host where the discovery is performed, should be at least in the mounted state or above for the discovery of the database instance to be successful. Only the databases that are discovered successfully can be added to the resource groups.
+
+If you have deleted an Oracle database on the host, SnapCenter Server will not be aware and will list the deleted database. You should manually refresh the resources to update the SnapCenter resources list.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Database* from the *View* list.
++
+Click image:../media/filter_icon.gif[], and then select the host name and the database type to filter the resources. You can then click the image:../media/filter_icon.gif[] icon to close the filter pane.
+
+. Click *Refresh Resources*.
++
+In a RAC One Node scenario, the database is discovered as the RAC database on the node where it is currently hosted.
+
+*Results*
+
+The databases are displayed along with information such as database type, host or cluster name, associated resource groups and policies, and status.
+
+* If the database is on a non-NetApp storage system, the user interface displays a Not available for backup message in the Overall Status column.
++
+You cannot perform data protection operations on the database that is on a non-NetApp storage system.
+
+* If the database is on a NetApp storage system and not protected, the user interface displays a Not protected message in the Overall Status column.
+* If the database is on a NetApp storage system and protected, the user interface displays an Available for backup message in the Overall Status column.
+
+NOTE: If you have enabled an Oracle database authentication, a red padlock icon is shown in the resources view. You must configure database credentials to be able to protect the database or add it to the resource group to perform data protection operations.

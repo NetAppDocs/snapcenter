@@ -1,0 +1,11 @@
+---
+permalink: protect-scsql/concept_prepare_for_protecting_sql_databases.html
+sidebar: sidebar
+keywords:
+summary: 'Before performing any data protection operation such as backup, clone, or restore operations, you must define your strategy and set up the environment. You can also set up the SnapCenter Server to use SnapMirror and SnapVault technology.'
+---
+= Prepare for protecting SQL databases
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_concept_prepare_for_data_protection.adoc[]

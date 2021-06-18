@@ -1,0 +1,40 @@
+---
+permalink: protect-scw/concept_snapcenter_plug_in_for_windows_features.html
+sidebar: sidebar
+keywords:
+summary: 'The Plug-in for Windows integrates with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.'
+---
+= SnapCenter Plug-in for Windows features
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Plug-in for Windows integrates with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.
+
+The Plug-in for Windows includes these major features:
+
+* *Unified graphical user interface powered by SnapCenter*
++
+The SnapCenter interface provides you with standardization and consistency across plug-ins and environments. The SnapCenter interface enables you to complete consistent backup and restore processes across plug-ins, use centralized reporting, use at-a-glance dashboard views, set up role-based access control (RBAC), and monitor jobs across all plug-ins. SnapCenter also offers centralized scheduling and policy management to support backup and clone operations.
+
+* *Automated central administration*
++
+You can schedule routine file system backups, configure policy-based backup retention, and set up restore operations. You can also proactively monitor your file system environment by configuring SnapCenter to send email alerts.
+
+* *Nondisruptive NetApp Snapshot copy technology*
++
+The Plug-in for Windows uses NetApp Snapshot copy technology. This enables you to back up file systems in seconds and restore them quickly without taking host offline. Snapshot copies consume minimal storage space.
+
+In addition to these major features, the Plug-in for Windows offers the following benefits:
+
+* Backup, restore, and clone workflow support
+* RBAC-supported security and centralized role delegation
+* Creation of space-efficient copies of production file systems for testing or data extraction by using NetApp FlexClone technology
++
+For FlexClone licensing information, see link:../install/concept_snapcenter_licenses.html[SnapCenter licenses^].
+
+* Ability to run multiple backups at the same time across multiple servers
+* PowerShell cmdlets for scripting of backup, restore, and clone operations
+* Support for backup of file systems and virtual machine disks (VMDKs)
+* Support for physical and virtualized infrastructures
+* Support for iSCSI, Fibre Channel, FCoE, raw device mapping (RDM), Asymmetric LUN Mapping (ALM), VMDK over NFS and VMFS, and virtual FC

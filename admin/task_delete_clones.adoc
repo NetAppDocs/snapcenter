@@ -1,0 +1,42 @@
+---
+permalink: admin/task_delete_clones.html
+sidebar: sidebar
+keywords:
+summary: 'You can delete clones if you find them no longer necessary.'
+---
+= Delete clones
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete clones if you find them no longer necessary.
+
+*About this task*
+
+A clone that has been cloned again cannot be deleted. For example, if the production database db1 is cloned to db1_clone1 and subsequently cloned to db1_clone2, and you decide that you want to delete db1_clone1, you must first delete db1_clone2, and then delete db1_clone1
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, either select the resource or resource group from the *View* drop-down list.
+. Select the resource or resource group from the list.
++
+The resource or the resource group topology page is displayed.
+
+. From the Manage Copies view, select *Clones* either from the primary or secondary (mirrored or replicated) storage systems.
+. Select the clone, and then click image:../media/delete_icon.gif[].
++
+If you are deleting SAP HANA database clones, in the Delete Clone page, perform the following actions:
+
+ .. In the *Pre clone delete* field, enter the commands that should be run before deleting the clone.
+ .. In the *Unmount* field, enter the command to unmount the clone before deleting the clone.
+
+. Click *OK*.
+
+*After you finish*
+
+Sometimes the file systems are not deleted. You must increase the value of the CLONE_DELETE_DELAY parameter by running the following command:``./sccli Set-SmConfigSettings``
+
+NOTE: The CLONE_DELETE_DELAY parameter specifies the number of seconds to wait after completing the deletion of application clone and before starting the deletion of file system.
+
+After modifying the value of the parameter, restart the SnapCenter Plug-in Loader (SPL) service.

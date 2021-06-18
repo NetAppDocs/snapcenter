@@ -1,0 +1,112 @@
+---
+permalink: install/task_add_storage_systems.html
+sidebar: sidebar
+keywords: add, storage system, SVM
+summary: 'You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand alone SVM or a cluster comprising of multiple SVMs.'
+---
+= Add storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand-alone SVM or a cluster comprising of multiple SVMs.
+
+*What you will need*
+
+* You should have the required permissions in the Infrastructure Admin role to create storage connections.
+* You should ensure that the plug-in installations are not in progress.
++
+Host plug-in installations must not be in progress while adding a storage system connection because the host cache might not be updated and databases status might be displayed in the SnapCenter GUI as "`Not available for backup`" or "`Not on NetApp storage`".
+
+* Storage system names should be unique.
++
+SnapCenter does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter should have a unique name and a unique data LIF IP address.
+
+*About this task*
+
+* When you configure storage systems, you can also enable Event Management System (EMS) & AutoSupport features. The AutoSupport tool collects data about the health of your system and automatically sends the data to NetApp technical support, enabling them to troubleshoot your system.
++
+If you enable these features, SnapCenter sends AutoSupport information to the storage system and EMS messages to the storage system syslog when a resource is protected, a restore operation finishes successfully, or an operation fails.
+
+* If you are planning to replicate Snapshot copies to a SnapMirror destination or SnapVault destination, you must set up storage system connections for the destination SVM or Cluster as well as the source SVM or Cluster.
+
+* SnapCenter 4.5 and later supports application databases on ONTAP large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter recommends only thick provisioned LUNs to avoid latency.
+
+NOTE: If you change the storage system password, scheduled jobs, on demand backup, and restore operations might fail. After you change the storage system password, you should remove and add the storage system.
+
+*Steps*
+
+. In the left navigation pane, click *Storage Systems*.
+. In the Storage Systems page, click *New*.
+. In the Add Storage System page, provide the following information:
++
+|===
+| For this field... | Do this...
+
+a|
+Storage System
+a|
+Enter the storage system name or IP address.
+
+NOTE: Storage system names, not including the domain name, must have 15 or fewer characters , and the names must be resolvable. To create storage system connections with names that have more than 15 characters, you can use the Add-SmStorageConnectionPowerShell cmdlet.
+
+NOTE: For storage systems with MetroCluster configuration (MCC), it is recommended to register both local and peer clusters for non-disruptive operations.
+
+SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM that is supported by SnapCenter must have a unique name.
+
+NOTE: After adding the storage connection to SnapCenter, you should not rename the SVM or the Cluster using ONTAP.
+
+NOTE: If SVM is added with a short name or FQDN then it has to be resolvable from both the SnapCenter and the plug-in host.
+
+a|
+User name/Password
+a|
+Enter the credentials that are used to access the storage system.
+
+ ** You should use *vsadmin* as the user name to add a SVM.
+ ** You should use *admin* as the user name to add a cluster.
+
+a|
+Event Management System (EMS) & AutoSupport Settings
+a|
+If you want to send EMS messages to the storage system syslog or if you want to have AutoSupport messages sent to the storage system for applied protection, completed restore operations, or failed operations, select the appropriate checkbox.
+
+When you select the *Send AutoSupport Notification for failed operations to storage system* checkbox, the *Log SnapCenter Server events to syslog* checkbox is also selected because EMS messaging is required to enable AutoSupport notifications.
+|===
+
+. Click *More Options* if you want to modify the default values assigned to platform, protocol, port, and timeout.
+ .. In Platform, select one of the options from the drop-down list.
++
+If the SVM is the secondary storage system in a backup relationship, select the *Secondary* checkbox. When the *Secondary* option is selected, SnapCenter does not perform a license check immediately.
+
+ .. In Protocol, select the protocol that was configured during SVM or Cluster setup, typically HTTPS.
+ .. Enter the port that the storage system accepts.
++
+The default port 443 typically works.
+
+ .. Enter the time in seconds that should elapse before communication attempts are halted.
++
+The default value is 60 seconds.
+
+ .. If the SVM has multiple management interfaces, select the *Preferred IP* checkbox, and then enter the preferred IP address for SVM connections.
+ .. Click *Save*.
+. Click *Submit*.
+
+*Results*
+
+In the Storage Systems page, from the *Type* drop-down perform one of the following actions:
+
+* Select *ONTAP SVMs* if you want to view all the SVMs that were added.
+* Select *ONTAP Clusters* if you want to view all the clusters that were added.
++
+When you click on the cluster name, all the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
++
+If a new SVM is added to the ONTAP cluster using ONTAP GUI, click *Rediscover* to view the newly added SVM.
+
+*After you finish*
+
+A cluster administrator must enable AutoSupport on each storage system node to send email notifications from all storage systems to which SnapCenter has access, by running the following command from the storage system command line:
+
+`autosupport trigger modify -node nodename -autosupport-message client.app.info enable -noteto enable`
+
+NOTE: The Storage Virtual Machine (SVM) administrator has no access to AutoSupport.

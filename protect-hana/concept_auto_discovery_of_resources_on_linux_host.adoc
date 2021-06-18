@@ -1,0 +1,42 @@
+---
+permalink: protect-hana/concept_auto_discovery_of_resources_on_linux_host.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for SAP HANA Database plug-in, the SAP HANA databases on that Linux host are automatically discovered and displayed on the Resources page.'
+---
+= Automatic discovery of resources on Linux host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for SAP HANA Database plug-in, the SAP HANA databases on that Linux host are automatically discovered and displayed on the Resources page.
+
+Automatic discovery is supported for the following SAP HANA resources:
+
+* Single containers
++
+After installing or upgrading the plug-in, the single container resources located on a centralized host plug-in will continue as manually added resources.
++
+After installing or upgrading the plug-in, the SAP HANA databases are automatically discovered only on the SAP HANA Linux hosts, which are directly registered into SnapCenter.
+
+* Multitenant database container (MDC)
++
+After installing or upgrading the plug-in, the MDC resources located on a centralized host plug-in will continue as manually added resource.
++
+You must continue to manually add the MDC resources on the centralized host plug-in after upgrading to SnapCenter 4.3.
++
+For SAP HANA Linux hosts directly registered in SnapCenter, installing or upgrading the plug-in will trigger an automatic discovery for resources on the host. After upgrading the plug-in, for every MDC resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in locked state.
++
+For example, in SnapCenter 4.2, if E90 MDC resource was located on the plug-in host and registered manually, after upgrading to SnapCenter 4.3, another E90 MDC resource with a different GUID will be discovered and registered in SnapCenter.
+
+The Data Protection Guide for SAP HANA databases has more information on how to work with the new MDC resource on a SnapCenter plug-in host for data protection operations
+
+Automatic discovery is not supported for the following configurations:
+
+* RDM and VMDK layouts
++
+NOTE: In case the above resources are discovered, the data protection operations are not supported on these resources.
+
+* HANA multiple-host configuration
+* HANA System Replication
+* Multiple instances on the same host

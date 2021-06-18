@@ -1,0 +1,50 @@
+---
+permalink: protect-sce/task_define_a_restore_strategy_for_exchange_databases.html
+sidebar: sidebar
+keywords:
+summary: 'Defining a restoration strategy for Exchange Server enables you to restore your database successfully.'
+---
+= Define a restore strategy for Exchange databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a restoration strategy for Exchange Server enables you to restore your database successfully.
+
+== Sources for a restore operation in Exchange Server
+You can restore an Exchange Server database from a backup copy on primary storage.
+
+You can restore databases from primary storage only.
+
+== Types of restore operations supported for Exchange Server
+You can use SnapCenter to perform different types of restore operations on Exchange resources.
+
+* Restore up-to-the-minute
+* Restore to a previous point in time
+
+=== Restore up to the minute
+
+In an up-to-the-minute restore operation, databases are recovered up to the point of failure. SnapCenter accomplishes this by performing the following sequence:
+
+. Restores the databases from the full database backup that you select.
+. Applies all the transaction logs that were backed up, as well as any new logs that were created since the most recent backup.
++
+Transaction logs are moved ahead and applied to any selected databases.
++
+Exchange creates a new log chain after a restore completes.
++
+|===
+*Best Practice:* It is recommended that you perform a new full and log backup after a restore completes.
+|===
+An up-to-the-minute restore operation requires a contiguous set of transaction logs.
++
+After you perform an up-to-the-minute restore, the backup you used for the restore is available only for point-in-time restore operations.
++
+If you do not need to retain up-to-the-minute restore capability for all backups, you can configure your system's transaction log backup retention through the backup policies.
+
+=== Restore to a previous point in time
+
+In a point-in-time restore operation, databases are restored only to a specific time from the past. A point-in-time restore operation occurs in the following restore situations:
+
+* The database is restored to a given time in a backed-up transaction log.
+* The database is restored, and only a subset of backed-up transaction logs are applied to it.

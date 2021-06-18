@@ -1,0 +1,13 @@
+---
+permalink: protect-hana/task_install_snapcenter_plug_in_for_vmware_vsphere.html
+sidebar: sidebar
+keywords: install, VMware vSphere
+summary: 'If your database is stored on virtual machines (VMs), or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance.'
+---
+
+= Install SnapCenter Plug-in for VMware vSphere
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_install_snapcenter_plug_in_for_vmware_vsphere.adoc[]

@@ -1,0 +1,14 @@
+---
+permalink: protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
+sidebar: sidebar
+keywords: installing
+summary: 'You should install and set up the SnapCenter Plug-in for SAP HANA Database if you want to protect SAP HANA databases.'
+---
+= Install SnapCenter Plug-in for SAP HANA Database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should install and set up the SnapCenter Plug-in for SAP HANA Database if you want to protect SAP HANA databases.
+
+image::../media/sap_hana_install_configure_workflow.gif[]

@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/task_back_up_resources_using_powershell_cmdlets_for_windows.html
+sidebar: sidebar
+keywords: backup
+summary: 'You can use the PowerShell cmdlets to backup SQL Server databases or Windows file systems. This would include backing up a SQL Server database or Windows file system includes establishing a connection with the SnapCenter Server, discovering the SQL Server database instances or Windows file systems, adding a policy, creating a backup resource group, backing up, and verifying the backup.'
+---
+= Back up resources using PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_back_up_resources_using_powershell_cmdlets.adoc[]

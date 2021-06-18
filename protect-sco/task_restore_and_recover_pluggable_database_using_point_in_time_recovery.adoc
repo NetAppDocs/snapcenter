@@ -1,0 +1,93 @@
+---
+permalink: protect-sco/task_restore_and_recover_pluggable_database_using_point_in_time_recovery.html
+sidebar: sidebar
+keywords: PDB, pluggable database, restore, CDB, PITR, point-in-time recovery, RMAN
+summary: 'You can restore and recover a pluggable database (PDB) that has been corrupted or dropped without impacting the other PDBs in the container database \(CDB\). SnapCenter uses RMAN to perform point-in-time recovery \(PITR\) of the PDB.'
+---
+= Restore and recover pluggable database using point-in-time recovery
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can restore and recover a pluggable database (PDB) that has been corrupted or dropped without impacting the other PDBs in the container database (CDB). SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the PDB.
+
+*What you will need*
+
+The backups that are required to perform PITR of a PDB should be cataloged and mounted.
+
+NOTE: In a RAC setup, you should manually close the PDB (changing the state to MOUNTED) on all the nodes of the RAC setup.
+
+*About this task*
+
+During PITR operation, RMAN creates an auxiliary instance at the specified auxiliary destination. The auxiliary destination could be a mount point or ASM disk group. If there is sufficient space in the mounted location, you can reuse one of the mounted locations instead of a dedicated mount point.
+
+You should specify the date and time or SCN to perform PITR of the PDB. RMAN can recover READ WRITE, READ ONLY, or dropped PDBs including datafiles.
+
+You can restore and recover only:
+
+* one PDB at a time
+* one tablespace in a PDB
+* multiple tablespaces of the same PDB
+
+NOTE: In a RAC setup, you can perform PITR of tablespaces from any node of the RAC.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
+. Select the database of type single instance (multitenant) either from the database details view or the resource group details view.
++
+The database topology page is displayed.
+
+. From the Manage Copies view, select *Backups* from either the primary or the secondary (mirrored or replicated) storage systems.
++
+If the backup is not cataloged, you should select the backup and click *Catalog*.
+
+. Select the cataloged backup, and then click *image:../media/restore_icon.gif[restore icon]*.
+. On the Restore Scope page, perform the following tasks:
+ .. If you have selected a backup of a database in a Real Application Clusters (RAC) environment, select the RAC node.
+ .. Depending on whether you want to restore the PDB or tablespaces in a PDB, perform one of the actions:
++
+|===
+| If you want to...| Steps...
+a|
+Restore a PDB
+a|
+
+  ... Select *Pluggable databases (PDBs)*.
+  ... Specify the PDB you want to restore.
++
+NOTE: You cannot perform PITR on PDB$SEED database.
+
+a|
+Restore tablespaces in a PDB
+a|
+
+  ... Select *Pluggable database (PDB) tablespaces*.
+  ... Specify the PDB.
+  ... Specify either a single tablespace or multiple tablespaces you want to restore.
++
+NOTE: You cannot perform PITR on SYSAUX, SYSTEM, and UNDO tablespaces.
+
++
+|===
+
+ .. Select *Change database state if needed for restore and recovery* to change the state of the database to the state required to perform restore and recovery operations.
+. On the Recovery Scope page, perform one of the following actions:
+ ** If you want to recover to a specific System Change Number (SCN), select *Until SCN* and specify the SCN and auxiliary destination.
+ ** If you want to recover to a specific date and time, select *Date and Time* and specify the date and time and the auxiliary destination.
+When you specify the SCN or date and time, SnapCenter lists the backups that are required to perform PITR but are not cataloged and mounted.
+. On the PreOps page, enter the path and the arguments of the prescript that you want to run before the restore operation.
++
+You should store the prescripts either in the /var/opt/snapcenter/spl/scripts path or in any folder inside this path. By default, the /var/opt/snapcenter/spl/scripts path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
++
+You can also specify the script timeout value. The default value is 60 seconds.
+
+. On the PostOps page, perform the following steps:
+ .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
+ .. Select the check box if you want to open the database after recovery.
++
+In a RAC setup, the PDB will be opened only on the node where the database was recovered. You should manually open the recovered PDB on all the other nodes of the RAC setup.
+. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
