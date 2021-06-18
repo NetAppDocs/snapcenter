@@ -1,0 +1,9 @@
+---
+permalink: protect-scsql/reference_generate_CA_certificate_CSR_file.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate.'
+---
+= Generate CA Certificate CSR file
+
+include::../_include/reuse_reference_generate_CA_certificate_CSR_file.adoc[]

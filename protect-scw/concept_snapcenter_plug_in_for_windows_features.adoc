@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/concept_snapcenter_plug_in_for_windows_features.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The Plug-in for Windows integrates with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.'
 ---
 = SnapCenter Plug-in for Windows features
@@ -31,9 +31,7 @@ In addition to these major features, the Plug-in for Windows offers the followin
 * RBAC-supported security and centralized role delegation
 * Creation of space-efficient copies of production file systems for testing or data extraction by using NetApp FlexClone technology
 +
-For FlexClone licensing information, see licensing requirements in the installation information.
-+
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
+For FlexClone licensing information, see link:../install/concept_snapcenter_licenses.html[SnapCenter licenses^].
 
 * Ability to run multiple backups at the same time across multiple servers
 * PowerShell cmdlets for scripting of backup, restore, and clone operations

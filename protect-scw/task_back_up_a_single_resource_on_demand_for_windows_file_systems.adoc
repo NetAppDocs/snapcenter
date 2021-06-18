@@ -11,11 +11,15 @@ summary: 'If a resource is not in a resource group, you can back up the resource
 [.lead]
 If a resource is not in a resource group, you can back up the resource on demand from the Resources page.
 
+*About this task*
+
 If you want to back up a resource that has a SnapMirror relationship with secondary storage, the role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
 
 NOTE: When backing up a file system, SnapCenter does not back up LUNs that are mounted on a volume mount point (VMP) in the file system that is being backed up.
 
 IMPORTANT: If you are working in a Windows file system context, do not back up database files. Doing so creates an inconsistent backup and a possible loss of data when restoring. To protect database files, you must use the appropriate SnapCenter plug-in for the database (for example, SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, or a custom plug-in for database files).
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select the File System resource type, and then select the resource that you want to back up.
@@ -37,20 +41,22 @@ If no existing policy meets your requirements, you can copy an existing policy a
 The selected policies are listed in the Policy column in the Configure schedules for selected policies section.
 
  .. In the Configure schedules for selected policies section, click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure the schedule.
- .. In the Add schedules for policypolicyname dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
 +
 The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
-
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Scheduled_data_protection_operations_fail_if_the_number_of_operations_running_reaches_maximum_limit[Scheduled operations might fail]
 . In the Notification page, perform the following tasks:
 +
 |===
 | For this field...| Do this...
+
 a|
 Email preference
 a|
-Select *Always*, or *On Failure*, or *On failure or warning*, to send emails to recipients after creating backup resource groups, attaching policies, and configuring schedules.     Enter the SMTP server information, default email subject line, and the "`To`" and "`From`" email addresses.
+Select *Always*, or *On Failure*, or *On failure or warning*, to send emails to recipients after creating backup resource groups, attaching policies, and configuring schedules.
+
+Enter the SMTP server information, default email subject line, and the "`To`" and "`From`" email addresses.
 a|
 From
 a|
@@ -77,11 +83,3 @@ If the policy selected for the on-demand backup is associated with a backup sche
 
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
-
-*Related information*
-
-link:[Monitoring backup operations]
-
-link:[Backing up resources using PowerShell cmdlets]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

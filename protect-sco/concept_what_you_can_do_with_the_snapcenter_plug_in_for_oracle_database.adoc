@@ -1,10 +1,10 @@
 ---
 permalink: protect-sco/concept_what_you_can_do_with_the_snapcenter_plug_in_for_oracle_database.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager \(RMAN\).'
+keywords: backup, restore, clone, oracle database
+summary: 'You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager (RMAN).'
 ---
-= What you can do with the SnapCenter Plug-in for Oracle Database
+= What you can do with the Plug-in for Oracle Database
 :icons: font
 :imagesdir: ../media/
 

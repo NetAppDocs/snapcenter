@@ -1,10 +1,10 @@
 ---
 permalink: protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux.html
 sidebar: sidebar
-keywords: SnapCenter
+keywords: SnapCenter, host requirement for Linux, sudo privileges, non-root user
 summary: 'You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.'
 ---
-= Host requirements for installing the SnapCenter Plug-ins Package for Linux
+= Host requirements for installing Plug-ins Package for Linux
 :icons: font
 :imagesdir: ../media/
 
@@ -13,6 +13,7 @@ You should ensure that the host meets the requirements before installing the Sna
 
 |===
 | Item| Requirements
+
 a|
 Operating systems
 a|
@@ -31,7 +32,9 @@ a|
 a|
 Minimum install and log space for the SnapCenter plug-in on host
 a|
-2 GB**Note:** You should allocate sufficient disk space and monitor the storage consumption by the logs folder. The log space required varies depending on the number of the entities to be protected and the frequency of data protection operations. If there is no sufficient disk space, the logs will not be created for the recently run operations.
+2 GB
+
+NOTE: You should allocate sufficient disk space and monitor the storage consumption by the logs folder. The log space required varies depending on the number of the entities to be protected and the frequency of data protection operations. If there is no sufficient disk space, the logs will not be created for the recently run operations.
 
 a|
 Required software packages
@@ -41,6 +44,69 @@ Java 1.8 (64-bit)Oracle Java and OpenJDK flavors
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
 |===
-For the latest information about supported versions, see the NetApp Interoperability Matrix Tool (IMT).
+For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+== Configuring sudo privileges for non-root users for Linux plug-in host
+
+SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
+
+*What you will need*
+
+* Sudo 1.8.7 or later.
+* Ensure that the non-root user is part of the Oracle installation group.
+* Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
++
+Restart the sshd service after updating the configuration file.
++
+Example:
++
+----
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+#Legacy changes
+#KexAlgorithms diffie-hellman-group1-sha1
+#Ciphers aes128-cbc
+#The default requires explicit activation of protocol
+Protocol 2
+HostKey/etc/ssh/ssh_host_rsa_key
+MACs hmac-sha2-256
+----
+
+*About this task*
+
+You should configure sudo privileges for the non-root user to provide access to the following paths:
+
+* /home/_SUDO_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin
+* /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
+* /custom_location/NetApp/snapcenter/spl/bin/spl
+
+*Steps*
+
+. Log in to the Linux host on which you want to install the SnapCenter Plug-ins Package for Linux.
+. Add the following lines to the /etc/sudoers file by using the visudo Linux utility.
++
+[subs=+quotes]
+----
+Cmnd_Alias SCCMD = sha224:checksum_value== /home/_SUDO_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin,
+/opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
+/opt/NetApp/snapcenter/spl/bin/spl
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_SUDO_USER_/.sc_netapp/Linux_Prechecks.sh
+_SUDO_USER_ ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
+Defaults: _SUDO_USER_ env_keep=JAVA_HOME
+Defaults: _SUDO_USER_ !visiblepw
+Defaults: _SUDO_USER_ !requiretty
+----
++
+_SUDO_USER_ is the name of the non-root user that you created.
++
+You can obtain the checksum value from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
++
+If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
++
+IMPORTANT: The example should be used only as a reference for creating your own data.
+
+|===
+*Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
+|===

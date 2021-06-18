@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_define_a_clone_strategy_for_sql_server.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Defining a cloning strategy enables you to clone your database successfully.'
 ---
 = Define a cloning strategy for SQL Server
@@ -13,3 +13,32 @@ Defining a cloning strategy enables you to clone your database successfully.
 
 . Review the limitations related to clone operations.
 . Decide the type of clone you require.
+
+== Limitations of clone operations
+You should be aware of the limitations of clone operations before you clone the databases.
+
+* If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the clone operation will be in
+hung state when you run the _renamedg_ command. You can apply the Oracle patch 19544733
+to fix this issue.
+
+* Cloning of databases from a LUN that is directly attached to a host (for instance, by using
+Microsoft iSCSI Initiator on a Windows host) to a VMDK or an RDM LUN on the same
+Windows host, or another Windows host, or vice versa, is not supported.
+
+* The root directory of the volume mount point cannot be a shared directory.
+
+* If you move a LUN that contains a clone to a new volume, the clone cannot be deleted.
+
+== Types of clone operations
+You can use SnapCenter to clone either a SQL Server database backup or a production database.
+
+* Clone from a database backup
++
+The cloned database can serve as a baseline for developing new applications and help isolate
+application errors that occur in the production environment. The cloned database can also be
+used for recovery from soft database errors.
+
+* Clone lifecycle
++
+You can use SnapCenter to schedule recurring clone jobs that will occur when the production
+database is not busy.

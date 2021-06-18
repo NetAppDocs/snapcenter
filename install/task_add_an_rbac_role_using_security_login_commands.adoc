@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_an_rbac_role_using_security_login_commands.html
 sidebar: sidebar
-keywords: RBAC roles
+keywords: RBAC roles, add, ONTAP RBAC role
 summary: 'You can use the security login commands to add an ONTAP RBAC role when your storage systems are running clustered ONTAP.'
 ---
 = Add an ONTAP RBAC role using security login commands
@@ -11,21 +11,25 @@ summary: 'You can use the security login commands to add an ONTAP RBAC role when
 [.lead]
 You can use the security login commands to add an ONTAP RBAC role when your storage systems are running clustered ONTAP.
 
-Before you create an ONTAP RBAC role for storage systems running clustered ONTAP, you must identify the following:
+*What you will need*
 
-* The task (or tasks) that you want to perform
-* The privileges required to perform these tasks
+* Before you create an ONTAP RBAC role for storage systems running clustered ONTAP, you must identify the following:
 
-Configuring an RBAC role requires that you perform the following actions:
+** The task (or tasks) that you want to perform
+** The privileges required to perform these tasks
 
-* Grant privileges to commands and/or command directories.
+* Configuring an RBAC role requires that you perform the following actions:
+
+** Grant privileges to commands and/or command directories.
 +
 There are two levels of access for each command/command directory: all-access and read-only.
 +
 You must always assign the all-access privileges first.
 
-* Assign roles to users.
-* Vary your configuration depending on whether your SnapCenter plug-ins are connected to the Cluster Administrator IP for the entire cluster or directly connected to a SVM within the cluster.
+** Assign roles to users.
+** Vary your configuration depending on whether your SnapCenter plug-ins are connected to the Cluster Administrator IP for the entire cluster or directly connected to a SVM within the cluster.
+
+*About this task*
 
 To simplify configuring these roles on storage systems, you can use the RBAC User Creator for Data ONTAP tool, which is posted on the NetApp Communities Forum.
 
@@ -33,50 +37,45 @@ This tool automatically handles setting up the ONTAP privileges correctly. For e
 
 NOTE: If you later upgrade SnapCenter or ONTAP, you should re-run the RBAC User Creator for Data ONTAP tool to update the user roles you created previously. User roles created for an earlier version of SnapCenter or ONTAP do not work properly with upgraded versions. When you re-run the tool, it automatically handles the upgrade. You do not need to recreate the roles.
 
-More information about setting up ONTAP RBAC roles is in the ONTAP administration information.
+More information about setting up ONTAP RBAC roles, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^].
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide]
 
 NOTE: For consistency, the SnapCenter documentation refers to the roles as using privileges. The OnCommand System Manager GUI uses the term "`attribute`" instead of "`privilege.`" When setting up ONTAP RBAC roles, both these terms mean the same thing.
 
-. On the storage system, create a new role by entering the following command: `security login role create <role_name\> -cmddirname "command" -access all –vserver <svm_name\>`
-+
-svm_name is the name of the SVM. If you leave this blank, it defaults to cluster administrator.
-+
-role_name is the name you specify for the role.
-+
-command is the ONTAP capability.
-+
-NOTE: You must repeat this command for each permission.
-+
-For information about the list of permissions, see "`ONTAP CLI commands for creating roles and assigning permissions`".
-+
-NOTE: Remember that all-access commands must be listed before read-only commands.
+*Steps*
 
-. Create a user name by entering the following command: `security login create -username <user_name\> -application ontapi -authmethod <password\> -role <name_of_role_in_step_1\> –vserver <svm_name\> -comment "user_description"`
+. On the storage system, create a new role by entering the following command:
 +
-user_name is the name of the user you are creating.
+`security login role create <role_name\> -cmddirname "command" -access all –vserver <svm_name\>`
 +
-<password> is your password. If you do not specify a password, the system will prompt you for one.
+* svm_name is the name of the SVM. If you leave this blank, it defaults to cluster administrator.
+* role_name is the name you specify for the role.
+* command is the ONTAP capability.
 +
-svm_name is the name of the SVM.
+NOTE: You must repeat this command for each permission. Remember that all-access commands must be listed before read-only commands.
++
+For information about the list of permissions, see link:../install/task_create_an_ontap_cluster_role_with_minimum_privileges.html#ontap-cli-commands-for-creating-roles-and-assigning-permissions[ONTAP CLI commands for creating roles and assigning permissions^].
 
-. Assign the role to the user by entering the following command: `security login modify username <user_name\> –vserver <svm_name\> -role <role_name\> -application ontapi -application console -authmethod <password\>`
-+
-<user_name> is the name of the user you created in Step 2. This command lets you modify the user to associate it with the role.
-+
-<svm_name> is the name of the SVM.
-+
-<role_name> is the name of the role you created in Step 1.
-+
-<password> is your password. If you do not specify a password, the system will prompt you for one.
 
-. Verify that the user was created correctly by entering the following command: `security login show –vserver <svm_name\> -user-or-group-name <user_name\>`
+. Create a user name by entering the following command:
++
+`security login create -username <user_name\> -application ontapi -authmethod <password\> -role <name_of_role_in_step_1\> –vserver <svm_name\> -comment "user_description"`
++
+* user_name is the name of the user you are creating.
+* <password> is your password. If you do not specify a password, the system will prompt you for one.
+* svm_name is the name of the SVM.
+
+. Assign the role to the user by entering the following command:
++
+`security login modify username <user_name\> –vserver <svm_name\> -role <role_name\> -application ontapi -application console -authmethod <password\>`
++
+* <user_name> is the name of the user you created in Step 2. This command lets you modify the user to associate it with the role.
+* <svm_name> is the name of the SVM.
+* <role_name> is the name of the role you created in Step 1.
+* <password> is your password. If you do not specify a password, the system will prompt you for one.
+
+. Verify that the user was created correctly by entering the following command:
++
+`security login show –vserver <svm_name\> -user-or-group-name <user_name\>`
 +
 user_name is the name of the user you created in Step 3.
-+
-This command displays information about the user and the role.
-
-*Related information*
-
-xref:reference_ontap_cli_commands_for_creating_svm_roles.adoc[ONTAP CLI commands for creating roles and assigning permissions]

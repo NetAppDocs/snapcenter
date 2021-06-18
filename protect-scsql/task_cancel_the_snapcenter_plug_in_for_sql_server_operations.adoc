@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can cancel backup operations that are running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.'
 ---
 = Cancel the SnapCenter Plug-in for Microsoft SQL Server backup operations
@@ -10,6 +10,8 @@ summary: 'You can cancel backup operations that are running, queued, or non-resp
 
 [.lead]
 You can cancel backup operations that are running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.
+
+*What you will need*
 
 * You must be logged in as the SnapCenter Admin or job owner to cancel restore operations.
 * You can cancel only the log or full backup operations that are queued or running.
@@ -22,10 +24,13 @@ If you cancel the operation before verification, the operation is canceled, and 
 * The *Cancel Job* button is disabled for operations that cannot be canceled.
 * If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued backup operations of other members while using that role.
 
+*Step*
+
 . Perform one of the following actions:
 +
 |===
 | From the...| Action
+
 a|
 Monitor page
 a|
@@ -44,8 +49,6 @@ a|
 +
 |===
 
-The operation is canceled, and the resource is reverted to the previous state. If the operation you canceled is non-responsive in the canceling or running state, you should run the Cancel-SmJob -JobID <int> -Force cmdlet to forcefully stop the backup operation.
+*Result*
 
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+The operation is canceled, and the resource is reverted to the previous state. If the operation you canceled is non-responsive in the canceling or running state, you should run the `Cancel-SmJob -JobID <int> -Force` cmdlet to forcefully stop the backup operation.

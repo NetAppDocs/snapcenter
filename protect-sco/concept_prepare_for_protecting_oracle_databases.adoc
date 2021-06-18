@@ -1,0 +1,47 @@
+---
+permalink: protect-sco/concept_prepare_for_protecting_oracle_databases.html
+sidebar: sidebar
+keywords: oracle, preparation for protection, prerequisites
+summary: 'Before performing any data protection operation such as backup, clone, or restore operations, you must define your strategy and set up the environment. You can also set up the SnapCenter Server to use SnapMirror and SnapVault technology.'
+---
+= Prepare for protecting Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before performing any data protection operation such as backup, clone, or restore operations, you must define your strategy and set up the environment. You can also set up the SnapCenter Server to use SnapMirror and SnapVault technology.
+
+To take advantage of SnapVault and SnapMirror technology, you must configure and initialize a data protection relationship between the source and destination volumes on the storage device. You can use NetAppSystem Manager or you can use the storage console command line to perform these tasks.
+
+Before you use the Plug-in for Oracle Database, the SnapCenter administrator should install and configure the SnapCenter Server and perform the prerequisite tasks.
+
+* Install and configure SnapCenter Server. link:../install/task_install_the_snapcenter_server_using_the_install_wizard.html[Learn more^]
+* Configure the SnapCenter environment by adding storage system connections. link:../install/task_add_storage_systems.html[Learn more^]
++
+NOTE: SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM supported by SnapCenter must have a unique name.
+
+* Create credentials with authentication mode as Linux or AIX for the install user. link:../protect-sco/task_set_up_credentials_for_installing_the_plug_in_package_for_linux_or_aix.html[Learn more^]
+* Add hosts, install the plug-ins, and discover the resources.
+* If you are using SnapCenter Server to protect Oracle databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
+* Install Java on your Linux or AIX host.
+* You should set the time out value of the application firewall to 3 hours or more.
+* If you have Oracle databases on NFS environments, you must have configured at least one NFS data LIF for primary or secondary storage to perform mount, clone, verification, and restore operations.
+* If you have multiple data paths (LIFs) or a dNFS configuration, you can perform the following using the SnapCenter CLI on the database host:
+ ** By default, all the IP addresses of the database host are added to the NFS storage export policy in storage virtual machine (SVM) for the cloned volumes. If you want to have a specific IP address or restrict to a subset of the IP addresses, run the Set-PreferredHostIPsInStorageExportPolicy CLI.
+ ** If you have multiple data paths (LIFs) in SVM, SnapCenter chooses the appropriate data path (LIF) for mounting the NFS cloned volume. However, if you want to specify a specific data path (LIF), you must run the Set-SvmPreferredDataPath CLI.
+The command reference guide has more information.
+* If you have Oracle databases on SAN environments, ensure that the SAN environment is configured as per the recommendation mentioned in the following guides:
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547957[Recommended Host Settings for Linux Unified Host Utilities^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547958[Using Linux Hosts with ONTAP storage^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMP1119218[Host Settings Affected by AIX Host Utilities^]
+* If you have Oracle databases on LVM in Oracle Linux or RHEL operating systems, install the latest version of Logical Volume Management (LVM).
+* If you are using SnapManager for Oracle and want to SnapCenter Plug-in for Oracle Database, you can migrate the profiles to policies and resource groups of SnapCenter by using the sccli command sc-migrate.
+* Configure SnapMirror and SnapVault on ONTAP, if you want backup replication
+
+For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
+
+*Find more information*
+
+* http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
+* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Data_protection_operation_fails_in_a_non-multipath_environment_in_RHEL_7_and_later[Data protection operation fails in a non-multipath environment in RHEL 7 and later^]

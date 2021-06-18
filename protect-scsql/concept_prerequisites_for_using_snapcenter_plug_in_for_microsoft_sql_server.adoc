@@ -20,13 +20,11 @@ NOTE: SnapCenter does not support multiple SVMs with the same name on different 
 * Add hosts, install the plug-ins, discover (refresh) the resources, and configure the plug-ins.
 * Move an existing Microsoft SQL Server database from a local disk to a NetApp LUN or vice versa by running Invoke-SmConfigureResources.
 +
-For information to run the cmdlet, see the information on Windows cmdlets.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+For information to run the cmdlet, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
 * If you are using SnapCenter Server to protect SQL databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The SnapCenter Plug-in for VMware vSphere documentation has more information.
 +
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere Deployment Guide]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for VMware vSphere documentation]
 
 * Perform host-side storage provisioning using the SnapCenter Plug-in for Microsoft Windows.
 * Move existing databases onto NetApp storage.
@@ -39,8 +37,4 @@ For details, see SnapCenter installation information.
 
 For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
 
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for VMware vSphere documentation]

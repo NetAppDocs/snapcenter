@@ -31,8 +31,6 @@ For example, in SnapCenter 4.2, if E90 MDC resource was located on the plug-in h
 
 The Data Protection Guide for SAP HANA databases has more information on how to work with the new MDC resource on a SnapCenter plug-in host for data protection operations
 
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-sap-hana/home.html[Protecting SAP HANA databases]
-
 Automatic discovery is not supported for the following configurations:
 
 * RDM and VMDK layouts

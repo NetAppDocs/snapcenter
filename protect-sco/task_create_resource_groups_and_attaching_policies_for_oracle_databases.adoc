@@ -11,28 +11,44 @@ summary: 'A resource group is the container to which you must add resources that
 [.lead]
 A resource group is the container to which you must add resources that you want to back up and protect. A resource group enables you to back up all the data that is associated with a given application simultaneously.
 
-You should ensure that the database having files on the ASM disk groups should be either in "`MOUNT`" or "`OPEN`" state to verify its backups using the Oracle DBVERIFY utility.
+*About this task*
+
+You should ensure that the database having files on the ASM disk groups should be either in "MOUNT" or "OPEN" state to verify its backups using the Oracle DBVERIFY utility.
 
 You should attach one or more policies to the resource group to define the type of data protection job that you want to perform.
+
+The following image illustrates the relationship between resources, resource groups, and policies for databases:
+
+image::../media/sco_resourcegroup_policy.gif[]
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . On the Resources page, click *New Resource Group*.
 . On the Name page, perform the following actions:
 +
 |===
-| For this field...| Do this...
+| For this field... | Do this...
+
 a|
 Name
 a|
-Enter a name for the resource group.    *Note:* The resource group name should not exceed 250 characters.
+Enter a name for the resource group.
+
+NOTE: The resource group name should not exceed 250 characters.
+
 a|
 Tags
 a|
-Enter one or more labels that will help you later search for the resource group.    For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
+Enter one or more labels that will help you later search for the resource group.
+
+For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
 a|
 Use custom name format for Snapshot copy
 a|
-Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.    For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
+Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
+
+For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
 a|
 Exclude archive log destinations from backup
 a|
@@ -51,13 +67,14 @@ NOTE: You can add databases from both Linux and AIX hosts in a single resource g
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[].
+
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
  .. Click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
- .. In the Add schedules for policypolicy_name window, configure the schedule, and then click *OK*.
+ .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then click *OK*.
 +
-Where, policy_name is the name of the policy that you have selected.
+Where, _policy_name_ is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
 
@@ -69,7 +86,8 @@ Third party backup schedules are not supported when they overlap with SnapCenter
  .. In the Add Verification Schedulespolicy_name dialog box, perform the following actions:
 +
 |===
-| If you want to...| Do this...
+| If you want to... | Do this...
+
 a|
 Run verification after backup
 a|
@@ -91,9 +109,3 @@ You must also specify the sender and receiver email addresses, and the subject o
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
 . Review the summary, and then click *Finish*.
-
-*Related information*
-
-xref:task_create_backup_policies_for_oracle_database.adoc[Create backup policies for Oracle databases]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]

@@ -1,0 +1,37 @@
+---
+permalink: install/task_enable_ca_certificates_for_snapcenter.html
+sidebar: sidebar
+keywords: SnapCenter, enable CA, certificate
+summary: 'You should configure the CA certificates and enable the CA certificate validation for the SnapCenter Server.'
+---
+= Enable CA certificates for SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should configure the CA certificates and enable the CA certificate validation for the SnapCenter Server.
+
+*What you will need*
+
+* You can enable or disable the CA certificates using the Set-SmCertificateSettings cmdlet.
+* You can display the certificate status for the SnapCenter Server using the Get-SmCertificateSettings cmdlet.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+
+*Steps*
+
+. In the Settings page, navigate to *Settings* > *Global Settings* > *CA Certificate Settings*.
+. Select *Enable Certificate Validation*.
+. Click *Apply*.
+
+*After you finish*
+
+The Managed Hosts tab host displays a padlock and the color of the padlock indicates the status of the connection between SnapCenter Server and the plug-in host.
+
+* *image:../media/enable_ca_issues_icon.png[]* indicates that there is no CA certificate enabled or assigned to the plug-in host.
+* *image:../media/enable_ca_good_icon.png[]* indicates that the CA certificate is successfully validated.
+
+* *image:../media/enable_ca_failed_icon.png[]* indicates that the CA certificate could not be validated.
+*  *image:../media/enable_ca_undefined_icon.png[]* indicates that the connection information could not be retrieved.
+
+NOTE: When the status is yellow or green, the data protection operations completes successfully.

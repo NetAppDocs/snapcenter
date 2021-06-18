@@ -1,0 +1,99 @@
+---
+permalink: upgrade/task_upgrade_snapcenter.html
+sidebar: sidebar
+keywords: upgrade, upgrade snapcenter server
+summary: 'You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.'
+---
+= Upgrade the SnapCenter Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.
+
+*What you will need*
+
+* The SnapCenter Server host must be up to date with Windows updates, with no pending system restarts.
+* You should ensure that no other operations are running before initiating the upgrade operation.
+* You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running.
++
+For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
+* You should back up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
++
+Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
+
+*About this task*
+
+* During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
+
+* Before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
+
+* Supported upgrade paths:
++
+|===
+| If you are using... | You can...
+
+a|
+4.0.x
+a|
+* Directly upgrade to 4.1.x or 4.2.x
+* Upgrade to 4.3.x by first upgrading to 4.1.x or 4.2.x, and then upgrade to 4.3.x
+* Upgrade to 4.4.x by first upgrading to 4.2.x, and then upgrade to 4.4.x
+* Upgrade to 4.5 by first upgrading to 4.2.x, then upgrade to 4.4.x, and then upgrade to 4.5
+a|
+4.1.x
+a|
+* Directly upgrade to 4.2.x or 4.3.x
+* Upgrade to 4.4.x by first upgrading to 4.2.x or 4.3.x, and then upgrade to 4.4.x
+* Upgrade to 4.5 by first upgrading to 4.3.x and then upgrade to 4.5
+a|
+4.2.x
+a|
+* Directly upgrade to 4.3.x or 4.4.x
+* Upgrade to 4.5 by first upgrading to 4.3.x or 4.4.x and then upgrade to 4.5
+a|
+4.3.x
+a|
+Directly upgrade to 4.4.x or 4.5
+a|
+4.4.x
+a|
+Directly upgrade to 4.5
+|===
+
+*Steps*
+
+. Download the SnapCenter Server installation package from the NetApp Support Site.
++
+https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
+
+. In the left navigation pane, click *Hosts*., and in the Managed Hosts list, select the host that you want to upgrade.
+. Create a copy of the web.config located at C:\Program Files\NetApp\SnapCenter WebApp.
+. Export the SnapCenter schedules related to plug-in host from windows task schedule so that you can use it to restore the schedules if upgrade fails.`md d:\\SCBackup``schtasks /query /xml /TN taskname >> "D:\SCBackup\taskname.xml"`
+. Create the SnapCenter MySQL database dump if the repository backup is not configured.`md d:\\SCBackup``mysqldump --all-databases --single-transaction --add-drop-database --triggers --routines --events -u root -p > D:\SCBackup\SCRepoBackup.dmp`
++
+When prompted, enter the password.
+
+. Initiate the SnapCenter Server upgrade by double-clicking the downloaded .exe file.
++
+After you initiate the upgrade, all the prechecks are performed, and if the minimum requirements are not met, appropriate error or warning messages are displayed. You can ignore the warning messages and proceed with the installation. However, errors should be fixed.
++
+NOTE: SnapCenter will continue to use the existing MySQL Server repository database password provided during installation of the earlier version of SnapCenter Server.
+
+. Click *Upgrade*.
++
+At any stage if you click the *Cancel* button, the upgrade workflow will be cancelled. It will not rollback the SnapCenter Server to previous state.
++
+|===
+*Best Practice:* You should either log out and then log into SnapCenter, or close and then open a new browser to access SnapCenter GUI.
+|===
+
+*After you finish*
+
+* If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt_ to update the _/etc/sudoers_ file.
+* You should perform a fresh discovery of resources on the hosts.
++
+If the status of the host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.
+//Included the above statement for BURT 1399849 for 4.5
+* If the upgrade fails, you should clean up the failed installation, reinstall the earlier version of SnapCenter, and then restore the NSM database to it's previous state.
+* After upgrading the SnapCenter Server host, you must also upgrade the plug-ins before adding any storage system.

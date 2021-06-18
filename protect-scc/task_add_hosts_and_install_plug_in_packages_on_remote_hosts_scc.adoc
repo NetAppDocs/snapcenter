@@ -11,68 +11,79 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts, and then instal
 [.lead]
 You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
 
+*What you will need*
+
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * You should ensure that the message queueing service is running.
-* For Windows host, if you are using group Managed Service Account (gMSA):
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
++
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_custom_applications.html[Configure group Managed Service Account on Windows Server 2012 or later for custom applications]
+
+*About this task*
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
 If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
-Th _Administration Guide_ contains more information on managing hosts.
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the Hosts page, perform the following actions:
+. On the *Hosts* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 Host Type
 a|
-Select the type of host:
+Select the host type:
 
  ** Windows
  ** Linux
-*Note:* The custom plug-ins can be used in both Windows and Linux environments.
+
+NOTE: The custom plug-ins can be used in both Windows and Linux environments.
 
 a|
 Host name
 a|
-Enter the fully qualified domain name (FQDN) or the IP address of the host.    SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
-+
+Enter the fully qualified domain name (FQDN) or the IP address of the host.
+
+SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
+
 For Windows environments, the IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
-+
+
 You can enter the IP addresses or FQDN of a stand-alone host.
-+
+
 If you are adding a host by using SnapCenter and the host is part of a subdomain, you must provide the FQDN.
 a|
 Credentials
 a|
-Either select the credential name that you created, or create new credentials.     The credentials must have administrative rights on the remote host. For details, see the information about creating credentials.
-+
+Either select the credential name that you created, or create new credentials.
+
+The credentials must have administrative rights on the remote host. For details, see the information about creating credentials.
+
 You can view details about the credentials by positioning your cursor over the credential name that you specified.
-+
+
 NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
-+
 |===
 
-. In the Select Plug-ins to Install section, select the plug-ins to install.
+. In the *Select Plug-ins to Install* section, select the plug-ins to install.
 . (Optional) Click *More Options*.
 +
 |===
 | For this field...| Do this...
+
 a|
 Port
 a|
-Either retain the default port number, or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
-+
+Either retain the default port number, or specify the port number.
+
+The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+
 NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+
 a|
 Installation Path
 a|
@@ -99,7 +110,7 @@ The custom plug-ins that are uploaded to the SnapCenter Server are listed.
 +
 If you want to manage MySQL or DB2 applications, you can use the MySQL and DB2 custom plug-ins that are provided by NetApp. The MySQL and DB2 custom plug-ins are available at the NetApp Tool Chest.
 +
-http://mysupport.netapp.com/tools/info/ECMLP2633631I.html?productID=62127[NetApp Tool Chest]
+https://automationstore.netapp.com/home.shtml[NetApp Automation Store]
 
 a|
 Skip preinstall checks
@@ -108,13 +119,11 @@ Select this check box if you already installed the plug-ins manually and you do 
 a|
 Use group Managed Service Account (gMSA) to run the plug-in services
 a|
-For Windows host, select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.     *Note:*
+For Windows host, select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
-Provide the domain or service account name.
+IMPORTANT: Provide the gMSA name in the following format: domainName\accountName$.
 
-+
+NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 |===
 
 . Click *Submit*.
@@ -123,7 +132,7 @@ If you have not selected the *Skip prechecks* checkbox, the host is validated to
 +
 If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
-NOTE: In an NLB setup, if you are updating web.config file, you must update the file on both nodes.
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . If host type is Linux, verify the fingerprint, and then click *Confirm and Submit*.
 +
@@ -134,5 +143,3 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 . Monitor the installation progress.
 +
 The installation-specific log files are located at /custom_location/snapcenter/logs.
-
-When the host is added, the configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.

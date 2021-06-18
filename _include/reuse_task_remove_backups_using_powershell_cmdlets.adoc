@@ -1,0 +1,24 @@
+You can use the Remove-SmBackup cmdlet to delete backups if you no longer require them for other data protection operations.
+
+You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+
+*Steps*
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
++
+----
+Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+----
+
+. Delete one or more backup using the Remove-SmBackup cmdlet.
++
+This example deletes two backups using their backup IDs:
++
+----
+Remove-SmBackup -BackupIds 3,4
+Remove-SmBackup
+Are you sure want to remove the backup(s).
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
+----

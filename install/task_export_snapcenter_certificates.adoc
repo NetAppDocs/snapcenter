@@ -2,13 +2,16 @@
 permalink: install/task_export_snapcenter_certificates.html
 sidebar: sidebar
 keywords: exporting certificates
-summary: ''
+summary: 'Export SnapCenter certificates.'
 ---
 = Export SnapCenter certificates
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+
+*Steps*
+
 . Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snap-in*.
 . In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
 . In the Certificates snap-in window, select the *My user account* option, and then click *Finish*.
@@ -17,26 +20,30 @@ summary: ''
 . Complete the wizard, as follows:
 +
 |===
-| In this wizard window...| Do the following...
+| In this wizard window... | Do the following...
+
 a|
-*Export Private Key*
+Export Private Key
 a|
 Select the option *Yes, export the private key*, and then click *Next*.
 a|
-*Export File Format*
+Export File Format
 a|
 Make no changes; click *Next*.
 a|
-*Security*
+Security
 a|
 Specify the new password to be used for the exported certificate, and then click *Next*.
 a|
-*File to Export*
+File to Export
 a|
 Specify a file name for the exported certificate (you must use .pfx), and then click *Next*.
 a|
-*Completing the Certificate Export Wizard*
+Completing the Certificate Export Wizard
 a|
 Review the summary, and then click *Finish* to start the export.
 |===
+
+*Results*
+
 Certificates are exported in .pfx format.

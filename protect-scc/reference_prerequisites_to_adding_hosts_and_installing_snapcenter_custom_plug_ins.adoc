@@ -13,8 +13,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 
 * You must have created a custom plug-in. For details, see the developer information.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874315[Developer Guide for Creating Custom Plug-ins]
-
+link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 * If you want to manage MySQL or DB2 applications, you must have downloaded the MySQL and DB2 Custom Plug-ins that are provided by NetApp.
 * You must have installed Java 1.8, 64-bit on your Linux or Windows host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
@@ -47,5 +46,3 @@ Cmnd_Alias SCCMD = /opt/NetApp/snapcenter/scc/bin/scc <non_root_user> ALL=(ALL) 
 ----
 +
 non_root_user is the name of the non-root user that you created.
-
-* You should always have read/write permission for the "`/tmp`" folder on the plug-in host.

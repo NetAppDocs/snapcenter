@@ -11,6 +11,8 @@ summary: 'You can use SnapCenter to restore file system backups. File system res
 [.lead]
 You can use SnapCenter to restore file system backups. File system restoration is a multiphase process that copies all the data from a specified backup to the original location of the file system.
 
+*What you will need*
+
 * You must have backed up the file system.
 * If a scheduled operation, such as a backup operation, is currently in progress for a file system, then that operation must be cancelled before you can start a restore operation.
 * You can only restore a file system backup to the original location, not to an alternate path.
@@ -20,7 +22,7 @@ You cannot restore a single file from a backup because the restored file system 
 * You cannot restore a system or boot volume.
 * SnapCenter can restore file systems in a Windows cluster without taking the cluster group offline.
 
-Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . To filter the list of resources, select the File System and Resource Group options.
@@ -35,6 +37,7 @@ For example, you can run a script to update SNMP traps, automate alerts, send lo
 +
 |===
 | For this field...| Do this...
+
 a|
 Log SnapCenter server events to storage system syslog
 a|
@@ -53,15 +56,3 @@ Select *Always*, *On Failure*, or *On failure or warning* to send email messages
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
 IMPORTANT: If the restored file system contains a database, then you must also restore the database. If you do not restore the database, then your database might be in an invalid state. For information on restoring databases, see the Data Protection Guide for that database.
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-mssql/home.html[Protecting Microsoft SQL Server databases]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-dpg-exchange/home.html[Protecting Microsoft Exchange Server databases]
-
-*Related information*
-
-link:[Monitoring restore operations]
-
-link:[Restoring and recovering resources using PowerShell cmdlets]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]

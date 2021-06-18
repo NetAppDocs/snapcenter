@@ -25,4 +25,6 @@ http://support.microsoft.com/kb/2926557/[Microsoft Support Article 2926557: SQL 
 +
 If you plan to import backup or clone jobs into SnapCenter, do not uninstall SnapManager for Microsoft SQL Server.
 
-* The host must be resolvable to the fully qualified domain name (FQDN) from the server. If the hosts file is modified to make it resolvable and if both the short name and the FQDN are specified in the hosts file, create a entry in the SnapCenter hosts file in the following format: <ip_address> <host_fqdn> <host_name>
+* The host must be resolvable to the fully qualified domain name (FQDN) from the server.
++
+If the hosts file is modified to make it resolvable and if both the short name and the FQDN are specified in the hosts file, create an entry in the SnapCenter hosts file in the following format: <ip_address> <host_fqdn> <host_name>

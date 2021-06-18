@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/reference_prepare_storage_system_for_snapmirror_and_snapvault.html
+sidebar: sidebar
+keywords: requirements
+summary: 'You can use a SnapCenter plug-in with ONTAP SnapMirror technology to create mirror copies of backup sets on another volume, and with ONTAP SnapVault technology to perform disk-to-disk backup replication for standards compliance and other governance-related purposes. Before you perform these tasks, you must configure a data-protection relationship between the source and destination volumes and initialize the relationship.'
+---
+= Prepare storage systems for SnapMirror and SnapVault replication
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication.adoc[]

@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_delete_clone_of_a_pluggable_database.html
 sidebar: sidebar
-keywords: 
+keywords: delete, PDB, clone PDB
 summary: 'You can delete the clone of a pluggable database \(PDB\) if you no longer require.'
 ---
 = Delete clone of a pluggable database
@@ -14,6 +14,8 @@ You can delete the clone of a pluggable database (PDB) if you no longer require.
 If you created a backup of the target CDB where the PDB is cloned, when you delete the PDB clone, the cloned PDB is also removed from the backup of the target CDB.
 
 NOTE: The PDB clones are not displayed in the inventory or resources view.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . Select the source container database (CDB) from the resource or resource group view.

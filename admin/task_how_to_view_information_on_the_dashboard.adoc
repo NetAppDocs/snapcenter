@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_how_to_view_information_on_the_dashboard.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'From the SnapCenter left navigation pane, you can view various Dashboard tiles, or displays, along with associated system details. The number of displays available in the Dashboard is fixed and cannot be changed. The content provided within each display is dependent on role-based access control \(RBAC\).'
 ---
 = How to view information on the dashboard
@@ -11,7 +11,9 @@ summary: 'From the SnapCenter left navigation pane, you can view various Dashboa
 [.lead]
 From the SnapCenter left navigation pane, you can view various Dashboard tiles, or displays, along with associated system details. The number of displays available in the Dashboard is fixed and cannot be changed. The content provided within each display is dependent on role-based access control (RBAC).
 
+*Steps*
+
 . In the left navigation pane, click *Dashboard*.
 . Click the active areas on each display to obtain additional information.
 +
-For example, clicking a donut chart in the Jobs display redirects you to the Monitor page for more information about your selection. Clicking a donut chart in the Protection Summary display redirects you to the Reports page, which can provide more information about your selection.
+For example, clicking a donut chart in *Jobs*, redirects you to the Monitor page for more information about your selection. Clicking a donut chart in *Protection Summary*, redirects you to the Reports page, which can provide more information about your selection.

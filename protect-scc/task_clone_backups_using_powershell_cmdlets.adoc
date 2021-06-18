@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_clone_backups_using_powershell_cmdlets.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
 = Clone backups using PowerShell cmdlets
@@ -11,11 +11,13 @@ summary: 'The clone workflow includes planning, performing the clone operation, 
 [.lead]
 The clone workflow includes planning, performing the clone operation, and monitoring the operation.
 
+*What you will need*
+
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-For information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the cmdlet reference information.
+For information about PowerShell cmdlets, use the SnapCenter cmdlet help or see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+*Steps*
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +

@@ -1,0 +1,19 @@
+You can either use the default Snapshot copy naming convention or use a customized naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.
+
+The Snapshot copy uses the following default naming convention:
+
+`resourcegroupname_hostname_timestamp`
+
+You should name your backup resource groups logically, as in the following example:
+
+----
+dts1_mach1x88_03-12-2015_23.17.26
+----
+
+In this example, the syntax elements have the following meanings:
+
+* _dts1_ is the resource group name.
+* _mach1x88_ is the host name.
+* _03-12-2015_23.17.26_ is the date and timestamp.
+
+Alternatively, you can specify the Snapshot copy name format while protecting resources or resource groups by selecting *Use custom name format for Snapshot copy*. For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, the time stamp suffix is added to the Snapshot copy name.

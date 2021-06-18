@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_features.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The Plug-in for SQL Server integrates with Microsoft SQL Server on the Windows host and with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for SQL Server, you use the SnapCenter interface.'
 ---
 = SnapCenter Plug-in for Microsoft SQL Server features
@@ -23,7 +23,7 @@ You can schedule routine SQL Server backups, configure policy-based backup reten
 
 * *Nondisruptive NetApp Snapshot copy technology*
 +
-The Plug-in for SQL Server uses NetApp Snapshot copy technology with the NetAppSnapCenter Plug-in for Microsoft Windows. This enables you to back up databases in seconds and restore them quickly without taking SQL Server offline. Snapshot copies consume minimal storage space.
+The Plug-in for SQL Server uses NetApp Snapshot copy technology with the NetApp SnapCenter Plug-in for Microsoft Windows. This enables you to back up databases in seconds and restore them quickly without taking SQL Server offline. Snapshot copies consume minimal storage space.
 
 In addition to these major features, the Plug-in for SQL Server offers the following benefits:
 

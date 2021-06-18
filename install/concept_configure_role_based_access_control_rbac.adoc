@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_configure_role_based_access_control_rbac.html
 sidebar: sidebar
-keywords: 
+keywords: RBAC, configure RBAC
 summary: 'After you install SnapCenter Server and log in, you should add users or groups to roles and then assign users access to assets.'
 ---
 = Configure role-based access control (RBAC)

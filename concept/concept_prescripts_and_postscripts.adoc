@@ -1,7 +1,7 @@
 ---
 permalink: concept/concept_prescripts_and_postscripts.html
 sidebar: sidebar
-keywords: 
+keywords: prescript, postscript, script path, script timeout, script types supported
 summary: 'You can use custom prescripts and postscripts as part of your data protection operations. These scripts enable automation either before your data protection job or after. For example, you might include a script that automatically notifies you of data protection job failures or warnings. Before you set up your prescripts and postscripts, you should understand some of the requirements for creating these scripts.'
 ---
 = Prescripts and postscripts
@@ -19,7 +19,7 @@ The following type of scripts are supported:
 * PowerShell scripts
 * Perl scripts
 
-== Script path location
+== Script path
 
 All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host. Therefore, the scripts must be located on the plug-in host or on a SMB share accessible by the plug-in host.
 
@@ -27,7 +27,7 @@ NOTE: The script path is validated at the time the script is executed.
 
 == Where to specify scripts
 
-Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and pstscript arguments.
+Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and postscript arguments.
 
 To specify multiple scripts, press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
 

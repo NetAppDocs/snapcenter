@@ -1,8 +1,8 @@
 ---
 permalink: protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html
 sidebar: sidebar
-keywords: 
-summary: 'You can restore a backed up Exchange Server database from secondary storage \(mirror or vault\).'
+keywords:
+summary: 'You can restore a backed up Exchange Server database from secondary storage (mirror or vault).'
 ---
 = Restore an Exchange Server database from secondary storage
 :icons: font
@@ -12,6 +12,8 @@ summary: 'You can restore a backed up Exchange Server database from secondary st
 You can restore a backed up Exchange Server database from secondary storage (mirror or vault).
 
 You must have replicated the Snapshot copies from primary storage to a secondary storage.
+
+*Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* or *Resource Group* from the *View* drop-down list.

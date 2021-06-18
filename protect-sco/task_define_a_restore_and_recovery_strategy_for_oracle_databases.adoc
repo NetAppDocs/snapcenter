@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html
 sidebar: sidebar
-keywords: 
+keywords: backup types, restore methods, connect-and-copy restore, full restore, partial restore, in-place restore, recovery type, limitations
 summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recover operations successfully.'
 ---
 = Define a restore and recovery strategy for Oracle databases
@@ -11,8 +11,162 @@ summary: 'You must define a strategy before you restore and recover your databas
 [.lead]
 You must define a strategy before you restore and recover your database so that you can perform restore and recover operations successfully.
 
-. Determine the backups that can be used for restore and recovery operations.
-. Know the limitations that are related to the restore and recovery operations.
-. Determine the restore methods that are supported.
-. Decide the type of restore and recovery operations that you want to perform.
-. Determine the source and destination for the restore operation.
+== Types of backups supported for restore and recovery operations
+
+SnapCenter supports restore and recovery of different types of Oracle database backups.
+
+* Online data backup
+* Offline shutdown data backup
+* Offline mount data backup
+* Full backup
+* Offline (mount or shutdown) backups of Data Guard standby databases
+* Data-only online backups of Active Data Guard standby databases
++
+NOTE: You cannot perform recovery of Active Data Guard standby databases.
+
+* Online data backups, online full backups, offline mount backups, and offline shutdown backups in a Real Application Clusters (RAC) configuration
+* Online data backups, online full backups, offline mount backups, and offline shutdown backups in an Automatic Storage Management (ASM) configuration
+
+== Types of restore methods supported for Oracle databases
+
+SnapCenter supports connect-and-copy or in-place restore for Oracle databases. During a restore operation, SnapCenter determines the restore method that is appropriate for the file system to be used for restore without any data loss.
+
+NOTE: SnapCenter does not support volume-based SnapRestore.
+
+=== Connect-and-copy restore
+
+If the database layout differs from the backup or if there are any new files after the backup was created, connect-and-copy restore is performed. In the connect-and-copy restore method, the following tasks are performed:
+
+*Steps*
+
+. The volume is cloned from the Snapshot copy and the file system stack is built on the host using the cloned LUNs or volumes.
+. The files are copied from the cloned file systems to the original file systems.
+. The cloned file systems are then unmounted from the host and the cloned volumes are deleted from ONTAP.
+
+//Included the below info for BURT 1348035 for 4.5
+NOTE: For a Flex ASM setup (where the cardinality is less than the number nodes in the RAC cluster) or ASM RAC databases on VMDK or RDM, only connect-and-copy restore method is supported.
+
+Even if you have forcefully enabled in-place restore, SnapCenter performs connect-and-copy restore in the following scenarios:
+
+* Restore from secondary storage system and if Data ONTAP is earlier than 8.3
+* Restore of ASM disk groups present on nodes of an Oracle RAC setup on which database instance is not configured
+* In Oracle RAC setup, on any of the peer nodes if the ASM instance or the cluster instance is not running or if the peer node is down
+* Restore of control files only
+* Restore a subset of tablespaces residing on a ASM disk group
+* Disk group is shared between data files, sp file, and password file
+* SnapCenter Plug-in Loader (SPL) service is not installed or not running on the remote node in a RAC environment
+* New nodes are added to the Oracle RAC and the SnapCenter Server is not aware of the newly added nodes
+
+=== In-place restore
+
+If the database layout is similar to the backup and has not undergone any configuration change on the storage and database stack, in-place restore is performed, wherein the restore of file or LUN is performed on ONTAP. SnapCenter supports only Single File SnapRestore (SFSR) as part of the in-place restore method.
+
+NOTE: Data ONTAP 8.3 or later supports in-place restore from secondary location.
+
+If you want to perform in-place restore on the database, ensure that you have only datafiles on the ASM disk group. You must create a backup after any changes are made to the ASM disk group or in the physical structure of the database. After performing in-place restore, the disk group will contain the same number datafiles as at the time of backup.
+
+The in-place restore will be applied automatically when disk group or mount point matches the following criteria:
+
+* No new datafiles are added after backup (foreign file check)
+* No addition, deletion, or recreation of ASM disk or LUN after backup (ASM disk group structural change check)
+* No addition, deletion, or recreation of LUNs to LVM disk group (LVM disk group structural change check)
+
+NOTE: You can also forcefully enable in-place restore either using GUI, SnapCenter CLI, or PowerShell cmdlet to override the foreign file check and LVM disk group structural change check.
+
+==== Performing In-place restore on ASM RAC
+
+In SnapCenter, the node on which you perform restore is termed as primary node and all other nodes of the RAC on which ASM disk group resides are called peer nodes. SnapCenter changes the state of ASM disk group to dismount on all the nodes where the ASM disk group is in mount state before performing the storage restore operation. After the storage restore is complete, SnapCenter changes the state of ASM disk group as it was before the restore operation.
+
+In SAN environments, SnapCenter removes devices from all the peer nodes and performs LUN unmap operation before storage restore operation. After storage restore operation, SnapCenter performs LUN map operation and constructs devices on all the peer nodes. In a SAN environment if the Oracle RAC ASM layout is residing on LUNs, then while restoring SnapCenter performs LUN unmap, LUN restore, and LUN map operations on all the nodes of the RAC cluster where the ASM disk group resides. Before restoring even if all the initiators of the RAC nodes were not used for the LUNs, after restoring SnapCenter creates a new iGroup with all the initiators of all the RAC nodes.
+
+* If there is any failure during prerestore activity on peer nodes, SnapCenter automatically rolls back the ASM disk group state as it was before performing restore on peer nodes on which prerestore operation was successful. Rollback is not supported for the primary and the peer node on which the operation failed. Before attempting another restore you must manually fix the issue on the peer node and bring the ASM disk group on the primary node back to mount state.
+* If there is any failure during restore activity, then the restore operation fails and no roll back is performed. Before attempting another restore, you must manually fix the storage restore issue and bring the ASM disk group on the primary node back to mount state.
+* If there is any failure during postrestore activity on any of the peer nodes, SnapCenter continues with the restore operation on the other peer nodes. You must manually fix the post restore issue on the peer node.
+
+== Types of restore operations supported for Oracle databases
+
+SnapCenter enables you to perform different types of restore operations for Oracle databases.
+
+Before restoring the database, backups are validated to identify whether any files are missing when compared to the actual database files.
+
+=== Full restore
+
+* Restores only the datafiles
+* Restores only the control files
+* Restores the datafiles and control files
+* Restores datafiles, control files, and redo log files in Data Guard standby and Active Data Guard standby databases
+
+=== Partial restore
+
+* Restores only the selected tablespaces
+* Restores only the selected pluggable databases (PDBs)
+* Restores only the selected tablespaces of a PDB
+
+== Types of recovery operations supported for Oracle databases
+
+SnapCenter enables you to perform different types of recovery operations for Oracle databases.
+
+* The database up to the last transaction (all logs)
+* The database up to a specific system change number (SCN)
+* The database up to a specific date and time
++
+You must specify the date and time for recovery based on the database host's time zone.
++
+SnapCenter also provides the No recovery option for Oracle databases.
+
+NOTE: The plug-in for Oracle database does not support recovery if you have restored using a backup that was created with the database role as standby. You must always perform manual recovery for physical standby databases.
+
+== Limitations related to restore and recovery of Oracle databases
+
+Before you perform restore and recovery operations, you must be aware of the limitations.
+
+If you are using any version of Oracle from 11.2.0.4 to 12.1.0.1, the restore operation will be in hung state when you run the _renamedg_ command. You can apply the Oracle patch 19544733 to fix this issue.
+
+The following restore and recovery operations are not supported:
+
+* Restore and recovery of tablespaces of the root container database (CDB)
+* Restore of temporary tablespaces and temporary tablespaces associated with PDBs
+* Restore and recovery of tablespaces from multiple PDBs simultaneously
+* Restore of log backups
+* Restore of backups to a different location
+* Restore of redo log files in any configuration other than Data Guard standby or Active Data Guard standby databases
+* Restore of SPFILE and Password file
+* When you perform a restore operation on a database that was re-created using the preexisting database name on the same host, was managed by SnapCenter, and had valid backups, the restore operation overwrites the newly created database files even though the DBIDs are different.
++
+This can be avoided by performing either of following actions:
+
+ ** Discover the SnapCenter resources after the database is re-created
+ ** Create a backup of the re-created database
+
+== Limitations related to point-in-time recovery of tablespaces
+
+* Point-in-time recovery (PITR) of SYSTEM, SYSAUX, and UNDO tablespaces is not supported
+* PITR of tablespaces cannot be performed along with other types of restore
+* If a tablespace is renamed and you want to recover it to a point before it was renamed, you should specify the earlier name of the tablespace
+* If constraints for the tables in one tablespace are contained in another tablespace, you should recover both the tablespaces
+* If a table and its indexes are stored in different tablespaces, then the indexes should be dropped before performing PITR
+* PITR cannot be used to recover the current default tablespace
+* PITR cannot be used to recover tablespaces containing any of the following objects:
+ ** Objects with underlying objects (such as materialized views) or contained objects (such as partitioned tables) unless all the underlying or contained objects are in the recovery set
++
+Additionally, if the partitions of a partitioned table are stored in different tablespaces, then you should either drop the table before performing PITR or move all the partitions to the same tablespace before performing PITR.
+
+ ** Undo or rollback segments
+ ** Oracle 8 compatible advanced queues with multiple recipients
+ ** Objects owned by the SYS user
++
+Examples of these types of objects are PL/SQL, Java classes, call out programs, views, synonyms, users, privileges, dimensions, directories, and sequences.
+
+== Sources and destinations for restoring Oracle databases
+
+You can restore an Oracle database from a backup copy on either primary storage or secondary storage. You can only restore databases to the same location on the same database instance. However, in Real Application Cluster (RAC) setup, you can restore databases to other nodes.
+
+=== Sources for restore operations
+
+You can restore databases from a backup on primary storage or secondary storage. If you want to restore from a backup on the secondary storage in a multiple mirror configuration, you can select the secondary storage mirror as the source.
+
+=== Destinations for restore operations
+
+You can only restore databases to the same location on the same database instance.
+
+In a RAC setup, you can restore RAC databases from any nodes in the cluster.

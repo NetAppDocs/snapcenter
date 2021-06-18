@@ -11,13 +11,20 @@ summary: 'You can use SnapCenter to restore and recover data from one or more ba
 [.lead]
 You can use SnapCenter to restore and recover data from one or more backups.
 
+*What you will need*
+
 * You must have backed up the resource or resource groups.
 * You must have canceled any backup operation that is currently in progress for the resource or resource group that you want to restore.
+
+*About this task*
+
 * File-based backup copies cannot be restored from SnapCenter.
 * After upgrading to SnapCenter 4.3, the backups taken in SnapCenter 4.2 can be restored but cannot be recovered. You must use HANA studio or HANA recovery scripts external to SnapCenter to recover the backups taken in SnapCenter 4.2.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the Resources page, filter resources from the *View* drop-down list based on resource type.
+. On the *Resources* page, filter resources from the *View* drop-down list based on resource type.
 +
 The resources are displayed along with type, host, associated resource groups and policies, and status.
 +
@@ -34,7 +41,7 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the Restore Scope page, select either *Complete Resource* or *File Level*.
+. In the *Restore Scope* page, select either *Complete Resource* or *File Level*.
  .. If you select *Complete Resource*, all of the configured data volumes of the SAP HANA database are restored.
 +
 If the resource contains volumes or qtrees, the Snapshot copies taken after the Snapshot copy selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
@@ -47,21 +54,17 @@ You can select multiple LUNs.
 
 +
 NOTE: If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
-. On the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
+. On the *Pre ops* page, enter pre restore and unmount commands to run before performing a restore job.
 +
 Unmount commands are not available for auto discovered resources.
 
-. On the Post ops page, enter mount and post restore commands to run after performing a restore job.
+. On the *Post ops* page, enter mount and post restore commands to run after performing a restore job.
 +
 Mount commands are not available for auto discovered resources.
 
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses and the subject of the email. SMTP must also be configured on the *Settings* > *Global Settings* page.
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
-
-*Related information*
-
-xref:task_restore_sap_hana_database_using_powershell_cmdlets.adoc[Restore SAP HANA database using PowerShell cmdlets]

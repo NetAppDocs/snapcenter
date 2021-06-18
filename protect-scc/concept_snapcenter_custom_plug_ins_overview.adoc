@@ -2,33 +2,21 @@
 permalink: protect-scc/concept_snapcenter_custom_plug_ins_overview.html
 sidebar: sidebar
 keywords: SnapCenter Custom Plug-ins
-summary: 'You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Like other SnapCenter plug-ins, your custom plug-ins act as host-side components of the NetAppSnapCenter Software, enabling application-aware data protection and management of resources.'
+summary: 'You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Like other SnapCenter plug-ins, your custom plug-ins act as host-side components of the NetAppSnap Center Software, enabling application-aware data protection and management of resources.'
 ---
 = SnapCenter Custom Plug-ins overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Like other SnapCenter plug-ins, your custom plug-ins act as host-side components of the NetAppSnapCenter Software, enabling application-aware data protection and management of resources.
+You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Like other SnapCenter plug-ins, your custom plug-ins act as host-side components of the NetApp SnapCenter Software, enabling application-aware data protection and management of resources.
 
 When Custom Plug-ins are installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume and use NetApp SnapVault technology to perform disk-to-disk backup replication. The Custom Plug-ins can be used in both Windows and Linux environments.
 
 NOTE: SnapCenterCLI does not support SnapCenter Custom Plug-ins commands.
 
-NetApp provides MySQL and DB2 custom plug-ins with SnapCenter Software 2.0 and later and MongoDB custom plug-in from 3.0 and later. These plug-ins can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store].
+NetApp provides MySQL and DB2 custom plug-ins with SnapCenter Software 2.0 and later and MongoDB custom plug-in from 3.0 and later. These plug-ins can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
 
 NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
 
-You can create your own custom plug-ins by referring to the Developer's Guide for Creating Custom Plug-ins.
-
-The Data Protection Guide for your plug-in has information about data protection operations.
-
-The SnapCenter concepts documentation has information about the SnapCenter architecture, features, and benefits.
-
-*Target*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-isg/home.html[Installing and setting up SnapCenter]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874315[SnapCenter Software 4.4 Developer's Guide for Creating Custom Plug-ins]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
+You can create your own custom plug-ins by referring to link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^].

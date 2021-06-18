@@ -1,8 +1,8 @@
 ---
 permalink: install/concept_create_and_manage_smb_shares.html
 sidebar: sidebar
-keywords: 
-summary: 'To configure an SMB3 share on a storage virtual machine \(SVM\), you can use either the SnapCenter user interface or PowerShell cmdlets.'
+keywords: SMB shares
+summary: 'To configure an SMB3 share on a storage virtual machine (SVM), you can use either the SnapCenter user interface or PowerShell cmdlets.'
 ---
 = Create and manage SMB shares
 :icons: font
@@ -12,10 +12,68 @@ summary: 'To configure an SMB3 share on a storage virtual machine \(SVM\), you c
 To configure an SMB3 share on a storage virtual machine (SVM), you can use either the SnapCenter user interface or PowerShell cmdlets.
 
 |===
-a|
 *Best Practice:* Using the cmdlets is recommended because it enables you to take advantage of templates provided with SnapCenter to automate share configuration.
-
 |===
 The templates encapsulate best practices for volume and share configuration. You can find the templates in the Templates folder in the installation folder for the SnapCenter Plug-ins Package for Windows.
 
 TIP: If you feel comfortable doing so, you can create your own templates following the models provided. You should review the parameters in the cmdlet documentation before creating a custom template.
+
+== Create an SMB share
+
+You can use the SnapCenter Shares page to create an SMB3 share on a storage virtual machine (SVM).
+
+You cannot use SnapCenter to back up databases on SMB shares. SMB support is limited to provisioning only.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Shares*.
+. Select the SVM from the *Storage Virtual Machine* drop-down list.
+. Click *New*.
++
+The New Share dialog opens.
+
+. In the New Share dialog, define the share:
++
+|===
+| In this field...| Do this...
+
+a|
+Description
+a|
+Enter descriptive text for the share.
+a|
+Share name
+a|
+Enter the share name, for example, test_share.
+
+The name you enter for the share will also be used as the volume name.
+
+The share name:
+
+** Must be a UTF-8 string.
+** Must not include the following characters: control characters from 0x00 to 0x1F (both inclusive), 0x22 (double quotes), and the special characters `\ / [ ] : (vertical bar) < > + = ; , ?`
+a|
+Share path
+a|
+ * Click in the field to enter a new file system path, for example, /.
+ * Double-click in the field to select from a list of existing file system paths.
+|===
+
+. When you are satisfied with your entries, click *OK*.
++
+SnapCenter creates the SMB share on the SVM.
+
+== Delete an SMB share
+
+You can delete an SMB share when you no longer need it.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. In the Hosts page, click *Shares*.
+. In the Shares page, click in the *Storage Virtual Machine* field to display a drop-down with a list of available storage virtual machines (SVMs), then select the SVM for the share you want to delete.
+. From the list of shares on the SVM, select the share you want to delete and click *Delete*.
+. In the Delete Share dialog box, click *OK*.
++
+SnapCenter deletes the SMB share from the SVM.

@@ -1,0 +1,12 @@
+---
+permalink: protect-sco/task_cancel_oracle_database_restore_operations.html
+sidebar: sidebar
+keywords: cancel, restore
+summary: 'You can cancel restore jobs that are queued.'
+---
+= Cancel Oracle database restore operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_cancel_restore_operations.adoc[]

@@ -1,15 +1,15 @@
 ---
 permalink: concept/reference_role_based_access_control_permissions_and_roles.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapCenter role-based access control \(RBAC\) enables you to create roles and add permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.'
+keywords: RBAC, roles, permissions
+summary: 'SnapCenter role-based access control (RBAC) enables you to create roles and add permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.'
 ---
-= Role-based access control permissions and roles
+= RBAC permissions and roles
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter role-based access control (RBAC) enables you to create roles and add permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.
+SnapCenter role-based access control (RBAC) enables you to create roles and assign permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.
 
 == SnapCenter roles
 
@@ -32,14 +32,10 @@ For managing VM-consistent data protection of VMs, VMDKs, and datastores, the fo
 * SCV Restore
 * SCV Guest File Restore
 
-The SnapCenter Plug-in for VMware vSphere documentation has more information.
-
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html[SnapCenter Plug-in for VMware vSphere Data Protection Guide]
+For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html[Types of RBAC for SnapCenter Plug-in for VMware vSphere users^]
 
 |===
-a|
 *Best Practice:* NetApp recommends that you create one ONTAP role for SnapCenter Plug-in for VMware vSphere operations and assign it all the required privileges.
-
 |===
 
 == SnapCenter permissions
@@ -61,7 +57,7 @@ SnapCenter provides the following permissions:
 +
 Plug-in privileges are required from the administrator for non-administrators to perform resource discovery operation.
 
-* Plug-in Install\Uninstall
+* Plug-in Install or Uninstall
 +
 NOTE: When you enable Plug-in Installation permissions, you must also modify the Host permission to enable reads and updates.
 

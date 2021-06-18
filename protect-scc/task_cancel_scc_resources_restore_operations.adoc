@@ -1,0 +1,11 @@
+---
+permalink: protect-scc/task_cancel_scc_resources_restore_operations.html
+sidebar: sidebar
+keywords:
+summary: 'You can cancel restore jobs that are queued.'
+---
+= Cancel custom plug-in resources restore operations
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_cancel_restore_operations.adoc[]

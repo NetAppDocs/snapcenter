@@ -1,5 +1,5 @@
 ---
-permalink: protect-scsql/task_back_up_resources_using_powershell_cmdlets.html
+permalink: protect-scsql/task_back_up_resources_using_powershell_cmdlets_for_sql.html
 sidebar: sidebar
 keywords: backup
 summary: 'You can use the PowerShell cmdlets to backup SQL Server databases or Windows file systems. This would include backing up a SQL Server database or Windows file system includes establishing a connection with the SnapCenter Server, discovering the SQL Server database instances or Windows file systems, adding a policy, creating a backup resource group, backing up, and verifying the backup.'
@@ -8,89 +8,4 @@ summary: 'You can use the PowerShell cmdlets to backup SQL Server databases or W
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
-You can use the PowerShell cmdlets to backup SQL Server databases or Windows file systems. This would include backing up a SQL Server database or Windows file system includes establishing a connection with the SnapCenter Server, discovering the SQL Server database instances or Windows file systems, adding a policy, creating a backup resource group, backing up, and verifying the backup.
-
-* You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
-* You must have added the storage system connection and created a credential.
-* You must have added hosts and discovered resources.
-
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
-
-. Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
-+
-----
-Open-smconnection  -SMSbaseurl  https://snapctr.demo.netapp.com:8146
-----
-+
-The username and password prompt is displayed.
-
-. Create a backup policy by using the Add-SmPolicy cmdlet.
-+
-This example creates a new backup policy with a SQL backup type of FullBackup:
-+
-----
-PS C:\> Add-SmPolicy -PolicyName TESTPolicy
--PluginPolicyType SCSQL -PolicyType Backup
--SqlBackupType FullBackup -Verbose
-----
-+
-This example creates a new backup policy with a Windows file system backup type of CrashConsistent:
-+
-----
-PS C:\> Add-SmPolicy -PolicyName FileSystemBackupPolicy
--PluginPolicyType SCW -PolicyType Backup
--ScwBackupType CrashConsistent -Verbose
-----
-
-. Discover host resources by using the Get-SmResources cmdlet.
-+
-This example discovers the resources for the Microsoft SQL plug-in on the specified host:
-+
-----
-C:\PS>PS C:\> Get-SmResources -HostName vise-f6.sddev.mycompany.com
--PluginCode SCSQL
-----
-+
-This example discovers the resources for Windows file systems on the specified host:
-+
-----
-C:\PS>PS C:\> Get-SmResources -HostName vise2-f6.sddev.mycompany.com
--PluginCode SCW
-----
-
-. Add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
-+
-This example creates a new SQL database backup resource group with the specified policy and resources:
-+
-----
-PS C:\> Add-SmResourceGroup -ResourceGroupName AccountingResource
--Resources @{"Host"="visef6.org.com";
-"Type"="SQL Database";"Names"="vise-f6\PayrollDatabase"}
--Policies "BackupPolicy"
-----
-+
-This example creates a new Windows file system backup resource group with the specified policy and resources:
-+
-----
-PS C:\> Add-SmResourceGroup -ResourceGroupName EngineeringResource
--PluginCode SCW -Resources @{"Host"="WIN-VOK20IKID5I";
-"Type"="Windows Filesystem";"Names"="E:\"}
--Policies "EngineeringBackupPolicy"
-----
-
-. Initiate a new Snapshot copy job by using the New-SmBackup cmdlet.
-+
-----
-PS C:> New-SmBackup -ResourceGroupName PayrollDataset -Policy FinancePolicy
-----
-
-. View the status of the backup job by using the Get-SmBackupReport cmdlet.
-+
-This example displays a job summary report of all jobs that were run on the specified date:
-+
-----
-PS C:\> Get-SmJobSummaryReport -Date ?1/27/2016?
-----
+include::../_include/reuse_task_back_up_resources_using_powershell_cmdlets.adoc[]

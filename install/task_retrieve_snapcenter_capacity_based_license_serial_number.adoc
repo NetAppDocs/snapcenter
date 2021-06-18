@@ -1,10 +1,10 @@
 ---
 permalink: install/task_retrieve_snapcenter_capacity_based_license_serial_number.html
 sidebar: sidebar
-keywords: 
+keywords: capacity-based license, serial number
 summary: 'Your SnapCenter capacity-based license serial number is available in your order confirmation or in your documentation package; however, if you do not have this serial number, you can retrieve it from the NetApp Support Site.'
 ---
-= RetrieveSnapCenter capacity-based license serial number
+= Retrieve SnapCenter capacity-based license serial number
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,9 @@ Your SnapCenter capacity-based license serial number is available in your order 
 
 You must have valid NetApp Support Site login credentials. If you do not enter valid credentials, no information is returned for your search.
 
-. Log in to the the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com].
+*Steps*
+
+. Log in to the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
 . Navigate to *Systems* > *Software Licenses*.
 . In the Selection Criteria area, choose *SC_STANDARD* from the Show Me All: Serial Numbers and Licenses drop-down menu.
 +

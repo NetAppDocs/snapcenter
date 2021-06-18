@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/reference_storage_types_supported_by_snapcenter_custom_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing SnapCenter Custom Plug-ins.'
 ---
 = Storage types supported by SnapCenter Custom Plug-ins
@@ -15,9 +15,9 @@ Provisioning using SnapCenter is supported on Windows using SnapCenter Plug-in f
 
 |===
 | Machine| Storage type
+
 a|
 Physical and virtual servers(VMDKs and RDM LUNs are not supported.)
-
 a|
 FC-connected LUNs
 a|

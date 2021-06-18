@@ -1,8 +1,8 @@
 ---
 permalink: protect-sce/task_define_a_backup_strategy_for_exchange_server_resources.html
 sidebar: sidebar
-keywords: 
-summary: 'Defining a backup strategy before you create your backup jobs helps ensure that you have the backups that you require to successfully restore your databases. Your Service Level Agreement \(SLA\), Recovery Time Objective \(RTO\), and Recovery Point Objective \(RPO\) largely determine your backup strategy.'
+keywords:
+summary: 'Defining a backup strategy before you create your backup jobs helps ensure that you have the backups that you require to successfully restore your databases. Your Service Level Agreement (SLA), Recovery Time Objective (RTO), and Recovery Point Objective \(RPO\) largely determine your backup strategy.'
 ---
 = Define a backup strategy for Exchange Server resources
 :icons: font
@@ -13,12 +13,58 @@ Defining a backup strategy before you create your backup jobs helps ensure that 
 
 An SLA defines the level of service expected and addresses many service-related issues, including the availability and performance of service. The RTO is the time by when a business process must be restored after a disruption in service. An RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. The SLA, RTO, and RPO contribute to the backup strategy.
 
-Perform the following steps for each of your databases.
+== Types of backups supported for Exchange database
 
-. Decide the type of backup you require.
-. Determine when you should back up your databases.
-. Decide how many backup jobs you require.
-. Decide how to name your backups.
-. Determine how long you want to retain backup copies on the source storage system.
-. Determine how long you want to retain transaction log backups on the source storage system.
-. Decide whether you want to use SnapMirror disaster recovery or SnapVault archiving technology in conjunction with the SnapCenter Plug-in for Microsoft Exchange Server.
+Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups (DAG). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
+
+|===
+| Backup type| Description
+
+a|
+Full and log backup
+a|
+Backs up the databases and all transaction logs, including the truncated logs.
+
+After a full backup is complete, the Exchange Server truncates the transaction logs that are already committed to the database.
+
+Typically, you should choose this option. However, if your backup time is short, you can choose not to run a transaction log backup with full backup.
+
+a|
+Full backup
+a|
+Backs up databases and transaction logs.
+
+The truncated transaction logs are not backed up.
+
+a|
+Log backup
+a|
+Backs up all the transaction logs.
+
+The truncated logs that are already committed to the database are not backed up. If you schedule frequent transaction log backups between full database backups, you can choose granular recovery points.
+
+|===
+
+== Backup schedules for database plug-ins
+
+include::../_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]
+
+== Number of backup jobs needed for databases
+
+Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement (SLA).
+
+== Backup naming conventions
+
+include::../_include/reuse_concept_backup_naming_conventions.adoc[]
+
+== Backup retention options
+
+include::../_include/reuse_concept_backup_retention_options.adoc[]
+
+== How long to retain transaction log backups on the source storage volume for Exchange Server
+
+SnapCenter Plug-in for Microsoft Exchange Server needs transaction log backups to perform up-to-the-minute restore operations, which restore your database to a time between two full backups.
+
+For example, if Plug-in for Exchange took a full plus transaction log backup at 8:00 a.m. and another full plus transaction log backup at 5:00 p.m., it could use the latest transaction log backup to restore the database to any time between 8:00 a.m. and 5:00 p.m. If transaction logs are not available, Plug-in for Exchange can perform point-in-time restore operations only, which restore a database to the time that Plug-in for Exchange completed a full backup.
+
+Typically, you require up-to-the-minute restore operations for only a day or two. By default, SnapCenter retains a minimum of two days.

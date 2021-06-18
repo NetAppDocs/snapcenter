@@ -19,16 +19,4 @@ You might clone databases for the following reasons:
 
 The following workflow shows the sequence in which you must perform the clone operation:
 
-image::../media/sco_scc_wfs_clone_workflow.gif[clone workflow]
-
-You can also use commands to perform clone operation. For detailed information about the commands, use the SnapCenter command help or see the command reference information.
-
-*Related information*
-
-xref:task_clone_oracle_database_backups_using_unix_commands.adoc[Clone Oracle database backups using UNIX commands]
-
-xref:task_refresh_a_clone.adoc[Refresh a clone]
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-con/home.html[Concepts]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874313[SnapCenter Software 4.4 Command Reference Guide]
+image::../media/sco_scc_wfs_clone_workflow.png[clone workflow]

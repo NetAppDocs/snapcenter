@@ -1,0 +1,11 @@
+---
+permalink: protect-sce/task_monitor_snapcenter_plug_in_package_installation_status.html
+sidebar: sidebar
+keywords: resource group
+summary: 'You can monitor the progress of SnapCenter plug-in package installation by using the Jobs page. You might want to check the progress of installation to determine when it is complete or if there is an issue.'
+---
+= Monitor SnapCenter plug-in package installation status
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_monitor_snapcenter_plug_in_package_installation_status.adoc[]

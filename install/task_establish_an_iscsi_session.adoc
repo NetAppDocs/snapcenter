@@ -1,7 +1,7 @@
 ---
 permalink: install/task_establish_an_iscsi_session.html
 sidebar: sidebar
-keywords: 
+keywords: iSCSI session
 summary: 'If you are using iSCSI to connect to a LUN, you must establish an iSCSI session before you create the LUN to enable communication.'
 ---
 = Establish an iSCSI session
@@ -11,18 +11,22 @@ summary: 'If you are using iSCSI to connect to a LUN, you must establish an iSCS
 [.lead]
 If you are using iSCSI to connect to a LUN, you must establish an iSCSI session before you create the LUN to enable communication.
 
-* You must have defined the storage system node as an iSCSI target.
-* You must have started the iSCSI service on the storage system.
-+
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide]
+*Before you begin*
 
-You can establish an iSCSI session only between the same IP versions: either from IPv6 to IPv6, or from IPv4 to IPv4.
+* You must have defined the storage system node as an iSCSI target.
+* You must have started the iSCSI service on the storage system. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[Learn more^]
+
+*About this task*
+
+You can establish an iSCSI session only between the same IP versions, either from IPv6 to IPv6, or from IPv4 to IPv4.
 
 You can use a link-local IPv6 address for iSCSI session management and for communication between a host and a target only when both are in the same subnet.
 
 If you change the name of an iSCSI initiator, access to iSCSI targets is affected. After changing the name, you might require to reconfigure the targets accessed by the initiator so that they can recognize the new name. You must ensure to restart the host after changing the name of an iSCSI initiator.
 
 If your host has more than one iSCSI interface, once you have established an iSCSI session to SnapCenter using an IP address on the first interface, you cannot establish an iSCSI session from another interface with a different IP address.
+
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . In the Hosts page, click *iSCSI Session*.
@@ -35,11 +39,14 @@ The Establish Session wizard is displayed.
 . In the Establish Session wizard, identify the target:
 +
 |===
-| In this field...| Enter...
+| In this field... | Enter...
+
 a|
 Target node name
 a|
-The node name of the iSCSI target    If there is an existing target node name, the name is displayed in read-only format.
+The node name of the iSCSI target
+
+If there is an existing target node name, the name is displayed in read-only format.
 a|
 Target portal address
 a|

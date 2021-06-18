@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.'
 ---
 = Add hosts and install Plug-in for Exchange
@@ -11,12 +11,15 @@ summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug
 [.lead]
 You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
 
+*What you will need*
+
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The message queueing service must be running.
-* If you are using group Managed Service Account (gMSA):
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
+* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges. For information, see
+link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.html[Configure group Managed Service Account on Windows Server 2012 or later^].
+
+*About this task*
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
@@ -26,47 +29,51 @@ Plug-in for Exchange depends on SnapCenter Plug-ins Package for Windows, and the
 
 If SnapManager for Microsoft Exchange Server and SnapDrive for Windows are already installed, and you want to install Plug-in for Exchange on the same Exchange Server, you must unregister the VSS Hardware Provider used by SnapDrive for Windows because it is incompatible with the VSS Hardware Provider installed with Plug-in for Exchange and SnapCenter Plug-ins Package for Windows.
 
-The administration documentation contains information about managing hosts.
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]
+*Steps*
 
 . In the left navigation pane, click *Hosts*.
 . Verify that *Managed Hosts* is selected at the top.
 . Click *Add*.
-. On the Hosts page, do the following:
+. On the *Hosts* page, do the following:
 +
 |===
 | For this field...| Do this...
+
 a|
 Host Type
 a|
-Select *Windows* as the host type.    SnapCenter Server adds the host and then installs on the host the Plug-in for Windows and the Plug-in for Exchange if they are not already installed.
-+
+Select *Windows* as the host type.
+
+SnapCenter Server adds the host and then installs on the host the Plug-in for Windows and the Plug-in for Exchange if they are not already installed.
+
 Plug-in for Windows and Plug-in for Exchange must be the same version. If a different version of Plug-in for Windows was previously installed, SnapCenter updates the version as part of the installation.
 a|
 Host name
 a|
-Enter the fully qualified domain name (FQDN) or the IP address of the host.    SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
-+
+Enter the fully qualified domain name (FQDN) or the IP address of the host.
+
+SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the fully qualified domain name (FQDN).
+
 An IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
-+
+
 You can enter IP addresses or the FQDN of one of the following:
 
  ** Stand-alone host
  ** Exchange DAG
+
 If you are adding a host using SnapCenter and it is part of a subdomain, you must provide the FQDN.
 
-+
 You can also add the IP less DAG cluster by providing the IP address or the FQDN of one of the DAG cluster nodes.
 a|
 Credentials
 a|
-Select the credential name that you created, or create the new credentials.     The credential must have administrative rights on the remote host. For details, see information about creating a credential.
-+
+Select the credential name that you created, or create the new credentials.
+
+The credential must have administrative rights on the remote host. For details, see information about creating a credential.
+
 You can view details about the credentials by positioning your cursor over the credential name that you specified.
-+
+
 NOTE: Credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
-+
 |===
 
 . In the Select Plug-ins to Install section, select the plug-ins to install.
@@ -77,20 +84,26 @@ When you select Plug-in for Exchange, SnapCenter Plug-in for Microsoft SQL Serve
 +
 |===
 | For this field...| Do this...
+
 a|
 Port
 a|
-Either retain the default port number or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
-+
+Either retain the default port number or specify the port number.
+
+The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+
 NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+
 a|
 Installation Path
 a|
-The default path is C:\Program Files\NetApp\SnapCenter. You can optionally customize the path.
+The default path is `C:\Program Files\NetApp\SnapCenter`.
+
+You can optionally customize the path.
 a|
 Add all hosts in the DAG
 a|
-Select this check box when you add a DAG..
+Select this check box when you add a DAG.
 a|
 Skip preinstall checks
 a|
@@ -98,23 +111,19 @@ Select this check box if you already installed the plug-ins manually and you do 
 a|
 Use group Managed Service Account (gMSA) to run the plug-in services
 a|
-Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.     *Note:*
+Select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
 
- ** The domain controller should be Windows Server 2012 or later.
- ** The domain user should be a Windows Server 2012 or later domain member with permissions to set up and administer the gMSA.
-Provide the domain or service account name.
+Provide the gMSA name in the following format: _domainName\accountName$_.
 
-+
+NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 |===
 
 . Click *Submit*.
 +
 If you have not selected the Skip prechecks check box, the host is validated to determine whether it meets the requirements to install the plug-in. If the minimum requirements are not met, the appropriate error or warning messages are displayed.
 +
-If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
+If the error is related to disk space or RAM, you can update the web.config file located at `C:\Program Files\NetApp\SnapCenter` WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
-NOTE: In an NLB setup, if you are updating web.config file, you must update the file on both nodes.
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . Monitor the installation progress.
-
-The configuration checker operation is triggered automatically and provides alerts for recommendations, corrective actions, and notifications to resolve the issues.

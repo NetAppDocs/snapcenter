@@ -11,6 +11,8 @@ summary: 'A resource group is the container to which you can add multiple file s
 [.lead]
 A resource group is the container to which you can add multiple file systems that you want to protect. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform, and then specify the backup schedule.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *File Systems* from the list.
 +
@@ -21,14 +23,20 @@ NOTE: If you have recently added a file system to SnapCenter, click *Refresh Res
 +
 |===
 | For this field...| Do this...
+
 a|
 Name
 a|
-Enter the resource group name.    *Note:* The resource group name should not exceed 250 characters.
+Enter the resource group name.
+
+NOTE: The resource group name should not exceed 250 characters.
+
 a|
 Use custom name format for Snapshot copy
 a|
-Optional: Enter a custom Snapshot copy name and format.     For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
+Optional: Enter a custom Snapshot copy name and format.
+
+For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
 a|
 Tag
 a|
@@ -56,7 +64,7 @@ The selected policies are listed in the Policy column in the Configure schedules
 
  .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
  .. If the policy is associated with multiple schedule types (frequencies), select the frequency that you want to configure.
- .. In the Add schedules for policypolicyname dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
 +
 The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
 
@@ -66,6 +74,7 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 +
 |===
 | For this field...| Do this...
+
 a|
 Email preference
 a|
@@ -87,7 +96,3 @@ Default email subject line
 . Review the summary, and then click *Finish*.
 +
 You can perform a backup on demand or wait for the scheduled backup to occur.
-
-*Related information*
-
-http://docs.netapp.com/ocsc-44/topic/com.netapp.doc.ocsc-ag/home.html[Performing administrative tasks]

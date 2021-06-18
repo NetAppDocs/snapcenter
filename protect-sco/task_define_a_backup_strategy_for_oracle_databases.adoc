@@ -1,8 +1,8 @@
 ---
 permalink: protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
 sidebar: sidebar
-keywords: 
-summary: 'Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your databases. Your service-level agreement \(SLA\), recovery time objective \(RTO\), and recovery point objective \(RPO\) largely determine your backup strategy.'
+keywords: backup type, preferred nodes, catalog backups, schedules, backup name format, retention, verification
+summary: 'Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your databases. Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.'
 ---
 = Define a backup strategy for Oracle databases
 :icons: font
@@ -13,18 +13,193 @@ Defining a backup strategy before you create your backup jobs ensures that you h
 
 An SLA defines the level of service that is expected and addresses many service-related issues, including the availability and performance of the service. RTO is the time by which a business process must be restored after a disruption in service. RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. SLA, RTO, and RPO contribute to the data protection strategy.
 
-Perform the following steps for each of your databases.
+== Supported Oracle database configurations for backups
 
-. Determine the supported database configurations.
-. Decide the type of backup that you require.
-. Decide on which node in a RAC environment you want to create your backup.
-. Determine when you should back up your databases.
-. Decide how to name your backups.
-. Decide if you want to catalog or uncatalog your backups.
-. Determine the retention period for the Snapshot copies on the source storage system and the SnapMirror destination.
+SnapCenter supports backup of different Oracle database configurations.
+
+* Oracle Standalone
+* Oracle Real Application Clusters (RAC)
+* Oracle Standalone Legacy
+* Oracle Standalone Container Database (CDB)
+* Oracle Data Guard standby
 +
-SnapMirror retention is implicitly defined based on the Snapshot copy retention of the primary storage. SnapVault retention has to be defined explicitly on the ONTAP storage system.
+You can create only offline (mount or shutdown) backups of Data Guard standby databases. Archive log-only backup or full backup is not supported.
 
-. Decide whether you want to verify the backup copies using the primary or secondary storage volume.
-. Determine the supported prescripts and postscripts.
-. Decide whether you want to use NetApp SnapMirror technology for replication or NetApp SnapVault technology for long term retention.
+* Oracle Active Data Guard standby
++
+You can create data only online backups of Active Data Guard standby databases. Archive log-only backup or full backup is not supported.
++
+NOTE: Before creating a backup of Data Guard standby or Active Data Guard standby database, the managed recovery process (MRP) is stopped and once the backup is created, MRP is started.
+
+* Automatic Storage Management (ASM)
+ ** ASM standalone and ASM RAC on Virtual Machine Disk (VMDK)
++
+NOTE: Among all the restore methods supported for Oracle databases, you can perform only connect-and-copy restore of ASM RAC databases on VMDK.
+
+ ** ASM standalone and ASM RAC on Raw device mapping (RDM)
+You can perform backup, restore, and clone operations on Oracle databases on ASM, with or without ASMLib.
+** Oracle ASM Filter Driver (ASMFD)
++
+NOTE: PDB migration and PDB cloning operations are not supported.
+
+** Oracle Flex ASM
+//Included the above info for BURT 1348035 for 4.5
+
+For the latest information about supported Oracle versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+
+== Types of backup supported for Oracle databases
+
+Backup type specifies the type of backup that you want to create. SnapCenter supports online and offline backup types for Oracle databases.
+
+=== Online backup
+
+A backup that is created when the database is in the online state is called an online backup. Also called a hot backup, an online backup enables you to create a backup of the database without shutting it down.
+
+As part of online backup, you can create a backup of the following files:
+
+* Datafiles and control files only
+* Archive log files only (the database is not brought to backup mode in this scenario)
+* Full database that includes datafiles, control files, and archive log files
+
+=== Offline backup
+
+A backup created when the database is either in a mounted or shutdown state is called an offline backup. An offline backup is also called a cold backup. You can include only datafiles and control files in offline backups. You can create either an offline mount or offline shutdown backup.
+
+* When creating an offline mount backup, you must ensure that the database is in a mounted state.
++
+If the database is in any other state, the backup operation fails.
+
+* When creating an offline shutdown backup, the database can be in any state.
++
+The database state is changed to the required state to create a backup. After creating the backup, the database state is reverted to the original state.
+
+== How SnapCenter discovers Oracle databases
+
+"Resources" are Oracle databases on the host that are maintained by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available. You should be aware of the process that SnapCenter follows to discover different types and versions of Oracle databases.
+
+|===
+| For Oracle versions 11__g__ to 12__c__R1 | For Oracle versions 12__c__R2 to 18__c__
+
+a|
+*RAC database*: The RAC databases are discovered only on the basis of /etc/oratab entries.
+
+You should have the database entries in the /etc/oratab file.
+
+a|
+*RAC database*: The RAC databases are discovered using the srvctl config command.
+a|
+*Standalone*: The standalone databases are discovered only on the basis of /etc/oratab entries.
+
+You should have the database entries in the /etc/oratab file.
+
+a|
+*Standalone*: The standalone databases are discovered based on the entries in the /etc/oratab file and the output of the srvctl config command.
+a|
+*ASM*: The ASM instance entry should be available in the /etc/oratab file.
+a|
+*ASM*: The ASM instance entry need not be in the /etc/oratab file.
+a|
+*RAC One Node*: The RAC One Node databases are discovered only on the basis of /etc/oratab entries.
+
+The databases should be either in _nomount_, _mount_, or _open_ state. You should have the database entries in the /etc/oratab file.
+
+The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
+
+You should perform the following steps if the database is relocated:
+
+. Manually add the relocated database entry in the /etc/oratab file on the failed-over RAC node.
+. Manually refresh the resources.
+. Select the RAC One Node database from the resource page, and then click *Database Settings*.
+. Configure the database to set the preferred cluster nodes to the RAC node currently hosting the database.
+. Perform the SnapCenter operations.
+
+//Included this for the BURT 1391253 for 4.5
+NOTE: If you have relocated a database from one node to another node and if the oratab entry in the earlier node is not deleted, you should manually delete the oratab entry to avoid the same database being displayed twice.
+
+a|
+*RAC One Node*: The RAC One Node databases are discovered using the srvctl config command only.
+
+The databases should be either in _nomount_, _mount_, or _open_ state. The RAC One Node database status will be marked as renamed or deleted if the database is already discovered and backups are associated with the database.
+
+You should perform the following steps if the database is relocated:
+
+. Manually refresh the resources.
+. Select the RAC One Node database from the resource page, and then click **Database Settings**.
+. Configure the database to set the preferred cluster nodes to the RAC node currently hosting the database.
+. Perform the SnapCenter operations.
+
+|===
+
+NOTE: If there are any Oracle 12__c__R2 and 18__c__ database entries in the /etc/oratab file and the same database is registered with the srvctl config command, SnapCenter will eliminate the duplicate database entries.
+If there are stale database entries, the database will be discovered but the database will be unreachable and the status will be offline.
+
+== Preferred nodes in RAC setup
+
+In Oracle Real Application Clusters (RAC) setup, you can specify the preferred nodes on which the backup operation will be performed. If you do not specify the preferred node, SnapCenter automatically assigns a node as the preferred node and backup is created on that node.
+
+The preferred nodes might be one or all of the cluster nodes where the RAC database instances are present. The backup operation will be triggered only on these preferred nodes in the order of the preference.
+
+Example: The RAC database cdbrac has three instances: cdbrac1 on node1, cdbrac2 on node2, and cdbrac3 on node3. The node1 and node2 instances are configured to be the preferred nodes, with node2 as the first preference and node1 as the second preference. When you perform a backup operation, the operation is first attempted on node2 because it is the first preferred node. If node2 is not in the state to back up, which could be due to multiple reasons such as the plug-in agent is not running on the host, the database instance on the host is not in the required state for the specified backup type, or the database instance on node2 in a FlexASM configuration is not being served by the local ASM instance; then the operation will be attempted on node1. The node3 will not be used for backup because it is not on the list of preferred nodes.
+
+//Included the below info for BURT 1348035 for 4.5
+In a Flex ASM setup, Leaf nodes will not be listed as preferred nodes if the cardinality is less than the number nodes in the RAC cluster. If there is any change in the Flex ASM cluster node roles, you should manually discover so that the preferred nodes are refreshed.
+
+=== Required database state
+
+The RAC database instances on the preferred nodes must be in the required state for the backup to finish successfully:
+
+* One of the RAC database instances in the configured preferred nodes must be in the open state to create an online backup.
+* One of the RAC database instances in the configured preferred nodes must be in the mount state, and all other instances, including other preferred nodes, must be in the mount state or lower to create an offline mount backup.
+* RAC database instances can be in any state, but you must specify the preferred nodes to create an offline shutdown backup.
+
+== How to catalog backups with Oracle Recovery Manager
+
+The backups of Oracle databases can be cataloged with Oracle Recovery Manager (RMAN) to store the backup information in the Oracle RMAN repository.
+
+The cataloged backups can be used later for block-level restore or tablespace point-in-time recovery operations. When you do not need these cataloged backups, you can remove the catalog information.
+
+The database must be in mounted or higher state for cataloging. You can perform cataloging on data backups, archive log backups, and full backups. If cataloging is enabled for a backup of a resource group that has multiple databases, cataloging is performed for each database. For Oracle RAC databases, cataloging will be performed on the preferred node where the database is at least in mounted state.
+
+NOTE: If you want to catalog backups of a RAC database, ensure that no other job is running for that database. If another job is running, the cataloging operation fails instead of getting queued.
+
+By default, the target database control file is used for cataloging. If you want to add external catalog database, you can configure it by specifying the credential and Transparent Network Substrate (TNS) name of the external catalog using the Database Settings wizard from the SnapCenter graphical user interface (GUI). You can also configure the external catalog database from the CLI by running the Configure-SmOracleDatabase command with the -OracleRmanCatalogCredentialName and -OracleRmanCatalogTnsName options.
+
+If you enabled the cataloging option while creating an Oracle backup policy from the SnapCenter GUI, the backups are cataloged using Oracle RMAN as a part of the backup operation. You can also perform deferred cataloging of backups by running the Catalog-SmBackupWithOracleRMAN command. After cataloging the backups, you can run the Get-SmBackupDetails command to obtain the cataloged backup information such as the tag for cataloged datafiles, the control file catalog path, and the cataloged archive log locations.
+
+If the ASM disk group name is greater than or equal to 16 characters, from SnapCenter 3.0, the naming format used for the backup is SC_HASHCODEofDISKGROUP_DBSID_BACKUPID. However, If the disk group name is less than 16 characters, the naming format used for the backup is DISKGROUPNAME_DBSID_BACKUPID, which is the same format used in SnapCenter 2.0.
+
+NOTE: The HASHCODEofDISKGROUP is an automatically generated number (2 to 10 digit) unique for each ASM disk group.
+
+You can perform crosschecks to update outdated RMAN repository information about backups whose repository records do not match their physical status. For example, if a user removes archived logs from disk with an operating system command, the control file still indicates that the logs are on disk, when in fact they are not. The crosscheck operation enables you to update the control file with the information. You can enable crosscheck by running the Set-SmConfigSettings command and assigning the value TRUE to the ENABLE_CROSSCHECK parameter. The default value is set to FALSE.
+
+`sccli Set-SmConfigSettings-ConfigSettingsTypePlugin-PluginCodeSCO-ConfigSettings "KEY=ENABLE_CROSSCHECK, VALUE=TRUE"`
+
+You can remove the catalog information by running the Uncatalog-SmBackupWithOracleRMAN command. You cannot remove the catalog information using the SnapCenter GUI. However, information of a cataloged backup is removed while deleting the backup or while deleting the retention and resource group associated with that cataloged backup.
+
+NOTE: When you force a deletion of the SnapCenter host, the information of the cataloged backups associated with that host are not removed. You must remove information of all the cataloged backups for that host before forcing the deletion of the host.
+
+If the cataloging and uncataloging fails because the operation time exceeded the time out value specified for the ORACLE_PLUGIN_RMAN_CATALOG_TIMEOUT parameter, you should modify the value of the parameter by running the following command:
+
+`/opt/Netapp/snapcenter/spl/bin/sccli Set-SmConfigSettings-ConfigSettingsType Plugin -PluginCode SCO-ConfigSettings "KEY=ORACLE_PLUGIN_RMAN_CATALOG_TIMEOUT,VALUE=user_defined_value"`
+
+After modifying the value of the parameter, restart the SnapCenter Plug-in Loader (SPL) service by running the following command:
+
+`/opt/NetApp/snapcenter/spl/bin/spl restart`
+
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^].
+
+== Backup schedules
+
+include::../_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]
+
+== Backup naming conventions
+
+include::../_include/reuse_concept_backup_naming_conventions.adoc[]
+
+== Backup retention options
+
+include::../_include/reuse_concept_backup_retention_options.adoc[]
+
+== Verify backup copy using the primary or secondary storage volume
+
+include::../_include/reuse_concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume.adoc[]

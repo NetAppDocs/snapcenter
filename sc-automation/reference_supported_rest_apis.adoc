@@ -1,0 +1,140 @@
+---
+permalink: sc-automation/reference_supported_rest_apis.html
+sidebar: sidebar
+keywords: REST API categories
+summary: 'The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page.'
+---
+= Supported REST APIs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
+
+== Auth
+You can use this API call to log into the SnapCenter Server. This API returns a user authorization token that is used to authenticate subsequent requests.
+
+== Domains
+You can use these API calls to perform the following:
+
+* retrieve all the domains
+* retrieve details of a specific domain
+* register or unregister a domain
+* modify a domain
+
+== Jobs
+You can use these API calls to perform the following:
+
+* retrieve all the jobs
+* retrieve status of a job
+* cancel or stop a job
+
+== Settings
+You can use these API calls to perform the following:
+
+* register, view, modify, or remove a credential
+* configure notification settings
+
+== Hosts
+You can use these API calls to perform the following:
+
+* retrieve host details
+* retrieve the plug-in installed and their resource details
+* add, remove, or modify a plug-in host
+* install or upgrade plug-ins
+
+== Resources
+You can use these API calls to perform the following:
+
+* retrieve resources
+* create, modify, or remove resources
+* protect a resource
+* back up, restore, or clone a resource
+
+== Backups
+You can use these API calls to perform the following:
+
+* retrieve backup details
+* rename or delete backups
+
+== Clones
+You can use these API calls to perform the following:
+
+* retrieve clone details
+* delete clones
+
+== Clonesplit
+You can use these API calls to perform the following:
+
+* retrieve the status of a clone split operation
+* start or stop a clone split operation
+
+== Resource Groups
+You can use these API calls to perform the following:
+
+* retrieve details of a resource group
+* create, modify, or delete a resource group
+* back up a resource group
+
+== Policies
+You can use these API calls to perform the following:
+
+* retrieve policy details
+* create, modify, or delete policies
+
+== Storage
+You can use these API calls to perform the following:
+
+* retrieve storage details
+* create, modify, or delete a storage
+* discover resources on a storage
+* create or delete a share on the storage
+
+== share
+You can use these API calls to perform the following:
+
+* retrieve the details of a share
+* create or delete a share on the storage
+
+== Plugins
+You can use these API calls to retrieve all the plug-ins on a host and perform different operations.
+
+== Reports
+You can use these API calls to perform the following:
+
+* generate backup, restore, clone, and plug-in reports
+* add, run, delete, or modify schedules
+
+== Alerts
+You can use these API calls to perform the following:
+
+* retrieve all the alerts
+* delete alerts
+
+== Rbac
+You can use these API calls to perform the following:
+
+* retrieve details of users, groups, and roles
+* add users
+* create, modify, or delete roles
+* assign or unassign roles and groups
+
+== Configuration
+You can use these API calls to perform the following:
+
+* view the configuration settings
+* modify the configuration settings
+
+== CertificateSettings
+You can use these API calls to perform the following:
+
+* view the certificate status
+* modify the certificate settings
+
+== Repository
+You can use these API calls to perform the following:
+
+* backup and restore the NSM repository
+* protect and unprotect the NSM repository
+* failover
+* rebuild the NSM repository

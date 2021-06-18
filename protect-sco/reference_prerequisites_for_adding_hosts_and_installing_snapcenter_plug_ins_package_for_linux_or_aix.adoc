@@ -1,10 +1,10 @@
 ---
 permalink: protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html
 sidebar: sidebar
-keywords: run as
+keywords: prerequisites, iSCSI, Oracle path
 summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements.'
 ---
-= Prerequisites for adding hosts and installing the SnapCenter Plug-ins Package for Linux or AIX
+= Prerequisites for adding hosts and installing Plug-ins Package for Linux or AIX
 :icons: font
 :imagesdir: ../media/
 
@@ -14,7 +14,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 * If you are using iSCSI, the iSCSI service must be running.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 +
-SnapCenter Plug-in for Oracle Database can be installed by a non-root user. However, you shoulg configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective root user.
+SnapCenter Plug-in for Oracle Database can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective root user.
 
 * If you are installing the SnapCenter Plug-ins Package for AIX on AIX host, you should have manually resolved the directory level symbolic links.
 +
@@ -23,17 +23,16 @@ The SnapCenter Plug-ins Package for AIX automatically resolves the file level sy
 * Create credentials with authentication mode as Linux or AIX for the install user.
 * You must have installed Java 1.8.x, 64-bit, on your Linux or AIX host.
 +
-The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
-+
-http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
-+
-https://www.ibm.com/support/pages/java-sdk-aix[IBM Java for AIX]
-+
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+For information to download JAVA, see:
+
+** http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems^]
+
+** https://www.ibm.com/support/pages/java-sdk-aix[IBM Java for AIX^]
+
+
 
 * For Oracle databases that are running on a Linux or AIX host, you should install both SnapCenter Plug-in for Oracle Database and SnapCenter Plug-in for UNIX.
 +
 NOTE: You can use the Plug-in for Oracle Database to manage Oracle databases for SAP as well. However, SAP BR*Tools integration is not supported.
 
 * If you are using Oracle database 11.2.0.3 or later, you must install the 13366202 Oracle patch.
-* You should always have read or write permission for the "`/tmp`" folder on the plug-in host.

@@ -1,0 +1,16 @@
+---
+permalink: upgrade/upgrade_workflow.html
+sidebar: sidebar
+keywords: upgrade, snapcenter server, plug-ins, workflow
+summary: 'Describes how to upgrade SnapCenter Server and the plug-ins'
+---
+= Upgrade workflow
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Each release of SnapCenter contains an updated SnapCenter Server and plug-in package. Plug-in package updates are distributed with the SnapCenter installer. You can configure SnapCenter to check for available updates.
+
+The workflow shows the different tasks required to upgrade the SnapCenter Server and the Plug-in packages.
+
+image::../media/upgrade_workflow.png[]

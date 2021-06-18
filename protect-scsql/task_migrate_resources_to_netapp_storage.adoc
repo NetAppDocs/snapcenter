@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_migrate_resources_to_netapp_storage.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'After you have provisioned your NetApp storage system using SnapCenter Plug-in for Microsoft Windows, you can migrate your resources to the NetApp storage system or from one NetApp LUN to another NetApp LUN using either the SnapCenter graphical user interface \(GUI\) or using the PowerShell cmdlets.'
 ---
 = Migrate resources to NetApp storage system
@@ -11,18 +11,23 @@ summary: 'After you have provisioned your NetApp storage system using SnapCenter
 [.lead]
 After you have provisioned your NetApp storage system using SnapCenter Plug-in for Microsoft Windows, you can migrate your resources to the NetApp storage system or from one NetApp LUN to another NetApp LUN using either the SnapCenter graphical user interface (GUI) or using the PowerShell cmdlets.
 
+*What you will need*
+
 * You must have added storage systems to SnapCenter Server.
 * You must have refreshed (discovered) the SQL Server resources.
 
 Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
 
+*Steps*
+
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, select *Database* or *Instance* from the *View* drop-down list.
-. Select either the database or the instance from the list and click Migrate.
-. In the Resources page, perform the following actions:
+. In the *Resources* page, select *Database* or *Instance* from the *View* drop-down list.
+. Select either the database or the instance from the list and click *Migrate*.
+. In the *Resources* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 *Database Name* (optional)
 a|
@@ -34,18 +39,20 @@ Select the target location for data and log files.     The data and log files ar
 a|
 *Show database file details* (optional)
 a|
-Select this option when you want to migrate multiple files of a single database.    *Note:* This option is not displayed when you select the *Instance* resource.
+Select this option when you want to migrate multiple files of a single database.
+[NOTE]
+This option is not displayed when you select the *Instance* resource.
 a|
 *Options*
 a|
 Select *Delete copy of Migrated Database at Original Location* to delete copy of database from the source.    Optional: *RUN UPDATE STATISTICS on tables before detaching the database*.
-+
 |===
 
-. In the Verify page, perform the following actions:
+. In the *Verify* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
+
 a|
 *Database Consistency Check Options*
 a|
@@ -54,22 +61,17 @@ a|
 DBCC CHECKDB options
 a|
     Select *PHYSICAL_ONLY* option to limit the integrity check to the physical structure of the database and to detect torn pages, checksum failures, and common hardware failures that impact the database.
-+
+
 Select *NO_INFOMSGS* option to suppress all of the informational messages.
-+
+
 Select *ALL_ERRORMSGS* option to display all of the reported errors per object.
 
 Select *NOINDEX* option if you do not want to check nonclustered indexes.     The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
 
-....
-**Note:** You might want to select this option to decrease the execution time.
+NOTE: You might want to select this option to decrease the execution time.
 
 Select **TABLOCK** option to limit the checks and obtain locks instead of using an internal database Snapshot copy.
 
+|===
 
-|=== 6.  Review the summary, and then click **Finish**.
-....
-
-*Related information*
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+.  Review the summary, and then click **Finish**.

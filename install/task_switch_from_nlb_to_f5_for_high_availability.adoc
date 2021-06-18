@@ -1,8 +1,8 @@
 ---
 permalink: install/task_switch_from_nlb_to_f5_for_high_availability.html
 sidebar: sidebar
-keywords: F5,NLB
-summary: 'You can change your SnapCenter HA configuration from Network Load Balancing \(NLB\) to use F5 Load Balancer.'
+keywords: F5, NLB, high availability
+summary: 'You can change your SnapCenter HA configuration from Network Load Balancing (NLB) to use F5 Load Balancer.'
 ---
 = Switch from NLB to F5 for high availability
 :icons: font
@@ -11,14 +11,11 @@ summary: 'You can change your SnapCenter HA configuration from Network Load Bala
 [.lead]
 You can change your SnapCenter HA configuration from Network Load Balancing (NLB) to use F5 Load Balancer.
 
-. Configure SnapCenter Servers for high availability using F5.
-+
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[How to configure SnapCenter Servers for high availability using F5 Load Balancer]
+*Steps*
 
+. Configure SnapCenter Servers for high availability using F5. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[Learn more^].
 . On the SnapCenter Server host, launch PowerShell.
 . Start a session by using the Open-SmConnection cmdlet, and then enter your credentials.
 . Update the SnapCenter Server to point to the F5 cluster IP address using the Update-SmServerCluster cmdlet.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Helpcommand_name. Alternatively, you can also refer to the _Cmdlet Reference Guide_.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310[SnapCenter Software 4.4 Cmdlet Reference Guide]
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].

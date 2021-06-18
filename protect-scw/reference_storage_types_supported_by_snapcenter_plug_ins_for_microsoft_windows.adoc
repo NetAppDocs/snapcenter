@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows.html
+sidebar: sidebar
+keywords:
+summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.'
+---
+= Storage types supported by SnapCenter Plug-ins for Microsoft Windows
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_reference_storage_types_supported_by_snapcenter_plug_ins.adoc[]
