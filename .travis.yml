@@ -1,5 +1,5 @@
 dist: xenial
-if: branch = sc45_releasebranch OR repo =~ /-internal/
+if: branch = main OR repo =~ /-internal/
 language: ruby
 rvm:
 - 2.4.3
