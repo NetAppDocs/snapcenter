@@ -69,8 +69,12 @@ https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
 
 . In the left navigation pane, click *Hosts*., and in the Managed Hosts list, select the host that you want to upgrade.
 . Create a copy of the web.config located at C:\Program Files\NetApp\SnapCenter WebApp.
-. Export the SnapCenter schedules related to plug-in host from windows task schedule so that you can use it to restore the schedules if upgrade fails.`md d:\\SCBackup``schtasks /query /xml /TN taskname >> "D:\SCBackup\taskname.xml"`
-. Create the SnapCenter MySQL database dump if the repository backup is not configured.`md d:\\SCBackup``mysqldump --all-databases --single-transaction --add-drop-database --triggers --routines --events -u root -p > D:\SCBackup\SCRepoBackup.dmp`
+. Export the SnapCenter schedules related to plug-in host from windows task schedule so that you can use it to restore the schedules if upgrade fails.
++
+`md d:\\SCBackup``schtasks /query /xml /TN taskname >> "D:\SCBackup\taskname.xml"`
+. Create the SnapCenter MySQL database dump if the repository backup is not configured.
++
+`md d:\\SCBackup``mysqldump --all-databases --single-transaction --add-drop-database --triggers --routines --events -u root -p > D:\SCBackup\SCRepoBackup.dmp`
 +
 When prompted, enter the password.
 

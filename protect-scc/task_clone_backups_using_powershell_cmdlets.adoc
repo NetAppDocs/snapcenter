@@ -32,10 +32,10 @@ This example displays information about all available backups:
 ----
  C:\PS>PS C:\> Get-SmBackup
 
-        BackupId                      BackupName                    BackupTime                    BackupType
-        --------                      ----------                    ----------                    ----------
-         1                     Payroll Dataset_vise-f6_08... 8/4/2015 11:02:32 AM          Full Backup
-         2                     Payroll Dataset_vise-f6_08... 8/4/2015 11:23:17 AM
+BackupId                      BackupName                    BackupTime                    BackupType
+--------                      ----------                    ----------                    ----------
+   1              Payroll Dataset_vise-f6_08... 8/4/2015    11:02:32 AM                   Full Backup
+   2              Payroll Dataset_vise-f6_08... 8/4/2015    11:23:17 AM
 ----
 +
 This example displays information about a specified resource group:
@@ -43,7 +43,7 @@ This example displays information about a specified resource group:
 ----
 PS C:\> Get-SmResourceGroup
 
-   Description                 :
+    Description                 :
     CreationTime                : 10/10/2016 4:45:53 PM
     ModificationTime            : 10/10/2016 4:45:53 PM
     EnableEmail                 : False
