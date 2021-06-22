@@ -8,6 +8,30 @@ before_install:
 - git submodule add https://github.com/NetAppDocs/jekyll dependencies/jekyll
 - gem update --system && gem install bundler && gem update bundler
 - if [[ -z "$DEPLOY_BRANCH" ]]; then export DEPLOY_BRANCH=gh-pages; fi
+- cp -rl dependencies/jekyll/search.html ./admin/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ admin\/search\.html/g' ./admin/search.html
+- cp -rl dependencies/jekyll/search.html ./concept/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ concept\/search\.html/g' ./concept/search.html
+- cp -rl dependencies/jekyll/search.html ./install/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ install\/search\.html/g' ./install/search.html
+- cp -rl dependencies/jekyll/search.html ./protect-hana/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ protect-hana\/search\.html/g' ./protect-hana/search.html
+- cp -rl dependencies/jekyll/search.html ./protect-scc/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ protect-scc\/search\.html/g' ./protect-scc/search.html
+- cp -rl dependencies/jekyll/search.html ./protect-sce/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ protect-sce\/search\.html/g' ./protect-sce/search.html
+- cp -rl dependencies/jekyll/search.html ./protect-sco/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ protect-sco\/search\.html/g' ./protect-sco/search.html
+- cp -rl dependencies/jekyll/search.html ./protect-scsql/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ protect-scsql\/search\.html/g' ./protect-scsql/search.html
+- cp -rl dependencies/jekyll/search.html ./protect-scw/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ protect-scw\/search\.html/g' ./protect-scw/search.html
+- cp -rl dependencies/jekyll/search.html ./sc-automation/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ sc-automation\/search\.html/g' ./sc-automation/search.html
+- cp -rl dependencies/jekyll/search.html ./uninstall/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ uninstall\/search\.html/g' ./uninstall/search.html
+- cp -rl dependencies/jekyll/search.html ./upgrade/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ upgrade\/search\.html/g' ./upgrade/search.html
 - mv dependencies/jekyll/prod-build.sh ./ && ./prod-build.sh
 - sudo apt-get -y install graphicsmagick graphicsmagick-libmagick-dev-compat libmagickwand-dev
 install: bundle install --quiet --jobs=3 --retry=3
