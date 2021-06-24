@@ -31,17 +31,17 @@ Yes
 a|
 Update ESXi information for a host
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
 Suspend schedules and place hosts in maintenance mode
 a|
@@ -101,59 +101,58 @@ Yes
 a|
 Provision disks
 a|
-
+No
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
 Manage SMB shares
 a|
-
+No
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
 Manage iGroups
 a|
-
+No
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
 Manage iSCSI sessions
 a|
-
+No
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
-
 |===
 
 == Refresh virtual machine information

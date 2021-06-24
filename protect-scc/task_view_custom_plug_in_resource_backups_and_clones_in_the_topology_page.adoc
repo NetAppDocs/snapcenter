@@ -22,8 +22,8 @@ NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type vol
 
 * image:../media/topology_vault_secondary_storage.gif[secondary vault icon] displays the number of backups and clones that are replicated on the secondary storage using SnapVault technology.
 +
-NOTE: The number of backups displayed includes the backups deleted from the secondary storage. For example, if you have created 6 backups using a policy to retain only 4 backups, the number of backups displayed are 6.
-
+The number of backups displayed includes the backups deleted from the secondary storage. For example, if you have created 6 backups using a policy to retain only 4 backups, the number of backups displayed are 6.
++
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view but the mirror backup count in the topology view does not include the version-flexible backup.
 
 *Steps*
@@ -48,6 +48,6 @@ The details of the backups and clones are displayed in a table format.
 +
 NOTE: You cannot rename or delete backups that are on the secondary storage system.
 +
-You cannot rename the backups that are on the primary storage system.
+NOTE: You cannot rename the backups that are on the primary storage system.
 
 . If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[] to delete the clone.

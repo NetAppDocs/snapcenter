@@ -26,8 +26,8 @@ If you cancel the operation before verification, the operation is canceled, and 
 
 *Step*
 
-. Perform one of the following actions:
-+
+Perform one of the following actions:
+
 |===
 | From the...| Action
 
@@ -45,8 +45,6 @@ a|
  .. After initiating the backup job, click image:../media/activity_pane_icon.gif[] on the Activity pane to view the five most recent operations.
  .. Select the operation.
  .. In the Job Details page, click *Cancel Job*.
-
-+
 |===
 
 *Result*

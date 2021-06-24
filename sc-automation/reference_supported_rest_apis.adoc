@@ -90,7 +90,7 @@ You can use these API calls to perform the following:
 * discover resources on a storage
 * create or delete a share on the storage
 
-== share
+== Share
 You can use these API calls to perform the following:
 
 * retrieve the details of a share

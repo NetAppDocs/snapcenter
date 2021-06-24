@@ -20,7 +20,8 @@ You can restore databases from primary or secondary storage.
 You can restore databases to various destinations:
 
 |===
-| Destination| Description
+| Destination | Description
+
 a|
 The original location
 a|

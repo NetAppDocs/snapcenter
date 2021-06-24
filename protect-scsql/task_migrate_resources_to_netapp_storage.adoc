@@ -35,17 +35,22 @@ If you have selected an instance for migration, you must select the databases of
 a|
 *Choose Destinations*
 a|
-Select the target location for data and log files.     The data and log files are moved to Data and Log folder respectively under the selected NetApp drive. If any folder in the folder structure is not present, then a folder is created, and the resource is migrated.
+Select the target location for data and log files.
+
+The data and log files are moved to Data and Log folder respectively under the selected NetApp drive. If any folder in the folder structure is not present, then a folder is created, and the resource is migrated.
 a|
 *Show database file details* (optional)
 a|
 Select this option when you want to migrate multiple files of a single database.
-[NOTE]
-This option is not displayed when you select the *Instance* resource.
+
+NOTE: This option is not displayed when you select the *Instance* resource.
+
 a|
 *Options*
 a|
-Select *Delete copy of Migrated Database at Original Location* to delete copy of database from the source.    Optional: *RUN UPDATE STATISTICS on tables before detaching the database*.
+Select *Delete copy of Migrated Database at Original Location* to delete copy of database from the source.
+
+Optional: *RUN UPDATE STATISTICS on tables before detaching the database*.
 |===
 
 . In the *Verify* page, perform the following actions:
@@ -58,20 +63,21 @@ a|
 a|
 Select *Run before* to check the integrity of the database before migration.    Select *Run after* to check the integrity of the database after migration.
 a|
-DBCC CHECKDB options
+*DBCC CHECKDB options*
 a|
-    Select *PHYSICAL_ONLY* option to limit the integrity check to the physical structure of the database and to detect torn pages, checksum failures, and common hardware failures that impact the database.
+* Select *PHYSICAL_ONLY* option to limit the integrity check to the physical structure of the database and to detect torn pages, checksum failures, and common hardware failures that impact the database.
 
-Select *NO_INFOMSGS* option to suppress all of the informational messages.
+* Select *NO_INFOMSGS* option to suppress all of the informational messages.
 
-Select *ALL_ERRORMSGS* option to display all of the reported errors per object.
+* Select *ALL_ERRORMSGS* option to display all of the reported errors per object.
 
-Select *NOINDEX* option if you do not want to check nonclustered indexes.     The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
-
+* Select *NOINDEX* option if you do not want to check nonclustered indexes.
++
+The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
++
 NOTE: You might want to select this option to decrease the execution time.
 
-Select **TABLOCK** option to limit the checks and obtain locks instead of using an internal database Snapshot copy.
-
+* Select **TABLOCK** option to limit the checks and obtain locks instead of using an internal database Snapshot copy.
 |===
 
 .  Review the summary, and then click **Finish**.
