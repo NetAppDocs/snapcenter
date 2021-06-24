@@ -31,8 +31,8 @@ Doing so can slow the reclamation process.
 
 *Step*
 
-. From the application server PowerShell command prompt, enter the following command:
-+ 
+From the application server PowerShell command prompt, enter the following command:
+
 `Invoke-SdHostVolumeSpaceReclaim -Path drive_path`
-+
+
 drive_path is the drive path mapped to the LUN.

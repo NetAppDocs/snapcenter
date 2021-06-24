@@ -61,7 +61,7 @@ Yes
 a|
 Clone backups
 a|
-
+No
 a|
 Yes
 a|
@@ -89,7 +89,7 @@ Yes
 a|
 Manage clones
 a|
-
+No
 a|
 Yes
 a|
@@ -131,31 +131,31 @@ Yes
 a|
 Mount backups
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
 Unmount backups
 a|
-
+No
 a|
-
+No
 a|
-
+No
 a|
 Yes
 a|
-
+No
 a|
-
+No
 a|
 View details
 a|

@@ -16,7 +16,7 @@ There are flaws in the SSL 3.0 protocol that an attacker can use to cause connec
 *Steps*
 
 . To launch Registry Editor on the SnapCenter web server host, click *Start* > *Run*, and then enter regedit.
-. In Registry Editor, navigate to _HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\_.
+. In Registry Editor, navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\.
  ** If the Server key already exists:
   ... Select the Enabled DWORD, and then click *Edit* > *Modify*.
   ... Change the value to 0, and then click *OK*.

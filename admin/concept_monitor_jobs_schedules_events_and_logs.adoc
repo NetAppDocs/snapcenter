@@ -77,7 +77,7 @@ The downloaded zipped folder contains the job logs and the common logs. The zipp
 . In the Monitor page, click *Logs*.
 . Select the log type, host, and instance.
 +
-If you select log type is *plugin*, you can select a host or SnapCenter plug-in. You cannot do this if the log type is *server*.
+If you select log type as *plugin*, you can select a host or SnapCenter plug-in. You cannot do this if the log type is *server*.
 
 . To filter the logs by a specific source, message, or log level, click the filter icon at the top of the column heading.
 +

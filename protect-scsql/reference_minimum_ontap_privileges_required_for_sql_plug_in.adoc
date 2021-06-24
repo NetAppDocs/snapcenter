@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_minimum_ontap_privileges_required_for_sql_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'
 ---
 = Minimum ONTAP privileges required for SQL plug-in
@@ -13,6 +13,7 @@ The minimum ONTAP privileges that are required vary according to the SnapCenter 
 
 |===
 | All-access commands: Minimum privileges required for ONTAP 8.2._x_ and later
+
 a|
 event generate-autosupport-log
 
@@ -171,6 +172,7 @@ vserver show
 |===
 |===
 | Read-only commands: Minimum privileges required for ONTAP 8.2._x_ and later
+
 a|
 network interface
 
