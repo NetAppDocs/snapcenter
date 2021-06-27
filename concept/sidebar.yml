@@ -1,0 +1,22 @@
+section: concept
+title: Concepts
+entries:
+  - title: SnapCenter overview
+    url: "/concept/concept_snapcenter_overview.html"
+  - title: Security features
+    url: "/concept/reference_data_security.html"
+  - title: SnapCenter role-based access control (RBAC)
+    url: "/concept/concept_snapcenter_role_based_access_control_rbac.html"
+    entries:
+    - title: Types of RBAC
+      url: "/concept/concept_types_of_role_based_access_control_in_snapcenter.html"
+    - title: RBAC permissions and roles
+      url: "/concept/reference_role_based_access_control_permissions_and_roles.html"
+    - title: Pre-defined SnapCenter roles and permissions
+      url: "/concept/reference_pre_defined_snapcenter_roles_and_permissions.html"
+  - title: Resources, resource groups, and policies
+    url: "/concept/concept_resources_resource_groups_and_policies.html"
+  - title: Prescripts and postscripts
+    url: "/concept/concept_prescripts_and_postscripts.html"
+  - title: SnapCenter Automation using REST APIs
+    url: "/concept/concept_snapcenter_rest_apis.html"
