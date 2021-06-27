@@ -1,9 +1,9 @@
 sidebar:
   entries:
     - title: SnapCenter Software documentation
-      url: "/index.html"
+      url: /index.html
     - title: Release notes
-      url: "/reference_release_notes.html"
+      url: /reference_release_notes.html
     - section: concept
     - section: install
     - section: protect-scsql

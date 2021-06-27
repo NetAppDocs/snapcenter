@@ -1,38 +1,38 @@
 section: admin
 title: Manage SnapCenter Server and plug-ins
 entries:
-  - title: Overview of dashboard
-    url: "/admin/concept_overview_of_dashboard.html"
-    entries:
-    - title: How to view information on the dashboard
-      url: "/admin/task_how_to_view_information_on_the_dashboard.html"
-    - title: Request status reports of the jobs from the dashboard
-      url: "/admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html"
-    - title: Request reports of the protection status from the dashboard
-      url: "/admin/task_request_reports_of_the_protection_status_from_the_dashboard.html"
-  - title: Manage RBAC
-    url: "/admin/task_manage_rbac.html"
-  - title: Manage hosts
-    url: "/admin/concept_manage_hosts.html"
-  - title: Operations supported from the Resources page
-    url: "/admin/concept_what_operations_can_be_performed_from_the_resource_page.html"
-  - title: Manage policies
-    url: "/admin/concept_manage_policies.html"
-  - title: Manage resource groups
-    url: "/admin/task_manage_resource_groups.html"
-  - title: Manage backups
-    url: "/admin/concept_manage_backups.html"
-  - title: Delete clones
-    url: "/admin/task_delete_clones.html"
-  - title: Monitor jobs, schedules, events, and logs
-    url: "/admin/concept_monitor_jobs_schedules_events_and_logs.html"
-  - title: Overview of SnapCenter reporting capabilities
-    url: "/admin/concept_overview_of_snapcenter_reports.html"
-  - title: Manage the SnapCenter Server repository
-    url: "/admin/concept_manage_the_snapcenter_server_repository.html"
-  - title: Manage resources of untrusted domains
-    url: "/admin/concept_manage_resources_of_untrusted_domains.html"
-  - title: Manage the storage system
-    url: "/admin/concept_manage_the_storage_system.html"
-  - title: Manage EMS data collection
-    url: "/admin/concept_manage_ems_data_collection.html"
+    - title: Overview of dashboard
+      url: /admin/concept_overview_of_dashboard.html
+      entries:
+        - title: How to view information on the dashboard
+          url: /admin/task_how_to_view_information_on_the_dashboard.html
+        - title: Request status reports of the jobs from the dashboard
+          url: /admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html
+        - title: Request reports of the protection status from the dashboard
+          url: /admin/task_request_reports_of_the_protection_status_from_the_dashboard.html
+    - title: Manage RBAC
+      url: /admin/task_manage_rbac.html
+    - title: Manage hosts
+      url: /admin/concept_manage_hosts.html
+    - title: Operations supported from the Resources page
+      url: /admin/concept_what_operations_can_be_performed_from_the_resource_page.html
+    - title: Manage policies
+      url: /admin/concept_manage_policies.html
+    - title: Manage resource groups
+      url: /admin/task_manage_resource_groups.html
+    - title: Manage backups
+      url: /admin/concept_manage_backups.html
+    - title: Delete clones
+      url: /admin/task_delete_clones.html
+    - title: Monitor jobs, schedules, events, and logs
+      url: /admin/concept_monitor_jobs_schedules_events_and_logs.html
+    - title: Overview of SnapCenter reporting capabilities
+      url: /admin/concept_overview_of_snapcenter_reports.html
+    - title: Manage the SnapCenter Server repository
+      url: /admin/concept_manage_the_snapcenter_server_repository.html
+    - title: Manage resources of untrusted domains
+      url: /admin/concept_manage_resources_of_untrusted_domains.html
+    - title: Manage the storage system
+      url: /admin/concept_manage_the_storage_system.html
+    - title: Manage EMS data collection
+      url: /admin/concept_manage_ems_data_collection.html
