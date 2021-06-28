@@ -19,7 +19,7 @@ SnapCenter supports restore and recovery of different types of Oracle database b
 * Offline shutdown data backup
 * Offline mount data backup
 * Full backup
-* Offline (mount or shutdown) backups of Data Guard standby databases
+* Offline-mount backups of Data Guard standby databases
 * Data-only online backups of Active Data Guard standby databases
 +
 NOTE: You cannot perform recovery of Active Data Guard standby databases.
