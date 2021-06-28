@@ -1,0 +1,154 @@
+section: install
+title: Install SnapCenter Server
+entries:
+  - title: Install Workflow
+    url: /install/install_workflow.html
+  - title: Prepare for installing the SnapCenter Server
+    entries:
+      - title: Domain and workgroup requirements
+        url: /install/reference_domain_and_workgroup_requirements.html
+      - title: Space and sizing requirements
+        url: /install/reference_space_and_sizing_requirements.html
+      - title: SAN host requirements
+        url: /install/reference_san_host_requirements.html
+      - title: Supported storage systems and applications
+        url: /install/reference_supported_storage_systems_and_applications.html
+      - title: Supported browsers
+        url: /install/reference_supported_browsers.html
+      - title: Connection and port requirements
+        url: /install/reference_connection_and_port_requirements.html
+      - title: SnapCenter licenses
+        url: /install/concept_snapcenter_licenses.html
+      - title: Authentication methods for your credentials
+        url: /install/concept_authentication_methods_for_your_credentials.html
+      - title: Storage Virtual Machine connections and credentials
+        url: /install/concept_svm_connections_and_credentials.html
+  - title: Install the SnapCenter Server using the install wizard
+    url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
+    entries:
+      - title: Log in to SnapCenter
+        url: /install/task_log_in_to_snapcenter.html
+        entries:
+          - title: Modify the SnapCenter default GUI session timeout
+            url: /install/task_modify_the_snapcenter_default_log_out_period.html
+          - title: Secure the SnapCenter web server by disabling SSL 3.0
+            url: /install/task_secure_the_snapcenter_web_server_by_disabling_ssl_3_0.html
+      - title: Generate CA Certificate CSR file
+        url: /install/reference_generate_CA_certificate_CSR_file.html
+      - title: Import CA Certificates
+        url: /install/task_import_CA_certificates.html
+      - title: Get the CA certificate thumbprint
+        url: /install/task_get_the_CA_certificate_thumbprint.html
+      - title: Configure CA certificate with Windows host plug-in services
+        url: /install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html
+      - title: Configure CA certificate with SnapCenter site
+        url: /install/task_configure_CA_certificate_with_snapcenter_site.html
+      - title: Enable CA Certificates for SnapCenter Server
+        url: /install/task_enable_ca_certificates_for_snapcenter.html
+  - title: Register untrusted Active Directory domains
+    url: /install/task_register_untrusted_active_directory_domains.html
+  - title: Configure SnapCenter Servers for High Availability using F5
+    url: /install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html
+    entries:
+      - title: Configure Microsoft Network Load Balancer manually
+        url: /install/concept_network_load_balanacing_and_application_request_routing_requirements.html
+      - title: Switch from NLB to F5 for high availability
+        url: /install/task_switch_from_nlb_to_f5_for_high_availability.html
+      - title: High availability for the SnapCenter MySQL repository
+        url: /install/concept_high_availability_for_snapcenter_mysql_repository.html
+      - title: Export SnapCenter certificates
+        url: /install/task_export_snapcenter_certificates.html
+  - title: Configure role-based access control (RBAC)
+    url: /install/concept_configure_role_based_access_control_rbac.html
+    entries:
+      - title: Add a user or group and assign role and assets
+        url: /install/task_add_a_user_or_group_and_assign_role_and_assets.html
+      - title: Create a role
+        url: /install/task_create_a_role.html
+      - title: Add an ONTAP RBAC role using security login commands
+        url: /install/task_add_an_rbac_role_using_security_login_commands.html
+      - title: Create an ONTAP cluster role with minimum privileges
+        url: /install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
+      - title: Configure IIS Application Pools to enable Active Directory read permissions
+        url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
+  - title: Add storage systems
+    url: /install/task_add_storage_systems.html
+  - title: Add SnapCenter licenses
+    url: /install/task_add_snapcenter_licenses.html
+    entries:
+    - title: SnapCenter Standard controller-based licenses
+      url: /install/concept_snapcenter_standard_controller_based_licenses.html
+      entries:
+        - title: Verify if the SnapManager Suite storage controller license is installed
+          url: /install/task_verify_if_the_snapmanager_suite_storage_controller_license_is_installed.html
+        - title: View the licenses installed on the controller
+          url: /install/task_view_the_licenses_installed_on_the_controller.html
+        - title: Retrieve the controller serial number
+          url: /install/task_retrieve_the_controller_serial_number.html
+        - title: Retrieve SnapCenter controller-based license serial number
+          url: /install/task_retrieve_the_snapcenter_controller_based_license_serial_number.html
+        - title: Add a SnapCenter Standard controller-based license
+          url: /install/task_add_a_snapcenter_controller_based_license.html
+        - title: Remove the trial license
+          url: /install/task_remove_the_trial_license.html
+    - title: SnapCenter Standard capacity-based licenses
+      url: /install/concept_snapcenter_standard_capacity_based_licenses.html
+      entries:
+        - title: How SnapCenter calculates capacity usage
+          url: /install/concept_how_snapcenter_calculates_capacity_usage.html
+        - title: Calculate capacity requirements for a SnapCenter capacity-based license
+          url: /install/task_calculate_capacity_requirements_for_a_snapcenter_capacity_based_license.html
+        - title: Retrieve SnapCenter capacity-based license serial number
+          url: /install/task_retrieve_snapcenter_capacity_based_license_serial_number.html
+        - title: Generate a NetApp license file
+          url: /install/task_generate_a_netapp_license_file.html
+        - title: Add SnapCenter capacity-based licenses
+          url: /install/task_add_snapcenter_capacity_based_licenses.html
+  - title: Provision storage on Windows hosts
+    url: "/install/concept_provision_storage_on_windows_hosts.html"
+    entries:
+      - title: Configure LUN storage
+        url: "/install/concept_configure_lun_storage.html"
+        entries:
+          - title: Establish an iSCSI session
+            url: /install/task_establish_an_iscsi_session.html
+          - title: Disconnect an iSCSI session
+            url: /install/task_disconnect_an_iscsi_session.html
+          - title: Create and manage igroups
+            url: /install/concept_create_and_manage_igroups.html
+          - title: Create and manage disks
+            url: /install/task_create_and_manage_disks.html
+      - title: Create and manage SMB shares
+        url: /install/concept_create_and_manage_smb_shares.html
+      - title: Reclaim space on the storage system
+        url: /install/task_reclaim_space_on_the_storage_system.html
+      - title: Provision storage using PowerShell cmdlets
+        url: /install/reference_provision_storage_using_powershell_cmdlets.html
+  - title: Provision storage in VMware environments
+    url: /install/concept_provision_storage_in_vmware_environments.html
+    entries:
+      - title: Supported VMware guest OS platforms
+        url: /install/concept_supported_vmware_guest_os_platforms.html
+        entries:
+          - title: VMware ESXi server-related limitations
+            url: /install/concept_vmware_esxi_server_related_limitations.html
+          - title: Minimum vCenter privileges required for SnapCenter RDM operations
+            url: /install/concept_minimum_vcenter_privileges_required_for_snapcenter_rdm_operations.html
+      - title: Manage FC RDM LUNs in a Microsoft cluster
+        url: /install/concept_manage_fc_rdm_luns_in_a_microsoft_cluster.html
+        entries:
+          - title: Requirements for using FC RDM LUNs in a Microsoft cluster
+            url: /install/concept_requirements_for_using_fc_rdm_luns_in_a_microsoft_cluster.html
+          - title: Microsoft cluster support limitations when using FC/iSCSI RDM LUNs
+            url: /install/concept_microsoft_cluster_support_limitations_using_fc_rdm_luns.html
+          - title: Create a shared FC RDM LUN
+            url: /install/task_create_a_shared_fc_rdm_lun.html
+  - title: Configure secured MySQL connections with SnapCenter Server
+    url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
+    entries:
+      - title: Configure secured MySQL connections for standalone SnapCenter Server configurations
+        url: /install/task_configure_secured_mysql_connections_for_standalone_snapcenter_server.html
+      - title: Configure secured MySQL connections for HA configurations
+        url: /install/task_configure_secured_mysql_connections_for_network_load_balancing_nlb.html
+  - title: Features enabled on your Windows host during installation
+    url: /install/reference_features_enabled_on_your_windows_host_during_installation.html

@@ -1,0 +1,124 @@
+section: protect-scc
+title: Protect Custom applications
+entries:
+  - title: SnapCenter Custom Plug-ins overview
+    url: /protect-scc/concept_snapcenter_custom_plug_ins_overview.html
+    entries:
+      - title: What you can do with the SnapCenter Custom Plug-ins
+        url: /protect-scc/concept_what_you_can_do_with_the_snapcenter_custom_plug_ins.html
+      - title: SnapCenter Custom Plug-ins features
+        url: /protect-scc/concept_snapcenter_custom_plug_ins_features.html
+      - title: Storage types supported by SnapCenter Custom Plug-ins
+        url: /protect-scc/reference_storage_types_supported_by_snapcenter_custom_plug_in.html
+      - title: Minimum ONTAP privileges required for custom plug-in
+        url: /protect-scc/reference_minimum_ontap_privileges_required_for_custom_plug_in.html
+      - title: Prepare storage systems for SnapMirror and SnapVault replication
+        url: /protect-scc/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_scc.html
+      - title: Define a backup strategy
+        url: /protect-scc/task_define_a_backup_strategy.html
+        entries:
+          - title: Backup schedules of custom plug-in resources
+            url: /protect-scc/reference_backup_schedules_of_custom_plug_in_resources.html
+          - title: Number of backup jobs needed
+            url: /protect-scc/concept_number_of_backup_jobs_needed.html
+      - title: Types of restore strategies supported for manually added SAP HANA resources
+        url: /protect-scc/reference_types_of_restore_strategies_supported_for_manually_added_sap_hana_resources.html
+  - title: Develop a plug-in for your application
+    url: /protect-scc/concept_develop_a_plug_in_for_your_application.html
+    entries:
+      - title: PERL-based development
+        url: /protect-scc/reference_perl.html
+      - title: Native style
+        url: /protect-scc/reference_native.html
+      - title: Java style
+        url: /protect-scc/reference_java.html
+      - title: Custom plug-in in SnapCenter
+        url: /protect-scc/reference_custom_plugin_in_snapcenter.html
+  - title: Install SnapCenter Custom Plug-ins
+    url: /protect-scc/task_install_snapcenter_custom_plug_in.html
+    entries:
+      - title: Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
+        url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"
+        entries:
+          - title: Host requirements to install SnapCenter Plug-ins Package for Windows
+            url: /protect-scc/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_scc.html
+          - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
+            url: /protect-scc/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html
+          - title: Set up credentials for SnapCenter Custom Plug-ins
+            url: /protect-scc/task_set_up_credentials_for_snapcenter_custom_plug_in.html
+          - title: Configure gMSA on Windows Server 2012 or later
+            url: /protect-scc/task_configure_gMSA_on_windows_server_2012_or_later.html
+      - title: Add hosts and install plug-in packages on remote hosts
+        url: /protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html
+        entries:
+          - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
+            url: /protect-scc/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.html
+          - title: Monitor SnapCenter plug-in package installation status
+            url: /protect-scc/task_monitor_the_status_of_installing_plugin_for_scc.html
+      - title: Generate CA Certificate CSR file
+        url: /protect-scc/reference_generate_CA_certificate_CSR_file.html
+        entries:
+          - title: Import CA certificates
+            url: /protect-scc/task_import_CA_certificates.html
+          - title: Get the CA certificate thumbprint
+            url: /protect-scc/task_get_the_CA_certificate_thumbprint.html
+          - title: Configure CA certificate with Windows host plug-in services
+            url: /protect-scc/task_configure_CA_certificate_with_Windows_host_plug-in_services.html
+          - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host
+            url: /protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html
+          - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
+            url: /protect-scc/task_configure_CA_certificate_for_SCC_on_windows_host.html
+          - title: Enable CA Certificates for plug-ins
+            url: /protect-scc/task_enable_ca_certificates_for_plug-ins.html
+  - title: Prepare for data protection
+    url: /protect-scc/concept_prepare_for_protecting_scc_resources.html
+    entries:
+      - title: Prerequisites for using the SnapCenter Custom Plug-ins
+        url: /protect-scc/reference_prerequisites_for_using_snapcenter_custom_plug_ins.html
+      - title: How resources, resource groups, and policies are used for protecting custom plug-in resources
+        url: /protect-scc/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_custom_plug_in_resources.html
+  - title: Back up custom plug-in resources
+    url: /protect-scc/task_back_up_custom_plug_in_resources.html
+    entries:
+      - title: Add resources to SnapCenter Custom Plug-ins
+        url: /protect-scc/task_add_resources_to_snapcenter_custom_plug_ins.html
+      - title: Create policies for custom plug-in resources
+        url: /protect-scc/task_create_policies_for_custom_plug_in_resources.html
+      - title: Create resource groups and attach policies
+        url: /protect-scc/task_create_resource_groups_and_attach_policies.html
+      - title: Back up individual custom plug-in resources
+        url: /protect-scc/task_back_up_individual_custom_plug_in_resources.html
+      - title: Back up resource groups of custom plug-in resources
+        url: /protect-scc/task_back_up_resource_groups_of_custom_plug_in_resources.html
+      - title: Create a storage system connection and a credential using PowerShell cmdlets
+        url: /protect-scc/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_scc.html
+      - title: Back up resources using PowerShell cmdlets
+        url: /protect-scc/task_back_up_resources_using_powershell_cmdlets.html
+      - title: Monitor backup operations
+        url: /protect-scc/task_monitor_scc_resources_backup_operations.html
+      - title: Cancel the backup operations
+        url: /protect-scc/task_cancel_backup_operations_for_scc.html
+      - title: View custom plug-in resource related backups and clones in the Topology page
+        url: /protect-scc/task_view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html
+  - title: Restore custom plug-in resources
+    url: /protect-scc/task_restore_custom_plug_in_resources.html
+    entries:
+      - title: Restore a resource backup
+        url: /protect-scc/task_restore_a_resource_backup.html
+      - title: Restore resources using PowerShell cmdlets
+        url: /protect-scc/task_restore_and_recover_resources_using_powershell_cmdlets_scc.html
+      - title: Monitor restore operations
+        url: /protect-scc/task_monitor_scc_resources_restore_operations.html
+      - title: Cancel restore operations
+        url: /protect-scc/task_cancel_scc_resources_restore_operations.html
+  - title: Clone custom plug-in resource backups
+    url: /protect-scc/task_clone_custom_plug_in_resource_backups.html"
+    entries:
+      - title: Clone from a backup
+        url: /protect-scc/task_clone_from_a_backup.html
+      - title: Clone backups using PowerShell cmdlets
+        url: /protect-scc/task_clone_backups_using_powershell_cmdlets.html
+      - title: Monitor clone operations in SnapCenter
+        url: /protect-scc/task_monitor_scc_resource_clone_operations.html
+      - title: Cancel clone operations
+        url: /protect-scc/task_cancel_scc_resource_clone_operations.html
