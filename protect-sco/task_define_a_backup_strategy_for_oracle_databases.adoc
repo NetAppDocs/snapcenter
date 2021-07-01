@@ -23,7 +23,7 @@ SnapCenter supports backup of different Oracle database configurations.
 * Oracle Standalone Container Database (CDB)
 * Oracle Data Guard standby
 +
-You can create only offline (mount or shutdown) backups of Data Guard standby databases. Archive log-only backup or full backup is not supported.
+You can create only offline mount backups of Data Guard standby databases in standard managed recovery mode. Offline, archive log-only backup or full backup are not supported.
 
 * Oracle Active Data Guard standby
 +
