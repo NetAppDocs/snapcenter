@@ -34,7 +34,7 @@ If the policy selected for the on-demand backup is associated with a backup sche
 
 *After you finish*
 
-* In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disk groups on which the database that was backed up was residing.
+* In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disks on which the database that was backed up was residing.
 +
 Locking or renaming of devices will not affect the restore operation when you restore using that backup.
 

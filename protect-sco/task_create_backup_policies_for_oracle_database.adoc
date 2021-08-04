@@ -27,13 +27,13 @@ Before you use SnapCenter to back up Oracle database resources, you must create 
 . In the Backup Type page, perform the following steps:
  ** If you want to *create an online backup*, select *Online backup*.
 +
-You must specify whether you want to back up all the database files, only datafiles and control files, or only archive log files.
+You must specify whether you want to back up all the datafiles, control files, and archive log files, only datafiles and control files, or only archive log files.
 
  ** If you want to *create an offline backup*, select *Offline backup*, and then select one of the following options:
   *** If you want to create an offline backup when the database is in mounted state, select *Mount*.
   *** If you want to create an offline shutdown backup by changing the database to shutdown state, select *Shutdown*.
 +
-If you are using Oracle 12c database, and want to save the state of the pluggable databases (PDBs) before creating the backup, you must select *Save state of PDBs*. This enables you to bring the PDBs to their original state after the backup is created.
+If you are having pluggable databases (PDBs), and want to save the state of the PDBs before creating the backup, you must select *Save state of PDBs*. This enables you to bring the PDBs to their original state after the backup is created.
  ** Specify the schedule frequency by selecting *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
 +
 NOTE: You can specify the schedule (start date and end date) for the backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but enables you to assign different backup schedules to each policy.
@@ -42,18 +42,16 @@ NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered du
 
  ** If you want to catalog backup using Oracle Recovery Manager (RMAN), select *Catalog backup with Oracle Recovery Manager (RMAN)*.
 +
-You can perform deferred cataloging for one backup at a time only by using the SnapCenter CLI command Catalog-SmBackupWithOracleRMAN.
+You can perform deferred cataloging for one backup at a time either using the GUI or using the SnapCenter CLI command Catalog-SmBackupWithOracleRMAN.
 +
 NOTE: If you want to catalog backups of a RAC database, ensure that no other job is running for that database. If another job is running, the cataloging operation fails instead of getting queued.
 
  ** If you want to prune archive logs after backup, select *Prune archive logs after backup*.
 +
 NOTE: Pruning of archive logs from the archive log destination that is unconfigured in the database, will be skipped.
-
- ** If you are using Oracle Standard Edition, you can use the following parameters:
 +
-*** LOG_ARCHIVE_DEST
-*** LOG_ARCHIVE_DUPLEX_DEST while performing archive log backup
+IMPORTANT: If you are using Oracle Standard Edition, you can use LOG_ARCHIVE_DEST and LOG_ARCHIVE_DUPLEX_DEST parameters while performing archive log backup.
+
  ** You can delete archive logs only if you have selected the archive log files as part of your backup.
 +
 NOTE: You must ensure that all the nodes in an RAC environment can access all the archive log locations for the delete operation to be successful.

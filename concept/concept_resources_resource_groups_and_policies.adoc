@@ -15,7 +15,7 @@ Before you use SnapCenter, it is helpful to understand basic concepts related to
 +
 However, depending on your environment, resources might be database instances, Microsoft SQL Server availability groups, Oracle databases, Oracle RAC databases, Windows file systems, or a group of custom applications.
 
-* A *resource group* is typically a collection of resources on a host or cluster. However, a resource group can contain a single resource.
+* A *resource group* is a collection of resources on a host or cluster. The resource group can also contain resources from multiple hosts and multiple clusters.
 +
 When you perform an operation on a resource group, you perform that operation on all the resources defined in the resource group according to the schedule you specify for the resource group.
 +

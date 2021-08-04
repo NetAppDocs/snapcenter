@@ -1,7 +1,7 @@
 ---
 permalink: install/reference_features_enabled_on_your_windows_host_during_installation.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The SnapCenter Server installer enables the Windows features and roles on your Windows host during installation. These might be of interest for troubleshooting and host system maintenance purposes.'
 ---
 = Features enabled on your Windows host during installation
@@ -62,7 +62,7 @@ a|
 * Web Management Tools
 
 a|
-.NET Framework 4.5.2 Features
+_.NET_ Framework 4.5.2 Features
 a|
 
 * .NET Framework 4.5.2
