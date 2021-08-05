@@ -69,7 +69,7 @@ You should reassign the RBAC user or group to the cluster or DAG to include the 
 +
 You should add assets before assigning access to the users.
 
-IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions, to protect VMs, VMDKs, or datastores, you use the VMware vSphere GUI to add a vCenter user to a SnapCenter Plug-in for VMware vSphere role.
+IMPORTANT: If you are using the SnapCenter Plug-in for VMware vSphere functions to protect VMs, VMDKs, or datastores, you should use the VMware vSphere GUI to add a vCenter user to a SnapCenter Plug-in for VMware vSphere role. For information about VMware vSphere roles, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_predefined_roles_packaged_with_snapcenter.html[Predefined roles packaged with SnapCenter Plug-in for VMware vSphere^].
 
 *Steps*
 

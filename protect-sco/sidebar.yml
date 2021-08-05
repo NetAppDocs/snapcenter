@@ -117,8 +117,6 @@ entries:
         url: /protect-sco/task_split_clone_of_a_pluggable_database.html
       - title: Monitor Oracle database clone operations
         url: /protect-sco/task_monitor_oracle_database_clone_operations.html
-      - title: Cancel Oracle database clone operations
-        url: /protect-sco/task_cancel_oracle_database_clone_operations.html
       - title: Refresh a clone
         url: /protect-sco/task_refresh_a_clone.html
       - title: Delete clone of a pluggable database

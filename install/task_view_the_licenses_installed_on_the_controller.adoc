@@ -47,4 +47,4 @@ SnapManagerSuite  license  SnapManagerSuite License -
 +
 In the example, the SnapManagerSuite license is installed, therefore, no additional SnapCenter licensing action is required.
 +
-If no SnapManagerSuite license is displayed, you must obtain your controller serial number, and then retrieve your license from the NetApp Support Site.
+If no SnapManagerSuite license is displayed, you must obtain your controller serial number, and then retrieve your license from the https://mysupport.netapp.com/site/[NetApp Support Site^].

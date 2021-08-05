@@ -75,7 +75,7 @@ SnapCenter Plug-ins Package for Windows, SnapCenter Plug-ins Package for Linux o
 a|
 8145 (HTTPS), bidirectional, customizable
 
-The port is used for communication between SMCore and hosts where the plug-ins package is installed is installed.
+The port is used for communication between SMCore and hosts where the plug-ins package is installed.
 
 The communication path also needs to be open between the SVM management LIF and the SnapCenter Server.
 

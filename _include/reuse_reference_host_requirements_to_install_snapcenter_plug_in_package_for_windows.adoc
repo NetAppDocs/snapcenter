@@ -8,8 +8,6 @@ Operating Systems
 a|
 Microsoft Windows
 
-NOTE: You must enable the Cluster Shared Volumes (CSV) feature in Windows Server 2008 R2 SP1 if you want to create CSV-type disks.
-
 For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
