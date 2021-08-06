@@ -148,8 +148,7 @@ PS C:\> New-SmClone
 -Resources @{"host"="ny-vm-sc-sql";"Type"="SQL Database";
 "Names"="ny-vm-sc-sql\AdventureWorks2012_data"}
 -AppPluginCode SMSQL -CloneToInstance "ny-vm-sc-sql"
--Suffix _CLPOSH -AutoAssignMountPoint
--AssignMountPointUnderPath "C:\SCMounts"
+-Suffix _CLPOSH -AssignMountPointUnderPath "C:\SCMounts"
 ----
 
 . View the status of the clone job by using the Get-SmCloneReport cmdlet.

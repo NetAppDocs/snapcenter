@@ -54,8 +54,6 @@ If you are managing SQL or Windows file system resources, you must have manually
 
 You can optionally force the deletion of all backups, metadata, policies, and Snapshot copies associated with the resource group.
 
-NOTE: In a SnapVault relationship, the last Snapshot copy cannot be deleted; therefore, the resource group cannot be deleted. Before deleting a resource group that is part of a SnapVault relationship, you must remove the SnapVault relationship and then delete the last Snapshot copy.
-
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

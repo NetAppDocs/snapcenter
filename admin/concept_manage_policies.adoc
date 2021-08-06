@@ -38,16 +38,6 @@ Perform the following:
 . Attach the policy again to all the resources and resource groups.
 
 For example, if a policy specifies hourly backups and you want to change that to daily backups, you must detach the policy first.
-
-You cannot detach the last remaining policy from an individual resource because every resource must have at least one policy attached.
-
-Therefore, if you want to modify the schedule type of the only policy attached to a resource, you must perform the following:
-
-. Attach a second placeholder policy.
-. Detach the original policy from every resource and resource group that uses that policy.
-. Modify the schedule type.
-. Attach the modified policy again to all the resources and resource groups.
-. Detach the placeholder policy.
 |===
 
 *Steps*
@@ -69,12 +59,6 @@ IMPORTANT: You cannot detach a policy from a resource or resource group if it is
 . In the Resources page, select *Resource Group* from the *View* list.
 . Select the resource group, and then click *Modify Resource Group*.
 . In the Policies page of the Modify Resource Group wizard, from the drop-down list, clear the check mark next to the policies you want to detach.
-+
-NOTE: You cannot detach the last remaining policy from an individual resource because every resource must have at least one policy attached. Therefore, if you want to delete or modify the only policy attached to a resource, you must perform the following:
-
- .. Attach a second placeholder policy.
- .. Detach the original policy from the resource.
-
 . Make any additional modifications to the resource group in the rest of the wizard, and then click *Finish*.
 
 == Delete policies
