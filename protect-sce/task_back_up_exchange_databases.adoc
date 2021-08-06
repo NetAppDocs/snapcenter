@@ -24,7 +24,7 @@ If a database is not part of any resource group, you can back up the database or
 
 *Steps*
 
-. In the left navigation pane, click *Resources*, and then select the Microsoft Exchange Server plug-in from the list.
+. In the left navigation pane, click *Resources*, and then select the *Microsoft Exchange Server plug-in* from the list.
 . On the Resources page, select either *Database*, or *Database Availability Group* from the *View* list.
 +
 On the Resources page, the image:../media/not_supported_icon.png[] icon indicates that the database is on non-NetApp storage.
