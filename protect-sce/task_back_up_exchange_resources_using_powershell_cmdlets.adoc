@@ -24,7 +24,7 @@ NOTE: Plug-in for Exchange does not support clone operations; therefore, the Clo
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-smconnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+Open-smconnection  -SMSbaseurl  https://snapctr.demo.netapp.com:8146/
 ----
 +
 The username and password prompt is displayed.

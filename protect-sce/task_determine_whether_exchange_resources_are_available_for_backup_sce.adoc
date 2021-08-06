@@ -23,7 +23,7 @@ Resources are the databases, Exchange Database Availability Groups that are main
  ** Databases are not on a NetApp LUN.
  ** Databases are not in normal state.
 +
-Databases are not in normal state when they are offline, restoring, recovery pending, suspend, and so on.
+Databases are not in normal state when they are in mount, unmount, reseed, or recovery pending state.
 * If you have a Database Availability Group (DAG), you can back up all databases in the group by running the backup job from the DAG.
 
 *Steps*
@@ -37,7 +37,7 @@ Click image:../media/filter_icon.gif[] and select the host name and the Exchange
 +
 The newly added, renamed, or deleted resources are updated to the SnapCenter Server inventory.
 +
-The resources are displayed along with information such as resource name, Database Availability Group name, time of last backup, and overall status.
+The resources are displayed along with information such as resource name, Database Availability Group name, server in which the database is currently active, server with copies, time of last backup, and overall status.
 
 * If the database is on a non-NetApp storage, Not available for backup is displayed in the Overall Status column.
 +
