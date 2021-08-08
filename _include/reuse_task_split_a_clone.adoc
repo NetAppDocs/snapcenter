@@ -38,9 +38,9 @@ The resource topology page is displayed.
 . Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 +
-The clone split operation stops responding if the SMCore service restarts and the databases on which the clone split operation was performed are listed as clones in the Resources page. You should run the Stop-SmJob cmdlet to stop the clone split operation, and then retry the clone split operation.
+The clone split operation stops responding if the SMCore service restarts. You should run the Stop-SmJob cmdlet to stop the clone split operation, and then retry the clone split operation.
 +
-If you want a longer poll time or shorter poll time to check whether the clone is split or not, you can change the value of CloneSplitStatusCheckPollTime parameter in SMCoreServiceHost.exe.config file to set the time interval for SMCore to poll for the status of the clone split operation. The value is in milliseconds and the default value is 5 minutes.
+If you want a longer poll time or shorter poll time to check whether the clone is split or not, you can change the value of _CloneSplitStatusCheckPollTime_ parameter in _SMCoreServiceHost.exe.config_ file to set the time interval for SMCore to poll for the status of the clone split operation. The value is in milliseconds and the default value is 5 minutes.
 +
 For example:
 +
@@ -48,7 +48,7 @@ For example:
 <add key="CloneSplitStatusCheckPollTime" value="300000" />
 ----
 +
-The clone split start operation fails if backup, restore, or anther clone split is in progress. You should restart the clone split operation only after the running operations are complete.
+The clone split start operation fails if backup, restore, or another clone split is in progress. You should restart the clone split operation only after the running operations are complete.
 
 *Find more information*
 

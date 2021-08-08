@@ -65,9 +65,11 @@ The default script timeout is 60 seconds.
  ** Select *Configure schedule* when you want to determine how frequently the clone operation should occur, when the clone schedule should start, on which day the clone operation should occur, when the schedule should expire, and whether the clones have to be deleted after the schedule expires.
 . In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
-You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, select *Attach Job Report*.
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
++
+For EMS, you can refer https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection[Manage EMS data collection]
 
 . Review the summary, and then click *Finish*.
 

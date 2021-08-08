@@ -4,16 +4,15 @@ sidebar: sidebar
 keywords: credentials
 summary: Provides instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 ---
-= Installing SnapCenter Plug-in for SQL Server
+= Quick start to install SnapCenter Plug-in for SQL Server
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Provides a condensed set of installation instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 
-== Preparing for installation
-
-=== Domain and workgroup requirements
+== Prepare for installation
+*Domain and workgroup requirements*
 
 SnapCenter Server can be installed on systems that are either in a domain or in a workgroup.
 
@@ -21,7 +20,7 @@ If you are using an Active Directory domain, you should use a Domain user with l
 
 If you are using workgroups, you should use a local account that has local administrator rights.
 
-=== Licensing requirements
+*License requirements*
 
 The type of licenses you install depends on your environment.
 
@@ -51,14 +50,9 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 |===
 
-=== Additional requirements
+*Additional requirements*
 
-|===
-|Storage and applications |Minimum requirements
-
-a|ONTAP and application plug-in
-a|See http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
-|===
+For ONTAP and application plug-in minimum requirements see http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
 
 |===
 |Hosts |Minimum requirements
@@ -120,7 +114,7 @@ a|443 (HTTPS), bidirectional;
 The port is used for communication between the SnapCenter Server host, plug-in host, and SVM or ONTAP Cluster.
 |===
 
-=== SnapCenter Plug-in for Microsoft SQL Server requirements
+*SnapCenter Plug-in for Microsoft SQL Server requirements*
 
 You should have a user with local administrator privileges with local login permissions on the remote host. If you manage cluster nodes, you need a user with administrative privileges to all the nodes in the cluster.
 
@@ -128,9 +122,8 @@ You should have a user with sysadmin permissions on the SQL Server. The plug-in 
 
 If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see link:../protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html[Import archived backups^]
 
-== Installing SnapCenter Server
-
-=== Downloading and installing SnapCenter Server
+== Install SnapCenter Server
+*Download and install SnapCenter Server*
 
 *Steps*
 
@@ -145,7 +138,7 @@ NOTE: The special character “%” is not supported in the custom path for inst
 
 . Click *Install Now*.
 
-=== Logging in to SnapCenter
+*Log in to SnapCenter*
 
 *Steps*
 
@@ -157,7 +150,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 For a built-in local admin username format, use _<username>_.
 . Click *Sign In*.
 
-=== Adding a SnapCenter Standard controller-based license
+*Add a SnapCenter Standard controller-based license*
 
 *Steps*
 
@@ -168,7 +161,7 @@ For a built-in local admin username format, use _<username>_.
 +
 `license show`
 
-=== Adding a SnapCenter capacity-based license
+*Add a SnapCenter capacity-based license*
 
 *Steps*
 
@@ -180,7 +173,7 @@ For a built-in local admin username format, use _<username>_.
 . On the *Notifications* page of the wizard, use the default capacity threshold of 90 percent.
 . Click *Finish*.
 
-=== Setting up storage system connections
+*Set up storage system connections*
 
 *Steps*
 
@@ -192,9 +185,8 @@ For a built-in local admin username format, use _<username>_.
 . Click *More Options* if you want to modify the default values assigned to platform, protocol, port, and timeout.
 . Click *Submit*.
 
-== Installing the Plug-in for Microsoft SQL Server
-
-=== Setting up Run As Credentials
+== Install the Plug-in for Microsoft SQL Server
+*Set up Run As Credentials to install the Plug-in for Microsoft SQL Server*
 
 *Steps*
 
@@ -205,7 +197,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 +
 For a built-in local admin username format, use _<username>_.
 
-=== Adding a host and installing the Plug-in for Microsoft SQL Server
+*Add a host and install the Plug-in for Microsoft SQL Server*
 
 *Steps*
 

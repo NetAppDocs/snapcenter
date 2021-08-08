@@ -106,6 +106,6 @@ NOTE: For email notification, you must have specified the SMTP server details ei
 
 . Review the summary, and then click *Finish*.
 
-*For more information*
+*Find more information*
 
 link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]
