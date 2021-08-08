@@ -47,7 +47,7 @@ You should ensure that the target CDB is running.
 a|
 Database State
 a|
-Select the *Open the PDB to be cloned in READ-WRITE mode* checkbox if you want to open the PDB in READ-WRITE mode.
+Select the *Open the cloned PDB in READ-WRITE mode* checkbox if you want to open the PDB in READ-WRITE mode.
 a|
 Datafile locations
 a|
@@ -118,9 +118,9 @@ Specify the external archive log location.
 a|
 Create new DBID
 a|
-By default *Create new DBID* check box is selected to generate a unique number (DBID) for the cloned database differentiating it from the source database.
+By default *Create new DBID* check box is not selected for the auxiliary clone database.
 
-Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
+Select the check box if you want to generate a unique number (DBID) for the auxiliary cloned database differentiating it from the source database.
 a|
 Create tempfile for temporary tablespace
 //[SD]: Included this for BURT 1391437 in 4.5//
@@ -145,7 +145,7 @@ By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have
 
 . On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
-You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, select *Attach Job Report*.
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
@@ -156,7 +156,7 @@ NOTE: For email notification, you must have specified the SMTP server details us
 
 If you want to create a backup of the cloned PDB, you should backup the target CDB where the PDB is cloned because backing up only the cloned PDB is not possible. You should create a secondary relationship for the target CDB if you want to create the backup with secondary relationship.
 
-In a RAC setup the storage for cloned PDB is attached only to the node where the PDB clone was performed. The other nodes of the RAC are in MOUNTED state. If you want the cloned PDB to be accessible from the other nodes, you should manually attach the storage to the other nodes.
+In a RAC setup the storage for cloned PDB is attached only to the node where the PDB clone was performed. The PDBs on the other nodes of the RAC are in MOUNT state. If you want the cloned PDB to be accessible from the other nodes, you should manually attach the storage to the other nodes.
 
 *Find more information*
 
