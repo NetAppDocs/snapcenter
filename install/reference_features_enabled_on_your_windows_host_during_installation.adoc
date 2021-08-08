@@ -62,7 +62,7 @@ a|
 * Web Management Tools
 
 a|
-_.NET_ Framework 4.5.2 Features
++.NET Framework 4.5.2 Features+
 a|
 
 * .NET Framework 4.5.2

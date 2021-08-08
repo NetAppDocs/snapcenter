@@ -1,9 +1,10 @@
 section: admin
 title: Manage SnapCenter Server and plug-ins
 entries:
-    - title: Overview of dashboard
-      url: /admin/concept_overview_of_dashboard.html
+    - title: View dashboard
       entries:
+        - title: Overview of dashboard
+          url: /admin/concept_overview_of_dashboard.html
         - title: How to view information on the dashboard
           url: /admin/task_how_to_view_information_on_the_dashboard.html
         - title: Request status reports of the jobs from the dashboard

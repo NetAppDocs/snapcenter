@@ -1,7 +1,7 @@
 section: uninstall
 title: Uninstall SnapCenter Server and plug-ins
 entries:
-  - title: Uninstall SnapCenter plug-ins and plug-in packages
+  - title: Uninstall SnapCenter plug-in packages
     url: /uninstall/concept_uninstall_snapcenter_plug_ins_and_plug_in_packages.html
     entries:
       - title: Prerequisites for removing a host

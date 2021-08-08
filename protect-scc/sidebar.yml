@@ -112,7 +112,7 @@ entries:
       - title: Cancel restore operations
         url: /protect-scc/task_cancel_scc_resources_restore_operations.html
   - title: Clone custom plug-in resource backups
-    url: /protect-scc/task_clone_custom_plug_in_resource_backups.html"
+    url: /protect-scc/task_clone_custom_plug_in_resource_backups.html
     entries:
       - title: Clone from a backup
         url: /protect-scc/task_clone_from_a_backup.html

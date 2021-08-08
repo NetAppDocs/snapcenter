@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall, plug-in, plug-in packages
 summary: 'You can remove hosts and uninstall individual plug-ins or plug-in packages using the SnapCenter GUI. You can also uninstall individual plug-ins or plug-in packages on remote hosts using the command-line interface \(CLI\) on your SnapCenter Server host or using the Windows Uninstall a program option locally on any host.'
 ---
-= Uninstall SnapCenter plug-ins and plug-in packages
+= Uninstall SnapCenter plug-in packages
 :icons: font
 :imagesdir: ../media/
 

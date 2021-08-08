@@ -118,6 +118,7 @@ a|
 Retention
 
 * Days
+* Counts
 
 a|
 SnapManager for Oracle and SnapManager for SAP uses both Days and Counts to set the retention.
@@ -151,7 +152,8 @@ Notification
 
 * Always
 * On failure
-* Always
+* Warning
+* Error
 
 a|
 The email notifications are imported.
