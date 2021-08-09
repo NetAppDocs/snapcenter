@@ -67,7 +67,6 @@ Directly upgrade to 4.5
 +
 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
 
-. In the left navigation pane, click *Hosts*., and in the Managed Hosts list, select the host that you want to upgrade.
 . Create a copy of the web.config located at C:\Program Files\NetApp\SnapCenter WebApp.
 . Export the SnapCenter schedules related to plug-in host from windows task schedule so that you can use it to restore the schedules if upgrade fails.
 +
