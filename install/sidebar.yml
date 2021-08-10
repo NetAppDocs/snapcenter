@@ -43,7 +43,7 @@ entries:
         url: /install/task_enable_ca_certificates_for_snapcenter.html
   - title: Register untrusted Active Directory domains
     url: /install/task_register_untrusted_active_directory_domains.html
-  - title: Support for High Availability
+  - title: Configure High Availability
     entries:
       - title: Configure SnapCenter Servers for High Availability using F5
         url: /install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html
@@ -55,10 +55,8 @@ entries:
         url: /install/concept_high_availability_for_snapcenter_mysql_repository.html
       - title: Export SnapCenter certificates
         url: /install/task_export_snapcenter_certificates.html
-  - title: Support for role-based access control (RBAC)
+  - title: Configure role-based access control (RBAC)
     entries:
-      - title: Configure role-based access control (RBAC)
-        url: /install/concept_configure_role_based_access_control_rbac.html
       - title: Add a user or group and assign role and assets
         url: /install/task_add_a_user_or_group_and_assign_role_and_assets.html
       - title: Create a role
