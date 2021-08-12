@@ -1,7 +1,7 @@
 ---
 permalink: install/task_log_in_to_snapcenter.html
 sidebar: sidebar
-keywords: log in, logging, SnapCenter UI
+keywords: log in, logging, SnapCenter UI, modify timeout, GUI session timeout, disbale SSL 3.0, SSL 3.0, security
 summary: 'SnapCenter supports role-based access control (RBAC). SnapCenter admin assigns roles and resources through SnapCenter RBAC to either a user in workgroup or active directory, or to groups in active directory. The RBAC user can now log in to SnapCenter with the assigned roles.'
 ---
 = Log in to SnapCenter
@@ -30,11 +30,7 @@ The default GUI URL is a secure connection to the default port 8146 on the serve
 For High Availability (HA) deployment, you must access SnapCenter using the virtual cluster IP _\https://Virtual_Cluster_IP_or_FQDN:8146_. If you do not see the SnapCenter UI when you navigate to _\https://Virtual_Cluster_IP_or_FQDN:8146_ in Internet Explorer (IE), you must add the Virtual Cluster IP address or FQDN as a trusted site in IE on each plug-in host, or you must disable IE Enhanced Security on each plug-in host.
 For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_access_cluster_IP_address_from_outside_network[Unable to access cluster IP address from outside network^].
 
-In addition to using the SnapCenter GUI, you can use PowerShell cmdlets to create scripts to perform configuration, backup, and restore operations. Some cmdlets might have changed with each SnapCenter release. The SnapCenter cmdlet or SnapCenter CLI documentation has the details.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877144[SnapCenter Software Command Reference Guide^]
+In addition to using the SnapCenter GUI, you can use PowerShell cmdlets to create scripts to perform configuration, backup, and restore operations. Some cmdlets might have changed with each SnapCenter release. The https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^] has the details.
 
 NOTE: If you are logging in to SnapCenter for the first time, you must log in using the credentials that you provided during the install process.
 
@@ -66,7 +62,7 @@ Your current user and associated role are shown in the upper right of SnapCenter
 
 *Results*
 
-If you are using SnapCenter for the first time, the Storage Systems page is displayed, and the Get Started pane is expanded.
+The *Dashboard* page is displayed.
 
 If the logging fails with the error that site cannot be reached, you should map the SSL certificate to SnapCenter. https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FSnapCenter_will_not_open_with_error_%2522This_site_can%2527t_be_reached%2522[Learn more^]
 
@@ -75,3 +71,34 @@ If the logging fails with the error that site cannot be reached, you should map 
 After logging to SnapCenter Server as an RBAC user for the first time, refresh the resources list.
 
 If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. link:../install/task_register_untrusted_active_directory_domains.html[Learn more^]
+
+== Modify the SnapCenter default GUI session timeout
+
+You can modify the SnapCenter GUI session timeout period to make it less than or greater than the default timeout period of 20 minutes.
+
+As a security feature, after a default period of 15 minutes of inactivity, SnapCenter warns you that you will be logged out of the GUI session in 5 minutes. By default, SnapCenter logs you out of the GUI session after 20 minutes of inactivity, and you must log in again.
+
+*Steps*
+
+. In the left navigation pane, click *Settings* > *Global Settings*.
+. In the Global Settings page, click *Configuration Settings*.
+. In the Session Timeout field, enter the new session timeout in minutes, and then click *Save*.
+
+== Secure the SnapCenter web server by disabling SSL 3.0
+
+For security purposes, you should disable Secure Socket Layer (SSL) 3.0 protocol in Microsoft IIS if it is enabled on your SnapCenter web server.
+
+There are flaws in the SSL 3.0 protocol that an attacker can use to cause connection failures, or to perform man-in-the-middle attacks and observe the encryption traffic between your website and its visitors.
+
+*Steps*
+
+. To launch Registry Editor on the SnapCenter web server host, click *Start* > *Run*, and then enter regedit.
+. In Registry Editor, navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\.
+ ** If the Server key already exists:
+  ... Select the Enabled DWORD, and then click *Edit* > *Modify*.
+  ... Change the value to 0, and then click *OK*.
+ ** If the Server key does not exist:
+  ... Click *Edit* > *New* > *Key*, and then name the key Server.
+  ... With the new Server key selected, click *Edit* > *New* > *DWORD*.
+  ... Name the new DWORD Enabled, and then enter 0 as the value.
+. Close Registry Editor.

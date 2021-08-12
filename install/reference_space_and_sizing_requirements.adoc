@@ -38,10 +38,16 @@ a|
 Minimum hard drive space for the SnapCenter Server software and logs
 a|
 4 GB
+
+NOTE: If you have the SnapCenter repository in the same drive where SnapCenter Server is installed, then it is recommended to have 10 GB.
+
 a|
 Minimum hard drive space for the SnapCenter repository
 a|
 6 GB
+
+NOTE: NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 10 GB.
+
 a|
 Required software packages
 a|
