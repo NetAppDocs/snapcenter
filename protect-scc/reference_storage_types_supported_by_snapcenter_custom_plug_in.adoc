@@ -11,8 +11,6 @@ summary: 'SnapCenter supports a wide range of storage types on both physical and
 [.lead]
 SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing SnapCenter Custom Plug-ins.
 
-Provisioning using SnapCenter is supported on Windows using SnapCenter Plug-in for Microsoft Windows. Provisioning is not supported for SnapCenter Plug-ins Package for Linux.
-
 |===
 | Machine| Storage type
 

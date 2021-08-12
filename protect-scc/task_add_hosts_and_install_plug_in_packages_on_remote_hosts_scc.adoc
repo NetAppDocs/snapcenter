@@ -136,8 +136,6 @@ NOTE: In an HA setup, if you are updating web.config file, you must update the f
 
 . If host type is Linux, verify the fingerprint, and then click *Confirm and Submit*.
 +
-In a cluster setup, you should verify the fingerprint of each of the nodes in the cluster.
-+
 NOTE: Fingerprint verification is mandatory even if the same host was added earlier to SnapCenter and the fingerprint was confirmed.
 
 . Monitor the installation progress.
