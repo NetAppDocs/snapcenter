@@ -26,6 +26,7 @@ link:task_configure_gMSA_on_windows_server_2012_or_later_for_windows_file_system
 * You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 * Windows plug-ins
  ** Microsoft Windows
+ ** Microsoft Exchange Server
  ** Microsoft SQL Server
  ** SAP HANA
  ** Custom plug-ins
@@ -53,8 +54,6 @@ a|
 Select the *Windows* type of host.
 
 SnapCenter Server adds the host and then installs the Plug-in for Windows if it is not already installed on the host.
-
-If you also select the Microsoft SQL Server option on the Plug-ins page, SnapCenter Server also installs the Plug-in for SQL Server.
 a|
 Host name
 a|
@@ -109,7 +108,7 @@ You can optionally customize the path.    For SnapCenter Plug-ins Package for Wi
 a|
 Add all hosts in the cluster
 a|
-Select this check box to add all of the cluster nodes in a WSFC or a SQL Availability Group.
+Select this check box to add all of the cluster nodes in a WSFC.
 a|
 Skip preinstall checks
 a|
@@ -130,7 +129,7 @@ NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in 
 +
 If you have not selected the *Skip prechecks* checkbox, the host is validated to see whether it meets the requirements to install the plug-in. The disk space, RAM, PowerShell version, .NET version, and location are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
 +
-If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
+If the error is related to disk space or RAM, you can update the web.config file located at `C:\Program Files\NetApp\SnapCenter` WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
 NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 

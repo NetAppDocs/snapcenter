@@ -6,7 +6,6 @@ entries:
   - title: Security features
     url: /concept/reference_data_security.html
   - title: SnapCenter role-based access control (RBAC)
-    url: /concept/concept_snapcenter_role_based_access_control_rbac.html
     entries:
       - title: Types of RBAC
         url: /concept/concept_types_of_role_based_access_control_in_snapcenter.html

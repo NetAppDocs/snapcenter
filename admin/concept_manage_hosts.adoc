@@ -178,7 +178,7 @@ NOTE: Ensure that the plug-in version is the same as that of the SnapCenter Serv
 
 * You can modify a plug-in port only after the plug-in is installed.
 +
-If you are 2.x or earlier versions of SnapCenter Server and SnapCenter plug-ins, you must upgrade both SnapCenter Server and SnapCenter plug-ins to be able to modify the plug-in port. You cannot modify the plug-in port while upgrade operations are in progress.
+You cannot modify the plug-in port while upgrade operations are in progress.
 
 * While modifying a plug-in port, you should be aware of the following port rollback scenarios:
 

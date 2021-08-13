@@ -70,7 +70,7 @@ PS C:\> Add-SmResourceGroup -ResourceGroupName EngineeringResource
 -Policies "EngineeringBackupPolicy"
 ----
 
-. Initiate a new Snapshot copy job by using the New-SmBackup cmdlet.
+. Initiate a new backup job by using the New-SmBackup cmdlet.
 +
 ----
 PS C:> New-SmBackup -ResourceGroupName PayrollDataset -Policy FinancePolicy
@@ -81,7 +81,7 @@ PS C:> New-SmBackup -ResourceGroupName PayrollDataset -Policy FinancePolicy
 This example displays a job summary report of all jobs that were run on the specified date:
 +
 ----
-PS C:\> Get-SmJobSummaryReport -Date ?1/27/2016?
+PS C:\> Get-SmJobSummaryReport -Date '1/27/2016'
 ----
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].

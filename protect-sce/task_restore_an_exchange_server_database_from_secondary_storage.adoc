@@ -15,7 +15,7 @@ You must have replicated the Snapshot copies from primary storage to a secondary
 
 *Steps*
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server plug-in* from the list.
 . In the Resources page, select *Database* or *Resource Group* from the *View* drop-down list.
 . Select the database or the resource group.
 +

@@ -103,15 +103,15 @@ NOTE: If the host is added with gMSA and if the gMSA has login and sys admin pri
 
 . Click *Submit*.
 . For SQL Plug-in, select the host to configure the log directory.
-. Click *Configure log directory* and on the *Configure host log directory* page, click *Browse* and complete the following steps:
+.. Click *Configure log directory* and on the *Configure host log directory* page, click *Browse* and complete the following steps:
 +
 Only NetApp LUNs (drives) are listed for selection. SnapCenter backs up and replicates the host log directory as part of the backup operation.
 +
 image::../media/host_managed_hosts_configureplugin.gif[Configure plug-in page]
 
- .. Select the drive letter or mount point on the host where the host log will be stored.
- .. Choose a subdirectory, if required.
- .. Click *Save*.
+ ... Select the drive letter or mount point on the host where the host log will be stored.
+ ... Choose a subdirectory, if required.
+ ... Click *Save*.
 
 . Click *Submit*.
 +

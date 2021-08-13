@@ -30,6 +30,8 @@ https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/[SnapCenter Plug-in for V
 * Move existing databases onto NetApp storage.
 +
 For details, see SnapCenter importing information.
++
+link:concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html[Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter]
 
 * Set up SnapMirror and SnapVault relationships, if you want backup replication.
 

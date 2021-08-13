@@ -21,7 +21,7 @@ You can restore the backed-up SQL Server databases from the physical LUNs (RDM, 
 
 *Steps*
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, click *Resources*, and then select *SnapCenter Plug-in for SQL Server* from the list.
 . On the Resources page, select *Database* or *Resource Group* from the *View* drop-down list.
 . Select the database or resource group.
 +

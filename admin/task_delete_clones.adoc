@@ -13,7 +13,9 @@ You can delete clones if you find them no longer necessary.
 
 *About this task*
 
-A clone that has been cloned again cannot be deleted. For example, if the production database db1 is cloned to db1_clone1 and subsequently cloned to db1_clone2, and you decide that you want to delete db1_clone1, you must first delete db1_clone2, and then delete db1_clone1
+You cannot delete clones that acts like source for other clones.
+
+For example, if the production database is db1, database clone1 is cloned from backup of db1 and subsequently clone1 is protected. The database clone2 is cloned from backup of clone1. If you decide to delete clone1, you must first delete clone2, and then delete clone1.
 
 *Steps*
 

@@ -1,5 +1,5 @@
 section: install
-title: Install SnapCenter Server
+title: SnapCenter Server installation
 entries:
   - title: Install Workflow
     url: /install/install_workflow.html
@@ -23,16 +23,12 @@ entries:
         url: /install/concept_authentication_methods_for_your_credentials.html
       - title: Storage Virtual Machine connections and credentials
         url: /install/concept_svm_connections_and_credentials.html
-  - title: Install the SnapCenter Server using the install wizard
+  - title: Install the SnapCenter Server
     url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
+  - title: Log in to SnapCenter
+    url: /install/task_log_in_to_snapcenter.html
+  - title: Configure CA Certificate
     entries:
-      - title: Log in to SnapCenter
-        url: /install/task_log_in_to_snapcenter.html
-        entries:
-          - title: Modify the SnapCenter default GUI session timeout
-            url: /install/task_modify_the_snapcenter_default_log_out_period.html
-          - title: Secure the SnapCenter web server by disabling SSL 3.0
-            url: /install/task_secure_the_snapcenter_web_server_by_disabling_ssl_3_0.html
       - title: Generate CA Certificate CSR file
         url: /install/reference_generate_CA_certificate_CSR_file.html
       - title: Import CA Certificates
@@ -47,9 +43,10 @@ entries:
         url: /install/task_enable_ca_certificates_for_snapcenter.html
   - title: Register untrusted Active Directory domains
     url: /install/task_register_untrusted_active_directory_domains.html
-  - title: Configure SnapCenter Servers for High Availability using F5
-    url: /install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html
+  - title: Configure High Availability
     entries:
+      - title: Configure SnapCenter Servers for High Availability using F5
+        url: /install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html
       - title: Configure Microsoft Network Load Balancer manually
         url: /install/concept_network_load_balanacing_and_application_request_routing_requirements.html
       - title: Switch from NLB to F5 for high availability
@@ -59,7 +56,6 @@ entries:
       - title: Export SnapCenter certificates
         url: /install/task_export_snapcenter_certificates.html
   - title: Configure role-based access control (RBAC)
-    url: /install/concept_configure_role_based_access_control_rbac.html
     entries:
       - title: Add a user or group and assign role and assets
         url: /install/task_add_a_user_or_group_and_assign_role_and_assets.html
@@ -145,10 +141,5 @@ entries:
             url: /install/task_create_a_shared_fc_rdm_lun.html
   - title: Configure secured MySQL connections with SnapCenter Server
     url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
-    entries:
-      - title: Configure secured MySQL connections for standalone SnapCenter Server configurations
-        url: /install/task_configure_secured_mysql_connections_for_standalone_snapcenter_server.html
-      - title: Configure secured MySQL connections for HA configurations
-        url: /install/task_configure_secured_mysql_connections_for_network_load_balancing_nlb.html
   - title: Features enabled on your Windows host during installation
     url: /install/reference_features_enabled_on_your_windows_host_during_installation.html

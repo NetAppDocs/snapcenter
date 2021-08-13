@@ -117,7 +117,7 @@ By default, the number of redo log groups, redo log files, and their sizes will 
 
  ** Number of redo log groups
 
-NOTE: A minimum of three redo log groups are required to clone the database.
+NOTE: A minimum of two redo log groups are required to clone the database.
 
  ** Redo log files in each group and their path
 +
@@ -163,7 +163,7 @@ If you are using Oracle Standard Edition and the database is running in Archive 
   *** LOG_ARCHIVE_DEST
   *** LOG_ARCHIVE_DUPLEX_DEST
 +
-NOTE: Fast recovery area (FRA) is not defined is the prepopulated database parameters. You can configure FRA by adding the related parameters.
+NOTE: Fast recovery area (FRA) is not defined in the prepopulated database parameters. You can configure FRA by adding the related parameters.
 +
 NOTE: The default value of log_archive_dest_1 is $ORACLE_HOME/clone_sid and the archive logs of the cloned database will be created in this location. If you have deleted the log_archive_dest_1 parameter, the archive log location is determined by Oracle. You can define a new location for archive log by editing log_archive_dest_1 but ensure that the file system or disk group should be existing and made available on the host.
 
@@ -231,7 +231,7 @@ If you have placed the script in any folder inside this path, you need to provid
 
 . On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
-You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, select *Attach Job Report*.
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
@@ -249,7 +249,7 @@ After cloning, you should never rename the cloned database.
 
 NOTE: If you have not performed recovery while cloning, the backing up of the cloned database might fail due to improper recovery and you might have to perform manual recovery. The log backup can also fail if default location which was populated for archive logs is on a non-NetApp storage or if the storage system is not configured with SnapCenter.
 
-In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disk groups on which the cloned database resided.
+In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disks on which the cloned database resided.
 
 Locking or renaming of devices will not affect the clone deletion operation. For AIX LVM layouts built on SAN devices, renaming of devices will not be supported for the cloned SAN devices.
 // [SD]: Included the second sentence in the above line for BURT 1391312 in 4.5

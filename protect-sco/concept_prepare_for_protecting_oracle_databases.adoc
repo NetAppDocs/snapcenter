@@ -18,12 +18,14 @@ Before you use the Plug-in for Oracle Database, the SnapCenter administrator sho
 * Install and configure SnapCenter Server. link:../install/task_install_the_snapcenter_server_using_the_install_wizard.html[Learn more^]
 * Configure the SnapCenter environment by adding storage system connections. link:../install/task_add_storage_systems.html[Learn more^]
 +
-NOTE: SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM supported by SnapCenter must have a unique name.
+NOTE: SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM registered with SnapCenter using either SVM registration or cluster registration must be unique.
 
 * Create credentials with authentication mode as Linux or AIX for the install user. link:../protect-sco/task_set_up_credentials_for_installing_the_plug_in_package_for_linux_or_aix.html[Learn more^]
 * Add hosts, install the plug-ins, and discover the resources.
 * If you are using SnapCenter Server to protect Oracle databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
 * Install Java on your Linux or AIX host.
++
+See link:../protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux.html[Linux host requirements^] or link:../protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_ins_package_for_aix.html[AIX host requirements^] for more information.
 * You should set the time out value of the application firewall to 3 hours or more.
 * If you have Oracle databases on NFS environments, you must have configured at least one NFS data LIF for primary or secondary storage to perform mount, clone, verification, and restore operations.
 * If you have multiple data paths (LIFs) or a dNFS configuration, you can perform the following using the SnapCenter CLI on the database host:
@@ -35,7 +37,7 @@ The command reference guide has more information.
 ** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547958[Using Linux Hosts with ONTAP storage^]
 ** https://library.netapp.com/ecm/ecm_download_file/ECMP1119218[Host Settings Affected by AIX Host Utilities^]
 * If you have Oracle databases on LVM in Oracle Linux or RHEL operating systems, install the latest version of Logical Volume Management (LVM).
-* If you are using SnapManager for Oracle and want to SnapCenter Plug-in for Oracle Database, you can migrate the profiles to policies and resource groups of SnapCenter by using the sccli command sc-migrate.
+* If you are using SnapManager for Oracle and want to migrate to SnapCenter Plug-in for Oracle Database, you can migrate the profiles to policies and resource groups of SnapCenter by using the sccli command sc-migrate.
 * Configure SnapMirror and SnapVault on ONTAP, if you want backup replication
 
 For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For SnapCenter 4.3.x users, the SnapCenter Plug-in for VMware vSphere 4.3 documentation has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).

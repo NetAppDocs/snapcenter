@@ -50,11 +50,7 @@ You can delete a resource group if you no longer need to protect the resources i
 
 *About this task*
 
-If you are managing SQL or Windows file system resources, you must have manually deleted all clones created for any of the resources in the resource group.
-
-You can optionally force the deletion of all backups, metadata, policies, and Snapshot copies associated with the resource group.
-
-NOTE: In a SnapVault relationship, the last Snapshot copy cannot be deleted; therefore, the resource group cannot be deleted. Before deleting a resource group that is part of a SnapVault relationship, you must remove the SnapVault relationship and then delete the last Snapshot copy.
+You should manually delete all clones created for any of the resources in the resource group. You can optionally force the deletion of all backups, metadata, policies, and Snapshot copies associated with the resource group.
 
 *Steps*
 

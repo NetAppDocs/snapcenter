@@ -26,7 +26,7 @@ Reseed is an option to restore Availability Group (AG) databases. If a secondary
 
 *Steps*
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, click *Resources*, and then select *SnapCenter Plug-in for SQL Server* from the list.
 . In the *Resources* page, select *Database* from the *View* list.
 . Select secondary AG database from the list.
 . Click *Reseed*.

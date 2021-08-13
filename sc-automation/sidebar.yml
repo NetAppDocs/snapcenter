@@ -3,21 +3,19 @@ title: Automation using REST APIs
 entries:
   - title: Overview of REST APIs
     url: /sc-automation/overview_rest_apis.html
-    entries:
-      - title: How to access SnapCenter REST API natively
-        url: /sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html
-      - title: REST web services foundation
-        url: /sc-automation/concept_rest_web_services_foundation.html
-      - title: Basic operational characteristics
-        url: /sc-automation/concept_basic_operational_characterstics.html
-      - title: Input variables controlling an API request
-        url: /sc-automation/concept_input_variables_controlling_an_api_request.html
-      - title: Interpretation of an API response
-        url: /sc-automation/concept_interpreting_an_api_response.html
+  - title: How to access SnapCenter REST API natively
+    url: /sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html
+  - title: REST web services foundation
+    url: /sc-automation/concept_rest_web_services_foundation.html
+  - title: Basic operational characteristics
+    url: /sc-automation/concept_basic_operational_characterstics.html
+  - title: Input variables controlling an API request
+    url: /sc-automation/concept_input_variables_controlling_an_api_request.html
+  - title: Interpretation of an API response
+    url: /sc-automation/concept_interpreting_an_api_response.html
   - title: Supported REST APIs
     url: /sc-automation/reference_supported_rest_apis.html
-    entries:
-      - title: How to access REST APIs using the Swagger API web page
-        url: /sc-automation/task_how to_access_rest_apis_using_the_swagger_api_web_page.html
+  - title: How to access REST APIs using the Swagger API web page
+    url: /sc-automation/task_how to_access_rest_apis_using_the_swagger_api_web_page.html
   - title: Get started with the REST API
     url: /sc-automation/task_get_started_with_the_rest_api.html

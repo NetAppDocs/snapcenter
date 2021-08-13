@@ -33,7 +33,7 @@ If you are using iSCSI, the iSCSI service must be running.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 1.8 64-bit, on your Linux host.
 +
-If you are using Windows 2016 for the SnapCenter Server host, you must install Java 1.8, 64-bit. The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
+If you are using Windows 2019 or Windows 2016 for the SnapCenter Server host, you must install Java 1.8, 64-bit. The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +

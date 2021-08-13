@@ -32,4 +32,3 @@ This message is displayed for the following platforms:
  ** Cloud Volumes ONTAP
  ** ONTAP Select
  ** Secondary storage
- ** MetroCluster

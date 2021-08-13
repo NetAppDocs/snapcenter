@@ -23,7 +23,7 @@ Reseeding a replica is not supported in SnapCenter versions earlier than 4.1.
 
 *Steps*
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server plug-in* from the list.
 . In the *Resources* page, select the appropriate option from the View list:
 +
 |===
