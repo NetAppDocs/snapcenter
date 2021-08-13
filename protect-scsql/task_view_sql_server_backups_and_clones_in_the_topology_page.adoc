@@ -24,10 +24,6 @@ You can review the following icons in the *Manage Copies* view to determine whet
 +
 For example, if you created 6 backups using a policy to retain only 4 backups, the number of backups displayed is 6.
 
- ** If you have upgraded from SnapCenter 1.1, the clones on the secondary (mirror or vault) are not displayed under Mirror copies or Vault copies in the Topology page.
-+
-All of the clones created using SnapCenter 1.1 are displayed under the Local copies in SnapCenter 3.0.
-
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view, but the mirror backup count in the topology view does not include the version-flexible backup.
 
 *Steps*

@@ -13,7 +13,7 @@ You can use SnapCenter to split a cloned pluggable database (PDB).
 
 *About this task*
 
-If you created a backup of the target CDB where the PDB is cloned, when you split the PDB clone, the cloned PDB is also removed from the backup of the target CDB.
+If you created a backup of the target CDB where the PDB is cloned, when you split the PDB clone, the cloned PDB is also removed from all the backups of the target CDB containing the cloned PDB.
 
 NOTE: The PDB clones are not displayed in the inventory or resources view.
 

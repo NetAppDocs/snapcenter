@@ -2,14 +2,14 @@
 permalink: protect-scsql/task_install_snapcenter_plug_in_package_for_windows_on_multiple_remote_hosts_using_cmdlets_scsql.html
 sidebar: sidebar
 keywords: credentials
-summary: 'You can install the SnapCenter Plug-ins Package for Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
+summary: 'You can install the SnapCenter Plug-in for Microsoft SQL Server on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
 ---
-= Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts by using cmdlets
+= Install SnapCenter Plug-in for Microsoft SQL Server on multiple remote hosts by using cmdlets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can install the SnapCenter Plug-ins Package for Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.
+You can install the SnapCenter Plug-in for Microsoft SQL Server on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.
 
 *What you will need*
 
@@ -19,7 +19,7 @@ You must have logged in to SnapCenter as a domain user with local administrator 
 
 . Launch PowerShell.
 . On the SnapCenter Server host, establish a session using the Open-SmConnection cmdlet, and then enter your credentials.
-. Install the SnapCenter Plug-in for Microsoft Windows on multiple remote hosts using the Install-SmHostPackage cmdlet and the required parameters.
+. Install the SnapCenter Plug-in for Microsoft SQL Server on multiple remote hosts using the Install-SmHostPackage cmdlet and the required parameters.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
 +

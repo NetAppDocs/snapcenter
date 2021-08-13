@@ -13,8 +13,6 @@ You should install SnapCenter Plug-in for Microsoft SQL Server from within the S
 
 *What you will need*
 
-* You must have backed up your SQL databases.
-* SnapCenter plug-in packages must be installed.
 * You must delete the earlier version of SnapCenter Plug-in for Microsoft SQL Server before installing.
 +
 For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Install_a_SnapCenter_Plug-In_manually_and_directly_from_thePlug-In_Host[How to Install a SnapCenter Plug-In manually and directly from the Plug-In Host^].

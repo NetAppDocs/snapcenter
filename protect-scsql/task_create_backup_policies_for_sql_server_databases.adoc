@@ -58,6 +58,7 @@ a|
 
   ... Select *Full backup*.
   ... Enter the maximum number of databases that should be backed up for each Snapshot copy.
+  Default value is 100
 +
 NOTE: You must increase this value if you want to run multiple backup operations concurrently.
 
@@ -90,6 +91,8 @@ a|
 Backup priority (Minimum and Maximum backup priority)
 a|
 Specify a minimum backup priority number, and a maximum backup priority number that decide the AG replica for backup.        For example, you can have a minimum priority of 10 and a maximum priority of 50. In this case, all the AG replicas with a priority more than 10 and less than 50 are considered for backup.
+[NOTE]
+By default, the minimum priority is 1 and maximum priority is 100.
 |===
 +
 NOTE: In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the AG changes, the backups are taken according to the retention settings and the backups of the previous owner node will be retained. The retention for AG is applicable only at the node level.
@@ -113,7 +116,7 @@ NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered du
 a|
 Retain only a specific number of Snapshot copies
 a|
-Select the *Keep log backups applicable to last <number> full backups* option, and specify the number of Snapshot copies to be retained.        If you near this limit, you might want to delete older copies.
+Select the *Keep log backups applicable to last <number> days* option, and specify the number of days to be retained.        If you near this limit, you might want to delete older copies.
 a|
 Retain the backup copies for a specific number of days
 a|
@@ -134,7 +137,7 @@ If the number of Snapshot copies exceeds the specified number, the Snapshot copi
 
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
-IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
 
 a|
 Keep Snapshot copies for

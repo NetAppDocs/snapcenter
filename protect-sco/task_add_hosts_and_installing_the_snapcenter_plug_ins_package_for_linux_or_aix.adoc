@@ -11,14 +11,11 @@ summary: 'You can use the SnapCenter Add Host page to add hosts, and then instal
 [.lead]
 You can use the Add Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX. The plug-ins are automatically installed on the remote hosts.
 
-*What you will need*
-
-* You should be assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
-* You should ensure that the message queueing service is running.
-
 *About this task*
 
 You can add a host and install plug-in packages either for an individual host or for a cluster. If you are installing the plug-in on a cluster (Oracle RAC), the plug-in is installed on all of the nodes of the cluster. For Oracle RAC One Node, you should install the plug-in on both active and passive nodes.
+
+You should be assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 
 NOTE: You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
@@ -50,7 +47,7 @@ You can enter the IP addresses or FQDN of one of the following:
  ** Stand-alone host
  ** Any node in the Oracle Real Application Clusters (RAC) environment
 +
-Node VIP or scan IP is not supported
+NOTE: Node VIP or scan IP is not supported
 
 +
 If you are adding a host by using SnapCenter and the host is part of a subdomain, you must provide the FQDN.

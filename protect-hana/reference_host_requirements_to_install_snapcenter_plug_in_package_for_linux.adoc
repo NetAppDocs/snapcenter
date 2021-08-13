@@ -37,7 +37,7 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 1.8 (64-bit)Oracle Java and OpenJDK flavors
+Java 1.8.x (64-bit)Oracle Java and OpenJDK flavors
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 

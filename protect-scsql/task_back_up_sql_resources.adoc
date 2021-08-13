@@ -54,7 +54,7 @@ The configured schedules are listed in the *Applied Schedules* column.
 +
 You can select multiple verification servers (local host or remote host).
 +
-NOTE: The verification server version should match the version and edition of the SQL server that is hosting the primary database.
+NOTE: The verification server version should be equal or above the version of the edition of the SQL server that is hosting the primary database.
 
  .. Select *Load secondary locators to verify backups on secondary* to verify your backups on secondary storage system.
  .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
@@ -98,8 +98,10 @@ If the policy selected for the on-demand backup is associated with a backup sche
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 +
-An implicit resource group is created. You can view this by selecting the *Resource Group* from the Asset drop-down list on the User Access page. The implicit resource group type is "`Resource`".
+An implicit resource group is created. You can view this by selecting respective user or group from the *User Access* page. The implicit resource group type is "`Resource`".
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+*After you finish*
 
 * In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
 +

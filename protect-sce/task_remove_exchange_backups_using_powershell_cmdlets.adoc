@@ -20,7 +20,7 @@ The information regarding the parameters that can be used with the cmdlet and th
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+Open-SmConnection  -SMSbaseurl  https://snapctr.demo.netapp.com:8146/
 ----
 
 . Delete one or more backup using the `Remove-SmBackup` cmdlet.

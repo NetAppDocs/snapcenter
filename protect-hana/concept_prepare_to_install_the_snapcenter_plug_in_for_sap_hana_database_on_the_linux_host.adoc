@@ -15,4 +15,4 @@ The Interoperability Matrix Tool (IMT) contains the latest information about the
 
 http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
 
-The SnapCenter Plug-in for SAP HANA Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you must have already installed SnapCenter 4.0 on a Windows host.
+The SnapCenter Plug-in for SAP HANA Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you must have already installed SnapCenter on a Windows host.

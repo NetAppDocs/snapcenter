@@ -22,7 +22,7 @@ Before restoring an Oracle database, you should ensure that prerequisites are co
 +
 NOTE: For information on how to edit the asm_diskstring parameter, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter[How to add disk paths to asm_diskstring^]
 
-* You should configure the static listener in the listener.ora file available at $ORACLE_HOME/ network/admin if you have disabled OS authentication and enabled Oracle database authentication for an Oracle database, and want to restore the datafiles and control files of that database.
+* You should configure the static listener in the *listener.ora* file available at _$ORACLE_HOME/network/admin_ for non ASM databases and _$GRID_HOME/network/admin_ for ASM databases if you have disabled OS authentication and enabled Oracle database authentication for an Oracle database, and want to restore the datafiles and control files of that database.
 * You should increase value of SCORestoreTimeout parameter by running the Set- SmConfigSettings command if the database size is in terabytes (TB).
 * You should ensure that all the licenses required for vCenter are installed and up to date.
 +

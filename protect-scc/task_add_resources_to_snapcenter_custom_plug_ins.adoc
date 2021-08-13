@@ -50,14 +50,12 @@ In case the type selected has a parent, enter the details of the parent. For exa
 a|
 Credential name
 a|
-(Optional) Select Credential or create a new credential.
+Select Credential or create a new credential.
 a|
-Mount Points
+Mount Paths
 a|
 Enter the mount paths where the resource is mounted.    This is applicable only for a Windows host.
 |===
-image:../media/adding_resources.gif[]
-
 . In the *Provide Storage Footprint* page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
 +
 Optional: Click the image:../media/add_policy_from_resourcegroup.gif[] icon to add more volumes, LUNs, and qtrees from other storage systems.

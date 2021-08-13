@@ -59,7 +59,7 @@ Specify the destinations of the archive log files that you do not want to back u
 +
 NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
 
-. Select the resources from the Available Resources section and move them to the Added section.
+. Select the resources from the Available Resources section and move them to the Selected Resources section.
 +
 NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
 
