@@ -76,7 +76,7 @@ The databases are displayed along with information such as the SID, communicatio
 
 If you want to provide users access to resources, you must assign the resources to the users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
 
-link: https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
+link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
 
 After adding the databases, you can modify the SAP HANA database details.
 
