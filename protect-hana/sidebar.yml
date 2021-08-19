@@ -92,6 +92,8 @@ entries:
     entries:
       - title: Prerequisites for using the SnapCenter Plug-in for SAP HANA Database
         url: /protect-hana/reference_prerequisites_for_using_snapcenter_plug_in_for_sap_hana_database.html
+      - title: How resources, resource groups, and policies are used for protecting SAP HANA databases
+        url: /protect-hana/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_sap_hana_databases.html
   - title: Back up SAP HANA resources
     url: /protect-hana/task_back_up_sap_hana_resources.html
     entries:
@@ -151,5 +153,7 @@ entries:
         url: /protect-hana/task_monitor_hana_database_clone_operations.html
       - title: Cancel clone operations
         url: /protect-hana/task_cancel_hana_database_clone_operations.html
+      - title: Split a clone
+        url: /protect-hana/task_split_a_clone_for_hana.html  
       - title: Delete or split SAP HANA database clones after upgrading SnapCenter
         url: /protect-hana/task_delete_or_split_sap_hana_database_clones_after_upgrading_snapcenter.html

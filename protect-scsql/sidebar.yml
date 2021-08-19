@@ -69,8 +69,8 @@ entries:
       - title: Add hosts and install the SnapCenter Plug-ins Package for Windows
         url: /protect-scsql/task_add_hosts_and_install_snapcenter_plug_ins_package_for_windows.html
         entries:
-          - title: Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts by using cmdlets
-            url: /protect-scsql/task_install_snapcenter_plug_in_package_for_windows_on_multiple_remote_hosts_using_cmdlets_scsql.html
+          - title: Install SnapCenter Plug-in for Microsoft SQL Server on multiple remote hosts by using cmdlets
+            url: /protect-scsql/task_install_snapcenter_plug_in_package_for_microsoft_sql_server_on_multiple_remote_hosts_using_cmdlets.html
           - title: Install the SnapCenter Plug-in for Microsoft SQL Server silently from the command line
             url: /protect-scsql/task_install_the_snapcenter_plug_in_for_sql_server_silently.html
           - title: Monitor the status of installing Plug-in for SQL Server
