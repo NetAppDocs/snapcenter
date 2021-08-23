@@ -19,6 +19,10 @@ Physical and virtual servers
 a|
 FC-connected LUNs
 a|
+Physical server
+a|
+iSCSI-connected LUNs
+a|
 Physical and virtual servers
 a|
 NFS-connected volumes
