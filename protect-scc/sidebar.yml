@@ -53,6 +53,13 @@ entries:
         entries:
           - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
             url: /protect-scc/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.html
+          - title: Install SnapCenter Custom Plug-ins independently on the Linux host
+            url: protect-scc/concept_install_snapcenter_custom_plug_ins_independently_on_the_linux_host.html
+            entries:
+              - title: Install SnapCenter Custom Plug-ins independently on the Linux host
+                url: protect-scc/concept_prepare_to_install_the_snapcenter_custom_plug_ins_on_the_linux_host.html
+              - title: Install the SnapCenter Custom Plug-ins on Linux hosts by using the command-line interface
+                url: protect-scc/task_install_the_snapcenter_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html    
           - title: Monitor SnapCenter plug-in package installation status
             url: /protect-scc/task_monitor_the_status_of_installing_plugin_for_scc.html
       - title: Generate CA Certificate CSR file
