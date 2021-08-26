@@ -95,23 +95,6 @@ entries:
         url: /install/reference_provision_storage_using_powershell_cmdlets.html
   - title: Provision storage in VMware environments
     url: /install/concept_provision_storage_in_vmware_environments.html
-    entries:
-      - title: Supported VMware guest OS platforms
-        url: /install/concept_supported_vmware_guest_os_platforms.html
-        entries:
-          - title: VMware ESXi server-related limitations
-            url: /install/concept_vmware_esxi_server_related_limitations.html
-          - title: Minimum vCenter privileges required for SnapCenter RDM operations
-            url: /install/concept_minimum_vcenter_privileges_required_for_snapcenter_rdm_operations.html
-      - title: Manage FC RDM LUNs in a Microsoft cluster
-        url: /install/concept_manage_fc_rdm_luns_in_a_microsoft_cluster.html
-        entries:
-          - title: Requirements for using FC RDM LUNs in a Microsoft cluster
-            url: /install/concept_requirements_for_using_fc_rdm_luns_in_a_microsoft_cluster.html
-          - title: Microsoft cluster support limitations when using FC/iSCSI RDM LUNs
-            url: /install/concept_microsoft_cluster_support_limitations_using_fc_rdm_luns.html
-          - title: Create a shared FC RDM LUN
-            url: /install/task_create_a_shared_fc_rdm_lun.html
   - title: Configure secured MySQL connections with SnapCenter Server
     url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
   - title: Features enabled on your Windows host during installation
