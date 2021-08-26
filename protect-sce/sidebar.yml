@@ -17,28 +17,13 @@ entries:
       - title: Define a restore strategy for Exchange databases
         url: /protect-sce/task_define_a_restore_strategy_for_exchange_databases.html
   - title: Install SnapCenter Plug-in for Microsoft Exchange Server
-    url: /protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html
     entries:
+      - title: Install workflow for SnapCenter Plug-in for Microsoft Exchange Server
+        url: /protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html
       - title: Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft Exchange Server
         url: /protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html
-        entries:
-          - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-            url: /protect-sce/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.html
-          - title: Exchange Server privileges required
-            url: /protect-sce/reference_exchange_server_cluster_node_privileges_required.html
-          - title: Set up credentials for SnapCenter Plug-in for Windows
-            url: /protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html
-          - title: Configure gMSA on Windows Server 2012 or later
-            url: /protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html
       - title: Add hosts and install Plug-in for Exchange
         url: /protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
-        entries:
-        - title: Install Plug-in for Exchange from the SnapCenter Server host using PowerShell cmdlets
-          url: /protect-sce/task_install_plug_in_for_exchange_from_the_snapcenter_server_host_using_powershell_cmdlets.html
-        - title: Install the SnapCenter Plug-in for Exchange silently from the command line
-          url: /protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html
-        - title: Monitor SnapCenter plug-in package installation status
-          url: /protect-sce/task_monitor_snapcenter_plug_in_package_installation_status.html
       - title: Generate CA Certificate CSR file
         url: /protect-sce/reference_generate_CA_certificate_CSR_file.html
         entries:
@@ -58,7 +43,7 @@ entries:
     url: /protect-sce/concept_prepare_for_data_protection.html
   - title: Back up Exchange resources
     entries:
-      - title: Backup workflow for Exchange resources
+      - title: Backup workflow
         url: /protect-sce/concept_back_up_exchange_resources.html
       - title: Exchange database and backup verification
         url: /protect-sce/reference_exchange_database_and_backup_verification.html
@@ -85,8 +70,9 @@ entries:
       - title: View Exchange backups on the Topology page
         url: /protect-sce/task_view_exchange_backups_in_the_topology_page.html
   - title: Restore Exchange resources
-    url: /protect-sce/reference_restore_exchange_resources.html
     entries:
+      - title: Restore workflow
+        url: /protect-sce/reference_restore_exchange_resources.html
       - title: Requirements for restoring an Exchange database
         url: /protect-sce/concept_requirements_for_restoring_an_exchange_database.html
       - title: Restore Exchange databases
