@@ -13,10 +13,6 @@ You can use the SnapCenter Plug-in for Microsoft Windows in VMware environments 
 
 == Supported VMware guest OS platforms
 
-You can use the Plug-in for Windows for LUN provisioning and Snapshot copy management support on x64 guest operating systems running on supported versions of VMware ESXi.
-
-The Plug-in for Windows supports the following VMware guest OS configurations:
-
 * Supported versions of Windows Server
 * Microsoft cluster configurations
 +
@@ -29,8 +25,6 @@ Support for a maximum of 56 RDM LUNs with four LSI Logic SCSI controllers for no
 For the latest information about supported versions, see http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 === VMware ESXi server-related limitations
-
-The SnapCenter Plug-in for Microsoft Windows is supported on VMware Windows guest. Before you use the Plug-in for Windows to perform provisioning and Snapshot copy management operations, you should be aware of some limitations.
 
 * Installing the Plug-in for Windows on a Microsoft cluster on virtual machines using ESXi credentials is not supported.
 +
@@ -58,7 +52,7 @@ You can use the Plug-in for Windows to manage a Microsoft cluster using FC RDM L
 
 Starting with ESXi 5.5, you can also use ESX iSCSI and FCoE hardware to manage a Microsoft cluster. The Plug-in for Windows includes out-of-box support for Microsoft clusters.
 
-=== Requirements for using FC RDM LUNs in a Microsoft cluster
+=== Requirements
 
 The Plug-in for Windows provides support for Microsoft clusters using FC RDM LUNs on two different virtual machines that belong to two different ESX or ESXi servers, also known as cluster across boxes, when you meet specific configuration requirements.
 
@@ -93,7 +87,7 @@ The igroup containing the initiators from all ESXi hosts must be created on the 
 +
 When you create an RDM LUN, an initiator group is created with ALUA.
 
-=== Microsoft cluster limitations when using FC/iSCSI RDM LUNs
+=== Limitations
 
 The Plug-in for Windows supports Microsoft clusters using FC/iSCSI RDM LUNs on different virtual machines belonging to different ESX or ESXi servers.
 
