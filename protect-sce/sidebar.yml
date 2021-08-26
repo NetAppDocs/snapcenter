@@ -57,8 +57,9 @@ entries:
   - title: Prepare for data protection
     url: /protect-sce/concept_prepare_for_data_protection.html
   - title: Back up Exchange resources
-    url: /protect-sce/concept_back_up_exchange_resources.html
     entries:
+      - title: Back up workflow for Exchange resources
+        url: /protect-sce/concept_back_up_exchange_resources.html
       - title: Exchange database and backup verification
         url: /protect-sce/reference_exchange_database_and_backup_verification.html
       - title: Determine whether Exchange resources are available for backup
