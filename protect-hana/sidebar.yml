@@ -140,8 +140,6 @@ entries:
         url: /protect-hana/task_restore_and_recover_resources_using_powershell_cmdlets_hana.html
       - title: Monitor restore operations
         url: /protect-hana/task_monitor_hana_databases_restore_operations.html
-      - title: Cancel restore operations
-        url: /protect-hana/task_cancel_hana_databases_restore_operations.html
   - title: Clone SAP HANA resource backups
     url: /protect-hana/task_clone_sap_hana_resource_backups.html
     entries:
@@ -151,9 +149,7 @@ entries:
         url: /protect-hana/task_clone_sap_hana_database_backups_using_powershell_cmdlets.html
       - title: Monitor clone operations in SnapCenter
         url: /protect-hana/task_monitor_hana_database_clone_operations.html
-      - title: Cancel clone operations
-        url: /protect-hana/task_cancel_hana_database_clone_operations.html
       - title: Split a clone
-        url: /protect-hana/task_split_a_clone_for_hana.html  
+        url: /protect-hana/task_split_a_clone_for_hana.html
       - title: Delete or split SAP HANA database clones after upgrading SnapCenter
         url: /protect-hana/task_delete_or_split_sap_hana_database_clones_after_upgrading_snapcenter.html
