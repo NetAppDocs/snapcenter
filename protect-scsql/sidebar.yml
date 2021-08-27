@@ -1,9 +1,10 @@
 section: protect-scsql
 title: Protect Microsoft SQL Server databases
 entries:
-  - title: SnapCenter Plug-in for Microsoft SQL Server overview
-    url: /protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_overview.html
+  - title: SnapCenter Plug-in for Microsoft SQL Server
     entries:
+      - title: SnapCenter Plug-in for Microsoft SQL Server overview
+        url: /protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_overview.html
       - title: What you can do with the SnapCenter Plug-in for Microsoft SQL Server
         url: /protect-scsql/concept_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_sql_server.html
       - title: SnapCenter Plug-in for Microsoft SQL Server features
@@ -18,9 +19,10 @@ entries:
         url: /protect-scsql/reference_minimum_ontap_privileges_required_for_sql_plug_in.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
         url: /protect-scsql/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_sql.html
-      - title: Define a backup strategy for SQL Server resources
-        url: /protect-scsql/task_define_a_backup_strategy_for_sql_server_resources.html
+      - title: Backup strategy for SQL Server resources
         entries:
+          - title: Define a backup strategy for SQL Server resources
+            url: /protect-scsql/task_define_a_backup_strategy_for_sql_server_resources.html
           - title: Type of backups supported
             url: /protect-scsql/concept_type_of_backups_supported.html
           - title: Backup schedules for database plug-ins
@@ -39,9 +41,10 @@ entries:
             url: /protect-scsql/concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume_for_plugin_for_sql.html
           - title: When to schedule verification jobs
             url: /protect-scsql/concept_when_to_schedule_verification_jobs.html
-      - title: Define a restoration strategy for SQL Server
-        url: /protect-scsql/task_define_a_restoration_strategy_for_sql_server.html
+      - title: Restoration strategy for SQL Server
         entries:
+          - title: Define a restoration strategy for SQL Server
+            url: /protect-scsql/task_define_a_restoration_strategy_for_sql_server.html
           - title: Sources and destinations for a restore operation
             url: /protect-scsql/reference_sources_and_destinations_for_a_restore_operation.html
           - title: SQL Server recovery models supported by SnapCenter
@@ -52,7 +55,7 @@ entries:
         url: /protect-scsql/task_define_a_clone_strategy_for_sql_server.html
   - title: Quick start to install SnapCenter Plug-in for Microsoft SQL Server
     url: /protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html
-  - title: Install SnapCenter Plug-in for Microsoft SQL Server
+  - title: Install workflow for SnapCenter Plug-in for Microsoft SQL Server
     url: /protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html
     entries:
       - title: Prerequisites to adding hosts and installing SnapCenter Plug-in for Microsoft SQL Server
