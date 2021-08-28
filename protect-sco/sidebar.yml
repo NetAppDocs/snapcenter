@@ -51,7 +51,7 @@ entries:
   - title: Back up Oracle databases
     entries:
       - title: Backup workflow
-        url: protect-sco/backup-worklfow.html
+        url: protect-sco/backup_worklfow.html
       - title: Define a backup strategy for Oracle databases
         url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
       - title: Determine whether Oracle databases are available for backup
