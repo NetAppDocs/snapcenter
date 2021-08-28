@@ -51,7 +51,7 @@ entries:
   - title: Back up Oracle databases
     entries:
       - title: Backup workflow
-        url: protect-sco/backup-worklfow.html
+        url: protect-sco/backup_worklfow.html
       - title: Define a backup strategy for Oracle databases
         url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
       - title: Determine whether Oracle databases are available for backup
@@ -79,7 +79,7 @@ entries:
   - title: Restore and recover Oracle databases
     entries:
       - title: Restore workflow
-        url: /protect-sco/restore-workflow.html
+        url: /protect-sco/restore_workflow.html
       - title: Define a restore and recovery strategy for Oracle databases
         url: /protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html
       - title: Requirements for restoring an Oracle database
@@ -99,7 +99,7 @@ entries:
   - title: Clone Oracle database
     entries:
       - title: Clone workflow
-        url: /protect-sco/clone-workflow.html
+        url: /protect-sco/clone_workflow.html
       - title: Define a clone strategy for Oracle databases
         url: /protect-sco/task_define_a_clone_strategy_for_oracle_databases.html
       - title: Requirements for cloning an Oracle database

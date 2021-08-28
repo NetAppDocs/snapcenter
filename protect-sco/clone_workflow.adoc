@@ -1,5 +1,5 @@
 ---
-permalink: protect-sco/clone-workflow.html
+permalink: protect-sco/clone_workflow.html
 sidebar: sidebar
 keywords: clone operation, clone, workflow
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
