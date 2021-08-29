@@ -1,5 +1,5 @@
 ---
-permalink: protect-sco/restore_workflow.html
+permalink: protect-sco/restore-workflow.html
 sidebar: sidebar
 keywords: restore, workflow
 summary: 'The restore workflow includes planning, performing the restore operations, and monitoring the operations.'
