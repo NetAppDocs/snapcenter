@@ -61,62 +61,6 @@ You must have a domain user with local administrator privileges, and with local 
 * Suspend-MailboxDatabaseCopy
 * Update-MailboxDatabaseCopy
 
-== Set up credentials for SnapCenter Plug-in for Windows
-
-SnapCenter uses credentials to authenticate users for SnapCenter operations. You should create credentials for installing the plug-in package and additional credentials for performing data protection operations on databases.
-
-*About this task*
-
-You must set up credentials for installing plug-ins on Windows hosts. Although you can create credentials for Windows after deploying hosts and installing plug-ins, the best practice is to create credentials after you add SVMs, before you deploy hosts and install plug-ins.
-
-Set up the credentials with administrator privileges, including administrator rights on the remote host.
-
-If you set up credentials for individual resource groups and the username does not have full admin privileges, you must assign at least the resource group and backup privileges to the username.
-
-*Steps*
-
-. In the left navigation pane, click *Settings*.
-. In the Settings page, click *Credential*.
-. Click *New*.
-+
-The Credential window is displayed.
-
-. In the Credential page, do the following:
-+
-|===
-| For this field...| Do this...
-
-a|
-Credential name
-a|
-Enter a name for the credential.
-a|
-Username
-a|
-Enter the user name used for authentication.
-
- ** Domain administrator or any member of the administrator group
-+
-Specify the domain administrator or any member of the administrator group on the system on which you are installing the SnapCenter plug-in. Valid formats for the Username field are:
-
-  *** `NetBIOS\UserName`
-  *** `Domain FQDN\UserName`
-
- ** Local administrator (for workgroups only)
-+
-For systems that belong to a workgroup, specify the built-in local administrator on the system on which you are installing the SnapCenter plug-in. You can specify a local user account that belongs to the local administrators group if the user account has elevated privileges or the User Access control feature is disabled on the host system. The valid format for the Username field is: `UserName`
-
-a|
-Password
-a|
-Enter the password used for authentication.
-a|
-Authentication
-a|
-Select Windows as the authentication mode.
-|===
-
-. Click *OK*.
 
 == Configure gMSA on Windows Server 2012 or later
 

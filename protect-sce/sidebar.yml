@@ -20,12 +20,20 @@ entries:
         url: /protect-sce/task_define_a_restore_strategy_for_exchange_databases.html
   - title: Install SnapCenter Plug-in for Microsoft Exchange Server
     entries:
-      - title: Install workflow for SnapCenter Plug-in for Microsoft Exchange Server
+      - title: Install workflow
         url: /protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html
       - title: Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft Exchange Server
         url: /protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html
+      - title: Set up credentials for SnapCenter Plug-in for Windows
+        url: /protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html
       - title: Add hosts and install Plug-in for Exchange
         url: /protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
+      - title: Install Plug-in for Exchange from the SnapCenter Server host using PowerShell cmdlets
+        url: /protect-sce/task_install_plug_in_for_exchange_from_the_snapcenter_server_host_using_powershell_cmdlets.html
+      - title: Install the SnapCenter Plug-in for Exchange silently from the command line
+        url: /protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html
+      - title: Monitor SnapCenter plug-in package installation status
+        url: /protect-sce/task_monitor_snapcenter_plug_in_package_installation_status.html
       - title: Configure CA Certificate
         entries:
           - title: Generate CA Certificate CSR file
