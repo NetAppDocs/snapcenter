@@ -1,9 +1,11 @@
 section: protect-sce
 title: Protect Microsoft Exchange Server databases
 entries:
-  - title: SnapCenter Plug-in for Microsoft Exchange Server overview
+  - title: SnapCenter Plug-in for Microsoft Exchange Server concepts
     url: "/protect-sce/concept_snapcenter_plug_in_for_exchange_server_overview.html"
     entries:
+      - title: SnapCenter Plug-in for Microsoft Exchange Server overview
+        url: /protect-sce/concept_snapcenter_plug_in_for_exchange_server_overview.html
       - title: What you can do with SnapCenter Plug-in for Microsoft Exchange Server
         url: /protect-sce/concept_what_you_can_do_with_snapcenter_plug_in_for_microsoft_exchange_server.html
       - title: Storage types supported by SnapCenter Plug-in for Microsoft Windows and for Microsoft Exchange Server
@@ -24,9 +26,10 @@ entries:
         url: /protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html
       - title: Add hosts and install Plug-in for Exchange
         url: /protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
-      - title: Generate CA Certificate CSR file
-        url: /protect-sce/reference_generate_CA_certificate_CSR_file.html
+      - title: Configure CA Certificate
         entries:
+          - title: Generate CA Certificate CSR file
+            url: /protect-sce/reference_generate_CA_certificate_CSR_file.html
           - title: Import CA certificates
             url: /protect-sce/task_import_CA_certificates.html
           - title: Get the CA certificate thumbprint
