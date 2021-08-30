@@ -2,7 +2,6 @@ section: protect-sce
 title: Protect Microsoft Exchange Server databases
 entries:
   - title: SnapCenter Plug-in for Microsoft Exchange Server concepts
-    url: "/protect-sce/concept_snapcenter_plug_in_for_exchange_server_overview.html"
     entries:
       - title: SnapCenter Plug-in for Microsoft Exchange Server overview
         url: /protect-sce/concept_snapcenter_plug_in_for_exchange_server_overview.html
