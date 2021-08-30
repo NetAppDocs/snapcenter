@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can use SnapCenter to restore SQL Server databases by restoring the data from one or more backups to your active file system and then recovering the database. You can also restore databases that are in Availability Groups and then add the restored databases to the Availability Group. Before restoring an SQL Server database, you must perform several preparatory tasks.'
 ---
-= Restore SQL Server resources
+= Restore workflow
 :icons: font
 :imagesdir: ../media/
 

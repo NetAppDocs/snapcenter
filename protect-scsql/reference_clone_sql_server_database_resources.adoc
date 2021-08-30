@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You must perform several tasks using SnapCenter Server before cloning database resources from a backup. Database cloning is the process of creating a point-in-time copy of a production database or its backup set. You can clone databases to test functionality that has to be implemented using the current database structure and content during application development cycles, to use the data extraction and manipulation tools when populating data warehouses, or to recover data that was mistakenly deleted or changed.'
 ---
-= Clone SQL Server database resources
+= Clone workflow
 :icons: font
 :imagesdir: ../media/
 
