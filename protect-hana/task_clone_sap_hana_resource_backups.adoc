@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
-= Clone SAP HANA resource backups
+= Clone workflow
 :icons: font
 :imagesdir: ../media/
 

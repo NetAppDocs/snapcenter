@@ -1,6 +1,8 @@
 section: protect-hana
 title: Protect SAP HANA databases
 entries:
+  - title: SnapCenter Plug-in for SAP HANA Databases
+    entries:
   - title: SnapCenter Plug-in for SAP HANA Database overview
     url: /protect-hana/concept_snapcenter_plug_in_for_sap_hana_database_overview.html
     entries:
@@ -14,9 +16,10 @@ entries:
         url: /protect-hana/concept_minimum_privileges_required_for_sap_hana_and_exchange_plug_in.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
         url: /protect-hana/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_hana.html
-      - title: Define a backup strategy for SAP HANA databases
-        url: /protect-hana/task_define_a_backup_strategy_for_sap_hana_databases.html
+      - title: Backup strategy for SAP HANA databases
         entries:
+          - title: Define a backup strategy for SAP HANA databases
+            url: /protect-hana/task_define_a_backup_strategy_for_sap_hana_databases.html
           - title: Automatic discovery of resources on Linux host
             url: /protect-hana/concept_auto_discovery_of_resources_on_linux_host.html
           - title: Type of backups supported
@@ -31,9 +34,10 @@ entries:
             url: /protect-hana/concept_number_of_backup_jobs_needed_for_sap_hana_databases.html
           - title: Backup naming conventions
             url: /protect-hana/concept_backup_naming_conventions_for_plugin_for_hana.html
-      - title: Define a restore and recovery strategy for SAP HANA resources
-        url: /protect-hana/task_define_a_restore_and_recovery_strategy_for_sap_hana_resources.html
+      - title: Restore and recovery strategy for SAP HANA databases
         entries:
+          - title: Define a restore and recovery strategy for SAP HANA resources
+            url: /protect-hana/task_define_a_restore_and_recovery_strategy_for_sap_hana_resources.html
           - title: Types of restore strategies supported for manually added SAP HANA resources
             url: /protect-hana/reference_types_of_restore_strategies_supported_for_manually_added_sap_hana_resources.html
           - title: Types of restore strategies supported for automatically discovered SAP HANA databases
@@ -42,12 +46,12 @@ entries:
             url: /protect-hana/reference_types_of_restore_performed_for_auto_discovered_sap_hana_databases.html
           - title: Types of recovery operations supported for SAP HANA databases
             url: /protect-hana/reference_types_of_recovery_operations_supported_for_sap_hana_database.html
-  - title: Install SnapCenter Plug-in for SAP HANA Database
-    url: /protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
-    entries:
-      - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
-        url: /protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html
+      - title: Prepare to install the SnapCenter Plug-in for SAP HANA Database
         entries:
+          - title: Install workflow for SnapCenter Plug-in for SAP HANA Database
+            url: /protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
+          - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
+            url: /protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html
           - title: Host requirements to install SnapCenter Plug-ins Package for Windows
             url: /protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_hana.html
           - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
@@ -56,23 +60,20 @@ entries:
             url: /protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html
           - title: Configure gMSA on Windows Server 2012 or later
             url: /protect-hana/task_configure_gMSA_on_windows_server_2012_or_later.html
-      - title: Add hosts and install plug-in packages on remote hosts
-        url: /protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html
-        entries:
-          - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
-            url: /protect-hana/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_sap_hana.html
-          - title: Install SnapCenter Plug-in for SAP HANA Database independently on the Linux host
-            url: /protect-hana/concept_install_snapcenter_plug_in_for_sap_hana_database_independently_on_the_linux_host.html
+          - title: Install the SnapCenter Plug-in for SAP HANA Databases
             entries:
-              - title: Prepare to install the SnapCenter Plug-in for SAP HANA Database on the Linux host
-                url: /protect-hana/concept_prepare_to_install_the_snapcenter_plug_in_for_sap_hana_database_on_the_linux_host.html
+              - title: Add hosts and install plug-in packages on remote hosts
+                url: /protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html
+              - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
+                url: /protect-hana/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_sap_hana.html
               - title: Install the SnapCenter Plug-in for SAP HANA Database on Linux hosts by using the command-line interface
                 url: /protect-hana/task_install_the_snapcenter_plug_in_for_sap_hana_database_on_linux_hosts_using_the_command_line_interface.html
-          - title: Monitor SnapCenter plug-in package installation status
-            url: /protect-hana/task_monitor_the_status_of_installing_plugin_for_sap_hana.html
-      - title: Generate CA Certificate CSR file
-        url: /protect-hana/reference_generate_CA_certificate_CSR_file.html
+              - title: Monitor SnapCenter plug-in package installation status
+                url: /protect-hana/task_monitor_the_status_of_installing_plugin_for_sap_hana.html
+      - title: Configure CA Certificate
         entries:
+          - title: Generate CA Certificate CSR file
+            url: /protect-hana/reference_generate_CA_certificate_CSR_file.html
           - title: Import CA certificates
             url: /protect-hana/task_import_CA_certificates.html
           - title: Get the CA certificate thumbprint
@@ -88,20 +89,21 @@ entries:
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: /protect-hana/task_install_snapcenter_plug_in_for_vmware_vsphere.html
   - title: Prepare for data protection
-    url: /protect-hana/concept_prepare_for_protecting_hana_databases.html
     entries:
       - title: Prerequisites for using the SnapCenter Plug-in for SAP HANA Database
         url: /protect-hana/reference_prerequisites_for_using_snapcenter_plug_in_for_sap_hana_database.html
       - title: How resources, resource groups, and policies are used for protecting SAP HANA databases
         url: /protect-hana/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_sap_hana_databases.html
   - title: Back up SAP HANA resources
-    url: /protect-hana/task_back_up_sap_hana_resources.html
     entries:
+      - title: Back up workflow
+        url: /protect-hana/task_back_up_sap_hana_resources.html
       - title: Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database
         url: /protect-hana/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html
-      - title: Discover the databases automatically
-        url: /protect-hana/task_discover_the_databases_automatically.html
+      - title: Discover resources and prepare multitenant database containers for data protection
         entries:
+          - title: Discover the databases automatically
+            url: /protect-hana/task_discover_the_databases_automatically.html
           - title: Prepare multitenant database containers for data protection
             url: /protect-hana/task_prepare_multitenant_database_containers_for_data_protection.html
       - title: Add resources manually to the plug-in host
@@ -119,17 +121,19 @@ entries:
       - title: Back up databases using PowerShell cmdlets
         url: /protect-hana/task_back_up_databases_using_powershell_cmdlets_sap_hana.html
       - title: Monitor backup operations
-        url: /protect-hana/task_monitor_hana_databases_backup_operations.html
         entries:
+          - title: Monitor backup operations in the SnapCenter Jobs page
+            url: /protect-hana/task_monitor_hana_databases_backup_operations.html
           - title: Monitor operations in the Activity pane
             url: /protect-hana/task_monitor_dataprotection_operations_on_hana_databases_in_the_activity_pane.html
       - title: Cancel the backup operations
         url: /protect-hana/task_cancel_backup_operations_for_sap_hana.html
       - title: View SAP HANA database backups and clones in the Topology page
         url: /protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html
-  - title: Restore SAP HANA databases
-    url: "/protect-hana/task_restore_sap_hana_databases.html"
+  - title: Restore SAP HANA Databases
     entries:
+      - title: Restore workflow
+        url: "/protect-hana/task_restore_sap_hana_databases.html"
       - title: Restore and recover a manually added resource backup
         url: /protect-hana/task_restore_and_recover_a_manually_added_resource_backup.html
       - title: Restore and recover an auto discovered database backup
@@ -141,8 +145,9 @@ entries:
       - title: Monitor restore operations
         url: /protect-hana/task_monitor_hana_databases_restore_operations.html
   - title: Clone SAP HANA resource backups
-    url: /protect-hana/task_clone_sap_hana_resource_backups.html
     entries:
+      - title: Clone workflow
+        url: /protect-hana/task_clone_sap_hana_resource_backups.html
       - title: Clone a SAP HANA database backup
         url: /protect-hana/task_clone_a_sap_hana_database_backup.html
       - title: Clone SAP HANA database backups using PowerShell cmdlets
