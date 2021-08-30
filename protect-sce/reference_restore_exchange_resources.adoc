@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can use SnapCenter to restore Exchange databases by restoring one or more backups to your active file system.'
 ---
-= Restore Exchange resources
+= Restore workflow
 :icons: font
 :imagesdir: ../media/
 
