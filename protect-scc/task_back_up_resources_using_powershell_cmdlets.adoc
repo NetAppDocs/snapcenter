@@ -56,7 +56,7 @@ Add-SmResourceGroup -ResourceGroupName 'Verify_ManualBackup_DatabaseLevel_Multip
 {"Host"="10.232.206.248";"Uid"="db2inst2\NONREC"},@{"Host"="10.232.206.248";"Uid"="db2inst1\NONREC"}) -Policies db2ManualPolicy
 ----
 
-. Initiate a new Snapshot copy job by using the New-SmBackup cmdlet.
+. Initiate a new backup job by using the New-SmBackup cmdlet.
 +
 ----
 New-SMBackup -DatasetName Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix -Policy db2ManualPolicy

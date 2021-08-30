@@ -41,7 +41,7 @@ Resource Type
 a|
 Enter the resource type.    Resource types are Single Container, Multitenant Database Container (MDC), and Non-data Volume.
 a|
-SAP HANA System Name
+HANA System Name
 a|
 Enter the descriptive SAP HANA system name.    This option is available only if you selected Single Container or MDC resource types.
 a|
@@ -49,9 +49,9 @@ SID
 a|
 Enter the system ID (SID).     The installed SAP HANA system is identified by a single SID.
 a|
-HDBSQL Client Host
+Plug-in Host
 a|
-Select the communication host.
+Select the plug-in host.
 a|
 HDB Secure User Store Keys
 a|
@@ -60,10 +60,6 @@ a|
 HDBSQL OS User
 a|
 Enter the user name for whom the HDB Secure User Store Key is configured.     For Windows, it is mandatory for the HDBSQL OS User to be the SYSTEM user. Therefore, you must configure the HDB Secure User Store Key for the SYSTEM user.
-a|
-Resource Name
-a|
-Enter the resource name.    This option is available only if you selected the Non-data Volume as the resource type.
 |===
 
 . On the *Provide Storage Footprint* page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
@@ -72,16 +68,16 @@ Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]*
 
 . Review the summary, and then click *Finish*.
 +
-The databases are displayed along with information such as the SID, communication host, associated resource groups and policies, and overall status.
+The databases are displayed along with information such as the SID, plugin host, associated resource groups and policies, and overall status
 
 If you want to provide users access to resources, you must assign the resources to the users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
 
-link: https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
+link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
 
 After adding the databases, you can modify the SAP HANA database details.
 
 You cannot modify the following if the SAP HANA resource has backups associated with it:
 
-* Multitenant database containers (MDC): SID, or HDBSQL Client Host
-* Single Container: SID or HDBSQL Client Host
+* Multitenant database containers (MDC): SID, or HDBSQL Client (plug-in) Host
+* Single Container: SID or HDBSQL Client (plug-in) Host
 * Non-data Volume: Resource name, Associated SID, or Plug-in Host

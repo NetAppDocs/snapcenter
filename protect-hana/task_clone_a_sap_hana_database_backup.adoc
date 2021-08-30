@@ -18,6 +18,9 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 * You cannot clone file-based backups.
 * The target clone server should have the same SAP HANA instance SID that is provided in the Target Clone SID field.
 
+*About this task*
+For information about clone split operation limitations, see http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
@@ -77,7 +80,7 @@ Mount command for a volume or qtree on a Linux machine:
 +
 Example for NFS:
 +
-  mount VSERVER_DATA_IP:$\{VOLUME_NAME_Clone} /mnt
+  mount VSERVER_DATA_IP:%{VOLUME_NAME_Clone} /mnt
 
 . On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

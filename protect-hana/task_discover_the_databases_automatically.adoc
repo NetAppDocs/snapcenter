@@ -24,8 +24,6 @@ After installing the plug-in, all the resources on that Linux host are automatic
 
 The automatically discovered resources cannot be modified or deleted.
 
-For information about the supported and unsupported resources for auto discovery see link:task_discover_the_databases_automatically.html[Automatic discovery of resources on Linux host].
-
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Plug-in for SAP HANA Database from the list.

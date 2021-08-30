@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
-= Restore SAP HANA databases
+= Restore workflow
 :icons: font
 :imagesdir: ../media/
 
