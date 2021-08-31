@@ -1,10 +1,10 @@
 ---
 permalink: protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Importing data from SnapManager for Microsoft SQL Server to SnapCenter enables you to continue to use your data from previous versions. You can import only those backups that were archived using SnapVault technology from SnapManager for Microsoft SQL Server to SnapCenter.'
 ---
-= Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
+= Import archived backups overview
 :icons: font
 :imagesdir: ../media/
 

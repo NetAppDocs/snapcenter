@@ -4,12 +4,17 @@ sidebar: sidebar
 keywords: backup, restore, clone, oracle database
 summary: 'You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager (RMAN).'
 ---
-= What you can do with the Plug-in for Oracle Database
+= What can you do with the Plug-in for Oracle Database
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager (RMAN).
+The SnapCenter Plug-in for Oracle Database is a host-side component of the NetApp SnapCenter Software that enables application-aware data protection management of Oracle databases.
+
+The Plug-in for Oracle Database automates the backup, cataloging and uncataloging with Oracle Recovery Manager (RMAN), verification, mounting, unmounting, restore, recovery, and cloning of Oracle databases in your SnapCenter environment.
+The Plug-in for Oracle Database installs SnapCenter Plug-in for UNIX to perform all the data protection operations.
+
+You can use the Plug-in for Oracle Database to manage backups of Oracle databases running SAP applications. However, SAP BR*Tools integration is not supported.
 
 * Back up datafiles, control files, and archive log files.
 +

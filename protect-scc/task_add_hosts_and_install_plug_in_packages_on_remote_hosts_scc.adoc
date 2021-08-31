@@ -108,9 +108,7 @@ The descriptor .xml file in the zipped custom plug-in folder is validated before
 +
 The custom plug-ins that are uploaded to the SnapCenter Server are listed.
 +
-If you want to manage MySQL or DB2 applications, you can use the MySQL and DB2 custom plug-ins that are provided by NetApp. The MySQL and DB2 custom plug-ins are available at the NetApp Tool Chest.
-+
-https://automationstore.netapp.com/home.shtml[NetApp Automation Store]
+If you want to manage MySQL or DB2 applications, you can use the MySQL and DB2 custom plug-ins that are provided by NetApp. The MySQL and DB2 custom plug-ins are available at the https://automationstore.netapp.com/home.shtml[NetApp Automation Store]
 
 a|
 Skip preinstall checks
