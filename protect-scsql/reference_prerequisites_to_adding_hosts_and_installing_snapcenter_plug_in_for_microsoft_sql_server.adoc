@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements.'
 ---
-= Prerequisites to adding hosts and installing SnapCenter Plug-in for Microsoft SQL Server
+= Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft SQL Server
 :icons: font
 :imagesdir: ../media/
 

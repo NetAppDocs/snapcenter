@@ -1,10 +1,10 @@
 ---
-permalink: protect-sco/task_clone_oracle_database_backups.html
+permalink: protect-sco/clone-workflow.html
 sidebar: sidebar
-keywords: clone operation
+keywords: clone operation, clone, workflow
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
-= Clone Oracle database
+= Clone workflow
 :icons: font
 :imagesdir: ../media/
 

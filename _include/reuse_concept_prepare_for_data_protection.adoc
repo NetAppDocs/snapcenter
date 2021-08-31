@@ -3,4 +3,5 @@ Before performing any data protection operation such as backup, clone, or restor
 To take advantage of SnapVault and SnapMirror technology, you must configure and initialize a data protection relationship between the source and destination volumes on the storage device. You can use NetAppSystem Manager or you can use the storage console command line to perform these tasks.
 
 *Find more information*
+
 link:https://docs.netapp.com/us-en/ontap-automation/getting_started_with_the_rest_api.html[Getting started with the REST API]

@@ -9,7 +9,7 @@ summary: 'SnapCenter requires several licenses to enable data protection operati
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.
+SnapCenter requires several licenses to enable data protection of applications, databases, file systems, and virtual machines. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.
 
 |===
 | License | Where required
@@ -78,7 +78,7 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available.
 
-For information on how to add licenses, see link:..//install/task_add_snapcenter_licenses.html[Add SnapCenter licenses^].
+You should install one or more SnapCenter licenses. For information on how to add licenses, see link:..//install/concept_snapcenter_standard_controller_based_licenses.html[Add SnapCenter Standard controller-based licenses] or link:..//install/concept_snapcenter_standard_capacity_based_licenses.html[Add SnapCenter Standard capacity-based licenses^].
 
 == Single Mailbox Recovery (SMBR) licenses
 If you are using SnapCenter Plug-in for Exchange to manage Microsoft Exchange Server databases and Single Mailbox Recovery (SMBR), you would need additional license for SMBR which needs to be purchased separately based on user mailbox.

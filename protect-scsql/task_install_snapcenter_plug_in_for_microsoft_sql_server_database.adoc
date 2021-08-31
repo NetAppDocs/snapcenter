@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up the SnapCenter Plug-in for Microsoft SQL Server if you want to protect SQL Server databases.'
 ---
-= Install SnapCenter Plug-in for Microsoft SQL Server
+= Install workflow for SnapCenter Plug-in for Microsoft SQL Server
 :icons: font
 :imagesdir: ../media/
 
