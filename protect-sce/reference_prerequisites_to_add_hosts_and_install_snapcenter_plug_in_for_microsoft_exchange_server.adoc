@@ -29,10 +29,10 @@ Before you add a host and install the plug-in packages, you must complete all th
 ====
 To identify the RPC port range, execute the following commands:
 
-* netsh int ipv4 show dynamicport tcp.
-* netsh int ipv4 show dynamicport udp.
-* netsh int ipv6 show dynamicport tcp.
-* netsh int ipv6 show dynamicport udp.
+* netsh int ipv4 show dynamicport tcp
+* netsh int ipv4 show dynamicport udp
+* netsh int ipv6 show dynamicport tcp
+* netsh int ipv6 show dynamicport udp
 ====
 
 
