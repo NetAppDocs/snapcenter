@@ -175,7 +175,7 @@ The default installation path is _C:\ProgramData\NetApp\SnapCenter\Package Repos
 . Follow the on-screen prompts in the wizard to install the plug-ins package.
 . Click *Finish* to complete the installation.
 
-== Install Plug-ins Package for Linux or AIX on cluster host
+=== Install on cluster host
 
 You should install SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX on both the nodes of the cluster host.
 
@@ -271,6 +271,6 @@ The default installation path is _C:\ProgramData\NetApp\SnapCenter\PackageReposi
 
 IMPORTANT: The installation of the plug-ins package registers the plug-ins on the host and not on the SnapCenter Server. You should register the plug-ins on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. While adding the host, select “None” as the credential. After the host is added, the installed plug-ins are automatically discovered.
 
-== Monitor the status of installing Plug-ins Package for Linux or AIX
+== Monitor installation status
 
 include::../_include/reuse_task_monitor_snapcenter_plug_in_package_installation_status.adoc[]

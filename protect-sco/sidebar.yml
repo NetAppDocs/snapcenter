@@ -21,13 +21,6 @@ entries:
         url: /protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html
       - title: Add hosts and install Plug-ins Package for Linux or AIX
         url: /protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html
-        entries:
-          - title: Install Plug-ins Package for Linux or AIX on multiple remote hosts using cmdlets
-            url: /protect-sco/task_install_snapcenter_plug_ins_package_for_linux_or_aix_on_multiple_remote_hosts_using_cmdlets.html
-          - title: Install Plug-ins Package for Linux or AIX using the command-line interface
-            url: /protect-sco/concept_install_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html
-          - title: Monitor the status of installing Plug-ins Package for Linux or AIX
-            url: /protect-sco/task_monitor_the_status_of_installing_plugin_for_Oracle.html
       - title: Configure the SnapCenter Plug-in Loader service
         url: /protect-sco/task_configure_snapcenter_plug_in_loader_service.html
       - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
