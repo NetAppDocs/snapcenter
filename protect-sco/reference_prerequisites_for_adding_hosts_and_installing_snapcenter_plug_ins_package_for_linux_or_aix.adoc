@@ -37,7 +37,7 @@ NOTE: You can use the Plug-in for Oracle Database to manage Oracle databases for
 
 * If you are using Oracle database 11.2.0.3 or later, you must install the 13366202 Oracle patch.
 
-== Host requirements for installing Plug-ins Package for Linux
+== Linux Host requirements
 
 You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.
 
@@ -76,7 +76,7 @@ If you have upgraded JAVA to the latest version, you must ensure that the JAVA_H
 |===
 For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
-=== Configuring sudo privileges for non-root users for Linux plug-in host
+=== Configure sudo privileges for non-root users for Linux host
 
 SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
 
@@ -141,7 +141,7 @@ IMPORTANT: The example should be used only as a reference for creating your own 
 *Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
 |===
 
-== Host requirements for installing Plug-ins Package for AIX
+== AIX Host requirements
 
 You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for AIX.
 
@@ -173,7 +173,7 @@ If you have upgraded JAVA to the latest version, you must ensure that the JAVA_H
 |===
 For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
-=== Configure sudo privileges for non-root user for AIX plug-in host
+=== Configure sudo privileges for non-root users for AIX host
 
 SnapCenter 4.4 and later allows a non-root user to install the SnapCenter Plug-ins Package for AIX and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
 
@@ -237,7 +237,7 @@ IMPORTANT: The example should be used only as a reference for creating your own 
 *Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
 |===
 
-== Set up credentials for installing Plug-ins Package for Linux or AIX
+== Set up credentials
 
 SnapCenter uses credentials to authenticate users for SnapCenter operations. You should create credentials for installing the plug-in package on Linux or AIX hosts.
 
@@ -245,7 +245,7 @@ SnapCenter uses credentials to authenticate users for SnapCenter operations. You
 
 The credentials are created either for the root user or for a non-root user who has sudo privileges to install and start the plug-in process.
 
-For information, see link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux##configuring-sudo-privileges-for-non-root-users-for-linux-plug-in-host[Configure sudo privileges for Linux host^] or link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#host_requirements_for_installing_the_snapcenter_plug_ins_package_for_aix##configure-sudo-privileges-for-non-root-user-for-aix-plug-in-host[Configure sudo privileges for AIX host^].
+For information, see: <<Configure sudo privileges for non-root users for Linux host>> or <<Configure sudo privileges for non-root users for AIX host>>
 
 |===
 *Best Practice:* Although you are allowed to create credentials after deploying hosts and installing plug-ins, the best practice is to create credentials after you add SVMs, before you deploy hosts and install plug-ins.
