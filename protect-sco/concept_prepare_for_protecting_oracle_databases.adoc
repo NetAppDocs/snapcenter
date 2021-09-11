@@ -20,12 +20,12 @@ Before you use the Plug-in for Oracle Database, the SnapCenter administrator sho
 +
 NOTE: SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM registered with SnapCenter using either SVM registration or cluster registration must be unique.
 
-* Create credentials with authentication mode as Linux or AIX for the install user. link:../protect-sco/task_set_up_credentials_for_installing_the_plug_in_package_for_linux_or_aix.html[Learn more^]
+* Create credentials with authentication mode as Linux or AIX for the install user. link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#set_up_credentials_for_installing_the_plug_in_package_for_linux_or_aix[Learn more^]
 * Add hosts, install the plug-ins, and discover the resources.
 * If you are using SnapCenter Server to protect Oracle databases that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
 * Install Java on your Linux or AIX host.
 +
-See link:../protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux.html[Linux host requirements^] or link:../protect-sco/reference_host_requirements_for_installing_the_snapcenter_plug_ins_package_for_aix.html[AIX host requirements^] for more information.
+See link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux[Linux host requirements^] or link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#reference_host_requirements_for_installing_the_snapcenter_plug_ins_package_for_aix[AIX host requirements^] for more information.
 * You should set the time out value of the application firewall to 3 hours or more.
 * If you have Oracle databases on NFS environments, you must have configured at least one NFS data LIF for primary or secondary storage to perform mount, clone, verification, and restore operations.
 * If you have multiple data paths (LIFs) or a dNFS configuration, you can perform the following using the SnapCenter CLI on the database host:
