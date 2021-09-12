@@ -148,13 +148,7 @@ NOTE: The precheck script does not validate the plug-in port firewall status if 
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
 
-== Install using the command-line interface
-
-You can install SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX locally on the Linux or AIX host respectively. You can use the command-line interface to install the plug-ins package.
-
-The SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX should be installed on each Linux or AIX hosts respectively, where the Oracle database resides.
-
-=== Install Plug-ins Package for Linux interactively
+== Install Plug-ins Package for Linux interactively
 
 You can install the SnapCenter Plug-ins Package for Linux interactively on a Linux host.
 
@@ -175,7 +169,7 @@ The default installation path is _C:\ProgramData\NetApp\SnapCenter\Package Repos
 . Follow the on-screen prompts in the wizard to install the plug-ins package.
 . Click *Finish* to complete the installation.
 
-=== Install on cluster host
+== Install on cluster host
 
 You should install SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX on both the nodes of the cluster host.
 
@@ -197,7 +191,7 @@ Discover the Oracle database on node 1 (assuming the cluster IP is hosted on nod
 
 NOTE: There will be stale volumes, directories, and lock file if the failover happens while any other SnapCenter operations are running.
 
-=== Install Plug-ins Package for Linux in silent mode or console mode
+== Install Plug-ins Package for Linux in silent mode or console mode
 
 You can install the SnapCenter Plug-ins Package for Linux either in console mode or in silent mode by using the command-line interface (CLI).
 
@@ -246,7 +240,7 @@ Run:
 
 IMPORTANT: The installation of the plug-ins package registers the plug-ins on the host and not on the SnapCenter Server. You should register the plug-ins on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. While adding the host, select “None” as the credential. After the host is added, the installed plug-ins are automatically discovered.
 
-=== Install Plug-ins Package for AIX in silent mode
+== Install Plug-ins Package for AIX in silent mode
 
 You can install the SnapCenter Plug-ins Package for AIX in silent mode by using the command-line interface (CLI).
 
