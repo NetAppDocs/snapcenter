@@ -1,7 +1,7 @@
 ---
 permalink: uninstall/reference_prerequisites_for_removing_a_host.html
 sidebar: sidebar
-keywords: uninstall, prerequisites, plug-in, plug-in packages
+keywords: uninstall, prereqiuisites
 summary: 'You can remove a host if you no longer want to use SnapCenter to manage its data protection jobs. For example, you might want to remove a host if it no longer has data that needs to be protected. Before you remove a host from SnapCenter Server, you must perform the prerequisite tasks.'
 ---
 = Prerequisites for removing a host
@@ -9,8 +9,6 @@ summary: 'You can remove a host if you no longer want to use SnapCenter to manag
 :imagesdir: ../media/
 
 [.lead]
-You can remove hosts and uninstall individual plug-ins or plug-in packages using the SnapCenter GUI. You can also uninstall individual plug-ins or plug-in packages on remote hosts using the command-line interface (CLI) on your SnapCenter Server host or using the Windows *Uninstall a program* option locally on any host.
-
 Before you remove a host from SnapCenter Server, you should complete the prerequisites.
 
 * You should log in as an administrator.
@@ -37,5 +35,3 @@ Objects can be clone, backup, resource group, storage system, and so on.
 * You should have assigned the RBAC user to the RBAC role.
 * You should have assigned the RBAC user to the host, SnapCenter Plug-in for Microsoft SQL Server, credential, clone lifecycle resource group, and storage system.
 * You should have logged in SnapCenter as an RBAC user.
-
-For information about uninstalling the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere[Remove SnapCenter Plug-in for VMware vSphere^].
