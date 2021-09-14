@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The SnapCenter Server enables you to deploy and manage your applications as plug-ins to SnapCenter.'
 ---
-= Overview
+= Develop a plug-in for your application
 :icons: font
 :imagesdir: ../media/
 

@@ -3,8 +3,9 @@ title: Protect SAP HANA databases
 entries:
   - title: SnapCenter Plug-in for SAP HANA Databases
     entries:
-      - title: SnapCenter Plug-in for SAP HANA Database overview
-        url: /protect-hana/concept_snapcenter_plug_in_for_sap_hana_database_overview.html
+  - title: SnapCenter Plug-in for SAP HANA Database overview
+    url: /protect-hana/concept_snapcenter_plug_in_for_sap_hana_database_overview.html
+    entries:
       - title: What you can do using the SnapCenter Plug-in for SAP HANA Database
         url: /protect-hana/concept_what_you_can_do_using_the_snapcenter_plug_in_for_sap_hana_database.html
       - title: SnapCenter Plug-in for SAP HANA Database features
@@ -45,30 +46,30 @@ entries:
             url: /protect-hana/reference_types_of_restore_performed_for_auto_discovered_sap_hana_databases.html
           - title: Types of recovery operations supported for SAP HANA databases
             url: /protect-hana/reference_types_of_recovery_operations_supported_for_sap_hana_database.html
-  - title: Prepare to install the SnapCenter Plug-in for SAP HANA Database
-    entries:
-      - title: Install workflow for SnapCenter Plug-in for SAP HANA Database
-        url: /protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
-      - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
-        url: /protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html
-      - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-        url: /protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_hana.html
-      - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
-        url: /protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html
-      - title: Set up credentials for the SnapCenter Plug-in for SAP HANA Database
-        url: /protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html
-      - title: Configure gMSA on Windows Server 2012 or later
-        url: /protect-hana/task_configure_gMSA_on_windows_server_2012_or_later.html
-      - title: Install the SnapCenter Plug-in for SAP HANA Databases
+      - title: Prepare to install the SnapCenter Plug-in for SAP HANA Database
         entries:
-            - title: Add hosts and install plug-in packages on remote hosts
-              url: /protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html
-            - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
-              url: /protect-hana/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_sap_hana.html
-            - title: Install the SnapCenter Plug-in for SAP HANA Database on Linux hosts by using the command-line interface
-              url: /protect-hana/task_install_the_snapcenter_plug_in_for_sap_hana_database_on_linux_hosts_using_the_command_line_interface.html
-            - title: Monitor SnapCenter plug-in package installation status
-              url: /protect-hana/task_monitor_the_status_of_installing_plugin_for_sap_hana.html
+          - title: Install workflow for SnapCenter Plug-in for SAP HANA Database
+            url: /protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
+          - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
+            url: /protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html
+          - title: Host requirements to install SnapCenter Plug-ins Package for Windows
+            url: /protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_hana.html
+          - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
+            url: /protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html
+          - title: Set up credentials for the SnapCenter Plug-in for SAP HANA Database
+            url: /protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html
+          - title: Configure gMSA on Windows Server 2012 or later
+            url: /protect-hana/task_configure_gMSA_on_windows_server_2012_or_later.html
+          - title: Install the SnapCenter Plug-in for SAP HANA Databases
+            entries:
+              - title: Add hosts and install plug-in packages on remote hosts
+                url: /protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html
+              - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
+                url: /protect-hana/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_sap_hana.html
+              - title: Install the SnapCenter Plug-in for SAP HANA Database on Linux hosts by using the command-line interface
+                url: /protect-hana/task_install_the_snapcenter_plug_in_for_sap_hana_database_on_linux_hosts_using_the_command_line_interface.html
+              - title: Monitor SnapCenter plug-in package installation status
+                url: /protect-hana/task_monitor_the_status_of_installing_plugin_for_sap_hana.html
       - title: Configure CA Certificate
         entries:
           - title: Generate CA Certificate CSR file
