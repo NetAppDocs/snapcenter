@@ -1,9 +1,10 @@
 section: protect-scw
 title: Protect Windows file systems
 entries:
-  - title: SnapCenter Plug-in for Microsoft Windows overview
-    url: /protect-scw/concept_snapcenter_plug_in_for_microsoft_windows_overview.html
+  - title: SnapCenter Plug-in for Microsoft Windows concepts
     entries:
+      - title: SnapCenter Plug-in for Microsoft Windows overview
+        url: /protect-scw/concept_snapcenter_plug_in_for_microsoft_windows_overview.html
       - title: What you can do with the SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/reference_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_windows.html
       - title: SnapCenter Plug-in for Windows features
@@ -21,29 +22,23 @@ entries:
       - title: Sources and destinations of clones for Windows file systems
         url: /protect-scw/reference_sources_and_destinations_of_clones_for_windows_file_systems.html
   - title: Install SnapCenter Plug-in for Microsoft Windows
-    url: /protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html
     entries:
+      - title: Install workflow
+        url: /protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html
       - title: Installation requirements for SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html
-        entries:
-          - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-            url: /protect-scw/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.html
-          - title: Set up your credentials for the Plug-in for Windows
-            url: /protect-scw/task_set_up_your_credentials_for_the_plug_in_for_windows.html
-          - title: Configure gMSA on Windows Server 2012 or later
-            url: /protect-scw/task_configure_gMSA_on_windows_server_2012_or_later.html
       - title: Add hosts and install SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html
+      - title: Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts using PowerShell cmdlets
+        url: /protect-scw/task_install_on_multiple_remote_hosts_using_powershell_cmdlets.html
+      - title: Install the SnapCenter Plug-in for Microsoft Windows silently from the command line
+        url: /protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html
+      - title: Monitor SnapCenter plug-in package installation status
+        url: /protect-scw/task_monitor_snapcenter_plug_in_package_installation_status.html
+      - title: Configure CA certificate
         entries:
-          - title: Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts using PowerShell cmdlets
-            url: /protect-scw/task_install_on_multiple_remote_hosts_using_powershell_cmdlets.html
-          - title: Install the SnapCenter Plug-in for Microsoft Windows silently from the command line
-            url: /protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html
-          - title: Monitor SnapCenter plug-in package installation status
-            url: /protect-scw/task_monitor_snapcenter_plug_in_package_installation_status.html
-      - title: Generate CA Certificate CSR file
-        url: /protect-scw/reference_generate_CA_certificate_CSR_file.html
-        entries:
+          - title: Generate CA Certificate CSR file
+            url: /protect-scw/reference_generate_CA_certificate_CSR_file.html
           - title: Import CA certificates
             url: /protect-scw/task_import_CA_certificates.html
           - title: Get the CA certificate thumbprint
@@ -55,8 +50,9 @@ entries:
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: /protect-scw/task_install_snapcenter_plug_in_for_vmware_vsphere.html
   - title: Back up Windows file systems
-    url: /protect-scw/reference_back_up_windows_file_systems.html
     entries:
+      - title: Backup workflow
+        url: /protect-scw/reference_back_up_windows_file_systems.html
       - title: Determine resource availability for Windows file systems
         url: /protect-scw/task_determine_resource_availability_for_windows_file_systems.html
       - title: Create backup policies for Windows file systems
@@ -81,18 +77,20 @@ entries:
         url: /protect-scw/task_remove_backups_using_powershell_cmdlets_for_windows.html
       - title: Clean up the secondary backup count using PowerShell cmdlets
         url: /protect-scw/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_windows.html
-  - title: Restore Windows file system backups
-    url: /protect-scw/task_restore_windows_file_system_backups.html
+  - title: Restore Windows file systems
     entries:
+      - title: Restore Windows file system backups
+        url: /protect-scw/task_restore_windows_file_system_backups.html
       - title: Restore and recover resources using PowerShell cmdlets
         url: /protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html
       - title: Monitor restore operations
         url: /protect-scw/task_monitor_restore_operations.html
       - title: Cancel restore operations
         url: /protect-scw/task_cancel_restore_operations.html
-  - title: Clone from a Windows file system backup
-    url: /protect-scw/task_clone_from_a_windows_file_system_backup.html
+  - title: Clone Windows file systems
     entries:
+      - title: Clone from a Windows file system backup
+        url: /protect-scw/task_clone_from_a_windows_file_system_backup.html
       - title: Clone backups using PowerShell cmdlets
         url: /protect-scw/task_clone_backups_using_powershell_cmdlets_for_windows.html
       - title: Monitor clone operations
