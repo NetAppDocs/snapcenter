@@ -1,0 +1,22 @@
+---
+permalink: install/concept_provision_storage_on_windows_hosts.html
+sidebar: sidebar
+keywords: provision storage
+summary: 'You can use SnapCenter to assign NetApp storage to supported Windows Server hosts. Provisioning Windows hosts with SnapCenter ensures that the backups you create are application consistent. You must have installed and configured the SnapCenter Plug-ins Package for Windows.'
+---
+= Provision storage on Windows hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to assign NetApp storage to supported Windows Server hosts. Provisioning Windows hosts with SnapCenter ensures that the backups you create are application consistent. You must have installed and configured the SnapCenter Plug-ins Package for Windows.
+
+If you are coming to SnapCenter from a NetApp SnapManager product and are satisfied with how your hosts are provisioned, you can skip this provisioning information.
+
+As part of provisioning storage, you can perform the following tasks:
+
+* Configure an FC-connected or iSCSI-connected LUN
+ ** Establish an iSCSI session to connect to a LUN
+ ** Create igroups to specify which hosts can access a given LUN on the storage system
+ ** Create, resize, and connect to a disk
+* Create an SMB share on a storage virtual machine (SVM)

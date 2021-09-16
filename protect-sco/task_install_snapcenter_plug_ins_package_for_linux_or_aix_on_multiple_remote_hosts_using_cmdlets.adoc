@@ -1,0 +1,30 @@
+---
+permalink: protect-sco/task_install_snapcenter_plug_ins_package_for_linux_or_aix_on_multiple_remote_hosts_using_cmdlets.html
+sidebar: sidebar
+keywords: credentials, install, multiple hosts
+summary: 'You should use the Install-SmHostPackage PowerShell cmdlet to install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX on multiple hosts.'
+---
+= Install Plug-ins Package for Linux or AIX on multiple remote hosts using cmdlets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should use the _Install-SmHostPackage_ PowerShell cmdlet to install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX on multiple hosts.
+
+*What you will need*
+
+You should be logged in to SnapCenter as a domain user with local administrator rights on each host on which you want to install the plug-in package.
+
+*Steps*
+
+. Launch PowerShell.
+. On the SnapCenter Server host, establish a session using the _Open-SmConnection_ cmdlet, and then enter your credentials.
+. Install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX using the _Install-SmHostPackage_ cmdlet and the required parameters.
++
+You can use the _-skipprecheck_ option when you have already installed the plug-ins manually and do not want to validate whether the host meets the requirements to install the plug-in.
++
+NOTE: The precheck script does not validate the plug-in port firewall status if it is specified in the firewall reject rules.
+
+. Enter your credentials for remote installation.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
