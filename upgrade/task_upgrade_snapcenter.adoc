@@ -19,7 +19,7 @@ You can use the SnapCenter Server installer executable file to upgrade the SnapC
 +
 For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
 
-* #You should a backup of the Exchange database before upgrading the SnapCenter Server and the Exchange plug-in.#
+* #You should backup the Exchange database before upgrading the SnapCenter Server and the Exchange plug-in.#
 
 * You should back up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
 +

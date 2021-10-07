@@ -4,89 +4,106 @@ sidebar: sidebar
 keywords: REST APIs, oracle database
 summary: 'Describes the REST APIs workflows supported for Oracle database'
 ---
-= REST APIs workflows supported for Oracle database
+= REST APIs supported for Oracle database
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter plug-in for Oracle database supports the following REST API workflows:
+The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
 
 == Credentials
 
-* Register the credential with SnapCenter Server.
-* Gets and displays the credential information registered in SC.
-* View credential by name.
-* Modify a credential registered with the SnapCenter Server.
-* Delete a registered credential from the SnapCenter Server.
+You can use these API calls to perform the following:
+
+* Register the credential with SnapCenter Server
+* Retrieve and display the credential information registered with SnapCenter
+* Retrieve credential by name
+* Modify a registered credential with the SnapCenter Server
+* Delete a registered credential from the SnapCenter Server
 
 == Host
 
+You can use these API calls to perform the following:
+
 * Add host
-* Removes one or more hosts from SnapCenter
-* View a host by name
+* Remove one or more hosts from SnapCenter
+* Retrieve a host by name
 
 == Plug-in
+You can use these API calls to perform the following:
 
-* Fresh installation of plug-ins on existing host
-* Upgrade host package - Updates existing host plug-ins package for one or more specified hosts to the currently available plug-ins package version.
+* Installation of plug-ins on existing host
+* Upgrade host package
 
 == Policy
+You can use these API calls to perform the following:
 
 * Create new policy
-* View policy by name
+* Retrieve policy by name
 * Modify policy
 * Delete policy
 
 == Resource Groups
 
-* Implicit
+You can use these API calls to perform the following:
+
+* Implicit resource group
 ** Protect resource
 ** Modify protection
 ** Remove protection
 
-* Explicit
+* Explicit resource group
 ** Create a new resource group
-** View resource group by name
+** Retrieve resource group by name
 ** Modify a resource group
 ** Delete a resource group
 
 == Backups
 
-* Start a resource backup operation (Implicit Resource group)
-* Start a backup operation (Explicit Resource group)
+You can use these API calls to perform the following:
+
+* Start a resource backup operation (Implicit resource group)
+* Start a backup operation (Explicit resource group)
 * Query backups by name
 * Query backups
 * Delete a backup by name
 
 == Restore
+You can use these API calls to perform the following:
 
 * Restore a backup
 
 == Clone refresh
 
-* Create a Oracle Database clone specification from a specified backup.
+You can use these API calls to perform the following:
+
+* Create an Oracle Database clone specification from a specified backup.
 * Display, modify, and delete clone specific file
 * Clone refresh
 
 == Clone
+You can use these API calls to perform the following:
 
 * Clone resource from a backup
-* View all clones
-* View a clone by ID
+* Retrieve all clones
+* Retrieve a clone by ID
 * Delete a clone
 
 == Clone split
+You can use these API calls to perform the following:
 
-* View the clone split estimate for clone resource
+* Retrieve clone split estimate for clone resource
 * Start clone split operation
-* Get clone split operation
+* Retrieve clone split operation
 * Stop clone split operation
 
 == RBAC
+You can use these API calls to perform the following:
 
 * Assign resources to a user or a group
 * Unassign resources to a user or a group
 
 == Configuration settings
+You can use these API calls to perform the following:
 
-* View and modify configuration settings
+* Retrieve and modify configuration settings
