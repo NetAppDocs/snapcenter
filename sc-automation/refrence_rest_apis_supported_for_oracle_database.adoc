@@ -1,0 +1,92 @@
+---
+permalink: sc-automation/refrence_rest_apis_supported_for_oracle_database.html
+sidebar: sidebar
+keywords: REST APIs, oracle database
+summary: 'Describes the REST APIs workflows supported for Oracle database'
+---
+= REST APIs workflows supported for Oracle database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter plug-in for Oracle database supports the following REST API workflows:
+
+== Credentials
+
+* Register the credential with SnapCenter Server.
+* Gets and displays the credential information registered in SC.
+* View credential by name.
+* Modify a credential registered with the SnapCenter Server.
+* Delete a registered credential from the SnapCenter Server.
+
+== Host
+
+* Add host
+* Removes one or more hosts from SnapCenter
+* View a host by name
+
+== Plug-in
+
+* Fresh installation of plug-ins on existing host
+* Upgrade host package - Updates existing host plug-ins package for one or more specified hosts to the currently available plug-ins package version.
+
+== Policy
+
+* Create new policy
+* View policy by name
+* Modify policy
+* Delete policy
+
+== Resource Groups
+
+* Implicit
+** Protect resource
+** Modify protection
+** Remove protection
+
+* Explicit
+** Create a new resource group
+** View resource group by name
+** Modify a resource group
+** Delete a resource group
+
+== Backups
+
+* Start a resource backup operation (Implicit Resource group)
+* Start a backup operation (Explicit Resource group)
+* Query backups by name
+* Query backups
+* Delete a backup by name
+
+== Restore
+
+* Restore a backup
+
+== Clone refresh
+
+* Create a Oracle Database clone specification from a specified backup.
+* Display, modify, and delete clone specific file
+* Clone refresh
+
+== Clone
+
+* Clone resource from a backup
+* View all clones
+* View a clone by ID
+* Delete a clone
+
+== Clone split
+
+* View the clone split estimate for clone resource
+* Start clone split operation
+* Get clone split operation
+* Stop clone split operation
+
+== RBAC
+
+* Assign resources to a user or a group
+* Unassign resources to a user or a group
+
+== Configuration settings
+
+* View and modify configuration settings

@@ -64,6 +64,8 @@ You can enter IP addresses or the FQDN of one of the following:
 If you are adding a host using SnapCenter and it is part of a subdomain, you must provide the FQDN.
 
 You can also add the IP less DAG cluster by providing the IP address or the FQDN of one of the DAG cluster nodes.
+
+#Beginning with SnapCenter 4.6, SnapCenter Plug-in for Exchange database allows you to add DAGs with no IP address that reside in a different domain. You can also add multiple IP/IP less DAGs with the same name but different domains.#
 a|
 Credentials
 a|
