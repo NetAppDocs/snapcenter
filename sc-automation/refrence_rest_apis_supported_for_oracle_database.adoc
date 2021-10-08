@@ -9,7 +9,7 @@ summary: 'Describes the REST APIs workflows supported for Oracle database'
 :imagesdir: ../media/
 
 [.lead]
-The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
+Oracle database uses REST APIs to perform the following operations:
 
 == Credentials
 
@@ -47,25 +47,22 @@ You can use these API calls to perform the following:
 
 You can use these API calls to perform the following:
 
-* Implicit resource group
-** Protect resource
-** Modify protection
-** Remove protection
-
-* Explicit resource group
-** Create a new resource group
-** Retrieve resource group by name
-** Modify a resource group
-** Delete a resource group
+* Protect resource group
+* Modify protection
+* Remove protection
+* Create new resource group
+* Retrieve resource group by name
+* Modify resource group
+* Delete resource group
 
 == Backups
 
 You can use these API calls to perform the following:
 
-* Start a resource backup operation (Implicit resource group)
-* Start a backup operation (Explicit resource group)
-* Query backups by name
-* Query backups
+* Start a resource backup operation
+* Start a backup operation
+* Retrieve backups by name
+* Retrieve backups
 * Delete a backup by name
 
 == Restore
@@ -86,8 +83,8 @@ You can use these API calls to perform the following:
 
 * Clone resource from a backup
 * Retrieve all clones
-* Retrieve a clone by ID
-* Delete a clone
+* Retrieve clone by ID
+* Delete clone
 
 == Clone split
 You can use these API calls to perform the following:
