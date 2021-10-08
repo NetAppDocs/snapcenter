@@ -13,30 +13,24 @@ Oracle database uses REST APIs to perform the following operations:
 
 == Credentials
 
-You can use these API calls to perform the following:
-
 * Register the credential with SnapCenter Server
-* Retrieve and display the credential information registered with SnapCenter
+* Retrieve credential registered with SnapCenter Server
 * Retrieve credential by name
-* Modify a registered credential with the SnapCenter Server
-* Delete a registered credential from the SnapCenter Server
+* Modify credential
+* Delete credential
 
 == Host
-
-You can use these API calls to perform the following:
 
 * Add host
 * Remove one or more hosts from SnapCenter
 * Retrieve a host by name
 
 == Plug-in
-You can use these API calls to perform the following:
 
 * Installation of plug-ins on existing host
-* Upgrade host package
+* Upgrade plug-in
 
 == Policy
-You can use these API calls to perform the following:
 
 * Create new policy
 * Retrieve policy by name
@@ -44,8 +38,6 @@ You can use these API calls to perform the following:
 * Delete policy
 
 == Resource Groups
-
-You can use these API calls to perform the following:
 
 * Protect resource group
 * Modify protection
@@ -57,8 +49,6 @@ You can use these API calls to perform the following:
 
 == Backups
 
-You can use these API calls to perform the following:
-
 * Start a resource backup operation
 * Start a backup operation
 * Retrieve backups by name
@@ -66,20 +56,16 @@ You can use these API calls to perform the following:
 * Delete a backup by name
 
 == Restore
-You can use these API calls to perform the following:
 
 * Restore a backup
 
 == Clone refresh
 
-You can use these API calls to perform the following:
-
-* Create an Oracle Database clone specification from a specified backup.
+* Create an Oracle Database clone specification from a specified backup
 * Display, modify, and delete clone specific file
 * Clone refresh
 
 == Clone
-You can use these API calls to perform the following:
 
 * Clone resource from a backup
 * Retrieve all clones
@@ -87,7 +73,6 @@ You can use these API calls to perform the following:
 * Delete clone
 
 == Clone split
-You can use these API calls to perform the following:
 
 * Retrieve clone split estimate for clone resource
 * Start clone split operation
@@ -95,12 +80,10 @@ You can use these API calls to perform the following:
 * Stop clone split operation
 
 == RBAC
-You can use these API calls to perform the following:
 
 * Assign resources to a user or a group
 * Unassign resources to a user or a group
 
 == Configuration settings
-You can use these API calls to perform the following:
 
 * Retrieve and modify configuration settings
