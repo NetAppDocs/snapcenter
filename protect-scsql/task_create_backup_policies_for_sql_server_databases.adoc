@@ -231,7 +231,7 @@ Do not check nonclustered indexes (NOINDEX)
 a|
 Select *Do not check nonclustered indexes (NOINDEX)* if you do not want to check nonclustered indexes.         The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
 a|
-Limit the checks and obtain the looks instead of using an internal database Snapshot copy (TABLOCK)
+Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)
 a|
 Select *Limit the checks and obtain the looks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
 |===
