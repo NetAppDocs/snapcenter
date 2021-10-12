@@ -19,7 +19,7 @@ You can use the SnapCenter Server installer executable file to upgrade the SnapC
 +
 For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
 
-* #You should backup the Exchange database before upgrading the SnapCenter Server and the Exchange plug-in.#
+* #You should backup the NSM database before upgrading the SnapCenter Server and the Exchange plug-in.#
 
 * You should back up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
 +
@@ -29,7 +29,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 
 * During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
 
-* #During upgrade, a data migration script is executed to update the NSM database, which displays the DAG shortname entry as FQDN for your Exchange database.# 
+* #During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG shortname to FQDN for your Exchange database.#
 
 * Before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 

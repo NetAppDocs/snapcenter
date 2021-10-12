@@ -29,7 +29,7 @@ Databases are not in normal state when they are in mount, unmount, reseed, or re
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server* from the plug-ins drop-down list located in the upper left corner of the Resources page.
-. In the Resources page select *Database*, or *Database Availability Group*, or *Resource Group*, from the *View* drop-down list.
+. In the *Resources* page select *Database*, or *Database Availability Group*, or *Resource Group*, from the *View* drop-down list.
 +
 #All the databases and DAGs are displayed with their DAG or hostnames in FQDN format, so you can distinguish between multiple databases.#
 +
