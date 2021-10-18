@@ -15,7 +15,7 @@ entries:
     url: /sc-automation/concept_interpreting_an_api_response.html
   - title: Supported REST APIs
     entries:
-      - title: REST API workflows supported by other plug-ins
+      - title: REST API workflows supported for other plug-ins
         url: /sc-automation/reference_supported_rest_apis.html
       - title: REST APIs supported for Oracle Database
         url: /sc-automation/refrence_rest_apis_supported_for_oracle_database.html
