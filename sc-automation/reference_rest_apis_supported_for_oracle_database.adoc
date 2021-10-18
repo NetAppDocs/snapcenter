@@ -47,6 +47,11 @@ Oracle database uses REST APIs to perform the following operations:
 * Modify resource group
 * Delete resource group
 
+== Resources
+
+* Discover databases
+* Configure database
+
 == Backups
 
 * Start a resource backup operation
@@ -64,20 +69,6 @@ Oracle database uses REST APIs to perform the following operations:
 * Create an Oracle Database clone specification from a specified backup
 * Display, modify, and delete clone specific file
 * Clone refresh
-
-== Clone
-
-* Clone resource from a backup
-* Retrieve all clones
-* Retrieve clone by ID
-* Delete clone
-
-== Clone split
-
-* Retrieve clone split estimate for clone resource
-* Start clone split operation
-* Retrieve clone split operation
-* Stop clone split operation
 
 == RBAC
 
