@@ -19,9 +19,9 @@ You should have logged in as the "SnapCenterAdmin" role.
 . In the Settings page, click *Roles*.
 . Click image:../media/add_icon_configure_database.gif[add icon in configuring database screen].
 . In the Add Role page, specify a name and description for the new role.
-//Included this note for BURT 1389838 for 4.5
+//Updated this note for BURT 1389838 for 4.5 and BURT 1411528 in 4.6
 +
-NOTE: From SnapCenter 4.5, you cannot have a role name that include /\[ ];|=,+*?< >' characters.
+NOTE: From SnapCenter 4.5, you can include only the following special characters in user names and group names: space ( ), hyphen (-), underscore (_), and colon (:).
 If you want to use a role that you created in an earlier release of SnapCenter with these special characters, you can disable the validation of the role name by changing the value of 'DisableSQLInjectionValidation' parameter to true.
 
 . Select *All members of this role can see other members' objects* to enable other members of the role to see resources such as volumes and hosts after they refresh the resources list.
