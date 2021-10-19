@@ -17,7 +17,8 @@ To configure role-based access control for SnapCenter users, you can add users o
 * You must have created the user or group accounts in Active Directory in the operating system or database. You cannot use SnapCenter to create these accounts.
 //Updated this note for BURT 1389838 for 4.5 and BURT 1411528 in 4.6
 +
-NOTE: From SnapCenter 4.5, you can include only the following special characters in user names and group names: space ( ), hyphen (-), underscore (_), and colon (:). If you want to use a role that you created in an earlier release of SnapCenter with these special characters, you can disable the validation of the role name by changing the value of 'DisableSQLInjectionValidation' parameter to true.
+NOTE: From SnapCenter 4.5, you can include only the following special characters in user names and group names: space ( ), hyphen (-), underscore (_), and colon (:).
+If you want to use a role that you created in an earlier release of SnapCenter with these special characters, you can disable the validation of the role name by changing the value of 'DisableSQLInjectionValidation' parameter to true in the web.config file located where the SnapCenter WebApp is installed. After modifying the value, you do not have to restart the service.
 
 * SnapCenter includes several predefined roles.
 +
