@@ -66,11 +66,11 @@ Specify the NetBIOS name for the domain.
 a|
 Domain FQDN
 a|
-Specify the FQDN and click *Resolve*.
+Specify the FQDN.
 a|
 Domain controller Names
 a|
-Specify the domain controller names
+Specify one or more domain controller names and click *Resolve*.
 a|
 Domain controller IP addresses
 a|
