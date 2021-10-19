@@ -1,12 +1,11 @@
 ---
-permalink: protect-sco/alternate-methods-install-plug-in-linux-aix.html
+permalink: protect-sco/alternate-ways-install-plug-in-linux-aix.html
 sidebar: sidebar
-keywords: other methods, install, plug-ins package, linux, aix, remote hosts, cmdlets, cluster host, silent mode, console mode
+keywords: alternate methods, install, plug-ins package, linux, aix, remote hosts, cmdlets, cluster host, silent mode, console mode
 summary: 'You can use other alternate ways to install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX.'
 ---
 
-= Alternate methods to install Plug-ins Package for Linux or AIX
-You can use other alternate methods to install the plug-ins package for Linux or AIX
+= Alternate ways to install Plug-ins Package for Linux or AIX
 
 == Install on multiple remote hosts using cmdlets
 

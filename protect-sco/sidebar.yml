@@ -22,7 +22,7 @@ entries:
       - title: Add hosts and install Plug-ins Package for Linux or AIX
         url: /protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html
       - title: Alternate ways to install Plug-ins Package for Linux or AIX
-        url: /protect-sco/alternate-methods-install-plug-in-linux-aix.html
+        url: /protect-sco/alternate-ways-install-plug-in-linux-aix.html
       - title: Configure the SnapCenter Plug-in Loader service
         url: /protect-sco/task_configure_snapcenter_plug_in_loader_service.html
       - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
