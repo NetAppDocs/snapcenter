@@ -86,8 +86,6 @@ Specify one or more domain controller names and click *Resolve*.
 a|
 Domain controller IP addresses
 a|
-If the domain FQDN is not resolvable from the SnapCenter Server, specify one or more domain controller IP addresses.
-
-For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_does_not_allow_to_add_Domain_Controller_IP_for_untrusted_domain_from_GUI[Add domain controller IP for untrusted domain from GUI^].
+If the domain controller names is not resolvable from SnapCenter Server, you should rectify the DNS resolutions.
 |===
 . Click *OK*.
