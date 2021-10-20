@@ -13,16 +13,28 @@ You should register the Active Directory with SnapCenter Server to manage hosts,
 
 *What you will need*
 
-* The fully qualified domain name (FQDN) should be reachable from SnapCenter Server.
-* If the FQDN is not resolvable, the domain controller IP addresses that are provided should be resolvable from SnapCenter Server.
+*LDAP and LDAPS protocols*
+
+* You can register the untrusted active directory domains using either LDAP or LDAPS protocol.
 * You should have enabled bidirectional communication between the plug-in hosts and the SnapCenter Server.
 * DNS resolution should be set up from the SnapCenter Server to the plug-in hosts and vice-versa.
 
+*LDAP protocol*
+
+* The fully qualified domain name (FQDN) should be resolvable from SnapCenter Server.
++
+You can register an untrusted domain with the FQDN. If the FQDN is not resolvable from the SnapCenter Server, you can register with a domain controller IP address and this should be resolvable from SnapCenter Server.
+
+*LDAPS protocol*
+
+* CA certificates are required for LDAPS to provides end-to-end encryption during the active directory communication.
++
+link:install/task_configure_CA_certificate_with_snapcenter_site.html[Configure CA certificate with SnapCenter site]
+* Domain controller host names (DCHostName) should be reachable from SnapCenter Server.
+
 *About this task*
 
-You can register an untrusted domain with the FQDN. If the FQDN is not resolvable from the SnapCenter Server, you can register with an IP address.
-
-You can use either the SnapCenter user interface or PowerShell cmdlets to register an untrusted domain.
+* You can use either the SnapCenter user interface, PowerShell cmdlets, or REST API to register an untrusted domain.
 
 *Steps*
 
