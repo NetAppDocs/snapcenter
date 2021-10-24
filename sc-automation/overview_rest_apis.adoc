@@ -18,3 +18,4 @@ The plug-ins that support REST APIs are:
 * Plug-in for Microsoft SQL Server
 * Plug-in for SAP HANA Database
 * Custom Plug-ins
+* Plug-in for Oracle Database

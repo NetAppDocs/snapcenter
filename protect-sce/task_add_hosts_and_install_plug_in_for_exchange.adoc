@@ -9,7 +9,7 @@ summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug
 :imagesdir: ../media/
 
 [.lead]
-You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
+You can use the SnapCenter Add Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
 
 *What you will need*
 
@@ -56,14 +56,22 @@ SnapCenter depends on the proper configuration of the DNS. Therefore, the best p
 
 An IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
 
+If you are adding a host using SnapCenter and it is part of a subdomain, you must provide the FQDN.
+
 You can enter IP addresses or the FQDN of one of the following:
 
  ** Stand-alone host
  ** Exchange DAG
++
+For an Exchange DAG, you can do the following:
 
-If you are adding a host using SnapCenter and it is part of a subdomain, you must provide the FQDN.
+* Add a DAG by providing the DAG name, DAG IP address, node name, or node IP address.
+* Add the IP less DAG cluster by providing the IP address or the FQDN of one of the DAG cluster nodes.
+* Add IP less DAG that resides in the same domain or different domain. You can also add multiple IP/IP less DAGs with the same name but different domains.
 
-You can also add the IP less DAG cluster by providing the IP address or the FQDN of one of the DAG cluster nodes.
+[NOTE]
+For a cross-domain DAG or a standalone host, it is recommended to provide FQDN or the IP address of the host.
+
 a|
 Credentials
 a|
