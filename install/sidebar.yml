@@ -81,15 +81,10 @@ entries:
         entries:
           - title: Configure LUN storage
             url: /install/concept_configure_lun_storage.html
-            entries:
-              - title: Establish an iSCSI session
-                url: /install/task_establish_an_iscsi_session.html
-              - title: Disconnect an iSCSI session
-                url: /install/task_disconnect_an_iscsi_session.html
-              - title: Create and manage igroups
-                url: /install/concept_create_and_manage_igroups.html
-              - title: Create and manage disks
-                url: /install/task_create_and_manage_disks.html
+          - title: Create and manage igroups
+            url: /install/concept_create_and_manage_igroups.html
+          - title: Create and manage disks
+            url: /install/task_create_and_manage_disks.html
           - title: Create and manage SMB shares
             url: /install/concept_create_and_manage_smb_shares.html
           - title: Reclaim space on the storage system
