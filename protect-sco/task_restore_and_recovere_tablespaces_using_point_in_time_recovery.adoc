@@ -54,6 +54,9 @@ When you specify the SCN or date and time, SnapCenter lists the backups that are
 You should store the prescripts either in the /var/opt/snapcenter/spl/scripts path or in any folder inside this path. By default, the /var/opt/snapcenter/spl/scripts path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
 +
 You can also specify the script timeout value. The default value is 60 seconds.
++
++
+SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript. link:../protect-sco/predefined-environment-variables-prescript-postscript-restore.html[Learn more^]
 
 . On the PostOps page, perform the following steps:
  .. Enter the path and the arguments of the postscript that you want to run after the restore operation.

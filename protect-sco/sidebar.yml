@@ -41,6 +41,8 @@ entries:
         url: /protect-sco/backup-workflow.html
       - title: Define a backup strategy for Oracle databases
         url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
+      - title: Predefined environment variables for backup specific prescript and postscript
+        url: /protect-sco/predefined-environment-variables-prescript-postscript-backup.html
       - title: Determine whether Oracle databases are available for backup
         url: /protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html
       - title: Create backup policies for Oracle databases
@@ -69,6 +71,8 @@ entries:
         url: /protect-sco/restore-workflow.html
       - title: Define a restore and recovery strategy for Oracle databases
         url: /protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html
+      - title: Predefined environment variables for restore specific prescript and postscript
+        url: /protect-sco/predefined-environment-variables-prescript-postscript-restore.html
       - title: Requirements for restoring an Oracle database
         url: /protect-sco/reference_requirements_for_restoring_an_oracle_database.html
       - title: Restore Oracle database
@@ -89,6 +93,8 @@ entries:
         url: /protect-sco/clone-workflow.html
       - title: Define a clone strategy for Oracle databases
         url: /protect-sco/task_define_a_clone_strategy_for_oracle_databases.html
+      - title: Predefined environment variables for clone specific prescript and postscript
+        url: /protect-sco/predefined-environment-variables-prescript-postscript-clone.html
       - title: Requirements for cloning an Oracle database
         url: /protect-sco/reference_requirements_for_cloning_an_oracle_database.html
       - title: Clone an Oracle database
