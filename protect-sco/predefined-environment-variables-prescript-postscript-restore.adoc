@@ -13,6 +13,7 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 *Supported predefined environment variables for restoring a database*
 
+[cols=3*,options="header",cols="25,25,50"]
 |===
 | Parameter name | Description | Sample data representation
 
