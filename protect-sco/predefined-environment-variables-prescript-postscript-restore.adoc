@@ -13,10 +13,11 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 *Supported predefined environment variables for restoring a database*
 
-[cols=3*,options="header",cols="25,25,50"]
+[cols=3*,options="header", cols="25,25,50"]
 |===
-| Parameter name | Description | Sample data representation
-
+| Parameter name
+| Description
+| Sample data representation
 a|
 SC_JOB_ID
 a|
@@ -58,8 +59,12 @@ Name of the backup.
 
 This parameter will be populated for application volumes.
 a|
-* For non ALM: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
-* For ALM: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
+* For non ALM:
++
+DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+* For ALM:
++
+DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
 a|
 SC_BACKUP_ID
 a|

@@ -117,30 +117,48 @@ SC_PRIMARY_DATA_VOLUME_FULL_PATH
 a|
 The storage mapping of SVM to volume for data files directory. It will be the parent volume name for luns and qtrees.
 a|
-* For 2 databases in the same resource group: NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA
-* For single database with data files spread across multiple volumes buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA,herculus:/vol/scspr2417819002_NFS
+* For 2 databases in the same resource group:
++
+NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA
+* For single database with data files spread across multiple volumes:
++
+buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA,herculus:/vol/scspr2417819002_NFS
 a|
 SC_PRIMARY_ARCHIVELOGS_VOLUME_FULL_PATH
 a|
 The storage mapping of SVM to volume for logs file directory. It will be the parent volume name for luns and qtrees.
 a|
-* For single database instance: buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO
-* For multiple database instances: NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO\|NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO
+* For single database instance:
++
+buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO
+* For multiple database instances:
++
+NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO\|NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO
 a|
 SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG
 a|
 List of Snapshots containing storage system name and volume name.
 a|
-* For single database instance: buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
-* For multiple database instances: NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+* For single database instance:
++
+buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+* For multiple database instances:
++
+NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 a|
 SC_PRIMARY_SNAPSHOT_NAMES
 a|
 The names of the primary Snapshots created during the backup.
 a|
-* For single database instance: RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
-* For multiple database instances: NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
-* For consistency group Snapshots that involves 2 volumes: cg3_R80404CBEF5V1_04-05-2021_03.08.03.4945_0_bfc279cc-28ad-465c-9d60-5487ac17b25d_2021_4_5_3_8_58_350
+* For single database instance:
++
+RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+* For multiple database instances:
++
+NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+* For consistency group Snapshots that involves 2 volumes:
++
+cg3_R80404CBEF5V1_04-05-2021_03.08.03.4945_0_bfc279cc-28ad-465c-9d60-5487ac17b25d_2021_4_5_3_8_58_350
 a|
 SC_PRIMARY_MOUNT_POINTS
 a|
@@ -148,16 +166,26 @@ Mount point details which are part of the backup.
 
 The details include the directory on which volumes are mounted and not the immediate parent of the file under backup. For an ASM configuration, it is the name of the Data Guard database.
 a|
-* For single database instance: /mnt/nfsdb3_data,/mnt/nfsdb3_log,/mnt/nfsdb3_data1
-* For multiple database instances: NFSB31@/mnt/nfsdb31_data,/mnt/nfsdb31_log,/mnt/nfsdb31_data1\|NFSB32@/mnt/nfsdb32_data,/mnt/nfsdb32_log,/mnt/nfsdb32_data1
-* For ASM: +DATA2DG,+LOG2DG
+* For single database instance:
++
+/mnt/nfsdb3_data,/mnt/nfsdb3_log,/mnt/nfsdb3_data1
+* For multiple database instances:
++
+NFSB31@/mnt/nfsdb31_data,/mnt/nfsdb31_log,/mnt/nfsdb31_data1\|NFSB32@/mnt/nfsdb32_data,/mnt/nfsdb32_log,/mnt/nfsdb32_data1
+* For ASM:
++
++DATA2DG,+LOG2DG
 a|
 SC_PRIMARY_SNAPSHOTS_AND_MOUNT_POINTS
 a|
 Names of the snapshots created during the backup of each of the mount points.
 a|
-* For single database instance: RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log
-* For multiple database instances: NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log\|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb31_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb32_log
+* For single database instance:
++
+RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log
+* For multiple database instances:
++
+NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log\|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb31_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb32_log
 a|
 SC_ARCHIVELOGS_LOCATIONS
 a|
@@ -208,7 +236,7 @@ Hourly, Daily, Weekly, Monthly, or custom label.
 
 == Supported delimiters
 
-[cols=3*,options="header", cols="25,25,50"]
+[cols=3*,options="header", cols="15,25,60"]
 |===
 | Delimiter name
 | When it is used
