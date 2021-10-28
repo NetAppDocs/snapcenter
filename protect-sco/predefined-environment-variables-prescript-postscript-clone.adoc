@@ -13,100 +13,73 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 *Supported predefined environment variables for cloning a database*
 
-[cols=3*,options="header", cols="25,25,50"]
+[cols=2*,options="header",cols="30,70"]
 |===
+
 | Parameter name
-| Description
 | Sample data representation
-a|
-SC_ORIGINAL_SID
-a|
-The SID of the source database.
+
+| "*SC_ORIGINAL_SID*" specifies the SID of the source database.
 
 This parameter will be populated for application volumes.
-a|
-NFSB32
-a|
-SC_ORIGINAL_HOST
-a|
-The name of the source host.
+| NFSB32
+
+| "*SC_ORIGINAL_HOST*" specifies the name of the source host.
 
 This parameter will be populated for application volumes.
-a|
-asmrac1.gdl.englab.netapp.com
-a|
-SC_ORACLE_HOME
-a|
-The path of the target database's Oracle home directory.
-a|
-/ora01/app/oracle/product/18.1.0/db_1
-a|
-SC_BACKUP_NAME
-a|
-Name of the backup.
+| asmrac1.gdl.englab.netapp.com
+
+| "*SC_ORACLE_HOME*" specifies the path of the target database's Oracle home directory.
+| /ora01/app/oracle/product/18.1.0/db_1
+
+| "*SC_BACKUP_NAME*" specifies the name of the backup.
 
 This parameter will be populated for application volumes.
 a|
 * If the database is not running in ARCHIVELOG mode :
 +
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0
+\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
 * If the database is running in ARCHIVELOG mode:
 +
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG:RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
-a|
-SC_ORIGINAL_OS_USER
-a|
-Operating system owner of the source database.
-a|
-oracle
-a|
-SC_ORIGINAL_OS_GROUP
-a|
-Operating system group of the source database.
-a|
-oinstall
-a|
-SC_TARGET_SID
-a|
-The SID of the cloned database.
+DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0
+\|LOG:RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,
+RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,
+RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
+
+| "*SC_ORIGINAL_OS_USER*" specifies the operating system owner of the source database.
+| oracle
+
+| "*SC_ORIGINAL_OS_GROUP*" specifies the operating system group of the source database.
+| oinstall
+
+| "*SC_TARGET_SID*" specifies the SID of the cloned database.
 
 For PDB clone workflow, the value of this parameter will not be predefined.
 
 This parameter will be populated for application volumes.
-a|
-clonedb
-a|
-SC_TARGET_HOST
-a|
-The name of the host where the database will be cloned.
+| clonedb
+
+| "*SC_TARGET_HOST*" specifies the name of the host where the database will be cloned.
 
 This parameter will be populated for application volumes.
-a|
-asmrac1.gdl.englab.netapp.com
-a|
-SC_TARGET_OS_USER
-a|
-The operating system owner of the cloned database.
+| asmrac1.gdl.englab.netapp.com
+
+| "*SC_TARGET_OS_USER*" specifies the operating system owner of the cloned database.
 
 For PDB clone workflow, the value of this parameter will not be predefined.
-a|
-oracle
-a|
-SC_TARGET_OS_GROUP
-a|
-The operating system group of the cloned database.
+| oracle
+
+| "*SC_TARGET_OS_GROUP*" specifies the operating system group of the cloned database.
 
 For PDB clone workflow, the value of this parameter will not be predefined.
-a|
-oinstall
-a|
-SC_TARGET_DB_PORT
-a|
-The database port of the cloned database.
+| oinstall
+
+| "*SC_TARGET_DB_PORT*" specifies the database port of the cloned database.
 
 For PDB clone workflow, the value of this parameter will not be predefined.
-a|
-1521
+| 1521
+
 |===
 
 For information about delimiters, see link:../protect-sco/predefined-environment-variables-prescript-postscript-backup.html#supported-delimiters[Supported delimiters^].

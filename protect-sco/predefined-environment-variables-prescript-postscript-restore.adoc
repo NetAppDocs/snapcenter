@@ -13,85 +13,63 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 *Supported predefined environment variables for restoring a database*
 
-[cols=3*,options="header", cols="25,25,50"]
+[cols=2*,options="header",cols="30,70"]
 |===
+
 | Parameter name
-| Description
 | Sample data representation
-a|
-SC_JOB_ID
-a|
-Job ID of the operation.
-a|
-257
-a|
-SC_ORACLE_SID
-a|
-The system identifier of the database.
+
+| "*SC_JOB_ID*" specifies the job ID of the operation.
+| 257
+
+| "*SC_ORACLE_SID*" specifies the system identifier of the database.
 
 If the operation involves multiple databases, this will contain database names separated by pipe.
-a|
-NFSB31
-a|
-SC_HOST
-a|
-Host name of the database.
+| NFSB31
+
+| "*SC_HOST*" specifies the host name of the database.
 
 This parameter will be populated for application volumes.
-a|
-scsmohost2.gdl.englabe.netapp.com
-a|
-SC_OS_USER
-a|
-Operating System owner of the database.
-a|
-oracle
-a|
-SC_OS_GROUP
-a|
-Operating System group of the database.
-a|
-oinstall
-a|
-SC_BACKUP_NAME
-a|
-Name of the backup.
+| scsmohost2.gdl.englabe.netapp.com
+
+| "*SC_OS_USER*" specifies the operating system owner of the database.
+| oracle
+
+| "*SC_OS_GROUP*" specifies the operating system group of the database.
+| oinstall
+
+| "*SC_BACKUP_NAME*" specifies the name of the backup.
 
 This parameter will be populated for application volumes.
 a|
 * If the database is not running in ARCHIVELOG mode:
 +
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0
+\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
 * If the database is running in ARCHIVELOG mode:
 +
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
-a|
-SC_BACKUP_ID
-a|
-ID of the backup.
+DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0
+\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,
+RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,
+RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
+
+| "*SC_BACKUP_ID*" specifies the ID of the backup.
 
 This parameter will be populated for application volumes.
 a|
 * If the database is not running in ARCHIVELOG mode: DATA@203\|LOG@205
 * If the database is running in ARCHIVELOG mode: DATA@203\|LOG@205,206,207
-a|
-SC_RESOURCE_GROUP_NAME
-a|
-The name of the resource group.
-a|
-RG1
-a|
-SC_ORACLE_HOME
-a|
-The path of the Oracle home directory.
-a|
-/ora01/app/oracle/product/18.1.0/db_1
-a|
-SC_RECOVERY_TYPE
-a|
-What files are recovered and the recovery scope.
-a|
-RESTORESCOPE:usingBackupControlfile=false\|RECOVERYSCOPE:allLogs=true,noLogs=false,untiltime=false,untilscn=false.
+
+| "*SC_RESOURCE_GROUP_NAME*" specifies the name of the resource group.
+| RG1
+
+| "*SC_ORACLE_HOME*" specifies the path of the Oracle home directory.
+| /ora01/app/oracle/product/18.1.0/db_1
+
+| "*SC_RECOVERY_TYPE*" specifies the files that are recovered and also the recovery scope.
+| RESTORESCOPE:usingBackupControlfile=false
+\|RECOVERYSCOPE:allLogs=true,noLogs=false,untiltime=false,untilscn=false.
+
 |===
 
 For information about delimiters, see link:../protect-sco/predefined-environment-variables-prescript-postscript-backup.html#supported-delimiters[Supported delimiters^].
