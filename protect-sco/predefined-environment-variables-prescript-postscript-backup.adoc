@@ -15,107 +15,84 @@ SnapCenter predefines the values of the parameters that will be directly accessi
 
 == Supported predefined environment variables for creating backup policy
 
-[cols="25h,~,~"]
+[cols=3*,options="header",cols="10,30,60"]
 |===
 | Parameter name
 | Description
 | Sample data representation
-a|
-SC_JOB_ID
-a|
-Job ID of the operation.
-a|
-256
-a|
-SC_ORACLE_SID
-a|
-The system identifier of the database.
+
+| SC_JOB_ID
+| Job ID of the operation.
+| 256
+
+| SC_ORACLE_SID
+| The system identifier of the database.
 
 If the operation involves multiple databases, this will contain database names separated by pipe.
 
 This parameter will be populated for application volumes.
-a|
-NFSB32\|NFSB31
-a|
-SC_HOST
-a|
-Host name of the database.
+| NFSB32\|NFSB31
+
+| SC_HOST
+| Host name of the database.
 
 For RAC, host name will be on which backup is performed.
 
 This parameter will be populated for application volumes.
-a|
-scsmohost2.gdl.englabe.netapp.com
-a|
-SC_OS_USER
-a|
-Operating System owner of the database.
+| scsmohost2.gdl.englabe.netapp.com
+
+| SC_OS_USER
+| Operating System owner of the database.
 
 The data will be formatted as <db1>@<osuser1>\|<db2>@<osuser2>.
-a|
-NFSB31@oracle\|NFSB32@oracle
-a|
-SC_OS_GROUP
-a|
-Operating System group of the database.
+| NFSB31@oracle\|NFSB32@oracle
+
+| SC_OS_GROUP
+| Operating System group of the database.
 
 The data will be formatted as <db1>@<osgroup1>\|<db2>@<osgroup2>.
-a|
-NFSB31@install\|NFSB32@oinstall
-a|
-SC_BACKUP_TYPE
-a|
-Type of the backup (online full, online data, online log, offline shutdown, offline mount)
+| NFSB31@install\|NFSB32@oinstall
+
+| SC_BACKUP_TYPE
+| Type of the backup (online full, online data, online log, offline shutdown, offline mount)
 a|
 * For full backup: ONLINEFULL
 * For data only backup: ONLINEDATA
 * For log only backup: ONLINELOG
-a|
-SC_BACKUP_NAME
-a|
-Name of the backup.
+
+| SC_BACKUP_NAME
+| Name of the backup.
 
 This parameter will be populated for application volumes.
-a|
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
-a|
-SC_BACKUP_ID
-a|
-ID of the backup.
+| DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+
+| SC_BACKUP_ID
+| ID of the backup.
 
 This parameter will be populated for application volumes.
-a|
-DATA@203\|LOG@205
-a|
-SC_ORACLE_HOME
-a|
-The path of the Oracle home directory.
-a|
-NFSB32@/ora01/app/oracle/product/18.1.0/db_1\|NFSB31@/ora01/app/oracle/product/18.1.0/db_1
-a|
-SC_BACKUP_RETENTION
-a|
-The retention period specified in the policy.
+| DATA@203\|LOG@205
+
+| SC_ORACLE_HOME
+| The path of the Oracle home directory.
+| NFSB32@/ora01/app/oracle/product/18.1.0/db_1\|NFSB31@/ora01/app/oracle/product/18.1.0/db_1
+
+| SC_BACKUP_RETENTION
+| The retention period specified in the policy.
 a|
 * For full backup: Hourly\|DATA@DAYS:3\|LOG@COUNT:4
 * For on-demand data only backup: Ondemand\|DATA@COUNT:2
 * For on-demand log only backup: Ondemand\|LOG@COUNT:2
-a|
-SC_RESOURCE_GROUP_NAME
-a|
-The name of the resource group.
-a|
-RG1
-a|
-SC_BACKUP_POLICY_NAME
-a|
-The name of the backup policy.
-a|
-backup_policy
-a|
-SC_PRIMARY_DATA_VOLUME_FULL_PATH
-a|
-The storage mapping of SVM to volume for data files directory. It will be the parent volume name for luns and qtrees.
+
+| SC_RESOURCE_GROUP_NAME
+| The name of the resource group.
+| RG1
+
+| SC_BACKUP_POLICY_NAME
+| The name of the backup policy.
+| backup_policy
+
+| SC_PRIMARY_DATA_VOLUME_FULL_PATH
+| The storage mapping of SVM to volume for data files directory. It will be the parent volume name for luns and qtrees.
 
 The data will be formatted as <db1>@<SVM1:volume1>\|<db2>@<SVM2:volume2>.
 a|
@@ -125,10 +102,9 @@ NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA\|NFSB31@buck:/vol/scspr2417
 * For single database with data files spread across multiple volumes:
 +
 buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA,herculus:/vol/scspr2417819002_NFS
-a|
-SC_PRIMARY_ARCHIVELOGS_VOLUME_FULL_PATH
-a|
-The storage mapping of SVM to volume for logs file directory. It will be the parent volume name for luns and qtrees.
+
+| SC_PRIMARY_ARCHIVELOGS_VOLUME_FULL_PATH
+| The storage mapping of SVM to volume for logs file directory. It will be the parent volume name for luns and qtrees.
 a|
 * For single database instance:
 +
@@ -136,10 +112,9 @@ buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO
 * For multiple database instances:
 +
 NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO\|NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO
-a|
-SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG
-a|
-List of Snapshots containing storage system name and volume name.
+
+| SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG
+| List of Snapshots containing storage system name and volume name.
 a|
 * For single database instance:
 +
@@ -147,10 +122,9 @@ buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.
 * For multiple database instances:
 +
 NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
-a|
-SC_PRIMARY_SNAPSHOT_NAMES
-a|
-The names of the primary Snapshots created during the backup.
+
+| SC_PRIMARY_SNAPSHOT_NAMES
+| The names of the primary Snapshots created during the backup.
 a|
 * For single database instance:
 +
@@ -161,10 +135,9 @@ NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-
 * For consistency group Snapshots that involves 2 volumes:
 +
 cg3_R80404CBEF5V1_04-05-2021_03.08.03.4945_0_bfc279cc-28ad-465c-9d60-5487ac17b25d_2021_4_5_3_8_58_350
-a|
-SC_PRIMARY_MOUNT_POINTS
-a|
-Mount point details which are part of the backup.
+
+| SC_PRIMARY_MOUNT_POINTS
+| Mount point details which are part of the backup.
 
 The details include the directory on which volumes are mounted and not the immediate parent of the file under backup. For an ASM configuration, it is the name of the disk group.
 
@@ -179,10 +152,9 @@ NFSB31@/mnt/nfsdb31_data,/mnt/nfsdb31_log,/mnt/nfsdb31_data1\|NFSB32@/mnt/nfsdb3
 * For ASM:
 +
 +DATA2DG,+LOG2DG
-a|
-SC_PRIMARY_SNAPSHOTS_AND_MOUNT_POINTS
-a|
-Names of the snapshots created during the backup of each of the mount points.
+
+| SC_PRIMARY_SNAPSHOTS_AND_MOUNT_POINTS
+| Names of the snapshots created during the backup of each of the mount points.
 a|
 * For single database instance:
 +
@@ -190,77 +162,71 @@ RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819
 * For multiple database instances:
 +
 NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log\|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb31_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb32_log
-a|
-SC_ARCHIVELOGS_LOCATIONS
-a|
-The location of the archive logs directory.
+
+| SC_ARCHIVELOGS_LOCATIONS
+| The location of the archive logs directory.
 
 The directory names will be the immediate parent of the archive log files. If the archive logs are placed in more than one location then all the locations will be captured. This also includes the FRA scenarios. If softlinks are used for directory then the same will be populated.
 a|
 * For single database on NFS: /mnt/nfsdb2_log
 * For multiple databases on NFS and for the NFSB31 database archive logs that are placed in 2 different locations: NFSB31@/mnt/nfsdb31_log1,/mnt/nfsdb31_log2\|NFSB32@/mnt/nfsdb32_log
 * For ASM: +LOG2DG/ASMDB2/ARCHIVELOG/2021_07_15
-a|
-SC_REDO_LOGS_LOCATIONS
-a|
-The location of the redo logs directory.
+
+| SC_REDO_LOGS_LOCATIONS
+| The location of the redo logs directory.
 
 The directory names will be the immediate parent of the redo log files. If softlinks are used for directory then the same will be populated.
 a|
 * For single database on NFS: /mnt/nfsdb2_data/newdb1
 * For multiple databases on NFS: NFSB31@/mnt/nfsdb31_data/newdb31\|NFSB32@/mnt/nfsdb32_data/newdb32
 * For ASM: +LOG2DG/ASMDB2/ONLINELOG
-a|
-SC_CONTROL_FILES_LOCATIONS
-a|
-The location of the control files directory.
+
+| SC_CONTROL_FILES_LOCATIONS
+| The location of the control files directory.
 
 The directory names will be the immediate parent of the control files. If softlinks are used for directory then the same will be populated.
 a|
 * For single database on NFS: /mnt/nfsdb2_data/fra/newdb1,/mnt/nfsdb2_data/newdb1
 * For multiple databases on NFS: NFSB31@/mnt/nfsdb31_data/fra/newdb31,/mnt/nfsdb31_data/newdb31\|NFSB32@/mnt/nfsdb32_data/fra/newdb32,/mnt/nfsdb32_data/newdb32
 * For ASM: +LOG2DG/ASMDB2/CONTROLFILE
-a|
-SC_DATA_FILES_LOCATIONS
-a|
-The location of the data files directory.
+
+| SC_DATA_FILES_LOCATIONS
+| The location of the data files directory.
 
 The directory names will be the immediate parent of the data files. If softlinks are used for directory then the same will be populated.
 a|
 * For single database on NFS: /mnt/nfsdb3_data1,/mnt/nfsdb3_data/NEWDB3/datafile
 * For multiple databases on NFS: NFSB31@/mnt/nfsdb31_data1,/mnt/nfsdb31_data/NEWDB31/datafile\|NFSB32@/mnt/nfsdb32_data1,/mnt/nfsdb32_data/NEWDB32/datafile
 * For ASM: +DATA2DG/ASMDB2/DATAFILE,+DATA2DG/ASMDB2/TEMPFILE
-a|
-SC_SNAPSHOT_LABEL
-a|
-Name of the secondary labels.
-a|
+
+| SC_SNAPSHOT_LABEL
+| Name of the secondary labels.
+|
 Hourly, Daily, Weekly, Monthly, or custom label.
+
 |===
 
 == Supported delimiters
 
-[cols=3*,options="header", cols="15,25,60"]
+[cols=3*,options="header",cols="10,30,60"]
 |===
 | Delimiter name
 | When it is used
 | Example
-a|
-:
-a|
-To separate SVM name and volume name
-a|
-buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
-a|
-@
+
+| :
+| To separate SVM name and volume name
+| buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+
+| @
 a|
 * To separate data from its database name.
 * To separate the value from its key.
 a|
 * NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 * NFSB31@oracle\|NFSB32@oracle
-a|
-\|
+
+| \|
 a|
 * To separate the data between two different databases
 * To separate the data between two different entities for SC_BACKUP_ID, SC_BACKUP_RETENTION, and SC_BACKUP_NAME parameters.
@@ -268,16 +234,13 @@ a|
 * DATA@203\|LOG@205
 * Hourly\|DATA@DAYS:3\|LOG@COUNT:4
 * DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
-a|
-/
-a|
-To separate the volume name from it's Snapshot for SC_PRIMARY_SNAPSHOT_NAMES and SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG parameters.
-a|
-NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
-a|
-,
-a|
-To separate set of variables for the same DB.
-a|
-NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+
+| /
+| To separate the volume name from it's Snapshot for SC_PRIMARY_SNAPSHOT_NAMES and SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG parameters.
+| NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+
+| ,
+| To separate set of variables for the same DB.
+| NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1\|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
+
 |===
