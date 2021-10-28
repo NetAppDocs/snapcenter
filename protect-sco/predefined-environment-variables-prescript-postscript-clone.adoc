@@ -13,73 +13,69 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 *Supported predefined environment variables for cloning a database*
 
-[cols=2*,options="header",cols="30,70"]
-|===
-
-| Parameter name
-| Sample data representation
-
-| "*SC_ORIGINAL_SID*" specifies the SID of the source database.
-
-This parameter will be populated for application volumes.
-| NFSB32
-
-| "*SC_ORIGINAL_HOST*" specifies the name of the source host.
-
-This parameter will be populated for application volumes.
-| asmrac1.gdl.englab.netapp.com
-
-| "*SC_ORACLE_HOME*" specifies the path of the target database's Oracle home directory.
-| /ora01/app/oracle/product/18.1.0/db_1
-
-| "*SC_BACKUP_NAME*" specifies the name of the backup.
-
-This parameter will be populated for application volumes.
-a|
-* If the database is not running in ARCHIVELOG mode :
+* *SC_ORIGINAL_SID* specifies the SID of the source database.
 +
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0
-\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
-* If the database is running in ARCHIVELOG mode:
+This parameter will be populated for application volumes.
 +
-DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0
-\|LOG:RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,
-RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,
-RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
+Example: NFSB32
 
-| "*SC_ORIGINAL_OS_USER*" specifies the operating system owner of the source database.
-| oracle
-
-| "*SC_ORIGINAL_OS_GROUP*" specifies the operating system group of the source database.
-| oinstall
-
-| "*SC_TARGET_SID*" specifies the SID of the cloned database.
-
-For PDB clone workflow, the value of this parameter will not be predefined.
-
+* *SC_ORIGINAL_HOST* specifies the name of the source host.
++
 This parameter will be populated for application volumes.
-| clonedb
++
+Example: asmrac1.gdl.englab.netapp.com
 
-| "*SC_TARGET_HOST*" specifies the name of the host where the database will be cloned.
+* *SC_ORACLE_HOME* specifies the path of the target database's Oracle home directory.
++
+Example: /ora01/app/oracle/product/18.1.0/db_1
 
+* *SC_BACKUP_NAME*" specifies the name of the backup.
++
 This parameter will be populated for application volumes.
-| asmrac1.gdl.englab.netapp.com
++
+Examples:
++
+** If the database is not running in ARCHIVELOG mode: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+** If the database is running in ARCHIVELOG mode: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG:RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
 
-| "*SC_TARGET_OS_USER*" specifies the operating system owner of the cloned database.
+* *SC_ORIGINAL_OS_USER* specifies the operating system owner of the source database.
++
+Example: oracle
 
+* *SC_ORIGINAL_OS_GROUP* specifies the operating system group of the source database.
++
+Example: oinstall
+
+* *SC_TARGET_SID*" specifies the SID of the cloned database.
++
 For PDB clone workflow, the value of this parameter will not be predefined.
-| oracle
++
+This parameter will be populated for application volumes.
++
+Example: clonedb
 
-| "*SC_TARGET_OS_GROUP*" specifies the operating system group of the cloned database.
+* *SC_TARGET_HOST* specifies the name of the host where the database will be cloned.
++
+This parameter will be populated for application volumes.
++
+Example: asmrac1.gdl.englab.netapp.com
 
+* *SC_TARGET_OS_USER* specifies the operating system owner of the cloned database.
++
 For PDB clone workflow, the value of this parameter will not be predefined.
-| oinstall
++
+Example: oracle
 
-| "*SC_TARGET_DB_PORT*" specifies the database port of the cloned database.
-
+* *SC_TARGET_OS_GROUP* specifies the operating system group of the cloned database.
++
 For PDB clone workflow, the value of this parameter will not be predefined.
-| 1521
++
+Example: oinstall
 
-|===
+* *SC_TARGET_DB_PORT* specifies the database port of the cloned database.
++
+For PDB clone workflow, the value of this parameter will not be predefined.
++
+Example: 1521
 
 For information about delimiters, see link:../protect-sco/predefined-environment-variables-prescript-postscript-backup.html#supported-delimiters[Supported delimiters^].
