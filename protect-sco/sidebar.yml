@@ -75,7 +75,7 @@ entries:
         url: /protect-sco/predefined-environment-variables-prescript-postscript-restore.html
       - title: Requirements for restoring an Oracle database
         url: /protect-sco/reference_requirements_for_restoring_an_oracle_database.html
-      - title: Restore Oracle database
+      - title: Restore and recover Oracle database
         url: /protect-sco/task_restore_an_oracle_database.html
       - title: Restore and recover tablespaces using point-in-time recovery
         url: /protect-sco/task_restore_and_recovere_tablespaces_using_point_in_time_recovery.html

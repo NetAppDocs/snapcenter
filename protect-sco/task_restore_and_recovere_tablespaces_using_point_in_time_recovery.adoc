@@ -55,7 +55,6 @@ You should store the prescripts either in the /var/opt/snapcenter/spl/scripts pa
 +
 You can also specify the script timeout value. The default value is 60 seconds.
 +
-+
 SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript. link:../protect-sco/predefined-environment-variables-prescript-postscript-restore.html[Learn more^]
 
 . On the PostOps page, perform the following steps:
