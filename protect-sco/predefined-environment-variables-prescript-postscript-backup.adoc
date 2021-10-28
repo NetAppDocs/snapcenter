@@ -15,10 +15,11 @@ SnapCenter predefines the values of the parameters that will be directly accessi
 
 == Supported predefined environment variables for creating backup policy
 
-[cols=3*,options="header",cols="25,25,50"]
+[cols=3*,options="header", cols="20,30,50"]
 |===
-| Parameter name | Description | Sample data representation
-
+| Parameter name
+| Description
+| Sample data representation
 a|
 SC_JOB_ID
 a|
@@ -207,10 +208,11 @@ Hourly, Daily, Weekly, Monthly, or custom label.
 
 == Supported delimiters
 
-[cols=3*,options="header",cols="25,25,50"]
+[cols=3*,options="header", cols="25,25,50"]
 |===
-| Delimiter name | When it is used | Example
-
+| Delimiter name
+| When it is used
+| Example
 a|
 :
 a|
