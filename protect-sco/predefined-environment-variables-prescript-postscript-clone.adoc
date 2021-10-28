@@ -47,10 +47,10 @@ Name of the backup.
 
 This parameter will be populated for application volumes.
 a|
-* For non ALM:
+* If the database is not running in ARCHIVELOG mode :
 +
 DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
-* For ALM:
+* If the database is running in ARCHIVELOG mode:
 +
 DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG:RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
 a|

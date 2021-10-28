@@ -15,7 +15,7 @@ SnapCenter predefines the values of the parameters that will be directly accessi
 
 == Supported predefined environment variables for creating backup policy
 
-[cols=3*,options="header", cols="20,30,50"]
+[cols="25h,~,~"]
 |===
 | Parameter name
 | Description
@@ -31,7 +31,7 @@ SC_ORACLE_SID
 a|
 The system identifier of the database.
 
-If the operation involves multiple databases, this will contain database names separated by double colons.
+If the operation involves multiple databases, this will contain database names separated by pipe.
 
 This parameter will be populated for application volumes.
 a|
@@ -116,6 +116,8 @@ a|
 SC_PRIMARY_DATA_VOLUME_FULL_PATH
 a|
 The storage mapping of SVM to volume for data files directory. It will be the parent volume name for luns and qtrees.
+
+The data will be formatted as <db1>@<SVM1:volume1>\|<db2>@<SVM2:volume2>.
 a|
 * For 2 databases in the same resource group:
 +
@@ -164,7 +166,9 @@ SC_PRIMARY_MOUNT_POINTS
 a|
 Mount point details which are part of the backup.
 
-The details include the directory on which volumes are mounted and not the immediate parent of the file under backup. For an ASM configuration, it is the name of the Data Guard database.
+The details include the directory on which volumes are mounted and not the immediate parent of the file under backup. For an ASM configuration, it is the name of the disk group.
+
+The data will be formatted as <db1>@<mountpoint1,mountpoint2>\|<db2>@<mountpoint1,mountpoint2>.
 a|
 * For single database instance:
 +

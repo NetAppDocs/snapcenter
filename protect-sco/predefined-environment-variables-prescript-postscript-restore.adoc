@@ -29,7 +29,7 @@ SC_ORACLE_SID
 a|
 The system identifier of the database.
 
-If the operation involves multiple databases, this will contain database names separated by double colons.
+If the operation involves multiple databases, this will contain database names separated by pipe.
 a|
 NFSB31
 a|
@@ -59,10 +59,10 @@ Name of the backup.
 
 This parameter will be populated for application volumes.
 a|
-* For non ALM:
+* If the database is not running in ARCHIVELOG mode:
 +
 DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
-* For ALM:
+* If the database is running in ARCHIVELOG mode:
 +
 DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0\|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
 a|
@@ -72,8 +72,8 @@ ID of the backup.
 
 This parameter will be populated for application volumes.
 a|
-* For non ALM: DATA@203\|LOG@205
-* For ALM: DATA@203\|LOG@205,206,207
+* If the database is not running in ARCHIVELOG mode: DATA@203\|LOG@205
+* If the database is running in ARCHIVELOG mode: DATA@203\|LOG@205,206,207
 a|
 SC_RESOURCE_GROUP_NAME
 a|
@@ -91,7 +91,7 @@ SC_RECOVERY_TYPE
 a|
 What files are recovered and the recovery scope.
 a|
-RESTORESCOPE:{usingBackupControlfile=false}\|RECOVERYSCOPE:{allLogs=true,noLogs=false,untiltime=false,untilscn=false}.
+RESTORESCOPE:usingBackupControlfile=false\|RECOVERYSCOPE:allLogs=true,noLogs=false,untiltime=false,untilscn=false.
 |===
 
 For information about delimiters, see link:../protect-sco/predefined-environment-variables-prescript-postscript-backup.html#supported-delimiters[Supported delimiters^].
