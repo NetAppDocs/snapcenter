@@ -23,8 +23,7 @@ Automatic discovery is not supported for the following configurations:
 +
 NOTE: In case the above resources are discovered, the data protection operations are not supported on these resources.
 
-* HANA multiple-host configuration
-* HANA System Replication
+* HANA multiple-host configuration 
 * Multiple instances on the same host
 
 *Steps*
