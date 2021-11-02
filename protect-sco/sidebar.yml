@@ -113,3 +113,15 @@ entries:
         url: /protect-sco/task_refresh_a_clone.html
       - title: Delete clone of a pluggable database
         url: /protect-sco/task_delete_clone_of_a_pluggable_database.html
+  - title: Manage application volumes
+    entries:
+      - title: Add application volumes
+        url: /protect-sco/add-application-volume.html
+      - title: Backup application volumes
+        entries:
+          - title: Back up application volume
+            url: /protect-sco/backup-application-volume.html
+          - title: Back up the application volumes resource group
+            url: /protect-sco/backup-application-volume-resource-group.html
+      - title: Clone application volume backup
+        url: /protect-sco/clone-application-volume.html
