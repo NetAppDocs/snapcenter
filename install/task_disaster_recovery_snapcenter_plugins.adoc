@@ -1,0 +1,27 @@
+---
+permalink: protect-install/task_disaster_recovery_snapcenter_plugins.html
+sidebar: sidebar
+keywords:
+summary: 'When the plug-ins are down, you can recover by performing manual steps.'
+---
+= Disaster recovery of SnapCenter plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When the plug-ins are down, you can recover by performing manual steps.
+
+*What you will need*
+
+* Push the plug-in to an alternative host using *Add host* or *Modify host* page.
+
+link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Manage hosts]
+
+*Steps*
+
+. <need inputs>
+
+
+*After you finish*
+
+<need inputs>

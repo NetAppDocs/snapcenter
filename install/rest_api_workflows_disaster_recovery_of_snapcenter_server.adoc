@@ -1,0 +1,65 @@
+---
+permalink: protect-install/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
+sidebar: sidebar
+keywords:
+summary: 'SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server.'
+---
+= REST API workflows for disaster recovery of SnapCenter Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server. Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
+
+*What you will need*
+
+*	You should log in as the SnapCenter Admin user.
+* The alternative server host name should be same as primary server, but the IP address can be different.
+
++
+|===
+| Step| Description|REST API|HTTP method
+
+a|
+1
+a|
+Fetch existing SnapCenter Server disaster recovery backups
+
+[NOTE]
+
+You must provide the backup name and the target path where the disaster recovery backups must be stored.
+a|
+/api/{version}/disasterrecovery/server
+/backup?targetpath={path}
+a|
+GET
+a|
+2
+a|
+Create a new Server DR backup.
+Restores a SnapCenter server from specified Server DR backup.
+a|
+/api/{version}/disasterrecovery/server/backup
+a|
+POST
+a|
+3
+a|
+Restores a SnapCenter server from specified Server DR backup.
+a|
+/api/{version}/disasterrecovery/server/restore
+a|
+POST
+a|
+4
+a|
+Delete the Server DR backup based on backup name.
+a|
+/api/{version}/disasterrecovery/server/backup
+a|
+DELETE
+|===
+
+*After you finish*
+
+If the plug-in is not able to resolve the server hostname, change etc/host entry. <need inputs>

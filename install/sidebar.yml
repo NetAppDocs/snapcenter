@@ -101,3 +101,15 @@ entries:
     url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
   - title: Features enabled on your Windows host during installation
     url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
+  - title: Configure disaster Recovery
+    entries:
+      - title: Disaster recovery overview
+        url: /protect-install/concept_disaster_recovery_overview.html
+      - title: REST API workflows for disaster recovery of SnapCenter Server
+        url: /protect-install/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
+      - title: Disaster recovery of SnapCenter plug-ins
+        url: /protect-install/task_disaster_recovery_snapcenter_plugins.html
+      - title: Disaster recovery of SnapCenter Plug-in for SQL Server storage
+        url: /protect-install/task_disaster_recovery_of_plugin_for_sql_storage.html
+      - title: Failback to primary storage
+        url: /protect-install/task_failback_to_primary_storage.html

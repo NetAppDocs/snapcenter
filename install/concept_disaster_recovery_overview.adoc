@@ -1,0 +1,18 @@
+---
+permalink: protect-install/concept_disaster_recovery_overview.html
+sidebar: sidebar
+keywords:
+summary: 'You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.'
+---
+= Disaster recovery overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.  You can recover SnapCenter repository, server schedules, and server configuration components.
+
+Following are the types of disaster recovery:
+
+* SnapCenter Server disaster recovery
+* SnapCenter plug-ins disaster recovery
+** SnapCenter Plug-in for SQL Server storage disaster recovery
