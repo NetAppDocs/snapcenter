@@ -16,11 +16,16 @@ SnapCenter Software can be used on multiple browsers.
 If you are using v66, you might fail to launch SnapCenter GUI.
 
 * Internet Explorer
++
+SnapCenter UI does not load properly if you are using IE 10 or earlier versions. You should upgrade to IE 11.
+//Included the above sentence in 4.6 for BURT 1438319.
+
  ** Only default-level security is supported.
 +
 Making changes to Internet Explorer security settings results in significant browser display issues.
 
  ** Internet Explorer compatibility view must be disabled.
+
 * Microsoft Edge
 
 For the latest information about supported versions, see http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
