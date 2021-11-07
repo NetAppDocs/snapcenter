@@ -23,7 +23,7 @@ link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8
 
 *About this task*
 
-Partial disaster recovery is supported for a storage with resource group having resources, which are in disaster recovery mode and non-disaster recovery mode.
+Partial disaster recovery is supported for a storage with resource group having resources, which are in disaster recovery mode or non-disaster recovery mode.
 
 *Steps*
 
