@@ -62,4 +62,8 @@ DELETE
 
 *After you finish*
 
-If the plug-in is not able to resolve the server hostname, change etc/host entry. <need inputs>
+If the plug-in is not able to resolve the server hostname, log into each of the plug-in machine and add the etc host entry for the new IP in the format: 
+<New IP>	SC_Server_Name
+
+
+For example, 10.225.81.35	SCServer1

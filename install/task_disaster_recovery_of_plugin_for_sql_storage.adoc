@@ -13,11 +13,17 @@ You can recover the SnapCenter Plug-in for SQL Server storage by enabling the DR
 
 *What you will need*
 
+* Ensure that the plug-ins are in maintenance mode.
 *	Break the SnapMirror/SnapVault relationship.
 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8A3F828F-CD3D-48E8-A171-393581FEB2ED.html[Breaking SnapMirror relationships]
 *  Attach the LUN from secondary to the host machine with same drive letter.
-* Bring the database online.
-<need additional inputs>
+*	Ensure that all the disks are connected using the same drive letter, which was used prior to disaster recovery.
+*	Bring the storage online and restart MSSQL server service.
+* Ensure that the SQL databases are back online.
+
+*About this task*
+
+Partial disaster recovery is supported for a storage with resource group having resources, which are in disaster recovery mode and non-disaster recovery mode.
 
 *Steps*
 

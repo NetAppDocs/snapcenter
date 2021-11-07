@@ -16,7 +16,7 @@ You should failback to primary after the failover.
 * Disconnect secondary storage and connect from primary.
 * Enable the replication between primary and secondary using reverse resync operation.
 +
-<need inputs>
+**	The role of primary and secondary storage is reversed (primary will become secondary and vice versa).
 * Ensure that the SQL resources are back online.
 
 *Steps*

@@ -19,9 +19,7 @@ link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Ma
 
 *Steps*
 
-. <need inputs>
-
-
-*After you finish*
-
-<need inputs>
+. Bring a new plug-in machine online with the same operating system and same application existing prior to  disaster recovery.
+. Select the new host from the *Hosts* page to modify and install the plug-ins.
+. If required, replace the respective plug-in config files from disaster recovery backup to the new machine.
+. Import Windows and SQL schedules from the respective plug-in folder from the disaster recovery backup.
