@@ -116,7 +116,7 @@ Select *No recovery*.
 a|
 Want to specify any external archive log locations
 a|
-If the database is running in ARCHIVELOG mode, SnapCenter identifies and mounts optimal number of log backups based on the specified SCN or the selected date and time.
+If the database is running in ARCHIVELOG mode, SnapCenter identifies and mounts optimal number of log backups based on the specified SCN, selected date and time, or all logs option.
 
 If you still want to specify the location of the external archive log files, select *Specify external archive log locations*.
 
