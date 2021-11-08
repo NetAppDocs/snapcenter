@@ -29,7 +29,7 @@ You can register an untrusted domain with the FQDN. If the FQDN is not resolvabl
 
 * CA certificates are required for LDAPS to provide end-to-end encryption during the active directory communication.
 +
-link:install/task_configure_CA_certificate_with_snapcenter_site.html[Configure CA certificate with SnapCenter site]
+link:task_configure_CA_client_certificate_for_LDAPS.html[Configure CA client certificate for LDAPS]
 * Domain controller host names (DCHostName) should be reachable from SnapCenter Server.
 
 *About this task*
