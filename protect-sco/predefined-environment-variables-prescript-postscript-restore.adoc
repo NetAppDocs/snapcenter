@@ -1,0 +1,70 @@
+---
+permalink: protect-sco/predefined-environment-variables-prescript-postscript-restore.html
+sidebar: sidebar
+keywords: environment variable, predefined, prescript, postscript, restore
+summary: 'SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript while restoring a database.'
+---
+= Predefined environment variables for restore specific prescript and postscript
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript while restoring a database.
+
+*Supported predefined environment variables for restoring a database*
+
+* *SC_JOB_ID* specifies the job ID of the operation.
++
+Example: 257
+
+* *SC_ORACLE_SID* specifies the system identifier of the database.
++
+If the operation involves multiple databases, this will contain database names separated by pipe.
++
+Example: NFSB31
+
+* *SC_HOST* specifies the host name of the database.
++
+This parameter will be populated for application volumes.
++
+Example: scsmohost2.gdl.englabe.netapp.com
+
+* *SC_OS_USER* specifies the operating system owner of the database.
++
+Example: oracle
+
+* *SC_OS_GROUP* specifies the operating system group of the database.
++
+Example: oinstall
+
+* *SC_BACKUP_NAME* specifies the name of the backup.
++
+This parameter will be populated for application volumes.
++
+Examples:
++
+** If the database is not running in ARCHIVELOG mode: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+** If the database is running in ARCHIVELOG mode: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
+
+* *SC_BACKUP_ID* specifies the ID of the backup.
++
+This parameter will be populated for application volumes.
++
+Examples:
++
+** If the database is not running in ARCHIVELOG mode: DATA@203|LOG@205
+** If the database is running in ARCHIVELOG mode: DATA@203|LOG@205,206,207
+
+* *SC_RESOURCE_GROUP_NAME* specifies the name of the resource group.
++
+Example: RG1
+
+* *SC_ORACLE_HOME* specifies the path of the Oracle home directory.
++
+Example: /ora01/app/oracle/product/18.1.0/db_1
+
+* *SC_RECOVERY_TYPE* specifies the files that are recovered and also the recovery scope.
++
+Example: RESTORESCOPE:usingBackupControlfile=false|RECOVERYSCOPE:allLogs=true,noLogs=false,untiltime=false,untilscn=false.
+
+For information about delimiters, see link:../protect-sco/predefined-environment-variables-prescript-postscript-backup.html#supported-delimiters[Supported delimiters^].

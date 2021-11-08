@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore, recover, Oracle
 summary: 'In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.'
 ---
-= Restore Oracle database
+= Restore and recover Oracle database
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,8 @@ In the event of data loss, you can use SnapCenter to restore data from one or mo
 
 *About this task*
 
-Recovery is performed using the archive logs available at the configured archive log location. If the archive logs required for recovery are not available at the configured location, you should mount the Snapshot copy containing the logs and specify the path as external archive logs.
+Recovery is performed using the archive logs available at the configured archive log location. If the database is running in ARCHIVELOG mode, Oracle database saves the filled groups of redo log files to one or more offline destinations, known collectively as the archived redo log. SnapCenter identifies and mounts optimal number of log backups based on the specified SCN or the selected date and time.
+If the archive logs required for recovery are not available at the configured location, you should mount the Snapshot copy containing the logs and specify the path as external archive logs.
 
 If you migrate ASM database from ASMLIB to ASMFD, then the backups created with ASMLIB cannot be used to restore the database. You should create backups in the ASMFD configuration and use those backups to restore. Similarly, if ASM database is migrated from ASMFD to ASMLIB, you should create backups in the ASMLIB configuration to restore.
 
@@ -115,7 +116,9 @@ Select *No recovery*.
 a|
 Want to specify any external archive log locations
 a|
-Select *Specify external archive log locations*, and then specify the location of the external archive log files.
+If the database is running in ARCHIVELOG mode, SnapCenter identifies and mounts optimal number of log backups based on the specified SCN or the selected date and time.
+
+If you still want to specify the location of the external archive log files, select *Specify external archive log locations*.
 
 If archive logs are pruned as part of backup, and you have manually mounted the required archive log backups, you must specify the mounted backup path as the external archive log location for recovery.
 
@@ -134,6 +137,8 @@ NOTE: Recovery is not supported for Data Guard standby and Active Data Guard sta
 You must store the prescripts either in the _/var/opt/snapcenter/spl/scripts_ path or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
 +
 You can also specify the script timeout value. The default value is 60 seconds.
++
+SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript. link:../protect-sco/predefined-environment-variables-prescript-postscript-restore.html[Learn more^]
 
 . On the PostOps page, perform the following steps:
  .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
