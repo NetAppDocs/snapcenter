@@ -1,0 +1,25 @@
+---
+permalink: protect-install/task_disaster_recovery_snapcenter_plugins.html
+sidebar: sidebar
+keywords:
+summary: 'When the plug-ins are down, you can recover by performing manual steps.'
+---
+= Disaster recovery of SnapCenter plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When the plug-ins are down, you can recover by performing manual steps.
+
+*What you will need*
+
+* Push the plug-in to an alternative host using *Add host* or *Modify host* page.
+
+link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Manage hosts]
+
+*Steps*
+
+. Bring a new plug-in machine online with the same operating system and same application existing prior to  disaster recovery.
+. Select the new host from the *Hosts* page to modify and install the plug-ins.
+. If required, replace the respective plug-in config files from disaster recovery backup to the new machine.
+. Import Windows and SQL schedules from the respective plug-in folder from the disaster recovery backup.

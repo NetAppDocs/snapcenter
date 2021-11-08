@@ -1,0 +1,40 @@
+---
+permalink: protect-install/task_disaster_recovery_of_plugin_for_sql_storage.html
+sidebar: sidebar
+keywords:
+summary: 'You can recover the SnapCenter Plug-in for SQL Server storage by enabling the DR Mode for Storage in the Global Settings page.'
+---
+=  Disaster recovery of SnapCenter Plug-in for SQL Server storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can recover the SnapCenter Plug-in for SQL Server storage by enabling the DR Mode for Storage in the *Global Settings* page.
+
+*What you will need*
+
+* Ensure that the plug-ins are in maintenance mode.
+*	Break the SnapMirror/SnapVault relationship.
+link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8A3F828F-CD3D-48E8-A171-393581FEB2ED.html[Breaking SnapMirror relationships]
+*  Attach the LUN from secondary to the host machine with same drive letter.
+*	Ensure that all the disks are connected using the same drive letter, which was used prior to disaster recovery.
+*	Bring the storage online and restart MSSQL server service.
+* Ensure that the SQL databases are back online.
+
+*About this task*
+
+Partial disaster recovery is supported for a storage with resource group having resources, which are in disaster recovery mode or non-disaster recovery mode.
+
+*Steps*
+
+. In the *Settings* page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.
+. Select *Enable DR Mode for Storage*.
+. Click *Apply*.
+
+*After you finish*
+
+* The new backups taken will be listed under SnapMirror or SnapVault (secondary) in the *Topology* page.
+* All schedules will continue to work seamlessly. <inputs needed>
+* You can delete the SnapCenter Plug-in for SQL Server special backups that were taken during failover, using the following cmdlet: <cmdlet name>
++
+For more information refer https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
