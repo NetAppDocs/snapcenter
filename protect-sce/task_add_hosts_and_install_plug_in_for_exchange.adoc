@@ -63,14 +63,14 @@ You can enter IP addresses or the FQDN of one of the following:
  ** Stand-alone host
  ** Exchange DAG
 +
-For an Exchange DAG, you can do the following:
+For an Exchange DAG, you can:
 
 * Add a DAG by providing the DAG name, DAG IP address, node name, or node IP address.
 * Add the IP less DAG cluster by providing the IP address or the FQDN of one of the DAG cluster nodes.
 * Add IP less DAG that resides in the same domain or different domain. You can also add multiple IP/IP less DAGs with the same name but different domains.
 
 [NOTE]
-For a cross-domain DAG or a standalone host, it is recommended to provide FQDN or the IP address of the host.
+ For a stand-alone host or an Exchange DAG (cross-domain or same domain), it is recommended to provide FQDN or the IP address of the host or DAG.
 
 a|
 Credentials
