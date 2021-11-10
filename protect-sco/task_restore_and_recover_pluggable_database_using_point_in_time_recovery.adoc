@@ -87,6 +87,10 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 . On the PostOps page, perform the following steps:
  .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
++
+NOTE: If the restore operation fails, postscripts will not be executed and cleanup activities will be triggered directly.
+//Included the above statement for BURT 1433065 in 4.6.
+
  .. Select the check box if you want to open the database after recovery.
 +
 In a RAC setup, the PDB will be opened only on the node where the database was recovered. You should manually open the recovered PDB on all the other nodes of the RAC setup.

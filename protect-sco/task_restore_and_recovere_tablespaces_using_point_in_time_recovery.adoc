@@ -59,6 +59,10 @@ SnapCenter allows you to use the predefined environment variables when you execu
 
 . On the PostOps page, perform the following steps:
  .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
++
+NOTE: If the restore operation fails, postscripts will not be executed and cleanup activities will be triggered directly.
+//Included the above statement for BURT 1433065 in 4.6.
+
  .. Select the check box if you want to open the database after recovery.
 . On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
 . Review the summary, and then click *Finish*.

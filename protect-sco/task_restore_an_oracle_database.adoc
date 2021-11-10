@@ -144,6 +144,9 @@ SnapCenter allows you to use the predefined environment variables when you execu
  .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
 +
 You must store the postscripts either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
++
+NOTE: If the restore operation fails, postscripts will not be executed and cleanup activities will be triggered directly.
+//Included the above statement for BURT 1433065 in 4.6.
 
  .. Select the check box if you want to open the database after recovery.
 +
