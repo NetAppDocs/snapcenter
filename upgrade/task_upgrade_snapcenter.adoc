@@ -29,7 +29,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 
 * During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
 
-* #During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG shortname to FQDN for your Exchange database.#
+* #During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG and host shortname to FQDN. This is applicable only if you are using SnapCenter Server with Exchange plug-in.#
 
 * Before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 
