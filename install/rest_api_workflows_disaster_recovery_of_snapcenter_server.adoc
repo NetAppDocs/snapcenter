@@ -15,6 +15,7 @@ SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter S
 
 *	You should log in as the SnapCenter Admin user.
 * The alternative server host name should be same as primary server, but the IP address can be different.
+* The SnapCenter Server should be up and running to run disaster recovery restore API.
 
 +
 |===
@@ -37,7 +38,7 @@ a|
 2
 a|
 Create a new Server DR backup.
-Restores a SnapCenter server from specified Server DR backup.
+Restores a SnapCenter Server from a specified Server DR backup.
 a|
 /api/{version}/disasterrecovery/server/backup
 a|
@@ -45,7 +46,7 @@ POST
 a|
 3
 a|
-Restores a SnapCenter server from specified Server DR backup.
+Restores a SnapCenter Server from a specified Server DR backup.
 a|
 /api/{version}/disasterrecovery/server/restore
 a|
@@ -62,7 +63,7 @@ DELETE
 
 *After you finish*
 
-If the plug-in is not able to resolve the server hostname, log into each of the plug-in machine and add the etc host entry for the new IP in the format: 
+If the plug-in is not able to resolve the server hostname, log into each of the plug-in machine and add the etc host entry for the new IP in the format:
 <New IP>	SC_Server_Name
 
 

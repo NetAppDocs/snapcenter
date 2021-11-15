@@ -16,6 +16,11 @@ If a resource is not yet part of any resource group, you can back up the resourc
 * You must have created a backup policy.
 * If you want to back up a resource that has a SnapMirror relationship with a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
 * For Snapshot copy based backup operation, ensure that all the tenant databases are valid and active.
+#*To create SAP HANA system replication backups, it is recommended to add all the resources of that system into one resource group. This ensures a seamless backup during takeover-failback mode.#
+
+#link:protect-hana/task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].#
+
+#link:protect-hana/task_back_up_resource_groups_sap_hana.html[Back up resource groups]#
 * If you want to create a file-based backup when one or more tenant databases are down, set the ALLOW_FILE_BASED_BACKUP_IFINACTIVE_TENANTS_PRESENT parameter to *YES* in the HANA properties file using Set-SmConfigSettings cmdlet.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]

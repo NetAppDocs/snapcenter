@@ -70,6 +70,8 @@ NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, a
 
 IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
 
+#NOTE: For SAP HANA system replication, it is recommended to add all the resources of that system into one resource group.  This ensures that the right number of backups are retained.#
+
 a|
 Keep the Snapshot copies for a certain number of days
 a|
