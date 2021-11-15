@@ -59,13 +59,13 @@ Examples:
 +
 This parameter will be populated for application volumes.
 +
-Example: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
+Example: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1|AV@RG2_scspr2417819002_07-20-2021_12.16.48.9267
 
 * *SC_BACKUP_ID* specifies the backup ID.
 +
 This parameter will be populated for application volumes.
 +
-Example: DATA@203|LOG@205
+Example: DATA@203|LOG@205|AV@207
 
 * *SC_ORACLE_HOME* specifies the path of the Oracle home directory.
 +
@@ -86,6 +86,10 @@ Example: RG1
 * *SC_BACKUP_POLICY_NAME* specifies the name of the backup policy.
 +
 Example: backup_policy
+
+* *SC_AV_NAME* specifies the names of the application volumes.
++
+Example: AV1|AV2
 
 * *SC_PRIMARY_DATA_VOLUME_FULL_PATH* specifies the storage mapping of SVM to volume for data files directory. It will be the name of the parent volume for luns and qtrees.
 +
