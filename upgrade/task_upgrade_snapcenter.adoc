@@ -15,11 +15,9 @@ You can use the SnapCenter Server installer executable file to upgrade the SnapC
 
 * The SnapCenter Server host must be up to date with Windows updates, with no pending system restarts.
 * You should ensure that no other operations are running before initiating the upgrade operation.
-* You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running.
+* #You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running. This is necessary before upgrading SnapCenter Server and the Exchange plug-in#.
 +
 For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
-
-* #You should backup the NSM database before upgrading the SnapCenter Server and the Exchange plug-in.#
 
 * You should back up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
 +
