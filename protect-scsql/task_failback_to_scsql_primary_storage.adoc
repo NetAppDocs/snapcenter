@@ -1,0 +1,27 @@
+---
+permalink: protect-scsql/task_failback_to_scsql_primary_storage.html
+sidebar: sidebar
+keywords:
+summary: 'After the SnapCenter Plug-in for SQL Server primary storage is back online, you should failback to the primary storage.'
+---
+=  Failback to SnapCenter Plug-in for SQL Server primary storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After the SnapCenter Plug-in for SQL Server primary storage is back online, you should failback to the primary storage.
+
+*What you will need*
+
+* Place the SnapCenter Plug-in for SQL Server in *Maintenance* mode.
+* Disconnect the secondary storage from the host and connect from the primary storage.
+* To failback to the primary storage, ensure that the relationship direction remains the same as it was before the failover.
++
+For more information see link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_mirror_vault_relationships.html[Reverse resynchronizing mirror and vault relationships]
+* Ensure that the SQL resources are back online.
+
+*Steps*
+
+. In the *Settings* page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.
+. Unselect *Enable Disaster Recovery*.
+. Click *Apply*.

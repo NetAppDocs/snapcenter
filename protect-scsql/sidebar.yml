@@ -91,6 +91,14 @@ entries:
             url: /protect-scsql/task_configure_CA_certificate_with_Windows_host_plug-in_services.html
           - title: Enable CA Certificates for plug-ins
             url: /protect-scsql/task_enable_ca_certificates_for_plug-ins.html
+      - title: Configure Disaster recovery
+        entries:
+          - title: Disaster recovery of SnapCenter Plug-in for SQL Server
+            url: /protect-scsql/task_disaster_recovery_scsql.html
+          - title: Disaster recovery of SnapCenter Plug-in for SQL Server storage
+            url: protect-scsql/task_disaster_recovery_of_plugin_for_sql_storage.html
+          - title: Failback to SnapCenter Plug-in for SQL Server primary storage
+            url: /protect-scsql/task_failback_to_scsql_primary_storage.html  
       - title: Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
         entries:
           - title: Import archived backups overview
