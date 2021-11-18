@@ -34,8 +34,8 @@ link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8
 The new databases will continue to operate like they did before the failover.
 * The new backups taken will be listed under SnapMirror or SnapVault (secondary) in the *Topology* page.
 * All schedules will continue to work seamlessly.
-* You can delete the SnapCenter Plug-in for SQL Server backups that were created during failover, using the UI or the following cmdlet: _Remove-SmDRFailoverBackups_
-* After failover, if you want some of the resources to be in non-DR mode, run the _Set-SmDisasterRecovery_ cmdlet.
+* You can delete the SnapCenter Plug-in for SQL Server backups that were created during failover, using the UI or the following cmdlet: ~Remove-SmDRFailoverBackups~
+* After failover, if you want some of the resources to be in non-DR mode, run the ~Set-SmDisasterRecovery~ cmdlet.
 +
 For more information refer https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
 * Partial DR is supported for a storage with resource group having resources that are in DR mode or non-DR mode.

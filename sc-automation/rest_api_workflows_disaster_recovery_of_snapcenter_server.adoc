@@ -15,17 +15,16 @@ SnapCenter disaster recovery (DR) functionality uses REST APIs to backup SnapCen
 
 *	You should log in as the SnapCenter Admin user.
 * The alternate server host name should be same as primary server, but the IP address can be different.
-* The SnapCenter Server should be up and running to run DR restore API.
-* DR restore on secondary/alternate server
+* The SnapCenter Server should be up and running to r;un DR restore API.
+* To perform DR restore on secondary/alternate server
 ** Server version should be the same as the primary server.
 ** Host name should be the same as the primary server.
 ** Ensure that DR backups are accessible from the secondary or alternate server.
 
 *About this task*
 
-#SnapCenter Server DR supports all plug-ins.#
+SnapCenter Server DR supports all plug-ins.
 
-+
 |===
 | Step| Description|REST API|HTTP method
 
@@ -38,8 +37,7 @@ Fetch existing SnapCenter Server DR backups
 
 You must provide the backup name and the target path where the DR backups must be stored.
 a|
-/api/{version}/disasterrecovery/server
-/backup?targetpath={path}
+~/api/{version}/disasterrecovery/server/backup?targetpath={path}~
 a|
 GET
 a|
@@ -48,7 +46,7 @@ a|
 Create a new Server DR backup.
 Restores a SnapCenter Server from a specified Server DR backup.
 a|
-/api/{version}/disasterrecovery/server/backup
+~/api/{version}/disasterrecovery/server/backup~
 a|
 POST
 a|
@@ -56,7 +54,7 @@ a|
 a|
 Restores a SnapCenter Server from a specified Server DR backup.
 a|
-/api/{version}/disasterrecovery/server/restore
+~/api/{version}/disasterrecovery/server/restore~
 a|
 POST
 a|
@@ -64,16 +62,16 @@ a|
 a|
 Delete the Server DR backup based on backup name.
 a|
-/api/{version}/disasterrecovery/server/backup
+~/api/{version}/disasterrecovery/server/backup~
 a|
 DELETE
 |===
 
 *After you finish*
 
-* If the plug-in is not able to resolve the server hostname, log into each of the plug-in machine and add the etc/host entry for the new IP in the format:
-<New IP>	SC_Server_Name
-
+* If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
+~<New IP>	SC_Server_Name~
++
 For example, 10.225.81.35	SCServer1
 
-* For SnapCenter Server restore operation, server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
+* The server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
