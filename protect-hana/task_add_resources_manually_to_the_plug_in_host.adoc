@@ -15,9 +15,9 @@ Automatic discovery is not supported for certain HANA instances. You must add th
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
 
-#*For SAP HANA system replication, it is recommended to add all the resources of that system into one resource group and take a resource group backup. This ensures a seamless backup during takeover-failback mode.#
+* For SAP HANA system replication, it is recommended to add all the resources of that system into one resource group and take a resource group backup. This ensures a seamless backup during takeover-failback mode.
 
-#link:protect-hana/task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].#
+link:protect-hana/task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].
 
 *About this task*
 
@@ -62,7 +62,7 @@ Enter the key to connect to the SAP HANA system.
 
 The key contains the login information to connect to the database.
 
-#Secondary user key is not validated.  This will be used during takeover.#
+Secondary user key is not validated.  This will be used during takeover.
 a|
 HDBSQL OS User
 a|
