@@ -13,6 +13,10 @@ You can back up the resource group containing only application volumes or a mix 
 
 If the resource group has multiple application volumes, all the application volumes should either have SnapMirror or SnapVault replication policy.
 
+*About this task*
+
+By default, consistency group (CG) backups are created. If you want to create volume based backups, you should set the value of *EnableOracleNdvVolumeBasedBackup* to true in the _web.config_ file.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.

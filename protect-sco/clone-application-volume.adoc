@@ -33,27 +33,9 @@ a|
 Target Resource Name
 a|
 Specify the resource name.
-a|
-NFS Export IP Address
-a|
-Specify the export IPs for the clone to be exported.
 |===
 
-. (Optional) Only for LUNs, you should perform the following actions on the Setting page.
-+
-|===
-| For this field... | Do this...
-a|
-Initiator name
-a|
-Specify the name of the initiator to which the LUN is mapped.
-a|
-Igroup protocol
-a|
-Select the protocol.
-|===
-
-. On the Scripts page, specify the commands to be executed before cloning, commands to mount a file system, and commands to be executed after cloning.
+. On the Scripts page, specify the names of the scripts to be executed before cloning, commands to mount a file system, and names of the scripts to be executed after cloning.
 
 . On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
@@ -90,7 +72,7 @@ The resource or the resource group topology page is displayed.
 . From the Manage Copies view, select *Clones* either from the primary or secondary (mirrored or replicated) storage systems.
 . Select the clone, and then click image:../media/delete_icon.gif[].
 . In the Delete Clone page, perform the following actions:
- .. In the *Pre clone delete* field, enter the commands that should be run before deleting the clone.
- .. In the *Unmount* field, enter the command to unmount the clone before deleting the clone.
+ .. In the *Pre clone delete* field, enter the names of the scripts to be executed before deleting the clone.
+ .. In the *Unmount* field, enter the commands to unmount the clone before deleting the clone.
 
 . Click *OK*.

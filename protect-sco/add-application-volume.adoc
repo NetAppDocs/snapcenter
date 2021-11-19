@@ -39,6 +39,8 @@ You can modify all the values that you specified while adding the application vo
 
 When you delete an application volume, if there any backups associated with the application volume, the application volume will be put into maintenance mode and no new backups will be created and no earlier backups will be retained. If there are no backups associated, all the metadata will be deleted.
 
+If required, SnapCenter allows you to undo the delete operation.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.

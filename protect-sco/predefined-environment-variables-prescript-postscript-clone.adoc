@@ -38,6 +38,10 @@ Examples:
 ** If the database is not running in ARCHIVELOG mode: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
 ** If the database is running in ARCHIVELOG mode: DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG:RG2_scspr2417819002_07-20-2021_12.16.48.9267_1,RG2_scspr2417819002_07-21-2021_12.16.48.9267_1,RG2_scspr2417819002_07-22-2021_12.16.48.9267_1
 
+* *SC_AV_NAME* specifies the names of the application volumes.
++
+Example: AV1|AV2
+
 * *SC_ORIGINAL_OS_USER* specifies the operating system owner of the source database.
 +
 Example: oracle
