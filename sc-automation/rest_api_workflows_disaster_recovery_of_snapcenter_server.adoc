@@ -21,7 +21,7 @@ SnapCenter disaster recovery (DR) functionality uses REST APIs to backup SnapCen
 
 SnapCenter Server DR supports all plug-ins.
 
-[cols="25h,~,~,~"]
+[cols="10,40,50,10"]
 |===
 | Step| Description|REST API|HTTP method
 
