@@ -21,6 +21,7 @@ SnapCenter disaster recovery (DR) functionality uses REST APIs to backup SnapCen
 
 SnapCenter Server DR supports all plug-ins.
 
+[cols="25h,~,~,~"]
 |===
 | Step| Description|REST API|HTTP method
 
@@ -58,6 +59,7 @@ Restores a SnapCenter Server from a specified Server DR backup.
 * Ensure that DR backups are accessible from the secondary or alternate server
 
 *After you finish*
+
 If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
 `<New IP>	SC_Server_Name`
 
