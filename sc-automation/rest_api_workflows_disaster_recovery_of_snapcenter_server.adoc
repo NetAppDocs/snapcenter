@@ -47,6 +47,8 @@ a|
 POST
 a|
 3
+a|
+Restores a SnapCenter Server from a specified Server DR backup.
 
 *Prerequisites*
 
@@ -54,9 +56,8 @@ a|
 * Server version should be the same as the primary server.
 * Host name should be the same as the primary server.
 * Ensure that DR backups are accessible from the secondary or alternate server
-a|
-Restores a SnapCenter Server from a specified Server DR backup.
 
+*After you finish*
 If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
 `<New IP>	SC_Server_Name`
 
