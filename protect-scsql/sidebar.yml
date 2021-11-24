@@ -96,9 +96,9 @@ entries:
           - title: Disaster recovery of SnapCenter Plug-in for SQL Server
             url: /protect-scsql/task_disaster_recovery_scsql.html
           - title: Disaster recovery of SnapCenter Plug-in for SQL Server storage
-            url: /protect-scsql/task_disaster_recovery_of_plugin_for_sql_storage.html
+            url: /protect-scsql/task_storage_disaster_recovery_for_scsql.html
           - title: Failback to SnapCenter Plug-in for SQL Server primary storage
-            url: /protect-scsql/task_failback_to_scsql_primary_storage.html
+            url: /protect-scsql/task_failback_from_scsql_secondary_storage_to_primary_storage.html
       - title: Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
         entries:
           - title: Import archived backups overview
