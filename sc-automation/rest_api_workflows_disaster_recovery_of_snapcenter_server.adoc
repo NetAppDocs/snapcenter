@@ -58,8 +58,6 @@ Restores a SnapCenter Server from a specified Server DR backup.
 * Host name should be the same as the primary server.
 * Ensure that DR backups are accessible from the secondary or alternate server
 
-*After you finish*
-
 If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
 `<New IP>	SC_Server_Name`
 
@@ -80,27 +78,3 @@ a|
 a|
 DELETE
 |===
-
-.Steps
-
-. Fetch the existing SnapCenter Server DR backups using `/api/{version}/disasterrecovery/server/backup?targetpath={path}`. You must provide the backup name and the target path where the DR backups must be stored. The HTTP method used is GET.
-. Create a new Server DR backp using `/api/{version}/disasterrecovery/server/backup`. The HTTP method used is POST.
-. Restore the SnapCenter Server from a specified Server DR backup using `/api/{version}/disasterrecovery/server/restore/`. The HTTP method used is POST.
-+
-[NOTE]
-====
-Ensure the following before performing the DR restore of the SnapCenter Server:
-
-* The alternate server host name should be same as the primary server, but the IP address can be different.
-* Server version should be the same as the primary server.
-* Host name should be the same as the primary server.
-* Ensure that DR backups are accessible from the secondary or alternate server
-====
-+
-If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
-``<New IP>	SC_Server_Name``
-+
-For example, 10.225.81.35	SCServer1
-+
-The server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
-. Delete the Server DR backup based on backup name using `/api/{version}/disasterrecovery/server/backup`. The HTTP method used is DELETE.
