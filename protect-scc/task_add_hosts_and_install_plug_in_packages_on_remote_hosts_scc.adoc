@@ -98,9 +98,11 @@ Optionally, you can customize the path.
 Optionally, you can customize the path.
 
  ** For the SnapCenter Custom Plug-ins:
-  ... In the Custom Plug-ins section, click *Browse*, and then select the zipped custom plug-in folder.
+  ... In the Custom Plug-ins section, click *Browse*, and select the zipped custom plug-in folder.
 +
 The zipped folder contains the custom plug-in code and the descriptor .xml file.
++
+For Storage Plug-in, navigate to _C:\ProgramData\NetApp\SnapCenter\Package Repository_ and select `Storage.zip` folder.
 
   ... Click *Upload*.
 +
