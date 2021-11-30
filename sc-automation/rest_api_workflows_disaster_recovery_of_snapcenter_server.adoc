@@ -34,7 +34,7 @@ Fetch existing SnapCenter Server DR backups
 
 You must provide the backup name and the target path where the DR backups must be stored.
 a|
-`/api/{version}/disasterrecovery/server/backup?targetpath={path}`
+`/4.5/disasterrecovery/server/backup?targetpath={path}`
 a|
 GET
 a|
@@ -43,7 +43,7 @@ a|
 Create a new Server DR backup.
 Restores a SnapCenter Server from a specified Server DR backup.
 a|
-`/api/{version}/disasterrecovery/server/backup`
+`/4.5/disasterrecovery/server/backup`
 a|
 POST
 a|
@@ -56,7 +56,9 @@ Restores a SnapCenter Server from a specified Server DR backup.
 * The alternate server host name should be same as the primary server, but the IP address can be different.
 * Server version should be the same as the primary server.
 * Host name should be the same as the primary server.
-* Ensure that DR backups are accessible from the secondary or alternate server
+* Ensure the DR backup files are copied to the new SnapCenter server using the following command:
++
+`xcopy <Ssource_Path> \\<Destination_Server_IP>\<Folder_Path> /O /X /E /H /K  {ex : xcopy C:\DRBackup \\10.225.81.114\c$\DRBackup /O /X /E /H /K}`
 
 If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
 `<New IP>	SC_Server_Name`
@@ -66,7 +68,7 @@ For example, 10.225.81.35	SCServer1
 The server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
 
 a|
-`/api/{version}/disasterrecovery/server/restore`
+`/4.5/disasterrecovery/server/restore`
 a|
 POST
 a|
@@ -74,7 +76,15 @@ a|
 a|
 Delete the Server DR backup based on backup name.
 a|
-``/api/{version}/disasterrecovery/server/backup``
+``/4.5/disasterrecovery/server/backup``
 a|
 DELETE
+a|
+5
+a|
+Enable or disable the storage DR
+a|
+`/4.5/disasterrecovery/storage`
+a|
+POST
 |===
