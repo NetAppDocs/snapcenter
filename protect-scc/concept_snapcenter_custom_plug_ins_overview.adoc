@@ -15,8 +15,9 @@ When Custom Plug-ins are installed, you can use SnapCenter with NetApp SnapMirro
 
 NOTE: SnapCenterCLI does not support SnapCenter Custom Plug-ins commands.
 
-NetApp provides MySQL and DB2 custom plug-ins with SnapCenter Software 2.0 and later and MongoDB custom plug-in from 3.0 and later. These plug-ins can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
+NetApp provides MySQL, MAXDB, DB2, SYBASE, DPGLUE, MongoDB, ORASCPM, and PostgreSQL custom plug-ins. These plug-ins can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
 
-NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
+NOTE: SnapCenter support policy will cover support for SnapCenter custom plug-in framework, core engine, and the associated APIs. Support will not cover the plug-in source code and the associated scripts built on the custom plug-in framework.
+//BURT 1389548
 
 You can create your own custom plug-ins by referring to link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^].
