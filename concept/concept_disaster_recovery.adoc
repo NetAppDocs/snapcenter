@@ -15,18 +15,37 @@ Disaster recovery (DR) is not supported on VMDK deployments.
 
 Following are the types of disaster recovery (DR) :
 
-* SnapCenter Server DR
+* *SnapCenter Server DR*
 +
 SnapCenter Server data will be backed up and recovered irrespective of whether or not a plug-in is managed by SnapCenter Server.
 +
+The following data is recovered:
++
+** Web.config
+** snapcenter.config
+** master.config
+** SnapCenterDBConfig
+** Windows schedules
+** SnapCenter repository dump
+** Hosts
+** Audit
+
++
 SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server.
+
 +
 link:sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html[REST API workflows for disaster recovery of SnapCenter Server]
-* SnapCenter Plug-in for SQL Server DR
+
+* *SnapCenter Plug-in for SQL Server DR*
 +
 DR is supported only for SnapCenter Plug-in for SQL Server.
-
-** SnapCenter Plug-in for SQL Server storage DR
++
+The following data is recovered:
++
+** SmSqlServiceHost.exe.Config
+** SnapDriveService.exe.Config
+** SMCoreServiceHost.exe.Config
+** Windows and SQL schedules
 
 +
 link:protect-scsql/task_disaster_recovery_scsql.html[Disaster recovery of SnapCenter Plug-in for SQL Server]
