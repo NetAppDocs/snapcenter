@@ -9,7 +9,7 @@ summary: 'If a resource is not yet part of any resource group, you can back up t
 :imagesdir: ../media/
 
 [.lead]
-If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
+If a resource is not yet part of any resource group, you can back up the resource from the *Resources* page.
 
 *What you will need*
 
@@ -22,7 +22,7 @@ link:protect-hana/task_create_resource_groups_and_attach_policies.html[Create re
 +
 link:protect-hana/task_back_up_resource_groups_sap_hana.html[Back up resource groups]
 
-* If you want to create a file-based backup when one or more tenant databases are down, set the ALLOW_FILE_BASED_BACKUP_IFINACTIVE_TENANTS_PRESENT parameter to *YES* in the HANA properties file using Set-SmConfigSettings cmdlet.
+* If you want to create a file-based backup when one or more tenant databases are down, set the ALLOW_FILE_BASED_BACKUP_IFINACTIVE_TENANTS_PRESENT parameter to *YES* in the HANA properties file using `Set-SmConfigSettings` cmdlet.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide]
 
