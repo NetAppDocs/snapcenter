@@ -20,7 +20,7 @@ Resources are SAP HANA databases and Non-data Volume on the Linux host that are 
 
 *About this task*
 
-After installing the plug-in, all the resources on that Linux host are automatically discovered and displayed on the Resources page.
+After installing the plug-in, all the resources on that Linux host are automatically discovered and displayed on the *Resources* page.
 
 The automatically discovered resources cannot be modified or deleted.
 
