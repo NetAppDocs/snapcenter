@@ -11,8 +11,6 @@ summary: 'You can recover the SnapCenter Server in the event of disasters like r
 [.lead]
 You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.  You can recover SnapCenter repository, server schedules, and server configuration components.
 
-Disaster recovery (DR) is not supported on VMDK deployments.
-
 Following are the types of disaster recovery (DR) :
 
 * *SnapCenter Server DR*
@@ -27,6 +25,8 @@ link:sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.htm
 * *SnapCenter Plug-in for SQL Server DR*
 +
 DR is supported only for SnapCenter Plug-in for SQL Server.
++
+Disaster recovery (DR) is not supported on VMDK deployments.
 +
 link:protect-scsql/task_disaster_recovery_scsql.html[Disaster recovery of SnapCenter Plug-in for SQL Server]
 
