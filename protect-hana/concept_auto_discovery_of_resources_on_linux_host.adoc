@@ -37,5 +37,5 @@ NOTE: In case the above resources are discovered, the data protection operations
 
 * HANA multiple-host configuration
 * Multiple instances on the same host
-* Multi-node scale out SAP HANA systems in system replication mode
-* Cascaded replication environment
+* Multitier scale out HANA System Replication
+* Cascaded replication environment in System Replication mode

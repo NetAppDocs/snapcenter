@@ -21,5 +21,5 @@ After you have imported your SnapManager for Microsoft SQL Server archived backu
 +
 The details of the backups are displayed.
 +
-NOTE: Once the archived Snapshot copies are migrated and they get cleaned up from the storage as part of the secondary retention, the respective primary Snapshot copies that are created in SnapManager must be cleaned up manually.
+NOTE: When the archived Snapshot copies are migrated and they get cleaned up from the storage as part of the secondary retention, the respective primary Snapshot copies that are created in SnapManager must be cleaned up manually.
 //BURT 1444012

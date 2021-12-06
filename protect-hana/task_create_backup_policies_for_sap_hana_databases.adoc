@@ -29,6 +29,8 @@ Additionally, you can specify replication, script, and application settings in t
 ** You can protect the secondary SAP HANA system, but the backups cannot be created.
 +
 After the failover, all the data protection operation can be performed as the secondary SAP HANA system becomes the primary SAP HANA system.
++
+You cannot create a backup for SAP HANA data volume, but SnapCenter continues to protect the Non-data Volumes (NDV).
 
 *Steps*
 
@@ -81,6 +83,10 @@ IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 
 
 NOTE: For SAP HANA system replication, it is recommended to add all the resources of the SAP HANA system into one resource group.  This ensures that the right number of backups are retained.
 
+NOTE: For SAP HANA System Replication, the total Snapshot copies taken will be equal to the retention set for the resource group.  The removal of the oldest Snapshot copy is based on which node the oldest Snapshot copy is located.
+For example, the retention is set to 7 for a resource group with SAP HANA System Replication primary and SAP HANA System Replication secondary.  You can take a maximum of 7 Snapshot copies at a time including both SAP HANA System Replication primary and SAP HANA System Replication secondary.
+
+
 a|
 Keep the Snapshot copies for a certain number of days
 a|
@@ -110,7 +116,6 @@ Select a Snapshot label.
 Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
-
 a|
 *Error retry count*
 a|
