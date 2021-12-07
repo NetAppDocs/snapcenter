@@ -83,7 +83,7 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 . On the Verification page, perform the following steps:
  .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
  .. Click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column to configure the verification schedule for all the schedule types of the policy.
- .. In the Add Verification Schedulespolicy_name dialog box, perform the following actions:
+ .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
 +
 |===
 | If you want to... | Do this...

@@ -22,6 +22,10 @@ Host plug-in installations must not be in progress while adding a storage system
 +
 SnapCenter does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter should have a unique name and a unique data LIF IP address.
 
+* You should set up the storage system such that SnapCenter can access Amazon FSx for NetApp ONTAP to perform data protection and provisioning operations.
++
+You can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account in SnapCenter 4.5 P1 or add FSx SVM in SnapCenter.
+
 *About this task*
 
 * When you configure storage systems, you can also enable Event Management System (EMS) & AutoSupport features. The AutoSupport tool collects data about the health of your system and automatically sends the data to NetApp technical support, enabling them to troubleshoot your system.
@@ -29,8 +33,6 @@ SnapCenter does not support multiple storage systems with the same name on diffe
 If you enable these features, SnapCenter sends AutoSupport information to the storage system and EMS messages to the storage system syslog when a resource is protected, a restore or clone operation finishes successfully, or an operation fails.
 
 * If you are planning to replicate Snapshot copies to a SnapMirror destination or SnapVault destination, you must set up storage system connections for the destination SVM or Cluster as well as the source SVM or Cluster.
-
-* SnapCenter 4.5 and later supports application databases on ONTAP large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter recommends only thick provisioned LUNs to avoid latency.
 
 NOTE: If you change the storage system password, scheduled jobs, on demand backup, and restore operations might fail. After you change the storage system password, you can update the password by clicking *Modify* in the Storage tab.
 
@@ -94,6 +96,7 @@ In the Storage Systems page, from the *Type* drop-down perform one of the follow
 
 * Select *ONTAP SVMs* if you want to view all the SVMs that were added.
 * Select *ONTAP Clusters* if you want to view all the clusters that were added.
+* Select *FSx* if you want to view all the clusters and SVMs that were added.
 +
 When you click on the cluster name, all the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
 +
