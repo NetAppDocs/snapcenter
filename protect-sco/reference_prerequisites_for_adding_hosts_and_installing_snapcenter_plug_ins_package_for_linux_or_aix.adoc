@@ -145,6 +145,8 @@ IMPORTANT: The example should be used only as a reference for creating your own 
 
 You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for AIX.
 
+NOTE: SnapCenter Plug-in for UNIX which is part of the SnapCenter Plug-ins Package for AIX, does not support concurrent volume groups.
+
 |===
 | Item| Requirements
 
