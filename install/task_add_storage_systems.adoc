@@ -9,7 +9,10 @@ summary: 'You should set up the storage system that gives SnapCenter access to O
 :imagesdir: ../media/
 
 [.lead]
-You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand-alone SVM or a cluster comprising of multiple SVMs.
+You should set up the storage system that gives SnapCenter access to ONTAP storage or Amazon FSx for NetApp ONTAP to perform data protection and provisioning operations.
+
+You can either add a stand-alone SVM or a cluster comprising of multiple SVMs.
+If you are using Amazon FSx for NetApp ONTAP, you can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account in SnapCenter 4.5 P1 or add FSx SVM in SnapCenter.
 
 *What you will need*
 
@@ -21,10 +24,6 @@ Host plug-in installations must not be in progress while adding a storage system
 * Storage system names should be unique.
 +
 SnapCenter does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter should have a unique name and a unique data LIF IP address.
-
-* You should set up the storage system such that SnapCenter can access Amazon FSx for NetApp ONTAP to perform data protection and provisioning operations.
-+
-You can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account in SnapCenter 4.5 P1 or add FSx SVM in SnapCenter.
 
 *About this task*
 
