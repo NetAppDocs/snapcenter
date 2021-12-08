@@ -23,7 +23,27 @@ link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.htm
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
-You can add a host and install plug-in packages either for an individual host or a cluster. If you are installing plug-ins on a cluster (Exchange DAG), they are installed on all of the nodes of the cluster even if some of nodes do not have databases on NetApp LUNs.
+You can add a host and install plug-in packages either for an individual host or a cluster. If you are installing plug-ins on a cluster (Exchange DAG), they are installed on all of the nodes of the cluster even if some of nodes do not have databases on NetApp LUNs. For an Exchange DAG, you can add a host in the following ways:
+
+|===
+| Add host operation | 4.5 and earlier |4.6 and later
+
+| Add IP-less DAG in cross or different domain
+| Not supported
+| Supported
+| Add multiple IP DAGs with unique names, residing in the same or cross domain
+| Supported
+| Supported
+| Add multiple IP or IP-less DAGs which have same host names and/or DB name in cross domain
+| Not supported
+| Supported
+| Add multiple IP/IP-less DAGs with the same name and cross domain
+| Not supported
+| Supported
+| Add multiple standalone hosts with the same name and cross domain
+| Not supported
+| Supported
+|===
 
 Plug-in for Exchange depends on SnapCenter Plug-ins Package for Windows, and the versions must be the same. During the Plug-in for Exchange installation, SnapCenter Plug-ins Package for Windows is selected by default and is installed along with the VSS Hardware Provider.
 
