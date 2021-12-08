@@ -15,6 +15,8 @@ You should know the supported storage system, applications, and databases.
 * SnapCenter supports Amazon FSx for NetApp ONTAP from SnapCenter Software 4.5 P1 patch release.
 +
 If you are using Amazon FSx for NetApp ONTAP, ensure that the SnapCenter Server host plug-ins are upgraded to 4.5 P1 patch release to perform data protection operations.
++
+For information about Amazon FSx for NetApp ONTAP, see https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html[Amazon FSx for NetApp ONTAP documentation^].
 * SnapCenter supports protection of different applications and databases.
 +
 For detailed information about the supported applications and databases, see https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].

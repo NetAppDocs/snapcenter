@@ -94,8 +94,11 @@ The default value is 60 seconds.
 In the Storage Systems page, from the *Type* drop-down perform one of the following actions:
 
 * Select *ONTAP SVMs* if you want to view all the SVMs that were added.
++
+If you have added FSx SVMs, the FSx SVMs are listed here.
 * Select *ONTAP Clusters* if you want to view all the clusters that were added.
-* Select *FSx* if you want to view all the clusters and SVMs that were added.
++
+If you have added FSx clusters using fsxadmin, the FSx clusters are listed here. 
 +
 When you click on the cluster name, all the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
 +
