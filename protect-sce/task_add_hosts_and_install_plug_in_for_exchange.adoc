@@ -25,7 +25,7 @@ You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Serve
 
 You can add a host and install plug-in packages either for an individual host or a cluster. If you are installing plug-ins on a cluster (Exchange DAG), they are installed on all of the nodes of the cluster even if some of nodes do not have databases on NetApp LUNs.
 
-Beginning with SnapCenter 4.6, SCE supports multitenancy and you can add a host using following methods.
+Beginning with SnapCenter 4.6, SCE supports multitenancy and you can add a host using the following methods:
 
 |===
 | Add host operation | 4.5 and earlier |4.6 and later
