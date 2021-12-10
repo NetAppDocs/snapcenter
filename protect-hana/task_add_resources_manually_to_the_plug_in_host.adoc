@@ -15,7 +15,7 @@ Automatic discovery is not supported for certain HANA instances. You must add th
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
 
-* For SAP HANA system replication, it is recommended to add all the resources of that system into one resource group and take a resource group backup. This ensures a seamless backup during takeover-failback mode.
+* For SAP HANA system replication, it is recommended to add all the resources of that HANA system into one resource group and take a resource group backup. This ensures a seamless backup during takeover-failback mode.
 
 link:protect-hana/task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].
 
@@ -29,6 +29,8 @@ NOTE: In case the above resources are discovered, the data protection operations
 
 * HANA multiple-host configuration
 * Multiple instances on the same host
+* Multitier scale out HANA System Replication
+* Cascaded replication environment in System Replication mode
 
 *Steps*
 
@@ -62,7 +64,7 @@ Enter the key to connect to the SAP HANA system.
 
 The key contains the login information to connect to the database.
 
-Secondary user key is not validated.  This will be used during takeover.
+For SAP HANA System Replication, secondary user key is not validated.  This will be used during takeover.
 a|
 HDBSQL OS User
 a|
@@ -75,7 +77,7 @@ Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]*
 
 . Review the summary, and then click *Finish*.
 +
-The databases are displayed along with information such as the SID, plugin host, associated resource groups and policies, and overall status
+The databases are displayed along with information such as the SID, plug-in host, associated resource groups and policies, and overall status
 
 If you want to provide users access to resources, you must assign the resources to the users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
 
@@ -83,7 +85,7 @@ link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_a
 
 After adding the databases, you can modify the SAP HANA database details.
 
-You cannot modify the following if the SAP HANA resource has backups associated with it:
+You cannot modify the following if there are backups associated with the SAP HANA resource:
 
 * Multitenant database containers (MDC): SID, or HDBSQL Client (plug-in) Host
 * Single Container: SID or HDBSQL Client (plug-in) Host

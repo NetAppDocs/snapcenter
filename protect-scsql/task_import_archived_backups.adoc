@@ -39,3 +39,9 @@ You can use this schedule information while creating policies in SnapCenter.
 
  .. Disable SnapManager for Microsoft SQL Server schedules by using the `Get-SmSchedule -Hostname <hostname> -PluginCode SMSQL -DisableCurrentGenSchedule` cmdlet.
 . Import archived backups by using the `Invoke-SmBackupMigration` cmdlet.
++
+For example, to migrate standalone SQL host:
+`Invoke-SmBackupMigration -Hostname <hostname>`` ``-PluginCode SMSQL`
++
+For example, to migrate cluster host:
+`Invoke-SmBackupMigration -Hostname <clustername> `-PluginCode SMSQL`

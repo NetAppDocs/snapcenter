@@ -15,9 +15,11 @@ After the SnapCenter Plug-in for SQL Server primary storage is back online, you 
 
 * Place the SnapCenter Plug-in for SQL Server in *Maintenance* mode from the *Managed Hosts* page.
 * Disconnect the secondary storage from the host and connect from the primary storage.
-* To failback to the primary storage, ensure that the relationship direction remains the same as it was before the failover.
+* To failback to the primary storage, ensure that the relationship direction remains the same as it was before the failover by performing the reverse resync operation.
 +
-For more information see link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_mirror_vault_relationships.html[Reverse resynchronizing mirror and vault relationships]
+To retain the roles of primary and secondary storage after the reverse resync operation, perform  the reverse resync operation once again.
++
+For more information see link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html[Reverse resynchronizing mirror relationships]
 * Restart MSSQL server service.
 * Ensure that the SQL resources are back online.
 
