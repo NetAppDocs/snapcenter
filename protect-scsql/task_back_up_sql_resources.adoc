@@ -32,7 +32,7 @@ When you take a backup of an instance, the information about the last backup sta
 In the topology view, you cannot differentiate whether the backup status, timestamp, or backup is for an instance or a database.
 . On the *Resources* page, select the *custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
 +
-For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
+For example, customtext_policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
 
 . On the *Policies* page, perform the following tasks:
  .. In the *Policies* section, select one or more policies from the drop-down list.
@@ -58,7 +58,7 @@ NOTE: The verification server version should be equal or above the version of th
 
  .. Select *Load secondary locators to verify backups on secondary* to verify your backups on secondary storage system.
  .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
- .. In the *Add Verification Schedules* `policy_name` dialog box, perform the following actions:
+ .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
 +
 |===
 | If you want to...| Do this...

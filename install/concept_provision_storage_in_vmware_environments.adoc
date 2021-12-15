@@ -22,7 +22,7 @@ Support for up to a maximum of 16 nodes supported on VMware when using the Micro
 +
 Support for a maximum of 56 RDM LUNs with four LSI Logic SCSI controllers for normal RDMS, or 42 RDM LUNs with three LSI Logic SCSI controllers on a VMware VM MSCS box-to-box Plug-in for Windows configuration
 
-For the latest information about supported versions, see http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === VMware ESXi server-related limitations
 
