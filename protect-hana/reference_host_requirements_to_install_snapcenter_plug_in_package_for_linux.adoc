@@ -21,7 +21,7 @@ a|
 * Red Hat Enterprise Linux
 * SUSE Linux Enterprise Server (SLES)
 
-For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool].
 
 a|
 Minimum RAM for the SnapCenter plug-in on host
@@ -41,6 +41,6 @@ Java 1.8.x (64-bit)Oracle Java and OpenJDK flavors
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
-For the latest information about supported versions, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool].
 .
 |===

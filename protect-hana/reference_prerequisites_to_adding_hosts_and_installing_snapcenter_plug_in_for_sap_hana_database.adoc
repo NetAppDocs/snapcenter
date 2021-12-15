@@ -26,21 +26,17 @@ Before you add a host and install the plug-in packages, you must complete all th
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 1.8 64-bit on your Windows host.
 +
-The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
-+
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+The https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[Interoperability Matrix Tool] contains the latest information about requirements.
 
 == Linux hosts
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 1.8 64-bit on your Linux host.
 +
-The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
-+
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+The https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[Interoperability Matrix Tool] contains the latest information about requirements.
 
 * For SAP HANA databases that are running on a Linux host, while installing Plug-in for SAP HANA Database, SnapCenter Plug-in for UNIX is installed automatically.

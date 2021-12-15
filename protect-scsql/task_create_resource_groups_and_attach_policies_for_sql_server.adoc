@@ -80,7 +80,7 @@ NOTE: The verification server version should match the version and edition of th
 
  .. Click *Load locators* to load the SnapMirror and SnapVault volumes to perform verification on secondary storage.
  .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
- .. In the Add Verification Schedulespolicy_name dialog box, perform the following actions:
+ .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
 +
 |===
 | If you want to...| Do this...
