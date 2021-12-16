@@ -1,39 +1,19 @@
 ---
-  settings:
-    name: SnapCenter Software
-    internal:
-      pdf_enabled: true
-    prod:
-      pdf_enabled: true
-      harmony_enabled: true
-      langs: us-en,ja-jp,zh-cn
-  versions:
-    - name: SnapCenter Software
-      url: /snapcenter
-      version-number: "4.6"
-    - name: SnapCenter Software
-      url: https://docs.netapp.com/us-en/snapcenter-45/index.html
-      version-number: "4.5"
-sidebar:
-  entries:
-    - title: SnapCenter Software docs
-      url: /index.html
-    - title: Release notes
-      url: /reference_release_notes.html
-    - section: concept
-    - section: install
-    - section: protect-scsql
-    - section: protect-hana
-    - section: protect-sco
-    - section: protect-scw
-    - section: protect-sce
-    - section: protect-scc
-    - section: admin
-    - section: upgrade
-    - section: uninstall
-    - section: sc-automation
-    - title: Legal notices
-      url: /reference_legal_notices.html
+settings:
+  name: SnapCenter Software
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: us-en,ja-jp,zh-cn
+versions:
+  - name: SnapCenter Software
+    url: /snapcenter
+    version-number: "4.6"
+  - name: SnapCenter Software
+    url: https://docs.netapp.com/us-en/snapcenter-45/index.html
+    version-number: "4.5"
 
 homepage:
   tiles:
@@ -103,3 +83,24 @@ homepage:
           url: https://docs.netapp.com/ocsc-44/topic/com.netapp.ndc.ocsc-vers/GUID-C35C3D6E-1833-4F73-AE09-38137FC69F8C.html
         - title: NetApp Knowledge Base - SnapCenter
           url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter
+
+sidebar:
+  entries:
+    - title: SnapCenter Software docs
+      url: /index.html
+    - title: Release notes
+      url: /reference_release_notes.html
+    - section: concept
+    - section: install
+    - section: protect-scsql
+    - section: protect-hana
+    - section: protect-sco
+    - section: protect-scw
+    - section: protect-sce
+    - section: protect-scc
+    - section: admin
+    - section: upgrade
+    - section: uninstall
+    - section: sc-automation
+    - title: Legal notices
+      url: /reference_legal_notices.html
