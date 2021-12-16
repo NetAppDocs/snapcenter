@@ -9,7 +9,7 @@ settings:
     langs: us-en,ja-jp,zh-cn
 versions:
   - name: SnapCenter Software
-    url: /snapcenter
+    url: /snapcenter-internal
     version-number: "4.6"
   - name: SnapCenter Software
     url: https://docs.netapp.com/us-en/snapcenter-45/index.html
