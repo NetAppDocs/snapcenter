@@ -84,6 +84,9 @@ The following cmdlet restores the SnapCenter MySQL database when backup files ar
 C:\PS>Restore-SmRepositoryBackup -BackupName MYSQL_DS_SC_Repository_mva-x3550-s09_09-15-2016_10.32.00.4445 -RestoreFileSystem
 ----
 
+NOTE: The backup that was used to perform the repository restore operation will not be listed when the repository backups are retrieved after performing the restore operation.
+//Included the note in 4.6 for BURT 1443487
+
 == Migrate the SnapCenter repository
 
 You can migrate the SnapCenter Server database repository from the default location to another disk. You might migrate the repository when you want to relocate it to a disk with more space.
