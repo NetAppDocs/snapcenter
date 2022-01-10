@@ -93,7 +93,7 @@ sidebar:
     - title: SnapCenter Software docs
       url: /index.html
     - title: Release notes
-      url: /reference_release_notes.html
+      url: /release-notes.html
     - section: concept
     - section: install
     - section: protect-scsql
@@ -107,4 +107,4 @@ sidebar:
     - section: uninstall
     - section: sc-automation
     - title: Legal notices
-      url: /reference_legal_notices.html
+      url: /legal-notices.html
