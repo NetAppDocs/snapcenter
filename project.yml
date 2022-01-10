@@ -37,6 +37,8 @@ homepage:
           url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
         - title: Configure high availability using F5
           url: /install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html
+        - title: Disaster recovery of SnapCenter Server
+          url: /sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
     - title: Protect Microsoft SQL Server databases
       links:
         - title: Install SnapCenter Plug-in for Microsoft SQL Server database
@@ -45,6 +47,8 @@ homepage:
           url: /protect-scsql/task_create_backup_policies_for_sql_server_databases.html
         - title: Back up SQL Server databases
           url: /protect-scsql/task_back_up_sql_resources.html
+        - title: Disaster recovery of SnapCenter Plug-in for SQL Server
+          url: /protect-scsql/task_disaster_recovery_scsql.html
     - title: Protect SAP HANA databases
       links:
         - title: Install SnapCenter Plug-in for SAP HANA database
