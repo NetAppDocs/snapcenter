@@ -98,4 +98,4 @@ Restore-SmBackup -PluginCode 'HANA' -AppObjectId cn24.sccore.test.com\hana\H10 -
 +
 The backups will be available in HANA studio for recovery.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
