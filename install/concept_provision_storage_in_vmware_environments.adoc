@@ -21,6 +21,9 @@ Support for up to a maximum of 16 nodes supported on VMware when using the Micro
 * RDM LUNs
 +
 Support for a maximum of 56 RDM LUNs with four LSI Logic SCSI controllers for normal RDMS, or 42 RDM LUNs with three LSI Logic SCSI controllers on a VMware VM MSCS box-to-box Plug-in for Windows configuration
++
+Supports VMware ParaVirtual SCSI Controller. 256 disks can be supported on RDM disks.
+//Included the above statement for BURT 1444933 in 4.6
 
 For the latest information about supported versions, see http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 

@@ -31,7 +31,7 @@ Databases are not in normal state when they are in mount, unmount, reseed, or re
 . In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server* from the plug-ins drop-down list located in the upper left corner of the Resources page.
 . In the *Resources* page select *Database*, or *Database Availability Group*, or *Resource Group*, from the *View* drop-down list.
 +
-#All the databases and DAGs are displayed with their DAG or hostnames in FQDN format, so you can distinguish between multiple databases.#
+All the databases and DAGs are displayed with their DAG or hostnames in FQDN format, so you can distinguish between multiple databases.
 +
 Click image:../media/filter_icon.gif[] and select the host name and the Exchange Server to filter the resources. You can then click image:../media/filter_icon.gif[] to close the filter pane.
 
@@ -39,6 +39,10 @@ Click image:../media/filter_icon.gif[] and select the host name and the Exchange
 +
 The newly added, renamed, or deleted resources are updated to the SnapCenter Server inventory.
 +
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
++
+
 The resources are displayed along with information such as resource name, Database Availability Group name, server in which the database is currently active, server with copies, time of last backup, and overall status.
 
 * If the database is on a non-NetApp storage, Not available for backup is displayed in the Overall Status column.

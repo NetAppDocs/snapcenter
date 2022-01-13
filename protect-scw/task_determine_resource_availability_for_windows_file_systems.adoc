@@ -23,3 +23,6 @@ Resources are the LUNs and similar components in your file system that are maint
 . Select the host to filter the list of resources, and then click *Refresh Resources*.
 +
 The newly added, renamed, or deleted file systems are updated to the SnapCenter Server inventory.
++
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
