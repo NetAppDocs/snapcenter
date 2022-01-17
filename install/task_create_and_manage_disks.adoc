@@ -11,6 +11,11 @@ summary: 'The Windows host sees LUNs on your storage system as virtual disks. Yo
 [.lead]
 The Windows host sees LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.
 
+* SnapCenter supports only basic disks. The dynamic disks are not supported.
+* For GPT only one data partition and for MBR one primary partition is allowed that has one volume formatted with NTFS or CSVFS and has one mount path.
+* Supported partition styles: GPT, MBR, and in a UEFI system only iSCSI disks
+//included the above 3 bullets in 4.6 for BURT 1366391
+
 NOTE: SnapCenter does not support renaming a disk. If a disk that is managed by SnapCenter is renamed, SnapCenter operations will not succeed.
 
 == View the disks on a host
@@ -41,6 +46,9 @@ The disks are listed.
 == Create FC-connected or iSCSI-connected LUNs or disks
 
 The Windows host sees the LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.
+
+If you want to create and format disks outside of SnapCenter, only NTFS and CSVFS file systems are supported.
+//included the above statement in 4.6 for BURT 1366391
 
 *What you will need*
 
