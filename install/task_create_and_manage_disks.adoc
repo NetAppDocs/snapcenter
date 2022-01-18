@@ -13,7 +13,8 @@ The Windows host sees LUNs on your storage system as virtual disks. You can use 
 
 * SnapCenter supports only basic disks. The dynamic disks are not supported.
 * For GPT only one data partition and for MBR one primary partition is allowed that has one volume formatted with NTFS or CSVFS and has one mount path.
-* Supported partition styles: GPT, MBR, and in a UEFI system only iSCSI disks
+* Supported partition styles: GPT, MBR; in a VMware UEFI VM, only iSCSI disks are supported
+
 //included the above 3 bullets in 4.6 for BURT 1366391
 
 NOTE: SnapCenter does not support renaming a disk. If a disk that is managed by SnapCenter is renamed, SnapCenter operations will not succeed.
