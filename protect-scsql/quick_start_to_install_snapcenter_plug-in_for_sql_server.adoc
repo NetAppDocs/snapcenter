@@ -52,13 +52,13 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 *Additional requirements*
 
-For ONTAP and application plug-in minimum requirements see http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
+For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[Interoperability Matrix Tool^]
 
 |===
 |Hosts |Minimum requirements
 
 a|Operating System (64-bit)
-a|See http://mysupport.netapp.com/matrix[Interoperability Matrix Tool^]
+a|See https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[Interoperability Matrix Tool^]
 
 a|CPU
 a|
