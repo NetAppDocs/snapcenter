@@ -1,10 +1,10 @@
 ---
 permalink: protect-scc/concept_what_you_can_do_with_the_snapcenter_custom_plug_ins.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the SnapCenter Custom Plug-ins for data protection operations.'
 ---
-= What you can do with the SnapCenter Custom Plug-ins
+= What you can do with the SnapCenter Custom Plug-ins and Storage plug-in
 :icons: font
 :imagesdir: ../media/
 
@@ -18,3 +18,20 @@ You can use the SnapCenter Custom Plug-ins for data protection operations.
 * Schedule backup operations.
 * Monitor backup, restore, and clone operations.
 * View reports for backup, restore, and clone operations.
+
+*Storage plug-in*
+
+You can use the storage plug-in for data protection operations.
+
+* Take consistency group Snapshot copies of the storage volumes across ONTAP clusters.
+* Backup custom applications using the built in pre and post scripting framework
++
+You can backup ONTAP volume, LUN, or a Qtree.
+* Update Snapshot copies taken on the primary to an ONTAP secondary, leveraging the existing replication relationship (SnapVault/SnapMirror/unified replication) using SnapCenter policy
++
+ONTAP primary and secondary can be ONTAP FAS, AFF, Select, or Cloud ONTAP.
+* Recover complete ONTAP volume, LUN, or files.
++
+You should provide the respective file path manually as the browse or indexing features are not built into the product.
++
+Qtree or directory restore is not supported but you can clone and export only the Qtree if the backup scope is defined at a Qtree level.
