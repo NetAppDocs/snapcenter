@@ -24,7 +24,7 @@ entries:
           - title: Number of backup jobs needed
             url: /protect-scc/concept_number_of_backup_jobs_needed.html
       - title: Types of restore strategies supported for manually added custom plug-in resources
-        url: protect-scc/reference_types_of_restore_strategies_supported_for_manually_added_custom_plugin_resources.html
+        url: /protect-scc/reference_types_of_restore_strategies_supported_for_manually_added_custom_plugin_resources.html
 - title: Develop a plug-in for your application
   entries:
       - title: Overview
