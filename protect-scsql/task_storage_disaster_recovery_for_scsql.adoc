@@ -21,6 +21,9 @@ link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8
 *	Restart MSSQL server service.
 * Ensure that the SQL resources are back online.
 
+*About this task*
+Disaster recovery (DR) is not supported on VMDK and RDM configurations.
+
 *Steps*
 
 . In the *Settings* page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.
@@ -35,7 +38,7 @@ link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8
 The new databases will continue to operate like they did before the failover.
 * The new backups that were created in DR mode will be listed under SnapMirror or SnapVault (secondary) in the *Topology* page.
 +
-An "i" icon is displayed next to the new backups to indicate that these backups were created during DR mode.  
+An "i" icon is displayed next to the new backups to indicate that these backups were created during DR mode.
 * You can delete the SnapCenter Plug-in for SQL Server backups that were created during failover either by using the UI or the following cmdlet: `Remove-SmBackup`
 * After failover, if you want some of the resources to be in non-DR mode, use the following cmdlet: `Remove-SmResourceDRMode`
 +

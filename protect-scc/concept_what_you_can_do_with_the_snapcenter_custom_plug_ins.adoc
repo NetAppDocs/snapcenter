@@ -11,6 +11,8 @@ summary: 'You can use the SnapCenter Custom Plug-ins for data protection operati
 [.lead]
 You can use the SnapCenter Custom Plug-ins for data protection operations.
 
+*Custom plug-in*
+
 * Add resources such as databases, instances, documents, or tablespaces.
 * Create backups.
 * Restore from backups.
