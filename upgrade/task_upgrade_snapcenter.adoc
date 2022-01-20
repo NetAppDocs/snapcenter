@@ -15,7 +15,7 @@ You can use the SnapCenter Server installer executable file to upgrade the SnapC
 
 * The SnapCenter Server host must be up to date with Windows updates, with no pending system restarts.
 * You should ensure that no other operations are running before initiating the upgrade operation.
-* #You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running. This is recommended before upgrading SnapCenter Server and the Exchange plug-in#.
+* You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running. This is recommended before upgrading SnapCenter Server and the Exchange plug-in.
 +
 For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
 
@@ -27,7 +27,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 
 * During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
 
-* #During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG and host shortname to FQDN. This is applicable only if you are using SnapCenter Server with Exchange plug-in.#
+* During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG and host shortname to FQDN. This is applicable only if you are using SnapCenter Server with Exchange plug-in.
 
 * Before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 
@@ -43,25 +43,33 @@ a|
 * Upgrade to 4.3.x by first upgrading to 4.1.x or 4.2.x, and then upgrade to 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.2.x, and then upgrade to 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.2.x, then upgrade to 4.4.x, and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.2.x, then upgrade to 4.4.x, and then upgrade to 4.6
 a|
 4.1.x
 a|
 * Directly upgrade to 4.2.x or 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.2.x or 4.3.x, and then upgrade to 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.3.x and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.3.x, then upgrade to 4.5.x, and then upgrade to 4.6
 a|
 4.2.x
 a|
 * Directly upgrade to 4.3.x or 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.3.x or 4.4.x and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.4.x and then upgrade to 4.6
 a|
 4.3.x
 a|
-Directly upgrade to 4.4.x or 4.5
+* Directly upgrade to 4.4.x or 4.5
+* Upgrade to 4.6 by first upgrading to 4.5.x and then upgrade to 4.6
 a|
 4.4.x
 a|
-Directly upgrade to 4.5
+Directly upgrade to 4.5 or 4.6
+a|
+4.5.x
+a|
+Directly upgrade to 4.6
 |===
 
 *Steps*
