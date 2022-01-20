@@ -22,6 +22,7 @@ link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-8
 * Ensure that the SQL resources are back online.
 
 *About this task*
+
 Disaster recovery (DR) is not supported on VMDK and RDM configurations.
 
 *Steps*
