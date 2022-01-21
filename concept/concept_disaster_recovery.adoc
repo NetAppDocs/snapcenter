@@ -22,11 +22,9 @@ SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter S
 +
 link:../sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html[REST API workflows for disaster recovery of SnapCenter Server]
 
-* *SnapCenter Plug-in for SQL Server DR*
+* *SQL Server DR*
 +
-DR is supported only for SnapCenter Plug-in for SQL Server.
-+
-Disaster recovery (DR) is not supported on VMDK deployments.
+DR is supported only for SnapCenter Plug-in for SQL Server. When the SnapCenter Plug-in for SQL Server is down, switch to a different SQL host and recover the data by performing few steps.
 +
 link:../protect-scsql/task_disaster_recovery_scsql.html[Disaster recovery of SnapCenter Plug-in for SQL Server]
 
