@@ -77,7 +77,7 @@ homepage:
         - title: Command Reference Guide
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2880725
         - title: Documentation for earlier versions of SnapCenter
-          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62018
+          url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
         - title: NetApp Knowledge Base - SnapCenter
           url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter
 
