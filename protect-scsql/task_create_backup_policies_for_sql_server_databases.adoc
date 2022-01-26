@@ -233,7 +233,7 @@ Select *Do not check nonclustered indexes (NOINDEX)* if you do not want to check
 a|
 Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)
 a|
-Select *Limit the checks and obtain the looks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
+Select *Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
 |===
 
  .. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.

@@ -32,8 +32,6 @@ If you enable these features, SnapCenter sends AutoSupport information to the st
 
 * If you are planning to replicate Snapshot copies to a SnapMirror destination or SnapVault destination, you must set up storage system connections for the destination SVM or Cluster as well as the source SVM or Cluster.
 
-* SnapCenter 4.5 and later supports application databases on ONTAP large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter recommends only thick provisioned LUNs to avoid latency.
-
 NOTE: If you change the storage system password, scheduled jobs, on demand backup, and restore operations might fail. After you change the storage system password, you can update the password by clicking *Modify* in the Storage tab.
 
 *Steps*
