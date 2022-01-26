@@ -74,6 +74,7 @@ Java 1.8.x (64-bit)Oracle Java and OpenJDK flavors
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
 |===
+
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === Configure sudo privileges for non-root users for Linux host
@@ -145,6 +146,8 @@ IMPORTANT: The example should be used only as a reference for creating your own 
 
 You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for AIX.
 
+NOTE: SnapCenter Plug-in for UNIX which is part of the SnapCenter Plug-ins Package for AIX, does not support concurrent volume groups.
+
 |===
 | Item| Requirements
 
@@ -171,6 +174,7 @@ Java 1.8.x (64-bit)IBM Java
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
 |===
+
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === Configure sudo privileges for non-root users for AIX host

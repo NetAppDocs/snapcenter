@@ -23,9 +23,9 @@ SnapCenter UI does not load properly if you are using IE 10 or earlier versions.
  ** Only default-level security is supported.
 +
 Making changes to Internet Explorer security settings results in significant browser display issues.
-
  ** Internet Explorer compatibility view must be disabled.
 
 * Microsoft Edge
 
 For the latest information about supported versions, see https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+

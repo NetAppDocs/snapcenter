@@ -26,8 +26,6 @@ Before you add a host and install the plug-in packages, you must complete all th
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 1.8 64-bit on your Windows host.
 +
-The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
-+
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
@@ -36,8 +34,6 @@ https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 1.8 64-bit on your Linux host.
-+
-The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
