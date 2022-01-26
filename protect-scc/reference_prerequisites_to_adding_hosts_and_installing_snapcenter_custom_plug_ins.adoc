@@ -37,7 +37,7 @@ If you are using Windows 2019 or Windows 2016 for the SnapCenter Server host, yo
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 * You must configure sudo privileges for the non-root user to provide access to several paths. Add the following lines to the /etc/sudoers file by using the visudo Linux utility. For example,
 +

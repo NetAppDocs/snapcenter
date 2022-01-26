@@ -78,6 +78,9 @@ image::../media/resource_settings.gif[resource settings]
 
 The resources are displayed along with information such as type, host or cluster name, associated resource groups and policies, and overall status.
 
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
+
 *After you finish*
 
 If you want to provide access to the assets to other users, the SnapCenter administrator must assign assets to those users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.

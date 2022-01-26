@@ -49,6 +49,10 @@ Click image:../media/filter_icon.gif[] and select the host name and the SQL Serv
 . Click *Refresh Resources*.
 +
 The newly added, renamed, or deleted resources are updated to the SnapCenter Server inventory.
++
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
++
 
 The resources are displayed along with information such as resource type, host or cluster name, associated resource groups, backup type, policies and overall status.
 

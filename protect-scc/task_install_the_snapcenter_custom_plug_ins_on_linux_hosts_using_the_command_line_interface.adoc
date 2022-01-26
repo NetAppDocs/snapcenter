@@ -31,11 +31,11 @@ You can access this path from the host where the SnapCenter Server is installed.
 ----
 . Add the host to the SnapCenter Server using the Add-Smhost cmdlet and the required parameters.
 +
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
 . Log in to SnapCenter and upload the custom plug-in from the UI or by using PowerShell cmdlets.
 +
 You can upload the custom plug-in from the UI by referring to link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html[Add hosts and install plug-in packages on remote hosts] section.
 +
 The SnapCenter cmdlet help and the cmdlet reference information contain more information about PowerShell cmdlets.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].

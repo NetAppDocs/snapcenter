@@ -41,8 +41,12 @@ entries:
         url: /install/task_configure_CA_certificate_with_snapcenter_site.html
       - title: Enable CA Certificates for SnapCenter Server
         url: /install/task_enable_ca_certificates_for_snapcenter.html
-  - title: Register untrusted Active Directory domains
-    url: /install/task_register_untrusted_active_directory_domains.html
+  - title: Configure Active Directory, LDAP, and LDAPS
+    entries:
+      - title: Register untrusted Active Directory domains
+        url: /install/task_register_untrusted_active_directory_domains.html
+      - title: Configure CA client certificate for LDAPS
+        url: /install/task_configure_CA_client_certificate_for_LDAPS.html
   - title: Configure High Availability
     entries:
       - title: Configure SnapCenter Servers for High Availability using F5
@@ -65,7 +69,7 @@ entries:
         url: /install/task_add_an_rbac_role_using_security_login_commands.html
       - title: Create SVM roles with minimum privileges
         url: /install/create-svm-roles-minimum-privileges.html
-      - title: Create an ONTAP cluster role with minimum privileges
+      - title: Create ONTAP cluster roles with minimum privileges
         url: /install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
       - title: Configure IIS Application Pools to enable Active Directory read permissions
         url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
@@ -81,15 +85,10 @@ entries:
         entries:
           - title: Configure LUN storage
             url: /install/concept_configure_lun_storage.html
-            entries:
-              - title: Establish an iSCSI session
-                url: /install/task_establish_an_iscsi_session.html
-              - title: Disconnect an iSCSI session
-                url: /install/task_disconnect_an_iscsi_session.html
-              - title: Create and manage igroups
-                url: /install/concept_create_and_manage_igroups.html
-              - title: Create and manage disks
-                url: /install/task_create_and_manage_disks.html
+          - title: Create and manage igroups
+            url: /install/concept_create_and_manage_igroups.html
+          - title: Create and manage disks
+            url: /install/task_create_and_manage_disks.html
           - title: Create and manage SMB shares
             url: /install/concept_create_and_manage_smb_shares.html
           - title: Reclaim space on the storage system

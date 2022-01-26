@@ -21,7 +21,7 @@ Microsoft Windows
 
 Only English, German, Japanese, and simplified Chinese version of the operating systems are supported.
 
-For the latest information about supported versions, see https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum CPU count
@@ -56,5 +56,5 @@ a|
 * Windows Management Framework (WMF) 4.0 or later
 * PowerShell 4.0 or later
 
-For the latest information about supported versions, see https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 |===

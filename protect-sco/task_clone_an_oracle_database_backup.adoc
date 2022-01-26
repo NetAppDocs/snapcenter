@@ -19,7 +19,7 @@ NOTE: Cloning fails if you try to clone a backup that was created on a Linux hos
 
 SnapCenter creates a stand-alone database when cloned from an Oracle RAC database backup. SnapCenter supports creating clone from the backup of a Data Guard standby and Active Data Guard standby databases.
 
-During cloning, SnapCenter mounts the log backup for recovery operations. After recovery, the log backup is unmounted. All such clones are mounted under _/var/opt/snapcenter/scu/clones/_. If you are using ASM over NFS, you should add _/var/opt/snapcenter/scu/clones/*/*_ to the existing path defined in the asm_diskstring parameter.
+During cloning, SnapCenter mounts the optimal number of log backups based on SCN or dat and time for recovery operations. After recovery, the log backup is unmounted. All such clones are mounted under _/var/opt/snapcenter/scu/clones/_. If you are using ASM over NFS, you should add _/var/opt/snapcenter/scu/clones/*/*_ to the existing path defined in the asm_diskstring parameter.
 
 While cloning a backup of an ASM database in a SAN environment, udev rules for the cloned host devices are created at _/etc/udev/rules.d/999-scu-netapp.rules_. These udev rules associated with the cloned host devices are deleted when you delete the clone.
 
@@ -153,7 +153,8 @@ The Oracle home, user name, and group details are automatically populated from t
  .. Enter the path and the arguments of the prescript that you want to run before the clone operation.
 +
 You must store the prescript either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have placed the script in any folder inside this path, you need to provide the complete path up to the folder where the script is placed.
-
++
+SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript. link:../protect-sco/predefined-environment-variables-prescript-postscript-clone.html[Learn more^]
  .. In the Database Parameter settings section, modify the values of prepopulated database parameters that are used to initialize the database.
 +
 You can add additional parameters by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
@@ -201,7 +202,12 @@ SnapCenter recovers the database up to a specified system change number (SCN).
 a|
 Specify external archive log locations
 a|
-Specify the external archive log location.
+If the database is running in ARCHIVELOG mode, SnapCenter identifies and mounts optimal number of log backups based on the specified SCN or the selected date and time.
+
+You can also specify the external archive log location.
+
+NOTE: SnapCenter will not automatically identify and mount the log backups if you have selected Until Cancel.
+
 a|
 Create new DBID
 a|
@@ -227,6 +233,9 @@ Specify the path and the arguments of the postscript that you want to run after 
 You should store the postscript either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated.
 
 If you have placed the script in any folder inside this path, you need to provide the complete path up to the folder where the script is placed.
+
+NOTE: If the clone operation fails, postscripts will not be executed and cleanup activities will be triggered directly.
+//Included the above statement for BURT 1433065 in 4.6.
 |===
 
 . On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.

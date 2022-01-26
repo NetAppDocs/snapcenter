@@ -1,0 +1,35 @@
+---
+permalink: protect-scsql/task_failback_from_scsql_secondary_storage_to_primary_storage.html
+sidebar: sidebar
+keywords:
+summary: 'After the SnapCenter Plug-in for SQL Server primary storage is back online, you should failback to the primary storage.'
+---
+=  Failback from SnapCenter Plug-in for SQL Server secondary storage to primary storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After the SnapCenter Plug-in for SQL Server primary storage is back online, you should failback to the primary storage.
+
+*What you will need*
+
+* Place the SnapCenter Plug-in for SQL Server in *Maintenance* mode from the *Managed Hosts* page.
+* Disconnect the secondary storage from the host and connect from the primary storage.
+* To failback to the primary storage, ensure that the relationship direction remains the same as it was before the failover by performing the reverse resync operation.
++
+To retain the roles of primary and secondary storage after the reverse resync operation, perform  the reverse resync operation once again.
++
+For more information see link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html[Reverse resynchronizing mirror relationships]
+* Restart MSSQL server service.
+* Ensure that the SQL resources are back online.
+
+*Steps*
+
+. In the *Settings* page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.
+. Unselect *Enable Disaster Recovery*.
+. Click *Apply*.
+. Verify whether the DR job is enabled or not by clicking *Monitor* > *Jobs*.
+
+*After you finish*
+
+* You can delete the SnapCenter Plug-in for SQL Server backups that were created during failover either by using the UI or the following cmdlet: `Remove-SmDRFailoverBackups`

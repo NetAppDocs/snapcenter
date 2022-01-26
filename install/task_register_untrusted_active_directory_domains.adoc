@@ -13,16 +13,28 @@ You should register the Active Directory with SnapCenter Server to manage hosts,
 
 *What you will need*
 
-* The fully qualified domain name (FQDN) should be reachable from SnapCenter Server.
-* If the FQDN is not resolvable, the domain controller IP addresses that are provided should be resolvable from SnapCenter Server.
+*LDAP and LDAPS protocols*
+
+* You can register the untrusted active directory domains using either LDAP or LDAPS protocol.
 * You should have enabled bidirectional communication between the plug-in hosts and the SnapCenter Server.
 * DNS resolution should be set up from the SnapCenter Server to the plug-in hosts and vice-versa.
 
+*LDAP protocol*
+
+* The fully qualified domain name (FQDN) should be resolvable from SnapCenter Server.
++
+You can register an untrusted domain with the FQDN. If the FQDN is not resolvable from the SnapCenter Server, you can register with a domain controller IP address and this should be resolvable from SnapCenter Server.
+
+*LDAPS protocol*
+
+* CA certificates are required for LDAPS to provide end-to-end encryption during the active directory communication.
++
+link:task_configure_CA_client_certificate_for_LDAPS.html[Configure CA client certificate for LDAPS]
+* Domain controller host names (DCHostName) should be reachable from SnapCenter Server.
+
 *About this task*
 
-You can register an untrusted domain with the FQDN. If the FQDN is not resolvable from the SnapCenter Server, you can register with an IP address.
-
-You can use either the SnapCenter user interface or PowerShell cmdlets to register an untrusted domain.
+* You can use either the SnapCenter user interface, PowerShell cmdlets, or REST API to register an untrusted domain.
 
 *Steps*
 
@@ -30,7 +42,9 @@ You can use either the SnapCenter user interface or PowerShell cmdlets to regist
 . In the Settings page, click *Global Settings*..
 . In the Global Settings page, click *Domain Settings*.
 . Click image:../media/add_policy_from_resourcegroup.gif[] to register a new domain.
-. In the Register New Domain page, specify the information that is required for registering the untrusted domain:
+. In the Register New Domain page, select either *LDAP* or *LDAPS*.
+
+.. If you select *LDAP*, specify the information that is required for registering the untrusted domain for LDAP:
 +
 |===
 | For this field... | Do this...
@@ -52,4 +66,26 @@ For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_
 
 |===
 
+.. If you select *LDAPS*, specify the information that is required for registering the untrusted domain for LDAPS:
++
+|===
+| For this field... | Do this...
+
+a|
+Domain Name
+a|
+Specify the NetBIOS name for the domain.
+a|
+Domain FQDN
+a|
+Specify the FQDN.
+a|
+Domain controller Names
+a|
+Specify one or more domain controller names and click *Resolve*.
+a|
+Domain controller IP addresses
+a|
+If the domain controller names is not resolvable from SnapCenter Server, you should rectify the DNS resolutions.
+|===
 . Click *OK*.

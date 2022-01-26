@@ -24,7 +24,8 @@ link:../protect-hana/task_configure_gMSA_on_windows_server_2012_or_later.html[Co
 
 *About this task*
 
-You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+* You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+* For SAP HANA System Replication to discover resources on both primary and secondary systems,  it is recommended to add both the primary and the secondary systems using root or sudo user.
 
 *Steps*
 
