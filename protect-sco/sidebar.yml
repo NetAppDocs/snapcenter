@@ -21,6 +21,8 @@ entries:
         url: /protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html
       - title: Add hosts and install Plug-ins Package for Linux or AIX
         url: /protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html
+      - title: Alternate ways to install Plug-ins Package for Linux or AIX
+        url: /protect-sco/alternate-ways-install-plug-in-linux-aix.html
       - title: Configure the SnapCenter Plug-in Loader service
         url: /protect-sco/task_configure_snapcenter_plug_in_loader_service.html
       - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
@@ -39,6 +41,8 @@ entries:
         url: /protect-sco/backup-workflow.html
       - title: Define a backup strategy for Oracle databases
         url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
+      - title: Predefined environment variables for backup specific prescript and postscript
+        url: /protect-sco/predefined-environment-variables-prescript-postscript-backup.html
       - title: Determine whether Oracle databases are available for backup
         url: /protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html
       - title: Create backup policies for Oracle databases
@@ -67,9 +71,11 @@ entries:
         url: /protect-sco/restore-workflow.html
       - title: Define a restore and recovery strategy for Oracle databases
         url: /protect-sco/task_define_a_restore_and_recovery_strategy_for_oracle_databases.html
+      - title: Predefined environment variables for restore specific prescript and postscript
+        url: /protect-sco/predefined-environment-variables-prescript-postscript-restore.html
       - title: Requirements for restoring an Oracle database
         url: /protect-sco/reference_requirements_for_restoring_an_oracle_database.html
-      - title: Restore Oracle database
+      - title: Restore and recover Oracle database
         url: /protect-sco/task_restore_an_oracle_database.html
       - title: Restore and recover tablespaces using point-in-time recovery
         url: /protect-sco/task_restore_and_recovere_tablespaces_using_point_in_time_recovery.html
@@ -87,6 +93,8 @@ entries:
         url: /protect-sco/clone-workflow.html
       - title: Define a clone strategy for Oracle databases
         url: /protect-sco/task_define_a_clone_strategy_for_oracle_databases.html
+      - title: Predefined environment variables for clone specific prescript and postscript
+        url: /protect-sco/predefined-environment-variables-prescript-postscript-clone.html
       - title: Requirements for cloning an Oracle database
         url: /protect-sco/reference_requirements_for_cloning_an_oracle_database.html
       - title: Clone an Oracle database
@@ -105,3 +113,15 @@ entries:
         url: /protect-sco/task_refresh_a_clone.html
       - title: Delete clone of a pluggable database
         url: /protect-sco/task_delete_clone_of_a_pluggable_database.html
+  - title: Manage application volumes
+    entries:
+      - title: Add application volumes
+        url: /protect-sco/add-application-volume.html
+      - title: Backup application volumes
+        entries:
+          - title: Back up application volume
+            url: /protect-sco/backup-application-volume.html
+          - title: Back up the application volumes resource group
+            url: /protect-sco/backup-application-volume-resource-group.html
+      - title: Clone application volume backup
+        url: /protect-sco/clone-application-volume.html

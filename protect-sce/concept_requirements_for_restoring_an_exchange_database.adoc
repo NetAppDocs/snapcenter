@@ -11,6 +11,9 @@ summary: 'Before you restore an Exchange Server database from a SnapCenter Plug-
 [.lead]
 Before you restore an Exchange Server database from a SnapCenter Plug-in for Microsoft Exchange Server backup, you must ensure that several requirements are met.
 
+[NOTE]
+To use the restore functionality completely, you must upgrade both SnapCenter Server and SnapCenter Plug-in for Exchange database to 4.6. 
+
 * The Exchange Server must be online and running before you can restore a database.
 * The databases must exist on the Exchange Server.
 +

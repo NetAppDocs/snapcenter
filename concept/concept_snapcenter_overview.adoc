@@ -77,6 +77,10 @@ You can automate a remote push of SnapCenter plug-ins from the SnapCenter Server
 High availability for SnapCenter is set up using external load balancer (F5). Up to two nodes are supported within the same datacenter.
 // Changed the description as per Manohar's comments
 
+* Disaster Recovery (DR)
++
+You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash.
+
 == SnapCenter architecture
 
 The SnapCenter platform is based on a multitiered architecture that includes a centralized management server (SnapCenter Server) and a SnapCenter plug-in host.

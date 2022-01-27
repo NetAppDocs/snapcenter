@@ -8,7 +8,7 @@ Operating Systems
 a|
 Microsoft Windows
 
-For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum RAM for the SnapCenter plug-in on host
@@ -29,5 +29,5 @@ a|
 * Windows Management Framework (WMF) 4.0 or later
 * PowerShell 4.0 or later
 
-For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100747;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 |===

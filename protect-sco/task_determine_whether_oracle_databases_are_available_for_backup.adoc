@@ -44,6 +44,9 @@ In a RAC One Node scenario, the database is discovered as the RAC database on th
 
 The databases are displayed along with information such as database type, host or cluster name, associated resource groups and policies, and status.
 
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
+
 * If the database is on a non-NetApp storage system, the user interface displays a Not available for backup message in the Overall Status column.
 +
 You cannot perform data protection operations on the database that is on a non-NetApp storage system.

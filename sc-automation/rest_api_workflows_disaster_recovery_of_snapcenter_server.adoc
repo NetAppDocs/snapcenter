@@ -1,0 +1,90 @@
+---
+permalink: sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
+sidebar: sidebar
+keywords:
+summary: 'SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server.'
+---
+= REST API supported for disaster recovery of SnapCenter Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter disaster recovery (DR) functionality uses REST APIs to backup SnapCenter Server. Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
+
+*What you will need*
+
+*	You should log in as the SnapCenter Admin user.
+* The SnapCenter Server should be up and running to run DR restore API.
+
+
+*About this task*
+
+SnapCenter Server DR supports all plug-ins.
+
+[cols="10,40,50,10"]
+|===
+| Step| Description|REST API|HTTP method
+
+a|
+1
+a|
+Fetch existing SnapCenter Server DR backups
+
+[NOTE]
+
+You must provide the backup name and the target path where the DR backups must be stored.
+a|
+`/4.5/disasterrecovery/server/backup?targetpath={path}`
+a|
+GET
+a|
+2
+a|
+Create a new Server DR backup.
+Restores a SnapCenter Server from a specified Server DR backup.
+a|
+`/4.5/disasterrecovery/server/backup`
+a|
+POST
+a|
+3
+a|
+Restores a SnapCenter Server from a specified Server DR backup.
+
+*Prerequisites*
+
+* The alternate server host name should be same as the primary server, but the IP address can be different.
+* Server version should be the same as the primary server.
+* Host name should be the same as the primary server.
+* Ensure the DR backup files are copied to the new SnapCenter server using the following command:
++
+`xcopy <Ssource_Path> \\<Destination_Server_IP>\<Folder_Path> /O /X /E /H /K  {ex : xcopy C:\DRBackup \\10.225.81.114\c$\DRBackup /O /X /E /H /K}`
+
+If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
+`<New IP>	SC_Server_Name`
+
+For example, 10.225.81.35	SCServer1
+
+The server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
+
+a|
+`/4.5/disasterrecovery/server/restore`
+a|
+POST
+a|
+4
+a|
+Delete the Server DR backup based on backup name.
+a|
+``/4.5/disasterrecovery/server/backup``
+a|
+DELETE
+a|
+5
+a|
+Enable or disable the storage DR
+a|
+`/4.5/disasterrecovery/storage`
+a|
+POST
+|===

@@ -195,7 +195,7 @@ NOTE: Removing a trial license manually is only required if you are using a Snap
  .. Run the Open-SmConnection cmdlet to initiate a connection session with the SnapCenter Server for a SnapCenterAdmin account.
  .. Run the Set-SmRepositoryPassword to reset the MySQL password.
 +
-For information about the cmdlets, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2877143[SnapCenter Software Cmdlet Reference Guide^].
+For information about the cmdlets, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
 . Open the command prompt and run mysql -u root -p to log into MySQL.
 +
 MySQL prompts you for the password. Enter the credentials you provided while resetting the password.

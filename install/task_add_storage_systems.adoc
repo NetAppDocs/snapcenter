@@ -11,8 +11,7 @@ summary: 'You should set up the storage system that gives SnapCenter access to O
 [.lead]
 You should set up the storage system that gives SnapCenter access to ONTAP storage or Amazon FSx for NetApp ONTAP to perform data protection and provisioning operations.
 
-You can either add a stand-alone SVM or a cluster comprising of multiple SVMs.
-If you are using Amazon FSx for NetApp ONTAP, you can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account in SnapCenter 4.5 P1 or add FSx SVM in SnapCenter.
+You can either add a stand-alone SVM or a cluster comprising of multiple SVMs. If you are using Amazon FSx for NetApp ONTAP, you can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account or add FSx SVM in SnapCenter.
 
 *What you will need*
 
@@ -98,7 +97,7 @@ In the Storage Systems page, from the *Type* drop-down perform one of the follow
 If you have added FSx SVMs, the FSx SVMs are listed here.
 * Select *ONTAP Clusters* if you want to view all the clusters that were added.
 +
-If you have added FSx clusters using fsxadmin, the FSx clusters are listed here. 
+If you have added FSx clusters using fsxadmin, the FSx clusters are listed here.
 +
 When you click on the cluster name, all the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
 +

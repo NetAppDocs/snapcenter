@@ -20,7 +20,7 @@ Resources are SAP HANA databases and Non-data Volume on the Linux host that are 
 
 *About this task*
 
-After installing the plug-in, all the resources on that Linux host are automatically discovered and displayed on the Resources page.
+After installing the plug-in, all the resources on that Linux host are automatically discovered and displayed on the *Resources* page.
 
 The automatically discovered resources cannot be modified or deleted.
 
@@ -40,6 +40,9 @@ The resources are displayed along with information such as resource type, host n
 * If the database is on a NetApp storage system and protected, and if there is no backup operation performed, then Backup not run is displayed in the Overall Status column. The status will otherwise change to Backup failed or Backup succeeded based on the last backup status.
 
 NOTE: If the SAP HANA database does not have a HDB Secure User Store Key configured, a red padlock icon appears next to the resource. If during a subsequent discovery operation, the configured HDB Secure User Store Key was found to be incorrect or did not provide access to the database itself, then the red padlock icon will reappear.
+
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
 
 *After you finish*
 

@@ -38,6 +38,8 @@ a|
 * Upgrade to 4.3.x by first upgrading to 4.1.x, then upgrade to 4.2.x, and then upgrade to 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, and then upgrade to 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
+
 a|
 4.1.x
 a|
@@ -45,20 +47,30 @@ a|
 * Upgrade to 4.3.x by first upgrading to 4.2.x, and then upgrade to 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.2.x, then upgrade to 4.3.x, and then upgrade to 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
+
 a|
 4.2.x
 a|
 * Directly upgrade to 4.3.x
 * Upgrade to 4.4.x by first upgrading to 4.3.x, and then upgrade to 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.3.x, then upgrade to 4.4.x, and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.3.x, then upgrade to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
 a|
 4.3.x
 a|
 * Directly upgrade to 4.4.x
 * Upgrade to 4.5 by first upgrading to 4.4.x, and then upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
 a|
 4.4.x
-a| Directly upgrade to 4.5
+a|
+* Directly upgrade to 4.5
+* Upgrade to 4.6 by first upgrading to 4.5.x, and then upgrade to 4.6
+a|
+4.5.x
+a|
+Directly upgrade to 4.6
 |===
 
 NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].

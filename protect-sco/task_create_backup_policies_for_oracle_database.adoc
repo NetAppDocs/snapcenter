@@ -137,6 +137,8 @@ NOTE: You should configure SnapMirror retention policy in ONTAP for the secondar
 You must store the prescripts and postscripts either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
 +
 You can also specify the script timeout value. The default value is 60 seconds.
++
+SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript. link:../protect-sco/predefined-environment-variables-prescript-postscript-backup.html[Learn more^]
 
 . In the Verification page, perform the following steps:
  .. Select the backup schedule for which you want to perform the verification operation.
