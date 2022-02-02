@@ -12,11 +12,7 @@ settings:
       url: /snapcenter
       version-number: "4.6"
     - name: SnapCenter Software
-<<<<<<< HEAD
       url: /snapcenter-45
-=======
-      url: https://docs.netapp.com/us-en/snapcenter-45/index.html
->>>>>>> 75965ade7504724ffa380ac055210bd6697570fa
       version-number: "4.5"
 
 homepage:
