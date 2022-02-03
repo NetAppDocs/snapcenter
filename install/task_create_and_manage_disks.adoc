@@ -32,6 +32,7 @@ You can view the disks on each Windows host you manage with SnapCenter.
 The disks are listed.
 
 == View clustered disks
+
 //Included this section for BURT 1436454
 
 You can view clustered disks on the cluster that you manage with SnapCenter. The clustered disks are displayed only when you select the cluster from the Hosts drop-down.
