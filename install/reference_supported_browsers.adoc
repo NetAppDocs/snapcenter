@@ -28,4 +28,3 @@ Making changes to Internet Explorer security settings results in significant bro
 * Microsoft Edge
 
 For the latest information about supported versions, see https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
-
