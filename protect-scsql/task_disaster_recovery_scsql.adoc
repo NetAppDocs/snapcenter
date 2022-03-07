@@ -23,3 +23,5 @@ link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Ma
 . Select the host from the *Hosts* page to modify and install the SnapCenter Plug-in for SQL Server.
 . (Optional) Replace the SnapCenter Plug-in for SQL Server configuration files from disaster recovery (DR) backup to the new machine.
 . Import Windows and SQL schedules from the SnapCenter Plug-in for SQL Server folder from the DR backup.
+
+For more information, see the https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.

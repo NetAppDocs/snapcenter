@@ -17,7 +17,7 @@ SnapCenter requires several licenses to enable data protection of applications, 
 a|
 SnapCenter Standard controller-based
 a|
-Required for FAS or AFF storage controllers
+Required for FAS, AFF, and Amazon FSx
 
 SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS or AFF storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
 
