@@ -59,7 +59,7 @@ entries:
     entries:
       - title: Install workflow for SnapCenter Plug-in for Microsoft SQL Server
         url: /protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html
-      - title: Prerequisites to add  hosts and instal  SnapCenter Plug-in for Microsoft SQL Server
+      - title: Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft SQL Server
         url: /protect-scsql/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
         url: /protect-scsql/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_sql.html
