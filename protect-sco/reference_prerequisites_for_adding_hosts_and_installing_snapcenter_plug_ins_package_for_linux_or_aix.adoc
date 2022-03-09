@@ -37,6 +37,8 @@ NOTE: You can use the Plug-in for Oracle Database to manage Oracle databases for
 
 * If you are using Oracle database 11.2.0.3 or later, you must install the 13366202 Oracle patch.
 
+NOTE: UUID mapping in the /etc/fstab file is not supported by SnapCenter.
+
 == Linux Host requirements
 
 You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.
