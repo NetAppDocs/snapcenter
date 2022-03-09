@@ -61,7 +61,6 @@ a|
 Protocol
 a|
 Enter the LUN protocol.    This option is available only if you selected LUN resource type.
-+
 |===
 If the resource selected is a LUN and you are cloning from a secondary backup, then the destination volumes are listed. A single source can have multiple destination volumes.
 +
