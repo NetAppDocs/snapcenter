@@ -23,7 +23,7 @@ Perform the following steps to start using the new resource discovered in SnapCe
 
 *Steps*
 
-. On the *Resources* page, select the old MDC resource with backups added to the earlier SnapCenter release, and place it in "`maintenance mode`" from the Topology page.
+. In the Resources page, select the old MDC resource with backups added to the earlier SnapCenter release, and place it in "`maintenance mode`" from the Topology page.
 +
 If the resource is part of a resource group, place the resource group in "`maintenance mode`".
 

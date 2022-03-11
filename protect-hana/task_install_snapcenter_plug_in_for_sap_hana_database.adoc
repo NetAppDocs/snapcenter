@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up the SnapCenter Plug-in for SAP HANA Database if you want to protect SAP HANA databases.'
 ---
-= Install SnapCenter Plug-in for SAP HANA Database
+= Installation workflow of SnapCenter Plug-in for SAP HANA Database
 :icons: font
 :imagesdir: ../media/
 

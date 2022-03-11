@@ -4,7 +4,7 @@ You should be logged in as the SnapCenter Admin or job owner to cancel clone ope
 
 *About this task*
 
-* You can cancel a queued clone operation from either the Monitor page or the Activity pane.
+* You can cancel a queued clone operation from either the *Monitor* page or the *Activity* pane.
 * You cannot cancel a running clone operation.
 * You can use the SnapCenter GUI, PowerShell cmdlets, or CLI commands to cancel the queued clone operations.
 * If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued clone operations of other members while using that role.

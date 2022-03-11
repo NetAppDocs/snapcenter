@@ -46,7 +46,7 @@ You must be logged in as the SnapCenter administrator.
 *Steps*
 
 . In the left navigation pane, click *Settings*.
-. On the Settings page, click *Users and Access*.
+. In the Settings page, click *Users and Access*.
 . From the User or Group name list, click the user or group that you want to modify.
-. On the User or Group details page, alter roles and assets.
+. In the User or Group details page, alter roles and assets.
 . Click *Submit*.

@@ -35,8 +35,8 @@ NOTE: In case the above resources are discovered, the data protection operations
 *Steps*
 
 . In the left navigation pane, select the SnapCenter Plug-in for SAP HANA Database from the drop-down list, and then click *Resources*.
-. On the *Resources* page, click *Add SAP HANA Database*.
-. On the *Provide Resource Details* page, perform the following actions:
+. In the Resources page, click *Add SAP HANA Database*.
+. In the Provide Resource Details page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -71,7 +71,7 @@ a|
 Enter the user name for whom the HDB Secure User Store Key is configured.     For Windows, it is mandatory for the HDBSQL OS User to be the SYSTEM user. Therefore, you must configure the HDB Secure User Store Key for the SYSTEM user.
 |===
 
-. On the *Provide Storage Footprint* page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
+. In the Provide Storage Footprint page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
 +
 Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
 

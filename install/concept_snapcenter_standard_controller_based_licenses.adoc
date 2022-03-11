@@ -36,12 +36,12 @@ NOTE: If you already have a SnapManager Suite license on your controller, SnapCe
 *Steps*
 
 . In the left navigation pane, click *Storage Systems*.
-. On the Storage Systems page, from the *Type* drop-down, select whether to view all the SVMs or clusters that were added:
+. In the Storage Systems page, from the *Type* drop-down, select whether to view all the SVMs or clusters that were added:
  ** To view all of the SVMs that were added, select *ONTAP SVMs*.
  ** To view all of the clusters that were added, select *ONTAP Clusters*.
 +
 When you click the cluster name, all of the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
-. In the *Storage Connections* list, locate the Controller License column.
+. In the Storage Connections list, locate the Controller License column.
 +
 The Controller License column displays the following status:
 
