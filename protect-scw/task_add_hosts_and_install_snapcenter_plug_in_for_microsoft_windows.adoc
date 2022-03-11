@@ -43,7 +43,7 @@ You cannot install the Plug-in for Windows on a Windows host connected to E-seri
 . In the left navigation pane, click *Hosts*.
 . Ensure that *Managed Hosts* is selected at the top.
 . Click *Add*.
-. On the Hosts page, do the following:
+. In the Hosts page, do the following:
 +
 |===
 | For this field...| Do this...

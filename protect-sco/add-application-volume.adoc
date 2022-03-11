@@ -15,11 +15,11 @@ SnapCenter supports backing up and cloning of application volumes of Oracle data
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.
 . Click *Add Application Volume*.
-. On the Name page, perform the following actions:
+. In the Name page, perform the following actions:
 +
 * In the Name field, enter the name of the application volume.
 * In the Host Name field, enter the name of the host.
-. On the Storage Footprint page, enter the storage system name, select one or volumes, and specify the associated LUNs or Qtrees.
+. In the Storage Footprint page, enter the storage system name, select one or volumes, and specify the associated LUNs or Qtrees.
 +
 You can add multiple storage systems.
 . Review the summary, and then click *Finish*.

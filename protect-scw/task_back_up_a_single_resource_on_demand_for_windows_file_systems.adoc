@@ -76,7 +76,7 @@ Default email subject line
 The database topology page is displayed.
 
 . Click *Back up Now*.
-. On the Backup page, perform the following steps:
+. In the Backup page, perform the following steps:
  .. If you have applied multiple policies to the resource, from the Policy drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.

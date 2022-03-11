@@ -38,8 +38,8 @@ After reviewing the existing policies, you can perform one of the following:
  ** Create a new policy.
 
 . To create a new policy, click *New*.
-. On the Name page, enter the policy name and a description.
-. On the Backup Options page, perform the following tasks:
+. In the Name page, enter the policy name and a description.
+. In the Backup Options page, perform the following tasks:
  .. Select a backup setting.
 +
 |===
@@ -79,7 +79,7 @@ IMPORTANT: You should set the retention count to 2 or higher if you plan to enab
 +
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
-. On the Replication page, specify replication to the secondary storage system:
+. In the Replication page, specify replication to the secondary storage system:
 +
 |===
 | For this field... | Do this...
@@ -108,7 +108,7 @@ Enter the number of replication attempts that should occur before the process ha
 |===
 NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
 
-. On the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
+. In the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
 

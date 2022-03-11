@@ -36,8 +36,8 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
 . Click *New*.
-. On the *Name* page, enter the policy name and description.
-. On the *Backup Type* page, perform the following steps:
+. In the Name page, enter the policy name and description.
+. In the Backup Type page, perform the following steps:
  .. Choose the backup type:
 +
 |===
@@ -107,7 +107,7 @@ NOTE: You can specify the schedule (start date, end date, and frequency) for bac
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
-. On the *Retention* page, depending on the backup type selected in the backup type page, perform one or more of the following actions:
+. In the Retention page, depending on the backup type selected in the backup type page, perform one or more of the following actions:
  .. In the Retention settings for the up-to-the-minute restore operation section, perform one of the following actions:
 +
 |===
@@ -145,7 +145,7 @@ a|
 If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 |===
 
- .. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected on *Backup Type* page.
+ .. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
 +
 |===
 | For this field...| Do this...
@@ -173,7 +173,7 @@ Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL'
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
 
-. On the *Replication* page, specify replication to the secondary storage system:
+. In the Replication page, specify replication to the secondary storage system:
 +
 |===
 | For this field...| Do this...
@@ -201,15 +201,15 @@ a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
 
-. On the *Script* page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
+. In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
 +
 NOTE: You must configure the SnapMirror retention policy in ONTAP so that the secondary storage does not reach the maximum limit of Snapshot copies.
 
-. On the *Verification* page, perform the following steps:
- .. In the *Run verification for following backup schedules* section, select the schedule frequency.
- .. In the *Database consistency check options* section, perform the following actions:
+. In the Verification page, perform the following steps:
+ .. In the Run verification for following backup schedules section, select the schedule frequency.
+ .. In the Database consistency check options section, perform the following actions:
 +
 |===
 | For this field...| Do this...

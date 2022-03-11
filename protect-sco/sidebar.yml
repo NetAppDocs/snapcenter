@@ -15,7 +15,7 @@ entries:
         url: /protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html
   - title: Install SnapCenter Plug-in for Oracle Database
     entries:
-      - title: Install workflow of Plug-in for Oracle Database
+      - title: Installation workflow of SnapCenter Plug-in for Oracle Database
         url: /protect-sco/install-snapcenter-plug-in-for-oracle-workflow.html
       - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux or AIX
         url: /protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html

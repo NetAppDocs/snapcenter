@@ -17,7 +17,7 @@ NOTE: SnapCenterCLI does not support SnapCenter Custom Plug-ins commands.
 
 NetApp provides the Storage plug-in to perform data protection operations of the data volume on the ONTAP storage using the custom plug-in framework built into SnapCenter.
 
-You can install the custom plug-in and storage plug-in from the *Add Host* page.
+You can install the custom plug-in and storage plug-in from the Add Host page.
 
 link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html[Add hosts and install plug-in packages on remote hosts.^]
 

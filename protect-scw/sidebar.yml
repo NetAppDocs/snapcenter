@@ -23,7 +23,7 @@ entries:
         url: /protect-scw/reference_sources_and_destinations_of_clones_for_windows_file_systems.html
   - title: Install SnapCenter Plug-in for Microsoft Windows
     entries:
-      - title: Install workflow
+      - title: Installation workflow of SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html
       - title: Installation requirements for SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html

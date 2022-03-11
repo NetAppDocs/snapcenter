@@ -19,7 +19,7 @@ A resource group is the container to which you can add multiple file systems tha
 NOTE: If you have recently added a file system to SnapCenter, click *Refresh Resources* to view the newly added resource.
 
 . Click *New Resource Group*.
-. On the Name page in the wizard, do the following:
+. In the Name page in the wizard, do the following:
 +
 |===
 | For this field...| Do this...
@@ -43,7 +43,7 @@ a|
 Enter a descriptive tag to help when finding a resource group.
 |===
 
-. On the Resources page, perform the following tasks:
+. In the Resources page, perform the following tasks:
  .. Select the host to filter the list of resources.
 +
 If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
@@ -53,7 +53,7 @@ If you have recently added resources, they will appear on the list of available 
 If you select the *Autoselect all resources on same storage volume* option, all of the resources on the same volume are selected. When you move them to the Added section, all of the resources on that volume move together.
 +
 To add a single file system, clear the *Autoselect all resources on same storage volume* option and then select the file systems you want to move to the Added section.
-. On the Policies page, perform the following tasks:
+. In the Policies page, perform the following tasks:
  .. Select one or more policies from the drop-down list.
 +
 You can select any existing policy and click *Details* to determine whether you can use that policy.
@@ -70,7 +70,7 @@ The configured schedules are listed in the Applied Schedules column in the Confi
 
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules. You should not modify the schedules from the Windows task scheduler and SQL Server Agent.
-. On the Notification page, provide notification information, as follows:
+. In the Notification page, provide notification information, as follows:
 +
 |===
 | For this field...| Do this...

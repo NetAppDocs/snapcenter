@@ -20,7 +20,7 @@ A resource group is required for any data protection job. You must also attach o
 NOTE: If you have recently added a resource to SnapCenter, click *Refresh Resources* to view the newly added resource.
 
 . Click *New Resource Group*.
-. On the Name page, perform the following actions:
+. In the Name page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -47,13 +47,13 @@ For example, _customtext_resourcegroup_policy_hostname_ or _resourcegroup_hostna
 
 |===
 
-. On the Resources page, perform the following steps:
+. In the Resources page, perform the following steps:
  .. Select the resource type and the Database Availability Group from drop-down lists to filter the list of available resources.
 +
 NOTE: If you have recently added resources, they will appear in the list of Available Resources only after you refresh your resource list.
 
 +
-In the *Available Resources* and *Selected Resources* sections, the database name is displayed with the FQDN of the host. This FQDN only indicates that the database is active on that specific host and might not take backup on this host. You should select one or more backup servers from the Server selection option, where you want to take backup in case you have selected the *Back up copies on servers to be selected at backup job creation time* option in the policy.
+In the Available Resources and Selected Resources sections, the database name is displayed with the FQDN of the host. This FQDN only indicates that the database is active on that specific host and might not take backup on this host. You should select one or more backup servers from the Server selection option, where you want to take backup in case you have selected the *Back up copies on servers to be selected at backup job creation time* option in the policy.
 
  .. Type the name of the resource in the search text box, or scroll to locate a resource.
  .. To move resources from the Available Resources section to the Selected Resources section, perform one of the following steps:
@@ -62,7 +62,7 @@ In the *Available Resources* and *Selected Resources* sections, the database nam
  ** Select the resources from the Available Resources section and then click the right arrow to move them to the Selected Resources section.
 +
 Resource groups of SnapCenter for Microsoft Exchange Server cannot have more than 30 databases per Snapshot copy. If there are more than 30 databases in one resource group, a second Snapshot copy is created for the additional databases. Therefore, 2 sub jobs are created under the main backup job. For backups having secondary replication, while SnapMirror or SnapVault update is in progress, there could be scenarios where the update for both the sub-jobs overlap. The main backup job keeps on running forever even if the logs indicate that the job is completed.
-. On the Policies page, perform the following steps:
+. In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
@@ -77,7 +77,7 @@ In the Configure schedules for selected policies section, the selected policies 
 You must do this for each frequency listed in the policy. The configured schedules are listed in the *Applied Schedules* column in the Configure schedules for selected policies section.
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
 +

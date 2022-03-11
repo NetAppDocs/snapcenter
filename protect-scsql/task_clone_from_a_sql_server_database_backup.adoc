@@ -38,9 +38,9 @@ NOTE: Cloning of a backup of an instance is not supported.
 *Steps*
 
 . Select the database or resource group.
-. From the *Manage Copies* view page, select the backup either from primary or secondary (mirrored or vaulted) storage system.
+. From the Manage Copies view page, select the backup either from primary or secondary (mirrored or vaulted) storage system.
 . Select the backup, and then click *image:../media/clone_icon.gif[]*.
-. On the *Clone Options* page, perform the following actions:
+. In the Clone Options page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -70,7 +70,7 @@ Auto assign volume mount point under path: The mount point under a path allows y
 
 |===
 
-. On the *Logs* page, select one of the following options:
+. In the Logs page, select one of the following options:
 +
 |===
 | For this field...| Do this...
@@ -96,19 +96,19 @@ This point-in-time clone halts the clone of the transaction log entries that wer
 
 |===
 
-. On the *Script* page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
+. In the Script page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
 +
 The default script timeout is 60 seconds.
 
-. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
-For EMS, you can refer https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection[Manage EMS data collection]
+For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection[Manage EMS data collection]
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.

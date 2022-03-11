@@ -13,7 +13,7 @@ After the SnapCenter Plug-in for SQL Server primary storage is back online, you 
 
 *What you will need*
 
-* Place the SnapCenter Plug-in for SQL Server in *Maintenance* mode from the *Managed Hosts* page.
+* Place the SnapCenter Plug-in for SQL Server in *Maintenance* mode from the Managed Hosts page.
 * Disconnect the secondary storage from the host and connect from the primary storage.
 * To failback to the primary storage, ensure that the relationship direction remains the same as it was before the failover by performing the reverse resync operation.
 +
@@ -25,7 +25,7 @@ For more information see link:https://docs.netapp.com/us-en/ontap-sm-classic/onl
 
 *Steps*
 
-. In the *Settings* page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.
+. In the Settings page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.
 . Unselect *Enable Disaster Recovery*.
 . Click *Apply*.
 . Verify whether the DR job is enabled or not by clicking *Monitor* > *Jobs*.

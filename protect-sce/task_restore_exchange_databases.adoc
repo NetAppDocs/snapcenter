@@ -36,10 +36,10 @@ Plug-in for Exchange does not perform a full restore on a disk if the disk conta
 
 . On the left navigation pane, click *Resources* in the upper left corner of the Resource page.
 . Select the Exchange Server plug-in from the drop-down list.
-. On the Resources page, select *Database* from the View list.
+. In the Resources page, select *Database* from the View list.
 . Select the database from the list.
 . From the Manage Copies view, select *Backups*, from the Primary Backups table, and then click *image:../media/restore_icon.gif[restore icon]*.
-. On the Options page, select one of the following log backup options:
+. In the Options page, select one of the following log backup options:
 +
 |===
 | Option| Description
@@ -74,7 +74,7 @@ You can perform one of the following actions:
 *Best Practice:* You should not select this option.
 |===
 
-. On the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the restore operation, respectively.
+. In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the restore operation, respectively.
 +
 Restore prescript arguments include $Database and $ServerInstance.
 +
@@ -82,7 +82,7 @@ Restore postscript arguments include $Database, $ServerInstance, $BackupName, $L
 +
 You can run a script to update SNMP traps, automate alerts, send logs, and so on.
 
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email.
 

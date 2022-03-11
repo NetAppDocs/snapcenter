@@ -33,7 +33,7 @@ For information on managing hosts, see link:../admin/concept_manage_hosts.html[M
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the *Hosts* page do the following:
+. In the Hosts page do the following:
 +
 |===
 | For this field...| Do this...
@@ -103,7 +103,7 @@ NOTE: If the host is added with gMSA and if the gMSA has login and sys admin pri
 
 . Click *Submit*.
 . For SQL Plug-in, select the host to configure the log directory.
-.. Click *Configure log directory* and on the *Configure host log directory* page, click *Browse* and complete the following steps:
+.. Click *Configure log directory* and in the Configure host log directory page, click *Browse* and complete the following steps:
 +
 Only NetApp LUNs (drives) are listed for selection. SnapCenter backs up and replicates the host log directory as part of the backup operation.
 +

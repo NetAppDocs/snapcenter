@@ -21,9 +21,9 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the *Resources* page, select *Database* or *Instance* from the *View* drop-down list.
+. In the Resources page, select *Database* or *Instance* from the *View* drop-down list.
 . Select either the database or the instance from the list and click *Migrate*.
-. In the *Resources* page, perform the following actions:
+. In the Resources page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -53,7 +53,7 @@ Select *Delete copy of Migrated Database at Original Location* to delete copy of
 Optional: *RUN UPDATE STATISTICS on tables before detaching the database*.
 |===
 
-. In the *Verify* page, perform the following actions:
+. In the Verify page, perform the following actions:
 +
 |===
 | For this field...| Do this...

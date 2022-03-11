@@ -19,7 +19,7 @@ entries:
         url: /protect-sce/task_define_a_restore_strategy_for_exchange_databases.html
   - title: Install SnapCenter Plug-in for Microsoft Exchange Server
     entries:
-      - title: Install workflow
+      - title: Installation workflow of SnapCenter Plug-in for Microsoft Exchange Server
         url: /protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html
       - title: Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft Exchange Server
         url: /protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html
@@ -77,7 +77,7 @@ entries:
         url: /protect-sce/task_cancel_backup_operations_for_exchange_database.html
       - title: Remove Exchange backups using PowerShell cmdlets
         url: /protect-sce/task_remove_exchange_backups_using_powershell_cmdlets.html
-      - title: View Exchange backups on the Topology page
+      - title: View Exchange backups in the Topology page
         url: /protect-sce/task_view_exchange_backups_in_the_topology_page.html
   - title: Restore Exchange resources
     entries:

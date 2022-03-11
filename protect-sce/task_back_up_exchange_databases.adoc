@@ -25,9 +25,9 @@ If a database is not part of any resource group, you can back up the database or
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the *Microsoft Exchange Server plug-in* from the list.
-. On the Resources page, select either *Database*, or *Database Availability Group* from the *View* list.
+. In the Resources page, select either *Database*, or *Database Availability Group* from the *View* list.
 +
-On the Resources page, the image:../media/not_supported_icon.png[] icon indicates that the database is on non-NetApp storage.
+In the Resources page, the image:../media/not_supported_icon.png[] icon indicates that the database is on non-NetApp storage.
 +
 NOTE: In a DAG, If an active database copy is on a non-NetApp storage and at least one passive database copy resides on a NetApp storage, then you can protect the database.
 
@@ -39,11 +39,11 @@ Click *image:../media/filter_icon.gif[]*, and then select the host name and the 
   ... If the Database - Protect Resource wizard is displayed, continue to Step 3.
  ** If you want to back up a Database Availability Group, click on the Database Availability Group name.
 
-. If you want to specify a custom Snapshot copy name, on the Resources page, select the *Use custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
+. If you want to specify a custom Snapshot copy name, in the Resources page, select the *Use custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
 +
 For example, _customtext_policy_hostname_ or _resource_hostname_. By default, a timestamp is appended to the Snapshot copy name.
 
-. On the Policies page, perform the following steps:
+. In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
@@ -60,7 +60,7 @@ In the Configure schedules for selected policies section, the selected policies 
 Where, _policy_name_ is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the backup operation performed on the resource, select *Attach Job Report*.
 +
@@ -71,7 +71,7 @@ NOTE: For email notification, you must have specified the SMTP server details us
 The database topology page is displayed.
 
 . Click *Back up Now*.
-. On the Backup page, perform the following steps:
+. In the Backup page, perform the following steps:
  .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
