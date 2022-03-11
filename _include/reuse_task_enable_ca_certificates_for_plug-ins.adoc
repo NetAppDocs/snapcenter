@@ -24,6 +24,6 @@ The Managed Hosts tab host displays a padlock and the color of the padlock indic
 * *image:../media/enable_ca_good_icon.png[]* indicates that the CA certificate is successfully validated.
 
 * *image:../media/enable_ca_failed_icon.png[]* indicates that the CA certificate could not be validated.
-*  *image:../media/enable_ca_undefined_icon.png[]* indicates that the connection information could not be retrieved.
+* *image:../media/enable_ca_undefined_icon.png[]* indicates that the connection information could not be retrieved.
 +
 NOTE: When the status is yellow or green, the data protection operations completes successfully.
