@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing
 summary: 'You must install and set up SnapCenter Plug-in for Microsoft Windows if you want to protect Windows files that are not database files.'
 ---
-= Install SnapCenter Plug-in for Microsoft Windows
+= Installation workflow of SnapCenter Plug-in for Microsoft Windows
 :icons: font
 :imagesdir: ../media/
 

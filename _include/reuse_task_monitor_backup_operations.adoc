@@ -15,7 +15,7 @@ The following icons appear on the Jobs page and indicate the corresponding state
 
 . In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Jobs*.
-. On the Jobs page, perform the following steps:
+. In the Jobs page, perform the following steps:
  .. Click image:../media/filter_icon.gif[] to filter the list so that only backup operations are listed.
  .. Specify the start and end dates.
  .. From the *Type* drop-down list, select *Backup*.
@@ -25,6 +25,6 @@ The following icons appear on the Jobs page and indicate the corresponding state
 +
 NOTE: Though the backup job status displaysimage:../media/success_icon.gif[Completed icon], when you click on job details you might see that some of the child tasks of the backup operation are still in progress or marked with warning signs.
 
-. On the *Job Details* page, click *View logs*.
+. In the Job Details page, click *View logs*.
 +
 The *View logs* button displays the detailed logs for the selected operation.

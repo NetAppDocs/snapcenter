@@ -2,14 +2,14 @@
 permalink: protect-hana/concept_auto_discovery_of_resources_on_linux_host.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
-summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for SAP HANA Database plug-in, the SAP HANA databases on that Linux host are automatically discovered and displayed on the Resources page.'
+summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for SAP HANA Database plug-in, the SAP HANA databases on that Linux host are automatically discovered and displayed in the Resources page.'
 ---
 = Automatic discovery of resources on Linux host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for SAP HANA Database plug-in, the SAP HANA databases on that Linux host are automatically discovered and displayed on the Resources page.
+Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for SAP HANA Database plug-in, the SAP HANA databases on that Linux host are automatically discovered and displayed in the Resources page.
 
 Automatic discovery is supported for the following SAP HANA resources:
 

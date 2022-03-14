@@ -79,7 +79,7 @@ NOTE: You cannot create a LUN on a SnapCenter-created clone volume unless the cl
 +
 The Create Disk wizard opens.
 
-. On the LUN Name page, identify the LUN:
+. In the LUN Name page, identify the LUN:
 +
 |===
 | In this field... | Do this...
@@ -108,7 +108,7 @@ a|
 Optionally, enter descriptive text for the LUN.
 |===
 
-. On the Disk Type page, select the disk type:
+. In the Disk Type page, select the disk type:
 +
 |===
 | Select... | If...
@@ -133,7 +133,7 @@ The LUN is shared by hosts in a Windows Server failover cluster that uses CSV.
 Enter the name of the cluster resource group in the *Resource Group* field. Make sure that the host on which you are creating the disk is the owner of the cluster group.
 |===
 
-. On the Drive Properties page, specify the drive properties:
+. In the Drive Properties page, specify the drive properties:
 +
 |===
 | Property | Description
@@ -182,7 +182,7 @@ MBR partitions might cause misalignment issues in Windows Server failover cluste
 NOTE: Unified extensible firmware interface (UEFI) partition disks are not supported.
 |===
 
-. On the Map LUN page, select the iSCSI or FC initiator on the host:
+. In the Map LUN page, select the iSCSI or FC initiator on the host:
 +
 |===
 | In this field... | Do this...
@@ -201,7 +201,7 @@ Select *Fibre Channel* or *iSCSI*, and then select the initiator on the host.
 You can select multiple FC initiators if you are using FC with multipath I/O (MPIO).
 |===
 
-. On the Group Type page, specify whether you want to map an existing igroup to the LUN, or create a new igroup:
+. In the Group Type page, specify whether you want to map an existing igroup to the LUN, or create a new igroup:
 +
 |===
 | Select... | If...
@@ -218,7 +218,7 @@ You want to specify an existing igroup for the selected initiators, or create a 
 Type the igroup name in the *igroup name* field. Type the first few letters of the existing igroup name to autocomplete the field.
 |===
 
-. On the Summary page, review your selections and then click *Finish*.
+. In the Summary page, review your selections and then click *Finish*.
 +
 SnapCenter creates the LUN and connects it to the specified drive or drive path on the host.
 
@@ -279,7 +279,7 @@ You can use the Connect Disk wizard to connect an existing LUN to a host, or to 
 +
 The Connect Disk wizard opens.
 
-. On the LUN Name page, identify the LUN to connect to:
+. In the LUN Name page, identify the LUN to connect to:
 +
 |===
 | In this field...| Do this...
@@ -308,7 +308,7 @@ a|
 Optionally, enter descriptive text for the LUN.
 |===
 
-. On the Disk Type page, select the disk type:
+. In the Disk Type page, select the disk type:
 +
 |===
 | Select...| If...
@@ -331,7 +331,7 @@ The LUN is shared by hosts in a Windows Server failover cluster that uses CSV.
 Make sure that the host on which you are connecting to the disk is the owner of the cluster group.
 |===
 
-. On the Drive Properties page, specify the drive properties:
+. In the Drive Properties page, specify the drive properties:
 +
 |===
 | Property| Description
@@ -358,7 +358,7 @@ a|
 Choose this option if you prefer to mount the disk manually in Windows.
 |===
 
-. On the Map LUN page, select the iSCSI or FC initiator on the host:
+. In the Map LUN page, select the iSCSI or FC initiator on the host:
 +
 |===
 | In this field...| Do this...
@@ -377,7 +377,7 @@ Select *Fibre Channel* or *iSCSI*, and then select the initiator on the host.
 You can select multiple FC initiators if you are using FC with MPIO.
 |===
 
-. On the Group Type page, specify whether you want to map an existing igroup to the LUN or create a new igroup:
+. In the Group Type page, specify whether you want to map an existing igroup to the LUN or create a new igroup:
 +
 |===
 | Select...| If...
@@ -394,7 +394,7 @@ You want to specify an existing igroup for the selected initiators, or create a 
 Type the igroup name in the *igroup name* field. Type the first few letters of the existing igroup name to automatically complete the field.
 |===
 
-. On the Summary page, review your selections and click *Finish*.
+. In the Summary page, review your selections and click *Finish*.
 +
 SnapCenter connects the LUN to the specified drive or drive path on the host.
 

@@ -24,7 +24,7 @@ The default restore operation only restores storage objects. Restore operations 
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the *Resources* page, filter resources from the *View* drop-down list based on resource type.
+. In the Resources page, filter resources from the *View* drop-down list based on resource type.
 +
 The resources are displayed along with information such as type, host or cluster name, associated resource groups and policies, and status.
 +
@@ -43,7 +43,7 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the *Restore Scope* page, select either *Complete Resource* or *File Level*.
+. In the Restore Scope page, select either *Complete Resource* or *File Level*.
  .. If you selected *Complete Resource*, the resource backup is restored.
 +
 If the resource contains volumes or qtrees as Storage Footprint, then newer Snapshot copies on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
@@ -54,7 +54,7 @@ If the resource contains volumes or qtrees as Storage Footprint, then newer Snap
   +
 NOTE: If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
 
-. In the *Recovery Type* page, perform the following steps: select option to apply logs. Make sure your plugin supports All logs and Logs until restore type before selecting it.
+. In the Recovery Type page, perform the following steps: select option to apply logs. Make sure your plugin supports All logs and Logs until restore type before selecting it.
 +
 |===
 | If you want to...| Do this...
@@ -73,9 +73,9 @@ a|
 Select *None*.
 |===
 
-. In the *Pre ops* page, enter pre restore and unmount commands to run before performing a restore job.
-. In the *Post ops* page, enter mount and post restore commands to run after performing a restore job.
-. In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
+. In the Post ops page, enter mount and post restore commands to run after performing a restore job.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. SMTP must also be configured in the *Settings* > *Global Settings* page.
 

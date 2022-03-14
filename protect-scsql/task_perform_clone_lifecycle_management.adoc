@@ -24,9 +24,9 @@ NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedi
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the *Resources* page, select either *Database* or *Resource Group* from the *View* list.
+. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
 . Select the resource group or database, and then click *Clone Lifecycle*.
-. In the *Options* page, perform the following actions:
+. In the Options page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -53,23 +53,24 @@ a|
 Choose whether to automatically assign a mount point or volume mount point under a path.     Choosing to auto assign a volume mount point under a path enables you to provide a specific directory. The mount points will be created within that directory. Before you choose this option, you must ensure that the directory is empty. If there is a database in the directory, the database will be in an invalid state after the mount operation.
 |===
 
-. In the *Location* page, select a storage location to create a clone.
-. In the *Script* page, enter the path and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
+. In the Location page, select a storage location to create a clone.
+. In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
 +
 The default script timeout is 60 seconds.
 
-. In the *Schedule* page, perform one of the following actions:
+. In the Schedule page, perform one of the following actions:
  ** Select *Run now* if you want to execute the clone job immediately.
  ** Select *Configure schedule* when you want to determine how frequently the clone operation should occur, when the clone schedule should start, on which day the clone operation should occur, when the schedule should expire, and whether the clones have to be deleted after the schedule expires.
-. In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
 +
-For EMS, you can refer https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection[Manage EMS data collection]
+For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html[Manage EMS data collection]
 
 . Review the summary, and then click *Finish*.
 

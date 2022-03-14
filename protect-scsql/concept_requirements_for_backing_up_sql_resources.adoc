@@ -14,6 +14,6 @@ Before you backup a SQL resource, you must ensure that several requirements are 
 * You must have migrated a resource from a non-NetApp storage system to a NetApp storage system.
 * You must have created a backup policy.
 * If you want to back up a resource that has a SnapMirror relationship to a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
-* The backup operation initiated by an active directory (AD) user fails if the SQL instance credential is not assigned to the AD user or group. You must assign the SQL instance credential to AD user or group from the *Settings* > *User Access page*.
+* The backup operation initiated by an active directory (AD) user fails if the SQL instance credential is not assigned to the AD user or group. You must assign the SQL instance credential to AD user or group from the *Settings* > *User Access* page.
 * You must have created a resource group with a policy attached.
 * If a resource group has multiple databases from different hosts, the backup operation on some hosts might be triggered late because of network issues. You should configure the value of FMaxRetryForUninitializedHosts in web.config by using the Set-SmConfigSettings PS cmdlet.

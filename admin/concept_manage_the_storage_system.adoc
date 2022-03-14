@@ -23,7 +23,7 @@ You can modify storage connections for an individual user or for a group. If you
 *Steps*
 
 . In the left navigation pane, click *Storage Systems*.
-. On the Storage Systems page, from the *Type* drop-down perform one of the following actions:
+. In the Storage Systems page, from the *Type* drop-down perform one of the following actions:
 +
 |===
 | Select... | Steps...
@@ -33,10 +33,10 @@ ONTAP SVMs
 a|
 To view all the storage virtual machines (SVMs) that were added, and to modify the required SVM configuration.
 
- . On the Storage Connections page, click the appropriate SVM name.
+ . In the Storage Connections page, click the appropriate SVM name.
  . Perform one of the following actions:
-  * If the SVM is not part of any cluster, on the Modify Storage System page, modify the configurations such as user name, password, EMS and AutoSupport settings, platform, protocol, port, timeout, and preferred IP.
-  * If the SVM is part of a cluster, then on the Modify Storage System page, select *Manage SVM Independently* and modify the configurations such as user name, password, EMS and AutoSupport settings, platform, protocol, port, timeout, and preferred IP.
+  * If the SVM is not part of any cluster, in the Modify Storage System page, modify the configurations such as user name, password, EMS and AutoSupport settings, platform, protocol, port, timeout, and preferred IP.
+  * If the SVM is part of a cluster, then in the Modify Storage System page, select *Manage SVM Independently* and modify the configurations such as user name, password, EMS and AutoSupport settings, platform, protocol, port, timeout, and preferred IP.
 +
 After modifying the SVM to be managed independently, if you decide to manage it through cluster, you should delete the SVM and then click *Rediscover*. The SVM will be added to the ONTAP cluster.
 +
@@ -47,8 +47,8 @@ ONTAP Clusters
 a|
 To view all the clusters that were added and modify the required cluster configuration.
 
- . On the Storage Connections page, click the cluster name.
- . On the Modify Storage System page, click the edit icon next to Username and modify the user name and password.
+ . In the Storage Connections page, click the cluster name.
+ . In the Modify Storage System page, click the edit icon next to Username and modify the user name and password.
  . Select or clear the EMS and AutoSupport settings.
  . Click *More Options* and modify other configurations such as platform, protocol, port, timeout, and preferred IP.
 |===

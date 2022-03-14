@@ -15,8 +15,8 @@ You should configure the CA client certificate for LDAPS on the SnapCenter Serve
 *Steps*
 
 . Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
-. In the *Add or Remove Snap-ins* window, select *Certificates* and then click *Add*.
-. In the *Certificates snap-in* window, select the *Computer account* option, and then click *Finish*.
+. In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
+. In the Certificates snap-in window, select the *Computer account* option, and then click *Finish*.
 . Click *Console Root* > *Certificates – Local Computer* > *Trusted Root Certification Authorities* > *Certificates*.
 . Right-click on the folder “Trusted Root Certification Authorities”, and then select *All Tasks* > *Import* to start the import wizard.
 . Complete the wizard, as follows:

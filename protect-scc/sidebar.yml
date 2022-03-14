@@ -39,7 +39,7 @@ entries:
         url: /protect-scc/reference_custom_plugin_in_snapcenter.html
 - title: Prepare to install SnapCenter Custom Plug-ins
   entries:
-  - title: Install workflow for SnapCenter Custom Plug-ins
+  - title: Installation workflow of SnapCenter Custom Plug-ins
     url: /protect-scc/task_install_snapcenter_custom_plug_in.html
   - title: Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
     url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"

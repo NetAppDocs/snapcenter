@@ -32,7 +32,7 @@ The database topology page is displayed.
 
 . From the Manage Copies view, select *Backups* from either the primary or the secondary (mirrored or replicated) storage systems.
 . Select the backup from the table, and then click *image:../media/restore_icon.gif[restore icon]*.
-. On the Restore Scope page, perform the following tasks:
+. In the Restore Scope page, perform the following tasks:
  .. If you have selected a backup of a database in a Real Application Clusters (RAC) environment, select the RAC node.
 //Included this for BURT 1376783 for 4.5
  .. When you select a mirrored or vault data:
@@ -90,7 +90,7 @@ The various states of a database from higher to lower are open, mounted, started
 If a database is in the open state, and for restore the database needs to be in the mounted state, then the database state is changed only if you select this check box.
 
  .. Select *Force in place restore* if you want to perform in-place restore in the scenarios where new datafiles are added after backup or when LUNs are added, deleted, or re-created to an LVM disk group.
-. On the Recovery Scope page, perform the following actions:
+. In the Recovery Scope page, perform the following actions:
 +
 |===
 | If you... | Do this...
@@ -132,7 +132,7 @@ If you are recovering a RAC database with the open database option selected, onl
 +
 NOTE: Recovery is not supported for Data Guard standby and Active Data Guard standby databases.
 
-. On the PreOps page, enter the path and the arguments of the prescript that you want to run before the restore operation.
+. In the PreOps page, enter the path and the arguments of the prescript that you want to run before the restore operation.
 +
 You must store the prescripts either in the _/var/opt/snapcenter/spl/scripts_ path or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
 +
@@ -140,7 +140,7 @@ You can also specify the script timeout value. The default value is 60 seconds.
 +
 SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript. link:../protect-sco/predefined-environment-variables-prescript-postscript-restore.html[Learn more^]
 
-. On the PostOps page, perform the following steps:
+. In the PostOps page, perform the following steps:
  .. Enter the path and the arguments of the postscript that you want to run after the restore operation.
 +
 You must store the postscripts either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.
@@ -156,7 +156,7 @@ In a RAC setup, only the RAC instance that is used for recovery is opened after 
 +
 NOTE: After restoring a user tablespace with control files, a system tablespace with or without control files, or a PDB with or without control files, only the state of the PDB related to the restore operation is changed to the original state. The state of the other PDBs that were not used for restore are not changed to the original state because the state of those PDBs were not saved. You must manually change the state of the PDBs that were not used for restore.
 
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, you must select *Attach Job Report*.
 +

@@ -29,7 +29,7 @@ a|
 
  .. After initiating the backup operation, click *image:../media/activity_pane_icon.gif[]* on the Activity pane to view the five most recent operations.
  .. Select the operation.
- .. On the Job Details page, click *Cancel Job*.
+ .. In the Job Details page, click *Cancel Job*.
 
 +
 |===

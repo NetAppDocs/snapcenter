@@ -21,7 +21,7 @@ The application volume topology page is displayed.
 
 . From the Manage Copies view, select the backups either from Local copies (primary), Mirror copies (secondary), or Vault copies (secondary).
 . Select the backup from the table, and then click *image:../media/clone_icon.gif[clone icon]*.
-. On the Location page, perform the following actions:
+. In the Location page, perform the following actions:
 +
 |===
 | For this field... | Do this...
@@ -35,9 +35,9 @@ a|
 Specify the resource name.
 |===
 
-. On the Scripts page, specify the names of the scripts to be executed before cloning, commands to mount a file system, and names of the scripts to be executed after cloning.
+. In the Scripts page, specify the names of the scripts to be executed before cloning, commands to mount a file system, and names of the scripts to be executed after cloning.
 
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +

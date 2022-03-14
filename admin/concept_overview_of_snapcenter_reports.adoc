@@ -101,7 +101,7 @@ If you want to have regular SnapCenter data protection job updates sent to yours
 
 *What you will need*
 
-You must have configured your SMTP server on the Global Settings page under Settings.
+You must have configured your SMTP server in the Global Settings page under Settings.
 
 *Steps*
 
