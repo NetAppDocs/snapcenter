@@ -79,7 +79,7 @@ Enter the password used for authentication.
 
 . Click *OK*.
 +
-After you finish setting up credentials, you might want to assign credential maintenance to a user or group of users on the *User and Access* page.
+After you finish setting up credentials, you might want to assign credential maintenance to a user or group of users on the User and Access page.
 
 == Configure gMSA on Windows Server 2012 or later
 

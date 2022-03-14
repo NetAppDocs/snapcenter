@@ -24,8 +24,8 @@ image::../media/sco_resourcegroup_policy.gif[]
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the Resources page, click *New Resource Group*.
-. On the Name page, perform the following actions:
+. In the Resources page, click *New Resource Group*.
+. In the Name page, perform the following actions:
 +
 |===
 | For this field... | Do this...
@@ -55,7 +55,7 @@ a|
 Specify the destinations of the archive log files that you do not want to back up.
 |===
 
-. On the Resources page, select an Oracle database host name from the *Host* drop-down list.
+. In the Resources page, select an Oracle database host name from the *Host* drop-down list.
 +
 NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
 
@@ -63,7 +63,7 @@ NOTE: The resources are listed in the Available Resources section only if the re
 +
 NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
 
-. On the Policies page, perform the following steps:
+. In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[].
@@ -102,7 +102,7 @@ Select *Run scheduled verification* and then select the schedule type from the d
  .. Click *OK*.
 +
 The configured verification schedules are listed in the Applied Schedules column.
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
 +

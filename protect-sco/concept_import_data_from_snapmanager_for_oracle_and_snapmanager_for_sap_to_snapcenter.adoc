@@ -190,7 +190,7 @@ Before you import data to SnapCenter, you must perform certain tasks to run the 
 . Using SnapCenter, add the database host and install SnapCenter Plug-ins Package for Linux.
 . Using SnapCenter, set up the connections for the storage virtual machines (SVMs) used by the databases on the host.
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the Resources page, ensure that the database to be imported is discovered and displayed.
+. In the Resources page, ensure that the database to be imported is discovered and displayed.
 +
 When you want to run the import tool, the database must be accessible or else the resource group creation fails.
 +

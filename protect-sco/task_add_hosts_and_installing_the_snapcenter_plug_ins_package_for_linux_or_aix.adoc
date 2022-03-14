@@ -24,7 +24,7 @@ NOTE: You cannot add a SnapCenter Server as a plug-in host to another SnapCenter
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the Hosts page, perform the following actions:
+. In the Hosts page, perform the following actions:
 +
 |===
 | For this field... | Do this...

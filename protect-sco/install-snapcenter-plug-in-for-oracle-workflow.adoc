@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up the SnapCenter Plug-in for Oracle Database if you want to protect Oracle databases.'
 ---
-= Install workflow of Plug-in for Oracle Database
+= Installation workflow of SnapCenter Plug-in for Oracle Database
 :icons: font
 :imagesdir: ../media/
 

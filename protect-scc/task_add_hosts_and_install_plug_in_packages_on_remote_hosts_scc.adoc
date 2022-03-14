@@ -30,7 +30,7 @@ If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all o
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the *Hosts* page, perform the following actions:
+. In the Hosts page, perform the following actions:
 +
 |===
 | For this field...| Do this...

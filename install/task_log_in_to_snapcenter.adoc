@@ -62,7 +62,7 @@ Your current user and associated role are shown in the upper right of SnapCenter
 
 *Results*
 
-The *Dashboard* page is displayed.
+The Dashboard page is displayed.
 
 If the logging fails with the error that site cannot be reached, you should map the SSL certificate to SnapCenter. https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FSnapCenter_will_not_open_with_error_%2522This_site_can%2527t_be_reached%2522[Learn more^]
 

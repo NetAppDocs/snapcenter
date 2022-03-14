@@ -4,7 +4,7 @@ You should be logged in as the SnapCenter Admin or job owner to cancel restore o
 
 *About this task*
 
-* You can cancel a queued restore operation from either the Monitor page or the Activity pane.
+* You can cancel a queued restore operation from either the *Monitor* page or the *Activity* pane.
 * You cannot cancel a running restore operation.
 * You can use the SnapCenter GUI, PowerShell cmdlets, or CLI commands to cancel the queued restore operations.
 * The *Cancel Job* button is disabled for restore operations that cannot be canceled.

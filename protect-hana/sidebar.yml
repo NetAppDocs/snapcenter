@@ -47,7 +47,7 @@ entries:
             url: /protect-hana/reference_types_of_recovery_operations_supported_for_sap_hana_database.html
   - title: Prepare to install the SnapCenter Plug-in for SAP HANA Database
     entries:
-      - title: Install workflow for SnapCenter Plug-in for SAP HANA Database
+      - title: Installation workflow of SnapCenter Plug-in for SAP HANA Database
         url: /protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
       - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
         url: /protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html

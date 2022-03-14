@@ -29,7 +29,7 @@ NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type vol
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the *Resources* page, either select the resource or resource group from the *View* drop-down list.
+. In the Resources page, either select the resource or resource group from the *View* drop-down list.
 . Select the resource either from the resource details view or from the resource group details view.
 +
 If the resource is protected, the topology page of the selected resource is displayed.
@@ -40,7 +40,7 @@ The Summary Card section displays the total number of backups and clones.
 +
 Clicking the refresh button starts a query of the storage to display an accurate count.
 
-. In the *Manage Copies* view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
+. In the Manage Copies view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
 +
 The details of the backups and clones are displayed in a table format.
 

@@ -24,7 +24,7 @@ For information about clone split operation limitations, see http://docs.netapp.
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the *Resources* page, filter resources from the *View* drop-down list based on resource type.
+. In the Resources page, filter resources from the *View* drop-down list based on resource type.
 +
 The resources are displayed along with information such as type, host, associated resource groups and policies, and status.
 
@@ -36,7 +36,7 @@ The resource or resource group topology page is displayed.
 
 . From the Manage Copies view, select *Backups* either from the primary or secondary (mirrored or vaulted) storage systems.
 . Select the data backup from the table, and then click image:../media/clone_icon.gif[clone icon].
-. On the *Location* page, perform the following actions:
+. In the Location page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -66,7 +66,7 @@ If the resource selected is a LUN and you are cloning from a secondary backup, t
 +
 NOTE: Before cloning, you must ensure that the iSCSI initiator or the FCP is present and are configured and logged into alternate hosts.
 
-. On the *Scripts* page, perform the following steps:
+. In the Scripts page, perform the following steps:
 [NOTE]
 The scripts are run on the plug-in host.
 
@@ -81,7 +81,7 @@ Example for NFS:
 +
   mount VSERVER_DATA_IP:%{VOLUME_NAME_Clone} /mnt
 
-. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email.
 

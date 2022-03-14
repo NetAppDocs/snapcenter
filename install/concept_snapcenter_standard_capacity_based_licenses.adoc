@@ -112,7 +112,7 @@ If you are using a NetApp license file (NLF) to add your license, you should kno
 
 *About this task*
 
-You can perform the following tasks on the Settings page:
+You can perform the following tasks in the Settings page:
 
 * Add a license.
 * View license details to quickly locate information about each license.

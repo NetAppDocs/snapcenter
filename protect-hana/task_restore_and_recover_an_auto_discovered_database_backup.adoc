@@ -24,7 +24,7 @@ You can use SnapCenter to restore and recover data from one or more backups.
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the *Resources* page, filter resources from the *View* drop-down list based on resource type.
+. In the Resources page, filter resources from the *View* drop-down list based on resource type.
 +
 The resources are displayed along with type, host, associated resource groups and policies, and status.
 +
@@ -41,7 +41,7 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the *Restore Scope* page, select *Complete Resource* to restore the configured data volumes of the SAP HANA database.
+. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the SAP HANA database.
 +
 NOTE: You can select either *Complete Resource* (with or without *Volume Revert*), or *Tenant Database*.
 +
@@ -61,7 +61,7 @@ Ensure to stop the tenant database before performing the restore operation.
 +
 If you select *Tenant Database* option, you must use HANA studio or use HANA recovery scripts external to SnapCenter to perform recovery operation.
 
-. On the *Recovery scope* page, select one of the following options:
+. In the Recovery scope page, select one of the following options:
 +
 |===
 | If you...| Do this...
@@ -105,19 +105,19 @@ Select *Recover to specified data backup*.
 a|
 Do not want to recover
 a|
-Choose *No recovery*.    You must perform the recovery operation manually from the HANA studio.
+Select *No recovery*.    You must perform the recovery operation manually from the HANA studio.
 |===
 You can recover only those backups that are taken after upgrading to SnapCenter 4.3, provided both the host and the plug-in are upgraded to SnapCenter 4.3, and the backups selected for restore are taken after the resource is converted or discovered as auto discovered resource.
 
-. On the *Pre ops* page, enter pre restore and unmount commands to run before performing a restore job.
+. In the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
 +
 Unmount commands are not available for auto discovered resources.
 
-. On the *Post ops* page, enter mount and post restore commands to run after performing a restore job.
+. In the Post ops page, enter mount and post restore commands to run after performing a restore job.
 +
 Mount commands are not available for auto discovered resources.
 
-. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses and the subject of the email. SMTP must also be configured on the *Settings* > *Global Settings* page.
 

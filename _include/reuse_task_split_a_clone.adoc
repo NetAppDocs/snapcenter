@@ -15,7 +15,7 @@ After splitting clone2, you can perform the clone split operation on clone1 beca
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the *Resources* page, select the appropriate option from the View list:
+. In the Resources page, select the appropriate option from the View list:
 +
 |===
 | Option| Description

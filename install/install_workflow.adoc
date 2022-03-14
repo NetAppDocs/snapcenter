@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, snapcenter server, license, storage system, RBAC, provision storage, workflow
 summary: 'Workflow image shows the steps to install and configure SnapCenter Server.'
 ---
-= Install workflow
+= Installation workflow
 :icons: font
 :imagesdir: ../media/
 

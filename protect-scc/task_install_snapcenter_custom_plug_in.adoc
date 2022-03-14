@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up SnapCenter Custom Plug-ins if you want to protect custom plug-in resources.'
 ---
-= Install SnapCenter Custom Plug-ins
+= Installation workflow of SnapCenter Custom Plug-ins
 :icons: font
 :imagesdir: ../media/
 

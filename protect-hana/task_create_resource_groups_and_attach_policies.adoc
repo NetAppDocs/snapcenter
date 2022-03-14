@@ -18,8 +18,8 @@ To create SAP HANA system replication backups, it is recommended to add all the 
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. On the *Resources* page, click *New Resource Group*.
-. On the *Name* page, perform the following actions:
+. In the Resources page, click *New Resource Group*.
+. In the Name page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -45,12 +45,12 @@ Select this check box, and enter a custom name format that you want to use for t
 For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
 |===
 
-. On the *Resources* page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
+. In the Resources page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
 +
 This helps to filter information on the screen.
 
 . Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
-. On the *Application Settings* page, do the following:
+. In the Application Settings page, do the following:
 .. Click the *Backups* arrow to set additional backup options:
 +
 Enable consistency group backup and perform the following tasks:
@@ -156,7 +156,7 @@ To enter the command to be executed on the host to create Snapshot copies.
 a|
 Select *Other*, and then enter the command to be executed on the host to create a Snapshot copy.
 |===
-. On the *Policies* page, perform the following steps:
+. In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
@@ -171,7 +171,7 @@ Where, policy_name is the name of the policy that you have selected.
 The configured schedules are listed in the *Applied Schedules* column.
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
-. On the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. The SMTP server must be configured in *Settings* > *Global Settings*.
 

@@ -23,7 +23,7 @@ You can then click *image:../media/filter_icon.gif[]* to close the filter pane.
 +
 The Database-Protect page is displayed.
 
-. On the Resource page, perform the following actions:
+. In the Resource page, perform the following actions:
 +
 |===
 | For this field... | Do this...
@@ -40,7 +40,7 @@ a|
 Specify the destinations of the archive log files that you do not want to back up.
 |===
 
-. On the Policies page, perform the following steps:
+. In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
 NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
@@ -53,7 +53,7 @@ In the Configure schedules for selected policies section, the selected policies 
 _policy_name_ is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
-. On the Verification page, perform the following steps:
+. In the Verification page, perform the following steps:
  .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
  .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column to configure the verification schedule for all of the schedule types of the policy.
  .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
@@ -78,7 +78,7 @@ NOTE: In a Flex ASM setup, you cannot perform verification operation on Leaf nod
  .. Click *OK*.
 +
 The configured verification schedules are listed in the Applied Schedules column.
-. On the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the backup operation performed on the resource, and then select *Attach Job Report*.
 +
@@ -89,7 +89,7 @@ NOTE: For email notification, you must have specified the SMTP server details us
 The database topology page is displayed.
 
 . Click *Back up Now*.
-. On the Backup page, perform the following steps:
+. In the Backup page, perform the following steps:
  .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.

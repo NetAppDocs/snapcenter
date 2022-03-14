@@ -32,7 +32,7 @@ link:../protect-hana/task_configure_gMSA_on_windows_server_2012_or_later.html[Co
 . In the left navigation pane, click *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
 . Click *Add*.
-. On the *Hosts* page, perform the following actions:
+. In the Hosts page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -76,6 +76,7 @@ a|
 Either retain the default port number or specify the port number.    The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
 [NOTE]
  If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+
 a|
 Installation Path
 a|
@@ -96,8 +97,11 @@ For Windows host, select this check box if you want to use group Managed Service
 [NOTE]
 
 Provide the gMSA name in the following format: domainName\accountName$.
+
 [NOTE]
+
 gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
+
 |===
 
 . Click *Submit*.
