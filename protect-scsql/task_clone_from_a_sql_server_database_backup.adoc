@@ -108,7 +108,7 @@ You must also specify the sender and receiver email addresses, and the subject o
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
-For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection[Manage EMS data collection]
+For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html[Manage EMS data collection]
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
