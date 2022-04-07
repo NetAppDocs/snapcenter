@@ -12,7 +12,7 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
 
 |===
-| All-access commands: Minimum privileges required for ONTAP 8.2._x_ and later
+| All-access commands: Minimum privileges required for ONTAP 8.3.0 and later
 
 a|
 event generate-autosupport-log
@@ -173,7 +173,7 @@ vserver show
 |===
 
 |===
-| Read-only commands: Minimum privileges required for ONTAP 8.2._x_ and later
+| Read-only commands: Minimum privileges required for ONTAP 8.3.0 and later
 
 a|
 network interface

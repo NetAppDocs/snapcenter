@@ -21,9 +21,10 @@ link:task_configure_gMSA_on_windows_server_2012_or_later_for_exchange_server.htm
 
 *About this task*
 
-You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
-
-You can add a host and install plug-in packages either for an individual host or a cluster. If you are installing plug-ins on a cluster (Exchange DAG), they are installed on all of the nodes of the cluster even if some of nodes do not have databases on NetApp LUNs.
+* You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+* You can add a host and install plug-in packages either for an individual host or a cluster.
+* If an exchange node is part of a DAG, you cannot add this node into the SnapCenter Server.
+* If you are installing plug-ins on a cluster (Exchange DAG), they are installed on all of the nodes of the cluster even if some of nodes do not have databases on NetApp LUNs.
 
 Beginning with SnapCenter 4.6, SCE supports multitenancy and you can add a host using the following methods:
 
