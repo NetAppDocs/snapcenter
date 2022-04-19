@@ -39,6 +39,6 @@ If data from other SQL host servers resides on the same volume, this data cannot
 
 *Find more information*
 
-link:task_back_up_resources_using_powershell_cmdlets.html[Back up resources using PowerShell cmdlets]
+link:task_back_up_resources_using_powershell_cmdlets_for_sql.html[Back up resources using PowerShell cmdlets]
 
 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]
