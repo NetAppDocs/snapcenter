@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'
 ---
-= Minimum ONTAP privileges required
+= Minimum ONTAP privileges required for SAP HANA plug-in
 :icons: font
 :imagesdir: ../media/
 

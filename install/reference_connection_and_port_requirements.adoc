@@ -118,3 +118,5 @@ See the Microsoft documentation to identify the ports that should be opened in t
 
 It is necessary to open the Microsoft required ports on the domain controller so that the SnapCenter Server, Plug-in hosts, or other Windows client can authenticate the users.
 |===
+
+To modify the port details, see https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html#modify-plug-in-hosts [Modify plug-in hosts^].

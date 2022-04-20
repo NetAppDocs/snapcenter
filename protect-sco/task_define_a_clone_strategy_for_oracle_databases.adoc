@@ -23,7 +23,7 @@ SnapCenter supports cloning of different types of backups of Oracle databases.
 * Online data backups, online full backups, offline mount backups, and offline shutdown backups in a Real Application Clusters (RAC) configuration
 * Online data backups, online full backups, offline mount backups, and offline shutdown backups in an Automatic Storage Management (ASM) configuration
 +
-IMPORTANT: Oracle ASM configuration is not supported if user_friendly_names option in the multipath configuration file is set to yes and aliases or symbolic links are defined for the Oracle ASM disks using the udev rules file.
+IMPORTANT: SAN configurations are not supported if user_friendly_names option in the multipath configuration file is set to yes.  
 
 NOTE: Cloning of archive log backups is not supported.
 
