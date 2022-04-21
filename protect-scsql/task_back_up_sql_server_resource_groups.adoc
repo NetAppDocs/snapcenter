@@ -37,7 +37,7 @@ link:task_create_backup_policies_for_sql_server_databases.html[Create backup pol
 
 link:task_create_resource_groups_and_attach_policies_for_sql_server.html[Create resource groups and attach policies for SQL Server]
 
-link:task_back_up_resources_using_powershell_cmdlets.html[Back up resources using PowerShell cmdlets]
+link:task_back_up_resources_using_powershell_cmdlets_for_sql.html[Back up resources using PowerShell cmdlets]
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Backup operations fails with MySQL connection error because of the delay in the TCP_TIMEOUT]
 
