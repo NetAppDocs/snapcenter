@@ -18,7 +18,7 @@ You must use the SnapCenter *Add Host* page to add hosts and install the plug-in
 * You should ensure that the message queueing service is in running state.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
-link:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL^]
+link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL^]
 
 *About this task*
 

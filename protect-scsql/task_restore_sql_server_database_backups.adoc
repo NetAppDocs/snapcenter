@@ -130,6 +130,6 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 *Find more information*
 
-link:task_restore_and_recover_resources_using_powershell_cmdlets.html[Restore and recover resources using PowerShell cmdlets]
+link:task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html[Restore and recover resources using PowerShell cmdlets]
 
 link:task_restore_a_sql_server_database_from_secondary_storage.html[Restore an SQL Server database from secondary storage]

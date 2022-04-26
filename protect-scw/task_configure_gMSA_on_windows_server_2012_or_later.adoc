@@ -1,0 +1,11 @@
+---
+permalink: protect-scw/task_configure_gMSA_on_windows_server_2012_or_later.html
+sidebar: sidebar
+keywords:
+summary: 'Windows Server 2012 or later enables you to create a group Managed Service Account \(gMSA\) that provides automated service account password management from a managed domain account.'
+---
+= Configure gMSA on Windows Server 2012 or later
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/reuse_task_configure_gMSA_on_windows_server_2012_or_later.adoc[]

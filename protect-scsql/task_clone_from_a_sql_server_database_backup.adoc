@@ -121,7 +121,7 @@ After the clone is created, you should never rename it.
 
 link:reference_back_up_sql_server_database_or_instance_or_availability_group.html[Back up SQL Server database, or instance, or availability group]
 
-link:task_clone_backups_using_powershell_cmdlets.html[Clone backups using PowerShell cmdlets]
+link:task_clone_backups_using_powershell_cmdlets_for_sql.html[Clone backups using PowerShell cmdlets]
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Clone operation might fail or take longer time to complete with default TCP_TIMEOUT value]
 
