@@ -17,7 +17,7 @@ Automatic discovery is not supported for certain HANA instances. You must add th
 
 * For SAP HANA system replication, it is recommended to add all the resources of that HANA system into one resource group and take a resource group backup. This ensures a seamless backup during takeover-failback mode.
 
-link:protect-hana/task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].
+link:task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].
 
 *About this task*
 
