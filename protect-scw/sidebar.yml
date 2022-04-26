@@ -27,6 +27,8 @@ entries:
         url: /protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html
       - title: Installation requirements for SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html
+      - title: Configure gMSA on Windows Server 2012 or later
+        url: /protect-scw/task_configure_gMSA_on_windows_server_2012_or_later.html
       - title: Add hosts and install SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html
       - title: Install SnapCenter Plug-in for Microsoft Windows on multiple remote hosts using PowerShell cmdlets

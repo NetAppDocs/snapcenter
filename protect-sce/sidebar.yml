@@ -25,6 +25,8 @@ entries:
         url: /protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html
       - title: Set up credentials for SnapCenter Plug-in for Windows
         url: /protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html
+      - title: Configure gMSA on Windows Server 2012 or later
+        url: /protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html
       - title: Add hosts and install Plug-in for Exchange
         url: /protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
       - title: Install Plug-in for Exchange from the SnapCenter Server host using PowerShell cmdlets
