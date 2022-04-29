@@ -12,69 +12,107 @@ summary: 'Describes the REST APIs workflows supported for Oracle database'
 Oracle database uses REST APIs to perform the following operations:
 
 == Credentials
+You can use these API calls to perform the following:
 
-* Register the credential with SnapCenter Server
-* Retrieve credential registered with SnapCenter Server
-* Retrieve credential by name
-* Modify credential
-* Delete credential
+* register the credential with SnapCenter Server
+* retrieve credential registered with SnapCenter Server
+* retrieve credential by name
+* modify credential
+* delete credential
 
 == Host
+You can use these API calls to perform the following:
 
-* Add host
-* Remove one or more hosts from SnapCenter
-* Retrieve a host by name
+* add host
+* remove one or more hosts from SnapCenter
+* retrieve a host by name
+* put the host to maintenance or production mode
+* modify the host
+* get the signature of the Linux host
+* view the certificate status
+* modify the certificate setting
 
 == Plug-in
+You can use these API calls to perform the following:
 
-* Installation of plug-ins on existing host
-* Upgrade plug-in
+* install plug-ins on existing host
+* upgrade plug-in
+* add plug-ins to the host
+* retrieve the plug-in configuration details
+* list all the plug-ins installed on the host
+* remove plug-ins installed on the host
 
 == Policy
+You can use these API calls to perform the following:
 
-* Create new policy
-* Retrieve policy by name
-* Modify policy
-* Delete policy
+* create new policy
+* retrieve policy by name
+* modify policy
+* delete policy
 
 == Resource Groups
+You can use these API calls to perform the following:
 
-* Protect resource group
-* Modify protection
-* Remove protection
-* Create new resource group
-* Retrieve resource group by name
-* Modify resource group
-* Delete resource group
+* protect resource group
+* modify protection
+* remove protection
+* create new resource group
+* retrieve resource group by name
+* modify resource group
+* delete resource group
+* put the resource group to maintenance or production mode
 
 == Resources
+You can use these API calls to perform the following:
 
-* Discover databases
-* Configure database
+* discover databases
+* configure database
+* get the database details using the unique identifier of the database
 
 == Backups
+You can use these API calls to perform the following:
 
-* Start a resource backup operation
-* Start a backup operation
-* Retrieve backups by name
-* Retrieve backups
-* Delete a backup by name
+* start a resource backup operation
+* start a backup operation
+* retrieve backups by name
+* retrieve backups
+* delete a backup by name
+* mount a backup
+* unmount a backup
+* catalog a backup
+* uncatalog a backup
+* rename a backup
+* add verification option for a backup
+* get all the backups required to be mounted to perform point-in-time recovery
 
 == Restore
+You can use these API calls to perform the following:
 
-* Restore a backup
+* restore a backup
 
-== Clone refresh
+== Clone
+You can use these API calls to perform the following:
 
-* Create an Oracle Database clone specification from a specified backup
-* Display, modify, and delete clone specific file
-* Clone refresh
+* create an Oracle Database clone specification from a specified backup
+* clone an Oracle Database from the backup
+* list the existing clones
+* list the existing clones by ID
+* delete a clone
+* estimate the clone split operation
+* start the clone split operation
+* get the status of the clone split operation
+* stop the clone split operation
+* display, modify, and delete clone specific file
+* clone refresh
+* verify clone hierarchy
 
 == RBAC
+You can use these API calls to perform the following:
 
-* Assign resources to a user or a group
-* Unassign resources to a user or a group
+* assign resources to a user or a group
+* unassign resources to a user or a group
 
 == Configuration settings
+You can use these API calls to perform the following:
 
-* Retrieve and modify configuration settings
+* retrieve and modify configuration settings

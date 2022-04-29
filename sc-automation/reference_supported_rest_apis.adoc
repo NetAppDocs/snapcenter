@@ -42,6 +42,13 @@ You can use these API calls to perform the following:
 * retrieve the plug-in installed and their resource details
 * add, remove, or modify a plug-in host
 * install or upgrade plug-ins
+* put the host to maintenance or production mode
+* view the certificate status
+* modify the certificate setting
+* add plug-ins to the host
+* retrieve the plug-in configuration details
+* list all the plug-ins installed on the host
+* remove plug-ins installed on the host
 
 == Resources
 You can use these API calls to perform the following:
@@ -56,14 +63,19 @@ You can use these API calls to perform the following:
 
 * retrieve backup details
 * rename or delete backups
+* add verification option for a backup
 
 == Clones
 You can use these API calls to perform the following:
 
 * retrieve clone details
 * delete clones
+* estimate the clone split operation
+* start the clone split operation
+* get the status of the clone split operation
+* stop the clone split operation
 
-== Clonesplit
+== Clone split
 You can use these API calls to perform the following:
 
 * retrieve the status of a clone split operation
@@ -75,6 +87,7 @@ You can use these API calls to perform the following:
 * retrieve details of a resource group
 * create, modify, or delete a resource group
 * back up a resource group
+* put the resource group to maintenance or production mode
 
 == Policies
 You can use these API calls to perform the following:
@@ -89,6 +102,7 @@ You can use these API calls to perform the following:
 * create, modify, or delete a storage
 * discover resources on a storage
 * create or delete a share on the storage
+* get the secondary storage location details
 
 == Share
 You can use these API calls to perform the following:
