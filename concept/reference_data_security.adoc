@@ -45,4 +45,4 @@ MFA is applicable only for SnapCenter Server UI login.  The logins are authentic
 * Workgroup user login is not supported
 * Disjoint domains are supported only if the domains are configured from ADFS
 
-To configure MFA, see link:configure_multifactor_authentication.html[Configuring Multi-factor authentication].
+To configure MFA, see link:../install/configure_multifactor_authentication.html[Configuring Multi-factor authentication].
