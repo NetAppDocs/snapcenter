@@ -33,3 +33,16 @@ You should deploy CA certificates after installing the SnapCenter Server and the
 For more information, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file^].
 
 You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere. For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates[Create and import certificates^].
+
+== Multi-factor authentication (MFA)
+
+Multi-factor authentication (MFA) uses a third-party Identity Provider (IdP) via the Security Assertion Markup Language (SAML) to manage user sessions. MFA enables administrators to configure additional factors of authentication as required, such as password and text or email message.
+
+MFA is applicable only for SnapCenter Server UI login.  The logins are authenticated through the IdP Active Directory Federation Services (AD FS).  You can configure various authentication factors at AD FS. SnapCenter is the service provider and you should configured SnapCenter as a relying party in AD FS. To enable MFA in SnapCenter, you will require the AD FS metadata.
+
+=== Limitations of MFA
+
+* Workgroup user login is not supported
+* Disjoint domains are supported only if the domains are configured from ADFS
+
+To configure MFA, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html[Configuring Multi-factor authentication].
