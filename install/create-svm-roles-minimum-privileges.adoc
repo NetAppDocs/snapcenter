@@ -29,12 +29,12 @@ NOTE: You should repeat this command for each permission.
 == ONTAP CLI commands for creating SVM roles and assigning permissions
 There are several ONTAP CLI commands you should run to create SVM roles and assign permissions.
 
-* 'security login role create -role SVM_SVM_Role_Name -cmddirname "snapmirror list-destinations" -vserver SVM_Name -access all'
-* 'security login role create -role SVM_SVM_Role_Name -cmddirname "event generate-autosupport-log" -vserver SVM_Name -access all'
-* 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "volume clone split status" -access all'
-* 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "job history show" -access all'
-* 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "job stop" -access all'
-* 'security login role create -vserver SVM_Name -role SVM_SVM_SVM_Role_Name -cmddirname "lun" -access all'
+* `security login role create -role SVM_Role_Name -cmddirname "snapmirror list-destinations" -vserver SVM_Name -access all`
+* `security login role create -role SVM_Role_Name -cmddirname "event generate-autosupport-log" -vserver SVM_Name -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "volume clone split status" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "job history show" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "job stop" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "lun" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun create" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun delete" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun igroup add" -access all`
@@ -43,7 +43,7 @@ There are several ONTAP CLI commands you should run to create SVM roles and assi
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun igroup rename" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun igroup show" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun mapping add-reporting-nodes" -access all`
-* 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "lun mapping create" -access all'
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "lun mapping create" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun mapping delete" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun mapping remove-reporting-nodes" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun mapping show" -access all`
@@ -54,7 +54,7 @@ There are several ONTAP CLI commands you should run to create SVM roles and assi
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun resize" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun serial" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "lun show" -access all`
-* `security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "network interface" -access readonly'
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "network interface" -access readonly`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror policy add-rule" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror policy modify-rule" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror policy remove-rule" -access all`
@@ -98,8 +98,8 @@ There are several ONTAP CLI commands you should run to create SVM roles and assi
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver export-policy rule create" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver export-policy rule show" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver export-policy show" -access all`
-*'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "vserver iscsi connection show" -access all'
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "vserver iscsi connection show" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver" -access readonly`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver export-policy" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver iscsi" -access all`
-* 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "volume clone split status" -access all'
+* `security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "volume clone split status" -access all`
