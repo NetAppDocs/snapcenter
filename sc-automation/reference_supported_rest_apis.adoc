@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: REST API categories
 summary: 'The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page.'
 ---
-= REST APIs supported for other plug-ins
+= Supported REST APIs
 :icons: font
 :imagesdir: ../media/
 
@@ -12,143 +12,274 @@ summary: 'The resources available through the SnapCenter REST API are organized 
 The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
 
 == Auth
-You can use this API call to log into the SnapCenter Server. This API returns a user authorization token that is used to authenticate subsequent requests.
+You can use this API to log into the SnapCenter Server. This API returns a user authorization token that is used to authenticate subsequent requests.
 
 == Domains
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* retrieve all the domains
+* retrieve all the domains in SnapCenter
 * retrieve details of a specific domain
 * register or unregister a domain
 * modify a domain
 
 == Jobs
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* retrieve all the jobs
+* retrieve all the jobs in SnapCenter
 * retrieve status of a job
 * cancel or stop a job
 
 == Settings
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* register, view, modify, or remove a credential
+* register, modify, or remove a credential
+* displays the credential information registered in the SnapCenter Server
 * configure notification settings
+* retrieves information about the SMTP server currently configured to send email notifications and displays the name of the SMTP server, the name of the recipients, and the name of the sender
+* displays multi-factor authentication (MFA) configuration of the SnapCenter Server login
+* enable or disable and configure MFA for the SnapCenter Server login
+* create the configuration file required to setup MFA
 
 == Hosts
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* retrieve host details
-* retrieve the plug-in installed and their resource details
-* add, remove, or modify a plug-in host
-* install or upgrade plug-ins
+* query all SnapCenter hosts
+* remove one or more hosts from SnapCenter
+* retrieve a host by name
+* retrieve all resources on a host
+* retrieve a resource using the resource ID
+* retrieve the plug-in configuration details
+* configure the plug-in host
+* retrieve all resources of the plug-in for Microsoft SQL Server host
+* retrieve all resources of the plug-in for Oracle database host
+* retrieve all resources of the plug-in for custom application host
+* retrieve all resources of the plug-in for SAP HANA host
+* retrieve the plug-ins installed
+* install plug-ins on an existing host
+* upgrade host package
+* remove plug-ins from an existing host
+* add plug-in on a host
+* add or modify host
+* get the signature of the Linux host
+* register the signature of the Linux host
 * put the host to maintenance or production mode
+* start or restart the plug-in services on the host
+* rename a host
 * view the certificate status
 * modify the certificate setting
-* add plug-ins to the host
-* retrieve the plug-in configuration details
-* list all the plug-ins installed on the host
-* remove plug-ins installed on the host
 
 == Resources
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* retrieve resources
-* create, modify, or remove resources
-* protect a resource
-* back up, restore, or clone a resource
+* retrieve all resources
+* retrieve a resource using the resource ID
+* retrieve all resources of the plug-in for Microsoft SQL Server host
+* retrieve all resources of the plug-in for Oracle database host
+* retrieve all resources of the plug-in for custom application host
+* retrieve all resources of the plug-in for SAP HANA host
+* retrieve a Microsoft SQL Server resource using a key
+* retrieve a custom resource using a key
+* modify a resource of the plug-in for custom application host
+* remove a resource of the plug-in for custom application host using a key
+* retrieve a SAP HANA resource using a key
+* modify a resource of the plug-in for SAP HANA host
+* remove a resource of the plug-in for SAP HANA host using a key
+* retrieve an Oracle resource using a key
+* create an Oracle application volume resource
+* modify an Oracle application volume resource
+* remove an Oracle application volume resource using a key
+* retrieve the secondary details of the Oracle resource
+* backup the Microsoft SQL Server resource using plug-in for Microsoft SQL Server
+* backup the Oracle resource using plug-in for Oracle database
+* backup the custom resource using plug-in for custom application
+* configure the SAP HANA database
+* configure the Oracle database
+* restore a SQL database backup
+* restore an Oracle database backup
+* restore a custom application backup
+* create a custom plug-in resource
+* create a SAP HANA resource
+* protect a custom resource using plug-in for custom application
+* protect a Microsoft SQL Server resource using plug-in for Microsoft SQL Server
+* modify a protected Microsoft SQL Server resource
+* remove protection for Microsoft SQL Server resource
+* protect an Oracle resource using plug-in for Oracle database
+* modify a protected Oracle resource
+* remove protection from Oracle resource
+* clone a resource from the backup using plug-in for custom application
+* clone an Oracle application volume from the backup using plug-in for Oracle database
+* clone a Microsoft SQL Server resource from the backup using plug-in for Microsoft SQL Server
+* create a clone life cycle of a Microsoft SQL Server resource
+* modify clone life cycle of a Microsoft SQL Server resource
+* delete clone life cycle of a Microsoft SQL Server resource
+* move an existing Microsoft SQL Server database from a local disk to a NetApp LUN
+* create a clone specification file for an Oracle database
+* initiate an on-demand clone life cycle of an Oracle resource
+* clone an Oracle resource from the backup using the clone specification file
 
 == Backups
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* retrieve backup details
+* retrieve backup details by backup name
 * rename or delete backups
-* add verification option for a backup
+* mount an Oracle backup
+* unmount an Oracle backup
+* catalog an Oracle backup
+* uncatalog an Oracle backup
+* get all the backups required to be mounted to perform point-in-time recovery
 
 == Clones
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
+* create, display, modify, and delete Oracle database clone specification file
+* display Oracle database clone hierarchy
 * retrieve clone details
 * delete clones
-* estimate the clone split operation
-* start the clone split operation
-* get the status of the clone split operation
-* stop the clone split operation
+* retrieve clone details by ID
+* initiate an on-demand clone life cycle of an Oracle resource
+* clone an Oracle resource from the backup using the clone specification file
 
 == Clone split
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
+* estimate the clone split operation of the cloned resource
 * retrieve the status of a clone split operation
 * start or stop a clone split operation
 
 == Resource Groups
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
 * retrieve details of a resource group
-* create, modify, or delete a resource group
+* retrieve the resource group by name
+* create a resource group for plug-in for custom application
+* create a resource group for plug-in for plug-in for Microsoft SQL Server
+* create a resource group for plug-in for Oracle database
+* modify a resource group for plug-in for custom application
+* modify a resource group for plug-in for plug-in for Microsoft SQL Server
+* modify a resource group for plug-in for Oracle database
+* create, modify, or delete clone life cycle of a resource group for plug-in for Microsoft SQL Server
 * back up a resource group
 * put the resource group to maintenance or production mode
 
 == Policies
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
 * retrieve policy details
-* create, modify, or delete policies
+* retrieve policy details by name
+* delete a policy
+* create a copy of an existing policy
+* create or modify policy for plug-in for custom application
+* create or modify policy for plug-in for Microsoft SQL Server
+* create or modify policy for for plug-in for Oracle database
+* create or modify policy for plug-in for SAP HANA database
 
 == Storage
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
+* retrieve all the shares
+* retrieve a share by name
+* create or delete a share
 * retrieve storage details
+* retrieve storage details by name
 * create, modify, or delete a storage
-* discover resources on a storage
-* create or delete a share on the storage
-* get the secondary storage location details
+* discover resources on a storage cluster
+* retrieve resources on a storage cluster
 
 == Share
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
 * retrieve the details of a share
 * create or delete a share on the storage
 
 == Plugins
-You can use these API calls to retrieve all the plug-ins on a host and perform different operations.
+You can use APIs to perform different operations.
+
+* list all the plug-ins for a host
+* retrieve a Microsoft SQL Server resource using a key
+* modify a custom resource
+* remove a custom resource using a key
+* retrieve a SAP HANA resource using a key
+* modify a SAP HANA resource
+* remove a SAP HANA resource using a key
+* retrieve an Oracle resource using a key
+* modify an Oracle application volume resource
+* remove an Oracle application volume resource
+* backup the Microsoft SQL Server resource using plug-in for Microsoft SQL Server
+* backup the Oracle resource using plug-in for Oracle database
+* backup the custom application resource using plug-in for custom application
+* configure the SAP HANA database
+* configure the Oracle database
+* restore a custom application backup
+* create a custom plug-in resource
+* create a SAP HANA resource
+* create an Oracle application volume resource
+* protect a custom resource using plug-in for custom application
+* protect a Microsoft SQL Server resource using plug-in for Microsoft SQL Server
+* modify a protected Microsoft SQL Server resource
+* remove protection for Microsoft SQL Server resource
+* protect an Oracle resource using plug-in for Oracle database
+* modify a protected Oracle resource
+* remove protection from Oracle resource
+* clone a resource from the backup using plug-in for custom application
+* clone an Oracle application volume from the backup using plug-in for Oracle database
+* clone a Microsoft SQL Server resource from the backup using plug-in for Microsoft SQL Server
+* create a clone life cycle of a Microsoft SQL Server resource
+* modify clone life cycle of a Microsoft SQL Server resource
+* delete clone life cycle of a Microsoft SQL Server resource
+* move an existing Microsoft SQL Server database from a local disk to a NetApp LUN
+* create a clone specification file for an Oracle database
+* initiate an on-demand clone life cycle of an Oracle resource
+* clone an Oracle resource from the backup using the clone specification file
 
 == Reports
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* generate backup, restore, clone, and plug-in reports
+* backup, restore, and clone plug-in reports
 * add, run, delete, or modify schedules
+* retrieve data for the scheduled reports
 
 == Alerts
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
 * retrieve all the alerts
-* delete alerts
+* retrieve alerts by IDs
+* delete multiple alerts or delete an alert by ID
 
 == Rbac
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
 * retrieve details of users, groups, and roles
-* add users
+* add or delete users
+* assign user to role
+* unassign user from role
 * create, modify, or delete roles
-* assign or unassign roles and groups
+* assign group to a role
+* unassign group from a role
+* add or delete groups
+* add, modify, or delete roles
+* create a copy of an existing role
+* assign or unassign resources to user or group
 
 == Configuration
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
 * view the configuration settings
 * modify the configuration settings
 
 == CertificateSettings
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
-* view the certificate status
-* modify the certificate settings
+* view the certificate status for the SnapCenter Server or plug-in host
+* modify the certificate settings for the SnapCenter Server or plug-in host
 
 == Repository
-You can use these API calls to perform the following:
+You can use APIs to perform different operations.
 
+* retrieve the repository backups
+* view the configuration information about the repository
 * backup and restore the NSM repository
-* protect and unprotect the NSM repository
-* failover
-* rebuild the NSM repository
+* unprotect the NSM repository
+* rebuild and failover the repository
+
+== Version
+You can use this API to view the SnapCenter version.
