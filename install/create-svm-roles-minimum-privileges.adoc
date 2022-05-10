@@ -31,6 +31,7 @@ There are several ONTAP CLI commands you should run to create SVM roles and assi
 
 * 'security login role create -role SVM_SVM_Role_Name -cmddirname "snapmirror list-destinations" -vserver SVM_Name -access all'
 * 'security login role create -role SVM_SVM_Role_Name -cmddirname "event generate-autosupport-log" -vserver SVM_Name -access all'
+* 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "volume clone split status" -access all'
 * 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "job history show" -access all'
 * 'security login role create -vserver SVM_Name -role SVM_SVM_Role_Name -cmddirname "job stop" -access all'
 * 'security login role create -vserver SVM_Name -role SVM_SVM_SVM_Role_Name -cmddirname "lun" -access all'

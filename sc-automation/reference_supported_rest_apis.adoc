@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: REST API categories
 summary: 'The resources available through the SnapCenter REST API are organized in categories, as displayed on the SnapCenter API documentation page.'
 ---
-= Supported REST APIs
+= REST APIs supported for SnapCenter Server and plug-ins
 :icons: font
 :imagesdir: ../media/
 
