@@ -51,8 +51,3 @@ Enabled by default, the SLM feature periodically discovers the LUNs that do not 
  ** You can disable this by setting the value of ENABLE_LUNPATH_MONITORING to false.
  ** You can specify the frequency in which the LUN paths will be fixed automatically by assigning the value (in hours) to LUNPATH_MONITORING_INTERVAL.
 For information about SLM, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^].
-* Support for non-volume memory express(NVMe)
-+
-NVMe util should be installed on the host. 
-+
-For more information see, link:considerations_for_NVMe_configurations.html[Considerations for NVMe configurations]
