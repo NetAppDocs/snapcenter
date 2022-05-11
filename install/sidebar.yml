@@ -23,8 +23,6 @@ entries:
         url: /install/concept_authentication_methods_for_your_credentials.html
       - title: Storage Virtual Machine connections and credentials
         url: /install/concept_svm_connections_and_credentials.html
-      - title: Configure Multi-factor authentication (MFA)
-        url: /install/configure_multifactor_authentication.html
   - title: Install the SnapCenter Server
     url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
   - title: Log in to SnapCenter

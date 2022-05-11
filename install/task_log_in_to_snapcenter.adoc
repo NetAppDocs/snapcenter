@@ -11,8 +11,6 @@ summary: 'SnapCenter supports role-based access control (RBAC). SnapCenter admin
 [.lead]
 SnapCenter supports role-based access control (RBAC). SnapCenter admin assigns roles and resources through SnapCenter RBAC to either a user in workgroup or active directory, or to groups in active directory. The RBAC user can now log in to SnapCenter with the assigned roles.
 
-SnapCenter Server also supports Multi-factor authentication (MFA) for domain account, which is part of the active directory.
-
 *What you will need*
 
 * You should enable Windows Process Activation Service (WAS) in Windows Server Manager.
@@ -35,8 +33,6 @@ For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_
 In addition to using the SnapCenter GUI, you can use PowerShell cmdlets to create scripts to perform configuration, backup, and restore operations. Some cmdlets might have changed with each SnapCenter release. The https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^] has the details.
 
 NOTE: If you are logging in to SnapCenter for the first time, you must log in using the credentials that you provided during the install process.
-
-NOTE: For Multi-factor authentication, only FQDN is supported.
 
 *Steps*
 
@@ -66,7 +62,7 @@ Your current user and associated role are shown in the upper right of SnapCenter
 
 *Results*
 
-The *Dashboard* page is displayed.
+The Dashboard page is displayed.
 
 If the logging fails with the error that site cannot be reached, you should map the SSL certificate to SnapCenter. https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FSnapCenter_will_not_open_with_error_%2522This_site_can%2527t_be_reached%2522[Learn more^]
 
