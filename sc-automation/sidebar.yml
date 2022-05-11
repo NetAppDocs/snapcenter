@@ -15,10 +15,8 @@ entries:
     url: /sc-automation/concept_interpreting_an_api_response.html
   - title: Supported REST APIs
     entries:
-      - title: REST API workflows supported for other plug-ins
+      - title: REST APIs supported for SnapCenter Server and plug-ins
         url: /sc-automation/reference_supported_rest_apis.html
-      - title: REST APIs supported for Oracle Database
-        url: /sc-automation/refrence_rest_apis_supported_for_oracle_database.html
       - title: REST API supported for disaster recovery of SnapCenter Server
         url: /sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
   - title: How to access REST APIs using the Swagger API web page
