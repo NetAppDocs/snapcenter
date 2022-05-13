@@ -45,6 +45,6 @@ MFA is applicable only for SnapCenter Server UI login.  The logins are authentic
 * Workgroup user login is not supported.
 * Disjoint domains are supported only if the domains are configured from ADFS.
 *	SnapCenter certificate renewal data should be updated in the AD FS relying party.
-•	System time of AD FS server and the SnapCenter Server should be the same to login successfully. 
+* System time of AD FS server and the SnapCenter Server should be the same to login successfully. 
 
 To configure MFA, see link:../install/configure_multifactor_authentication.html[Configuring Multi-factor authentication].
