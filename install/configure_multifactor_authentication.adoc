@@ -73,5 +73,5 @@ You must update the AD FS metadata in SnapCenter each time the AD FS server meta
 . Download AD FS federation metadata file from https://localhost/FederationMetadata/2007-06/FederationMetadata.xml[ADFS federation metadata]
 . Copy the downloaded file to SnapCenter Server to enable MFA feature.
 . Update the AD FS metadata in SnapCenter by using the following cmdlet.
-
++
 _Set-SmMultiFactorAuthentication -Path <location of ADFS MFA metadata xml file>_
