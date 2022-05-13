@@ -15,7 +15,7 @@ You should configure MFA to enable administrators to configure additional factor
 
 * You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726 [SnapCenter Software Cmdlet Reference Guide].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide].
 
 *Steps*
 
@@ -23,13 +23,14 @@ The information regarding the parameters that can be used with the cmdlet and th
 . Download AD FS federation metadata file from https://localhost/FederationMetadata/2007-06/FederationMetadata.xml[ADFS federation metadata]
 . Copy the downloaded file to SnapCenter Server to enable MFA feature.
 . Log in as the SnapCenter Administrator user through PowerShell.
-. Generate the SnapCenter MFA metadata file by using the ~New-SmMultifactorAuthenticationMetadata -path~ cmdlet.
+. Generate the SnapCenter MFA metadata file by using the ~New-SmMultifactorAuthenticationMetadata~ ~-path~ cmdlet.
 +
 The path parameter specifies the path to save the MFA metadata file.
 . Copy the generated file to the AD FS host to configure SnapCenter as the client entity.
-. Enable MFA for SnapCenter Server using the ~Set-SmMultiFactorAuthentication -Enable -Path~ cmdlet.
+. Enable MFA for SnapCenter Server using the ~Set-SmMultiFactorAuthentication~ ~-Enable~ ~-Path~ cmdlet.
 +
 The path parameter specifies the location of the AD FS MFA metadata xml file.
+. (Optional) Check the MFA configuration status and settings by using ~Get-SmMultiFactorAuthentication~ cmdlet.
 . Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
 . In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
 . In the Certificates snap-in window, select the *Computer account* option, and then click *Finish*.
@@ -58,3 +59,19 @@ Specify a name for the claim rule
 .. Select the attribute: User-Principal-Name and enter Name-ID and click *Finish*.
 
 For more information, see https://www.componentspace.com/documentation/saml-for-asp-net/integrations/ComponentSpace%20ADFS%20Relying%20Party%20Integration%20Guide.pdf[Configuring relying party trust].
+
+== Disable Multi-factor authentication (MFA)
+
+Disable MFA and clean up the configuration files that were created when MFA was enabled by using _Set-SmMultiFactorAuthentication -Disable_ cmdlet.
+
+== Update AD FS server metadata
+
+You must update the AD FS metadata in SnapCenter each time the AD FS server metadata is updated.
+
+*Steps*
+
+. Download AD FS federation metadata file from https://localhost/FederationMetadata/2007-06/FederationMetadata.xml[ADFS federation metadata]
+. Copy the downloaded file to SnapCenter Server to enable MFA feature.
+. Update the AD FS metadata in SnapCenter by using the following cmdlet.
+
+_Set-SmMultiFactorAuthentication -Path <location of ADFS MFA metadata xml file>_
