@@ -61,6 +61,7 @@ There are several ONTAP CLI commands you should run to create SVM roles and assi
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror policy show" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror restore" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror show" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "snapmirror show-history" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror update" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "snapmirror update-ls-set" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "version" -access all`

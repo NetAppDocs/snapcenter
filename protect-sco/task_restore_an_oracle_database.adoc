@@ -122,6 +122,8 @@ If you still want to specify the location of the external archive log files, sel
 
 If archive logs are pruned as part of backup, and you have manually mounted the required archive log backups, you must specify the mounted backup path as the external archive log location for recovery.
 
+NOTE: You should verify the path and contents of the mount path before listing it as an external log location.  
+
 * http://www.netapp.com/us/media/tr-4591.pdf[NetApp Technical Report 4591: Database Data Protection Backup, Recovery, Replication, and DR^]
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Operation fails with ORA-00308 error^]
