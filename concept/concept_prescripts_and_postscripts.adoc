@@ -13,17 +13,29 @@ You can use custom prescripts and postscripts as part of your data protection op
 
 == Supported script types
 
-The following type of scripts are supported:
+The following type of scripts are supported for Windows:
 
 * Batch files
 * PowerShell scripts
 * Perl scripts
 
+The following type of scripts are supported for UNIX:
+
+* Perl scripts
+* Python scripts
+* Shell scripts
++
+NOTE: Along with default bash shell other shells like sh-shell, k-shell, and c-shell are also supported.
+
+
 == Script path
 
-All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host. Therefore, the scripts must be located on the plug-in host or on a SMB share accessible by the plug-in host.
+All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host.
 
-NOTE: The script path is validated at the time the script is executed.
+* The Windows scripts should be located on the plug-in host or on a SMB share accessible by the plug-in host.
+* The UNIX scripts should be located on the plug-in host.
+
+NOTE: The script path is validated at the time of execution.
 
 == Where to specify scripts
 
@@ -35,6 +47,10 @@ To specify multiple scripts, press *Enter* after each script path to list each s
 
 The timeout for backup scripts is 15 minutes and cannot be modified.
 
+The timeout for restore and clone scripts is set to 60 seconds, by default. You can modify the timeout value.
+
 == Script output
 
-The default directory for the prescripts and postscripts output files is Windows\System32.
+The default directory for the Windows prescripts and postscripts output files is Windows\System32.
+
+There is no default location for the UNIX prescripts and postscripts. You can redirect the output file to any preferred location.
