@@ -30,21 +30,21 @@ SnapCenter includes the following security features:
 The SnapCenter Server installer enables the Centralized SSL Certificate Support during installation. To enhance the secured communication between the server and the plug-in, SnapCenter supports using the authorized CA certificates provided by the customer.
 
 You should deploy CA certificates after installing the SnapCenter Server and the  respective plug-ins.
-For more information, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file^].
+For more information, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file].
 
 You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere. For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates[Create and import certificates^].
 
 == Multi-factor authentication (MFA)
 
-Multi-factor authentication (MFA) uses a third-party Identity Provider (IdP) via the Security Assertion Markup Language (SAML) to manage user sessions. MFA enables administrators to configure additional factors of authentication as required, such as password and text or email message.
+Multi-factor authentication (MFA) enhances the authentication security by having an option to use multiple factors such as TOTP, biometrics, push notifications and so on along with the existing username and password. MFA also enables the customer to use their own user identity providers to get unified user login (SSO) across their portfolio.
+
+MFA uses a third-party Identity Provider (IdP) via the Security Assertion Markup Language (SAML) to manage user sessions.
 
 MFA is applicable only for SnapCenter Server UI login.  The logins are authenticated through the IdP Active Directory Federation Services (AD FS).  You can configure various authentication factors at AD FS. SnapCenter is the service provider and you should configure SnapCenter as a relying party in AD FS. To enable MFA in SnapCenter, you will require the AD FS metadata.
 
 === Limitations of MFA
 
-* Workgroup user login is not supported.
-* Disjoint domains are supported only if the domains are configured from ADFS.
-*	SnapCenter certificate renewal data should be updated in the AD FS relying party.
-* System time of AD FS server and the SnapCenter Server should be the same to login successfully. 
+* Workgroup user login and disjoint AD domains are not supported.
+* System time of AD FS server and the SnapCenter Server should be the same to login successfully.
 
-To configure MFA, see link:../install/configure_multifactor_authentication.html[Configuring Multi-factor authentication].
+For information to enable MFA, see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication].
