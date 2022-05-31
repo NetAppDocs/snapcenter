@@ -14,3 +14,41 @@ Each release of SnapCenter contains an updated SnapCenter Server and plug-in pac
 The workflow shows the different tasks required to upgrade the SnapCenter Server and the Plug-in packages.
 
 image::../media/upgrade_workflow.png[]
+
+== Supported upgrade paths
+
+|===
+| If you are on SnapCenter Server version... | You can directly upgrade SnapCenter Server to... | Supported plug-in versions
+
+.2+| 4.3.x
+| 4.4.x
+a|
+* 4.3.x
+* 4.4.x
+
+| 4.5.x
+a|
+* 4.5.x
+
+.2+| 4.4.x
+|4.5.x
+a|
+* 4.4.x
+* 4.5.x
+
+| 4.6.x
+a|
+* 4.6.x
+
+a| 4.5.x
+
+a| 4.6.x
+
+a|
+* 4.5.x
+* 4.6.x
+|===
+
+IMPORTANT: For example, if you are on SnapCenter version 4.3.x and want to upgrade to 4.6.x, you should first upgrade to 4.5.x and then do a rolling upgrade to 4.6.x.
+
+NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].

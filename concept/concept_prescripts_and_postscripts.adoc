@@ -13,28 +13,46 @@ You can use custom prescripts and postscripts as part of your data protection op
 
 == Supported script types
 
-The following type of scripts are supported:
+The following types of scripts are supported for Windows:
 
 * Batch files
 * PowerShell scripts
 * Perl scripts
 
+The following types of scripts are supported for UNIX:
+
+* Perl scripts
+* Python scripts
+* Shell scripts
++
+NOTE: Along with default bash shell other shells like sh-shell, k-shell, and c-shell are also supported.
+
 == Script path
 
-All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host. Therefore, the scripts must be located on the plug-in host or on a SMB share accessible by the plug-in host.
+All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host.
 
-NOTE: The script path is validated at the time the script is executed.
+* The Windows scripts should be located on the plug-in host or on a SMB share accessible by the plug-in host.
+* The UNIX scripts should be located on the plug-in host.
+
+NOTE: The script path is validated at the time of execution.
 
 == Where to specify scripts
 
 Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and postscript arguments.
 
-To specify multiple scripts, press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
+Only for Windows, you can specify multiple scripts. You should press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
+
+NOTE: For UNIX, you cannot specify multiple scripts.
 
 == Script timeouts
 
-The timeout for backup scripts is 15 minutes and cannot be modified.
+For Windows, the timeout is set to 15 minutes and cannot be modified.
+
+For UNIX, the timeout is set to 60 seconds, by default. You can modify the timeout value.
+
 
 == Script output
 
-The default directory for the prescripts and postscripts output files is Windows\System32.
+The default directory for the Windows prescripts and postscripts output files is Windows\System32.
+
+There is no default location for the UNIX prescripts and postscripts. You can redirect the output file to any preferred location.
