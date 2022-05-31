@@ -11,6 +11,8 @@ summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade
 [.lead]
 The plug-in packages are distributed as part of the SnapCenter upgrade.
 
+The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
+
 *What you will need*
 
 * If you are a non-root user with access to the Linux machines, you should update the _/etc/sudoers_ file with the latest checksum values before performing the upgrade operation.
@@ -21,59 +23,6 @@ The value of JAVA_HOME gets updated when the plug-in is upgraded or when the Sna
 * You should have backed up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
 +
 Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
-
-*About this task*
-
-* The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
-* Supported upgrade paths:
-+
-|===
-| If using are using... | You can...
-
-a|
-4.0.x
-a|
-* Directly upgrade to 4.1.x
-* Upgrade to 4.2.x by first upgrading to 4.1.x, and then upgrade to 4.2.x
-* Upgrade to 4.3.x by first upgrading to 4.1.x, then upgrade to 4.2.x, and then upgrade to 4.3.x
-* Upgrade to 4.4.x by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, and then upgrade to 4.4.x
-* Upgrade to 4.5 by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, and then upgrade to 4.5
-* Upgrade to 4.6 by first upgrading to 4.1.x, then upgrade to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
-
-a|
-4.1.x
-a|
-* Directly upgrade to 4.2.x
-* Upgrade to 4.3.x by first upgrading to 4.2.x, and then upgrade to 4.3.x
-* Upgrade to 4.4.x by first upgrading to 4.2.x, then upgrade to 4.3.x, and then upgrade to 4.4.x
-* Upgrade to 4.5 by first upgrading to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, and then upgrade to 4.5
-* Upgrade to 4.6 by first upgrading to 4.2.x, then upgrade to 4.3.x, then upgrade to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
-
-a|
-4.2.x
-a|
-* Directly upgrade to 4.3.x
-* Upgrade to 4.4.x by first upgrading to 4.3.x, and then upgrade to 4.4.x
-* Upgrade to 4.5 by first upgrading to 4.3.x, then upgrade to 4.4.x, and then upgrade to 4.5
-* Upgrade to 4.6 by first upgrading to 4.3.x, then upgrade to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
-a|
-4.3.x
-a|
-* Directly upgrade to 4.4.x
-* Upgrade to 4.5 by first upgrading to 4.4.x, and then upgrade to 4.5
-* Upgrade to 4.6 by first upgrading to 4.4.x, then upgrade to 4.5.x, and then upgrade to 4.6
-a|
-4.4.x
-a|
-* Directly upgrade to 4.5
-* Upgrade to 4.6 by first upgrading to 4.5.x, and then upgrade to 4.6
-a|
-4.5.x
-a|
-Directly upgrade to 4.6
-|===
-
-NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
 
 *Steps*
 
