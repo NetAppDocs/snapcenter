@@ -49,6 +49,6 @@ a|
 * 4.6.x
 |===
 
-IMPORTANT: If you are on a SnapCenter version that is prior to n-2, you need to perform a rolling upgrade. For example, if you are on SnapCenter version 4.3.x and want to upgrade to 4.6.x, you should first upgrade to 4.5.x and then do a rolling upgrade to 4.6.x.
+IMPORTANT: For example, if you are on SnapCenter version 4.3.x and want to upgrade to 4.6.x, you should first upgrade to 4.5.x and then do a rolling upgrade to 4.6.x.
 
 NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
