@@ -9,7 +9,8 @@ summary: 'SnapCenter employs strict security and authentication features to enab
 :imagesdir: ../media/
 
 [.lead]
-You should enable MFA by performing some steps in Active Directory Federation Service (ADFS) and SnapCenter Server.
+
+To enable MFA functionality, you should perform some steps in the Active Directory Federation Service (ADFS) and SnapCenter Server.
 
 *What you will need*
 
@@ -18,6 +19,9 @@ You should enable MFA by performing some steps in Active Directory Federation Se
 * Procure and configure the authorized CA certificate for SnapCenter server.
 +
 For information on CA certificate, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file^].
+
+*About this task*
+
 * The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
 
 *Steps*
@@ -26,14 +30,14 @@ For information on CA certificate, see link:../install/reference_generate_CA_cer
 . Download AD FS federation metadata file from _https://<host FQDN>/FederationMetadata/2007-06/FederationMetadata.xml_
 . Copy the downloaded file to SnapCenter Server to enable MFA feature.
 . Log in as the SnapCenter Administrator user through PowerShell.
-. Generate the SnapCenter MFA metadata file by using the ~New-SmMultifactorAuthenticationMetadata~ ~-path~ cmdlet.
+. Generate the SnapCenter MFA metadata file by using the _New-SmMultifactorAuthenticationMetadata -path_ cmdlet.
 +
 The path parameter specifies the path to save the MFA metadata file in the SnapCenter Server host.
 . Copy the generated file to the AD FS host to configure SnapCenter as the client entity.
-. Enable MFA for SnapCenter Server using the ~Set-SmMultiFactorAuthentication~ ~-Enable~ ~-Path~ cmdlet.
+. Enable MFA for SnapCenter Server using the _Set-SmMultiFactorAuthentication -Enable -Path_ cmdlet.
 +
 The path parameter specifies the location of the AD FS MFA metadata xml file.
-. (Optional) Check the MFA configuration status and settings by using ~Get-SmMultiFactorAuthentication~ cmdlet.
+. (Optional) Check the MFA configuration status and settings by using _Get-SmMultiFactorAuthentication_ cmdlet.
 . Go to the Microsoft management console (MMC) and perform the following steps:
 .. Click *File* > *Add/Remove Snapin*.
 .. In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
