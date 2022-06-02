@@ -34,7 +34,7 @@ a|
 a|
 |===
 +
-For more information, see https://docs.netapp.com/us-en/ontap-sanhost.html[ONTAP SAN Host Configuration^]
+For more information, see https://docs.netapp.com/us-en/ontap-sanhost[ONTAP SAN Host Configuration^]
 * The protocols supported are FC, FCoE, TCP-IP, Inifiniband
 * Following are the supported Oracle database configurations, layouts, and versions and data protection workflows.
 +
@@ -42,7 +42,7 @@ For more information, see https://docs.netapp.com/us-en/ontap-sanhost.html[ONTAP
 |Oracle database configuration |Oracle layouts| Oracle versions |SnapCenter workflows
 
 a|
-OMF, FRA, Standalone, RAC, Dataguard
+Standalone, RAC, Dataguard
 a|
 ASM on NVMe or
 LVM on NVMe or
@@ -50,7 +50,7 @@ Filesystem on NVMe
 a|
 11g (11.2.0.4), 12cr1, 12cr2, 18c, 19c, 21c
 a|
-Backup, Restore, Clone, Delete Clone, Clone-split, Federated Backup, Refresh-SmClone, Clone/Mount to alternate host, Catalog, Verification, Mount, Unmount
+Backup, Restore, Clone, Delete Clone, Clone-split, Federated Backup, Refresh clone, Clone/Mount to alternate host, Catalog, Verification, Mount, Unmount
 a|
 |===
 
@@ -60,7 +60,7 @@ a|
 |Supported device layout |Unsupported device layout
 
 a|
-Non-LVM, LVM, Raw (ASM directly uses the device with proprietary filesystem) device
+Non-LVM, LVM, Raw device ASM
 a|
 Virtualization
 (RDM, VMDK)
@@ -68,25 +68,19 @@ a|
 |===
 
 |===
-|Device layout (single partition)|Device handled by Oracle|Supported filesystem types
+|Device layout (single partition)|Supported filesystem types
 
 a|
 LVM
 a|
-NA
-a|
 ext3, ext4, xfs
 a|
 Non-LVM
-a|
-NA
 a|
 ext3, ext4, xfs
 a|
 Raw device
 a|
 ASM Udev, ASM FD, ASMLib
-a|
-NA
 a|
 |===
