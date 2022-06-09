@@ -48,8 +48,8 @@ In a single operation, Snapshot copies are consolidated when databases in a sing
 +
 Enabled by default, the SLM feature periodically discovers the LUNs that do not have optimized paths and fixes them. You can configure SLM by modifying the parameters in the scu.properties file located at /var/opt/snapcenter/scu/etc.
 
- ** You can disable this by setting the value of ENABLE_LUNPATH_MONITORING to false.
- ** You can specify the frequency in which the LUN paths will be fixed automatically by assigning the value (in hours) to LUNPATH_MONITORING_INTERVAL.
+ ** You can disable this by setting the value of ENABLE_LUNPATH_MONITORING parameter to false.
+ ** You can specify the frequency in which the LUN paths will be fixed automatically by assigning the value (in hours) to LUNPATH_MONITORING_INTERVAL parameter.
 For information about SLM, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^].
 * Support for non-volatile memory express (NVMe)
 +

@@ -40,28 +40,4 @@ MFA uses a third-party Identity Provider (IdP) via the Security Assertion Markup
 
 MFA is applicable only for SnapCenter Server UI login.  The logins are authenticated through the IdP Active Directory Federation Services (AD FS).  You can configure various authentication factors at AD FS. SnapCenter is the service provider and you should configure SnapCenter as a relying party in AD FS. To enable MFA in SnapCenter, you will require the AD FS metadata.
 
-=== Limitations of MFA
-
-* Workgroup user login and disjoint AD domains are not supported.
-* System time of AD FS server and the SnapCenter Server should be the same to login successfully.
-* CA certificate is mandatory because of the following reasons:
-** If the certificates are different (in case of self-signed) at the node level the ADFS-F5 communications will break
-** During the upgrade, repair, or disaster recovery (DR) on a stand-alone or high availability(HA) configurations, the self-signed certificate might get recreated resulting in the reconfiguration of MFA
-** CA certificate ensures IP-FQDN resolutions
-*	If the username or password error is displayed on the ADFS page, you should check the following:
-** Whether the username or password is valid (whether the user account exists in Active Directory(AD)
-** Whether the user exceeded the max allowed attempts (set in AD)
-** Whether the AD or ADFS is up and running
-* Workgroup, cross domain users cannot log in using MFA
-
-* F5 – sc cmds need to be executed in both nodes? relying party configuration using cluster, node level access will be blocked ; Disable?
-•	log out behaviour from apps; login to one app another app won’t be logged
-•	timings different
-
-* When multiple tabs are open and if you sign out from any one tab, all the pages will not be redirected back to the proper ADSF login page.
-+
-It is recommended to close the other tabs or close and reopen the browser.
-*	IE browser is not supported for ADFS login.
-
-
 For information to enable MFA, see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication].

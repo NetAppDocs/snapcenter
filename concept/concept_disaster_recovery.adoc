@@ -19,8 +19,9 @@ Following are the types of disaster recovery (DR) :
 +
 SnapCenter Server data will be backed up and recovered irrespective of whether any plug-in has been added or managed by SnapCenter Server.
 +
+For Multi-factor authentication (MFA), when the DR restore is performed for Snapcenter Server, close all the  browser tabs and reopen a browser to login again. This will clear the existing or active session cookies and ensures that the correct configuration data is updated. 
++
 SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server.
-
 +
 link:../sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html[REST API workflows for disaster recovery of SnapCenter Server]
 
