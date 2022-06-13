@@ -72,6 +72,34 @@ After logging to SnapCenter Server as an RBAC user for the first time, refresh t
 
 If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. link:../install/task_register_untrusted_active_directory_domains.html[Learn more^]
 
+== Log in to SnapCenter using Multi-Factor Authentication (MFA)
+
+SnapCenter Server supports MFAfor domain account, which is part of the active directory.
+
+*What you will need*
+
+* You should have enabled MFA.
++
+For information on how to enable MFA,  see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication]
+
+*About this task*
+
+*	Only FQDN is supported
+*	Workgroup and cross domain users cannot login using MFA
+
+*Steps*
+
+. Launch SnapCenter from the shortcut located on your local host desktop, or from the URL provided at the end of the installation, or from the URL provided by your SnapCenter administrator.
+. In the AD FS login page, enter Username and Password.
++
+When the username or password invalid error message is displayed on the AD FS page, you should check for the following:
+
+* Whether the username or password is valid
++
+The user account should exist in the Active Directory (AD)
+* Whether you exceeded the maximum allowed attempts that was set in AD
+* Whether AD and AD FS is up and running
+
 == Modify the SnapCenter default GUI session timeout
 
 You can modify the SnapCenter GUI session timeout period to make it less than or greater than the default timeout period of 20 minutes.
@@ -102,31 +130,3 @@ There are flaws in the SSL 3.0 protocol that an attacker can use to cause connec
   ... With the new Server key selected, click *Edit* > *New* > *DWORD*.
   ... Name the new DWORD Enabled, and then enter 0 as the value.
 . Close Registry Editor.
-
-= Log in to SnapCenter using Multi-Factor Authentication (MFA)
-
-SnapCenter Server supports MFAfor domain account, which is part of the active directory.
-
-*What you will need*
-
-* You should have enabled MFA.
-+
-For information on how to enable MFA,  see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication]
-
-*About this task*
-
-*	Only FQDN is supported
-*	Workgroup and cross domain users cannot login using MFA
-
-*Steps*
-
-. Launch SnapCenter from the shortcut located on your local host desktop, or from the URL provided at the end of the installation, or from the URL provided by your SnapCenter administrator.
-. In the AD FS login page, enter Username and Password.
-+
-When the username or password invalid error message is displayed on the AD FS page, you should check for the following:
-
-* Whether the username or password is valid
-+
-The user account should exist in the Active Directory (AD)
-* Whether you exceeded the maximum allowed attempts that was set in AD
-* Whether AD and AD FS is up and running
