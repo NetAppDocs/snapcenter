@@ -1,8 +1,8 @@
 ---
 permalink: upgrade/upgrade_workflow.html
 sidebar: sidebar
-keywords: upgrade, snapcenter server, plug-ins, workflow
-summary: 'Describes how to upgrade SnapCenter Server and the plug-ins'
+keywords: upgrade, snapcenter server, plug-ins, workflow, upgrade path
+summary: 'Describes how to upgrade SnapCenter Server and the plug-ins and what are the supported upgrade paths'
 ---
 = Upgrade workflow
 :icons: font
