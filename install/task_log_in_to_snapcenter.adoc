@@ -74,7 +74,7 @@ If you have untrusted Active Directory domains that you want SnapCenter to suppo
 
 == Log in to SnapCenter using Multi-Factor Authentication (MFA)
 
-SnapCenter Server supports MFAfor domain account, which is part of the active directory.
+SnapCenter Server supports MFA for domain account, which is part of the active directory.
 
 *What you will need*
 
