@@ -80,7 +80,7 @@ SNAPCENTER_SERVER_PORT
 a|
 Displays the port number on which the SnapCenter Server is running.
 a|
-SPL_LOGS_MAX_COUNT
+LOGS_MAX_COUNT
 a|
 Displays the number of SnapCenter Plug-in Loader log files that are retained in the _/custom_location/snapcenter/spl/logs_ folder.
 
@@ -94,6 +94,25 @@ a|
 Displays the absolute directory path of the JAVA_HOME which is used to start SPL service.
 
 This path is determined during installation and as part of starting SPL.
+
+a|
+LOG_MAX_SIZE
+a|
+Displays the maximum size of the job log file.
+
+Once the maximum size is reached, the log file is zipped, and the logs are written into the new file of that job.
+
+a|
+RETAIN_LOGS_OF_LAST_DAYS
+a|
+Displays the number of days up to which the logs are retained.
+
+a|
+ENABLE_CERTIFICATE_VALIDATION
+a|
+Displays true when CA certificate validation is enabled for the host.
+
+You can enable or disable this parameter either by editing the spl.properties or by using the SnapCenter GUI or cmdlet.
 |===
 If any of these parameters are not assigned to the default value or if you want to assign or change the value, then you can modify the spl.properties file. You can also verify the spl.properties file and edit the file to troubleshoot any issues related to the values that are assigned to the parameters. After you modify the spl.properties file, you should restart the SnapCenter Plug-in Loader service.
 
