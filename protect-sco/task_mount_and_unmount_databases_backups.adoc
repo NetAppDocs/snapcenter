@@ -30,6 +30,7 @@ NOTE: For information on how to edit the asm_diskstring parameter, see https://k
  ** Same UID and GID as that of the original host
  ** Same Oracle version as that of the original host
  ** Same OS distribution and version as that of the original host
+ ** For NVMe, NVMe util should be installed
 
 *Steps*
 

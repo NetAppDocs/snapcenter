@@ -38,9 +38,10 @@ For information on how to edit the asm_diskstring parameter, see https://kb.neta
   *** The name of the data disk group can be configured, but ensure that the name is not used by any other ASM disk group on the host where the clone will be performed.
 +
 Data files residing on the ASM disk group are provisioned as part of the SnapCenter clone workflow.
+** For NVMe, NVMe util should be installed
 * The protection type for the data LUN and the log LUN, such as mirror, vault, or mirror-vault, should be the same to discover secondary locators during cloning to an alternate host using log backups.
 * You should set the value of exclude_seed_cdb_view to FALSE in the source database parameter file to retrieve seed PDB related information for cloning a backup of 12__c__ database.
-+
++For NVMe, NVMe util should be installed
 The seed PDB is a system-supplied template that the CDB can use to create PDBs. The seed PDB is named PDB$SEED. For information about PDB$SEED, see the Oracle Doc ID 1940806.1.
 +
 NOTE: You should set the value before backing up 12__c__ database.

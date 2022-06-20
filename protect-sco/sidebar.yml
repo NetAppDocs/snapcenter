@@ -7,8 +7,6 @@ entries:
         url: /protect-sco/concept_what_you_can_do_with_the_snapcenter_plug_in_for_oracle_database.html
       - title: Features of Plug-in for Oracle
         url: /protect-sco/concept_snapcenter_plug_in_for_oracle_database_features.html
-      - title: Considerations for NVMe configurations
-        url: /protect-sco/considerations_for_NVMe_configurations.html
       - title: Storage types supported by Plug-in for Oracle Database
         url: /protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication for Plug-in for Oracle
