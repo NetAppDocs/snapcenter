@@ -39,15 +39,9 @@ You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere. Fo
 
 == Multi-factor authentication (MFA)
 
-Multi-factor authentication (MFA) enhances the authentication security by having an option to use multiple factors such as TOTP, biometrics, push notifications and so on along with the existing username and password. MFA also enables the customer to use their own user identity providers to get unified user login (SSO) across their portfolio.
-
-MFA uses a third-party Identity Provider (IdP) via the Security Assertion Markup Language (SAML) to manage user sessions.
+MFA uses a third-party Identity Provider (IdP) via the Security Assertion Markup Language (SAML) to manage user sessions. This functionality enhances the authentication security by having an option to use multiple factors such as TOTP, biometrics, push notifications etc. along with the existing username & password. Also, it enables the customer to use their own user identity providers to get unified user login (SSO) across their portfolio.
 
 MFA is applicable only for SnapCenter Server UI login.  The logins are authenticated through the IdP Active Directory Federation Services (AD FS).  You can configure various authentication factors at AD FS. SnapCenter is the service provider and you should configure SnapCenter as a relying party in AD FS. To enable MFA in SnapCenter, you will require the AD FS metadata.
 
-=== Limitations of MFA
-
-* Workgroup user login and disjoint AD domains are not supported.
-* System time of AD FS server and the SnapCenter Server should be the same to login successfully.
-
 For information to enable MFA, see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication].
+

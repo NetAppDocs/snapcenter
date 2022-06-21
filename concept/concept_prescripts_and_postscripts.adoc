@@ -13,20 +13,19 @@ You can use custom prescripts and postscripts as part of your data protection op
 
 == Supported script types
 
-The following type of scripts are supported for Windows:
+The following types of scripts are supported for Windows:
 
 * Batch files
 * PowerShell scripts
 * Perl scripts
 
-The following type of scripts are supported for UNIX:
+The following types of scripts are supported for UNIX:
 
 * Perl scripts
 * Python scripts
 * Shell scripts
 +
 NOTE: Along with default bash shell other shells like sh-shell, k-shell, and c-shell are also supported.
-
 
 == Script path
 

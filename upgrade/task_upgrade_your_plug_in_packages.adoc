@@ -11,6 +11,8 @@ summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade
 [.lead]
 The plug-in packages are distributed as part of the SnapCenter upgrade.
 
+The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
+
 *What you will need*
 
 * If you are a non-root user with access to the Linux machines, you should update the _/etc/sudoers_ file with the latest checksum values before performing the upgrade operation.
