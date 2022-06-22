@@ -26,15 +26,11 @@ CA Certificate is mandatory for the following reasons:
 ** Ensures IP-FQDN resolutions.
 +
 For information on CA certificate, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file^].
-<<<<<<< HEAD
-* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
-=======
 
 *About this task*
 
 * SnapCenter supports SSO based logins when other applications are configured in the same AD FS. In certain AD FS configurations, SnapCenter might require user authentication for security reasons depending on the AD FS session persistence.
 * The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
->>>>>>> 3d599672c62254e7e970479882c2b63f58c602c6
 
 *Steps*
 
