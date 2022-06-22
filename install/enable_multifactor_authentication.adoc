@@ -18,7 +18,7 @@ You should enable MFA by performing some steps in Active Directory Federation Se
 * Procure and configure the authorized CA certificate for SnapCenter server.
 +
 For information on CA certificate, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file^].
-* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
+* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
 
 *Steps*
 
