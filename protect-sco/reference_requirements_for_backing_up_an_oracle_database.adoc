@@ -17,6 +17,6 @@ Before backing up an Oracle database, you should ensure that prerequisites are c
 * You should have verified that all data volumes and archive log volumes belonging to the database are protected if secondary protection is enabled for that database.
 * You should have verified that the database that has files on the ASM disk groups should be in either "`MOUNT`" or "`OPEN`" state to verify its backups using the Oracle DBVERIFY utility.
 * You should have verified that the volume mount point length does not exceed 240 characters.
-* You should increase value of RESTTimeout to 86400000 seconds in _C:\Program Files\NetApp \SMCore\SMCoreServiceHost.exe.config_ file in the SnapCenter Server host, if the database being backed up is large (size in TBs).
+* You should increase value of RESTTimeout to 86400000 ms in _C:\Program Files\NetApp \SMCore\SMCoreServiceHost.exe.config_ file in the SnapCenter Server host, if the database being backed up is large (size in TBs).
 +
 While modifying the values ensure that there are no running jobs and restart the SnapCenter SMCore service after increasing the value.

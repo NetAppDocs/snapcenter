@@ -13,7 +13,7 @@ You can install the SnapCenter Plug-in for Microsoft Windows locally on a Window
 
 *What you will need*
 
-* You must have installed Microsoft .Net 4.5.2 or later.
+* You must have installed Microsoft .Net 4.7.2 or later.
 * You must have installed PowerShell 4.0 or later.
 * You must have turned on Windows message queuing.
 * You must be a local administrator on the host.
