@@ -79,7 +79,7 @@ Mount command for a volume or qtree on a Linux machine:
 +
 Example for NFS:
 +
-  mount VSERVER_DATA_IP:%{VOLUME_NAME_Clone} /mnt
+  mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
