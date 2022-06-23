@@ -56,5 +56,7 @@ a|
 * Windows Management Framework (WMF) 4.0 or later
 * PowerShell 4.0 or later
 
+For .NET troubleshooting information see, link:..https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity.]
+
 For the latest information about supported versions, see https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 |===
