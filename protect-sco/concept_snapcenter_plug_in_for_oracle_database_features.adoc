@@ -55,8 +55,11 @@ For information about SLM, see the http://docs.netapp.com/ontap-9/topic/com.neta
 
 * Support for non-volatile memory express (NVMe) on Linux
 ** NVMe util should be installed on the host.
-** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification operations are supported on the NVMe hardware except for the virtualized environments like VMDK and RDM.
 +
 You must install NVMe util to clone or mount to alternate host.
+** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification operations are supported on the NVMe hardware except for the virtualized environments like VMDK and RDM.
++
+The above operations are supported on devices without partitions or with single partition.
+
 +
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
