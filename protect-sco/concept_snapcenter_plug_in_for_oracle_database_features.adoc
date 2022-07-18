@@ -61,5 +61,7 @@ You must install NVMe util to clone or mount to alternate host.
 +
 The above operations are supported on devices without partitions or with single partition.
 
+NOTE: You can configure multipathing solution for NVMe devices by setting the native multipathing option in the kernel. Device Mapper (DM) multipathing is not supported. 
+
 +
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
