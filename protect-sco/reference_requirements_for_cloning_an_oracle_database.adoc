@@ -62,7 +62,7 @@ If the file does not exist, you should create the file as shown in the example b
 +
 _blacklist {_
 +
-  User can add comment by using the ‘#’ in the beginning and end of the line
+  # You can add comments by using the ‘#’ at the beginning of the line
   nn-0x<target_node_name_1>:pn-0x<target_port_name_1>
   nn-0x<target_node_name_2>:pn-0x<target_port_name_2>
 +
