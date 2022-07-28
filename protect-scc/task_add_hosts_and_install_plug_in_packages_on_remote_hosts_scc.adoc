@@ -13,7 +13,7 @@ You must use the SnapCenterAdd Host page to add hosts, and then install the plug
 
 *What you will need*
 
-* You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
+* You should be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * You should ensure that the message queueing service is running.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
