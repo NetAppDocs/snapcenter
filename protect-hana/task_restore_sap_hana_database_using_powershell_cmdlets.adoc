@@ -15,7 +15,6 @@ Restoring a SAP HANA database backup includes initiating a connection session wi
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-
 *Steps*
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.

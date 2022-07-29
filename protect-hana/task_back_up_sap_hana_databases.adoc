@@ -31,13 +31,7 @@ The information regarding the parameters that can be used with the cmdlet and th
 For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
 +
 For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
-+
-NOTE: * For pre restore, post restore, mount, and unmount commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
-+
-For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
-+
-For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
-+
+
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 
 *Steps*
