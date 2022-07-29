@@ -26,6 +26,20 @@ link:task_back_up_resource_groups_sap_hana.html[Back up resource groups]
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide]
 
+* For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the following paths:
++
+For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
++
+For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
++
+NOTE: * For pre restore, post restore, mount, and unmount commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
++
+For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
++
+For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
++
+NOTE: If the commands do not exist in the command list, then the operation will fail.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
