@@ -6,7 +6,7 @@ NOTE: If you are coming to SnapCenter from a NetApp SnapManager product and are 
 
 A data protection relationship replicates data on primary storage (the source volume) to secondary storage (the destination volume). When you initialize the relationship, ONTAP transfers the data blocks referenced on the source volume to the destination volume.
 
-NOTE: SnapCenter does not support cascade relationships between SnapMirror and SnapVault volumes (*Primary* > *Mirror* > *Vault*). Use fanout relationships only (*Primary* > *Mirror*, *Primary* > *Vault*).
+NOTE: SnapCenter does not support cascade relationships between SnapMirror and SnapVault volumes (*Primary* > *Mirror* > *Vault*). You should use fanout relationships.
 
 SnapCenter supports the management of version-flexible SnapMirror relationships. For details about version-flexible SnapMirror relationships and how to set them up, see the http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.ic-base%2Fresources%2Fhome.html[ONTAP documentation^].
 

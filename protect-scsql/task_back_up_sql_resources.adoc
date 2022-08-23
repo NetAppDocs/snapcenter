@@ -95,8 +95,8 @@ If the policy selected for the on-demand backup is associated with a backup sche
 
  .. Select *Verify after backup* to verify your backup.
  .. Click *Backup*.
-
-NOTE: You should not rename the backups created by SnapCenter.
++
+NOTE: You should not rename the backup job created in Windows scheduler or SQL Server agent.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 +
