@@ -27,9 +27,17 @@ The default value is false
 
 *About this task*
 
-A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
+* A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
 
-Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
+
+* Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
 
 *Steps*
 
@@ -205,6 +213,8 @@ Enter the number of replication attempts that should occur before the process ha
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
 +
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
++
 NOTE: You must configure the SnapMirror retention policy in ONTAP so that the secondary storage does not reach the maximum limit of Snapshot copies.
 
 . In the Verification page, perform the following steps:
@@ -238,4 +248,7 @@ Select *Limit the checks and obtain the locks instead of using an internal datab
 
  .. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.
  .. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
+
 . Review the summary, and then click *Finish*.

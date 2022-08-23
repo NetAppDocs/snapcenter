@@ -25,6 +25,16 @@ To prepare for data protection, you must complete tasks such as installing SnapC
 +
 The default value is false
 
+*About this task*
+
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
+
 *Steps*
 
 . In the left navigation pane, click *Settings*.
@@ -111,5 +121,7 @@ NOTE: You should configure SnapMirror retention policy in ONTAP for the secondar
 . In the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
 . Review the summary, and then click *Finish*.
