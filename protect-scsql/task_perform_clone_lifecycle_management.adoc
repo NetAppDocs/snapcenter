@@ -30,7 +30,7 @@ If needed, you can change this path and restart SMcore service.  It is recommend
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
 +
 You can use the GET API to display the value of the key. SET API is not supported.
-* Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
+* Most of the fields on the Clone lifecycle wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
 
 *Steps*
 
