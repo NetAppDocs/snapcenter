@@ -11,6 +11,16 @@ summary: 'A resource group is required for any data protection job. You must als
 [.lead]
 A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform and the protection schedule.
 
+*About this task*
+
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Microsoft Exchange Server plug-in from the list.

@@ -31,6 +31,13 @@ The https://docs.microsoft.com/en-us/powershell/module/exchange/move-activemailb
 Plug-in for Exchange does not perform a full restore on a disk if the disk contains Exchange files such as those used for replication. When a full restore might impact Exchange functionality, Plug-in for Exchange performs a single file restore operation.
 
 * Plug-in for Exchange cannot restore BitLocker encrypted drives.
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
 
 *Steps*
 
@@ -81,6 +88,8 @@ Restore prescript arguments include $Database and $ServerInstance.
 Restore postscript arguments include $Database, $ServerInstance, $BackupName, $LogDirectory, and $TargetServerInstance.
 +
 You can run a script to update SNMP traps, automate alerts, send logs, and so on.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

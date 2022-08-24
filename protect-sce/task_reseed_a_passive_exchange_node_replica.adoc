@@ -11,11 +11,23 @@ summary: 'If you need to reseed a replica copy, for instance when a copy is corr
 [.lead]
 If you need to reseed a replica copy, for instance when a copy is corrupt, you can reseed to the latest backup using the reseed feature in SnapCenter.
 
+*What you will need*
+
 * You must be using SnapCenter Server 4.1 or later, and Plug-in for Exchange 4.1 or later.
 +
 Reseeding a replica is not supported in SnapCenter versions earlier than 4.1.
 
 * You must have created a backup of the database you want to reseed.
+
+*About this task*
+
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
 
 |===
 *Best Practice:* To avoid lagging between nodes, we recommend that you either create a new backup before you perform a reseed operation, or choose the host with the latest backup.
@@ -46,6 +58,8 @@ Select *Database Availability Group* from the View list.
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the reseed operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

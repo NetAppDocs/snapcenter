@@ -25,6 +25,13 @@ You can use SnapCenter to clone a SQL Server database backup. If you want to acc
 * While cloning to a Failover Cluster Instance (FCI), ensure that the mount points exists, it is a shared disk, and the path and the FCI should belong to the same SQL resource group.
 * Ensure that there is only one vFC or FC initiator attached to each host. This is because, SnapCenter supports only one initiator per host.
 * If the source database or the target instance is on a cluster shared volume (csv), then the cloned database will be on the csv.
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
 
 NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedicated disk.
 
@@ -100,6 +107,8 @@ This point-in-time clone halts the clone of the transaction log entries that wer
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
 +
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
++
 The default script timeout is 60 seconds.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
@@ -107,7 +116,7 @@ The default script timeout is 60 seconds.
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
-
++
 For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html[Manage EMS data collection]
 
 . Review the summary, and then click *Finish*.
