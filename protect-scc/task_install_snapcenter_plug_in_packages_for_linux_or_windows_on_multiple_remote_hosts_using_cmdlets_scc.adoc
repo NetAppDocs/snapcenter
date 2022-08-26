@@ -21,7 +21,7 @@ The user adding a host should have the administrative rights on the host.
 . On the SnapCenter Server host, establish a session using the Open-SmConnection cmdlet, and then enter your credentials.
 . Install the plug-in on multiple hosts using the Install-SmHostPackage cmdlet and the required parameters.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
 +
 You can use the -skipprecheck option when you have installed the plug-ins manually and do not want to validate whether the host meets the requirements to install the plug-in.
 

@@ -71,7 +71,7 @@ You must also select a scheduler instance to associate with the scheduling polic
 If you do not select Microsoft SQL Server scheduler, the default is Microsoft Windows scheduler.
 
 +
-Third party backup schedules are not supported when they overlap with SnapCenter backup schedules. You should not modify the schedules from the Windows task scheduler and SQL Server Agent.
+Third party backup schedules are not supported when they overlap with SnapCenter backup schedules. You should not modify the schedules and rename the backup job created in Windows scheduler or SQL Server agent.
 . In the Verification page, perform the following steps:
  .. Select the verification server from the *Verification server* drop-down list.
 +

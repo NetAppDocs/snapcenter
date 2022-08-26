@@ -23,6 +23,8 @@ For more information see link:https://docs.netapp.com/us-en/ontap-sm-classic/onl
 * Restart MSSQL server service.
 * Ensure that the SQL resources are back online.
 
+NOTE: During failover or failback of the plug-in, the plug-in overall status is not refreshed immediately. The host and plug-in overall status is updated during the subsequent host refresh operation.
+
 *Steps*
 
 . In the Settings page, navigate to *Settings* > *Global Settings* > *Disaster Recovery*.

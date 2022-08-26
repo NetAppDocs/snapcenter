@@ -11,6 +11,8 @@ summary: 'If you need to reseed a replica copy, for instance when a copy is corr
 [.lead]
 If you need to reseed a replica copy, for instance when a copy is corrupt, you can reseed to the latest backup using the reseed feature in SnapCenter.
 
+*What you will need*
+
 * You must be using SnapCenter Server 4.1 or later, and Plug-in for Exchange 4.1 or later.
 +
 Reseeding a replica is not supported in SnapCenter versions earlier than 4.1.
@@ -43,10 +45,6 @@ Select *Database Availability Group* from the View list.
 . In the Manage Copies page, click *Reseed*.
 . From the list of unhealthy databases copies in the Reseed wizard, select the one you want to reseed, and then click *Next*.
 . In the Host window, select the host with the backup from which you want to reseed, and then click *Next*.
-. In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the reseed operation, respectively.
-+
-For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
-
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email.

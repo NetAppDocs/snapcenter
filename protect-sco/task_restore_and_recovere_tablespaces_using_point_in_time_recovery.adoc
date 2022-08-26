@@ -48,7 +48,8 @@ NOTE: You cannot perform PITR on SYSAUX, SYSTEM, and UNDO tablespaces.
 . In the Recovery Scope page, perform one of the following actions:
  ** If you want to recover to a specific System Change Number (SCN), select *Until SCN* and specify the SCN and auxiliary destination.
  ** If you want to recover to a specific date and time, select *Date and Time* and specify the date and time and the auxiliary destination.
-When you specify the SCN or date and time, SnapCenter lists the backups that are required to perform PITR but are not cataloged and mounted. You should manually mount and catalog the log backups required for PITR.
++
+SnapCenter identifies and then mounts and catalogs the optimal number of data and log backups required to perform PITR based on specified SCN or the selected date and time.
 . In the PreOps page, enter the path and the arguments of the prescript that you want to run before the restore operation.
 +
 You should store the prescripts either in the /var/opt/snapcenter/spl/scripts path or in any folder inside this path. By default, the /var/opt/snapcenter/spl/scripts path is populated. If you have created any folders inside this path to store the scripts, you must specify those folders in the path.

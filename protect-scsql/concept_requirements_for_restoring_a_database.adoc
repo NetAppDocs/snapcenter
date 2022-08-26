@@ -37,6 +37,6 @@ For information about how administrators assign resources to users, see the Snap
 * All backup and clone jobs must be stopped before restoring the database.
 * The restore operation might timeout if the database size is in terabytes (TB).
 +
-You must increase the value of the RESTTimeout parameter of SnapCenter Server to 20000000 ms by running the following command: Set-SmConfigSettings -Agent -configSettings @{"RESTTimeout" = "20000000"}. According to the size of the database, the timeout value can be changed and the maximum value that you can set is 2147483648.
+You must increase the value of the RESTTimeout parameter of SnapCenter Server to 20000000 ms by running the following command: Set-SmConfigSettings -Agent -configSettings @{"RESTTimeout" = "20000000"}. According to the size of the database, the timeout value can be changed and the maximum value that you can set is 86400000 ms.
 
 If you want to restore while the databases are online, the online restore option should be enabled in the Restore page.

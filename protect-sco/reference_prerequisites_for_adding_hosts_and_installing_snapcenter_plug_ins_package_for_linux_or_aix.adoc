@@ -113,6 +113,8 @@ You should configure sudo privileges for the non-root user to provide access to 
 * /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
 * /custom_location/NetApp/snapcenter/spl/bin/spl
 
+NOTE: If you are managing a RAC setup, the non-root user should be an Oracle user and it cannot be just any non-root OS user.
+
 *Steps*
 
 . Log in to the Linux host on which you want to install the SnapCenter Plug-ins Package for Linux.
@@ -212,6 +214,8 @@ You should configure sudo privileges for the non-root user to provide access to 
 * /home/_AIX_USER_/.sc_netapp/snapcenter_aix_host_plugin.bsx
 * /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
 * /custom_location/NetApp/snapcenter/spl/bin/spl
+
+NOTE: If you are managing a RAC setup, the non-root user should be an Oracle user and it cannot be just any non-root OS user.
 
 *Steps*
 
