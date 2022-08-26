@@ -22,6 +22,16 @@ You cannot restore a single file from a backup because the restored file system 
 * You cannot restore a system or boot volume.
 * SnapCenter can restore file systems in a Windows cluster without taking the cluster group offline.
 
+*About this task*
+
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
@@ -32,6 +42,8 @@ You cannot restore a single file from a backup because the restored file system 
 . You can enter the path and the arguments of the prescript or postscript that you want SnapCenter to run before or after the restore operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
 . In the Notification page, select one of the following options:
 +

@@ -81,7 +81,7 @@ a|Server host:
 a|Third-party libraries
 a|Required on SnapCenter Server host and plug-in host:
 
-* Microsoft .NET Framework 4.5.2 or later
+* Microsoft .NET Framework 4.7.2 or later
 
 * Windows Management Framework (WMF) 4.0 or later
 

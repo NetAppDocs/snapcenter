@@ -10,7 +10,10 @@ Windows Server 2012 or later enables you to create a group Managed Service Accou
 . Create a KDS root key to generate unique passwords for each object in your gMSA.
 . For each domain, run the following command from the Windows domain controller: Add-KDSRootKey -EffectiveImmediately
 . Create and configure your gMSA:
- .. Create a user group account.
+ .. Create a user group account in the following format:
+  
+ domainName\accountName$
+
  .. Add computer objects to the group.
  .. Use the user group you just created to create the gMSA.
 +

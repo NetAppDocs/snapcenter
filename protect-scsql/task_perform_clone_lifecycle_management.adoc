@@ -21,6 +21,17 @@ SnapCenter enables you to schedule multiple clone operations to run simultaneous
 
 NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedicated disk.
 
+*About this task*
+
+* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
++
+If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
++
+The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported.
+* Most of the fields on the Clone lifecycle wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
@@ -57,6 +68,8 @@ Choose whether to automatically assign a mount point or volume mount point under
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 +
 The default script timeout is 60 seconds.
 

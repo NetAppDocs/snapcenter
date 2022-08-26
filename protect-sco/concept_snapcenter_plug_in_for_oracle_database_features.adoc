@@ -32,6 +32,7 @@ The Plug-in for Oracle Database also offers the following benefits:
 +
 You can also set the credentials so that the authorized SnapCenter users have application-level permissions.
 
+* Support for Archive Log Management (ALM) for restore and clone operations
 * Creation of space-efficient and point-in-time copies of production databases for testing or data extraction by using NetApp FlexClone technology
 +
 A FlexClone license is required on the storage system where you want to create the clone.
@@ -48,6 +49,19 @@ In a single operation, Snapshot copies are consolidated when databases in a sing
 +
 Enabled by default, the SLM feature periodically discovers the LUNs that do not have optimized paths and fixes them. You can configure SLM by modifying the parameters in the scu.properties file located at /var/opt/snapcenter/scu/etc.
 
- ** You can disable this by setting the value of ENABLE_LUNPATH_MONITORING to false.
- ** You can specify the frequency in which the LUN paths will be fixed automatically by assigning the value (in hours) to LUNPATH_MONITORING_INTERVAL.
+ ** You can disable this by setting the value of ENABLE_LUNPATH_MONITORING parameter to false.
+ ** You can specify the frequency in which the LUN paths will be fixed automatically by assigning the value (in hours) to LUNPATH_MONITORING_INTERVAL parameter.
 For information about SLM, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^].
+
+* Support for non-volatile memory express (NVMe) on Linux
+** NVMe util should be installed on the host.
++
+You must install NVMe util to clone or mount to alternate host.
+** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification operations are supported on the NVMe hardware except for the virtualized environments like VMDK and RDM.
++
+The above operations are supported on devices without partitions or with single partition.
+
+NOTE: You can configure multipathing solution for NVMe devices by setting the native multipathing option in the kernel. Device Mapper (DM) multipathing is not supported. 
+
++
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
