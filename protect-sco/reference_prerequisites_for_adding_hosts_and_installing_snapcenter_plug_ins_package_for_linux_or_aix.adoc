@@ -75,7 +75,7 @@ If you have upgraded JAVA to the latest version, you must ensure that the JAVA_H
 
 |===
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === Configure sudo privileges for non-root users for Linux host
 
@@ -177,7 +177,7 @@ If you have upgraded JAVA to the latest version, you must ensure that the JAVA_H
 
 |===
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === Configure sudo privileges for non-root users for AIX host
 
