@@ -99,16 +99,6 @@ entries:
             url: /protect-scsql/task_storage_disaster_recovery_for_scsql.html
           - title: Failback from SnapCenter Plug-in for SQL Server secondary storage to primary storage
             url: /protect-scsql/task_failback_from_scsql_secondary_storage_to_primary_storage.html
-      - title: Import archived backups from SnapManager for Microsoft SQL Server to SnapCenter
-        entries:
-          - title: Import archived backups overview
-            url: /protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html
-          - title: Limitations related to the import feature
-            url: /protect-scsql/concept_limitations_related_to_the_import_feature.html
-          - title: Import archived backups
-            url: /protect-scsql/task_import_archived_backups.html
-          - title: View the imported backups in SnapCenter Server
-            url: /protect-scsql/task_view_the_imported_backups_in_snapcenter_server.html
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: /protect-scsql/task_install_snapcenter_plug_in_for_vmware_vsphere.html
   - title: Prepare for data protection
