@@ -37,6 +37,8 @@ Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server
 +
 Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter custom plug-ins for IBM DB2, MongoDB, MySQL etc. on the NetApp Automation Store.
 
+https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]
+
 * Policy-based backups
 +
 Policy-based backups leverage NetApp Snapshot copy technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally, you can automate protection of these backups to secondary storage by updates to existing protection relationships.
@@ -60,6 +62,12 @@ The SnapCenter GUI provides a single, one-stop interface for managing backups an
 * REST APIs, Windows cmdlets, UNIX commands
 +
 SnapCenter includes REST APIs for most functionality for integration with any orchestration software, and use of Windows PowerShell cmdlets and command-line interface.
+
+For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html[REST API overview].
+
+For more information on Windows cmdlets see https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
+
+For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301[SnapCenter Software Command Reference Guide^].
 
 * Centralized data protection Dashboard and reporting
 * Role-Based Access Control (RBAC) for security and delegation.
@@ -114,7 +122,7 @@ NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be inst
 
 * SnapCenter Custom Plug-ins
 +
-Custom plug-ins are community-supported and can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store].
+Custom plug-ins are community-supported and can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
 
 SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
 
@@ -261,7 +269,7 @@ NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp commu
 
 NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
 
-For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^]
+For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 
 
 == SnapCenter repository
