@@ -50,7 +50,7 @@ a|
 
 The port is used for communication between SnapCenter and MySQL repository database.
 
-You can create secured connections from the SnapCenter Server to the MySQL server. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html[Learn more^]
+You can create secured connections from the SnapCenter Server to the MySQL server. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html[Learn more]
 
 a|
 Windows plug-in hosts

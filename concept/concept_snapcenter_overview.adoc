@@ -36,7 +36,7 @@ SnapCenter includes the following key features:
 Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, and Windows Host Filesystems running on ONTAP systems.
 +
 Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter custom plug-ins for IBM DB2, MongoDB, MySQL etc. on the NetApp Automation Store.
-
++
 https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]
 
 * Policy-based backups
@@ -62,11 +62,11 @@ The SnapCenter GUI provides a single, one-stop interface for managing backups an
 * REST APIs, Windows cmdlets, UNIX commands
 +
 SnapCenter includes REST APIs for most functionality for integration with any orchestration software, and use of Windows PowerShell cmdlets and command-line interface.
-
++
 For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html[REST API overview].
-
++
 For more information on Windows cmdlets see https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
-
++
 For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301[SnapCenter Software Command Reference Guide^].
 
 * Centralized data protection Dashboard and reporting
@@ -270,7 +270,6 @@ NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp commu
 NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
 
 For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
-
 
 == SnapCenter repository
 
