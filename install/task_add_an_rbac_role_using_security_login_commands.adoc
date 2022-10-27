@@ -40,7 +40,7 @@ NOTE: If you later upgrade SnapCenter or ONTAP, you should re-run the RBAC User 
 More information about setting up ONTAP RBAC roles, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-adm-auth-rbac/home.html[ONTAP 9 Administrator Authentication and RBAC Power Guide^].
 
 
-NOTE: For consistency, the SnapCenter documentation refers to the roles as using privileges. The OnCommand System Manager GUI uses the term "`attribute`" instead of "`privilege.`" When setting up ONTAP RBAC roles, both these terms mean the same thing.
+NOTE: For consistency, the SnapCenter documentation refers to the roles as using privileges. The OnCommand System Manager GUI uses the term _attribute_ instead of _privilege_. When setting up ONTAP RBAC roles, both these terms mean the same thing.
 
 *Steps*
 

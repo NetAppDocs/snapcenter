@@ -40,11 +40,11 @@ For information on how to edit the asm_diskstring parameter, see https://kb.neta
 Data files residing on the ASM disk group are provisioned as part of the SnapCenter clone workflow.
 ** For NVMe, NVMe util should be installed
 * The protection type for the data LUN and the log LUN, such as mirror, vault, or mirror-vault, should be the same to discover secondary locators during cloning to an alternate host using log backups.
-* You should set the value of exclude_seed_cdb_view to FALSE in the source database parameter file to retrieve seed PDB related information for cloning a backup of 12__c__ database.
+* You should set the value of exclude_seed_cdb_view to FALSE in the source database parameter file to retrieve seed PDB related information for cloning a backup of 12_c_ database.
 +
 The seed PDB is a system-supplied template that the CDB can use to create PDBs. The seed PDB is named PDB$SEED. For information about PDB$SEED, see the Oracle Doc ID 1940806.1.
 +
-NOTE: You should set the value before backing up 12__c__ database.
+NOTE: You should set the value before backing up 12_c_ database.
 
 * SnapCenter supports backup of file systems that are managed by the autofs subsystem. If you are cloning the database, ensure that data mount points are not under the root of the autofs mount point because the root user of the plug-in host does not have permission to create directories under the root of the autofs mount point.
 +
@@ -60,10 +60,8 @@ NOTE: You can manually register the new cloned mount points with the autofs subs
 +
 If the file does not exist, you should create the file as shown in the example below:
 +
-_blacklist {_
-+
-  # You can add comments by using the ‘#’ at the beginning of the line
+  blacklist {
   nn-0x<target_node_name_1>:pn-0x<target_port_name_1>
   nn-0x<target_node_name_2>:pn-0x<target_port_name_2>
-+
-_}_
+  }
+
