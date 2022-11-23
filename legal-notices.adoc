@@ -12,36 +12,11 @@ summary: Legal notices provide access to copyright statements, trademarks, paten
 :linkattrs:
 :imagesdir: ./media/
 
-Legal notices provide access to copyright statements, trademarks, patents, and more.
+// Include the common notices
+include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/common-legal-notices.adoc[]
 
-== Copyright
+// Include the open source notice intro
+include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]
 
-http://www.netapp.com/us/legal/copyright.aspx[http://www.netapp.com/us/legal/copyright.aspx]
-
-== Trademarks
-
-NETAPP, the NETAPP logo, and the marks listed on the NetApp Trademarks page are trademarks of NetApp, Inc. Other company and product names may be trademarks of their respective owners.
-
-http://www.netapp.com/us/legal/netapptmlist.aspx[http://www.netapp.com/us/legal/netapptmlist.aspx]
-
-== Patents
-
-A current list of NetApp owned patents can be found at:
-
-https://www.netapp.com/us/media/patents-page.pdf[https://www.netapp.com/us/media/patents-page.pdf]
-
-== Privacy policy
-
-https://www.netapp.com/us/legal/privacypolicy/index.aspx[https://www.netapp.com/us/legal/privacypolicy/index.aspx]
-
-== Machine translation
-
-Important information about localized content.
-
-https://www.netapp.com/company/legal/machine-translation/[https://www.netapp.com/company/legal/machine-translation/]
-
-== Open source
-
-Provides information about third-party copyright and licenses used in this product. Your product does not necessarily use all the software components referred to below.
-
+// Add required link(s)
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883298[Notice for SnapCenter 4.7^]

@@ -169,10 +169,6 @@ vserver iscsi connection show
 
 vserver show
 
-|===
-|===
-| Read-only commands: Minimum privileges required for ONTAP 8.3.0 and later
-
 a|
 network interface
 
@@ -180,4 +176,5 @@ network interface show
 
 vserver
 
+metrocluster show
 |===
