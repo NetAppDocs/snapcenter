@@ -157,4 +157,6 @@ a|
 * network interface
 
 * network interface show
-|===
+
+a|
+* metrocluster show

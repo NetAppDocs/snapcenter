@@ -180,4 +180,5 @@ network interface show
 
 vserver
 
+metrocluster show
 |===
