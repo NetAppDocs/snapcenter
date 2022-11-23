@@ -1,5 +1,5 @@
 ---
-permalink: protect-concept/concept_disaster_recovery.html
+permalink: concept/concept_disaster_recovery.html
 sidebar: sidebar
 keywords:
 summary: 'You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.'
