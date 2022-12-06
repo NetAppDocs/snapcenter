@@ -14,7 +14,7 @@ entries:
       - title: Pre-defined SnapCenter roles and permissions
         url: /concept/reference_pre_defined_snapcenter_roles_and_permissions.html
   - title: Disaster Recovery
-    url: /protect-concept/concept_disaster_recovery.html
+    url: /concept/concept_disaster_recovery.html
   - title: Resources, resource groups, and policies
     url: /concept/concept_resources_resource_groups_and_policies.html
   - title: Prescripts and postscripts
