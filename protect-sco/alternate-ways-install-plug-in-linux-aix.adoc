@@ -9,6 +9,17 @@ summary: 'You can use other alternate ways to install the SnapCenter Plug-ins Pa
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+You can also install the Plug-ins Package for Linux or AIX manually by either using the cmdlets or CLIs.
+
+Before installing the plug-in manually, you should validate the signature of the binary package by using the key *snapcenter_<SnapCenter_version_number>_public_key.asc* located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_. 
+
+NOTE: Ensure that *gnupg-2.2.x* (GNU Privacy Guard) is installed on the host where you want to install the plug-in.
+
+Validate the signature of the binary package by running the following commands:
+. `gpg --import snapcenter<SnapCenter_version_number>_public_key.asc`
+. `gpg --verify --default-key snapcenter-GPG-bin snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
+
 == Install on multiple remote hosts using cmdlets
 
 You should use the _Install-SmHostPackage_ PowerShell cmdlet to install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX on multiple hosts.

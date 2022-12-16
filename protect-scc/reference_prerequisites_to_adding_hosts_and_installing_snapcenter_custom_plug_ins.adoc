@@ -71,12 +71,13 @@ https://imt.netapp.com/matrix/imt.jsp?components=105308;&solution=1259&isHWU&src
 +
 NOTE: Ensure that you are using Sudo version between 1.8.7 and 1.8.19P2.
 +
+[subs=+quotes]
 ----
-Cmnd_Alias HPPLCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin, /opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl, /opt/NetApp/snapcenter/scc/bin/scc
-Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/Linux_Prechecks.sh
-Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
-Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
-Cmnd_Alias SCCCMDEXECUTOR = checksum_value== /opt/NetApp/snapcenter/scc/bin/sccCommandExecutor
+Cmnd_Alias HPPLCMD = sha224:_checksum_value_== /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin, /opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl, /opt/NetApp/snapcenter/scc/bin/scc
+Cmnd_Alias PRECHECKCMD = sha224:_checksum_value_== /home/_LINUX_USER_/.sc_netapp/Linux_Prechecks.sh
+Cmnd_Alias CONFIGCHECKCMD = sha224:_checksum_value_== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:_checksum_value_== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+Cmnd_Alias SCCCMDEXECUTOR =_checksum_value_== /opt/NetApp/snapcenter/scc/bin/sccCommandExecutor
 _LINUX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD
 Defaults: _LINUX_USER_ !visiblepw
 Defaults: _LINUX_USER_ !requiretty
@@ -84,6 +85,6 @@ Defaults: _LINUX_USER_ !requiretty
 +
 _LINUX_USER_ is the name of the non-root user that you created.
 +
-You can obtain the checksum value from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
+You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
 +
 IMPORTANT: The example should be used only as a reference for creating your own data.
