@@ -54,9 +54,9 @@ Discover the Oracle database on node 1 (assuming the cluster IP is hosted on nod
 
 NOTE: There will be stale volumes, directories, and lock file if the failover happens while any other SnapCenter operations are running.
 
-== Install Plug-ins Package for Linux in silent mode or console mode
+== Install Plug-ins Package for Linux in silent mode
 
-You can install the SnapCenter Plug-ins Package for Linux either in console mode or in silent mode by using the command-line interface (CLI).
+You can install the SnapCenter Plug-ins Package for Linux in silent mode by using the command-line interface (CLI).
 
 *What you will need*
 
@@ -76,29 +76,9 @@ You are required to provide the necessary installation information while install
 The default installation path is _C:\ProgramData\NetApp\SnapCenter\PackageRepository_. This path is accessible from the host where the SnapCenter Server is installed.
 
 . From the command prompt, navigate to the directory where you downloaded the installation file.
-. Depending on your preferred mode of installation, perform one of the following step.
+. Run
 +
-|===
-| Install mode | Steps
-
-a|
-Console mode
-a|
-
- .. Run:
-+
-`./SnapCenter_linux_host_plugin.bin –i console`
-
- .. Follow the on-screen prompts to complete the installation.
-
-a|
-Silent mode
-a|
-Run:
-
 `./SnapCenter_linux_host_plugin.bin-i silent-DPORT=8145-DSERVER_IP=SnapCenter_Server_FQDN-DSERVER_HTTPS_PORT=SnapCenter_Server_Port-DUSER_INSTALL_DIR==/opt/custom_path`
-|===
-
 . Edit the spl.properties file located at _/var/opt/snapcenter/spl/etc/_ to add SPL_ENABLED_PLUGINS=SCO,SCU, and then restart the SnapCenter Plug-in Loader service.
 
 IMPORTANT: The installation of the plug-ins package registers the plug-ins on the host and not on the SnapCenter Server. You should register the plug-ins on the SnapCenter Server by adding the host using the SnapCenter GUI or PowerShell cmdlet. While adding the host, select “None” as the credential. After the host is added, the installed plug-ins are automatically discovered.
