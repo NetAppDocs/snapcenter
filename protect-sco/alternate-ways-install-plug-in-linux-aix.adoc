@@ -17,6 +17,7 @@ Before installing the plug-in manually, you should validate the signature of the
 NOTE: Ensure that *gnupg-2.2.x* (GNU Privacy Guard) is installed on the host where you want to install the plug-in.
 
 Validate the signature of the binary package by running the following commands:
+
 . `gpg --import snapcenter<SnapCenter_version_number>_public_key.asc`
 . `gpg --verify --default-key snapcenter-GPG-bin snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
 
