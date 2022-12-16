@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Software 4.7
+  name: SnapCenter Software 4.8
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
     - name: SnapCenter Software
       url: /snapcenter
+      version-number: "4.8"
+    - name: SnapCenter Software
+      url: /snapcenter-4.7
       version-number: "4.7"
     - name: SnapCenter Software
       url: /snapcenter-46
@@ -92,7 +95,7 @@ homepage:
 
 sidebar:
   entries:
-    - title: SnapCenter Software 4.7 docs
+    - title: SnapCenter Software 4.8 docs
       url: /index.html
     - title: Release notes
       url: /release-notes.html
