@@ -1,0 +1,46 @@
+---
+permalink: install/task_enable_two_way_SSL_communication.html
+sidebar: sidebar
+keywords: enable, two-way SSL, SSL 
+summary: 'You can enable two-way SSL communication to secure the communication between SnapCenter Server and MySQL Server.'
+---
+= Enable two-way SSL communication
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can enable two-way SSL communication to secure the communication between SnapCenter Server and MySQL Server. 
+
+*What you will need*
+
+* You should have generated CA Certificate CSR file
+* You should have imported CA certificate
+* You should have got the CA certificate thumbprint
+
+*Steps*
+
+. Remove the existing certificate binding with SMCore default port 8145, by running the following command:
++
+ > netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>
++
+For example:
++
+  > netsh http delete sslcert ipport=0.0.0.0:8145
+
+. Bind the newly installed certificate with the Windows host plug-in services and enable the two-way SSL communication by running the following commands: 
++
+ > $cert = “_<certificate thumbprint>_”
+ > $guid = [guid]::NewGuid().ToString("B")
+ > netsh http add sslcert ipport=0.0.0.0: _<SMCore Port>_ certhash=$cert appid="$guid" clientcertnegotiation=enable
+ > netsh http show sslcert ipport=0.0.0.0:<port>
++
+. Add "IIS AppPool\SnapCenter" user to SnapCenter server CA certificate with mmc.
+. Enable the CA certificate from SnapCenter Server UI.
++
+link:../install/task_enable_ca_certificates_for_snapcenter.html[Enable CA certificates from SnapCenter]
+. Add DWORD registry keys in SnapCenter Server from the following path:
+`HKey_Local_Machine\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL``
++
+`SendTrustedIssuerList = 0``
++
+`ClientAuthTrustMode = 2``
