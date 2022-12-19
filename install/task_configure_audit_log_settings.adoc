@@ -1,0 +1,34 @@
+---
+permalink: install/task_configure_audit_log_settings.html
+sidebar: sidebar
+keywords: audit, log, configure
+summary: 'You can configure to log the security events of software platforms and all the software running on those platforms.'
+---
+= Configure audit log settings
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure to log the security events of software platforms and all the software running on those platforms. These logs are transferred to another server and a copy of the records are saved for verification and validation. 
+
+You should have logged in as the "SnapCenterAdmin" role.
+
+*About this task*
+
+* Alerts are sent when the audit log integrity check schedule is enabled or disabled, when the audit fails, if the forwarding fails due to network delay.
+* Email is sent only when integrity check fails.
+
+*Steps*
+
+. In the *Settings* page, navigate to *Settings* > *Global Settings* > *Audit log Settings*.
+. In the Audit log section, enter the details.
+.. (Optional) Enable *Log UTC time*.  
+.. (Optional) Enable *Audit Log Integrity Check Schedule*.
++
+You can also run *Start-SmAuditIntegrityCheck* command to start integrity check on demand. 
++
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
+.. (Optional) Enable Forwarded audit logs to remote syslog server and enter the Syslog Server details.
+.. Click *Save*.
+. Verify whether the Audit log is enabled or not by clicking *Monitor* > *Jobs*.
+
