@@ -17,7 +17,7 @@ If you want to use the MySQL high availability (HA) feature, you must configure 
 
 SnapCenter provides the _Get-SmRepositoryConfig_ and _Set-SmRepositoryConfig_ PowerShell cmdlets to manage MySQL replication.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
 
 You must be aware of the limitations related to the MySQL HA feature:
 

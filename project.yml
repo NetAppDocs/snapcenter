@@ -25,7 +25,7 @@ homepage:
     - title: Get started
       links:
         - title: Release notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883299
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885481
         - title: Learn about SnapCenter
           url: /concept/concept_snapcenter_overview.html
         - title: Quick reference to protect SQL Server databases
@@ -85,9 +85,9 @@ homepage:
     - title: More resources
       links:
         - title: Cmdlet Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482
         - title: Command Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486
         - title: Documentation for earlier versions of SnapCenter
           url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
         - title: NetApp Knowledge Base - SnapCenter
