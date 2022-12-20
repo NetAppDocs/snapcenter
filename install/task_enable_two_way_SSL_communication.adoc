@@ -44,3 +44,16 @@ link:../install/task_enable_ca_certificates_for_snapcenter.html[Enable CA certif
 `SendTrustedIssuerList = 0``
 +
 `ClientAuthTrustMode = 2``
+. Run the following commands for the server and for each of the agents for which the two-way SSL communication is required:
++
+ > Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="true"}
+ > Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName localhost
+ > Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName <Agent_HostName>
+
+== Disable Two-way SSL communication
+
+To disable the two-way SSL communication, run the following commands for the server and for each of the agents for which the two-way SSL communication is enabled:
+
+	> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="false"}
+	> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName localhost
+	> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName <Agent_HostName>
