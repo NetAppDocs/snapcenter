@@ -15,20 +15,36 @@ You should have logged in as the "SnapCenterAdmin" role.
 
 *About this task*
 
-* Alerts are sent when the audit log integrity check schedule is enabled or disabled, when the audit fails, if the forwarding fails due to network delay.
+* Alerts are sent when the audit log integrity check schedule is enabled or disabled, when the audit fails, or if the forwarding fails due to network delay.
 * Email is sent only when integrity check fails.
+* When either the audit log directory or audit checksum log directory paths are modified, audit integrity check job sends an alert.
+* When both the audit log directory or audit checksum log directory paths are modified, the job cannot track or perform integrity check on the audit logs present in the earlier location.
+* You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
+* Audit log directory and Audit checksum log directory paths should be on the local drive of SnapCenter Server.  Shared or network mounted drives are not supported.
 
 *Steps*
 
 . In the *Settings* page, navigate to *Settings* > *Global Settings* > *Audit log Settings*.
 . In the Audit log section, enter the details.
-.. (Optional) Enable *Log UTC time*.  
-.. (Optional) Enable *Audit Log Integrity Check Schedule*.
+. Enter the *Audit log directory*
+. Enter the *Audit checksum log directory*
+.. Enter the Maximum file size
+.. Enter the Maximum log files
+.. Enter the percentage of disk space usage to send an alert 
+. (Optional) Enable *Log UTC time*.  
+. (Optional) Enable *Audit Log Integrity Check Schedule*.
 +
 You can also run *Start-SmAuditIntegrityCheck* command to start integrity check on demand. 
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
-.. (Optional) Enable Forwarded audit logs to remote syslog server and enter the Syslog Server details.
-.. Click *Save*.
+. (Optional) Enable Forwarded audit logs to remote syslog server and enter the Syslog Server details.
++
+Certificate has to be imported into Trusted Root' for TLS 1.2 protocol.
++
+.. Enter Syslog Server Host
+.. Enter Syslog Server Port
+.. Enter Syslog Server Protocol
+.. Enter RFC Format
+. Click *Save*.
 . Verify whether the Audit log is enabled or not by clicking *Monitor* > *Jobs*.
 
