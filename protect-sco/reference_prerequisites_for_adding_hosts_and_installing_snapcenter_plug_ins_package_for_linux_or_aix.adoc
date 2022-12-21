@@ -196,7 +196,6 @@ SnapCenter 4.4 and later allows a non-root user to install the SnapCenter Plug-i
 *What you will need*
 
 * Sudo version 1.8.7 or later.
-* Ensure that the non-root user is part of the Oracle installation group.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.
