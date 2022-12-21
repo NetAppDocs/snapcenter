@@ -14,7 +14,7 @@ You can also install the Plug-ins Package for Linux or AIX manually by either us
 
 Before installing the plug-in manually, you should validate the signature of the binary package by using the key *snapcenter_public_key.pub* located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_. 
 
-NOTE: Ensure that *gnupg-2.2.x* (GNU Privacy Guard) is installed on the host where you want to install the plug-in.
+NOTE: Ensure that *OpenSSL 1.0.2k-fips* is installed on the host where you want to install the plug-in.
 
 Validate the signature of the binary package by running the command:
 
