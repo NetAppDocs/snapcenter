@@ -21,7 +21,9 @@ SnapCenter Plug-in for Oracle Database can be installed by a non-root user. Howe
 The SnapCenter Plug-ins Package for AIX automatically resolves the file level symbolic link but not the directory level symbolic links to obtain the JAVA_HOME absolute path.
 
 * Create credentials with authentication mode as Linux or AIX for the install user.
-* You must have installed Java 1.8.x, 64-bit, on your Linux or AIX host.
+* You must have installed Java 1.8.x or Java 11, 64-bit, on your Linux or AIX host.
++
+NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 +
 For information to download JAVA, see:
 
@@ -69,7 +71,10 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 1.8.x (64-bit)Oracle Java and OpenJDK flavors
+* Java 1.8.x (64-bit) Oracle Java and OpenJDK flavors
+* Java 11 (64-bit) Oracle Java and OpenJDK flavors
+
+NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
@@ -83,8 +88,7 @@ SnapCenter 2.0 and later releases allow a non-root user to install the SnapCente
 
 *What you will need*
 
-* Sudo version between 1.8.7 and 1.8.19P2.
-* Ensure that the non-root user is part of the Oracle installation group.
+* Sudo version 1.8.7 or later.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.
@@ -132,12 +136,17 @@ Defaults: _LINUX_USER_ !visiblepw
 Defaults: _LINUX_USER_ !requiretty
 ----
 +
+NOTE: If you are having a RAC setup, along with the other lines, you should add the following line to the /etc/sudoers file:
+`LINUX_USER ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD, /<crs_home>/bin/olsnodes`
+
+You can otain the value of _crs_home_ in the _/etc/oracle/olr.loc_ file. 
+
 _LINUX_USER_ is the name of the non-root user that you created.
-+
+
 You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
-+
+
 If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
-+
+
 IMPORTANT: The example should be used only as a reference for creating your own data.
 
 |===
@@ -171,7 +180,8 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 1.8.x (64-bit) IBM Java
+* Java 1.8.x (64-bit) IBM Java
+* Java 11 (64-bit) IBM Java
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
@@ -185,7 +195,7 @@ SnapCenter 4.4 and later allows a non-root user to install the SnapCenter Plug-i
 
 *What you will need*
 
-* Sudo version between 1.8.7 and 1.8.19P2.
+* Sudo version 1.8.7 or later.
 * Ensure that the non-root user is part of the Oracle installation group.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +

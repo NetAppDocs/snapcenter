@@ -12,14 +12,13 @@ summary: 'You can use other alternate ways to install the SnapCenter Plug-ins Pa
 [.lead]
 You can also install the Plug-ins Package for Linux or AIX manually by either using the cmdlets or CLIs.
 
-Before installing the plug-in manually, you should validate the signature of the binary package by using the key *snapcenter_<SnapCenter_version_number>_public_key.asc* located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_. 
+Before installing the plug-in manually, you should validate the signature of the binary package by using the key *snapcenter_public_key.pub* located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_. 
 
 NOTE: Ensure that *gnupg-2.2.x* (GNU Privacy Guard) is installed on the host where you want to install the plug-in.
 
-Validate the signature of the binary package by running the following commands:
+Validate the signature of the binary package by running the command:
 
-. `gpg --import snapcenter<SnapCenter_version_number>_public_key.asc`
-. `gpg --verify --default-key snapcenter-GPG-bin snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
+`openssl dgst -sha256 -verify snapcenter_public_key.pub  -signature snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
 
 == Install on multiple remote hosts using cmdlets
 
