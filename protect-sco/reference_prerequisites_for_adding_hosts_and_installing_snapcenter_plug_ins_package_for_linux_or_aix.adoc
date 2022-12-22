@@ -134,8 +134,7 @@ Defaults: _LINUX_USER_ !visiblepw
 Defaults: _LINUX_USER_ !requiretty
 ----
 +
-NOTE: If you are having a RAC setup, along with the other lines, you should add the following line to the /etc/sudoers file:
-`LINUX_USER ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD, /<crs_home>/bin/olsnodes`
+NOTE: If you are having a RAC setup, along with the other allowed commands, you should add the following to the /etc/sudoers file: '/<crs_home>/bin/olsnodes'
 
 You can obtain the value of _crs_home_ from the _/etc/oracle/olr.loc_ file. 
 
@@ -146,10 +145,6 @@ You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which i
 If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
 
 IMPORTANT: The example should be used only as a reference for creating your own data.
-
-|===
-*Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
-|===
 
 == AIX Host requirements
 
@@ -239,8 +234,7 @@ Defaults: _AIX_USER_ !visiblepw
 Defaults: _AIX_USER_ !requiretty
 ----
 +
-NOTE: If you are having a RAC setup, along with the other lines, you should add the following line to the /etc/sudoers file:
-`AIX_USER ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD, /<crs_home>/bin/olsnodes`
+NOTE: If you are having a RAC setup, along with the other allowed commands, you should add the following to the /etc/sudoers file: '/<crs_home>/bin/olsnodes'
 
 You can obtain the value of _crs_home_ from the _/etc/oracle/olr.loc_ file. 
 
@@ -251,10 +245,6 @@ You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which i
 If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
 
 IMPORTANT: The example should be used only as a reference for creating your own data.
-
-|===
-*Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
-|===
 
 == Set up credentials
 

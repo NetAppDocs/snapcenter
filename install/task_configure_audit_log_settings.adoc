@@ -9,7 +9,9 @@ summary: 'You can configure to log the security events of software platforms and
 :imagesdir: ../media/
 
 [.lead]
-You can configure to log the security events of software platforms and all the software running on those platforms. These logs are transferred to another server and a copy of the records are saved for verification and validation. 
+Audit logs are generated for each and every activity of the SnapCenter Server. By default, audit logs are secured in the default installed location _C:\Program Files\NetApp\SnapCenter WebApp\audit\_. 
+
+Audit logs are secured by means of generating digitally signed digest for each and every audit events to protect it from the unauthorized modification. The generated digest's are maintained in the separate audit checksum file and it under goes periodic integrity checks to ensure the integrity of the content.
 
 You should have logged in as the "SnapCenterAdmin" role.
 
