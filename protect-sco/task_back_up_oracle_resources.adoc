@@ -11,78 +11,60 @@ summary: 'If a resource is not part of any resource group, you can back up the r
 [.lead]
 If a resource is not part of any resource group, you can back up the resource from the Resources page.
 
-*Steps*
+.Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, select *Database* from the *View* list.
-. Click *image:../media/filter_icon.gif[]*, and then select the host name and the database type to filter the resources.
+. In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
+. In the Resources page, select *Database* from the View list.
+. Click image:../media/filter_icon.gif[Filter icon], and then select the host name and the database type to filter the resources.
 +
-You can then click *image:../media/filter_icon.gif[]* to close the filter pane.
+You can then click image:../media/filter_icon.gif[Filter icon] to close the filter pane.
 
 . Select the database that you want to back up.
 +
 The Database-Protect page is displayed.
 
-. In the Resource page, perform the following actions:
-+
-|===
-| For this field... | Do this...
-
-a|
-Use custom name format for Snapshot copy
-a|
-Select this check box, and then enter a custom name format that you want to use for the Snapshot copy name.
-
-For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
-a|
-Exclude archive log destinations from backup
-a|
-Specify the destinations of the archive log files that you do not want to back up.
-|===
+. In the Resources page, you can perform the following steps:
+ .. Select the check box, and enter a custom name format that you want to use for the Snapshot copy name.
++ 
+For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is appended to the Snapshot copy name by default.
+ .. Specify the destinations of the archive log files that you do not want to back up.
 
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
- .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure a schedule.
- .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then click *OK*.
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column to configure a schedule for the policy you want.
+ .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then select `OK`.
 +
 _policy_name_ is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
-. In the Verification page, perform the following steps:
- .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
- .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column to configure the verification schedule for all of the schedule types of the policy.
- .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
-+
-|===
-| If you want to... | Do this...
 
-a|
-Run verification after backup
-a|
-Select *Run verification after backup*.
-a|
-Schedule a verification
-a|
-Select *Run scheduled verification*, and then select the schedule type from the drop-down list.
+. In the Verification page, perform the following steps:
+ .. Click *Load locators* to load the SnapMirror or SnapVault volumes to verify secondary storage.
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column to configure the verification schedule for all of the schedule types of the policy.
+ +
+In the Add Verification Schedules _policy_name_ dialog box, you can perform the following steps:
+ .. Select *Run verification after backup*.
+ .. Select *Run scheduled verification*, and select the schedule type from the drop-down list.
 
 //Included the below info for BURT 1348035 for 4.5
++
 NOTE: In a Flex ASM setup, you cannot perform verification operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
-|===
++
 
  .. Select *Verify on secondary location* to verify your backups on secondary storage.
  .. Click *OK*.
 +
 The configured verification schedules are listed in the Applied Schedules column.
-. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the Notification page, select the scenarios in which you want to send the emails from the *Email preference* drop-down list.
 +
-You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the backup operation performed on the resource, and then select *Attach Job Report*.
+You must specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the backup operation performed on the resource, select *Attach Job Report*.
 +
-NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command `Set-SmSmtpServer`.
 
 . Review the summary, and then click *Finish*.
 +
@@ -90,20 +72,20 @@ The database topology page is displayed.
 
 . Click *Back up Now*.
 . In the Backup page, perform the following steps:
- .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
+ .. If you have applied multiple policies to the resource, from the Policy drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
-*After you finish*
+.After you finish
 
-* In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disks on which the database that was backed up was residing.
+* In AIX setup, you can use the `lkdev` command to lock and the `rendev` command to rename the disks on which the database that was backed up was residing.
 +
 Locking or renaming of devices will not affect the restore operation when you restore using that backup.
 
-* If the backup operation fails because database query execution time exceeded the timeout value, you should change the value of the ORACLE_SQL_QUERY_TIMEOUT and ORACLE_PLUGIN_SQL_QUERY_TIMEOUT parameters by running the Set-SmConfigSettings cmdlet:
+* If the backup operation fails because database query execution time exceeded the timeout value, you should change the value of the ORACLE_SQL_QUERY_TIMEOUT and ORACLE_PLUGIN_SQL_QUERY_TIMEOUT parameters by running the `Set-SmConfigSettings` cmdlet:
 +
 After modifying the value of the parameters, restart the SnapCenter Plug-in Loader (SPL) service by running the following command `/opt/NetApp/snapcenter/spl/bin/spl restart`
 
@@ -117,7 +99,7 @@ After modifying the value of the parameters, restart the SnapCenter Plug-in Load
 +
 To increase the Java heap size, locate the script file _/opt/netapp/init_scripts/scvservice_. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
 
-*Find more information*
+.Find more information
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^]
 
@@ -125,4 +107,4 @@ To increase the Java heap size, locate the script file _/opt/netapp/init_scripts
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_change_the_state_of_an_Oracle_12c_ASM_database_from_shutdown_to_mount[Failed to change the state of an Oracle 12c ASM database^]
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^] (Requires login)

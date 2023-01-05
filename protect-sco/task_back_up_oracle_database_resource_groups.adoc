@@ -13,35 +13,36 @@ A resource group is a collection of resources on a host or cluster. A backup ope
 
 You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
 
-*Steps*
+.Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
 . In the Resources page, select *Resource Group* from the *View* list.
+. Enter the resource group name in the search box, or click the image:../media/filter_icon.gif[Filter icon], and select the tag.
 +
-You can search the resource group either by entering the resource group name in the search box, or by clicking *image:../media/filter_icon.gif[]*, and then selecting the tag. You can then click *image:../media/filter_icon.gif[]* to close the filter pane.
+Click image:../media/filter_icon.gif[Filter icon] to close the filter pane.
 
-. In the Resource Groups page, select the resource group that you want to back up, and then click *Back up Now*.
+. In the Resource Group page, select the resource group to back up.
 +
-NOTE: If you have a federated resource group with two databases and one of the database has datafile on non-NetApp storage, the backup operation is aborted even though the other database is on NetApp storage.
+NOTE: If you have a federated resource group with two databases and one has data on non-NetApp storage, the backup operation is aborted even though the other database is on NetApp storage.
 
 . In the Backup page, perform the following steps:
- .. If you have associated multiple policies with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
+ .. If you have multiple policies associated with the resource group, select the backup policy you want to use from the *Policy* drop-down list.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 
- .. Click *Backup*.
-. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+ .. Select *Backup*.
+. Monitor the progress by selecting *Monitor > Jobs*.
 
-*After you finish*
+.After you finish
 
-* In AIX setup, you can use the lkdev command to lock and the rendev command to rename the disks on which the database that was backed up was residing.
+* In AIX setup, you can use the `lkdev` command to lock and the `rendev` command to rename the disks on which the database that was backed up was residing.
 +
 Locking or renaming of devices will not affect the restore operation when you restore using that backup.
 
-* If the backup operation fails because database query execution time exceeded the timeout value, you should change the value of the ORACLE_SQL_QUERY_TIMEOUT and ORACLE_PLUGIN_SQL_QUERY_TIMEOUT parameters by running the Set-SmConfigSettings cmdlet:
+* If the backup operation fails because database query execution time exceeded the timeout value, you should change the value of the ORACLE_SQL_QUERY_TIMEOUT and ORACLE_PLUGIN_SQL_QUERY_TIMEOUT parameters by running the `Set-SmConfigSettings` cmdlet:
 +
 After modifying the value of the parameters, restart the SnapCenter Plug-in Loader (SPL) service by running the following command `/opt/NetApp/snapcenter/spl/bin/spl restart`
 
-* If the file is not accessible and the mount point is unavailable during the verification process, the operation might fail with error code DBV-00100 specified file. You should modify the values of the VERIFICATION_DELAY and VERIFICATION_RETRY_COUNT parameters in sco.properties.
+* If the file is not accessible and the mount point is unavailable during the verification process, the operation might fail with error code DBV-00100 specified file. You should modify the values of the VERIFICATION_DELAY_ and VERIFICATION_RETRY_COUNT parameters in sco.properties.
 +
 After modifying the value of the parameters, restart the SnapCenter Plug-in Loader (SPL) service by running the following command `/opt/NetApp/snapcenter/spl/bin/spl restart`

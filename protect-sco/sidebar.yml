@@ -48,7 +48,7 @@ entries:
       - title: Create backup policies for Oracle databases
         url: /protect-sco/task_create_backup_policies_for_oracle_database.html
       - title: Create resource groups and attach policies for Oracle databases
-        url: /protect-sco/task_create_resource_groups_and_attaching_policies_for_oracle_databases.html
+        url: /protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html
       - title: Requirements for backing up an Oracle database
         url: /protect-sco/reference_requirements_for_backing_up_an_oracle_database.html
       - title: Back up Oracle resources
