@@ -18,13 +18,9 @@ You should have logged in as the "SnapCenterAdmin" role.
 *About this task*
 
 * Alerts are sent in the following scenarios:
-**	Audit log integrity check schedule is enabled or disabled
-**	Audit log integrity check failure
-**	Syslog server is enabled or disabled 
-**	Audit log failure
-**	Syslog server logging failure  
+**	Audit log integrity check schedule or Syslog server is enabled or disabled
+**	Audit log integrity check, audit log, or Syslog server log failure  
 **	Low disk space  
-**  Audit log integrity check schedule forwarding fails due to network delay
 * Email is sent only when integrity check fails.
 * When both the audit log directory or audit checksum log directory paths are modified, the job cannot track or perform integrity check on the audit logs present in the earlier location.
 * You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
