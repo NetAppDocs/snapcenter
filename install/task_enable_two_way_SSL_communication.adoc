@@ -9,7 +9,7 @@ summary: 'You can enable two-way SSL communication to secure the communication b
 :imagesdir: ../media/
 
 [.lead]
-You can enable two-way SSL communication to secure the communication between SnapCenter Server and MySQL Server. 
+You can enable two-way SSL communication to secure the communication between SnapCenter Server and the plug-ins. 
 
 *What you will need*
 
