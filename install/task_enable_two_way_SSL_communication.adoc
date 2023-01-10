@@ -16,6 +16,7 @@ You can enable two-way SSL communication to secure the communication between Sna
 * You should have generated CA Certificate CSR file
 * You should have imported CA certificate
 * You should have got the CA certificate thumbprint
+* You should ensure that the certificate has the server and client authenticate usage
 
 *Steps*
 
