@@ -20,7 +20,8 @@ You can enable two-way SSL communication to secure the communication between Sna
 
 *Steps*
 
-. Remove the existing certificate binding with SMCore default port 8145, by running the following command:
+. Perform the following steps for IIS default port 8146:
+.. Remove the existing certificate binding with SMCore default port 8145, by running the following command:
 +
  > netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>
 +
@@ -28,7 +29,7 @@ For example:
 +
   > netsh http delete sslcert ipport=0.0.0.0:8145
 
-. Bind the newly installed certificate with the Windows host plug-in services and enable the two-way SSL communication by running the following commands: 
+.. Bind the newly installed certificate with the Windows host plug-in services and enable the two-way SSL communication by running the following commands: 
 +
  > $cert = “_<certificate thumbprint>_”
  > $guid = [guid]::NewGuid().ToString("B")
