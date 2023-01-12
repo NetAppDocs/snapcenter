@@ -26,6 +26,8 @@ For Multi-factor authentication (MFA), when the DR restore is performed for Snap
 SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server.
 +
 link:../sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html[REST API workflows for disaster recovery of SnapCenter Server]
++
+Audit settings related configuration file is not backed up in DR backup and neither on the DR server after restore operation. You should manually repeat the Audit log settings.
 
 * *SnapCenter Plug-in and Storage DR*
 +

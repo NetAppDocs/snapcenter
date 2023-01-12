@@ -21,12 +21,12 @@ You should have logged in as the "SnapCenterAdmin" role.
 **	Audit log integrity check schedule or Syslog server is enabled or disabled
 **	Audit log integrity check, audit log, or Syslog server log failure  
 **	Low disk space  
-* Email is sent only when integrity check fails.
-* When both the audit log directory or audit checksum log directory paths are modified, the job cannot track or perform integrity check on the audit logs present in the earlier location.
-* You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
+* Email is sent only when integrity check fails.* You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
+* When audit log directory and audit checksum log directory paths are modified, the integrity check cannot be performed on audit logs present in the earlier location.
 * Audit log directory and Audit checksum log directory paths should be on the local drive of SnapCenter Server.  
 +
 Shared or network mounted drives are not supported.
+* If UDP protocol is used in the Syslog server settings, errors due to port is down or unavailable cannot be captured as either an error or an alert in SnapCenter.
 * You can use Set-SmAuditSettings and Get-SmAuditSettings commands to configure the  audit logs.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
