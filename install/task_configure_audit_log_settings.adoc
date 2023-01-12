@@ -21,7 +21,8 @@ You should have logged in as the "SnapCenterAdmin" role.
 **	Audit log integrity check schedule or Syslog server is enabled or disabled
 **	Audit log integrity check, audit log, or Syslog server log failure  
 **	Low disk space  
-* Email is sent only when integrity check fails.* You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
+* Email is sent only when integrity check fails.
+* You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
 * When audit log directory and audit checksum log directory paths are modified, the integrity check cannot be performed on audit logs present in the earlier location.
 * Audit log directory and Audit checksum log directory paths should be on the local drive of SnapCenter Server.  
 +
