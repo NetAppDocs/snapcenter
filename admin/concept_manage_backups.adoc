@@ -13,7 +13,7 @@ You can rename and delete backups. You can also delete multiple backups simultan
 
 == Rename backups
 
-You can rename backups if you want to provide a better name to improve searchability. test
+You can rename backups if you want to provide a better name to improve searchability.
 
 *Steps*
 
