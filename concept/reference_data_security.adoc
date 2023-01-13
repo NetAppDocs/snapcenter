@@ -28,6 +28,8 @@ For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_
 * SnapCenter PowerShell cmdlets are session secured.
 * After a default period of 15 minutes of inactivity, SnapCenter warns you that you will be logged out in 5 minutes. After 20 minutes of inactivity, SnapCenter logs you out, and you must log in again. You can modify the log out period.
 * Login is temporarily disabled after 5 or more incorrect login attempts.
+* Supports CA certificate authentication between SnapCenter Server and ONTAP.
+* Integrity Verifier is added to the SnapCenter Server and the plug-ins and it validates all the shipped binaries during fresh installation and upgrade operations.
 
 == CA Certificate Overview
 
