@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/add-application-volume.html
 sidebar: sidebar
-keywords: application volume, overview, add, modify, delete
+keywords: application volume, overview, add, modify, delete, Oracle database
 summary: 'You should manually add the application volumes.'
 ---
 = Add application volumes
