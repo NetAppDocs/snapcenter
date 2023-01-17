@@ -1,0 +1,9 @@
+indexpage:
+  lead: # single paragraph, shown on the page
+  tiles:
+    # one or more tile definitions for the page
+  - title: # short string (tile title)
+    links:
+      # one or more links on the tile
+      - title: # short string (link title)
+        url: # single file name or external URL
