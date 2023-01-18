@@ -12,11 +12,12 @@ Your service-level agreement (SLA), recovery time objective (RTO), and recovery 
 [.lead]
 Defining a backup strategy ensures that you have the means to successfully restore or clone your databases.
 Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.
-
-* _SLA_ defines the level of service expected and addresses service-related issues like the availability and performance of the service.
-* _RTO_ defines the time a business process must be restored after a disruption in service.
-* _RPO_ defines the age of the files that must be recovered from backup storage for regular operations to resume after a failure.
-
+====
+* [_SLA_] defines the level of service expected and addresses service-related issues like the availability and performance of the service.
+* [_RTO_] defines the time a business process must be restored after a disruption in service.
+* [_RPO_] defines the age of the files that must be recovered from backup storage for regular operations to resume after a failure.
+====
+ 
 An SLA defines the level of service that is expected and addresses many service-related issues, including the availability and performance of the service. RTO is the time by which a business process must be restored after a disruption in service. RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. SLA, RTO, and RPO contribute to the data protection strategy.
 
 == Supported Oracle database configurations for backups
