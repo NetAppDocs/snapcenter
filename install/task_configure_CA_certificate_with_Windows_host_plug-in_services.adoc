@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter, ca certificate, activate, digital certificate
 summary: 'You should configure the CA certificate with Windows host plug-in services to activate the installed digital certificate.'
 ---
-= Configure CA certificate with Windows host plug-in services and enable two-way SSL communication
+= Configure CA certificate with Windows host plug-in services
 :icons: font
 :imagesdir: ../media/
 
