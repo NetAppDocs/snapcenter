@@ -11,8 +11,6 @@ summary: 'You use a SnapCenter Standard capacity license to protect data on ONTA
 [.lead]
 You use a SnapCenter Standard capacity license to protect data on ONTAP Select and Cloud Volumes ONTAP platforms.
 
-.About this task
-
 A capacity license has the following characteristics:
 
 * Composed of a nine-digit serial number with the format 51xxxxxxx
@@ -25,14 +23,10 @@ You use the license serial number and valid NetApp Support Site login credential
 For example, you can obtain a capacity-based license for 1 TB, 2 TBs, 4 TBs, and so on.
 
 * Available as a 90-day trial license with 100 TB capacity entitlement
-
++
 For information on the licenses required, see link:../install/concept_snapcenter_licenses.html[SnapCenter licenses^].
 
-.Before you begin
-
-SnapCenter automatically calculates capacity usage once a day at midnight on the ONTAP Select and Cloud Volumes ONTAP storage it manages. To ensure you have configured SnapCenter correctly, you should be aware of how SnapCenter calculates capacity.
-
-When you are using a Standard Capacity license, SnapCenter calculates the unused capacity by deducting the used capacity on all volumes from the total licensed capacity. If used capacity exceeds the licensed capacity, an overuse warning is displayed on the SnapCenter Dashboard. If you configured capacity thresholds and notifications in SnapCenter, an email is sent when the used capacity reaches the threshold you specify.
+SnapCenter automatically calculates capacity usage once a day at midnight on the ONTAP Select and Cloud Volumes ONTAP storage it manages. When you are using a Standard Capacity license, SnapCenter calculates the unused capacity by deducting the used capacity on all volumes from the total licensed capacity. If used capacity exceeds the licensed capacity, an overuse warning is displayed on the SnapCenter Dashboard. If you configured capacity thresholds and notifications in SnapCenter, an email is sent when the used capacity reaches the threshold you specify.
 
 === Step 1: Calculate capacity requirements
 
