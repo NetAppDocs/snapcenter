@@ -27,8 +27,8 @@ image::../media/sco_resourcegroup_policy.gif[]
 . In the Resources page, click *New Resource Group*.
 . In the Name page, perform the following actions:
  .. Enter a name for the resource group in the Name field.
-    + 
-    NOTE: The resource group name should not exceed 250 characters.
++ 
+NOTE: The resource group name should not exceed 250 characters.
  
  .. Enter one or more labels in the Tag field to help you search for the resource group later.
 +
