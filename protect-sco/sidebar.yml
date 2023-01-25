@@ -37,7 +37,7 @@ entries:
     url: /protect-sco/concept_prepare_for_protecting_oracle_databases.html
   - title: Back up Oracle databases
     entries:
-      - title: Procedure overview
+      - title: Backup overview
         url: /protect-sco/backup-workflow.html
  
       - title: Define backup strategy
