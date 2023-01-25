@@ -2,8 +2,7 @@
 permalink: protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
 sidebar: sidebar
 keywords: backup type, preferred nodes, catalog backups, schedules, backup name format, retention, verification
-summary: 'Defining a backup strategy ensures that you have the means to successfully restore or clone your databases.
-Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.'
+summary: 'Defining a backup strategy ensures that you have the means to successfully restore or clone your databases.'
 ---
 = Define a backup strategy for Oracle databases
 :icons: font
