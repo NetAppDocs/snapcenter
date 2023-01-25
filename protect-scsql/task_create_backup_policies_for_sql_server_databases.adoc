@@ -39,15 +39,16 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 * Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
 
-== Steps
-
+== Step 1. Settings
 . In the left navigation pane, click *Settings*.
+
+== Step 2. New Policy Description and Settings
 . In the Settings page, click *Policies*.
 . Click *New*.
 . In the Name page, enter the policy name and description.
+
+== Step 3. Backup Type Configuration
 . In the Backup Type page, perform the following steps:
-[%collapsible]
-====
  .. Choose the backup type:
 +
 |===
@@ -116,11 +117,10 @@ image::../media/backup_settings.gif[]
 NOTE: You can specify the schedule (start date, end date, and frequency) for backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
-====
 
-[start=6]
+== Step 4. Retention Configuration
 . In the Retention page, depending on the backup type selected in the backup type page, perform one or more of the following actions:
-====
+
  .. In the Retention settings for the up-to-the-minute restore operation section, perform one of the following actions:
 +
 |===
@@ -180,15 +180,17 @@ The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cm
 +
 This example sets the log Snapshot copy retention to 2:
 +
+.Show example
+[%collapisble]
+====
 ----
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
 ----
+====
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
-====
 
-====
-[start=7]
+== Step 5. Replication Configuration
 . In the Replication page, specify replication to the secondary storage system:
 +
 |===
@@ -216,9 +218,8 @@ Error retry count
 a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
-====
 
-[start=8]
+== Step 6. Script Configuration 
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
@@ -227,8 +228,9 @@ NOTE: The prescripts or postscripts path should not include drives or shares. Th
 +
 NOTE: You must configure the SnapMirror retention policy in ONTAP so that the secondary storage does not reach the maximum limit of Snapshot copies.
 
+== Step 7. Verification Configuration 
 . In the Verification page, perform the following steps:
-====
+
  .. In the Run verification for following backup schedules section, select the schedule frequency.
  .. In the Database consistency check options section, perform the following actions:
 +
@@ -261,7 +263,6 @@ Select *Limit the checks and obtain the locks instead of using an internal datab
  .. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
 +
 NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
-====
 
-[start=10]
+== Step 8. Summary Review
 . Review the summary, and then click *Finish*.
