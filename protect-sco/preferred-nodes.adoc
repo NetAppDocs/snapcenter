@@ -1,0 +1,35 @@
+---
+permalink: protect-sco/preferred-nodes.html
+sidebar: sidebar
+keywords: oracle databases discover
+summary: 'How SnapCenter discovers Oracle databases.'
+---
+= Preferred nodes in RAC setup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In Oracle Real Application Clusters (RAC) setup, you can specify the preferred nodes  that SnapCenter uses to perform the backup operation. If you do not specify the preferred node, SnapCenter automatically assigns a node as the preferred node and backup is created on that node.
+
+The preferred nodes might be one or all of the cluster nodes where the RAC database instances are present. The backup operation is triggered only on these preferred nodes in the order of the preference.
+
+.Example
+The RAC database cdbrac has three instances: cdbrac1 on node1, cdbrac2 on node2, and cdbrac3 on node3. 
+
+The node1 and node2 instances are configured to be the preferred nodes, with node2 as the first preference and node1 as the second preference. When you perform a backup operation, the operation is first attempted on node2 because it is the first preferred node. 
+
+If node2 is not in the state to back up, which could be due to multiple reasons such as the plug-in agent is not running on the host, the database instance on the host is not in the required state for the specified backup type, or the database instance on node2 in a FlexASM configuration is not being served by the local ASM instance; then the operation will be attempted on node1. 
+
+The node3 will not be used for backup because it is not on the list of preferred nodes.
+
+//Included the below info for BURT 1348035 for 4.5
+== Flex ASM setup
+In a Flex ASM setup, Leaf nodes will not be listed as preferred nodes if the cardinality is less than the number nodes in the RAC cluster. If there is any change in the Flex ASM cluster node roles, you should manually discover so that the preferred nodes are refreshed.
+
+== Required database state
+
+The RAC database instances on the preferred nodes must be in the required state for the backup to finish successfully:
+
+* One of the RAC database instances in the configured preferred nodes must be in the open state to create an online backup.
+* One of the RAC database instances in the configured preferred nodes must be in the mount state, and all other instances, including other preferred nodes, must be in the mount state or lower to create an offline mount backup.
+* RAC database instances can be in any state, but you must specify the preferred nodes to create an offline shutdown backup.
