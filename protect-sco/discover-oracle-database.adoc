@@ -1,5 +1,5 @@
 ---
-permalink: protect-sco/discover-oracle-databases.html
+permalink: protect-sco/discover-oracle-database.html
 sidebar: sidebar
 keywords: oracle databases discover
 summary: 'How SnapCenter discovers Oracle databases.'
