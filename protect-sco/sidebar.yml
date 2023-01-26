@@ -43,9 +43,9 @@ entries:
       - title: Backup configuration information
         entries:
           - title: Supported backup configurations
-            url: protect-sco/supported_backup_configs.html
+            url: /protect-sco/supported_backup_configs.html
           - title: Backup types
-            url: protect-sco/backup_types.html
+            url: /protect-sco/backup_types.html
           - title: How SnapCenter discovers Oracle databases
             url: /protect-sco/discover-oracle-database.html
           - title: Preferred nodes to use

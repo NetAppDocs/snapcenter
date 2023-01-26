@@ -9,69 +9,10 @@ summary: 'Defining a backup strategy ensures that you have the means to successf
 :imagesdir: ../media/
 
 [.lead]
-Defining a backup strategy ensures that you have the means to successfully restore or clone your databases.
+Define a backup strategy to ensure that you have the means to successfully restore or clone your databases.
+
 Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy. 
 
 * SLA defines the level of service expected and addresses service-related issues like the availability and performance of the service.
 * RTO defines the time a business process must be restored after a disruption in service.
 * RPO defines the age of the files that must be recovered from backup storage for regular operations to resume after a failure.
-
-== Supported Oracle database configurations for backups
-
-SnapCenter supports backup of different Oracle database configurations.
-
-* Oracle Standalone
-* Oracle Real Application Clusters (RAC)
-* Oracle Standalone Legacy
-* Oracle Standalone Container Database (CDB)
-* Oracle Data Guard standby
-+
-You can only create offline-mount backups of Data Guard standby databases. Offline-shutdown backup, archive log only backup, and full backup are not supported.
-
-* Oracle Active Data Guard standby
-+
-You can only create online backups of Active Data Guard standby databases. Archive log only backup and full backup are not supported.
-+
-NOTE: Before creating a backup of Data Guard standby or Active Data Guard standby database, the managed recovery process (MRP) is stopped and once the backup is created, MRP is started.
-
-* Automatic Storage Management (ASM)
- ** ASM standalone and ASM RAC on Virtual Machine Disk (VMDK)
-+
-NOTE: Among all the restore methods supported for Oracle databases, you can perform only connect-and-copy restore of ASM RAC databases on VMDK.
-
- ** ASM standalone and ASM RAC on Raw device mapping (RDM)
-You can perform backup, restore, and clone operations on Oracle databases on ASM, with or without ASMLib.
-** Oracle ASM Filter Driver (ASMFD)
-+
-NOTE: PDB migration and PDB cloning operations are not supported.
-
-** Oracle Flex ASM
-//Included the above info for BURT 1348035 for 4.5
-
-For the latest information about supported Oracle versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
-
-== Types of backup supported for Oracle databases
-
-Backup type specifies the type of backup that you want to create. SnapCenter supports online and offline backup types for Oracle databases.
-
-=== Online backup
-
-A backup that is created when the database is in the online state is called an online backup. Also called a hot backup, an online backup enables you to create a backup of the database without shutting it down.
-
-As part of online backup, you can create a backup of the following files:
-
-* Datafiles and control files only
-* Archive log files only (the database is not brought to backup mode in this scenario)
-* Full database that includes datafiles, control files, and archive log files
-
-=== Offline backup
-
-A backup created when the database is either in a mounted or shutdown state is called an offline backup. An offline backup is also called a cold backup. You can include only datafiles and control files in offline backups. You can create either an offline mount or offline shutdown backup.
-
-* When creating an offline mount backup, you must ensure that the database is in a mounted state.
-+
-If the database is in any other state, the backup operation fails.
-
-* When creating an offline shutdown backup, the database can be in any state.
-+
-The database state is changed to the required state to create a backup. After creating the backup, the database state is reverted to the original state.
