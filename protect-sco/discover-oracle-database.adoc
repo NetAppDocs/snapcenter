@@ -11,7 +11,7 @@ summary: 'How SnapCenter discovers Oracle databases.'
 [.lead]
 Resources are Oracle databases on the host that are maintained by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available. 
 
-The following table the process that SnapCenter uses to discover different types and versions of Oracle databases.
+The following table describes the process that SnapCenter uses to discover different types and versions of Oracle databases.
 
 |===
 | For Oracle versions 11__g__ to 12__c__R1 | For Oracle versions 12__c__R2 to 18__c__

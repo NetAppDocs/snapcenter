@@ -39,18 +39,19 @@ entries:
     entries:
       - title: Backup overview
         url: /protect-sco/backup-workflow.html
- 
-      - title: Define backup strategy
-        url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
 
-      - title: Review considerations for strategy planning
+      - title: Backup configuration information
         entries:
+          - title: Supported backup configurations
+            url: protect-sco/supported_backup_configs.html
+          - title: Backup types
+            url: protect-sco/backup_types.html
           - title: How SnapCenter discovers Oracle databases
             url: /protect-sco/discover-oracle-database.html
-          - title: Preferred nodes
+          - title: Preferred nodes to use
             url: /protect-sco/preferred-nodes.html
           - title: Catalog backups
-            url: /protect-sco/preferred-nodes.html
+            url: /protect-sco/catalog-backups.html
           - title: Predefined environment variables
             url: /protect-sco/predefined-environment-variables-prescript-postscript-backup.html
           - title: Backup retention
@@ -59,6 +60,9 @@ entries:
             url: /protect-sco/schedule-backups.html
           - title: Naming conventions
             url: /protect-sco/naming-backups.html
+ 
+      - title: Define backup strategy
+        url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
 
       - title: Review backup requirements
         url: /protect-sco/reference_requirements_for_backing_up_an_oracle_database.html
@@ -81,7 +85,7 @@ entries:
       - title: Monitor backup progress
         url: /protect-sco/task_monitor_oracle_database_backup_operations.html
 
-      - title: Back up operations
+      - title: Other back up operations
         entries:
         - title: Back up using UNIX commands
           url: /protect-sco/task_back_up_oracle_databases_using_unix_commands.html

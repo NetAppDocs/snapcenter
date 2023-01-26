@@ -1,0 +1,44 @@
+---
+permalink: protect-sco/supported_backup_configs.html
+sidebar: sidebar
+keywords: backup type, preferred nodes, catalog backups, schedules, backup name format, retention, verification
+summary: 'SnapCenter supports backup of different Oracle database configurations.'
+---
+= Supported Oracle database configurations for backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports backup of different Oracle database configurations.
+
+* Oracle Standalone
+* Oracle Real Application Clusters (RAC)
+* Oracle Standalone Legacy
+* Oracle Standalone Container Database (CDB)
+* Oracle Data Guard standby
++
+You can only create offline-mount backups of Data Guard standby databases. Offline-shutdown backup, archive log only backup, and full backup are not supported.
+
+* Oracle Active Data Guard standby
++
+You can only create online backups of Active Data Guard standby databases. Archive log only backup and full backup are not supported.
++
+Before creating a backup of Data Guard standby or Active Data Guard standby database, the managed recovery process (MRP) is stopped and once the backup is created, MRP is started.
+
+* Automatic Storage Management (ASM)
+ ** ASM standalone and ASM RAC on Virtual Machine Disk (VMDK)
++
+Among all the restore methods supported for Oracle databases, you can perform only connect-and-copy restore of ASM RAC databases on VMDK.
+
+ ** ASM standalone and ASM RAC on Raw device mapping (RDM)
+ +
+You can perform backup, restore, and clone operations on Oracle databases on ASM, with or without ASMLib.
+
+** Oracle ASM Filter Driver (ASMFD)
++
+PDB migration and PDB cloning operations are not supported.
+
+** Oracle Flex ASM
+//Included the above info for BURT 1348035 for 4.5
+
+For the latest information about supported Oracle versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
