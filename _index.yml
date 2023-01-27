@@ -1,31 +1,10 @@
----
-settings:
-  name: SnapCenter Software 4.8
-  internal:
-    pdf_enabled: true
-  prod:
-    pdf_enabled: true
-    harmony_enabled: true
-  versions:
-    - name: SnapCenter Software
-      url: /snapcenter
-      version-number: "4.8"
-    - name: SnapCenter Software
-      url: /snapcenter-4.7
-      version-number: "4.7"
-    - name: SnapCenter Software
-      url: /snapcenter-46
-      version-number: "4.6"
-    - name: SnapCenter Software
-      url: /snapcenter-45
-      version-number: "4.5"
-
-homepage:
+indexpage:
+  lead: SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud. This documentation library includes information for version 4.7.
   tiles:
     - title: Get started
       links:
         - title: Release notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885481
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883299
         - title: Learn about SnapCenter
           url: /concept/concept_snapcenter_overview.html
         - title: Quick reference to protect SQL Server databases
@@ -85,9 +64,9 @@ homepage:
     - title: More resources
       links:
         - title: Cmdlet Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300
         - title: Command Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301
         - title: Documentation for earlier versions of SnapCenter
           url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
         - title: NetApp Knowledge Base - SnapCenter
