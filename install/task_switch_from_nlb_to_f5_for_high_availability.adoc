@@ -18,4 +18,4 @@ You can change your SnapCenter HA configuration from Network Load Balancing (NLB
 . Start a session by using the Open-SmConnection cmdlet, and then enter your credentials.
 . Update the SnapCenter Server to point to the F5 cluster IP address using the Update-SmServerCluster cmdlet.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].

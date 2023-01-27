@@ -65,7 +65,7 @@ If you are mounting the backup of an ASM database, the mount path +diskgroupname
 `./sccli Get-Smbackup-BackupNamebackup_name`
 +
 The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_.
-Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301[SnapCenter Software Command Reference Guide^].
+Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486[SnapCenter Software Command Reference Guide^].
 
 == Unmount a database backup
 

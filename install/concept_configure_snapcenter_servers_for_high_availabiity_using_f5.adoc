@@ -23,7 +23,7 @@ You must be a member of the Local Administrators group on the SnapCenter Servers
 * Add-SmServer
 * Remove-SmServerCluster
 +
-For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
+For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
 
 == Additional F5 configuration information
 
@@ -31,3 +31,4 @@ For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP
 * If a failover occurs between SnapCenter Servers and if there is also an existing SnapCenter session, you must close the browser and log on to SnapCenter again.
 * In load balancer setup (NLB or F5), if you add a node that is partially resolved by the NLB or F5 node and if the SnapCenter node is not able to reach out to this node, then the SnapCenter host page switches between hosts down and running state frequently. To resolve this issue, you should ensure that both the SnapCenter nodes are able to resolve the host in NLB or F5 node.
 * SnapCenter commands for MFA settings should be executed on all the nodes. Relying party configuration should be done in the Active Directory Federation Services (AD FS) server using F5 cluster details.  Node level SnapCenter UI access will be blocked after MFA is enabled. 
+* During failover, the audit log settings will not reflect on the second node.  Hence, you should manually repeat the audit log settings on F5 passive node when it becomes active. 

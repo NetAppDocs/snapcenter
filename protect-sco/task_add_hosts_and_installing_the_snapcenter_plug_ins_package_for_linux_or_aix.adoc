@@ -93,9 +93,9 @@ Select this check box to add all the cluster nodes in an Oracle RAC.
 //Included the below info for BURT 1348035 for 4.5
 In a Flex ASM setup, all the nodes irrespective of whether it is a Hub or Leaf node, will be added.
 a|
-Skip preinstall checks
+Skip optional preinstall checks
 a|
-Select this check box if you already installed the plug-ins manually and you do not want to validate whether the host meets the requirements for installing the plug-in.
+Select this check box if you have already installed the plug-ins manually and you do not want to validate whether the host meets the requirements for installing the plug-in.
 |===
 
 . Click *Submit*.

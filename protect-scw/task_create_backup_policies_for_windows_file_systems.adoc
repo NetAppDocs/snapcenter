@@ -85,7 +85,7 @@ Delete Snapshot copies older than
 a|
 Choose this option if you want to specify the number of days SnapCenter retains a backup copy before deleting it.
 |===
-IMPORTANT: You should set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the replication count to 1, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
+IMPORTANT: You should set the retention count to 2 or higher. The minimum value for the retention count is 2.
 +
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
