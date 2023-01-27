@@ -11,7 +11,7 @@ summary: 'You can create a backup policy for the resource or the resource group 
 [.lead]
 You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.
 
-== What you will need
+.What you'll need
 
 * You must have defined your data protection strategy.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, identifying resources, and creating storage system connections.
@@ -25,92 +25,93 @@ For information about how administrators assign resources to users, see the Snap
 +
 The default value is false.
 
-== About this task
+.About this task
+A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
 
-* A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
+The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
 
-* The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
-+
 If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
-+
+
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
-+
+
 You can use the GET API to display the value of the key. SET API is not supported.
 
-* Most of the fields on these wizard pages are self-explanatory. The following information describes some of the fields for which you might require guidance.
 
-== Step 1. Settings
+== Step 1: Create Policy Name
 . In the left navigation pane, click *Settings*.
-
-== Step 2. New Policy Description and Settings
 . In the Settings page, click *Policies*.
 . Click *New*.
 . In the Name page, enter the policy name and description.
 
-== Step 3. Backup Type Configuration
-. In the Backup Type page, perform the following steps:
- .. Choose the backup type:
-+
-|===
-| If you want to...| Do this...
+== Step 2: Configure backup options 
+// start tabbed area
+. Choose your backup type
+[role="tabbed-block"]
+====
 
-a|
-Back up the database files and transaction logs and to truncate the transaction logs
-a|
+.Full Backup and Log Backup
+--
+Back up the database files and transaction logs and to truncate the transaction logs.
 
-  ... Select *Full backup and Log backup*.
-  ... Enter the maximum number of databases that should be backed up for each Snapshot copy.
-+
-NOTE: You must increase this value if you want to run multiple backup operations concurrently.
-
-a|
-Back up the database files
-a|
-
-  ... Select *Full backup*.
-  ... Enter the maximum number of databases that should be backed up for each Snapshot copy.
-  Default value is 100
+. Select *Full backup and Log backup*.
+. Enter the maximum number of databases that should be backed up for each Snapshot copy.
 +
 NOTE: You must increase this value if you want to run multiple backup operations concurrently.
+--
 
-a|
-Back up the transaction logs
-a|
-Select *Log backup*.
-|===
+.Full Backup
+--
+Back up the database files.
 
- .. If you are backing up your resources by using another backup application, select *Copy only backup*.
+. Select *Full backup*.
+. Enter the maximum number of databases that should be backed up for each Snapshot copy.
+Default value is 100
 +
+NOTE: You must increase this value if you want to run multiple backup operations concurrently.
+--
+
+.Log Backup
+--
+Back up the transaction logs.
+. Select *Log backup*.
+--
+
+.Copy Only Backup
+--
+. If you are backing up your resources by using another backup application, select *Copy only backup*.
+
 Keeping the transaction logs intact allows any backup application to restore the databases. You typically should not use the copy only option in any other circumstance.
-+
+
 NOTE: Microsoft SQL does not support the *Copy only backup* option together with the *Full backup and Log backup* option for secondary storage.
+--
 
- .. In the Availability Group Settings section, perform the following actions:
+====
+
+// end tabbed area
+
+[start=2]
+ . In the Availability Group Settings section, perform the following actions:
+
+.. Backup on preferred backup replica only.
 +
-|===
-| For this field...| Do this...
-
-a|
-Backup on preferred backup replica only
-a|
 Select this option to backup only on preferred backup replica.         The preferred backup replica is decided by the backup preferences configured for the AG in the SQL Server.
-a|
-Select replicas for backup
-a|
+
+.. Select replicas for backup.
++
 Choose the primary AG replica or the secondary AG replica for the backup.
-a|
-Backup priority (Minimum and Maximum backup priority)
-a|
+
+.. Select Backup priority (Minimum and Maximum backup priority)
++
 Specify a minimum backup priority number, and a maximum backup priority number that decide the AG replica for backup.        For example, you can have a minimum priority of 10 and a maximum priority of 50. In this case, all the AG replicas with a priority more than 10 and less than 50 are considered for backup.
-[NOTE]
++
 By default, the minimum priority is 1 and maximum priority is 100.
-|===
+
 +
 NOTE: In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the AG changes, the backups are taken according to the retention settings and the backups of the previous owner node will be retained. The retention for AG is applicable only at the node level.
 
- .. If you want to schedule the backup that you want to create with this policy, specify the schedule type by selecting either *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
+ . Schedule the backup frequency for this policy. Specify the schedule type by selecting either *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
 +
-You can select one schedule type for a policy.
+You can only select one schedule type for a policy.
 +
 image::../media/backup_settings.gif[]
 +
@@ -118,108 +119,113 @@ NOTE: You can specify the schedule (start date, end date, and frequency) for bac
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
-== Step 4. Retention Configuration
-. In the Retention page, depending on the backup type selected in the backup type page, perform one or more of the following actions:
+== Step 3: Configure retention settings
+In the Retention page, depending on the backup type selected in the backup type page, perform one or more of the following actions:
 
- .. In the Retention settings for the up-to-the-minute restore operation section, perform one of the following actions:
-+
-|===
-| If you want to...| Do this...
+ . In the Retention settings for the up-to-the-minute restore operation section, perform one of the following actions:
+ 
+// start tabbed area
 
-a|
-Retain only a specific number of Snapshot copies
-a|
-Select the *Keep log backups applicable to last <number> days* option, and specify the number of days to be retained.        If you near this limit, you might want to delete older copies.
-a|
-Retain the backup copies for a specific number of days
-a|
-Select the *Keep log backups applicable to last <number> days of full backups* option, and specify the number of days to keep the log backup copies.
-|===
+[role="tabbed-block"]
+====
 
- .. In the *Full backup retentions settings* section for the On Demand retention settings, perform the following actions:
-+
-|===
-| For this field...| Do this...
+.Specific number of copies
+--
+Retain only a specific number of Snapshot copies.
 
-a|
-Total Snapshot copies to keep
-a|
-If you want to specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*.
+. Select the *Keep log backups applicable to last <number> days* option, and specify the number of days to be retained. If you near this limit, you might want to delete older copies.
+--
 
-If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
+.Specific number of days
+--
+Retain the backup copies for a specific number of days.
+
+. Select the *Keep log backups applicable to last <number> days of full backups* option, and specify the number of days to keep the log backup copies.
+--
+
+====
+
+// end tabbed area
+
+[start=2]
+. In the *Full backup retentions settings* section for the On Demand retention settings, perform the following actions:
+.. Specify total number of Snapshot copies to keep
+... To specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*.
+... If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
+ 
+IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
 
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
-IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+[loweralpha,start=2]
+.. Length of time to keep Snapshot copies
+... If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
-a|
-Keep Snapshot copies for
-a|
-If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
-|===
 
- .. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
-+
-|===
-| For this field...| Do this...
-
-a|
-Total Snapshot copies to keep
-a|
-If you want to specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*.         If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
+[start=3]
+. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
+.. Specify total number of Snapshot copies to keep
+... To specify the number of Snapshot copies to keep, select *Total Snapshot copies to keep*. If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
 
 IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
 
-a|
-Keep Snapshot copies for
-a|
-If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
-|===
-+
+[loweralpha,start=2]
+. Length of time to keep Snapshot copies
+.. To specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
+
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
-+
+
 This example sets the log Snapshot copy retention to 2:
-+
-.Show example
+
+.Show Example
 [%collapisble]
 ====
-----
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
-----
 ====
-+
+
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
 
-== Step 5. Replication Configuration
+== Step 4: Configure replication settings
 . In the Replication page, specify replication to the secondary storage system:
-+
-|===
-| For this field...| Do this...
+// start tabbed area
 
-a|
-Update SnapMirror after creating a local Snapshot copy
-a|
-Select this option to create mirror copies of backup sets on another volume (SnapMirror).
-a|
-Update SnapVault after creating a Snapshot copy
-a|
-Select this option to perform disk-to-disk backup replication.
-a|
-Secondary policy label
-a|
-Select a Snapshot label.
+[role="tabbed-block"]
+====
+
+.Update SnapMirror
+--
+Update SnapMirror after creating a local Snapshot copy. 
+
+. Select this option to create mirror copies of backup sets on another volume (SnapMirror).
+--
+
+.Update SnapVault
+--
+Update SnapVault after creating a Snapshot copy.
+
+. Select this option to perform disk-to-disk backup replication.
+--
+
+.Secondary Policy Label
+--
+. Select a Snapshot label.
 
 Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+--
 
-a|
-Error retry count
-a|
-Enter the number of replication attempts that should occur before the process halts.
-|===
+.Error Retry Count
+--
+. Enter the number of replication attempts that should occur before the process halts.
+--
 
-== Step 6. Script Configuration 
+====
+
+// end tabbed area
+
+
+== Step 5: Configure script settings
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
@@ -228,41 +234,27 @@ NOTE: The prescripts or postscripts path should not include drives or shares. Th
 +
 NOTE: You must configure the SnapMirror retention policy in ONTAP so that the secondary storage does not reach the maximum limit of Snapshot copies.
 
-== Step 7. Verification Configuration 
-. In the Verification page, perform the following steps:
+== Step 6: Configure verification settings 
+In the Verification page, perform the following steps:
 
- .. In the Run verification for following backup schedules section, select the schedule frequency.
- .. In the Database consistency check options section, perform the following actions:
-+
-|===
-| For this field...| Do this...
+ . In the Run verification for following backup schedules section, select the schedule frequency.
+ . In the Database consistency check options section, perform the following actions:
+ .. Limit the integrity structure to physical structure of the database (PHYSICAL_ONLY)
+ ... Select *Limit the integrity structure to physical structure of the database (PHYSICAL_ONLY)* to limit the integrity check to the physical structure of the database and to detect torn pages, checksum failures, and common hardware failures that impact the database.
+ .. Suppress all information messages (NO INFOMSGS)
+ ... Select *Supress all information messages (NO_INFOMSGS)* to suppress all informational messages. Selected by default.
+ .. Display all reported error messages per object (ALL_ERRORMSGS)
+ ... Select *Display all reported error messages per object (ALL_ERRORMSGS)* to display all the reported errors per object.
+ .. Do not check nonclustered indexes (NOINDEX)
+ ... Select *Do not check nonclustered indexes (NOINDEX)* if you do not want to check nonclustered indexes.         The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
+ .. Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)
+ ... Select *Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
 
-a|
-Limit the integrity structure to physical structure of the database (PHYSICAL_ONLY)
-a|
-Select *Limit the integrity structure to physical structure of the database (PHYSICAL_ONLY)* to limit the integrity check to the physical structure of the database and to detect torn pages, checksum failures, and common hardware failures that impact the database.
-a|
-Supress all information messages (NO INFOMSGS)
-a|
-Select *Supress all information messages (NO_INFOMSGS)* to suppress all informational messages. Selected by default.
-a|
-Display all reported error messages per object (ALL_ERRORMSGS)
-a|
-Select *Display all reported error messages per object (ALL_ERRORMSGS)* to display all the reported errors per object.
-a|
-Do not check nonclustered indexes (NOINDEX)
-a|
-Select *Do not check nonclustered indexes (NOINDEX)* if you do not want to check nonclustered indexes.         The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
-a|
-Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)
-a|
-Select *Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
-|===
 
- .. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.
- .. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
+. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.
+. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
 +
 NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
-== Step 8. Summary Review
+== Step 7: Review summary
 . Review the summary, and then click *Finish*.
