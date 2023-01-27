@@ -2,7 +2,7 @@ You can use the Remove-SmBackup cmdlet to delete backups if you no longer requir
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
 
 *Steps*
 

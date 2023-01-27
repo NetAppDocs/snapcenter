@@ -43,15 +43,11 @@ NOTE: The script path is validated at the time of execution.
 
 Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and postscript arguments.
 
-Only for Windows, you can specify multiple scripts. You should press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
-
-NOTE: For UNIX, you cannot specify multiple scripts.
+NOTE: You cannot specify multiple scripts.
 
 == Script timeouts
 
-For Windows, the timeout is set to 15 minutes and cannot be modified.
-
-For UNIX, the timeout is set to 60 seconds, by default. You can modify the timeout value.
+The timeout is set to 60 seconds, by default. You can modify the timeout value.
 
 == Script output
 

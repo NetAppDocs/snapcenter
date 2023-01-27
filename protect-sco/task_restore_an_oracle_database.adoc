@@ -18,7 +18,7 @@ If the archive logs required for recovery are not available at the configured lo
 
 If you migrate ASM database from ASMLIB to ASMFD, then the backups created with ASMLIB cannot be used to restore the database. You should create backups in the ASMFD configuration and use those backups to restore. Similarly, if ASM database is migrated from ASMFD to ASMLIB, you should create backups in the ASMLIB configuration to restore.
 
-When you restore a database, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the $ORACLE_HOME/dbs directory to avoid multiple operations being executed on the database. After the database has been restored, the operational lock file is automatically removed.
+When you restore a database, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the _/var/opt/snapcenter/sco/lock_ directory to avoid multiple operations being executed on the database. After the database has been restored, the operational lock file is automatically removed.
 
 NOTE: Restore of SPFILE and Password file is not supported.
 
