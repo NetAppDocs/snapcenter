@@ -23,7 +23,7 @@ Click image:../media/filter_icon.gif[Filter icon] to close the filter pane.
 
 . In the Resource Group page, select the resource group to back up.
 +
-NOTE: If you have a federated resource group with two databases and one has data on non-NetApp storage, the backup operation is aborted even though the other database is on NetApp storage.
+If you have a federated resource group with two databases and one has data on non-NetApp storage, the backup operation is aborted even though the other database is on NetApp storage.
 
 . In the Backup page, perform the following steps:
  .. If you have multiple policies associated with the resource group, select the backup policy you want to use from the *Policy* drop-down list.

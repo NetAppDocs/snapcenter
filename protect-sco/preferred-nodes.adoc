@@ -13,7 +13,7 @@ In Oracle Real Application Clusters (RAC) setup, you can specify the preferred n
 
 The preferred nodes might be one or all of the cluster nodes where the RAC database instances are present. The backup operation is triggered only on these preferred nodes in the order of the preference.
 
-.Example
+====
 The RAC database cdbrac has three instances: cdbrac1 on node1, cdbrac2 on node2, and cdbrac3 on node3. 
 
 The node1 and node2 instances are configured to be the preferred nodes, with node2 as the first preference and node1 as the second preference. When you perform a backup operation, the operation is first attempted on node2 because it is the first preferred node. 
@@ -21,6 +21,7 @@ The node1 and node2 instances are configured to be the preferred nodes, with nod
 If node2 is not in the state to back up, which could be due to multiple reasons such as the plug-in agent is not running on the host, the database instance on the host is not in the required state for the specified backup type, or the database instance on node2 in a FlexASM configuration is not being served by the local ASM instance; then the operation will be attempted on node1. 
 
 The node3 will not be used for backup because it is not on the list of preferred nodes.
+====
 
 //Included the below info for BURT 1348035 for 4.5
 == Flex ASM setup

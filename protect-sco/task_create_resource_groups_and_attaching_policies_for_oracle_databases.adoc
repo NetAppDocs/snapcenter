@@ -28,7 +28,7 @@ image::../media/sco_resourcegroup_policy.gif[]
 . In the Name page, perform the following actions:
  .. Enter a name for the resource group in the Name field.
 + 
-NOTE: The resource group name should not exceed 250 characters.
+The resource group name should not exceed 250 characters.
  
  .. Enter one or more labels in the Tag field to help you search for the resource group later.
 +
@@ -41,16 +41,16 @@ For example, customtext_resource group_policy_hostname or resource group_hostnam
 
 . In the Resources page, select an Oracle database host name from the *Host* drop-down list.
 +
-NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
+The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
 
 . Select the resources from the Available Resources section and move them to the Selected Resources section.
 +
-NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
+You can add databases from both Linux and AIX hosts in a single resource group.
 
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
+You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
 
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
@@ -90,6 +90,6 @@ The configured verification schedules are listed in the Applied Schedules column
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
 +
-NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
 . Review the summary, and then click *Finish*.
