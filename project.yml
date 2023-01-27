@@ -92,3 +92,24 @@ homepage:
           url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
         - title: NetApp Knowledge Base - SnapCenter
           url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter
+
+sidebar:
+  entries:
+    - title: SnapCenter Software 4.8 docs
+      url: /index.html
+    - title: Release notes
+      url: /release-notes.html
+    - section: concept
+    - section: install
+    - section: protect-scsql
+    - section: protect-hana
+    - section: protect-sco
+    - section: protect-scw
+    - section: protect-sce
+    - section: protect-scc
+    - section: admin
+    - section: upgrade
+    - section: uninstall
+    - section: sc-automation
+    - title: Legal notices
+      url: /legal-notices.html
