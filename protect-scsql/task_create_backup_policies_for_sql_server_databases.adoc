@@ -46,6 +46,7 @@ You can use the GET API to display the value of the key. SET API is not supporte
 == Step 2: Configure backup options 
 // start tabbed area
 . Choose your backup type
+
 [role="tabbed-block"]
 ====
 
