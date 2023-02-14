@@ -12,18 +12,19 @@ summary: Provides instructions for installing the SnapCenter Server and the Snap
 Provides a condensed set of installation instructions for installing the SnapCenter Server and the SnapCenter Plug-in for Microsoft SQL Server.
 
 == Prepare for installation
-*Domain and workgroup requirements*
+=== Domain and workgroup requirements
 
-SnapCenter Server can be installed on systems that are either in a domain or in a workgroup.
+SnapCenter Server can be installed on systems that are either in a domain or in a workgroup. 
 
 If you are using an Active Directory domain, you should use a Domain user with local administrator rights. The Domain user should be a member of the local Administrator group on the Windows host.
 
 If you are using workgroups, you should use a local account that has local administrator rights.
 
-*License requirements*
+=== License requirements
 
 The type of licenses you install depends on your environment.
 
+[cols="1,3"]
 |===
 | License | Where required
 
@@ -50,10 +51,11 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 |===
 
-*Additional requirements*
+=== Host and port requirements
 
-For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=105961;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
+For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=105961;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^].
 
+[cols="1,3"]
 |===
 |Hosts |Minimum requirements
 
@@ -90,6 +92,7 @@ a|Browsers
 a|Chrome, Internet Explorer, and Microsoft Edge
 |===
 
+[cols="1,3"]
 |===
 |Port type |Default port
 
@@ -114,7 +117,7 @@ a|443 (HTTPS), bidirectional;
 The port is used for communication between the SnapCenter Server host, plug-in host, and SVM or ONTAP Cluster.
 |===
 
-*SnapCenter Plug-in for Microsoft SQL Server requirements*
+=== SnapCenter Plug-in for Microsoft SQL Server requirements
 
 You should have a user with local administrator privileges with local login permissions on the remote host. If you manage cluster nodes, you need a user with administrative privileges to all the nodes in the cluster.
 
@@ -123,9 +126,7 @@ You should have a user with sysadmin permissions on the SQL Server. The plug-in 
 If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see link:../protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html[Import archived backups^]
 
 == Install SnapCenter Server
-*Download and install SnapCenter Server*
-
-*Steps*
+=== Step 1: Download and install SnapCenter Server
 
 . Download the SnapCenter Server installation package from the https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] and then double-click the exe.
 +
@@ -138,9 +139,7 @@ NOTE: The special character “%” is not supported in the custom path for inst
 
 . Click *Install Now*.
 
-*Log in to SnapCenter*
-
-*Steps*
+=== Step 2: Log in to SnapCenter
 
 . Launch SnapCenter from a shortcut on the host desktop or from the URL provided by the installation (_\https://server:8146_ for default port 8146 where SnapCenter Server is installed).
 . Enter the credentials.
@@ -150,9 +149,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 For a built-in local admin username format, use _<username>_.
 . Click *Sign In*.
 
-*Add a SnapCenter Standard controller-based license*
-
-*Steps*
+=== Step 3: Add a SnapCenter Standard controller-based license
 
 . Log in to the controller using the ONTAP command line and enter:
 +
@@ -161,9 +158,7 @@ For a built-in local admin username format, use _<username>_.
 +
 `license show`
 
-*Add a SnapCenter capacity-based license*
-
-*Steps*
+=== Step 4: Add a SnapCenter capacity-based license
 
 . In the SnapCenter GUI left pane, click *Settings > Software*, and then in the License section, click *+*.
 . Select one of two methods for obtaining the license:
@@ -173,9 +168,7 @@ For a built-in local admin username format, use _<username>_.
 . In the Notifications page of the wizard, use the default capacity threshold of 90 percent.
 . Click *Finish*.
 
-*Set up storage system connections*
-
-*Steps*
+=== Step 5: Set up storage system connections
 
 . In the left pane, click *Storage Systems > New*.
 . In the Add Storage System page, perform the following:
@@ -186,9 +179,7 @@ For a built-in local admin username format, use _<username>_.
 . Click *Submit*.
 
 == Install the Plug-in for Microsoft SQL Server
-*Set up Run As Credentials to install the Plug-in for Microsoft SQL Server*
-
-*Steps*
+=== Step 1: Set up Run As Credentials to install the Plug-in for Microsoft SQL Server
 
 . In the left pane, click *Settings > Credentials > New*.
 . Enter the credentials.
@@ -197,9 +188,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 +
 For a built-in local admin username format, use _<username>_.
 
-*Add a host and install the Plug-in for Microsoft SQL Server*
-
-*Steps*
+=== Step 2: Add a host and install the Plug-in for Microsoft SQL Server
 
 . In the SnapCenter GUI left pane, click *Hosts > Managed Hosts > Add*.
 . In the Hosts page of the wizard, perform the following:
