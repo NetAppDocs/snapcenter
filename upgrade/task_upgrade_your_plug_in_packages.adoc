@@ -27,7 +27,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 *About this task*
 
 * The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
-* For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to 4.7 version for the SCRIPTS_PATH to run.
+* For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to the latest version for the SCRIPTS_PATH to run.
 +
 For the existing backup and verification schedules with prescripts and postscripts enabled in the policy, the backup operations will continue to work after upgrade.
 +
