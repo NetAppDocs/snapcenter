@@ -1,4 +1,4 @@
- ---
+---
 permalink: protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html
 sidebar: sidebar
 keywords: clone
