@@ -8,4 +8,5 @@ summary: 'Backup frequency \(schedule type\) is specified in policies; a backup 
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]
