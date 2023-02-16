@@ -9,7 +9,6 @@ summary: 'You can back up the application volume from the Resources page if the 
 :imagesdir: ../media/
 
 [.lead]
-
 If the application volume is not part of any resource group, you can back up the application volume from the Resources page.
 
 *About this task*

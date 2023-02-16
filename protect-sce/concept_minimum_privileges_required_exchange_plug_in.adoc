@@ -8,4 +8,5 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_concept_minimum_privileges_required_for_sap_hana_and_exchange_plug_in.adoc[]

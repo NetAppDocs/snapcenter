@@ -11,6 +11,8 @@ summary: 'You should manually add the application volumes.'
 [.lead]
 SnapCenter supports backing up and cloning of application volumes of Oracle database. You should manually add the application volumes. Auto discovery of application volumes is not supported.
 
+NOTE: Application volumes support only direct NFS and direct iSCSI connections.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.

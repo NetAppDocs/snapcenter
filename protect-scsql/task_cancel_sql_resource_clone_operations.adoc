@@ -8,4 +8,5 @@ summary: 'You can cancel clone operations that are queued.'
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_task_cancel_clone_operations.adoc[]

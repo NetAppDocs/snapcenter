@@ -2,7 +2,7 @@
 permalink: protect-scc/task_install_the_snapcenter_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html
 sidebar: sidebar
 keywords:
-summary: 'You should install the SnapCenter Custom Plug-ins by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Custom Plug-in either in console mode or in silent mode by using the command-line interface \(CLI\).'
+summary: 'You should install the SnapCenter Custom Plug-ins by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Custom Plug-in either in console mode or in silent mode by using the command-line interface (CLI).'
 ---
 = Install the SnapCenter Custom Plug-ins on Linux hosts by using the command-line interface
 :icons: font
