@@ -8,6 +8,7 @@ summary: 'You can monitor the progress of different backup operations by using t
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_task_monitor_backup_operations.adoc[]
 
 == Monitor operations in the Activity pane

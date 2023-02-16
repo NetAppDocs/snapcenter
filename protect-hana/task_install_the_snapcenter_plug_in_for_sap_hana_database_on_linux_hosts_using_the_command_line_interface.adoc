@@ -2,7 +2,7 @@
 permalink: protect-hana/task_install_the_snapcenter_plug_in_for_sap_hana_database_on_linux_hosts_using_the_command_line_interface.html
 sidebar: sidebar
 keywords:
-summary: 'You should install the SnapCenter Plug-in for SAP HANA Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for SAP HANA Database either in console mode or in silent mode by using the command-line interface \(CLI\).'
+summary: 'You should install the SnapCenter Plug-in for SAP HANA Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for SAP HANA Database either in console mode or in silent mode by using the command-line interface (CLI1).'
 ---
 = Install the SnapCenter Plug-in for SAP HANA Database on Linux hosts by using the command-line interface
 :icons: font
@@ -18,7 +18,7 @@ You should install the SnapCenter Plug-in for SAP HANA Database by using the Sna
 +
 The Interoperability Matrix Tool (IMT) contains the latest information about the supported configurations.
 +
-https://imt.netapp.com/matrix/imt.jsp?components=105284;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 * The SnapCenter Plug-in for SAP HANA Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you should have already installed SnapCenter on a Windows host.
 

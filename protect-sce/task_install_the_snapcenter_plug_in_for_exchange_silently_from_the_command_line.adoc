@@ -28,7 +28,7 @@ This path is accessible from the host where the SnapCenter Server is installed.
 
 . Copy the installation file to the host on which you want to install the plug-in.
 . From a Windows command prompt on the local host, navigate to the directory to which you saved the plug-in installation files.
-. Enter the following command to install replacing the variables with your data:
+. Enter the following command to install the plug-in.
 +
 _snapcenter_windows_host_plugin.exe"/silent /debuglog"<Debug_Log_Path>" /log"<Log_Path>" BI_SNAPCENTER_PORT=<Num> SUITE_INSTALLDIR="<Install_Directory_Path>" BI_SERVICEACCOUNT=<domain\administrator> BI_SERVICEPWD=<password> ISFeatureInstall=HPPW,SCW,SCE_
 +
@@ -38,7 +38,6 @@ _C:\ProgramData\NetApp\SnapCenter\Package Repository\snapcenter_windows_host_plu
 +
 NOTE: All the parameters passed during the installation of Plug-in for Exchange are case sensitive.
 
-.. _/silent /debuglog"C:\Installdebug.log" /log"C:\temp" BI_SNAPCENTER_PORT=8145 SUITE_INSTALLDIR="C:\Program Files" BI_SERVICEACCOUNT=demo\administrator BI_SERVICEPWD=Netapp1! ISFeatureInstall=HPPW,SCW_
 +
 Enter the following values for the variables:
 +

@@ -8,6 +8,7 @@ summary: 'Before performing any data protection operation such as backup, clone,
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_concept_prepare_for_data_protection.adoc[]
 
 == Prerequisites for using the SnapCenter Plug-in for Microsoft Exchange Server
