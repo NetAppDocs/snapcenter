@@ -42,9 +42,11 @@ In the *Job details* page, a warning message recommends that the customer should
     .. Select *Skip prechecks* if you do not want to validate whether the host meets the requirements to upgrade the plug-in.
     .. Click *Upgrade*.
   * If you want to upgrade multiple hosts, select all the hosts, click image:../media/more_icon.gif[], and then click *Upgrade* > *OK*.
++  
+All the related services are restarted during the plug-in upgrade.
 +
 NOTE: All the plug-ins in the package gets selected, but only the plug-ins that were installed with the earlier version of SnapCenter are upgraded, and the remaining plug-ins are not installed. You must use the *Add plug-ins* option to install any new plug-in.
-
++
 If you have not selected the *Skip prechecks* check box, the host is validated to see if it meets the requirements to install the plug-in. If the minimum requirements are not met, appropriate error or warning messages are displayed. After fixing the issue, click *Upgrade*.
-
++
 NOTE: If the error is related to disk space or RAM, you can update either the web.config located at C:\Program Files\NetApp\SnapCenter WebApp, or the PowerShell config files located at C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SnapCenter\ to modify the default values. If the error is related to remaining parameters then you must fix the issue, and then validate the requirements again.
