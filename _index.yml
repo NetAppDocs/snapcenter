@@ -4,7 +4,7 @@ indexpage:
     - title: Get started
       links:
         - title: Release notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883299
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885481
         - title: Learn about SnapCenter
           url: /concept/concept_snapcenter_overview.html
         - title: Quick reference to protect SQL Server databases
