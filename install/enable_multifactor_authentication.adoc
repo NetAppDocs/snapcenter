@@ -4,12 +4,15 @@ sidebar: sidebar
 keywords: mfa, authentication, multifactor authentication
 summary: 'SnapCenter employs strict security and authentication features to enable you to keep your data secure.'
 ---
-= Enable Multi-factor authentication (MFA)
+= Managing multi-factor authentication (MFA)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
+This topic describes how to manage Multi-factor authentication (MFA) functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
+
+== Enable multi-factor authentication (MFA)
 This topic describes how to enable MFA functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
 
 .About this task
@@ -86,16 +89,13 @@ SnapCenter is now reflected as a relying party with the provided display name.
 . Perform the following steps to confirm that the metadata was imported successfully.
 .. Right-click the relying party trust and select *Properties*.
 .. Ensure that the Endpoints, Identifiers, and Signature fields are populated.
+. Close all the browser tabs and reopen a browser to clear the existing or active session cookies, and login again.
 
 SnapCenter MFA functionality can also be enabled using REST APIs.
 
-.What's next
-
-After enabling, updating, or disabling the MFA settings in SnapCenter, close all the  browser tabs and reopen a browser to login again. This will clear the existing or active session cookies.
-
 For troubleshooting information. see link:..https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_login_in_multiple_tabs_shows_MFA_error%3A_The_SAML_message_response_(1)_doesn%E2%80%99t_match_the_expected_response_(2)[SnapCenter Login in multiple tabs shows MFA error].
 
-.Update AD FS MFA Metadata
+== Update AD FS MFA Metadata
 
 You should update the AD FS MFA metadata in SnapCenter whenever there is any modification in the AD FS Server, such as upgrade, CA certificate renewal, DR, and so on.
 
@@ -106,12 +106,9 @@ You should update the AD FS MFA metadata in SnapCenter whenever there is any mod
 . Update the AD FS metadata in SnapCenter by running the following cmdlet:
 +
 `Set-SmMultiFactorAuthentication -Path <location of ADFS MFA metadata xml file>`
+. Close all the browser tabs and reopen a browser to clear the existing or active session cookies, and login again.
 
-.What's next
-
-After enabling, updating, or disabling the MFA settings in SnapCenter, close all the  browser tabs and reopen a browser to login again. This will clear the existing or active session cookies.
-
-.Update SnapCenter MFA metadata
+== Update SnapCenter MFA metadata
 
 You should update the SnapCenter MFA metadata in AD FS whenever there is any modification in ADFS server such as repair, CA certificate renewal, DR, and so on.
 
@@ -125,15 +122,11 @@ The user defined name of the relying party trust will be displayed.
 .. Enable Multi-factor authentication (MFA).
 +
 See link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication].
+. Close all the browser tabs and reopen a browser to clear the existing or active session cookies, and login again.
 
-.What's next
+== Disable Multi-factor authentication (MFA)
 
-After enabling, updating, or disabling the MFA settings in SnapCenter, close all the  browser tabs and reopen a browser to login again. This will clear the existing or active session cookies.
+.Steps
 
-.Disable Multi-factor authentication (MFA)
-
-Disable MFA and clean up the configuration files that were created when MFA was enabled by using `Set-SmMultiFactorAuthentication -Disable` cmdlet.
-
-.What's next
-
-After enabling, updating, or disabling the MFA settings in SnapCenter, close all the  browser tabs and reopen a browser to login again. This will clear the existing or active session cookies.
+. Disable MFA and clean up the configuration files that were created when MFA was enabled by using the `Set-SmMultiFactorAuthentication -Disable` cmdlet.
+. Close all the browser tabs and reopen a browser to clear the existing or active session cookies, and login again.
