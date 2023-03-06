@@ -8,7 +8,7 @@ entries:
   - title: REST web services foundation
     url: /sc-automation/concept_rest_web_services_foundation.html
   - title: Basic operational characteristics
-    url: /sc-automation/concept_basic_operational_characterstics.html
+    url: /sc-automation/concept_basic_operational_characteristics.html
   - title: Input variables controlling an API request
     url: /sc-automation/concept_input_variables_controlling_an_api_request.html
   - title: Interpretation of an API response
