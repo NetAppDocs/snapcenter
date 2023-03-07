@@ -12,32 +12,47 @@ summary: 'SnapCenter disaster recovery functionality uses REST APIs to backup Sn
 SnapCenter disaster recovery (DR) functionality uses REST APIs to backup SnapCenter Server. Perform the following steps before using the DR REST APIs.
 
 *Steps*
+
 . Create a new Server DR backup, which restores a SnapCenter Server from a specified Server DR backup using DR Backup REST API: `/4.5/disasterrecovery/server/backup`
 . Bring up the secondary server machine, but before installing the SnapCenter Server on the secondary server you should complete the prerequisites.
 * The alternate server host name/Host FQDN should be same as the primary server host name, but the IP address can be different.
 * Secondary server version should be the same as the primary server.
 * Secondary SnapCenter should be installed on the same location and on same port as primary.
+. Before triggering the server DR restore operation, you should bring up the target path or the path where the DR backups are stored after the disaster. 
+* Ensure that the DR backup files are copied to the new SnapCenter Server using the following command:
+`xcopy <Ssource_Path> \\<Destination_Server_IP>\<Folder_Path> /O /X /E /H /K {ex : xcopy C:\DRBackup \\10.225.81.114\c$\DRBackup /O /X /E /H /K}`
+. Install SnapCenter Server on the secondary machine.
+* While performing the DR restore operation, you should ensure that no jobs are running related to the SnapCenter Server.
+. Install the secondary SnapCenter Server in the same location and on the same port as primary server.
+* Perform server DR restore operation using the DR restore API:  `/4.5/disasterrecovery/server/restore`
++ 
+If the plug-in is not able to resolve the server hostname, log in to each of the plug-in host and add the etc/host entry for the new IP in the <New IP> SC_Server_Name format.
+For example, `10.225.81.35 SCServer1`
++
+The server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
 
-= REST API supported for disaster recovery of SnapCenter Server
+NOTE: For an F5 setup, restore operation is performed as stand-alone, you should run a set of commands to create the F5 again. See, Link: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Migrate_SnapCenter_migrate_to_another_Server[How to migrate SnapCenter to another server^]
 
-SnapCenter disaster recovery (DR) functionality uses REST APIs to backup SnapCenter Server. Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
+NOTE: After DR restore, the host will be added but you should install the plug-in manually.
+
+NOTE: Repository backup schedule will be restored only if you install the SnapCenter Plug-in for Windows and attach NetApp LUN to the server machine.
+
+== REST API supported for disaster recovery of SnapCenter Server
+
+Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
 
 *What you will need*
 
-*	You should log in as the SnapCenter Admin user.
+* You should log in as the SnapCenter Admin user.
 * The SnapCenter Server should be up and running to run DR restore API.
-
 
 *About this task*
 
 SnapCenter Server DR supports all plug-ins.
 
-[cols="10,40,50,10"]
 |===
-| Step| Description|REST API|HTTP method
+|Description|REST API|HTTP method
 
-a|
-1
 a|
 Fetch existing SnapCenter Server DR backups
 
@@ -49,47 +64,23 @@ a|
 a|
 GET
 a|
-2
-a|
 Create a new Server DR backup.
 a|
 `/4.5/disasterrecovery/server/backup`
 a|
 POST
 a|
-3
-a|
 Restores a SnapCenter Server from a specified Server DR backup.
-
-*Prerequisites*
-
-* The alternate server host name should be same as the primary server, but the IP address can be different.
-* Server version should be the same as the primary server.
-* Ensure the DR backup files are copied to the new SnapCenter server using the following command:
-+
-`xcopy <Ssource_Path> \\<Destination_Server_IP>\<Folder_Path> /O /X /E /H /K  {ex : xcopy C:\DRBackup \\10.225.81.114\c$\DRBackup /O /X /E /H /K}`
-
-If the plug-in is not able to resolve the server hostname, log into each of the plug-in host and add the etc/host entry for the new IP in the format:
-`<New IP>	SC_Server_Name`
-
-For example, 10.225.81.35	SCServer1
-
-The server etc/host file will not be restored. You can restore it manually from the DR backup folder.
-
 a|
 `/4.5/disasterrecovery/server/restore`
 a|
 POST
-a|
-4
 a|
 Delete the Server DR backup based on backup name.
 a|
 ``/4.5/disasterrecovery/server/backup``
 a|
 DELETE
-a|
-5
 a|
 Enable or disable the storage DR
 a|
