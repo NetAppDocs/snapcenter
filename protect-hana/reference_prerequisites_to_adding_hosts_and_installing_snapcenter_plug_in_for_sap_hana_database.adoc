@@ -12,6 +12,8 @@ summary: 'Before you add a host and install the plug-in packages, you must compl
 Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for SAP HANA Database is available in both Windows and Linux environments.
 
 * You must have installed Java 1.8 64-bit on your host.
++
+NOTE: IBM Java is not supported. 
 * You must have installed SAP HANA database interactive terminal (HDBSQL client) on the host.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for SAP HANA Database is installed as domain administrator.
 * For Windows, user store keys should be created as SYSTEM user.

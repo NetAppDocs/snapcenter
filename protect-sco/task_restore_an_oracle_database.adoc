@@ -62,6 +62,8 @@ a|
 Control files
 a|
 Select *Control files*.
+
+NOTE: While restoring control files, ensure that the directory structure either exists or should be created with the correct user and group ownerships, if any, to allow the files to be copied to the target location by the restore process.  If the directory does not exist, the restore job will fail.
 a|
 Redo log files
 a|
