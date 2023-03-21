@@ -32,7 +32,7 @@ For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-You can create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
+NOTE: You can create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
@@ -52,7 +52,7 @@ In the Add Verification Schedules _policy_name_ dialog box, you can perform the 
  .. Select *Run scheduled verification*, and select the schedule type from the drop-down list.
 //Included the below info for BURT 1348035 for 4.5
 +
-In a Flex ASM setup, you cannot perform verification operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
+NOTE: In a Flex ASM setup, you cannot perform verification operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
 
  .. Select *Verify on secondary location* to verify your backups on secondary storage.
  .. Click *OK*.
@@ -62,7 +62,7 @@ The configured verification schedules are listed in the Applied Schedules column
 +
 You must specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the backup operation performed on the resource, select *Attach Job Report*.
 +
-For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command `Set-SmSmtpServer`.
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command `Set-SmSmtpServer`.
 
 . Review the summary, and then click *Finish*.
 +
