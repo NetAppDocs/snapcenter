@@ -22,31 +22,26 @@ Specifies the job ID of the operation.
 ====
 256
 ====
-[horizontal]
 SC_ORACLE_SID::
 Specifies the system identifier of the database. If the operation involves multiple databases, the parameter will contain database names separated by pipe. This parameter is populated for application volumes.
 ====
 NFSB32|NFSB31
 ====
-[horizontal]
 SC_HOST::
 Specifies the host name of the database. For RAC, host name will be the name of the host on which backup is performed. This parameter is populated for application volumes.
 ====
 scsmohost2.gdl.englabe.netapp.com
 ====
-[horizontal]
 SC_OS_USER::
 Specifies the operating system owner of the database. The data is formatted as <db1>@<osuser1>|<db2>@<osuser2>.
 ====
 NFSB31@oracle|NFSB32@oracle
 ====
-[horizontal]
 SC_OS_GROUP::
 Specifies the operating system group of the database. The data is formatted as <db1>@<osgroup1>|<db2>@<osgroup2>.
 ====
 NFSB31@install|NFSB32@oinstall
 ====
-[horizontal]
 SC_BACKUP_TYPE::
 Specifies the backup type (online full, online data, online log, offline shutdown, offline mount). 
 ====
@@ -54,19 +49,16 @@ Specifies the backup type (online full, online data, online log, offline shutdow
 * data only backup: ONLINEDATA
 * For log only backup: ONLINELOG
 ====
-[horizontal]
 SC_BACKUP_ID::
 Specifies the backup ID. This parameter is populated for application volumes. 
 ====
 DATA@203|LOG@205|AV@207
 ====
-[horizontal]
 SC_ORACLE_HOME::
 Specifies the path of the Oracle home directory. 
 ====
 NFSB32@/ora01/app/oracle/product/18.1.0/db_1|NFSB31@/ora01/app/oracle/product/18.1.0/db_1
 ====
-[horizontal]
 SC_BACKUP_RETENTION::
 Specifies the retention period defined in the policy. 
 ====
@@ -74,46 +66,39 @@ Specifies the retention period defined in the policy.
 * For on-demand data only backup: Ondemand|DATA@COUNT:2
 * For on-demand log only backup: Ondemand|LOG@COUNT:2
 ====
-[horizontal]
 SC_RESOURCE_GROUP_NAME::
 Specifies the name of the resource group. 
 ====
 RG1
 ====
-[horizontal]
 SC_BACKUP_POLICY_NAME::
 Specifies the name of the backup policy. 
 ====
 backup_policy
 ====
-[horizontal]
 SC_AV_NAME::
 Specifies the names of the application volumes. 
 ====
 AV1|AV2
 ====
-[horizontal]
 SC_PRIMARY_DATA_VOLUME_FULL_PATH::
 Specifies the storage mapping of SVM to volume for data files directory. It will be the name of the parent volume for luns and qtrees. The data is formatted as <db1>@<SVM1:volume1>|<db2>@<SVM2:volume2>.
 ====
 * For 2 databases in the same resource group: NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA
 * For single database with data files spread across multiple volumes: buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA,herculus:/vol/scspr2417819002_NFS
 ====
-[horizontal]
 SC_PRIMARY_ARCHIVELOGS_VOLUME_FULL_PATH::
 Specifies the storage mapping of SVM to volume for logs file directory. It will be the name of the parent volume for luns and qtrees.
 ====
 * For single database instance: buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO
 * For multiple database instances: NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO|NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO
 ====
-[horizontal]
 SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG::
 Specifies the list of Snapshots containing storage system name and volume name.
 ====
 * For single database instance: buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 * For multiple database instances: NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 ====
-[horizontal]
 SC_PRIMARY_SNAPSHOT_NAMES::
 Specifies the names of the primary Snapshots created during the backup.
 ====
@@ -121,7 +106,6 @@ Specifies the names of the primary Snapshots created during the backup.
 * For multiple database instances: NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 * For consistency group Snapshots that involves 2 volumes: cg3_R80404CBEF5V1_04-05-2021_03.08.03.4945_0_bfc279cc-28ad-465c-9d60-5487ac17b25d_2021_4_5_3_8_58_350
 ====
-[horizontal]
 SC_PRIMARY_MOUNT_POINTS::
 Specifies the mount point details which are part of the backup. The details include the directory on which volumes are mounted and not the immediate parent of the file under backup. For an ASM configuration, it is the name of the disk group. The data is formatted as <db1>@<mountpoint1,mountpoint2>|<db2>@<mountpoint1,mountpoint2>.
 ====
@@ -129,14 +113,12 @@ Specifies the mount point details which are part of the backup. The details incl
 * For multiple database instances: NFSB31@/mnt/nfsdb31_data,/mnt/nfsdb31_log,/mnt/nfsdb31_data1|NFSB32@/mnt/nfsdb32_data,/mnt/nfsdb32_log,/mnt/nfsdb32_data1
 * For ASM: +DATA2DG,+LOG2DG
 ====
-[horizontal]
 SC_PRIMARY_SNAPSHOTS_AND_MOUNT_POINTS::
 Specifies the names of the snapshots created during the backup of each of the mount points.
 ====
 * For single database instance: RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log
 * For multiple database instances: NFSB32@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb32_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb31_log|NFSB31@RG2_scspr2417819002_07-21-2021_02.28.26.3973_0:/mnt/nfsb31_data,RG2_scspr2417819002_07-21-2021_02.28.26.3973_1:/mnt/nfsb32_log
 ====
-[horizontal]
 SC_ARCHIVELOGS_LOCATIONS::
 Specifies the location of the archive logs directory. The directory names will be the immediate parent of the archive log files. If the archive logs are placed in more than one location then all the locations will be captured. This also includes the FRA scenarios. If softlinks are used for directory then the same will be populated.
 ====
@@ -144,7 +126,6 @@ Specifies the location of the archive logs directory. The directory names will b
 * For multiple databases on NFS and for the NFSB31 database archive logs that are placed in two different locations: NFSB31@/mnt/nfsdb31_log1,/mnt/nfsdb31_log2|NFSB32@/mnt/nfsdb32_log
 * For ASM: +LOG2DG/ASMDB2/ARCHIVELOG/2021_07_15
 ====
-[horizontal]
 SC_REDO_LOGS_LOCATIONS::
 Specifies the location of the redo logs directory. The directory names will be the immediate parent of the redo log files. If softlinks are used for directory then the same will be populated.
 ====
@@ -152,7 +133,6 @@ Specifies the location of the redo logs directory. The directory names will be t
 * For multiple databases on NFS: NFSB31@/mnt/nfsdb31_data/newdb31|NFSB32@/mnt/nfsdb32_data/newdb32
 * For ASM: +LOG2DG/ASMDB2/ONLINELOG
 ====
-[horizontal]
 SC_CONTROL_FILES_LOCATIONS::
 Specifies the location of the control files directory. The directory names will be the immediate parent of the control files. If softlinks are used for directory then the same will be populated.
 ====
@@ -160,7 +140,6 @@ Specifies the location of the control files directory. The directory names will 
 * For multiple databases on NFS: NFSB31@/mnt/nfsdb31_data/fra/newdb31,/mnt/nfsdb31_data/newdb31|NFSB32@/mnt/nfsdb32_data/fra/newdb32,/mnt/nfsdb32_data/newdb32
 * For ASM: +LOG2DG/ASMDB2/CONTROLFILE
 ====
-[horizontal]
 SC_DATA_FILES_LOCATIONS::
 Specifies the location of the data files directory. The directory names will be the immediate parent of the data files. If softlinks are used for directory then the same will be populated.
 ====
@@ -168,7 +147,6 @@ Specifies the location of the data files directory. The directory names will be 
 * For multiple databases on NFS: NFSB31@/mnt/nfsdb31_data1,/mnt/nfsdb31_data/NEWDB31/datafile|NFSB32@/mnt/nfsdb32_data1,/mnt/nfsdb32_data/NEWDB32/datafile
 * For ASM: +DATA2DG/ASMDB2/DATAFILE,+DATA2DG/ASMDB2/TEMPFILE
 ====
-[horizontal]
 SC_SNAPSHOT_LABEL::
 Specifies the name of the secondary labels. The directory names will be the immediate parent of the data files. If softlinks are used for directory then the same will be populated.
 ====
@@ -180,19 +158,18 @@ Hourly, Daily, Weekly, Monthly, or custom label
 // Start snippet: definition list - horizontal
 // 2 placeholders: Term and Definition
 [horizontal]
+
 *:*::
 Used to separate SVM name and volume name.
 ====
 buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 ====
-[horizontal]
 *@*::
 Used to separate data from its database name and to separate the value from its key.
 ====
 * NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1|NFSB31@buck:/vol/scspr2417819002_NFS_CDB_NFSB31_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB31_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 * NFSB31@oracle|NFSB32@oracle
 ====
-[horizontal]
 *|*::
 Used to separate the data between two different databases and to separate the data between two different entities for SC_BACKUP_ID, SC_BACKUP_RETENTION, and SC_BACKUP_NAME parameters.
 ====
@@ -200,13 +177,11 @@ Used to separate the data between two different databases and to separate the da
 * Hourly|DATA@DAYS:3|LOG@COUNT:4
 * DATA@RG2_scspr2417819002_07-20-2021_12.16.48.9267_0|LOG@RG2_scspr2417819002_07-20-2021_12.16.48.9267_1
 ====
-[horizontal]
 */*::
-Used to separate the volume name from it's Snapshot for SC_PRIMARY_SNAPSHOT_NAMES and SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG parameters.
+Used to separate the volume name from it's Snapshot for `SC_PRIMARY_SNAPSHOT_NAMES` and `SC_PRIMARY_FULL_SNAPSHOT_NAME_FOR_TAG` parameters.
 ====
 NFSB32@buck:/vol/scspr2417819002_NFS_CDB_NFSB32_DATA/RG2_scspr2417819002_07-21-2021_02.28.26.3973_0,buck:/vol/scspr2417819002_NFS_CDB_NFSB32_REDO/RG2_scspr2417819002_07-21-2021_02.28.26.3973_1
 ====
-[horizontal]
 *,*::
 Used to separate set of variables for the same DB.
 ====
