@@ -81,7 +81,7 @@ The nine-digit SnapCenter license serial number, with the format 51xxxxxxx, is d
 
 If you do not want to enter your NetApp Support Site credentials and the SnapCenter license serial number in the SnapCenter GUI, or if you do not have internet access to the NetApp Support Site from SnapCenter, you can generate a NetApp license file (NLF). You can then download and store the file in a location accessible from the SnapCenter host.
 
-.What you'll need
+.Before you begin
 
 * You should be using SnapCenter with either ONTAP Select or Cloud Volumes ONTAP.
 * You should have a valid NetApp Support Site login credentials.
@@ -100,7 +100,7 @@ If you do not want to enter your NetApp Support Site credentials and the SnapCen
 
 If you are using SnapCenter with ONTAP Select or Cloud Volumes ONTAP platforms, you should install one or more SnapCenter capacity-based licenses.
 
-.What you'll need
+.Before you begin
 
 * You should log in as the SnapCenter Admin user.
 * You should have a valid NetApp Support Site login credentials.
