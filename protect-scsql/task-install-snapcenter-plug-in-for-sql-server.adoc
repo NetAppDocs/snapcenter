@@ -11,9 +11,7 @@ summary: Provides instructions for installing the SnapCenter Plug-in for Microso
 [.lead]
 Provides a condensed set of install instructions for the SnapCenter Plug-in for Microsoft SQL Server.
 
-
-== Install the Plug-in for Microsoft SQL Server
-=== Step 1: Set up Run As Credentials to install the Plug-in for Microsoft SQL Server
+== Step 1: Set up Run As Credentials to install the Plug-in for Microsoft SQL Server
 
 . In the left pane, click *Settings > Credentials > New*.
 . Enter the credentials.
@@ -22,7 +20,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 +
 For a built-in local admin username format, use _<username>_.
 
-=== Step 2: Add a host and install the Plug-in for Microsoft SQL Server
+== Step 2: Add a host and install the Plug-in for Microsoft SQL Server
 
 . In the SnapCenter GUI left pane, click *Hosts > Managed Hosts > Add*.
 . In the Hosts page of the wizard, perform the following:
