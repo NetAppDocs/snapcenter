@@ -39,6 +39,8 @@ NOTE: You can use the Plug-in for Oracle Database to manage Oracle databases for
 
 NOTE: UUID mapping in the /etc/fstab file is not supported by SnapCenter.
 
+* You should have *bash* as the default shell for plug-in installation.
+
 == Linux Host requirements
 
 You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.

@@ -69,6 +69,8 @@ Select this option if you want the database to be restored to an alternate SQL S
 
 Database files should be already present on the given existing file paths.    Select a host name, provide a database name (optional), select an instance, and specify the restore paths.
 |===
++
+NOTE: The *Use Custom log directory* option is available only if you have selected *Restore the database to an alternate host* or *Restore the database using existing database files*. You can also use the shared path but ensure that the path is accessible by the SQL user.
 
 . In the Recovery Scope page, select one of the following options:
 +
