@@ -11,7 +11,7 @@ summary: 'In the event of data loss, you can use SnapCenter to restore data from
 [.lead]
 In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.
 
-*Before you Begin*
+*Before you begin*
 
 If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 

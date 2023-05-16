@@ -11,6 +11,10 @@ summary: 'You can use SnapCenter to clone an Oracle database using the backup of
 [.lead]
 You can use SnapCenter to clone an Oracle database using the backup of the database.
 
+*Before you begin*
+
+If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
+
 *About this task*
 
 The cloning operation creates a copy of the database data files, and creates new online redo log files and control files. The database can be optionally recovered to a specified time, based on the specified recovery options.
@@ -25,10 +29,6 @@ While cloning a backup of an ASM database in a SAN environment, udev rules for t
 
 //Included the below info for BURT 1348035 for 4.5
 NOTE: In a Flex ASM setup, you cannot perform clone operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
-
-*Before you Begin*
-
-If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 
 *Steps*
 

@@ -11,7 +11,7 @@ summary: 'You can restore and recover a pluggable database (PDB) that has been c
 [.lead]
 You can restore and recover a pluggable database (PDB) that has been corrupted or dropped without impacting the other PDBs in the container database (CDB). SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the PDB.
 
-*What you will need*
+*Before you begin*
 
 * The backups that are required to perform PITR of a PDB should be cataloged and mounted.
 +
