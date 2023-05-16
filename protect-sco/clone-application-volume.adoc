@@ -11,6 +11,10 @@ summary: 'You can use SnapCenter to clone the application volume backups, split 
 [.lead]
 You can use SnapCenter to clone the application volume backups.
 
+*Before you begin*
+
+If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.

@@ -11,6 +11,10 @@ summary: 'In the event of data loss, you can use SnapCenter to restore data from
 [.lead]
 In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.
 
+*Before you begin*
+
+If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
+
 *About this task*
 
 Recovery is performed using the archive logs available at the configured archive log location. If the database is running in ARCHIVELOG mode, Oracle database saves the filled groups of redo log files to one or more offline destinations, known collectively as the archived redo log. SnapCenter identifies and mounts optimal number of log backups based on the specified SCN, selected date and time, or all logs option.
