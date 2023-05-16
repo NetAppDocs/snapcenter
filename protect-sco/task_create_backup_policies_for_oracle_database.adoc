@@ -16,6 +16,7 @@ Before you use SnapCenter to back up Oracle database resources, you must create 
 * You must have defined your backup strategy.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, discovering databases, and creating storage system connections.
 * If you are replicating Snapshot copies to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
+* If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 
 *Steps*
 

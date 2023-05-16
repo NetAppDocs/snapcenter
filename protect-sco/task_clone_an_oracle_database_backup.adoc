@@ -26,6 +26,10 @@ While cloning a backup of an ASM database in a SAN environment, udev rules for t
 //Included the below info for BURT 1348035 for 4.5
 NOTE: In a Flex ASM setup, you cannot perform clone operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
 
+*Before you Begin*
+
+If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

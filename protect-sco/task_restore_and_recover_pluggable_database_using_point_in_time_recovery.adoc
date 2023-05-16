@@ -13,9 +13,10 @@ You can restore and recover a pluggable database (PDB) that has been corrupted o
 
 *What you will need*
 
-The backups that are required to perform PITR of a PDB should be cataloged and mounted.
-
+* The backups that are required to perform PITR of a PDB should be cataloged and mounted.
++
 NOTE: In a RAC setup, you should manually close the PDB (changing the state to MOUNTED) on all the nodes of the RAC setup.
+* If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 
 *About this task*
 
