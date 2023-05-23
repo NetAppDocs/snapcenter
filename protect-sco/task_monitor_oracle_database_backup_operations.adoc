@@ -18,5 +18,4 @@ include::../_include/reuse_task_monitor_backup_operations.adoc[]
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
 include::../_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]

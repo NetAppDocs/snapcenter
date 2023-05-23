@@ -23,7 +23,7 @@ entries:
         url: /install/concept_authentication_methods_for_your_credentials.html
       - title: Storage Virtual Machine connections and credentials
         url: /install/concept_svm_connections_and_credentials.html
-      - title: Enable Multi-factor authentication (MFA)
+      - title: Manage Multi-factor authentication (MFA)
         url: /install/enable_multifactor_authentication.html
   - title: Install the SnapCenter Server
     url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
@@ -75,6 +75,8 @@ entries:
         url: /install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
       - title: Configure IIS Application Pools to enable Active Directory read permissions
         url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
+  - title: Configure audit log settings
+    url: /install/task_configure_audit_log_settings.html
   - title: Add storage systems
     url: /install/task_add_storage_systems.html
   - title: Add SnapCenter Standard controller-based licenses

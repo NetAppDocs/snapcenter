@@ -24,9 +24,12 @@ For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_
 * SnapCenter is installed inside your company's firewall to enable access to the SnapCenter Server and to enable communication between the SnapCenter Server and the plug-ins.
 * SnapCenter API and operation access uses tokens encrypted with AES encryption, which expire after 24 hours.
 * SnapCenter integrates with Windows Active Directory for login and role-based access control (RBAC) that govern access permissions.
+* IPsec is supported with SnapCenter on ONTAP for Windows and Linux host machines. https://docs.netapp.com/us-en/ontap/networking/configure_ip_security_@ipsec@_over_wire_encryption.html#use-ipsec-identities[Learn more].
 * SnapCenter PowerShell cmdlets are session secured.
 * After a default period of 15 minutes of inactivity, SnapCenter warns you that you will be logged out in 5 minutes. After 20 minutes of inactivity, SnapCenter logs you out, and you must log in again. You can modify the log out period.
 * Login is temporarily disabled after 5 or more incorrect login attempts.
+* Supports CA certificate authentication between SnapCenter Server and ONTAP. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_securely_connect_SnapCenter_with_ONTAP_using_CA_certificate[Learn more].
+* Integrity Verifier is added to the SnapCenter Server and the plug-ins and it validates all the shipped binaries during fresh installation and upgrade operations.
 
 == CA Certificate Overview
 

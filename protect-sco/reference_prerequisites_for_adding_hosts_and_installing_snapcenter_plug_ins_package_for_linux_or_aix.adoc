@@ -14,14 +14,16 @@ Before you add a host and install the plug-ins packages, you must complete all t
 * If you are using iSCSI, the iSCSI service must be running.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 +
-SnapCenter Plug-in for Oracle Database can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective root user.
+SnapCenter Plug-in for Oracle Database can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective non-root user.
 
 * If you are installing the SnapCenter Plug-ins Package for AIX on AIX host, you should have manually resolved the directory level symbolic links.
 +
 The SnapCenter Plug-ins Package for AIX automatically resolves the file level symbolic link but not the directory level symbolic links to obtain the JAVA_HOME absolute path.
 
 * Create credentials with authentication mode as Linux or AIX for the install user.
-* You must have installed Java 1.8.x, 64-bit, on your Linux or AIX host.
+* You must have installed Java 1.8.x or Java 11, 64-bit, on your Linux or AIX host.
++
+NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 +
 For information to download JAVA, see:
 
@@ -36,6 +38,8 @@ NOTE: You can use the Plug-in for Oracle Database to manage Oracle databases for
 * If you are using Oracle database 11.2.0.3 or later, you must install the 13366202 Oracle patch.
 
 NOTE: UUID mapping in the /etc/fstab file is not supported by SnapCenter.
+
+* You should have *bash* as the default shell for plug-in installation.
 
 == Linux Host requirements
 
@@ -69,22 +73,24 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 1.8.x (64-bit)Oracle Java and OpenJDK flavors
+* Java 1.8.x (64-bit) Oracle Java and OpenJDK flavors
+* Java 11 (64-bit) Oracle Java and OpenJDK flavors
+
+NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
 |===
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=108392;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === Configure sudo privileges for non-root users for Linux host
 
-SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
+SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. The plug-in processes will be running as an effective non-root user. You should configure sudo privileges for the non-root user to provide access to several paths.
 
 *What you will need*
 
-* Sudo version between 1.8.7 and 1.8.19P2.
-* Ensure that the non-root user is part of the Oracle installation group.
+* Sudo version 1.8.7 or later.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.
@@ -109,11 +115,9 @@ MACs hmac-sha2-256
 
 You should configure sudo privileges for the non-root user to provide access to the following paths:
 
-* /home/_SUDO_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin
+* /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin
 * /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
 * /custom_location/NetApp/snapcenter/spl/bin/spl
-
-NOTE: If you are managing a RAC setup, the non-root user should be an Oracle user and it cannot be just any non-root OS user.
 
 *Steps*
 
@@ -122,27 +126,27 @@ NOTE: If you are managing a RAC setup, the non-root user should be an Oracle use
 +
 [subs=+quotes]
 ----
-Cmnd_Alias SCCMD = sha224:checksum_value== /home/_SUDO_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin,
-/opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
-/opt/NetApp/snapcenter/spl/bin/spl
-Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_SUDO_USER_/.sc_netapp/Linux_Prechecks.sh
-_SUDO_USER_ ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
-Defaults: _SUDO_USER_ env_keep=JAVA_HOME
-Defaults: _SUDO_USER_ !visiblepw
-Defaults: _SUDO_USER_ !requiretty
+Cmnd_Alias HPPLCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin, /opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl, /opt/NetApp/snapcenter/scc/bin/scc
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/Linux_Prechecks.sh
+Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+Cmnd_Alias SCCCMDEXECUTOR =checksum_value== /opt/NetApp/snapcenter/scc/bin/sccCommandExecutor
+_LINUX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD
+Defaults: _LINUX_USER_ !visiblepw
+Defaults: _LINUX_USER_ !requiretty
 ----
 +
-_SUDO_USER_ is the name of the non-root user that you created.
-+
-You can obtain the checksum value from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
-+
-If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
-+
-IMPORTANT: The example should be used only as a reference for creating your own data.
+NOTE: If you are having a RAC setup, along with the other allowed commands, you should add the following to the /etc/sudoers file: '/<crs_home>/bin/olsnodes'
 
-|===
-*Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
-|===
+You can obtain the value of _crs_home_ from the _/etc/oracle/olr.loc_ file. 
+
+_LINUX_USER_ is the name of the non-root user that you created.
+
+You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
+
+If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
+
+IMPORTANT: The example should be used only as a reference for creating your own data.
 
 == AIX Host requirements
 
@@ -171,22 +175,22 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 1.8.x (64-bit)IBM Java
+* Java 1.8.x (64-bit) IBM Java
+* Java 11 (64-bit) IBM Java
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 
 |===
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=108392;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 === Configure sudo privileges for non-root users for AIX host
 
-SnapCenter 4.4 and later allows a non-root user to install the SnapCenter Plug-ins Package for AIX and to start the plug-in process. You should configure sudo privileges for the non-root user to provide access to several paths.
+SnapCenter 4.4 and later allows a non-root user to install the SnapCenter Plug-ins Package for AIX and to start the plug-in process. The plug-in processes will be running as an effective non-root user. You should configure sudo privileges for the non-root user to provide access to several paths.
 
 *What you will need*
 
-* Sudo version between 1.8.7 and 1.8.19P2.
-* Ensure that the non-root user is part of the Oracle installation group.
+* Sudo version 1.8.7 or later.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.
@@ -215,8 +219,6 @@ You should configure sudo privileges for the non-root user to provide access to 
 * /custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall
 * /custom_location/NetApp/snapcenter/spl/bin/spl
 
-NOTE: If you are managing a RAC setup, the non-root user should be an Oracle user and it cannot be just any non-root OS user.
-
 *Steps*
 
 . Log in to the AIX host on which you want to install the SnapCenter Plug-ins Package for AIX.
@@ -224,26 +226,27 @@ NOTE: If you are managing a RAC setup, the non-root user should be an Oracle use
 +
 [subs=+quotes]
 ----
-Cmnd_Alias SCCMD = sha224:checksum_value== /home/_AIX_USER_/.sc_netapp/snapcenter_aix_host_plugin.bsx,
-/opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
-/opt/NetApp/snapcenter/spl/bin/spl
+Cmnd_Alias HPPACMD = sha224:checksum_value== /home/_AIX_USER_/.sc_netapp/snapcenter_aix_host_plugin.bsx,
+/opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl
 Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_AIX_USER_/.sc_netapp/AIX_Prechecks.sh
-_AIX_USER_ ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
+Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+_AIX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPACMD, PRECHECKCMD, CONFIGCHECKCMD, SCCMD
 Defaults: _AIX_USER_ !visiblepw
 Defaults: _AIX_USER_ !requiretty
 ----
 +
-_AIX_USER_ is the name of the non-root user that you created.
-+
-You can obtain the checksum value from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
-+
-If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
-+
-IMPORTANT: The example should be used only as a reference for creating your own data.
+NOTE: If you are having a RAC setup, along with the other allowed commands, you should add the following to the /etc/sudoers file: '/<crs_home>/bin/olsnodes'
 
-|===
-*Best Practice:* For security reasons, you should remove the sudo entry after completing every installation or upgrade.
-|===
+You can obtain the value of _crs_home_ from the _/etc/oracle/olr.loc_ file. 
+
+_AIX_USER_ is the name of the non-root user that you created.
+
+You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
+
+If you have specified a custom location, the location will be _custom_path\NetApp\SnapCenter\Package Repository_.
+
+IMPORTANT: The example should be used only as a reference for creating your own data.
 
 == Set up credentials
 

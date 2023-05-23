@@ -72,7 +72,6 @@ You must have a domain user with local administrator privileges, and with local 
 * Suspend-MailboxDatabaseCopy
 * Update-MailboxDatabaseCopy
 
-
-== Configure gMSA on Windows Server 2012 or later
+== Host requirements to install SnapCenter Plug-ins Package for Windows
 
 include::../_include/reuse_reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.adoc[]

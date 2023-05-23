@@ -11,9 +11,10 @@ summary: 'You can restore a subset of tablespaces that has been corrupted or dro
 [.lead]
 You can restore a subset of tablespaces that has been corrupted or dropped without impacting the other tablespaces in the database. SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the tablespaces.
 
-*What you will need*
+*Before you begin*
 
-The backups that are required to perform PITR of tablespaces should be cataloged and mounted.
+* The backups that are required to perform PITR of tablespaces should be cataloged and mounted.
+* If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 
 *About this task*
 

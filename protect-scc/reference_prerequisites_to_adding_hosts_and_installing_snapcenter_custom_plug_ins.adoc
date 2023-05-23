@@ -15,7 +15,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 +
 link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 * If you want to manage MySQL or DB2 applications, you must have downloaded the MySQL and DB2 Custom Plug-ins that are provided by NetApp.
-* You must have installed Java 1.8, 64-bit on your Linux or Windows host.
+* You must have installed Java 1.8 or Java 11 (64-bit) on your Linux or Windows host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The Custom Plug-ins must be available on the client host from where the add host operation is performed.
 
@@ -59,18 +59,32 @@ Following is an example of an entry of SHA512 hash in the checksum file:
 == Linux hosts
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 1.8 64-bit, on your Linux host.
+* You must have installed Java 1.8 or Java 11 (64-bit), on your Linux host.
 +
-If you are using Windows 2019 or Windows 2016 for the SnapCenter Server host, you must install Java 1.8, 64-bit. The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
+If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 1.8 or Java 11 (64-bit). The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-https://imt.netapp.com/matrix/imt.jsp?components=105308;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=108393;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
-* You must configure sudo privileges for the non-root user to provide access to several paths. Add the following lines to the /etc/sudoers file by using the visudo Linux utility. For example,
+* You must configure sudo privileges for the non-root user to provide access to several paths. Add the following lines to the /etc/sudoers file by using the visudo Linux utility. 
 +
+NOTE: Ensure that you are using Sudo version 1.8.7 or later.
++
+[subs=+quotes]
 ----
-Cmnd_Alias SCCMD = /opt/NetApp/snapcenter/scc/bin/scc <non_root_user> ALL=(ALL) NOPASSWD:SETENV: SCCMD
+Cmnd_Alias HPPLCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin, /opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl, /opt/NetApp/snapcenter/scc/bin/scc
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/Linux_Prechecks.sh
+Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+Cmnd_Alias SCCCMDEXECUTOR =checksum_value== /opt/NetApp/snapcenter/scc/bin/sccCommandExecutor
+_LINUX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD
+Defaults: _LINUX_USER_ !visiblepw
+Defaults: _LINUX_USER_ !requiretty
 ----
 +
-non_root_user is the name of the non-root user that you created.
+_LINUX_USER_ is the name of the non-root user that you created.
++
+You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
++
+IMPORTANT: The example should be used only as a reference for creating your own data.
