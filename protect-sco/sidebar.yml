@@ -61,9 +61,6 @@ entries:
           - title: Naming conventions
             url: /protect-sco/naming-backups.html
  
-      - title: Define backup strategy
-        url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
-
       - title: Review backup requirements
         url: /protect-sco/reference_requirements_for_backing_up_an_oracle_database.html
 
@@ -73,7 +70,7 @@ entries:
       - title: Create backup policies
         url: /protect-sco/task_create_backup_policies_for_oracle_database.html
 
-      - title: Create resource groups (optional)
+      - title: Create resource groups
         url: /protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html
 
       - title: Back up Oracle resources
