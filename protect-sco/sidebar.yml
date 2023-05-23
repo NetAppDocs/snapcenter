@@ -37,32 +37,63 @@ entries:
     url: /protect-sco/concept_prepare_for_protecting_oracle_databases.html
   - title: Back up Oracle databases
     entries:
-      - title: Backup workflow
+      - title: Backup overview
         url: /protect-sco/backup-workflow.html
-      - title: Define a backup strategy for Oracle databases
+
+      - title: Backup configuration information
+        entries:
+          - title: Supported backup configurations
+            url: /protect-sco/supported_backup_configs.html
+          - title: Backup types
+            url: /protect-sco/backup_types.html
+          - title: How SnapCenter discovers Oracle databases
+            url: /protect-sco/discover-oracle-database.html
+          - title: Preferred nodes to use
+            url: /protect-sco/preferred-nodes.html
+          - title: Catalog backups
+            url: /protect-sco/catalog-backups.html
+          - title: Predefined environment variables
+            url: /protect-sco/predefined-environment-variables-prescript-postscript-backup.html
+          - title: Backup retention
+            url: /protect-sco/retention-backups.html
+          - title: Backup schedules
+            url: /protect-sco/schedule-backups.html
+          - title: Naming conventions
+            url: /protect-sco/naming-backups.html
+ 
+      - title: Define backup strategy
         url: /protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
-      - title: Predefined environment variables for backup specific prescript and postscript
-        url: /protect-sco/predefined-environment-variables-prescript-postscript-backup.html
-      - title: Determine whether Oracle databases are available for backup
-        url: /protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html
-      - title: Create backup policies for Oracle databases
-        url: /protect-sco/task_create_backup_policies_for_oracle_database.html
-      - title: Create resource groups and attach policies for Oracle databases
-        url: /protect-sco/task_create_resource_groups_and_attaching_policies_for_oracle_databases.html
-      - title: Requirements for backing up an Oracle database
+
+      - title: Review backup requirements
         url: /protect-sco/reference_requirements_for_backing_up_an_oracle_database.html
+
+      - title: Discover Oracle database
+        url: /protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html
+
+      - title: Create backup policies
+        url: /protect-sco/task_create_backup_policies_for_oracle_database.html
+
+      - title: Create resource groups (optional)
+        url: /protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html
+
       - title: Back up Oracle resources
         url: /protect-sco/task_back_up_oracle_resources.html
-      - title: Back up Oracle database resource groups
+
+      - title: Back up resource groups
         url: /protect-sco/task_back_up_oracle_database_resource_groups.html
-      - title: Back up Oracle databases using UNIX commands
-        url: /protect-sco/task_back_up_oracle_databases_using_unix_commands.html
-      - title: Monitor Oracle database backup operations
+      
+      - title: Monitor backup progress
         url: /protect-sco/task_monitor_oracle_database_backup_operations.html
-      - title: Cancel backup operations of Oracle databases
-        url: /protect-sco/task_cancel_the_snapcenter_plug_in_for_oracle_database_backup_operations.html
-      - title: View Oracle database backups and clones in the Topology page
-        url: /protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html
+
+      - title: Other back up operations
+        entries:
+        - title: Back up using UNIX commands
+          url: /protect-sco/task_back_up_oracle_databases_using_unix_commands.html
+        - title: Cancel backup operations
+          url: /protect-sco/task_cancel_the_snapcenter_plug_in_for_oracle_database_backup_operations.html
+        - title: View backups
+          url: /protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html
+
   - title: Mount and unmount database backups
     url: /protect-sco/task_mount_and_unmount_databases_backups.html
   - title: Restore and recover Oracle databases

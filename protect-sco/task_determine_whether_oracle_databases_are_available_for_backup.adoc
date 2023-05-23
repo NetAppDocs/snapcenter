@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: credentials,SnapCenter Plug-in for Oracle Databases, non-database entries, oratab
 summary: 'Resources are Oracle databases on the host that are managed by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available.'
 ---
-= Determine whether Oracle databases are available for backup
+= Discover Oracle databases available for backup
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Resources are Oracle databases on the host that are managed by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available.
 
-*What you will need*
+*What you'll need*
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
 * If the databases reside on a Virtual Machine Disk (VMDK) or raw device mapping (RDM), you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
@@ -21,7 +21,41 @@ For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere
 * If databases reside on a VMDK file system, you must have logged in to vCenter and navigated to *VM options* > *Advanced* > *Edit configuration* to set the value of _disk.enableUUID_ to true for the VM.
 * You must have reviewed the process that SnapCenter follows to discover different types and versions of Oracle databases.
 
-*About this task*
+== Step 1: Prevent SnapCenter from discovering non-database entries
+
+You can prevent SnapCenter from discovering non-database entries added in the oratab file.
+
+*Steps*
+
+. After installing the plug-in for Oracle, the root user should create the *sc_oratab.config* file under the directory _/var/opt/snapcenter/sco/etc/_.
++
+Grant the write permission to the Oracle binary owner and group so that the file could be maintained in future.
+
+. Database administrator should add the non-database entries in the *sc_oratab.config* file.
++
+It is recommended to maintain same format defined for the non-database entries in the _/etc/oratab_ file or the user can just add the non-database entity string.
++
+NOTE: The string is case sensitive. Any text with # in the beginning is treated as a comment. The comment can be appended after the
+non-database name.
++
+  For example:
+  --------------------------------------------
+  # Sample entries
+  # Each line can have only one non-database name
+  # These are non-database name
+  oratar  # Added by the admin group -1
+  #Added by the script team
+  NEWSPT
+  DBAGNT:/ora01/app/oracle/product/agent:N
+  -----------------------------------------------
+
+. Discover the resources.
++
+The non-database entries added in the *sc_oratab.config* will not be listed in the Resources page.
+
+IMPORTANT: It is always recommended to take a backup of the sc_oratab.config file before upgrading the SnapCenter plug-in.
+
+== Step 2: Discover resources
 
 After installing the plug-in, all of the databases on that host are automatically discovered and displayed in the Resources page.
 
@@ -55,37 +89,3 @@ You cannot perform data protection operations on the database that is on a non-N
 * If the database is on a NetApp storage system and protected, the user interface displays an Available for backup message in the Overall Status column.
 
 NOTE: If you have enabled an Oracle database authentication, a red padlock icon is shown in the resources view. You must configure database credentials to be able to protect the database or add it to the resource group to perform data protection operations.
-
-== How to prevent SnapCenter from discovering non-database entries
-
-You can prevent SnapCenter from discovering non-database entries added in the oratab file.
-
-*Steps*
-
-. After installing the plug-in for Oracle, the root user should create the *sc_oratab.config* file under the directory _/var/opt/snapcenter/sco/etc/_.
-+
-Grant the write permission to the Oracle binary owner and group so that the file could be maintained in future.
-
-. Database administrator should add the non-database entries in the *sc_oratab.config* file.
-+
-It is recommended to maintain same format defined for the non-database entries in the _/etc/oratab_ file or the user can just add the non-database entity string.
-+
-NOTE: The string is case sensitive. Any text with # in the beginning is treated as a comment. The comment can be appended after the
-non-database name.
-+
-  For example:
-  --------------------------------------------
-  # Sample entries
-  # Each line can have only one non-database name
-  # These are non-database name
-  oratar  # Added by the admin group -1
-  #Added by the script team
-  NEWSPT
-  DBAGNT:/ora01/app/oracle/product/agent:N
-  -----------------------------------------------
-
-. Discover the resources.
-+
-The non-database entries added in the *sc_oratab.config* will not be listed in the Resources page.
-
-IMPORTANT: It is always recommended to take a backup of the sc_oratab.config file before upgrading the SnapCenter plug-in.
