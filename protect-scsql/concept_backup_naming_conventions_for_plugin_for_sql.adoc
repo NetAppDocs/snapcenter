@@ -8,4 +8,5 @@ summary: 'You can either use the default Snapshot copy naming convention or use 
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_concept_backup_naming_conventions.adoc[]

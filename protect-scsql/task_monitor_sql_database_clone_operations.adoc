@@ -8,4 +8,5 @@ summary: 'You can monitor the progress of SnapCenter clone operations by using t
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_task_monitor_clone_operations.adoc[]

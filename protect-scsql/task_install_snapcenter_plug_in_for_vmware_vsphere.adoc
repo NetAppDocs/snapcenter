@@ -9,4 +9,5 @@ summary: 'If your database is stored on virtual machines (VMs), or if you want t
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 include::../_include/reuse_task_install_snapcenter_plug_in_for_vmware_vsphere.adoc[]

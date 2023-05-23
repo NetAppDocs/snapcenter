@@ -52,13 +52,13 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 *Additional requirements*
 
-For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=105961;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
+For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=108408;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
 
 |===
 |Hosts |Minimum requirements
 
 a|Operating System (64-bit)
-a|See https://imt.netapp.com/matrix/imt.jsp?components=105961;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
+a|See https://imt.netapp.com/matrix/imt.jsp?components=108408;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
 
 a|CPU
 a|
@@ -120,10 +120,9 @@ You should have a user with local administrator privileges with local login perm
 
 You should have a user with sysadmin permissions on the SQL Server. The plug-in uses Microsoft VDI Framework, which requires sysadmin access.
 
-If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see link:../protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html[Import archived backups^]
-
 == Install SnapCenter Server
-*Download and install SnapCenter Server*
+
+=== Download and install SnapCenter Server
 
 *Steps*
 
@@ -138,7 +137,7 @@ NOTE: The special character “%” is not supported in the custom path for inst
 
 . Click *Install Now*.
 
-*Log in to SnapCenter*
+=== Log in to SnapCenter
 
 *Steps*
 
@@ -150,7 +149,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 For a built-in local admin username format, use _<username>_.
 . Click *Sign In*.
 
-*Add a SnapCenter Standard controller-based license*
+=== Add a SnapCenter Standard controller-based license
 
 *Steps*
 
@@ -161,7 +160,7 @@ For a built-in local admin username format, use _<username>_.
 +
 `license show`
 
-*Add a SnapCenter capacity-based license*
+=== Add a SnapCenter capacity-based license
 
 *Steps*
 
@@ -173,7 +172,7 @@ For a built-in local admin username format, use _<username>_.
 . In the Notifications page of the wizard, use the default capacity threshold of 90 percent.
 . Click *Finish*.
 
-*Set up storage system connections*
+=== Set up storage system connections
 
 *Steps*
 
@@ -186,7 +185,8 @@ For a built-in local admin username format, use _<username>_.
 . Click *Submit*.
 
 == Install the Plug-in for Microsoft SQL Server
-*Set up Run As Credentials to install the Plug-in for Microsoft SQL Server*
+
+=== Set up Run As Credentials to install the Plug-in for Microsoft SQL Server
 
 *Steps*
 
@@ -197,7 +197,7 @@ For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<user
 +
 For a built-in local admin username format, use _<username>_.
 
-*Add a host and install the Plug-in for Microsoft SQL Server*
+=== Add a host and install the Plug-in for Microsoft SQL Server
 
 *Steps*
 

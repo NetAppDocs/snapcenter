@@ -29,8 +29,8 @@ NOTE: You should repeat this command for each permission.
 == ONTAP CLI commands for creating SVM roles and assigning permissions
 There are several ONTAP CLI commands you should run to create SVM roles and assign permissions.
 
-* `security login role create -role SVM_Role_Name -cmddirname "snapmirror list-destinations" -vserver SVM_Name -access all`
-* `security login role create -role SVM_Role_Name -cmddirname "event generate-autosupport-log" -vserver SVM_Name -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "snapmirror list-destinations" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "event generate-autosupport-log" -access all`
 * `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "job history show" -access all`
 * `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "job stop" -access all`
 * `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "lun" -access all`
@@ -103,4 +103,4 @@ There are several ONTAP CLI commands you should run to create SVM roles and assi
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver export-policy" -access all`
 * `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "vserver iscsi" -access all`
 * `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "volume clone split status" -access all`
-* `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname “volume managed-feature” -access all`
+* `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "volume managed-feature" -access all`

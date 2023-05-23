@@ -11,6 +11,10 @@ summary: 'You can clone a pluggable database \(PDB\) to a different or same targ
 [.lead]
 You can clone a pluggable database (PDB) to a different or same target CDB on the same host or alternate host. You can also recover the cloned PDB to a desired SCN or date and time.
 
+*Before you begin*
+
+If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
+
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

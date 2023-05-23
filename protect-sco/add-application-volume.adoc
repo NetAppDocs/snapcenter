@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/add-application-volume.html
 sidebar: sidebar
-keywords: application volume, overview, add, modify, delete
+keywords: application volume, overview, add, modify, delete, Oracle database
 summary: 'You should manually add the application volumes.'
 ---
 = Add application volumes
@@ -10,6 +10,8 @@ summary: 'You should manually add the application volumes.'
 
 [.lead]
 SnapCenter supports backing up and cloning of application volumes of Oracle database. You should manually add the application volumes. Auto discovery of application volumes is not supported.
+
+NOTE: Application volumes support only direct NFS and direct iSCSI connections.
 
 *Steps*
 

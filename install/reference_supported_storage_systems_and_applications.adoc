@@ -21,4 +21,4 @@ For information about Amazon FSx for NetApp ONTAP, see https://docs.aws.amazon.c
 
 * SnapCenter supports protection of different applications and databases.
 +
-For detailed information about the supported applications and databases, see https://imt.netapp.com/matrix/imt.jsp?components=105046;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For detailed information about the supported applications and databases, see https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
