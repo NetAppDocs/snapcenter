@@ -11,11 +11,12 @@ summary: 'Before you use SnapCenter to back up Oracle database resources, you mu
 [.lead]
 Before you use SnapCenter to back up Oracle database resources, you must create a backup policy for the resource or the resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups. You can also specify the replication, script, and backup type settings. Creating a policy saves time when you want to reuse the policy on another resource or resource group.
 
-*What you will need*
+*Before you begin*
 
 * You must have defined your backup strategy.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, discovering databases, and creating storage system connections.
 * If you are replicating Snapshot copies to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
+* If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 
 *Steps*
 

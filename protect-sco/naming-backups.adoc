@@ -1,0 +1,12 @@
+---
+permalink: protect-sco/naming-backups.html
+sidebar: sidebar
+keywords: oracle databases discover
+summary: 'How SnapCenter discovers Oracle databases.'
+---
+= Backup naming conventions
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_concept_backup_naming_conventions.adoc[]

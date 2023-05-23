@@ -3,8 +3,7 @@ layout: astra
 sidebar: sidebar
 permalink: index.html
 keywords: snapcenter server, plug-in, data protection, applications, databases, host file systems, VmWare, backup, restore, clone
-lead: SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud. This documentation library includes information for version 4.7.
-summary: SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud.
+lead: SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud. This documentation library includes information for version 4.8.
 ---
 
 = SnapCenter Software documentation

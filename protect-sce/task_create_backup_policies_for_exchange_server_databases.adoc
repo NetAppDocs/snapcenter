@@ -86,6 +86,8 @@ All databases and all logs are backed up, and there is no log truncation. You ty
 |===
 +
 NOTE: You should define the space required for log backups based on the full backup retention and not based on Up-to-the-minute (UTM) retention.
++
+NOTE: Create separate vault policies for logs and databases when dealing with Exchange volumes (LUNs), and set the keep (retention) for the log policy to twice the number for each label as the database policy, using the same labels. For more information see, https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_for_Exchange_Backups_only_keep_half_the_Snapshots_on_the_Vault_destination_log_volume[SnapCenter for Exchange Backups only keep half the Snapshots on the Vault destination log volume^]
 
  .. In the Database Availability Group Settings section, select an action:
 +

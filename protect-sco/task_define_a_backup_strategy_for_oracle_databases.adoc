@@ -2,16 +2,20 @@
 permalink: protect-sco/task_define_a_backup_strategy_for_oracle_databases.html
 sidebar: sidebar
 keywords: backup type, preferred nodes, catalog backups, schedules, backup name format, retention, verification
-summary: 'Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your databases. Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.'
+summary: 'Defining a backup strategy ensures that you have the means to successfully restore or clone your databases.'
 ---
 = Define a backup strategy for Oracle databases
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your databases. Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.
+Define a backup strategy to ensure that you have the means to successfully restore or clone your databases.
 
-An SLA defines the level of service that is expected and addresses many service-related issues, including the availability and performance of the service. RTO is the time by which a business process must be restored after a disruption in service. RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. SLA, RTO, and RPO contribute to the data protection strategy.
+Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy. 
+
+* SLA defines the level of service expected and addresses service-related issues like the availability and performance of the service.
+* RTO defines the time a business process must be restored after a disruption in service.
+* RPO defines the age of the files that must be recovered from backup storage for regular operations to resume after a failure.
 
 == Supported Oracle database configurations for backups
 
@@ -45,7 +49,7 @@ NOTE: PDB migration and PDB cloning operations are not supported.
 ** Oracle Flex ASM
 //Included the above info for BURT 1348035 for 4.5
 
-For the latest information about supported Oracle versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported Oracle versions, see the https://imt.netapp.com/matrix/imt.jsp?components=108392;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 == Types of backup supported for Oracle databases
 
@@ -186,7 +190,7 @@ After modifying the value of the parameter, restart the SnapCenter Plug-in Loade
 
 `/opt/NetApp/snapcenter/spl/bin/spl restart`
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301[SnapCenter Software Command Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486[SnapCenter Software Command Reference Guide^].
 
 == Backup schedules
 

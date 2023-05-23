@@ -11,6 +11,10 @@ summary: 'In the event of data loss, you can use SnapCenter to restore data from
 [.lead]
 In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database.
 
+*Before you begin*
+
+If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
+
 *About this task*
 
 Recovery is performed using the archive logs available at the configured archive log location. If the database is running in ARCHIVELOG mode, Oracle database saves the filled groups of redo log files to one or more offline destinations, known collectively as the archived redo log. SnapCenter identifies and mounts optimal number of log backups based on the specified SCN, selected date and time, or all logs option.
@@ -18,7 +22,7 @@ If the archive logs required for recovery are not available at the configured lo
 
 If you migrate ASM database from ASMLIB to ASMFD, then the backups created with ASMLIB cannot be used to restore the database. You should create backups in the ASMFD configuration and use those backups to restore. Similarly, if ASM database is migrated from ASMFD to ASMLIB, you should create backups in the ASMLIB configuration to restore.
 
-When you restore a database, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the $ORACLE_HOME/dbs directory to avoid multiple operations being executed on the database. After the database has been restored, the operational lock file is automatically removed.
+When you restore a database, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the _/var/opt/snapcenter/sco/lock_ directory to avoid multiple operations being executed on the database. After the database has been restored, the operational lock file is automatically removed.
 
 NOTE: Restore of SPFILE and Password file is not supported.
 
@@ -62,6 +66,8 @@ a|
 Control files
 a|
 Select *Control files*.
+
+NOTE: While restoring control files, ensure that the directory structure either exists or should be created with the correct user and group ownerships, if any, to allow the files to be copied to the target location by the restore process.  If the directory does not exist, the restore job will fail.
 a|
 Redo log files
 a|

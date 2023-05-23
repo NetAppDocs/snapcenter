@@ -1,0 +1,12 @@
+---
+permalink: protect-sco/retention-backups.html
+sidebar: sidebar
+keywords: oracle databases discover
+summary: 'Backup retention options.'
+---
+= Backup retention options
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_concept_backup_retention_options.adoc[]

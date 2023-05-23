@@ -26,7 +26,6 @@ To use custom plug-ins in SnapCenter, you must perform the following tasks:
 
 == Generic plug-in handling in all API calls
 
-[.lead]
 For every API call, use the following information:
 
 * Plug-in parameters

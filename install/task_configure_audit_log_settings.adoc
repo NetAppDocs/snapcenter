@@ -1,0 +1,59 @@
+---
+permalink: install/task_configure_audit_log_settings.html
+sidebar: sidebar
+keywords: audit, log, configure
+summary: 'You can configure to log the security events of software platforms and all the software running on those platforms.'
+---
+= Configure audit log settings
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Audit logs are generated for each and every activity of the SnapCenter Server. By default, audit logs are secured in the default installed location _C:\Program Files\NetApp\SnapCenter WebApp\audit\_. 
+
+Audit logs are secured by means of generating digitally signed digest for each and every audit events to protect it from the unauthorized modification. The generated digest's are maintained in the separate audit checksum file and it under goes periodic integrity checks to ensure the integrity of the content.
+
+You should have logged in as the "SnapCenterAdmin" role.
+
+*About this task*
+
+* Alerts are sent in the following scenarios:
+**	Audit log integrity check schedule or Syslog server is enabled or disabled
+**	Audit log integrity check, audit log, or Syslog server log failure  
+**	Low disk space  
+* Email is sent only when integrity check fails.
+* You should modify both audit log directory and audit checksum log directory paths together. You cannot modify only one of them.
+* When audit log directory and audit checksum log directory paths are modified, the integrity check cannot be performed on audit logs present in the earlier location.
+* Audit log directory and Audit checksum log directory paths should be on the local drive of SnapCenter Server.  
++
+Shared or network mounted drives are not supported.
+* If UDP protocol is used in the Syslog server settings, errors due to port is down or unavailable cannot be captured as either an error or an alert in SnapCenter.
+* You can use Set-SmAuditSettings and Get-SmAuditSettings commands to configure the  audit logs.
++
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
+
+
+*Steps*
+
+. In the *Settings* page, navigate to *Settings* > *Global Settings* > *Audit log Settings*.
+. In the Audit log section, enter the details.
+. Enter the *Audit log directory* and *Audit checksum log directory*
+.. Enter the Maximum file size
+.. Enter the Maximum log files
+.. Enter the percentage of disk space usage to send an alert 
+. (Optional) Enable *Log UTC time*.  
+. (Optional) Enable *Audit Log Integrity Check Schedule* and click *Start Integrity Check* for on demand integrity check.
++
+You can also run *Start-SmAuditIntegrityCheck* command to start on demand integrity check. 
+
+. (Optional) Enable Forwarded audit logs to remote syslog server and enter the Syslog Server details.
++
+You should import the certificate from the Syslog server into the 'Trusted Root' for TLS 1.2 protocol.
++
+.. Enter Syslog Server Host
+.. Enter Syslog Server Port
+.. Enter Syslog Server Protocol
+.. Enter RFC Format
+. Click *Save*.
+. You can see audit integrity checks and disk space checks by clicking *Monitor* > *Jobs*.
+

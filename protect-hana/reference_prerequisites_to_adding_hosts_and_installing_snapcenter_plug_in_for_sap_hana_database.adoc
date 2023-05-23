@@ -12,6 +12,8 @@ summary: 'Before you add a host and install the plug-in packages, you must compl
 Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for SAP HANA Database is available in both Windows and Linux environments.
 
 * You must have installed Java 1.8 64-bit on your host.
++
+NOTE: IBM Java is not supported. 
 * You must have installed SAP HANA database interactive terminal (HDBSQL client) on the host.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for SAP HANA Database is installed as domain administrator.
 * For Windows, user store keys should be created as SYSTEM user.
@@ -28,7 +30,7 @@ Before you add a host and install the plug-in packages, you must complete all th
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-https://imt.netapp.com/matrix/imt.jsp?components=105284;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 == Linux hosts
 
@@ -37,6 +39,6 @@ https://imt.netapp.com/matrix/imt.jsp?components=105284;&solution=1259&isHWU&src
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-https://imt.netapp.com/matrix/imt.jsp?components=105284;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 * For SAP HANA databases that are running on a Linux host, while installing Plug-in for SAP HANA Database, SnapCenter Plug-in for UNIX is installed automatically.
