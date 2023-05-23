@@ -122,7 +122,7 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 +
 The installation-specific log files are located at _/custom_location/snapcenter/logs_.
 
-*After you finish*
+*Result*
 
 All the databases on the host are automatically discovered and displayed in the Resources page. If nothing is displayed, click *Refresh Resources*.
 

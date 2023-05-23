@@ -1,0 +1,13 @@
+---
+permalink: protect-sco/schedule-backups.html
+sidebar: sidebar
+keywords: oracle databases discover
+summary: 'How SnapCenter discovers Oracle databases.'
+---
+= Backup schedules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+include::../_include/reuse_concept_backup_schedules_for_database_plug_ins.adoc[]

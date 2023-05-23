@@ -1,0 +1,12 @@
+---
+permalink: protect-sco/verify-backups.html
+sidebar: sidebar
+keywords: oracle databases backup
+summary: 'Verify backup copy using the primary or secondary storage volume.'
+---
+= Where to verify backup copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_concept_backup_copy_verification_using_the_primary_or_secondary_storage_volume.adoc[]
