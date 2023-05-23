@@ -4,17 +4,16 @@ sidebar: sidebar
 keywords:
 summary: 'A resource group is the container to which you must add resources that you want to back up and protect.'
 ---
-= Create resource groups and attach  policies
+= Create resource groups and attach policies in Snapcenter
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
-A resource group is the container to which you must add resources that you want to back up and protect. A resource group enables you to back up all the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.
+A resource group is the container to which you must add resources that you want to back up and protect. It enables you to back up all the data that is associated with a given application simultaneously and is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.
 
-*Steps*
+.Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, click New Resource Group.
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select New Resource Group.
 . In the Name page, perform the following actions:
 +
 |===
@@ -25,7 +24,7 @@ Name
 a|
 Enter a name for the resource group.
 
-NOTE: The resource group name should not exceed 250 characters.
+Note: The resource group name should not exceed 250 characters.
 
 a|
 Tags
@@ -45,11 +44,11 @@ For example, _customtext_resource group_policy_hostname or resource group_hostna
 +
 This helps to filter information on the screen.
 
-. Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
+. Select the resources from the *Available Resources* section, and then select the right arrow to move them to the *Selected Resources* section.
 
 . Optional:  In the Application Settings page, do the following:
 
-.. Click the Backups arrow to set additional backup options:
+.. Select the Backups arrow to set additional backup options:
 +
 Enable consistency group backup and perform the following tasks:
 +
@@ -68,11 +67,11 @@ a|
 Select this to avoid forcing a WAFL consistency point.
 |===
 +
-image:../media/application_settings.gif[]
+image:../media/application_settings.gif[A screenshot of the options for consistency group backup: urgent, medium, or relaxed.]
 
-.. Click the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+.. Select the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 
-.. Click the Custom Configurations arrow and enter the custom key-value pairs required for all data protection operations using this resource.
+.. Select the Custom Configurations arrow and enter the custom key-value pairs required for all data protection operations using this resource.
 +
 |===
 | Parameter | Setting | Description
@@ -131,7 +130,7 @@ archive logs are located under
 subdirectories.
 a|
 |===
-.. Click the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
+.. Select the *Snapshot Copy Tool* arrow to select the tool to create Snapshot copies:
 +
 |===
 | If you want...| Then...
@@ -154,21 +153,21 @@ Select Other, and then enter the command to be executed on the host to create a 
 . In the Policies page, perform the following steps:
 .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can also create a policy by selecting *image:../media/add_policy_from_resourcegroup.gif[A plus icon]*.
 +
 The policies are listed in the *Configure schedules for selected policies* section.
 
-.. In the *Configure Schedules* column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
+.. In the *Configure Schedules* column, select *image:../media/add_policy_from_resourcegroup.gif[A plus icon]* for the policy you want to configure.
 
-.. In the  Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click OK.
+.. In the  Add schedules for policy _policy_name_ dialog box, configure the schedule and select OK.
 +
-Where, policy_name is the name of the policy that you have selected.
+Where policy_name is the name of the policy that you have selected.
 +
 The configured schedules are listed in the Applied Schedules column.
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
 
-. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. From the *Email preference* drop-down list on the Notification page, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. The SMTP server must be configured in *Settings* > *Global Settings*.
 
-. Review the summary, and then click *Finish*.
+. Review the summary, and then select *Finish*.
