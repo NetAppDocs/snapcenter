@@ -31,7 +31,7 @@ NOTE: For information on how to edit the asm_diskstring parameter, see https://k
  ** Same Oracle version as that of the original host
  ** Same OS distribution and version as that of the original host
  ** For NVMe, NVMe util should be installed
-* You should ensure that the LUN is not mapped to the AIX host using iGroup consisting of mixed protocols iSCSI and FC. For more information, see https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_Plug-in_for_Oracle_operations_fail_with_error_Unable_to_discover_the_device_for_LUN_LUN_PATH[Operation fails with error Unable to discover the device for LUN].
+* You should ensure that the LUN is not mapped to the AIX host using iGroup consisting of mixed protocols iSCSI and FC. For more information, see https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_Plug-in_for_Oracle_operations_fail_with_error_Unable_to_discover_the_device_for_LUN_LUN_PATH[Operation fails with error Unable to discover the device for LUN^].
 
 *Steps*
 
