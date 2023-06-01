@@ -1,0 +1,28 @@
+---
+permalink: install/task_import_ca_certificate_to_unix_plugin_hosts.html
+sidebar: sidebar
+keywords: security,authentication,import CA certificates
+summary: 'You should import the CA certificate to the UNIX plug-in hosts.'
+---
+= Import CA Certificate to the UNIX plug-in hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You should import the CA certificate to the UNIX plug-in hosts.
+
+*About this task*
+
+* You can manage the password for SPL keystore, and the alias of the CA signed key pair in use. 
+* The password for SPL keystore and for all the associated alias password of the private key should be same.
+
+*Steps*
+
+. You can retrieve SPL keystore default password from SPL property file. It is the value corresponding to the key `SPL_KEYSTORE_PASS`.
+. Change the keystore password:
+`$ keytool -storepasswd -keystore keystore.jks`
+. Change the password for all aliases of private key entries in the keystore to the same password used for the keystore:
+`$ keytool -keypasswd -alias "<alias_name>" -keystore keystore.jks`
+. Update the same for the key SPL_KEYSTORE_PASS in `spl.properties`` file.
+. Restart the service after changing the password.

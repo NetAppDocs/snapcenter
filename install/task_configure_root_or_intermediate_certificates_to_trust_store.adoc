@@ -1,0 +1,59 @@
+---
+permalink: install/task_configure_root_or_intermediate_certificates_to_trust_store.html
+sidebar: sidebar
+keywords: enable certificate-based authentication,configure CA signed key pair,configure root, configure intermediate certificates
+summary: 'You should configure the root or intermediate certificates to SPL trust-store.'
+---
+= Configure root or intermediate certificates to SPL trust-store.
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You should configure the root or intermediate certificates to SPL trust-store. You should add the root CA certificate and then the intermediate CA certificates.
+
+*Steps*
+
+. Navigate to the folder containing the SPL keystore: `/var/opt/snapcenter/spl/etc`.
+. Locate the file `keystore.jks`.
+. List the added certificates in the keystore:
+`$ keytool -list -v -keystore keystore.jks`
+. Add a root or intermediate certificate:
+`$ keytool -import -trustcacerts -alias <AliasNameForCerticateToBeImported> -file /<CertificatePath> -keystore` `keystore.jks`
+. Restart the service after configuring the root or intermediate certificates to SPL trust-store.
+
+== Configure CA signed key pair to SPL trust-store
+
+You should configure the CA signed key pair to SPL trust-store.
+
+*Steps*
+
+. Navigate to the folder containing the SPL’s keystore `/var/opt/snapcenter/spl/etc`.
+. Locate the file `keystore.jks``.
+. List the added certificates in the keystore:
+`$ keytool -list -v -keystore keystore.jks`
+. Add the CA certificate having both private and public key.
+`$ keytool -importkeystore -srckeystore <CertificatePathToImport> -srcstoretype pkcs12 -destkeystore keystore.jks` `-deststoretype JKS`
+. List the added certificates in the keystore.
+`$ keytool -list -v -keystore keystore.jks`
+. Verify that the keystore contains the alias corresponding to the new CA certificate, which was added to the keystore.
+. Change the added private key password for CA certificate to the keystore password.
++
+Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in `spl.properties` file.
++
+`$ keytool -keypasswd -alias "<aliasNameOfAddedCertInKeystore>" -keystore keystore.jks``
+. If the alias name in the CA certificate is long and contains space or special characters ("*",","), change the alias name to a simple name:
+`$ keytool -changealias -alias "<OrignalAliasName>" -destalias "<NewAliasName>" -keystore keystore.jks``
+. Configure the alias name from the keystore located in `spl.properties` file.
+Update this value against the key SPL_CERTIFICATE_ALIAS.
+. Restart the service after configuring the CA signed key pair to SPL trust-store.
+
+== Enable Certificate-based authentication
+
+To enable certificate-based authentication run the following PowerShell cmdlet.
+
+* To enable client certificate-based authentication:
+** `Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"} -HostName` `<<hostname>>`
+* To disable client certificate-based authentication:
+** `Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"} -HostName` `<<hostname>>`
+

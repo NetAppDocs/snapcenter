@@ -40,6 +40,10 @@ For more information, see link:../install/reference_generate_CA_certificate_CSR_
 
 You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere. For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates[Create and import certificates^].
 
+== Certificate based authentication Overview
+
+Certificate based authentication verifies the authenticity of respective users who try to access the SnapCenter plug-in host. User should export the SnapCenter Server certificate without private key and import it in the plug-in host trusted store. Certificate based authentication works only if the two-way SSL feature is enabled. 
+
 == Multi-factor authentication (MFA)
 
 MFA uses a third-party Identity Provider (IdP) via the Security Assertion Markup Language (SAML) to manage user sessions. This functionality enhances the authentication security by having an option to use multiple factors such as TOTP, biometrics, push notifications etc. along with the existing username & password. Also, it enables the customer to use their own user identity providers to get unified user login (SSO) across their portfolio.
