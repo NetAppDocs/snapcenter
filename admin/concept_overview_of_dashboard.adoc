@@ -2,7 +2,7 @@
 permalink: admin/concept_overview_of_dashboard.html
 sidebar: sidebar
 keywords:
-summary: 'From the SnapCenter left navigation pane, the Dashboard gives you a first glance into the health of your system, including recent job activity, alerts, protection summary, storage efficiency and usage, status of SnapCenter jobs \(Backup, Clone, Restore\), configuration status for standalone and Windows cluster hosts, number of Storage Virtual Machines \(SVMs\) managed by SnapCenter, and license capacity.'
+summary: 'From the SnapCenter left navigation pane, the Dashboard gives you a first glance into the health of your system, including recent job activity, alerts, protection summary, storage efficiency and usage, status of SnapCenter jobs \(Backup, Clone, Restore\), configuration status for standalone and Windows cluster hosts, number of Storage Virtual Machines (SVMs) managed by SnapCenter, and license capacity.'
 ---
 = Overview of dashboard
 :icons: font
@@ -184,7 +184,7 @@ Count of hosts where plug-in installation or uninstallation in progress.
 
 The Licensed Capacity tile displays information about total licensed capacity, used capacity, capacity threshold alerts, and license expiration alerts for SnapCenter Standard capacity-based licenses.
 
-NOTE: This display appears only if you are using SnapCenter Standard capacity-based licenses on Cloud Volumes ONTAP or ONTAP Select platforms. For FAS or AFF platforms, the SnapCenter license is controller-based and licensed for unlimited capacity, and no capacity license is required.
+NOTE: This display appears only if you are using SnapCenter Standard capacity-based licenses on Cloud Volumes ONTAP or ONTAP Select platforms. For FAS, AFF, or All SAN Array (ASA) platforms, the SnapCenter license is controller-based and licensed for unlimited capacity, and no capacity license is required.
 
 |===
 | License status | Description
