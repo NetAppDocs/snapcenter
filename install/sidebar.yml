@@ -56,7 +56,7 @@ entries:
       - title: Import CA Certificate to the Windows host plug-ins   
         url: /install/task_import_ca_certificate_to_windows_plugin_hosts.html
       - title: Import CA Certificate to the UNIX host plug-ins    
-        url: /task_import_ca_certificate_to_unix_plugin_hosts.html
+        url: /install/task_import_ca_certificate_to_unix_plugin_hosts.html
       - title: Configure root or intermediate certificates to SPL trust-store
         url: /install/task_configure_root_or_intermediate_certificates_to_trust_store.html
   - title: Configure Active Directory, LDAP, and LDAPS

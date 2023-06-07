@@ -12,6 +12,10 @@ summary: 'You should export the CA certificates from the SnapCenter Server to th
 
 You should export the CA certificates from the SnapCenter Server to the plug-in hosts using the Microsoft management console (MMC). 
 
+*What you will need*
+
+You should have configured the Two-way SSL.
+
 *Steps*
 
 .  Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
@@ -44,4 +48,4 @@ Review the summary, and then click *Finish* to start the export.
 a|
 |===
 
-NOTE: SnapCenter HA configurations are not supported.
+NOTE: SnapCenter HA configurations are not supported.  

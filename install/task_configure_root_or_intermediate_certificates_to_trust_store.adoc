@@ -53,7 +53,9 @@ Update this value against the key SPL_CERTIFICATE_ALIAS.
 To enable certificate-based authentication run the following PowerShell cmdlet.
 
 * To enable client certificate-based authentication:
-** `Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"} -HostName` `<<hostname>>`
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `<<hostname>>`
 * To disable client certificate-based authentication:
-** `Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"} -HostName` `<<hostname>>`
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
 
