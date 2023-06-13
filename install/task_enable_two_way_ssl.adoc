@@ -18,7 +18,7 @@ Execute the commands for all the plug-ins and the SMCore agent first and then fo
 
 *Steps*
 
-. To enable the two-way SSL communication, run the following commands for the plug-ins, server, and for each of the agents for which the two-way SSL communication is required.
+. To enable the two-way SSL communication, run the following commands on the SnapCenter Server for the plug-ins, server, and for each of the agents for which the two-way SSL communication is required.
 +
 `> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName <Plugin_HostName>`
 +
@@ -30,6 +30,10 @@ Execute the commands for all the plug-ins and the SMCore agent first and then fo
 `> Restart-Service -Name SnapManagerCoreService`
 . Perform the IIS SnapCenter Application pool recycle operation by using the following command.
 `> Restart-WebAppPool -Name "SnapCenter"`
+
+. For Windows plug-ins, restart the SMCore service by running the following PowerShell command:
++
+`> Restart-Service -Name SnapManagerCoreService` 
 
 == Disable Two-way SSL Communication
 
@@ -44,13 +48,18 @@ You can disable the two-way SSL communication using PowerShell commands.
 
 *Steps*
 
-. To disable the two-way SSL communication, run the following commands for all the plug-in hosts and the SnapCenter host.
+. To disable the two-way SSL communication, run the following commands on SnapCenter Server for all the plug-in hosts and the SnapCenter host. 
 +
 `> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName <Agent_HostName>`
 +
 `> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName localhost`
 +
 `> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="false"}`
+
 . Perform the IIS SnapCenter Application pool recycle operation by using the following command.
 `> Restart-WebAppPool -Name "SnapCenter"`
+
+. For Windows plug-ins, restart the SMCore service by running the following PowerShell command: 
++
+`> Restart-Service -Name SnapManagerCoreService` 
 
