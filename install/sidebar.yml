@@ -23,8 +23,14 @@ entries:
         url: /install/concept_authentication_methods_for_your_credentials.html
       - title: Storage Virtual Machine connections and credentials
         url: /install/concept_svm_connections_and_credentials.html
-      - title: Manage Multi-factor authentication (MFA)
-        url: /install/enable_multifactor_authentication.html
+      - title: Multi-factor authentication (MFA)
+        entries:
+          - title: Manage Multi-factor authentication (MFA)
+            url: /install/enable_multifactor_authentication.html
+          - title: Manage multi-factor authentication (MFA) using Rest API, PowerShell, and SCCLI
+            url: /install/enable_multifactor_authentication_using_RestAPI_PowerShell_SCCLI.html
+          - title: Configure MFA in SnapCenter Server using PowerShell, SCCLI, and REST API
+            url: /install/configure_mfa_using_powershell_sccli_restapi.html
   - title: Install the SnapCenter Server
     url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
   - title: Log in to SnapCenter
