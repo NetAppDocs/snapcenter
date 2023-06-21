@@ -19,7 +19,7 @@ You should configure the two-way SSL communication to secure the mutual communic
 * You should have a CA certificate with private key and thumbprint details.
 * You should have enabled the one-way SSL configuration.
 link:/install/task_enable_two_way_ssl.html[Enable two-way SSL]
-* You must have enabled two-way SSL communication on all the plug-in hosts.
+* You must have enabled two-way SSL communication on all the plug-in hosts and the SnapCenter Server.
 
 *Steps*
 
