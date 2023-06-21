@@ -29,10 +29,10 @@ The type of licenses you install depends on your environment.
 | License | Where required
 
 a| SnapCenter Standard controller-based
-a| Required for FAS or AFF storage controllers
+a| Required for FAS, AFF, or All SAN Array (ASA) storage controllers
 
 SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement.
-If you want to install SnapCenter on a trial basis with FAS or AFF storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
+If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
 a| SnapCenter Standard capacity-based
 a| Required with ONTAP Select and Cloud Volumes ONTAP
 

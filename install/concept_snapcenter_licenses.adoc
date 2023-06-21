@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_snapcenter_licenses.html
 sidebar: sidebar
-keywords: licenses, FAS, AFF, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery
+keywords: licenses, FAS, AFF, ASA, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery
 summary: 'SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.'
 ---
 = SnapCenter licenses
@@ -17,9 +17,9 @@ SnapCenter requires several licenses to enable data protection of applications, 
 a|
 SnapCenter Standard controller-based
 a|
-Required for FAS and AFF
+Required for FAS, AFF, All SAN Array (ASA)
 
-SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS or AFF storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
+SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
 
 NOTE: SnapCenter is also offered as part of data protection bundle. If you have purchased A400 or later, you should purchase the data protection bundle.
 
