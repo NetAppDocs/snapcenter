@@ -22,7 +22,7 @@ After the above cmdlet is executed, a session is created for the respective user
 
 == SnapCenter MFA Rest API Authentication
 
-Use bearer token in the format of Authorization, type=Bearer token in REST API client (like Postman or swagger) and mention the user RoleName in the header to get a successful response from SnapCenter.
+Use bearer token in the format _Authorization=Bearer <access token>_ in REST API client (like Postman or swagger) and mention the user RoleName in the header to get a successful response from SnapCenter.
 
 == MFA Rest API Workflow
 
