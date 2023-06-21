@@ -10,10 +10,10 @@ summary: 'SnapCenter employs strict security and authentication features to enab
 
 [.lead]
 
-This topic describes how to manage Multi-factor authentication (MFA) functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
+You can manage Multi-factor authentication (MFA) functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
 
 == Enable multi-factor authentication (MFA)
-This topic describes how to enable MFA functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
+You can enable MFA functionality for SnapCenter Server using PowerShell commands.
 
 .About this task
 
@@ -45,9 +45,7 @@ For information on CA certificate, see link:../install/reference_generate_CA_cer
 +
 The path parameter specifies the path to save the MFA metadata file in the SnapCenter Server host.
 . Copy the generated file to the AD FS host to configure SnapCenter as the client entity.
-. Enable MFA for SnapCenter Server using the `Set-SmMultiFactorAuthentication -Enable -Path` cmdlet.
-+
-The path parameter specifies the location of the AD FS MFA metadata xml file, which was copied to SnapCenter Server in step 3.
+. Enable MFA for SnapCenter Server using the `Set-SmMultiFactorAuthentication` cmdlet.
 . (Optional) Check the MFA configuration status and settings by using `Get-SmMultiFactorAuthentication` cmdlet.
 . Go to the Microsoft management console (MMC) and perform the following steps:
 .. Click *File* > *Add/Remove Snapin*.
@@ -128,5 +126,5 @@ See link:../install/enable_multifactor_authentication.html[Enable Multi-factor a
 
 .Steps
 
-. Disable MFA and clean up the configuration files that were created when MFA was enabled by using the `Set-SmMultiFactorAuthentication -Disable` cmdlet.
+. Disable MFA and clean up the configuration files that were created when MFA was enabled by using the `Set-SmMultiFactorAuthentication` cmdlet.
 . Close all the browser tabs and reopen a browser to clear the existing or active session cookies, and login again.

@@ -1,0 +1,51 @@
+---
+permalink: install/task_export_ca_certificates_from_snapcenter_server.html
+sidebar: sidebar
+keywords: security,authentication, export CA certificates
+summary: 'You should export the CA certificates from the SnapCenter Server to the plug-in hosts.'
+---
+= Export Certificate Authority (CA) certificates from SnapCenter Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You should export the CA certificates from the SnapCenter Server to the plug-in hosts using the Microsoft management console (MMC). 
+
+*What you will need*
+
+You should have configured the Two-way SSL.
+
+*Steps*
+
+.  Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
+.  In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
+.  In the Certificates Snap-in window, select the *Computer Account* option, and then click *Finish*.
+.  Click *Console Root* > *Certificates - Local Computer* > *Personal* > *Certificates*.
+.  Right-click on the procured CA certificate, which is used for SnapCenter Server and then select *All Tasks* > *Export* to start the export wizard.
+.  Perform the following actions in the wizard.
+
+
+|===
+| For this option... | Do the following...
+
+a|
+Export Private Key
+a|
+Select *No, do not export the private key*, and then click *Next*.
+a|
+Export File Format
+a|
+Click *Next*.
+a|
+File Name
+a|
+Click *Browse* and specify the file path to save the certificate, and click *Next*.
+a|
+Completing the Certificate Export Wizard
+a|
+Review the summary, and then click *Finish* to start the export.
+a|
+|===
+
+NOTE: SnapCenter HA configurations are not supported.  
