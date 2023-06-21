@@ -105,6 +105,8 @@ When you click on the cluster name, all the SVMs that are part of the cluster ar
 +
 If a new SVM is added to the ONTAP cluster using ONTAP GUI, click *Rediscover* to view the newly added SVM.
 
+NOTE: If you have upgraded the FAS or AFF storage systems to All SAN Array (ASA), you must refresh the storage connection in the SnapCenter Server to reflect the new storage type in SnapCenter.
+
 *After you finish*
 
 A cluster administrator must enable AutoSupport on each storage system node to send email notifications from all storage systems to which SnapCenter has access, by running the following command from the storage system command line:
