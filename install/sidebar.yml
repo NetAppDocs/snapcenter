@@ -49,12 +49,12 @@ entries:
         url: /install/task_configure_CA_certificate_with_snapcenter_site.html
       - title: Enable CA Certificates for SnapCenter Server
         url: /install/task_enable_ca_certificates_for_snapcenter.html
-  - title: Enable and configure two-way SSL communication
+  - title: Configure and enable two-way SSL communication
     entries:
-      - title: Enable two-way SSL communication
-        url: /install/task_enable_two_way_ssl.html
       - title: Configure two-way SSL communication
         url: /install/task_configure_two_way_ssl.html
+      - title: Enable two-way SSL communication
+        url: /install/task_enable_two_way_ssl.html      
   - title: Configure Certificate-based Authentication 
     entries:
       - title: Export Certificate Authority (CA) certificates from SnapCenter Server 

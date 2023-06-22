@@ -82,7 +82,7 @@ If the authentication succeeds, SnapCenter returns the result else an error mess
 The path parameter specifies the location of the AD FS MFA metadata xml file.
 +
 Enables MFA for SnapCenter GUI, Rest API, PowerShell, and SCCLI configured with specified AD FS metadata file path.
-. Check the MFA configuration status and settings by using the `GetSmMultiFactorAuthentication` cmdlet.
+. Check the MFA configuration status and settings by using the `Get-SmMultiFactorAuthentication` cmdlet.
 
 *SCCLI Interface*
 
