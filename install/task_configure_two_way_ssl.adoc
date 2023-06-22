@@ -22,7 +22,7 @@ You should configure the two-way SSL communication to secure the mutual communic
 For more details, see https://docs.netapp.com/us-en/snapcenter/install/reference_generate_CA_certificate_CSR_file.html[Configure CA certificate section.]
 * You must have enabled two-way SSL communication on all the plug-in hosts and the SnapCenter Server.
 +
-Environment with some hosts or server not enabled for two-way SSL communication is not be supported.
+Environment with some hosts or server not enabled for two-way SSL communication is not supported.
 
 *Steps*
 
