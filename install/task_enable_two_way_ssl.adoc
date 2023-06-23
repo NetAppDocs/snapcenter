@@ -25,9 +25,6 @@ Execute the commands for all the plug-ins and the SMCore agent first and then fo
 `> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName localhost`
 +
 `> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="true"}`
-. For Windows plug-ins, restart the SMCore service by running the following PowerShell command.
-+
-`> Restart-Service -Name SnapManagerCoreService`
 . Perform the IIS SnapCenter Application pool recycle operation by using the following command.
 `> Restart-WebAppPool -Name "SnapCenter"`
 
