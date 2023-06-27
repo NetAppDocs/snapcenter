@@ -23,7 +23,7 @@ You must be a member of the Local Administrators group on the SnapCenter Servers
 * Add-SmServer
 * Remove-SmServerCluster
 +
-For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
+For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
 == Additional F5 configuration information
 
