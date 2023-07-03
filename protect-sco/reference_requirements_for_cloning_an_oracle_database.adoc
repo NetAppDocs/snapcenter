@@ -30,7 +30,9 @@ For information on how to edit the asm_diskstring parameter, see https://kb.neta
   *** If you are cloning from primary storage or secondary (Vault or Mirror) storage to an alternate host, then make sure that an iSCSI session is either established between the secondary storage and the alternate host, or zoned properly for FC.
   *** If you are cloning from Vault or Mirror storage to the same host, then make sure that an iSCSI session is either established between the Vault or Mirror storage and the host, or zoned properly for FC.
   *** If you are cloning in a virtualized environment, ensure that an iSCSI session is either established between the primary or secondary storage and the ESX server hosting the alternate host, or zoned properly for FC.
-  For information, refer to https://docs.netapp.com/us-en/ontap-sanhost/[host utilities documentation].
++
+For information, refer to https://docs.netapp.com/us-en/ontap-sanhost/[host utilities documentation].
+
  ** If the source database is an ASM database:
   *** The ASM instance should be up and running on the host where the clone will be performed.
   *** The ASM disk group should be provisioned prior to the clone operation if you want to place archive log files of the cloned database in a dedicated ASM disk group.
