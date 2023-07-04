@@ -18,9 +18,9 @@ You can enable MFA functionality for SnapCenter Server using PowerShell commands
 .About this task
 
 * SnapCenter supports SSO based logins when other applications are configured in the same AD FS. In certain AD FS configurations, SnapCenter might require user authentication for security reasons depending on the AD FS session persistence.
-* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running `Get-Help command_name`. Alternatively, you can also see https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
+* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running `Get-Help command_name`. Alternatively, you can also see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
-.What you'll need
+.Before you begin
 
 * Windows Active Directory Federation Service (AD FS) should be up and running in the respective domain.
 * You should have an AD FS supported Multi-factor authentication service such as Azure MFA, Cisco Duo, and so on.

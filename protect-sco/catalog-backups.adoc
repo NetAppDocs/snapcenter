@@ -50,4 +50,4 @@ After modifying the value of the parameter, restart the SnapCenter Plug-in Loade
 
 `/opt/NetApp/snapcenter/spl/bin/spl restart`
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301[SnapCenter Software Command Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886206[SnapCenter Software Command Reference Guide^].
