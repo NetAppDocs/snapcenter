@@ -10,7 +10,7 @@ summary: 'You can use Rest API, PowerShell, and SCCLI interfaces to manage MFA.'
 
 [.lead]
 
-MFA login is supported from browser, RestAPI, PowerShell, and SCCLI. MFA is supported  through an AD FS identity manager. You can enable MFA, disable MFA, and configure MFA from GUI, RestAPI, PowerShell and SCCLI.
+MFA login is supported from browser, REST API, PowerShell, and SCCLI. MFA is supported  through an AD FS identity manager. You can enable MFA, disable MFA, and configure MFA from GUI, REST API, PowerShell, and SCCLI.
 
 == Setup AD FS as OAuth/OIDC 
 
@@ -65,7 +65,7 @@ Configure OpenID Connect to provide a username as claims.
 .. Select *User-Principal-Name* in the *LDAP Attribute* dropdown and *UPN* in the O*utgoing Claim Type* dropdown.
 .. Click *Finish*. 
 
-== Create Application Group using PowerShell
+== Create Application Group using PowerShell commands
 
 You can create the application group, web API, and add the scope and claims using PowerShell commands. These commands are available in automated script format. For more information see <link to KB article>.
 
