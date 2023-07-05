@@ -83,6 +83,6 @@ You should install one or more SnapCenter licenses. For information on how to ad
 == Single Mailbox Recovery (SMBR) licenses
 If you are using SnapCenter Plug-in for Exchange to manage Microsoft Exchange Server databases and Single Mailbox Recovery (SMBR), you would need additional license for SMBR which needs to be purchased separately based on user mailbox.
 
-Contact your NetApp sales representative to purchase SMBR licenses which are available as units of bundle of 1000, 5000, 15000 and 25000 mailboxes. After purchasing the SKU, you can obtain the license by following the instructions in https://library.netapp.com/ecm/ecm_download_file/ECMLP2863893[SMBR Release Notes^].
+NetApp® Single Mailbox Recovery has come to the end of availability (EOA) on May 12, 2023. For more information, refer link:https://mysupport.netapp.com/info/communications/ECMLP2885729.html[CPC-00507]. NetApp will continue to support customers that have purchased mailbox capacity, maintenance, and support through marketing part numbers introduced on June 24, 2020, for the duration of the support entitlement.
 
-When you submit the request for license key, Kroll Ontrack will issue 50 mailbox license keys. Based on your entitlement, the Kroll Ontrack will upgrade the licenses for mailbox after verification.
+NetApp Single Mailbox Recovery is a partner product provided by Ontrack. Ontrack PowerControls offers capabilities that are similar to those of NetApp Single Mailbox Recovery. Customers can procure new Ontrack PowerControls software licenses and Ontrack PowerControls maintenance and support renewals from Ontrack (through licensingteam@ontrack.com) for granular mailbox recovery after the May 12, 2023, EOA date.
