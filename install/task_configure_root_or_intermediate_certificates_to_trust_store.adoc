@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable certificate-based authentication,configure CA signed key pair,configure root, configure intermediate certificates
 summary: 'You should configure the root or intermediate certificates to SPL trust-store.'
 ---
-= Configure root or intermediate certificates to SPL trust-store.
+= Configure root or intermediate certificates to SPL trust-store
 :icons: font
 :imagesdir: ../media/
 
@@ -47,15 +47,3 @@ Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in `spl.
 . Configure the alias name from the keystore located in `spl.properties` file.
 Update this value against the key SPL_CERTIFICATE_ALIAS.
 . Restart the service after configuring the CA signed key pair to SPL trust-store.
-
-== Enable Certificate-based authentication
-
-To enable certificate-based authentication run the following PowerShell cmdlet.
-
-* To enable client certificate-based authentication:
-+
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `<<hostname>>`
-* To disable client certificate-based authentication:
-+
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
-

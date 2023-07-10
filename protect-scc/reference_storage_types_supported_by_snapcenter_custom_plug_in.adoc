@@ -15,16 +15,16 @@ SnapCenter supports a wide range of storage types on both physical and virtual m
 | Machine| Storage type
 
 a|
-Physical and virtual servers(VMDKs and RDM LUNs are not supported.)
+Physical and NFS direct mounts on the VM hosts (VMDKs and RDM LUNs are not supported.)
 a|
 FC-connected LUNs
 a|
-Physical and virtual servers(VMDKs and RDM LUNs are not supported.)
+Physical and NFS direct mounts on the VM hosts (VMDKs and RDM LUNs are not supported.)
 
 a|
 iSCSI-connected LUNs
 a|
-Physical and virtual servers(VMDKs and RDM LUNs are not supported.)
+Physical and NFS direct mounts on the VM hosts (VMDKs and RDM LUNs are not supported.)
 
 a|
 NFS-connected volumes

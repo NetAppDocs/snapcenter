@@ -32,7 +32,7 @@ Execute the commands for all the plug-ins and the SMCore agent first and then fo
 +
 `> Restart-Service -Name SnapManagerCoreService` 
 
-== Disable Two-way SSL Communication
+== Disable two-way SSL Communication
 
 You can disable the two-way SSL communication using PowerShell commands.  
 

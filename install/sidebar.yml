@@ -61,10 +61,14 @@ entries:
         url: /install/task_export_ca_certificates_from_snapcenter_server.html
       - title: Import CA Certificate to the Windows host plug-ins   
         url: /install/task_import_ca_certificate_to_windows_plugin_hosts.html
-      - title: Import CA Certificate to the UNIX host plug-ins    
-        url: /install/task_import_ca_certificate_to_unix_plugin_hosts.html
-      - title: Configure root or intermediate certificates to SPL trust-store
-        url: /install/task_configure_root_or_intermediate_certificates_to_trust_store.html
+      - title: Import CA Certificate to the UNIX host plug-ins and configure root or intermediate certificates to SPL trust-store
+        entries:
+        - title: Import CA Certificate to the UNIX host plug-ins    
+          url: /install/task_import_ca_certificate_to_unix_plugin_hosts.html
+        - title: Configure root or intermediate certificates to SPL trust-store
+          url: /install/task_configure_root_or_intermediate_certificates_to_trust_store.html
+      - title: Enable certificate-based authentication
+        url: /install/task_enable_certificate_based_authentication.html
   - title: Configure Active Directory, LDAP, and LDAPS
     entries:
       - title: Register untrusted Active Directory domains
