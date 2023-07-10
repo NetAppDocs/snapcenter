@@ -41,4 +41,4 @@ PDB migration and PDB cloning operations are not supported.
 ** Oracle Flex ASM
 //Included the above info for BURT 1348035 for 4.5
 
-For the latest information about supported Oracle versions, see the https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported Oracle versions, see the https://imt.netapp.com/matrix/imt.jsp?components=112391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
