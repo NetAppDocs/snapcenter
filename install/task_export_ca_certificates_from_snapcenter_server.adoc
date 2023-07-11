@@ -14,7 +14,7 @@ You should export the CA certificates from the SnapCenter Server to the plug-in 
 
 *What you will need*
 
-You should have configured the Two-way SSL.
+You should have configured the two-way SSL.
 
 *Steps*
 
@@ -24,7 +24,6 @@ You should have configured the Two-way SSL.
 .  Click *Console Root* > *Certificates - Local Computer* > *Personal* > *Certificates*.
 .  Right-click on the procured CA certificate, which is used for SnapCenter Server and then select *All Tasks* > *Export* to start the export wizard.
 .  Perform the following actions in the wizard.
-
 
 |===
 | For this option... | Do the following...
@@ -48,4 +47,4 @@ Review the summary, and then click *Finish* to start the export.
 a|
 |===
 
-NOTE: SnapCenter HA configurations are not supported.  
+NOTE: Certificate based authentication is not supported for SnapCenter HA configurations and SnapCenter Plug-in for VMware vSphere.
