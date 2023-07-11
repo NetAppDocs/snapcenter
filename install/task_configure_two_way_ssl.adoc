@@ -69,7 +69,7 @@ For example,
 .. In the Certificates snap-in window, select the *Computer account* option, and then click *Finish*.
 .. Click *Console Root* > *Certificates – Local Computer* > *Personal* > *Certificates*.
 .. Select the SnapCenter certificate. 
-.. Tto start the add user\permission wizard, right-click on the CA certificate and select *All Tasks* > *Manage private keys*.
+.. To start the add user\permission wizard, right-click on the CA certificate and select *All Tasks* > *Manage private keys*.
 .. Click on *Add*, on Select users and groups wizard change the location to local computer name  (top most in the hierarchy)
 .. Add the IIS AppPool\SnapCenter user, give full control permissions.
 
