@@ -18,7 +18,7 @@ You should install the SnapCenter Plug-in for SAP HANA Database by using the Sna
 +
 The Interoperability Matrix Tool (IMT) contains the latest information about the supported configurations.
 +
-https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=112393;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 * The SnapCenter Plug-in for SAP HANA Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you should have already installed SnapCenter on a Windows host.
 
@@ -43,4 +43,4 @@ You can access this path from the host where the SnapCenter Server is installed.
 . Edit the /<installation directory>/NetApp/snapcenter/scc/etc/SC_SMS_Services.properties file, and then add the PLUGINS_ENABLED = hana:3.0 parameter.
 . Add the host to the SnapCenter Server using the Add-Smhost cmdlet and the required parameters.
 +
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].

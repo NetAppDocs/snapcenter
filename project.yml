@@ -1,28 +1,26 @@
 ---
 settings:
-  name: SnapCenter Software 4.8
+  name: SnapCenter Software 4.9
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
   versions:
-    - name: SnapCenter Software
+    - version-number: "4.9"
       url: /snapcenter
-      version-number: "4.8"
-    - name: SnapCenter Software
+    - version-number: "4.8"
+      url: /snapcenter-48
+    - version-number: "4.7"
       url: /snapcenter-47
-      version-number: "4.7"
-    - name: SnapCenter Software
+    - version-number: "4.6"
       url: /snapcenter-46
-      version-number: "4.6"
-    - name: SnapCenter Software
+    - version-number: "4.5"
       url: /snapcenter-45
-      version-number: "4.5"
 
 sidebar:
   entries:
-    - title: SnapCenter Software 4.8 docs
+    - title: SnapCenter Software 4.9 docs
       url: /index.html
     - title: Release notes
       url: /release-notes.html

@@ -31,7 +31,7 @@ You can use the storage plug-in for data protection operations.
 You can backup ONTAP volume, LUN, or a Qtree.
 * Update Snapshot copies taken on the primary to an ONTAP secondary, leveraging the existing replication relationship (SnapVault/SnapMirror/unified replication) using SnapCenter policy
 +
-ONTAP primary and secondary can be ONTAP FAS, AFF, Select, or Cloud ONTAP.
+ONTAP primary and secondary can be ONTAP FAS, AFF, All SAN Array (ASA), Select, or Cloud ONTAP.
 * Recover complete ONTAP volume, LUN, or files.
 +
 You should provide the respective file path manually as the browse or indexing features are not built into the product.

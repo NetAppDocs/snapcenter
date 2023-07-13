@@ -1,0 +1,62 @@
+---
+permalink: install/task_enable_two_way_ssl.html
+sidebar: sidebar
+keywords: security,disable two-way SSL,enable two-way SSL
+summary: 'You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server and the plug-ins using PowerShell commands.'
+---
+= Enable two-way SSL communication
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server and the plug-ins using PowerShell commands.
+
+*Before you begin*
+
+Execute the commands for all the plug-ins and the SMCore agent first and then for server.
+
+*Steps*
+
+. To enable the two-way SSL communication, run the following commands on the SnapCenter Server for the plug-ins, server, and for each of the agents for which the two-way SSL communication is required.
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName <Plugin_HostName>`
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName localhost`
++
+`> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="true"}`
+. Perform the IIS SnapCenter Application pool recycle operation by using the following command.
+`> Restart-WebAppPool -Name "SnapCenter"`
+
+. For Windows plug-ins, restart the SMCore service by running the following PowerShell command:
++
+`> Restart-Service -Name SnapManagerCoreService` 
+
+== Disable two-way SSL Communication
+
+You can disable the two-way SSL communication using PowerShell commands.  
+
+*About this task*
+
+* Execute the commands for all the plug-ins and the SMCore agent first and then for server.
+* When you disable the two-way SSL communication, the CA certificate and its configuration are not removed.
+* To add a new host to SnapCenter Server, you must disable the two-way SSL for all plug-in hosts. 
+* NLB and F5 are not supported.
+
+*Steps*
+
+. To disable the two-way SSL communication, run the following commands on SnapCenter Server for all the plug-in hosts and the SnapCenter host. 
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName <Agent_HostName>`
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName localhost`
++
+`> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="false"}`
+
+. Perform the IIS SnapCenter Application pool recycle operation by using the following command.
+`> Restart-WebAppPool -Name "SnapCenter"`
+
+. For Windows plug-ins, restart the SMCore service by running the following PowerShell command: 
++
+`> Restart-Service -Name SnapManagerCoreService` 
+

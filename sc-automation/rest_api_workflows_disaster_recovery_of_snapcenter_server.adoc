@@ -37,6 +37,12 @@ NOTE: After DR restore, the host will be added but you should install the plug-i
 
 NOTE: Repository backup schedule will be restored only if you install the SnapCenter Plug-in for Windows and attach NetApp LUN to the server machine.
 
+NOTE: If the DLLs are corrupt, you can attempt to repair SnapCenter Server or correct the faulty installation.
+
+NOTE: If NSM or config files are corrupt, you can uninstall and reinstall the SnapCenter Server with the same version.
+
+NOTE: If the VM is corrupt, bring up another VM or a machine with the same name and install SnapCenter Server with the same version.
+
 == REST API supported for disaster recovery of SnapCenter Server
 
 Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].

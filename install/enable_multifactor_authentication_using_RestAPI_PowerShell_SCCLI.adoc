@@ -1,0 +1,188 @@
+---
+permalink: install/enable_multifactor_authentication_using_RestAPI_PowerShell_SCCLI.html
+sidebar: sidebar
+keywords: mfa, authentication, multifactor authentication
+summary: 'You can use Rest API, PowerShell, and SCCLI interfaces to manage MFA.'
+---
+= Manage multi-factor authentication (MFA) using Rest API, PowerShell, and SCCLI
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+MFA login is supported from browser, REST API, PowerShell, and SCCLI. MFA is supported  through an AD FS identity manager. You can enable MFA, disable MFA, and configure MFA from GUI, REST API, PowerShell, and SCCLI.
+
+== Setup AD FS as OAuth/OIDC 
+
+*Configure AD FS using Windows GUI wizard*
+
+. Navigate to *Server Manager Dashboard* > *Tools* > *ADFS Management*. 
+. Navigate to *ADFS* > *Application Groups*. 
+.. Right-click on *Application Groups*.
+.. Select *Add Application group* and enter *Application Name*. 
+.. Select *Server Application*.
+.. Click *Next*.
+. Copy *Client Identifier*. 
++
+This is the Client ID. 
+.. Add Callback URL (SnapCenter Server URL) in Redirect URL. 
+.. Click *Next*.
+. Select *Generate shared secret*. 
++
+Copy the secret value. This is the client’s secret. 
+.. Click *Next*.
+. On the *Summary* page, click *Next*. 
+.. On the *Complete* page, click *Close*.
+. Right-click on the newly added *Application Group* and select *Properties*.
+. Select *Add application* from App Properties.
+. Click *Add application*. 
++
+Select Web API and click *Next*.
+. On the Configure Web API page, enter the SnapCenter Server URL and Client Identifier created in the previous step into the Identifier section. 
+.. Click *Add*. 
+.. Click *Next*.
+. On the *Choose Access Control Policy* page, select control policy based on your requirement (For example, Permit everyone and require MFA) and click *Next*.
+. On the *Configure Application Permission* page, by default openid is selected as a scope, click *Next*.
+. On the *Summary* page, click *Next*. 
++
+On the *Complete* page, click *Close*.
+. On the *Sample Application Properties* page, click *OK*.
+. JWT token issued by an authorization server (AD FS) and intended to be consumed by the resource. 
++
+The 'aud' or audience claim of this token must match the identifier of the resource or Web API.
+. Edit the selected WebAPI and check that Callback URL (SnapCenter Server URL) and the client identifier were added correctly.
++
+Configure OpenID Connect to provide a username as claims.
+. Open the *AD FS Management* tool located under the *Tools* menu at the top right of the Server Manager. 
+.. Select the *Application Groups* folder from the left sidebar. 
+.. Select the Web API and click *EDIT*.
+.. Go-to Issuance Transform Rules Tab 
+. Click *Add Rule*.
+.. Select the *Send LDAP Attributes as Claims* in the Claim rule template dropdown.
+.. Click *Next*.
+. Enter the *Claim rule* name.
+.. Select *Active Directory* in the Attribute store dropdown.
+.. Select *User-Principal-Name* in the *LDAP Attribute* dropdown and *UPN* in the O*utgoing Claim Type* dropdown.
+.. Click *Finish*. 
+
+== Create Application Group using PowerShell commands
+
+You can create the application group, web API, and add the scope and claims using PowerShell commands. These commands are available in automated script format. For more information see <link to KB article>.
+
+. Create the new Application Group in AD FS by using the following comamnd. 
++
+`New-AdfsApplicationGroup -Name $ClientRoleIdentifier -ApplicationGroupIdentifier $ClientRoleIdentifier`
++
+`ClientRoleIdentifier` name of your application group
++
+`redirectURL` valid URL for redirection after authorization
+. Create the AD FS Server Application and generate the client secret.
++
+`Add-AdfsServerApplication -Name "$ClientRoleIdentifier - Server app" -ApplicationGroupIdentifier` `$ClientRoleIdentifier -RedirectUri $redirectURL  -Identifier $identifier -GenerateClientSecret`
+. Create the ADFS Web API application and configure the policy name it should use.
++
+`$identifier = (New-Guid).Guid`
++
+`Add-AdfsWebApiApplication -ApplicationGroupIdentifier $ClientRoleIdentifier  -Name "App Web API"` 
++
+`-Identifier $identifier -AccessControlPolicyName "Permit everyone"`
+. Get the client ID and client secret from the output of the following commands because, it is shown only one time.
++
+`"client_id = $identifier"`
++
+`"client_secret: "$($ADFSApp.ClientSecret)`
+
+. Grant the AD FS Application the allatclaims and openid permissions.
++
+`Grant-AdfsApplicationPermission -ClientRoleIdentifier $identifier -ServerRoleIdentifier $identifier -ScopeNames @('openid')`
++
+`$transformrule = @"`
++
+`@RuleTemplate = "LdapClaims"`
++
+`@RuleName = "AD User properties and Groups"`
++
+`c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer ==`
++
+`"AD AUTHORITY"]`
++
+`=> issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);`
++
+`"@`
+. Write out the transform rules file.
++
+`$transformrule |Out-File -FilePath .\issueancetransformrules.tmp -force -Encoding ascii`
+`$relativePath = Get-Item .\issueancetransformrules.tmp`
+. Name the Web API Application and define its Issuance Transform Rules using an external file.
++
+`Set-AdfsWebApiApplication -Name "$ClientRoleIdentifier - Web API" -TargetIdentifier`
++
+`$identifier -Identifier $identifier,$redirectURL -IssuanceTransformRulesFile`
++
+`$relativePath`
+
+== Update access token expiry time
+
+You can update the access token expiry time using the PowerShell command.
+
+*About this task*
+
+* An access token can be used only for a specific combination of user, client, and resource. Access tokens cannot be revoked and are valid until their expiry.
+* By default, the expiry time of an access token is 60 minutes.  This minimal expiry time is sufficient and scaled. You must provide sufficient value to avoid any ongoing business-critical jobs.
+
+*Step*
+
+To update the access token expiry time for an application group WebApi, use the following command in AD FS server.
++
+`Set-AdfsWebApiApplication -TokenLifetime 3600 -TargetName "<Web API>"`
+
+== Get the bearer token from AD FS
+
+You should fill the below-mentioned parameters in any REST client (like Postman) and it prompts you to fill in the user credentials. Additionally, you should enter the  second-factor authentication (something you have & something you are) to get the bearer token.
++
+The validity of the bearer token is configurable from the AD FS server per application and the default validity period is 60 minutes. 
+
+|===
+| Field | Value
+a|
+Grant type
+a|
+Authorization Code
+a|
+Callback URL
+a|
+Enter your application's base URL if you do not have a callback URL.
+a|
+Auth URL
+a|
+[adfs-domain-name]/adfs/oauth2/authorize
+a|
+Access token URL
+a|
+[adfs-domain-name]/adfs/oauth2/token
+a|
+Client ID
+a|
+Enter the AD FS client ID
+a|
+Client secret
+a|
+Enter the AD FS client secret
+a|
+Scope
+a|
+OpenID
+a|
+Client Authentication
+a|
+Send as Basic AUTH Header
+a|
+Resource
+a|
+In the *Advance Options* tab, add the Resource field with the same value as the Callback URL, which comes as an “aud” value in the JWT token.
+a|
+|===
+
+
+
+ 

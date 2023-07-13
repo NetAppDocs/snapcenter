@@ -93,6 +93,6 @@ You must also specify the sender and receiver email addresses, and the subject o
 +
 For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command `Set-SmSmtpServer`.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
 . Review the summary, and then click *Finish*.

@@ -30,7 +30,7 @@ NOTE: IBM Java is not supported.
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=112393;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 == Linux hosts
 
@@ -39,6 +39,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +
-https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=112393;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
 * For SAP HANA databases that are running on a Linux host, while installing Plug-in for SAP HANA Database, SnapCenter Plug-in for UNIX is installed automatically.
+* You should have *bash* as the default shell for plug-in installation.
