@@ -36,6 +36,7 @@ a|
 
 Used for communication between the SnapCenter client (the SnapCenter user) and the SnapCenter Server. Also used for communication from the plug-in hosts to the SnapCenter Server.
 
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
 a|
 SnapCenter SMCore communication port
 a|
@@ -43,6 +44,7 @@ a|
 
 The port is used for communication between the SnapCenter Server and the hosts where the SnapCenter plug-ins are installed.
 
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
 a|
 MySQL port
 a|
@@ -52,6 +54,7 @@ The port is used for communication between SnapCenter and MySQL repository datab
 
 You can create secured connections from the SnapCenter Server to the MySQL server. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html[Learn more]
 
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
 a|
 Windows plug-in hosts
 a|
@@ -79,6 +82,8 @@ The port is used for communication between SMCore and hosts where the plug-ins p
 
 The communication path also needs to be open between the SVM management LIF and the SnapCenter Server.
 
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html[Add hosts and install SnapCenter Plug-in for Microsoft Windows] or https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html[Add hosts and install SnapCenter Plug-ins package for Linux or AIX.]
+
 a|
 SnapCenter Plug-in for Oracle Database
 a|
@@ -86,6 +91,7 @@ a|
 
 The default JDBC port is used by the plug-in for Oracle for connecting to the Oracle database.
 
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html[Add hosts and install SnapCenter Plug-ins package for Linux or AIX.]
 a|
 Custom plug-ins for SnapCenter
 a|
@@ -110,6 +116,8 @@ a|
 For a multitenant database container (MDC) single tenant, the port number ends with 13; for non MDC, the port number ends with 15.
 
 For example, 32013 is the port number for instance 20 and 31015 is the port number for instance 10.
+
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html[Add hosts and install plug-in packages on remote hosts.]
 
 a|
 Domain controller communication port

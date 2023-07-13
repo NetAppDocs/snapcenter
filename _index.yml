@@ -1,10 +1,10 @@
 indexpage:
-  lead: SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud. This documentation library includes information for version 4.8.
+  lead: SnapCenter Software is a simple, centralized, scalable platform that provides application consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud. This documentation library includes information for version 4.9.
   tiles:
     - title: Get started
       links:
         - title: Release notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885481
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886204
         - title: Learn about SnapCenter
           url: /concept/concept_snapcenter_overview.html
         - title: Quick reference to protect SQL Server databases

@@ -10,17 +10,17 @@ summary: 'SnapCenter employs strict security and authentication features to enab
 
 [.lead]
 
-This topic describes how to manage Multi-factor authentication (MFA) functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
+You can manage Multi-factor authentication (MFA) functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
 
 == Enable multi-factor authentication (MFA)
-This topic describes how to enable MFA functionality in the Active Directory Federation Service (AD FS) Server and SnapCenter Server.
+You can enable MFA functionality for SnapCenter Server using PowerShell commands.
 
 .About this task
 
 * SnapCenter supports SSO based logins when other applications are configured in the same AD FS. In certain AD FS configurations, SnapCenter might require user authentication for security reasons depending on the AD FS session persistence.
-* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running `Get-Help command_name`. Alternatively, you can also see https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726[SnapCenter Software Cmdlet Reference Guide^].
+* The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running `Get-Help command_name`. Alternatively, you can also see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
-.What you'll need
+.Before you begin
 
 * Windows Active Directory Federation Service (AD FS) should be up and running in the respective domain.
 * You should have an AD FS supported Multi-factor authentication service such as Azure MFA, Cisco Duo, and so on.
@@ -45,9 +45,7 @@ For information on CA certificate, see link:../install/reference_generate_CA_cer
 +
 The path parameter specifies the path to save the MFA metadata file in the SnapCenter Server host.
 . Copy the generated file to the AD FS host to configure SnapCenter as the client entity.
-. Enable MFA for SnapCenter Server using the `Set-SmMultiFactorAuthentication -Enable -Path` cmdlet.
-+
-The path parameter specifies the location of the AD FS MFA metadata xml file, which was copied to SnapCenter Server in step 3.
+. Enable MFA for SnapCenter Server using the `Set-SmMultiFactorAuthentication` cmdlet.
 . (Optional) Check the MFA configuration status and settings by using `Get-SmMultiFactorAuthentication` cmdlet.
 . Go to the Microsoft management console (MMC) and perform the following steps:
 .. Click *File* > *Add/Remove Snapin*.
@@ -93,7 +91,7 @@ SnapCenter is now reflected as a relying party with the provided display name.
 
 SnapCenter MFA functionality can also be enabled using REST APIs.
 
-For troubleshooting information. see link:..https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_login_in_multiple_tabs_shows_MFA_error%3A_The_SAML_message_response_(1)_doesn%E2%80%99t_match_the_expected_response_(2)[SnapCenter Login in multiple tabs shows MFA error].
+For troubleshooting information, refer to https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_MFA_login_error_The_SAML_message_response_1_doesnt_match_the_expected_response_2[Simultaneous login attempts in multiple tabs shows MFA error].
 
 == Update AD FS MFA Metadata
 
@@ -101,7 +99,7 @@ You should update the AD FS MFA metadata in SnapCenter whenever there is any mod
 
 .Steps
 
-.	Download AD FS federation metadata file from "https://<host FQDN>/FederationMetadata/2007-06/FederationMetadata.xml"
+. Download AD FS federation metadata file from "https://<host FQDN>/FederationMetadata/2007-06/FederationMetadata.xml"
 . Copy the downloaded file to SnapCenter Server to update the MFA configuration.
 . Update the AD FS metadata in SnapCenter by running the following cmdlet:
 +
@@ -128,5 +126,5 @@ See link:../install/enable_multifactor_authentication.html[Enable Multi-factor a
 
 .Steps
 
-. Disable MFA and clean up the configuration files that were created when MFA was enabled by using the `Set-SmMultiFactorAuthentication -Disable` cmdlet.
+. Disable MFA and clean up the configuration files that were created when MFA was enabled by using the `Set-SmMultiFactorAuthentication` cmdlet.
 . Close all the browser tabs and reopen a browser to clear the existing or active session cookies, and login again.

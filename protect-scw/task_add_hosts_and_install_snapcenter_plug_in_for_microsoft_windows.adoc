@@ -38,6 +38,9 @@ If you install plug-ins on a cluster (WSFC, Oracle RAC, or Exchange DAG), they a
 +
 You cannot install the Plug-in for Windows on a Windows host connected to E-series storage.
 
+NOTE: SnapCenter does not support adding of the same host (plug-in host) to SnapCenter if the host is already part of a workgroup and changed to another domain or vice versa.
+If you want to add the same host, you should remove the host from SnapCenter and add it again.
+
 *Steps*
 
 . In the left navigation pane, click *Hosts*.

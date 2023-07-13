@@ -48,7 +48,7 @@ Storage System
 a|
 Enter the storage system name or IP address.
 
-NOTE: Storage system names, not including the domain name, must have 15 or fewer characters , and the names must be resolvable. To create storage system connections with names that have more than 15 characters, you can use the Add-SmStorageConnectionPowerShell cmdlet.
+NOTE: Storage system names, not including the domain name, must have 15 or fewer characters, and the names must be resolvable. To create storage system connections with names that have more than 15 characters, you can use the Add-SmStorageConnectionPowerShell cmdlet.
 
 NOTE: For storage systems with MetroCluster configuration (MCC), it is recommended to register both local and peer clusters for non-disruptive operations.
 
@@ -74,6 +74,8 @@ When you select the *Send AutoSupport Notification for failed operations to stor
  .. In Platform, select one of the options from the drop-down list.
 +
 If the SVM is the secondary storage system in a backup relationship, select the *Secondary* checkbox. When the *Secondary* option is selected, SnapCenter does not perform a license check immediately.
++
+If you have added SVM in SnapCenter then, user need to select the platform type from the dropdown manually.
 
  .. In Protocol, select the protocol that was configured during SVM or Cluster setup, typically HTTPS.
  .. Enter the port that the storage system accepts.
@@ -102,6 +104,8 @@ If you have added FSx clusters using fsxadmin, the FSx clusters are listed here.
 When you click on the cluster name, all the SVMs that are part of the cluster are displayed in the Storage Virtual Machines section.
 +
 If a new SVM is added to the ONTAP cluster using ONTAP GUI, click *Rediscover* to view the newly added SVM.
+
+NOTE: If you have upgraded the FAS or AFF storage systems to All SAN Array (ASA), you must refresh the storage connection in the SnapCenter Server to reflect the new storage type in SnapCenter.
 
 *After you finish*
 
