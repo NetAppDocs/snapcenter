@@ -28,8 +28,7 @@ LOG_LEVEL
 a|
 Displays the log levels that are supported.
 
-The possible values are INFO, DEBUG, TRACE, ERROR, FATAL, and WARN.
-
+The possible values are TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.
 a|
 SPL_PROTOCOL
 a|
