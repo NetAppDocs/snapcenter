@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_add_resources_to_snapcenter_custom_plug_ins.html
 sidebar: sidebar
-keywords:
+keywords: custom plug-in, resources
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
 = Add resources to SnapCenter Custom Plug-ins
@@ -11,7 +11,7 @@ summary: 'You must add the resources that you want to back up or clone. Dependin
 [.lead]
 You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.
 
-.Before you begin
+.What you'll need
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
 * You must have link:concept_develop_a_plug_in_for_your_application.html[created a custom plug-in for your application].
