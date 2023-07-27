@@ -11,7 +11,7 @@ summary: 'For SAP HANA hosts directly registered in SnapCenter, installing or up
 [.lead]
 For SAP HANA hosts directly registered in SnapCenter, installing or upgrading the SnapCenter Plug-in for SAP HANA Database will trigger an automatic discovery for resources on the host. After installing or upgrading the plug-in, for every multitenant database containers (MDC) resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in "`locked`" state.
 
-*About this task*
+.About this task
 
 For example, in SnapCenter 4.2, if E90 MDC resource was located on the plug-in host and registered manually, after upgrading to SnapCenter 4.3, another E90 MDC resource with a different GUID will be discovered and registered in SnapCenter.
 
@@ -21,7 +21,7 @@ NOTE: The backups associated with the resource of SnapCenter 4.2 and earlier ver
 
 Perform the following steps to start using the new resource discovered in SnapCenter 4.3 for data protection operations:
 
-*Steps*
+.Steps
 
 . In the Resources page, select the old MDC resource with backups added to the earlier SnapCenter release, and place it in "`maintenance mode`" from the Topology page.
 +
@@ -38,7 +38,7 @@ If the resource is part of a resource group, place the resource group in "`maint
 +
 For example, if the primary Snapshot copies retention period is 7 days and secondary Snapshot copies retention is 45 days, after 45 days are complete and after all the backups are deleted, you must delete the resource group and the old MDC resource.
 
-*Find more information*
+.Related information
 
 link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]
 

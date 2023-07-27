@@ -11,11 +11,11 @@ summary: 'After upgrading to SnapCenter 4.3, you will no longer see the clones. 
 [.lead]
 After upgrading to SnapCenter 4.3, you will no longer see the clones. You can delete the clone or split the clones from the Topology page of the resource from which the clones were created.
 
-*About this task*
+.About this task
 
 If you want to locate the storage footprint of the hidden clones, run the following command: `Get-SmClone -ListStorageFootprint`
 
-*Steps*
+.Steps
 
 . Delete the backups of the cloned resources by using the remove-smbackup cmdlet.
 . Delete the resource group of the cloned resources by using the remove-smresourcegroup cmdlet.
