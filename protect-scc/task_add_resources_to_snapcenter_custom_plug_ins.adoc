@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_add_resources_to_snapcenter_custom_plug_ins.html
 sidebar: sidebar
-keywords: custom plug-in, resources
+keywords: custom plug-in, resources, snapcenter
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
 = Add resources to SnapCenter Custom Plug-ins
@@ -58,7 +58,7 @@ Enter the mount paths where the resource is mounted.    This is applicable only 
 +
 Optional: Select the image:../media/add_policy_from_resourcegroup.gif[Plus icon] icon to add more volumes, LUNs, and qtrees from other storage systems.
 +
-NOTE: SnapCenter Custom Plug-ins does not support automatic discovery of the resources and the storage details for physical and virtual environments. You must provide the storage information for physical and virtual environments while creating the resources.
+NOTE: SnapCenter Custom Plug-ins does not support automatic discovery of the resources. The storage details of physical and virtual environments are also not discovered automatically. You must provide the storage information for physical and virtual environments while creating the resources.
 +
 image::../media/storage_footprint.gif[Storage footprint]
 
