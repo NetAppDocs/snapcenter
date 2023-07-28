@@ -33,7 +33,7 @@ Databases are not in normal state when they are in mount, unmount, reseed, or re
 +
 All the databases and DAGs are displayed with their DAG or hostnames in FQDN format, so you can distinguish between multiple databases.
 +
-Click image:../media/filter_icon.gif[] and select the host name and the Exchange Server to filter the resources. You can then click image:../media/filter_icon.gif[] to close the filter pane.
+Click image:../media/filter_icon.png[] and select the host name and the Exchange Server to filter the resources. You can then click image:../media/filter_icon.png[] to close the filter pane.
 
 . Click *Refresh Resources*.
 +
