@@ -24,11 +24,11 @@ SnapCenter can be deployed in the following ways:
 * On premise to protect the following:
 ** Data that is on ONTAP FAS, AFF, or All SAN Array (ASA) primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
 ** Data that is on ONTAP Select primary systems
-** Data that is on ONTAP FAS, AFF, or ASA primary & secondary systems and protected to local StorageGRID object storage (using NetApp BlueXP cloud backup integration)
+** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to local StorageGRID object storage 
 
 * On premise in a Hybrid Cloud to protect the following:
 ** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to Cloud Volumes ONTAP
-** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to object and archive storage in cloud (using NetApp BlueXP Cloud Backup integration)
+** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to object and archive storage in cloud (using BlueXP backup and recovery integration)
 
 * In a public cloud to protect the following:
 ** Data that is on Cloud Volumes ONTAP (formerly ONTAP Cloud) primary systems
@@ -146,9 +146,9 @@ The SnapCenter Server communicates with the Windows plug-ins through the host ag
  ** For SnapCenter Plug-in for Oracle Database, the host agent that runs on the SnapCenter Server host communicates with the SnapCenter Plug-in Loader (SPL) that runs on the Linux or AIX host to perform different data protection operations.
  ** For SnapCenter Plug-in for SAP HANA Database and SnapCenter Custom Plug-ins, the SnapCenter Server communicates with these plug-ins through the SCCore agent that runs on the host.
 
-The SnapCenter Server and plug-ins communicate with the host agent using HTTPS.
+The SnapCenter Server and plug-ins communicate with the host agent using HTTPS. Information about SnapCenter operations is stored in the SnapCenter repository.
 
-Information about SnapCenter operations is stored in the SnapCenter repository.
+NOTE: SnapCenter supports disjoint namespace for Windows hosts. If you face issues when using disjoint namespace, refer to https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_is_unable_to_discover_resources_when_using_disjoint_namespace[SnapCenter is unable to discover resources when using disjoint namespace].
 
 == SnapCenter plug-ins
 
