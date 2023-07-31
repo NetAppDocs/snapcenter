@@ -1,7 +1,7 @@
 ---
 permalink: sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
 sidebar: sidebar
-keywords:
+keywords: REST API, disaster recovery, DR
 summary: 'SnapCenter disaster recovery functionality uses REST APIs to backup SnapCenter Server.'
 ---
 = Disaster recovery (DR) REST APIs
@@ -47,12 +47,12 @@ NOTE: If the VM is corrupt, bring up another VM or a machine with the same name 
 
 Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
 
-*What you will need*
+.What you'll need
 
 * You should log in as the SnapCenter Admin user.
 * The SnapCenter Server should be up and running to run DR restore API.
 
-*About this task*
+.About this task
 
 SnapCenter Server DR supports all plug-ins.
 
@@ -61,8 +61,6 @@ SnapCenter Server DR supports all plug-ins.
 
 a|
 Fetch existing SnapCenter Server DR backups
-
-[NOTE]
 
 You should provide the target path where the DR backups are stored.
 a|
@@ -95,4 +93,6 @@ a|
 POST
 |===
 
-For more information, see the https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.
+.For more information
+
+See the link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.

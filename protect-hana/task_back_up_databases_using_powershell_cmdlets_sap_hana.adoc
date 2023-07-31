@@ -11,12 +11,12 @@ summary: 'Backing up a database includes establishing a connection with the Snap
 [.lead]
 Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
 
-*What you will need*
+.What you'll need
 
 * You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 * You must have added the storage system connection and created a credential.
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +

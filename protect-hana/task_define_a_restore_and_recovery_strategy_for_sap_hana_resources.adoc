@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/task_define_a_restore_and_recovery_strategy_for_sap_hana_resources.html
 sidebar: sidebar
-keywords:
+keywords: restore and recovery strategy, SAP HANA resources, snapcenter
 summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.'
 ---
 = Define a restore and recovery strategy for SAP HANA resources
@@ -11,7 +11,7 @@ summary: 'You must define a strategy before you restore and recover your databas
 [.lead]
 You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.
 
-*Steps*
+.Steps
 
 . Determine the restore strategies supported for manually added SAP HANA resources
 . Determine the restore strategies supported for auto discovered SAP HANA databases

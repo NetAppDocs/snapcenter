@@ -11,7 +11,7 @@ summary: 'Automatic discovery is not supported for certain HANA instances. You m
 [.lead]
 Automatic discovery is not supported for certain HANA instances. You must add these resources manually.
 
-*What you will need*
+.What you'll need
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
 
@@ -19,7 +19,7 @@ Automatic discovery is not supported for certain HANA instances. You must add th
 
 link:task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].
 
-*About this task*
+.About this task
 
 Automatic discovery is not supported for the following configurations:
 
@@ -32,7 +32,7 @@ NOTE: In case the above resources are discovered, the data protection operations
 * Multitier scale out HANA System Replication
 * Cascaded replication environment in System Replication mode
 
-*Steps*
+.Steps
 
 . In the left navigation pane, select the SnapCenter Plug-in for SAP HANA Database from the drop-down list, and then click *Resources*.
 . In the Resources page, click *Add SAP HANA Database*.

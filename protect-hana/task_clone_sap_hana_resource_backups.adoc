@@ -11,7 +11,7 @@ summary: 'The clone workflow includes performing the clone operation and monitor
 [.lead]
 The clone workflow includes performing the clone operation and monitoring the operation.
 
-*About this task*
+.About this task
 
 * You can clone on the source SAP HANA server.
 * You might clone resource backups for the following reasons:

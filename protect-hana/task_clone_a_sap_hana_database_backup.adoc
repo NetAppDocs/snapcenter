@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to clone a backup. You can clone from primary o
 [.lead]
 You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.
 
-*What you will need*
+.What you'll need
 
 * You should have backed up the resources or resource group.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
@@ -25,11 +25,11 @@ For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 
-*About this task*
+.About this task
 
 For information about clone split operation limitations, see http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, filter resources from the *View* drop-down list based on resource type.

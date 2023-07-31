@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html
 sidebar: sidebar
-keywords:
+keywords: HDB User Store Key, HDBSQL OS User, SAP HANA database
 summary: 'You must configure HDB User Store Key and HDBSQL OS User to perform data protection operations on SAP HANA databases.'
 ---
 = Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database
@@ -11,13 +11,13 @@ summary: 'You must configure HDB User Store Key and HDBSQL OS User to perform da
 [.lead]
 You must configure HDB User Store Key and HDBSQL OS User to perform data protection operations on SAP HANA databases.
 
-*What you will need*
+.What you'll need
 
 * If the SAP HANA database does not have the HDB Secure User Store Key and HDB SQL OS User configured, a red padlock icon appears only for the autodiscovered resources. If during a subsequent discovery operation, the configured HDB Secure User Store Key was found to be incorrect or did not provide access to the database itself, then the red padlock icon will reappear.
 * You must configure the HDB Secure User Store Key and the HDB SQL OS user to be able to protect the database or add it to a resource group to perform data protection operations.
 * You must configure HDB SQL OS User to access the system database. If HDB SQL OS User is configured to access only tenant database, the discovery operation will fail.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources* and then select SnapCenter Plug-in for SAP HANA Database from the list.
 . In the Resources page, select the resource type from the *View* list.
