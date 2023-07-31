@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_cancel_sql_resources_restore_operations.html
 sidebar: sidebar
-keywords:
+keywords: cancel, restore
 summary: 'You can cancel restore jobs that are queued.'
 ---
 = Cancel SQL resources restore operations
