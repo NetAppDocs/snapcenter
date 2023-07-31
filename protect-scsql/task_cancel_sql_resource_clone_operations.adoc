@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_cancel_sql_resource_clone_operations.html
 sidebar: sidebar
-keywords:
+keywords: clone, cancel
 summary: 'You can cancel clone operations that are queued.'
 ---
 = Cancel SQL resource clone operations

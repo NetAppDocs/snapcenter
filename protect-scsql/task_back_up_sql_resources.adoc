@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_back_up_sql_resources.html
 sidebar: sidebar
-keywords:
+keywords: backup 
 summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
 ---
 = Back up SQL resources
@@ -11,7 +11,7 @@ summary: 'If a resource is not yet part of any resource group, you can back up t
 [.lead]
 If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
 
-*About this task*
+.About this task
 
 * For Windows credentials authentication, you must set up your credential before installing the plug-ins.
 
@@ -21,9 +21,9 @@ If a resource is not yet part of any resource group, you can back up the resourc
 
 * If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
 
-*Steps*
+.Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* ,or *Instance*, or *Availability Group* from the *View* drop-down list.
  .. Select the database, or instance, or availability group that you want to back up.
 +
@@ -37,12 +37,12 @@ For example, customtext_policy_hostname or resource_hostname. By default, a time
 . In the Policies page, perform the following tasks:
  .. In the Policies section, select one or more policies from the drop-down list.
 +
-You can create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
+You can create a policy by selecting *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
 +
 In the *Configure schedules for selected policies* section, the selected policies are listed.
 
- .. Click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
- .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then click *OK*.
+ .. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then select *OK*.
 +
 Here `policy_name` is the name of the policy that you have selected.
 +
@@ -57,7 +57,7 @@ You can select multiple verification servers (local host or remote host).
 NOTE: The verification server version should be equal or above the version of the edition of the SQL server that is hosting the primary database.
 
  .. Select *Load secondary locators to verify backups on secondary* to verify your backups on secondary storage system.
- .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+ .. Select the policy for which you want to configure your verification schedule, and then select *image:../media/add_policy_from_resourcegroup.gif[]*.
  .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
 +
 |===
@@ -74,7 +74,7 @@ Select *Run scheduled verification*.
 |===
 NOTE: If the verification server does not have a storage connection, the verification operation fails with error: Failed to mount disk.
 
- .. Click *OK*.
+ .. Select *OK*.
 +
 The configured schedules are listed in the Applied Schedules column.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
@@ -83,27 +83,27 @@ You must also specify the sender and receiver email addresses, and the subject o
 +
 NOTE: For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command Set-SmSmtpServer.
 
-. Review the summary, and then click *Finish*.
+. Review the summary, and then select *Finish*.
 +
 The database topology page is displayed.
 
-. Click *Back up Now*.
+. Select *Back up Now*.
 . In the Backup page, perform the following steps:
  .. If you have applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 
  .. Select *Verify after backup* to verify your backup.
- .. Click *Backup*.
+ .. Select *Backup*.
 +
 NOTE: You should not rename the backup job created in Windows scheduler or SQL Server agent.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 +
 An implicit resource group is created. You can view this by selecting respective user or group from the User Access page. The implicit resource group type is "`Resource`".
-. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
-*After you finish*
+.What’s next?
 
 * In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
 +
@@ -111,7 +111,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 
 * If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail. To increase the Java heap size, locate the script file /opt/netapp/init_scripts/scvservice. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.
 
-*Find more information*
+.Related information
 
 link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]
 

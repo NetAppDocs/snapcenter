@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_clone_from_a_sql_server_database_backup.html
 sidebar: sidebar
-keywords:
+keywords: clone
 summary: 'You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.'
 ---
 = Clone from a SQL Server database backup
@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to clone a SQL Server database backup. If you w
 [.lead]
 You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.
 
-*What you will need*
+.What you'll need
 
 * You should have prepared for data protection by completing tasks such as adding hosts, identifying resources, and creating storage system connections.
 * You should have backed up databases or resource groups.
@@ -19,7 +19,7 @@ You can use SnapCenter to clone a SQL Server database backup. If you want to acc
 * If the mounted clone drive cannot be found during a SnapCenter clone operation, you should change the CloneRetryTimeout parameter of SnapCenter Server to 300.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
 
-*About this task*
+.About this task
 
 * While cloning to a standalone database instance, ensure that the mount point path exists and it is a dedicated disk.
 * While cloning to a Failover Cluster Instance (FCI), ensure that the mount points exists, it is a shared disk, and the path and the FCI should belong to the same SQL resource group.
@@ -35,19 +35,16 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedicated disk.
 
-*Steps*
+.Steps
 
-. In the left navigation pane, click *Resources*, and then select *SnapCenter Plug-in for SQL Server* from the list.
+. In the left navigation pane, select *Resources*, and then select *SnapCenter Plug-in for SQL Server* from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.
 +
 NOTE: Cloning of a backup of an instance is not supported.
-
-*Steps*
-
 . Select the database or resource group.
-. From the Manage Copies view page, select the backup either from primary or secondary (mirrored or vaulted) storage system.
-. Select the backup, and then click *image:../media/clone_icon.gif[]*.
-. In the Clone Options page, perform the following actions:
+. From the *Manage Copies* view page, select the backup either from primary or secondary (mirrored or vaulted) storage system.
+. Select the backup, and then select *image:../media/clone_icon.gif[clone icon]*.
+. In the *Clone Options* page, perform the following actions:
 +
 |===
 | For this field...| Do this...
@@ -103,7 +100,7 @@ This point-in-time clone halts the clone of the transaction log entries that wer
 
 |===
 
-. In the Script page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
+. In the *Script* page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, send logs, and so on.
 +
@@ -111,7 +108,7 @@ NOTE: The prescripts or postscripts path should not include drives or shares. Th
 +
 The default script timeout is 60 seconds.
 
-. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
 +
@@ -119,14 +116,14 @@ NOTE: For email notification, you must have specified the SMTP server details us
 +
 For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html[Manage EMS data collection]
 
-. Review the summary, and then click *Finish*.
-. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+. Review the summary, and then select *Finish*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
-*After you finish*
+.What's next
 
 After the clone is created, you should never rename it.
 
-*Find more information*
+.Related information
 
 link:reference_back_up_sql_server_database_or_instance_or_availability_group.html[Back up SQL Server database, or instance, or availability group]
 

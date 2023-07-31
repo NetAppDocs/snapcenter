@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_sap_hana.html
 sidebar: sidebar
-keywords: credentials
+keywords: SnapCenter Plug-in Packages for Linux, SnapCenter Plug-in Packages for Windows
 summary: 'You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
 ---
 = Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
@@ -11,11 +11,11 @@ summary: 'You can install the SnapCenter Plug-in Packages for Linux or Windows o
 [.lead]
 You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.
 
-*What you will need*
+.What you'll need
 
 You must have logged in to SnapCenter as a domain user with local administrator rights on each host on which you want to install the plug-in package.
 
-*Steps*
+.Steps
 
 . Launch PowerShell.
 . On the SnapCenter Server host, establish a session using the Open-SmConnection cmdlet, and then enter your credentials.

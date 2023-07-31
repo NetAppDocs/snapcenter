@@ -27,9 +27,9 @@ If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all o
 
 *Steps*
 
-. In the left navigation pane, click *Hosts*.
+. In the left navigation pane, select *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
-. Click *Add*.
+. Select *Add*.
 . In the Hosts page, perform the following actions:
 +
 |===
@@ -70,7 +70,7 @@ NOTE: The credentials authentication mode is determined by the host type that yo
 |===
 
 . In the *Select Plug-ins to Install* section, select the plug-ins to install.
-. (Optional) Click *More Options*.
+. (Optional) Select *More Options*.
 +
 |===
 | For this field...| Do this...
@@ -98,13 +98,13 @@ Optionally, you can customize the path.
 Optionally, you can customize the path.
 
  ** For the SnapCenter Custom Plug-ins:
-  ... In the Custom Plug-ins section, click *Browse*, and select the zipped custom plug-in folder.
+  ... In the Custom Plug-ins section, select *Browse*, and select the zipped custom plug-in folder.
 +
 The zipped folder contains the custom plug-in code and the descriptor .xml file.
 +
 For Storage Plug-in, navigate to _C:\ProgramData\NetApp\SnapCenter\Package Repository_ and select `Storage.zip` folder.
 
-  ... Click *Upload*.
+  ... Select *Upload*.
 +
 The descriptor .xml file in the zipped custom plug-in folder is validated before the package is uploaded.
 +
@@ -126,7 +126,7 @@ IMPORTANT: Provide the gMSA name in the following format: domainName\accountName
 NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
 |===
 
-. Click *Submit*.
+. Select *Submit*.
 +
 If you have not selected the *Skip prechecks* checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java version (for Linux plug-ins) are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
 +
@@ -134,7 +134,7 @@ If the error is related to disk space or RAM, you can update the web.config file
 +
 NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
-. If host type is Linux, verify the fingerprint, and then click *Confirm and Submit*.
+. If host type is Linux, verify the fingerprint, and then select *Confirm and Submit*.
 +
 NOTE: Fingerprint verification is mandatory even if the same host was added earlier to SnapCenter and the fingerprint was confirmed.
 

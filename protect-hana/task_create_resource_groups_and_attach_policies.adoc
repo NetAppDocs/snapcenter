@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/task_create_resource_groups_and_attach_policies.html
 sidebar: sidebar
-keywords: run as
+keywords: resource groups, attach policies, snapcenter
 summary: 'A resource group is the container to which you must add resources that you want to back up and protect. A resource group enables you to back up all the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.'
 ---
 = Create resource groups and attach policies
@@ -11,11 +11,11 @@ summary: 'A resource group is the container to which you must add resources that
 [.lead]
 A resource group is the container to which you must add resources that you want to back up and protect. A resource group enables you to back up all the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.
 
-*About this task*
+.About this task
 
 To create SAP HANA system replication backups, it is recommended to add all the resources of the SAP HANA system into one resource group. This ensures a seamless backup during takeover-failback mode.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, click *New Resource Group*.
