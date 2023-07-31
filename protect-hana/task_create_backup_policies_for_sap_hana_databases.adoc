@@ -11,7 +11,7 @@ summary: 'Before you use SnapCenter to back up SAP HANA database resources, you 
 [.lead]
 Before you use SnapCenter to back up SAP HANA database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
 
-*What you will need*
+.What you'll need
 
 * You must have defined your backup strategy.
 +
@@ -21,7 +21,7 @@ For details, see the information about defining a data protection strategy for S
 +
 Additionally, you can specify replication, script, and application settings in the policy. These options saves time when you want to reuse the policy for another resource group.
 
-*About this task*
+.About this task
 
 * SAP HANA System Replication
 
@@ -32,7 +32,7 @@ After the failover, all the data protection operation can be performed as the se
 +
 You cannot create a backup for SAP HANA data volume, but SnapCenter continues to protect the Non-data Volumes (NDV).
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
@@ -85,7 +85,6 @@ NOTE: For SAP HANA system replication, it is recommended to add all the resource
 
 NOTE: For SAP HANA System Replication, the total Snapshot copies taken will be equal to the retention set for the resource group.  The removal of the oldest Snapshot copy is based on which node the oldest Snapshot copy is located.
 For example, the retention is set to 7 for a resource group with SAP HANA System Replication primary and SAP HANA System Replication secondary.  You can take a maximum of 7 Snapshot copies at a time including both SAP HANA System Replication primary and SAP HANA System Replication secondary.
-
 
 a|
 Keep the Snapshot copies for a certain number of days

@@ -9,7 +9,7 @@ summary: 'When the SnapCenter Plug-in for SQL Server is down, perform the follow
 :imagesdir: ../media/
 
 [.lead]
-When the SnapCenter Plug-in for SQL Server is down, perform the following steps to switch to a different SQL host and recover the data.
+When the SnapCenter Plug-in for SQL Server is down, use the following steps to switch to a different SQL host and recover the data.
 
 .What you'll need
 

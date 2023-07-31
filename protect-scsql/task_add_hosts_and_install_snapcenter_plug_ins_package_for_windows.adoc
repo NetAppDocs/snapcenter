@@ -11,7 +11,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts and install the 
 [.lead]
 You must use the SnapCenter *Add Host* page to add hosts and install the plug-ins package. The plug-ins are automatically installed on the remote hosts.
 
-*What you will need*
+.What you'll need
 
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, you should disable UAC on the host.
@@ -20,7 +20,7 @@ You must use the SnapCenter *Add Host* page to add hosts and install the plug-in
 +
 link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL^]
 
-*About this task*
+.About this task
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
@@ -28,11 +28,11 @@ You can add a host and install the plug-in packages either for an individual hos
 
 For information on managing hosts, see link:../admin/concept_manage_hosts.html[Manage hosts^].
 
-*Steps*
+.Steps
 
-. In the left navigation pane, click *Hosts*.
+. In the left navigation pane, select *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
-. Click *Add*.
+. Select *Add*.
 . In the Hosts page do the following:
 +
 |===
@@ -68,7 +68,7 @@ NOTE: The credentials authentication mode is determined by the host type that yo
 |===
 
 . In the *Select Plug-ins to Install* section, select the plug-ins to install.
-. Click *More Options*.
+. Select *More Options*.
 +
 |===
 | For this field...| Do this...
@@ -101,9 +101,9 @@ Provide the gMSA name in the following format: domainName\accountName$.
 NOTE: If the host is added with gMSA and if the gMSA has login and sys admin privileges, the gMSA will be used to connect to the SQL instance.
 |===
 
-. Click *Submit*.
+. Select *Submit*.
 . For SQL Plug-in, select the host to configure the log directory.
-.. Click *Configure log directory* and in the Configure host log directory page, click *Browse* and complete the following steps:
+.. Select *Configure log directory* and in the Configure host log directory page, select *Browse* and complete the following steps:
 +
 Only NetApp LUNs (drives) are listed for selection. SnapCenter backs up and replicates the host log directory as part of the backup operation.
 +
@@ -111,9 +111,9 @@ image::../media/host_managed_hosts_configureplugin.gif[Configure plug-in page]
 
  ... Select the drive letter or mount point on the host where the host log will be stored.
  ... Choose a subdirectory, if required.
- ... Click *Save*.
+ ... Select *Save*.
 
-. Click *Submit*.
+. Select *Submit*.
 +
 If you have not selected the *Skip prechecks* check box, the host is validated to verify whether it meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java version (for Linux plug-ins) are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
 +

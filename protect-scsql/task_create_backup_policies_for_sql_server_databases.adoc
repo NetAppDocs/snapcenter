@@ -38,10 +38,10 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 
 == Step 1: Create Policy Name
-. In the left navigation pane, click *Settings*.
-. In the Settings page, click *Policies*.
-. Click *New*.
-. In the Name page, enter the policy name and description.
+. In the left navigation pane, select *Settings*.
+. In the Settings page, select *Policies*.
+. Select *New*.
+. In the *Name* page, enter the policy name and description.
 
 == Step 2: Configure backup options 
 // start tabbed area
@@ -95,7 +95,7 @@ NOTE: Microsoft SQL does not support the *Copy only backup* option together with
 
 .. Backup on preferred backup replica only.
 +
-Select this option to backup only on preferred backup replica.         The preferred backup replica is decided by the backup preferences configured for the AG in the SQL Server.
+Select this option to backup only on preferred backup replica. The preferred backup replica is decided by the backup preferences configured for the AG in the SQL Server.
 
 .. Select replicas for backup.
 +
@@ -258,4 +258,4 @@ In the Verification page, perform the following steps:
 NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
 == Step 7: Review summary
-. Review the summary, and then click *Finish*.
+. Review the summary, and then select *Finish*.
