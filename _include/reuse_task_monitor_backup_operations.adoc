@@ -16,7 +16,7 @@ The following icons appear on the Jobs page and indicate the corresponding state
 . In the left navigation pane, click *Monitor*.
 . In the Monitor page, click *Jobs*.
 . In the Jobs page, perform the following steps:
- .. Click image:../media/filter_icon.gif[] to filter the list so that only backup operations are listed.
+ .. Click image:../media/filter_icon.png[] to filter the list so that only backup operations are listed.
  .. Specify the start and end dates.
  .. From the *Type* drop-down list, select *Backup*.
  .. From the *Status* drop-down, select the backup status.
