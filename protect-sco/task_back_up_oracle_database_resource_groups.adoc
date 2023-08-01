@@ -9,9 +9,9 @@ summary: 'A resource group is a collection of resources on a host or cluster. A 
 :imagesdir: ../media/
 
 [.lead]
-A resource group is a collection of resources on a host or cluster. A backup operation on the resource group is performed on all resources defined in the resource group.
+A resource group is a collection of resources on a host or cluster. The backup operation is performed on all resources defined in the resource group.
 
-You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
+You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups are created according to the schedule.
 
 .Steps
 
