@@ -11,7 +11,7 @@ summary: 'Automatic discovery is not supported for certain HANA instances. You m
 [.lead]
 Automatic discovery is not supported for certain HANA instances. You must add these resources manually.
 
-.What you'll need
+.Before you begin
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
 

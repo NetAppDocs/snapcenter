@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html
 sidebar: sidebar
-keywords: credentials
+keywords: add hosts
 summary: 'You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.'
 ---
 = Add hosts and install plug-in packages on remote hosts
@@ -11,7 +11,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts, and then instal
 [.lead]
 You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
 
-*What you will need*
+.Before you begin
 
 * You should be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * You should ensure that the message queueing service is running.
@@ -19,13 +19,13 @@ You must use the SnapCenterAdd Host page to add hosts, and then install the plug
 +
 link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for custom applications]
 
-*About this task*
+.About this task
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
 If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, select *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.

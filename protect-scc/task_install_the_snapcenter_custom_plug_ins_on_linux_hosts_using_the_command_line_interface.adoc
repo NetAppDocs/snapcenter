@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_install_the_snapcenter_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html
 sidebar: sidebar
-keywords:
+keywords: install, custom plug-in
 summary: 'You should install the SnapCenter Custom Plug-ins by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Custom Plug-in either in console mode or in silent mode by using the command-line interface (CLI).'
 ---
 = Install the SnapCenter Custom Plug-ins on Linux hosts by using the command-line interface
@@ -11,7 +11,7 @@ summary: 'You should install the SnapCenter Custom Plug-ins by using the SnapCen
 [.lead]
 You should install the SnapCenter Custom Plug-ins by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the custom plug-ins either in console mode or in silent mode by using the command-line interface (CLI).
 
-*Steps*
+.Steps
 
 . Copy the SnapCenter Plug-ins Package for Linux installation file (snapcenter_linux_host_plugin.bin) from C:\ProgramData\NetApp\SnapCenter\Package Repository to the host where you want to install the custom plug-ins.
 +

@@ -4,7 +4,7 @@ Custom plug-ins uses the file _keystore.jks_, which is located at _C:\Program Fi
 
 == Manage password for custom plug-in keystore and alias of the CA signed key pair in use
 
-*Steps*
+.Steps
 
 . You can retrieve custom plug-in keystore default password from custom plug-in agent property file.
 +
@@ -31,7 +31,7 @@ NOTE: Password for custom plug-in keystore and for all the associated alias pass
 
 You should configure the root or intermediate certificates without the private key to custom plug-in trust-store.
 
-*Steps*
+.Steps
 
 . Navigate to the folder containing the custom plug-in keystore  _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_
 . Locate the file 'keystore.jks'.
@@ -51,7 +51,7 @@ NOTE: You should add the root CA certificate and then the intermediate CA certif
 
 You should configure the CA signed key pair to the custom plug-in trust-store.
 
-*Steps*
+.Steps
 
 . Navigate to the folder containing the custom plug-in keystore _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_
 . Locate the file _keystore.jks_.
@@ -83,13 +83,13 @@ Update this value against the key SCC_CERTIFICATE_ALIAS.
 
 == Configure certificate revocation list (CRL) for SnapCenter Custom Plug-ins
 
-*About this task*
+.About this task
 
 * To download the latest CRL file for the related CA certificate see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_update_certificate_revocation_list_file_in_SnapCenter_CA_Certificate[How to update certificate revocation list file in SnapCenter CA Certificate].
 * SnapCenter Custom Plug-ins will search for the CRL files in a pre-configured directory.
 * Default directory for the CRL files for SnapCenter Custom Plug-ins is _'C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\ etc\crl'_.
 
-*Steps*
+.Steps
 
 . You can modify and update the default directory in _agent.properties_ file against the key CRL_PATH.
 . You can place more than one CRL file in this directory.

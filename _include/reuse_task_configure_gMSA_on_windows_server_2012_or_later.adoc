@@ -1,11 +1,11 @@
 Windows Server 2012 or later enables you to create a group Managed Service Account (gMSA) that provides automated service account password management from a managed domain account.
 
-*What you will need*
+.Before you begin
 
 * You should have a Windows Server 2012 or later domain controller.
 * You should have a Windows Server 2012 or later host, which is a member of the domain.
 
-*Steps*
+.Steps
 
 . Create a KDS root key to generate unique passwords for each object in your gMSA.
 . For each domain, run the following command from the Windows domain controller: Add-KDSRootKey -EffectiveImmediately

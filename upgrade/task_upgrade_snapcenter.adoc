@@ -11,7 +11,7 @@ summary: 'You can use the SnapCenter Server installer executable file to upgrade
 [.lead]
 You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.
 
-*What you will need*
+.Before you begin
 
 * The SnapCenter Server host must be up to date with Windows updates, with no pending system restarts.
 * You should ensure that no other operations are running before initiating the upgrade operation.
@@ -23,7 +23,7 @@ For information, see link:../admin/concept_manage_the_snapcenter_server_reposito
 +
 Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
 
-*About this task*
+.About this task
 
 * During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
 
@@ -37,7 +37,7 @@ For the existing backup and verification schedules with prescripts and postscrip
 +
 In the *Job details* page, a warning message recommends that the customer should copy the scripts to the SCRIPTS_PATH and edit the policy to provide a path that is relative to the SCRIPTS_PATH. For the clone lifecycle job, the warning message appears at the sub-job level.
 
-*Steps*
+.Steps
 
 . Download the SnapCenter Server installation package from the NetApp Support Site.
 +
@@ -67,7 +67,7 @@ At any stage if you click the *Cancel* button, the upgrade workflow will be canc
 *Best Practice:* You should either log out and then log into SnapCenter, or close and then open a new browser to access SnapCenter GUI.
 |===
 
-*After you finish*
+.After you finish
 
 * If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt_ to update the _/etc/sudoers_ file.
 * You should perform a fresh discovery of resources on the hosts.
