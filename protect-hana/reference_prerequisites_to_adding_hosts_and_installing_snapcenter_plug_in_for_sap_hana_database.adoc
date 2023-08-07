@@ -43,3 +43,47 @@ https://imt.netapp.com/matrix/imt.jsp?components=112393;&solution=1259&isHWU&src
 
 * For SAP HANA databases that are running on a Linux host, while installing Plug-in for SAP HANA Database, SnapCenter Plug-in for UNIX is installed automatically.
 * You should have *bash* as the default shell for plug-in installation.
+
+== Supplemental commands
+
+To run a supplemental command on the SnapCenter Plug-in for SAP HANA, you must include it in the `allowed_commands.config` file.
+
+`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for SAP HANA directory.
+
+.Windows hosts
+
+Default: `C:\Program Files\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+
+Custom path: `<Custome_Directory>\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+Windows host:
+
+.Linux hosts
+
+Default: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+Custom path: `<Custome_Directory>/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+To allow supplemental commands on the plug-in host, open `allowed_commands.config` file in an editor. Enter each command on a separate line. It is not case sensitive.
+For example,
+
+command: mount
+
+command: umount
+
+Ensure that you specify the fully qualified pathname. Enclose the pathname in quotation marks (") if it contains spaces. 
+For example,
+
+command: "C:\Program Files\NetApp\SnapCreator commands\sdcli.exe"
+
+command: myscript.bat
+ 
+If the `allowed_commands.config` file is not present, the commands or script execution will be blocked and the workflow will fail with the following error:
+
+"[/mnt/mount -a] execution not allowed. Authorize by adding the command in the file %s on the plugin host."
+ 
+If the command or script is not present in the `allowed_commands.config`, the command or script execution will be blocked and the workflow will fail with the following error:
+
+"[/mnt/mount -a] execution not allowed. Authorize by adding the command in the file %s on the plugin host."
+ 
+NOTE: You should not use a wildcard entry (*) to allow all commands.
+
