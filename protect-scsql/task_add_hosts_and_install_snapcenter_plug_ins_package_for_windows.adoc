@@ -11,7 +11,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts and install the 
 [.lead]
 You must use the SnapCenter *Add Host* page to add hosts and install the plug-ins package. The plug-ins are automatically installed on the remote hosts.
 
-.What you'll need
+.Before you begin
 
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, you should disable UAC on the host.

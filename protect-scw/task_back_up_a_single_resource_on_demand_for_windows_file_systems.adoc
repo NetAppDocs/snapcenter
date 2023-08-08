@@ -11,7 +11,7 @@ summary: 'If a resource is not in a resource group, you can back up the resource
 [.lead]
 If a resource is not in a resource group, you can back up the resource on demand from the Resources page.
 
-*About this task*
+.About this task
 
 If you want to back up a resource that has a SnapMirror relationship with secondary storage, the role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
 
@@ -19,7 +19,7 @@ NOTE: When backing up a file system, SnapCenter does not back up LUNs that are m
 
 IMPORTANT: If you are working in a Windows file system context, do not back up database files. Doing so creates an inconsistent backup and a possible loss of data when restoring. To protect database files, you must use the appropriate SnapCenter plug-in for the database (for example, SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, or a custom plug-in for database files).
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select the File System resource type, and then select the resource that you want to back up.

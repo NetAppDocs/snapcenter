@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_create_backup_policies_for_windows_file_systems.html
 sidebar: sidebar
-keywords:
+keywords: backup policy
 summary: 'You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.'
 ---
 = Create backup policies for Windows file systems
@@ -11,7 +11,7 @@ summary: 'You can create a new backup policy for resources before you use SnapCe
 [.lead]
 You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.
 
-*What you will need*
+.Before you begin
 
 * You must have defined your backup strategy. link:task_define_a_backup_strategy_for_windows_file_systems.html[Learn more^]
 
@@ -25,7 +25,7 @@ To prepare for data protection, you must complete tasks such as installing SnapC
 +
 The default value is false
 
-*About this task*
+.About this task
 
 * The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
 +
@@ -35,7 +35,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.

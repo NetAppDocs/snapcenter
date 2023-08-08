@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_define_a_clone_strategy_for_sql_server.html
 sidebar: sidebar
-keywords:
+keywords: clone strategy
 summary: 'Defining a cloning strategy enables you to clone your database successfully.'
 ---
 = Define a cloning strategy for SQL Server

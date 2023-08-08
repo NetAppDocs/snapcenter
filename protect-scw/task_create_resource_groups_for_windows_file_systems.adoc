@@ -11,7 +11,7 @@ summary: 'A resource group is the container to which you can add multiple file s
 [.lead]
 A resource group is the container to which you can add multiple file systems that you want to protect. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform, and then specify the backup schedule.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *File Systems* from the list.

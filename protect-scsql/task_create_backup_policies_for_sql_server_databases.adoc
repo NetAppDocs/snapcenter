@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_create_backup_policies_for_sql_server_databases.html
 sidebar: sidebar
-keywords:
+keywords: backup policy
 summary: 'You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.'
 ---
 = Create backup policies for SQL Server databases
@@ -11,7 +11,7 @@ summary: 'You can create a backup policy for the resource or the resource group 
 [.lead]
 You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.
 
-.What you'll need
+.Before you begin
 
 * You must have defined your data protection strategy.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, identifying resources, and creating storage system connections.
@@ -35,7 +35,6 @@ If needed, you can change this path and restart SMcore service.  It is recommend
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
 
 You can use the GET API to display the value of the key. SET API is not supported.
-
 
 == Step 1: Create Policy Name
 . In the left navigation pane, select *Settings*.

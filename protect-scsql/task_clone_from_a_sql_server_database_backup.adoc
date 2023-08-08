@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to clone a SQL Server database backup. If you w
 [.lead]
 You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.
 
-.What you'll need
+.Before you begin
 
 * You should have prepared for data protection by completing tasks such as adding hosts, identifying resources, and creating storage system connections.
 * You should have backed up databases or resource groups.
@@ -119,7 +119,7 @@ For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept
 . Review the summary, and then select *Finish*.
 . Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
-.What's next
+.After you finish
 
 After the clone is created, you should never rename it.
 

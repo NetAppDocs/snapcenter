@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/concept_snapcenter_plug_in_for_windows_features.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter
 summary: 'The Plug-in for Windows integrates with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.'
 ---
 = SnapCenter Plug-in for Windows features
