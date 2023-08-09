@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_backups.html
 sidebar: sidebar
-keywords:
+keywords: Manage backups
 summary: 'You can rename and delete backups. You can also delete multiple backups simultaneously.'
 ---
 = Manage backups
@@ -36,7 +36,7 @@ If you have cataloged the backups of Oracle databases using Oracle Recovery Mana
 
 You can delete backups if you no longer require the backup for other data protection operations.
 
-*What you will need*
+.Before you begin
 
 You must have deleted the associated clones before deleting a backup.
 

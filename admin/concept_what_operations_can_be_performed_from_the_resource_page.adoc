@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_what_operations_can_be_performed_from_the_resource_page.html
 sidebar: sidebar
-keywords:
+keywords: Resources page
 summary: 'You can discover resources and perform data protection operations from the Resources page. The operations you can perform differ based on the plug-in you are using to manage your resources.'
 ---
 = Operations supported from the Resources page

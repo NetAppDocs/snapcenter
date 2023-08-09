@@ -11,7 +11,7 @@ summary: 'If a database is not part of any resource group, you can back up the d
 [.lead]
 If a database is not part of any resource group, you can back up the database or Database Availability Group from the Resources page.
 
-*What you will need*
+.Before you begin
 
 * You must have created a backup policy.
 * You must have assigned the aggregate that is being used by the backup operation to the SVM used by the database.

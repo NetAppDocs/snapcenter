@@ -11,7 +11,7 @@ summary: 'Backing up an Exchange Server database includes establishing a connect
 [.lead]
 Backing up an Exchange Server database includes establishing a connection with the SnapCenter Server, discovering the Exchange Server database, adding a policy, creating a backup resource group, backing up, and viewing the backup status.
 
-*What you will need*
+.Before you begin
 
 * You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 * You must have added the storage system connection and created a credential.

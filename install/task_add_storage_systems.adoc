@@ -13,7 +13,7 @@ You should set up the storage system that gives SnapCenter access to ONTAP stora
 
 You can either add a stand-alone SVM or a cluster comprising of multiple SVMs. If you are using Amazon FSx for NetApp ONTAP, you can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account or add FSx SVM in SnapCenter.
 
-*What you will need*
+.Before you begin
 
 * You should have the required permissions in the Infrastructure Admin role to create storage connections.
 * You should ensure that the plug-in installations are not in progress.
@@ -90,7 +90,7 @@ The default value is 60 seconds.
  .. Click *Save*.
 . Click *Submit*.
 
-*Results*
+*Result*
 
 In the Storage Systems page, from the *Type* drop-down perform one of the following actions:
 

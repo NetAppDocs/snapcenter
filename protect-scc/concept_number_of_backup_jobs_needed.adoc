@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/concept_number_of_backup_jobs_needed.html
 sidebar: sidebar
-keywords: 
+keywords: backup jobs
 summary: 'Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement \(SLA\).'
 ---
 = Number of backup jobs needed

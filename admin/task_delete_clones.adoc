@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_delete_clones.html
 sidebar: sidebar
-keywords:
+keywords: Delete clones
 summary: 'You can delete clones if you find them no longer necessary.'
 ---
 = Delete clones

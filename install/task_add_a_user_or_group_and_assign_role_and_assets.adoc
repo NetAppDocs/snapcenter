@@ -11,7 +11,7 @@ summary: 'To configure role-based access control for SnapCenter users, you can a
 [.lead]
 To configure role-based access control for SnapCenter users, you can add users or groups and assign role. The role determines the options that SnapCenter users can access.
 
-*What you will need*
+.Before you begin
 
 * You must have logged in as the "SnapCenterAdmin" role.
 * You must have created the user or group accounts in Active Directory in the operating system or database. You cannot use SnapCenter to create these accounts.

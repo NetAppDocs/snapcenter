@@ -11,7 +11,7 @@ summary: 'A resource group is a collection of resources on a host or Exchange DA
 [.lead]
 A resource group is a collection of resources on a host or Exchange DAG, and the resource group can include either a whole DAG or individual databases. You can backup the resources groups from the Resources page.
 
-*What you will need*
+.Before you begin
 
 * You must have created a resource group with a policy attached.
 * You must have assigned the aggregate that is being used by the backup operation to the storage virtual machine (SVM) used by the database.
