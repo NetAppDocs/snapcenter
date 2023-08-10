@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_restore_exchange_databases.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can use SnapCenter to restore backed-up Exchange databases.'
 ---
 = Restore Exchange databases
@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to restore backed-up Exchange databases.'
 [.lead]
 You can use SnapCenter to restore backed-up Exchange databases.
 
-*What you will need*
+.Before you begin
 
 * You must have backed up the resource groups, database, or Database Availability Groups (DAGs).
 * When Exchange database is migrated to another location, restore operation does not work for old backups.
@@ -22,7 +22,7 @@ Run the `Move-ActiveMailboxDatabase` command to make the passive database copy a
 +
 The https://docs.microsoft.com/en-us/powershell/module/exchange/move-activemailboxdatabase?view=exchange-ps[Microsoft documentation^] contains information about this command.
 
-*About this task*
+.About this task
 
 * When restore operation is performed on a database, the database is mounted back on the same host and no new volume is created.
 * DAG-level backups must be restored from individual databases.
@@ -39,7 +39,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 
-*Steps*
+.Steps
 
 . On the left navigation pane, click *Resources* in the upper left corner of the Resource page.
 . Select the Exchange Server plug-in from the drop-down list.

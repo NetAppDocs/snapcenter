@@ -19,7 +19,7 @@ Backing up an Exchange Server database includes establishing a connection with t
 
 NOTE: Plug-in for Exchange does not support clone operations; therefore, the CloneType parameter for the Add-SmPolicy cmdlet is not supported for Plug-in for Exchange
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +

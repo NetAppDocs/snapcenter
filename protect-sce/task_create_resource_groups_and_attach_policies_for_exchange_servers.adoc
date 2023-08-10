@@ -11,7 +11,7 @@ summary: 'A resource group is required for any data protection job. You must als
 [.lead]
 A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform and the protection schedule.
 
-*About this task*
+.About this task
 
 * The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
 +
@@ -21,7 +21,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the Microsoft Exchange Server plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
@@ -75,13 +75,13 @@ Resource groups of SnapCenter for Microsoft Exchange Server cannot have more tha
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[Plus icon]*.
 +
 NOTE: If a policy contains the *Back up copies on servers to be selected at backup job creation time* option, a server selection option is displayed to select one or more servers. The server selection option will list only the server where the selected database is on NetApp storage.
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
- .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the *Configure Schedules* column for the policy for which you want to configure the schedule.
+ .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[Plus icon]* in the *Configure Schedules* column for the policy for which you want to configure the schedule.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *OK*.
 +
 You must do this for each frequency listed in the policy. The configured schedules are listed in the *Applied Schedules* column in the Configure schedules for selected policies section.

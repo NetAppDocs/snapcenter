@@ -35,7 +35,6 @@ To identify the port range, execute the following commands:
 * netsh int ipv6 show dynamicport udp
 ====
 
-
 == Host requirements to install SnapCenter Plug-ins Package for Windows
 
 include::../_include/reuse_reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.adoc[]

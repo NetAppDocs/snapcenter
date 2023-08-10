@@ -93,7 +93,7 @@ The custom plug-ins can be installed on either a Windows system or a Linux syste
 +
 Optionally, you can customize the path.
 
- ** For SnapCenter Plug-ins Package for Linux, the default path is /opt/NetApp/snapcenter.
+ ** For SnapCenter Plug-ins Package for Linux, the default path is `/opt/NetApp/snapcenter`.
 +
 Optionally, you can customize the path.
 
@@ -102,7 +102,7 @@ Optionally, you can customize the path.
 +
 The zipped folder contains the custom plug-in code and the descriptor .xml file.
 +
-For Storage Plug-in, navigate to _C:\ProgramData\NetApp\SnapCenter\Package Repository_ and select `Storage.zip` folder.
+For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
 
   ... Select *Upload*.
 +
@@ -140,4 +140,4 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 
 . Monitor the installation progress.
 +
-The installation-specific log files are located at /custom_location/snapcenter/logs.
+The installation-specific log files are located at `/custom_location/snapcenter/` logs.

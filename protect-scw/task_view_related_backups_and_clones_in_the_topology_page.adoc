@@ -54,7 +54,7 @@ If you are using SnapCenter Custom Plug-ins, you cannot rename the backups that 
  ** If you have selected a log backup of an Oracle resource or resource group, you can perform rename, mount, unmount, and delete operations.
  ** If you are using SnapCenter Plug-ins Package for Linux and have cataloged the backup using Oracle Recovery Manager (RMAN), you cannot rename those cataloged backups.
 
-. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[] to delete the clone.
+. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[delete icon] to delete the clone.
 
 
 .Example showing backups and clones on the primary storage

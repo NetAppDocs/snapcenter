@@ -53,4 +53,4 @@ When you create a resource group, you select one or more policies for that group
 
 Think of a resource group as defining _what_ you want to protect and when you want to protect it in terms of day and time. Think of a policy as defining _how_ you want to protect it. If you are backing up all databases of a host, for example, you might create a resource group that includes all the databases in the host. You could then attach two policies to the resource group: a daily policy and an hourly policy. When you create the resource group and attach the policies, you might configure the resource group to perform a full backup daily and another schedule that performs log backups hourly. The following image illustrates the relationship between resources, resource groups, and policies for databases:
 
-image::../media/sce_resourcegroup_policy.gif[]
+image::../media/sce_resourcegroup_policy.gif[Screenshot of resource group policy]
