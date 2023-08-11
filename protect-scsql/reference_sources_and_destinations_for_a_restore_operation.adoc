@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_sources_and_destinations_for_a_restore_operation.html
 sidebar: sidebar
-keywords:
+keywords: restore operation
 summary: 'You can restore a SQL Server database from a backup copy on either primary or secondary storage. You also can restore the database to different destinations in addition to its original location, enabling you to choose the destination that supports your requirements.'
 ---
 = Sources and destinations for a restore operation

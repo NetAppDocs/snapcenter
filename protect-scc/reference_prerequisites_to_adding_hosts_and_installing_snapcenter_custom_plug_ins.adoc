@@ -32,7 +32,6 @@ _C:\Program Files\NetApp\SnapCenter Plug-in Creator\etc\custom_plugin_checksum_l
 +
 For custom installation path, the SHA512 hash is located at _<custom path>\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\custom_plugin_checksum_list.txt_
 
-
 +
 The custom_plugin_checksum_list is part of the custom plug-in installation on the host by SnapCenter.
 

@@ -103,7 +103,7 @@ If the policy selected for the on-demand backup is associated with a backup sche
 An implicit resource group is created. You can view this by selecting respective user or group from the User Access page. The implicit resource group type is "`Resource`".
 . Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
-.What’s next?
+.After you finish
 
 * In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
 +

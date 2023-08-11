@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_view_related_backups_and_clones_in_the_topology_page.html
 sidebar: sidebar
-keywords:
+keywords: view backups, view clones
 summary: 'When you are preparing to back up or clone a resource, you can view a graphical representation of all backups and clones on the primary and secondary storage. In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.'
 ---
 = View related backups and clones in the Topology page
@@ -11,7 +11,7 @@ summary: 'When you are preparing to back up or clone a resource, you can view a 
 [.lead]
 When you are preparing to back up or clone a resource, you can view a graphical representation of all backups and clones on the primary and secondary storage. In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.
 
-*About this task*
+.About this task
 
 You can review the following icons in the Manage Copies view to determine whether the backups and clones are available on the primary or secondary storage (Mirror copies or Vault copies).
 
@@ -26,7 +26,7 @@ NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type vol
 
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view but the mirror backup count in the topology view does not include the version-flexible backup.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, either select the resource or resource group from the *View* drop-down list.
@@ -54,9 +54,9 @@ If you are using SnapCenter Custom Plug-ins, you cannot rename the backups that 
  ** If you have selected a log backup of an Oracle resource or resource group, you can perform rename, mount, unmount, and delete operations.
  ** If you are using SnapCenter Plug-ins Package for Linux and have cataloged the backup using Oracle Recovery Manager (RMAN), you cannot rename those cataloged backups.
 
-. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[] to delete the clone.
+. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[delete icon] to delete the clone.
 
 
-*Example showing backups and clones on the primary storage*
+.Example showing backups and clones on the primary storage
  
 image:../media/topology_backups_and_clones_primary_storage.gif[topology view of backup and clones in Primary storage.]

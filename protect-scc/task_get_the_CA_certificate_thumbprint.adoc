@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_get_the_CA_certificate_thumbprint.html
 sidebar: sidebar
-keywords: SnapCenter
+keywords: SnapCenter, CA certificate
 summary: 'Get the CA certificate thumbprint.'
 ---
 = Get the CA certificate thumbprint

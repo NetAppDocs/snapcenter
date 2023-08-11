@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/reference_native.html
 sidebar: sidebar
-keywords:
+keywords: custom plug-in
 summary: 'Develop the plug-in using NATIVE style.'
 ---
 = NATIVE style

@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/reference_restore_exchange_resources.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter Plug-in for Microsoft Exchange Server
 summary: 'You can use SnapCenter to restore Exchange databases by restoring one or more backups to your active file system.'
 ---
 = Restore workflow
@@ -13,6 +13,6 @@ You can use SnapCenter to restore Exchange databases by restoring one or more ba
 
 The following workflow shows the sequence in which you must perform the Exchange database restore operations:
 
-image:../media/all_plug_ins_restore_workflow.png[]
+image:../media/all_plug_ins_restore_workflow.png[Restore workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup and restore operations. For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].

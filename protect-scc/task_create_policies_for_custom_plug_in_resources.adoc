@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_create_policies_for_custom_plug_in_resources.html
 sidebar: sidebar
-keywords:
+keywords: create policies, custom plug-in
 summary: 'Before you use SnapCenter to back up custom plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.'
 ---
 = Create policies for custom plug-in resources
@@ -11,7 +11,7 @@ summary: 'Before you use SnapCenter to back up custom plug-in specific resources
 [.lead]
 Before you use SnapCenter to back up custom plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.
 
-*What you will need*
+.Before you begin
 
 * You should have defined your backup strategy.
 +
@@ -24,12 +24,12 @@ Preparing for data protection includes tasks such as installing SnapCenter, addi
 The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshot copies to a mirror or vault.
 * You should have manually added the resources that you want to protect.
 
-*About this task*
+.About this task
 
 * A backup policy is a set of rules that governs how you manage, schedule, and retain backups. Additionally, you can specify replication, script, and application settings.
 * Specifying options in a policy saves time when you want to reuse the policy for another resource group.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
@@ -40,12 +40,12 @@ The SnapCenter administrator must have assigned the SVMs for both the source and
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for the backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but enables you to assign different backup schedules to each policy.
 +
-image::../media/backup_settings.gif[]
+image::../media/backup_settings.gif[Backup settings page]
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
  ** In the Custom backup settings section, provide any specific backup settings that has to be passed to the plug-in in key-value format. You can provide multiple key-values to be passed to the plug-in.
-. In the Retention page, specify the retention settings for the backup type and the schedule type selected in the Backup Type page:
+. In the *Retention* page, specify the retention settings for the backup type and the schedule type selected in the *Backup Type* page:
 +
 |===
 | If you want to...| Then...
@@ -67,7 +67,7 @@ a|
 Select *Keep Snapshot copies for*, and then specify the number of days for which you want to keep the Snapshot copies before deleting them.
 |===
 
-. In the Replication page, specify the replication settings:
+. In the *Replication* page, specify the replication settings:
 +
 |===
 | For this field...| Do this...

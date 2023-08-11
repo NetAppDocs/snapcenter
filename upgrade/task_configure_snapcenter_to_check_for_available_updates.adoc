@@ -11,10 +11,10 @@ summary: 'SnapCenter periodically communicates with the NetApp Support Site to n
 [.lead]
 SnapCenter periodically communicates with the NetApp Support Site to notify you of available software updates. You can also create a schedule to specify the interval in which you want to receive information about available updates.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Settings*.
-. In the Settings page, click *Software*.
+. In the *Settings* page, click *Software*.
 +
 The Available Software page displays the available plug-in packages, versions available, and their installation status.
 

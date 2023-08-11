@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html
 sidebar: sidebar
-keywords:
+keywords: install, snapcenter
 summary: 'You can install the SnapCenter Plug-in for Microsoft Windows locally on a Windows host if you are unable to install the plug-in remotely from the SnapCenter GUI. You can run the SnapCenter Plug-in for Microsoft Windows installation program unattended, in silent mode, from the Windows command line.'
 ---
 = Install the SnapCenter Plug-in for Microsoft Windows silently from the command line
@@ -11,14 +11,14 @@ summary: 'You can install the SnapCenter Plug-in for Microsoft Windows locally o
 [.lead]
 You can install the SnapCenter Plug-in for Microsoft Windows locally on a Windows host if you are unable to install the plug-in remotely from the SnapCenter GUI. You can run the SnapCenter Plug-in for Microsoft Windows installation program unattended, in silent mode, from the Windows command line.
 
-*What you will need*
+.Before you begin
 
 * You must have installed Microsoft .Net 4.7.2 or later.
 * You must have installed PowerShell 4.0 or later.
 * You must have turned on Windows message queuing.
 * You must be a local administrator on the host.
 
-*Steps*
+.Steps
 
 . Download the SnapCenter Plug-in for Microsoft Windows from your install location.
 +

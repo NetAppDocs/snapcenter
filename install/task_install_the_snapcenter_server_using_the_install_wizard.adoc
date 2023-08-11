@@ -15,7 +15,7 @@ You can optionally perform several installation and configuration procedures by 
 
 NOTE: Silent installation of the SnapCenter Server from the command-line is not supported.
 
-*What you will need*
+.Before you begin
 
 * The SnapCenter Server host must be up to date with Windows updates with no pending system restarts.
 * You should have ensured that MySQL Server is not installed on the host where you plan to install the SnapCenter Server.

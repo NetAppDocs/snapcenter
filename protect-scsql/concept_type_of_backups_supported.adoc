@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_type_of_backups_supported.html
 sidebar: sidebar
-keywords:
+keywords: Type of backups
 summary: 'Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups \(AG\). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
 ---
 = Type of backups supported

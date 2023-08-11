@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_define_a_backup_strategy_for_sql_server_resources.html
 sidebar: sidebar
-keywords:
+keywords: backup strategy
 summary: 'Defining a backup strategy before you create your backup jobs helps ensure that you have the backups that you require to successfully restore or clone your databases. Your Service Level Agreement \(SLA\), Recovery Time Objective \(RTO\), and Recovery Point Objective \(RPO\) largely determine your backup strategy.'
 ---
 = Define a backup strategy for SQL Server resources

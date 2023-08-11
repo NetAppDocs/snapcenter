@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html
 sidebar: sidebar
-keywords: credentials
+keywords: add hosts
 summary: 'You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.'
 ---
 = Add hosts and install plug-in packages on remote hosts
@@ -11,7 +11,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts, and then instal
 [.lead]
 You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
 
-*What you will need*
+.Before you begin
 
 * You should be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * You should ensure that the message queueing service is running.
@@ -19,13 +19,13 @@ You must use the SnapCenterAdd Host page to add hosts, and then install the plug
 +
 link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for custom applications]
 
-*About this task*
+.About this task
 
 You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
 If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, select *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top.
@@ -93,7 +93,7 @@ The custom plug-ins can be installed on either a Windows system or a Linux syste
 +
 Optionally, you can customize the path.
 
- ** For SnapCenter Plug-ins Package for Linux, the default path is /opt/NetApp/snapcenter.
+ ** For SnapCenter Plug-ins Package for Linux, the default path is `/opt/NetApp/snapcenter`.
 +
 Optionally, you can customize the path.
 
@@ -102,7 +102,7 @@ Optionally, you can customize the path.
 +
 The zipped folder contains the custom plug-in code and the descriptor .xml file.
 +
-For Storage Plug-in, navigate to _C:\ProgramData\NetApp\SnapCenter\Package Repository_ and select `Storage.zip` folder.
+For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
 
   ... Select *Upload*.
 +
@@ -140,4 +140,4 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 
 . Monitor the installation progress.
 +
-The installation-specific log files are located at /custom_location/snapcenter/logs.
+The installation-specific log files are located at `/custom_location/snapcenter/` logs.

@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_resources_of_untrusted_domains.html
 sidebar: sidebar
-keywords:
+keywords: Manage resources
 summary: 'In addition to managing hosts in Active Directory \(AD\) trusted domains, SnapCenter also manages hosts in multiple AD untrusted domains. The untrusted AD domains must be registered with the SnapCenter Server. SnapCenter supports users and groups of multiple untrusted AD domains.'
 ---
 = Manage resources of untrusted domains
@@ -51,7 +51,7 @@ If the domain FQDN is not resolvable, specify one or more domain controller IP a
 
 You can unregister an untrusted Active Directory domain if you do not want to use the assets that are associated with that domain.
 
-*What you will need*
+.Before you begin
 
 You should have removed the hosts, users, groups, and credentials that are associated with the untrusted domain.
 

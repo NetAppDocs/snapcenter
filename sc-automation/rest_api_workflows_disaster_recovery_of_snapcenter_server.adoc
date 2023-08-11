@@ -47,10 +47,13 @@ NOTE: If the VM is corrupt, bring up another VM or a machine with the same name 
 
 Using REST APIs, you can perform the following operations on the REST APIs Swagger page. For information to access the Swagger page, see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
 
-.What you'll need
+.Before you begin
 
 * You should log in as the SnapCenter Admin user.
 * The SnapCenter Server should be up and running to run DR restore API.
+* If the DLLs are corrupt, repair the SnapCenter Server installation.
+* If NSM is corrupt or configuration files are corrupt, uninstall and reinstall the SnapCenter Server with the same version.
+* If the VM is corrupt, bring up another VM with same name and install SnapCenter Server with the same version. 
 
 .About this task
 
@@ -93,6 +96,6 @@ a|
 POST
 |===
 
-.For more information
+.Related information
 
 See the link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.
