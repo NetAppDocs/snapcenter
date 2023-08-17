@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_cancel_clone_operations.html
 sidebar: sidebar
-keywords:
+keywords: cancel clone
 summary: 'You can cancel clone jobs that are queued.'
 ---
 = Cancel clone operations

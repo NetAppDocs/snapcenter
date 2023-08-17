@@ -15,7 +15,7 @@ You should know the management IP address or domain name of the SnapCenter Serve
 
 You do not need special permissions to run the REST API client. Any user can access the Swagger web page. The respective permissions on the objects that are accessed via the REST API are based on the user who generates the token to login to the REST API.
 
-*Steps*
+.Steps
 
 . From a browser, enter the URL to access the Swagger web page in the format _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/_.
 +

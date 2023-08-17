@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_cancel_backup_operations_for_scc.html
 sidebar: sidebar
-keywords:
+keywords: cancel backup, custom plug-in
 summary: 'You can cancel backup operations that are queued.'
 ---
 = Cancel backup operations for custom plug-ins

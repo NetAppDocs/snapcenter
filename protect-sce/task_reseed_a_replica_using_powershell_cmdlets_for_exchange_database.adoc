@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_reseed_a_replica_using_powershell_cmdlets_for_exchange_database.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can use PowerShell cmdlets to restore an unhealthy replica by using either the most recent copy on the same host or the most recent copy from an alternate host.'
 ---
 = Reseed a replica using PowerShell cmdlets for Exchange database
@@ -13,7 +13,7 @@ You can use PowerShell cmdlets to restore an unhealthy replica by using either t
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the `Open-SmConnection` cmdlet.
 +

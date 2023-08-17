@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_hosts.html
 sidebar: sidebar
-keywords:
+keywords: Manage hosts
 summary: 'You can add hosts and install SnapCenter plug-in packages, add a verification server, remove hosts, migrate backup jobs, and update host to upgrade plug-in packages or add new plug-in packages. Depending on the plug-in you are using, you can also provision disks, manage SMB shares, manage initiator groups \(igroups\), manage iSCSI sessions, and migrate data.'
 ---
 = Manage hosts
@@ -202,7 +202,7 @@ Only one field can be modified at a time.
 
 . Click *Submit*.
 
-*Results*
+*Result*
 
 The host is validated and added to SnapCenter Server.
 
@@ -238,7 +238,7 @@ You can suspend the schedule of multiple hosts simultaneously.
 +
 NOTE: You do not have to stop the plug-in service first. The plug-in service can be in a running or stopped state.
 
-*Results*
+*Result*
 
 After you suspend the schedules on the host, the Managed Hosts page shows *Suspended* in the Overall status field for the host.
 

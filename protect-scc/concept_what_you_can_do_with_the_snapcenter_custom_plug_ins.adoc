@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/concept_what_you_can_do_with_the_snapcenter_custom_plug_ins.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter Custom Plug-ins
 summary: 'You can use the SnapCenter Custom Plug-ins for data protection operations.'
 ---
 = What you can do with the SnapCenter Custom Plug-ins and Storage plug-in

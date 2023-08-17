@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_disaster_recovery_scsql.html
 sidebar: sidebar
-keywords:
+keywords: disaster recovery
 summary: 'When the SnapCenter Plug-in for SQL Server is down, perform the following manual steps to recover the plug-in.'
 ---
 = Disaster recovery of SnapCenter Plug-in for SQL Server
@@ -11,7 +11,7 @@ summary: 'When the SnapCenter Plug-in for SQL Server is down, perform the follow
 [.lead]
 When the SnapCenter Plug-in for SQL Server is down, use the following steps to switch to a different SQL host and recover the data.
 
-.What you'll need
+.Before you begin
 
 * The secondary host should have the same operating system, application, and host name as the primary host.
 * Push the SnapCenter Plug-in for SQL Server to an alternative host using *Add host* or *Modify host* page. See link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Manage hosts] for more information.
@@ -22,6 +22,6 @@ When the SnapCenter Plug-in for SQL Server is down, use the following steps to s
 . (Optional) Replace the SnapCenter Plug-in for SQL Server configuration files from disaster recovery (DR) backup to the new machine.
 . Import Windows and SQL schedules from the SnapCenter Plug-in for SQL Server folder from the DR backup.
 
-.For more information
+.Related information
 
 See the link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.

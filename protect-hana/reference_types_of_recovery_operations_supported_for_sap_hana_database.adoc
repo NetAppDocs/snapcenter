@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/reference_types_of_recovery_operations_supported_for_sap_hana_database.html
 sidebar: sidebar
-keywords: 
+keywords: recovery operations
 summary: 'SnapCenter enables you to perform different types of recovery operations for SAP HANA databases.'
 ---
 = Types of recovery operations supported for SAP HANA databases

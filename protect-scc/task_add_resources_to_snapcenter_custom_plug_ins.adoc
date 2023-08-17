@@ -11,7 +11,7 @@ summary: 'You must add the resources that you want to back up or clone. Dependin
 [.lead]
 You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.
 
-.What you'll need
+.Before you begin
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
 * You must have link:concept_develop_a_plug_in_for_your_application.html[created a custom plug-in for your application].

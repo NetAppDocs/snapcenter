@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_cancel_backup_operations_for_windows_file_system.html
 sidebar: sidebar
-keywords:
+keywords: cancel backup
 summary: 'You can cancel backup operations that are queued.'
 ---
 = Cancel backup operations

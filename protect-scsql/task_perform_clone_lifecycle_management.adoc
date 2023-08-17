@@ -13,7 +13,7 @@ Using SnapCenter, you can create clones from a resource group or database. You c
 
 SnapCenter enables you to schedule multiple clone operations to run simultaneously across multiple servers.
 
-*What you will need*
+.Before you begin 
 
 * While cloning to a standalone database instance, ensure that the mount point path exists and it is a dedicated disk.
 * While cloning to a Failover Cluster Instance (FCI), ensure that the mount points exists, it is a shared disk, and the path and the FCI should belong to the same SQL resource group.
@@ -21,7 +21,7 @@ SnapCenter enables you to schedule multiple clone operations to run simultaneous
 
 NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedicated disk.
 
-*About this task*
+.About this task
 
 * The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
 +
@@ -32,7 +32,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 You can use the GET API to display the value of the key. SET API is not supported.
 * Most of the fields on the Clone lifecycle wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.

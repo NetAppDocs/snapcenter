@@ -11,7 +11,7 @@ summary: 'If you no longer wish to use the SnapCenter Server to manage data prot
 [.lead]
 If you no longer wish to use the SnapCenter Server to manage data protection jobs, you can uninstall SnapCenter Server using the Programs and Features Control Panel on the SnapCenter Server host. Uninstalling the SnapCenter Server removes all its components.
 
-*What you will need*
+.Before you begin
 
 * Ensure that you have at least 2 GB of free space on the drive where the SnapCenter Server is installed.
 * Ensure that the domain in which the SnapCenter Server is installed is not removed.
@@ -20,7 +20,7 @@ If you remove the domain where the SnapCenter Server was installed and then try 
 
 * You should have backed up the repository database because the repository database will be cleaned up and uninstalled.
 
-*Steps*
+.Steps
 
 . On the SnapCenter Server host, navigate to the Control Panel.
 . Make sure you are in the *Category* view.

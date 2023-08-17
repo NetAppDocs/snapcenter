@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_clone_custom_plug_in_resource_backups.html
 sidebar: sidebar
-keywords:
+keywords: clone, custom plug-in
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
 = Clone custom plug-in resource backups
@@ -11,7 +11,7 @@ summary: 'The clone workflow includes performing the clone operation and monitor
 [.lead]
 The clone workflow includes performing the clone operation and monitoring the operation.
 
-*About this task*
+.About this task
 
 You might clone resource backups for the following reasons:
 

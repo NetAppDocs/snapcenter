@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_restore_sql_server_database_backups.html
 sidebar: sidebar
-keywords:
+keywords: restore operation
 summary: 'You can use SnapCenter to restore backed-up SQL Server databases. Database restoration is a multiphase process that copies all of the data and log pages from a specified SQL Server backup to a specified database.'
 ---
 = Restore SQL Server database backups
@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to restore backed-up SQL Server databases. Data
 [.lead]
 You can use SnapCenter to restore backed-up SQL Server databases. Database restoration is a multiphase process that copies all of the data and log pages from a specified SQL Server backup to a specified database.
 
-*About this task*
+.About this task
 
 * You can restore the backed-up SQL Server databases to a different SQL Server instance on the same host where the backup was created.
 +
@@ -30,7 +30,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 You can use the GET API to display the value of the key. SET API is not supported.
 * Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.
@@ -142,7 +142,7 @@ You must also specify the sender and receiver email addresses, and the subject o
 . Review the summary, and then click *Finish*.
 . Monitor the restore process by using the *Monitor* > *Jobs* page.
 
-*Find more information*
+.Related information
 
 link:task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html[Restore and recover resources using PowerShell cmdlets]
 

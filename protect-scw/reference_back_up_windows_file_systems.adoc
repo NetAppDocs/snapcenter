@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/reference_back_up_windows_file_systems.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter
 summary: 'When you install the SnapCenter Plug-in for Microsoft Windows in your environment, you can use SnapCenter to back up Windows file systems. You can back up a single file system or a resource group that contains multiple file systems. You can back up on demand or according to a defined protection schedule.'
 ---
 = Back up Windows file systems

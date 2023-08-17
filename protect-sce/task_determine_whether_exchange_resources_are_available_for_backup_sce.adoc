@@ -11,13 +11,13 @@ summary: 'Resources are the databases, Exchange Database Availability Groups tha
 [.lead]
 Resources are the databases, Exchange Database Availability Groups that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.
 
-*What you will need*
+.Before you begin
 
 * You must have already completed tasks such as installing SnapCenter Server, adding hosts, creating storage system connections, adding credentials, and installing Plug-in for Exchange.
 * To take advantage of Single Mailbox Recovery software features, you must have located your active database on the Exchange Server where Single Mailbox Recovery software is installed.
 * If databases reside on VMware RDM LUNs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter. The https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html[SnapCenter Plug-in for VMware vSphere documentation] has more information.
 
-*About this task*
+.About this task
 
 * You cannot back up databases when the *Overall Status* option in the Details page is set to Not available for backup. The *Overall Status* option is set to Not available for backup when any of the following is true:
  ** Databases are not on a NetApp LUN.
@@ -26,14 +26,14 @@ Resources are the databases, Exchange Database Availability Groups that are main
 Databases are not in normal state when they are in mount, unmount, reseed, or recovery pending state.
 * If you have a Database Availability Group (DAG), you can back up all databases in the group by running the backup job from the DAG.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server* from the plug-ins drop-down list located in the upper left corner of the Resources page.
 . In the Resources page select *Database*, or *Database Availability Group*, or *Resource Group*, from the *View* drop-down list.
 +
 All the databases and DAGs are displayed with their DAG or hostnames in FQDN format, so you can distinguish between multiple databases.
 +
-Click image:../media/filter_icon.png[] and select the host name and the Exchange Server to filter the resources. You can then click image:../media/filter_icon.png[] to close the filter pane.
+Click image:../media/filter_icon.png[Filter icon] and select the host name and the Exchange Server to filter the resources. You can then click image:../media/filter_icon.png[Filter icon] to close the filter pane.
 
 . Click *Refresh Resources*.
 +

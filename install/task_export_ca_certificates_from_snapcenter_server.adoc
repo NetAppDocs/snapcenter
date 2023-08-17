@@ -12,7 +12,7 @@ summary: 'You should export the CA certificates from the SnapCenter Server to th
 
 You should export the CA certificates from the SnapCenter Server to the plug-in hosts using the Microsoft management console (MMC). 
 
-*What you will need*
+.Before you begin
 
 You should have configured the two-way SSL.
 

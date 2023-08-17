@@ -2,7 +2,7 @@ The clone workflow includes planning, performing the clone operation, and monito
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +

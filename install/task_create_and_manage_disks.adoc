@@ -52,7 +52,7 @@ The Windows host sees the LUNs on your storage system as virtual disks. You can 
 If you want to create and format disks outside of SnapCenter, only NTFS and CSVFS file systems are supported.
 //included the above statement in 4.6 for BURT 1366391
 
-*What you will need*
+.Before you begin
 
 * You must have created a volume for the LUN on your storage system.
 +
@@ -262,7 +262,7 @@ SnapCenter resizes the disk.
 
 You can use the Connect Disk wizard to connect an existing LUN to a host, or to reconnect a LUN that has been disconnected.
 
-*What you will need*
+.Before you begin
 
 * You must have started the FC or iSCSI service on the storage system.
 * If you are using iSCSI, you must have established an iSCSI session with the storage system.
@@ -402,7 +402,7 @@ SnapCenter connects the LUN to the specified drive or drive path on the host.
 
 You can disconnect a LUN from a host without affecting the contents of the LUN, with one exception: If you disconnect a clone before it has been split off, you lose the contents of the clone.
 
-*What you will need*
+.Before you begin
 
 * Make sure that the LUN is not in use by any application.
 * Make sure that the LUN is not being monitored with monitoring software.

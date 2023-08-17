@@ -11,7 +11,7 @@ summary: 'If a resource is not yet part of any resource group, you can back up t
 [.lead]
 If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
 
-.What you'll need
+.Before you begin
 
 * You must have created a backup policy.
 * If you want to back up a resource that has a SnapMirror relationship with a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.

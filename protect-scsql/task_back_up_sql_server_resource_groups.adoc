@@ -31,7 +31,7 @@ The *Verify* option in the policy applies only to scheduled jobs.
  .. Select *Backup*.
 . Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
-.What’s next?
+.Related information
 
 link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]
 

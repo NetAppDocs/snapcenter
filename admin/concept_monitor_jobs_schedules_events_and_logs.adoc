@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_monitor_jobs_schedules_events_and_logs.html
 sidebar: sidebar
-keywords:
+keywords: Monitor jobs, schedules, events, logs
 summary: 'You can monitor the progress of your jobs, get information about scheduled jobs, and review events and logs from the Monitor page.'
 ---
 = Monitor jobs, schedules, events, and logs
@@ -115,6 +115,6 @@ You do not need to place the host in maintenance mode to remove jobs.
 . In the Monitor page, click *Jobs*.
 . In the Jobs page, review the status of the job.
 
-*Find more information*
+.Related information
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].

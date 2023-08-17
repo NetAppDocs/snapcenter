@@ -13,7 +13,7 @@ Restoring an Exchange database includes initiating a connection session with the
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the `Open-SmConnection` cmdlet.
 +

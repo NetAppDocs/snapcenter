@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_import_CA_certificates.html
 sidebar: sidebar
-keywords: SnapCenter
+keywords: SnapCenter, CA certificate
 summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'
 ---
 = Import CA certificates

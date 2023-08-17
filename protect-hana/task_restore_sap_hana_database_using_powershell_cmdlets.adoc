@@ -11,7 +11,7 @@ summary: 'Restoring a SAP HANA database backup includes initiating a connection 
 [.lead]
 Restoring a SAP HANA database backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
 
-.What you'll need
+.Before you begin
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 

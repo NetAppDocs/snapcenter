@@ -11,7 +11,7 @@ summary: 'You can use the SnapCenter Add Host page to add Windows hosts. The Sna
 [.lead]
 You can use the SnapCenter Add Host page to add Windows hosts. The SnapCenter Plug-in for Microsoft Windows is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
 
-*What you will need*
+.Before you begin
 
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
@@ -21,7 +21,7 @@ You can use the SnapCenter Add Host page to add Windows hosts. The SnapCenter Pl
 +
 link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for Windows File System]
 
-*About this task*
+.About this task
 
 * You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 * Windows plug-ins
@@ -41,7 +41,7 @@ You cannot install the Plug-in for Windows on a Windows host connected to E-seri
 NOTE: SnapCenter does not support adding of the same host (plug-in host) to SnapCenter if the host is already part of a workgroup and changed to another domain or vice versa.
 If you want to add the same host, you should remove the host from SnapCenter and add it again.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Hosts*.
 . Ensure that *Managed Hosts* is selected at the top.
@@ -124,7 +124,6 @@ Select this check box if you want to use group Managed Service Account (gMSA) to
 Provide the gMSA name in the following format: _domainName\accountName$_.
 
 NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
-
 
 |===
 

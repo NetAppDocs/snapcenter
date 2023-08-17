@@ -11,7 +11,7 @@ summary: 'You must create a storage virtual machine (SVM) connection and a crede
 [.lead]
 You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone SAP HANA databases.
 
-.What you'll need
+.Before you begin
 
 * You should have prepared the PowerShell environment to execute the PowerShell cmdlets.
 * You should have the required permissions in the Infrastructure Admin role to create storage connections.
