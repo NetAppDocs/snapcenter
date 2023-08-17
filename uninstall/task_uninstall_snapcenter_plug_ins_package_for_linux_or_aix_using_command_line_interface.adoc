@@ -11,11 +11,11 @@ summary: 'You can uninstall SnapCenter Plug-ins Package for Linux or SnapCenter 
 [.lead]
 You can uninstall SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX by using the command-line interface.
 
-*What you will need*
+.Before you begin
 
 * Ensure that you have deleted the scheduled jobs
 * Ensure that all the running jobs are completed.
 
-*Step*
+.Step
 
 Run _/custom_location/NetApp/snapcenter/spl/installation/plugins/uninstall_ to uninstall.

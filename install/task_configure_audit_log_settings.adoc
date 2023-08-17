@@ -32,7 +32,6 @@ Shared or network mounted drives are not supported.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
-
 *Steps*
 
 . In the *Settings* page, navigate to *Settings* > *Global Settings* > *Audit log Settings*.

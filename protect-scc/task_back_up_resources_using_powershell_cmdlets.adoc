@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_back_up_resources_using_powershell_cmdlets.html
 sidebar: sidebar
-keywords:
+keywords: backup resources
 summary: 'Backing up a resource includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
 ---
 = Back up resources using PowerShell cmdlets
@@ -11,16 +11,16 @@ summary: 'Backing up a resource includes establishing a connection with the Snap
 [.lead]
 Backing up a resource includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
 
-*What you will need*
+.Before you begin
 
 * You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 * You must have added the storage system connection and created a credential.
 
-*About this task*
+.About this task
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +

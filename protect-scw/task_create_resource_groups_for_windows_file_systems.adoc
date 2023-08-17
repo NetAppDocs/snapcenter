@@ -11,7 +11,7 @@ summary: 'A resource group is the container to which you can add multiple file s
 [.lead]
 A resource group is the container to which you can add multiple file systems that you want to protect. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform, and then specify the backup schedule.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *File Systems* from the list.
@@ -58,11 +58,11 @@ To add a single file system, clear the *Autoselect all resources on same storage
 +
 You can select any existing policy and click *Details* to determine whether you can use that policy.
 +
-If no existing policy meets your requirements, you can create a new policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
+If no existing policy meets your requirements, you can create a new policy by clicking *image:../media/add_policy_from_resourcegroup.gif[plus icon]* to start the policy wizard.
 +
 The selected policies are listed in the Policy column in the Configure schedules for selected policies section.
 
- .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[plus icon]* in the Configure Schedules column for the policy for which you want to configure the schedule.
  .. If the policy is associated with multiple schedule types (frequencies), select the frequency that you want to configure.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
 +

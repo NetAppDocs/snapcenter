@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter Plug-in for Microsoft Exchange Server
 summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements.'
 ---
 = Prerequisites to add hosts and install SnapCenter Plug-in for Microsoft Exchange Server
@@ -34,7 +34,6 @@ To identify the port range, execute the following commands:
 * netsh int ipv6 show dynamicport tcp
 * netsh int ipv6 show dynamicport udp
 ====
-
 
 == Host requirements to install SnapCenter Plug-ins Package for Windows
 

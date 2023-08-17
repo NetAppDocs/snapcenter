@@ -2,9 +2,9 @@ The Activity pane displays the five most recent operations performed. The Activi
 
 The Activity pane displays information regarding backup, restore, clone, and scheduled backup operations. If you are using Plug-in for SQL Server or Plug-in for Exchange Server, the Activity pane also displays information about the reseed operation.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . Click image:../media/activity_pane_icon.gif[] on the Activity pane to view the five most recent operations.
 +
-When you click one of the operations, the operation details are listed in the Job Details page.
+When you click one of the operations, the operation details are listed in the *Job Details* page.

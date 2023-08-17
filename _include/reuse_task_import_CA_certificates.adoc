@@ -1,6 +1,6 @@
 You must import the CA certificates to the SnapCenter Server and the Windows host plug-ins using the Microsoft management console (MMC).
 
-*Steps*
+.Steps
 
 . Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
 . In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
@@ -31,6 +31,5 @@ Review the summary, and then click *Finish* to start the import.
 |===
 +
 NOTE: Importing certificate should be bundled with the private key (supported formats are: *.pfx, *.p12, and *.p7b).
-
 
 . Repeat Step 5 for the “Personal” folder.

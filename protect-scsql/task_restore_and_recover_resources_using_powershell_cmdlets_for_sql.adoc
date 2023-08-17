@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html
 sidebar: sidebar
-keywords:
+keywords: restore resources
 summary: 'Restoring a resource backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
 = Restore resources using PowerShell cmdlets

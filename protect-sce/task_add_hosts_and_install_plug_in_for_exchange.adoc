@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter Plug-in for Microsoft Exchange Server
 summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.'
 ---
 = Add hosts and install Plug-in for Exchange
@@ -11,7 +11,7 @@ summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug
 [.lead]
 You can use the SnapCenter Add Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.
 
-*What you will need*
+.Before you begin
 
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
@@ -19,7 +19,7 @@ You can use the SnapCenter Add Host page to add Windows hosts. The Plug-in for E
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges. For information, see
 link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for Microsoft Exchange Server^].
 
-*About this task*
+.About this task
 
 * You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 * You can add a host and install plug-in packages either for an individual host or a cluster.
@@ -52,7 +52,7 @@ Plug-in for Exchange depends on SnapCenter Plug-ins Package for Windows, and the
 
 If SnapManager for Microsoft Exchange Server and SnapDrive for Windows are already installed, and you want to install Plug-in for Exchange on the same Exchange Server, you must unregister the VSS Hardware Provider used by SnapDrive for Windows because it is incompatible with the VSS Hardware Provider installed with Plug-in for Exchange and SnapCenter Plug-ins Package for Windows. For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_manually_register_the_Data_ONTAP_VSS_Hardware_Provider[How to manually register the Data ONTAP VSS Hardware Provider].
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Hosts*.
 . Verify that *Managed Hosts* is selected at the top.

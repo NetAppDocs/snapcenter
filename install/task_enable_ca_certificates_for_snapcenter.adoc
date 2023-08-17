@@ -11,7 +11,7 @@ summary: 'You should configure the CA certificates and enable the CA certificate
 [.lead]
 You should configure the CA certificates and enable the CA certificate validation for the SnapCenter Server.
 
-*What you will need*
+.Before you begin
 
 * You can enable or disable the CA certificates using the Set-SmCertificateSettings cmdlet.
 * You can display the certificate status for the SnapCenter Server using the Get-SmCertificateSettings cmdlet.

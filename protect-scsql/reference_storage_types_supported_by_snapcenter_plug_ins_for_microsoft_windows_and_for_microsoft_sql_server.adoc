@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows_and_for_microsoft_sql_server.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter Plug-in for Microsoft SQL Server
 summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.'
 ---
 = Storage types supported by SnapCenter Plug-ins for Microsoft Windows and for Microsoft SQL Server

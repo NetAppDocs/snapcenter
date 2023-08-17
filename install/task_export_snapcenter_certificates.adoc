@@ -44,6 +44,6 @@ a|
 Review the summary, and then click *Finish* to start the export.
 |===
 
-*Results*
+*Result*
 
 Certificates are exported in .pfx format.

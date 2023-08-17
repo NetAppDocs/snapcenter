@@ -11,7 +11,7 @@ summary: 'You can uninstall SnapCenter plug-ins locally on a host if you cannot 
 [.lead]
 You can uninstall SnapCenter plug-ins locally on a host if you cannot reach the host from the SnapCenter Server.
 
-*About this task*
+.About this task
 
 The best practice for uninstalling individual plug-ins or plug-in packages is to either use the SnapCenter GUI or use the Uninstall-SmHostPackage cmdlet on the SnapCenter Server host command-line interface. These procedures help the SnapCenter Server to stay up to date with any changes.
 
@@ -21,7 +21,7 @@ IMPORTANT: Uninstalling a plug-in package locally on a host does not delete data
 
 IMPORTANT: Do not attempt to uninstall the SnapCenter Plug-ins Package for Windows locally from the Control Panel. You must use the SnapCenter GUI to ensure that SnapCenter Plug-in for Microsoft Windows is properly uninstalled.
 
-*Steps*
+.Steps
 
 . On the host system, navigate to the Control Panel and click *Uninstall a program*.
 . In the list of programs, select the SnapCenter plug-in or plug-in package you want to uninstall and click *Uninstall*.

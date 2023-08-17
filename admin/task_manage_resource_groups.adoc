@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_manage_resource_groups.html
 sidebar: sidebar
-keywords:
+keywords: Manage resource groups
 summary: 'You can perform various operations on resource groups.'
 ---
 = Manage resource groups

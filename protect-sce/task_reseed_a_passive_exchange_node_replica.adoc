@@ -11,7 +11,7 @@ summary: 'If you need to reseed a replica copy, for instance when a copy is corr
 [.lead]
 If you need to reseed a replica copy, for instance when a copy is corrupt, you can reseed to the latest backup using the reseed feature in SnapCenter.
 
-*What you will need*
+.Before you begin
 
 * You must be using SnapCenter Server 4.1 or later, and Plug-in for Exchange 4.1 or later.
 +
@@ -23,7 +23,7 @@ Reseeding a replica is not supported in SnapCenter versions earlier than 4.1.
 *Best Practice:* To avoid lagging between nodes, we recommend that you either create a new backup before you perform a reseed operation, or choose the host with the latest backup.
 |===
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server plug-in* from the list.
 . In the Resources page, select the appropriate option from the View list:

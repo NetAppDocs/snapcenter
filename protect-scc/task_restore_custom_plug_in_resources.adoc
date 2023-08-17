@@ -11,7 +11,7 @@ summary: 'The restore and recovery workflow includes planning, performing the re
 [.lead]
 The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.
 
-*About this task*
+.About this task
 
 The following workflow shows the sequence in which you must perform the restore operation:
 

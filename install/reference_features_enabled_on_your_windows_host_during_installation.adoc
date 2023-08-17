@@ -1,7 +1,7 @@
 ---
 permalink: install/reference_features_enabled_on_your_windows_host_during_installation.html
 sidebar: sidebar
-keywords:
+keywords: install, snapcenter
 summary: 'The SnapCenter Server installer enables the Windows features and roles on your Windows host during installation. These might be of interest for troubleshooting and host system maintenance purposes.'
 ---
 = Features enabled on your Windows host during installation

@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to clone a Windows file system backup. If you w
 [.lead]
 You can use SnapCenter to clone a Windows file system backup. If you want a copy of a single file that was mistakenly deleted or changed, then you can clone a backup and access that file in the clone.
 
-*What you will need*
+.Before you begin
 
 * You should have prepared for data protection by completing tasks such as adding hosts, identifying resources, and creating storage virtual machine (SVM) connections.
 * You should have a backup of the file system.
@@ -25,7 +25,7 @@ You can use SnapCenter to clone a Windows file system backup. If you want a copy
 * If you move a LUN that contains a clone to a new volume, SnapCenter can no longer support the clone. For example, you cannot use SnapCenter to delete that clone.
 * You cannot clone across environments. For example, cloning from a physical disk to a virtual disk or vice versa.
 
-*About this task*
+.About this task
 
 * The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
 +
@@ -35,7 +35,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *File Systems* from the list.

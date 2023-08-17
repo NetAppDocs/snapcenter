@@ -11,7 +11,7 @@ summary: 'A resource group is a collection of resources on a host or Exchange DA
 [.lead]
 A resource group is a collection of resources on a host or Exchange DAG, and the resource group can include either a whole DAG or individual databases. You can backup the resources groups from the Resources page.
 
-*What you will need*
+.Before you begin
 
 * You must have created a resource group with a policy attached.
 * You must have assigned the aggregate that is being used by the backup operation to the storage virtual machine (SVM) used by the database.
@@ -21,11 +21,11 @@ A resource group is a collection of resources on a host or Exchange DAG, and the
 +
 The backup will succeed for active/passive database copy on NetApp storage and backup will fail for active/passive database copy on non-NetApp storage.
 
-*About this task*
+.About this task
 
 You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the *Microsoft Exchange Server plug-in* from the list.
 . In the Resources page, select *Resource Group* from the *View* list.

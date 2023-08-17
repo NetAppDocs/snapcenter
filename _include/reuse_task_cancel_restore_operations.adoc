@@ -2,7 +2,7 @@ You can cancel restore jobs that are queued.
 
 You should be logged in as the SnapCenter Admin or job owner to cancel restore operations.
 
-*About this task*
+.About this task
 
 * You can cancel a queued restore operation from either the *Monitor* page or the *Activity* pane.
 * You cannot cancel a running restore operation.
@@ -10,7 +10,7 @@ You should be logged in as the SnapCenter Admin or job owner to cancel restore o
 * The *Cancel Job* button is disabled for restore operations that cannot be canceled.
 * If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued restore operations of other members while using that role.
 
-*Step*
+.Step
 
 Perform one of the following actions:
 

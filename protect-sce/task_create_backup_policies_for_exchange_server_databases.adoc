@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_create_backup_policies_for_exchange_server_databases.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can create a backup policy for the Exchange resources or for the resource groups before you use SnapCenter to back up Microsoft Exchange Server resources, or you can create a backup policy at the time you create a resource group or back up a single resource.'
 ---
 = Create backup policies for Exchange Server databases
@@ -11,7 +11,7 @@ summary: 'You can create a backup policy for the Exchange resources or for the r
 [.lead]
 You can create a backup policy for the Exchange resources or for the resource groups before you use SnapCenter to back up Microsoft Exchange Server resources, or you can create a backup policy at the time you create a resource group or back up a single resource.
 
-*What you will need*
+.Before you begin
 
 * You must have defined your data protection strategy.
 +
@@ -25,7 +25,7 @@ For details, see the information about defining a data protection strategy for E
 +
 The default value is false
 
-*About this task*
+.About this task
 
 * A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
 * Full backup retention is specific to a given policy. A database or resource using policy A with a full backup retention of 4 retains 4 full backups and has no effect on policy B for the same database or resource, which might have a retention of 3 to retain 3 full backups.
@@ -42,7 +42,7 @@ You can use the GET API to display the value of the key. SET API is not supporte
 *Best Practice:* It's best that you configure the secondary retention policy based on the number of full and log backups, overall, that you want to retain. When you configure secondary retention policies, keep in mind that when databases and logs that are in different volumes, each backup can have three Snapshot copies, and when databases and logs are in the same volume, each backup can have two Snapshot copies.
 |===
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.

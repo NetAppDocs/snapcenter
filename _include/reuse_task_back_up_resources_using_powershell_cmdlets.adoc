@@ -1,12 +1,12 @@
 You can use the PowerShell cmdlets to backup SQL Server databases or Windows file systems. This would include backing up a SQL Server database or Windows file system includes establishing a connection with the SnapCenter Server, discovering the SQL Server database instances or Windows file systems, adding a policy, creating a backup resource group, backing up, and verifying the backup.
 
-*What you will need*
+.Before you begin
 
 * You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 * You must have added the storage system connection and created a credential.
 * You must have added hosts and discovered resources.
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
