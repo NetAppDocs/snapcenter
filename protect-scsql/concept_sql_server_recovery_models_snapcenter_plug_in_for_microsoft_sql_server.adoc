@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_sql_server_recovery_models_snapcenter_plug_in_for_microsoft_sql_server.html
 sidebar: sidebar
-keywords: 
+keywords: SnapCenter Plug-in for Microsoft SQL Server
 summary: 'Specific recovery models are assigned to each database type by default. The SQL Server database administrator can reassign each database to a different recovery model.'
 ---
 = SQL Server recovery models supported by SnapCenter

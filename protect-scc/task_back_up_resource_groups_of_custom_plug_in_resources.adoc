@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_back_up_resource_groups_of_custom_plug_in_resources.html
 sidebar: sidebar
-keywords:
+keywords: backup, custom plug-in
 summary: 'You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'
 ---
 = Back up resource groups of custom plug-in resources
@@ -11,17 +11,17 @@ summary: 'You can back up a resource group on demand from the Resources page. If
 [.lead]
 You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
 
-*What you will need*
+.Before you begin
 
 * You must have created a resource group with a policy attached.
 * If you want to back up a resource that has a SnapMirror relationship to secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Resource Group* from the *View* list.
 +
-You can search the resource group either by entering the resource group name in the search box or by clicking image:../media/filter_icon.png[] and selecting the tag. You can then click image:../media/filter_icon.png[] to close the filter pane.
+You can search the resource group either by entering the resource group name in the search box or by clicking image:../media/filter_icon.png[filter icon] and selecting the tag. You can then click image:../media/filter_icon.png[filter icon] to close the filter pane.
 
 . In the Resource Groups page, select the resource group that you want to back up, and then click *Back up Now*.
 . In the Backup page, perform the following steps:

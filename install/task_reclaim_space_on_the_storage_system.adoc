@@ -13,7 +13,7 @@ Although NTFS tracks the available space on a LUN when files are deleted or modi
 
 If you are running the cmdlet on a remote plug-in host, you must have run the SnapCenterOpen-SMConnection cmdlet to open a connection to the SnapCenter Server.
 
-*What you will need*
+.Before you begin
 
 * You must ensure that the space reclamation process has completed before performing a restore operation.
 * If the LUN is shared by hosts in a Windows Server failover cluster, you must perform space reclamation on the host that owns the cluster group.

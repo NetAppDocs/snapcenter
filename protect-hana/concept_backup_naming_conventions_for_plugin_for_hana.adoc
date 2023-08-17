@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/concept_backup_naming_conventions_for_plugin_for_hana.html
 sidebar: sidebar
-keywords:
+keywords: Backup naming conventions
 summary: 'You can either use the default Snapshot copy naming convention or use a customized naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.'
 ---
 = Backup naming conventions for Plug-in for SAP HANA databases

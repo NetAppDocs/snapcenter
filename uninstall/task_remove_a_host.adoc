@@ -11,7 +11,7 @@ summary: 'When the SnapCenter Server removes a host, it first removes the backup
 [.lead]
 When the SnapCenter Server removes a host, it first removes the backup, clones, clone jobs, resource groups, and resources listed for that host on the SnapCenter Resources page, and then it uninstalls the plug-in packages on the host.
 
-*About this task*
+.About this task
 
 * If you delete a host, the backups, clones, and resource groups associated with the host are also deleted.
 * When you remove the resource groups, all the associated schedules are also removed.
@@ -21,10 +21,10 @@ When the SnapCenter Server removes a host, it first removes the backup, clones, 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^]
 * The time required to remove a host depends on the number of backups and the retention settings. This is because the Snapshot copies are deleted from each of the controllers and the metadata is cleaned.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Hosts*.
-. In the Hosts page, click *Managed Hosts*.
+. In the *Hosts* page, click *Managed Hosts*.
 . Select the host you want to remove, and then click *Remove*.
 . For Oracle RAC clusters, to remove SnapCenter software from all the hosts in the cluster, select *Include all the hosts of cluster*.
 +

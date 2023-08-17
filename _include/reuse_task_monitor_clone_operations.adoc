@@ -1,6 +1,6 @@
 You can monitor the progress of SnapCenter clone operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.
 
-*About this task*
+.About this task
 
 The following icons appear on the Jobs page, and indicate the state of the operation:
 
@@ -9,14 +9,14 @@ The following icons appear on the Jobs page, and indicate the state of the opera
 * image:../media/failed_icon.gif[Failed icon] Failed
 * image:../media/warning_icon.gif[Completed with warnings icon] Completed with warnings or could not start due to warnings
 * image:../media/verification_job_in_queue.gif[Verification job is queued] Queued
-* image:../media/cancel_icon.gif[] Canceled
+* image:../media/cancel_icon.gif[Cancel icon] Canceled
 
 *Steps*
 
 . In the left navigation pane, click *Monitor*.
-. In the Monitor page, click *Jobs*.
-. In the Jobs page, perform the following steps:
- .. Click image:../media/filter_icon.png[] to filter the list so that only clone operations are listed.
+. In the *Monitor* page, click *Jobs*.
+. In the *Jobs* page, perform the following steps:
+ .. Click image:../media/filter_icon.png[Filter icon] to filter the list so that only clone operations are listed.
  .. Specify the start and end dates.
  .. From the *Type* drop-down list, select *Clone*.
  .. From the *Status* drop-down list, select the clone status.

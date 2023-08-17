@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/concept_what_you_can_do_with_snapcenter_plug_in_for_microsoft_exchange_server.html
 sidebar: sidebar
-keywords: 
+keywords: SnapCenter Plug-in for Microsoft Exchange Server
 summary: 'You can use the Plug-in for Exchange to back up and restore Exchange Server databases.'
 ---
 = What you can do with SnapCenter Plug-in for Microsoft Exchange Server

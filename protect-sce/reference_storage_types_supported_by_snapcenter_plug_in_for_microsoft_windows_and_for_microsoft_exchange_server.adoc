@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter Plug-in for Microsoft Exchange Server
 summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.'
 ---
 = Storage types supported by SnapCenter Plug-in for Microsoft Windows and for Microsoft Exchange Server

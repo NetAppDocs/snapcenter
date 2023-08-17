@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_storage_layout_recommendations_for_snapcenter_plug_in_for_microsoft_sql_server.html
 sidebar: sidebar
-keywords:
+keywords: Storage layout
 summary: 'A well-designed storage layout allows SnapCenter Server to back up your databases to meet your recovery objectives. You should consider several factors while defining your storage layout, including the size of the database, the rate of change of the database, and the frequency with which you perform backups.'
 ---
 = Storage layout recommendations for SnapCenter Plug-in for Microsoft SQL Server

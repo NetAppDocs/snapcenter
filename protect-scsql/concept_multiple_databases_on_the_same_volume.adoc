@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_multiple_databases_on_the_same_volume.html
 sidebar: sidebar
-keywords: 
+keywords: Multiple databases
 summary: 'You can put all databases on the same volume, because the backup policy has an option to set the maximum databases per backup \(default value is 100\).'
 ---
 = Multiple databases on the same volume

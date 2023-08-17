@@ -11,7 +11,7 @@ summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host
 [.lead]
 Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.
 
-.What you'll need
+.Before you begin
 
 * You must have already completed tasks such as installing the SnapCenter Server, adding HDB User Store Key, adding hosts, and setting up the storage system connections.
 * You must have configured the HDB Secure User Store Key and HDB SQL OS user on the Linux host.
@@ -28,9 +28,9 @@ The automatically discovered resources cannot be modified or deleted.
 
 . In the left navigation pane, click *Resources*, and then select the Plug-in for SAP HANA Database from the list.
 . In the Resources page select the resource type from the View list.
-. (Optional) Click *image:../media/filter_icon.png[]*, and then select the host name.
+. (Optional) Click *image:../media/filter_icon.png[filter icon]*, and then select the host name.
 +
-You can then click *image:../media/filter_icon.png[]* to close the filter pane.
+You can then click *image:../media/filter_icon.png[filter icon]* to close the filter pane.
 
 . Click *Refresh Resources* to discover the resources available on the host.
 +
@@ -44,7 +44,7 @@ NOTE: If the SAP HANA database does not have a HDB Secure User Store Key configu
 IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
 //Included the above statement in 4.6 for BURT 1446035
 
-.What’s next?
+.After you finish
 
 You must configure the HDB Secure User Store Key and HDBSQL OS User to be able to protect the database or add it to the resource group to perform data protection operations.
 

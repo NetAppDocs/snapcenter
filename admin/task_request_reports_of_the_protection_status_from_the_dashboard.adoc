@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_request_reports_of_the_protection_status_from_the_dashboard.html
 sidebar: sidebar
-keywords:
+keywords: dashboard
 summary: 'You can request protection details for resources managed by specific plug-ins using the Dashboard.'
 ---
 = Request reports of the protection status from the dashboard

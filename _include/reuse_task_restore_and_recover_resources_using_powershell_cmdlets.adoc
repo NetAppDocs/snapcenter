@@ -2,7 +2,7 @@ Restoring a resource backup includes initiating a connection session with the Sn
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-*Steps*
+.Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
@@ -86,6 +86,5 @@ ObjectId            : 0
 PluginCode          : NONE
 PluginName          :
 ----
-
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].

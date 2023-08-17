@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_overview_of_snapcenter_reports.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter reports
 summary: 'SnapCenter provides a variety of reporting options that enable you to monitor and manage your system health and operation success.'
 ---
 = Overview of SnapCenter reporting capabilities
@@ -99,7 +99,7 @@ This option configures the SMTP server for sending all data protection job repor
 
 If you want to have regular SnapCenter data protection job updates sent to yourself or to others so that you can monitor the status of those updates, you can configure the option to email the SnapCenter reports when you are creating a resource group.
 
-*What you will need*
+.Before you begin
 
 You must have configured your SMTP server in the Global Settings page under Settings.
 

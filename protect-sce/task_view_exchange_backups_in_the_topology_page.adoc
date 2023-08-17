@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_view_exchange_backups_in_the_topology_page.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter plug-in for Exchange Server
 summary: 'When you are preparing to back up a resource, you might find it helpful to view a graphical representation of all backups on the primary and secondary storages.'
 ---
 = View Exchange backups in the Topology page
@@ -11,7 +11,7 @@ summary: 'When you are preparing to back up a resource, you might find it helpfu
 [.lead]
 When you are preparing to back up a resource, you might find it helpful to view a graphical representation of all backups on the primary and secondary storages.
 
-*About this task*
+.About this task
 
 In the Topology page, you can see all of the backups that are available for the selected resource or resource group. You can view the details of those backups, and then select them to perform data protection operations.
 
@@ -29,7 +29,7 @@ For example, if you created 6 backups using a policy to retain only 4 backups, t
 *Best Practice:* To ensure the correct number of replicated backups is displayed, we recommend that you refresh the topology.
 |===
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select the database, or the resource, or the resource group from the *View* drop-down list.

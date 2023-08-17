@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_install_plug_in_for_exchange_from_the_snapcenter_server_host_using_powershell_cmdlets.html
 sidebar: sidebar
-keywords:
+keywords: SnapCenter plug-in for Exchange Server
 summary: 'You should install the Plug-in for Exchange from the SnapCenter GUI. If you do not want to use the GUI, you can use PowerShell cmdlets on the SnapCenter Server host or on a remote host.'
 ---
 = Install Plug-in for Exchange from the SnapCenter Server host using PowerShell cmdlets
@@ -11,7 +11,7 @@ summary: 'You should install the Plug-in for Exchange from the SnapCenter GUI. I
 [.lead]
 You should install the Plug-in for Exchange from the SnapCenter GUI. If you do not want to use the GUI, you can use PowerShell cmdlets on the SnapCenter Server host or on a remote host.
 
-*What you will need*
+.Before you begin
 
 * SnapCenter Server must have been installed and configured.
 * You must be a local administrator on the host or a user with administrative privileges.
@@ -19,7 +19,7 @@ You should install the Plug-in for Exchange from the SnapCenter GUI. If you do n
 * You must have reviewed the installation requirements and types of supported configurations before installing the Plug-in for Exchange.
 * The host on which you want the Plug-in for Exchange installed must be a Windows host.
 
-*Steps*
+.Steps
 
 . On the SnapCenter Server host, establish a session using the _Open-SmConnection_ cmdlet, and then enter your credentials.
 . Add the host on which you want to install the Plug-in for Exchange using the _Add-SmHost_ cmdlet with the required parameters.

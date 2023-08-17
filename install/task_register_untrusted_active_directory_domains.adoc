@@ -1,7 +1,7 @@
 ---
 permalink: install/task_register_untrusted_active_directory_domains.html
 sidebar: sidebar
-keywords:
+keywords: Active Directory
 summary: 'You should register the Active Directory with SnapCenter Server to manage hosts, users, and groups from multiple untrusted Active Directory domains.'
 ---
 = Register untrusted Active Directory domains
@@ -11,7 +11,7 @@ summary: 'You should register the Active Directory with SnapCenter Server to man
 [.lead]
 You should register the Active Directory with SnapCenter Server to manage hosts, users, and groups from multiple untrusted Active Directory domains.
 
-*What you will need*
+.Before you begin
 
 *LDAP and LDAPS protocols*
 

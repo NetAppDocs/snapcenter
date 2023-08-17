@@ -13,7 +13,7 @@ A resource group is a container to which you add resources that you want to back
 
 You can protect resources individually without creating a new resource group. You can take backups on the protected resource.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
@@ -107,6 +107,6 @@ NOTE: For email notification, you must have specified the SMTP server details ei
 
 . Review the summary, and then click *Finish*.
 
-*Find more information*
+.Related information
 
 link:task_create_backup_policies_for_sql_server_databases.html[Create backup policies for SQL Server databases]
