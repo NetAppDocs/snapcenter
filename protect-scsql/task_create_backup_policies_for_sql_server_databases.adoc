@@ -26,15 +26,17 @@ For information about how administrators assign resources to users, see the Snap
 The default value is false.
 
 .About this task
-A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
-
+* A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
++
 The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
-
++
 If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
-
++
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
-
++
 You can use the GET API to display the value of the key. SET API is not supported.
+
+* The retention period prevents the Snapshot copies from being deleted until the SnapLock retention period expires.  This also retains a larger number of Snapshot copies than the count specified in the policy.
 
 == Step 1: Create Policy Name
 . In the left navigation pane, select *Settings*.
@@ -113,7 +115,7 @@ NOTE: In cluster configurations, the backups are retained at each node of the cl
 +
 You can only select one schedule type for a policy.
 +
-image::../media/backup_settings.gif[]
+image::../media/backup_settings.gif[Backup settings screen.]
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
@@ -172,6 +174,8 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 [loweralpha,start=2]
 . Length of time to keep Snapshot copies
 .. To specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
+
+.. To retain a large number of Snapshot copies than the count specified in the policy, select *Snapshot copy locking period* and specify the locking period. 
 
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
 
