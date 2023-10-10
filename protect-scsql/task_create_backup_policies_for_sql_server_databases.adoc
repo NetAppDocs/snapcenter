@@ -175,7 +175,7 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 . Length of time to keep Snapshot copies
 .. To specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
-.. To retain a large number of Snapshot copies than the count specified in the policy, select *Snapshot copy locking period* and specify the locking period. 
+. To retain a large number of Snapshot copies than the count specified in the policy, select *Snapshot copy locking period* and specify the locking period. 
 
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
 
