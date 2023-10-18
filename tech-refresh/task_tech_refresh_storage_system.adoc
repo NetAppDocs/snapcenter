@@ -1,0 +1,13 @@
+---
+permalink: tech-refresh/task_tech_refresh_server_host.html
+sidebar: sidebar
+keywords: tech refresh, server, server host, SnapCenter Server
+summary: ''
+---
+
+= Tech refresh of SnapCenter Server host
+
+:icons: font
+:imagesdir: ../media/
+
+[.lead]

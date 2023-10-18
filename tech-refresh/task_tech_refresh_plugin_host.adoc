@@ -1,0 +1,13 @@
+---
+permalink: tech-refresh/task_tech_refresh_plugin_host.html
+sidebar: sidebar
+keywords: tech refresh, plug-in host
+summary: ''
+---
+
+= Tech refresh of SnapCenter plug-in hosts
+
+:icons: font
+:imagesdir: ../media/
+
+[.lead]

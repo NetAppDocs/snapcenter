@@ -1,0 +1,13 @@
+---
+permalink: tech-refresh/task_tech_refresh_storage_system.html
+sidebar: sidebar
+keywords: tech refresh, storage system
+summary: ''
+---
+
+= Tech refresh of storage system
+
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
