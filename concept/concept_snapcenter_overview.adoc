@@ -94,6 +94,18 @@ High availability for SnapCenter is set up using external load balancer (F5). Up
 +
 You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash.
 
+* SnapLock
++
+SnapLock is a high-performance compliance solution for organizations that use write once, read many (WORM) storage to retain files in unmodified form for regulatory and governance purposes.
+
+For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is]
+
+* SnapMirror Business Continuity (SM-BC)
++
+SnapMirror Business Continuity (SM-BC) enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SM-BC.
+
+For more information on SM-BC refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror Business Continuity (SM-BC)]
+
 == SnapCenter architecture
 
 The SnapCenter platform is based on a multitiered architecture that includes a centralized management server (SnapCenter Server) and a SnapCenter plug-in host.
@@ -131,7 +143,7 @@ Custom plug-ins are community-supported and can be downloaded from the https://a
 
 SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
 
-== SnapCenter server
+== SnapCenter Server
 
 The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 

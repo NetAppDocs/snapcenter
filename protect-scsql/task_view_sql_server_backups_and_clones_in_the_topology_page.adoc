@@ -41,6 +41,12 @@ If the resource is protected, the Topology page of the selected resource is disp
 The *Summary Card* section displays the total number of backups and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
++
+Clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
++ 
+A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
++
+When there are multiple volumes, the SnapLock expiry period of a Snapshot copy contained in a volume that is set with the longest SnapLock expiry period is retrieved from ONTAP.
 
 . In the *Manage Copies* view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
 +
