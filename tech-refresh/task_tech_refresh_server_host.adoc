@@ -1,5 +1,5 @@
 ---
-permalink: tech-refresh/task_tech_refresh_storage_system.html
+permalink: tech-refresh/task_tech_refresh_server_host.html
 sidebar: sidebar
 keywords: tech refresh, storage system
 summary: 'Install the same version of SnapCenter Server on the new host and then run the APIs to backup the SnapCenter from old server and restore it in on the new server.'

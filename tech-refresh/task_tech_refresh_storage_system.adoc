@@ -1,5 +1,5 @@
 ---
-permalink: tech-refresh/task_tech_refresh_server_host.html
+permalink: tech-refresh/task_tech_refresh_storage_system.html
 sidebar: sidebar
 keywords: tech refresh, server, server host, SnapCenter Server
 summary: ''
