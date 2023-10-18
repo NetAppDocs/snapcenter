@@ -47,6 +47,8 @@ Clicking the *Refresh* button refreshes the primary and secondary SnapLock expir
 A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
 +
 When there are multiple volumes, the SnapLock expiry period of a Snapshot copy contained in a volume that is set with the longest SnapLock expiry period is retrieved from ONTAP.
++
+During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the *Refresh* button refreshes the secondary and primary SnapLock expiry time retrieved from ONTAP.
 
 . In the *Manage Copies* view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
 +

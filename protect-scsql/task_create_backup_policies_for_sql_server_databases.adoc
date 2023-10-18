@@ -167,6 +167,10 @@ NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, a
 ... If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
 .. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period*.
++
+The SnapLock retention period must be a number from 1 to 100 years. 
++
+The SnapLock retention period must be lesser than or equal to the mentioned retention days.
 
 [start=3]
 . In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
@@ -179,7 +183,11 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 . Length of time to keep Snapshot copies
 .. To specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
-.. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period*.
+. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period*.
++
+The SnapLock retention period must be a number from 1 to 100 years. 
++
+The SnapLock retention period must be lesser than or equal to the mentioned retention days.
 
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
 
