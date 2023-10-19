@@ -97,7 +97,7 @@ You can recover the SnapCenter Server in the event of disasters like resource co
 * SnapLock
 +
 SnapLock is a high-performance compliance solution for organizations that use write once, read many (WORM) storage to retain files in unmodified form for regulatory and governance purposes.
-
++
 For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is]
 
 * SnapMirror Business Continuity (SM-BC)
