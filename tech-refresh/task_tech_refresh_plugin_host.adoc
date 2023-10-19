@@ -1,8 +1,8 @@
 ---
 permalink: tech-refresh/task_tech_refresh_plugin_host.html
 sidebar: sidebar
-keywords: tech refresh, plug-in host
-summary: ''
+keywords: tech refresh, plug-in host, supported plug-ins, prerequisites to refresh plug-in hosts, application hosts, limitations for tech refresh of plug-in hosts
+summary: 'Move the resources from old host to new host to perform tech refresh of the plug-in hosts.'
 ---
 
 = Tech refresh of SnapCenter plug-in hosts
@@ -11,3 +11,62 @@ summary: ''
 :imagesdir: ../media/
 
 [.lead]
+
+When the SnapCenter plug-in hosts require refresh, you should move the resources from old host to new host. When the new host is added to SnapCenter, SnapCenter will discover all the resources but will be treated as new resources.
+
+You should run the APIs or cmdlets which will take old host name and new host name as input, compare the resources by name, and relink the objects of matching resources from old host to new host.
+
+.About this task
+
+Tech refresh is supported for the following SnapCenter Plug-ins:
+
+* SnapCenter Plug-in for Microsoft SQL Server
+* SnapCenter Plug-in for Windows
+* SnapCenter Plug-in for Oracle Database
+* SnapCenter Plug-in for SAP HANA Database
+
+The supported use cases are:
+
+* Migrating resources from one host to another host.
+* Migrating resources from multiple hosts to one or fewer hosts.
+* Migrating resources from one host to multiple hosts.
+
+The limitations related to tech refresh are as follows:
+
+* Different drive or path
++
+The Plug-in for Microsoft SQL Server in-place restore uses VDI memory stream captured during backup which has the original path details. If the storage is mounted on different drive or path, in-place restore will fail. However, you can restore the database to alternate location on the same host.
+* Different mount path
++
+As control file contains the original path details, restore of Oracle database using control file cannot be supported when mounted on a different path.
+* If you are migrating resources from one Microsoft SQL Server host to multiple SQL Server hosts, the schedules will not be created in each host when the protection is done at instance level in the old host.
+
+.Before you begin
+
+* You should bring up the required databases in the new host from the same storage.
+** You should check for the compatibility if there is a change in application version.
+** You should mount the storage on the same drive or path in the new host.
+** If storage DR is enabled, the respective storage should be mounted in the new host.
+* You should add the new host to SnapCenter.
+
+.Steps
+
+. Deploy the new host and install the plug-in.
+. Suspend the schedules of the old host.
+. Move the required resources from the old host to the new host. 
++
+For information on how to move to resources, refer to KB: <<link to be included>>.
+. Add the new host to SnapCenter.
+. Run the host refresh API.
++
+`/5.0/hosts/TechRefresh/`
++
+If you have migrated the resources from multiple hosts, you should run the API for all the hosts.
++
+If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts.
+. Remove the old host or hosts from SnapCenter.
+
+
+
+
+   

@@ -3,7 +3,7 @@ title: Tech refresh
 entries:
   - title: Tech refresh of SnapCenter Server host
     url: /tech-refresh/task_tech_refresh_server_host.html
-  - title: Tech refresh of plug-in host
+  - title: Tech refresh of SnapCenter plug-in hosts
     url: /tech-refresh/task_tech_refresh_plugin_host.html
   - title: Tech refresh of storage system
     url: /tech-refresh/task_tech_refresh_storage_system.html

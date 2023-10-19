@@ -1,13 +1,55 @@
 ---
 permalink: tech-refresh/task_tech_refresh_storage_system.html
 sidebar: sidebar
-keywords: tech refresh, server, server host, SnapCenter Server
-summary: ''
+keywords: tech refresh, storage system,
+summary: 'Perform tech refresh of storage system by moving the data from old storage to new storage, mounting the new storage to the respective hosts, and then bringing up the databases.'
 ---
 
-= Tech refresh of SnapCenter Server host
+= Tech refresh of storage system
 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+
+When the storage requires refresh, you should move the data from old storage to new storage, mount the new storage to the respective hosts, and then bring up the databases.
+
+.About this task
+
+Tech refresh is supported for the following SnapCenter Plug-ins:
+
+* SnapCenter Plug-in for Microsoft SQL Server
+* SnapCenter Plug-in for Windows
+* SnapCenter Plug-in for Oracle Database
+* SnapCenter Plug-in for SAP HANA Database
+* SnapCenter Plug-in for Microsoft Exchange Server
+
+The supported use cases are:
+
+* Primary storage refresh
+* Secondary storage refresh (fan out case as well)
+
+.Before you begin
+
+* Add the new storage in SnapCenter.
+* Mount the new storage in the respective hosts and bring up the databases.
++
+The new storage needs to be mounted on the same drive or path.
+* Create one backup of each resource to find the latest storage foot print.
+* Unique SVM name
+** If all the volumes of the SVM can be migrated before executing the server refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
+** If all the volumes of the SVM cannot be migrated before executing the server refresh in SC, then it is recommended to use different SVM name in new cluster.
+
+.Steps
+
+. Migrate the data from old storage to new storage.
++
+For information on how to migrate the date, refer to KB: <<link to be included>>.
+. Suspend all the scheduled jobs.
+. Mount the new storage to the plug-in host.
+. Put the host in production mode.
+. Create a backup of the resources whose storage is migrated.
+. Run the storage refresh API.
++
+`/5.0/hosts/storagerefresh/`
+   
