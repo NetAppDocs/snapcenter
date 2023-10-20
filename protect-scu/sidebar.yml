@@ -2,7 +2,7 @@ section: protect-scu
 title: Protect UNIX file systems
 entries:
   - title: Overview of SnapCenter Plug-in for UNIX file systems
-    url: /protect-scu/concept_overview_snapcenter_plug_in_for_UNIX file systems.html
+    url: /protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html
   - title: Install SnapCenter Plug-in for UNIX file systems
     entries:
       - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux
