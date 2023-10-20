@@ -2,13 +2,13 @@ section: protect-scu
 title: Protect UNIX file systems
 entries:
   - title: Overview of SnapCenter Plug-in for UNIX file systems
-    url: /protect-scu/concept_what_you_can_do_with_the_snapcenter_plug_in_for_UNIX file systems.html
+    url: /protect-scu/concept_overview_snapcenter_plug_in_for_UNIX file systems.html
   - title: Install SnapCenter Plug-in for UNIX file systems
     entries:
-      - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux or AIX
-        url: /protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html
-      - title: Add hosts and install Plug-ins Package for Linux or AIX
-        url: /protect-scu/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html
+      - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux
+        url: /protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux.html
+      - title: Add hosts and install Plug-ins Package for Linux
+        url: /protect-scu/task_add_hosts_and_install_the_snapcenter_plug_ins_package_for_linux.html
       - title: Configure the SnapCenter Plug-in Loader service
         url: /protect-scu/task_configure_snapcenter_plug_in_loader_service.html
       - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
@@ -16,7 +16,7 @@ entries:
       - title: Enable CA Certificates for plug-ins
         url: /protect-scu/task_enable_ca_certificates_for_plug-ins.html
   - title: Install SnapCenter Plug-in for VMware vSphere
-    url: /protect-scu/concept_install_snapcenter_plug_in_for_vmware_vsphere.html
+    url: /protect-scu/reference_install_snapcenter_plug_in_for_vmware_vsphere.html
   - title: Prepare for protecting UNIX file systems
     url: /protect-scu/concept_prepare_for_protecting_UNIX file systems.html
   - title: Back up UNIX file systems

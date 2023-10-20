@@ -1,0 +1,81 @@
+---
+permalink: protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html
+sidebar: sidebar
+keywords: overview, unix file system, plug-in for unix file system, backup, restore, clone
+summary: 'Plug-in for UNIX file systems supports back up, restore, and clone tof UNIX file systems.'
+---
+
+= What you can do with the SnapCenter Plug-in for UNIX file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When the Plug-in for UNIX file systems is installed in your environment, you can use SnapCenter to back up, restore, and clone UNIX file systems. You can also perform tasks supporting those operations.
+
+* Discover resources
+* Back up UNIX file systems
+* Schedule backup operations
+* Restore file system backups
+* Clone file system backups
+* Monitor backup, restore, and clone operations
+
+== Supported configurations
+
+|===
+| Item | Supported configuration
+
+a|
+Environments
+a|
+* Physical server
+* Virtual server
+
+a|
+Operating systems
+a|
+* Red Hat Enterprise Linux
+* Oracle Linux
+* SUSE Linux Enterprise Server (SLES)
+
+a|
+File systems
+a|
+* SAN: 
+** Both LVM and non LVM based file systems
+** LVM over VMDK ext3, ext4, and xfs
+*NFS: NFS v3, NFS v4.x
+
+a|
+ONTAP environments
+a| 
+* Amazon FSx for NetApp ONTAP
+* CVOCloud Volumes ONTAP 
+* All Flash FAS (AFF)
+* All SAN Array (ASA)
+* Back up, restore, and clone of secondary storage
+
+a|
+Protocols
+a|
+* FC
+* FCoE
+* iSCSI
+* NFS
+
+a|
+Multipath
+a|
+Only native multipath
+
+== Limitations
+
+* Mix of RDMs and virtual disks in a volume group is not supported.
+* File level restore is not supported.
+* Clone lifecycle management is not supported.
+* Mix of file systems spread across VMDKs coming from both NFS and VMFS datastore is not supported.
+* NVMe is not supported.
+* Clone naming customization is not supported.
+* Dead file spec is not supported.
+* SnapMirror Business Continuity (SM-BC) is not supported.
+* Provisioning is not be supported.
+* In case of restore of a file system residing on volume group, the old contents on the file system are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable for file systems on volume group only.

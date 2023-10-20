@@ -1,0 +1,66 @@
+---
+permalink: protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux.html
+sidebar: sidebar
+keywords: prerequisites, iSCSI, host requirement for Linux, sudo privileges, non-root user, credentials, authenticate, domain administrator, local administrator, workgroup, sudo, root user
+summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements.'
+---
+= Prerequisites for adding hosts and installing Plug-ins Package for Linux
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you add a host and install the plug-ins package for Linux, you must complete all the requirements.
+
+* If you are using iSCSI, the iSCSI service must be running.
+* You must have enabled the password-based SSH connection for the root or non-root user.
++
+SnapCenter Plug-in for Unix File Systems can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective non-root user.
+
+* Create credentials with authentication mode as Linux for the install user.
+* You must have installed Java 1.8.x or Java 11, 64-bit, on your Linux host.
++
+NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
++
+For information to download JAVA, see: http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems^]
+
+* You should have *bash* as the default shell for plug-in installation.
+
+== Linux Host requirements
+
+You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.
+
+|===
+| Item| Requirements
+
+a|
+Operating systems
+a|
+
+* Red Hat Enterprise Linux
+* Oracle Linux
+* SUSE Linux Enterprise Server (SLES)
+
+a|
+Minimum RAM for the SnapCenter plug-in on host
+a|
+1 GB
+a|
+Minimum install and log space for the SnapCenter plug-in on host
+a|
+2 GB
+
+NOTE: You should allocate sufficient disk space and monitor the storage consumption by the logs folder. The log space required varies depending on the number of the entities to be protected and the frequency of data protection operations. If there is no sufficient disk space, the logs will not be created for the recently run operations.
+
+a|
+Required software packages
+a|
+* Java 1.8.x (64-bit) Oracle Java and OpenJDK flavors
+* Java 11 (64-bit) Oracle Java and OpenJDK flavors
+
+NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
+
+If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
+
+|===
+
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=112391;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
