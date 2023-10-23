@@ -18,38 +18,29 @@ entries:
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: /protect-scu/reference_install_snapcenter_plug_in_for_vmware_vsphere.html
   - title: Prepare for protecting UNIX file systems
-    url: /protect-scu/concept_prepare_for_protecting_UNIX file systems.html
+    url: /protect-scu/reference_prepare_for_protecting_UNIX file systems.html
   - title: Back up UNIX file systems
     entries:
       - title: Discover UNIX file systems
         url: /protect-scu/task_determine_whether_unix_file_systems_are_available_for_backup.html
-
       - title: Create backup policies
         url: /protect-scu/task_create_backup_policies_for_unix_file_systems.html
-
       - title: Create resource groups
         url: /protect-scu/task_create_resource_groups_and_attach_policies_for_unix_file_systems.html
-
       - title: Back up UNIX file systems
         url: /protect-scu/task_back_up_unix_file_systems.html
-
       - title: Back up resource groups
-        url: /protect-scu/task_back_up_unix_file_systems_resource_groups.html
-      
+        url: /protect-scu/task_back_up_unix_file_systems_resource_groups.html  
       - title: Monitor backup progress
         url: /protect-scu/task_monitor_unix_file_systems_backup_operations.html
   - title: Restore and recover UNIX file systems
     entries:
-      - title: Requirements for restoring UNIX file systems
-        url: /protect-scu/reference_requirements_for_restoring_unix_file_systems.html
       - title: Restore and recover UNIX file systems
         url: /protect-scu/task_restore_unix_file_systems.html
       - title: Monitor UNIX file systems restore operations
         url: /protect-scu/task_monitor_unix_file_systems_restore_operations.html
   - title: Clone UNIX file systems
     entries:
-      - title: Requirements for cloning UNIX file systems
-        url: /protect-scu/reference_requirements_for_cloning_unix_file_systems.html
       - title: Clone UNIX file systems
         url: /protect-scu/task_clone_unix_file_systems_backup.html
       - title: Split UNIX file systems

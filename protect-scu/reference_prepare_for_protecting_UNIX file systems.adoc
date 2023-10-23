@@ -1,0 +1,25 @@
+---
+permalink: protect-scu/reference_prepare_for_protecting_UNIX file systems.html
+sidebar: sidebar
+keywords: unix file systems, preparation for protection, prerequisites
+summary: 'Before performing any data protection operation such as backup, clone, or restore operations, you should set up your environment.'
+---
+= Prepare for protecting UNIX file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before performing any data protection operation such as backup, clone, or restore operations, you should set up your environment. You can also set up the SnapCenter Server to use SnapMirror and SnapVault technology.
+
+To take advantage of SnapVault and SnapMirror technology, you must configure and initialize a data protection relationship between the source and destination volumes on the storage device. You can use NetAppSystem Manager or you can use the storage console command line to perform these tasks.
+
+Before you use the Plug-in for UNIX file systems, the SnapCenter administrator should install and configure the SnapCenter Server and perform the prerequisite tasks.
+
+* Install and configure SnapCenter Server. link:../install/task_install_the_snapcenter_server_using_the_install_wizard.html[Learn more^]
+* Configure the SnapCenter environment by adding storage system connections. link:../install/task_add_storage_systems.html[Learn more^]
++
+NOTE: SnapCenter does not support multiple SVMs with the same name on different clusters. Each SVM registered with SnapCenter using either SVM registration or cluster registration must be unique.
+* Add hosts, install the plug-ins, and discover the resources.
+* If you are using SnapCenter Server to protect UNIX file systems that reside on VMware RDM LUNs or VMDKs, you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
+* Install Java on your Linux host.
+* Configure SnapMirror and SnapVault on ONTAP, if you want backup replication.
