@@ -2,18 +2,18 @@
 permalink: protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html
 sidebar: sidebar
 keywords: overview, unix file system, plug-in for unix file system, backup, restore, clone
-summary: 'Plug-in for UNIX file systems supports back up, restore, and clone tof UNIX file systems.'
+summary: 'Plug-in for Unix file systems supports back up, restore, and clone tof Unix file systems.'
 ---
 
-= What you can do with the SnapCenter Plug-in for UNIX file systems
+= What you can do with the SnapCenter Plug-in for Unix file systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When the Plug-in for UNIX file systems is installed in your environment, you can use SnapCenter to back up, restore, and clone UNIX file systems. You can also perform tasks supporting those operations.
+When the Plug-in for Unix file systems is installed in your environment, you can use SnapCenter to back up, restore, and clone Unix file systems. You can also perform tasks supporting those operations.
 
 * Discover resources
-* Back up UNIX file systems
+* Back up Unix file systems
 * Schedule backup operations
 * Restore file system backups
 * Clone file system backups

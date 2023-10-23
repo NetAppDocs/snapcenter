@@ -1,0 +1,56 @@
+---
+permalink: protect-scu/task_clone_unix_file_systems_backup.html
+sidebar: sidebar
+keywords: alternate host, clone, Unix file systems, file systems
+summary: 'You can use SnapCenter to clone an Unix file systems database using the backup of the database.'
+---
+= Clone Unix file system backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to clone Unix file system using the backup of the database.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Path* or *Resource Group* from the *View* list.
+. Select the file system from either the database details view or the resource group details view.
++
+The topology page is displayed.
+
+. From the Manage Copies view, select the backups either from Local copies (primary), Mirror copies (secondary), or Vault copies (secondary).
+. Select the backup from the table, and then click *image:../media/clone_icon.gif[clone icon]*.
+. In the Location page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Clone server
+a|
+By default, the source database host is populated.
+
+If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
+a|
+Clone suffix
+a|
+<<need to include an explanation>>
+a|
+NFS Export IP Address
+a|
+<<need to include an explanation>>
+|===
+
+. In the Scripts page, enter the optional commands that you want to run before and after the clone operation.
++
+You must store the prescript or postscript either in _/var/opt/snapcenter/spl/scripts_ or in any folder inside this path. By default, the _/var/opt/snapcenter/spl/scripts_ path is populated. If you have placed the script in any folder inside this path, you need to provide the complete path up to the folder where the script is placed.
+
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.

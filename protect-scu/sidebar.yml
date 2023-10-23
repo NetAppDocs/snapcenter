@@ -1,9 +1,9 @@
 section: protect-scu
-title: Protect UNIX file systems
+title: Protect Unix file systems
 entries:
-  - title: Overview of SnapCenter Plug-in for UNIX file systems
+  - title: Overview of SnapCenter Plug-in for Unix file systems
     url: /protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html
-  - title: Install SnapCenter Plug-in for UNIX file systems
+  - title: Install SnapCenter Plug-in for Unix file systems
     entries:
       - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux
         url: /protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux.html
@@ -17,9 +17,9 @@ entries:
         url: /protect-scu/task_enable_ca_certificates_for_plug-ins.html
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: /protect-scu/reference_install_snapcenter_plug_in_for_vmware_vsphere.html
-  - title: Prepare for protecting UNIX file systems
+  - title: Prepare for protecting /protect-scu/task_back_up_unix_file_systems.html file systems
     url: /protect-scu/reference_prepare_for_protecting_UNIX file systems.html
-  - title: Back up UNIX file systems
+  - title: Back up Unix file systems
     entries:
       - title: Discover UNIX file systems
         url: /protect-scu/task_determine_whether_unix_file_systems_are_available_for_backup.html
@@ -33,17 +33,15 @@ entries:
         url: /protect-scu/task_back_up_unix_file_systems_resource_groups.html  
       - title: Monitor backup progress
         url: /protect-scu/task_monitor_unix_file_systems_backup_operations.html
-  - title: Restore and recover UNIX file systems
+  - title: Restore and recover Unix file systems
     entries:
-      - title: Restore and recover UNIX file systems
+      - title: Restore and recover Unix file systems
         url: /protect-scu/task_restore_unix_file_systems.html
-      - title: Monitor UNIX file systems restore operations
+      - title: Monitor Unix file systems restore operations
         url: /protect-scu/task_monitor_unix_file_systems_restore_operations.html
-  - title: Clone UNIX file systems
+  - title: Clone Unix file systems
     entries:
-      - title: Clone UNIX file systems
+      - title: Clone Unix file systems
         url: /protect-scu/task_clone_unix_file_systems_backup.html
-      - title: Split UNIX file systems
-        url: /protect-scu/task_split_unix_file_systems_clone.html
-      - title: Monitor UNIX file systems clone operations
+      - title: Monitor Unix file systems clone operations
         url: /protect-scu/task_monitor_unix_file_systems_clone_operations.html

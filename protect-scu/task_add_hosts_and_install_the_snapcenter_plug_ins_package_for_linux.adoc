@@ -32,7 +32,7 @@ a|
 Enter the fully qualified domain name (FQDN) or the IP address of the host.
 
 SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
-+
+
 If you are adding a host by using SnapCenter and the host is part of a subdomain, you must provide the FQDN.
 
 a|
