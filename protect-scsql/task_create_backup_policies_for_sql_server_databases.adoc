@@ -25,6 +25,8 @@ For information about how administrators assign resources to users, see the Snap
 +
 The default value is false.
 
+* For SM-BC, for more information on prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes
+
 .About this task
 * A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
 +
@@ -213,6 +215,8 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 Update SnapMirror after creating a local Snapshot copy. 
 
 . Select this option to create mirror copies of backup sets on another volume (SnapMirror).
++
+This option should be enabled for SnapMirror Business Continuity (SM-BC). 
 --
 
 .Update SnapVault
