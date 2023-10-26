@@ -29,17 +29,14 @@ The topology page is displayed.
 a|
 Clone server
 a|
-By default, the source database host is populated.
+By default, the source host is populated.
 
 If you want to create the clone on an alternate host, select the host having the same version of Oracle and OS as that of the source database host.
 a|
 Clone suffix
 a|
 <<need to include an explanation>>
-a|
-NFS Export IP Address
-a|
-<<need to include an explanation>>
+
 |===
 
 . In the Scripts page, enter the optional commands that you want to run before and after the clone operation.

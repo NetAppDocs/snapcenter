@@ -46,15 +46,6 @@ a|
 *NFS: NFS v3, NFS v4.x
 
 a|
-ONTAP environments
-a| 
-* Amazon FSx for NetApp ONTAP
-* CVOCloud Volumes ONTAP 
-* All Flash FAS (AFF)
-* All SAN Array (ASA)
-* Back up, restore, and clone of secondary storage
-
-a|
 Protocols
 a|
 * FC
@@ -67,15 +58,17 @@ Multipath
 a|
 Only native multipath
 
+|===
+
 == Limitations
 
 * Mix of RDMs and virtual disks in a volume group is not supported.
 * File level restore is not supported.
++
+However, you can manually perform file level restore by cloning the backup and then copying the files manually.
 * Clone lifecycle management is not supported.
 * Mix of file systems spread across VMDKs coming from both NFS and VMFS datastore is not supported.
 * NVMe is not supported.
-* Clone naming customization is not supported.
-* Dead file spec is not supported.
 * SnapMirror Business Continuity (SM-BC) is not supported.
 * Provisioning is not be supported.
 * In case of restore of a file system residing on volume group, the old contents on the file system are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable for file systems on volume group only.

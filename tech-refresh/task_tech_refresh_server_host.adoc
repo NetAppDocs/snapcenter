@@ -44,11 +44,13 @@ If the backup exists, you can also fetch the backup.
 . Restore the backup of the SnapCenter Server on the new host.
 +
 `/4.9/server/restore`
++
+If SnapCenter Server is added as a plug-in host, then use the _-SkipSMSURLInHosts_ attribute and separately update the server URL by running _Set-SmServerConfig_ cmdlet.
 + 
-If the plug-in is not able to resolve the server hostname, log in to each of the plug-in host and add the etc/host entry for the new IP in the <New IP> SC_Server_Name format.
+If the plug-in is not able to resolve the server hostname, log in to each of the plug-in host and add the _etc/host_ entry for the new IP in the <New IP> SC_Server_Name format.
 For example, `10.225.81.35 SCServer1`
 +
-The server etc/host entries will not be restored. You can restore it manually from the DR backup folder.
+The server _etc/host_ entries will not be restored. You can restore it manually from the DR backup folder.
 . Update the new server name in all the hosts or specified hosts that are managed by the SnapCenter.
 +
 `/5.0/server/configureurl`
