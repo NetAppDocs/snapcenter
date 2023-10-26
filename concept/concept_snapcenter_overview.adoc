@@ -109,6 +109,8 @@ SM-BC is supports SAN configurations. It also supports AFF clusters or All SAN A
 The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, and SnapCenter Plug-in for Oracle database.
 +
 For more information on SM-BC refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror Business Continuity (SM-BC)]
++
+For SM-BC, ensure that you have met the various hardware, software, and system configuration requirements.  For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
 
 * Synchronous mirroring
 +

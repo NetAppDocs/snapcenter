@@ -29,6 +29,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 * Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
+* For SnapMirror Business Continuity (SM-BC) restore operation, you must select the backup from the primary location.
 
 .Steps
 
