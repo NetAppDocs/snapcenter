@@ -17,7 +17,7 @@ entries:
         url: /protect-scu/task_enable_ca_certificates_for_plug-ins.html
   - title: Install SnapCenter Plug-in for VMware vSphere
     url: /protect-scu/reference_install_snapcenter_plug_in_for_vmware_vsphere.html
-  - title: Prepare for protecting /protect-scu/task_back_up_unix_file_systems.html file systems
+  - title: Prepare for protecting Unix file systems
     url: /protect-scu/reference_prepare_for_protecting_UNIX file systems.html
   - title: Back up Unix file systems
     entries:
