@@ -174,14 +174,6 @@ Specifying a Snapshot copy locking period prevents deletion of the Snapshot copi
 For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time.  You should manually cleanup the clones post the SnapLock expiry time.
 +
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
-+
-During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-+
-When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
-+
-For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
-+
-See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 
 [start=3]
 . In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
@@ -205,14 +197,6 @@ Specifying a Snapshot copy locking period prevents deletion of the Snapshot copi
 For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time.  You should manually cleanup the clones post the SnapLock expiry time.
 +
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
-+
-During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-+
-When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
-+
-For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
-+
-See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
 
@@ -240,6 +224,11 @@ Update SnapMirror after creating a local Snapshot copy.
 . Select this option to create mirror copies of backup sets on another volume (SnapMirror).
 +
 This option should be enabled for SnapMirror Business Continuity (SM-BC). 
++
++
+During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
++
+See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Update SnapVault
@@ -247,6 +236,12 @@ This option should be enabled for SnapMirror Business Continuity (SM-BC).
 Update SnapVault after creating a Snapshot copy.
 
 . Select this option to perform disk-to-disk backup replication.
++
+When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
++
+For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
++
+See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Secondary Policy Label
