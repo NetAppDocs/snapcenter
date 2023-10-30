@@ -46,13 +46,7 @@ Clicking the *Refresh* button refreshes the primary and secondary SnapLock expir
 + 
 A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
 +
-When there are multiple volumes, the SnapLock expiry period of a Snapshot copy contained in a volume that is set with the longest SnapLock expiry period is retrieved from ONTAP.
-+
-During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the Refresh button refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-+
-When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the Refresh button refreshes the locking period on the secondary that is retrieved from ONTAP.
-+
-For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
+When the application resource is spread across multiple volumes, the SnapLock expiry period for the backup will be the longest SnapLock expiry period that is set for a Snapshot copy in a volume.  The longest SnapLock expiry period is retrieved from ONTAP.
 +
 For SnapMirror Business Continuity (SM-BC), after failover and failback, clicking the *Refresh* button refreshes the mirror and vault copies.
 +

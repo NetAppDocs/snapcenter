@@ -37,11 +37,6 @@ If needed, you can change this path and restart SMcore service.  It is recommend
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
 +
 You can use the GET API to display the value of the key. SET API is not supported. 
-* Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires.  This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
-+
-For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time.  You should manually cleanup the clones post the SnapLock expiry time.
-+
-NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP SnapLock policy.
 
 == Step 1: Create Policy Name
 . In the left navigation pane, select *Settings*.
@@ -168,11 +163,25 @@ NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, a
 .. Length of time to keep Snapshot copies
 ... If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
-.. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period*.
+.. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period* and select days, months, or years.
 +
-The SnapLock retention period must be a number from 1 to 100 years. 
+Snaplock retention period should be less than 100 years.
 +
-The SnapLock retention period must be lesser than or equal to the mentioned retention days.
+If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
++
+Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires.  This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
++
+For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time.  You should manually cleanup the clones post the SnapLock expiry time.
++
+NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
++
+During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
++
+When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
++
+For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
++
+See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 
 [start=3]
 . In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
@@ -187,9 +196,23 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 
 . If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period*.
 +
-The SnapLock retention period must be a number from 1 to 100 years. 
+Snaplock retention period should be less than 100 years.
 +
-The SnapLock retention period must be lesser than or equal to the mentioned retention days.
+If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
++
+Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires.  This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
++
+For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time.  You should manually cleanup the clones post the SnapLock expiry time.
++
+NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
++
+During secondary replication, the SnapLock expiry time loads/inherits the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
++
+When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
++
+For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
++
+See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
 
