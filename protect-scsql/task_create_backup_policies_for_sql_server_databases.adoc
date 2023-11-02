@@ -186,7 +186,7 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 . Length of time to keep Snapshot copies
 .. To specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
-. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period*.
+. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period* and select days, months, or years.
 +
 Snaplock retention period should be less than 100 years.
 +
