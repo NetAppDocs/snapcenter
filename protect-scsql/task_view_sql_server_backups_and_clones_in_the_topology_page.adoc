@@ -42,9 +42,7 @@ The *Summary Card* section displays the total number of backups and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
 +
-Clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
-+ 
-A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
+Clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP. A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
 +
 When the application resource is spread across multiple volumes, the SnapLock expiry period for the backup will be the longest SnapLock expiry period that is set for a Snapshot copy in a volume.  The longest SnapLock expiry period is retrieved from ONTAP.
 +
