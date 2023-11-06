@@ -12,9 +12,11 @@ summary: 'Perform tech refresh of storage system by moving the data from old sto
 
 [.lead]
 
-When the storage requires refresh, you should move the data from old storage to new storage, mount the new storage to the respective hosts, and then bring up the databases.
+When the storage is tech refreshed, the data is migrated to new storage and the application hosts are mounted with new storage. The SnapCenter backup job identifies the new storage and creates the snapshot provided the new storage is registered in SnapCenter.
 
-.About this task
+You can perform restore, mount, and clone on the new backups created after storage refresh. However these operations fail when performed on the backups that were created before storage refresh because the backups has the old storage details. 
+
+You should run the storage tech refresh API or cmdlet to update the old backups in SnapCenter with the new storage details.
 
 Tech refresh is supported for the following SnapCenter Plug-ins:
 
@@ -28,6 +30,18 @@ The supported use cases are:
 
 * Primary storage refresh
 * Secondary storage refresh (fan out case as well)
+
+The supported scenarios are:
+
+* Cluster name change
+* SVM name change
+* Volume name change
+* Data can be moved over a period of time, for example: few volumes in a SVM is moved or few databases are migrated to the new storage.
+
+== Update the backups of the primary storage
+
+When the storage is tech refreshed, you should run the storage tech refresh API or cmdlet to update the old backups in SnapCenter with the new storage details.
+
 
 .Before you begin
 
@@ -48,8 +62,7 @@ For information on how to migrate the date, refer to KB: <<link to be included>>
 . Suspend all the scheduled jobs.
 . Mount the new storage to the plug-in host.
 . Put the host in production mode.
-. Create a backup of the resources whose storage is migrated.
-. Run the storage refresh API.
+. In SnapCenter, create a backup of the resources whose storage is migrated.
+. Run the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
 +
-`/5.0/hosts/storagerefresh/`
-   
+NOTE: The dry run is enabled by default and resources are identified for which the storage is updated. You can verify the resources by running either the API: '/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_. 
