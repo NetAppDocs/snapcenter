@@ -104,8 +104,6 @@ For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snapl
 +
 SnapMirror Business Continuity (SM-BC) enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SM-BC.
 +
-SM-BC supports SAN configurations. It also supports AFF clusters or All SAN Array (ASA) clusters, where the primary and secondary clusters can be either AFF or ASA. It is not supported on CVO or FSx.
-+
 The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, and SnapCenter Plug-in for Oracle database.
 +
 For more information on SM-BC refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror Business Continuity (SM-BC)]

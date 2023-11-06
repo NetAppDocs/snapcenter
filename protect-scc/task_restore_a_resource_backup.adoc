@@ -20,6 +20,7 @@ You can use SnapCenter to restore resources. The capabilities of the restore ope
 .About this task
 
 * The default restore operation only restores storage objects. Restore operations at the application level can only be performed if the custom plug-in provides that capability.
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 
