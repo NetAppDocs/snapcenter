@@ -21,6 +21,11 @@ If a resource is not part of any resource group, you can back up the resource fr
  .. Select the check box, and enter a custom name format that you want to use for the Snapshot copy name.
 + 
 For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is appended to the Snapshot copy name by default.
+. In the Application Settings page, perform the following:
+* Select the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+* Select one of the backup consistency options:
+** Select *File System Consistent* if you want to ensure that file systems cached data is flushed before creating the backup and no operations are performed on filesystem while creating the backup.
+** Select *Crash Consistent* if you want to ensure that file systems cached data is flushed before creating the backup.
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
