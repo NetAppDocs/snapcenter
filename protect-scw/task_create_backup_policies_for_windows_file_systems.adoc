@@ -25,6 +25,8 @@ To prepare for data protection, you must complete tasks such as installing SnapC
 +
 The default value is false
 
+* For SnapMirror Business Continuity (SM-BC), for more information on prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
+
 .About this task
 
 * The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.

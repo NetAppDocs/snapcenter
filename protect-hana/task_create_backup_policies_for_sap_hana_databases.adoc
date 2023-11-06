@@ -119,24 +119,21 @@ a|
 Select this field to create mirror copies of the backup sets on another volume (SnapMirror replication).
 
 If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, the Snapshot copy created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot copy is selected from the destination to perform a restore operation, then the Secondary Location is not available for the selected vaulted/mirrored backup error message is displayed.
-+
-This option should be enabled for SnapMirror Business Continuity (SM-BC).
-During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-+
+
 See link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
 a|
 *Update SnapVault after creating a local Snapshot copy*
 a|
 Select this option to perform disk-to-disk backup replication (SnapVault backups).
-+
+
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-+
+
 When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
-+
+
 For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
-+
+
 See link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
 a|
 *Secondary policy label*
