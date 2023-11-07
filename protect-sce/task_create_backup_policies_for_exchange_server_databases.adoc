@@ -37,7 +37,7 @@ If needed, you can change this path and restart SMcore service.  It is recommend
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
 +
 You can use the GET API to display the value of the key. SET API is not supported.
-
++
 |===
 *Best Practice:* It's best that you configure the secondary retention policy based on the number of full and log backups, overall, that you want to retain. When you configure secondary retention policies, keep in mind that when databases and logs that are in different volumes, each backup can have three Snapshot copies, and when databases and logs are in the same volume, each backup can have two Snapshot copies.
 |===
@@ -159,7 +159,14 @@ a|
 Select the *Keep log backups for last* option, and specify the number of days to keep the log backup copies.
 
 The log backups up to the number of days of full backups are retained.
+a|
+Snapshot copy locking period
+a|
+Select Snapshot copy locking period, and select days, months, or years.
 
+SnapLock retention period should be less than 100 years.
+
+Log backup (UTM) SnapLock retention value should be lesser than or equal to the full backup SnapLock retention value. You should not enable the log backup Snaplock retention without enabling the full backup SnapLock retention.
 |===
 If you selected *Log backup* as the backup type, log backups are retained as part of the up-to-the-minute retention settings for full backups.
 
