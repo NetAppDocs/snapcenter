@@ -12,9 +12,18 @@ summary: 'Move the resources from old host to new host to perform tech refresh o
 
 [.lead]
 
-When the SnapCenter plug-in hosts require refresh, you should move the resources from old host to new host. When the new host is added to SnapCenter, SnapCenter will discover all the resources but will be treated as new resources.
+When the SnapCenter plug-in hosts require refresh, you should move the resources from old host to new host. When the new host is added to SnapCenter, it will discover all the resources but will be treated as new resources.
 
 .About this task
+
+You should run the API or cmdlet which will take old host name and new host name as input, compare the resources by name, and relink the objects of matching resources from old host to new host. The matching resources will be marked as protected.
+
+* The _IsDryRun_ parameter is set to True by default and this identifies the matching resources of the old and new host.
++
+After verifying the matching resources, you should set the _IsDryRun_ parameter to False to relink the objects of the matching resources from the old host to new host.
+* The _AutoMigrateManuallyAddedResources_ parameter is set to True by default and this automatically copies the manually added resources from old host to the new host.
++
+The _AutoMigrateManuallyAddedResources_ parameter is applicable only for Oracle and SAP HANA resources.
 
 Tech refresh is supported for the following SnapCenter Plug-ins:
 
@@ -29,38 +38,31 @@ The supported use cases are:
 * Migrating resources from multiple hosts to one or fewer hosts.
 * Migrating resources from one host to multiple hosts.
 
-NOTE: The new host can have a different name or same name. After adding the new host with same name, you can also rename the existing host. 
+The supported scenarios are:
 
-You should run the APIs or cmdlets which will take old host name and new host name as input, compare the resources by name, and relink the objects of matching resources from old host to new host. The matching resources will be marked as protected.
-
-* The _IsDryRun_ parameter is set to True by default and this re-links the objects of matching resources from old host to new host.
-* The _AutoMigrateManuallyAddedResources_ parameter is set to True by default and this automatically copies the manually added resources from old host to the new host.
-
-.Before you begin
-
-* You should bring up the required databases in the new host from the same storage.
-** You should check for the compatibility if there is a change in application version.
-** You should mount the storage on the same drive or path in the new host.
-** If storage DR is enabled, the respective storage should be mounted in the new host.
-* You should add the new host to SnapCenter.
+* New host has the same name as the old host
+* New host has a different name from the old host
+* Existing host has been renamed
 
 .Steps
 
 . Deploy the new host and install the application.
 . Suspend the schedules of the old host.
 . Move the required resources from the old host to the new host. 
-+
-For information on how to move to resources, refer to KB: <<link to be included>>.
+.. Bring up the required databases in the new host from the same storage.
+*** Mount the storage on the same drive or path in the new host as that of the old host.
+*** If storage DR is enabled, the respective storage should be mounted in the new host.
+.. Check for the compatibility if there is a change in application version.
 . Add the new host to SnapCenter.
 . Verify if all the resources are discovered.
-. Run the host refresh API: `/5.0/hosts/TechRefresh/` or the cmdlet: _Invoke-SmHostTechRefresh_.
+. Run the host refresh API: `/5.0/techrefresh/host` or the cmdlet: _Invoke-SmTechRefreshHost_.
 +
 NOTE: The dry run is enabled by default and the matching resources to be relinked are identified. You can verify the resources by running either the API: '/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_. 
 +
 If you have migrated the resources from multiple hosts, you should run the API or the cmdlet for all the hosts.
 +
 If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. The resources can be moved one at a time. You can run the API or cmdlet on the same host multiple times, it will relink only if there is a new resource identified.
-. Remove the old host or hosts from SnapCenter.
+. (Optional) Remove the old host or hosts from SnapCenter.
 
 .Related information
 
