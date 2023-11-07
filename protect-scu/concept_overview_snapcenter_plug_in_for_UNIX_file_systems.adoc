@@ -72,3 +72,6 @@ However, you can manually perform file level restore by cloning the backup and t
 * SnapMirror Business Continuity (SM-BC) is not supported.
 * Provisioning is not be supported.
 * In case of restore of a file system residing on volume group, the old contents on the file system are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable for file systems on volume group only.
+* Qtree restore is not supported.
+* NFS file systems mounted on the host should have _.snapshot_ directory disabled during restore operation.
+* SnapCenter CLIs are not supported for secondary clone and restore.

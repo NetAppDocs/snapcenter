@@ -12,9 +12,9 @@ summary: 'Perform tech refresh of storage system by moving the data from old sto
 
 [.lead]
 
-When the storage is tech refreshed, the data is migrated to new storage and the application hosts are mounted with new storage. The SnapCenter backup job identifies the new storage and creates the snapshot provided the new storage is registered in SnapCenter.
+When the storage is tech refreshed, the data is migrated to new storage and the application hosts are mounted with new storage. The SnapCenter backup workflow identifies the new storage and creates the snapshot if the new storage is registered in SnapCenter.
 
-You can perform restore, mount, and clone on the new backups created after storage refresh. However these operations fail when performed on the backups that were created before storage refresh because the backups has the old storage details. You should run the storage tech refresh API or cmdlet to update the old backups in SnapCenter with the new storage details.
+You can perform restore, mount, and clone on the new backups created after storage refresh. However these operations will fail when performed on the backups that were created before storage refresh because the backups has the old storage details. You should run the storage tech refresh API or cmdlet to update the old backups in SnapCenter with the new storage details.
 
 Tech refresh is supported for the following SnapCenter Plug-ins:
 
@@ -27,14 +27,13 @@ Tech refresh is supported for the following SnapCenter Plug-ins:
 The supported use cases are:
 
 * Primary storage refresh
-* Secondary storage refresh (fan out case as well)
+* Secondary storage refresh
 
-The supported scenarios are:
+The other supported scenarios are:
 
-* Cluster name change
 * SVM name change
 * Volume name change
-* Data can be moved over a period of time, for example: few volumes in a SVM is moved or few databases are migrated to the new storage.
+
 
 == Update the backups of the primary storage
 
@@ -43,56 +42,57 @@ When the storage is tech refreshed, you should run the storage tech refresh API 
 
 .Before you begin
 
-* Backup the SnapCenter repository. For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
-* Put the host to maintenance mode.
-* Add the new storage in SnapCenter.
-* Mount the new storage in the respective hosts and bring up the databases.
+As this workflow modifies the data in SnapCenter repository, it is recommended to backup the SnapCenter repository. Incase of any data issues, SnapCenter repository can be reverted to old state using the backup.
 +
-The new storage needs to be mounted on the same drive or path.
-* Unmount the old luns.
-* Create one backup of each resource to find the latest storage foot print.
-* Ensure that you have an unique SVM name
-** If all the volumes of the SVM can be migrated before executing the server refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
-** If all the volumes of the SVM cannot be migrated before executing the server refresh in SC, then it is recommended to use different SVM name in new cluster.
+For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
 
 .Steps
 
 . Migrate the data from old storage to new storage.
-. Suspend all the scheduled jobs.
-. Mount the new storage to the plug-in host.
++
+For information on how to migrate, refer to https://kb.netapp.com/onprem/ontap/dp/SnapMirror/How_can_I_copy_a_volume_and_preserve_all_of_the_Snapshot_copies[How can I copy a volume and preserve all of the Snapshot copies?]
+. Put the host to maintenance mode.
+. Mount the new storage in the respective hosts and bring up the databases.
++
+The new storage needs to be mounted on the same drive or path as that of the old storage.
+. Verify that all the resources are up and running.
+. Add the new storage in SnapCenter.
++
+Ensure that you have an unique SVM name across clusters in SnapCenter. If you are using the same SVM name in the new storage, you need to perform the following:
++
+* If all the volumes of the SVM can be migrated before executing the storage refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
+
 . Put the host in production mode.
 . In SnapCenter, create a backup of the resources whose storage is migrated.
-. Run the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
+. Run either the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
 +
-The _IsDryRun_ attribute is set to True. The resources are identified for which the storage is updated. You can view the resources by running either the API: '/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_. 
-. Verify that all the resources of the storage that is updated is identified and all the resources are having the latest storage footprint.
-. Set the _IsDryRun_ attribute to False and run the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
+The _IsDryRun_ attribute is set to True by default. It will identify the resources for which the storage is refreshed. You can view the resource and the changed storage details by running either the API: '5.0/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_.
+. After verifying the storage details, set the _IsDryRun_ attribute to False and run the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
++ 
+This will update the storage details in the older backups.
++
+NOTE: You can run the API or cmdlet on the same host multiple times, it will update the storage details in the older backups only if the storage is refreshed.
 
 == Update the backups of the secondary storage
 
 When the storage is tech refreshed, you should run the storage tech refresh API or cmdlet to update the old backups in SnapCenter with the new storage details.
 
-
 .Before you begin
 
-* Backup the SnapCenter repository. For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
-* Put the host to maintenance mode.
-* Add the new storage in SnapCenter.
-* Mount the new storage in the respective hosts and bring up the databases.
+As this workflow modifies the data in SnapCenter repository, it is recommended to backup the SnapCenter repository. Incase of any data issues, SnapCenter repository can be reverted to old state using the backup.
 +
-The new storage needs to be mounted on the same drive or path.
-* Unmount the old luns.
-* Create one backup of each resource to find the latest storage foot print.
-* Ensure that you have an unique SVM name
-** If all the volumes of the SVM can be migrated before executing the server refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
-** If all the volumes of the SVM cannot be migrated before executing the server refresh in SC, then it is recommended to use different SVM name in new cluster.
+For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
+
 
 .Steps
 
-. Copy old secondary volume data to new secondary storage using SnapMirror.
-. Build relation from primary storage with new secondary storage volume and make sure relationship state is healthy.
+. Migrate the data from old storage to new storage.
++
+For information on how to migrate, refer to https://kb.netapp.com/onprem/ontap/dp/SnapMirror/How_can_I_copy_a_volume_and_preserve_all_of_the_Snapshot_copies[How can I copy a volume and preserve all of the Snapshot copies?]
+. Break the SnapMirror relationship between the old secondary storage and the new secondary storage.
+. Establish the SnapMirror relationship between the primary storage and new secondary storage, and make sure relationship state is healthy.
 . In SnapCenter, create a backup of the resources whose secondary storage is migrated.
 +
 IMPORTANT: You should wait until this operation is completed. If you proceed to the next step before completion, SnapCenter will loose old secondary snapshot metadata completely.
-. After successfully creating backup of all the resources, you can break the old secondary storage relation with primary.
+. After successfully creating backup of all the resources, you can break the old secondary storage relationship with primary.
 . The scheduled weekly job will update the secondary storage metadata or you can also refresh at resource level if the update is immediately required.

@@ -40,9 +40,14 @@ The supported use cases are:
 
 The supported scenarios are:
 
-* New host has the same name as the old host
 * New host has a different name from the old host
 * Existing host has been renamed
+
+.Before you begin
+
+As this workflow modifies the data in SnapCenter repository, it is recommended to backup the SnapCenter repository. Incase of any data issues, SnapCenter repository can be reverted to old state using the backup.
++
+For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
 
 .Steps
 
@@ -61,7 +66,9 @@ NOTE: The dry run is enabled by default and the matching resources to be relinke
 +
 If you have migrated the resources from multiple hosts, you should run the API or the cmdlet for all the hosts.
 +
-If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. The resources can be moved one at a time. You can run the API or cmdlet on the same host multiple times, it will relink only if there is a new resource identified.
+If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. The resources can be moved one at a time. 
++
+NOTE: You can run the API or cmdlet on the same host multiple times, it will relink only if there is a new resource identified.
 . (Optional) Remove the old host or hosts from SnapCenter.
 
 .Related information
