@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policy
 summary: 'You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.'
 ---
-= Create backup policies for SQL Server databases
+= Create backup policies for SQL Server databases  
 :icons: font
 :imagesdir: ../media/
 
@@ -37,7 +37,10 @@ If needed, you can change this path and restart SMcore service.  It is recommend
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
 +
 You can use the GET API to display the value of the key. SET API is not supported. 
-* For *SnapLock*, if 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
+
+* SnapLock
+
+** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 +
 Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires.  This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
 +

@@ -13,6 +13,10 @@ Restoring an Exchange database includes initiating a connection session with the
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
+.About this task
+
+For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
 .Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the `Open-SmConnection` cmdlet.

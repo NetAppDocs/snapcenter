@@ -19,6 +19,18 @@ Before you use SnapCenter to back up Oracle database resources, you must create 
 * If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
 * For SnapMirror Business Continuity (SM-BC) prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
 
+.About this task
+
+* SnapLock
+** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
++
+Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires. This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
++
+For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time. You should manually cleanup the clones post the SnapLock expiry time.
++
+NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary
+SnapLock settings are managed by ONTAP.
+
 *Steps*
 
 . In the left navigation pane, click *Settings*.
@@ -100,6 +112,12 @@ a|
 Keep the Snapshot copies for a certain number of days
 a|
 Select *Keep Snapshot copies for*, and then specify the number of days for which you want to keep the Snapshot copies before deleting them.
+a|
+Snapshot copy locking period
+a|
+Select Snapshot copy locking period, and select days, months, or years.
+
+SnapLock retention period should be less than 100 years.
 |===
 +
 NOTE:  You can retain archive log backups only if you have selected the archive log files as part of your backup.
@@ -123,6 +141,12 @@ a|
 Update SnapVault after creating a local Snapshot copy
 a|
 Select this option to perform disk-to-disk backup replication (SnapVault backups).
+
+When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
+
+For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
+
+See link:..protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html[View Oracle database backups and clones in the Topology page].
 a|
 Secondary policy label
 a|

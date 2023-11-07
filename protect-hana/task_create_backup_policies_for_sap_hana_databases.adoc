@@ -32,7 +32,7 @@ After the failover, all the data protection operation can be performed as the se
 +
 You cannot create a backup for SAP HANA data volume, but SnapCenter continues to protect the Non-data Volumes (NDV).
 
-* SnapLock
+* SnapLock 
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 
@@ -104,7 +104,7 @@ a|
 Snapshot copy locking period
 a|
 Select Snapshot copy locking period, and select days, months, or years.
-+
+
 SnapLock retention period should be less than 100 years.
 |===
 
@@ -119,6 +119,8 @@ a|
 Select this field to create mirror copies of the backup sets on another volume (SnapMirror replication).
 
 If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, the Snapshot copy created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot copy is selected from the destination to perform a restore operation, then the Secondary Location is not available for the selected vaulted/mirrored backup error message is displayed.
+
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
