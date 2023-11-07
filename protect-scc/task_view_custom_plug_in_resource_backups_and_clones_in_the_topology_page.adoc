@@ -42,7 +42,7 @@ Clicking the refresh button starts a query of the storage to display an accurate
 +
 If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP. A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
 +
-When the application resource is spread across multiple volumes, the SnapLock expiry period for the backup will be the longest SnapLock expiry period that is set for a Snapshot copy in a volume.  The longest SnapLock expiry period is retrieved from ONTAP.
+When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot copy in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
 +
 After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
 

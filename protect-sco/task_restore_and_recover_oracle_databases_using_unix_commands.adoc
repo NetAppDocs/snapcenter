@@ -13,9 +13,11 @@ The restore and recovery workflow includes planning, performing the restore and 
 
 *About this task*
 
-You should execute the following commands to establish the connection with the SnapCenter Server, list the backups and retrieve its information, and restore the backup.
-
+* You should execute the following commands to establish the connection with the SnapCenter Server, list the backups and retrieve its information, and restore the backup.
++
 The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886206[SnapCenter Software Command Reference Guide^].
+
+* For SnapMirror Business Continuity (SM-BC) restore operation, you must select the backup from the primary location.
 
 *Steps*
 

@@ -100,10 +100,22 @@ a|
 Update SnapMirror after creating a local Snapshot copy
 a|
 Select this option to create mirror copies of backup sets on another volume (SnapMirror).
+
+This option should be enabled for SnapMirror Business Continuity (SM-BC).
+
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
+
+See link:../protect-scw/task_view_related_backups_and_clones_in_the_topology_page.html[View related backups and clones in the Topology page].
 a|
 Update SnapVault after creating a Snapshot copy
 a|
 Select this option to perform disk-to-disk backup replication.
+
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the Refresh button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
+
+When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the Refresh button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
+
+For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
 a|
 Secondary policy label
 a|

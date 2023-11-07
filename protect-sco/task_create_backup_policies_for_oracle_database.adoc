@@ -17,7 +17,7 @@ Before you use SnapCenter to back up Oracle database resources, you must create 
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, discovering databases, and creating storage system connections.
 * If you are replicating Snapshot copies to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
 * If you have installed the plug-in as a non-root user, you should manually assign the execute permissions to the prescript and postscript directories.
-* For SnapMirror Business Continuity (SM-BC), for more information on prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
+* For SnapMirror Business Continuity (SM-BC) prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
 
 *Steps*
 
@@ -117,8 +117,8 @@ Select this field to create mirror copies of the backup sets on another volume (
 This option should be enabled for SnapMirror Business Continuity (SM-BC).
 
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. 
-Clicking the Refresh button in the Topology page refreshes the secondary and primary SnapLock
-expiry time that are retrieved from ONTAP.
+
+Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 a|
 Update SnapVault after creating a local Snapshot copy
 a|
