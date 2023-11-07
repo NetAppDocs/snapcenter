@@ -89,10 +89,11 @@ For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/co
 . Migrate the data from old storage to new storage.
 +
 For information on how to migrate, refer to https://kb.netapp.com/onprem/ontap/dp/SnapMirror/How_can_I_copy_a_volume_and_preserve_all_of_the_Snapshot_copies[How can I copy a volume and preserve all of the Snapshot copies?]
-. Break the SnapMirror relationship between the old secondary storage and the new secondary storage.
 . Establish the SnapMirror relationship between the primary storage and new secondary storage, and make sure relationship state is healthy.
 . In SnapCenter, create a backup of the resources whose secondary storage is migrated.
 +
 IMPORTANT: You should wait until this operation is completed. If you proceed to the next step before completion, SnapCenter will loose old secondary snapshot metadata completely.
 . After successfully creating backup of all the resources, you can break the old secondary storage relationship with primary.
-. The scheduled weekly job will update the secondary storage metadata or you can also refresh at resource level if the update is immediately required.
+. Click *Refresh* for each resource to update the secondary storage metadata.
++
+If you do not update manually, the _Secondary Backup Reconciliation_ job (scheduled weekly) will update the secondary storage metadata automatically.

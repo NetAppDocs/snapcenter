@@ -64,10 +64,14 @@ For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/co
 +
 NOTE: The dry run is enabled by default and the matching resources to be relinked are identified. You can verify the resources by running either the API: '/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_. 
 +
-If you have migrated the resources from multiple hosts, you should run the API or the cmdlet for all the hosts.
+If you have migrated the resources from multiple hosts, you should run the API or the cmdlet for all the hosts. If the drive or mount path in the new host is not same as the old host, following restore operations will fail:
+
+* SQL in-place restore will fail. However, RTAL feature can be leveraged.
+* Oracle control file restore will fail but simple restore will work.
+
 +
-If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. The resources can be moved one at a time. 
-+
+If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. 
+
 NOTE: You can run the API or cmdlet on the same host multiple times, it will relink only if there is a new resource identified.
 . (Optional) Remove the old host or hosts from SnapCenter.
 
