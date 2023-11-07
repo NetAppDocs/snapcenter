@@ -43,7 +43,7 @@ When the storage is tech refreshed, you should run the storage tech refresh API 
 .Before you begin
 
 As this workflow modifies the data in SnapCenter repository, it is recommended to backup the SnapCenter repository. Incase of any data issues, SnapCenter repository can be reverted to old state using the backup.
-+
+
 For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
 
 .Steps
@@ -80,7 +80,7 @@ When the storage is tech refreshed, you should run the storage tech refresh API 
 .Before you begin
 
 As this workflow modifies the data in SnapCenter repository, it is recommended to backup the SnapCenter repository. Incase of any data issues, SnapCenter repository can be reverted to old state using the backup.
-+
+
 For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
 
 

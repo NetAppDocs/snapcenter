@@ -17,8 +17,6 @@ entries:
     entries:
       - title: REST APIs supported for SnapCenter Server and plug-ins
         url: /sc-automation/reference_supported_rest_apis.html
-      - title: REST API supported for disaster recovery of SnapCenter Server
-        url: /sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html
   - title: How to access REST APIs using the Swagger API web page
     url: /sc-automation/task_how to_access_rest_apis_using_the_swagger_api_web_page.html
   - title: Get started with the REST API
