@@ -162,7 +162,7 @@ The log backups up to the number of days of full backups are retained.
 a|
 Snapshot copy locking period
 a|
-Select Snapshot copy locking period, and select days, months, or years.
+Select *Snapshot copy locking period*, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
 
@@ -188,7 +188,7 @@ Select the *Keep Snapshot copies for* option, and specify the number of days to 
 a|
 Snapshot copy locking period
 a|
-Select Snapshot copy locking period, and select days, months, or years.
+Select *Snapshot copy locking period*, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
 |===
