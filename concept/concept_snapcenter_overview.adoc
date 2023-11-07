@@ -137,16 +137,10 @@ SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should
 * SnapCenter Plug-ins Package for Linux, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
  ** SnapCenter Plug-in for SAP HANA Database
- ** SnapCenter Plug-in for UNIX
-+
-NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be installed independently. This plug-in is automatically installed when you install either SnapCenter Plug-in for Oracle Database or SnapCenter Plug-in for SAP HANA Database.
-
+ ** SnapCenter Plug-in for UNIX file systems
 * SnapCenter Plug-ins Package for AIX, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
- ** SnapCenter Plug-in for UNIX
-+
-NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be installed independently. This plug-in is automatically installed when you install SnapCenter Plug-in for Oracle Database.
-
+ ** SnapCenter Plug-in for UNIX file systems
 * SnapCenter Custom Plug-ins
 +
 Custom plug-ins are community-supported and can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
@@ -279,6 +273,8 @@ NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on 
 +
 SAN native devices, filesystems, and LVM layouts built on SAN devices are supported.
 // [SD]: Updated this section for BURT 1391312 in 4.5
+* Automates application-aware backup, restore, and clone operations for UNIX file systems in your SnapCenter environment
+
 
 === SnapCenter Plug-in for SAP HANA Database features
 

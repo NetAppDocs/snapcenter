@@ -1,0 +1,58 @@
+---
+permalink: protect-scu/task_clone_unix_file_systems_backup.html
+sidebar: sidebar
+keywords: alternate host, clone, Unix file systems, file systems
+summary: 'You can use SnapCenter to clone an Unix file systems database using the backup of the database.'
+---
+= Clone Unix file system backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to clone Unix file system using the backup of the database.
+
+.Before you begin
+
+* You can skip the fstab file update by setting the value of _SKIP_FSTAB_UPDATE_ to *true* in the _agent.properties_ file located at _/opt/NetApp/snapcenter/scc/etc_.
+* You can have a static clone volume name and junction path by setting the value of _USE_CUSTOM_CLONE_VOLUME_NAME_FORMAT_ to *true* in the _agent.properties_ file located at _/opt/NetApp/snapcenter/scc/etc_.
++
+Example: Without this property the clone volume name and junction path will be like <Source_volume_name>_Clone_<Timestamp> but now it will be <Source_volume_name>_Clone_<Clone_Name>
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Path* or *Resource Group* from the *View* list.
+. Select the file system from either the database details view or the resource group details view.
++
+The topology page is displayed.
+
+. From the Manage Copies view, select the backups either from Local copies (primary), Mirror copies (secondary), or Vault copies (secondary).
+. Select the backup from the table, and then click *image:../media/clone_icon.gif[clone icon]*.
+. In the Location page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Clone server
+a|
+By default, the source host is populated.
+a|
+Clone mount point
+a|
+Specify the path where the file system will be mounted.
+|===
+
+. In the Scripts page, perform the following steps:
+.. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
+* Pre clone command: delete existing databases with the same name
+* Post clone command: verify a database or start a database.
+.. Enter the mount command to mount a file system to a host.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.

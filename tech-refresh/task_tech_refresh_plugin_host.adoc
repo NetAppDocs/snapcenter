@@ -1,0 +1,87 @@
+---
+permalink: tech-refresh/task_tech_refresh_plugin_host.html
+sidebar: sidebar
+keywords: tech refresh, plug-in host, supported plug-ins, prerequisites to refresh plug-in hosts, application hosts, limitations for tech refresh of plug-in hosts
+summary: 'Move the resources from old host to new host to perform tech refresh of the plug-in hosts.'
+---
+
+= Tech refresh of SnapCenter plug-in hosts
+
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+When the SnapCenter plug-in hosts require refresh, you should move the resources from old host to new host. When the new host is added to SnapCenter, it will discover all the resources but will be treated as new resources.
+
+.About this task
+
+You should run the API or cmdlet which will take old host name and new host name as input, compare the resources by name, and relink the objects of matching resources from old host to new host. The matching resources will be marked as protected.
+
+* The _IsDryRun_ parameter is set to True by default and this identifies the matching resources of the old and new host.
++
+After verifying the matching resources, you should set the _IsDryRun_ parameter to False to relink the objects of the matching resources from the old host to new host.
+* The _AutoMigrateManuallyAddedResources_ parameter is set to True by default and this automatically copies the manually added resources from old host to the new host.
++
+The _AutoMigrateManuallyAddedResources_ parameter is applicable only for Oracle and SAP HANA resources.
+
+Tech refresh is supported for the following SnapCenter Plug-ins:
+
+* SnapCenter Plug-in for Microsoft SQL Server
+* SnapCenter Plug-in for Windows
+* SnapCenter Plug-in for Oracle Database
+* SnapCenter Plug-in for SAP HANA Database
+
+The supported use cases are:
+
+* Migrating resources from one host to another host.
+* Migrating resources from multiple hosts to one or fewer hosts.
+* Migrating resources from one host to multiple hosts.
+
+The supported scenarios are:
+
+* New host has a different name from the old host
+* Existing host has been renamed
+
+.Before you begin
+
+As this workflow modifies the data in SnapCenter repository, it is recommended to backup the SnapCenter repository. Incase of any data issues, SnapCenter repository can be reverted to old state using the backup.
+
+For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository].
+
+.Steps
+
+. Deploy the new host and install the application.
+. Suspend the schedules of the old host.
+. Move the required resources from the old host to the new host. 
+.. Bring up the required databases in the new host from the same storage.
+*** Mount the storage on the same drive or path in the new host as that of the old host.
+*** If storage DR is enabled, the respective storage should be mounted in the new host.
+.. Check for the compatibility if there is a change in application version.
+. Add the new host to SnapCenter.
+. Verify if all the resources are discovered.
+. Run the host refresh API: `/5.0/techrefresh/host` or the cmdlet: _Invoke-SmTechRefreshHost_.
++
+NOTE: The dry run is enabled by default and the matching resources to be relinked are identified. You can verify the resources by running either the API: '/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_. 
++
+If you have migrated the resources from multiple hosts, you should run the API or the cmdlet for all the hosts. If the drive or mount path in the new host is not same as the old host, following restore operations will fail:
+
+* SQL in-place restore will fail. However, RTAL feature can be leveraged.
+* Oracle control file restore will fail but simple restore will work.
+
++
+If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. 
+
+NOTE: You can run the API or cmdlet on the same host multiple times, it will relink only if there is a new resource identified.
+. (Optional) Remove the old host or hosts from SnapCenter.
+
+.Related information
+
+For information on the APIs , you need to access the Swagger page. see link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html[How to access REST APIs using the swagger API web page].
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
+
+
+
+
+   
