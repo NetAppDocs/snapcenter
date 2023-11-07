@@ -41,6 +41,14 @@ If the resource is protected, the Topology page of the selected resource is disp
 The *Summary Card* section displays the total number of backups and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
++
+If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP. A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
++
+When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot copy in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
++
+For SnapMirror Business Continuity (SM-BC), after failover and failback, clicking the *Refresh* button refreshes the mirror copies. A weekly schedule also refreshes the mirror copies.
++
+After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
 
 . In the *Manage Copies* view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
 +

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policy
 summary: 'You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.'
 ---
-= Create backup policies for SQL Server databases
+= Create backup policies for SQL Server databases  
 :icons: font
 :imagesdir: ../media/
 
@@ -25,16 +25,28 @@ For information about how administrators assign resources to users, see the Snap
 +
 The default value is false.
 
+* For SnapMirror Business Continuity (SM-BC), for more information on prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
+
 .About this task
-A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
-
+* A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
++
 The SCRIPTS_PATH is defined using the PredefinedWindowsScriptsDirectory key located in the SMCoreServiceHost.exe.Config file of the plug-in host.
-
++
 If needed, you can change this path and restart SMcore service.  It is recommended that you use the default path for security.
-
++
 The value of the key can be displayed from swagger through the API: API /4.7/configsettings
++
+You can use the GET API to display the value of the key. SET API is not supported. 
 
-You can use the GET API to display the value of the key. SET API is not supported.
+* SnapLock
+
+** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
++
+Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires.  This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
++
+For ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time.  You should manually cleanup the clones post the SnapLock expiry time.
++
+NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
 == Step 1: Create Policy Name
 . In the left navigation pane, select *Settings*.
@@ -113,7 +125,7 @@ NOTE: In cluster configurations, the backups are retained at each node of the cl
 +
 You can only select one schedule type for a policy.
 +
-image::../media/backup_settings.gif[]
+image::../media/backup_settings.gif[Backup settings screen.]
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
@@ -161,6 +173,9 @@ NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, a
 .. Length of time to keep Snapshot copies
 ... If you want to specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
+.. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period* and select days, months, or years.
++
+Snaplock retention period should be less than 100 years.
 
 [start=3]
 . In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
@@ -173,6 +188,10 @@ IMPORTANT: You must set the retention count to 2 or higher if you plan to enable
 . Length of time to keep Snapshot copies
 .. To specify the number of days for which you want to keep the Snapshot copies before deleting them, select *Keep Snapshot copies for*.
 
+. If you want to specify the Snapshot copy locking period, select *Snapshot copy locking period* and select days, months, or years.
++
+SnapLock retention period should be less than 100 years.
++
 The log Snapshot copy retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot copy retention.
 
 This example sets the log Snapshot copy retention to 2:
@@ -197,6 +216,12 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 Update SnapMirror after creating a local Snapshot copy. 
 
 . Select this option to create mirror copies of backup sets on another volume (SnapMirror).
++
+This option should be enabled for SnapMirror Business Continuity (SM-BC). 
++
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
++
+See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Update SnapVault
@@ -204,6 +229,14 @@ Update SnapMirror after creating a local Snapshot copy.
 Update SnapVault after creating a Snapshot copy.
 
 . Select this option to perform disk-to-disk backup replication.
++
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
++
+When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
++
+For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
++
+See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Secondary Policy Label

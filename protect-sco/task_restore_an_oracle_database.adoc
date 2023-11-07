@@ -17,14 +17,16 @@ If you have installed the plug-in as a non-root user, you should manually assign
 
 *About this task*
 
-Recovery is performed using the archive logs available at the configured archive log location. If the database is running in ARCHIVELOG mode, Oracle database saves the filled groups of redo log files to one or more offline destinations, known collectively as the archived redo log. SnapCenter identifies and mounts optimal number of log backups based on the specified SCN, selected date and time, or all logs option.
+* Recovery is performed using the archive logs available at the configured archive log location. If the database is running in ARCHIVELOG mode, Oracle database saves the filled groups of redo log files to one or more offline destinations, known collectively as the archived redo log. SnapCenter identifies and mounts optimal number of log backups based on the specified SCN, selected date and time, or all logs option.
 If the archive logs required for recovery are not available at the configured location, you should mount the Snapshot copy containing the logs and specify the path as external archive logs.
-
++
 If you migrate ASM database from ASMLIB to ASMFD, then the backups created with ASMLIB cannot be used to restore the database. You should create backups in the ASMFD configuration and use those backups to restore. Similarly, if ASM database is migrated from ASMFD to ASMLIB, you should create backups in the ASMLIB configuration to restore.
-
++
 When you restore a database, an operational lock file (.sm_lock_dbsid) is created on the Oracle database host in the _/var/opt/snapcenter/sco/lock_ directory to avoid multiple operations being executed on the database. After the database has been restored, the operational lock file is automatically removed.
-
++
 NOTE: Restore of SPFILE and Password file is not supported.
+
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 *Steps*
 

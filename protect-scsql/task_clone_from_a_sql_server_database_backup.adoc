@@ -35,6 +35,8 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 NOTE: For virtual environments (VMDK/RDM), ensure that the mount point is a dedicated disk.
 
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select *SnapCenter Plug-in for SQL Server* from the list.
