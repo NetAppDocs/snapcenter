@@ -87,3 +87,4 @@ If the command or script is not present in the `allowed_commands.config`, the co
  
 NOTE: You should not use a wildcard entry (*) to allow all commands.
 
+
