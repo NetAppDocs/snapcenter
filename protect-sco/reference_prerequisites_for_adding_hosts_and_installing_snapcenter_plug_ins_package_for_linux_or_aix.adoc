@@ -62,7 +62,7 @@ NOTE: If you are using Oracle database on LVM in Oracle Linux or Red Hat Enterpr
 a|
 Minimum RAM for the SnapCenter plug-in on host
 a|
-1 GB
+2 GB
 a|
 Minimum install and log space for the SnapCenter plug-in on host
 a|
