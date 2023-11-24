@@ -62,7 +62,7 @@ NOTE: If you are using Oracle database on LVM in Oracle Linux or Red Hat Enterpr
 a|
 Minimum RAM for the SnapCenter plug-in on host
 a|
-1 GB
+2 GB
 a|
 Minimum install and log space for the SnapCenter plug-in on host
 a|
@@ -168,7 +168,7 @@ a|
 a|
 Minimum install and log space for the SnapCenter plug-in on host
 a|
-1 GB
+2 GB
 
 NOTE: You should allocate sufficient disk space and monitor the storage consumption by the logs folder. The log space required varies depending on the number of the entities to be protected and the frequency of data protection operations. If there is no sufficient disk space, the logs will not be created for the recently run operations.
 
