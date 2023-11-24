@@ -11,170 +11,82 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 [.lead]
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
 
-|===
-| All-access commands: Minimum privileges required for ONTAP 8.3.0 and later
-
-a|
-event generate-autosupport-log
-
-a|
-job history show
-
-job stop
-
-a|
-lun
-
-lun create
-
-lun delete
-
-lun igroup add
-
-lun igroup create
-
-lun igroup delete
-
-lun igroup rename
-
-lun igroup show
-
-lun mapping add-reporting-nodes
-
-lun mapping create
-
-lun mapping delete
-
-lun mapping remove-reporting-nodes
-
-lun mapping show
-
-lun modify
-
-lun move-in-volume
-
-lun offline
-
-lun online
-
-lun resize
-
-lun serial
-
-lun show
-
-a|
-snapmirror policy add-rule
-
-snapmirror policy modify-rule
-
-snapmirror policy remove-rule
-
-snapmirror policy show
-
-snapmirror restore
-
-snapmirror show
-
-snapmirror show-history
-
-snapmirror update
-
-snapmirror update-ls-set
-
-snapmirror list-destinations
-
-a|
-version
-
-a|
-volume clone create
-
-volume clone show
-
-volume clone split start
-
-volume clone split stop
-
-volume create
-
-volume destroy
-
-volume file clone create
-
-volume file show-disk-usage
-
-volume offline
-
-volume online
-
-volume modify
-
-volume qtree create
-
-volume qtree delete
-
-volume qtree modify
-
-volume qtree show
-
-volume restrict
-
-volume show
-
-volume snapshot create
-
-volume snapshot delete
-
-volume snapshot modify
-
-volume snapshot rename
-
-volume snapshot restore
-
-volume snapshot restore-file
-
-volume snapshot show
-
-volume unmount
-
-a|
-vserver cifs
-
-vserver cifs share create
-
-vserver cifs share delete
-
-vserver cifs shadowcopy show
-
-vserver cifs share show
-
-vserver cifs show
-
-vserver export-policy
-
-vserver export-policy create
-
-vserver export-policy delete
-
-vserver export-policy rule create
-
-vserver export-policy rule show
-
-vserver export-policy show
-
-vserver iscsi
-
-vserver iscsi connection show
-
-vserver show
-
-a|
-network interface
-
-network interface show
-
-vserver
-
-metrocluster show
-|===
+* All-access commands: Minimum privileges required for ONTAP 8.3.0 and later
+** event generate-autosupport-log
+** job history show
+** job stop
+** lun
+** lun create
+** lun delete
+** lun igroup add
+** lun igroup create
+** lun igroup delete
+** lun igroup rename
+** lun igroup show
+** lun mapping add-reporting-nodes
+** lun mapping create
+** lun mapping delete
+** lun mapping remove-reporting-nodes
+** lun mapping show
+** lun modify
+** lun move-in-volume
+** lun offline
+** lun online
+** lun resize
+** lun serial
+** lun show
+** snapmirror policy add-rule
+** snapmirror policy modify-rule
+** snapmirror policy remove-rule
+** snapmirror policy show
+** snapmirror restore
+** snapmirror show
+** snapmirror show-history
+** snapmirror update
+** snapmirror update-ls-set
+** snapmirror list-destinations
+** version
+** volume clone create
+** volume clone show
+** volume clone split start
+** volume clone split stop
+** volume create
+** volume destroy
+** volume file clone create
+** volume file show-disk-usage
+** volume offline
+** volume online
+** volume modify
+** volume qtree create
+** volume qtree delete
+** volume qtree modify
+** volume qtree show
+** volume restrict
+** volume show
+** volume snapshot create
+** volume snapshot delete
+** volume snapshot modify
+** volume snapshot rename
+** volume snapshot restore
+** volume snapshot restore-file
+** volume snapshot show
+** volume unmount
+** vserver cifs
+** vserver cifs share create
+** vserver cifs share delete
+** vserver cifs shadowcopy show
+** vserver cifs share show
+** vserver cifs show
+** vserver export-policy
+** vserver export-policy create
+** vserver export-policy delete
+** vserver export-policy rule create
+** vserver export-policy rule show
+** vserver export-policy show
+** vserver iscsi
+** vserver iscsi connection show
+** vserver show
+** network interface
+** network interface show
+** vserver
+** metrocluster show
