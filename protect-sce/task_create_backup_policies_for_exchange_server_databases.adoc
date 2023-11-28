@@ -166,7 +166,6 @@ Select *Snapshot copy locking period*, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
 
-Log backup (UTM) SnapLock retention value should be lesser than or equal to the full backup SnapLock retention value. You should not enable the log backup Snaplock retention without enabling the full backup SnapLock retention.
 |===
 If you selected *Log backup* as the backup type, log backups are retained as part of the up-to-the-minute retention settings for full backups.
 
