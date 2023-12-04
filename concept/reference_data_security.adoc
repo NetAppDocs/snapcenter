@@ -18,6 +18,7 @@ SnapCenter includes the following security features:
 * SnapCenter uses security algorithms that are compliant with the Federal Information Processing Standard (FIPS).
 * SnapCenter supports using the authorized CA certificates provided by the customer.
 * SnapCenter 4.1.1 or later supports Transport Layer Security (TLS) 1.2 communication with ONTAP. You can also use TLS 1.2 communication between clients and servers.
+* SnapCenter 5.0 supports Transport Layer Security (TLS) 1.3 communication with ONTAP.
 * SnapCenter supports a certain set of SSL Cipher suites to provide security across network communication.
 +
 For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_the_supported_SSL_Cipher_Suite[How to configure supported SSL Cipher Suite].
