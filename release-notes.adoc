@@ -12,6 +12,6 @@ summary: 'Provides important information about this release of SnapCenter Server
 
 Provides important information about this release of SnapCenter Server and the SnapCenter plug-in packages, including fixed issues, known issues, cautions, and limitations.
 
-For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886204[SnapCenter Software 5.0 Release Notes^].
+For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886893[SnapCenter Software 5.0 Release Notes^].
 
 

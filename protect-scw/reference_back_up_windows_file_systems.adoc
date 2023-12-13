@@ -17,4 +17,4 @@ The following workflow shows the sequence in which you must perform the backup o
 
 image::../media/sce_backup_workflow.gif[]
 
-You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help or the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^] contains detailed information about PowerShell cmdlets.
+You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help or the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^] contains detailed information about PowerShell cmdlets.
