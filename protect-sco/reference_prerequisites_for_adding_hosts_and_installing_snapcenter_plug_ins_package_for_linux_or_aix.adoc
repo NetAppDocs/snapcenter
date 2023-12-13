@@ -73,8 +73,8 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-* Java 1.8.x (64-bit) Oracle Java and OpenJDK flavors
-* Java 11 (64-bit) Oracle Java and OpenJDK flavors
+* Java 1.8.x (64-bit) Oracle Java and OpenJDK
+* Java 11 (64-bit) Oracle Java and OpenJDK
 
 NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 
