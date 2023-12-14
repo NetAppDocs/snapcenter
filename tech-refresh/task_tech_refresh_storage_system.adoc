@@ -27,6 +27,8 @@ Tech refresh is supported for the following SnapCenter Plug-ins:
 The supported use cases are:
 
 * Primary storage refresh
++
+The storage tech refresh is supported for replacing the primary storage with new storage. You cannot convert the existing secondary storage to a primary storage.
 * Secondary storage refresh
 
 The other supported scenarios are:
@@ -54,24 +56,34 @@ For information on how to migrate, refer to https://kb.netapp.com/onprem/ontap/d
 . Put the host to maintenance mode.
 . Mount the new storage in the respective hosts and bring up the databases.
 +
+The new storage should be connected to host in the same way as before. For example, if it was connected as SAN, it needs to be connected as SAN.
++
 The new storage needs to be mounted on the same drive or path as that of the old storage.
 . Verify that all the resources are up and running.
 . Add the new storage in SnapCenter.
 +
-Ensure that you have an unique SVM name across clusters in SnapCenter. If you are using the same SVM name in the new storage, you need to perform the following:
-+
-* If all the volumes of the SVM can be migrated before executing the storage refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
+Ensure that you have an unique SVM name across clusters in SnapCenter. If you are using the same SVM name in the new storage and if all the volumes of the SVM can be migrated before executing the storage refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
 
 . Put the host in production mode.
 . In SnapCenter, create a backup of the resources whose storage is migrated.
 . Run either the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
+.. If you are using SQL Failover Cluster Instances (FCI) setup, the backups are maintained at cluster level. You should provide the cluster name as input for storage tech refresh.
+.. If you are using SQL Availability Group (AG) setup, the backups are maintained at node level. You should provide the node name as input for storage tech refresh.
+.. If you are using Oracle Real Application Clusters (RAC) setup, you can perform storage tech refresh on any node.
 +
 The _IsDryRun_ attribute is set to True by default. It will identify the resources for which the storage is refreshed. You can view the resource and the changed storage details by running either the API: '5.0/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_.
++
+If the resource is configured with a replication enabled policy, the latest backup after the storage refresh should have details of the secondary storage.
 . After verifying the storage details, set the _IsDryRun_ attribute to False and run the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
 + 
 This will update the storage details in the older backups.
 +
-NOTE: You can run the API or cmdlet on the same host multiple times, it will update the storage details in the older backups only if the storage is refreshed.
+You can run the API or cmdlet on the same host multiple times, it will update the storage details in the older backups only if the storage is refreshed.
++
+NOTE: The clone hierarchy cannot be migrated in ONTAP. If the storage being migrated has any clone metadata in SnapCenter, then the cloned resource will be marked as independent resource.
+. (Optional) If all the snapshots are not moved from old primary storage to new primary storage, run the following API: `/5.0/hosts/primarybackupsexistencecheck` or the cmdlet _Invoke-SmPrimaryBackupsExistenceCheck_. 
++
+This will perform the snapshot existence check on the new primary storage and mark the respective backups not available for any operation in SnapCenter.
 
 == Update the backups of the secondary storage
 
@@ -93,7 +105,9 @@ For information on how to migrate, refer to https://kb.netapp.com/onprem/ontap/d
 . In SnapCenter, create a backup of the resources whose secondary storage is migrated.
 +
 IMPORTANT: You should wait until this operation is completed. If you proceed to the next step before completion, SnapCenter will loose old secondary snapshot metadata completely.
-. After successfully creating backup of all the resources, you can break the old secondary storage relationship with primary.
-. Click *Refresh* for each resource to update the secondary storage metadata.
+. After successfully creating backup of all the resources in a host, run either the secondary storage refresh API: `/5.0/techrefresh/secondarystorage` or the cmdlet: _Invoke-SmTechRefreshSecondaryStorage_.
 +
-If you do not update manually, the _Secondary Backup Reconciliation_ job (scheduled weekly) will update the secondary storage metadata automatically.
+This will update the secondary storage details of the older backups in the given host.
++
+If you want to run this at resource level, click *Refresh* for each resource to update the secondary storage metadata.
+.  After successfully updating the older backups, you can break the old secondary storage relationship with primary.
