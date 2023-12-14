@@ -19,10 +19,13 @@ When the SnapCenter Server host requires refresh, you can install the same versi
 . Deploy the new host and perform the following tasks:
 .. Install the same version of the SnapCenter Server.
 .. (Optional) Configure CA certificates and enable two-way SSL. For more information, refer to https://docs.netapp.com/us-en/snapcenter/install/reference_generate_CA_certificate_CSR_file.html[Configure CA Certificate] and https://docs.netapp.com/us-en/snapcenter/install/task_configure_two_way_ssl.html[Configure and enable two-way SSL].
+.. (Optional) Configure multi-factor authentication. For more information, refer to https://docs.netapp.com/us-en/snapcenter/install/enable_multifactor_authentication.html[Enable multi-factor authentication].
 . Log in as the SnapCenter Admin user.
 . Create a backup of the SnapCenter Server on the old host using either the API: `/5.0/server/backup` or the cmdlet: _New-SmServerBackup_.
 +
 NOTE: Before taking the backup, suspend all the scheduled jobs and ensure that no jobs are running.
++
+IMPORTANT: If you want to restore the backup on the SnapCenter Server that is running on a new domain, before taking a backup you should add the new domain user in the old SnapCenter host and assign the SnapCenter admin role.
 . Copy the backup from the old host to new host.
 . Restore the backup of the SnapCenter Server on the new host using either the API: `/5.0/server/restore` or the cmdlet: _Restore-SmServerBackup_.
 +
@@ -31,6 +34,10 @@ Restore will update the new SnapCenter Server URL in all the hosts by default. I
 NOTE: If the plug-in host is not able to resolve the server hostname, log in to each of the plug-in host and add the _etc/host_ entry for the new IP in the <New IP> SC_Server_Name format.
 +
 NOTE: The server _etc/host_ entries will not be restored. You can restore it manually from the old server.
++
+If the backup is restored on the SnpCenter Server that is running on a new domain and if you want to continue to use the old domain users, you should register the old domain in the new SnapCenter Server.
++
+NOTE: If you have manually updated the web.config file in old SnapCenter host, the updates will not be copied to the new host. You should manually make the same changes in the web.config file of the new host.
 . If you have skipped updating the SnapCenter Server URL or any of the host was down during the restore process, update the new server name in all the hosts or specified hosts that are managed by the SnapCenter using either the API: `/5.0/server/configureurl` or the cmdlet: _Set-SmServerConfig_.
 . Activate the scheduled jobs on all the hosts from the new SnapCenter Server.
 

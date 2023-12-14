@@ -55,9 +55,12 @@ For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/co
 . Suspend the schedules of the old host.
 . Move the required resources from the old host to the new host. 
 .. Bring up the required databases in the new host from the same storage.
-*** Mount the storage on the same drive or path in the new host as that of the old host.
+*** Ensure that the storage is mapped to the same drive or same mount path as that of old host. If the storage is not mapped correctly, backups created in old host cannot be used for restore.
++
+NOTE: By default, Windows auto assigns the next available drive.
 *** If storage DR is enabled, the respective storage should be mounted in the new host.
 .. Check for the compatibility if there is a change in application version.
+.. only for Oracle plug-in host, ensure that the UIDs and GIDs of Oracle and it's group users are same as that of old host.
 . Add the new host to SnapCenter.
 . Verify if all the resources are discovered.
 . Run the host refresh API: `/5.0/techrefresh/host` or the cmdlet: _Invoke-SmTechRefreshHost_.
