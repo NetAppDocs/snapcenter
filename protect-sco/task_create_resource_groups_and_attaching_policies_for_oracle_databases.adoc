@@ -39,8 +39,8 @@ For example, if you add HR as a tag to multiple resource groups, you can later f
 +
 For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
  .. Specify the destinations of the archive log files that you do not want to back up.
-
-
+ 
+ NOTE: You should use the exact same destination as it was set in Oracle, including prefix, if needed.
 . In the Resources page, select an Oracle database host name from the *Host* drop-down list.
 +
 NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
