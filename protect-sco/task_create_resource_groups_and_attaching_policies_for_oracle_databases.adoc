@@ -28,19 +28,20 @@ image::../media/sco_resourcegroup_policy.gif[]
 . In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
 . In the Resources page, click *New Resource Group*.
 . In the Name page, perform the following actions:
- .. Enter a name for the resource group in the Name field.
+.. Enter a name for the resource group in the Name field.
 + 
 NOTE: The resource group name should not exceed 250 characters.
  
- .. Enter one or more labels in the Tag field to help you search for the resource group later.
+.. Enter one or more labels in the Tag field to help you search for the resource group later.
 +
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
- .. Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
+.. Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
 +
 For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
- .. Specify the destinations of the archive log files that you do not want to back up.
- 
- NOTE: You should use the exact same destination as it was set in Oracle, including prefix, if needed.
+.. Specify the destinations of the archive log files that you do not want to back up.
++
+NOTE: You should use the exact same destination as it was set in Oracle, including prefix, if needed.
+
 . In the Resources page, select an Oracle database host name from the *Host* drop-down list.
 +
 NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
