@@ -67,7 +67,7 @@ Installation Path
 a|
 The default path is _/opt/NetApp/snapcenter_.
 
-You can optionally customize the path.
+You can optionally customize the path. If you use the custom path, ensure that the default content of the sudoers is updated with the custom path.
 
 a|
 Skip optional preinstall checks

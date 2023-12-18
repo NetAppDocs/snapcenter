@@ -43,5 +43,7 @@ entries:
     entries:
       - title: Clone Unix file systems
         url: /protect-scu/task_clone_unix_file_systems_backup.html
+      - title: Split a clone
+        url: /protect-scu/task_split_a_clone.html
       - title: Monitor Unix file systems clone operations
         url: /protect-scu/task_monitor_unix_file_systems_clone_operations.html

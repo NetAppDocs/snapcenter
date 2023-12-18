@@ -17,6 +17,8 @@ You can use SnapCenter to clone Unix file system using the backup of the databas
 * You can have a static clone volume name and junction path by setting the value of _USE_CUSTOM_CLONE_VOLUME_NAME_FORMAT_ to *true* in the _agent.properties_ file located at _/opt/NetApp/snapcenter/scc/etc_.
 +
 Example: Without this property the clone volume name and junction path will be like <Source_volume_name>_Clone_<Timestamp> but now it will be <Source_volume_name>_Clone_<Clone_Name>
++
+This keeps the name constant so that you can manually keep the fstab file updated if you do not prefer to update the fstab by external software.
 
 .Steps
 
@@ -45,7 +47,7 @@ Specify the path where the file system will be mounted.
 
 . In the Scripts page, perform the following steps:
 .. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
-* Pre clone command: delete existing databases with the same name
+* Pre clone command (optional): delete existing databases with the same name.
 * Post clone command: verify a database or start a database.
 .. Enter the mount command to mount a file system to a host.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
