@@ -69,5 +69,5 @@ However, you can manually perform file level restore by cloning the backup and t
 * Mix of file systems spread across VMDKs coming from both NFS and VMFS datastore is not supported.
 * NVMe is not supported.
 * SnapMirror Business Continuity (SM-BC) is not supported.
-* Provisioning is not be supported.
+* Provisioning is not supported.
 * In case of restore of a file system residing on volume group, the old contents on the file system are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable for file systems on volume group only.

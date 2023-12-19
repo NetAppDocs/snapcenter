@@ -217,7 +217,7 @@ Update SnapMirror after creating a local Snapshot copy.
 
 . Select this option to create mirror copies of backup sets on another volume (SnapMirror).
 +
-This option should be enabled for SnapMirror Business Continuity (SM-BC). 
+This option should be enabled for SnapMirror Business Continuity (SM-BC) or for SnapMirror Sync (SM-S).
 +
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 +

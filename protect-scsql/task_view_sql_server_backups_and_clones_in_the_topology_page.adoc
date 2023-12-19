@@ -26,6 +26,10 @@ For example, if you created 6 backups using a policy to retain only 4 backups, t
 
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view, but the mirror backup count in the topology view does not include the version-flexible backup.
 
+* image:../media/topology_replica_site_up.png[replica site up] implies that the replica site is up.
+* image:../media/topology_replica_site_down.png[replica site down]  implies that the replica site is down.
+* image:../media/topology_reestablished.png[relationship is reestablished] implies that the secondary mirror or vault relationship has not been re-established.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
@@ -46,7 +50,10 @@ If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshe
 +
 When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot copy in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
 +
-For SnapMirror Business Continuity (SM-BC), after failover and failback, clicking the *Refresh* button refreshes the mirror copies. A weekly schedule also refreshes the mirror copies.
+For SnapMirror Business Continuity (SM-BC), clicking the *Refresh* button refreshes the SnapCenter backup inventory by querying ONTAP for both primary and replica sites. A weekly schedule also performs this activity for all databases containing SM-BC relationship.
++
+* For SM-BC, Async Mirror, Vault, or MirrorVault relationships to the new primary destination should be manually configured after failover.
+* After failover, a backup should be created for SnapCenter to be aware of the failover. You can click *Refresh* only after a backup has been created.
 +
 After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
 
