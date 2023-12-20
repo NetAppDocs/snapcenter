@@ -25,7 +25,7 @@ The number of backups displayed includes the backups deleted from the secondary 
 
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view, but the mirror backup count in the topology view does not include the version-flexible backup.
 
-If you have enabled SnapMirror Business Continuity (SM-BC), you can see following additional icons:
+If you have secondary relationship as SnapMirror Business Continuity (SM-BC), you can see following additional icons:
 
 * image:../media/topology_replica_site_up.png[replica site up] implies that the replica site is up.
 * image:../media/topology_replica_site_down.png[replica site down]  implies that the replica site is down.
