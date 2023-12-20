@@ -25,6 +25,8 @@ The number of backups displayed includes the backups deleted from the secondary 
 
 NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view, but the mirror backup count in the topology view does not include the version-flexible backup.
 
+If you have enabled SnapMirror Business Continuity (SM-BC), you can see following additional icons:
+
 * image:../media/topology_replica_site_up.png[replica site up] implies that the replica site is up.
 * image:../media/topology_replica_site_down.png[replica site down]  implies that the replica site is down.
 * image:../media/topology_reestablished.png[relationship is reestablished] implies that the secondary mirror or vault relationship has not been re-established.
@@ -51,8 +53,6 @@ For SnapMirror Business Continuity (SM-BC), clicking the *Refresh* button refres
 +
 * For SM-BC, Async Mirror, Vault, or MirrorVault relationships to the new primary destination should be manually configured after failover.
 * After failover, a backup should be created for SnapCenter to be aware of the failover. You can click *Refresh* only after a backup has been created.
-+
-After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
 
 . In the Manage Copies view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
 +
