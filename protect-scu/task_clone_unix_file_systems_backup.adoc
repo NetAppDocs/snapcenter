@@ -50,6 +50,9 @@ Specify the path where the file system will be mounted.
 * Pre clone command (optional): delete existing databases with the same name.
 * Post clone command: verify a database or start a database.
 .. Enter the mount command to mount a file system to a host.
++
+NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path.
+
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the clone operation performed, select *Attach Job Report*.

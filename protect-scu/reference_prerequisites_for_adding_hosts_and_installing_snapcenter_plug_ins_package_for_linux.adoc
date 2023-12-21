@@ -12,7 +12,7 @@ summary: 'Before you add a host and install the plug-ins packages, you must comp
 Before you add a host and install the plug-ins package for Linux, you must complete all the requirements.
 
 * If you are using iSCSI, the iSCSI service must be running.
-* You must have enabled the password-based SSH connection for the root or non-root user.
+* You can either use the password-based authentication for the root or non-root user or SSH key based authentication.
 +
 SnapCenter Plug-in for Unix File Systems can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective non-root user.
 

@@ -70,6 +70,8 @@ Unmount commands are not available for auto discovered resources.
 . In the Post ops page, enter mount and post restore commands to run after performing a restore job.
 +
 Mount commands are not available for auto discovered resources.
++
+NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
