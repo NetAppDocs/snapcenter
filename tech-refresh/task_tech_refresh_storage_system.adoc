@@ -105,7 +105,10 @@ For more information, refer to https://docs.netapp.com/us-en/snapcenter/admin/co
 
 . Migrate the data from old storage to new storage.
 +
-For information on how to migrate, refer to https://kb.netapp.com/onprem/ontap/dp/SnapMirror/How_can_I_copy_a_volume_and_preserve_all_of_the_Snapshot_copies[How can I copy a volume and preserve all of the Snapshot copies?]
+For information on how to migrate, refer to:
++
+* https://kb.netapp.com/mgmt/SnapCenter/How_to_perform_Storage_tech_refresh[How to migrate the data to new storage]
+* https://kb.netapp.com/onprem/ontap/dp/SnapMirror/How_can_I_copy_a_volume_and_preserve_all_of_the_Snapshot_copies[How can I copy a volume and preserve all of the Snapshot copies?]
 . Establish the SnapMirror relationship between the primary storage and new secondary storage, and make sure relationship state is healthy.
 . In SnapCenter, create a backup of the resources whose secondary storage is migrated.
 +
