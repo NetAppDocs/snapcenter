@@ -68,7 +68,7 @@ The new storage needs to be mounted on the same drive or path as that of the old
 Ensure that you have an unique SVM name across clusters in SnapCenter. If you are using the same SVM name in the new storage and if all the volumes of the SVM can be migrated before executing the storage refresh, then it is recommended to delete the SVM in old cluster and rediscover the old cluster in SnapCenter which will remove the SVM from cache.
 
 . Put the host in production mode.
-. In SnapCenter, create a backup of the resources whose storage is migrated.
+. In SnapCenter, create a backup of the resources whose storage is migrated. A new backup is necessary for SnapCenter to identify the latest storage footprint, and it will be used to update the metadata of existing old backups.
 +
 NOTE: For Windows file system resources, resource discovery should not be performed before executing storage refresh API or cmdlet. If discovery is performed before the storage refresh for Windows file system resources, SnapCenter will treat these resources as new and consequently lose their protection and backup metadata.
 . Run either the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
