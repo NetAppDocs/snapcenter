@@ -34,6 +34,8 @@ Tech refresh is supported for the following SnapCenter Plug-ins:
 ** If you are using SQL Availability Group (AG) setup, tech refresh is not supported. However, you can add the new node to AG and refresh the host in SnapCenter.
 * SnapCenter Plug-in for Windows
 * SnapCenter Plug-in for Oracle Database
++
+If you are using Oracle Real Application Cluster (RAC) setup, you can perform the tech refresh by adding the new node to the RAC cluster and refreshing the plug-in host in SnapCenter.
 * SnapCenter Plug-in for SAP HANA Database
 
 The supported use cases are:
@@ -81,12 +83,12 @@ NOTE: The dry run is enabled by default and the matching resources to be relinke
 If you have migrated the resources from multiple hosts, you should run the API or the cmdlet for all the hosts. If the drive or mount path in the new host is not same as the old host, following restore operations will fail:
 
 * SQL in-place restore will fail. However, RTAL feature can be leveraged.
-* Oracle control file restore will fail but simple restore will work.
-
+* Restore of Oracle and SAP HANA databases will fail.
 +
 If you want to migrate to multiple hosts, you should perform all the steps from step 1 for all the hosts. 
-
++
 NOTE: You can run the API or cmdlet on the same host multiple times, it will relink only if there is a new resource identified.
+
 . (Optional) Remove the old host or hosts from SnapCenter.
 
 .Related information

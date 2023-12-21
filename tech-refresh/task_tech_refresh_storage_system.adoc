@@ -72,20 +72,22 @@ Ensure that you have an unique SVM name across clusters in SnapCenter. If you ar
 +
 NOTE: For Windows file system resources, resource discovery should not be performed before executing storage refresh API or cmdlet. If discovery is performed before the storage refresh for Windows file system resources, SnapCenter will treat these resources as new and consequently lose their protection and backup metadata.
 . Run either the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
++
+NOTE: If the resource is configured with a replication enabled policy, the latest backup after the storage refresh should have details of the secondary storage.
++
 .. If you are using SQL Failover Cluster Instances (FCI) setup, the backups are maintained at cluster level. You should provide the cluster name as input for storage tech refresh.
 .. If you are using SQL Availability Group (AG) setup, the backups are maintained at node level. You should provide the node name as input for storage tech refresh.
 .. If you are using Oracle Real Application Clusters (RAC) setup, you can perform storage tech refresh on any node.
 +
 The _IsDryRun_ attribute is set to True by default. It will identify the resources for which the storage is refreshed. You can view the resource and the changed storage details by running either the API: '5.0/jobs/{jobid}' or the cmdlet _Get-SmJobSummaryReport_.
-+
-If the resource is configured with a replication enabled policy, the latest backup after the storage refresh should have details of the secondary storage.
+
 . After verifying the storage details, set the _IsDryRun_ attribute to False and run the storage refresh API: `/5.0/techrefresh/primarystorage` or the cmdlet: _Invoke-SmTechRefreshPrimaryStorage_.
 + 
 This will update the storage details in the older backups.
 +
 You can run the API or cmdlet on the same host multiple times, it will update the storage details in the older backups only if the storage is refreshed.
 +
-NOTE: The clone hierarchy cannot be migrated in ONTAP. If the storage being migrated has any clone metadata in SnapCenter, then the cloned resource will be marked as independent resource.
+NOTE: The clone hierarchy cannot be migrated in ONTAP. If the storage being migrated has any clone metadata in SnapCenter, then the cloned resource will be marked as independent resource. Clones of clone metadata will be removed recursively.
 . (Optional) If all the snapshots are not moved from old primary storage to new primary storage, run the following API: `/5.0/hosts/primarybackupsexistencecheck` or the cmdlet _Invoke-SmPrimaryBackupsExistenceCheck_. 
 +
 This will perform the snapshot existence check on the new primary storage and mark the respective backups not available for any operation in SnapCenter.
@@ -110,7 +112,9 @@ For information on how to migrate, refer to:
 * https://kb.netapp.com/mgmt/SnapCenter/How_to_perform_Storage_tech_refresh[How to migrate the data to new storage]
 * https://kb.netapp.com/onprem/ontap/dp/SnapMirror/How_can_I_copy_a_volume_and_preserve_all_of_the_Snapshot_copies[How can I copy a volume and preserve all of the Snapshot copies?]
 . Establish the SnapMirror relationship between the primary storage and new secondary storage, and make sure relationship state is healthy.
-. In SnapCenter, create a backup of the resources whose secondary storage is migrated.
+. In SnapCenter, create a backup of the resources whose storage is migrated. 
++
+A new backup is necessary for SnapCenter to identify the latest storage footprint and it will be used to update the metadata of existing old backups.
 +
 IMPORTANT: You should wait until this operation is completed. If you proceed to the next step before completion, SnapCenter will loose old secondary snapshot metadata completely.
 . After successfully creating backup of all the resources in a host, run either the secondary storage refresh API: `/5.0/techrefresh/secondarystorage` or the cmdlet: _Invoke-SmTechRefreshSecondaryStorage_.
