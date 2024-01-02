@@ -31,7 +31,7 @@ Tech refresh is supported for the following SnapCenter Plug-ins:
 ** If the SQL databases are protected at instance level and as part of host tech refresh only partial resources are moved to new host, then the existing instance level protection will be converted to resource group protection and instances from both the hosts will be added to the resource group.
 ** If a SQL host (for example host1) is used as either scheduler or verification server for resources of another host (for example host2), then while performing tech refresh on host1, the schedule or the verification details will not be migrated and will continue to run on host1. If you have to modify, then you should manually change it in the respective hosts.
 ** If you are using SQL Failover Cluster Instances (FCI) setup, you can perform the tech refresh by adding the new node to the FCI cluster and refreshing the plug-in host in SnapCenter.
-** If you are using SQL Availability Group (AG) setup, tech refresh is not supported. However, you can add the new node to AG and refresh the host in SnapCenter.
+** If you are using SQL Availability Group (AG) setup, tech refresh is not required. You can add the new node to AG and refresh the host in SnapCenter.
 * SnapCenter Plug-in for Windows
 * SnapCenter Plug-in for Oracle Database
 +

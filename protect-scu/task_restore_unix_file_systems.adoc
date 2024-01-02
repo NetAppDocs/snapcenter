@@ -33,7 +33,6 @@ Unmount commands are not available for auto discovered resources.
 +
 Mount commands are not available for auto discovered resources.
 +
-+
 NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
 +
@@ -42,4 +41,6 @@ You must also specify the sender and receiver email addresses, and the subject o
 NOTE: For email notification, you must have specified the SMTP server details by using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
 . Review the summary, and then click *Finish*.
++
+NOTE: If restore operation fails, rollback is not supported.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
