@@ -43,7 +43,7 @@ a|
 * SAN: 
 ** Both LVM and non LVM based file systems
 ** LVM over VMDK ext3, ext4, and xfs
-*NFS: NFS v3, NFS v4.x
+* NFS: NFS v3, NFS v4.x
 
 a|
 Protocols

@@ -26,12 +26,8 @@ The topology page is displayed.
 * For non NFS file systems, the restore scope is selected depending on the layout.
 +
 The new files created after backup may not be available after restore depending on the file system type and layout.
-. In the PreOps page, enter pre restore and unmount commands to run before performing a restore job.
-+
-Unmount commands are not available for auto discovered resources.
-. In the PostOps page, enter mount and post restore commands to run after performing a restore job.
-+
-Mount commands are not available for auto discovered resources.
+. In the PreOps page, enter pre restore commands to run before performing a restore job.
+. In the PostOps page, enter post restore commands to run after performing a restore job.
 +
 NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.

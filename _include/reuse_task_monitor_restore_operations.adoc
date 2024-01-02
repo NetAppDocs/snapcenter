@@ -27,5 +27,3 @@ The following icons appear on the Jobs page, and indicate the state of the opera
 . In the *Job Details* page, click *View logs*.
 +
 The *View logs* button displays the detailed logs for the selected operation.
-+
-IMPORTANT: After the volume based restore operation, the backup metadata is deleted from the SnapCenter repository but the backup catalog entries remain in SAP HANA catalog. Though the restore job status displays image:../media/success_icon.gif[Completed icon], you should click on job details to see the warning sign of some of the child tasks. Click on the warning sign and delete the indicated backup catalog entries.
