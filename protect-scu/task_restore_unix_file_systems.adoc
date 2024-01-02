@@ -40,5 +40,5 @@ NOTE: For email notification, you must have specified the SMTP server details by
 +
 IMPORTANT: If restore operation fails, rollback is not supported.
 + 
-NOTE: In case of restore of a filesystem residing on volume group, the old contents on the filesystem are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable when there are multiple filesystems on the volume group and default NFS restores.
+NOTE: In case of restore of a filesystem residing on volume group, the old contents on the filesystem are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable when there are multiple filesystems on the volume group and default NFS filesystem restores.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
