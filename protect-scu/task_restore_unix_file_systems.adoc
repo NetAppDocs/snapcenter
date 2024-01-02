@@ -42,5 +42,7 @@ NOTE: For email notification, you must have specified the SMTP server details by
 
 . Review the summary, and then click *Finish*.
 +
-NOTE: If restore operation fails, rollback is not supported.
+IMPORTANT: If restore operation fails, rollback is not supported.
++ 
+NOTE: In case of restore of a file system residing on volume group, the old contents on the file system are not deleted. Only the content from the cloned filesystem will be copied to the source filesystem. This is applicable for file systems on volume group only.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
