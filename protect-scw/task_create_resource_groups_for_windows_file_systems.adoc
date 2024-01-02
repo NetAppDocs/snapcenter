@@ -13,8 +13,8 @@ A resource group is the container to which you can add multiple file systems tha
 
 .About this task
 * For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
-* Adding new databases without SM-BC to an existing resource group which contains resources with SM-BC is not supported.
-* Adding new databases to an existing resource group in failover mode is not supported. You can add resources to the resource group only in regular or fail-back state.
+* Adding new filesystems without SM-BC to an existing resource group which contains resources with SM-BC is not supported.
+* Adding new filesystems to an existing resource group in failover mode of SM-BC is not supported. You can add resources to the resource group only in regular or fail-back state.
 
 .Steps
 
