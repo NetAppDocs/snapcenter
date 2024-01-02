@@ -56,7 +56,7 @@ a|
 a|
 Multipath
 a|
-Only native multipath
+yes
 
 |===
 

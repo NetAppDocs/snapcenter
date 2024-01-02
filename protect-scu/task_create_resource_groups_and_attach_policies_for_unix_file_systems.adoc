@@ -35,7 +35,7 @@ NOTE: The resources are listed in the Available Resources section only if the re
 . In the Application Settings page, perform the following:
 * Select the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 * Select one of the backup consistency options:
-** Select *File System Consistent* if you want to ensure that file systems cached data is flushed before creating the backup and no input or output operations are performed on filesystem while creating the backup.
+** Select *File System Consistent* if you want to ensure that file systems cached data is flushed before creating the backup and no input or output operations are allowed on filesystem while creating the backup.
 +
 NOTE: For File System Consistent, Consistency group snapshots will be taken for LUNs involved in Volume group.
 ** Select *Crash Consistent* if you want to ensure that file systems cached data is flushed before creating the backup.

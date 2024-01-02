@@ -15,7 +15,7 @@ In the event of data loss, you can use SnapCenter to restore Unix file systems.
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Path* or *Resource Group* from the *View* list.
-. Select the file system from either the database details view or the resource group details view.
+. Select the file system from either the details view or the resource group details view.
 +
 The topology page is displayed.
 
@@ -29,7 +29,7 @@ The new files created after backup may not be available after restore depending 
 . In the PreOps page, enter pre restore commands to run before performing a restore job.
 . In the PostOps page, enter post restore commands to run after performing a restore job.
 +
-NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path.
+NOTE: You should check if the commands exist in the command list available on the plug-in host from the _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_ path.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, you must select *Attach Job Report*.

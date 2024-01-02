@@ -2,14 +2,14 @@
 permalink: protect-scu/task_clone_unix_file_systems_backup.html
 sidebar: sidebar
 keywords: alternate host, clone, Unix file systems, file systems
-summary: 'You can use SnapCenter to clone an Unix file systems database using the backup of the database.'
+summary: 'You can use SnapCenter to clone an Unix file systems database using the backup of the filesystem.'
 ---
 = Clone Unix file system backup
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use SnapCenter to clone Unix file system using the backup of the database.
+You can use SnapCenter to clone Unix file system using the backup of the filesystem.
 
 .Before you begin
 
@@ -24,7 +24,7 @@ This keeps the name constant so that you can manually keep the fstab file update
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Path* or *Resource Group* from the *View* list.
-. Select the file system from either the database details view or the resource group details view.
+. Select the file system from either the details view or the resource group details view.
 +
 The topology page is displayed.
 
