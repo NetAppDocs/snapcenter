@@ -24,6 +24,7 @@ After verifying the matching resources, you should set the _IsDryRun_ parameter 
 * The _AutoMigrateManuallyAddedResources_ parameter is set to True by default and this automatically copies the manually added resources from old host to the new host.
 +
 The _AutoMigrateManuallyAddedResources_ parameter is applicable only for Oracle and SAP HANA resources.
+* The _SQLInstanceMapping_ parameter should be used if the instance name is different between old host and new host. If it is a default instance then use _default_instance_ as instance name.
 
 Tech refresh is supported for the following SnapCenter Plug-ins:
 
