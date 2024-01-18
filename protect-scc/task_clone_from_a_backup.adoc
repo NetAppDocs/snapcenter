@@ -17,6 +17,10 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 * The default clone operation only clones storage objects. Clone operations at the application level can only be performed if the custom plug-in provides that capability.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
 
+.About this task
+
+For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

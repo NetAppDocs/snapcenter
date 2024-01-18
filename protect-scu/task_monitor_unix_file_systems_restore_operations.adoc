@@ -1,0 +1,12 @@
+---
+permalink: protect-scu/task_monitor_unix_file_systems_restore_operations.html
+sidebar: sidebar
+keywords: restore, monitor, unix file systems
+summary: 'You can monitor the progress of different SnapCenter restore operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
+---
+= Monitor Unix file systems restore operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_monitor_restore_operations.adoc[]

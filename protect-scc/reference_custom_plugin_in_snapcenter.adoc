@@ -160,7 +160,7 @@ For example, PS> Upload-SmPluginPackage -AbsolutePath c:\DB2_1.zip
 For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or
 see the cmdlet reference information.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
 
 === Deploying the custom plug-ins
 

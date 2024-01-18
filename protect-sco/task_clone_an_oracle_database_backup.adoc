@@ -17,18 +17,20 @@ If you have installed the plug-in as a non-root user, you should manually assign
 
 *About this task*
 
-The cloning operation creates a copy of the database data files, and creates new online redo log files and control files. The database can be optionally recovered to a specified time, based on the specified recovery options.
-
+* The cloning operation creates a copy of the database data files, and creates new online redo log files and control files. The database can be optionally recovered to a specified time, based on the specified recovery options.
++
 NOTE: Cloning fails if you try to clone a backup that was created on a Linux host to an AIX host or vice-versa.
-
++
 SnapCenter creates a stand-alone database when cloned from an Oracle RAC database backup. SnapCenter supports creating clone from the backup of a Data Guard standby and Active Data Guard standby databases.
-
++
 During cloning, SnapCenter mounts the optimal number of log backups based on SCN or dat and time for recovery operations. After recovery, the log backup is unmounted. All such clones are mounted under _/var/opt/snapcenter/scu/clones/_. If you are using ASM over NFS, you should add _/var/opt/snapcenter/scu/clones/*/*_ to the existing path defined in the asm_diskstring parameter.
-
++
 While cloning a backup of an ASM database in a SAN environment, udev rules for the cloned host devices are created at _/etc/udev/rules.d/999-scu-netapp.rules_. These udev rules associated with the cloned host devices are deleted when you delete the clone.
-
++
 //Included the below info for BURT 1348035 for 4.5
 NOTE: In a Flex ASM setup, you cannot perform clone operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
+
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 *Steps*
 

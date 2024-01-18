@@ -70,9 +70,9 @@ SnapCenter includes REST APIs for most functionality for integration with any or
 +
 For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html[REST API overview].
 +
-For more information on Windows cmdlets see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
+For more information on Windows cmdlets see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
 +
-For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886206[SnapCenter Software Command Reference Guide^].
+For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896[SnapCenter Software Command Reference Guide^].
 
 * Centralized data protection Dashboard and reporting
 * Role-Based Access Control (RBAC) for security and delegation.
@@ -93,6 +93,28 @@ High availability for SnapCenter is set up using external load balancer (F5). Up
 * Disaster Recovery (DR)
 +
 You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash.
+
+* SnapLock
++
+SnapLock is a high-performance compliance solution for organizations that use write once, read many (WORM) storage to retain files in unmodified form for regulatory and governance purposes.
++
+For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is]
+
+* SnapMirror Business Continuity (SM-BC)
++
+SnapMirror Business Continuity (SM-BC) enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SM-BC.
++
+The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, and SnapCenter Plug-in for Oracle database.
++
+For more information on SM-BC refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror Business Continuity (SM-BC)]
++
+For SM-BC, ensure that you have met the various hardware, software, and system configuration requirements.  For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
+
+* Synchronous mirroring
++
+The Synchronous mirroring feature provides online, real-time data replication between storage arrays over a remote distance.
++
+For more information on Sync mirror refer https://docs.netapp.com/us-en/e-series-santricity/sm-mirroring/overview-mirroring-sync.html[Synchronous mirroring overview]
 
 == SnapCenter architecture
 
@@ -115,23 +137,17 @@ SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should
 * SnapCenter Plug-ins Package for Linux, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
  ** SnapCenter Plug-in for SAP HANA Database
- ** SnapCenter Plug-in for UNIX
-+
-NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be installed independently. This plug-in is automatically installed when you install either SnapCenter Plug-in for Oracle Database or SnapCenter Plug-in for SAP HANA Database.
-
+ ** SnapCenter Plug-in for UNIX file systems
 * SnapCenter Plug-ins Package for AIX, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
- ** SnapCenter Plug-in for UNIX
-+
-NOTE: SnapCenter Plug-in for UNIX is not a standalone plug-in and cannot be installed independently. This plug-in is automatically installed when you install SnapCenter Plug-in for Oracle Database.
-
+ ** SnapCenter Plug-in for UNIX file systems
 * SnapCenter Custom Plug-ins
 +
 Custom plug-ins are community-supported and can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
 
 SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
 
-== SnapCenter server
+== SnapCenter Server
 
 The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 
@@ -257,6 +273,8 @@ NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on 
 +
 SAN native devices, filesystems, and LVM layouts built on SAN devices are supported.
 // [SD]: Updated this section for BURT 1391312 in 4.5
+* Automates application-aware backup, restore, and clone operations for UNIX file systems in your SnapCenter environment
+
 
 === SnapCenter Plug-in for SAP HANA Database features
 

@@ -1,0 +1,62 @@
+---
+permalink: protect-scu/task_back_up_unix_file_systems.html
+sidebar: sidebar
+keywords: backup, Unix file system, policy, schedule, resources
+summary: 'If a resource is not part of any resource group, you can back up the resource from the Resources page.'
+---
+= Back up Unix file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If a resource is not part of any resource group, you can back up the resource from the Resources page.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
+. In the Resources page, select *Path* from the View list.
+. Click image:../media/filter_icon.png[Filter icon], and then select the host name and the Unix File Systems to filter the resources.
+. Select the file system that you want to back up.
+. In the Resources page, you can perform the following steps:
+ .. Select the check box, and enter a custom name format that you want to use for the Snapshot copy name.
++ 
+For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is appended to the Snapshot copy name by default.
+. In the Application Settings page, perform the following:
+* Select the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+* Select one of the backup consistency options:
+** Select *File System Consistent* if you want to ensure that file systems cached data is flushed before creating the backup and no operations are performed on filesystem while creating the backup.
+** Select *Crash Consistent* if you want to ensure that file systems cached data is flushed before creating the backup.
+. In the Policies page, perform the following steps:
+ .. Select one or more policies from the drop-down list.
++
+NOTE: You can create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
++
+In the Configure schedules for selected policies section, the selected policies are listed.
+
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column to configure a schedule for the policy you want.
+ .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then select `OK`.
++
+_policy_name_ is the name of the policy that you have selected.
++
+The configured schedules are listed in the Applied Schedules column.
+
+. In the Notification page, select the scenarios in which you want to send the emails from the *Email preference* drop-down list.
++
+You must specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the backup operation performed on the resource, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command `Set-SmSmtpServer`.
+
+. Review the summary, and then click *Finish*.
++
+The topology page is displayed.
+
+. Click *Back up Now*.
+. In the Backup page, perform the following steps:
+ .. If you have applied multiple policies to the resource, from the Policy drop-down list, select the policy that you want to use for backup.
++
+If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
+
+ .. Click *Backup*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+

@@ -1,0 +1,105 @@
+---
+permalink: protect-scu/task_add_hosts_and_install_the_snapcenter_plug_ins_package_for_linux.html
+sidebar: sidebar
+keywords: credentials, install plug-in, Linux, GUI, add host, monitor
+summary: 'You can use the SnapCenter Add Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux. The plug-ins are automatically installed on the remote hosts.'
+---
+= Add hosts and install Plug-ins Package for Linux using GUI
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the Add Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux. The plug-ins are automatically installed on the remote hosts.
+
+*Steps*
+
+. In the left navigation pane, click *Hosts*.
+. Verify that the *Managed Hosts* tab is selected at the top.
+. Click *Add*.
+. In the Hosts page, perform the following actions:
++
+|===
+| For this field... | Do this...
+
+a|
+Host Type
+a|
+Select *Linux* as the host type.
+
+a|
+Host name
+a|
+Enter the fully qualified domain name (FQDN) or the IP address of the host.
+
+SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
+
+If you are adding a host by using SnapCenter and the host is part of a subdomain, you must provide the FQDN.
+
+a|
+Credentials
+a|
+Either select the credential name that you created or create new credentials.
+
+The credential must have administrative rights on the remote host. For details, see the information about creating credentials.
+
+You can view details about the credentials by positioning the cursor over the credential name that you specified.
+
+NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
+|===
+
+. In the Select Plug-ins to Install section, select *Unix File Systems*.
+. (Optional) Click *More Options*.
++
+|===
+| For this field...| Do this...
+
+a|
+Port
+a|
+Either retain the default port number or specify the port number.
+
+The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+
+NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+
+a|
+Installation Path
+a|
+The default path is _/opt/NetApp/snapcenter_.
+
+You can optionally customize the path. If you use the custom path, ensure that the default content of the sudoers is updated with the custom path.
+
+a|
+Skip optional preinstall checks
+a|
+Select this check box if you have already installed the plug-ins manually and you do not want to validate whether the host meets the requirements for installing the plug-in.
+|===
+
+. Click *Submit*.
++
+If you have not selected the Skip prechecks checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in.
++
+NOTE: The precheck script does not validate the plug-in port firewall status if it is specified in the firewall reject rules.
+
++
+Appropriate error or warning messages are displayed if the minimum requirements are not met. If the error is related to disk space or RAM, you can update the web.config file located at _C:\Program Files\NetApp\SnapCenter WebApp_ to modify the default values. If the error is related to other parameters, you should fix the issue.
++
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
+
+. Verify the fingerprint, and then click *Confirm and Submit*.
++
+NOTE: SnapCenter does not support ECDSA algorithm.
++
+NOTE: Fingerprint verification is mandatory even if the same host was added earlier to SnapCenter and the fingerprint was confirmed.
+
+. Monitor the installation progress.
++
+The installation-specific log files are located at _/custom_location/snapcenter/logs_.
+
+*Result*
+
+All the file systems mounted on the host are automatically discovered and displayed under the Resources Page. If nothing is displayed, click *Refresh Resources*.
+
+== Monitor installation status
+
+include::../_include/reuse_task_monitor_snapcenter_plug_in_package_installation_status.adoc[]

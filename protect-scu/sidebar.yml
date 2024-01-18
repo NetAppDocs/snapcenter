@@ -1,0 +1,49 @@
+section: protect-scu
+title: Protect Unix file systems
+entries:
+  - title: Overview of SnapCenter Plug-in for Unix file systems
+    url: /protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html
+  - title: Install SnapCenter Plug-in for Unix file systems
+    entries:
+      - title: Prerequisites for adding hosts and installing Plug-ins Package for Linux
+        url: /protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux.html
+      - title: Add hosts and install Plug-ins Package for Linux
+        url: /protect-scu/task_add_hosts_and_install_the_snapcenter_plug_ins_package_for_linux.html
+      - title: Configure the SnapCenter Plug-in Loader service
+        url: /protect-scu/task_configure_snapcenter_plug_in_loader_service.html
+      - title: Configure CA certificate with SnapCenter Plug-in Loader service on Linux host
+        url: /protect-scu/task_configure_CA_certificate_with_SPL_on_Linux_host.html
+      - title: Enable CA Certificates for plug-ins
+        url: /protect-scu/task_enable_ca_certificates_for_plug-ins.html
+  - title: Install SnapCenter Plug-in for VMware vSphere
+    url: /protect-scu/reference_install_snapcenter_plug_in_for_vmware_vsphere.html
+  - title: Prepare for protecting Unix file systems
+    url: /protect-scu/reference_prepare_for_protecting_UNIX file systems.html
+  - title: Back up Unix file systems
+    entries:
+      - title: Discover UNIX file systems
+        url: /protect-scu/task_determine_whether_unix_file_systems_are_available_for_backup.html
+      - title: Create backup policies
+        url: /protect-scu/task_create_backup_policies_for_unix_file_systems.html
+      - title: Create resource groups
+        url: /protect-scu/task_create_resource_groups_and_attach_policies_for_unix_file_systems.html
+      - title: Back up UNIX file systems
+        url: /protect-scu/task_back_up_unix_file_systems.html
+      - title: Back up resource groups
+        url: /protect-scu/task_back_up_unix_file_systems_resource_groups.html  
+      - title: Monitor backup progress
+        url: /protect-scu/task_monitor_unix_file_systems_backup_operations.html
+  - title: Restore and recover Unix file systems
+    entries:
+      - title: Restore and recover Unix file systems
+        url: /protect-scu/task_restore_unix_file_systems.html
+      - title: Monitor Unix file systems restore operations
+        url: /protect-scu/task_monitor_unix_file_systems_restore_operations.html
+  - title: Clone Unix file systems
+    entries:
+      - title: Clone Unix file systems
+        url: /protect-scu/task_clone_unix_file_systems_backup.html
+      - title: Split a clone
+        url: /protect-scu/task_split_a_clone.html
+      - title: Monitor Unix file systems clone operations
+        url: /protect-scu/task_monitor_unix_file_systems_clone_operations.html
