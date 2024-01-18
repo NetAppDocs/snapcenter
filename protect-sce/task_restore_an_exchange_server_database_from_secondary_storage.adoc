@@ -13,6 +13,10 @@ You can restore a backed up Exchange Server database from secondary storage (mir
 
 You must have replicated the Snapshot copies from primary storage to a secondary storage.
 
+.About this task
+
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server plug-in* from the list.

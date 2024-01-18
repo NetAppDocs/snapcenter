@@ -1,0 +1,139 @@
+---
+permalink: protect-scu/task_configure_snapcenter_plug_in_loader_service.html
+sidebar: sidebar
+keywords: SPL, plug-in loader service
+summary: 'The SnapCenter Plug-in Loader service loads the plug-in package for Linux to interact with the SnapCenter Server. The SnapCenter Plug-in Loader service is installed when you install the SnapCenter Plug-ins Package for Linux.'
+
+---
+= Configure the SnapCenter Plug-in Loader service
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapCenter Plug-in Loader service loads the plug-in package for Linux to interact with the SnapCenter Server. The SnapCenter Plug-in Loader service is installed when you install the SnapCenter Plug-ins Package for Linux.
+
+*About this task*
+
+After installing the SnapCenter Plug-ins Package for Linux, the SnapCenter Plug-in Loader service starts automatically. If the SnapCenter Plug-in Loader service fails to start automatically, you should:
+
+* Ensure that the directory where the plug-in is operating is not deleted
+* Increase the memory space allotted to the Java Virtual Machine
+
+The spl.properties file, which is located at _/custom_location/NetApp/snapcenter/spl/etc/_, contains the following parameters. Default values are assigned to these parameters.
+
+|===
+| Parameter name | Description
+
+a|
+LOG_LEVEL
+a|
+Displays the log levels that are supported.
+
+The possible values are TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.
+a|
+SPL_PROTOCOL
+a|
+Displays the protocol that is supported by SnapCenter Plug-in Loader.
+
+Only the HTTPS protocol is supported. You can add the value if the default value is missing.
+
+a|
+SNAPCENTER_SERVER_PROTOCOL
+a|
+Displays the protocol that is supported by SnapCenter Server.
+
+Only the HTTPS protocol is supported. You can add the value if the default value is missing.
+
+a|
+SKIP_JAVAHOME_UPDATE
+a|
+By default, the SPL service detects the java path and update JAVA_HOME parameter.
+
+Therefore the default value is set to FALSE. You can set to TRUE if you want to disable the default behavior and manually fix the java path.
+
+a|
+SPL_KEYSTORE_PASS
+a|
+Displays the password of the keystore file.
+
+You can change this value only if you change the password or create a new keystore file.
+
+a|
+SPL_PORT
+a|
+Displays the port number on which the SnapCenter Plug-in Loader service is running.
+
+You can add the value if the default value is missing.
+
+NOTE: You should not change the value after installing the plug-ins.
+
+a|
+SNAPCENTER_SERVER_HOST
+a|
+Displays the IP address or host name of the SnapCenter Server.
+a|
+SPL_KEYSTORE_PATH
+a|
+Displays the absolute path of the keystore file.
+a|
+SNAPCENTER_SERVER_PORT
+a|
+Displays the port number on which the SnapCenter Server is running.
+a|
+LOGS_MAX_COUNT
+a|
+Displays the number of SnapCenter Plug-in Loader log files that are retained in the _/custom_location/snapcenter/spl/logs_ folder.
+
+The default value is set to 5000. If the count is more than the specified value, then the last 5000 modified files are retained. The check for the number of files is done automatically every 24 hours from when SnapCenter Plug-in Loader service is started.
+
+NOTE: If you manually delete the spl.properties file, then the number of files to be retained is set to 9999.
+
+a|
+JAVA_HOME
+a|
+Displays the absolute directory path of the JAVA_HOME which is used to start SPL service.
+
+This path is determined during installation and as part of starting SPL.
+
+a|
+LOG_MAX_SIZE
+a|
+Displays the maximum size of the job log file.
+
+Once the maximum size is reached, the log file is zipped, and the logs are written into the new file of that job.
+
+a|
+RETAIN_LOGS_OF_LAST_DAYS
+a|
+Displays the number of days up to which the logs are retained.
+
+a|
+ENABLE_CERTIFICATE_VALIDATION
+a|
+Displays true when CA certificate validation is enabled for the host.
+
+You can enable or disable this parameter either by editing the spl.properties or by using the SnapCenter GUI or cmdlet.
+|===
+If any of these parameters are not assigned to the default value or if you want to assign or change the value, then you can modify the spl.properties file. You can also verify the spl.properties file and edit the file to troubleshoot any issues related to the values that are assigned to the parameters. After you modify the spl.properties file, you should restart the SnapCenter Plug-in Loader service.
+
+*Steps*
+
+. Perform one of the following actions, as required:
+* Start the SnapCenter Plug-in Loader service:
+** As a root user, run: `/custom_location/NetApp/snapcenter/spl/bin/spl start`
+** As a non-root user, run: `sudo /custom_location/NetApp/snapcenter/spl/bin/spl start`
+* Stop the SnapCenter Plug-in Loader service:
+** As a root user, run: `/custom_location/NetApp/snapcenter/spl/bin/spl stop`
+** As a non-root user, run: `sudo /custom_location/NetApp/snapcenter/spl/bin/spl stop`
++
+NOTE: You can use the -force option with the stop command to stop the SnapCenter Plug-in Loader service forcefully. However, you should use caution before doing so because it also terminates the existing operations.
+
+* Restart the SnapCenter Plug-in Loader service:
+** As a root user, run: `/custom_location/NetApp/snapcenter/spl/bin/spl restart`
+** As a non-root user, run: `sudo /custom_location/NetApp/snapcenter/spl/bin/spl restart`
+* Find the status of the SnapCenter Plug-in Loader service:
+** As a root user, run: `/custom_location/NetApp/snapcenter/spl/bin/spl status`
+** As a non root user, run: `sudo /custom_location/NetApp/snapcenter/spl/bin/spl status`
+* Find the change in the SnapCenter Plug-in Loader service:
+** As a root user, run: `/custom_location/NetApp/snapcenter/spl/bin/spl change`
+** As a non-root user, run: `sudo /custom_location/NetApp/snapcenter/spl/bin/spl change`

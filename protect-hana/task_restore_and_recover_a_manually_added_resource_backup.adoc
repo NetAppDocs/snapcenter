@@ -27,6 +27,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 * File-based backup copies cannot be restored from SnapCenter.
 * After upgrading to SnapCenter 4.3, the backups taken in SnapCenter 4.2 can be restored but cannot be recovered. You must use HANA studio or HANA recovery scripts external to SnapCenter to recover the backups taken in SnapCenter 4.2.
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 
@@ -69,6 +70,8 @@ Unmount commands are not available for auto discovered resources.
 . In the Post ops page, enter mount and post restore commands to run after performing a restore job.
 +
 Mount commands are not available for auto discovered resources.
++
+NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

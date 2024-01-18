@@ -1,0 +1,72 @@
+---
+permalink: protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html
+sidebar: sidebar
+keywords: overview, unix file system, plug-in for unix file system, backup, restore, clone
+summary: 'Plug-in for Unix file systems supports back up, restore, and clone tof Unix file systems.'
+---
+
+= What you can do with the SnapCenter Plug-in for Unix file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When the Plug-in for Unix file systems is installed in your environment, you can use SnapCenter to back up, restore, and clone Unix file systems. You can also perform tasks supporting those operations.
+
+* Discover resources
+* Back up Unix file systems
+* Schedule backup operations
+* Restore file system backups
+* Clone file system backups
+* Monitor backup, restore, and clone operations
+
+== Supported configurations
+
+|===
+| Item | Supported configuration
+
+a|
+Environments
+a|
+* Physical server
+* Virtual server
+
+a|
+Operating systems
+a|
+* Red Hat Enterprise Linux
+* Oracle Linux
+* SUSE Linux Enterprise Server (SLES)
+
+a|
+File systems
+a|
+* SAN: 
+** Both LVM and non LVM based file systems
+** LVM over VMDK ext3, ext4, and xfs
+* NFS: NFS v3, NFS v4.x
+
+a|
+Protocols
+a|
+* FC
+* FCoE
+* iSCSI
+* NFS
+
+a|
+Multipath
+a|
+yes
+
+|===
+
+== Limitations
+
+* Mix of RDMs and virtual disks in a volume group is not supported.
+* File level restore is not supported.
++
+However, you can manually perform file level restore by cloning the backup and then copying the files manually.
+* Mix of file systems spread across VMDKs coming from both NFS and VMFS datastore is not supported.
+* NVMe is not supported.
+* SnapMirror Business Continuity (SM-BC) is not supported.
+* Provisioning is not supported.

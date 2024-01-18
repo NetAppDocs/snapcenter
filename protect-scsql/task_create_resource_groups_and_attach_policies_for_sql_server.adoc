@@ -13,6 +13,11 @@ A resource group is a container to which you add resources that you want to back
 
 You can protect resources individually without creating a new resource group. You can take backups on the protected resource.
 
+.About this task
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* Adding new databases without SM-BC to an existing resource group which contains resources with SM-BC is not supported.
+* Adding new databases to an existing resource group in failover mode of SM-BC is not supported. You can add resources to the resource group only in regular or fail-back state.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

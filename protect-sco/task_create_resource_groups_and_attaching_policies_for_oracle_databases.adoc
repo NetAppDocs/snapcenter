@@ -13,31 +13,37 @@ A resource group is a container where you add resources that you want to back up
 
 .About this task
 
-A database with files in ASM disk groups must be in "MOUNT" or "OPEN" state to verify its backups using the Oracle DBVERIFY utility.
-
+* A database with files in ASM disk groups must be in "MOUNT" or "OPEN" state to verify its backups using the Oracle DBVERIFY utility.
++
 Attach one or more policies to the resource group to define the type of data protection job you want to perform.
-
++
 The following image illustrates the relationship between resources, resource groups, and policies for databases:
-
++
 image::../media/sco_resourcegroup_policy.gif[]
+
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
+* Adding new databases without SM-BC to an existing resource group which contains resources with SM-BC is not supported.
+* Adding new databases to an existing resource group in failover mode of SM-BC is not supported. You can add resources to the resource group only in regular or fail-back state.
 
 .Steps
 
 . In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
 . In the Resources page, click *New Resource Group*.
 . In the Name page, perform the following actions:
- .. Enter a name for the resource group in the Name field.
+.. Enter a name for the resource group in the Name field.
 + 
 NOTE: The resource group name should not exceed 250 characters.
  
- .. Enter one or more labels in the Tag field to help you search for the resource group later.
+.. Enter one or more labels in the Tag field to help you search for the resource group later.
 +
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
- .. Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
+.. Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
 +
 For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
- .. Specify the destinations of the archive log files that you do not want to back up.
-
+.. Specify the destinations of the archive log files that you do not want to back up.
++
+NOTE: You should use the exact same destination as it was set in Oracle, including prefix, if needed.
 
 . In the Resources page, select an Oracle database host name from the *Host* drop-down list.
 +
