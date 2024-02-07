@@ -1,11 +1,13 @@
 ---
+jekyll: bn-index-split
 settings:
   name: SnapCenter Software 5.0
   internal:
     pdf_enabled: true
   prod:
-    pdf_enabled: true
-    harmony_enabled: true
+    pdf_enabled: false
+    harmony_enabled: false
+    lipi_enabled: false
   versions:
     - version-number: "5.0"
       url: /snapcenter
