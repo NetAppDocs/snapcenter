@@ -38,7 +38,7 @@ You cannot create a backup for SAP HANA data volume, but SnapCenter continues to
 
 ** Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires. This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
 
-** For ONTAP 9.12.1 and below versions, the clones created from the SnapLock Vault Snapshot copies will inherit the SnapLock Vault expiry time. The storage admin should manually cleanup the clones post the SnapLock expiry time.
+** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
