@@ -20,18 +20,8 @@ image::../media/upgrade_workflow.png[]
 |===
 | If you are on SnapCenter Server version... | You can directly upgrade SnapCenter Server to... | Supported plug-in versions
 
-.2+| 4.6.x
-|4.7
-a|
-* 4.6.x
-* 4.7
-
-| 4.8
-a|
-* 4.8
-
 .2+| 4.7
-| 4.8
+|4.8
 a|
 * 4.7
 * 4.8
@@ -40,12 +30,22 @@ a|
 a|
 * 4.9
 
-| 4.8
-a| 4.9
-
+.2+| 4.8
+| 4.9
 a|
 * 4.8
 * 4.9
+
+| 5.0
+a|
+* 5.0
+
+| 4.9
+a| 5.0
+
+a|
+* 4.9
+* 5.0
 |===
 
 IMPORTANT: For example, if you are on SnapCenter version 4.6.x and want to upgrade to 4.9, you should first upgrade to 4.7 and then do a rolling upgrade to 4.9.
