@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: add host, install, install plug-in, SAP HANA
 summary: 'Add hosts and then install the plug-ins packages.'
 ---
+
 = Add hosts and install SnapCenter plug-in for SAP HANA database
 :icons: font
 :imagesdir: ../media/

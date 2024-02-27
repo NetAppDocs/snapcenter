@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: add, add SAP HANA database, manual discovery, automatic discovery
 summary: 'Add the SAP HANA databases.'
 ---
+
 = Add SAP HANA database
 :icons: font
 :imagesdir: ../media/

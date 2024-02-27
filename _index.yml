@@ -59,8 +59,8 @@ indexpage:
       links:
         - title: Install SnapCenter on Azure Virtual Machine
           url: /protect-azure/install-snapcenter-azure-virtual-machine.html
-        - title: Protect SAP HANA databases
-          url:
+        - title: Back up SAP HANA databases running on Azure NetApp Files
+          url: /protect-azure/backup-sap-hana-databases.html
     - title: Blogs & community
       links:
         - title: NetApp blog - SnapCenter

@@ -3,8 +3,8 @@ permalink: protect-azure/configure-azure-storage-account.html
 sidebar: sidebar
 keywords: snapcenter, azure, azure storage account, subscription ID, azure credential, azure netapp account
 summary: 'Configure the Azure storage account in SnapCenter.'
-
 ---
+
 = Configure the Azure storage account
 :icons: font
 :imagesdir: ../media/

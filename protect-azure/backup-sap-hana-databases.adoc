@@ -1,0 +1,46 @@
+---
+permalink: protect-azure/backup-sap-hana-databases.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database, back up, databases, Azure NetApp Files
+summary: 'Back up the resource from the Resources page.'
+---
+
+= Back up SAP HANA databases running on Azure NetApp Files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resource page, filter resources from the *View* drop-down list based on resource type.
+. Select the resource that you want to back up.
+. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot copy name.
+. In the Application Settings page, do the following:
+.. Select the *Backups* arrow to set additional backup options:
+.. Select the *Scripts* arrow to run pre and post commands for quiesce, Snapshot copy, and unquiesce operations.
+.. Select the *Custom Configurations* arrow, and then enter the custom value pairs required for all jobs using this resource.
+.. Select the *Snapshot Copy Tool > SnapCenter without File System Consistency* to create Snapshot copies.
++
+The *File System Consistency* option is applicable only for applications running on Windows hosts.
+. In the Policies page, perform the following steps:
+.. Select one or more policies from the drop-down list.
+.. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+.. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
++
+_policy_name_ is the name of the policy that you selected.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. SMTP must also be configured in *Settings* > *Global Settings*.
+. Review the summary, and then select *Finish*.
+. Select *Back up Now*.
+. In the Backup page, perform the following steps:
+.. If you applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
++
+If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
+. Select *Backup*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+
