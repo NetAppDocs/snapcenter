@@ -33,6 +33,7 @@ SnapCenter can be deployed in the following ways:
 * In a public cloud to protect the following:
 ** Data that is on Cloud Volumes ONTAP (formerly ONTAP Cloud) primary systems
 ** Data that is on Amazon FSX for ONTAP
+** Data that is on primary Azure NetApp Files (Oracle, Microsoft SQL, and SAP HANA)
 
 SnapCenter includes the following key features:
 
