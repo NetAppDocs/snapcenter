@@ -2,7 +2,7 @@
 permalink: protect-azure/install-snapcenter-azure-virtual-machine.html
 sidebar: sidebar
 keywords: snapcenter server, azure virtual machine, install
-summary: Download and install SnapCenter on Azure Virtual Machine.
+summary: 'Download and install SnapCenter on Azure Virtual Machine.'
 
 ---
 = Install SnapCenter on Azure Virtual Machine

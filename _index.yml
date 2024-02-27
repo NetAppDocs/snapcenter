@@ -59,7 +59,7 @@ indexpage:
       links:
         - title: Install SnapCenter on Azure Virtual Machine
           url: /protect-azure/install-snapcenter-azure-virtual-machine.html
-        - title:
+        - title: Protect SAP HANA databases
           url:
     - title: Blogs & community
       links:

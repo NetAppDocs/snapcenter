@@ -1,0 +1,35 @@
+---
+permalink: protect-azure/add-hosts-install-plugin-for-sap-hana.html
+sidebar: sidebar
+keywords: add host, install, install plug-in, SAP HANA
+summary: 'Add hosts and then install the plug-ins packages.'
+---
+= Add hosts and install SnapCenter plug-in for SAP HANA database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts.
+
+.Before you begin
+
+* You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
+* If you are installing on the centralized host, ensure that the SAP HANA client software is installed on that host and open the required ports on the SAP HANA database host to run the HDB SQL queries remotely.
+
+.Steps
+
+. In the left navigation pane, click *Hosts*.
+. Verify that the *Managed Hosts* tab is selected.
+. Click *Add*.
+. In the Hosts page, perform the following actions:
+.. In the Host Type field, select the host type.
+.. In the Host name field, enter the fully qualified domain name (FQDN) or the IP address of the host.
+.. In the Credentials field, enter the credential that you created.
+. In the Select Plug-ins to Install section, select the plug-ins to install.
+. (Optional) Click *More Options* and specify the details.
+. Click *Submit*.
+. If host type is Linux, verify the fingerprint, and then click *Confirm and Submit*.
++
+In a cluster setup, you should verify the fingerprint of each of the nodes in the cluster.
+. Monitor the installation progress.

@@ -11,3 +11,9 @@ entries:
         url: /protect-azure/configure-azure-storage-account.html
       - title: Create the credential to add the plug-in host
         url: /protect-azure/create-credential-add-plugin-host.html
+  - title: Protect SAP HANA databases
+    entries:
+      - title: Add hosts and install SnapCenter plug-in for SAP HANA database
+        url: protect-azure/add-hosts-install-plugin-for-sap-hana.html
+      - title: Add SAP HANA database
+        url: protect-azure/add-sap-hana-database.html
