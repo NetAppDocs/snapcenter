@@ -21,7 +21,7 @@ You can use SnapCenter to clone a backup.
 . From the Manage Copies view, select *Backups* from the primary storage system.
 . Select the data backup from the table, and then click image:../media/clone_icon.gif[clone icon].
 . In the Location page, perform the following actions:
-.. Select the host that has the SAP HANA plug-in installed for managing the Cloned HANA system.
+.. Select the host that has the SAP HANA plug-in installed for managing the cloned HANA system.
 +
 It can be a centralised plug-in host or HANA system host.
 .. Enter the SAP HANA SID to clone from the existing backups.
@@ -38,4 +38,4 @@ If the source HANA system is auto discovered and the clone target host plug-in i
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 +
-NOTE: Clone Split is disabled for ANF clones because ANF clone is already an independent volume created from the selected snapshot.
+NOTE: Clone Split is disabled for ANF clones because ANF clone is already an independent volume created from the selected Snapshot copy.
