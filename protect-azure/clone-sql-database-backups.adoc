@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for SQL Server Database, clone, database, backups
 summary: 'You can use SnapCenter to clone a backup.'
 ---
 
-= Clone a SQL Server database backup
+= Clone SQL Server database backup
 :icons: font
 :imagesdir: ../media/
 

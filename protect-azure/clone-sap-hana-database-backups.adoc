@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database, clone, database, backups
 summary: 'You can use SnapCenter to clone a backup.'
 ---
 
-= Clone a SAP HANA database backup
+= Clone SAP HANA database backup
 :icons: font
 :imagesdir: ../media/
 

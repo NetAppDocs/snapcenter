@@ -27,7 +27,7 @@ entries:
         url: /protect-azure/backup-sap-hana-resource-groups.html
       - title: Restore and recover SAP HANA databases
         url: /protect-azure/restore-recover-sap-hana-backups.html
-      - title: Clone a SAP HANA database backup
+      - title: Clone SAP HANA database backup
         url: /protect-azure/clone-sap-hana-database-backups.html
   - title: Protect Microsoft SQL Server databases
     entries:
@@ -43,7 +43,7 @@ entries:
         url: /protect-azure/backup-sql-resource-groups.html
       - title: Restore and recover SQL Server databases
         url: /protect-azure/restore-recover-sql-backups.html
-      - title: Clone a SQL Server database backup
+      - title: Clone SQL Server database backup
         url: /protect-azure/clone-sql-database-backups.html
   - title: Protect Oracle databases
     entries:
@@ -57,3 +57,7 @@ entries:
         url: /protect-azure/backup-oracle-databases.html
       - title: Back up Oracle resource groups
         url: /protect-azure/backup-oracle-resource-groups.html
+      - title: Restore and recover Oracle databases
+        url: /protect-azure/restore-recover-oracle-backups.html
+      - title: Clone Oracle database backup
+        url: /protect-azure/clone-oracle-database-backups.html
