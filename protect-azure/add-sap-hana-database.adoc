@@ -16,7 +16,7 @@ You should add the SAP HANA database manually.
 
 Resources need to be added manually if the plug-in is installed on a centralized server. If the SAP HANA plug-in is installed on the HANA database host, then the HANA system is discovered automatically.
 
-NOTE: Automatic discovery is not supported for HANA multi-host configuration, they must be added through centralized plugin only.
+NOTE: Automatic discovery is not supported for HANA multi-host configuration, they must be added through centralized plug-in only.
 
 .Steps
 

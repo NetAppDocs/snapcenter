@@ -19,7 +19,7 @@ If a resource is not yet part of any resource group, you can back up the resourc
 . Select the resource that you want to back up.
 . In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot copy name.
 . In the Application Settings page, do the following:
-.. Select the *Backups* arrow to set additional backup options:
+.. Select the *Backups* arrow to set additional backup options.
 .. Select the *Scripts* arrow to run pre and post commands for quiesce, Snapshot copy, and unquiesce operations.
 .. Select the *Custom Configurations* arrow, and then enter the custom value pairs required for all jobs using this resource.
 .. Select the *Snapshot Copy Tool > SnapCenter without File System Consistency* to create Snapshot copies.
@@ -37,7 +37,7 @@ You must also specify the sender and receiver email addresses, and the subject o
 . Review the summary, and then select *Finish*.
 . Select *Back up Now*.
 . In the Backup page, perform the following steps:
-.. If you applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
+.. If multiple policies are associated with the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 . Select *Backup*.

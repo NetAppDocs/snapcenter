@@ -18,7 +18,7 @@ You can back up the resource groups that consist of multiple resources. A backup
 . In the Resources page, select *Resource Group* from the *View* list.
 . In the Resource Groups page, select the resource group that you want to back up, and then select *Back up Now*.
 . In the Backup page, perform the following steps:
-.. If you associated multiple policies with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
+.. If multiple policies are associated with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
 .. After backup, select *Verify* to verify the on-demand backup.
 .. Select *Backup*.
 . Monitor the operation progress by selecting *Monitor* > *Jobs*.

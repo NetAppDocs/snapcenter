@@ -33,7 +33,7 @@ _policy_name_ is the name of the policy that you selected.
 . Review the summary, and then click *Finish*.
 . Select *Back up Now*.
 . In the Backup page, perform the following steps:
-.. If you applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
+.. If multiple policies are associated with the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
 .. Select *Verify after backup*.
 .. Select *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.

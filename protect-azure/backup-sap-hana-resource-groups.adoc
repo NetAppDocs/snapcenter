@@ -18,7 +18,7 @@ A resource group is a collection of resources on a host. A backup operation on t
 . In the Resources page, select *Resource Group* from the *View* list.
 . In the Resource Groups page, select the resource group that you want to back up, and then select *Back up Now*.
 . In the Backup page, perform the following steps:
-.. If you associated multiple policies with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
+.. If multiple policies are associated with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
 +
 If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
 
