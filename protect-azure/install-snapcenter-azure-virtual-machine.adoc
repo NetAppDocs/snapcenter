@@ -14,7 +14,7 @@ You can download the SnapCenter software from the NetApp Support site and instal
 
 .Before you begin
 
-Ensure that the Azure Windows virtual machine meets the requirements for SnapCenter Server installation. For information, see link:reference_domain_and_workgroup_requirements.html[Prepare for installing the SnapCenter Server].
+Ensure that the Azure Windows virtual machine meets the requirements for SnapCenter Server installation. For information, see link:../install/reference_domain_and_workgroup_requirements.html[Prepare for installing the SnapCenter Server].
 
 .Steps
 

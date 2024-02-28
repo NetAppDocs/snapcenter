@@ -29,3 +29,22 @@ entries:
         url: /protect-azure/restore-recover-sap-hana-backups.html
       - title: Clone a SAP HANA database backup
         url: /protect-azure/clone-sap-hana-database-backups.html
+  - title: Protect Microsoft SQL Server databases
+    entries:
+      - title: Add hosts and install SnapCenter plug-in for SQL Server database
+        url: /protect-azure/add-hosts-install-plugin-for-sql.html
+      - title: Create backup policies for SQL Server databases
+        url: /protect-azure/create-backup-policies-sql.html
+      - title: Create resource groups and attach SQL backup policies
+        url: /protect-azure/create-resource-groups-attach-sql-backup-policies.html
+      - title: Back up SQL Server databases running on Azure NetApp Files
+        url: /protect-azure/backup-sql-server-databases.html
+      - title: Back up SQL Server resource groups
+        url: /protect-azure/backup-sql-resource-groups.html
+      - title: Restore and recover SQL Server databases
+        url: /protect-azure/restore-recover-sql-backups.html
+      - title: Clone a SQL Server database backup
+        url: /protect-azure/clone-sql-database-backups.html
+  - title: Protect Oracle databases
+    entries:
+      - title: 

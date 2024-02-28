@@ -61,6 +61,10 @@ indexpage:
           url: /protect-azure/install-snapcenter-azure-virtual-machine.html
         - title: Back up SAP HANA databases running on Azure NetApp Files
           url: /protect-azure/backup-sap-hana-databases.html
+        - title: Back up SQL Server databases running on Azure NetApp Files
+          url: /protect-azure/backup-sql-server-databases.html
+        - title: Back up Oracle databases running on Azure NetApp Files
+          url: /protect-azure/backup-oracle-databases.html
     - title: Blogs & community
       links:
         - title: NetApp blog - SnapCenter

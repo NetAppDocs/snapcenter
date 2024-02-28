@@ -1,0 +1,45 @@
+---
+permalink: protect-azure/create-backup-policies-sql.html
+sidebar: sidebar
+keywords: create policies, sql, backup policies
+summary: 'Create a backup policy for the resource or resource group that you want to back up.'
+---
+
+= Create backup policies for SQL Server databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.
+
+.Steps
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. Click *New*.
+. In the Name page, enter the policy name and description.
+. In the Settings page, perform the following steps:
+.. Select the backup type.
+... Select *Full Backup and Log Backup* if you want to back up database files and transaction logs.
+... Select *Full Backup* if you want to back up only the database files.
+... Select *Log Backup* if you want to back up only the transaction logs.
+... Select *Copy Only Backup* if you want to back up your resources by using another application.
+.. In the Availability Group Settings section, perform the following actions:
+... Select Backup on preferred backup replica if you want back up only on the replica.
+... Select primary AG replica or the secondary AG replica for the backup.
+... Select the backup priority.
+.. Specify the schedule type.
+. In the Retention page, depending on the backup type selected, specify the retention settings.
++
+NOTE: Replication to secondary storage is not supported.
+. In the Verification page, perform the following steps:
+.. In the Run verification for following backup schedules section, select the schedule frequency.
+.. In the Database consistency check options section, perform the following actions:
+... Select *Limit the integrity structure to physical structure of the database (PHYSICAL_ONLY)* to limit the integrity check to the physical structure of the database and to detect torn pages, checksum failures, and common hardware failures that impact the database.
+... Select *Suppress all information messages (NO_INFOMSGS)* to suppress all informational messages. Selected by default.
+... Select *Display all reported error messages per object (ALL_ERRORMSGS)* to display all the reported errors per object.
+... Select *Do not check nonclustered indexes (NOINDEX)* if you do not want to check nonclustered indexes. The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
+... Select *Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
+.. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.
+.. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
+. Review the summary and click *Finish*.
