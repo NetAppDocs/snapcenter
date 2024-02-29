@@ -1,0 +1,69 @@
+---
+permalink: protect-azure/clone-sql-database-backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SQL Server Database, clone, database, backups
+summary: 'You can use SnapCenter to clone a backup.'
+---
+
+= Clone SQL Server database backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
+. Select the database or resource group.
+. From the *Manage Copies* view page, select the backup from primary storage system.
+. Select the backup, and then select *image:../media/clone_icon.gif[clone icon]*.
+. In the *Clone Options* page, provide all the required details.
+. In the Location page, select a storage location to create a clone.
++
+If the SQL Server database ANF volumes are configured in a manual QOS capacity pool, specify the QOS for the cloned volumes.
++
+If QOS for the cloned volumes is not specified, the QOS of the source volume will be used. If the automatic QOS capacity pool is used, the QOS value specified will be ignored.
+. In the Logs page, select one of the following options:
+.. Select *None* if you want to clone only the full back up without any logs.
+.. Select *All log backups* if you want to clone all the available log backups dated after the full backup.
+.. Select *By log backups until* if you want to clone the database based on the backup logs that were created up to the backup log with the selected date.
+.. Select *By specific date until* if you do not want to apply the transaction logs after the specified date and time.
+. In the *Script* page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
+. In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then select *Finish*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
+
+== Perform Clone Lifecycle
+
+Using SnapCenter, you can create clones from a resource group or database. You can either perform on-demand clone or you can schedule recurring clone operations of a resource group or database. If you clone a backup periodically, you can use the clone to develop applications, populate data, or recover data.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the *View* list.
+. Select the database or resource group.
+. From the *Manage Copies* view page, select the backup from primary storage system.
+. Select the backup, and then select *image:../media/clone_icon.gif[clone icon]*.
+. In the *Clone Options* page, provide all the required details.
+. In the Location page, select a storage location to create a clone.
++
+If the SQL Server database ANF volumes are configured in a manual QOS capacity pool, specify the QOS for the cloned volumes.
++
+If QOS for the cloned volumes is not specified, the QOS of the source volume will be used. If the automatic QOS capacity pool is used, the QOS value specified will be ignored.
+. In the *Script* page, enter the script timeout, path, and the arguments of the prescript or postscript that should be run before or after the clone operation, respectively.
+. In the Schedule page, perform one of the following actions:
+** Select *Run now* if you want to execute the clone job immediately.
+** Select *Configure schedule* when you want to determine how frequently the clone operation should occur, when the clone schedule should start, on which day the clone operation should occur, when the schedule should expire, and whether the clones must be deleted after the schedule expires.
+. In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then select *Finish*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
+
+
+
+
+
+
+

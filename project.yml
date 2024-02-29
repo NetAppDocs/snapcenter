@@ -35,6 +35,7 @@ sidebar:
     - section: protect-sce
     - section: protect-scc
     - section: protect-scu
+    - section: protect-azure
     - section: admin
     - section: upgrade
     - section: tech-refresh

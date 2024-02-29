@@ -1,0 +1,35 @@
+---
+permalink: protect-azure/add-hosts-install-plugin-for-sql.html
+sidebar: sidebar
+keywords: add host, install, install plug-in, SQL
+summary: 'Add hosts and then install the plug-ins packages.'
+---
+
+= Add hosts and install SnapCenter plug-in for SQL Server database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports data protection of SQL instances on SMB shares on Azure NetApp Files. The standalone and availability group (AG) configurations are supported.
+
+You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins package. The plug-ins are automatically installed on the remote hosts.
+
+.Before you begin
+
+* You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
+
+.Steps
+
+. In the left navigation pane, select *Hosts*.
+. Verify that the *Managed Hosts* tab is selected at the top.
+. Select *Add*.
+. In the Hosts page do the following:
+.. In the Host Type field, select the host type.
+.. In the Host name field, enter the fully qualified domain name (FQDN) or the IP address of the host.
+.. In the Credentials field, enter the credential that you created.
+. In the *Select Plug-ins to Install* section, select the plug-ins to install.
+. (Optional) Click *More Options* and specify the details.
+. Select *Submit*.
+. Select *Configure log directory* and in the Configure host log directory page, enter the SMB path of the host log directory, and click *Save*.
+. Click *Submit* and monitor the installation progress.

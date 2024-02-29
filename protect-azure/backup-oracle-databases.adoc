@@ -1,0 +1,35 @@
+---
+permalink: protect-azure/backup-oracle-databases.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for Oracle Database, back up, databases, Azure NetApp Files
+summary: 'Back up the resource from the Resources page.'
+---
+
+= Back up Oracle databases running on Azure NetApp Files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resource page, select *Database* from the View drop-down list.
+. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot copy name.
+. In the Policies page, perform the following steps:
+.. Select one or more policies from the drop-down list.
+.. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+.. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
+. In the Verification page, perform the following steps:
+.. Select the verification server.
+.. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+.. Either select *Run verification after backup* or *Run scheduled verification*.
+.. Click OK.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then click *Finish*.
+. Select *Back up Now*.
+. In the Backup page, perform the following steps:
+.. If multiple policies are associated with the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
+.. Click *Backup*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
