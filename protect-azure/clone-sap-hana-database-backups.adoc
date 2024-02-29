@@ -1,0 +1,41 @@
+---
+permalink: protect-azure/clone-sap-hana-database-backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database, clone, database, backups
+summary: 'You can use SnapCenter to clone a backup.'
+---
+
+= Clone SAP HANA database backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You can use SnapCenter to clone a backup.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, filter resources from the *View* drop-down list based on resource type.
+. Select the resource or resource group.
+. From the Manage Copies view, select *Backups* from the primary storage system.
+. Select the data backup from the table, and then click image:../media/clone_icon.gif[clone icon].
+. In the Location page, perform the following actions:
+.. Select the host that has the SAP HANA plug-in installed for managing the cloned HANA system.
++
+It can be a centralised plug-in host or HANA system host.
+.. Enter the SAP HANA SID to clone from the existing backups.
+.. Enter IP addresses or the host names on which the cloned volumes will be exported.
+.. If the SAP HANA database ANF volumes are configured in a manual QOS capacity pool, specify the QOS for the cloned volumes. 
++
+If QOS for the cloned volumes is not specified, the QOS of the source volume will be used. If the automatic QOS capacity pool is used, the QOS value specified will be ignored.
+. In the Scripts page, perform the following steps:
+.. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
+.. Enter the mount command to mount a file system to a host.
++
+If the source HANA system is auto discovered and the clone target host plug-in is installed on the SAP HANA host, then SnapCenter automatically unmounts the existing HANA data volumes on the clone target host and mounts the newly cloned HANA data volumes.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
++
+NOTE: Clone Split is disabled for ANF clones because ANF clone is already an independent volume created from the selected Snapshot copy.

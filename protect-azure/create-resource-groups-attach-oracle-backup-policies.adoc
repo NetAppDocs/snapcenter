@@ -1,0 +1,57 @@
+---
+permalink: protect-azure/create-resource-groups-attach-oracle-backup-policies.html
+sidebar: sidebar
+keywords: resource groups, attach policies, snapcenter, Oracle, backup polices, schedule
+summary: 'A resource group is the container to which you must add resources that you want to back up and protect.'
+---
+
+= Create resource groups and attach Oracle backup policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+A resource group is the container to which you must add resources that you want to back up and protect. 
+
+A resource group enables you to back up all the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, click *New Resource Group*.
+. In the Name page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Name
+a|
+Enter a name for the resource group.
+a|
+Tags
+a|
+Enter one or more labels that will help you later search for the resource group.
+a|
+Use custom name format for Snapshot copy
+a|
+Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
+a|
+Archive log file destination
+a|
+Specify the destinations of the archive log files.
+|===
+
+. In the Resources page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
+. Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
+. In the Policies page, perform the following steps:
+.. Select one or more policies from the drop-down list.
+.. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
+.. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click *OK*.
+. In the Verification page, perform the following steps:
+.. Select the verification server.
+.. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[].
+.. Either select *Run verification after backup* or *Run scheduled verification*.
+.. Click *OK*.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then click *Finish*.

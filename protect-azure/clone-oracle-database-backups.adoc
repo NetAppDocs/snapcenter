@@ -1,0 +1,109 @@
+---
+permalink: protect-azure/clone-oracle-database-backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for Oracle Database, clone, database, backups. split clone, pluggable database
+summary: 'You can use SnapCenter to clone a backup.'
+---
+
+= Clone Oracle database backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You can use SnapCenter to clone an Oracle database using the backup of the database.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the View list.
+. Select the database.
+. From the Manage Copies view page, select the backup from primary storage system.
+. Select the Data backup, and then click *image:../media/clone_icon.gif[clone icon]*.
+. In the Name page, select whether you want to clone a database (CDB or non CDB) or clone a pluggable database (PDB).
+. In the Locations page, specify the required details.
++
+If the Oracle database ANF volumes are configured in a manual QOS capacity pool, specify the QOS for the cloned volumes.
++ 
+If QOS for the cloned volumes is not specified, the QOS of the source volume will be used. If the automatic QOS capacity pool is used, the QOS value specified will be ignored.
+. In the Credentials page, perform one of the following:
+.. For Credential name for sys user, select the Credential to be used for defining the sys user password of the clone database.
+.. For ASM Instance Credential name, select *None* if OS authentication is enabled for connecting to the ASM instance on the clone host.
++
+Otherwise, select the Oracle ASM credential configured with either “sys” user or a user having “sysasm” privilege applicable to the clone host.
+. In the Pre-Ops page specify the path and arguments of the prescripts and in the Database Parameter settings section, modify the values of prepopulated database parameters that are used to initialize the database.
+. In the Post-Ops page, *Recover database* and *Until Cancel* are selected by default to perform recovery of the cloned database.
+.. If you select *Until Cancel*, SnapCenter performs recovery by mounting the latest log backup having the unbroken sequence of archive logs after that data backup that was selected for cloning.
+.. If you select *Date and time*, SnapCenter recovers the database up to a specified date and time.
+.. If you select *Until SCN*, SnapCenter recovers the database up to a specified SCN.
+.. If you select *Specify external archive log locations*, SnapCenter identifies and mounts optimal number of log backups based on the specified SCN or the selected date and time.
+.. By default, *Create new DBID* check box is selected to generate a unique number (DBID) for the cloned database differentiating it from the source database.
++
+Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
+.. Select *Create tempfile for temporary tablespace* check box if you want to create a tempfile for the default temporary tablespace of the cloned database.
+.. In *Enter sql entries to apply when clone is created*, add the sql entries that you want to apply when the clone is created.
+.. In *Enter scripts to run after clone operation*, specify the path and the arguments of the postscript that you want to run after the clone operation.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then select *Finish*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
+
+== Clone a pluggable database
+
+You can clone a pluggable database (PDB) to a different or same target CDB on the same host or alternate host. You can also recover the cloned PDB to a desired SCN or date and time.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the View list.
+. Select the database of type single instance (multitenant).
+. From the Manage Copies view page, select the backup from primary storage system.
+. Select the backup, and then click *image:../media/clone_icon.gif[clone icon]*.
+. In the Name page, select *PDB Clone* and specify the other details.
+. In the Locations page, specify the required details.
+. In the Pre-Ops page specify the path and arguments of the prescripts and in the Database Parameter settings section, modify the values of prepopulated database parameters that are used to initialize the database.
+. In the Post-Ops page, *Until Cancel* is selected by default to perform recovery of the cloned database.
+.. If you select *Until Cancel*, SnapCenter performs recovery by mounting the latest log backup having the unbroken sequence of archive logs after that data backup that was selected for cloning.
+.. If you select *Date and time*, SnapCenter recovers the database up to a specified date and time.
+.. If you select *Specify external archive log locations*, SnapCenter identifies and mounts optimal number of log backups based on the specified SCN or the selected date and time.
+.. By default, *Create new DBID* check box is selected to generate a unique number (DBID) for the cloned database differentiating it from the source database.
++
+Clear the check box if you want to assign the DBID of the source database to the cloned database. In this scenario, if you want to register the cloned database with the external RMAN catalog where the source database is already registered, the operation fails.
+.. Select *Create tempfile for temporary tablespace* check box if you want to create a tempfile for the default temporary tablespace of the cloned database.
+.. In *Enter sql entries to apply when clone is created*, add the sql entries that you want to apply when the clone is created.
+.. In *Enter scripts to run after clone operation*, specify the path and the arguments of the postscript that you want to run after the clone operation.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then select *Finish*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
+
+== Split an Oracle database clone
+
+You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Database* from the View list.
+. Select the cloned resource, (for example, the database or LUN) and then click *image:../media/clone_icon.gif[clone icon]*.
+. Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+== Split clone of a pluggable database
+
+You can use SnapCenter to split a cloned pluggable database (PDB).
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. Select the source container database (CDB) from the resource or resource group view.
+. From the Manage Copies view, select *Clones* from the primary storage systems.
+. Select the PDB clone (targetCDB:PDBClone) and then click *image:../media/clone_icon.gif[clone icon]*.
+. Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+
+
+
+
+
+
+

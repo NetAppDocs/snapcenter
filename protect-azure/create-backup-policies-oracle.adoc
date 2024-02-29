@@ -1,0 +1,31 @@
+---
+permalink: protect-azure/create-backup-policies-oracle.html
+sidebar: sidebar
+keywords: create policies, Oracle, backup policies
+summary: 'Create a backup policy for the resource or resource group that you want to back up.'
+---
+
+= Create backup policies for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you use SnapCenter to back up Oracle database resources, you must create a backup policy for the resource or the resource group that you want to back up.
+
+.Steps
+
+. In the left navigation pane, click *Settings*.
+. In the Settings page, click *Policies*.
+. Select Oracle Database from the drop-down list.
+. Click *New*.
+. In the Name page, enter the policy name and description.
+. In the Backup Type page, perform the following steps:
+.. Select the backup type as either online or offline backup.
+.. Specify the schedule frequency.
+.. If you want to catalog backup using Oracle Recovery Manager (RMAN), select *Catalog backup with Oracle Recovery Manager (RMAN)*.
+.. If you want to prune archive logs after backup, select *Prune archive logs after backup*.
+.. Specify the delete archive log settings.
+. In the Retention page, specify the retention settings.
+. In the Script page, enter the path and the arguments of the prescript or postscript that you want to run before or after the backup operation, respectively.
+. In the Verification page, select the backup schedule for which you want to perform the verification operation and enter the path and the arguments of the prescript or postscript that you want to run before or after the verification operation, respectively.
+. Review the summary and click *Finish*.

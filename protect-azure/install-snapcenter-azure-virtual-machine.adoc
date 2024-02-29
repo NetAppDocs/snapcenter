@@ -1,0 +1,37 @@
+---
+permalink: protect-azure/install-snapcenter-azure-virtual-machine.html
+sidebar: sidebar
+keywords: snapcenter server, azure virtual machine, install
+summary: 'Download and install SnapCenter on Azure Virtual Machine.'
+---
+
+= Install SnapCenter on Azure Virtual Machine
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can download the SnapCenter software from the NetApp Support site and install the software on the Azure virtual machine.
+
+.Before you begin
+
+Ensure that the Azure Windows virtual machine meets the requirements for SnapCenter Server installation. For information, see link:../install/reference_domain_and_workgroup_requirements.html[Prepare for installing the SnapCenter Server].
+
+.Steps
+
+. Download the SnapCenter Server installation package from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site].
+. Initiate the SnapCenter Server installation by double-clicking the downloaded .exe file.
++
+After you initiate the installation, all the pre-checks are performed and if the minimum requirements are not met appropriate error or warning messages are displayed. You can ignore the warning messages and proceed with installation; however, errors should be fixed.
+. Review the pre-populated values required for the SnapCenter Server installation and modify if required.
++
+You do not have to specify the password for MySQL Server repository database. During SnapCenter Server installation the password is auto generated.
++
+NOTE: The special character “%” is not supported in the custom path for the repository database. If you include “%” in the path, installation fails.
+. Click *Install Now*.
++
+If you have specified any values that are invalid, appropriate error messages will be displayed. You should re-enter the values, and then initiate the installation.
++
+NOTE: If you click the *Cancel* button, the step that is being executed will be completed, and then start the rollback operation. The SnapCenter Server will be completely removed from the host.
++
+However, if you click *Cancel* when "SnapCenter Server site restart" or "Waiting for SnapCenter Server to start" operations are being performed, installation will proceed without cancelling the operation.
+

@@ -1,0 +1,96 @@
+---
+permalink: protect-azure/restore-recover-oracle-backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for Oracle Database, restore, recover, tablespaces, pluggable databases, point-in-time
+summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
+---
+
+= Restore and recover Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In the event of data loss, you can use SnapCenter to restore data from one or more backups to your active file system and then recover the database. 
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the View list.
+. Select the database or the resource group from the list.
+. From the Manage Copies view, select *Backups* from the primary storage system.
+. Select the backup from the table, and then click *image:../media/restore_icon.gif[restore icon]*.
+. In the Restore Scope page, perform the following tasks:
+.. Select RAC if you have selected a backup of a database in RAC environment.
+.. Perform the following actions:
+... Select *All Datafiles* if you want to restore only the database files.
+... Select *Tablespaces* if you want to restore only the tablespaces.
+... Select *Redo log files* if you want to restore the redo log files of the Data Guard standby or Active Data Guard standby databases.
+... Select *Pluggable databases* and specify the PDBs you want to restore.
+... Select *Pluggable database (PDB) tablespaces*, and then specify the PDB and the tablespaces of that PDB that you want to restore.
+... Select *Restore the database to the same host where the backup was created* if you want to restore the database to the same SQL server where the backups are taken.
+... Select *Restore the database to an alternate host* if you want the database to be restored to a different SQL server in the same or different host where backups are taken.
+... Select *Change database state if needed for restore and recovery* to change the state of the database to the state required to perform restore and recovery operations.
+... Select *Force in place restore* if you want to perform in-place restore in the scenarios where new datafiles are added after backup or when LUNs are added, deleted, or re-created to an LVM disk group.
+. In the Recovery Scope page, select one of the following options:
+.. Select *All Logs* if you want to recover to the last transaction.
+.. Select *Until SCN (System Change Number)* if you want to recover to a specific SCN.
+.. Select *Date and Time* if you want to recover to a specific date and time.
+.. Select *No recovery* if you do not want to recover.
+.. Select *Specify external archive log locations* if you want to specify the location of the external archive log files.
+. In the Pre-Ops and Post Ops page, specify the required details.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+
+== Restore and recover tablespaces using point-in-time recovery
+
+You can restore a subset of tablespaces that have been corrupted or dropped without impacting the other tablespaces in the database. SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the tablespaces.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the View list.
+. Select the database of type single instance (multitenant).
+. From the Manage Copies view, select *Backups* from the storage system.
++
+If the backup is not cataloged, you should select the backup and click *Catalog*.
+. Select the catalogued backup, and then click *image:../media/restore_icon.gif[restore icon]*.
+. In the Restore Scope page, perform the following tasks:
+.. Select *RAC* if you have selected a backup of a database in RAC environment.
+.. Select *Tablespaces* if you want to restore only the tablespaces.
+.. Select *Change database state if needed for restore and recovery* to change the state of the database to the state required to perform restore and recovery operations.
+. In the Recovery Scope page, select one of the following options:
+.. Select *Until SCN (System Change Number)* if you want to recover to a specific SCN.
+.. Select *Date and Time* if you want to recover to a specific date and time.
+. In the Pre-Ops and Post Ops page, specify the required details.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then click *Finish*.
+. Monitor the restore process by using the *Monitor* > *Jobs* page.
+
+== Restore and recover pluggable database using point-in-time recovery
+
+You can restore and recover a pluggable database (PDB) that has been corrupted or dropped without impacting the other PDBs in the container database (CDB). SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the PDB.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select either *Database* or *Resource Group* from the View list.
+. Select the database of type single instance (multitenant).
+. From the Manage Copies view, select *Backups* from the storage system.
++
+If the backup is not cataloged, you should select the backup and click *Catalog*.
+. Select the catalogued backup, and then click *image:../media/restore_icon.gif[restore icon]*.
+. In the Restore Scope page, perform the following tasks:
+.. Select *RAC* if you have selected a backup of a database in RAC environment.
+.. Depending on whether you want to restore the PDB or tablespaces in a PDB, perform one of the actions:
+*** Select *Pluggable databases (PDBs)* if you want to restore a PDB.
+*** Select *Pluggable database (PDB) tablespaces* if you want to restore tablespaces in a PDB.
+. In the Recovery Scope page, select one of the following options:
+.. Select *Until SCN (System Change Number)* if you want to recover to a specific SCN.
+.. Select *Date and Time* if you want to recover to a specific date and time.
+. In the Pre-Ops and Post Ops page, specify the required details.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
+. Review the summary, and then click *Finish*.
+. Monitor the restore process by using the *Monitor* > *Jobs* page.
+
