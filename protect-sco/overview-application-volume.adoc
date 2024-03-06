@@ -1,0 +1,26 @@
+---
+permalink: protect-sco/overview-application-volume.html
+sidebar: sidebar
+keywords: application volume, overview, backup, non-data volumes
+summary: 'Application Volumes are the storage where information related to Oracle Database are stored.'
+---
+= What are application volumes
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+Application Volumes are the storage where information such as configuration, installer, and other non-data files related to Oracle Database are stored. 
+
+SnapCenter Plug-in for Oracle Database allows you to create consistent backup of application volumes (non-data volumes) along with the Oracle databases.
+
+The plug-in automates the backup and cloning of application volumes.
+
+* Protect application volumes along with Oracle database volumes in a single resource group.
+* Create backups of application volumes. 
+* Create backups of Oracle databases along with application volumes.
+* Create clones of databases along with application volumes up to a point-in-time.
+* Schedule backup operations.
+* Monitor all operations.
+* View reports of backup and clone operations.
+ 
