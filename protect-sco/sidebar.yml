@@ -143,6 +143,8 @@ entries:
         url: /protect-sco/task_delete_clone_of_a_pluggable_database.html
   - title: Manage application volumes
     entries:
+      - title: What are application volumes
+        url: /protect-sco/overview-application-volume.html
       - title: Add application volumes
         url: /protect-sco/add-application-volume.html
       - title: Backup application volumes
