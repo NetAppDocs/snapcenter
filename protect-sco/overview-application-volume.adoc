@@ -10,7 +10,7 @@ summary: 'Application Volumes are the storage where information related to Oracl
 
 [.lead]
 
-Application Volumes are the storage where information such as configuration, installer, and other non-data files related to Oracle Database are stored. 
+Application Volumes are the storage where information such as configuration, installer, and other non-data files related to Oracle database are stored. 
 
 SnapCenter Plug-in for Oracle Database allows you to create consistent backup of application volumes (non-data volumes) along with the Oracle databases.
 
