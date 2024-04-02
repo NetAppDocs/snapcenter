@@ -47,7 +47,7 @@ https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]
 
 * Policy-based backups
 +
-Policy-based backups leverage NetApp Snapshot copy technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally, you can automate protection of these backups to secondary storage by updates to existing protection relationships.
+Policy-based backups leverage NetApp Snapshot technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally, you can automate protection of these backups to secondary storage by updates to existing protection relationships.
 
 * Back ups for multiple resources
 +
@@ -250,7 +250,7 @@ For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 docu
 
 * Enables application-aware data protection for other plug-ins that are running in Windows hosts in your SnapCenter environment
 * Automates application-aware backup, restore, and clone operations for Microsoft file systems in your SnapCenter environment
-* Supports storage provisioning, Snapshot copy consistency, and space reclamation for Windows hosts
+* Supports storage provisioning, Snapshot consistency, and space reclamation for Windows hosts
 +
 NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on physical and RDM LUNs but does not support backup operations for Windows file systems on SMB shares.
 

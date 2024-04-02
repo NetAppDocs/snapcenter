@@ -33,7 +33,7 @@ Clicking a specific alert redirects you to the Alerts page for details about tha
 
 == Latest Protection Summary
 
-The Latest Protection Summary tile gives you the protection status for all entities that you have access to. By default, the display is set to provide the status for all plug-ins. Status information is provided for resources backed up to primary storage as Snapshot copies, and to secondary storage using SnapMirror and SnapVault technologies. The availability of protection status information for secondary storage is based on the selected plug-in type.
+The Latest Protection Summary tile gives you the protection status for all entities that you have access to. By default, the display is set to provide the status for all plug-ins. Status information is provided for resources backed up to primary storage as Snapshots, and to secondary storage using SnapMirror and SnapVault technologies. The availability of protection status information for secondary storage is based on the selected plug-in type.
 
 NOTE: If you are using a mirror-vault protection policy, the counters for the protection summary are displayed in the SnapVault summary chart and not in the SnapMirror chart.
 
@@ -41,7 +41,7 @@ Protection status for individual plug-ins is available by selecting a plug-in fr
 
 IMPORTANT: Reports about secondary storage apply to SnapVault only; SnapMirror reports are not supported.
 
-NOTE: SAP HANA provides protection status information for primary and secondary storage for Snapshot copies. Only primary storage protection status is available for file-based backups.
+NOTE: SAP HANA provides protection status information for primary and secondary storage for Snapshots. Only primary storage protection status is available for file-based backups.
 
 |===
 | Protection status | Primary storage | Secondary storage
@@ -105,9 +105,9 @@ Count of jobs that are currently running.
 
 The Storage tile displays the primary and secondary storage consumed by protection jobs over a 90-day period, graphically depicts consumption trends, and calculates primary storage savings. Storage information is updated once every 24 hours at 12 a.m.
 
-The day's consumption total, which comprises the total number of backups that are available in SnapCenter and size occupied by these backups, will be displayed at the top of the display. A backup could have multiple Snapshot copies associated with it and the count will reflect the same. This is applicable to both primary and secondary Snapshot copies. For example, you have created 10 backups, out of which 2 are deleted due to policy-based backup retention and 1 backup is explicitly deleted by you. Thus, a count of 7 backups will be displayed along with the size occupied by these 7 backups.
+The day's consumption total, which comprises the total number of backups that are available in SnapCenter and size occupied by these backups, will be displayed at the top of the display. A backup could have multiple Snapshots associated with it and the count will reflect the same. This is applicable to both primary and secondary Snapshots. For example, you have created 10 backups, out of which 2 are deleted due to policy-based backup retention and 1 backup is explicitly deleted by you. Thus, a count of 7 backups will be displayed along with the size occupied by these 7 backups.
 
-The Storage Savings factor for primary storage is the ratio of logical capacity (clone and Snapshot copy savings plus storage consumed) to the physical capacity of primary storage. A bar chart illustrates the storage savings.
+The Storage Savings factor for primary storage is the ratio of logical capacity (clone and Snapshots savings plus storage consumed) to the physical capacity of primary storage. A bar chart illustrates the storage savings.
 
 The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Hovering over the charts provides detailed day-by-day results.
 

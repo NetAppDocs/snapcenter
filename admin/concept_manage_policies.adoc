@@ -12,7 +12,7 @@ summary: 'You can detach policies from a resource or resource group, modify, del
 You can detach policies from a resource or resource group, modify, delete, view, and copy.
 
 == Modify policies
-You can modify the replication options, Snapshot copy retention settings, error retry count, or scripts information while a policy is attached to a resource or resource group. You can modify the schedule type (frequency) only after you detach a policy.
+You can modify the replication options, Snapshot retention settings, error retry count, or scripts information while a policy is attached to a resource or resource group. You can modify the schedule type (frequency) only after you detach a policy.
 
 *About this task*
 

@@ -50,12 +50,12 @@ You can delete a resource group if you no longer need to protect the resources i
 
 *About this task*
 
-You should manually delete all clones created for any of the resources in the resource group. You can optionally force the deletion of all backups, metadata, policies, and Snapshot copies associated with the resource group.
+You should manually delete all clones created for any of the resources in the resource group. You can optionally force the deletion of all backups, metadata, policies, and Snapshots associated with the resource group.
 
 *Steps*
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Resource Group* from the *View* list.
 . Select the resource group, and then click *Delete*.
-. Optional: Select the *Delete backups and detach policies associated with this Resource Group* check box to remove all backups, metadata, policies, and Snapshot copies associated with the resource group.
+. Optional: Select the *Delete backups and detach policies associated with this Resource Group* check box to remove all backups, metadata, policies, and Snapshots associated with the resource group.
 . Click *OK*.
