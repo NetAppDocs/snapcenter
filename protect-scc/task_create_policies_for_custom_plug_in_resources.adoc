@@ -21,7 +21,7 @@ For details, see the information about defining a data protection strategy for c
 Preparing for data protection includes tasks such as installing SnapCenter, adding hosts, creating storage system connections, and adding resources.
 * The storage virtual machines (SVMs) should be assigned to you for mirror or vault operations.
 +
-The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshot copies to a mirror or vault.
+The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshots to a mirror or vault.
 * You should have manually added the resources that you want to protect.
 
 .About this task
@@ -32,9 +32,9 @@ The SnapCenter administrator must have assigned the SVMs for both the source and
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 
-** Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires. This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
+** Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires. This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 
-** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
@@ -60,24 +60,24 @@ NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered du
 | If you want to...| Then...
 
 a|
-Keep a certain number of Snapshot copies
+Keep a certain number of Snapshots 
 a|
-Select *Total Snapshot copies to keep*, and then specify the number of Snapshot copies that you want to keep.
+Select *Total Snapshot copies to keep*, and then specify the number of Snapshots that you want to keep.
 
-If the number of Snapshot copies exceeds the specified number, the Snapshot copies are deleted with the oldest copies deleted first.
+If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
 
-NOTE: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+NOTE: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
 
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
 a|
-Keep the Snapshot copies for a certain number of days
+Keep the Snapshots for a certain number of days
 a|
-Select *Keep Snapshot copies for*, and then specify the number of days for which you want to keep the Snapshot copies before deleting them.
+Select *Keep Snapshot copies for*, and then specify the number of days for which you want to keep the Snapshots before deleting them.
 a|
 Snapshot copy locking period
 a|
-Select Snapshot copy locking period, and select days, months, or years.
+Select Snapshot locking period, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
 |===
@@ -92,7 +92,7 @@ a|
 a|
 Select this field to create mirror copies of the backup sets on another volume (SnapMirror replication).
 
-If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, Snapshot copy created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot copy is selected from the destination to perform a restore operation, then the following error message is displayed: Secondary Location is not available for the selected vaulted/mirrored backup.
+If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, Snapshot created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot is selected from the destination to perform a restore operation, then the following error message is displayed: Secondary Location is not available for the selected vaulted/mirrored backup.
 
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
 
@@ -108,7 +108,7 @@ During secondary replication, the SnapLock expiry time loads the primary SnapLoc
 
 When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
 
-For more information on SnapLock Vault see Commit Snapshot copies to WORM on a vault
+For more information on SnapLock Vault see Commit Snapshots to WORM on a vault
 destination
 
 See link:protect-scc/task_view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html[View custom plug-in resource related backups and clones in the Topology page].
@@ -117,7 +117,7 @@ a|
 a|
 Select a Snapshot label.
 
-Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 a|
@@ -125,6 +125,6 @@ a|
 a|
 Enter the maximum number of replication attempts that can be allowed before the operation stops.
 |===
-NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
 
 . Review the summary, and then click *Finish*.

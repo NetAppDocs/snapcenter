@@ -38,4 +38,4 @@ If the source HANA system is auto discovered and the clone target host plug-in i
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 +
-NOTE: Clone Split is disabled for ANF clones because ANF clone is already an independent volume created from the selected Snapshot copy.
+NOTE: Clone Split is disabled for ANF clones because ANF clone is already an independent volume created from the selected Snapshot.

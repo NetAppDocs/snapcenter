@@ -27,7 +27,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 * File-based backup copies cannot be restored from SnapCenter.
 * After upgrading to SnapCenter 4.3, the backups taken in SnapCenter 4.2 can be restored but cannot be recovered. You must use HANA studio or HANA recovery scripts external to SnapCenter to recover the backups taken in SnapCenter 4.2.
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 
@@ -59,7 +59,7 @@ Recovery operation is not supported by SnapCenter Server for multiple tenants wh
 +
 This option is available for backups taken in SnapCenter 4.3 in NFS environments.
 +
-If the resource contains volumes or qtrees, the Snapshot copies taken after the Snapshot copy selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on the same volumes or qtrees, then that resource is also deleted. This is applicable when *Complete Resource* with *Volume Revert* option is selected for restore.
+If the resource contains volumes or qtrees, the Snapshots taken after the Snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on the same volumes or qtrees, then that resource is also deleted. This is applicable when *Complete Resource* with *Volume Revert* option is selected for restore.
 
  .. Select *Tenant Database*.
 +
@@ -125,7 +125,7 @@ Unmount commands are not available for auto discovered resources.
 +
 Mount commands are not available for auto discovered resources.
 +
-NOTE: For pre and post commands for quiesce, Snapshot copy, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
+NOTE: For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

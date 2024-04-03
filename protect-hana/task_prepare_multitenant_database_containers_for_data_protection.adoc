@@ -36,7 +36,7 @@ If the resource is part of a resource group, place the resource group in "`maint
 . Delete the resource group from the Topology page.
 . Delete the old MDC resource from the Resources page.
 +
-For example, if the primary Snapshot copies retention period is 7 days and secondary Snapshot copies retention is 45 days, after 45 days are complete and after all the backups are deleted, you must delete the resource group and the old MDC resource.
+For example, if the primary Snapshots retention period is 7 days and secondary Snapshots  retention is 45 days, after 45 days are complete and after all the backups are deleted, you must delete the resource group and the old MDC resource.
 
 .Related information
 

@@ -21,7 +21,7 @@ You can schedule backup operations, configure policy-based backup retention, and
 
 * *Nondisruptive NetApp Snapshot copy technology*
 +
-SnapCenter uses NetApp Snapshot copy technology with the Plug-in for SAP HANA Database to back up resources.
+SnapCenter uses NetApp Snapshot technology with the Plug-in for SAP HANA Database to back up resources.
 
 Using the Plug-in for SAP HANA Database also offers the following benefits:
 
@@ -34,11 +34,11 @@ You can also set the credentials so that the authorized SnapCenter users have ap
 +
 A FlexClone license is required on the storage system where you want to create the clone.
 
-* Support for the consistency group (CG) Snapshot copy feature of ONTAP as part of creating backups.
+* Support for the consistency group (CG) Snapshot feature of ONTAP as part of creating backups.
 * Capability to run multiple backups simultaneously across multiple resource hosts
 +
-In a single operation, Snapshot copies are consolidated when resources in a single host share the same volume.
+In a single operation, Snapshots are consolidated when resources in a single host share the same volume.
 
-* Capability to create Snapshot copies using external commands.
+* Capability to create Snapshots using external commands.
 * Support for file-based backup.
 * Support for Linux LVM on XFS file system.

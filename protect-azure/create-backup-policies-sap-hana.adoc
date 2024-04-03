@@ -21,7 +21,7 @@ Before you use SnapCenter to back up SAP HANA database resources, you must creat
 . In the Settings page, perform the following steps:
 .. Select the backup type.
 ... Select *File-based Backup* if you want to perform an integrity check of the database.
-... Select *Snapshot Based* if you want to create a backup using Snapshot copy technology.
+... Select *Snapshot Based* if you want to create a backup using Snapshot technology.
 .. Specify the schedule type.
 . In the Retention page, specify the retention settings for the backup type and the schedule type selected.
 +

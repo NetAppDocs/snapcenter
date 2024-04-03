@@ -37,13 +37,13 @@ If the resource is protected, the topology page of the selected resource is disp
 
 . Review the *Summary card* to see a summary of the number of backups and clones available on the primary and secondary storage.
 +
-The *Summary Card* section displays the total number of File-Based backups, Snapshot copy backups, and clones.
+The *Summary Card* section displays the total number of File-Based backups, Snapshot copy-based backups, and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
 +
 If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP. A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
 +
-When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot copy in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
+When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
 +
 After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
 
