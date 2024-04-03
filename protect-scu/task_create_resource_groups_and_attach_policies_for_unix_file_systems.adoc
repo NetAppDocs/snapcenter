@@ -23,9 +23,9 @@ NOTE: The resource group name should not exceed 250 characters.
  .. Enter one or more labels in the Tag field to help you search for the resource group later.
 +
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
- .. Select the check box, and enter a custom name format that you want to use for the Snapshot copy name.
+ .. Select the check box, and enter a custom name format that you want to use for the Snapshot name.
 +
-For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
+For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot name.
 
 . In the Resources page, select an Unix file systems host name from the *Host* drop-down list.
 +
@@ -33,7 +33,7 @@ NOTE: The resources are listed in the Available Resources section only if the re
 
 . Select the resources from the Available Resources section and move them to the Selected Resources section.
 . In the Application Settings page, perform the following:
-* Select the Scripts arrow and enter the pre and post commands for quiesce, Snapshot copy, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+* Select the Scripts arrow and enter the pre and post commands for quiesce, Snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 * Select one of the backup consistency options:
 ** Select *File System Consistent* if you want to ensure that file systems cached data is flushed before creating the backup and no input or output operations are allowed on filesystem while creating the backup.
 +

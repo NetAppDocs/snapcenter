@@ -19,7 +19,7 @@ You can create a new backup policy for resources before you use SnapCenter to ba
 +
 To prepare for data protection, you must complete tasks such as installing SnapCenter, adding hosts, discovering resources, and creating storage virtual machine (SVM) connections.
 
-* If you are replicating Snapshot copies to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
+* If you are replicating Snapshots to a mirror or vault secondary storage, the SnapCenter administrator must have assigned the SVMs to you for both the source and destination volumes.
 
 * If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the usePowershellProcessforScripts parameter to true in the web.config file.
 +
@@ -41,9 +41,8 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 
-** Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires. This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
-
-** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+** Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires. This could lead to retaining a larger number of Snapshots than the count specified in the policy.
+** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
@@ -91,7 +90,7 @@ NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered du
 a|
 Total Snapshot copies to retain
 a|
-Choose this option if you want to specify the number of Snapshot copies SnapCenter stores before automatically deleting them.
+Choose this option if you want to specify the number of Snapshots SnapCenter stores before automatically deleting them.
 a|
 Delete Snapshot copies older than
 a|
@@ -99,7 +98,7 @@ Choose this option if you want to specify the number of days SnapCenter retains 
 a|
 Snapshot copy locking period
 a|
-Select Snapshot copy locking period, and select days, months, or years.
+Select Snapshot locking period, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
 |===
@@ -137,7 +136,7 @@ Secondary policy label
 a|
 Select a Snapshot label.
 
-Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 
@@ -146,7 +145,7 @@ Error retry count
 a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
-NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
 
 . In the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
 +

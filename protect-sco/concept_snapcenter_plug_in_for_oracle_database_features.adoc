@@ -19,9 +19,9 @@ The SnapCenter interface provides standardization and consistency across plug-in
 +
 You can schedule backup and clone operations, configure policy-based backup retention, and perform restore operations. You can also proactively monitor your environment by configuring SnapCenter to send email alerts.
 
-* Nondisruptive NetApp Snapshot copy technology
+* Nondisruptive NetApp Snapshot technology
 +
-SnapCenter uses NetApp Snapshot copy technology with the Plug-in for Oracle Database and Plug-in for UNIX to back up databases. Snapshot copies consume minimal storage space.
+SnapCenter uses NetApp Snapshot technology with the Plug-in for Oracle Database and Plug-in for UNIX to back up databases. Snapshots consume minimal storage space.
 
 The Plug-in for Oracle Database also offers the following benefits:
 
@@ -41,7 +41,7 @@ A FlexClone license is required on the storage system where you want to create t
 * Nondisruptive and automated backup verification
 * Capability to run multiple backups simultaneously across multiple database hosts
 +
-In a single operation, Snapshot copies are consolidated when databases in a single host share the same volume.
+In a single operation, Snapshots are consolidated when databases in a single host share the same volume.
 
 * Support for physical and virtualized infrastructures
 * Support for NFS, iSCSI, Fibre Channel (FC), RDM, VMDK over NFS and VMFS, and ASM over NFS, SAN, RDM, and VMDK

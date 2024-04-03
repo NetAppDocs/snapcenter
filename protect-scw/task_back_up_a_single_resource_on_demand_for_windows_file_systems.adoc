@@ -27,9 +27,9 @@ IMPORTANT: If you are working in a Windows file system context, do not back up d
 +
 Specify the protection settings, as described in the Creating resource groups tasks.
 
-. Optional: In the Resource page of the wizard, enter a custom name format for the Snapshot copy.
+. Optional: In the Resource page of the wizard, enter a custom name format for the Snapshot.
 +
-For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot copy name.
+For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname. By default, a timestamp is appended to the Snapshot name.
 
 . In the Policies page, perform the following tasks:
  .. Select one or more policies from the drop-down list.
