@@ -12,7 +12,7 @@ summary: 'Before restoring an Oracle database, you should ensure that prerequisi
 Before restoring an Oracle database, you should ensure that prerequisites are completed.
 
 * You should have defined your restore and recovery strategy.
-* The SnapCenter administrator should have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes if you are replicating Snapshot copies to a mirror or vault.
+* The SnapCenter administrator should have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes if you are replicating Snapshots to a mirror or vault.
 * If archive logs are pruned as part of backup, you should have manually mounted the required archive log backups.
 * If you want to restore Oracle databases that are residing on a Virtual Machine Disk (VMDK), you should ensure that the guest machine has the required number of free slots for allocating the cloned VMDKs.
 * You should ensure that all data volumes and archive log volumes belonging to the database are protected if secondary protection is enabled for that database.

@@ -66,7 +66,7 @@ host
 +
 You should reassign the RBAC user or group to the cluster or DAG to include the new node to the RBAC user or group. For example, you have a two-node cluster and you have assigned an RBAC user or group to the cluster. When you add another node to the cluster, you should reassign the RBAC user or group to the cluster to include the new node for the RBAC user or group.
 
-* If you are planning to replicate Snapshot copies, you must assign the storage connection for both the source and destination volume to the user performing the operation.
+* If you are planning to replicate Snapshots, you must assign the storage connection for both the source and destination volume to the user performing the operation.
 +
 You should add assets before assigning access to the users.
 

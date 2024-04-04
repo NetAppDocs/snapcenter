@@ -46,7 +46,7 @@ a|
 required
 a|
 This stub is responsible for performing a quiesce. It places the
-application into a state where we can create a Snapshot copy. This is called before storage Snapshot copy operation.
+application into a state where we can create a Snapshot. This is called before storage Snapshot operation.
 a|
 unquiesce
 a|
@@ -54,7 +54,7 @@ required
 a|
 This stub is responsible for performing a unquiesce. It places
 the application in a normal state. This is called after storage
-Snapshot copy operation.
+Snapshot operation.
 a|
 clone_pre
 a|

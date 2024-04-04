@@ -1,5 +1,5 @@
 You can verify backup copies on the primary storage volume or on either the SnapMirror or SnapVault secondary storage volume. Verification using a secondary storage volume reduces load on the primary storage volume.
 
-When you verify a backup that is either on the primary or secondary storage volume, all the primary and the secondary Snapshot copies are marked as verified.
+When you verify a backup that is either on the primary or secondary storage volume, all the primary and the secondary Snapshots are marked as verified.
 
 SnapRestore license is required to verify backup copies on SnapMirror and SnapVault secondary storage volume.

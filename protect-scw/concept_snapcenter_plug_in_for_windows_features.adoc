@@ -2,14 +2,14 @@
 permalink: protect-scw/concept_snapcenter_plug_in_for_windows_features.html
 sidebar: sidebar
 keywords: SnapCenter
-summary: 'The Plug-in for Windows integrates with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.'
+summary: 'The Plug-in for Windows integrates with NetApp Snapshot technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.'
 ---
 = SnapCenter Plug-in for Windows features
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The Plug-in for Windows integrates with NetApp Snapshot copy technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.
+The Plug-in for Windows integrates with NetApp Snapshot technology on the storage system. To work with the Plug-in for Windows, you use the SnapCenter interface.
 
 The Plug-in for Windows includes these major features:
 
@@ -21,9 +21,9 @@ The SnapCenter interface provides you with standardization and consistency acros
 +
 You can schedule routine file system backups, configure policy-based backup retention, and set up restore operations. You can also proactively monitor your file system environment by configuring SnapCenter to send email alerts.
 
-* *Nondisruptive NetApp Snapshot copy technology*
+* *Nondisruptive NetApp Snapshot technology*
 +
-The Plug-in for Windows uses NetApp Snapshot copy technology. This enables you to back up file systems in seconds and restore them quickly without taking host offline. Snapshot copies consume minimal storage space.
+The Plug-in for Windows uses NetApp Snapshot technology. This enables you to back up file systems in seconds and restore them quickly without taking host offline. Snapshots consume minimal storage space.
 
 In addition to these major features, the Plug-in for Windows offers the following benefits:
 

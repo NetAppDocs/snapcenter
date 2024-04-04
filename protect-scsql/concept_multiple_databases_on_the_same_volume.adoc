@@ -11,4 +11,4 @@ summary: 'You can put all databases on the same volume, because the backup polic
 [.lead]
 You can put all databases on the same volume, because the backup policy has an option to set the maximum databases per backup (default value is 100).
 
-For example, if you have 200 databases in the same volume, two Snapshot copies are created with 100 databases in each of the two Snapshot copies.
+For example, if you have 200 databases in the same volume, two Snapshots are created with 100 databases in each of the two Snapshots.

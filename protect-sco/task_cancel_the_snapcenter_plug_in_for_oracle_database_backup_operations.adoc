@@ -15,7 +15,7 @@ You must be logged in as the SnapCenter Admin or job owner to cancel backup oper
 
 *About this task*
 
-When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.
+When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshots from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot even after the cancellation is triggered.
 
 * You can cancel only the log or full backup operation that are queued or running.
 * You cannot cancel the operation after the verification has started.

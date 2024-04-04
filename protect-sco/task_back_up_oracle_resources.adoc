@@ -24,9 +24,9 @@ You can then click image:../media/filter_icon.png[Filter icon] to close the filt
 The Database-Protect page is displayed.
 
 . In the Resources page, you can perform the following steps:
- .. Select the check box, and enter a custom name format that you want to use for the Snapshot copy name.
+ .. Select the check box, and enter a custom name format that you want to use for the Snapshot name.
 + 
-For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is appended to the Snapshot copy name by default.
+For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is appended to the Snapshot name by default.
  .. Specify the destinations of the archive log files that you do not want to back up.
 
 . In the Policies page, perform the following steps:

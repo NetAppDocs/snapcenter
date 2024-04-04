@@ -20,7 +20,7 @@ For details, see the information about defining a data protection strategy for E
 
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, identifying resources, and creating storage system connections.
 * You must have refreshed (discovered) the Exchange Server resources.
-* If you are replicating Snapshot copies to a mirror or vault, the SnapCenter administrator must have assigned the storage virtual machines (SVMs) for both the source volumes and destination volumes to you.
+* If you are replicating Snapshots to a mirror or vault, the SnapCenter administrator must have assigned the storage virtual machines (SVMs) for both the source volumes and destination volumes to you.
 * If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the `usePowershellProcessforScripts` parameter to true in the `web.config` file.
 +
 The default value is false
@@ -39,16 +39,16 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 You can use the GET API to display the value of the key. SET API is not supported.
 +
 |===
-*Best Practice:* It's best that you configure the secondary retention policy based on the number of full and log backups, overall, that you want to retain. When you configure secondary retention policies, keep in mind that when databases and logs that are in different volumes, each backup can have three Snapshot copies, and when databases and logs are in the same volume, each backup can have two Snapshot copies.
+*Best Practice:* It's best that you configure the secondary retention policy based on the number of full and log backups, overall, that you want to retain. When you configure secondary retention policies, keep in mind that when databases and logs that are in different volumes, each backup can have three Snapshots, and when databases and logs are in the same volume, each backup can have two Snapshots.
 |===
 
 * SnapLock
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 +
-Specifying a Snapshot copy locking period prevents deletion of the Snapshot copies until the retention period expires.  This could lead to retaining a larger number of Snapshot copies than the count specified in the policy.
+Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires.  This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 +
-For ONTAP 9.12.1 and below versions, the clones created from the SnapLock Vault Snapshot copies will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+For ONTAP 9.12.1 and below versions, the clones created from the SnapLock Vault Snapshots will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 +
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
@@ -134,7 +134,7 @@ The options displayed depend upon the backup type and frequency type you previou
 +
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 +
-IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until a newer Snapshot copy is replicated to the target.
+IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
 
  .. In the Log backups retention settings section, select one of the following:
 +
@@ -152,7 +152,7 @@ The log folders created as part of full and log backups are automatically delete
 
 You can set UTM retention value as 0, if you do not want to perform up-to-the-minute restore. This will enable point-in-time restore operation.
 
-*Best Practice:* It's best that the setting must be equal to the setting for Total Snapshot copies (full backups) in the Full backup retention settings section. This ensures that log files are retained for each full backup.
+*Best Practice:* It's best that the setting must be equal to the setting for Total Snapshots (full backups) in the Full backup retention settings section. This ensures that log files are retained for each full backup.
 a|
 Retain the backup copies for a specific number of days
 a|
@@ -160,7 +160,7 @@ Select the *Keep log backups for last* option, and specify the number of days to
 
 The log backups up to the number of days of full backups are retained.
 a|
-Snapshot copy locking period
+Snapshot locking period
 a|
 Select *Snapshot copy locking period*, and select days, months, or years.
 
@@ -175,17 +175,17 @@ If you selected *Log backup* as the backup type, log backups are retained as par
 | For this field...| Do this...
 
 a|
-Retain only a specific number of Snapshot copies
+Retain only a specific number of Snapshots 
 a|
-If you want to specify the number of full backups to keep, select the *Total Snapshot copies to keep* option, and specify the number of Snapshot copies (full backups) to retain.
+If you want to specify the number of full backups to keep, select the *Total Snapshot copies to keep* option, and specify the number of Snapshots (full backups) to retain.
 
 If the number of full backups exceeds the specified number, the full backups that exceed the specified number are deleted, with the oldest copies deleted first.
 a|
 Retain full backups for a specific number of days
 a|
-Select the *Keep Snapshot copies for* option, and specify the number of days to keep Snapshot copies (full backups).
+Select the *Keep Snapshot copies for* option, and specify the number of days to keep Snapshots (full backups).
 a|
-Snapshot copy locking period
+Snapshot locking period
 a|
 Select *Snapshot copy locking period*, and select days, months, or years.
 
@@ -207,7 +207,7 @@ In the example, the value 10 means you keep up to 10 log backups on the host.
 | For this field...| Do this...
 
 a|
-Update SnapMirror after creating a local Snapshot copy
+Update SnapMirror after creating a local Snapshot 
 
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
 
@@ -217,7 +217,7 @@ See link:..protect-sce/task_view_exchange_backups_in_the_topology_page.html[View
 a|
 Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
 a|
-Update SnapVault after creating a local Snapshot copy
+Update SnapVault after creating a local Snapshot
 a|
 Select this option to perform disk-to-disk backup replication.
 a|
@@ -225,7 +225,7 @@ Secondary policy label
 a|
 Select a Snapshot label.
 
-Depending on the Snapshot copy label that you select, ONTAP applies the secondary Snapshot copy retention policy that matches the label.
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
 
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 
@@ -235,7 +235,7 @@ a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
 +
-NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshot copies on the secondary storage.
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
 
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +

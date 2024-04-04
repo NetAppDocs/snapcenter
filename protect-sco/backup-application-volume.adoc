@@ -35,9 +35,9 @@ The Application volume-Protect page is displayed.
 a|
 Use custom name format for Snapshot copy
 a|
-Select this check box, and then enter a custom name format that you want to use for the Snapshot copy name.
+Select this check box, and then enter a custom name format that you want to use for the Snapshot name.
 
-For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
+For example, customtext__policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot name.
 a|
 Exclude archive log destinations from backup
 a|

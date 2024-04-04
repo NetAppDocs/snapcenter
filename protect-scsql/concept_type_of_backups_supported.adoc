@@ -2,14 +2,14 @@
 permalink: protect-scsql/concept_type_of_backups_supported.html
 sidebar: sidebar
 keywords: Type of backups
-summary: 'Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups \(AG\). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
+summary: 'Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups \(AG\). Snapshot technology is leveraged to create online, read-only copies of the volumes on which the resources reside.'
 ---
 = Type of backups supported
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups (AG). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
+Backing up SQL Server system and user databases using SnapCenter requires that you choose the resource type, such as databases, SQL server instances, and Availability Groups (AG). Snapshot technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
 
 You can select the copy-only option to specify that the SQL Server does not truncate transaction logs. You should use this option when you are also managing the SQL Server with other backup applications. Keeping the transaction logs intact enables any backup application to restore the system databases. Copy-only backups are independent of the sequence of scheduled backups, and they do not affect the backup and restore procedures of the database.
 

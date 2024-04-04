@@ -9,7 +9,7 @@ summary: 'You can use the SnapCenter Plug-in for Microsoft Windows in VMware env
 :imagesdir: ../media/
 
 [.lead]
-You can use the SnapCenter Plug-in for Microsoft Windows in VMware environments to create and manage LUNs and manage Snapshot copies.
+You can use the SnapCenter Plug-in for Microsoft Windows in VMware environments to create and manage LUNs and manage Snapshots.
 
 == Supported VMware guest OS platforms
 

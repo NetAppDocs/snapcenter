@@ -34,9 +34,9 @@ Backup schedules (exactly when backups are to be performed) are part of a resour
 Factors that determine the number of backups that you need include the size of the Windows file system, the number of volumes used, the rate of change of the file system, and your Service Level Agreement (SLA).
 
 == Backup naming convention for Windows file systems
-Windows file system backups use the default Snapshot copy naming convention. The default backup naming convention adds a timestamp to Snapshot copy names that helps you identify when the copies were created.
+Windows file system backups use the default Snapshot naming convention. The default backup naming convention adds a timestamp to Snapshot names that helps you identify when the copies were created.
 
-The Snapshot copy uses the following default naming convention: resourcegroupname_hostname_timestamp
+The Snapshot uses the following default naming convention: resourcegroupname_hostname_timestamp
 
 You should name your backup resource groups logically, as in the following example:
 

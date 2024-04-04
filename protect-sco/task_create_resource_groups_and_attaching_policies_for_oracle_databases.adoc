@@ -21,7 +21,7 @@ The following image illustrates the relationship between resources, resource gro
 +
 image::../media/sco_resourcegroup_policy.gif[]
 
-* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 * Adding new databases without SM-BC to an existing resource group which contains resources with SM-BC is not supported.
 * Adding new databases to an existing resource group in failover mode of SM-BC is not supported. You can add resources to the resource group only in regular or fail-back state.
@@ -38,9 +38,9 @@ NOTE: The resource group name should not exceed 250 characters.
 .. Enter one or more labels in the Tag field to help you search for the resource group later.
 +
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
-.. Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
+.. Select this check box, and enter a custom name format that you want to use for the Snapshot name.
 +
-For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot copy name.
+For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot name.
 .. Specify the destinations of the archive log files that you do not want to back up.
 +
 NOTE: You should use the exact same destination as it was set in Oracle, including prefix, if needed.

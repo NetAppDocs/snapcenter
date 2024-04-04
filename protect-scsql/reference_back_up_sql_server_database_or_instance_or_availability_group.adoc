@@ -25,17 +25,17 @@ You can also use PowerShell cmdlets manually or in scripts to perform backup, re
 
 == How SnapCenter backs up databases
 
-SnapCenter uses Snapshot copy technology to back up the SQL Server databases that reside on LUNs or VMDKs. SnapCenter creates the backup by creating Snapshot copies of the databases.
+SnapCenter uses Snapshot technology to back up the SQL Server databases that reside on LUNs or VMDKs. SnapCenter creates the backup by creating Snapshots of the databases.
 
 When you select a database for a full database backup from the Resources page, SnapCenter automatically selects all the other databases that reside on the same storage volume. If the LUN or VMDK stores only a single database, you can clear or reselect the database individually. If the LUN or VMDK houses multiple databases, you must clear or reselect the databases as a group.
 
-All the databases that reside on a single volume are backed up concurrently using Snapshot copies. If the maximum number of concurrent backup databases is 35, and if more than 35 databases reside in a storage volume, then the total number of Snapshot copies that are created equals the number of databases divided by 35.
+All the databases that reside on a single volume are backed up concurrently using Snapshots. If the maximum number of concurrent backup databases is 35, and if more than 35 databases reside in a storage volume, then the total number of Snapshots that are created equals the number of databases divided by 35.
 
-NOTE: You can configure the maximum number of databases for each Snapshot copy in the backup policy.
+NOTE: You can configure the maximum number of databases for each Snapshot in the backup policy.
 
-When SnapCenter creates a Snapshot copy, the entire storage system volume is captured in the Snapshot copy. However, the backup is valid only for the SQL host server for which the backup was created.
+When SnapCenter creates a Snapshot, the entire storage system volume is captured in the Snapshot. However, the backup is valid only for the SQL host server for which the backup was created.
 
-If data from other SQL host servers resides on the same volume, this data cannot be restored from the Snapshot copy.
+If data from other SQL host servers resides on the same volume, this data cannot be restored from the Snapshot.
 
 *Find more information*
 
