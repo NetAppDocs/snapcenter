@@ -15,7 +15,7 @@ You can use SnapCenter to restore backed-up Exchange databases.
 
 * You must have backed up the resource groups, database, or Database Availability Groups (DAGs).
 * When Exchange database is migrated to another location, restore operation does not work for old backups.
-* If you are replicating Snapshot copies to a mirror or vault, the SnapCenter administrator must have assigned you the SVMs for both the source volumes and destination volumes.
+* If you are replicating Snapshots to a mirror or vault, the SnapCenter administrator must have assigned you the SVMs for both the source volumes and destination volumes.
 * In a DAG, if an active database copy is on a non-NetApp storage and you want to restore from the passive database copy backup that is on a NetApp storage, make the passive copy (NetApp storage) as active copy, refresh the resources and perform the restore operation.
 +
 Run the `Move-ActiveMailboxDatabase` command to make the passive database copy as active database copy.
@@ -39,7 +39,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 

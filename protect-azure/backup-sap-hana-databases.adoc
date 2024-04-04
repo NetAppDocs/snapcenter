@@ -17,12 +17,12 @@ If a resource is not yet part of any resource group, you can back up the resourc
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resource page, filter resources from the *View* drop-down list based on resource type.
 . Select the resource that you want to back up.
-. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot copy name.
+. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.
 . In the Application Settings page, do the following:
 .. Select the *Backups* arrow to set additional backup options.
-.. Select the *Scripts* arrow to run pre and post commands for quiesce, Snapshot copy, and unquiesce operations.
+.. Select the *Scripts* arrow to run pre and post commands for quiesce, Snapshot, and unquiesce operations.
 .. Select the *Custom Configurations* arrow, and then enter the custom value pairs required for all jobs using this resource.
-.. Select the *Snapshot Copy Tool > SnapCenter without File System Consistency* to create Snapshot copies.
+.. Select the *Snapshot Copy Tool > SnapCenter without File System Consistency* to create Snapshots.
 +
 The *File System Consistency* option is applicable only for applications running on Windows hosts.
 . In the Policies page, perform the following steps:

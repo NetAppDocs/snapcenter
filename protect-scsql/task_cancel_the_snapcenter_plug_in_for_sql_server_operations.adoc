@@ -2,14 +2,14 @@
 permalink: protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html
 sidebar: sidebar
 keywords: cancel, backup
-summary: 'You can cancel backup operations that are running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.'
+summary: 'You can cancel backup operations that are running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshots from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot even after the cancellation is triggered.'
 ---
 = Cancel the SnapCenter Plug-in for Microsoft SQL Server backup operations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can cancel backup operations that are running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshot copies from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot copy even after the cancellation is triggered.
+You can cancel backup operations that are running, queued, or non-responsive. When you cancel a backup operation, the SnapCenter Server stops the operation and removes all the Snapshots from the storage if the backup created is not registered with SnapCenter Server. If the backup is already registered with SnapCenter Server, it will not roll back the already created Snapshot even after the cancellation is triggered.
 
 .Before you begin
 

@@ -30,7 +30,7 @@ Restoring AG fails when one of the following conditions are met:
 https://support.microsoft.com/kb/2887595[Microsoft Support Article 2887595: Windows RT 8.1, Windows 8.1, and Windows Server 2012 R2 update rollup: November 2013]
 
 * You must have backed up the resource groups or database.
-* If you are replicating Snapshot copies to a mirror or vault, the SnapCenter administrator must have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes.
+* If you are replicating Snapshots to a mirror or vault, the SnapCenter administrator must have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes.
 +
 For information about how administrators assign resources to users, see the SnapCenter installation information.
 

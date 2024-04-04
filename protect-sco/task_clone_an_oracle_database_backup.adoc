@@ -30,7 +30,7 @@ While cloning a backup of an ASM database in a SAN environment, udev rules for t
 //Included the below info for BURT 1348035 for 4.5
 NOTE: In a Flex ASM setup, you cannot perform clone operation on Leaf nodes if the cardinality is less than the number nodes in the RAC cluster.
 
-* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot copy locking period, the clones created from the tamper proof Snapshot copies as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 *Steps*
 

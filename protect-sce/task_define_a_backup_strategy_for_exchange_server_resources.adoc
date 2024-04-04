@@ -15,7 +15,7 @@ An SLA defines the level of service expected and addresses many service-related 
 
 == Types of backups supported for Exchange database
 
-Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups (DAG). Snapshot copy technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
+Backing up Exchange mailboxes using SnapCenter requires that you choose the resource type, such as databases and Database Availability Groups (DAG). Snapshot technology is leveraged to create online, read-only copies of the volumes on which the resources reside.
 
 |===
 | Backup type| Description

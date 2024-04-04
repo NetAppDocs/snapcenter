@@ -32,7 +32,7 @@ The value of the key can be displayed from swagger through the API: API /4.7/con
 +
 You can use the GET API to display the value of the key. SET API is not supported.
 * For SnapMirror Business Continuity (SM-BC) restore operation, you must select the backup from the primary location.
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 

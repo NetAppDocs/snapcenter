@@ -19,9 +19,9 @@ The SnapCenter interface provides standardization and consistency across plug-in
 +
 You can schedule backup operations, configure policy-based backup retention, and perform restore operations. You can also proactively monitor your environment by configuring SnapCenter to send email alerts.
 
-* *Nondisruptive NetApp Snapshot copy technology*
+* *Nondisruptive NetApp Snapshot technology*
 +
-SnapCenter uses NetApp Snapshot copy technology with the SnapCenter Custom Plug-ins to back up resources. Snapshot copies consume minimal storage space.
+SnapCenter uses NetApp Snapshot technology with the SnapCenter Custom Plug-ins to back up resources. Snapshots consume minimal storage space.
 
 Using the Custom Plug-ins feature also offers the following benefits:
 
@@ -34,10 +34,10 @@ You can also set the credentials so that the authorized SnapCenter users have ap
 +
 A FlexClone license is required on the storage system where you want to create the clone.
 
-* Support for the consistency group (CG) Snapshot copy feature of ONTAP as part of creating backups.
+* Support for the consistency group (CG) Snapshot feature of ONTAP as part of creating backups.
 * Capability to run multiple backups simultaneously across multiple resource hosts
 +
-In a single operation, Snapshot copies are consolidated when resources in a single host share the same volume.
+In a single operation, Snapshots are consolidated when resources in a single host share the same volume.
 
-* Capability to create Snapshot copy using external commands.
-* Capability to create file system consistent Snapshot copies in Windows environments.
+* Capability to create Snapshot using external commands.
+* Capability to create file system consistent Snapshots in Windows environments.

@@ -30,9 +30,9 @@ If a resource is not yet part of any resource group, you can back up the resourc
 When you take a backup of an instance, the information about the last backup status or the timestamp of that instance will not be available in the resources page.
 +
 In the topology view, you cannot differentiate whether the backup status, timestamp, or backup is for an instance or a database.
-. In the Resources page, select the *custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot copy name.
+. In the Resources page, select the *custom name format for Snapshot copy* check box, and then enter a custom name format that you want to use for the Snapshot name.
 +
-For example, customtext_policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot copy name.
+For example, customtext_policy_hostname or resource_hostname. By default, a timestamp is appended to the Snapshot name.
 
 . In the Policies page, perform the following tasks:
  .. In the Policies section, select one or more policies from the drop-down list.

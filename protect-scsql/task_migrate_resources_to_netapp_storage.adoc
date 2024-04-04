@@ -77,7 +77,7 @@ The SQL Server database uses Microsoft SQL Server Database Consistency Checker (
 +
 NOTE: You might want to select this option to decrease the execution time.
 
-* Select **TABLOCK** option to limit the checks and obtain locks instead of using an internal database Snapshot copy.
+* Select **TABLOCK** option to limit the checks and obtain locks instead of using an internal database Snapshot.
 |===
 
 .  Review the summary, and then click **Finish**.

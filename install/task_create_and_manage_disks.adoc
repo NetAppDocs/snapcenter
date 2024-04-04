@@ -236,11 +236,11 @@ You can increase or decrease the size of a disk as your storage system needs cha
 
 * LUNs with GPT-style partitions have a storage system size limit of 16 TB.
 
-* It is a good idea to make a Snapshot copy before resizing a LUN.
+* It is a good idea to make a Snapshot before resizing a LUN.
 
-* If you need to restore a LUN from a Snapshot copy made before the LUN was resized, SnapCenter automatically resizes the LUN to the size of the Snapshot copy.
+* If you need to restore a LUN from a Snapshot made before the LUN was resized, SnapCenter automatically resizes the LUN to the size of the Snapshot.
 +
-After the restore operation, data added to the LUN after it was resized must be restored from a Snapshot copy made after it was resized.
+After the restore operation, data added to the LUN after it was resized must be restored from a Snapshot made after it was resized.
 
 *Steps*
 

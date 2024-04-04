@@ -66,7 +66,7 @@ Quiesce
 a|
 Yes
 a|
-Needs to perform a quiesce on the application. In most cases, this means putting the application into a state where the SnapCenter Server can create a backup (for example, a Snapshot copy).
+Needs to perform a quiesce on the application. In most cases, this means putting the application into a state where the SnapCenter Server can create a backup (for example, a Snapshot).
 a|
 Before the SnapCenter Server creates a Snapshot(s) copy or
 performs a backup in general.
@@ -78,7 +78,7 @@ a|
 Needs to perform an unquiesce on the application. In most cases, this
 means putting the application back into a normal operation state.
 a|
-After the SnapCenter Server has created a Snapshot copy or has
+After the SnapCenter Server has created a Snapshot or has
 performed a backup in general.
 a|
 Cleanup

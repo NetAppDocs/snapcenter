@@ -17,4 +17,4 @@ File-Based Backups verify the integrity of the database. You can schedule the fi
 
 == Snapshot copy based backup
 
-Snapshot copy-based backups leverage NetApp Snapshot copy technology to create online, read-only copies of the volumes on which the SAP HANA databases reside.
+Snapshot copy-based backups leverage NetApp Snapshot technology to create online, read-only copies of the volumes on which the SAP HANA databases reside.

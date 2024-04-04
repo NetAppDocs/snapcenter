@@ -43,7 +43,7 @@ Selected by default.
 ... Select *Do not check nonclustered indexes (NOINDEX)* if you do not want to check nonclustered indexes. 
 +
 The SQL Server database uses Microsoft SQL Server Database Consistency Checker (DBCC) to check the logical and physical integrity of the objects in the database.
-... Select *Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot copy.
+... Select *Limit the checks and obtain the locks instead of using an internal database Snapshot copy (TABLOCK)* to limit the checks and obtain locks instead of using an internal database Snapshot.
 .. In the *Log Backup* section, select *Verify log backup upon completion* to verify the log backup upon completion.
 .. In the *Verification script settings* section, enter the path and the arguments of the prescript or postscript that should be run before or after the verification operation, respectively.
 . Review the summary and click *Finish*.

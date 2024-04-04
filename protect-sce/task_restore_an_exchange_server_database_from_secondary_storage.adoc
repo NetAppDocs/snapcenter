@@ -11,11 +11,11 @@ summary: 'You can restore a backed up Exchange Server database from secondary st
 [.lead]
 You can restore a backed up Exchange Server database from secondary storage (mirror or vault).
 
-You must have replicated the Snapshot copies from primary storage to a secondary storage.
+You must have replicated the Snapshots from primary storage to a secondary storage.
 
 .About this task
 
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 

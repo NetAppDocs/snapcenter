@@ -16,7 +16,7 @@ If a resource is not yet part of any resource group, you can back up the resourc
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resource page, select *Database*, *Instance*, or *Availability Group* from the View drop-down list.
-. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot copy name.
+. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.
 . In the Policies page, perform the following steps:
 .. Select one or more policies from the drop-down list.
 .. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.

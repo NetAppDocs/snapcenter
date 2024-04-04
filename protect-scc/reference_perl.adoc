@@ -139,13 +139,13 @@ Quiesce
 a|
 required
 a|
-This stub is responsible for performing a quiesce, which means placing application into a state where you can create a Snapshot copy. This is called before Snapshot copy operation. The metadata of application to be retained should be set as part of response, which shall be returned during subsequent clone or restore operations on corresponding storage Snapshot copy in the form of configuration parameters.
+This stub is responsible for performing a quiesce, which means placing application into a state where you can create a Snapshot. This is called before Snapshot operation. The metadata of application to be retained should be set as part of response, which shall be returned during subsequent clone or restore operations on corresponding storage Snapshot  in the form of configuration parameters.
 a|
 Unquiesce
 a|
 required
 a|
-This stub is responsible for performing a unquiesce, which means placing application into a normal state. This is called after you create a Snapshot copy.
+This stub is responsible for performing a unquiesce, which means placing application into a normal state. This is called after you create a Snapshot.
 a|
 clone_pre
 a|

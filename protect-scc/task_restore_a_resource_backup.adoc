@@ -14,13 +14,13 @@ You can use SnapCenter to restore resources. The capabilities of the restore ope
 .Before you begin
 
 * You must have backed up the resource or resource groups.
-* The SnapCenter administrator must have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes if you are replicating Snapshot copies to a mirror or vault.
+* The SnapCenter administrator must have assigned you the storage virtual machines (SVMs) for both the source volumes and destination volumes if you are replicating Snapshots to a mirror or vault.
 * You must have cancelled any backup operation that is currently in progress for the resource or resource group you want to restore.
 
 .About this task
 
 * The default restore operation only restores storage objects. Restore operations at the application level can only be performed if the custom plug-in provides that capability.
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshot copies as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 
@@ -47,7 +47,7 @@ image::../media/restoring_resource.gif[restoring resources]
 . In the Restore Scope page, select either *Complete Resource* or *File Level*.
  .. If you selected *Complete Resource*, the resource backup is restored.
 +
-If the resource contains volumes or qtrees as Storage Footprint, then newer Snapshot copies on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
+If the resource contains volumes or qtrees as Storage Footprint, then newer Snapshots on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
 
  .. If you selected *File Level*, then you can either select *All*, or select volumes or qtrees, and then enter the path related to the volumes or qtrees that are selected separated by commas.
 * You can select multiple volumes and qtrees.

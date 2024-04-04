@@ -35,7 +35,7 @@ Enter one or more labels that will help you later search for the resource group.
 a|
 Use custom name format for Snapshot copy
 a|
-Select this check box, and enter a custom name format that you want to use for the Snapshot copy name.
+Select this check box, and enter a custom name format that you want to use for the Snapshot name.
 |===
 
 . In the Resources page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
