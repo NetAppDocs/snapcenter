@@ -38,3 +38,5 @@ For FlexClone licensing information, see link:../install/concept_snapcenter_lice
 * Support for backup of file systems and virtual machine disks (VMDKs)
 * Support for physical and virtualized infrastructures
 * Support for iSCSI, Fibre Channel, FCoE, raw device mapping (RDM), Asymmetric LUN Mapping (ALM), VMDK over NFS and VMFS, and virtual FC
+* Support for non-volatile memory express (NVMe) on Windows
+** Backup, restore, clone, and verification workflows on VMDK layout created on NVMe over TCP/IP.
