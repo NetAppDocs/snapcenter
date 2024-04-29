@@ -45,3 +45,5 @@ A FlexClone license is required on the storage system holding the clone.
 NOTE: NAS volumes should have a default export policy in storage virtual machine (SVM).
 
 * Support for FileStream and file group in SQL Server standalone databases.
+* Support for non-volatile memory express (NVMe) on Windows
+** Backup, restore, clone, and verification workflows on VMDK layout created on NVMe over TCP/IP.
