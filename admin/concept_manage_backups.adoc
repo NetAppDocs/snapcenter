@@ -63,3 +63,17 @@ NOTE: If the last remaining backup is deleted, the associated HANA catalog entri
 . Click *OK*.
 +
 NOTE: If you have some stale database backups in SnapCenter which do not have corresponding backups on the storage system, you must use remove-smbackup command to clean up these stale backup entries. If the stale backups were cataloged, they will be uncataloged from the recovery catalog database.
+
+== Remove protection
+
+Remove protection deletes all the backups and detaches all the policies. Before removing protection, you should ensure that the backups are not mounted and no clones are associated with the backup.
+
+*Steps*
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page either select the resource or resource group from the *View* drop-down list.
+. Select the resource or resource group from the list.
++
+The resource or resource group topology page is displayed.
+
+. Select the backup and click *Remove Protection*.
