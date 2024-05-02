@@ -1,0 +1,19 @@
+---
+permalink: protect-hana/task_back_up_sap_hana_resources.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for SAP HANA Database
+summary: 'You can either create a backup of a resource \(database\) or resource group. The backup workflow includes planning, identifying the databases for backup, managing backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.'
+---
+= Back up SAP HANA resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can either create a backup of a resource (database) or resource group. The backup workflow includes planning, identifying the databases for backup, managing backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.
+
+The following workflow shows the sequence in which you must perform the backup operation:
+
+image::../media/sap_hana_backup_workflow.png[SAP_HANA Backup workflow]
+
+You  can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain more information about PowerShell cmdlets.
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].

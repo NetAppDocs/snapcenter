@@ -1,0 +1,89 @@
+---
+permalink: protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html
+sidebar: sidebar
+keywords: credentials
+summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for SAP HANA Database is available in both Windows and Linux environments.'
+---
+= Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for SAP HANA Database is available in both Windows and Linux environments.
+
+* You must have installed Java 1.8 64-bit on your host.
++
+NOTE: IBM Java is not supported. 
+* You must have installed SAP HANA database interactive terminal (HDBSQL client) on the host.
+* For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for SAP HANA Database is installed as domain administrator.
+* For Windows, user store keys should be created as SYSTEM user.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the SAP HANA plug-in on Windows hosts.
+* For Linux host, HDB Secure User Store keys are accessed as HDBSQL OS user.
+* SnapCenter Server should have access to the 8145 or custom port of Plug-in for SAP HANA Database host.
+
+== Windows hosts
+
+* You must have a domain user with local administrator privileges with local login permissions on the remote host.
+* While installing Plug-in for SAP HANA Database on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
+* You must have enabled the password-based SSH connection for the root or non-root user.
+* You must have installed Java 1.8 64-bit on your Windows host.
++
+http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
++
+https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+
+== Linux hosts
+
+* You must have enabled the password-based SSH connection for the root or non-root user.
+* You must have installed Java 1.8 64-bit on your Linux host.
++
+http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
++
+https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+
+* For SAP HANA databases that are running on a Linux host, while installing Plug-in for SAP HANA Database, SnapCenter Plug-in for UNIX is installed automatically.
+* You should have *bash* as the default shell for plug-in installation.
+
+== Supplemental commands
+
+To run a supplemental command on the SnapCenter Plug-in for SAP HANA, you must include it in the `allowed_commands.config` file.
+
+`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for SAP HANA directory.
+
+.Windows hosts
+
+Default: `C:\Program Files\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+
+Custom path: `<Custome_Directory>\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+Windows host:
+
+.Linux hosts
+
+Default: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+Custom path: `<Custome_Directory>/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+To allow supplemental commands on the plug-in host, open `allowed_commands.config` file in an editor. Enter each command on a separate line. It is not case sensitive.
+For example,
+
+command: mount
+
+command: umount
+
+Ensure that you specify the fully qualified pathname. Enclose the pathname in quotation marks (") if it contains spaces. 
+For example,
+
+command: "C:\Program Files\NetApp\SnapCreator commands\sdcli.exe"
+
+command: myscript.bat
+ 
+If the `allowed_commands.config` file is not present, the commands or script execution will be blocked and the workflow will fail with the following error:
+
+"[/mnt/mount -a] execution not allowed. Authorize by adding the command in the file %s on the plugin host."
+ 
+If the command or script is not present in the `allowed_commands.config`, the command or script execution will be blocked and the workflow will fail with the following error:
+
+"[/mnt/mount -a] execution not allowed. Authorize by adding the command in the file %s on the plugin host."
+ 
+NOTE: You should not use a wildcard entry (*) to allow all commands.
+
