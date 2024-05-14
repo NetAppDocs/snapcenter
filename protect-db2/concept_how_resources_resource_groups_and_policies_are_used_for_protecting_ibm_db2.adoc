@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_sap_hana_databases.html
+permalink: protect-hana/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_ibm_db2.html
 sidebar: sidebar
-keywords: SAP HANA databases
+keywords: IBM DB2
 summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.'
 ---
-= How resources, resource groups, and policies are used for protecting SAP HANA databases
+= How resources, resource groups, and policies are used for protecting IBM Db2
 :icons: font
 :imagesdir: ../media/
 
