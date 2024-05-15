@@ -1,7 +1,7 @@
 ---
-permalink: protect-hana/task_back_up_databases_using_powershell_cmdlets_sap_hana.html
+permalink: protect-db2/task_back_up_databases_using_powershell_cmdlets_ibm_db2.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
 ---
 = Back up databases using PowerShell cmdlets

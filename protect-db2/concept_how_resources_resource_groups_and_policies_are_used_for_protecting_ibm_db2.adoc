@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_ibm_db2.html
+permalink: protect-db2/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_ibm_db2.html
 sidebar: sidebar
 keywords: IBM DB2
 summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.'

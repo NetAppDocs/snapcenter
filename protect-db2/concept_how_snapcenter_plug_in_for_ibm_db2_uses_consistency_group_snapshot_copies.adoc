@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/concept_how_snapcenter_plug_in_for_sap_hana_database_uses_consistency_group_snapshot_copies.html
+permalink: protect-db2/concept_how_snapcenter_plug_in_for_ibm_db2_uses_consistency_group_snapshot_copies.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'You can use the plug-in to create consistency group Snapshots for resource groups. A consistency group is a container that can house multiple volumes so that you can manage them as one entity. A consistency group is simultaneous Snapshots of multiple volumes, providing consistent copies of a group of volumes.'
 ---
-= How SnapCenter Plug-in for SAP HANA Database uses consistency group Snapshots 
+= How SnapCenter Plug-in for IBM Db2 uses consistency group Snapshots 
 :icons: font
 :imagesdir: ../media/
 

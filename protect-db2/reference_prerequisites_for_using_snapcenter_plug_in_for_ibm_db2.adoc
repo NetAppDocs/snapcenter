@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/reference_prerequisites_for_using_snapcenter_plug_in_for_sap_hana_database.html
+permalink: protect-db2/reference_prerequisites_for_using_snapcenter_plug_in_for_ibm_db2.html
 sidebar: sidebar
-keywords: Credentials,SnapCenter Plug-in for SAP HANA Database
-summary: 'Before you use SnapCenter Plug-in for SAP HANA Database, the SnapCenter administrator must install and configure the SnapCenter Server and perform the prerequisite tasks.'
+keywords: Credentials,SnapCenter Plug-in for IBM Db2
+summary: 'Before you use SnapCenter Plug-in for IBM Db2, the SnapCenter administrator must install and configure the SnapCenter Server and perform the prerequisite tasks.'
 ---
-= Prerequisites for using the SnapCenter Plug-in for SAP HANA Database
+= Prerequisites for using the SnapCenter Plug-in for IBM Db2
 :icons: font
 :imagesdir: ../media/
 

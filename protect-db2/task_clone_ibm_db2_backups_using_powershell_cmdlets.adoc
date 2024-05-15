@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_clone_sap_hana_database_backups_using_powershell_cmdlets.html
+permalink: protect-db2/task_clone_ibm_db2_backups_using_powershell_cmdlets.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
-= Clone SAP HANA database backups using PowerShell cmdlets
+= Clone IBM Db2 database backups using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 

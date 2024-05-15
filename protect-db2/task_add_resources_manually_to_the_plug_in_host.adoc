@@ -1,8 +1,8 @@
 ---
-permalink: protect-hana/task_add_resources_manually_to_the_plug_in_host.html
+permalink: protect-db2/task_add_resources_manually_to_the_plug_in_host.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
-summary: 'Automatic discovery is not supported for certain HANA instances. You must add these resources manually.'
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'Automatic discovery is not supported for certain Db2 instances. You must add these resources manually.'
 ---
 = Add resources manually to the plug-in host
 :icons: font

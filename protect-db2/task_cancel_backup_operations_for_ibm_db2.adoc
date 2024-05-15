@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_cancel_backup_operations_for_sap_hana.html
+permalink: protect-db2/task_cancel_backup_operations_for_ibm_db2.html
 sidebar: sidebar
-keywords: plug-in for SAP HANA database
+keywords: plug-in for IBM Db2
 summary: 'You can cancel backup operations that are queued.'
 ---
-= Cancel backup operations for SAP HANA
+= Cancel backup operations for IBM Db2
 :icons: font
 :imagesdir: ../media/
 

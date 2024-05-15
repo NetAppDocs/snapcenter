@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/reference_types_of_restore_strategies_supported_for_auto_discovered_sap_hana_databases.html
+permalink: protect-db2/reference_types_of_restore_strategies_supported_for_auto_discovered_ibm_db2.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Databases
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for automatically discovered SAP HANA databases.'
 ---
-= Types of restore strategies supported for automatically discovered SAP HANA databases
+= Types of restore strategies supported for automatically discovered IBM Db2
 :icons: font
 :imagesdir: ../media/
 

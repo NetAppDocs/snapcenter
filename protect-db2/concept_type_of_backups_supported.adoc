@@ -1,7 +1,7 @@
 ---
-permalink: protect-hana/concept_type_of_backups_supported.html
+permalink: protect-db2/concept_type_of_backups_supported.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'Backup type specifies the type of backup that you want to create. SnapCenter supports File-Based Backup and Snapshot copy-based backup types for SAP HANA databases.'
 ---
 = Type of backups supported

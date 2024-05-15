@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html
+permalink: protect-db2/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_ibm_db2.html
 sidebar: sidebar
 keywords: credentials
 summary: 'You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install plug-in packages either for an individual host or for a cluster.'

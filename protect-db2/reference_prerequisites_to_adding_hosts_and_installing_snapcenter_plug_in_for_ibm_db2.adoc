@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html
+permalink: protect-db2/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_ibm_db2.html
 sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for SAP HANA Database is available in both Windows and Linux environments.'
 ---
-= Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
+= Prerequisites for adding hosts and installing SnapCenter Plug-in for IBM Db2
 :icons: font
 :imagesdir: ../media/
 
