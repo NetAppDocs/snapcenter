@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Software 5.0
+  name: SnapCenter Software 6.0
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
   versions:
-    - version-number: "5.0"
+    - version-number: "6.0"
       url: /snapcenter
+    - version-number: "5.0"
+      url: /snapcenter-50  
     - version-number: "4.9"
       url: /snapcenter-49
     - version-number: "4.8"
@@ -22,7 +24,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter Software 5.0 docs
+    - title: SnapCenter Software 6.0 docs
       url: /index.html
     - title: Release notes
       url: /release-notes.html
