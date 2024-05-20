@@ -11,7 +11,7 @@ entries:
         url: /protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_features.html
       - title: Support for Asymmetric LUN Mapping in Windows clusters
         url: /protect-scsql/concept_support_for_asymmetric_lun_mapping_alm_in_windows_clusters.html
-      - title: Storage types supported by SnapCenter Plug-ins for Microsoft Windows and for Microsoft SQL Server
+      - title: Storage types supported by SnapCenter Plug-in for Microsoft SQL Server
         url: /protect-scsql/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows_and_for_microsoft_sql_server.html
       - title: Storage layout recommendations for SnapCenter Plug-in for Microsoft SQL Server
         url: /protect-scsql/reference_storage_layout_recommendations_for_snapcenter_plug_in_for_microsoft_sql_server.html
