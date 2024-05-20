@@ -23,7 +23,8 @@ For details, see the information about defining a data protection strategy for E
 * If you are replicating Snapshots to a mirror or vault, the SnapCenter administrator must have assigned the storage virtual machines (SVMs) for both the source volumes and destination volumes to you.
 * If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the `usePowershellProcessforScripts` parameter to true in the `web.config` file.
 +
-The default value is false
+The default value is false.
+* Review the SnapMirror active sync specific prerequisites and limitations. For information, refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror active sync].
 
 .About this task
 
@@ -210,6 +211,8 @@ a|
 Update SnapMirror after creating a local Snapshot 
 
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
+
+This option should be enabled for SnapMirror active sync.
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 

@@ -23,11 +23,16 @@ You can review the following icon in the Manage Copies view to determine whether
  ** The number of backups displayed includes the backups deleted from the secondary storage.
 +
 For example, if you created 6 backups using a policy to retain only 4 backups, the number of backups displayed is 6.
-
 +
 |===
 *Best Practice:* To ensure the correct number of replicated backups is displayed, we recommend that you refresh the topology.
 |===
+
+If you have secondary relationship as SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]), you can see following additional icons:
+
+* image:../media/topology_replica_site_up.png[replica site up] implies that the replica site is up.
+* image:../media/topology_replica_site_down.png[replica site down]  implies that the replica site is down.
+* image:../media/topology_reestablished.png[relationship is reestablished] implies that the secondary mirror or vault relationship has not been re-established.
 
 .Steps
 
@@ -47,7 +52,10 @@ If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshe
 +
 When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
 +
-After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
+For SnapMirror active sync, clicking the *Refresh* button refreshes the SnapCenter backup inventory by querying ONTAP for both primary and replica sites. A weekly schedule also performs this activity for all databases containing SnapMirror active sync relationship.
++
+* For SnapMirror active sync, Async Mirror or Async MirrorVault relationships to the new primary destination should be manually configured after failover.
+* After failover, a backup should be created for SnapCenter to be aware of the failover. You can click *Refresh* only after a backup has been created.
 
 . In the Manage Copies view, click *Backups* from the primary or secondary storage to see details of a backup.
 +

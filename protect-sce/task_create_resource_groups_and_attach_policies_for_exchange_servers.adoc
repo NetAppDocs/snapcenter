@@ -23,6 +23,9 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+* Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
+* Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the Microsoft Exchange Server plug-in from the list.

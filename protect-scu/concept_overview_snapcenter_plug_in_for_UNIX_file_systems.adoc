@@ -68,5 +68,4 @@ yes
 However, you can manually perform file level restore by cloning the backup and then copying the files manually.
 * Mix of file systems spread across VMDKs coming from both NFS and VMFS datastore is not supported.
 * NVMe is not supported.
-* SnapMirror Business Continuity (SM-BC) is not supported.
 * Provisioning is not supported.

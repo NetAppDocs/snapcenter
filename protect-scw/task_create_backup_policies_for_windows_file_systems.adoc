@@ -25,7 +25,7 @@ To prepare for data protection, you must complete tasks such as installing SnapC
 +
 The default value is false
 
-* For SnapMirror Business Continuity (SM-BC), for more information on prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
+* Review the SnapMirror active sync specific prerequisites and limitations. For information, refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror active sync].
 
 .About this task
 
@@ -116,7 +116,7 @@ a|
 a|
 Select this option to create mirror copies of backup sets on another volume (SnapMirror).
 
-This option should be enabled for SnapMirror Business Continuity (SM-BC).
+This option should be enabled for SnapSnapMirror active sync.
 
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 

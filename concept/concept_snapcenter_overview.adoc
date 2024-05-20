@@ -101,15 +101,15 @@ SnapLock is a high-performance compliance solution for organizations that use wr
 +
 For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is]
 
-* SnapMirror Business Continuity (SM-BC)
+* SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC])
 +
-SnapMirror Business Continuity (SM-BC) enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SM-BC.
+SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
 +
-The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, and SnapCenter Plug-in for Oracle database.
+The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
 +
-For more information on SM-BC refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror Business Continuity (SM-BC)]
+For more information on SnapMirror active sync refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror active sync overview]
 +
-For SM-BC, ensure that you have met the various hardware, software, and system configuration requirements.  For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
+For SnapMirror active sync, ensure that you have met the various hardware, software, and system configuration requirements. For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
 
 * Synchronous mirroring
 +

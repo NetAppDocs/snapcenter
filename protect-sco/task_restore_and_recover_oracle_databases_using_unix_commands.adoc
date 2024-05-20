@@ -17,7 +17,7 @@ The restore and recovery workflow includes planning, performing the restore and 
 +
 The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896[SnapCenter Software Command Reference Guide^].
 
-* For SnapMirror Business Continuity (SM-BC) restore operation, you must select the backup from the primary location.
+* For SnapMirror active sync restore operation, you must select the backup from the primary location.
 
 *Steps*
 
