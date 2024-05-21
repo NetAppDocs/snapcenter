@@ -1,8 +1,8 @@
 ---
-permalink: protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html
+permalink: protect-db2/task_install_snapcenter_plug_in_for_ibm_db2.html
 sidebar: sidebar
 keywords: installing
-summary: 'You should install and set up the SnapCenter Plug-in for SAP HANA Database if you want to protect SAP HANA databases.'
+summary: 'You should install and set up the SnapCenter Plug-in for IBM Db2 if you want to protect IBM Db2.'
 ---
 = Installation workflow of SnapCenter Plug-in for SAP HANA Database
 :icons: font

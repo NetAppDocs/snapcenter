@@ -1,8 +1,8 @@
 ---
-permalink: protect-hana/task_prepare_multitenant_database_containers_for_data_protection.html
+permalink: protect-db2/task_prepare_multitenant_database_containers_for_data_protection.html
 sidebar: sidebar
 keywords: multitenant database containers
-summary: 'For SAP HANA hosts directly registered in SnapCenter, installing or upgrading the SnapCenter Plug-in for SAP HANA Database will trigger an automatic discovery for resources on the host. After installing or upgrading the plug-in, for every multitenant database containers \(MDC\) resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in “locked” state.'
+summary: 'For IBM Db2 hosts directly registered in SnapCenter, installing or upgrading the SnapCenter Plug-in for SAP HANA Database will trigger an automatic discovery for resources on the host. After installing or upgrading the plug-in, for every multitenant database containers \(MDC\) resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in “locked” state.'
 ---
 = Prepare multitenant database containers for data protection
 :icons: font

@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html
+permalink: protect-db2/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_ibm_db2.html
 sidebar: sidebar
 keywords: HDB User Store Key, HDBSQL OS User, SAP HANA database
 summary: 'You must configure HDB User Store Key and HDBSQL OS User to perform data protection operations on SAP HANA databases.'
 ---
-= Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database
+= Configure HDB User Store Key and HDBSQL OS User for the IBM Db2
 :icons: font
 :imagesdir: ../media/
 

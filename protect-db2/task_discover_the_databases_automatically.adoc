@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/task_discover_the_databases_automatically.html
+permalink: protect-db2/task_discover_the_databases_automatically.html
 sidebar: sidebar
 keywords: credentials
 summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.'

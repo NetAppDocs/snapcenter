@@ -1,15 +1,15 @@
 ---
-permalink: protect-db2/concept_snapcenter_plug_in_for_sap_hana_database_overview.html
+permalink: protect-db2/concept_snapcenter_plug_in_for_ibm_db2_overview.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
-summary: 'The SnapCenter Plug-in for SAP HANA Database is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of SAP HANA databases. The Plug-in for SAP HANA Database automates the backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.'
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'The SnapCenter Plug-in for IBM Db2 is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of SAP HANA databases. The Plug-in for SAP HANA Database automates the backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.'
 ---
-= SnapCenter Plug-in for SAP HANA Database overview
+= SnapCenter Plug-in for IBM Db2 overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The SnapCenter Plug-in for SAP HANA Database is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of SAP HANA databases. The Plug-in for SAP HANA Database automates the backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.
+The SnapCenter Plug-in for IBM Db2 is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of IBM Db2. The Plug-in for IBM Db2 automates the backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.
 
 SnapCenter supports single container and multitenant database containers (MDC). You can use the Plug-in for SAP HANA Database in both Windows and Linux environments. The plug-in that is not installed on the HANA database host is known as the centralized host plug-in. The centralized host plug-in can manage multiple HANA databases across different hosts.
 

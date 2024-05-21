@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/task_split_a_clone_for_hana.html
+permalink: protect-db2/task_split_a_clone_for_db2.html
 sidebar: sidebar
 keywords: split clone, snapcenter
 summary: 'You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.'

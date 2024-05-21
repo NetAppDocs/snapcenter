@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/task_define_a_restore_and_recovery_strategy_for_sap_hana_resources.html
+permalink: protect-db2/task_define_a_restore_and_recovery_strategy_for_ibm_db2_resources.html
 sidebar: sidebar
 keywords: restore and recovery strategy, SAP HANA resources, snapcenter
 summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.'

@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/task_get_the_CA_certificate_thumbprint.html
+permalink: protect-db2/task_get_the_CA_certificate_thumbprint.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Get the CA certificate thumbprint.'

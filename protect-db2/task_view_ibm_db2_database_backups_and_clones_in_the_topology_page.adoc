@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html
+permalink: protect-db2/task_view_ibm_db2_database_backups_and_clones_in_the_topology_page.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage.'
 ---
-= View SAP HANA database backups and clones in the Topology page
+= View IBM Db2 backups and clones in the Topology page
 :icons: font
 :imagesdir: ../media/
 

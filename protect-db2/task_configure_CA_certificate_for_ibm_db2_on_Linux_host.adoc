@@ -1,5 +1,5 @@
 ---
-permalink: protect-hana/task_configure_CA_certificate_for_saphana_on_Linux_host.html
+permalink: protect-db2/task_configure_CA_certificate_for_ibm_db2_on_Linux_host.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host'

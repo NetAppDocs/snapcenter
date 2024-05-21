@@ -1,7 +1,7 @@
 ---
-permalink: protect-hana/task_restore_and_recover_a_manually_added_resource_backup.html
+permalink: protect-db2/task_restore_and_recover_a_manually_added_resource_backup.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
 = Restore and recover a manually added resource backup

@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/task_clone_a_ibm_db2_backup.html
+permalink: protect-db2/task_clone_ibm_db2_backup.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2,run as
 summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'

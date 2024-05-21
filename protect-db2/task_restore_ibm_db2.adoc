@@ -1,7 +1,7 @@
 ---
-permalink: protect-hana/task_restore_sap_hana_databases.html
+permalink: protect-db2/task_restore_ibm_db2.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
 = Restore workflow

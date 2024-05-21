@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_install_the_snapcenter_plug_in_for_sap_hana_database_on_linux_hosts_using_the_command_line_interface.html
+permalink: protect-db2/task_install_the_snapcenter_plug_in_for_ibm_db2_on_linux_hosts_using_the_command_line_interface.html
 sidebar: sidebar
-keywords: install, SnapCenter Plug-in for SAP HANA Database
+keywords: install, SnapCenter Plug-in for IBM Db2
 summary: 'You should install the SnapCenter Plug-in for SAP HANA Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for SAP HANA Database either in console mode or in silent mode by using the command-line interface (CLI1).'
 ---
-= Install the SnapCenter Plug-in for SAP HANA Database on Linux hosts by using the command-line interface
+= Install the SnapCenter Plug-in for IBM Db2 on Linux hosts by using the command-line interface
 :icons: font
 :imagesdir: ../media/
 

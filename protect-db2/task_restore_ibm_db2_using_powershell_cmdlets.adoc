@@ -1,15 +1,15 @@
 ---
-permalink: protect-hana/task_restore_sap_hana_database_using_powershell_cmdlets.html
+permalink: protect-db2/task_restore_ibm_db2_using_powershell_cmdlets.html
 sidebar: sidebar
-keywords: restore, sap hana database, snapcenter
-summary: 'Restoring a SAP HANA database backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
+keywords: restore, ibm db2, snapcenter
+summary: 'Restoring a IBM Db2 backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
-= Restore SAP HANA database using PowerShell cmdlets
+= Restore IBM Db2 database using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restoring a SAP HANA database backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
+Restoring a IBM Db2 backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
 
 .Before you begin
 

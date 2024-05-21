@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_create_backup_policies_for_sap_hana_databases.html
+permalink: protect-db2/task_create_backup_policies_for_ibm_db2.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'Before you use SnapCenter to back up SAP HANA database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
 ---
-= Create backup policies for SAP HANA databases
+= Create backup policies for IBM Db2
 :icons: font
 :imagesdir: ../media/
 

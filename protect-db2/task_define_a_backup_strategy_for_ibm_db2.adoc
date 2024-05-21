@@ -1,10 +1,10 @@
 ---
-permalink: protect-hana/task_define_a_backup_strategy_for_sap_hana_databases.html
+permalink: protect-db2/task_define_a_backup_strategy_for_ibm_db2_databases.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2
 summary: 'Defining a backup strategy before you create your backup jobs helps you to have the backups that you require to successfully restore or clone your resources. Your service-level agreement \(SLA\), recovery time objective \(RTO\), and recovery point objective \(RPO\) largely determine your backup strategy.'
 ---
-= Define a backup strategy for SAP HANA databases
+= Define a backup strategy for IBM Db2
 :icons: font
 :imagesdir: ../media/
 
