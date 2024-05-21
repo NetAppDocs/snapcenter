@@ -14,7 +14,7 @@ entries:
       - title: Minimum ONTAP privileges required
         url: /protect-db2/concept_minimum_privileges_required_for_ibm_db2.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-db2/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_ibm_db2.html
+        url: /protect-db2/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_ibm_db2_plug_in.html
       - title: Backup strategy for IBM Db2
         entries:
           - title: Define a backup strategy for IBM Db2
@@ -50,7 +50,7 @@ entries:
       - title: Installation workflow of SnapCenter Plug-in for IBM Db2
         url: /protect-db2/task_install_snapcenter_plug_in_for_ibm_db2.html
       - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_ibm_db2.html
+        url: /protect-db2/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_ibm_db2.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
         url: /protect-db2/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_db2.html
       - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
@@ -97,8 +97,8 @@ entries:
     entries:
       - title: Back up workflow
         url: /protect-db2/task_back_up_ibm_db2_resources.html
-      - title: Configure HDB User Store Key and HDBSQL OS User for the IBM Db2
-        url: /protect-db2/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_IBM_Db2.html
+      - title: Configure HDB User Store Key and HDBSQL OS User for IBM Db2
+        url: /protect-db2/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_ibm_db2.html
       - title: Discover resources and prepare multitenant database containers for data protection
         entries:
           - title: Discover the databases automatically
@@ -122,37 +122,37 @@ entries:
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-db2/task_monitor_db2_databases_backup_operations.html
+            url: /protect-db2/task_monitor_db2_backup_operations.html
           - title: Monitor operations in the Activity pane
-            url: /protect-db2/task_monitor_dataprotection_operations_on_db2_databases_in_the_activity_pane.html
+            url: /protect-db2/task_monitor_dataprotection_operations_on_db2_in_the_activity_pane.html
       - title: Cancel the backup operations
         url: /protect-db2/task_cancel_backup_operations_for_ibm_db2.html
       - title: View IBM Db2 database backups and clones in the Topology page
-        url: /protect-db2/task_view_ibm_db2_database_backups_and_clones_in_the_topology_page_ibm_db2.html
+        url: /protect-db2/task_view_ibm_db2_database_backups_and_clones_in_the_topology_page.html
   - title: Restore IBM Db2
     entries:
       - title: Restore workflow
-        url: /protect-db2/task_restore_ibm_db2_databases.html
+        url: /protect-db2/task_restore_ibm_db2.html
       - title: Restore and recover a manually added resource backup
         url: /protect-db2/task_restore_and_recover_a_manually_added_resource_backup.html
       - title: Restore and recover an auto discovered database backup
         url: /protect-db2/task_restore_and_recover_an_auto_discovered_database_backup.html
       - title: Restore IBM Db2 using PowerShell cmdlets
-        url: /protect-db2/task_restore_ibm_db2_database_using_powershell_cmdlets.html
+        url: /protect-db2/task_restore_ibm_db2_using_powershell_cmdlets.html
       - title: Restore resources using PowerShell cmdlets
         url: /protect-db2/task_restore_and_recover_resources_using_powershell_cmdlets_db2.html
       - title: Monitor restore operations
-        url: /protect-db2/task_monitor_ibm_db2_restore_operations.html
+        url: /protect-db2/task_monitor_db2_restore_operations.html
   - title: Clone IBM Db2 resource backups
     entries:
       - title: Clone workflow
         url: /protect-db2/task_clone_ibm_db2_resource_backups.html
       - title: Clone a IBM Db2 database backup
-        url: /protect-db2/task_clone_a_ibm_db2_backup.html
+        url: /protect-db2/task_clone_ibm_db2_backup.html
       - title: Clone IBM Db2 database backups using PowerShell cmdlets
         url: /protect-db2/task_clone_ibm_db2_backups_using_powershell_cmdlets.html
       - title: Monitor clone operations in SnapCenter
-        url: /protect-db2/task_monitor_db2_database_clone_operations.html
+        url: /protect-db2/task_monitor_db2_clone_operations.html
       - title: Split a clone
         url: /protect-db2/task_split_a_clone_for_db2.html
       - title: Delete or split IBM Db2 database clones after upgrading SnapCenter
