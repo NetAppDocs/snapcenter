@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/reference_considerations_for_determining_backup_schedules_for_sap_hana_database.html
+permalink: protect-db2/reference_considerations_for_determining_backup_schedules_for_ibm_db2.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'The most critical factor in determining a backup schedule is the rate of change for the resource. You might back up a heavily used resource every hour, while you might back up a rarely used resource once a day. Other factors include the importance of the resource to your organization, your service-level agreement \(SLA\) and your recovery point objective \(RPO\).'

@@ -1,7 +1,7 @@
 section: protect-db2
 title: Protect IBM Db2
 entries:
-  - title: SnapCenter Plug-in for IBM Db2 
+  - title: SnapCenter Plug-in for IBM Db2 lkjdlfd
     entries:
       - title: SnapCenter Plug-in for IBM Db2 overview
         url: /protect-db2/concept_snapcenter_plug_in_for_ibm_db2_overview.html 
@@ -14,7 +14,7 @@ entries:
       - title: Minimum ONTAP privileges required
         url: /protect-db2/concept_minimum_privileges_required_for_ibm_db2.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-db2/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_ibm_db2_plug_in.html
+        url: /protect-db2/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_db2.html
       - title: Backup strategy for IBM Db2
         entries:
           - title: Define a backup strategy for IBM Db2
@@ -38,7 +38,7 @@ entries:
           - title: Define a restore and recovery strategy for IBM Db2 resources
             url: /protect-db2/task_define_a_restore_and_recovery_strategy_for_ibm_db2_resources.html
           - title: Types of restore strategies supported for manually added IBM Db2 resources
-            url: /protect-db2/reference_types_of_restore_strategies_supported_for_manually_added_ibm_db2_resources.html
+            url: /protect-db2/reference_types_of_restore_strategies_supported_for_manually_added_ibm_db2.html
           - title: Types of restore strategies supported for automatically discovered IBM Db2
             url: /protect-db2/reference_types_of_restore_strategies_supported_for_auto_discovered_ibm_db2.html
           - title: Types of restore operations for auto discovered IBM Db2
