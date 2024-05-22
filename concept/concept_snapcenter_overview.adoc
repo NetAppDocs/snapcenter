@@ -39,11 +39,11 @@ SnapCenter includes the following key features:
 
 * Centralized, application-consistent data protection
 +
-Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, and Windows Host Filesystems running on ONTAP systems.
+Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, IBM Db2, and Windows Host Filesystems running on ONTAP systems.
 +
-Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter custom plug-ins for IBM DB2, MongoDB, MySQL etc. on the NetApp Automation Store.
+Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter plug-ins for MongoDB, MySQL, PostgreSQL, Storage, MaxDB, Sybase ASE, ORASCPM, MongoDB, and DPGlue. Apart from this, you can create your own plug-in using the developer's guide. 
 +
-https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]
+link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 
 * Policy-based backups
 +
