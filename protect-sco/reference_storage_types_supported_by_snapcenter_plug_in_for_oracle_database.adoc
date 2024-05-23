@@ -36,9 +36,8 @@ You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/pl
 * VMDKs on VMFS or NFS datastores
 * NFS volumes connected directly to the guest system
 * vVol datastores on both NFS and SAN
-
-** vVol datastore can only be provisioned with ONTAP Tools for VMware vSphere.
-** A virtual machine must be completely provisioned on a vVol datastore. A virtual machine spanning across vVol Datastores is not supported.
++
+vVol datastore can only be provisioned with ONTAP Tools for VMware vSphere.
 |===
 
 == Storage types supported on AIX

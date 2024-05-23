@@ -24,7 +24,8 @@ Only English, German, Japanese, and simplified Chinese version of the operating 
 For the latest information about supported versions, see
 https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 a|
-Red Hat Enterprise Linux 8 and 9
+* Red Hat Enterprise Linux (RHEL) 8 and 9
+* SUSE Linux Enterprise Server (SLES) 15
 
 For the latest information about supported versions, see
 https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
@@ -43,7 +44,7 @@ a|
 
 NOTE: The MySQL Server buffer pool uses 20 percent of the total RAM.
 a|
-8 GB
+4 GB
 
 a|
 Minimum hard drive space for the SnapCenter Server software and logs
@@ -52,9 +53,7 @@ a|
 
 NOTE: If you have the SnapCenter repository in the same drive where SnapCenter Server is installed, then it is recommended to have 10 GB.
 a|
-4 GB
-
-NOTE: If you have the SnapCenter repository in the same drive where SnapCenter Server is installed, then it is recommended to have 10 GB.
+40 GB
 
 a|
 Minimum hard drive space for the SnapCenter repository
@@ -78,17 +77,7 @@ a|
 For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity^].
 
 a|
-
-* Microsoft .NET Framework
-+
-Install .NET run time: `dnf install aspnetcore-runtime-8.0`
-* PAM packages to support PAM authentication
-+
-Install PAM packages: `yum install pam-devel`
-* PowerShell
-+
-Install PowerShell: `dnf install powershell`
+* .NET core runtime 8.0.5 or later
+* PowerShell 7.0 or later
 * Nginx is a web server that can be used as a reverse proxy
-+
-Install nginx `sudo dnf install nginx`
 |===

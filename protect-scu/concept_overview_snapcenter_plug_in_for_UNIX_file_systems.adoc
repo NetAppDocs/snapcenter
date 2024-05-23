@@ -29,6 +29,8 @@ Environments
 a|
 * Physical server
 * Virtual server
++
+vVol datastores on both NFS and SAN. vVol datastore can only be provisioned with ONTAP Tools for VMware vSphere.
 
 a|
 Operating systems
