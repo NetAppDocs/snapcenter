@@ -13,6 +13,12 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 
 .About this task
 
+The SnapCenter Server installed on the Linux host does not support:
+* High availability
+* Windows plug-ins  
+* Active Directory (Supports only the local users, both root and non-root user with creds)
+* Key based authentication to log into SnapCenter
+
 *Steps*
 
 . Download the SnapCenter Server installation package *snapcenter_linux_server.bin* from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
