@@ -1,10 +1,10 @@
 ---
 permalink: uninstall/task_uninstalling_the_snapcenter_server.html
 sidebar: sidebar
-keywords: uninstall, snapcenter server
+keywords: uninstall, snapcenter server, windows
 summary: 'If you no longer wish to use the SnapCenter Server to manage data protection jobs, you can uninstall SnapCenter Server using the Programs and Features Control Panel on the SnapCenter Server host. Uninstalling the SnapCenter Server removes all its components.'
 ---
-= Uninstall the SnapCenter Server
+= Uninstall the SnapCenter Server on Windows host
 :icons: font
 :imagesdir: ../media/
 

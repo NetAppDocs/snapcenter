@@ -16,57 +16,40 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 *Steps*
 
 . Download the SnapCenter Server installation package *snapcenter_linux_server.bin* from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
-. Initiate the SnapCenter Server installation by double-clicking the downloaded .exe file.
+. For non-root users' installation, add the visudo content specified in _snapcenter_server_checksum_(el8/el9/sles15).txt_ available along with the .bin installer.
+. Assign the execute permission for the .bin installer.
+`chmod +x snapcenter_linux_server.bin`
+. Perform one of the actions to install SnapCenter Server.
 +
-After you initiate the installation, all the prechecks are performed and if the minimum requirements are not met appropriate error or warning messages are displayed.
-+
-You can ignore the warning messages and proceed with installation; however, errors should be fixed.
+|===
+| If you want to perform... | Do this...
 
-. Review the pre-populated values required for the SnapCenter Server installation and modify if required.
-+
-You do not have to specify the password for MySQL Server repository database. During SnapCenter Server installation the password is auto generated.
-+
-NOTE: The special character "`%`" is not supported in the custom path for the repository database. If you include "`%`" in the path, installation fails.
+a|
+Non interactive installation
+a|
+`sudo ./snapcenter_linux_server.bin -i silent -DWEBAPP_EXTERNAL_PORT=<port> -DWEBAPP_INTERNAL_PORT=<port> -DSMCORE_PORT=<port> -DSCHEDULER_PORT=<port>  -DSNAPCENTER_SERVER_USER=<user> -DUSER_INSTALL_DIR=<dir> -DINSTALL_LOG_NAME=<filename>`
 
-. Click *Install Now*.
-+
-If you have specified any values that are invalid, appropriate error messages will be displayed. You should reenter the values, and then initiate the installation.
-+
-NOTE: If you click the *Cancel* button, the step that is being executed will be completed, and then start the rollback operation. The SnapCenter Server will be completely removed from the host.
-
-+
-However, if you click *Cancel* when "SnapCenter Server site restart" or "Waiting for SnapCenter Server to start" operations are being performed, installation will proceed without cancelling the operation.
-+
-Log files are always listed (oldest first) in the %temp% folder of the admin user. If you want to redirect the log locations, initiate the SnapCenter Server installation from the command prompt by running:``C:\installer_location\installer_name.exe /log"C:\"`
-
-
-Get the NFS path from the build email and navigate to release_netapp, copy snapcenter_linux_server.bin to the /home directory
-
-For non-root users' installation, please add the visudo content as directed in snapcenter_server_checksum_(el8/el9/sles15).txt. example. snapcenter_server_checksum_el8.txt
-checksum file will be available along with the bin installer in release_netapp folder.
-
-chmod +x snapcenter_linux_server.bin
-
-Non interactive installation:
-
-Fresh Install: sudo ./snapcenter_linux_server.bin -i silent -DWEBAPP_EXTERNAL_PORT=<port> -DWEBAPP_INTERNAL_PORT=<port> -DSMCORE_PORT=<port> -DSCHEDULER_PORT=<port>  -DSNAPCENTER_SERVER_USER=<user> -DUSER_INSTALL_DIR=<dir> -DINSTALL_LOG_NAME=<filename>
-
-The above command creates InstallerLog.log under /var/opt/snapcenter/logs 
+The *InstallerLog.log* is created at _/var/opt/snapcenter/logs_.
 
 Example: sudo ./snapcenter_linux_server.bin -i silent -DWEBAPP_EXTERNAL_PORT=8146  -DSNAPCENTER_SERVER_USER=root -DUSER_INSTALL_DIR=/opt -DINSTALL_LOG_NAME=InstallerLog.log
+a|
+Interactive installation
+a|
+`./snapcenter_linux_server_bin -DINSTALL_LOG_NAME=<filename>`
 
-Interactive installation:
+Logs will be stored at _/var/opt/snapcenter/logs_.
 
-./snapcenter_linux_server_bin -DINSTALL_LOG_NAME=<filename>
+Parameters to be passed during the installation:
 
-Logs will be stored at /var/opt/snapcenter/logs
+* DWEBAPP_EXTERNAL_PORT: Webapp external port that is used to access SnapCenter Server outside the Linux host.
+* DWEBAPP_INTERNAL_PORT: Webapp internal port that is used to access SnapCenter Server within the Linux host.
+* DSMCORE_PORT: SMCore port on which the smcore services are running.
+* DSCHEDULER_PORT: Scheduler port on which the scheduler services are running.
+* DSNAPCENTER_SERVER_USER:  SnapCenter Server user who will install SnapCenter Server.
+* DUSER_INSTALL_DIR: Installation directory where packages will be installed.
+* DINSTALL_LOG_NAME: Log file name where installation logs will be stored.
+|===
 
-Params explained: 
 
--DWEBAPP_EXTERNAL_PORT: Webapp external port will be used to access snapcenter server outside of the linux machine.
--DWEBAPP_INTERNAL_PORT: Webapp internal port will be used to access snapcenter server inside of the linux machine.
--DSMCORE_PORT: SMCore port on which the smcore services will be running
--DSCHEDULER_PORT: Scheduler port on which the scheduler services will be running.
--DSNAPCENTER_SERVER_USER:  Snapcenter server user for which user you want to install 
--DUSER_INSTALL_DIR: Installation directory where packages will be installed.
--DINSTALL_LOG_NAME: Log file name where installation logs will be stored.
+
+
