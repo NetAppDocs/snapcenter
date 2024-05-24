@@ -9,8 +9,9 @@ summary: 'The SnapCenter Plug-in for IBM Db2 is a host-side component of the Net
 :imagesdir: ../media/
 
 [.lead]
-The SnapCenter Plug-in for IBM Db2 is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of IBM Db2. The Plug-in for IBM Db2 automates the backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.
+The SnapCenter Plug-in for IBM Db2 Database is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of IBM Db2 databases. The Plug-in for IBM Db2 Database automates the backup, restore, and cloning of IBM Db2 databases in your SnapCenter environment.
 
-SnapCenter supports single container and multitenant database containers (MDC). You can use the Plug-in for SAP HANA Database in both Windows and Linux environments. The plug-in that is not installed on the HANA database host is known as the centralized host plug-in. The centralized host plug-in can manage multiple HANA databases across different hosts.
+SnapCenter supports single instance and multi instance Db2 setups. You can use the Plug-in for IBM Db2 Database in both Linux and Windows environments. In Windows environments, Db2 will supported as manual resource.
 
-When the Plug-in for SAP HANA Database is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume. You can also use the plug-in with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance.
+When the Plug-in for IBM Db2 Database is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume. You can also use the plug-in with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance.
+

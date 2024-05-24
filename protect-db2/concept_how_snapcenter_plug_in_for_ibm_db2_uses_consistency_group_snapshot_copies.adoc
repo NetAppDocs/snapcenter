@@ -2,13 +2,13 @@
 permalink: protect-db2/concept_how_snapcenter_plug_in_for_ibm_db2_uses_consistency_group_snapshot_copies.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
-summary: 'You can use the plug-in to create consistency group Snapshots for resource groups. A consistency group is a container that can house multiple volumes so that you can manage them as one entity. A consistency group is simultaneous Snapshots of multiple volumes, providing consistent copies of a group of volumes.'
+summary: 'You can use the plug-in to create consistency group snapshots for resource groups. A consistency group is a container that can house multiple volumes so that you can manage them as one entity. A consistency group is simultaneous snapshots of multiple volumes, providing consistent copies of a group of volumes.'
 ---
-= How SnapCenter Plug-in for IBM Db2 uses consistency group Snapshots 
+= How SnapCenter Plug-in for IBM Db2 uses consistency group snapshots 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the plug-in to create consistency group Snapshots for resource groups. A consistency group is a container that can house multiple volumes so that you can manage them as one entity. A consistency group is simultaneous Snapshots of multiple volumes, providing consistent copies of a group of volumes.
+You can use the plug-in to create consistency group snapshots for resource groups. A consistency group is a container that can house multiple volumes so that you can manage them as one entity. A consistency group is simultaneous snapshots of multiple volumes, providing consistent copies of a group of volumes.
 
-You can also specify the wait time for the storage controller to consistently group Snapshots. The available wait time options are *Urgent*, *Medium*, and *Relaxed*. You can also enable or disable Write Anywhere File Layout (WAFL) sync during consistent group Snapshot operation. WAFL sync improves the performance of a consistency group Snapshot.
+You can also specify the wait time for the storage controller to consistently group snapshots. The available wait time options are *Urgent*, *Medium*, and *Relaxed*. You can also enable or disable Write Anywhere File Layout (WAFL) sync during consistent group snapshot operation. WAFL sync improves the performance of a consistency group snapshot.

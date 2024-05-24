@@ -17,6 +17,6 @@ Backup schedules have two parts, as follows:
 +
 Backup frequency, also called schedule type for some plug-ins, is part of a policy configuration. For example, you might configure the backup frequency as hourly, daily, weekly, or monthly.
 
-* Backup schedules (exactly when backups are to be performed
+* Backup schedules (exactly when backups are to be performed)
 +
 Backup schedules are part of a resource or resource group configuration. For example, if you have a resource group that has a policy configured for weekly backups, you might configure the schedule to back up every Thursday at 10:00 p.m.

@@ -11,7 +11,7 @@ summary: 'Before you use SnapCenter, it is helpful to understand basic concepts 
 [.lead]
 Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.
 
-* Resources are typically SAP HANA databases that you back up or clone with SnapCenter.
+* Resources are typically IBM Db2 databases that you back up or clone with SnapCenter.
 * A SnapCenter resource group, is a collection of resources on a host.
 +
 When you perform an operation on a resource group, you perform that operation on the resources defined in the resource group according to the schedule you specify for the resource group.

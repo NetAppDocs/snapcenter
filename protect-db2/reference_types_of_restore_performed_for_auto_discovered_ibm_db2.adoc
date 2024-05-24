@@ -1,15 +1,15 @@
 ---
 permalink: protect-db2/reference_types_of_restore_performed_for_auto_discovered_ibm_db2.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Databases
-summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered SAP HANA databases.'
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered IBM Db2 databases.'
 ---
 = Types of restore operations for auto discovered IBM Db2
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter supports volume-based SnapRestore (VBSR), Single File SnapRestore, and connect-and-copy restore types for automatically discovered SAP HANA databases.
+SnapCenter supports volume-based SnapRestore (VBSR), Single File SnapRestore, and connect-and-copy restore types for automatically discovered IBM Db2 databases.
 
 == Volume-based SnapRestore (VBSR) is performed in NFS environments for the following scenarios:
 

@@ -9,7 +9,7 @@ summary: 'Before you use SnapCenter Plug-in for IBM Db2, the SnapCenter administ
 :imagesdir: ../media/
 
 [.lead]
-Before you use SnapCenter Plug-in for SAP HANA Database, the SnapCenter administrator must install and configure the SnapCenter Server and perform the prerequisite tasks.
+Before you use SnapCenter Plug-in for IBM Db2, the SnapCenter administrator must install and configure the SnapCenter Server and perform the prerequisite tasks.
 
 * Install and configure SnapCenter Server.
 * Log in to SnapCenter Server.
@@ -19,11 +19,11 @@ Before you use SnapCenter Plug-in for SAP HANA Database, the SnapCenter administ
 You must set the Java path in the environmental path variable of the host machine.
 
 * Set up SnapMirror and SnapVault, if you want backup replication.
-* Install the HDBSQL client on the host where you will install the Plug-in for SAP HANA Database.
+* Install the HDBSQL client on the host where you will install the Plug-in for IBM Db2.
 +
-Configure the user store keys for the SAP HANA nodes that you will manage through this host.
+Configure the user store keys for the IBM Db2 nodes that you will manage through this host.
 
-* For SAP HANA database 2.0SPS05, if you are using a SAP HANA database user account, ensure that you have the following permissions to perform backup, restore, and clone operations in SnapCenter Server:
+* For IBM Db2 database 2.0SPS05, if you are using a IBM Db2 database user account, ensure that you have the following permissions to perform backup, restore, and clone operations in SnapCenter Server:
 ** Backup admin
 ** Catalog read
 ** Database backup admin
