@@ -11,6 +11,10 @@ summary: 'You can install the SnapCenter Server on the Linux host.'
 [.lead]
 You can run the SnapCenter Server installer executable to install the SnapCenter Server.
 
+.Before you begin
+
+You should install the Microsoft-prod package.
+
 .About this task
 
 The SnapCenter Server installed on the Linux host does not support:
@@ -21,7 +25,7 @@ The SnapCenter Server installed on the Linux host does not support:
 
 *Steps*
 
-. Download the SnapCenter Server installation package *snapcenter_linux_server.bin* from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
+. Download the SnapCenter Server installation package *snapcenter_linux_server_(el8/el9/sles15).bin* from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
 . For non-root users' installation, add the visudo content specified in _snapcenter_server_checksum_(el8/el9/sles15).txt_ available along with the .bin installer.
 . Assign the execute permission for the .bin installer.
 `chmod +x snapcenter_linux_server.bin`
@@ -33,27 +37,33 @@ The SnapCenter Server installed on the Linux host does not support:
 a|
 Non interactive installation
 a|
-`sudo ./snapcenter_linux_server.bin -i silent -DWEBAPP_EXTERNAL_PORT=<port> -DWEBAPP_INTERNAL_PORT=<port> -DSMCORE_PORT=<port> -DSCHEDULER_PORT=<port>  -DSNAPCENTER_SERVER_USER=<user> -DUSER_INSTALL_DIR=<dir> -DINSTALL_LOG_NAME=<filename>`
-
-The *InstallerLog.log* is created at _/var/opt/snapcenter/logs_.
+`sudo ./snapcenter_linux_server_(el8/el9/sles15).bin -i silent -DWEBAPP_EXTERNAL_PORT=<port> -DWEBAPP_INTERNAL_PORT=<port> -DSMCORE_PORT=<port> -DSCHEDULER_PORT=<port>  -DSNAPCENTER_SERVER_USER=<user> -DUSER_INSTALL_DIR=<dir> -DINSTALL_LOG_NAME=<filename>`
 
 Example: sudo ./snapcenter_linux_server.bin -i silent -DWEBAPP_EXTERNAL_PORT=8146  -DSNAPCENTER_SERVER_USER=root -DUSER_INSTALL_DIR=/opt -DINSTALL_LOG_NAME=InstallerLog.log
-a|
-Interactive installation
-a|
-`./snapcenter_linux_server_bin -DINSTALL_LOG_NAME=<filename>`
 
 Logs will be stored at _/var/opt/snapcenter/logs_.
 
-Parameters to be passed during the installation:
+Parameters to be passed for installing SnapCenter Server:
 
-* DWEBAPP_EXTERNAL_PORT: Webapp external port that is used to access SnapCenter Server outside the Linux host.
-* DWEBAPP_INTERNAL_PORT: Webapp internal port that is used to access SnapCenter Server within the Linux host.
-* DSMCORE_PORT: SMCore port on which the smcore services are running.
-* DSCHEDULER_PORT: Scheduler port on which the scheduler services are running.
+* DWEBAPP_EXTERNAL_PORT: Webapp external port that is used to access SnapCenter Server outside the Linux host. The default value is 8146.
+* DWEBAPP_INTERNAL_PORT: Webapp internal port that is used to access SnapCenter Server within the Linux host. The default value is 8147.
+* DSMCORE_PORT: SMCore port on which the smcore services are running. The default value is 8145.
+* DSCHEDULER_PORT: Scheduler port on which the scheduler services are running. The default value is 8154.
 * DSNAPCENTER_SERVER_USER:  SnapCenter Server user who will install SnapCenter Server.
 * DUSER_INSTALL_DIR: Installation directory where packages will be installed.
 * DINSTALL_LOG_NAME: Log file name where installation logs will be stored.
+* DUPGRADE: The default value is 0. Specify this parameter and it's value as any integer other than 0 to upgrade the SnapCenter Server.
+
+a|
+Interactive installation
+a|
+`./snapcenter_linux_server_(el8/el9/sles15).bin`
+
+You will be prompted to enter the following details:
+
+* The webapp external port that is used to access SnapCenter Server outside the Linux host. The default value is 8146.
+* The SnapCenter Server user who will install SnapCenter Server.
+* The installation directory where packages will be installed.
 |===
 
 

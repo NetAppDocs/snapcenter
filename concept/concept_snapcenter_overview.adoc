@@ -107,6 +107,11 @@ SnapMirror active sync enables business services to continue operating even thro
 +
 The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
 +
+SnapMirror active sync functionality not supported in SnapCenter:
+
+** If you convert the existing asymmetric SnapMirror active sync workloads to symmetric by changing the policy on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
+** If there are backups of a resource group (already protected in SnapCenter) and then storage policy is changed on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
++
 For more information on SnapMirror active sync refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror active sync overview]
 +
 For SnapMirror active sync, ensure that you have met the various hardware, software, and system configuration requirements. For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
