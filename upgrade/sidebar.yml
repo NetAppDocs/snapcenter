@@ -8,6 +8,6 @@ entries:
   - title: Upgrade the SnapCenter Server on Windows host
     url: /upgrade/task_upgrade_snapcenter.html
   - title: Upgrade the SnapCenter Server on Linux host
-    url: upgrade/upgrade_snapcenter_server_linux.html
+    url: /upgrade/upgrade_snapcenter_server_linux.html
   - title: Upgrade your plug-in packages
     url: /upgrade/task_upgrade_your_plug_in_packages.html
