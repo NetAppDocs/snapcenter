@@ -28,10 +28,10 @@ The username and password prompt is displayed.
 
 . Add resources by using the Add-SmResources cmdlet.
 +
-This example shows how to add a SAP HANA database of SingleContainer type:
+This example shows how to add a IBM Db2 database of SingleContainer type:
 +
 ----
-C:\PS> Add-SmResource -HostName '10.232.204.42' -PluginCode 'HANA' -DatabaseName H10 -ResourceType SingleContainer -StorageFootPrint (@{"VolumeName"="HanaData10";"StorageSystem"="vserver_scauto_primary"}) -SID 'H10' -filebackuppath '/tmp/HanaFileLog' -userstorekeys 'HS10' -osdbuser 'h10adm' -filebackupprefix 'H10_'
+C:\PS> Add-SmResource -HostName '10.232.204.42' -PluginCode 'Db2' -DatabaseName H10 -ResourceType SingleContainer -StorageFootPrint (@{"VolumeName"="Db2Data10";"StorageSystem"="vserver_scauto_primary"}) -SID 'H10' -filebackuppath '/tmp/HanaFileLog' -userstorekeys 'HS10' -osdbuser 'h10adm' -filebackupprefix 'H10_'//
 ----
 +
 This example shows how to add a SAP HANA database of MultipleContainers type:
