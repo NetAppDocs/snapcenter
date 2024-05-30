@@ -153,14 +153,6 @@ Custom plug-ins are community-supported and can be downloaded from the https://a
 
 SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
 
-You should run the following commands to know the status of the SnapCenter components:
-
-* `systemctl status snapmanagerweb.service`
-* `systemctl status scheduler.service`
-* `systemctl status smcore.service`
-* `systemctl status nginx.service`
-* `systemctl status rabbitmq-server.service`
-
 == SnapCenter Server
 
 The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
@@ -175,6 +167,14 @@ If you are using the SnapCenter Plug-ins Package for Linux or the SnapCenter Plu
 The SnapCenter Server and plug-ins communicate with the host agent using HTTPS. Information about SnapCenter operations is stored in the SnapCenter repository.
 
 NOTE: SnapCenter supports disjoint namespace for Windows hosts. If you face issues when using disjoint namespace, refer to https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_is_unable_to_discover_resources_when_using_disjoint_namespace[SnapCenter is unable to discover resources when using disjoint namespace].
+
+You should run the following commands to know the status of the SnapCenter components running on Linux host:
+
+* `systemctl status snapmanagerweb.service`
+* `systemctl status scheduler.service`
+* `systemctl status smcore.service`
+* `systemctl status nginx.service`
+* `systemctl status rabbitmq-server.service`
 
 == SnapCenter plug-ins
 
