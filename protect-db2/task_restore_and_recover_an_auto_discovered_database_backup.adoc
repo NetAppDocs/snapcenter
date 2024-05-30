@@ -26,8 +26,9 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 .About this task
 
 * File-based backup copies cannot be restored from SnapCenter.
-* After upgrading to SnapCenter 4.3, the backups taken in SnapCenter 4.2 can be restored but cannot be recovered. You must use HANA studio or HANA recovery scripts external to SnapCenter to recover the backups taken in SnapCenter 4.2.
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For Auto-discovered resources, restore is supported with SFSR.
+* Auto-recovery is not supported.
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
 
@@ -49,73 +50,7 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the SAP HANA database.
-+
-NOTE: You can select either *Complete Resource* (with or without *Volume Revert*), or *Tenant Database*.
-+
-Recovery operation is not supported by SnapCenter Server for multiple tenants when user selects either the *Tenant Database* or *Complete Restore* option. You must use HANA studio or HANA python script to perform the recovery operation.
-
- .. Select *Volume Revert* if you want to restore the entire volume.
-+
-This option is available for backups taken in SnapCenter 4.3 in NFS environments.
-+
-If the resource contains volumes or qtrees, the Snapshots taken after the Snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on the same volumes or qtrees, then that resource is also deleted. This is applicable when *Complete Resource* with *Volume Revert* option is selected for restore.
-
- .. Select *Tenant Database*.
-+
-This option is available only for MDC resources.
-+
-Ensure to stop the tenant database before performing the restore operation.
-+
-If you select *Tenant Database* option, you must use HANA studio or use HANA recovery scripts external to SnapCenter to perform recovery operation.
-
-. In the Recovery scope page, select one of the following options:
-+
-|===
-| If you...| Do this...
-
-a|
-Want to recover as close as possible to the current time
-a|
-Select *Recover to most recent state*.     For single container resources specify one or more log and catalog backup locations.
-
-For multitenant database container (MDC) resources specify one or more log backup locations and the backup catalog location.
-
-For MDC resources, the path should contain both system database and tenant database logs.
-a|
-Want to recover to the specified point in time
-a|
-Select *Recover to point in time*.
-
- .. Select the time zone.
-+
-Browser timezone is populated by default.
-+
-The selected time zone along with the input time is converted to absolute GMT.
-
- .. Enter date and time.
-For example, the HANA Linux host is located in Sunnyvale, CA and the user in Raleigh, NC is recovering the logs in to SnapCenter.
-
-+
-The time difference between both these locations is 3 hours, and since the user has logged in from Raleigh, NC, the default browser time zone that will be selected in the GUI is GMT-04:00.
-+
-If the user wants to perform a recovery to 5 a.m .Sunnyvale, CA, then the user has to set the browser time zone to the HANA Linux host time zone, which is GMT-07:00 and specify the date and time as 5:00 a.m.
-+
-For single container resources specify one or more log and catalog backup locations.
-+
-For MDC resources, specify one or more log backup locations and the backup catalog location.
-+
-For MDC resources, the path should contain both system database and tenant database logs.
-a|
-Want to recover to a specific data backup
-a|
-Select *Recover to specified data backup*.
-a|
-Do not want to recover
-a|
-Select *No recovery*.    You must perform the recovery operation manually from the HANA studio.
-|===
-You can recover only those backups that are taken after upgrading to SnapCenter 4.3, provided both the host and the plug-in are upgraded to SnapCenter 4.3, and the backups selected for restore are taken after the resource is converted or discovered as auto discovered resource.
+. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the IBM database.
 
 . In the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
 +
@@ -125,7 +60,7 @@ Unmount commands are not available for auto discovered resources.
 +
 Mount commands are not available for auto discovered resources.
 +
-NOTE: For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
+NOTE: For pre and post commands for quiesce, snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

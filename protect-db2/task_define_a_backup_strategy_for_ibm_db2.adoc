@@ -20,8 +20,8 @@ An SLA defines the level of service that is expected and addresses many service-
 . Determine when you should back up your resources.
 . Decide how many backup jobs you require.
 . Decide how to name your backups.
-. Decide whether you want to create a Snapshot copy-based policy to back up application-consistent Snapshots of the database.
+. Decide whether you want to create a Snapshot copy-based policy to back up application-consistent snapshots of the database.
 . Decide whether you want to verify the integrity of the database.
 . Decide whether you want to use NetApp SnapMirror technology for replication or NetApp SnapVault technology for long-term retention.
-. Determine the retention period for the Snapshots on the source storage system and the SnapMirror destination.
+. Determine the retention period for the snapshots on the source storage system and the SnapMirror destination.
 . Determine whether you want to run any commands before or after the backup operation and provide a prescript or postscript.

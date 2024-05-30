@@ -18,8 +18,4 @@ You must define a strategy before you can successfully perform restore operation
 +
 NOTE: If the resource contains volumes or qtrees, the snapshots taken after the snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on the same volumes or qtrees, then that resource is also deleted.
 
-== Tenant Database
 
-* Restores the tenant database
-
-If *Tenant Database* option is selected, then HANA studio or HANA recovery scripts external to SnapCenter must be used to perform the recovery operation.

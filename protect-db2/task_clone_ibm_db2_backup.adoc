@@ -16,7 +16,6 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 * You should have backed up the resources or resource group.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
 * You cannot clone file-based backups.
-* The target clone server should have the same SAP HANA instance SID that is provided in the Target Clone SID field.
 * For pre clone or post clone commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
 +
 For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
@@ -52,29 +51,20 @@ The resource or resource group topology page is displayed.
 | For this field...| Do this...
 
 a|
-Plug-in host
+Clone server
 a|
-Select the host on which the clone should be mounted and the plug-in is installed.
+Choose a host on which the clone should be created.
 a|
-Target Clone SID
+Clone suffix
 a|
-Enter the SAP HANA instance ID to clone from the existing backups.
+Enter a suffix that will be appended to the clone file name to identify that the database is a clone.
+
+For example, _db1_clone_. If you are cloning to the same location as the original database, you must provide a suffix to differentiate the cloned database from the original database. Otherwise, the operation fails.
 a|
 NFS Export IP Address
 a|
 Enter IP addresses or the host names on which the cloned volumes will be exported.
-a|
-iSCSI Initiator
-a|
-Enter iSCSI initiator name of the host to which the LUNs are exported.     This option is available only if you selected LUN resource type.
-a|
-Protocol
-a|
-Enter the LUN protocol.    This option is available only if you selected LUN resource type.
 |===
-If the resource selected is a LUN and you are cloning from a secondary backup, then the destination volumes are listed. A single source can have multiple destination volumes.
-+
-NOTE: Before cloning, you must ensure that the iSCSI initiator or the FCP is present and are configured and logged into alternate hosts.
 
 . In the Scripts page, perform the following steps:
 +

@@ -2,14 +2,14 @@
 permalink: protect-db2/task_create_a_storage_system_connection_and_a_run_as_account_using_powershell_cmdlets_for_ibm_db2.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
-summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone SAP HANA databases.'
+summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone IBM Db2 databases.'
 ---
 = Create a storage system connection and a credential using PowerShell cmdlets for IBM Db2
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone SAP HANA databases.
+You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone IBM Db2 databases.
 
 .Before you begin
 
@@ -47,13 +47,13 @@ PS C:> Add-SmCredential -Name FinanceAdmin -AuthMode Windows
 -Credential sddev\administrator
 ----
 
-. Add the SAP HANA communication host to SnapCenter Server.
+. Add the IBM Db2 communication host to SnapCenter Server.
 +
 ----
 PS C:> Add-SmHost -HostName 10.232.204.61 -OSType Windows -RunAsName FinanceAdmin -PluginCode hana
 ----
 
-. Install the package and the SnapCenter Plug-in for SAP HANA Database on the host.
+. Install the package and the SnapCenter Plug-in for IBM Db2 on the host.
 +
 For Linux:
 +

@@ -135,16 +135,16 @@ SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should
  ** SnapCenter Plug-in for Microsoft Windows
  ** SnapCenter Plug-in for Microsoft Exchange Server
  ** SnapCenter Plug-in for SAP HANA Database
+ ** SnapCenter Plug-in for IBM Db2
 * SnapCenter Plug-ins Package for Linux, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
  ** SnapCenter Plug-in for SAP HANA Database
  ** SnapCenter Plug-in for UNIX file systems
+ ** SnapCenter Plug-in for IBM Db2
 * SnapCenter Plug-ins Package for AIX, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
  ** SnapCenter Plug-in for UNIX file systems
 * SnapCenter Custom Plug-ins
-+
-Custom plug-ins are community-supported and can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
 
 SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
 
@@ -227,11 +227,21 @@ Linux or Windows
 a|
 Custom Plug-ins
 a|
-https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^]
+Plug-ins Package for Linux and Plug-ins Package for Windows
 a|
 For file system backups, Plug-in for Windows
 a|
 Custom application host
+a|
+Linux or Windows
+a|
+Plug-in for IBM Db2
+a|
+Plug-ins Package for Linux and Plug-ins Package for Windows
+a|
+Plug-in for UNIX or Plug-in for Windows
+a|
+Db2 host
 a|
 Linux or Windows
 |===
@@ -287,13 +297,13 @@ SAN native devices, filesystems, and LVM layouts built on SAN devices are suppor
 * Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
 * Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
 
-MySQL, DB2, and MongoDB custom plug-in samples for SnapCenter Software can be downloaded from the https://automationstore.netapp.com/home.shtml[NetApp Storage Automation Store^].
-
-NOTE: MySQL, DB2, and MongoDB custom plug-ins are supported via the NetApp communities only.
-
 NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
 
 For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
+
+=== SnapCenter Plug-in for IBM Db2
+
+* Automates application-aware backup, restore, and cloning of IBM Db2 databases in your SnapCenter environment
 
 == SnapCenter repository
 

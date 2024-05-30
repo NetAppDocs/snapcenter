@@ -96,15 +96,9 @@ entries:
   - title: Back up IBM Db2 resources
     entries:
       - title: Back up workflow
-        url: /protect-db2/task_back_up_ibm_db2_resources.html
-      - title: Configure HDB User Store Key and HDBSQL OS User for IBM Db2
-        url: /protect-db2/task_configure_hdb_user_store_key_and_hdbsql_os_user_for_ibm_db2.html
-      - title: Discover resources and prepare multitenant database containers for data protection
-        entries:
-          - title: Discover the databases automatically
-            url: /protect-db2/task_discover_the_databases_automatically.html
-          - title: Prepare multitenant database containers for data protection
-            url: /protect-db2/task_prepare_multitenant_database_containers_for_data_protection.html
+        url: /protect-db2/task_back_up_ibm_db2_resources.html      
+      - title: Discover the databases automatically
+        url: /protect-db2/task_discover_the_databases_automatically.html          
       - title: Add resources manually to the plug-in host
         url: /protect-db2/task_add_resources_manually_to_the_plug_in_host.html
       - title: Create backup policies for IBM Db2

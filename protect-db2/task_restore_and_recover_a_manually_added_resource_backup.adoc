@@ -26,7 +26,6 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 .About this task
 
 * File-based backup copies cannot be restored from SnapCenter.
-* After upgrading to SnapCenter 4.3, the backups taken in SnapCenter 4.2 can be restored but cannot be recovered. You must use HANA studio or HANA recovery scripts external to SnapCenter to recover the backups taken in SnapCenter 4.2.
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 .Steps
@@ -50,7 +49,7 @@ The resource topology page is displayed.
 image::../media/restoring_resource.gif[restoring resources]
 
 . In the Restore Scope page, select either *Complete Resource* or *File Level*.
- .. If you select *Complete Resource*, all of the configured data volumes of the SAP HANA database are restored.
+ .. If you select *Complete Resource*, all of the configured data volumes of the IBM Db2 database are restored.
 +
 If the resource contains volumes or qtrees, the Snapshots taken after the Snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
 

@@ -9,6 +9,6 @@ summary: 'You should install and set up the SnapCenter Plug-in for IBM Db2 if yo
 :imagesdir: ../media/
 
 [.lead]
-You should install and set up the SnapCenter Plug-in for SAP HANA Database if you want to protect SAP HANA databases.
+You should install and set up the SnapCenter Plug-in for IBM Db2 Database if you want to protect IBM Db2 databases.
 
 image::../media/sap_hana_install_configure_workflow.gif[]

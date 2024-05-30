@@ -2,21 +2,19 @@
 permalink: protect-db2/task_discover_the_databases_automatically.html
 sidebar: sidebar
 keywords: credentials
-summary: 'Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.'
+summary: 'Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.'
 ---
 = Discover the databases automatically
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Resources are SAP HANA databases and Non-data Volume on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.
+Resources are SAP HANA databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the IBM Db2 databases that are available.
 
 .Before you begin
 
-* You must have already completed tasks such as installing the SnapCenter Server, adding HDB User Store Key, adding hosts, and setting up the storage system connections.
-* You must have configured the HDB Secure User Store Key and HDB SQL OS user on the Linux host.
- ** You must configure the HDB User Store Key with SID adm user. For example, for HANA system with A22 as the SID, the HDB User Store Key must be configured with a22adm.
-* SnapCenter Plug-in for SAP HANA Database does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
+* You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
+* SnapCenter Plug-in for IBM Db2 Database does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
 
 .About this task
 
@@ -26,7 +24,7 @@ The automatically discovered resources cannot be modified or deleted.
 
 .Steps
 
-. In the left navigation pane, click *Resources*, and then select the Plug-in for SAP HANA Database from the list.
+. In the left navigation pane, click *Resources*, and then select the Plug-in for IBM Db2 from the list.
 . In the Resources page select the resource type from the View list.
 . (Optional) Click *image:../media/filter_icon.png[filter icon]*, and then select the host name.
 +
@@ -39,13 +37,7 @@ The resources are displayed along with information such as resource type, host n
 * If the database is on a NetApp storage and not protected, then Not protected is displayed in the Overall Status column.
 * If the database is on a NetApp storage system and protected, and if there is no backup operation performed, then Backup not run is displayed in the Overall Status column. The status will otherwise change to Backup failed or Backup succeeded based on the last backup status.
 
-NOTE: If the SAP HANA database does not have a HDB Secure User Store Key configured, a red padlock icon appears next to the resource. If during a subsequent discovery operation, the configured HDB Secure User Store Key was found to be incorrect or did not provide access to the database itself, then the red padlock icon will reappear.
-
 IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
 //Included the above statement in 4.6 for BURT 1446035
 
-.After you finish
 
-You must configure the HDB Secure User Store Key and HDBSQL OS User to be able to protect the database or add it to the resource group to perform data protection operations.
-
-link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html[Configure HDB User Store Key and HDBSQL OS User for the SAP HANA database]

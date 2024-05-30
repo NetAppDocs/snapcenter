@@ -1,44 +1,35 @@
 ---
 permalink: protect-db2/task_create_backup_policies_for_ibm_db2.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
-summary: 'Before you use SnapCenter to back up SAP HANA database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'Before you use SnapCenter to back up IBM Db2 database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
 ---
 = Create backup policies for IBM Db2
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you use SnapCenter to back up SAP HANA database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
+Before you use SnapCenter to back up IBM Db2 database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
 
 .Before you begin
 
 * You must have defined your backup strategy.
 +
-For details, see the information about defining a data protection strategy for SAP HANA databases.
+For details, see the information about defining a data protection strategy for IBM Db2 databases.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, setting up storage system connections, and adding resources.
-* The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshots to a mirror or vault.
+* The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating snapshots to a mirror or vault.
 +
 Additionally, you can specify replication, script, and application settings in the policy. These options saves time when you want to reuse the policy for another resource group.
 
 .About this task
 
-* SAP HANA System Replication
-
-** You can protect the primary SAP HANA system and all the data protection operations can be performed.
-** You can protect the secondary SAP HANA system, but the backups cannot be created.
-+
-After the failover, all the data protection operation can be performed as the secondary SAP HANA system becomes the primary SAP HANA system.
-+
-You cannot create a backup for SAP HANA data volume, but SnapCenter continues to protect the Non-data Volumes (NDV).
-
 * SnapLock 
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 
-** Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires. This could lead to retaining a larger number of Snapshots than the count specified in the policy.
+** Specifying a snapshot locking period prevents deletion of the snapshots until the retention period expires. This could lead to retaining a larger number of snapshots than the count specified in the policy.
 
-** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
@@ -48,109 +39,33 @@ NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the 
 . In the Settings page, click *Policies*.
 . Click *New*.
 . In the Name page, enter the policy name and description.
-. In the Settings page, perform the following steps:
- ** Choose backup type:
+. In the Policy type page, perform the following:
+.. Select storage type.
+.. Select policy scope. 
+.. In the *Custom backup settings* section, provide any specific backup settings that have to be passed to the plug-in in key-value format.
 +
-|===
-| If you want to...| Do this...
-
-a|
-Perform an integrity check of the database
-a|
-Select *File-Based Backup*.         Only active tenants are backed up.
-a|
-Create a backup using Snapshot technology
-a|
-Select *Snapshot Based*.
-|===
-
- ** Specify the schedule type by selecting *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
+You can provide multiple key-values to be passed to the plug-in.
+. In the Snapshot page, specify the schedule type by selecting *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for the backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but also enables you to assign different backup schedules to each policy.
 +
 image::../media/backup_settings.gif[]
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
-
- ** In the *Custom backup settings* section, provide any specific backup settings that have to be passed to the plug-in in key-value format.
-+
-You can provide multiple key-values to be passed to the plug-in.
+. In the Snapshot settings section, specify the number of snapshots that you want to keep.
+ 
 . In the Retention page, specify the retention settings for the backup type and the schedule type selected in the Backup Type page:
 +
 |===
 | If you want to...| Then...
 
 a|
-Keep a certain number of Snapshots
+Keep a certain number of snapshots
 a|
-Select *Total Snapshot copies to keep*, and then specify the number of Snapshots that you want to keep.
+Select *Copies to keep*, and then specify the number of snapshots that you want to keep.
 
-If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
+If the number of snapshots exceeds the specified number, the snapshots are deleted with the oldest copies deleted first.
 
-NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
-
-IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
-
-NOTE: For SAP HANA system replication, it is recommended to add all the resources of the SAP HANA system into one resource group.  This ensures that the right number of backups are retained.
-
-NOTE: For SAP HANA System Replication, the total Snapshots taken will be equal to the retention set for the resource group.  The removal of the oldest Snapshot is based on which node the oldest Snapshot is located.
-For example, the retention is set to 7 for a resource group with SAP HANA System Replication primary and SAP HANA System Replication secondary.  You can take a maximum of 7 Snapshots at a time including both SAP HANA System Replication primary and SAP HANA System Replication secondary.
-
-a|
-Keep the Snapshots for a certain number of days
-a|
-Select *Keep Snapshot copies for*, and then specify the number of days for which you want to keep the Snapshots before deleting them.
-a|
-Snapshot copy locking period
-a|
-Select Snapshot copy locking period, and select days, months, or years.
-
-SnapLock retention period should be less than 100 years.
-|===
-
-. For Snapshot copy-based backups, specify the replication settings in the Replication page:
-+
-|===
-| For this field...| Do this...
-
-a|
-*Update SnapMirror after creating a local Snapshot copy*
-a|
-Select this field to create mirror copies of the backup sets on another volume (SnapMirror replication).
-
-If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, the Snapshot created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot is selected from the destination to perform a restore operation, then the Secondary Location is not available for the selected vaulted/mirrored backup error message is displayed.
-
-During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
-
-Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-
-See link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
-a|
-*Update SnapVault after creating a local Snapshot copy*
-a|
-Select this option to perform disk-to-disk backup replication (SnapVault backups).
-
-During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-
-When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
-
-For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
-
-See link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
-a|
-*Secondary policy label*
-a|
-Select a Snapshot label.
-
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
-a|
-*Error retry count*
-a|
-Enter the maximum number of replication attempts that can be allowed before the operation stops.
-|===
-[NOTE]
- You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
+IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
 
 . Review the summary, and then click *Finish*.

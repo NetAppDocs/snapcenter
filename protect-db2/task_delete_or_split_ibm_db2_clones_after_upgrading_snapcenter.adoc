@@ -1,10 +1,10 @@
 ---
 permalink: protect-db2/task_delete_or_split_ibm_db2_clones_after_upgrading_snapcenter.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for SAP HANA Database
+keywords: SnapCenter Plug-in for IBM Db2 Database
 summary: 'After upgrading to SnapCenter 4.3, you will no longer see the clones. You can delete the clone or split the clones from the Topology page of the resource from which the clones were created.'
 ---
-= Delete or split SAP HANA database clones after upgrading SnapCenter
+= Delete or split IBM Db2 database clones after upgrading SnapCenter
 :icons: font
 :imagesdir: ../media/
 

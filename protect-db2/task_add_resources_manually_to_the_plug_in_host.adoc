@@ -15,78 +15,57 @@ Automatic discovery is not supported for certain HANA instances. You must add th
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
 
-* For SAP HANA system replication, it is recommended to add all the resources of that HANA system into one resource group and take a resource group backup. This ensures a seamless backup during takeover-failback mode.
-
-link:task_create_resource_groups_and_attach_policies.html[Create resource groups and attach policies].
-
 .About this task
 
 Automatic discovery is not supported for the following configurations:
 
 * RDM and VMDK layouts
-+
-NOTE: In case the above resources are discovered, the data protection operations are not supported on these resources.
-
-* HANA multiple-host configuration
-* Multiple instances on the same host
-* Multitier scale out HANA System Replication
-* Cascaded replication environment in System Replication mode
 
 .Steps
 
-. In the left navigation pane, select the SnapCenter Plug-in for SAP HANA Database from the drop-down list, and then click *Resources*.
-. In the Resources page, click *Add SAP HANA Database*.
+. In the left navigation pane, select the SnapCenter Plug-in for IBM Db2 from the drop-down list, and then click *Resources*.
+. In the Resources page, click *Add IBM Db2 resources*.
 . In the Provide Resource Details page, perform the following actions:
 +
 |===
 | For this field...| Do this...
 
 a|
-Resource Type
+Name
 a|
-Enter the resource type.    Resource types are Single Container, Multitenant Database Container (MDC), and Non-data Volume.
+Specify the database name.
 a|
-HANA System Name
+Host Name
 a|
-Enter the descriptive SAP HANA system name.    This option is available only if you selected Single Container or MDC resource types.
+Enter the host name.    
 a|
-SID
+Type
 a|
-Enter the system ID (SID).     The installed SAP HANA system is identified by a single SID.
+Select database or instance.
 a|
-Plug-in Host
+Instance
 a|
-Select the plug-in host.
+Specify the name of the instance, which is the parent of the database.
 a|
-HDB Secure User Store Keys
+Credentials
 a|
-Enter the key to connect to the SAP HANA system.
-
-The key contains the login information to connect to the database.
-
-For SAP HANA System Replication, secondary user key is not validated.  This will be used during takeover.
-a|
-HDBSQL OS User
-a|
-Enter the user name for whom the HDB Secure User Store Key is configured.     For Windows, it is mandatory for the HDBSQL OS User to be the SYSTEM user. Therefore, you must configure the HDB Secure User Store Key for the SYSTEM user.
+Select the credentials or add information for the credential.
 |===
 
-. In the Provide Storage Footprint page, select a storage system and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
+. In the Provide Storage Footprint page, select a storage type and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
 +
 Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
 
+. In the Resource Settings page, enter custom key-value pairs for IBM Db2 plug-in
+
 . Review the summary, and then click *Finish*.
 +
-The databases are displayed along with information such as the SID, plug-in host, associated resource groups and policies, and overall status
+The databases are displayed along with information such as the host name, associated resource groups and policies, and overall status
 
 If you want to provide users access to resources, you must assign the resources to the users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
 
 link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
 
-After adding the databases, you can modify the SAP HANA database details.
+After adding the databases, you can modify the IBM Db2 database details.
 
-You cannot modify the following if there are backups associated with the SAP HANA resource:
 
-* Multitenant database containers (MDC): SID, or HDBSQL Client (plug-in) Host
-* Single Container: SID or HDBSQL Client (plug-in) Host
-* Non-data Volume: Resource name, Associated SID, or Plug-in Host

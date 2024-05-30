@@ -13,7 +13,7 @@ The clone workflow includes performing the clone operation and monitoring the op
 
 .About this task
 
-* You can clone on the source SAP HANA server.
+* You can clone on the source IBM Db2 server.
 * You might clone resource backups for the following reasons:
 
 ** To test functionality that has to be implemented using the current resource structure and content during application development cycles

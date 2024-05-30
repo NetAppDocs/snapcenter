@@ -28,8 +28,4 @@ SnapCenter supports volume-based SnapRestore (VBSR), Single File SnapRestore, an
 * When backups are taken in SnapCenter 4.3, and only if the *Complete Resource* option is selected
 * When the backup is selected from a SnapMirror or SnapVault secondary location, and the *Complete Resource* option is selected
 
-== Connect-and-copy based restore is performed in SAN environments for the following scenario:
 
-* For MDC, when the backup selected for restore is taken in SnapCenter 4.3, and the *Tenant Database* option is selected
-
-NOTE: *Complete Resource*, *Volume Revert*, and *Tenant Database* options are available on the Restore Scope page.
