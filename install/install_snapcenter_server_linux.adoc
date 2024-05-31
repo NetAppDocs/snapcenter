@@ -14,6 +14,7 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 .Before you begin
 
 * You should install the Microsoft-prod package.
+* If you want to install the SnapCenter Server using non-root user who does not have enough privileges to install SnapCenter, get the sudoers checksum file from the NetApp Support site. You should use appropriate checksum file based on the Linux Version.
 * Check the secure Linux status by running the command `sestatus`. If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", perform the following:
 ** Run the command: `sudo semanage port -a -t http_port_t -p tcp <port_number>`
 ** If the firewall blocks the port, run `sudo firewall-cmd --add-port 8146/tcp`
