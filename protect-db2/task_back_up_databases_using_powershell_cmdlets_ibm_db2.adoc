@@ -34,7 +34,7 @@ This example shows how to add a IBM Db2 database of SingleContainer type:
 C:\PS> Add-SmResource -HostName '10.232.204.42' -PluginCode 'Db2' -DatabaseName H10 -ResourceType SingleContainer -StorageFootPrint (@{"VolumeName"="Db2Data10";"StorageSystem"="vserver_scauto_primary"}) -SID 'H10' -filebackuppath '/tmp/HanaFileLog' -userstorekeys 'HS10' -osdbuser 'h10adm' -filebackupprefix 'H10_'//
 ----
 +
-This example shows how to add a SAP HANA database of MultipleContainers type:
+This example shows how to add a IBM Db2 of MultipleContainers type:
 +
 ----
 C:\PS> Add-SmResource -HostName 'vp-hana2.gdl.englab.netapp.com' -PluginCode 'HANA' -DatabaseName MDC_MT -ResourceType MultipleContainers -StorageFootPrint (@{"VolumeName"="VP_HANA2_data";"StorageSystem"="buck.gdl.englab.netapp.com"}) -sid 'A12' -userstorekeys 'A12KEY' -TenantType 'MultiTenant'
