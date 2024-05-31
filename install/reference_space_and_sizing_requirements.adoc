@@ -44,7 +44,7 @@ a|
 
 NOTE: The MySQL Server buffer pool uses 20 percent of the total RAM.
 a|
-4 GB
+8 GB
 
 a|
 Minimum hard drive space for the SnapCenter Server software and logs
@@ -80,4 +80,7 @@ a|
 * .NET core runtime 8.0.5 or later
 * PowerShell 7.0 or later
 * Nginx is a web server that can be used as a reverse proxy
+* Pam-devel
++
+PAM (Pluggable Authentication Modules) is a system security tool which allows system administrators to set authentication policy without having to recompile programs which do authentication. 
 |===

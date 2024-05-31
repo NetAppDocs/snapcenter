@@ -21,7 +21,7 @@ If you no longer wish to use the SnapCenter Server to manage data protection job
 a|
 Non interactive uninstallation
 a|
-`$ sudo <USER_INSTALL_DIR>/NetApp/snapcenter/SnapManagerWeb/installation/uninstall -i silent -DCONFIRM=1`
+`$ sudo /opt/NetApp/snapcenter/SnapManagerWeb/installation/uninstall -i silent -DCONFIRM=1`
 
 Example: sudo /opt/NetApp/snapcenter/SnapManagerWeb/installation/uninstall
 a|

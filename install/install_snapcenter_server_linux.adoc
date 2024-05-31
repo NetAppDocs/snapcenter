@@ -56,7 +56,8 @@ Parameters to be passed for installing SnapCenter Server:
 * DSCHEDULER_PORT: Scheduler port on which the scheduler services are running. The default value is 8154.
 * DSNAPCENTER_SERVER_USER:  SnapCenter Server user who will install SnapCenter Server.
 * DUSER_INSTALL_DIR: Installation directory where packages will be installed.
-* DINSTALL_LOG_NAME: Log file name where installation logs will be stored.
+* DINSTALL_LOG_NAME: Log file name where installation logs will be stored. This is an optional parameter and if specified no logs will be displayed on the console.If you do not specify this parameter, logs will be displayed on the console and also stored in the default log file.
+* DSELINUX: If the _SELinux status_ is "enabled", the _Current mode_ is "enforcing", and you have executed the commands mentioned in Before you begin section, you should specify this parameter and assign the value as 1. The default value is 0.
 * DUPGRADE: The default value is 0. Specify this parameter and it's value as any integer other than 0 to upgrade the SnapCenter Server.
 
 a|
