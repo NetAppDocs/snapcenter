@@ -24,6 +24,7 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 .About this task
 
 The SnapCenter Server installed on the Linux host does not support:
+
 * High availability
 * Windows plug-ins  
 * Active Directory (Supports only the local users, both root and non-root user with creds)
