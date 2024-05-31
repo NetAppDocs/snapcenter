@@ -23,8 +23,8 @@ image::../media/sco_resourcegroup_policy.gif[]
 
 * For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
-* Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
-* Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
+* Adding new file systems without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
+* Adding new file systems to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
 
 .Steps
 
