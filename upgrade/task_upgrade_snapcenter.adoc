@@ -1,10 +1,10 @@
 ---
 permalink: upgrade/task_upgrade_snapcenter.html
 sidebar: sidebar
-keywords: upgrade, upgrade snapcenter server
+keywords: upgrade, upgrade snapcenter server, windows
 summary: 'You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.'
 ---
-= Upgrade the SnapCenter Server
+= Upgrade the SnapCenter Server on Windows host
 :icons: font
 :imagesdir: ../media/
 

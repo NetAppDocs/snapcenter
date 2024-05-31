@@ -15,5 +15,7 @@ entries:
         url: /uninstall/task_uninstall_plug_ins_locally_on_a_host.html
       - title: Uninstall plug-ins package for Linux or AIX using CLI
         url: /uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html
-  - title: Uninstall the SnapCenter Server
+  - title: Uninstall the SnapCenter Server on Windows host
     url: /uninstall/task_uninstalling_the_snapcenter_server.html
+  - title: Uninstall the SnapCenter Server on Linux host
+    url: /uninstall/uninstall_snapcenter_server_linux.html

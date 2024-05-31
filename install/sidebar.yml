@@ -31,8 +31,10 @@ entries:
             url: /install/enable_multifactor_authentication_using_RestAPI_PowerShell_SCCLI.html
           - title: Configure MFA in SnapCenter Server using PowerShell, SCCLI, and REST API
             url: /install/configure_mfa_using_powershell_sccli_restapi.html
-  - title: Install the SnapCenter Server
+  - title: Install the SnapCenter Server on Windows host
     url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
+  - title: Install the SnapCenter Server on Linux host
+    url: /install/install_snapcenter_server_linux.html
   - title: Log in to SnapCenter
     url: /install/task_log_in_to_snapcenter.html
   - title: Configure CA Certificate

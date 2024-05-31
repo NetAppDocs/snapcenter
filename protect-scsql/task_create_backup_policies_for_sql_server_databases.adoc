@@ -25,7 +25,7 @@ For information about how administrators assign resources to users, see the Snap
 +
 The default value is false.
 
-* For SnapMirror Business Continuity (SM-BC), for more information on prerequisites and limitations refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror Business Continuity].
+* Review the SnapMirror active sync specific prerequisites and limitations. For information, refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror active sync].
 
 .About this task
 * A backup policy is a set of rules that governs how you manage and retain backups, and how frequently the resource or resource group is backed up. Additionally, you can specify replication and script settings. Specifying options in a policy saves time when you want to reuse the policy for another resource group.
@@ -114,7 +114,7 @@ Choose the primary AG replica or the secondary AG replica for the backup.
 
 .. Select Backup priority (Minimum and Maximum backup priority)
 +
-Specify a minimum backup priority number, and a maximum backup priority number that decide the AG replica for backup.        For example, you can have a minimum priority of 10 and a maximum priority of 50. In this case, all the AG replicas with a priority more than 10 and less than 50 are considered for backup.
+Specify a minimum backup priority number, and a maximum backup priority number that decide the AG replica for backup. For example, you can have a minimum priority of 10 and a maximum priority of 50. In this case, all the AG replicas with a priority more than 10 and less than 50 are considered for backup.
 +
 By default, the minimum priority is 1 and maximum priority is 100.
 
@@ -217,7 +217,7 @@ Update SnapMirror after creating a local Snapshot copy.
 
 . Select this option to create mirror copies of backup sets on another volume (SnapMirror).
 +
-This option should be enabled for SnapMirror Business Continuity (SM-BC) or for SnapMirror Sync (SM-S).
+This option should be enabled for SnapMirror active sync.
 +
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 +

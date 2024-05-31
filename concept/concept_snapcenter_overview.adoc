@@ -101,15 +101,20 @@ SnapLock is a high-performance compliance solution for organizations that use wr
 +
 For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is]
 
-* SnapMirror Business Continuity (SM-BC)
+* SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC])
 +
-SnapMirror Business Continuity (SM-BC) enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SM-BC.
+SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
 +
-The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, and SnapCenter Plug-in for Oracle database.
+The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
 +
-For more information on SM-BC refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror Business Continuity (SM-BC)]
+SnapMirror active sync functionality not supported in SnapCenter:
+
+** If you convert the existing asymmetric SnapMirror active sync workloads to symmetric by changing the policy on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
+** If there are backups of a resource group (already protected in SnapCenter) and then storage policy is changed on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
 +
-For SM-BC, ensure that you have met the various hardware, software, and system configuration requirements.  For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
+For more information on SnapMirror active sync refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror active sync overview]
++
+For SnapMirror active sync, ensure that you have met the various hardware, software, and system configuration requirements. For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
 
 * Synchronous mirroring
 +
@@ -152,20 +157,24 @@ SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standal
 
 The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 
-SnapCenter enables high availability and horizontal scaling across multiple SnapCenter Servers within a single user interface. You can accomplish high availability by using external load balancer (F5). For larger environments with thousands of hosts, adding multiple SnapCenter Servers can help balance the load.
+SnapCenter Server supports both Microsoft Windows and Linux (RHEL 8, RHEL 9, SLES 15)
 
-// Updated as per Manohar's comments
-* If you are using the SnapCenter Plug-ins Package for Windows, the host agent runs on the SnapCenter Server and Windows plug-in host. The host agent executes the schedules natively on the remote Windows host, or for Microsoft SQL Servers, the schedule is executed on the local SQL instance.
-+
-The SnapCenter Server communicates with the Windows plug-ins through the host agent.
+If you are using the SnapCenter Plug-ins Package for Linux or the SnapCenter Plug-ins Package for AIX, schedules were executed centrally using the Quartz scheduler.
 
-* If you are using the SnapCenter Plug-ins Package for Linux or the SnapCenter Plug-ins Package for AIX, schedules are executed on the SnapCenter Server as Windows task schedules.
- ** For SnapCenter Plug-in for Oracle Database, the host agent that runs on the SnapCenter Server host communicates with the SnapCenter Plug-in Loader (SPL) that runs on the Linux or AIX host to perform different data protection operations.
- ** For SnapCenter Plug-in for SAP HANA Database and SnapCenter Custom Plug-ins, the SnapCenter Server communicates with these plug-ins through the SCCore agent that runs on the host.
+* For SnapCenter Plug-in for Oracle Database, the host agent that runs on the SnapCenter Server host communicates with the SnapCenter Plug-in Loader (SPL) that runs on the Linux or AIX host to perform different data protection operations.
+* For SnapCenter Plug-in for SAP HANA Database and SnapCenter Custom Plug-ins, the SnapCenter Server communicates with these plug-ins through the SCCore agent that runs on the host.
 
 The SnapCenter Server and plug-ins communicate with the host agent using HTTPS. Information about SnapCenter operations is stored in the SnapCenter repository.
 
 NOTE: SnapCenter supports disjoint namespace for Windows hosts. If you face issues when using disjoint namespace, refer to https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_is_unable_to_discover_resources_when_using_disjoint_namespace[SnapCenter is unable to discover resources when using disjoint namespace].
+
+You should run the following commands to know the status of the SnapCenter components running on Linux host:
+
+* `systemctl status snapmanagerweb.service`
+* `systemctl status scheduler.service`
+* `systemctl status smcore.service`
+* `systemctl status nginx.service`
+* `systemctl status rabbitmq-server.service`
 
 == SnapCenter plug-ins
 

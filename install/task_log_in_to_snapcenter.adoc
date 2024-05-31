@@ -15,7 +15,8 @@ SnapCenter supports role-based access control (RBAC). SnapCenter admin assigns r
 
 * You should enable Windows Process Activation Service (WAS) in Windows Server Manager.
 * If you want to use Internet Explorer as the browser to log in to the SnapCenter Server, you should ensure that the Protected Mode in Internet Explorer is disabled.
-
+* If SnapCenter Server is installed on Linux host, you should log in using the user account which was used to install the SnapCenter Server.
+ 
 *About this task*
 
 During installation, the SnapCenter Server Install wizard creates a shortcut and places it on the desktop and in the Start menu of the host where SnapCenter is installed. Additionally, at the end of the installation, the Install wizard displays the SnapCenter URL based on the information that you provided during installation, which you can copy if you want to log in from a remote system.
@@ -70,7 +71,9 @@ If the logging fails with the error that site cannot be reached, you should map 
 
 After logging to SnapCenter Server as an RBAC user for the first time, refresh the resources list.
 
-If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. link:../install/task_register_untrusted_active_directory_domains.html[Learn more^]
+If you have untrusted Active Directory domains that you want SnapCenter to support, you must register those domains with SnapCenter before configuring the roles for the users on untrusted domains. link:../install/task_register_untrusted_active_directory_domains.html[Learn more^].
+
+If you want to add the plug-in host in SnapCenter running on Linux host, you should get the checksum file from the location: _/opt/NetApp/snapcenter/SnapManagerWeb/Repository_.
 
 == Log in to SnapCenter using Multi-Factor Authentication (MFA)
 

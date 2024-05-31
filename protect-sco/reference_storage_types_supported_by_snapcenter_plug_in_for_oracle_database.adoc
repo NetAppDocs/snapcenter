@@ -35,6 +35,9 @@ You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/pl
 * iSCSI LUNs connected directly to the guest system by the iSCSI initiator
 * VMDKs on VMFS or NFS datastores
 * NFS volumes connected directly to the guest system
+* vVol datastores on both NFS and SAN
++
+vVol datastore can only be provisioned with ONTAP Tools for VMware vSphere.
 |===
 
 == Storage types supported on AIX

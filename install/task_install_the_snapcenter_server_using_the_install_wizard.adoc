@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, snapcenter software, install wizard
 summary: 'You can run the SnapCenter Server installer executable to install the SnapCenter Server.'
 ---
-= Install the SnapCenter Server
+= Install the SnapCenter Server on Windows host
 :icons: font
 :imagesdir: ../media/
 

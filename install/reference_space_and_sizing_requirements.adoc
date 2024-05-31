@@ -12,7 +12,7 @@ summary: 'Before you install the SnapCenter Server, you should be familiar with 
 Before you install the SnapCenter Server, you should be familiar with the space and sizing requirements. You should also apply the available system and security updates.
 
 |===
-| Item | Requirements
+| Item | Windows host requirements | Linux host requirements
 
 a|
 Operating Systems
@@ -23,17 +23,28 @@ Only English, German, Japanese, and simplified Chinese version of the operating 
 
 For the latest information about supported versions, see
 https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+a|
+* Red Hat Enterprise Linux (RHEL) 8 and 9
+* SUSE Linux Enterprise Server (SLES) 15
+
+For the latest information about supported versions, see
+https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum CPU count
 a|
 4 cores
 a|
+4 cores
+
+a|
 Minimum RAM
 a|
 8 GB
 
 NOTE: The MySQL Server buffer pool uses 20 percent of the total RAM.
+a|
+8 GB
 
 a|
 Minimum hard drive space for the SnapCenter Server software and logs
@@ -41,9 +52,15 @@ a|
 4 GB
 
 NOTE: If you have the SnapCenter repository in the same drive where SnapCenter Server is installed, then it is recommended to have 10 GB.
+a|
+40 GB
 
 a|
 Minimum hard drive space for the SnapCenter repository
+a|
+6 GB
+
+NOTE: NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 10 GB.
 a|
 6 GB
 
@@ -58,4 +75,12 @@ a|
 * PowerShell 4.0 or later
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity^].
+
+a|
+* .NET core runtime 8.0.5 or later
+* PowerShell 7.0 or later
+* Nginx is a web server that can be used as a reverse proxy
+* Pam-devel
++
+PAM (Pluggable Authentication Modules) is a system security tool which allows system administrators to set authentication policy without having to recompile programs which do authentication. 
 |===
