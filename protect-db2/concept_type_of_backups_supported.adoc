@@ -1,0 +1,20 @@
+---
+permalink: protect-db2/concept_type_of_backups_supported.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'Backup type specifies the type of backup that you want to create. SnapCenter supports File-Based Backup and snapshot copy-based backup types for IBM Db2 databases.'
+---
+= Type of backups supported
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Backup type specifies the type of backup that you want to create. SnapCenter supports File-Based Backup and snapshot copy-based backup types for IBM Db2 databases.
+
+== File-Based Backup
+
+File-Based Backups verify the integrity of the database. You can schedule the file-based backup operation to occur at specific intervals. Only active tenants are backed up. You cannot restore and clone File-Based backups from SnapCenter.
+
+== Snapshot copy based backup
+
+Snapshot copy-based backups leverage NetApp snapshot technology to create online, read-only copies of the volumes on which the IBM Db2 databases reside.

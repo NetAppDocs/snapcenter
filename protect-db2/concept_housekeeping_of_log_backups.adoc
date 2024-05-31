@@ -1,0 +1,14 @@
+---
+permalink: protect-db2/concept_housekeeping_of_log_backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for IBM DB2
+summary: 'SnapCenter manages the housekeeping of log and data backups on the storage system and file system levels, and within the IBM Db2 backup catalog.'
+---
+= How SnapCenter manages housekeeping of log and data backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter manages the housekeeping of log and data backups on the storage system and file system levels, and within the IBM Db2 backup catalog.
+
+The snapshots on the primary or secondary storage and their corresponding entries in the IBM Db2 catalog are deleted based on the retention settings. The IBM Db2 catalog entries are also deleted during backup and resource group deletion.
