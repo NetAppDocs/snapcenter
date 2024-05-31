@@ -9,23 +9,16 @@ summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File Sna
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter supports volume-based SnapRestore (VBSR), Single File SnapRestore, and connect-and-copy restore types for automatically discovered IBM Db2 databases.
-
-== Volume-based SnapRestore (VBSR) is performed in NFS environments for the following scenarios:
-
-* When the backup selected for restore is taken on releases earlier than SnapCenter 4.3, and only if the **Complete Resource**option is selected
-* When the backup selected for restore is taken in SnapCenter 4.3, and if the *Volume Revert* option is selected
+SnapCenter Plug-in for IBM Db2 supports Single File SnapRestore, and connect-and-copy restore types for automatically discovered IBM Db2 databases.
 
 == Single File SnapRestore is performed in NFS environments for the following scenarios:
 
-* When the backup selected for restore is taken in SnapCenter 4.3, and if only the *Complete Resource* option is selected
-* For multitenant database containers (MDC), when the backup selected for restore is taken on SnapCenter 4.3, and the *Tenant Database* option is selected
+* If only the *Complete Resource* option is selected
 * When the backup selected is from a SnapMirror or SnapVault secondary location, and the *Complete Resource* option is selected
 
 == Single File SnapRestore is performed in SAN environments for the following scenarios:
 
-* When backups are taken on releases earlier than SnapCenter 4.3, and only if the *Complete Resource* option is selected
-* When backups are taken in SnapCenter 4.3, and only if the *Complete Resource* option is selected
+* If only the *Complete Resource* option is selected
 * When the backup is selected from a SnapMirror or SnapVault secondary location, and the *Complete Resource* option is selected
 
 

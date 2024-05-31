@@ -9,7 +9,7 @@ summary: 'You must define a strategy before you can successfully perform restore
 :imagesdir: ../media/
 
 [.lead]
-You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added IBM Db2 resources. You cannot recover manually added IBM Db2 resources.
+You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added IBM Db2 resources. 
 
 NOTE: You cannot recover manually added IBM Db2 resources.
 
@@ -19,7 +19,4 @@ NOTE: You cannot recover manually added IBM Db2 resources.
 
 NOTE: If the resource contains volumes or qtrees, the snapshots taken after the snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on the same volumes or qtrees, then that resource is also deleted.
 
-== File level restore
 
-* Restores files from volumes, qtrees, or directories
-* Restores only the selected LUNs

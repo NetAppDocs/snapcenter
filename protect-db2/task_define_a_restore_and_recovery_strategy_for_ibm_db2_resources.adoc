@@ -11,6 +11,8 @@ summary: 'You must define a strategy before you restore and recover your databas
 [.lead]
 You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.
 
+NOTE: Only manual recovery of database is supported.
+
 .Steps
 
 . Determine the restore strategies supported for manually added IBM Db2 resources

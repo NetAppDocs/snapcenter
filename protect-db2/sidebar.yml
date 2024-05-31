@@ -25,8 +25,8 @@ entries:
             url: /protect-db2/concept_type_of_backups_supported.html
           - title: How SnapCenter Plug-in for IBM Db2 uses consistency group Snapshot copies
             url: /protect-db2/concept_how_snapcenter_plug_in_for_ibm_db2_uses_consistency_group_snapshot_copies.html
-          - title: How SnapCenter manages housekeeping of log and data backups
-            url: /protect-db2/concept_housekeeping_of_log_backups.html
+          - title: How SnapCenter manages housekeeping of data backups
+            url: /protect-db2/concept_housekeeping_of_data_backups.html
           - title: Considerations for determining backup schedules for IBM Db2
             url: /protect-db2/reference_considerations_for_determining_backup_schedules_for_ibm_db2.html
           - title: Number of backup jobs needed for IBM Db2
@@ -42,9 +42,7 @@ entries:
           - title: Types of restore strategies supported for automatically discovered IBM Db2
             url: /protect-db2/reference_types_of_restore_strategies_supported_for_auto_discovered_ibm_db2.html
           - title: Types of restore operations for auto discovered IBM Db2
-            url: /protect-db2/reference_types_of_restore_performed_for_auto_discovered_ibm_db2.html
-          - title: Types of recovery operations supported for IBM Db2
-            url: /protect-db2/reference_types_of_recovery_operations_supported_for_ibm_db2.html
+            url: /protect-db2/reference_types_of_restore_performed_for_auto_discovered_ibm_db2.html          
   - title: Prepare to install the SnapCenter Plug-in for IBM Db2
     entries:
       - title: Installation workflow of SnapCenter Plug-in for IBM Db2

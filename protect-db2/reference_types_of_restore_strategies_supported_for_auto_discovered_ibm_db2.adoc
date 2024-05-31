@@ -14,8 +14,6 @@ You must define a strategy before you can successfully perform restore operation
 == Complete resource restore
 
 * Restores all volumes, qtrees, and LUNs of a resource
- ** The *Volume Revert* option should be selected to restore the entire volume.
-+
-NOTE: If the resource contains volumes or qtrees, the snapshots taken after the snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on the same volumes or qtrees, then that resource is also deleted.
+
 
 
