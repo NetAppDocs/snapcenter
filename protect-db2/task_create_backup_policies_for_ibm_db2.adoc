@@ -65,7 +65,8 @@ a|
 Select *Copies to keep*, and then specify the number of snapshots that you want to keep.
 
 If the number of snapshots exceeds the specified number, the snapshots are deleted with the oldest copies deleted first.
-
+|===
++
 IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
 
 . Review the summary, and then click *Finish*.

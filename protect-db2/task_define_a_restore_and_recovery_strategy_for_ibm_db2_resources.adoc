@@ -14,5 +14,5 @@ You must define a strategy before you restore and recover your database so that 
 .Steps
 
 . Determine the restore strategies supported for manually added IBM Db2 resources
-. Determine the restore strategies supported for auto discovered SAP HANA databases
+. Determine the restore strategies supported for auto discovered IBM Db2 databases
 . Decide the type of recovery operations that you want to perform.

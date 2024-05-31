@@ -24,7 +24,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src
 
 .Steps
 
-. Copy the SnapCenter Plug-ins Package for Linux installation file (snapcenter_linux_host_plugin.bin) from C:\ProgramData\NetApp\SnapCenter\Package Repository to the host where you want to install the Plug-in for SAP HANA Database.
+. Copy the SnapCenter Plug-ins Package for Linux installation file (snapcenter_linux_host_plugin.bin) from C:\ProgramData\NetApp\SnapCenter\Package Repository to the host where you want to install the Plug-in for IBM Db2.
 +
 You can access this path from the host where the SnapCenter Server is installed.
 

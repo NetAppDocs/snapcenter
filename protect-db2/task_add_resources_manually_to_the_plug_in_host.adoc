@@ -9,11 +9,11 @@ summary: 'Automatic discovery is not supported for certain Db2 instances. You mu
 :imagesdir: ../media/
 
 [.lead]
-Automatic discovery is not supported for certain HANA instances. You must add these resources manually.
+Automatic discovery is not supported for certain IBM Db2 resources. You must add these resources manually.
 
 .Before you begin
 
-* You must have completed tasks such as installing the SnapCenter Server, adding hosts, setting up storage system connections, and adding HDB User Store Key.
+* You must have completed tasks such as installing the SnapCenter Server, adding hosts, and setting up storage system connections. 
 
 .About this task
 

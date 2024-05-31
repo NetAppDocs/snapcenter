@@ -2,14 +2,14 @@
 permalink: protect-db2/task_discover_the_databases_automatically.html
 sidebar: sidebar
 keywords: credentials
-summary: 'Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the SAP HANA databases that are available.'
+summary: 'Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the IBM Db2 databases that are available.'
 ---
 = Discover the databases automatically
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Resources are SAP HANA databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the IBM Db2 databases that are available.
+Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the IBM Db2 databases that are available.
 
 .Before you begin
 
