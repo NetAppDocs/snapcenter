@@ -9,7 +9,7 @@ summary: 'Before you use SnapCenter to back up IBM Db2 database resources, you m
 :imagesdir: ../media/
 
 [.lead]
-Before you use SnapCenter to back up IBM Db2 database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
+Before you use SnapCenter to back up IBM Db2 resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
 
 .Before you begin
 
@@ -41,7 +41,6 @@ NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the 
 . In the Name page, enter the policy name and description.
 . In the Policy type page, perform the following:
 .. Select storage type.
-.. Select policy scope. 
 .. In the *Custom backup settings* section, provide any specific backup settings that have to be passed to the plug-in in key-value format.
 +
 You can provide multiple key-values to be passed to the plug-in.

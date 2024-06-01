@@ -14,17 +14,9 @@ Before you use SnapCenter Plug-in for IBM Db2, the SnapCenter administrator must
 * Install and configure SnapCenter Server.
 * Log in to SnapCenter Server.
 * Configure the SnapCenter environment by adding storage system connections and creating credentials, if applicable.
-* Install Java 1.7 or Java 1.8 on your Linux or Windows host.
+* Install Java 11 on your Linux or Windows host.
 +
 You must set the Java path in the environmental path variable of the host machine.
 
 * Set up SnapMirror and SnapVault, if you want backup replication.
-* Install the HDBSQL client on the host where you will install the Plug-in for IBM Db2.
-+
-Configure the user store keys for the IBM Db2 nodes that you will manage through this host.
 
-* For IBM Db2 database 2.0SPS05, if you are using a IBM Db2 database user account, ensure that you have the following permissions to perform backup, restore, and clone operations in SnapCenter Server:
-** Backup admin
-** Catalog read
-** Database backup admin
-** Database recovery operator

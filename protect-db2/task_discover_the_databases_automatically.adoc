@@ -14,11 +14,12 @@ Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter
 .Before you begin
 
 * You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
-* SnapCenter Plug-in for IBM Db2 Database does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
+* SnapCenter Plug-in for IBM Db2 does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
 
 .About this task
 
-After installing the plug-in, all the resources on that Linux host are automatically discovered and displayed on the Resources page.
+* After installing the plug-in, all the databases on that Linux host are automatically discovered and displayed on the Resources page.
+* Only databases are auto-discovered.
 
 The automatically discovered resources cannot be modified or deleted.
 

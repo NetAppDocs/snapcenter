@@ -82,9 +82,7 @@ entries:
           - title: Configure the CA Certificate for the SnapCenter IBM Db2 Plug-ins service on Windows host
             url: /protect-db2/task_configure_CA_certificate_for_ibm_db2_on_windows_host.html
           - title: Enable CA Certificates for plug-ins
-            url: /protect-db2/task_enable_ca_certificates_for_plug-ins.html
-  - title: Install SnapCenter Plug-in for VMware vSphere
-    url: /protect-db2/task_install_snapcenter_plug_in_for_vmware_vsphere.html
+            url: /protect-db2/task_enable_ca_certificates_for_plug-ins.html  
   - title: Prepare for data protection
     entries:
       - title: Prerequisites for using the SnapCenter Plug-in for IBM Db2

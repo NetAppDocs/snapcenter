@@ -40,7 +40,7 @@ You can access this path from the host where the SnapCenter Server is installed.
 ----
 /tmp/sc-plugin-installer/snapcenter_linux_host_plugin.bin -i silent  -DPORT=8145 -DSERVER_IP=scserver.domain.com -DSERVER_HTTPS_PORT=8146 -DUSER_INSTALL_DIR=/opt -DINSTALL_LOG_NAME=SnapCenter_Linux_Host_Plugin_Install_2.log -DCHOSEN_FEATURE_LIST=CUSTOM
 ----
-. Edit the /<installation directory>/NetApp/snapcenter/scc/etc/SC_SMS_Services.properties file, and then add the PLUGINS_ENABLED = hana:3.0 parameter.
+. Edit the /<installation directory>/NetApp/snapcenter/scc/etc/SC_SMS_Services.properties file, and then add the PLUGINS_ENABLED = db2:3.0 parameter.
 . Add the host to the SnapCenter Server using the Add-Smhost cmdlet and the required parameters.
 +
 The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
