@@ -35,10 +35,10 @@ sidebar:
     - section: protect-sco
     - section: protect-scw
     - section: protect-sce
+    - section: protect-db2
     - section: protect-scc
     - section: protect-scu
-    - section: protect-azure
-    - section: protect-db2
+    - section: protect-azure    
     - section: admin
     - section: upgrade
     - section: tech-refresh
