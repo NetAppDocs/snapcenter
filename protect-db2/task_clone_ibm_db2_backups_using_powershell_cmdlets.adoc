@@ -38,10 +38,10 @@ This example shows that two backups are available for cloning:
 
 . Initiate a clone operation from an existing backup and specify the NFS export IP addresses on which the cloned volumes are exported.
 +
-This example shows that the backup to be cloned has an NFSExportIPs address of 10.232.206.169:
+This example shows that the backup to be cloned has an NFSExportIPs address of 10.32.212.14:
 +
 ----
-New-SmClone -AppPluginCode hana -BackupName scsccore1_sccore_test_com_hana_H73_scsccore1_06-07-2017_02.54.29.3817 -Resources @{"Host"="scsccore1.sccore.test.com";"Uid"="H73"}  -CloneToInstance shivscc4.sccore.test.com -mountcommand 'mount 10.232.206.169:%hana73data_Clone /hana83data' -preclonecreatecommands '/home/scripts/scpre_clone.sh' -postclonecreatecommands '/home/scripts/scpost_clone.sh'
+PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1\BOOKS"} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneInstance db2inst1 -CloneName BOOKS
 ----
 +
 NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.

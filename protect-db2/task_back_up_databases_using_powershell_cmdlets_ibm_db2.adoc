@@ -21,29 +21,23 @@ Backing up a database includes establishing a connection with the SnapCenter Ser
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-smconnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
+Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
 ----
 +
 The username and password prompt is displayed.
 
-. Add resources by using the Add-SmResources cmdlet.
+. Add manual resources by using the Add-SmResources cmdlet.
 +
-This example shows how to add a IBM Db2 database of SingleContainer type:
+This example shows how to add a IBM Db2 database:
 +
 ----
 C:\PS> Add-SmResource -HostName '10.232.204.42' -PluginCode 'Db2' -DatabaseName H10 -ResourceType SingleContainer -StorageFootPrint (@{"VolumeName"="Db2Data10";"StorageSystem"="vserver_scauto_primary"}) -SID 'H10' -filebackuppath '/tmp/HanaFileLog' -userstorekeys 'HS10' -osdbuser 'h10adm' -filebackupprefix 'H10_'//
 ----
 +
-This example shows how to add a IBM Db2 of MultipleContainers type:
+This example shows how to add a IBM Db2 instance:
 +
 ----
-C:\PS> Add-SmResource -HostName 'vp-hana2.gdl.englab.netapp.com' -PluginCode 'HANA' -DatabaseName MDC_MT -ResourceType MultipleContainers -StorageFootPrint (@{"VolumeName"="VP_HANA2_data";"StorageSystem"="buck.gdl.englab.netapp.com"}) -sid 'A12' -userstorekeys 'A12KEY' -TenantType 'MultiTenant'
-----
-+
-This example shows how to create a non-data volume resource:
-+
-----
-C:\PS> Add-SmResource -HostName 'SNAPCENTERN42.sccore.test.com' -PluginCode 'hana' -ResourceName NonDataVolume -ResourceType NonDataVolume -StorageFootPrint (@{"VolumeName"="ng_pvol";"StorageSystem"="vserver_scauto_primary"}) -sid 'S10'
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
 ----
 
 . Create a backup policy by using the Add-SmPolicy cmdlet.
@@ -52,12 +46,6 @@ This example creates a backup policy for a Snapshot copy-based backup:
 +
 ----
 C:\PS> Add-SmPolicy -PolicyName hana_snapshotbased -PolicyType Backup -PluginPolicyType hana -BackupType SnapShotBasedBackup
-----
-+
-This example creates a backup policy for a File-Based backup:
-+
-----
-C:\PS> Add-SmPolicy -PolicyName hana_Filebased -PolicyType Backup -PluginPolicyType hana -BackupType FileBasedBackup
 ----
 
 . Protect the resource or add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
