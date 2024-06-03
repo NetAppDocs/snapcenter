@@ -70,6 +70,7 @@ a|
 Required software packages
 a|
 
+* Microsoft .NET Framework 4.7.2 or later
 * .NET core runtime 8.0.5 or later
 * Windows Management Framework (WMF) 4.0 or later
 * PowerShell 7.4.2 or later
