@@ -70,15 +70,15 @@ a|
 Required software packages
 a|
 
-* Microsoft .NET Framework 4.7.2 or later
+* .NET core runtime 8.0.5 or later
 * Windows Management Framework (WMF) 4.0 or later
-* PowerShell 4.0 or later
+* PowerShell 7.4.2 or later
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity^].
 
 a|
 * .NET core runtime 8.0.5 or later
-* PowerShell 7.0 or later
+* PowerShell 7.4.2 or later
 * Nginx is a web server that can be used as a reverse proxy
 * Pam-devel
 +
