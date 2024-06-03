@@ -107,6 +107,8 @@ SnapMirror active sync enables business services to continue operating even thro
 +
 The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
 +
+NOTE: To support host initiator proximity in SnapCenter, it's value, either source or destination should be set in ONTAP.
++
 SnapMirror active sync functionality not supported in SnapCenter:
 
 ** If you convert the existing asymmetric SnapMirror active sync workloads to symmetric by changing the policy on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
