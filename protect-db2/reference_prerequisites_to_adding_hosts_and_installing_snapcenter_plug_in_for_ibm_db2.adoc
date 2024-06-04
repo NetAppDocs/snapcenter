@@ -49,14 +49,14 @@ To run a supplemental command on the SnapCenter Plug-in for IBM Db2, you must in
 
 .Windows hosts
 
-Default: `C:\Program Files\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+Default: `C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config`
 
 Custom path: `<Custome_Directory>\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
 Windows host:
 
 .Linux hosts
 
-Default: `C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\`
+Default: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
 
 Custom path: `<Custom_Directory>allowed_commands.config`
 

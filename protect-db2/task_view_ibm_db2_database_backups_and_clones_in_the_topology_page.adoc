@@ -35,7 +35,7 @@ If the resource is protected, the topology page of the selected resource is disp
 
 . Review the *Summary card* to see a summary of the number of backups and clones available on the primary and secondary storage.
 +
-The *Summary Card* section displays the total number of File-Based backups, Snapshot copy-based backups, and clones.
+The *Summary Card* section displays the total number of Snapshot copy-based backups, and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
 +

@@ -28,12 +28,6 @@ The username and password prompt is displayed.
 
 . Add manual resources by using the Add-SmResources cmdlet.
 +
-This example shows how to add a IBM Db2 database:
-+
-----
-C:\PS> Add-SmResource -HostName '10.232.204.42' -PluginCode 'Db2' -DatabaseName H10 -ResourceType SingleContainer -StorageFootPrint (@{"VolumeName"="Db2Data10";"StorageSystem"="vserver_scauto_primary"}) -SID 'H10' -filebackuppath '/tmp/HanaFileLog' -userstorekeys 'HS10' -osdbuser 'h10adm' -filebackupprefix 'H10_'//
-----
-+
 This example shows how to add a IBM Db2 instance:
 +
 ----
@@ -41,54 +35,21 @@ PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Inst
 ----
 
 . Create a backup policy by using the Add-SmPolicy cmdlet.
-+
-This example creates a backup policy for a Snapshot copy-based backup:
-+
-----
-C:\PS> Add-SmPolicy -PolicyName hana_snapshotbased -PolicyType Backup -PluginPolicyType hana -BackupType SnapShotBasedBackup
-----
 
 . Protect the resource or add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
-+
-This example protects a single container resource:
-+
-----
-C:\PS> Add-SmProtectResource -PluginCode HANA  -Policies hana_snapshotbased,hana_Filebased
- -Resources @{"Host"="host.example.com";"UID"="SID"} -Description test -usesnapcenterwithoutfilesystemconsistency
-----
-+
-This example protects a multiple containers resource:
-+
-----
-C:\PS> Add-SmProtectResource -PluginCode HANA  -Policies hana_snapshotbased,hana_Filebased
- -Resources @{"Host"="host.example.com";"UID"="MDC\SID"} -Description test -usesnapcenterwithoutfilesystemconsistency
-----
-+
-This example creates a new resource group with the specified policy and resources:
-+
-----
-C:\PS> Add-SmResourceGroup -ResourceGroupName 'ResourceGroup_with_SingleContainer_MultipleContainers_Resources' -Resources @(@{"Host"="sccorelinux61.sccore.test.com";"Uid"="SID"},@{"Host"="sccorelinux62.sccore.test.com";"Uid"="MDC\SID"})
-  -Policies hana_snapshotbased,hana_Filebased  -usesnapcenterwithoutfilesystemconsistency  -plugincode 'HANA'
-----
-+
-This example creates a non-data volume resource group:
-+
-----
-C:\PS> Add-SmResourceGroup -ResourceGroupName 'Mixed_RG_backup_when_Remove_Backup_throguh_BackupName_windows' -Resources @(@{"Host"="SNAPCENTERN42.sccore.test.com";"Uid"="H11";"PluginName"="hana"},@{"Host"="SNAPCENTERN42.sccore.test.com";"Uid"="MDC\H31";"PluginName"="hana"},@{"Host"="SNAPCENTERN42.sccore.test.com";"Uid"="NonDataVolume\S10\NonDataVolume";"PluginName"="hana"}) -Policies hanaprimary
-----
 
 . Initiate a new backup job by using the New-SmBackup cmdlet.
 +
 This example shows how to backup a resource group:
 +
 ----
-C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_with_SingleContainer_MultipleContainers_Resources'  -Policy hana_snapshotbased
+C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_with_SingleContainer_MultipleContainers_Resources'  -Policy db2_policy1
 ----
 +
 This example backs up a protected resource:
 +
 ----
-C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="hana"} -Policy hana_Filebased
+C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="hana"} -Policy db2_policy2
 ----
 
 . Monitor the job status (running, completed, or failed) by using the Get-smJobSummaryReport cmdlet.
