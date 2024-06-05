@@ -21,11 +21,16 @@ The default value of _WEBAPP_EXTERNAL_PORT_ is 8146
 ** If the firewall blocks the port, run `sudo firewall-cmd --add-port <WEBAPP_EXTERNAL_PORT_>/tcp`
 +
 The default value of _WEBAPP_EXTERNAL_PORT_ is 8146
-** Run the command from the directory where you have read and write permission: `sudo ausearch -c 'nginx' --raw | audit2allow -M my-nginx`
-** Run the command to make the policy package active: `sudo semodule -i my-nginx.pp`
-** The default path of the MySQL PID directory is changed to custom path _/var/opt/mysqld_. Run the following commands to set the permissions for mysql installation.
+** Run the following commands from the directory where you have read and write permission: 
+*** `sudo ausearch -c 'nginx' --raw | audit2allow -M my-nginx`
++
+If the command return "nothing to do", rerun the command after installing SnapCenter Server.
+*** If the command creates _my-nginx.pp_, run the command to make the policy package active: `sudo semodule -i my-nginx.pp`
+** The path used for MySQL PID directory is _/var/opt/mysqld_. Run the following commands to set the permissions for MySQL installation.
+***  `mkdir /var/opt/mysqld`
 *** `sudo semanage fcontext -a -t mysqld_var_run_t "/var/opt/mysqld(/.*)?"`
 *** `sudo restorecon -Rv /var/opt/mysqld`
+
 
 .About this task
 
