@@ -55,7 +55,7 @@ entries:
         url: /protect-db2/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html
       - title: Set up credentials for the SnapCenter Plug-in for IBM Db2
         url: /protect-db2/task_set_up_credentials_for_snapcenter_plug_in_for_ibm_db2.html
-      - title: Configure gMSA on Windows Server 2012 or later
+      - title: Configure gMSA on Windows Server 2016 or later
         url: /protect-db2/task_configure_gMSA_on_windows_server_2012_or_later.html
       - title: Install the SnapCenter Plug-in for IBM Db2
         entries:

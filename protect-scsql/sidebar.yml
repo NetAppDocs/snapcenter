@@ -73,7 +73,7 @@ entries:
         url: /protect-scsql/task_set_up_credentials_for_snapcenter_plug_ins_package_for_windows.html
       - title: Configure credentials for an individual SQL Server resource
         url: /protect-scsql/task_configure_credentials_for_an_individual_sql_server_resource.html
-      - title: Configure gMSA on Windows Server 2012 or later
+      - title: Configure gMSA on Windows Server 2016 or later
         url: /protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later.html
       - title: Install SnapCenter Plug-in for Microsoft SQL Server
         entries:

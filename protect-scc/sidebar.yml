@@ -49,7 +49,7 @@ entries:
     url: /protect-scc/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html
   - title: Set up credentials for SnapCenter Custom Plug-ins
     url: /protect-scc/task_set_up_credentials_for_snapcenter_custom_plug_in.html
-  - title: Configure gMSA on Windows Server 2012 or later
+  - title: Configure gMSA on Windows Server 2016 or later
     url: /protect-scc/task_configure_gMSA_on_windows_server_2012_or_later.html
   - title: Install the SnapCenter Custom Plug-ins
     entries:

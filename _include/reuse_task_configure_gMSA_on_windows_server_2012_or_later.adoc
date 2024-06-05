@@ -1,9 +1,9 @@
-Windows Server 2012 or later enables you to create a group Managed Service Account (gMSA) that provides automated service account password management from a managed domain account.
+Windows Server 2016 or later enables you to create a group Managed Service Account (gMSA) that provides automated service account password management from a managed domain account.
 
 .Before you begin
 
-* You should have a Windows Server 2012 or later domain controller.
-* You should have a Windows Server 2012 or later host, which is a member of the domain.
+* You should have a Windows Server 2016 or later domain controller.
+* You should have a Windows Server 2016 or later host, which is a member of the domain.
 
 .Steps
 
