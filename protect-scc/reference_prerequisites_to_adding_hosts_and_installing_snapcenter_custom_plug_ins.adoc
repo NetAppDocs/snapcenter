@@ -84,6 +84,9 @@ Defaults: _LINUX_USER_ !requiretty
 +
 _LINUX_USER_ is the name of the non-root user that you created.
 +
-You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at _C:\ProgramData\NetApp\SnapCenter\Package Repository_.
+You can obtain the _checksum_value_ from the *oracle_checksum.txt* file, which is located at:
+
+** _C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt_ if SnapCenter Server is installed on Windows host.
+** _/opt/NetApp/snapcenter/SnapManagerWeb/Repository/oracle_checksum.txt_ if SnapCenter Server in installed on Linux host.
 +
 IMPORTANT: The example should be used only as a reference for creating your own data.
