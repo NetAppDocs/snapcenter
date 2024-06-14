@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/task_view_ibm_db2_database_backups_and_clones_in_the_topology_page.html
+permalink: protect-db2/view-ibm-db2-database-backups-and-clones-in-the-topology-page.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage.'

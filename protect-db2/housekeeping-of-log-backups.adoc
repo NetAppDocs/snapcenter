@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/concept_housekeeping_of_data_backups.html
+permalink: protect-db2/housekeeping-of-log-backups.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM DB2
 summary: 'SnapCenter manages the housekeeping of log and data backups on the storage system and file system levels, and within the IBM Db2 backup catalog.'

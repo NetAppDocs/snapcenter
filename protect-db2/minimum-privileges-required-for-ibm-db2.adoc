@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/concept_minimum_privileges_required_for_ibm_db2.html
+permalink: protect-db2/minimum-privileges-required-for-ibm-db2.html
 sidebar: sidebar
 keywords: Minimum ONTAP privileges
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'

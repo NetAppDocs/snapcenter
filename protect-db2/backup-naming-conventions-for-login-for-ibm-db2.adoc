@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/concept_backup_naming_conventions_for_plugin_for_ibm_db2.html
+permalink: protect-db2/backup-naming-conventions-for-login-for-ibm-db2.html
 sidebar: sidebar
 keywords: Backup naming conventions
 summary: 'You can either use the default snapshot naming convention or use a customized naming convention. The default backup naming convention adds a timestamp to snapshot names that helps you identify when the copies were created.'

@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_ibm_db2.html
+permalink: protect-db2/install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-ibm-db2.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in Packages for Linux, SnapCenter Plug-in Packages for Windows
 summary: 'You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
