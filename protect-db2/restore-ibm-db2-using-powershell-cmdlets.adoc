@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/task_restore_ibm_db2_using_powershell_cmdlets.html
+permalink: protect-db2/restore-ibm-db2-using-powershell-cmdlets.html
 sidebar: sidebar
 keywords: restore, ibm db2, snapcenter
 summary: 'Restoring a IBM Db2 backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'

@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/task_restore_ibm_db2.html
+permalink: protect-db2/restore-ibm-db2.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
