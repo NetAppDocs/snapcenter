@@ -14,7 +14,7 @@ entries:
       - title: Minimum ONTAP privileges required
         url: /protect-db2/minimum-privileges-required-for-ibm-db2.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-db2/ prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-db2.html
+        url: /protect-db2/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-db2.html
       - title: Backup strategy for IBM Db2
         entries:
           - title: Define a backup strategy for IBM Db2
@@ -24,7 +24,7 @@ entries:
           - title: Type of backups supported
             url: /protect-db2/type-of-backups-supported.html
           - title: How SnapCenter Plug-in for IBM Db2 uses consistency group Snapshot copies
-            url: /protect-db2/ how-snapcenter-plug-in-for-ibm-db2-uses-consistency-group-snapshot-copies.html
+            url: /protect-db2/how-snapcenter-plug-in-for-ibm-db2-uses-consistency-group-snapshot-copies.html
           - title: How SnapCenter manages housekeeping of data backups
             url: /protect-db2/housekeeping-of-data-backups.html
           - title: Considerations for determining backup schedules for IBM Db2
@@ -40,7 +40,7 @@ entries:
           - title: Types of restore strategies supported for manually added IBM Db2 resources
             url: /protect-db2/types-of-restore-strategies-supported-for-manually-added-ibm-db2.html
           - title: Types of restore strategies supported for automatically discovered IBM Db2
-            url: /protect-db2/ types-of-restore-strategies-supported-for-auto-discovered-ibm-db2.html
+            url: /protect-db2/types-of-restore-strategies-supported-for-auto-discovered-ibm-db2.html
           - title: Types of restore operations for auto discovered IBM Db2
             url: /protect-db2/types-of-restore-performed-for-auto-discovered-ibm-db2.html          
   - title: Prepare to install the SnapCenter Plug-in for IBM Db2
@@ -48,9 +48,9 @@ entries:
       - title: Installation workflow of SnapCenter Plug-in for IBM Db2
         url: /protect-db2/install-snapcenter-plug-in-for-ibm-db2.html
       - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/ prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-ibm-db2.html
+        url: /protect-db2/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-ibm-db2.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-        url: /protect-db2/ host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html
+        url: /protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html
       - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
         url: /protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
       - title: Set up credentials for the SnapCenter Plug-in for IBM Db2
@@ -64,7 +64,7 @@ entries:
             - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
               url: /protect-db2/ install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-ibm-db2.html
             - title: Install the SnapCenter Plug-in for IBM Db2 on Linux hosts by using the command-line interface
-              url: /protect-db2/ install-the-snapcenter-plug-in-for-ibm-db2-on-linux-hosts-using-the-command-line-interface.html
+              url: /protect-db2/install-the-snapcenter-plug-in-for-ibm-db2-on-linux-hosts-using-the-command-line-interface.html
             - title: Monitor SnapCenter plug-in package installation status
               url: /protect-db2/monitor-the-status-of-installing-plugin-for-ibm-db2.html
       - title: Configure CA Certificate
@@ -88,7 +88,7 @@ entries:
       - title: Prerequisites for using the SnapCenter Plug-in for IBM Db2
         url: /protect-db2/prerequisites-for-using-snapcenter-plug-in-for-ibm-db2.html
       - title: How resources, resource groups, and policies are used for protecting IBM Db2
-        url: /protect-db2/ how-resources-resource-groups-and-policies-are-used-for-protecting-ibm-db2.html
+        url: /protect-db2/how-resources-resource-groups-and-policies-are-used-for-protecting-ibm-db2.html
   - title: Back up IBM Db2 resources
     entries:
       - title: Back up workflow
@@ -106,7 +106,7 @@ entries:
       - title: Back up resource groups
         url: /protect-db2/back-up-resource-groups-ibm-db2.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for IBM Db2
-        url: /protect-db2/ create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html
+        url: /protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html
       - title: Back up databases using PowerShell cmdlets
         url: /protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html
       - title: Monitor backup operations
