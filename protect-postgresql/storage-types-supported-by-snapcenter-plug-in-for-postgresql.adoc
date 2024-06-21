@@ -1,15 +1,15 @@
 ---
-permalink: protect-db2/storage-types-supported-by-snapcenter-plug-in-for-ibm-db2.html
+permalink: protect-postgresql/storage-types-supported-by-snapcenter-plug-in-for-postgresql.html
 sidebar: sidebar
 keywords: storage types, 
-summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for IBM Db2.'
+summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for postgresql.'
 ---
-= Storage types supported by SnapCenter Plug-in for IBM Db2
+= Storage types supported by SnapCenter Plug-in for postgresql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for IBM Db2.
+SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for postgresql.
 
 |===
 | Machine| Storage type

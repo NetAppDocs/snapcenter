@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/cancel-backup-operations-for-ibm-db2.html
+permalink: protect-postgresql/cancel-backup-operations-for-postgresql.html
 sidebar: sidebar
 keywords: plug-in for IBM Db2
 summary: 'You can cancel backup operations that are queued.'
 ---
-= Cancel backup operations for IBM Db2
+= Cancel backup operations for postgresql
 :icons: font
 :imagesdir: ../media/
 

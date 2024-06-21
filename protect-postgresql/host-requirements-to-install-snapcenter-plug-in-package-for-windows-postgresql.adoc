@@ -1,7 +1,7 @@
 ---
-permalink: protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html
+permalink: protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-windows-postgresql.html
 sidebar: sidebar
-keywords: IBM Db2
+keywords: postgresql
 summary: 'Before you install the SnapCenter Plug-ins Package for Windows, you should be familiar with some basic host system space requirements and sizing requirements.'
 ---
 = Host requirements to install SnapCenter Plug-ins Package for Windows

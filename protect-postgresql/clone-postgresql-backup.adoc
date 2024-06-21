@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/clone-ibm-db2-backup.html
+permalink: protect-postgresql/clone-postgresql-backup.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2,run as
+keywords: SnapCenter Plug-in for postgresql,run as
 summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'
 ---
-= Clone a IBM Db2 backup
+= Clone a postgresql backup
 :icons: font
 :imagesdir: ../media/
 

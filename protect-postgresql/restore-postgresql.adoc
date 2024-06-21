@@ -1,7 +1,7 @@
 ---
-permalink: protect-db2/restore-ibm-db2.html
+permalink: protect-postgresql/restore-postgresql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
+keywords: SnapCenter Plug-in for postgresql
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
 = Restore workflow

@@ -1,15 +1,15 @@
 ---
-permalink: protect-db2/snapcenter-plug-in-for-ibm-db2-features.html
+permalink: protect-postgresql/snapcenter-plug-in-for-postgresql-features.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
-summary: 'SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with the Plug-in for IBM Db2 Database, you use the SnapCenter graphical user interface.'
+keywords: SnapCenter Plug-in for postgresql
+summary: 'SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with the Plug-in for postgresql Database, you use the SnapCenter graphical user interface.'
 ---
-= SnapCenter Plug-in for IBM Db2 features
+= SnapCenter Plug-in for postgresql features
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with the Plug-in for IBM Db2 Database, you use the SnapCenter graphical user interface.
+SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with the Plug-in for postgresql Database, you use the SnapCenter graphical user interface.
 
 * *Unified graphical user interface*
 +
@@ -21,9 +21,9 @@ You can schedule backup operations, configure policy-based backup retention, and
 
 * *Nondisruptive NetApp snapshot copy technology*
 +
-SnapCenter uses NetApp snapshot technology with the Plug-in for IBM Db2 Database to back up resources.
+SnapCenter uses NetApp snapshot technology with the Plug-in for postgresql Database to back up resources.
 
-Using the Plug-in for IBM Db2 also offers the following benefits:
+Using the Plug-in for postgresql also offers the following benefits:
 
 * Support for backup, restore, and clone workflows
 * RBAC-supported security and centralized role delegation

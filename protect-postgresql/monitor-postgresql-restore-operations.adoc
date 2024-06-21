@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/monitor-db2-restore-operations.html
+permalink: protect-postgresql/monitor-postgresql-restore-operations.html
 sidebar: sidebar
 keywords: SnapCenter Server
 summary: 'You can monitor the progress of different SnapCenter restore operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
 ---
-= Monitor IBM Db2 restore operations
+= Monitor postgresql restore operations
 :icons: font
 :imagesdir: ../media/
 

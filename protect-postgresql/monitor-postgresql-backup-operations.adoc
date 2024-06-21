@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/monitor-db2-backup-operations.html
+permalink: protect-postgresql/monitor-postgresql-backup-operations.html
 sidebar: sidebar
 keywords: SnapCenter Server
 summary: 'You can monitor the progress of different backup operations by using the SnapCenter Jobs page. You might want to check the progress to determine when it is complete or if there is an issue.'
 ---
-= Monitor IBM Db2 backup operations
+= Monitor postgresql backup operations
 :icons: font
 :imagesdir: ../media/
 

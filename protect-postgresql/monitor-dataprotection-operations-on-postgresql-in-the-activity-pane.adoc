@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/monitor-dataprotection-operations-on-db2-in-the-activity-pane.html
+permalink: protect-postgresql/monitor-dataprotection-operations-on-postgresql-in-the-activity-pane.html
 sidebar: sidebar
 keywords: SnapCenter Server
 summary: 'The Activity pane displays the five most recent operations performed. The Activity pane also displays when the operation was initiated and the status of the operation.'
 ---
-= Monitor data protection operations on IBM Db2 databases in the Activity pane
+= Monitor data protection operations on postgresql databases in the Activity pane
 :icons: font
 :imagesdir: ../media/
 

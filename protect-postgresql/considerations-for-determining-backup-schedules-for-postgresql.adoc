@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/considerations-for-determining-backup-schedules-for-ibm-db2.html
+permalink: protect-postgresql/considerations-for-determining-backup-schedules-for-postgresql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
+keywords: SnapCenter Plug-in for postgresql
 summary: 'The most critical factor in determining a backup schedule is the rate of change for the resource. You might back up a heavily used resource every hour, while you might back up a rarely used resource once a day. Other factors include the importance of the resource to your organization, your service-level agreement \(SLA\) and your recovery point objective \(RPO\).'
 ---
-= Considerations for determining backup schedules for IBM Db2
+= Considerations for determining backup schedules for postgresql
 :icons: font
 :imagesdir: ../media/
 

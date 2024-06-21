@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/monitor-db2-clone-operations.html
+permalink: protect-postgresql/monitor-postgresql-clone-operations.html
 sidebar: sidebar
-keywords: monitor, IBM Db2 database, clone operations
+keywords: monitor, postgresql database, clone operations
 summary: 'You can monitor the progress of SnapCenter clone operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
 ---
-= Monitor IBM Db2 clone operations
+= Monitor postgresql clone operations
 :icons: font
 :imagesdir: ../media/
 

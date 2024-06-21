@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/enable-ca-certificates-for-plug-ins.html
+permalink: protect-postgresql/enable-ca-certificates-for-plug-ins.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'You should configure the CA certificates and deploy the CA certificates in the SnapCenter Server and the corresponding plug-in hosts.'

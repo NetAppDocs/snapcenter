@@ -1,21 +1,21 @@
 ---
-permalink: protect-db2/create-backup-policies-for-ibm-db2.html
+permalink: protect-postgresql/create-backup-policies-for-postgresql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
-summary: 'Before you use SnapCenter to back up IBM Db2 database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
+keywords: SnapCenter Plug-in for postgresql
+summary: 'Before you use SnapCenter to back up postgresql database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
 ---
-= Create backup policies for IBM Db2
+= Create backup policies for postgresql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you use SnapCenter to back up IBM Db2 resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
+Before you use SnapCenter to back up postgresql resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
 
 .Before you begin
 
 * You must have defined your backup strategy.
 +
-For details, see the information about defining a data protection strategy for IBM Db2 databases.
+For details, see the information about defining a data protection strategy for postgresql databases.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, setting up storage system connections, and adding resources.
 * The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating snapshots to a mirror or vault.
 +

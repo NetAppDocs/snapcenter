@@ -1,7 +1,7 @@
 ---
-permalink: protect-db2/restore-and-recover-a-manually-added-resource-backup.html
+permalink: protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
+keywords: SnapCenter Plug-in for postgresql
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
 = Restore and recover a manually added resource backup

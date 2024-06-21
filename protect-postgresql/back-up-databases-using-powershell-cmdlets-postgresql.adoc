@@ -1,7 +1,7 @@
 ---
-permalink: protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html
+permalink: protect-postgresql/back-up-databases-using-powershell-cmdlets-postgresql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
+keywords: SnapCenter Plug-in for postgresql
 summary: 'Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
 ---
 = Back up databases using PowerShell cmdlets

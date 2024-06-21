@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-db2.html
+permalink: protect-postgresql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html
 sidebar: sidebar
 keywords: snapmirror, snapvault, storage system, replication
 summary: 'You can use a SnapCenter plug-in with ONTAP SnapMirror and SnapVault technologies'
 ---
-= Prepare storage systems for SnapMirror and SnapVault replication for IBM Db2
+= Prepare storage systems for SnapMirror and SnapVault replication for postgresql
 :icons: font
 :imagesdir: ../media/
 

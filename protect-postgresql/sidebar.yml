@@ -1,149 +1,149 @@
-section: protect-db2
-title: Protect IBM Db2
+section: protect-postgresql
+title: Protect postgresql
 entries:
-  - title: SnapCenter Plug-in for IBM Db2 
+  - title: SnapCenter Plug-in for postgresql 
     entries:
-      - title: SnapCenter Plug-in for IBM Db2 overview
-        url: /protect-db2/snapcenter-plug-in-for-ibm-db2-overview.html 
-      - title: What you can do using the SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/what-you-can-do-using-the-snapcenter-plug-in-for-ibm-db2.html
-      - title: SnapCenter Plug-in for IBM Db2 features
-        url: /protect-db2/snapcenter-plug-in-for-ibm-db2-features.html
-      - title: Storage types supported by SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/storage-types-supported-by-snapcenter-plug-in-for-ibm-db2.html
+      - title: SnapCenter Plug-in for postgresql overview
+        url: /protect-postgresql/snapcenter-plug-in-for-postgresql-overview.html 
+      - title: What you can do using the SnapCenter Plug-in for postgresql
+        url: /protect-postgresql/what-you-can-do-using-the-snapcenter-plug-in-for-postgresql.html
+      - title: SnapCenter Plug-in for postgresql features
+        url: /protect-postgresql/snapcenter-plug-in-for-postgresql-features.html
+      - title: Storage types supported by SnapCenter Plug-in for postgresql
+        url: /protect-postgresql/storage-types-supported-by-snapcenter-plug-in-for-postgresql.html
       - title: Minimum ONTAP privileges required
-        url: /protect-db2/minimum-privileges-required-for-ibm-db2.html
+        url: /protect-postgresql/minimum-privileges-required-for-postgresql.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-db2/ prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-db2.html
-      - title: Backup strategy for IBM Db2
+        url: /protect-postgresql/ prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html
+      - title: Backup strategy for postgresql
         entries:
-          - title: Define a backup strategy for IBM Db2
-            url: /protect-db2/define-a-backup-strategy-for-ibm-db2.html
+          - title: Define a backup strategy for postgresql
+            url: /protect-postgresql/define-a-backup-strategy-for-postgresql.html
           - title: Automatic discovery of resources on Linux host
-            url: /protect-db2/auto-discovery-of-resources-on-linux-host.html
+            url: /protect-postgresql/auto-discovery-of-resources-on-linux-host.html
           - title: Type of backups supported
-            url: /protect-db2/type-of-backups-supported.html
-          - title: How SnapCenter Plug-in for IBM Db2 uses consistency group Snapshot copies
-            url: /protect-db2/ how-snapcenter-plug-in-for-ibm-db2-uses-consistency-group-snapshot-copies.html
+            url: /protect-postgresql/type-of-backups-supported.html
+          - title: How SnapCenter Plug-in for postgresql uses consistency group Snapshot copies
+            url: /protect-postgresql/ how-snapcenter-plug-in-for-postgresql-uses-consistency-group-snapshot-copies.html
           - title: How SnapCenter manages housekeeping of data backups
-            url: /protect-db2/housekeeping-of-data-backups.html
-          - title: Considerations for determining backup schedules for IBM Db2
-            url: /protect-db2/considerations-for-determining-backup-schedules-for-ibm-db2.html
-          - title: Number of backup jobs needed for IBM Db2
-            url: /protect-db2/number-of-backup-jobs-needed-for-ibm-db2.html
+            url: /protect-postgresql/housekeeping-of-data-backups.html
+          - title: Considerations for determining backup schedules for postgresql
+            url: /protect-postgresql/considerations-for-determining-backup-schedules-for-postgresql.html
+          - title: Number of backup jobs needed for postgresql
+            url: /protect-postgresql/number-of-backup-jobs-needed-for-postgresql.html
           - title: Backup naming conventions
-            url: /protect-db2/backup-naming-conventions-for-plugin-for-ibm-db2.html
-      - title: Restore and recovery strategy for IBM Db2
+            url: /protect-postgresql/backup-naming-conventions-for-plugin-for-postgresql.html
+      - title: Restore and recovery strategy for postgresql
         entries:
-          - title: Define a restore and recovery strategy for IBM Db2 resources
-            url: /protect-db2/define-a-restore-and-recovery-strategy-for-ibm-db2-resources.html
-          - title: Types of restore strategies supported for manually added IBM Db2 resources
-            url: /protect-db2/types-of-restore-strategies-supported-for-manually-added-ibm-db2.html
-          - title: Types of restore strategies supported for automatically discovered IBM Db2
-            url: /protect-db2/ types-of-restore-strategies-supported-for-auto-discovered-ibm-db2.html
-          - title: Types of restore operations for auto discovered IBM Db2
-            url: /protect-db2/types-of-restore-performed-for-auto-discovered-ibm-db2.html          
-  - title: Prepare to install the SnapCenter Plug-in for IBM Db2
+          - title: Define a restore and recovery strategy for postgresql resources
+            url: /protect-postgresql/define-a-restore-and-recovery-strategy-for-postgresql-resources.html
+          - title: Types of restore strategies supported for manually added postgresql resources
+            url: /protect-postgresql/types-of-restore-strategies-supported-for-manually-added-postgresql.html
+          - title: Types of restore strategies supported for automatically discovered postgresql
+            url: /protect-postgresql/ types-of-restore-strategies-supported-for-auto-discovered-postgresql.html
+          - title: Types of restore operations for auto discovered postgresql
+            url: /protect-postgresql/types-of-restore-performed-for-auto-discovered-postgresql.html          
+  - title: Prepare to install the SnapCenter Plug-in for postgresql
     entries:
-      - title: Installation workflow of SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/install-snapcenter-plug-in-for-ibm-db2.html
-      - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/ prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-ibm-db2.html
+      - title: Installation workflow of SnapCenter Plug-in for postgresql
+        url: /protect-postgresql/install-snapcenter-plug-in-for-postgresql.html
+      - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for postgresql
+        url: /protect-postgresql/ prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-postgresql.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-        url: /protect-db2/ host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html
+        url: /protect-postgresql/ host-requirements-to-install-snapcenter-plug-in-package-for-windows-postgresql.html
       - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
-        url: /protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
-      - title: Set up credentials for the SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/set-up-credentials-for-snapcenter-plug-in-for-ibm-db2.html
+        url: /protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
+      - title: Set up credentials for the SnapCenter Plug-in for postgresql
+        url: /protect-postgresql/set-up-credentials-for-snapcenter-plug-in-for-postgresql.html
       - title: Configure gMSA on Windows Server 2016 or later
-        url: /protect-db2/configure-gMSA-on-windows-server-2012-or-later.html
-      - title: Install the SnapCenter Plug-in for IBM Db2
+        url: /protect-postgresql/configure-gMSA-on-windows-server-2012-or-later.html
+      - title: Install the SnapCenter Plug-in for postgresql
         entries:
             - title: Add hosts and install plug-in packages on remote hosts
-              url: /protect-db2/add-hosts-and-install-plug-in-packages-on-remote-hosts-ibm-db2.html
+              url: /protect-postgresql/add-hosts-and-install-plug-in-packages-on-remote-hosts-postgresql.html
             - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
-              url: /protect-db2/ install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-ibm-db2.html
-            - title: Install the SnapCenter Plug-in for IBM Db2 on Linux hosts by using the command-line interface
-              url: /protect-db2/ install-the-snapcenter-plug-in-for-ibm-db2-on-linux-hosts-using-the-command-line-interface.html
+              url: /protect-postgresql/ install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-postgresql.html
+            - title: Install the SnapCenter Plug-in for postgresql on Linux hosts by using the command-line interface
+              url: /protect-postgresql/ install-the-snapcenter-plug-in-for-postgresql-on-linux-hosts-using-the-command-line-interface.html
             - title: Monitor SnapCenter plug-in package installation status
-              url: /protect-db2/monitor-the-status-of-installing-plugin-for-ibm-db2.html
+              url: /protect-postgresql/monitor-the-status-of-installing-plugin-for-postgresql.html
       - title: Configure CA Certificate
         entries:
           - title: Generate CA Certificate CSR file
-            url: /protect-db2/generate-CA-certificate-CSR-file.html
+            url: /protect-postgresql/generate-CA-certificate-CSR-file.html
           - title: Import CA certificates
-            url: /protect-db2/import-CA-certificates.html
+            url: /protect-postgresql/import-CA-certificates.html
           - title: Get the CA certificate thumbprint
-            url: /protect-db2/get-the-CA-certificate-thumbprint.html
+            url: /protect-postgresql/get-the-CA-certificate-thumbprint.html
           - title: Configure CA certificate with Windows host plug-in services
-            url: /protect-db2/configure-CA-certificate-with-Windows-host-plug-in-services.html
-          - title: Configure the CA Certificate for the SnapCenter IBM Db2 Plug-ins service on Linux host
-            url: /protect-db2/configure-CA-certificate-for-ibm-db2-on-Linux-host.html
-          - title: Configure the CA Certificate for the SnapCenter IBM Db2 Plug-ins service on Windows host
-            url: /protect-db2/configure-CA-certificate-for-ibm-db2-on-windows-host.html
+            url: /protect-postgresql/configure-CA-certificate-with-Windows-host-plug-in-services.html
+          - title: Configure the CA Certificate for the SnapCenter postgresql Plug-ins service on Linux host
+            url: /protect-postgresql/configure-CA-certificate-for-postgresql-on-Linux-host.html
+          - title: Configure the CA Certificate for the SnapCenter postgresql Plug-ins service on Windows host
+            url: /protect-postgresql/configure-CA-certificate-for-postgresql-on-windows-host.html
           - title: Enable CA Certificates for plug-ins
-            url: /protect-db2/enable-ca-certificates-for-plug-ins.html  
+            url: /protect-postgresql/enable-ca-certificates-for-plug-ins.html  
   - title: Prepare for data protection
     entries:
-      - title: Prerequisites for using the SnapCenter Plug-in for IBM Db2
-        url: /protect-db2/prerequisites-for-using-snapcenter-plug-in-for-ibm-db2.html
-      - title: How resources, resource groups, and policies are used for protecting IBM Db2
-        url: /protect-db2/ how-resources-resource-groups-and-policies-are-used-for-protecting-ibm-db2.html
-  - title: Back up IBM Db2 resources
+      - title: Prerequisites for using the SnapCenter Plug-in for postgresql
+        url: /protect-postgresql/prerequisites-for-using-snapcenter-plug-in-for-postgresql.html
+      - title: How resources, resource groups, and policies are used for protecting postgresql
+        url: /protect-postgresql/ how-resources-resource-groups-and-policies-are-used-for-protecting-postgresql.html
+  - title: Back up postgresql resources
     entries:
       - title: Back up workflow
-        url: /protect-db2/back-up-ibm-db2-resources.html      
+        url: /protect-postgresql/back-up-postgresql-resources.html      
       - title: Discover the databases automatically
-        url: /protect-db2/discover-the-databases-automatically.html          
+        url: /protect-postgresql/discover-the-databases-automatically.html          
       - title: Add resources manually to the plug-in host
-        url: /protect-db2/add-resources-manually-to-the-plug-in-host.html
-      - title: Create backup policies for IBM Db2
-        url: /protect-db2/create-backup-policies-for-ibm-db2.html
+        url: /protect-postgresql/add-resources-manually-to-the-plug-in-host.html
+      - title: Create backup policies for postgresql
+        url: /protect-postgresql/create-backup-policies-for-postgresql.html
       - title: Create resource groups and attach policies
-        url: /protect-db2/create-resource-groups-and-attach-policies.html
-      - title: Back up IBM Db2
-        url: /protect-db2/back-up-ibm-db2.html
+        url: /protect-postgresql/create-resource-groups-and-attach-policies.html
+      - title: Back up postgresql
+        url: /protect-postgresql/back-up-postgresql.html
       - title: Back up resource groups
-        url: /protect-db2/back-up-resource-groups-ibm-db2.html
-      - title: Create a storage system connection and a credential using PowerShell cmdlets for IBM Db2
-        url: /protect-db2/ create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html
+        url: /protect-postgresql/back-up-resource-groups-postgresql.html
+      - title: Create a storage system connection and a credential using PowerShell cmdlets for postgresql
+        url: /protect-postgresql/ create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
       - title: Back up databases using PowerShell cmdlets
-        url: /protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html
+        url: /protect-postgresql/back-up-databases-using-powershell-cmdlets-postgresql.html
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-db2/monitor-db2-backup-operations.html
+            url: /protect-postgresql/monitor-postgresql-backup-operations.html
           - title: Monitor operations in the Activity pane
-            url: /protect-db2/monitor-dataprotection-operations-on-db2-in-the-activity-pane.html
+            url: /protect-postgresql/monitor-dataprotection-operations-on-postgresql-in-the-activity-pane.html
       - title: Cancel the backup operations
-        url: /protect-db2/cancel-backup-operations-for-ibm-db2.html
-      - title: View IBM Db2 database backups and clones in the Topology page
-        url: /protect-db2/view-ibm-db2-database-backups-and-clones-in-the-topology-page.html
-  - title: Restore IBM Db2
+        url: /protect-postgresql/cancel-backup-operations-for-postgresql.html
+      - title: View postgresql database backups and clones in the Topology page
+        url: /protect-postgresql/view-postgresql-database-backups-and-clones-in-the-topology-page.html
+  - title: Restore postgresql
     entries:
       - title: Restore workflow
-        url: /protect-db2/restore-ibm-db2.html
+        url: /protect-postgresql/restore-postgresql.html
       - title: Restore and recover a manually added resource backup
-        url: /protect-db2/restore-and-recover-a-manually-added-resource-backup.html
+        url: /protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html
       - title: Restore and recover an auto discovered database backup
-        url: /protect-db2/restore-and-recover-an-auto-discovered-database-backup.html
-      - title: Restore IBM Db2 using PowerShell cmdlets
-        url: /protect-db2/restore-ibm-db2-using-powershell-cmdlets.html
+        url: /protect-postgresql/restore-and-recover-an-auto-discovered-database-backup.html
+      - title: Restore postgresql using PowerShell cmdlets
+        url: /protect-postgresql/restore-postgresql-using-powershell-cmdlets.html
       - title: Restore resources using PowerShell cmdlets
-        url: /protect-db2/restore-and-recover-resources-using-powershell-cmdlets-db2.html
+        url: /protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html
       - title: Monitor restore operations
-        url: /protect-db2/monitor-db2-restore-operations.html
-  - title: Clone IBM Db2 resource backups
+        url: /protect-postgresql/monitor-postgresql-restore-operations.html
+  - title: Clone postgresql resource backups
     entries:
       - title: Clone workflow
-        url: /protect-db2/clone-ibm-db2-resource-backups.html
-      - title: Clone a IBM Db2 database backup
-        url: /protect-db2/clone-ibm-db2-backup.html
-      - title: Clone IBM Db2 database backups using PowerShell cmdlets
-        url: /protect-db2/clone-ibm-db2-backups-using-powershell-cmdlets.html
+        url: /protect-postgresql/clone-postgresql-resource-backups.html
+      - title: Clone a postgresql database backup
+        url: /protect-postgresql/clone-postgresql-backup.html
+      - title: Clone postgresql database backups using PowerShell cmdlets
+        url: /protect-postgresql/clone-postgresql-backups-using-powershell-cmdlets.html
       - title: Monitor clone operations in SnapCenter
-        url: /protect-db2/monitor-db2-clone-operations.html
+        url: /protect-postgresql/monitor-postgresql-clone-operations.html
       - title: Split a clone
-        url: /protect-db2/split-a-clone-for-db2.html
-      - title: Delete or split IBM Db2 database clones after upgrading SnapCenter
-        url: /protect-db2/delete-or-split-ibm-db2-clones-after-upgrading-snapcenter.html
+        url: /protect-postgresql/split-a-clone-for-postgresql.html
+      - title: Delete or split postgresql database clones after upgrading SnapCenter
+        url: /protect-postgresql/delete-or-split-postgresql-clones-after-upgrading-snapcenter.html

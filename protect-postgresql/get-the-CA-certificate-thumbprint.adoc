@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/get-the-CA-certificate-thumbprint.html
+permalink: protect-postgresql/get-the-CA-certificate-thumbprint.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Get the CA certificate thumbprint.'

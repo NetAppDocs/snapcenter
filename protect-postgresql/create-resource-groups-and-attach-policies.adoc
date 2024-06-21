@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/create-resource-groups-and-attach-policies.html
+permalink: protect-postgresql/create-resource-groups-and-attach-policies.html
 sidebar: sidebar
 keywords: resource groups, attach policies, snapcenter
 summary: 'A resource group is the container to which you must add resources that you want to back up and protect. A resource group enables you to back up all the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.'

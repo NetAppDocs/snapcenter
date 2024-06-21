@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/view-ibm-db2-database-backups-and-clones-in-the-topology-page.html
+permalink: protect-postgresql/view-postgresql-database-backups-and-clones-in-the-topology-page.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
+keywords: SnapCenter Plug-in for postgresql
 summary: 'When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage.'
 ---
-= View IBM Db2 backups and clones in the Topology page
+= View postgresql backups and clones in the Topology page
 :icons: font
 :imagesdir: ../media/
 

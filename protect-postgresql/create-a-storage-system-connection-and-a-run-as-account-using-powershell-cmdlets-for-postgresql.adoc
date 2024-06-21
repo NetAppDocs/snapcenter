@@ -1,15 +1,15 @@
 ---
-permalink: protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html
+permalink: protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
-summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone IBM Db2 databases.'
+keywords: SnapCenter Plug-in for postgresql
+summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone postgresql databases.'
 ---
-= Create a storage system connection and a credential using PowerShell cmdlets for IBM Db2
+= Create a storage system connection and a credential using PowerShell cmdlets for postgresql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone IBM Db2 databases.
+You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone postgresql databases.
 
 .Before you begin
 

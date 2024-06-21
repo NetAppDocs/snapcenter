@@ -1,10 +1,10 @@
 ---
-permalink: protect-db2/number-of-backup-jobs-needed-for-ibm-db2.html
+permalink: protect-postgresql/number-of-backup-jobs-needed-for-postgresql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
+keywords: SnapCenter Plug-in for postgresql
 summary: 'Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement \(SLA\).'
 ---
-= Number of backup jobs needed for IBM Db2
+= Number of backup jobs needed for postgresql
 :icons: font
 :imagesdir: ../media/
 

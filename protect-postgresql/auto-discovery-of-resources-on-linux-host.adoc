@@ -1,12 +1,12 @@
 ---
-permalink: protect-db2/auto-discovery-of-resources-on-linux-host.html
+permalink: protect-postgresql/auto-discovery-of-resources-on-linux-host.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM DB2
-summary: 'Resources are IBM Db2 databases and instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for IBM Db2 plug-in, the IBM Db2 databases on that Linux host are automatically discovered and displayed in the Resources page.'
+keywords: SnapCenter Plug-in for postgresql
+summary: 'Resources are postgresql databases and instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for postgresql plug-in, the postgresql databases on that Linux host are automatically discovered and displayed in the Resources page.'
 ---
 = Automatic discovery of resources on Linux host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Resources are IBM Db2 databases and instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for IBM Db2 plug-in, the IBM Db2 databases from all the instances on that Linux host are automatically discovered and displayed in the Resources page.
+Resources are postgresql databases and instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for postgresql plug-in, the postgresql databases from all the instances on that Linux host are automatically discovered and displayed in the Resources page.

@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
+permalink: protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Before you install the SnapCenter Plug-ins Package for Linux, you should be familiar with some basic host system space and sizing requirements.'

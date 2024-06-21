@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/generate-CA-certificate-CSR-file.html
+permalink: protect-postgresql/generate-CA-certificate-CSR-file.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate.'

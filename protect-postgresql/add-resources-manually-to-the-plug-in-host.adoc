@@ -1,15 +1,15 @@
 ---
-permalink: protect-db2/add-resources-manually-to-the-plug-in-host.html
+permalink: protect-postgresql/add-resources-manually-to-the-plug-in-host.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for IBM Db2
-summary: 'Automatic discovery is not supported for certain Db2 instances. You must add these resources manually.'
+keywords: SnapCenter Plug-in for Postgresql
+summary: 'Automatic discovery is not supported for certain postgresql instances. You must add these resources manually.'
 ---
 = Add resources manually to the plug-in host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Automatic discovery is not supported on Windows host. You must add Db2 instances and database resources manually.
+Automatic discovery is not supported on Windows host. You must add Postgresql instances and database resources manually.
 
 .Before you begin
 
@@ -23,8 +23,8 @@ Automatic discovery is not supported for the following configurations:
 
 .Steps
 
-. In the left navigation pane, select the SnapCenter Plug-in for IBM Db2 from the drop-down list, and then click *Resources*.
-. In the Resources page, click *Add IBM Db2 resources*.
+. In the left navigation pane, select the SnapCenter Plug-in for Postgresql from the drop-down list, and then click *Resources*.
+. In the Resources page, click *Add Postgresql resources*.
 . In the Provide Resource Details page, perform the following actions:
 +
 |===
