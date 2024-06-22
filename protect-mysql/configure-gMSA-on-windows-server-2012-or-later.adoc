@@ -1,5 +1,5 @@
 ---
-permalink: protect-postgresql/configure-gMSA-on-windows-server-2012-or-later.html
+permalink: protect-db2/configure-gMSA-on-windows-server-2012-or-later.html
 sidebar: sidebar
 keywords:
 summary: 'Windows Server 2016 or later enables you to create a group Managed Service Account \(gMSA\) that provides automated service account password management from a managed domain account.'

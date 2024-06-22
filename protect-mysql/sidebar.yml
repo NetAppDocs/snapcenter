@@ -24,9 +24,9 @@ entries:
           - title: Type of backups supported
             url: /protect-postgresql/type-of-backups-supported.html
           - title: How SnapCenter Plug-in for postgresql uses consistency group Snapshot copies
-            url: /protect-postgresql/how-snapcenter-plug-in-for-postgresql-uses-consistency-group-snapshot-copies.html
-          - title: How SnapCenter manages housekeeping of log backups
-            url: /protect-postgresql/housekeeping-of-log-backups.html
+            url: /protect-postgresql/ how-snapcenter-plug-in-for-postgresql-uses-consistency-group-snapshot-copies.html
+          - title: How SnapCenter manages housekeeping of data backups
+            url: /protect-postgresql/housekeeping-of-data-backups.html
           - title: Considerations for determining backup schedules for postgresql
             url: /protect-postgresql/considerations-for-determining-backup-schedules-for-postgresql.html
           - title: Number of backup jobs needed for postgresql
@@ -48,9 +48,9 @@ entries:
       - title: Installation workflow of SnapCenter Plug-in for postgresql
         url: /protect-postgresql/install-snapcenter-plug-in-for-postgresql.html
       - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for postgresql
-        url: /protect-postgresql/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-postgresql.html
+        url: /protect-postgresql/ prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-postgresql.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-        url: /protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-windows-postgresql.html
+        url: /protect-postgresql/ host-requirements-to-install-snapcenter-plug-in-package-for-windows-postgresql.html
       - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
         url: /protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
       - title: Set up credentials for the SnapCenter Plug-in for postgresql
@@ -62,9 +62,9 @@ entries:
             - title: Add hosts and install plug-in packages on remote hosts
               url: /protect-postgresql/add-hosts-and-install-plug-in-packages-on-remote-hosts-postgresql.html
             - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
-              url: /protect-postgresql/install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-postgresql.html
+              url: /protect-postgresql/ install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-postgresql.html
             - title: Install the SnapCenter Plug-in for postgresql on Linux hosts by using the command-line interface
-              url: /protect-postgresql/install-the-snapcenter-plug-in-for-postgresql-on-linux-hosts-using-the-command-line-interface.html
+              url: /protect-postgresql/ install-the-snapcenter-plug-in-for-postgresql-on-linux-hosts-using-the-command-line-interface.html
             - title: Monitor SnapCenter plug-in package installation status
               url: /protect-postgresql/monitor-the-status-of-installing-plugin-for-postgresql.html
       - title: Configure CA Certificate
@@ -88,7 +88,7 @@ entries:
       - title: Prerequisites for using the SnapCenter Plug-in for postgresql
         url: /protect-postgresql/prerequisites-for-using-snapcenter-plug-in-for-postgresql.html
       - title: How resources, resource groups, and policies are used for protecting postgresql
-        url: /protect-postgresql/how-resources-resource-groups-and-policies-are-used-for-protecting-postgresql.html
+        url: /protect-postgresql/ how-resources-resource-groups-and-policies-are-used-for-protecting-postgresql.html
   - title: Back up postgresql resources
     entries:
       - title: Back up workflow
@@ -106,7 +106,7 @@ entries:
       - title: Back up resource groups
         url: /protect-postgresql/back-up-resource-groups-postgresql.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for postgresql
-        url: /protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
+        url: /protect-postgresql/ create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
       - title: Back up databases using PowerShell cmdlets
         url: /protect-postgresql/back-up-databases-using-powershell-cmdlets-postgresql.html
       - title: Monitor backup operations

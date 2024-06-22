@@ -1,0 +1,14 @@
+---
+permalink: protect-postgresql/housekeeping-of-log-backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for postgresql
+summary: 'SnapCenter manages the housekeeping of log and data backups on the storage system and file system levels, and within the postgresql backup catalog.'
+---
+= How SnapCenter manages housekeeping of data backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter manages the housekeeping of data backups on the storage system and file system levels.
+
+The snapshots on the primary or secondary storage and their corresponding entries in the postgresql catalog are deleted based on the retention settings. 

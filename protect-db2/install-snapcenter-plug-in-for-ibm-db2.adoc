@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/install-snapcenter-plug-in-for-ibm-db2-database.html
+permalink: protect-db2/install-snapcenter-plug-in-for-ibm-db2.html
 sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up the SnapCenter Plug-in for IBM Db2 if you want to protect IBM Db2.'

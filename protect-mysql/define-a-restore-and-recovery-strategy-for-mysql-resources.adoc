@@ -1,0 +1,20 @@
+---
+permalink: protect-postgresql/define-a-restore-and-recovery-strategy-for-postgresql-resources.html
+sidebar: sidebar
+keywords: restore and recovery strategy, postgresql resources, snapcenter
+summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.'
+---
+= Define a restore and recovery strategy for postgresql resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.
+
+NOTE: Only manual recovery of database is supported.
+
+.Steps
+
+. Determine the restore strategies supported for manually added postgresql resources
+. Determine the restore strategies supported for auto discovered postgresql databases
+. Decide the type of recovery operations that you want to perform.
