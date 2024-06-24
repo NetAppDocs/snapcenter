@@ -1,0 +1,24 @@
+---
+permalink: protect-postgresql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html
+sidebar: sidebar
+keywords: snapmirror, snapvault, storage system, replication
+summary: 'You can use a SnapCenter plug-in with ONTAP SnapMirror and SnapVault technologies'
+---
+= Prepare storage systems for SnapMirror and SnapVault replication for postgresql
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use a SnapCenter plug-in with ONTAP SnapMirror technology to create mirror copies of backup sets on another volume, and with ONTAP SnapVault technology to perform disk-to-disk backup replication for standards compliance and other governance-related purposes. Before you perform these tasks, you must configure a data-protection relationship between the source and destination volumes and initialize the relationship.
+
+SnapCenter performs the updates to SnapMirror and SnapVault after it completes the Snapshot operation. SnapMirror and SnapVault updates are performed as part of the SnapCenter job; do not create a separate ONTAP schedule.
+
+NOTE: If you are coming to SnapCenter from a NetApp SnapManager product and are satisfied with the data protection relationships you have configured, you can skip this section.
+
+A data protection relationship replicates data on primary storage (the source volume) to secondary storage (the destination volume). When you initialize the relationship, ONTAP transfers the data blocks referenced on the source volume to the destination volume.
+
+NOTE: SnapCenter does not support cascade relationships between SnapMirror and SnapVault volumes (*Primary* > *Mirror* > *Vault*). You should use fanout relationships.
+
+SnapCenter supports the management of version-flexible SnapMirror relationships. For details about version-flexible SnapMirror relationships and how to set them up, see the http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.ic-base%2Fresources%2Fhome.html[ONTAP documentation^].
+
+
