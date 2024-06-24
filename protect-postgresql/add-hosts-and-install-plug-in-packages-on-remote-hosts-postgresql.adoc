@@ -20,7 +20,7 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
-link:../protect-postgresql/task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for IBM PostgreSQL^]
+link:../protect-postgresql/task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for PostgreSQL^]
 
 .About this task
 
