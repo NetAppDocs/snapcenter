@@ -76,23 +76,23 @@ The database is shut down.
 
 . Restore data from the backup by using the Restore-SmBackup cmdlet.
 +
-NOTE: AppObjectId is "Host\Plugin\UID", where UID = <instance_name> is for manually discovered DB2 instance resource and UID = <instance_name>\<databse_name> is for IBM Db2 database resource. You can get the ResourceID from the Get-smResources cmdlet.
+NOTE: AppObjectId is "Host\Plugin\UID", where UID = <instance_name> is for manually discovered PostgreSQL instance resource and UID = <instance_name>\<databse_name> is for PostgreSQL database resource. You can get the ResourceID from the Get-smResources cmdlet.
 
 +
 ----
-Get-smResources  -HostName cn24.sccore.test.com  -PluginCode DB2
+Get-smResources  -HostName cn24.sccore.test.com  -PluginCode PostgreSQL
 ----
 +
 This example shows how to restore the database from the primary storage:
 +
 ----
-Restore-SmBackup -PluginCode DB2 -AppObjectId cn24.sccore.test.com\DB2\db2inst1\DB01 -BackupId 3
+Restore-SmBackup -PluginCode PostgreSQL -AppObjectId cn24.sccore.test.com\PostgreSQL\PostgreSQLinst1\DB01 -BackupId 3
 ----
 +
 This example shows how to restore the database from the secondary storage:
 +
 ----
-Restore-SmBackup -PluginCode 'DB2' -AppObjectId cn24.sccore.test.com\DB2\db2inst1\DB01 -BackupId 399 -Confirm:$false  -Archive @( @{"Primary"="<Primary Vserver>:<PrimaryVolume>";"Secondary"="<Secondary Vserver>:<SecondaryVolume>"})
+Restore-SmBackup -PluginCode 'PostgreSQL' -AppObjectId cn24.sccore.test.com\DB2\db2inst1\DB01 -BackupId 399 -Confirm:$false  -Archive @( @{"Primary"="<Primary Vserver>:<PrimaryVolume>";"Secondary"="<Secondary Vserver>:<SecondaryVolume>"})
 ----
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].

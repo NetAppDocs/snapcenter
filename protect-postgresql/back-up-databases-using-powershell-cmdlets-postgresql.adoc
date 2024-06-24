@@ -28,10 +28,10 @@ The username and password prompt is displayed.
 
 . Add manual resources by using the Add-SmResources cmdlet.
 +
-This example shows how to add a IBM Db2 instance:
+This example shows how to add a PostgreSQL instance:
 +
 ----
-PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode PostgreSQL -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
 ----
 
 . Create a backup policy by using the Add-SmPolicy cmdlet.

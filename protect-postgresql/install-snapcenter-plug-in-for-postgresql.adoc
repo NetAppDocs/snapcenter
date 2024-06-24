@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2postgresql/install-snapcenter-plug-in-for-postgresql.html
+permalink: protect-postgresql/install-snapcenter-plug-in-for-postgresql.html
 sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up the SnapCenter Plug-in for PostgreSQL if you want to protect PostgreSQL.'

@@ -58,7 +58,7 @@ This is optional.
 +
 Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
 
-. Optional: In the Resource Settings page, for resources on the Windows host, enter custom key-value pairs for IBM Db2 plug-in
+. Optional: In the Resource Settings page, for resources on the Windows host, enter custom key-value pairs for PostgreSQL plug-in
 
 . Review the summary, and then click *Finish*.
 +
@@ -68,6 +68,6 @@ If you want to provide users access to resources, you must assign the resources 
 
 link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
 
-After adding the databases, you can modify the IBM Db2 database details.
+After adding the databases, you can modify the PostgreSQL database details.
 
 

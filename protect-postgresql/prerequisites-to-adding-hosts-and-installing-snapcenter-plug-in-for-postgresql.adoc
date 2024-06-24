@@ -38,7 +38,7 @@ http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Syst
 +
 https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
-* For IBM Db2 databases that are running on a Linux host, while installing Plug-in for IBM Db2, SnapCenter Plug-in for UNIX is installed automatically.
+* For PostgreSQL databases that are running on a Linux host, while installing Plug-in for PostgreSQL, SnapCenter Plug-in for UNIX is installed automatically.
 * You should have *bash* as the default shell for plug-in installation.
 
 == Supplemental commands

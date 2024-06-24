@@ -1,7 +1,7 @@
 ---
 permalink: protect-postgresql/cancel-backup-operations-for-postgresql.html
 sidebar: sidebar
-keywords: plug-in for IBM Db2
+keywords: plug-in for PostgreSQL
 summary: 'You can cancel backup operations that are queued.'
 ---
 = Cancel backup operations for PostgreSQL
