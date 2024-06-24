@@ -1,5 +1,5 @@
 ---
-permalink: protect-postgresql/add-hosts-and-install-plug-in-packages-on-remote-hosts-postgresql.html
+permalink: protect-mysql/add-hosts-and-install-plug-in-packages-on-remote-hosts-mysql.html
 sidebar: sidebar
 keywords: credentials
 summary: 'You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install plug-in packages either for an individual host or for a cluster.'
@@ -77,7 +77,7 @@ Either retain the default port number or specify the port number.    The default
 a|
 Installation Path
 a|
-The Plug-in for Postgresql is installed on the Postgresql client host, and this host can be on either a Windows system or a Linux system.
+The Plug-in for mysql is installed on the mysql client host, and this host can be on either a Windows system or a Linux system.
 
  ** For the SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter. Optionally, you can customize the path.
  ** For the SnapCenter Plug-ins Package for Linux, the default path is /opt/NetApp/snapcenter. Optionally, you can customize the path.

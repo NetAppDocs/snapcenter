@@ -1,7 +1,7 @@
 ---
 permalink: protect-postgresql/clone-postgresql-resource-backups.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
+keywords: SnapCenter Plug-in for PostgreSQL
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
 = Clone workflow
@@ -13,7 +13,7 @@ The clone workflow includes performing the clone operation and monitoring the op
 
 .About this task
 
-* You can clone on the source postgresql server.
+* You can clone on the source PostgreSQL server.
 * You might clone resource backups for the following reasons:
 
 ** To test functionality that has to be implemented using the current resource structure and content during application development cycles

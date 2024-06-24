@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host'
 ---
-= Configure the CA Certificate for the SnapCenter postgresql Plug-ins service on Linux host
+= Configure the CA Certificate for the SnapCenter PostgreSQL Plug-ins service on Linux host
 :icons: font
 :imagesdir: ../media/
 

@@ -2,7 +2,7 @@
 permalink: protect-postgresql/add-resources-manually-to-the-plug-in-host.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for Postgresql
-summary: 'Automatic discovery is not supported for certain postgresql instances. You must add these resources manually.'
+summary: 'Automatic discovery is not supported for certain PostgreSQL instances. You must add these resources manually.'
 ---
 = Add resources manually to the plug-in host
 :icons: font

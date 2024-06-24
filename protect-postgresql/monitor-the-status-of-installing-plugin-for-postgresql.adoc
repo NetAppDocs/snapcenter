@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, install, snapCenter plug-in for postgresql
 summary: 'You can monitor the progress of SnapCenter plug-in package installation by using the Jobs page. You might want to check the progress of installation to determine when it is complete or if there is an issue.'
 ---
-= Monitor the status of installing Plug-in for postgresql
+= Monitor the status of installing Plug-in for PostgreSQL
 :icons: font
 :imagesdir: ../media/
 

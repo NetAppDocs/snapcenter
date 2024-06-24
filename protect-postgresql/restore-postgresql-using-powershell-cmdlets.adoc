@@ -2,14 +2,14 @@
 permalink: protect-postgresql/restore-postgresql-using-powershell-cmdlets.html
 sidebar: sidebar
 keywords: restore, postgresql, snapcenter
-summary: 'Restoring a postgresql backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
+summary: 'Restoring a PostgreSQL backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
-= Restore postgresql database using PowerShell cmdlets
+= Restore PostgreSQL database using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restoring a postgresql backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
+Restoring a PostgreSQL backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
 
 .Before you begin
 

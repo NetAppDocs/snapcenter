@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Backup naming conventions
 summary: 'You can either use the default snapshot naming convention or use a customized naming convention. The default backup naming convention adds a timestamp to snapshot names that helps you identify when the copies were created.'
 ---
-= Backup naming conventions for Plug-in for postgresql databases
+= Backup naming conventions for Plug-in for PostgreSQL databases
 :icons: font
 :imagesdir: ../media/
 

@@ -2,26 +2,26 @@
 permalink: protect-postgresql/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-postgresql.html
 sidebar: sidebar
 keywords: credentials
-summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for postgresql is available in both Windows and Linux environments.'
+summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for PostgreSQL is available in both Windows and Linux environments.'
 ---
-= Prerequisites to add hosts and install SnapCenter Plug-in for postgresql
+= Prerequisites to add hosts and install SnapCenter Plug-in for PostgreSQL
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for postgresql is available in both Windows and Linux environments.
+Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for PostgreSQL is available in both Windows and Linux environments.
 
 * You must have installed Java 11 64-bit on your host.
 +
 NOTE: IBM Java is not supported. 
-* For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for postgresql is installed as domain administrator.
-* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the postgresql plug-in on Windows hosts.
-* SnapCenter Server should have access to the 8145 or custom port of Plug-in for postgresql host.
+* For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for PostgreSQL is installed as domain administrator.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the PostgreSQL plug-in on Windows hosts.
+* SnapCenter Server should have access to the 8145 or custom port of Plug-in for PostgreSQL host.
 
 == Windows hosts
 
 * You must have a domain user with local administrator privileges with local login permissions on the remote host.
-* While installing Plug-in for postgresql on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
+* While installing Plug-in for PostgreSQL on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 11 64-bit on your Windows host.
 +
@@ -43,9 +43,9 @@ https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src
 
 == Supplemental commands
 
-To run a supplemental command on the SnapCenter Plug-in for postgresql, you must include it in the `allowed_commands.config` file.
+To run a supplemental command on the SnapCenter Plug-in for PostgreSQL, you must include it in the `allowed_commands.config` file.
 
-`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for postgresql directory.
+`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for PostgreSQL directory.
 
 .Windows hosts
 
