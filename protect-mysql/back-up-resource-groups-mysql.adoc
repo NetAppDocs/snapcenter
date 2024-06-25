@@ -1,7 +1,7 @@
 ---
-permalink: protect-postgresql/back-up-resource-groups-postgresql.html
+permalink: protect-mysql/back-up-resource-groups-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
+keywords: SnapCenter Plug-in for mysql
 summary: 'A resource group is a collection of resources on a host. A backup operation on the resource group is performed on all resources defined in the resource group.'
 ---
 = Back up resource groups

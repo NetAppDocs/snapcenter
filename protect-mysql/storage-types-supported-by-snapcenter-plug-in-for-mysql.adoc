@@ -1,15 +1,15 @@
 ---
-permalink: protect-postgresql/storage-types-supported-by-snapcenter-plug-in-for-postgresql.html
+permalink: protect-mysql/storage-types-supported-by-snapcenter-plug-in-for-mysql.html
 sidebar: sidebar
 keywords: storage types, 
-summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for postgresql.'
+summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for mysql.'
 ---
-= Storage types supported by SnapCenter Plug-in for postgresql
+= Storage types supported by SnapCenter Plug-in for mysql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for postgresql.
+SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for mysql.
 
 |===
 | Machine| Storage type

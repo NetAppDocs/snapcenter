@@ -1,30 +1,30 @@
 ---
-permalink: protect-postgresql/install-the-snapcenter-plug-in-for-postgresql-on-linux-hosts-using-the-command-line-interface.html
+permalink: protect-mysql/install-the-snapcenter-plug-in-for-mysql-on-linux-hosts-using-the-command-line-interface.html
 sidebar: sidebar
-keywords: install, SnapCenter Plug-in for postgresql
-summary: 'You should install the SnapCenter Plug-in for postgresql Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for IBM Db2postgresql Database either in console mode or in silent mode by using the command-line interface (CLI1).'
+keywords: install, SnapCenter Plug-in for mysql
+summary: 'You should install the SnapCenter Plug-in for mysql Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for IBM Db2mysql Database either in console mode or in silent mode by using the command-line interface (CLI1).'
 ---
-= Install the SnapCenter Plug-in for postgresql on Linux hosts by using the command-line interface
+= Install the SnapCenter Plug-in for mysql on Linux hosts by using the command-line interface
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should install the SnapCenter Plug-in for postgresql Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for postgresql Database either in console mode or in silent mode by using the command-line interface (CLI).
+You should install the SnapCenter Plug-in for mysql Database by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the Plug-in for mysql Database either in console mode or in silent mode by using the command-line interface (CLI).
 
 .Before you begin
 
-* You should install the Plug-in for postgresql Database on each of the Linux host where the postgresql client resides.
-* The Linux host on which you are installing the SnapCenter Plug-in for postgresql Database must meet the dependent software, database, and operating system requirements.
+* You should install the Plug-in for mysql Database on each of the Linux host where the mysql client resides.
+* The Linux host on which you are installing the SnapCenter Plug-in for mysql Database must meet the dependent software, database, and operating system requirements.
 +
 The Interoperability Matrix Tool (IMT) contains the latest information about the supported configurations.
 +
 https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
-* The SnapCenter Plug-in for postgresql Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you should have already installed SnapCenter on a Windows host.
+* The SnapCenter Plug-in for mysql Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you should have already installed SnapCenter on a Windows host.
 
 .Steps
 
-. Copy the SnapCenter Plug-ins Package for Linux installation file (snapcenter_linux_host_plugin.bin) from C:\ProgramData\NetApp\SnapCenter\Package Repository to the host where you want to install the Plug-in for postgresql.
+. Copy the SnapCenter Plug-ins Package for Linux installation file (snapcenter_linux_host_plugin.bin) from C:\ProgramData\NetApp\SnapCenter\Package Repository to the host where you want to install the Plug-in for mysql.
 +
 You can access this path from the host where the SnapCenter Server is installed.
 

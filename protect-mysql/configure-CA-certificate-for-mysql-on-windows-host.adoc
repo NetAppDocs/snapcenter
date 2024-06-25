@@ -1,10 +1,10 @@
 ---
-permalink: protect-postgresql/configure-CA-certificate-for-postgresql-on-windows-host.html
+permalink: protect-mysql/configure-CA-certificate-for-mysql-on-windows-host.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the SnapCenter postgresql Plug-ins service on Windows host
+= Configure the CA Certificate for the SnapCenter mysql Plug-ins service on Windows host
 :icons: font
 :imagesdir: ../media/
 

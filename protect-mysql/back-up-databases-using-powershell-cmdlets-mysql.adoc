@@ -1,7 +1,7 @@
 ---
-permalink: protect-postgresql/back-up-databases-using-powershell-cmdlets-postgresql.html
+permalink: protect-mysql/back-up-databases-using-powershell-cmdlets-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
+keywords: SnapCenter Plug-in for mysql
 summary: 'Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
 ---
 = Back up databases using PowerShell cmdlets

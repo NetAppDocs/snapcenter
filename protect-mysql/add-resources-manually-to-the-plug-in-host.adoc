@@ -2,14 +2,14 @@
 permalink: protect-mysql/add-resources-manually-to-the-plug-in-host.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for mysql
-summary: 'Automatic discovery is not supported for certain mysql instances. You must add these resources manually.'
+summary: 'Automatic discovery is not supported for certain MySQL instances. You must add these resources manually.'
 ---
 = Add resources manually to the plug-in host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Automatic discovery is not supported on Windows host. You must add mysql instances and database resources manually.
+Automatic discovery is not supported on Windows host. You must add MySQL instances and database resources manually.
 
 .Before you begin
 
@@ -23,7 +23,7 @@ Automatic discovery is not supported for the following configurations:
 
 .Steps
 
-. In the left navigation pane, select the SnapCenter Plug-in for mysql from the drop-down list, and then click *Resources*.
+. In the left navigation pane, select the SnapCenter Plug-in for MySQL from the drop-down list, and then click *Resources*.
 . In the Resources page, click *Add MySQL resources*.
 . In the Provide Resource Details page, perform the following actions:
 +

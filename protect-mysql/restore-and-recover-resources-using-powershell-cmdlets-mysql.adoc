@@ -1,5 +1,5 @@
 ---
-permalink: protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html
+permalink: protect-mysql/restore-and-recover-resources-using-powershell-cmdlets-mysql.html
 sidebar: sidebar
 keywords: restore resources, snapcenter
 summary: 'Restoring a resource backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'

@@ -1,5 +1,5 @@
 section: protect-mysql
-title: Protect mysql
+title: Protect MySQL
 entries:
   - title: SnapCenter Plug-in for MySQL 
     entries:

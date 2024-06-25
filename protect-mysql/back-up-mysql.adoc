@@ -1,10 +1,10 @@
 ---
-permalink: protect-postgresql/back-up-postgresql.html
+permalink: protect-mysql/back-up-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
+keywords: SnapCenter Plug-in for mysql
 summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
 ---
-= Back up postgresql
+= Back up mysql
 :icons: font
 :imagesdir: ../media/
 

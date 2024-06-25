@@ -1,10 +1,10 @@
 ---
-permalink: protect-postgresql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html
+permalink: protect-mysql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-mysql.html
 sidebar: sidebar
 keywords: snapmirror, snapvault, storage system, replication
 summary: 'You can use a SnapCenter plug-in with ONTAP SnapMirror and SnapVault technologies'
 ---
-= Prepare storage systems for SnapMirror and SnapVault replication for postgresql
+= Prepare storage systems for SnapMirror and SnapVault replication for mysql
 :icons: font
 :imagesdir: ../media/
 

@@ -1,15 +1,15 @@
 ---
-permalink: protect-postgresql/what-you-can-do-using-the-snapcenter-plug-in-for-postgresql.html
+permalink: protect-mysql/what-you-can-do-using-the-snapcenter-plug-in-for-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
-summary: 'When you install the Plug-in for postgresql in your environment, you can use SnapCenter to back up, restore, and clone postgresql and their resources. You can also perform tasks supporting those operations.'
+keywords: SnapCenter Plug-in for mysql
+summary: 'When you install the Plug-in for mysql in your environment, you can use SnapCenter to back up, restore, and clone mysql and their resources. You can also perform tasks supporting those operations.'
 ---
-= What you can do using the SnapCenter Plug-in for postgresql
+= What you can do using the SnapCenter Plug-in for mysql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When you install the Plug-in for postgresql Database in your environment, you can use SnapCenter to back up, restore, and clone postgresql databases and their resources. You can also perform tasks supporting those operations.
+When you install the Plug-in for mysql Database in your environment, you can use SnapCenter to back up, restore, and clone mysql databases and their resources. You can also perform tasks supporting those operations.
 
 * Add databases.
 * Create backups.

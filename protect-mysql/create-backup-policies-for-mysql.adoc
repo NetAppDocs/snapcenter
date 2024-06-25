@@ -1,21 +1,21 @@
 ---
-permalink: protect-postgresql/create-backup-policies-for-postgresql.html
+permalink: protect-mysql/create-backup-policies-for-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
-summary: 'Before you use SnapCenter to back up postgresql database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
+keywords: SnapCenter Plug-in for mysql
+summary: 'Before you use SnapCenter to back up mysql database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
 ---
-= Create backup policies for postgresql
+= Create backup policies for mysql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you use SnapCenter to back up postgresql resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
+Before you use SnapCenter to back up mysql resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.
 
 .Before you begin
 
 * You must have defined your backup strategy.
 +
-For details, see the information about defining a data protection strategy for postgresql databases.
+For details, see the information about defining a data protection strategy for mysql databases.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, setting up storage system connections, and adding resources.
 * The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating snapshots to a mirror or vault.
 +

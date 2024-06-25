@@ -1,5 +1,5 @@
 ---
-permalink: protect-postgresql/configure-CA-certificate-with-Windows-host-plug-in-services.html
+permalink: protect-mysql/configure-CA-certificate-with-Windows-host-plug-in-services.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA certificate with Windows host plug-in services'

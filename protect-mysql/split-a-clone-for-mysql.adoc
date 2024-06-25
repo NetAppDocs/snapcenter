@@ -1,5 +1,5 @@
 ---
-permalink: protect-postgresql/split-a-clone-for-postgresql.html
+permalink: protect-mysql/split-a-clone-for-mysql.html
 sidebar: sidebar
 keywords: split clone, snapcenter
 summary: 'You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.'

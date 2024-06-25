@@ -1,17 +1,17 @@
 ---
-permalink: protect-postgresql/types-of-restore-strategies-supported-for-manually-added-postgresql.html
+permalink: protect-mysql/types-of-restore-strategies-supported-for-manually-added-mysql.html
 sidebar: sidebar
 keywords: SnapCenter
-summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added postgresql resources. You cannot recover manually added postgresql resources.'
+summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added mysql resources. You cannot recover manually added mysql resources.'
 ---
-= Types of restore strategies supported for manually added postgresql resources
+= Types of restore strategies supported for manually added mysql resources
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added postgresql resources. 
+You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added mysql resources. 
 
-NOTE: You cannot recover manually added postgresql resources.
+NOTE: You cannot recover manually added mysql resources.
 
 == Complete resource restore
 

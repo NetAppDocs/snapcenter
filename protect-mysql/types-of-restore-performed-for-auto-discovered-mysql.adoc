@@ -1,15 +1,15 @@
 ---
-permalink: protect-postgresql/types-of-restore-performed-for-auto-discovered-postgresql.html
+permalink: protect-mysql/types-of-restore-performed-for-auto-discovered-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for postgresql
-summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered postgresql databases.'
+keywords: SnapCenter Plug-in for mysql
+summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered mysql databases.'
 ---
-= Types of restore operations for auto discovered postgresql
+= Types of restore operations for auto discovered mysql
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter Plug-in for postgresql supports Single File SnapRestore, and connect-and-copy restore types for automatically discovered postgresql databases.
+SnapCenter Plug-in for mysql supports Single File SnapRestore, and connect-and-copy restore types for automatically discovered mysql databases.
 
 == Single File SnapRestore is performed in NFS environments for the following scenarios:
 
