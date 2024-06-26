@@ -1,7 +1,7 @@
 ---
 permalink: protect-mysql/restore-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
+keywords: SnapCenter Plug-in for MySQL
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
 = Restore workflow

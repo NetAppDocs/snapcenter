@@ -1,10 +1,10 @@
 ---
 permalink: protect-mysql/clone-mysql-backup.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql,run as
+keywords: SnapCenter Plug-in for MySQL,run as
 summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'
 ---
-= Clone a mysql backup
+= Clone a MySQL backup
 :icons: font
 :imagesdir: ../media/
 

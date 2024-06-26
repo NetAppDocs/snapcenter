@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Server
 summary: 'You can monitor the progress of different backup operations by using the SnapCenter Jobs page. You might want to check the progress to determine when it is complete or if there is an issue.'
 ---
-= Monitor mysql backup operations
+= Monitor MySQL backup operations
 :icons: font
 :imagesdir: ../media/
 

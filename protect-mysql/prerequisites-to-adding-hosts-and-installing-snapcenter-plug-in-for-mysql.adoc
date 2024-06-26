@@ -2,26 +2,26 @@
 permalink: protect-mysql/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-mysql.html
 sidebar: sidebar
 keywords: credentials
-summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for mysql is available in both Windows and Linux environments.'
+summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for MySQL is available in both Windows and Linux environments.'
 ---
-= Prerequisites to add hosts and install SnapCenter Plug-in for mysql
+= Prerequisites to add hosts and install SnapCenter Plug-in for MySQL
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for mysql is available in both Windows and Linux environments.
+Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for MySQL is available in both Windows and Linux environments.
 
 * You must have installed Java 11 64-bit on your host.
 +
 NOTE: IBM Java is not supported. 
-* For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for mysql is installed as domain administrator.
-* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the mysql plug-in on Windows hosts.
-* SnapCenter Server should have access to the 8145 or custom port of Plug-in for mysql host.
+* For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for MySQL is installed as domain administrator.
+* When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the MySQL plug-in on Windows hosts.
+* SnapCenter Server should have access to the 8145 or custom port of Plug-in for MySQL host.
 
 == Windows hosts
 
 * You must have a domain user with local administrator privileges with local login permissions on the remote host.
-* While installing Plug-in for mysql on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
+* While installing Plug-in for MySQL on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 11 64-bit on your Windows host.
 +
@@ -43,9 +43,9 @@ https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src
 
 == Supplemental commands
 
-To run a supplemental command on the SnapCenter Plug-in for mysql, you must include it in the `allowed_commands.config` file.
+To run a supplemental command on the SnapCenter Plug-in for MySQL, you must include it in the `allowed_commands.config` file.
 
-`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for mysql directory.
+`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for MySQL directory.
 
 .Windows hosts
 

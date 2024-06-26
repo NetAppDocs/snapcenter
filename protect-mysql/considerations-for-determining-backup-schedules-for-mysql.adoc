@@ -1,10 +1,10 @@
 ---
 permalink: protect-mysql/considerations-for-determining-backup-schedules-for-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
+keywords: SnapCenter Plug-in for MySQL
 summary: 'The most critical factor in determining a backup schedule is the rate of change for the resource. You might back up a heavily used resource every hour, while you might back up a rarely used resource once a day. Other factors include the importance of the resource to your organization, your service-level agreement \(SLA\) and your recovery point objective \(RPO\).'
 ---
-= Considerations for determining backup schedules for mysql
+= Considerations for determining backup schedules for MySQL
 :icons: font
 :imagesdir: ../media/
 

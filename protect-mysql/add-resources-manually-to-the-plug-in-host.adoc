@@ -1,7 +1,7 @@
 ---
 permalink: protect-mysql/add-resources-manually-to-the-plug-in-host.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
+keywords: SnapCenter Plug-in for MySQL
 summary: 'Automatic discovery is not supported for certain MySQL instances. You must add these resources manually.'
 ---
 = Add resources manually to the plug-in host

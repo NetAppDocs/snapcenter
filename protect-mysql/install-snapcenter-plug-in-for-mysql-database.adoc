@@ -2,13 +2,13 @@
 permalink: protect-mysql/install-snapcenter-plug-in-for-mysql-database.html
 sidebar: sidebar
 keywords: installing
-summary: 'You should install and set up the SnapCenter Plug-in for mysql if you want to protect mysql.'
+summary: 'You should install and set up the SnapCenter Plug-in for MySQL if you want to protect MySQL.'
 ---
-= Installation workflow of SnapCenter Plug-in for mysql 
+= Installation workflow of SnapCenter Plug-in for MySQL 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should install and set up the SnapCenter Plug-in for mysql if you want to protect mysql databases.
+You should install and set up the SnapCenter Plug-in for MySQL if you want to protect MySQL databases.
 
 image::../media/sap_hana_install_configure_workflow.gif[Install and configure workflow]

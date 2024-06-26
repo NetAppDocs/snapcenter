@@ -2,14 +2,14 @@
 permalink: protect-mysql/restore-mysql-using-powershell-cmdlets.html
 sidebar: sidebar
 keywords: restore, mysql, snapcenter
-summary: 'Restoring a mysql backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
+summary: 'Restoring a MySQL backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
-= Restore mysql database using PowerShell cmdlets
+= Restore MySQL database using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restoring a mysql backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
+Restoring a MySQL backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.
 
 .Before you begin
 

@@ -1,10 +1,10 @@
 ---
 permalink: protect-mysql/clone-mysql-backups-using-powershell-cmdlets.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
+keywords: SnapCenter Plug-in for MySQL
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
-= Clone mysql database backups using PowerShell cmdlets
+= Clone MySQL database backups using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 

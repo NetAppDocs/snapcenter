@@ -1,15 +1,15 @@
 ---
 permalink: protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
-summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone mysql databases.'
+keywords: SnapCenter Plug-in for MySQL
+summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone MySQL databases.'
 ---
-= Create a storage system connection and a credential using PowerShell cmdlets for mysql
+= Create a storage system connection and a credential using PowerShell cmdlets for MySQL
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone mysql databases.
+You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone MySQL databases.
 
 .Before you begin
 

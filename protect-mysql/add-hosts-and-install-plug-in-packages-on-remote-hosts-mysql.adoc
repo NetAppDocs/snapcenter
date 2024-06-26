@@ -77,7 +77,7 @@ Either retain the default port number or specify the port number.    The default
 a|
 Installation Path
 a|
-The Plug-in for mysql is installed on the mysql client host, and this host can be on either a Windows system or a Linux system.
+The Plug-in for MySQL is installed on the MySQL client host, and this host can be on either a Windows system or a Linux system.
 
  ** For the SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter. Optionally, you can customize the path.
  ** For the SnapCenter Plug-ins Package for Linux, the default path is /opt/NetApp/snapcenter. Optionally, you can customize the path.

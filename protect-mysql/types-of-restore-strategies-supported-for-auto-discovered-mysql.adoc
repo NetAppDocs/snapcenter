@@ -1,0 +1,17 @@
+---
+permalink: protect-mysql/types-of-restore-strategies-supported-for-auto-discovered-mysql.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for mysql
+summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for automatically discovered MySQL databases.'
+---
+= Type of restore strategy supported for automatically discovered MySQL
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must define a strategy before you can successfully perform restore operations using SnapCenter. 
+
+Complete resource restore is the restore strategy supported for automatically discovered MySQL databases.  This restores all the volumes, qtrees, and LUNs of a resource.
+
+
+

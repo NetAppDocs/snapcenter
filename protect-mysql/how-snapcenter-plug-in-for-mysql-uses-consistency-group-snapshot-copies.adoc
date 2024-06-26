@@ -1,10 +1,10 @@
 ---
 permalink: protect-mysql/how-snapcenter-plug-in-for-mysql-uses-consistency-group-snapshot-copies.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
+keywords: SnapCenter Plug-in for MySQL
 summary: 'You can use the plug-in to create consistency group snapshots for resource groups. A consistency group is a container that can house multiple volumes so that you can manage them as one entity. A consistency group is simultaneous snapshots of multiple volumes, providing consistent copies of a group of volumes.'
 ---
-= How SnapCenter Plug-in for mysql uses consistency group snapshots 
+= How SnapCenter Plug-in for MySQL uses consistency group snapshots 
 :icons: font
 :imagesdir: ../media/
 

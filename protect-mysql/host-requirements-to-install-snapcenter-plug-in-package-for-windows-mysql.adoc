@@ -1,7 +1,7 @@
 ---
 permalink: protect-mysql/host-requirements-to-install-snapcenter-plug-in-package-for-windows-mysql.html
 sidebar: sidebar
-keywords: mysql
+keywords: MySQL
 summary: 'Before you install the SnapCenter Plug-ins Package for Windows, you should be familiar with some basic host system space requirements and sizing requirements.'
 ---
 = Host requirements to install SnapCenter Plug-ins Package for Windows

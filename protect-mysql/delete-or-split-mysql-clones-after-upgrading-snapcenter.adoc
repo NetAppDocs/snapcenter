@@ -1,10 +1,10 @@
 ---
 permalink: protect-mysql/delete-or-split-mysql-clones-after-upgrading-snapcenter.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql Database
+keywords: SnapCenter Plug-in for MySQL Database
 summary: 'After upgrading to SnapCenter 4.3, you will no longer see the clones. You can delete the clone or split the clones from the Topology page of the resource from which the clones were created.'
 ---
-= Delete or split mysql database clones after upgrading SnapCenter
+= Delete or split MySQL database clones after upgrading SnapCenter
 :icons: font
 :imagesdir: ../media/
 

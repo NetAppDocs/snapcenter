@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: plug-in for IBM Db2
 summary: 'You can cancel backup operations that are queued.'
 ---
-= Cancel backup operations for mysql
+= Cancel backup operations for MySQL
 :icons: font
 :imagesdir: ../media/
 

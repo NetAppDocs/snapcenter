@@ -2,19 +2,19 @@
 permalink: protect-mysql/discover-the-databases-automatically.html
 sidebar: sidebar
 keywords: credentials
-summary: 'Resources are mysql databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the mysql databases that are available.'
+summary: 'Resources are MySQL databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the MySQL databases that are available.'
 ---
 = Discover the databases automatically
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Resources are mysql databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the mysql databases that are available.
+Resources are MySQL databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the MySQL databases that are available.
 
 .Before you begin
 
 * You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
-* SnapCenter Plug-in for mysql does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
+* SnapCenter Plug-in for MySQL does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
 
 .About this task
 

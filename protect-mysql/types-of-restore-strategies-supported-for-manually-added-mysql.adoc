@@ -2,16 +2,16 @@
 permalink: protect-mysql/types-of-restore-strategies-supported-for-manually-added-mysql.html
 sidebar: sidebar
 keywords: SnapCenter
-summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added mysql resources. You cannot recover manually added mysql resources.'
+summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added MySQL resources. You cannot recover manually added MySQL resources.'
 ---
-= Types of restore strategies supported for manually added mysql resources
+= Types of restore strategies supported for manually added MySQL resources
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added mysql resources. 
+You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added MySQL resources. 
 
-NOTE: You cannot recover manually added mysql resources.
+NOTE: You cannot recover manually added MySQL resources.
 
 == Complete resource restore
 

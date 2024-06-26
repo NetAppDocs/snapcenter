@@ -1,19 +1,19 @@
 ---
 permalink: protect-mysql/snapcenter-plug-in-for-mysql-overview.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for mysql
-summary: 'The SnapCenter Plug-in for mysql is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of mysql databases. The Plug-in for mysql Database automates the backup, restore, and cloning of mysql databases in your SnapCenter environment.'
+keywords: SnapCenter Plug-in for MySQL
+summary: 'The SnapCenter Plug-in for MySQL is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of MySQL databases. The Plug-in for MySQL Database automates the backup, restore, and cloning of MySQL databases in your SnapCenter environment.'
 ---
-= SnapCenter Plug-in for mysql overview
+= SnapCenter Plug-in for MySQL overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The SnapCenter Plug-in for mysql Database is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of mysql databases. The Plug-in for mysql Database automates the backup, restore, and cloning of mysql databases in your SnapCenter environment.
+The SnapCenter Plug-in for MySQL Database is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of MySQL databases. The Plug-in for MySQL Database automates the backup, restore, and cloning of MySQL databases in your SnapCenter environment.
 
-SnapCenter supports single instance and multi instance Db2 setups. You can use the Plug-in for mysql Database in both Linux and Windows environments. In Windows environments, Db2 will be supported as manual resource.
+SnapCenter supports single instance and multi instance Db2 setups. You can use the Plug-in for MySQL Database in both Linux and Windows environments. In Windows environments, Db2 will be supported as manual resource.
 
-When the Plug-in for mysql Database is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume. You can also use the plug-in with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance.
+When the Plug-in for MySQL Database is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume. You can also use the plug-in with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance.
 
 SnapCenter Plug-in for Db2 supports NFS and SAN on ONTAP and Azure NetApp File storage layouts.
 
