@@ -24,9 +24,9 @@ entries:
           - title: Type of backups supported
             url: /protect-mysql/type-of-backups-supported.html
           - title: How SnapCenter Plug-in for MySQL uses consistency group Snapshot copies
-            url: /protect-mysql/ how-snapcenter-plug-in-for-mysql-uses-consistency-group-snapshot-copies.html
+            url: /protect-mysql/how-snapcenter-plug-in-for-mysql-uses-consistency-group-snapshot-copies.html
           - title: How SnapCenter manages housekeeping of data backups
-            url: /protect-mysql/housekeeping-of-data-backups.html
+            url: /protect-mysql/housekeeping-of-log-backups.html
           - title: Considerations for determining backup schedules for MySQL
             url: /protect-mysql/considerations-for-determining-backup-schedules-for-mysql.html
           - title: Number of backup jobs needed for MySQL
@@ -40,7 +40,7 @@ entries:
           - title: Types of restore strategies supported for manually added MySQL resources
             url: /protect-mysql/types-of-restore-strategies-supported-for-manually-added-mysql.html
           - title: Types of restore strategies supported for automatically discovered MySQL
-            url: /protect-mysql/ types-of-restore-strategies-supported-for-auto-discovered-mysql.html
+            url: /protect-mysql/types-of-restore-strategies-supported-for-auto-discovered-mysql.html
           - title: Types of restore operations for auto discovered MySQL
             url: /protect-mysql/types-of-restore-performed-for-auto-discovered-mysql.html          
   - title: Prepare to install the SnapCenter Plug-in for MySQL
@@ -48,9 +48,9 @@ entries:
       - title: Installation workflow of SnapCenter Plug-in for MySQL
         url: /protect-mysql/install-snapcenter-plug-in-for-mysql.html
       - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for MySQL
-        url: /protect-mysql/ prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-mysql.html
+        url: /protect-mysql/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-mysql.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-        url: /protect-mysql/ host-requirements-to-install-snapcenter-plug-in-package-for-windows-mysql.html
+        url: /protect-mysql/host-requirements-to-install-snapcenter-plug-in-package-for-windows-mysql.html
       - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
         url: /protect-mysql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
       - title: Set up credentials for the SnapCenter Plug-in for MySQL
@@ -62,9 +62,9 @@ entries:
             - title: Add hosts and install plug-in packages on remote hosts
               url: /protect-mysql/add-hosts-and-install-plug-in-packages-on-remote-hosts-mysql.html
             - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
-              url: /protect-mysql/ install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-mysql.html
+              url: /protect-mysql/install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-mysql.html
             - title: Install the SnapCenter Plug-in for MySQL on Linux hosts by using the command-line interface
-              url: /protect-mysql/ install-the-snapcenter-plug-in-for-mysql-on-linux-hosts-using-the-command-line-interface.html
+              url: /protect-mysql/install-the-snapcenter-plug-in-for-mysql-on-linux-hosts-using-the-command-line-interface.html
             - title: Monitor SnapCenter plug-in package installation status
               url: /protect-mysql/monitor-the-status-of-installing-plugin-for-mysql.html
       - title: Configure CA Certificate
@@ -88,7 +88,7 @@ entries:
       - title: Prerequisites for using the SnapCenter Plug-in for MySQL
         url: /protect-mysql/prerequisites-for-using-snapcenter-plug-in-for-mysql.html
       - title: How resources, resource groups, and policies are used for protecting MySQL
-        url: /protect-mysql/ how-resources-resource-groups-and-policies-are-used-for-protecting-mysql.html
+        url: /protect-mysql/how-resources-resource-groups-and-policies-are-used-for-protecting-mysql.html
   - title: Back up MySQL resources
     entries:
       - title: Back up workflow
@@ -106,7 +106,7 @@ entries:
       - title: Back up resource groups
         url: /protect-mysql/back-up-resource-groups-mysql.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for MySQL
-        url: /protect-mysql/ create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html
+        url: /protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html
       - title: Back up databases using PowerShell cmdlets
         url: /protect-mysql/back-up-databases-using-powershell-cmdlets-mysql.html
       - title: Monitor backup operations

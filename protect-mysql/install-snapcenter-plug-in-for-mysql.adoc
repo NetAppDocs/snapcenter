@@ -1,5 +1,5 @@
 ---
-permalink: protect-mysql/install-snapcenter-plug-in-for-mysql-database.html
+permalink: protect-mysql/install-snapcenter-plug-in-for-mysql.html
 sidebar: sidebar
 keywords: installing
 summary: 'You should install and set up the SnapCenter Plug-in for MySQL if you want to protect MySQL.'
