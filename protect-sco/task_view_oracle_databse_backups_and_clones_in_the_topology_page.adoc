@@ -72,4 +72,4 @@ If the value assigned to SnapmirrorStatusUpdateWaitTime is less, the Mirror and 
 
 The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_.
 
-Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896[SnapCenter Software Command Reference Guide^] or https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
+Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^] or https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide^].
