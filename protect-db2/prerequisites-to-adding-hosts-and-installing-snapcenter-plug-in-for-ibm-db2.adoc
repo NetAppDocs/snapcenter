@@ -57,7 +57,7 @@ Custom path: `<Custom_Directory>\NetApp\SnapCenter\Snapcenter Plug-in Creator\et
 
 Default: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
 
-Custom path: `<Custom_Directory>allowed_commands.config`
+Custom path: `<custom_Directory>/NetApp/snapcenter/scc/etc/allowed_commands.config`
 
 To allow supplemental commands on the plug-in host, open `allowed_commands.config` file in an editor. Enter each command on a separate line. It is not case sensitive.
 For example,

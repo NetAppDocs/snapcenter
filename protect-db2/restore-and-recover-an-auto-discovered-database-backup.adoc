@@ -68,3 +68,6 @@ You must also specify the sender and receiver email addresses and the subject of
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+.After you finish
+Recovery is possible only if the Rollforward status is in "DB pending" status.  This status is applicable to Db2 databases with archive logging enabled.
