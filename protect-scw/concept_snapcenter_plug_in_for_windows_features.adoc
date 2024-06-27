@@ -40,3 +40,4 @@ For FlexClone licensing information, see link:../install/concept_snapcenter_lice
 * Support for iSCSI, Fibre Channel, FCoE, raw device mapping (RDM), Asymmetric LUN Mapping (ALM), VMDK over NFS and VMFS, and virtual FC
 * Support for non-volatile memory express (NVMe) on Windows
 ** Backup, restore, clone, and verification workflows on VMDK layout created on NVMe over TCP/IP.
+* Supports SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]) that enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.

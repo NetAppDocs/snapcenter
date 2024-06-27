@@ -68,6 +68,8 @@ NOTE: You can configure multipathing solution for NVMe devices by setting the na
 
 ** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification workflows are supported on VMDK layout created on NVMe over TCP/IP.
 
+* Supports SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]) that enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
+
 * Supports any non-default user instead of oracle and grid.
 +
 To support the non-default users, you should set the non-default users by modifying the values of the parameters in the *sco.properties* file located at _file  /var/opt/snapcenter/sco/etc/_. 
