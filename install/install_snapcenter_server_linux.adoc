@@ -14,6 +14,9 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 .Before you begin
 
 * If you want to install the SnapCenter Server using non-root user who does not have enough privileges to install SnapCenter, get the sudoers checksum file from the NetApp Support site. You should use appropriate checksum file based on the Linux Version.
+* During the installation of .NET runtime, if the installation fails to resolve the dependencies of _libicu_ library, then install _libicu_ by running the command: `yum install -y libicu`
+* If the installation of SnapCenter Server fails due to the non-availability of _Perl_, then install _Perl_ by running the command: `yum install -y perl` 
+* If the sudo package is not available in SUSE Linux, then install the sudo package to avoid authentication failure.
 * Check the secure Linux status by running the command `sestatus`. If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", perform the following:
 ** Run the command: `sudo semanage port -a -t http_port_t -p tcp <WEBAPP_EXTERNAL_PORT_>`
 +
@@ -30,6 +33,10 @@ If the command return "nothing to do", rerun the command after installing SnapCe
 ***  `mkdir /var/opt/mysqld`
 *** `sudo semanage fcontext -a -t mysqld_var_run_t "/var/opt/mysqld(/.*)?"`
 *** `sudo restorecon -Rv /var/opt/mysqld`
+** The path used for MySQL Data directory is _/INSTALL_DIR/NetApp/snapcenter/SnapManagerWeb/Repository/MySQL/_. Run the following commands to set the permissions for MySQL data directory.
+*** `mkdir -p /INSTALL_DIR/NetApp/snapcenter/SnapManagerWeb/Repository/MySQL`
+*** `sudo semanage fcontext -a -t mysqld_db_t "/INSTALL_DIR/NetApp/snapcenter/SnapManagerWeb/Repository/MySQL(/.*)?"`
+*** `sudo restorecon -Rv /INSTALL_DIR/NetApp/snapcenter/SnapManagerWeb/Repository/MySQL`
 
 
 .About this task
@@ -41,7 +48,7 @@ If the command return "nothing to do", rerun the command after installing SnapCe
 ** Active Directory (Supports only the local users, both root and non-root user with creds)
 ** Key based authentication to log into SnapCenter
 
-*Steps*
+.Steps
 
 . Download the SnapCenter Server installation package *snapcenter_linux_server_(el8/el9/sles15).bin* from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
 . For non-root user installation, add the visudo content specified in *snapcenter_server_checksum_(el8/el9/sles15).txt* available along with the .bin installer.
@@ -86,6 +93,15 @@ Parameters to be passed for installing SnapCenter Server:
 
 |===
 
+.What's next?
+
+* If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", the *nginx* service fails to start. You should run the the following commands:
+** `sudo semanage fcontext -a -t mysqld_db_t "/var/opt/snapceter/certs(/.*)?"`
+** `sudo restorecon -Rv /var/opt/snapcenter/certs/`
+
+* If the Webapp internal port (8147) is not allowed to listen, run the following commands:
+** `ausearch -c 'nginx' --raw | audit2allow -M my-nginx`
+** `semodule -i my-nginx.pp`
 
 
 
