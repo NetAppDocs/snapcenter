@@ -17,14 +17,14 @@ Automatic discovery is not supported on Windows host. You must add Db2 instances
 
 .About this task
 
-Automatic discovery is not supported for the following configurations:
+Manual discovery is not supported for the following configurations:
 
 * RDM and VMDK layouts
 
 .Steps
 
-. In the left navigation pane, select the SnapCenter Plug-in for IBM Db2 from the drop-down list, and then click *Resources*.
-. In the Resources page, click *Add IBM Db2 resources*.
+. In the left navigation pane, select *Resources*, and then select the SnapCenter Plug-in for IBM Db2 from the drop-down list.
+. In the Resources page, click *Add IBM DB2 Resource*.
 . In the Provide Resource Details page, perform the following actions:
 +
 |===

@@ -25,17 +25,12 @@ SnapCenter does not support multiple storage systems with the same name on diffe
 
 .Steps
 
-. Initiate a PowerShell Core connection session by using the Open-SmConnection cmdlet.
-+
-----
-PS C:\> Open-SmConnection
-----
+. Click *SnapCenterPS* to launch the PowerShell Core.
 
 . Create a new connection to the storage system by using the Add-SmStorageConnection cmdlet.
 +
 ----
-PS C:\> Add-SmStorageConnection -Storage test_vs1 -Protocol Https
--Timeout 60
+PS C:\> Add-SmStorageConnection -StorageType DataOntap -Type DataOntap -OntapStorage ‘scsnfssvm’ -Protocol Https -Timeout 60
 ----
 
 . Create a new credential by using the Add-SmCredential cmdlet.
@@ -43,28 +38,33 @@ PS C:\> Add-SmStorageConnection -Storage test_vs1 -Protocol Https
 This example shows how to create a new credential named FinanceAdmin with Windows credentials:
 +
 ----
-PS C:> Add-SmCredential -Name FinanceAdmin -AuthMode Windows
--Credential sddev\administrator
+PS C:\> Add-SmCredential -Name 'FinanceAdmin' -Type Linux -AuthenticationType PasswordBased -Credential db2hostuser -EnableSudoPrevileges:$true
 ----
 
 . Add the IBM Db2 communication host to SnapCenter Server.
 +
+For Linux:
++
 ----
-PS C:> Add-SmHost -HostName 10.232.204.61 -OSType Windows -RunAsName FinanceAdmin -PluginCode db2
+PS C:\> Add-SmHost -HostType Linux -HostName '10.232.204.61' -CredentialName 'defaultcreds'
 ----
-
+For Windows:
++
+----
+PS C:\> Add-SmHost -HostType Windows -HostName '10.232.204.61' -CredentialName 'defaultcreds'
+----
 . Install the package and the SnapCenter Plug-in for IBM Db2 on the host.
 +
 For Linux:
 +
 ----
-PS C:> Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode db2
+PS C:\> Install-SmHostPackage -HostNames '10.232.204.61' -PluginCodes DB2
 ----
 +
 For Windows:
 +
 ----
-Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode db2 -FilesystemCode scw -RunAsName FinanceAdmin
+PS C:\> Install-SmHostPackage -HostNames '10.232.204.61' -PluginCodes DB2,SCW
 ----
 
 . Set the path to the SQLLIB.
@@ -74,8 +74,7 @@ For Windows, Db2 plug-in will use the default path for SQLLIB folder: “C:\Prog
 If you want to override the default path, use the following command.
 +
 ----
-PS C:> Set-SmConfigSettings -Plugin -HostName 10.232.204.61 -PluginCode
-DB2 -configSettings @{“DB2_SQLLIB_CMD” = “<custom_path>\IBM\SQLLIB\BIN”}
+PS C:\> Set-SmConfigSettings -Plugin -HostName '10.232.204.61' -PluginCode DB2 -configSettings @{"DB2_SQLLIB_CMD"="<custom_path>\IBM\SQLLIB\BIN"}
 
 ----
 

@@ -21,7 +21,7 @@ Backing up a database includes establishing a connection with the SnapCenter Ser
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
+PS C:\> Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
 ----
 +
 The username and password prompt is displayed.
@@ -33,7 +33,12 @@ This example shows how to add a IBM Db2 instance:
 ----
 PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
 ----
-
++
+For Db2 Database:
++
+----
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Database -ResourceName SALESDB -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\" -Instance DB2
+----
 . Create a backup policy by using the Add-SmPolicy cmdlet.
 
 . Protect the resource or add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
@@ -43,49 +48,74 @@ PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Inst
 This example shows how to backup a resource group:
 +
 ----
-C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-databases-using-powershell-cmdlets-ibm-db2.adocith_SingleContainer_MultipleContainers_Resources'  -Policy db2_policy1
+C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_with_Db2_Resources' -Policy db2_policy1
 ----
 +
-This example backs up a protected resource:
+This example backs up a Db2 instance:
 +
 ----
-C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="hana"} -Policy db2_policy2
+C:\PS> New-SMBackup -Resources @{"Host"="10.32.212.13";"Uid"="DB2INST1";"PluginName"="DB2"} -Policy db2_policy
+----
++
+This example backs up a Db2 database:
++
+----
+C:\PS> New-SMBackup -Resources @{"Host"="10.32.212.13";"Uid"="DB2INST1\WINARCDB";"PluginName"="DB2"} -Policy db2_policy
 ----
 
 . Monitor the job status (running, completed, or failed) by using the Get-smJobSummaryReport cmdlet.
 +
 ----
-PS C:\> Get-smJobSummaryReport -JobID 123
+PS C:\> Get-SmJobSummaryReport -JobId 467
+
+SmJobId            : 467
+JobCreatedDateTime :
+JobStartDateTime   : 27-Jun-24 01:40:09
+JobEndDateTime     : 27-Jun-24 01:41:15
+JobDuration        : 00:01:06.7013330
+JobName            : Backup of Resource Group 'SCDB201WIN_RAVIR1_OPENLAB_NETAPP_LOCAL_DB2_DB2_WINCIR' with policy 'snapshot-based-db2'
+JobDescription     :
+Status             : Completed
+IsScheduled        : False
+JobError           :
+JobType            : Backup
+PolicyName         : db2_policy
+JobResultData      :
 ----
 
 . Monitor the backup job details like backup ID, backup name to perform restore or clone operation by using the Get-SmBackupReport cmdlet.
 +
 ----
-PS C:\> Get-SmBackupReport -JobId 351
-Output:
-BackedUpObjects           : {DB1}
+PS C:\> Get-SmBackupReport -JobId 467
+
+BackedUpObjects           : {WINCIR}
 FailedObjects             : {}
 IsScheduled               : False
 HasMetadata               : False
-SmBackupId                : 269
-SmJobId                   : 2361
-StartDateTime             : 10/4/2016 11:20:45 PM
-EndDateTime               : 10/4/2016 11:21:32 PM
-Duration                  : 00:00:46.2536470
-CreatedDateTime           : 10/4/2016 11:21:09 PM
+SmBackupId                : 84
+SmJobId                   : 467
+StartDateTime             : 27-Jun-24 01:40:09
+EndDateTime               : 27-Jun-24 01:41:15
+Duration                  : 00:01:06.7013330
+CreatedDateTime           : 27-Jun-24 18:39:45
 Status                    : Completed
-ProtectionGroupName       : Verify_ASUP_Message_windows
-SmProtectionGroupId       : 211
-PolicyName                : test2
-SmPolicyId                : 20
-BackupName                : Verify_ASUP_Message_windows_scc54_10-04-2016_23.20.46.2758
-VerificationStatus        : NotVerified
+ProtectionGroupName       : HOSTFQDN_DB2_DB2_WINCIR
+SmProtectionGroupId       : 23
+PolicyName                : db2_policy
+SmPolicyId                : 13
+BackupName                : HOSTFQDN _DB2_DB2_WINCIR_HOST_06-27-2024_01.40.09.7397
+VerificationStatus        : NotApplicable
 VerificationStatuses      :
 SmJobError                :
 BackupType                : SCC_BACKUP
 CatalogingStatus          : NotApplicable
 CatalogingStatuses        :
 ReportDataCreatedDateTime :
+PluginCode                : SCC
+PluginName                : DB2
+PluginDisplayName         : IBM DB2
+JobTypeId                 :
+JobHost                   : HOSTFQDN
 ----
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].

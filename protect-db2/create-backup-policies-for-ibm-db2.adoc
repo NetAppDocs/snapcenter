@@ -52,8 +52,6 @@ image::../media/backup_settings.gif[]
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 . In the Snapshot settings section, specify the number of snapshots that you want to keep.
- 
-. In the Retention page, specify the retention settings for the backup type and the schedule type selected in the Backup Type page:
 +
 |===
 | If you want to...| Then...
@@ -67,5 +65,5 @@ If the number of snapshots exceeds the specified number, the snapshots are delet
 |===
 +
 IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
-
+. In the Retention and backup page, specify the retention settings for the backup type and the schedule type selected in the Backup Type page:
 . Review the summary, and then click *Finish*.
