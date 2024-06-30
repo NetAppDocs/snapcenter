@@ -1,5 +1,5 @@
 ---
-permalink: protect-db2/restore-and-recover-resources-using-powershell-cmdlets-db2.html
+permalink: protect-db2/restore-resources-using-powershell-cmdlets-db2.html
 sidebar: sidebar
 keywords: restore resources, snapcenter
 summary: 'Restoring a resource backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'

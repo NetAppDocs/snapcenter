@@ -123,14 +123,14 @@ entries:
     entries:
       - title: Restore workflow
         url: /protect-db2/restore-ibm-db2.html
-      - title: Restore and recover a manually added resource backup
-        url: /protect-db2/restore-and-recover-a-manually-added-resource-backup.html
-      - title: Restore and recover an auto discovered database backup
-        url: /protect-db2/restore-and-recover-an-auto-discovered-database-backup.html
+      - title: Restore a manually added resource backup
+        url: /protect-db2/restore-manually-added-resource-backup.html
+      - title: Restore an auto discovered database backup
+        url: /protect-db2/restore-auto-discovered-database-backup.html
       - title: Restore IBM Db2 using PowerShell cmdlets
-        url: /protect-db2/restore-ibm-db2-using-powershell-cmdlets.html
+        url: /protect-db2/restore-ibm-db2-database-using-powershell-cmdlets.html
       - title: Restore resources using PowerShell cmdlets
-        url: /protect-db2/restore-and-recover-resources-using-powershell-cmdlets-db2.html
+        url: /protect-db2/restore-resources-using-powershell-cmdlets-db2.html
       - title: Monitor restore operations
         url: /protect-db2/monitor-db2-restore-operations.html
   - title: Clone IBM Db2 resource backups
