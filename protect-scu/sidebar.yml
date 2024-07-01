@@ -35,7 +35,7 @@ entries:
         url: /protect-scu/task_monitor_unix_file_systems_backup_operations.html
       - title: View protected Unix file systems in the Topology page
         url: /protect-scu/view_protected_unix_file_systems_in_the_topology_page.html
-    - title: Restore and recover Unix file systems
+  - title: Restore and recover Unix file systems
     entries:
       - title: Restore and recover Unix file systems
         url: /protect-scu/task_restore_unix_file_systems.html
