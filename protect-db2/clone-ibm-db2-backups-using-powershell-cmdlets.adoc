@@ -20,7 +20,7 @@ The information regarding the parameters that can be used with the cmdlet and th
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+PS C:\> Open-SmConnection  
 ----
 
 . Retrieve the backups to perform the clone operation by using the Get-SmBackup cmdlet.
@@ -40,9 +40,13 @@ This example shows that two backups are available for cloning:
 +
 This example shows that the backup to be cloned has an NFSExportIPs address of 10.32.212.14:
 +
-----
-PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1\BOOKS"} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneInstance db2inst1 -CloneName BOOKS
-----
+For Db2 database:
++
+PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1\BOOKS"} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneInstance db2inst1 -CloneName BOOKS -NFSExportIPs 10.32.212.14
++
+For Db2 instance:
++
+PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1 "} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneInstance db2inst1 -NFSExportIPs 10.32.212.14
 +
 NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.
 

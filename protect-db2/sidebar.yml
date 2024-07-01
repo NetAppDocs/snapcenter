@@ -129,8 +129,6 @@ entries:
         url: /protect-db2/restore-auto-discovered-database-backup.html
       - title: Restore IBM Db2 using PowerShell cmdlets
         url: /protect-db2/restore-ibm-db2-database-using-powershell-cmdlets.html
-      - title: Restore resources using PowerShell cmdlets
-        url: /protect-db2/restore-resources-using-powershell-cmdlets-db2.html
       - title: Monitor restore operations
         url: /protect-db2/monitor-db2-restore-operations.html
   - title: Clone IBM Db2 resource backups
