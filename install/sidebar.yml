@@ -19,6 +19,8 @@ entries:
         url: /install/reference_connection_and_port_requirements.html
       - title: SnapCenter licenses
         url: /install/concept_snapcenter_licenses.html
+      - title: Register to access the SnapCenter software
+        url: install/register_enable_software_access.html
       - title: Authentication methods for your credentials
         url: /install/concept_authentication_methods_for_your_credentials.html
       - title: Storage Virtual Machine connections and credentials
