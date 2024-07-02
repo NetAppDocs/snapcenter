@@ -44,7 +44,7 @@ entries:
           - title: Types of restore operations for auto discovered PostgreSQL
             url: /protect-postgresql/types-of-restore-performed-for-auto-discovered-postgresql.html
           - title: Types of recovery operations supported for PostgreSQL 
-            url: protect-postgresql/reference_types_of_recovery_operations_supported_for_postgresql.html          
+            url: /protect-postgresql/reference_types_of_recovery_operations_supported_for_postgresql.html          
   - title: Prepare to install the SnapCenter Plug-in for PostgreSQL
     entries:
       - title: Installation workflow of SnapCenter Plug-in for PostgreSQL
