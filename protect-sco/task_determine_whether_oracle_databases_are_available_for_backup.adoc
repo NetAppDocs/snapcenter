@@ -11,7 +11,7 @@ summary: 'Resources are Oracle databases on the host that are managed by SnapCen
 [.lead]
 Resources are Oracle databases on the host that are managed by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available.
 
-*What you'll need*
+.Before you begin
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
 * If the databases reside on a Virtual Machine Disk (VMDK) or raw device mapping (RDM), you must deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
@@ -25,7 +25,7 @@ For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere
 
 You can prevent SnapCenter from discovering non-database entries added in the oratab file.
 
-*Steps*
+.Steps
 
 . After installing the plug-in for Oracle, the root user should create the *sc_oratab.config* file under the directory _/var/opt/snapcenter/sco/etc/_.
 +
@@ -63,7 +63,7 @@ The databases should be at least in the mounted state or above for the discovery
 
 If you have deleted an Oracle database on the host, SnapCenter Server will not be aware and will list the deleted database. You should manually refresh the resources to update the SnapCenter resources list.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.

@@ -44,7 +44,7 @@ a|
 
 NOTE: The MySQL Server buffer pool uses 20 percent of the total RAM.
 a|
-8 GB
+10 GB
 
 a|
 Minimum hard drive space for the SnapCenter Server software and logs

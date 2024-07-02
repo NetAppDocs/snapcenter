@@ -1,19 +1,19 @@
 ---
-permalink: protect-sco/task_view_oracle_databse_backups_and_clones_in_the_topology_page.html
+permalink: protect-scu/view_protected_unix_file_systems_in_the_topology_page.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for Oracle Databases
-summary: 'When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage.'
+keywords: topology, unix file systems, 
+summary: 'When you are preparing to back up, restore, or clone a resource, you might find it helpful to view a graphical representation of all backups, restored file systems, and clones on the primary and secondary storage.'
 ---
-= View Oracle database backups and clones in the Topology page
+= View protected Unix file systems in the Topology page
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage.
+When you are preparing to back up, restore, or clone a resource, you might find it helpful to view a graphical representation of all backups, restored file systems, and clones on the primary and secondary storage.
 
 *About this task*
 
-In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.
+In the Topology page, you can see all the backups, restored file systems, and clones that are available for the selected resource or resource group. You can view the details of those backups, restored file systems, and clones, and then select them to perform data protection operations.
 
 You can review the following icons in the Manage Copies view to determine whether the backups and clones are available on the primary or secondary storage (Mirror copies or Vault copies).
 
@@ -41,13 +41,13 @@ If the resource is protected, the Topology page of the selected resource is disp
 
 . Review the Summary card to see a summary of the number of backups and clones available on the primary and secondary storage.
 +
-The Summary Card section displays the total number of backups and clones and total number of log backups.
+The Summary Card section displays the total number of backups and clones.
 +
 Clicking the *Refresh* button starts a query of the storage to display an accurate count.
 +
 If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP. A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
 +
-When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
+When the file system is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
 +
 For SnapMirror active sync, clicking the *Refresh* button refreshes the SnapCenter backup inventory by querying ONTAP for both primary and replica sites. A weekly schedule also performs this activity for all databases containing SnapMirror active sync relationship.
 +
@@ -59,17 +59,12 @@ For SnapMirror active sync, clicking the *Refresh* button refreshes the SnapCent
 +
 The details of the backups and clones are displayed in a table format.
 
-. Select the backup from the table, and then click the data protection icons to perform restore, clone, mount, unmount, rename, catalog, uncatalog, and delete operations.
+. Select the backup from the table, and then click the data protection icons to perform restore, clone, and delete operations.
 +
 NOTE: You cannot rename or delete backups that are on the secondary storage.
 
- ** If you have selected a log backup, you can only perform rename, mount, unmount, catalog, uncatalog, and delete operations.
- ** If you have cataloged the backup using Oracle Recovery Manager (RMAN), you cannot rename those cataloged backups.
-
 . If you want to delete a clone, select the clone from the table, and then click image:../media/delete_icon.gif[].
 
-If the value assigned to SnapmirrorStatusUpdateWaitTime is less, the Mirror and Vault backup copies are not listed on the topology page even if data and log volumes are successfully protected. You should increase the value assigned to SnapmirrorStatusUpdateWaitTime using _Set-SmConfigSettings_ PowerShell cmdlet.
-
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_.
-
-Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^] or https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide^].
+.Example showing backups and clones on the primary storage
+ 
+image:../media/topology_view_scu.png[topology view of backup and clones in Primary storage.]

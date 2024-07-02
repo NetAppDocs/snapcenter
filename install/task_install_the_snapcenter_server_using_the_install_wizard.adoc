@@ -50,3 +50,20 @@ NOTE: If you click the *Cancel* button, the step that is being executed will be 
 However, if you click *Cancel* when "SnapCenter Server site restart" or "Waiting for SnapCenter Server to start" operations are being performed, installation will proceed without cancelling the operation.
 +
 Log files are always listed (oldest first) in the %temp% folder of the admin user. If you want to redirect the log locations, initiate the SnapCenter Server installation from the command prompt by running:``C:\installer_location\installer_name.exe /log"C:\"``
+
+== Register the product to enable support
+
+If you are new to NetApp products and do not have an existing NetApp account, you should register the product to enable support.
+
+.Steps
+
+. After installing SnapCenter, navigate to *Help > About*.
+. In the _About SnapCenter_ dialog box, make a note of the SnapCenter Instance, a 20 digit number that starts with 971.
+. Click https://register.netapp.com.
+. Click *I am not a registered NetApp Customer*.
+. Specify your details to register yourself.
+. Leave the NetApp Reference SN field blank.
+. Select *SnapCenter* from the Product Line drop-down.
+. Select the billing provider.
+. Enter the 20-digit SnapCenter instance ID.
+. Click *Submit*.
