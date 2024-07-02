@@ -1,10 +1,10 @@
 ---
 permalink: protect-postgresql/delete-or-split-postgresql-clones-after-upgrading-snapcenter.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for PostgreSQL Database
+keywords: SnapCenter Plug-in for PostgreSQL cluster
 summary: 'After upgrading to SnapCenter 4.3, you will no longer see the clones. You can delete the clone or split the clones from the Topology page of the resource from which the clones were created.'
 ---
-= Delete or split PostgreSQL database clones after upgrading SnapCenter
+= Delete or split PostgreSQL cluster clones after upgrading SnapCenter
 :icons: font
 :imagesdir: ../media/
 

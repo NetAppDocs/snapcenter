@@ -15,7 +15,7 @@ If a resource is not yet part of any resource group, you can back up the resourc
 
 * You must have created a backup policy.
 * If you want to back up a resource that has a SnapMirror relationship with a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
-* For Snapshot copy-based backup operation, ensure that all the tenant databases are valid and active.
+* For Snapshot copy-based backup operation, ensure that all the tenant clusters are valid and active.
 * For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the following paths:
 +
 For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_

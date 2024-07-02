@@ -2,7 +2,7 @@
 permalink: protect-postgresql/create-backup-policies-for-postgresql.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
-summary: 'Before you use SnapCenter to back up PostgreSQL database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
+summary: 'Before you use SnapCenter to back up PostgreSQL cluster resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
 ---
 = Create backup policies for PostgreSQL
 :icons: font
@@ -15,7 +15,7 @@ Before you use SnapCenter to back up PostgreSQL resources, you must create a bac
 
 * You must have defined your backup strategy.
 +
-For details, see the information about defining a data protection strategy for PostgreSQL databases.
+For details, see the information about defining a data protection strategy for PostgreSQL clusters.
 * You must have prepared for data protection by completing tasks such as installing SnapCenter, adding hosts, setting up storage system connections, and adding resources.
 * The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating snapshots to a mirror or vault.
 +

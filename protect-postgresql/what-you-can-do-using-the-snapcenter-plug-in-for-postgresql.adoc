@@ -9,9 +9,9 @@ summary: 'When you install the Plug-in for PostgreSQL in your environment, you c
 :imagesdir: ../media/
 
 [.lead]
-When you install the Plug-in for PostgreSQL Database in your environment, you can use SnapCenter to back up, restore, and clone PostgreSQL databases and their resources. You can also perform tasks supporting those operations.
+When you install the Plug-in for PostgreSQL cluster in your environment, you can use SnapCenter to back up, restore, and clone PostgreSQL clusters and their resources. You can also perform tasks supporting those operations.
 
-* Add databases.
+* Add clusters.
 * Create backups.
 * Restore from backups.
 * Clone backups.

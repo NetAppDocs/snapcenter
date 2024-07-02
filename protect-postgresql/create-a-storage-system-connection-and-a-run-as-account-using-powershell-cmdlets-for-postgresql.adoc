@@ -2,14 +2,14 @@
 permalink: protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
-summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone PostgreSQL databases.'
+summary: 'You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone PostgreSQL clusters.'
 ---
 = Create a storage system connection and a credential using PowerShell cmdlets for PostgreSQL
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone PostgreSQL databases.
+You must create a storage virtual machine (SVM) connection and a credential before using PowerShell cmdlets to back up, restore, or clone PostgreSQL clusters.
 
 .Before you begin
 
@@ -17,7 +17,7 @@ You must create a storage virtual machine (SVM) connection and a credential befo
 * You should have the required permissions in the Infrastructure Admin role to create storage connections.
 * You should ensure that the plug-in installations are not in progress.
 +
-Host plug-in installations must not be in progress while adding a storage system connection because the host cache might not be updated and databases status might be displayed in the SnapCenter GUI as "`Not available for backup`" or "`Not on NetApp storage`".
+Host plug-in installations must not be in progress while adding a storage system connection because the host cache might not be updated and clusters status might be displayed in the SnapCenter GUI as "`Not available for backup`" or "`Not on NetApp storage`".
 
 * Storage system names should be unique.
 +

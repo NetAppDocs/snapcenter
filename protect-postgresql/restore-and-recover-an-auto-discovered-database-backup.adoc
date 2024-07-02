@@ -1,10 +1,10 @@
 ---
-permalink: protect-postgresql/restore-and-recover-an-auto-discovered-database-backup.html
+permalink: protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
-= Restore and recover an auto discovered database backup
+= Restore and recover an auto discovered cluster backup
 :icons: font
 :imagesdir: ../media/
 
@@ -50,7 +50,7 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the PostgreSQL database.
+. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the PostgreSQL cluster.
 
 . In the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
 +

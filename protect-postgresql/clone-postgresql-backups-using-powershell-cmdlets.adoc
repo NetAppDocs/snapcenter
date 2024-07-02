@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
-= Clone PostgreSQL database backups using PowerShell cmdlets
+= Clone PostgreSQL cluster backups using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 

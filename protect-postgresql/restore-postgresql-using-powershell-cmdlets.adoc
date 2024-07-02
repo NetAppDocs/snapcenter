@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore, postgresql, snapcenter
 summary: 'Restoring a PostgreSQL backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
-= Restore PostgreSQL database using PowerShell cmdlets
+= Restore PostgreSQL cluster using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 
@@ -72,24 +72,24 @@ SmBackupId           : 113
 
 . Start the recovery process in the HANA studio.
 +
-The database is shut down.
+The cluster is shut down.
 
 . Restore data from the backup by using the Restore-SmBackup cmdlet.
 +
-NOTE: AppObjectId is "Host\Plugin\UID", where UID = <instance_name> is for manually discovered PostgreSQL instance resource and UID = <instance_name>\<databse_name> is for PostgreSQL database resource. You can get the ResourceID from the Get-smResources cmdlet.
+NOTE: AppObjectId is "Host\Plugin\UID", where UID = <instance_name> is for manually discovered PostgreSQL instance resource and UID = <instance_name>\<databse_name> is for PostgreSQL cluster resource. You can get the ResourceID from the Get-smResources cmdlet.
 
 +
 ----
 Get-smResources  -HostName cn24.sccore.test.com  -PluginCode PostgreSQL
 ----
 +
-This example shows how to restore the database from the primary storage:
+This example shows how to restore the cluster from the primary storage:
 +
 ----
 Restore-SmBackup -PluginCode PostgreSQL -AppObjectId cn24.sccore.test.com\PostgreSQL\PostgreSQLinst1\DB01 -BackupId 3
 ----
 +
-This example shows how to restore the database from the secondary storage:
+This example shows how to restore the cluster from the secondary storage:
 +
 ----
 Restore-SmBackup -PluginCode 'PostgreSQL' -AppObjectId cn24.sccore.test.com\DB2\db2inst1\DB01 -BackupId 399 -Confirm:$false  -Archive @( @{"Primary"="<Primary Vserver>:<PrimaryVolume>";"Secondary"="<Secondary Vserver>:<SecondaryVolume>"})

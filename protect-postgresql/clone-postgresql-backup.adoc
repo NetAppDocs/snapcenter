@@ -56,9 +56,9 @@ Choose a host on which the clone should be created.
 a|
 Clone suffix
 a|
-Enter a suffix that will be appended to the clone file name to identify that the database is a clone.
+Enter a suffix that will be appended to the clone file name to identify that the cluster is a clone.
 
-For example, _db1_clone_. If you are cloning to the same location as the original database, you must provide a suffix to differentiate the cloned database from the original database. Otherwise, the operation fails.
+For example, _db1_clone_. If you are cloning to the same location as the original cluster, you must provide a suffix to differentiate the cloned cluster from the original cluster. Otherwise, the operation fails.
 a|
 NFS Export IP Address
 a|
@@ -70,8 +70,8 @@ Enter IP addresses or the host names on which the cloned volumes will be exporte
 NOTE: The scripts are run on the plug-in host.
 
  .. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
-  *** Pre clone command: delete existing databases with the same name
-  *** Post clone command: verify a database or start a database.
+  *** Pre clone command: delete existing clusters with the same name
+  *** Post clone command: verify a cluster or start a cluster.
  .. Enter the mount command to mount a file system to a host.
 +
 Mount command for a volume or qtree on a Linux machine:

@@ -1,25 +1,25 @@
 ---
-permalink: protect-postgresql/discover-the-databases-automatically.html
+permalink: protect-postgresql/discover-the-clusters-automatically.html
 sidebar: sidebar
 keywords: credentials
-summary: 'Resources are PostgreSQL databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the PostgreSQL databases that are available.'
+summary: 'Resources are PostgreSQL clusters on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the PostgreSQL clusters that are available.'
 ---
-= Discover the databases automatically
+= Discover the clusters automatically
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Resources are PostgreSQL databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the PostgreSQL databases that are available.
+Resources are PostgreSQL clusters on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the PostgreSQL clusters that are available.
 
 .Before you begin
 
 * You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
-* SnapCenter Plug-in for PostgreSQL does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
+* SnapCenter Plug-in for PostgreSQL does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the clusters manually.
 
 .About this task
 
-* After installing the plug-in, all the databases on that Linux host are automatically discovered and displayed on the Resources page.
-* Only databases are auto-discovered.
+* After installing the plug-in, all the clusters on that Linux host are automatically discovered and displayed on the Resources page.
+* Only clusters are auto-discovered.
 
 The automatically discovered resources cannot be modified or deleted.
 
@@ -35,10 +35,10 @@ You can then click *image:../media/filter_icon.png[filter icon]* to close the fi
 +
 The resources are displayed along with information such as resource type, host name, associated resource groups, backup type, policies and overall status.
 
-* If the database is on a NetApp storage and not protected, then Not protected is displayed in the Overall Status column.
-* If the database is on a NetApp storage system and protected, and if there is no backup operation performed, then Backup not run is displayed in the Overall Status column. The status will otherwise change to Backup failed or Backup succeeded based on the last backup status.
+* If the cluster is on a NetApp storage and not protected, then Not protected is displayed in the Overall Status column.
+* If the cluster is on a NetApp storage system and protected, and if there is no backup operation performed, then Backup not run is displayed in the Overall Status column. The status will otherwise change to Backup failed or Backup succeeded based on the last backup status.
 
-IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+IMPORTANT: You must refresh the resources if the clusters are renamed outside of SnapCenter.
 //Included the above statement in 4.6 for BURT 1446035
 
 

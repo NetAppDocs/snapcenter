@@ -9,7 +9,7 @@ summary: 'Automatic discovery is not supported for certain PostgreSQL instances.
 :imagesdir: ../media/
 
 [.lead]
-Automatic discovery is not supported on Windows host. You must add Postgresql instances and database resources manually.
+Automatic discovery is not supported on Windows host. You must add Postgresql cluster resources manually.
 
 .Before you begin
 
@@ -33,7 +33,7 @@ Automatic discovery is not supported for the following configurations:
 a|
 Name
 a|
-Specify the database name.
+Specify the cluster name.
 a|
 Host Name
 a|
@@ -41,11 +41,11 @@ Enter the host name.
 a|
 Type
 a|
-Select database or instance.
+Select cluster.
 a|
 Instance
 a|
-Specify the name of the instance, which is the parent of the database.
+Specify the name of the instance, which is the parent of the cluster.
 a|
 Credentials
 a|
@@ -62,12 +62,12 @@ Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]*
 
 . Review the summary, and then click *Finish*.
 +
-The databases are displayed along with information such as the host name, associated resource groups and policies, and overall status
+The clusters are displayed along with information such as the host name, associated resource groups and policies, and overall status
 
 If you want to provide users access to resources, you must assign the resources to the users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
 
 link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
 
-After adding the databases, you can modify the PostgreSQL database details.
+After adding the clusters, you can modify the PostgreSQL cluster details.
 
 

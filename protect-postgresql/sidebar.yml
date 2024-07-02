@@ -93,8 +93,8 @@ entries:
     entries:
       - title: Back up workflow
         url: /protect-postgresql/back-up-postgresql-resources.html      
-      - title: Discover the databases automatically
-        url: /protect-postgresql/discover-the-databases-automatically.html          
+      - title: Discover the clusters automatically
+        url: /protect-postgresql/discover-the-clusters-automatically.html          
       - title: Add resources manually to the plug-in host
         url: /protect-postgresql/add-resources-manually-to-the-plug-in-host.html
       - title: Create backup policies for PostgreSQL
@@ -107,8 +107,8 @@ entries:
         url: /protect-postgresql/back-up-resource-groups-postgresql.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for PostgreSQL
         url: /protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
-      - title: Back up databases using PowerShell cmdlets
-        url: /protect-postgresql/back-up-databases-using-powershell-cmdlets-postgresql.html
+      - title: Back up clusters using PowerShell cmdlets
+        url: /protect-postgresql/back-up-clusters-using-powershell-cmdlets-postgresql.html
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page
@@ -117,16 +117,16 @@ entries:
             url: /protect-postgresql/monitor-dataprotection-operations-on-postgresql-in-the-activity-pane.html
       - title: Cancel the backup operations
         url: /protect-postgresql/cancel-backup-operations-for-postgresql.html
-      - title: View PostgreSQL database backups and clones in the Topology page
-        url: /protect-postgresql/view-postgresql-database-backups-and-clones-in-the-topology-page.html
+      - title: View PostgreSQL cluster backups and clones in the Topology page
+        url: /protect-postgresql/view-postgresql-cluster-backups-and-clones-in-the-topology-page.html
   - title: Restore PostgreSQL
     entries:
       - title: Restore workflow
         url: /protect-postgresql/restore-postgresql.html
       - title: Restore and recover a manually added resource backup
         url: /protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html
-      - title: Restore and recover an auto discovered database backup
-        url: /protect-postgresql/restore-and-recover-an-auto-discovered-database-backup.html
+      - title: Restore and recover an auto discovered cluster backup
+        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html
       - title: Restore PostgreSQL using PowerShell cmdlets
         url: /protect-postgresql/restore-postgresql-using-powershell-cmdlets.html
       - title: Restore resources using PowerShell cmdlets
@@ -137,13 +137,13 @@ entries:
     entries:
       - title: Clone workflow
         url: /protect-postgresql/clone-postgresql-resource-backups.html
-      - title: Clone a PostgreSQL database backup
+      - title: Clone a PostgreSQL cluster backup
         url: /protect-postgresql/clone-postgresql-backup.html
-      - title: Clone PostgreSQL database backups using PowerShell cmdlets
+      - title: Clone PostgreSQL cluster backups using PowerShell cmdlets
         url: /protect-postgresql/clone-postgresql-backups-using-powershell-cmdlets.html
       - title: Monitor clone operations in SnapCenter
         url: /protect-postgresql/monitor-postgresql-clone-operations.html
       - title: Split a clone
         url: /protect-postgresql/split-a-clone-for-postgresql.html
-      - title: Delete or split PostgreSQL database clones after upgrading SnapCenter
+      - title: Delete or split PostgreSQL cluster clones after upgrading SnapCenter
         url: /protect-postgresql/delete-or-split-postgresql-clones-after-upgrading-snapcenter.html

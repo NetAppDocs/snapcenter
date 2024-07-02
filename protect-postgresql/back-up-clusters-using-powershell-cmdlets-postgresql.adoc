@@ -1,15 +1,15 @@
 ---
-permalink: protect-postgresql/back-up-databases-using-powershell-cmdlets-postgresql.html
+permalink: protect-postgresql/back-up-clusters-using-powershell-cmdlets-postgresql.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
-summary: 'Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
+summary: 'Backing up a cluster includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
 ---
-= Back up databases using PowerShell cmdlets
+= Back up clusters using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
+Backing up a cluster includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
 
 .Before you begin
 
@@ -43,7 +43,7 @@ PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode PostgreSQL -ResourceTy
 This example shows how to backup a resource group:
 +
 ----
-C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-databases-using-powershell-cmdlets-ibm-db2.adocith_SingleContainer_MultipleContainers_Resources'  -Policy db2_policy1
+C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-clusters-using-powershell-cmdlets-ibm-db2.adocith_SingleContainer_MultipleContainers_Resources'  -Policy db2_policy1
 ----
 +
 This example backs up a protected resource:

@@ -48,7 +48,7 @@ The resource topology page is displayed.
 image::../media/restoring_resource.gif[restoring resources]
 
 . In the Restore Scope page, select *Complete Resource*.
- .. If you select *Complete Resource*, all of the configured data volumes of the PostgreSQL database are restored.
+ .. If you select *Complete Resource*, all of the configured data volumes of the PostgreSQL cluster are restored.
 +
 If the resource contains volumes or qtrees, the Snapshots taken after the Snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
 +
