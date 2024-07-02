@@ -20,18 +20,8 @@ image::../media/upgrade_workflow.png[]
 |===
 | If you are on SnapCenter Server version... | You can directly upgrade SnapCenter Server to... | Supported plug-in versions
 
-.2+| 4.7
-|4.8
-a|
-* 4.7
-* 4.8
-
-| 4.9
-a|
-* 4.9
-
 .2+| 4.8
-| 4.9
+|4.9
 a|
 * 4.8
 * 4.9
@@ -40,14 +30,24 @@ a|
 a|
 * 5.0
 
-| 4.9
-a| 5.0
-
+.2+| 4.9
+| 5.0
 a|
 * 4.9
 * 5.0
+
+| 6.0
+a|
+* 6.0
+
+| 5.0
+a| 6.0
+
+a|
+* 5.0
+* 6.0
 |===
 
-IMPORTANT: For example, if you are on SnapCenter version 4.7 and want to upgrade to 5.0, you should first upgrade to 4.8 and then do a rolling upgrade to 5.0.
+IMPORTANT: For example, if you are on SnapCenter version 4.8 and want to upgrade to 6.0, you should first upgrade to 4.9 and then do a rolling upgrade to 6.0.
 
 NOTE: For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
