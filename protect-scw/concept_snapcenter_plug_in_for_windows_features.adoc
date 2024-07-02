@@ -38,6 +38,8 @@ For FlexClone licensing information, see link:../install/concept_snapcenter_lice
 * Support for backup of file systems and virtual machine disks (VMDKs)
 * Support for physical and virtualized infrastructures
 * Support for iSCSI, Fibre Channel, FCoE, raw device mapping (RDM), Asymmetric LUN Mapping (ALM), VMDK over NFS and VMFS, and virtual FC
-* Support for non-volatile memory express (NVMe) on Windows
+* Support for non-volatile memory express (NVMe) on Windows 11 and Windows Server 2022
 ** Backup, restore, clone, and verification workflows on VMDK layout created on NVMe over TCP/IP.
+** Supports NVMe firmware version 1.3 starting from ESX 8.0 update 2 and requires Virtual hardware version 21.
+** Windows Server Failover Clustering (WSFC) is not supported for applications over VMDK on NVMe over TCP/IP.
 * Supports SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]) that enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.

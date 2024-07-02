@@ -54,6 +54,7 @@ Enabled by default, the SLM feature periodically discovers the LUNs that do not 
 For information about SLM, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^].
 
 * Support for non-volatile memory express (NVMe) on Linux
++
 ** NVMe util should be installed on the host.
 +
 You must install NVMe util to clone or mount to alternate host.
