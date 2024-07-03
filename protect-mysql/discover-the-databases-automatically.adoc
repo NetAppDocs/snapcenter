@@ -1,0 +1,44 @@
+---
+permalink: protect-mysql/discover-the-databases-automatically.html
+sidebar: sidebar
+keywords: credentials
+summary: 'Resources are MySQL databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the MySQL databases that are available.'
+---
+= Discover the databases automatically
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Resources are MySQL databases on the Linux host that are managed by SnapCenter. You can add the resources to resource groups to perform data protection operations after you discover the MySQL databases that are available.
+
+.Before you begin
+
+* You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
+* SnapCenter Plug-in for MySQL does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
+
+.About this task
+
+* After installing the plug-in, all the databases on that Linux host are automatically discovered and displayed on the Resources page.
+* Only databases are auto-discovered.
+
+The automatically discovered resources cannot be modified or deleted.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the Plug-in for IBM Db2 from the list.
+. In the Resources page select the resource type from the View list.
+. (Optional) Click *image:../media/filter_icon.png[filter icon]*, and then select the host name.
++
+You can then click *image:../media/filter_icon.png[filter icon]* to close the filter pane.
+
+. Click *Refresh Resources* to discover the resources available on the host.
++
+The resources are displayed along with information such as resource type, host name, associated resource groups, backup type, policies and overall status.
+
+* If the database is on a NetApp storage and not protected, then Not protected is displayed in the Overall Status column.
+* If the database is on a NetApp storage system and protected, and if there is no backup operation performed, then Backup not run is displayed in the Overall Status column. The status will otherwise change to Backup failed or Backup succeeded based on the last backup status.
+
+IMPORTANT: You must refresh the resources if the databases are renamed outside of SnapCenter.
+//Included the above statement in 4.6 for BURT 1446035
+
+

@@ -1,0 +1,12 @@
+---
+permalink: protect-postgresql/monitor-dataprotection-operations-on-postgresql-in-the-activity-pane.html
+sidebar: sidebar
+keywords: SnapCenter Server
+summary: 'The Activity pane displays the five most recent operations performed. The Activity pane also displays when the operation was initiated and the status of the operation.'
+---
+= Monitor data protection operations on PostgreSQL clusters in the Activity pane
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]

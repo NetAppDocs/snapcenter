@@ -1,0 +1,17 @@
+---
+permalink: protect-postgresql/types-of-restore-strategies-supported-for-auto-discovered-postgresql.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for postgresql
+summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for automatically discovered PostgreSQL clusters.'
+---
+= Type of restore strategy supported for automatically discovered PostgreSQL
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must define a strategy before you can successfully perform restore operations using SnapCenter. 
+
+Complete resource restore is the restore strategy supported for automatically discovered PostgreSQL clusters.  This restores all the volumes, qtrees, and LUNs of a resource.
+
+
+

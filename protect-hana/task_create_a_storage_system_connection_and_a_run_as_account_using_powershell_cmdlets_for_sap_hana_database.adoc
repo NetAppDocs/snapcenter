@@ -34,8 +34,7 @@ PS C:\> Open-SmStorageConnection
 . Create a new connection to the storage system by using the Add-SmStorageConnection cmdlet.
 +
 ----
-PS C:\> Add-SmStorageConnection -Storage test_vs1 -Protocol Https
--Timeout 60
+PS C:\> Add-SmStorageConnection -StorageType DataOntap -Type DataOntap -OntapStorage ‘scsnfssvm’ -Protocol Https -Timeout 60
 ----
 
 . Create a new credential by using the Add-SmCredential cmdlet.

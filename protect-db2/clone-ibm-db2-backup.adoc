@@ -1,0 +1,102 @@
+---
+permalink: protect-db2/clone-ibm-db2-backup.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for IBM Db2,run as
+summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'
+---
+= Clone a IBM Db2 backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.
+
+.Before you begin
+
+* You should have backed up the resources or resource group.
+* You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
+* For pre clone or post clone commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
++
+For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
++
+For Linux: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
+
+NOTE: If the commands do not exist in the command list, then the operation will fail.
+
+.About this task
+
+* For information about clone split operation limitations, see http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
+
+* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, filter resources from the *View* drop-down list based on resource type.
++
+The resources are displayed along with information such as type, host, associated resource groups and policies, and status.
+
+. Select the resource or resource group.
++
+You must select a resource if you select a resource group.
++
+The resource or resource group topology page is displayed.
+
+. From the Manage Copies view, select *Backups* either from the primary or secondary (mirrored or vaulted) storage systems.
+. Select the data backup from the table, and then click image:../media/clone_icon.gif[clone icon].
+. In the Location page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Clone server
+a|
+Choose a host on which the clone should be created.
+a|
+Target Clone Instance
+a|
+Enter the target Db2 clone instance ID to clone from the existing backups.
+a|
+Target Clone Name
+a|
+Enter the name of the clone.
+
+This is applicable only for Db2 database resource.
+a|
+NFS Export IP Address
+a|
+Enter IP addresses or the host names on which the cloned volumes will be exported.
+
+This is applicable only to NFS storage type resource.
+a|
+Capacity Pool Max. Throughput (MiB/s) 
+a|
+Enter the maximum throughput of a capacity pool. 
+
+This is applicable only for ANF storage type resource.
+|===
+
+. In the Scripts page, perform the following steps:
++
+NOTE: The scripts are run on the plug-in host.
+
+ .. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
+  *** Pre clone command: delete existing databases with the same name
+  *** Post clone command: verify a database or start a database.
+ .. Enter the mount command to mount a file system to a host.
++
+Mount command for a volume or qtree on a Linux machine:
++
+Example for NFS:
++
+  mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt
++
+NOTE: For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_ for Windows.
+
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email.
+
+. Review the summary, and then click *Finish*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
