@@ -21,7 +21,7 @@ Backing up a cluster includes establishing a connection with the SnapCenter Serv
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
+PS C:\> Open-SmConnection 
 ----
 +
 The username and password prompt is displayed.

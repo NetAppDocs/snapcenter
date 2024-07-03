@@ -68,6 +68,11 @@ If you want to provide users access to resources, you must assign the resources 
 
 link:https://docs.netapp.com/us-en/snapcenter/install/task_add_a_user_or_group_and_assign_role_and_assets.html[Add a user or group and assign role and assets]
 
-After adding the clusters, you can modify the PostgreSQL cluster details.
+.After you finish
+
+. After adding the clusters, you can modify the PostgreSQL cluster details.
+. The migrated resources (tablespace and clusters) from SnapCenter 5.0 will be tagged as PostgreSQL cluster type in SnapCenter 6.0.
+. When you modify the migrated manual resources, you must add the custom key-value pair.
+
 
 

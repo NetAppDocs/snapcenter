@@ -37,7 +37,7 @@ This example shows that two backups are available for cloning:
 ----
 
 . Initiate a clone operation from an existing backup and specify the NFS export IP addresses on which the cloned volumes are exported.
-+
+
 This example shows that the backup to be cloned has an NFSExportIPs address of 10.32.212.14:
 +
 For Db2 database:
