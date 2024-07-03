@@ -1,5 +1,5 @@
 ---
-permalink: protect-postgresql/reference_types_of_recovery_operations_supported_for_postgresql.html
+permalink: protect-postgresql/types_of_recovery_operations_supported_for_postgresql.html
 sidebar: sidebar
 keywords: recovery operations
 summary: 'SnapCenter enables you to perform different types of recovery operations for PostgreSQL.'
