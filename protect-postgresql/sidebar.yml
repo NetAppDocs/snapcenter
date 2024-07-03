@@ -1,7 +1,7 @@
 section: protect-postgresql
 title: Protect PostgreSQL
 entries:
-  - title: SnapCenter Plug-in for postgresql 
+  - title: SnapCenter Plug-in for PostgreSQL 
     entries:
       - title: SnapCenter Plug-in for PostgreSQL overview
         url: /protect-postgresql/snapcenter-plug-in-for-postgresql-overview.html 
