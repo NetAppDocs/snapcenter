@@ -31,7 +31,7 @@ The default GUI URL is a secure connection to the default port 8146 on the serve
 For High Availability (HA) deployment, you must access SnapCenter using the virtual cluster IP _\https://Virtual_Cluster_IP_or_FQDN:8146_. If you do not see the SnapCenter UI when you navigate to _\https://Virtual_Cluster_IP_or_FQDN:8146_ in Internet Explorer (IE), you must add the Virtual Cluster IP address or FQDN as a trusted site in IE on each plug-in host, or you must disable IE Enhanced Security on each plug-in host.
 For more information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_access_cluster_IP_address_from_outside_network[Unable to access cluster IP address from outside network^].
 
-In addition to using the SnapCenter GUI, you can use PowerShell cmdlets to create scripts to perform configuration, backup, and restore operations. Some cmdlets might have changed with each SnapCenter release. The https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^] has the details.
+In addition to using the SnapCenter GUI, you can use PowerShell cmdlets to create scripts to perform configuration, backup, and restore operations. Some cmdlets might have changed with each SnapCenter release. The https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide^] has the details.
 
 NOTE: If you are logging in to SnapCenter for the first time, you must log in using the credentials that you provided during the install process.
 

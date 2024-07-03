@@ -19,7 +19,11 @@ If a resource is not yet part of any resource group, you can back up the resourc
 
 * For gMSA authentication, you must setup gMSA while registering the host with SnapCenter in the *Add Host* or *Modify Host* page to enable and use the gMSA.
 
-* If the host is added with gMSA and if the gMSA has login and system admin privileges, the gMSA will be used to connect to the SQL instance.
+* If the host is added with gMSA and if the gMSA has login and system admin privileges, then gMSA is allowed to connect to the SQL instance.
++
+** SnapCenter will verify whether authentication for SQL instances is configured. If the authentication is configured, the SQL instance will be accessed using this credential.
+** If the authentication is not configured, use gMSA to see if the SQL plug-in is currently operating. If the plug-in is operating, it will be used to establish a connection to the SQL instance. 
+** The SQL instance will be accessed via Windows credentials authentication when both authentication for SQL instances is not configured and the plug-in is not operational.
 
 .Steps
 

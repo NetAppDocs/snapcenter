@@ -14,7 +14,8 @@ You can download the SnapCenter software from the NetApp Support site and instal
 
 .Before you begin
 
-Ensure that the Azure Windows virtual machine meets the requirements for SnapCenter Server installation. For information, see link:../install/reference_domain_and_workgroup_requirements.html[Prepare for installing the SnapCenter Server].
+* Ensure that the Azure Windows virtual machine meets the requirements for SnapCenter Server installation. For information, see link:../install/reference_domain_and_workgroup_requirements.html[Prepare for installing the SnapCenter Server].
+* If you are new to Azure NetApp Files and do not have an existing NetApp account, ensure that you have registered so that you can access the SnapCenter Software.
 
 .Steps
 
@@ -34,4 +35,21 @@ If you have specified any values that are invalid, appropriate error messages wi
 NOTE: If you click the *Cancel* button, the step that is being executed will be completed, and then start the rollback operation. The SnapCenter Server will be completely removed from the host.
 +
 However, if you click *Cancel* when "SnapCenter Server site restart" or "Waiting for SnapCenter Server to start" operations are being performed, installation will proceed without cancelling the operation.
+
+== Register the product to enable support
+
+If you are new to NetApp and do not have an existing NetApp account, you should register the product to enable support.
+
+.Steps
+
+. After installing SnapCenter, navigate to *Help > About*.
+. In the _About SnapCenter_ dialog box, make a note of the SnapCenter Instance, a 20 digit number that starts with 971.
+. Click https://register.netapp.com.
+. Click *I am not a registered NetApp Customer*.
+. Specify your details to register yourself.
+. Leave the NetApp Reference SN field blank.
+. Select *SnapCenter* from the Product Line drop-down.
+. Select the billing provider.
+. Enter the 20-digit SnapCenter instance ID.
+. Click *Submit*.
 

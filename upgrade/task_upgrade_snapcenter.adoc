@@ -69,7 +69,7 @@ At any stage if you click the *Cancel* button, the upgrade workflow will be canc
 
 .After you finish
 
-* If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\oracle_checksum.txt_ to update the _/etc/sudoers_ file.
+* If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\sc_unix_plugins_checksum.txt_ to update the _/etc/sudoers_ file.
 * You should perform a fresh discovery of resources on the hosts.
 +
 If the status of the host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.

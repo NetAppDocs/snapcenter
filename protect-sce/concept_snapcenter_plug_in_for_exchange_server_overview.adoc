@@ -17,3 +17,7 @@ If you want to restore and recover mails or mailbox instead of the complete Exch
 NetApp® Single Mailbox Recovery has come to the end of availability (EOA) on May 12, 2023. NetApp will continue to support customers that have purchased mailbox capacity, maintenance, and support through marketing part numbers introduced on June 24, 2020, for the duration of the support entitlement. 
 
 NetApp Single Mailbox Recovery is a partner product provided by Ontrack. Ontrack PowerControls offers capabilities that are similar to those of NetApp Single Mailbox Recovery. Customers can procure new Ontrack PowerControls software licenses and Ontrack PowerControls maintenance and support renewals from Ontrack (through licensingteam@ontrack.com) for granular mailbox recovery.
+
+The Plug-in for Exchange supports SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]) that enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
+
+It supports the asymmetric, failover, or non-duplex mode of SnapMirror Active Sync. This refers to the solution where the optimized path is only from the primary side LUN owning node. Any I/O coming on the secondary cluster paths is served by proxying it over to the primary cluster. Synchronous replication is uni-directional, in the direction of primary to secondary.

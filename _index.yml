@@ -4,7 +4,7 @@ indexpage:
     - title: Get started
       links:
         - title: Release notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886893
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468
         - title: Learn about SnapCenter
           url: /concept/concept_snapcenter_overview.html
         - title: Quick reference to protect SQL Server databases
@@ -17,6 +17,8 @@ indexpage:
           url: /install/concept_snapcenter_licenses.html
         - title: Configure ports
           url: /install/reference_connection_and_port_requirements.html
+        - title: Register to access the SnapCenter software
+          url: /install/register_enable_software_access.html
         - title: Install the SnapCenter Server on Windows host
           url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
         - title: Install the SnapCenter Server on Linux host
@@ -76,9 +78,9 @@ indexpage:
     - title: More resources
       links:
         - title: Cmdlet Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469
         - title: Command Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470
         - title: Documentation for earlier versions of SnapCenter
           url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
         - title: NetApp Knowledge Base - SnapCenter
