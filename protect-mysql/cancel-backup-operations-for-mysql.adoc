@@ -1,7 +1,7 @@
 ---
 permalink: protect-mysql/cancel-backup-operations-for-mysql.html
 sidebar: sidebar
-keywords: plug-in for IBM Db2
+keywords: Plug-in for MySQL
 summary: 'You can cancel backup operations that are queued.'
 ---
 = Cancel backup operations for MySQL

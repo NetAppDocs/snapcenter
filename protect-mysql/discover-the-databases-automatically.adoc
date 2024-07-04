@@ -25,7 +25,7 @@ The automatically discovered resources cannot be modified or deleted.
 
 .Steps
 
-. In the left navigation pane, click *Resources*, and then select the Plug-in for IBM Db2 from the list.
+. In the left navigation pane, click *Resources*, and then select the Plug-in for MySQL from the list.
 . In the Resources page select the resource type from the View list.
 . (Optional) Click *image:../media/filter_icon.png[filter icon]*, and then select the host name.
 +

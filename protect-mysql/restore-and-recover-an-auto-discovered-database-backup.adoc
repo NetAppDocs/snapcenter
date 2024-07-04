@@ -50,7 +50,7 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the IBM Db2 database.
+. In the Restore Scope page, select *Complete Resource* to restore the configured data volumes of the MySQL database.
 
 . In the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
 +
