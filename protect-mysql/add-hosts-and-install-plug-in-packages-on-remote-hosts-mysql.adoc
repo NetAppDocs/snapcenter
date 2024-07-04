@@ -20,7 +20,7 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
-link:../protect-db2/task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for IBM Db2^]
+link:../protect-mysql/task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for MySQL^]
 
 .About this task
 
@@ -44,7 +44,7 @@ Select the type of host:
  ** Windows
  ** Linux
 [NOTE]
- The Plug-in for IBM Db2 is installed on the IBM Db2 client host, and this host can be on either a Windows system or a Linux system.
+ The Plug-in for MySQL is installed on the MySQL client host, and this host can be on either a Windows system or a Linux system.
 
 a|
 Host name

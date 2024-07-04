@@ -41,7 +41,7 @@ This example shows that two backups are available for cloning:
 This example shows that the backup to be cloned has an NFSExportIPs address of 10.32.212.14:
 +
 ----
-PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1\BOOKS"} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneInstance db2inst1 -CloneName BOOKS
+PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="mysqlinst1\BOOKS"} -BackupName 'scmysql01_gdl_openlab_netapp_local_MySQL_mysqlinst1_BOOKS_scmysql01_05-15-2024_00.29.20.1466' -AppPluginCode MySQL -CloneToInstance '10.32.212.14' -CloneInstance mysqlinst1 -CloneName BOOKS
 ----
 +
 NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.

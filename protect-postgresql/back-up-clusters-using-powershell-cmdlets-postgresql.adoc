@@ -31,7 +31,7 @@ The username and password prompt is displayed.
 This example shows how to add a PostgreSQL instance:
 +
 ----
-PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode PostgreSQL -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode PostgreSQL -ResourceType Instance -ResourceName postgresqlinst1 -StorageFootPrint (@{"VolumeName"="winpostgresql01_data01";"LUNName"="winpostgresql01_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
 ----
 
 . Create a backup policy by using the Add-SmPolicy cmdlet.
@@ -43,13 +43,13 @@ PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode PostgreSQL -ResourceTy
 This example shows how to backup a resource group:
 +
 ----
-C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-clusters-using-powershell-cmdlets-ibm-db2.adocith_SingleContainer_MultipleContainers_Resources'  -Policy db2_policy1
+C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-clusters-using-powershell-cmdlets-postgresql.adocith_Resources'  -Policy postgresql_policy1
 ----
 +
 This example backs up a protected resource:
 +
 ----
-C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="hana"} -Policy db2_policy2
+C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="postgresql"} -Policy postgresql_policy2
 ----
 
 . Monitor the job status (running, completed, or failed) by using the Get-smJobSummaryReport cmdlet.

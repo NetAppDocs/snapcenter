@@ -47,35 +47,35 @@ PS C:> Add-SmCredential -Name FinanceAdmin -AuthMode Windows
 -Credential sddev\administrator
 ----
 
-. Add the IBM Db2 communication host to SnapCenter Server.
+. Add the MySQL communication host to SnapCenter Server.
 +
 ----
-PS C:> Add-SmHost -HostName 10.232.204.61 -OSType Windows -RunAsName FinanceAdmin -PluginCode db2
+PS C:> Add-SmHost -HostName 10.232.204.61 -OSType Windows -RunAsName FinanceAdmin -PluginCode mysql
 ----
 
-. Install the package and the SnapCenter Plug-in for IBM Db2 on the host.
+. Install the package and the SnapCenter Plug-in for MySQL on the host.
 +
 For Linux:
 +
 ----
-PS C:> Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode db2
+PS C:> Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode mysql
 ----
 +
 For Windows:
 +
 ----
-Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode db2 -FilesystemCode scw -RunAsName FinanceAdmin
+Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode mysql -FilesystemCode scw -RunAsName FinanceAdmin
 ----
 
 . Set the path to the SQLLIB.
 +
-For Windows, Db2 plug-in will use the default path for SQLLIB folder: “C:\Program Files\IBM\SQLLIB\BIN”
+For Windows, MySQL plug-in will use the default path for SQLLIB folder: “C:\Program Files\IBM\SQLLIB\BIN”
 +
 If you want to override the default path, use the following command.
 +
 ----
 PS C:> Set-SmConfigSettings -Plugin -HostName 10.232.204.61 -PluginCode
-DB2 -configSettings @{“DB2_SQLLIB_CMD” = “<custom_path>\IBM\SQLLIB\BIN”}
+MySQL -configSettings @{“MySQL_SQLLIB_CMD” = “<custom_path>\IBM\SQLLIB\BIN”}
 
 ----
 

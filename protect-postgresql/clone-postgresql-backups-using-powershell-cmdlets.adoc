@@ -43,7 +43,7 @@ This example shows that the backup to be cloned has an NFSExportIPs address of 1
 For PostgreSQL cluster:
 +
 ----
-PS C:\> New-SmClone -AppPluginCode PostgreSQL -BackupName " scdb201_ openenglab_netapp_com_PostgreSQL_postgres_5432_06-26-2024_00_33_41_1570" -Resources @{"Host"=" 10.32.212.13";"Uid"="postgres_5432"} -port 2345 -CloneToHost 10.32.212.14
+PS C:\> New-SmClone -AppPluginCode PostgreSQL -BackupName " scpostgresql01_ openenglab_netapp_com_PostgreSQL_postgres_5432_06-26-2024_00_33_41_1570" -Resources @{"Host"=" 10.32.212.13";"Uid"="postgres_5432"} -port 2345 -CloneToHost 10.32.212.14
 ----
 +
 NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.
