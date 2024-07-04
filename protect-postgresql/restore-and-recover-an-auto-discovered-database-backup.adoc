@@ -68,7 +68,7 @@ Select *Recover to point in time*.
  .. Enter date and time.
 Enter date and time. For example, the PostgreSQL Linux host is located in Sunnyvale, CA and the user in Raleigh, NC is recovering the logs in to SnapCenter.
 +
-If the user wants to perform a recovery to 5 a.m .Sunnyvale, CA, then the user has to set the browser time zone to the HANA Linux host time zone, which is GMT-07:00 and specify the date and time as 5:00 a.m.
+If the user wants to perform a recovery to 5 a.m .Sunnyvale, CA, then the user has to set the browser time zone to the PostgreSQL Linux host time zone, which is GMT-07:00 and specify the date and time as 5:00 a.m.
 a|
 Do not want to recover
 a|

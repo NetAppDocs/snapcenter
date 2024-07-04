@@ -14,7 +14,7 @@ entries:
       - title: Minimum ONTAP privileges required
         url: /protect-postgresql/minimum-privileges-required-for-postgresql.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-postgresql/ prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html
+        url: /protect-postgresql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html
       - title: Backup strategy for PostgreSQL
         entries:
           - title: Define a backup strategy for PostgreSQL
@@ -44,7 +44,7 @@ entries:
           - title: Types of restore operations for auto discovered PostgreSQL
             url: /protect-postgresql/types-of-restore-performed-for-auto-discovered-postgresql.html
           - title: Types of recovery operations supported for PostgreSQL 
-            url: /protect-postgresql/reference_types_of_recovery_operations_supported_for_postgresql.html          
+            url: /protect-postgresql/types_of_recovery_operations_supported_for_postgresql.html          
   - title: Prepare to install the SnapCenter Plug-in for PostgreSQL
     entries:
       - title: Installation workflow of SnapCenter Plug-in for PostgreSQL

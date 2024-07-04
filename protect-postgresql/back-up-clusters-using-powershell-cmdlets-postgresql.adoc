@@ -49,7 +49,7 @@ C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-clusters-using-po
 This example backs up a protected resource:
 +
 ----
-C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="hana"} -Policy db2_policy2
+C:\PS> New-SMBackup -Resources @{"Host"="10.232.204.42";"Uid"="MDC\SID";"PluginName"="postgresql"} -Policy db2_policy2
 ----
 
 . Monitor the job status (running, completed, or failed) by using the Get-smJobSummaryReport cmdlet.
