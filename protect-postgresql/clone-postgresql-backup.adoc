@@ -54,15 +54,21 @@ Clone server
 a|
 Choose a host on which the clone should be created.
 a|
-Clone suffix
+Target Port
 a|
-Enter a suffix that will be appended to the clone file name to identify that the cluster is a clone.
-
-For example, _db1_clone_. If you are cloning to the same location as the original cluster, you must provide a suffix to differentiate the cloned cluster from the original cluster. Otherwise, the operation fails.
+Enter the target PostgreSQL target port to clone from the existing backups.
 a|
 NFS Export IP Address
 a|
 Enter IP addresses or the host names on which the cloned volumes will be exported.
+
+This is applicable only to NFS storage type resource.
+a|
+Capacity Pool Max. Throughput (MiB/s)
+a|
+Enter the maximum throughput of a capacity pool.
+
+This is applicable only for ANF storage type resource.
 |===
 
 . In the Scripts page, perform the following steps:

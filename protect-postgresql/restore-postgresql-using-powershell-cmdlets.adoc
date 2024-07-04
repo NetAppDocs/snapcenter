@@ -20,7 +20,7 @@ You must have prepared the PowerShell environment to execute the PowerShell cmdl
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+PS C:\> Open-SmConnection 
 ----
 
 . Identify the backup that you want to restore by using the Get-SmBackup and Get-SmBackupReport cmdlets.
@@ -69,10 +69,6 @@ SmBackupId           : 113
    BackupName           : Clone_SCSPR0019366001_02-02-2015_13.02.45
    VerificationStatus   : NotVerified
 ----
-
-. Start the recovery process in the HANA studio.
-+
-The cluster is shut down.
 
 . Restore data from the backup by using the Restore-SmBackup cmdlet.
 +

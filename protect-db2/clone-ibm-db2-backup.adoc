@@ -57,6 +57,8 @@ a|
 Target Clone Instance
 a|
 Enter the target Db2 clone instance ID to clone from the existing backups.
+
+This is applicable only for ANF storage type resource.
 a|
 Target Clone Name
 a|
@@ -73,8 +75,6 @@ a|
 Capacity Pool Max. Throughput (MiB/s) 
 a|
 Enter the maximum throughput of a capacity pool. 
-
-This is applicable only for ANF storage type resource.
 |===
 
 . In the Scripts page, perform the following steps:

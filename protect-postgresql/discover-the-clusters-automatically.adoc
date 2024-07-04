@@ -14,7 +14,7 @@ Resources are PostgreSQL clusters on the Linux host that are managed by SnapCent
 .Before you begin
 
 * You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
-* SnapCenter Plug-in for PostgreSQL does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the clusters manually.
+* SnapCenter Plug-in for PostgreSQL does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. 
 
 .About this task
 
