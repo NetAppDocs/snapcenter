@@ -113,8 +113,6 @@ entries:
     url: /install/task_add_storage_systems.html
   - title: Add SnapCenter Standard controller-based licenses
     url: /install/concept_snapcenter_standard_controller_based_licenses.html
-  - title: Add SnapCenter Standard capacity-based licenses
-    url: /install/concept_snapcenter_standard_capacity_based_licenses.html
   - title: Provision your storage system
     entries:
       - title: Provision storage on Windows hosts
@@ -137,3 +135,5 @@ entries:
     url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
   - title: Features enabled on your Windows host during installation
     url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
+  - title: Features enabled on Linux host during installation
+    url: /install/features_enabled_on_linux_host.html

@@ -158,3 +158,23 @@ If the error is related to disk space or RAM, you can update the web.config file
 NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . Monitor the installation progress.
+
+== Configure custom port for NET TCP communication
+
+By default, from SnapCenter 6.0 release, SnapCenter plug-in for Windows uses the port 909 for NET TCP communication. If the port 909 is in use, you can configure another port for NET TCP communication.
+
+.Steps
+
+. Modify the value of the _NetTCPPort_ key located at _C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navssprv.exe.config_ to the required port number.
+`<add key="NetTCPPort" value="new_port_number" />`
+. Modify the value of the _NetTCPPort_ key located at _C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\SnapDriveService.dll.config_ to the required port number.
+`<add key="NetTCPPort" value="new_port_number" />`
+. Unregister the _Data ONTAP VSS Hardware Provider_ service by running below command:
+`"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\navssprv.exe" -r service -u`
++
+Verify that the service is not displayed in the list of services in _services.msc_.
+. Register the _Data ONTAP VSS Hardware Provider_ service by running below command:
+`"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navssprv.exe" -r service -a ".\LocalSystem"``
++
+Verify if the service is now displayed in the list of services in _services.msc_.
+. Restart the _Plug-in for Windows_ service.

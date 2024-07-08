@@ -40,5 +40,7 @@ a|
 You will be prompted for upgrade confirmation. Enter any value other than 0 to confirm SnapCenter Server upgrade.
 |===
 
+NOTE: You should either log out and then log into SnapCenter, or close and then open a new browser to access SnapCenter GUI.
+
 
 

@@ -24,13 +24,6 @@ SnapCenter Standard license is a controller-based license and is included as par
 NOTE: SnapCenter is also offered as part of data protection bundle. If you have purchased A400 or later, you should purchase the data protection bundle.
 
 a|
-SnapCenter Standard capacity-based
-a|
-Required with ONTAP Select and Cloud Volumes ONTAP
-
-If you are a Cloud Volumes ONTAP or ONTAP Select customer, you need to procure a per TB capacity-based license based on the data managed by SnapCenter. By default, SnapCenter ships a built-in 90-day 100 TB SnapCenter Standard capacity-based trial license. For other details, contact the sales representative.
-
-a|
 SnapMirror or SnapVault
 a|
 ONTAP
@@ -78,7 +71,7 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available.
 
-You should install one or more SnapCenter licenses. For information on how to add licenses, see link:../install/concept_snapcenter_standard_controller_based_licenses.html[Add SnapCenter Standard controller-based licenses] or link:../install/concept_snapcenter_standard_capacity_based_licenses.html[Add SnapCenter Standard capacity-based licenses].
+You should install one or more SnapCenter licenses. For information on how to add licenses, see link:../install/concept_snapcenter_standard_controller_based_licenses.html[Add SnapCenter Standard controller-based licenses].
 
 == Single Mailbox Recovery (SMBR) licenses
 If you are using SnapCenter Plug-in for Exchange to manage Microsoft Exchange Server databases and Single Mailbox Recovery (SMBR), you would need additional license for SMBR which needs to be purchased separately based on user mailbox.
