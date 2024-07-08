@@ -138,4 +138,4 @@ entries:
   - title: Features enabled on your Windows host during installation
     url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
   - title: Features enabled on Linux host during installation
-    url: /install/features_enabled_on_Linux_host.html
+    url: /install/features_enabled_on_linux_host.html
