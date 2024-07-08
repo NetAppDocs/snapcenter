@@ -160,7 +160,7 @@ NOTE: SnapCenter Plug-in for UNIX which is part of the SnapCenter Plug-ins Packa
 a|
 Operating systems
 a|
-AIX 6.1 or later
+AIX 7.1 or later
 a|
 Minimum RAM for the SnapCenter plug-in on host
 a|
