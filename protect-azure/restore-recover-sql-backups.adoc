@@ -14,7 +14,7 @@ You can use SnapCenter to restore backed-up SQL Server databases. Database resto
 
 .About this task
 
-You should ensure that the target instance for restore is configured with an active directory user who belongs to the SMB ADactive directory domain and has permissions to set the file permissions appropriately.
+You should ensure that the target instance for restore is configured with an active directory user who belongs to the SMB ADactive directory domain and has permissions to set the file permissions appropriately. You should configure the credentials in SnapCenter at instance level.
 
 The SQL authentication for target instance will not be supported for SMB configurations. The target instance should be configured in SnapCenter with the active directory user having the required permissions.
 
