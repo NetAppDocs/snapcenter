@@ -113,8 +113,6 @@ entries:
     url: /install/task_add_storage_systems.html
   - title: Add SnapCenter Standard controller-based licenses
     url: /install/concept_snapcenter_standard_controller_based_licenses.html
-  - title: Add SnapCenter Standard capacity-based licenses
-    url: /install/concept_snapcenter_standard_capacity_based_licenses.html
   - title: Provision your storage system
     entries:
       - title: Provision storage on Windows hosts

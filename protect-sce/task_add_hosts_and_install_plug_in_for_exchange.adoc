@@ -172,7 +172,7 @@ By default, from SnapCenter 6.0 release, SnapCenter plug-in for Windows uses the
 . Unregister the _Data ONTAP VSS Hardware Provider_ service by running below command:
 `"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\navssprv.exe" -r service -u`
 +
-Verify if the service is still displayed in the list of services in _services.msc_.
+Verify that the service is not displayed in the list of services in _services.msc_.
 . Register the _Data ONTAP VSS Hardware Provider_ service by running below command:
 `"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navssprv.exe" -r service -a ".\LocalSystem"``
 +

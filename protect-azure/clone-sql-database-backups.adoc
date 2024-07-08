@@ -13,6 +13,15 @@ summary: 'You can use SnapCenter to clone a backup.'
 
 You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.
 
+.About this task
+
+You should ensure that the target instance for clone is configured with an active directory user who belongs to the SMB ADactive directory domain and has permissions to set the file permissions appropriately.
+
+The SQL authentication for target instance will not be supported for SMB configurations. The target instance should be configured in SnapCenter with the active directory user having the required permissions.
+
+If the SnapCenter Plug-in services service account is not an active directory user then while performing clone, the user who have the full control over the source volumes is required so that it can be impersonated and perform the required operation.
+
+
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.

@@ -4,12 +4,13 @@ sidebar: sidebar
 keywords: install, snapcenter, linux host, features
 summary: 'The SnapCenter Server installer enables the Linux features and roles on your Linux host during installation. These might be of interest for troubleshooting and host system maintenance purposes.'
 ---
+
 = Features enabled on Linux host during installation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The SnapCenter Server installer enables the Windows features and roles on your Windows host during installation. These might be of interest for troubleshooting and host system maintenance purposes.
+The SnapCenter Server installs below software packages, these might be of interest for troubleshooting and host system maintenance purposes.
 
 * Rabbitmq
 * Nginx
