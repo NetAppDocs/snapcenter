@@ -17,6 +17,7 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 * During the installation of .NET runtime, if the installation fails to resolve the dependencies of _libicu_ library, then install _libicu_ by running the command: `yum install -y libicu`
 * If the installation of SnapCenter Server fails due to the non-availability of _Perl_, then install _Perl_ by running the command: `yum install -y perl` 
 * If the sudo package is not available in SUSE Linux, then install the sudo package to avoid authentication failure.
+* For SUSE Linux, configure the hostname to avoid the installation failure.
 * Check the secure Linux status by running the command `sestatus`. If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", perform the following:
 ** Run the command: `sudo semanage port -a -t http_port_t -p tcp <WEBAPP_EXTERNAL_PORT_>`
 +
@@ -96,12 +97,13 @@ Parameters to be passed for installing SnapCenter Server:
 .What's next?
 
 * If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", the *nginx* service fails to start. You should run the the following commands:
-** `sudo semanage fcontext -a -t mysqld_db_t "/var/opt/snapceter/certs(/.*)?"`
-** `sudo restorecon -Rv /var/opt/snapcenter/certs/`
 
-* If the Webapp internal port (8147) is not allowed to listen, run the following commands:
+. Go to home directory.
+. Run the command: `jorunalctl -x|grep nginx`.
+. If the Webapp internal port (8147) is not allowed to listen, run the following commands:
 ** `ausearch -c 'nginx' --raw | audit2allow -M my-nginx`
 ** `semodule -i my-nginx.pp`
+. Run `setsebool -P httpd_can_network_connect on`
 
 == Register the product to enable support
 
