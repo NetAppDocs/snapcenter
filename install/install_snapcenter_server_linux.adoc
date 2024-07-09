@@ -51,10 +51,17 @@ If the command return "nothing to do", rerun the command after installing SnapCe
 
 .Steps
 
-. Download the SnapCenter Server installation package *snapcenter_linux_server_(el8/el9/sles15).bin* from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
+. Download the following from https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] to _/home directory_.
++
+* SnapCenter Server installation package - *snapcenter-linux-server-(el8/el9/sles15).bin*
+* Public key file - *snapcenter_public_key.pub* 
+* Respective signature file - *snapcenter-linux-server-(el8/el9/sles15).bin.sig*
+
+. Validate the signature file.
+`$openssl dgst -sha256 -verify snapcenter_public_key.pub -signature <path to signature file> <path to bin file>`
 . For non-root user installation, add the visudo content specified in *snapcenter_server_checksum_(el8/el9/sles15).txt* available along with the .bin installer.
 . Assign the execute permission for the .bin installer.
-`chmod +x snapcenter_linux_server.bin`
+`chmod +x snapcenter-linux-server-(el8/el9/sles15).bin`
 . Perform one of the actions to install SnapCenter Server.
 +
 |===
@@ -63,7 +70,7 @@ If the command return "nothing to do", rerun the command after installing SnapCe
 a|
 Interactive installation
 a|
-`./snapcenter_linux_server_(el8/el9/sles15).bin`
+`./snapcenter-linux-server-(el8/el9/sles15).bin`
 
 You will be prompted to enter the following details:
 
@@ -74,7 +81,7 @@ You will be prompted to enter the following details:
 a|
 Non interactive installation
 a|
-`sudo ./snapcenter_linux_server_(el8/el9/sles15).bin -i silent -DWEBAPP_EXTERNAL_PORT=<port> -DWEBAPP_INTERNAL_PORT=<port> -DSMCORE_PORT=<port> -DSCHEDULER_PORT=<port>  -DSNAPCENTER_SERVER_USER=<user> -DUSER_INSTALL_DIR=<dir> -DINSTALL_LOG_NAME=<filename>`
+`sudo ./snapcenter-linux-server-(el8/el9/sles15).bin -i silent -DWEBAPP_EXTERNAL_PORT=<port> -DWEBAPP_INTERNAL_PORT=<port> -DSMCORE_PORT=<port> -DSCHEDULER_PORT=<port>  -DSNAPCENTER_SERVER_USER=<user> -DUSER_INSTALL_DIR=<dir> -DINSTALL_LOG_NAME=<filename>`
 
 Example: sudo ./snapcenter_linux_server.bin -i silent -DWEBAPP_EXTERNAL_PORT=8146  -DSNAPCENTER_SERVER_USER=root -DUSER_INSTALL_DIR=/opt -DINSTALL_LOG_NAME=InstallerLog.log
 

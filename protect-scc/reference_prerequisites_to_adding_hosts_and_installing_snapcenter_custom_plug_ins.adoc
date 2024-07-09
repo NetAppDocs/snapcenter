@@ -15,7 +15,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 +
 link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 * If you want to manage MySQL or DB2 applications, you must have downloaded the MySQL and DB2 Custom Plug-ins that are provided by NetApp.
-* You must have installed Java 1.8 or Java 11 (64-bit) on your Linux or Windows host.
+* You must have installed Java 11 on your Linux or Windows host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The Custom Plug-ins must be available on the client host from where the add host operation is performed.
 
@@ -58,9 +58,9 @@ Following is an example of an entry of SHA512 hash in the checksum file:
 == Linux hosts
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 1.8 or Java 11 (64-bit), on your Linux host.
+* You must have installed Java 11 on your Linux host.
 +
-If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 1.8 or Java 11 (64-bit). The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
+If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 11. The Interoperability Matrix Tool (IMT) contains the latest information about requirements.
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
 +

@@ -21,7 +21,7 @@ SnapCenter Plug-in for Oracle Database can be installed by a non-root user. Howe
 The SnapCenter Plug-ins Package for AIX automatically resolves the file level symbolic link but not the directory level symbolic links to obtain the JAVA_HOME absolute path.
 
 * Create credentials with authentication mode as Linux or AIX for the install user.
-* You must have installed Java 1.8.x or Java 11, 64-bit, on your Linux or AIX host.
+* You must have installed Java 11 on your Linux or AIX host.
 +
 NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 +
@@ -73,8 +73,7 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-* Java 1.8.x (64-bit) Oracle Java and OpenJDK
-* Java 11 (64-bit) Oracle Java and OpenJDK
+Java 11 Oracle Java and OpenJDK
 
 NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.
 
@@ -176,8 +175,7 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-* Java 1.8.x (64-bit) IBM Java
-* Java 11 (64-bit) IBM Java
+Java 11 IBM Java
 
 If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
 

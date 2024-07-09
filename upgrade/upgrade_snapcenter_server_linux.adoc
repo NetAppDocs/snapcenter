@@ -21,7 +21,7 @@ You can use the SnapCenter Server installer file to upgrade the SnapCenter Serve
 a|
 Non interactive upgrade
 a|
-`sudo ./snapcenter_linux_server_(el8/el9/sles15).bin -i silent -DUPGRADE=<value> -DINSTALL_LOG_NAME=<filename>`
+`sudo ./snapcenter-linux-server-(el8/el9/sles15).bin -i silent -DUPGRADE=<value> -DINSTALL_LOG_NAME=<filename>`
 
 Example: sudo ./snapcenter_linux_server.bin -i silent -DUPGRADE=1 -DINSTALL_LOG_NAME=InstallerLog.log
 
@@ -35,7 +35,7 @@ Parameters to be passed for upgrade:
 a|
 Interactive installation
 a|
-`./snapcenter_linux_server_(el8/el9/sles15).bin`
+`./snapcenter-linux-server-(el8/el9/sles15).bin`
 
 You will be prompted for upgrade confirmation. Enter any value other than 0 to confirm SnapCenter Server upgrade.
 |===

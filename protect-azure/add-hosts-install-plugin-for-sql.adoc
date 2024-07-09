@@ -33,3 +33,4 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 . Select *Submit*.
 . Select *Configure log directory* and in the Configure host log directory page, enter the SMB path of the host log directory, and click *Save*.
 . Click *Submit* and monitor the installation progress.
+
