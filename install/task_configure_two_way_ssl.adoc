@@ -1,18 +1,18 @@
 ---
 permalink: install/task_configure_two_way_ssl.html
 sidebar: sidebar
-keywords: security,two-way ssl,configure two-way ssl
-summary: 'You should configure the two-way SSL communication to secure the mutual communication between SnapCenter Server and the plug-ins.  '
+keywords: security,two-way ssl,configure two-way ssl, windows host
+summary: 'You should configure the two-way SSL communication to secure the mutual communication between SnapCenter Server on Windows host and the plug-ins.  '
 ---
-= Configure two-way SSL communication
+= Configure two-way SSL communication on Windows host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-You should configure the two-way SSL communication to secure the mutual communication between SnapCenter Server and the plug-ins.  
+You should configure the two-way SSL communication to secure the mutual communication between SnapCenter Server on Windows host and the plug-ins.  
 
-*Before you begin*
+.Before you begin
 
 * You should have generated the CA Certificate CSR file with the minimum supported key length of 3072.
 * The CA certificate should support server authentication and client authentication. 
@@ -24,7 +24,7 @@ For more details, see https://docs.netapp.com/us-en/snapcenter/install/reference
 +
 Environment with some hosts or server not enabled for two-way SSL communication is not supported.
 
-*Steps*
+.Steps
 
 . To bind the port, perform the following steps on SnapCenter Server host for SnapCenter IIS web server port 8146 (default) and once again for SMCore port 8145 (default) using PowerShell commands.
 .. Remove the existing SnapCenter self-signed certificate port binding using the following PowerShell command. 
@@ -90,11 +90,11 @@ In the windows registry editor, traverse to the below mentioned path,
 
 You should configure SnapCenter Windows plug-in for two-way SSL communication using PowerShell commands.
 
-*Before you begin*
+.Before you begin
 
 Ensure that the CA certificate thumbprint is available.
 
-*Steps*
+.Steps
 
 . To bind the port, perform the following actions on Windows plug-in host for SMCore port 8145 (default).
 .. Remove the existing SnapCenter self-signed certificate port binding using the following PowerShell command.

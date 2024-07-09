@@ -55,12 +55,18 @@ entries:
         url: /install/task_enable_ca_certificates_for_snapcenter.html
   - title: Configure CA Certificate for Linux host
     url: /install/configure_ca_certificate_linux_host.html
-  - title: Configure and enable two-way SSL communication
+  - title: Configure and enable two-way SSL communication on Windows host
     entries:
-      - title: Configure two-way SSL communication
+      - title: Configure two-way SSL communication on Windows host
         url: /install/task_configure_two_way_ssl.html
-      - title: Enable two-way SSL communication
-        url: /install/task_enable_two_way_ssl.html      
+      - title: Enable two-way SSL communication on Windows host
+        url: /install/task_enable_two_way_ssl.html   
+  - title: Configure and enable two-way SSL communication on Linux host
+    entries:
+      - title: Configure two-way SSL communication on Linux host
+        url: /install/configure_two_way_ssl_linux.html
+      - title: Enable SSL communication on Linux host
+        url: /install/enable_two_way_ssl_linux.html    
   - title: Configure Certificate-based Authentication 
     entries:
       - title: Export Certificate Authority (CA) certificates from SnapCenter Server 
