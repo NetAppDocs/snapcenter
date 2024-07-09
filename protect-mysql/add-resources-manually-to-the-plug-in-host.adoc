@@ -17,7 +17,7 @@ Automatic discovery is not supported on Windows host. You must add MySQL instanc
 
 .About this task
 
-Automatic discovery is not supported for the following configurations:
+Automatic discovery is supported for the following configurations:
 
 * RDM and VMDK layouts
 
@@ -41,11 +41,11 @@ Enter the host name.
 a|
 Type
 a|
-Select database or instance.
+Select instance.
 a|
 Instance
 a|
-Specify the name of the instance, which is the parent of the database.
+Not applicable.
 a|
 Credentials
 a|
