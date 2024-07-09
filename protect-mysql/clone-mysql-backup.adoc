@@ -25,6 +25,8 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 .About this task
 
+* You cannot protect the cloned MySQL instances. 
+
 * For information about clone split operation limitations, see http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
 
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
@@ -54,11 +56,9 @@ Clone server
 a|
 Choose a host on which the clone should be created.
 a|
-Clone suffix
+Port
 a|
-Enter a suffix that will be appended to the clone file name to identify that the database is a clone.
-
-For example, _db1_clone_. If you are cloning to the same location as the original database, you must provide a suffix to differentiate the cloned database from the original database. Otherwise, the operation fails.
+Provide the port on which the cloned MySQL instance to be started on.
 a|
 NFS Export IP Address
 a|

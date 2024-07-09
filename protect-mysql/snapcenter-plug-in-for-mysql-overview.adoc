@@ -17,5 +17,5 @@ When the Plug-in for MySQL Database is installed, you can use SnapCenter with Ne
 
 SnapCenter Plug-in for MySQL supports NFS and SAN on ONTAP and Azure NetApp File storage layouts.
 
-VMDK or virtual storage layout is not supported.
+VMDK or virtual storage layout is supported.
 

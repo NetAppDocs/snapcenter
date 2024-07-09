@@ -9,4 +9,4 @@ summary: 'Resources are MySQL databases and instances on the Linux host that are
 :imagesdir: ../media/
 
 [.lead]
-Resources are MySQL databases and instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for MySQL plug-in, the MySQL databases from all the instances on that Linux host are automatically discovered and displayed in the Resources page.
+Resources are MySQL instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for MySQL plug-in, the MySQL instances on that Linux host are automatically discovered and displayed in the Resources page.

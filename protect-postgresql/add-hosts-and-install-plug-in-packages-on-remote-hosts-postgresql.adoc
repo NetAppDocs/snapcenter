@@ -9,7 +9,7 @@ summary: 'You must use the SnapCenter Add Host page to add hosts, and then insta
 :imagesdir: ../media/
 
 [.lead]
-You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install plug-in packages either for an individual host or for a cluster.
+You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts. You can add the host and install plug-in packages for an individual host.
 
 .Before you begin
 

@@ -9,9 +9,9 @@ summary: 'When you install the Plug-in for MySQL in your environment, you can us
 :imagesdir: ../media/
 
 [.lead]
-When you install the Plug-in for MySQL Database in your environment, you can use SnapCenter to back up, restore, and clone MySQL databases and their resources. You can also perform tasks supporting those operations.
+When you install the Plug-in for MySQL Database in your environment, you can use SnapCenter to back up, restore, and clone MySQL instances. You can also perform tasks supporting those operations.
 
-* Add databases.
+* Add instances.
 * Create backups.
 * Restore from backups.
 * Clone backups.

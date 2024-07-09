@@ -4,11 +4,10 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL
 summary: 'SnapCenter manages the housekeeping of log and data backups on the storage system and file system levels, and within the MySQL backup catalog.'
 ---
-= How SnapCenter manages housekeeping of data backups
+= How SnapCenter manages housekeeping of log backups
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 SnapCenter manages the housekeeping of data backups on the storage system and file system levels.
 
-The snapshots on the primary or secondary storage and their corresponding entries in the MySQL catalog are deleted based on the retention settings. 

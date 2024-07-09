@@ -55,8 +55,6 @@ entries:
         url: /protect-mysql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html
       - title: Set up credentials for the SnapCenter Plug-in for MySQL
         url: /protect-mysql/set-up-credentials-for-snapcenter-plug-in-for-mysql.html
-      - title: Configure gMSA on Windows Server 2016 or later
-        url: /protect-mysql/configure-gMSA-on-windows-server-2012-or-later.html
       - title: Install the SnapCenter Plug-in for MySQL
         entries:
             - title: Add hosts and install plug-in packages on remote hosts
