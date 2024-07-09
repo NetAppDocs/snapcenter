@@ -12,6 +12,10 @@ summary: 'Back up the resource from the Resources page.'
 [.lead]
 If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
 
+.Before you begin
+
+In Azure, Windows failover cluster does not have a virtual IP assigned to the cluster. Thus, SQL Server Availability Group and failover cluster instance (FCI) does not work. You should configure a load balancer that provides an IP which can be used as Windows failover cluster IP. For information on how to configure load balancer, refer to: https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql[Configure a DNN for failover cluster instance].
+
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.

@@ -34,11 +34,3 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 . Select *Configure log directory* and in the Configure host log directory page, enter the SMB path of the host log directory, and click *Save*.
 . Click *Submit* and monitor the installation progress.
 
-== Configure a load balancer
-
-In Azure, Windows failover cluster does not have a virtual IP assigned to the cluster. Thus, SQL Server Availability Group and failover cluster instance (FCI) does not work.
-
-You should configure a load balancer that provides an IP which can be used as Windows failover cluster IP.
-
-To configure the load balancer, refer to: https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql[Configure a DNN for failover cluster instance].
-
