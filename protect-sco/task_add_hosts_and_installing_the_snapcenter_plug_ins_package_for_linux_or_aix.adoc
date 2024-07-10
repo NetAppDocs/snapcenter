@@ -15,6 +15,8 @@ You can use the Add Host page to add hosts, and then install the SnapCenter Plug
 
 You can add a host and install plug-in packages either for an individual host or for a cluster. If you are installing the plug-in on a cluster (Oracle RAC), the plug-in is installed on all of the nodes of the cluster. For Oracle RAC One Node, you should install the plug-in on both active and passive nodes.
 
+NOTE: Only password-based authentication is supported when you are installing the plug-in on an Oracle RAC. The SSH key based authentication is not supported.
+
 You should be assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 
 NOTE: You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
