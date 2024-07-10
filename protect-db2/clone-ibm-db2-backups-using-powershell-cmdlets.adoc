@@ -13,7 +13,7 @@ The clone workflow includes planning, performing the clone operation, and monito
 
 You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide^].
 
 .Steps
 
@@ -37,7 +37,7 @@ This example shows that two backups are available for cloning:
 ----
 
 . Initiate a clone operation from an existing backup and specify the NFS export IP addresses on which the cloned volumes are exported.
-
++
 This example shows that the backup to be cloned has an NFSExportIPs address of 10.32.212.14:
 +
 For Db2 database:
@@ -49,7 +49,7 @@ PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1\BOOKS"} -
 For Db2 instance:
 +
 ----
-PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="db2inst1 "} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneInstance db2inst1 -NFSExportIPs 10.32.212.14
+PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="DB2"} -BackupName 'scdb201_gdl_openlab_netapp_local_DB2_db2inst1_BOOKS_scdb201_05-15-2024_00.29.20.1466' -AppPluginCode DB2 -CloneToInstance '10.32.212.14' -CloneName Db2 -NFSExportIPs 10.32.212.14
 ----
 +
 NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.
