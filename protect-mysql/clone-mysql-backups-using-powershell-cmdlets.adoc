@@ -20,7 +20,7 @@ The information regarding the parameters that can be used with the cmdlet and th
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
 +
 ----
-Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+PS C:\> Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
 ----
 
 . Retrieve the backups to perform the clone operation by using the Get-SmBackup cmdlet.
@@ -41,7 +41,7 @@ This example shows that two backups are available for cloning:
 This example shows that the backup to be cloned has an NFSExportIPs address of 10.32.212.14:
 +
 ----
-PS C:\> New-SmClone -Resources @{"Host"="10.32.212.13";"Uid"="mysqlinst1\BOOKS"} -BackupName 'scmysql01_gdl_openlab_netapp_local_MySQL_mysqlinst1_BOOKS_scmysql01_05-15-2024_00.29.20.1466' -AppPluginCode MySQL -CloneToInstance '10.32.212.14' -CloneInstance mysqlinst1 -CloneName BOOKS
+PS C:\> New-SmClone -AppPluginCode MySQL -BackupName "scs000211748_gdl_englab_netapp_com_MySQL_mysqld_3306_scs000211748_06-26-2024_06.08.35.4307" -Resources @{"Host"="scs000211748.gdl.englab.netapp.com";"Uid"="mysqld_3306"} -Port 3320 -CloneToHost shivarhel30.rtp.openenglab.netapp.com
 ----
 +
 NOTE: If NFSExportIPs is not specified, the default is exported to the clone target host.

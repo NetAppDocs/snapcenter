@@ -143,15 +143,19 @@ SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should
  ** SnapCenter Plug-in for Microsoft Exchange Server
  ** SnapCenter Plug-in for SAP HANA Database
  ** SnapCenter Plug-in for IBM Db2
+ ** SnapCenter Plug-in for PostgreSQL
+ ** SnapCenter Plug-in for MySQL
 * SnapCenter Plug-ins Package for Linux, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
  ** SnapCenter Plug-in for SAP HANA Database
  ** SnapCenter Plug-in for UNIX file systems
  ** SnapCenter Plug-in for IBM Db2
+ ** SnapCenter Plug-in for PostgreSQL
+ ** SnapCenter Plug-in for MySQL
 * SnapCenter Plug-ins Package for AIX, which includes the following plug-ins:
  ** SnapCenter Plug-in for Oracle Database
  ** SnapCenter Plug-in for UNIX file systems
-* SnapCenter Custom Plug-ins
+* SnapCenter NetApp supported plug-ins
 
 SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
 
@@ -255,6 +259,26 @@ a|
 Db2 host
 a|
 Linux or Windows
+a|
+Plug-in for PostgreSQL
+a|
+Plug-ins Package for Linux and Plug-ins Package for Windows
+a|
+Plug-in for UNIX or Plug-in for Windows
+a|
+PostgreSQL host
+a|
+Linux or Windows
+a|
+Plug-in for MySQL
+a|
+Plug-ins Package for Linux and Plug-ins Package for Windows
+a|
+Plug-in for UNIX or Plug-in for Windows
+a|
+Db2MySQL host
+a|
+Linux or Windows
 |===
 NOTE: The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs), and it supports the SnapCenter application-specific plug-ins to protect application-consistent backup and restore operations for virtualized databases and file systems.
 
@@ -300,21 +324,29 @@ SAN native devices, filesystems, and LVM layouts built on SAN devices are suppor
 
 === SnapCenter Plug-in for SAP HANA Database features
 
-* Automates application-aware backup, restore, and cloning of SAP HANA databases in your SnapCenter environment
+Automates application-aware backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.
 
-=== SnapCenter Custom Plug-ins features
+=== NetApp supported plug-ins features
 
-* Supports custom plug-ins to manage applications or databases that are not supported by other SnapCenter plug-ins. Custom plug-ins are not provided as part of the SnapCenter installation.
+* Supports other plug-ins to manage applications or databases that are not supported by other SnapCenter plug-ins. NetApp supported plug-ins are not provided as part of the SnapCenter installation.
 * Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
 * Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
 
-NetApp supports the capability to create and use custom plug-ins; however, the custom plug-ins you create are not supported by NetApp.
+NetApp supports the capability to create and use the supported plug-ins; however, the plug-ins you create are not supported by NetApp.
 
 For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 
 === SnapCenter Plug-in for IBM Db2
 
-* Automates application-aware backup, restore, and cloning of IBM Db2 databases in your SnapCenter environment
+Automates application-aware backup, restore, and cloning of IBM Db2 databases in your SnapCenter environment.
+
+=== SnapCenter Plug-in for PostgreSQL
+
+Automates application-aware backup, restore, and cloning of PostgreSQL instances in your SnapCenter environment.
+
+=== SnapCenter Plug-in for MySQL
+
+Automates application-aware backup, restore, and cloning of MySQL instances in your SnapCenter environment.
 
 == SnapCenter repository
 

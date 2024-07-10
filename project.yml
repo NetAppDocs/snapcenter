@@ -37,10 +37,10 @@ sidebar:
     - section: protect-sce
     - section: protect-db2
     - section: protect-postgresql
-    - section: protect-mysql
-    - section: protect-scc
+    - section: protect-mysql    
     - section: protect-scu
-    - section: protect-azure    
+    - section: protect-azure 
+    - section: protect-scc   
     - section: admin
     - section: upgrade
     - section: tech-refresh
