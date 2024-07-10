@@ -38,9 +38,7 @@ a|
 
 * .NET Core 8.0.5
 * PowerShell Core 7.4.2 
-* Java 11.0.x (64-bit) 
-* Oracle Java 
-* OpenJDK
+* Java 11 Oracle Java and OpenJDK
 
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=117007;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
