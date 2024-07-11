@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for Microsoft Exchange Server
+keywords: SnapCenter Plug-in for Microsoft Exchange Server, NET TCP
 summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.'
 ---
 = Add hosts and install Plug-in for Exchange

@@ -33,11 +33,7 @@ a| Required for FAS, AFF, or All SAN Array (ASA) storage controllers
 
 SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement.
 If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
-a| SnapCenter Standard capacity-based
-a| Required with ONTAP Select and Cloud Volumes ONTAP
 
-If you are a Cloud Volumes ONTAP or ONTAP Select customer, you need to procure a per TB capacity-based license based on the data managed by SnapCenter.
-By default, SnapCenter ships a built-in 90-day 100 TB SnapCenter Standard capacity-based trial license. For other details, contact the sales representative.
 a| SnapMirror or SnapVault
 a| ONTAP
 

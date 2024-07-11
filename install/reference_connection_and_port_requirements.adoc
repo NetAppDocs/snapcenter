@@ -67,6 +67,13 @@ For information on the dynamic port range supported, see https://support.microso
 The ports are used for communication between the SnapCenter Server and the host on which the plug-in is being installed. To push plug-in package binaries to Windows plug-in hosts, the ports must be open only on the plug-in host, and they can be closed after installation.
 
 a|
+Scheduler Port
+a|
+8154 (default value)
+
+When you are doing a fresh installation of SnapCenter 6.0 on Windows host or upgrade from earlier version, you should ensure that the scheduler port is open. the scheduler services run on the scheduler port.
+
+a|
 Linux or AIX plug-in hosts
 a|
 22 (SSH)
@@ -92,8 +99,18 @@ a|
 The default JDBC port is used by the plug-in for Oracle for connecting to the Oracle database.
 
 To customize the port, see https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html[Add hosts and install SnapCenter Plug-ins package for Linux or AIX.]
+
 a|
-Custom plug-ins for SnapCenter
+SnapCenter Plug-in for Exchange Database
+a|
+909, customizable
+
+The default NET.TCP port is used by the plug-in for Windows for connecting to the Exchange VSS call-backs.
+
+To customize the port, see link:protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html[Add hosts and install Plug-in for Exchange].
+
+a|
+NetApp supported plug-ins for SnapCenter
 a|
 9090 (HTTPS), fixed
 
