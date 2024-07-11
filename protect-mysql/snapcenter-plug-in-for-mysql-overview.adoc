@@ -11,7 +11,7 @@ summary: 'The SnapCenter Plug-in for MySQL is a host-side component of the NetAp
 [.lead]
 The SnapCenter Plug-in for MySQL Database is a host-side component of the NetApp SnapCenter software that enables application-aware data protection management of MySQL databases. The Plug-in for MySQL Database automates the backup, restore, and cloning of MySQL databases in your SnapCenter environment.
 
-SnapCenter supports single instance and multi instance MySQL setups. You can use the Plug-in for MySQL Database in both Linux and Windows environments. In Windows environments, MySQL will be supported as manual resource.
+SnapCenter supports single instance MySQL setups. You can use the Plug-in for MySQL Database in both Linux and Windows environments. In Windows environments, MySQL will be supported as manual resource.
 
 When the Plug-in for MySQL Database is installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume. You can also use the plug-in with NetApp SnapVault technology to perform disk-to-disk backup replication for standards compliance.
 

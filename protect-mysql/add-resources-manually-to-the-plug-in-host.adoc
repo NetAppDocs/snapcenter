@@ -13,13 +13,7 @@ Automatic discovery is not supported on Windows host. You must add MySQL instanc
 
 .Before you begin
 
-* You must have completed tasks such as installing the SnapCenter Server, adding hosts, and setting up storage system connections. 
-
-.About this task
-
-Automatic discovery is supported for the following configurations:
-
-* RDM and VMDK layouts
+* You must have completed tasks such as installing the SnapCenter Server, adding hosts, and setting up storage system connections.
 
 .Steps
 
