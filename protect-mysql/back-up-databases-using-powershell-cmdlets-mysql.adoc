@@ -43,7 +43,7 @@ PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode MySQL -ResourceType In
 This example shows how to backup a resource group:
 +
 ----
-C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_wback-up-databases-using-powershell-cmdlets-mysql.adocith_SingleContainer_MultipleContainers_Resources'  -Policy mysql_policy1
+C:\PS> New-SmBackup -Resources @{"Host"="scs000211748.gdl.englab.netapp.com";"Uid"="mysqld_3306";"PluginName"="MySQL"} -Policy "MySQL_snapshotbased"
 ----
 +
 This example backs up a protected resource:

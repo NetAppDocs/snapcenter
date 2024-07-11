@@ -32,6 +32,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src
 == Linux hosts
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
+* You must have installed *mksh* library on your Linux host.
 * You must have installed Java 11 on your Linux host.
 +
 http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]

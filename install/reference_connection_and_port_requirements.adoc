@@ -107,7 +107,7 @@ a|
 
 The default NET.TCP port is used by the plug-in for Windows for connecting to the Exchange VSS call-backs.
 
-To customize the port, see link:protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html[Add hosts and install Plug-in for Exchange].
+To customize the port, see link:../protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html[Add hosts and install Plug-in for Exchange].
 
 a|
 NetApp supported plug-ins for SnapCenter
