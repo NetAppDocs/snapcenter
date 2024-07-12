@@ -78,7 +78,7 @@ indexpage:
     - title: More resources
       links:
         - title: Cmdlet Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469
+          url: https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html
         - title: Command Reference Guide
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470
         - title: Documentation for earlier versions of SnapCenter

@@ -24,7 +24,7 @@ link:task_back_up_resource_groups_sap_hana.html[Back up resource groups]
 
 * If you want to create a file-based backup when one or more tenant databases are down, set the ALLOW_FILE_BASED_BACKUP_IFINACTIVE_TENANTS_PRESENT parameter to *YES* in the HANA properties file using `Set-SmConfigSettings` cmdlet.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide]
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide]
 
 * For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the following paths:
 +

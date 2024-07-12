@@ -71,7 +71,7 @@ SnapCenter includes REST APIs for most functionality for integration with any or
 +
 For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html[REST API overview].
 +
-For more information on Windows cmdlets see https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide^].
+For more information on Windows cmdlets see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 +
 For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^].
 
@@ -163,7 +163,7 @@ SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standal
 
 The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 
-SnapCenter Server supports both Microsoft Windows and Linux (RHEL 8, RHEL 9, SLES 15)
+SnapCenter Server supports both Microsoft Windows and Linux (RHEL 8.x, RHEL 9.x, SLES 15 SP5)
 
 If you are using the SnapCenter Plug-ins Package for Linux or the SnapCenter Plug-ins Package for AIX, schedules are executed centrally using the Quartz scheduler.
 
@@ -334,7 +334,7 @@ Automates application-aware backup, restore, and cloning of SAP HANA databases i
 
 NetApp supports the capability to create and use the supported plug-ins; however, the plug-ins you create are not supported by NetApp.
 
-For more information, see link:../protect-scc/concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
+For more information, see link:../protect-nsp/develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 
 === SnapCenter Plug-in for IBM Db2
 
@@ -354,7 +354,7 @@ The SnapCenter repository, sometimes referred to as the NSM database, stores inf
 
 MySQL Server repository database is installed by default when you install the SnapCenter Server. If MySQL Server is already installed and you are doing a fresh installation of SnapCenter Server, you should uninstall MySQL Server.
 
-SnapCenter supports MySQL Server 5.7.25 or later as the SnapCenter repository database. If you were using an earlier version of MySQL Server with an earlier release of SnapCenter, during SnapCenter upgrade, the MySQL Server is upgraded to 5.7.25 or later.
+SnapCenter supports MySQL Server 8.0.37 or later as the SnapCenter repository database. If you were using an earlier version of MySQL Server with an earlier release of SnapCenter, during SnapCenter upgrade, the MySQL Server is upgraded to 8.0.37 or later.
 
 The SnapCenter repository stores the following information and metadata:
 

@@ -43,4 +43,4 @@ You can access this path from the host where the SnapCenter Server is installed.
 . Edit the /<installation directory>/NetApp/snapcenter/scc/etc/SC_SMS_Services.properties file, and then add the PLUGINS_ENABLED = MySQL:3.0 parameter.
 . Add the host to the SnapCenter Server using the Add-Smhost cmdlet and the required parameters.
 +
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323469[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
