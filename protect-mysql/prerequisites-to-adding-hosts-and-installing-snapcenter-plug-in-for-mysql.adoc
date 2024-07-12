@@ -17,6 +17,7 @@ NOTE: IBM Java is not supported.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for MySQL is installed as domain administrator.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the MySQL plug-in on Windows hosts.
 * SnapCenter Server should have access to the 8145 or custom port of Plug-in for MySQL host.
+* For MySQL 5.7, binlog should be specified in mysql config (my.cnf or mysql-server.cnf) file.
 
 == Windows hosts
 
@@ -90,6 +91,7 @@ SnapCenter 2.0 and later releases allow a non-root user to install the SnapCente
 *What you will need*
 
 * Sudo version 1.8.7 or later.
+* For non-root user, ensure that the name of the non-root user and the user's group should be the same.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.

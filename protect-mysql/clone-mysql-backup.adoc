@@ -22,6 +22,7 @@ For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\
 For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
+* For MySQL 5.7 version, you should set IGNORE_MYSQLX_PORT = true (by default false) in the MySQL. properties file.
 
 .About this task
 
