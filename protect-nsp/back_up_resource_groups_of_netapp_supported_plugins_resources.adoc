@@ -1,0 +1,39 @@
+---
+permalink: protect-nsp/back_up_resource_groups_of_netapp_supported_plugins_resources.html
+sidebar: sidebar
+keywords: backup, NetApp supported plug-ins
+summary: 'You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'
+---
+= Back up resource groups of NetApp supported plug-in resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
+
+.Before you begin
+
+* You must have created a resource group with a policy attached.
+* If you want to back up a resource that has a SnapMirror relationship to secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *Resource Group* from the *View* list.
++
+You can search the resource group either by entering the resource group name in the search box or by clicking image:../media/filter_icon.png[filter icon] and selecting the tag. You can then click image:../media/filter_icon.png[filter icon] to close the filter pane.
+
+. In the Resource Groups page, select the resource group that you want to back up, and then click *Back up Now*.
+. In the Backup page, perform the following steps:
+ .. If you have associated multiple policies with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.
++
+If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
+
+ .. Click *Backup*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+* In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover]
+
+* If you are backing up application data on VMDKs and the Java heap size for the SnapCenter Plug-in for VMware vSphere is not large enough, the backup might fail. To increase the Java heap size, locate the script file /opt/netapp/init_scripts/scvservice. In that script, the `do_start method` command starts the SnapCenter VMware plug-in service. Update that command to the following: `Java -jar -Xmx8192M -Xms4096M`.

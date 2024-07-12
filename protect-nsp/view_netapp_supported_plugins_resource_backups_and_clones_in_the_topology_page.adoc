@@ -1,0 +1,59 @@
+---
+permalink: protect-nsp/view_netapp_supported_plugins_resource_backups_and_clones_in_the_topology_page.html
+sidebar: sidebar
+keywords: view custom plug-in resource
+summary: 'When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage. In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.'
+---
+= View custom plug-in resource related backups and clones in the Topology page
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage. In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.
+
+.About this task
+
+You can review the following icons in the Manage Copies view to determine whether the backups and clones are available on the primary or secondary storage (Mirror copies or Vault copies).
+
+* image:../media/topology_primary_storage.gif[primary storage icon] displays the number of backups and clones that are available on the primary storage.
+* image:../media/topology_mirror_secondary_storage.gif[secondary storage Mirror icon] displays the number of backups and clones that are mirrored on the secondary storage using SnapMirror technology.
++
+NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view but the mirror backup count in the topology view does not include the version-flexible backup.
+
+* image:../media/topology_vault_secondary_storage.gif[secondary vault icon] displays the number of backups and clones that are replicated on the secondary storage using SnapVault technology.
++
+The number of backups displayed includes the backups deleted from the secondary storage. For example, if you have created 6 backups using a policy to retain only 4 backups, the number of backups displayed are 6.
++
+NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type volume are displayed in the topology view but the mirror backup count in the topology view does not include the version-flexible backup.
+
+.Steps
+
+. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, either select the resource or resource group from the *View* drop-down list.
+. Select the resource either from the resource details view or from the resource group details view.
++
+If the resource is protected, the topology page of the selected resource is displayed.
+
+. Review the Summary card to see a summary of the number of backups and clones available on the primary and secondary storage.
++
+The Summary Card section displays the total number of backups and clones.
++
+Clicking the refresh button starts a query of the storage to display an accurate count.
++
+If SnapLock enabled backup is taken, then clicking the *Refresh* button refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP. A weekly schedule also refreshes the primary and secondary SnapLock expiry time retrieved from ONTAP.
++
+When the application resource is spread across multiple volumes, the SnapLock expiry time for the backup will be the longest SnapLock expiry time that is set for a Snapshot in a volume. The longest SnapLock expiry time is retrieved from ONTAP.
++
+After on demand backup, by clicking the *Refresh* button refreshes the details of backup or clone.
+
+. In the Manage Copies view, click *Backups* or *Clones* from the primary or secondary storage to see details of a backup or clone.
++
+The details of the backups and clones are displayed in a table format.
+
+. Select the backup from the table, and then click the data protection icons to perform restore, clone, rename, and delete operations.
++
+NOTE: You cannot rename or delete backups that are on the secondary storage system.
++
+NOTE: You cannot rename the backups that are on the primary storage system.
+
+. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[] to delete the clone.

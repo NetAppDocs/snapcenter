@@ -1,0 +1,12 @@
+---
+permalink: protect-nsp/host_requirements_to_install_snapcenter_plug_in_package_for_windows.html
+sidebar: sidebar
+keywords: SAP HANA, NetApp supported plug-in
+summary: 'Before you install the SnapCenter Plug-ins Package for Windows, you should be familiar with some basic host system space requirements and sizing requirements.'
+---
+= Host requirements to install SnapCenter Plug-ins Package for Windows
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.adoc[]

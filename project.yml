@@ -40,7 +40,7 @@ sidebar:
     - section: protect-mysql    
     - section: protect-scu
     - section: protect-azure 
-    - section: protect-scc   
+    - section: protect-nsp   
     - section: admin
     - section: upgrade
     - section: tech-refresh
