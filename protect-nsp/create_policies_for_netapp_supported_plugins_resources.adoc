@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/task_create_policies_for_netapp_supported_plugins_resources.html
+permalink: protect-scc/create_policies_for_netapp_supported_plugins_resources.html
 sidebar: sidebar
 keywords: create policies, custom plnetapp_supported_pluginsug-in
 summary: 'Before you use SnapCenter to back up custom plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.'
