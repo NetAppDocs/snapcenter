@@ -45,10 +45,20 @@ a|
 The port is used for communication between the SnapCenter Server and the hosts where the SnapCenter plug-ins are installed.
 
 To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
+
+a|
+Scheduler Service Port
+a|
+8154 (HTTPS), 
+
+This is port is used to orchestrate the SnapCenter scheduler workflows for all the managed plug-ins within the SnapCenter server host in centralized manner.
+
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
+
 a|
 MySQL port
 a|
-3306 (HTTPS), bidirectional
+3306 (HTTPS), bidirectional, customizable
 
 The port is used for communication between SnapCenter and MySQL repository database.
 
@@ -65,13 +75,6 @@ In addition to ports 135 and 445, the dynamic port range specified by Microsoft 
 For information on the dynamic port range supported, see https://support.microsoft.com/kb/832017[Service overview and network port requirements for Windows^]
 
 The ports are used for communication between the SnapCenter Server and the host on which the plug-in is being installed. To push plug-in package binaries to Windows plug-in hosts, the ports must be open only on the plug-in host, and they can be closed after installation.
-
-a|
-Scheduler Port
-a|
-8154 (default value)
-
-When you are doing a fresh installation of SnapCenter 6.0 on Windows host or upgrade from earlier version, you should ensure that the scheduler port is open. the scheduler services run on the scheduler port.
 
 a|
 Linux or AIX plug-in hosts

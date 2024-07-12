@@ -44,27 +44,25 @@ a|
 
 NOTE: The MySQL Server buffer pool uses 20 percent of the total RAM.
 a|
-10 GB
+8 GB
 
 a|
 Minimum hard drive space for the SnapCenter Server software and logs
 a|
-4 GB
+7 GB
 
-NOTE: If you have the SnapCenter repository in the same drive where SnapCenter Server is installed, then it is recommended to have 10 GB.
+NOTE: If you have the SnapCenter repository in the same drive where SnapCenter Server is installed, then it is recommended to have 15 GB.
 a|
-40 GB
+15 GB
 
 a|
 Minimum hard drive space for the SnapCenter repository
 a|
-6 GB
+8 GB
 
-NOTE: NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 10 GB.
+NOTE: NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 15 GB.
 a|
-6 GB
-
-NOTE: NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 10 GB.
+Not applicable
 
 a|
 Required software packages
