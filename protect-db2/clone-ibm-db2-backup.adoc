@@ -100,3 +100,11 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+.After you finish
+
+After cloning the automatically discovered Db2 resources, the cloned resource is marked as manual resource. Click *Refresh resources* to recover the cloned Db2 resource.   When you delete the clone, the storage and the host also gets cleaned up.
+
+If you do not refresh the resources after the clone operation and attempt to delete the clone, the storage and the host will not be cleaned up.  You must delete the entries manually in fstab.
+
+ 

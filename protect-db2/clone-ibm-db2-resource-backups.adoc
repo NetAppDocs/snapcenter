@@ -25,3 +25,9 @@ The following workflow shows the sequence in which you must perform the clone op
 image::../media/sco_scc_wfs_clone_workflow.png[Clone workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain detailed information about PowerShell cmdlets.
+
+.After you finish
+
+After cloning the automatically discovered Db2 resources, the cloned resource is marked as manual resource. Click *Refresh resources* to recover the cloned Db2 resource.   When you delete the clone, the storage and the host also gets cleaned up.
+
+If you do not refresh the resources after the clone operation and attempt to delete the clone, the storage and the host will not be cleaned up.  You must delete the entries manually in fstab.
