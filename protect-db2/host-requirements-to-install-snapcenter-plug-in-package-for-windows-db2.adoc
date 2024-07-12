@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: IBM Db2
 summary: 'Before you install the SnapCenter Plug-ins Package for Windows, you should be familiar with some basic host system space requirements and sizing requirements.'
 ---
+
 = Host requirements to install SnapCenter Plug-ins Package for Windows
 :icons: font
 :imagesdir: ../media/

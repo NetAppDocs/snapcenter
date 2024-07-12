@@ -13,6 +13,9 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 
 .Before you begin
 
+* If the operating system of the SnapCenter Server host is Windows 2019 and the operating system of the plug-in host is Windows 2022, you should perform the following:
+** Upgrade to Windows Server 2019 (OS Build 17763.5936) or later
+** Upgrade to Windows Server 2022 (OS Build 20348.2402) or later
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * You should ensure that the message queueing service is running.
