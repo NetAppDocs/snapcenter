@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
-= Restore custom plug-in resources
+= Restore NetApp supported plug-in resources
 :icons: font
 :imagesdir: ../media/
 

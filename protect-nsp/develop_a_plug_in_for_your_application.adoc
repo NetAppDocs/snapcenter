@@ -11,7 +11,7 @@ summary: 'The SnapCenter Server enables you to deploy and manage your applicatio
 [.lead]
 
 The SnapCenter Server enables you to deploy and manage your applications as plug-ins to SnapCenter.
-Applications of your choice can be plugged into the SnapCenter Server for data protection and
+Applications of your choice can be plugged into the SnapCenter Server for data protection and 
 management capabilities.
 
 SnapCenter enables you to develop custom plug-ins using different programming languages. You can

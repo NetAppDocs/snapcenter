@@ -13,7 +13,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 
 * You must have created a custom plug-in. For details, see the developer information.
 +
-link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
+link:develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 * You must have installed Java 11 on your Linux or Windows host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The NetApp supported plug-ins must be available on the client host from where the add host operation is performed.

@@ -19,10 +19,10 @@ NetApp provides the Storage plug-in to perform data protection operations of the
 
 You can install the NetApp supported plug-ins and custom plug-in, and storage plug-in from the Add Host page.
 
-link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html[Add hosts and install plug-in packages on remote hosts.^]
+link:add_hosts_and_install_plug_in_packages_on_remote_hosts.html[Add hosts and install plug-in packages on remote hosts.^]
 
 NetApp also provides MongoDB, MySQL, PostgreSQL, Storage, MaxDB, Sybase ASE, ORASCPM, MongoDB, and DPGlue plug-ins. 
 
 NOTE: SnapCenter support policy will cover support for SnapCenter custom plug-in framework, core engine, and the associated APIs. Support will not cover the plug-in source code and the associated scripts built on the custom plug-in framework.
 
-You can create your own custom plug-ins by referring to link:concept_develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^] guide.
+You can create your own custom plug-ins by referring to link:develop_a_plug_in_for_your_application.html[Develop a plug-in for your application^] guide.

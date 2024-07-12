@@ -1,7 +1,7 @@
 ---
 permalink: protect-nsp/add_resources_to_netapp_supported_plugins.html
 sidebar: sidebar
-keywords: custom plug-in, resources, snapcenter
+keywords: NetApp supported plug-in, resources, snapcenter
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
 = Add resources to NetApp supported plug-ins

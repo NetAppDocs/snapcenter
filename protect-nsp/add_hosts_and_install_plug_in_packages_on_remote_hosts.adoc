@@ -43,7 +43,7 @@ Select the host type:
  ** Windows
  ** Linux
 
-NOTE: The custom plug-ins can be used in both Windows and Linux environments.
+NOTE: The NetApp supported plug-ins can be used in both Windows and Linux environments.
 
 a|
 Host name

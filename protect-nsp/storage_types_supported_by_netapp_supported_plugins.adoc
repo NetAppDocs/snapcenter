@@ -1,15 +1,15 @@
 ---
 permalink: protect-nsp/storage_types_supported_by_netapp_supported_plugins.html
 sidebar: sidebar
-keywords: Custom Plug-ins
-summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing SnapCenter Custom Plug-ins.'
+keywords: NetApp supported plug-ins
+summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing NetApp supported plug-ins.'
 ---
-= Storage types supported by SnapCenter Custom Plug-ins
+= Storage types supported by NetApp supported plug-ins
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing SnapCenter Custom Plug-ins.
+SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing NetApp supported plug-ins.
 
 |===
 | Machine| Storage type
