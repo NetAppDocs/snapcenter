@@ -75,15 +75,15 @@ If you have untrusted Active Directory domains that you want SnapCenter to suppo
 
 If you want to add the plug-in host in SnapCenter running on Linux host, you should get the checksum file from the location: _/opt/NetApp/snapcenter/SnapManagerWeb/Repository_.
 
+From 6.0 release, a shortcut for PowerShell is created on the system. You can directly access the SnapCenter PowerShell cmdlets by using the shortcut.
+
 == Log in to SnapCenter using Multi-Factor Authentication (MFA)
 
 SnapCenter Server supports MFA for domain account, which is part of the active directory.
 
 .Before you begin
 
-* You should have enabled MFA.
-+
-For information on how to enable MFA,  see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication]
+You should have enabled MFA. For information on how to enable MFA,  see link:../install/enable_multifactor_authentication.html[Enable Multi-factor authentication]
 
 *About this task*
 
