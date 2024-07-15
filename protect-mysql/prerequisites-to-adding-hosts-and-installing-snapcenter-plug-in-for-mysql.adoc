@@ -91,7 +91,7 @@ SnapCenter 2.0 and later releases allow a non-root user to install the SnapCente
 *What you will need*
 
 * Sudo version 1.8.7 or later.
-* For non-root user, ensure that the name of the non-root user and the user's group should be the same.
+* For the non-root user, ensure that the name of the non-root user and the user's group should be the same.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
 Restart the sshd service after updating the configuration file.

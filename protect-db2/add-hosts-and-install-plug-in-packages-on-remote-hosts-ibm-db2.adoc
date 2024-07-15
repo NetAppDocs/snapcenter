@@ -65,6 +65,8 @@ The credentials authentication mode is determined by the host type that you spec
 |===
 
 . In the Select Plug-ins to Install section, select the plug-ins to install.
++
+While using the REST API to install Plug-in for Db2, you must pass the version as 3.0.  For example, Db2:3.0
 . (Optional) Click *More Options*.
 +
 |===
