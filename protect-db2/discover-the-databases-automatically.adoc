@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the IBM Db2 databases that are available.'
 ---
-= Discover the clusters automatically
+= Discover the databases automatically
 :icons: font
 :imagesdir: ../media/
 

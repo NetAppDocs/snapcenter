@@ -60,11 +60,12 @@ image::../media/storage_footprint.gif[Storage footprint]
 
 . In the Resource Settings page, provide custom key-value pairs for the resource.
 +
-Use the custom key-value pairs if you want to pass resource-specific information. For example, when you are using the MySQL plug-in, you must specify a HOST as HOST=hostname, PORT =port-no used for MySQL and master-slave configuration as MASTER_SLAVE = "`YES`" or "`NO`" (name is MASTER_SLAVE and value is "`YES`" or "`NO`").
-+
-NOTE: Ensure that the words HOST and PORT are in uppercase.
+NOTE: Ensure that the custom keys name is in uppercase.
 +
 image::../media/resource_settings.gif[resource settings]
++
+For the respective plug-in parameters, refer 
+link:add_resources_to_netapp_supported_plugins.html#parameters-to-configure-the-resource[Parameters to configure the resource]
 
 . Review the summary, and then select *Finish*.
 
@@ -80,3 +81,10 @@ IMPORTANT: You must refresh the resources if the databases are renamed outside o
 If you want to provide access to the assets to other users, the SnapCenter administrator must assign assets to those users. This enables users to perform the actions for which they have permissions on the assets that are assigned to them.
 
 After adding the resources, you can modify the resource details. If a NetApp supported plug-ins resource has backups associated with it, the following fields cannot be modified: resource name, resource type, and host name.
+
+== Parameters to configure the resource 
+
+If you are adding the plug-ins manually, you can use the following parameters to configure the resource in the Resource Settings page.
+
+*MongoDB*
+
