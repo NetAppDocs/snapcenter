@@ -52,7 +52,7 @@ This is optional.
 +
 Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
 
-. Optional: In the Resource Settings page, for resources on the Windows host, enter custom key-value pairs for MySQL plug-in
+. Optional: In the Resource Settings page, enter custom key-value pairs for MySQL plug-in.
 
 . Review the summary, and then click *Finish*.
 +
