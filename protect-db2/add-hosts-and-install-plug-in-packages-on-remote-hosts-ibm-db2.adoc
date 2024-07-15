@@ -124,3 +124,7 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 +
 * For Windows plug-in, the install and upgrade logs are located at: _C:\Windows\SnapCenter plugin\Install_<JOBID>\ 
 * For Linux plug-in, the install logs are located at: _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Install_<JOBID>.log and the upgrade logs are located at: _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Upgrade_<JOBID>.log 
+
+.After you finish
+
+If you want to upgrade to SnapCenter 6.0 version, the existing PERL-based Plug-in for Db2 will be uninstalled from the remote plug-in server.
