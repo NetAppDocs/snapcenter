@@ -13,7 +13,7 @@ The restore and recovery workflow includes planning, performing the restore oper
 
 The following workflow shows the sequence in which you must perform the restore operation:
 
-image::../media/restore_workflow_db2.gif[Restore workflow]
+image::../media/db2_restore_workflow.png[Restore workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain detailed information about PowerShell cmdlets.
 
