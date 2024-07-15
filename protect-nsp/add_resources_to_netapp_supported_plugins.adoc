@@ -86,5 +86,65 @@ After adding the resources, you can modify the resource details. If a NetApp sup
 
 If you are adding the plug-ins manually, you can use the following parameters to configure the resource in the Resource Settings page.
 
-*MongoDB*
+*Plug-in for MongoDB*
+
+Resource Settings:
+
+* MONGODB_APP_SERVER=(for resource type as sharded cluster) or MONGODB_REPLICASET_SERVER=(for resource type as replicaset)
+* OPLOG_PATH=(Optional parameter in case it is provided from MongoDB.propertiesfile)
+* MONGODB_AUTHENTICATION_TYPE= (PLAIN for LDAP Authentication and None for others)
+
+You must provide the following parameters needs to be provided n MongoDB.properties file:
+
+* DISABLE_STARTING_STOPPING_SERVICES=
+** N if the start/stop services are performed by the plug-in.
+** Y if start/**stop services are performed by the user.
+** Optional parameter as default value is set to N.
+* OPLOG_PATH_= (Optional parameter in case it is already provided as custom key-value pair in SnapCenter).
+
+*Plug-in for MaxDB*
+
+Resource Settings:
+
+* XUSER_ENABLE (Y|N) enables or disables the use of an xuser for MaxDB so that a password is not required for the database user.
+* HANDLE_LOGWRITER (Y|N) executes suspend logwriter (N) or resume logwriter (Y) operations.
+* DBMCLICMD (path_to_dbmcli_cmd) specifies the path to the MaxDB dbmcli command. If not set, dbmcli on the search path is used.
+
+NOTE: For Windows environment, the path must be within double-quotes ("...").
+
+* SQLCLICMD (path_to_sqlcli_cmd) specifies the path to the MaxDB sqlcli command. If the path is not set, sqlcli is used on the search path.
+* MAXDB_UPDATE_HIST_LOG (Y|N) instructs the MaxDB backup program whether it should update the MaxDB history log.
+* MAXDB_CHECK_SNAPSHOT_DIR : Example, SID1:directory[,directory...]; [SID2:directoary[,directory...] checks that a Snap Creator Snapshot copy operation is successful and ensures that the snapshot is created. 
++
+This applies to NFS only. The directory must point to the location that contains the .snapshot directory. Multiple directories can be included in a comma-separated list.
++
+In MaxDB 7.8 and later versions, the database backup request is marked Failed in the backup history.
+* MAXDB_BACKUP_TEMPLATES: Specifies a backup template for each database. 
++
+The template must exist and be an external type of backup template. To enable snapshot integration for MaxDB 7.8 and later, you must have MaxDB background server functionality and already configured MaxDB backup template of the EXTERNAL type.
+* MAXDB_BG_SERVER_PREFIX: Specifies the prefix for the background server name. 
++
+If the MAXDB_BACKUP_TEMPLATES parameter is set, you must also set the MAXDB_BG_SERVER_PREFIX parameter. If you do not set the prefix, the default
+value na_bg_ is used.
+
+*Plug-in for Sybase ASE*
+
+Resource Settings:
+
+* SYBASE_SERVER (data_server_name) specifies the Sybase data server name (-S option on isql command). For example, p_test.
+* SYBASE_DATABASES_EXCLUDE (db_name) allows databases to be excluded if the "ALL" construct is used. 
++
+You can specify multiple databases by using a semicolon-separated list. For example: pubs2;test_db1.
+* SYBASE_USER: user_name specifies the operating system user who can run the isql command. 
++
+Required for UNIX. This parameter is required if the user running the Snap Creator Agent start and stop commands (usually the root user) and the user running the isql command are different.
+* SYBASE_TRAN_DUMP db_name:directory_path enables you to perform a Sybase transaction dump after creating a snapshot. For example, pubs2:/sybasedumps/ pubs2
++
+You must specify each database requiring a transaction dump.
+* SYBASE_TRAN_DUMP_COMPRESS (Y|N ) enables or disables native Sybase transaction dump compression.
+* SYBASE_ISQL_CMD (For example, /opt/sybase/OCS-15_0/bin/isql) defines the path to the isql command.
+* SYBASE_EXCLUDE_TEMPDB (Y|N) allows you to auto exclude user created temporary databases.
+
+
+
 
