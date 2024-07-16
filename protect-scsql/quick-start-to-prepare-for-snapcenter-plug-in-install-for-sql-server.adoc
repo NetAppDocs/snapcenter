@@ -63,28 +63,26 @@ a|CPU
 a|
 * Server host: 4 cores
 
-* Plug-in host: 1 core
+* Plug-in host: 4 cores
 a|RAM
 a|
 * Server host: 8 GB
 
-* Plug-in host: 1 GB
+* Plug-in host: 4 GB
 a|Hard drive space
 a|Server host:
 
-* 4 GB for SnapCenter Server software and logs
+* 7 GB for SnapCenter Server software and logs
 
-* 6 GB for SnapCenter repository
+* 8 GB for SnapCenter repository
 
 * Each plug-in host: 2 GB for plug-in installation and logs, this is required only if plug-in is installed on a dedicated host.
 a|Third-party libraries
 a|Required on SnapCenter Server host and plug-in host:
 
 * Microsoft .NET Framework 4.7.2 or later
-
-* Windows Management Framework (WMF) 4.0 or later
-
-* PowerShell 4.0 or later
+* ASP.NET Core Hosting Bundle (8.0.5 or later)
+* PowerShell 7.4.2 or later
 a|Browsers
 a|Chrome, Internet Explorer, and Microsoft Edge
 |===

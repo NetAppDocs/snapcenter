@@ -48,7 +48,7 @@ a|
 * Application Development Features
  ** .NET Extensibility 4.5
  ** Application Initialization
- ** ASP.NET 4.7.2
+ ** ASP.NET Core Hosting Bundle (8.0.5 or later)
  ** Server-Side Includes
  ** WebSocket Protocol
 * Management Tools

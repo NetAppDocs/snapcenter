@@ -84,7 +84,6 @@ a|Required on SnapCenter Server host and plug-in host:
 
 * Microsoft .NET Framework 4.7.2 or later
 * ASP.NET Core Hosting Bundle (8.0.5 or later)
-* Windows Management Framework (WMF) 4.0 or later
 * PowerShell 7.4.2 or later
 
 a|Browsers
