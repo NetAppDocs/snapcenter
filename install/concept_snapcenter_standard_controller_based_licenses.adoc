@@ -192,7 +192,7 @@ This command is available at the admin privilege level.
 
 If you are using a controller-based SnapCenter Standard license and need to remove the capacity-based trial license (serial number ending with "`50`"), you should use MySQL commands to remove the trial license manually. The trial license cannot be deleted using the SnapCenter GUI.
 
-NOTE: Removing a trial license manually is only required if you are using a SnapCenter Standard controller-based license. If you procured a SnapCenter Standard capacity-based license and add it in the SnapCenter GUI, the trial license gets overwritten automatically.
+NOTE: Removing a trial license manually is only required if you are using a SnapCenter Standard controller-based license.
 
 .Steps
 

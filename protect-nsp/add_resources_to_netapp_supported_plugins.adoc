@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: NetApp supported plug-in, resources, snapcenter
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
+
 = Add resources to NetApp supported plug-ins
 :icons: font
 :imagesdir: ../media/
@@ -86,7 +87,7 @@ After adding the resources, you can modify the resource details. If a NetApp sup
 
 If you are adding the plug-ins manually, you can use the following parameters to configure the resource in the Resource Settings page.
 
-*Plug-in for MongoDB*
+=== Plug-in for MongoDB
 
 Resource Settings:
 
@@ -102,7 +103,7 @@ You must provide the following parameters needs to be provided n MongoDB.propert
 ** Optional parameter as default value is set to N.
 * OPLOG_PATH_= (Optional parameter in case it is already provided as custom key-value pair in SnapCenter).
 
-*Plug-in for MaxDB*
+=== Plug-in for MaxDB
 
 Resource Settings:
 
@@ -127,7 +128,7 @@ The template must exist and be an external type of backup template. To enable sn
 If the MAXDB_BACKUP_TEMPLATES parameter is set, you must also set the MAXDB_BG_SERVER_PREFIX parameter. If you do not set the prefix, the default
 value na_bg_ is used.
 
-*Plug-in for Sybase ASE*
+=== Plug-in for Sybase ASE
 
 Resource Settings:
 
@@ -144,6 +145,21 @@ You must specify each database requiring a transaction dump.
 * SYBASE_TRAN_DUMP_COMPRESS (Y|N ) enables or disables native Sybase transaction dump compression.
 * SYBASE_ISQL_CMD (For example, /opt/sybase/OCS-15_0/bin/isql) defines the path to the isql command.
 * SYBASE_EXCLUDE_TEMPDB (Y|N) allows you to auto exclude user created temporary databases.
+
+=== Plug-in for Oracle applications (ORASCPM)
+
+Resource Settings:
+
+* SQLPLUS_CMD specifies the path to SQLplus.
+* ORACLE_DATABASES lists the Oracle databases to be backed up and corresponding user (database:user).
+* CNTL_FILE_BACKUP_DIR specifies the directory for control file back up.
+* ORA_TEMP specifies the directory for temporary files.
+* ORACLE_HOME specifies the directory where the Oracle software is installed.
+* ARCHIVE_LOG_ONLY specifies whether to back up the archive logs or not.
+* ORACLE_BACKUP_MODE specifies whether to perform online or offline backup.
+
+
+
 
 
 

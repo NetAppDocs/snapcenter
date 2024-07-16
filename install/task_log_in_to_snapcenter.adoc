@@ -75,7 +75,7 @@ If you have untrusted Active Directory domains that you want SnapCenter to suppo
 
 If you want to add the plug-in host in SnapCenter running on Linux host, you should get the checksum file from the location: _/opt/NetApp/snapcenter/SnapManagerWeb/Repository_.
 
-From 6.0 release, a shortcut for PowerShell is created on the desktop. You can directly access the SnapCenter PowerShell cmdlets by using the shortcut.
+From 6.0 release, a shortcut for SnapCenter PowerShell is created on the desktop. You can directly access the SnapCenter PowerShell cmdlets by using the shortcut.
 
 == Log in to SnapCenter using Multi-Factor Authentication (MFA)
 

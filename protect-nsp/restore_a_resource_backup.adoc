@@ -55,25 +55,6 @@ If the resource contains volumes or qtrees as Storage Footprint, then newer Snap
   +
 NOTE: If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
 
-. In the *Recovery Type* page, perform the following steps: select option to apply logs. Make sure your plugin supports All logs and Logs until restore type before selecting it.
-+
-|===
-| If you want to...| Do this...
-
-a|
-Restore all logs
-a|
-Select *All logs*.    Ensure that the plug-in supports *All logs*.
-a|
-Restore all logs till the specified time
-a|
-Select *Logs until*.    Ensure that the plug-in supports *Logs until*.
-a|
-Restore the resource backup
-a|
-Select *None*.
-|===
-
 . In the *Pre ops* page, enter pre restore and unmount commands to run before performing a restore job.
 . In the *Post ops* page, enter mount and post restore commands to run after performing a restore job.
 . In the *Notification* page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.

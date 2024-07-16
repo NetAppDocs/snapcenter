@@ -156,17 +156,7 @@ For a built-in local admin username format, use _<username>_.
 +
 `license show`
 
-=== Step 4: Add a SnapCenter capacity-based license
-
-. In the SnapCenter GUI left pane, click *Settings > Software*, and then in the License section, click *+*.
-. Select one of two methods for obtaining the license:
-+
-** Enter your NetApp Support Site login credentials to import licenses.
-** Browse to the location of the NetApp License File and click *Open*.
-. In the Notifications page of the wizard, use the default capacity threshold of 90 percent.
-. Click *Finish*.
-
-=== Step 5: Set up storage system connections
+=== Step 4: Set up storage system connections
 
 . In the left pane, click *Storage Systems > New*.
 . In the Add Storage System page, perform the following:
