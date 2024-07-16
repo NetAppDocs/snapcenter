@@ -97,6 +97,7 @@ There are several ONTAP CLI commands you should run to create cluster roles and 
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume file clone create" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume file show-disk-usage" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot modify-snaplock-expiry-time" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume offline" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume online" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume qtree create" -access all`
