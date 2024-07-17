@@ -14,7 +14,7 @@ entries:
       - title: Minimum ONTAP privileges required
         url: /protect-mysql/minimum-privileges-required-for-mysql.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-mysql/ prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-mysql.html
+        url: /protect-mysql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-mysql.html
       - title: Backup strategy for MySQL
         entries:
           - title: Define a backup strategy for MySQL
