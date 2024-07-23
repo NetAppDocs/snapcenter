@@ -12,6 +12,10 @@ summary: 'Back up the resource from the Resources page.'
 [.lead]
 If a resource is not yet part of any resource group, you can back up the resource from the Resources page.
 
+.Before you begin
+
+You should create a load balancer, if the Azure Windows Failover Cluster does not have a cluster IP assigned or if it is not reachable from SnapCenter. The load balancer's IP should be configured and reachable from the SnapCenter Server.
+
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.

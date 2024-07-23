@@ -66,6 +66,15 @@ a|
 Support for provisioning only.
 
 You cannot use SnapCenter to back up any data or shares using the SMB protocol.
+
+a|
+VMware VM
+a|
+vVol datastores on both NFS and SAN
+a|
+ONTAP Tools for VMware vSphere
+a|
+
 a|
 Hyper-V VM
 a|

@@ -12,10 +12,16 @@ summary: 'You can add hosts and install SnapCenter plug-in packages, add a verif
 You can add hosts and install SnapCenter plug-in packages, add a verification server, remove hosts, migrate backup jobs, and update host to upgrade plug-in packages or add new plug-in packages. Depending on the plug-in you are using, you can also provision disks, manage SMB shares, manage initiator groups (igroups), manage iSCSI sessions, and migrate data.
 
 |===
-| You can perform these tasks...| For Microsoft Exchange Server| For Microsoft SQL Server| For Microsoft Windows| For Oracle Database| For SAP HANA Database| For Custom Plug-ins
+| You can perform these tasks...| For Microsoft Exchange Server| For Microsoft SQL Server| For Microsoft Windows| For Oracle Database| For SAP HANA Database| For NetApp supported plug-ins| For Db2| For PostgreSQL| For MySQL
 
 a|
 Add hosts and install plug-in package
+a|
+Yes
+a|
+Yes
+a|
+Yes
 a|
 Yes
 a|
@@ -43,7 +49,19 @@ No
 a|
 No
 a|
+No
+a|
+No
+a|
+No
+a|
 Suspend schedules and place hosts in maintenance mode
+a|
+Yes
+a|
+Yes
+a|
+Yes
 a|
 Yes
 a|
@@ -71,7 +89,19 @@ Yes
 a|
 Yes
 a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
 Remove hosts from SnapCenter
+a|
+Yes
+a|
+Yes
+a|
+Yes
 a|
 Yes
 a|
@@ -99,6 +129,12 @@ Yes
 a|
 Yes
 a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
 Provision disks
 a|
 No
@@ -106,6 +142,12 @@ a|
 No
 a|
 Yes
+a|
+No
+a|
+No
+a|
+No
 a|
 No
 a|
@@ -127,6 +169,12 @@ No
 a|
 No
 a|
+No
+a|
+No
+a|
+No
+a|
 Manage iGroups
 a|
 No
@@ -141,6 +189,12 @@ No
 a|
 No
 a|
+No
+a|
+No
+a|
+No
+a|
 Manage iSCSI sessions
 a|
 No
@@ -148,6 +202,14 @@ a|
 No
 a|
 Yes
+a|
+No
+a|
+No
+a|
+No
+a|
+No
 a|
 No
 a|

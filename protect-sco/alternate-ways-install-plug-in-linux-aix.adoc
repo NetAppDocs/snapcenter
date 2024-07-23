@@ -41,7 +41,7 @@ NOTE: The precheck script does not validate the plug-in port firewall status if 
 
 . Enter your credentials for remote installation.
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 //Removed the section "Install Plug-ins Package for Linux interactively" in 4.6 for BURT 1420247
 
 == Install on cluster host

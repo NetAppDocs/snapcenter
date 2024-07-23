@@ -13,12 +13,15 @@ You must use the SnapCenter *Add Host* page to add hosts and install the plug-in
 
 .Before you begin
 
+* If the operating system of the SnapCenter Server host is Windows 2019 and the operating system of the plug-in host is Windows 2022, you should perform the following:
+** Upgrade to Windows Server 2019 (OS Build 17763.5936) or later
+** Upgrade to Windows Server 2022 (OS Build 20348.2402) or later
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, you should disable UAC on the host.
 * You should ensure that the message queueing service is in running state.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
-link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for SQL^]
+link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for SQL^]
 
 .About this task
 

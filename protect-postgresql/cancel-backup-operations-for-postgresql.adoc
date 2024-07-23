@@ -1,0 +1,12 @@
+---
+permalink: protect-postgresql/cancel-backup-operations-for-postgresql.html
+sidebar: sidebar
+keywords: plug-in for PostgreSQL
+summary: 'You can cancel backup operations that are queued.'
+---
+= Cancel backup operations for PostgreSQL
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/resuse_task_cancel_backup_operations.adoc[]

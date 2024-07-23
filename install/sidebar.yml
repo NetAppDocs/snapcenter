@@ -19,6 +19,8 @@ entries:
         url: /install/reference_connection_and_port_requirements.html
       - title: SnapCenter licenses
         url: /install/concept_snapcenter_licenses.html
+      - title: Register to access the SnapCenter software
+        url: /install/register_enable_software_access.html
       - title: Authentication methods for your credentials
         url: /install/concept_authentication_methods_for_your_credentials.html
       - title: Storage Virtual Machine connections and credentials
@@ -31,11 +33,13 @@ entries:
             url: /install/enable_multifactor_authentication_using_RestAPI_PowerShell_SCCLI.html
           - title: Configure MFA in SnapCenter Server using PowerShell, SCCLI, and REST API
             url: /install/configure_mfa_using_powershell_sccli_restapi.html
-  - title: Install the SnapCenter Server
+  - title: Install the SnapCenter Server on Windows host
     url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
+  - title: Install the SnapCenter Server on Linux host
+    url: /install/install_snapcenter_server_linux.html
   - title: Log in to SnapCenter
     url: /install/task_log_in_to_snapcenter.html
-  - title: Configure CA Certificate
+  - title: Configure CA Certificate for Windows host
     entries:
       - title: Generate CA Certificate CSR file
         url: /install/reference_generate_CA_certificate_CSR_file.html
@@ -49,12 +53,20 @@ entries:
         url: /install/task_configure_CA_certificate_with_snapcenter_site.html
       - title: Enable CA Certificates for SnapCenter Server
         url: /install/task_enable_ca_certificates_for_snapcenter.html
-  - title: Configure and enable two-way SSL communication
+  - title: Configure CA Certificate for Linux host
+    url: /install/configure_ca_certificate_linux_host.html
+  - title: Configure and enable two-way SSL communication on Windows host
     entries:
-      - title: Configure two-way SSL communication
+      - title: Configure two-way SSL communication on Windows host
         url: /install/task_configure_two_way_ssl.html
-      - title: Enable two-way SSL communication
-        url: /install/task_enable_two_way_ssl.html      
+      - title: Enable two-way SSL communication on Windows host
+        url: /install/task_enable_two_way_ssl.html   
+  - title: Configure and enable two-way SSL communication on Linux host
+    entries:
+      - title: Configure two-way SSL communication on Linux host
+        url: /install/configure_two_way_ssl_linux.html
+      - title: Enable SSL communication on Linux host
+        url: /install/enable_two_way_ssl_linux.html    
   - title: Configure Certificate-based Authentication 
     entries:
       - title: Export Certificate Authority (CA) certificates from SnapCenter Server 
@@ -107,8 +119,6 @@ entries:
     url: /install/task_add_storage_systems.html
   - title: Add SnapCenter Standard controller-based licenses
     url: /install/concept_snapcenter_standard_controller_based_licenses.html
-  - title: Add SnapCenter Standard capacity-based licenses
-    url: /install/concept_snapcenter_standard_capacity_based_licenses.html
   - title: Provision your storage system
     entries:
       - title: Provision storage on Windows hosts
@@ -131,3 +141,5 @@ entries:
     url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
   - title: Features enabled on your Windows host during installation
     url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
+  - title: Features enabled on Linux host during installation
+    url: /install/features_enabled_on_linux_host.html

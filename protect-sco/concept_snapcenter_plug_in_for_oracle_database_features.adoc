@@ -54,14 +54,22 @@ Enabled by default, the SLM feature periodically discovers the LUNs that do not 
 For information about SLM, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^].
 
 * Support for non-volatile memory express (NVMe) on Linux
++
 ** NVMe util should be installed on the host.
 +
 You must install NVMe util to clone or mount to alternate host.
-** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification operations are supported on the NVMe hardware except for the virtualized environments like VMDK and RDM.
+
+** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification operations are supported on the NVMe hardware except for the virtualized environments like RDM.
 +
 The above operations are supported on devices without partitions or with single partition.
-
++
 NOTE: You can configure multipathing solution for NVMe devices by setting the native multipathing option in the kernel. Device Mapper (DM) multipathing is not supported. 
+
+** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification workflows workflows are supported on NVMe over TCP/IP.
+
+** Backup, restore, clone, mount, unmount, catalog, uncatalog, and verification workflows are supported on VMDK layout created on NVMe over TCP/IP.
+
+* Supports SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]) that enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
 
 * Supports any non-default user instead of oracle and grid.
 +

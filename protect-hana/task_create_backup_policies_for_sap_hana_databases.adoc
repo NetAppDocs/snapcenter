@@ -20,6 +20,7 @@ For details, see the information about defining a data protection strategy for S
 * The SnapCenter administrator must have assigned the SVMs for both the source and destination volumes to you if you are replicating Snapshots to a mirror or vault.
 +
 Additionally, you can specify replication, script, and application settings in the policy. These options saves time when you want to reuse the policy for another resource group.
+* Review the SnapMirror active sync specific prerequisites and limitations. For information refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror active sync].
 
 .About this task
 
@@ -117,6 +118,8 @@ a|
 *Update SnapMirror after creating a local Snapshot copy*
 a|
 Select this field to create mirror copies of the backup sets on another volume (SnapMirror replication).
+
+This option should be enabled for SnapMirror active sync.
 
 If the protection relationship in ONTAP is of type Mirror and Vault and if you select only this option, the Snapshot created on the primary will not be transferred to the destination, but will be listed in the destination. If this Snapshot is selected from the destination to perform a restore operation, then the Secondary Location is not available for the selected vaulted/mirrored backup error message is displayed.
 

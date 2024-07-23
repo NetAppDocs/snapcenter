@@ -1,0 +1,12 @@
+---
+permalink: protect-nsp/monitor_resource_clone_operations.html
+sidebar: sidebar
+keywords: clone
+summary: 'You can monitor the progress of SnapCenter clone operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
+---
+= Monitor NetApp supported plug-in resource clone operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_monitor_clone_operations.adoc[]

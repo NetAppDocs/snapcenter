@@ -1,0 +1,12 @@
+---
+permalink: protect-mysql/configure-CA-certificate-for-mysql-on-windows-host.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host'
+---
+= Configure the CA Certificate for the SnapCenter MySQL Plug-ins service on Windows host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_configure_CA_certificate_for_SCC_on_windows_host.adoc[]

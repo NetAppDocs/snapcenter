@@ -37,6 +37,7 @@ There are several ONTAP CLI commands you should run to create cluster roles and 
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "event generate-autosupport-log" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "job history show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "job show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "job stop" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun create" -access all`
@@ -97,6 +98,7 @@ There are several ONTAP CLI commands you should run to create cluster roles and 
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume file clone create" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume file show-disk-usage" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot modify-snaplock-expiry-time" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume offline" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume online" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume qtree create" -access all`
@@ -113,6 +115,7 @@ There are several ONTAP CLI commands you should run to create cluster roles and 
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot restore" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot restore-file" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot show-delta" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume unmount" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs create" -access all`

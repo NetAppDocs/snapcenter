@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html
 sidebar: sidebar
-keywords: SnapCenter Plug-in for Microsoft Exchange Server
+keywords: SnapCenter Plug-in for Microsoft Exchange Server, NET TCP
 summary: 'You can use the SnapCenterAdd Host page to add Windows hosts. The Plug-in for Exchange is automatically installed on the specified host. This is the recommended method for installing plug-ins. You can add a host and install a plug-in either for an individual host or a cluster.'
 ---
 = Add hosts and install Plug-in for Exchange
@@ -13,11 +13,14 @@ You can use the SnapCenter Add Host page to add Windows hosts. The Plug-in for E
 
 .Before you begin
 
+* If the operating system of the SnapCenter Server host is Windows 2019 and the operating system of the plug-in host is Windows 2022, you should perform the following:
+** Upgrade to Windows Server 2019 (OS Build 17763.5936) or later
+** Upgrade to Windows Server 2022 (OS Build 20348.2402) or later
 * You must be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * The message queueing service must be running.
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges. For information, see
-link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2012 or later for Microsoft Exchange Server^].
+link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for Microsoft Exchange Server^].
 
 .About this task
 
@@ -158,3 +161,23 @@ If the error is related to disk space or RAM, you can update the web.config file
 NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . Monitor the installation progress.
+
+== Configure custom port for NET TCP communication
+
+By default, from SnapCenter 6.0 release, SnapCenter plug-in for Windows uses the port 909 for NET TCP communication. If the port 909 is in use, you can configure another port for NET TCP communication.
+
+.Steps
+
+. Modify the value of the _NetTCPPort_ key located at _C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navssprv.exe.config_ to the required port number.
+`<add key="NetTCPPort" value="new_port_number" />`
+. Modify the value of the _NetTCPPort_ key located at _C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\SnapDriveService.dll.config_ to the required port number.
+`<add key="NetTCPPort" value="new_port_number" />`
+. Unregister the _Data ONTAP VSS Hardware Provider_ service by running below command:
+`"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\navssprv.exe" -r service -u`
++
+Verify that the service is not displayed in the list of services in _services.msc_.
+. Register the _Data ONTAP VSS Hardware Provider_ service by running below command:
+`"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navssprv.exe" -r service -a ".\LocalSystem"``
++
+Verify if the service is now displayed in the list of services in _services.msc_.
+. Restart the _Plug-in for Windows_ service.

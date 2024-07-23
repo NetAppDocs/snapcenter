@@ -179,30 +179,3 @@ Installing\Uninstalling plug-ins
 a|
 Count of hosts where plug-in installation or uninstallation in progress.
 |===
-
-== Licensed Capacity
-
-The Licensed Capacity tile displays information about total licensed capacity, used capacity, capacity threshold alerts, and license expiration alerts for SnapCenter Standard capacity-based licenses.
-
-NOTE: This display appears only if you are using SnapCenter Standard capacity-based licenses on Cloud Volumes ONTAP or ONTAP Select platforms. For FAS, AFF, or All SAN Array (ASA) platforms, the SnapCenter license is controller-based and licensed for unlimited capacity, and no capacity license is required.
-
-|===
-| License status | Description
-
-a|
-In use
-a|
-Amount of capacity currently in use.
-a|
-Notify
-a|
-Capacity threshold at which notifications are displayed on the Dashboard, and, if configured, when email notifications are sent.
-a|
-Licensed
-a|
-Amount of licensed capacity.
-a|
-Over
-a|
-Amount of capacity that has exceeded the licensed capacity.
-|===

@@ -1,0 +1,12 @@
+---
+permalink: protect-nsp/configure_CA_certificate_on_windows_host.html
+sidebar: sidebar
+keywords: SnapCenter
+summary: 'Configure the CA Certificate for the NetApp supported plug-ins service on Windows host'
+---
+= Configure the CA Certificate for the NetApp supported plug-ins service on Windows host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_configure_CA_certificate_for_SCC_on_windows_host.adoc[]

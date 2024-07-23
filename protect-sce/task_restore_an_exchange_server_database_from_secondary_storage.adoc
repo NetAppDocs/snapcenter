@@ -17,6 +17,8 @@ You must have replicated the Snapshots from primary storage to a secondary stora
 
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+* For SnapMirror active sync restore operation, you must select the backup from the primary location.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select *Microsoft Exchange Server plug-in* from the list.
