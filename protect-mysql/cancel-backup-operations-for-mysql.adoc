@@ -1,0 +1,12 @@
+---
+permalink: protect-mysql/cancel-backup-operations-for-mysql.html
+sidebar: sidebar
+keywords: Plug-in for MySQL
+summary: 'You can cancel backup operations that are queued.'
+---
+= Cancel backup operations for MySQL
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/resuse_task_cancel_backup_operations.adoc[]

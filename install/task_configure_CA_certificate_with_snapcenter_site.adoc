@@ -22,6 +22,8 @@ You should configure the CA certificate with SnapCenter site on Windows host.
 . Click *Edit*.
 . From the SSL certificate drop-down list, select the recently imported SSL Certificate.
 . Click *OK*.
++
+NOTE: The SnapCenter Scheduler site (default port: 8154, HTTPS) is configured with self-signed certificate. This port is communicating within the SnapCenter Server host and it is not mandatory to configure with a CA certificate. However, if your environment mandates you to use a CA Certificate, repeat steps 5 to 9 using the SnapCenter Scheduler site.
 
 NOTE: If the recently deployed CA certificate is not listed in the drop-down menu, check if the CA certificate is associated with the private key.
 

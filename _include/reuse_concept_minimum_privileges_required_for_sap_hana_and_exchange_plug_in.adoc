@@ -60,6 +60,7 @@ The minimum ONTAP privileges that are required vary according to the SnapCenter 
 ** volume snapshot create
 ** volume snapshot delete
 ** volume snapshot modify
+** volume snapshot modify-snaplock-expiry-time
 ** volume snapshot rename
 ** volume snapshot restore
 ** volume snapshot restore-file

@@ -192,7 +192,7 @@ This command is available at the admin privilege level.
 
 If you are using a controller-based SnapCenter Standard license and need to remove the capacity-based trial license (serial number ending with "`50`"), you should use MySQL commands to remove the trial license manually. The trial license cannot be deleted using the SnapCenter GUI.
 
-NOTE: Removing a trial license manually is only required if you are using a SnapCenter Standard controller-based license. If you procured a SnapCenter Standard capacity-based license and add it in the SnapCenter GUI, the trial license gets overwritten automatically.
+NOTE: Removing a trial license manually is only required if you are using a SnapCenter Standard controller-based license.
 
 .Steps
 
@@ -200,7 +200,7 @@ NOTE: Removing a trial license manually is only required if you are using a Snap
  .. Run the Open-SmConnection cmdlet to initiate a connection session with the SnapCenter Server for a SnapCenterAdmin account.
  .. Run the Set-SmRepositoryPassword to reset the MySQL password.
 +
-For information about the cmdlets, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
+For information about the cmdlets, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
 . Open the command prompt and run mysql -u root -p to log into MySQL.
 +
 MySQL prompts you for the password. Enter the credentials you provided while resetting the password.

@@ -48,7 +48,7 @@ a|
 * Application Development Features
  ** .NET Extensibility 4.5
  ** Application Initialization
- ** ASP.NET 4.7.2
+ ** ASP.NET Core Hosting Bundle (8.0.5 or later)
  ** Server-Side Includes
  ** WebSocket Protocol
 * Management Tools
@@ -62,15 +62,14 @@ a|
 * Web Management Tools
 
 a|
-+.NET Framework 4.7.2 Features+
++.NET Framework 8.0.5 Features+
 a|
 
-* .NET Framework 4.7.2
-* ASP.NET 4.7.2
+* .NET Framework 8.0.5
+* ASP.NET 8.0.5
 * Windows Communication Foundation (WCF) HTTP Activation45
  ** TCP Activation
  ** HTTP Activation
- ** Message Queuing (MSMQ) activation
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity^].
 a|
@@ -80,8 +79,7 @@ a|
 * Message Queuing Services
 +
 NOTE: Ensure that no other applications uses the MSMQ service that SnapCenter creates and manages.
-
-* MSMQ Server
+* RabbitMQ
 
 a|
 Windows Process Activation Service

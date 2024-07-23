@@ -45,10 +45,20 @@ a|
 The port is used for communication between the SnapCenter Server and the hosts where the SnapCenter plug-ins are installed.
 
 To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
+
+a|
+Scheduler Service Port
+a|
+8154 (HTTPS), 
+
+This is port is used to orchestrate the SnapCenter scheduler workflows for all the managed plug-ins within the SnapCenter server host in centralized manner.
+
+To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
+
 a|
 MySQL port
 a|
-3306 (HTTPS), bidirectional
+3306 (HTTPS), bidirectional, customizable
 
 The port is used for communication between SnapCenter and MySQL repository database.
 
@@ -92,8 +102,18 @@ a|
 The default JDBC port is used by the plug-in for Oracle for connecting to the Oracle database.
 
 To customize the port, see https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html[Add hosts and install SnapCenter Plug-ins package for Linux or AIX.]
+
 a|
-Custom plug-ins for SnapCenter
+SnapCenter Plug-in for Exchange Database
+a|
+909, customizable
+
+The default NET.TCP port is used by the plug-in for Windows for connecting to the Exchange VSS call-backs.
+
+To customize the port, see link:../protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html[Add hosts and install Plug-in for Exchange].
+
+a|
+NetApp supported plug-ins for SnapCenter
 a|
 9090 (HTTPS), fixed
 

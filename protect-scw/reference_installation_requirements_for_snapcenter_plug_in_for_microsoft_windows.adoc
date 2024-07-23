@@ -81,6 +81,6 @@ Enter the password used for authentication.
 +
 After you finish setting up credentials, you might want to assign credential maintenance to a user or group of users on the User and Access page.
 
-== Configure gMSA on Windows Server 2012 or later
+== Configure gMSA on Windows Server 2016 or later
 
 include::../_include/reuse_task_configure_gMSA_on_windows_server_2012_or_later.adoc[]

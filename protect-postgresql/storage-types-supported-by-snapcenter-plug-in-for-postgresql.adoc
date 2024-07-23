@@ -1,0 +1,29 @@
+---
+permalink: protect-postgresql/storage-types-supported-by-snapcenter-plug-in-for-postgresql.html
+sidebar: sidebar
+keywords: storage types, 
+summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for PostgreSQL.'
+---
+= Storage types supported by SnapCenter Plug-in for PostgreSQL
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for PostgreSQL.
+
+|===
+| Machine| Storage type
+
+a|
+Physical and virtual servers
+a|
+FC-connected LUNs
+a|
+Physical server
+a|
+iSCSI-connected LUNs
+a|
+Physical and virtual servers
+a|
+NFS-connected volumes
+|===

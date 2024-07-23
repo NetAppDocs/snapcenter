@@ -23,7 +23,8 @@ For details, see the information about defining a data protection strategy for E
 * If you are replicating Snapshots to a mirror or vault, the SnapCenter administrator must have assigned the storage virtual machines (SVMs) for both the source volumes and destination volumes to you.
 * If you want to run the PowerShell scripts in prescripts and postscripts, you should set the value of the `usePowershellProcessforScripts` parameter to true in the `web.config` file.
 +
-The default value is false
+The default value is false.
+* Review the SnapMirror active sync specific prerequisites and limitations. For information, refer https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes[Object limits for SnapMirror active sync].
 
 .About this task
 
@@ -192,7 +193,7 @@ Select *Snapshot copy locking period*, and select days, months, or years.
 SnapLock retention period should be less than 100 years.
 |===
 +
-NOTE: If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
+If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
 
   *** By default, SnapCenter finds the oldest full backup for this database in all the other hosts in the DAG, and deletes all log backups on this host that were taken before the full backup.
   *** You can override the above default retention behavior for a database on a host in a DAG with only log backups by adding the key *MaxLogBackupOnlyCountWithoutFullBackup* in the _C:\Program Files\NetApp\SnapCenter WebApp\web.config_ file.
@@ -208,14 +209,18 @@ In the example, the value 10 means you keep up to 10 log backups on the host.
 
 a|
 Update SnapMirror after creating a local Snapshot 
+a|
+Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
 
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
+
+This option should be enabled for SnapMirror active sync. 
+
+IMPORTANT:  The primary-only policy cannot be used if SnapMirror active sync is set up for Exchange ONTAP volumes. SnapCenter does not allow this. You should enable the "Mirror" option.
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
 See link:..protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
-a|
-Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
 a|
 Update SnapVault after creating a local Snapshot
 a|

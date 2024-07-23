@@ -1,0 +1,16 @@
+---
+permalink: protect-nsp/install_netapp_supported_plugins.html
+sidebar: sidebar
+keywords: install workflow, NetApp supported plug-in
+summary: 'You should install and set up SnapCenter NetApp supported plug-ins if you want to protect NetApp supported plug-in resources.'
+---
+= Installation workflow of SnapCenter NetApp supported plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should install and set up SnapCenter NetApp supported plug-ins if you want to protect NetApp supported plug-in resources.
+
+image::../media/scc_install_configure_workflow.png[Workflow of SnapCenter NetApp supported plug-ins]
+
+link:develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]

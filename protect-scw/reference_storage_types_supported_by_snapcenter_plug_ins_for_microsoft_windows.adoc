@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Storage types
 summary: 'SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.'
 ---
-= Storage types supported by SnapCenter Plug-ins for Microsoft Windows
+= Storage types supported by SnapCenter Plug-in for Microsoft Windows
 :icons: font
 :imagesdir: ../media/
 

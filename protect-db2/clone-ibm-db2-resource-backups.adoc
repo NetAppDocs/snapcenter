@@ -1,0 +1,33 @@
+---
+permalink: protect-db2/clone-ibm-db2-resource-backups.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
+---
+= Clone workflow
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The clone workflow includes performing the clone operation and monitoring the operation.
+
+.About this task
+
+* You can clone on the source IBM Db2 server.
+* You might clone resource backups for the following reasons:
+
+** To test functionality that has to be implemented using the current resource structure and content during application development cycles
+** For data extraction and manipulation tools when populating data warehouses
+** To recover data that was mistakenly deleted or changed
+
+The following workflow shows the sequence in which you must perform the clone operation:
+
+image::../media/sco_scc_wfs_clone_workflow.png[Clone workflow]
+
+You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain detailed information about PowerShell cmdlets.
+
+.After you finish
+
+After cloning the automatically discovered Db2 resources, the cloned resource is marked as manual resource. Click *Refresh resources* to recover the cloned Db2 resource.   When you delete the clone, the storage and the host also gets cleaned up.
+
+If you do not refresh the resources after the clone operation and attempt to delete the clone, the storage and the host will not be cleaned up.  You must delete the entries manually in fstab.

@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter, browsers, chrome, IE, Edge
 summary: 'SnapCenter Software can be used on multiple browsers.'
 ---
+
 = Supported browsers
 :icons: font
 :imagesdir: ../media/
@@ -11,10 +12,7 @@ summary: 'SnapCenter Software can be used on multiple browsers.'
 [.lead]
 SnapCenter Software can be used on multiple browsers.
 
-* Chrome
-+
-If you are using v66, you might fail to launch SnapCenter GUI.
-
+* Chrome version 125 and later
 * Internet Explorer
 +
 SnapCenter UI does not load properly if you are using IE 10 or earlier versions. You should upgrade to IE 11.

@@ -11,6 +11,8 @@ summary: 'To support High Availability \(HA\) in SnapCenter, you can install the
 [.lead]
 To support High Availability (HA) in SnapCenter, you can install the F5 load balancer. F5 enables the SnapCenter Server to support active-passive configurations in up to two hosts that are in the same location. To use F5 Load Balancer in SnapCenter, you should configure the SnapCenter Servers and configure F5 load balancer.
 
+NOTE: SnapCenter also supports AWS Elastic Load Balancing (ELB) and Azure load balancing.
+
 IMPORTANT: If you have upgraded from SnapCenter 4.2.x and were previously using Network Load Balancing (NLB), you can continue to use that configuration or switch to F5.
 
 The workflow image lists the steps to configure SnapCenter Servers for high availability using F5 load balancer. For detailed instruction, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[How to configure SnapCenter Servers for high availability using F5 Load Balancer^].
@@ -23,7 +25,7 @@ You must be a member of the Local Administrators group on the SnapCenter Servers
 * Add-SmServer
 * Remove-SmServerCluster
 +
-For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
+For more information, see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 
 == Additional F5 configuration information
 

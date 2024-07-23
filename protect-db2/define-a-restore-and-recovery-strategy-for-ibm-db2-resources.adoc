@@ -1,0 +1,20 @@
+---
+permalink: protect-db2/define-a-restore-and-recovery-strategy-for-ibm-db2-resources.html
+sidebar: sidebar
+keywords: restore and recovery strategy, IBM Db2 resources, snapcenter
+summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.'
+---
+= Define a restore and recovery strategy for IBM Db2 resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must define a strategy before you restore and recover your database so that you can perform restore and recovery operations successfully.
+
+NOTE: Only manual recovery of database is supported.
+
+.Steps
+
+. Determine the restore strategies supported for manually added IBM Db2 resources
+. Determine the restore strategies supported for auto discovered IBM Db2 databases
+

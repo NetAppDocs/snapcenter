@@ -1,16 +1,16 @@
 ---
 permalink: install/task_enable_two_way_ssl.html
 sidebar: sidebar
-keywords: security,disable two-way SSL,enable two-way SSL
-summary: 'You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server and the plug-ins using PowerShell commands.'
+keywords: security,disable two-way SSL,enable two-way SSL, windows host
+summary: 'You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server on Windows host and the plug-ins using PowerShell commands.'
 ---
-= Enable two-way SSL communication
+= Enable two-way SSL communication on Windows host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server and the plug-ins using PowerShell commands.
+You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server on Windows host and the plug-ins using PowerShell commands.
 
 *Before you begin*
 

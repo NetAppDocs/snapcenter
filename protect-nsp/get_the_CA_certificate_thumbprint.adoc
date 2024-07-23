@@ -1,0 +1,12 @@
+---
+permalink: protect-nsp/get_the_CA_certificate_thumbprint.html
+sidebar: sidebar
+keywords: SnapCenter, CA certificate
+summary: 'Get the CA certificate thumbprint.'
+---
+= Get the CA certificate thumbprint
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse_task_get_the_CA_certificate_thumbprint.adoc[]

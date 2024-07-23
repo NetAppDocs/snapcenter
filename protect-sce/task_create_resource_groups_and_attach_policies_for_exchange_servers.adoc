@@ -23,6 +23,9 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+* Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
+* Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
+
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the Microsoft Exchange Server plug-in from the list.
@@ -95,6 +98,6 @@ You must also specify the sender and receiver email addresses, and the subject o
 +
 For email notification, you must have specified the SMTP server details either using the GUI or PowerShell command `Set-SmSmtpServer`.
 +
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.htmlnapCenter Software Cmdlet Reference Guide^].
 
 . Review the summary, and then click *Finish*.

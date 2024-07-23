@@ -5,7 +5,9 @@ entries:
     url: /upgrade/task_configure_snapcenter_to_check_for_available_updates.html
   - title: Upgrade Workflow
     url: /upgrade/upgrade_workflow.html
-  - title: Upgrade the SnapCenter Server
+  - title: Upgrade the SnapCenter Server on Windows host
     url: /upgrade/task_upgrade_snapcenter.html
+  - title: Upgrade the SnapCenter Server on Linux host
+    url: /upgrade/upgrade_snapcenter_server_linux.html
   - title: Upgrade your plug-in packages
     url: /upgrade/task_upgrade_your_plug_in_packages.html

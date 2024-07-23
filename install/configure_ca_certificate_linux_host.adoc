@@ -1,0 +1,62 @@
+---
+permalink: install/configure_ca_certificate_linux_host.html
+sidebar: sidebar
+keywords: SnapCenter, configure, CA certificate, linux, linux host
+summary: 'You should configure the CA certificate with SnapCenter Server on Linux host.'
+---
+= Configure CA Certificate for Linux host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+After installing the SnapCenter Server on Linux, the installer creates the self-signed certificate. If you want to use the CA certificate, you should configure the certificates for nginx reverse proxy, audit logging, and SnapCenter services.
+
+== Configure nginx certificate
+
+.Steps
+
+. Navigate to _/etc/nginx/conf.d_: `cd /etc/nginx/conf.d`
+. Open *snapcenter.conf* using vi or any text editor. 
+. Navigate to the server section in the configuration file.
+. Modify the paths of _ssl_certificate_ and _ssl_certificate_key_ to point to CA certificate. 
+. Save and close the file. 
+. Reload nginx: `$nginx -s reload`
+ 
+== Configure audit log certificate
+
+.Steps
+
+. Open _INSTALL_DIR/NetApp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config_ using vi or any text editor.
++
+The default value of _INSTALL_DIR_ is _/opt_.
+  
+. Edit the *AUDILOG_CERTIFICATE_PATH* and *AUDILOG_CERTIFICATE_PASSWORD* keys to include the CA certificate path and password respectively.
++
+Only _.pfx_ format is supported for audit log certificate. 
+
+. Save and close the file. 
+. Restart the *snapmanagerweb* service: `$ systemctl restart snapmanagerweb`
+
+
+== Configure SnapCenter services certificate
+
+.Steps
+
+. Open the following configuration files using using vi or any text editor.
+* _INSTALL_DIR/NetApp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config_
+* _INSTALL_DIR/NetApp/snapcenter/SMCore/SMCoreServiceHost.dll.config_
+* _INSTALL_DIR/NetApp/snapcenter/Scheduler/Scheduler.Api.dll.config_
++
+The default value of _INSTALL_DIR_ is _/opt_.
+
+. Edit the *SERVICE_CERTIFICATE_PATH* and *SERVICE_CERTIFICATE_PASSWORD* keys to include the CA certificate path and password respectively.
++
+Only _.pfx_ format is supported for SnapCenter services certificate.  
+
+. Save and close the files. 
+. Restart all the services. 
+* `$ systemctl restart snapmanagerweb`
+* `$ systemctl restart smcore`
+* `$ systemctl restart scheduler`
+

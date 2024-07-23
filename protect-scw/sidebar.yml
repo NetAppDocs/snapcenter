@@ -11,7 +11,7 @@ entries:
         url: /protect-scw/concept_snapcenter_plug_in_for_windows_features.html
       - title: How SnapCenter backs up Windows file systems
         url: /protect-scw/concept_how_snapcenter_backs_up_windows_file_systems.html
-      - title: Storage types supported by SnapCenter Plug-ins for Microsoft Windows
+      - title: Storage types supported by SnapCenter Plug-in for Microsoft Windows
         url: /protect-scw/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows.html
       - title: Minimum ONTAP privileges required for Windows plug-in
         url: /protect-scw/reference_minimum_ontap_privileges_required_for_windows_plug_in.html

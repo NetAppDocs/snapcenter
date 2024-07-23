@@ -1,0 +1,28 @@
+---
+permalink: protect-nsp/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html
+sidebar: sidebar
+keywords: install, snapcenter
+summary: 'You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
+---
+= Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.
+
+.Before you begin
+
+The user adding a host should have the administrative rights on the host.
+
+.Steps
+
+. Launch PowerShell.
+. On the SnapCenter Server host, establish a session using the Open-SmConnection cmdlet, and then enter your credentials.
+. Install the plug-in on multiple hosts using the Install-SmHostPackage cmdlet and the required parameters.
++
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
++
+You can use the -skipprecheck option when you have installed the plug-ins manually and do not want to validate whether the host meets the requirements to install the plug-in.
+
+. Enter your credentials for remote installation.
