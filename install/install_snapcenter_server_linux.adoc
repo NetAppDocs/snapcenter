@@ -106,7 +106,7 @@ Parameters to be passed for installing SnapCenter Server:
 * If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", the *nginx* service fails to start. You should run the the following commands:
 
 . Go to home directory.
-. Run the command: `jorunalctl -x|grep nginx`.
+. Run the command: `journalctl -x|grep nginx`.
 . If the Webapp internal port (8147) is not allowed to listen, run the following commands:
 ** `ausearch -c 'nginx' --raw | audit2allow -M my-nginx`
 ** `semodule -i my-nginx.pp`
