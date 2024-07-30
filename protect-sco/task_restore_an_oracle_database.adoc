@@ -132,7 +132,7 @@ If archive logs are pruned as part of backup, and you have manually mounted the 
 
 NOTE: You should verify the path and contents of the mount path before listing it as an external log location.  
 
-* http://www.netapp.com/us/media/tr-4591.pdf[NetApp Technical Report 4591: Database Data Protection Backup, Recovery, Replication, and DR^]
+* https://docs.netapp.com/us-en/ontap-apps-dbs/oracle/oracle-dp-overview.html[Oracle data protection with ONTAP^]
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc[Operation fails with ORA-00308 error^]
 |===
