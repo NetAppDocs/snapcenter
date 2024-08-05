@@ -44,7 +44,7 @@ The Controller License column displays the following status:
 
 * image:../media/controller_licensed_icon.gif[A check icon] indicates that a SnapManager Suite license is installed on a FAS, AFF, or ASA primary storage system.
 * image:../media/controller_not_licensed_icon.gif[A cancel icon] indicates that a SnapManager Suite license is not installed on a FAS, AFF, or ASA primary storage system.
-* Not applicable indicates that a SnapManager Suite license is not applicable because the storage controller is on Cloud Volumes ONTAP, ONTAP Select, or Secondary storage platforms.
+* Not applicable indicates that a SnapManager Suite license is not applicable because the storage controller is on Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, ONTAP Select, or Secondary storage platforms.
 
 == Step 2: Identify the licenses installed on the controller
 
