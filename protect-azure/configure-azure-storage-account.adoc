@@ -14,6 +14,8 @@ You should configure the Azure storage account in SnapCenter.
 
 The Azure storage account contains details about the subscription ID, Azure credential, and Azure NetApp account.
 
+NOTE: The standard licenses and capacity-based license is not required for Azure NetApp Files.
+
 .Steps
 
 . In the left navigation pane, click *Storage Systems*.
