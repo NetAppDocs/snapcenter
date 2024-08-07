@@ -49,14 +49,15 @@ NOTE: It is recommended, but not required, that you add SnapCenter Standard lice
 
 === Host and port requirements
 
-For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=117008;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^].
+For ONTAP and application plug-in minimum requirements see https://imt.netapp.com/matrix/imt.jsp?components=121030;&solution=1259&isHWU&src=IMT
+[Interoperability Matrix Tool^].
 
 [cols="1,3"]
 |===
 |Hosts |Minimum requirements
 
 a|Operating System (64-bit)
-a|See https://imt.netapp.com/matrix/imt.jsp?components=117008;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
+a|See https://imt.netapp.com/matrix/imt.jsp?components=121030;&solution=1259&isHWU&src=IMT[Interoperability Matrix Tool^]
 
 a|CPU
 a|
