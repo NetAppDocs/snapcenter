@@ -29,6 +29,8 @@ NOTE: You should repeat this command for each permission.
 == ONTAP CLI commands for creating cluster roles and assigning permissions
 There are several ONTAP CLI commands you should run to create cluster roles and assign permissions.
 
+NOTE: From SnapCenter 5.0, cluster admin users are only supported with REST APIs. If you want to create roles using non cluster admin, you should use ZAPI.
+
 * `security login role create -vserver Cluster_name or cluster_name -role Role_Name -cmddirname "metrocluster show" -access readonly`
 * `security login role create -vserver Cluster_name or cluster_name -role Role_Name -cmddirname "cluster identity modify" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster identity show" -access all`
