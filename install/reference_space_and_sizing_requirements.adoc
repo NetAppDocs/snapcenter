@@ -22,13 +22,13 @@ Microsoft Windows
 Only English, German, Japanese, and simplified Chinese version of the operating systems are supported.
 
 For the latest information about supported versions, see
-https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+https://imt.netapp.com/matrix/imt.jsp?components=121033;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 a|
 * Red Hat Enterprise Linux (RHEL) 8 and 9
 * SUSE Linux Enterprise Server (SLES) 15
 
 For the latest information about supported versions, see
-https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+https://imt.netapp.com/matrix/imt.jsp?components=121032;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum CPU count
