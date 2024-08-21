@@ -62,5 +62,5 @@ If you have upgraded JAVA to the latest version, you must ensure that the JAVA_H
 
 |===
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121032;&solution=1258&isHWU&src=IMT
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT
 [NetApp Interoperability Matrix Tool^].
