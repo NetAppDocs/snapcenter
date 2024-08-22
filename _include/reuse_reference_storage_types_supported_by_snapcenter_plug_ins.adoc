@@ -1,7 +1,8 @@
 SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.
 
 SnapCenter provisioning and data protection support is available on Windows Server. For the latest information about supported versions, see the
-https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT
+[NetApp Interoperability Matrix Tool^].
 
 |===
 | Machine| Storage type| Provision using| Support notes
