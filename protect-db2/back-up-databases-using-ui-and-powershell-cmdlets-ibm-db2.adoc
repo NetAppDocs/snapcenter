@@ -1,0 +1,219 @@
+---
+permalink: protect-db2/back-up-databases-using-ui-and-powershell-cmdlets-ibm-db2.html
+sidebar: sidebar
+keywords: SnapCenter Plug-in for IBM Db2
+summary: 'Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
+---
+
+= Back up databases using UI and PowerShell cmdlets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
+
+.Before you begin
+
+* You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
+* You must have added the storage system connection and created a credential.
+
+.Steps
+
+[role="tabbed-block"]
+====
+
+.SnapCenter UI
+--
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resource page, filter resources from the *View* drop-down list based on resource type.
++
+Select *image:../media/filter_icon.png[]*, and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.png[] to close the filter pane.
+
+. Select the resource that you want to back up.
+. In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.
++
+For example, _customtext_policy_hostname_ or _resource_hostname_. By default, a timestamp is appended to the Snapshot name.
+
+. In the Application Settings page, do the following:
+ ** Select the *Backups* arrow to set additional backup options:
++
+Enable consistency group backup, if needed, and perform the following tasks:
++
+|===
+| For this field...| Do this...
+
+a|
+Afford time to wait for "Consistency Group Snapshot" operation to complete
+a|
+Select *Urgent*, or *Medium*, or *Relaxed* to specify the wait time for Snapshot operation to finish. Urgent = 5 seconds, Medium = 7 seconds, and Relaxed = 20 seconds.
+a|
+Disable WAFL Sync
+a|
+Select this to avoid forcing a WAFL consistency point.
+|===
+
+ ** Select the *Scripts* arrow to run pre and post commands for quiesce, Snapshot, and unquiesce operations.
++
+You can also run pre commands before exiting the backup operation. Prescripts and postscripts are run in the SnapCenter Server.
+
+ ** Select the **Custom Configurations**arrow, and then enter the custom value pairs required for all jobs using this resource.
+ ** Select the *Snapshot Copy Tool* arrow to select the tool to create Snapshots:
++
+|===
+| If you want...| Then...
+
+a|
+SnapCenter to create a storage-level Snapshot
+a|
+Select *SnapCenter without File System Consistency*.
+a|
+SnapCenter to use the plug-in for Windows to put the file system into a consistent state and then create a Snapshot
+a|
+Select *SnapCenter with File System Consistency*.
+a|
+To enter the command to create a Snapshot 
+a|
+Select *Other*, and then enter the command to create a Snapshot.
+|===
+image:../media/application_settings.gif[]
+. In the Policies page, perform the following steps:
+ .. Select one or more policies from the drop-down list.
++
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
++
+In the Configure schedules for selected policies section, the selected policies are listed.
+
+ .. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
++
+_policy_name_ is the name of the policy that you selected.
++
+The configured schedules are listed in the Applied Schedules column.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. SMTP must also be configured in *Settings* > *Global Settings*.
+
+. Review the summary, and then select *Finish*.
++
+The resources topology page is displayed.
+
+. Select *Back up Now*.
+. In the Backup page, perform the following steps:
+ .. If you applied multiple policies to the resource, from the *Policy* drop-down list, select the policy that you want to use for backup.
++
+If the policy selected for the on-demand backup is associated with a backup schedule, the on-demand backups will be retained based on the retention settings specified for the schedule type.
+
+ .. Select *Backup*.
+. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+* In MetroCluster configurations, SnapCenter might not be able to detect a protection relationship after a failover.
++
+For information, see: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^]
+--
+
+.CLI
+--
+.Steps
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
++
+----
+PS C:\> Open-SmConnection  
+----
++
+The username and password prompt is displayed.
+
+. Add manual resources by using the Add-SmResources cmdlet.
++
+This example shows how to add a IBM Db2 instance:
++
+----
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\"
+----
++
+For Db2 Database:
++
+----
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Database -ResourceName SALESDB -StorageFootPrint (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="scsnfssvm"}) -MountPoints "D:\" -Instance DB2
+----
+. Create a backup policy by using the Add-SmPolicy cmdlet.
+
+. Protect the resource or add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
+
+. Initiate a new backup job by using the New-SmBackup cmdlet.
++
+This example shows how to backup a resource group:
++
+----
+C:\PS> New-SMBackup -ResourceGroupName 'ResourceGroup_with_Db2_Resources' -Policy db2_policy1
+----
++
+This example backs up a Db2 instance:
++
+----
+C:\PS> New-SMBackup -Resources @{"Host"="10.32.212.13";"Uid"="DB2INST1";"PluginName"="DB2"} -Policy db2_policy
+----
++
+This example backs up a Db2 database:
++
+----
+C:\PS> New-SMBackup -Resources @{"Host"="10.32.212.13";"Uid"="DB2INST1\WINARCDB";"PluginName"="DB2"} -Policy db2_policy
+----
+
+. Monitor the job status (running, completed, or failed) by using the Get-smJobSummaryReport cmdlet.
++
+----
+PS C:\> Get-SmJobSummaryReport -JobId 467
+
+SmJobId            : 467
+JobCreatedDateTime :
+JobStartDateTime   : 27-Jun-24 01:40:09
+JobEndDateTime     : 27-Jun-24 01:41:15
+JobDuration        : 00:01:06.7013330
+JobName            : Backup of Resource Group 'SCDB201WIN_RAVIR1_OPENLAB_NETAPP_LOCAL_DB2_DB2_WINCIR' with policy 'snapshot-based-db2'
+JobDescription     :
+Status             : Completed
+IsScheduled        : False
+JobError           :
+JobType            : Backup
+PolicyName         : db2_policy
+JobResultData      :
+----
+
+. Monitor the backup job details like backup ID, backup name to perform restore or clone operation by using the Get-SmBackupReport cmdlet.
++
+----
+PS C:\> Get-SmBackupReport -JobId 467
+
+BackedUpObjects           : {WINCIR}
+FailedObjects             : {}
+IsScheduled               : False
+HasMetadata               : False
+SmBackupId                : 84
+SmJobId                   : 467
+StartDateTime             : 27-Jun-24 01:40:09
+EndDateTime               : 27-Jun-24 01:41:15
+Duration                  : 00:01:06.7013330
+CreatedDateTime           : 27-Jun-24 18:39:45
+Status                    : Completed
+ProtectionGroupName       : HOSTFQDN_DB2_DB2_WINCIR
+SmProtectionGroupId       : 23
+PolicyName                : db2_policy
+SmPolicyId                : 13
+BackupName                : HOSTFQDN _DB2_DB2_WINCIR_HOST_06-27-2024_01.40.09.7397
+VerificationStatus        : NotApplicable
+VerificationStatuses      :
+SmJobError                :
+BackupType                : SCC_BACKUP
+CatalogingStatus          : NotApplicable
+CatalogingStatuses        :
+ReportDataCreatedDateTime :
+PluginCode                : SCC
+PluginName                : DB2
+PluginDisplayName         : IBM DB2
+JobTypeId                 :
+JobHost                   : HOSTFQDN
+----
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
+--
