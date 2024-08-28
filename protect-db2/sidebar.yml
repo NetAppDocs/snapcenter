@@ -110,7 +110,7 @@ entries:
       - title: Back up databases using PowerShell cmdlets
         url: /protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html
       - title: Back up databases using UI or PowerShell cmdlets
-        url: /protect-db2/back-up-databases-using-ui-and-powershell-cmdlets-ibm-db2.html
+        url: /protect-db2/back-up-databases-using-ui-or-powershell-cmdlets-ibm-db2.html
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page
