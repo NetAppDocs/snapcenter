@@ -12,11 +12,6 @@ summary: 'Backing up a database includes establishing a connection with the Snap
 [.lead]
 Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
 
-.Before you begin
-
-* You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
-* You must have added the storage system connection and created a credential.
-
 .Steps
 
 [role="tabbed-block"]
@@ -24,6 +19,19 @@ Backing up a database includes establishing a connection with the SnapCenter Ser
 
 .SnapCenter UI
 --
+.Before you begin
+
+* You must have created a backup policy.
+* If you want to back up a resource that has a SnapMirror relationship with a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
+* For Snapshot copy-based backup operation, ensure that all the tenant databases are valid and active.
+* For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the following paths:
++
+For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
++
+For Linux: _/var/opt/snapcenter/scc/allowed_commands.config_
+
+NOTE: If the commands do not exist in the command list, then the operation will fail.
+
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resource page, filter resources from the *View* drop-down list based on resource type.
 +
@@ -113,6 +121,11 @@ For information, see: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Prot
 
 .PowerShell cmdlets
 --
+.Before you begin
+
+* You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
+* You must have added the storage system connection and created a credential.
+
 .Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
