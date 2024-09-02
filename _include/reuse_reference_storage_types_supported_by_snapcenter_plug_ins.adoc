@@ -31,8 +31,6 @@ a|
 SnapCenter GUI or PowerShell cmdlets
 a|
 Support for provisioning only.
-
-You cannot use SnapCenter to back up any data or shares using the SMB protocol.
 a|
 VMware VM
 a|
@@ -65,8 +63,6 @@ a|
 SnapCenter GUI or PowerShell cmdlets
 a|
 Support for provisioning only.
-
-You cannot use SnapCenter to back up any data or shares using the SMB protocol.
 
 a|
 VMware VM
@@ -104,8 +100,6 @@ a|
 SnapCenter GUI or PowerShell cmdlets
 a|
 Support for provisioning only.
-
-You cannot use SnapCenter to back up any data or shares using the SMB protocol.
 
 NOTE: Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
 |===
