@@ -1,22 +1,17 @@
 ---
-permalink: protect-db2/back-up-databases-using-ui-or-powershell-cmdlets-ibm-db2.html
+permalink: protect-db2/back-up-db2-databases.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.'
 ---
 
-= Back up databases using SnapCenter UI or PowerShell cmdlets
+= Back up Db2 databases 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Backing up a database includes establishing a connection with the SnapCenter Server, adding resources, adding a policy, creating a backup resource group, and backing up.
 
-[role="tabbed-block"]
-====
-
-.SnapCenter UI
---
 .Before you begin
 
 * You must have created a backup policy.
@@ -30,6 +25,11 @@ For Linux: _/var/opt/snapcenter/scc/allowed_commands.config_
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 
+[role="tabbed-block"]
+====
+
+.SnapCenter UI
+--
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
@@ -121,11 +121,6 @@ For information, see: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Prot
 
 .PowerShell cmdlets
 --
-.Before you begin
-
-* You must have prepared the PowerShell environment to execute the PowerShell cmdlets.
-* You must have added the storage system connection and created a credential.
-
 .Steps
 
 . Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
