@@ -24,7 +24,11 @@ If a resource is not yet part of any resource group, you can back up the resourc
 ** SnapCenter will verify whether authentication for SQL instances is configured. If the authentication is configured, the SQL instance will be accessed using this credential.
 ** If the authentication is not configured, use gMSA to see if the SQL plug-in is currently operating. If the plug-in is operating, it will be used to establish a connection to the SQL instance. 
 ** The SQL instance will be accessed via Windows credentials authentication when both authentication for SQL instances is not configured and the plug-in is not operational.
+[role="tabbed-block"]
+====
 
+.SnapCenter UI
+--
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
@@ -126,3 +130,9 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Backup_fails_with_Windows_scheduler_error[Backup fails with Windows scheduler error]
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]
+--
+
+.PowerShell cmdlets
+--
+include::../_include/reuse_task_back_up_resources_using_powershell_cmdlets.adoc[]
+--
