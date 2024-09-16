@@ -13,7 +13,7 @@ summary: 'SnapCenter Software can be used on multiple browsers.'
 SnapCenter Software can be used on multiple browsers.
 
 * Chrome version 125 and later
-* Microsoft Edge
+* Microsoft Edge 110.0.1587.17 and later
 
 For the latest information about supported versions, see : https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
