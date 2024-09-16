@@ -2,7 +2,7 @@ You can generate a Certificate Signing Request (CSR) and import the certificate 
 
 CSR is a block of encoded text that is given to an authorized certificate vendor to procure the signed CA certificate.
 
-NOTE: CA Certificate RSA key length should be minimum 3072 bits.
+NOTE: CA Certificate RSA key length must be minimum 3072 bits.
 
 For information to generate a CSR, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_generate_CA_Certificate_CSR_file[How to generate CA Certificate CSR file^].
 
