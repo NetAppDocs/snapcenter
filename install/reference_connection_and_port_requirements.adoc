@@ -49,11 +49,18 @@ To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task
 a|
 Scheduler Service Port
 a|
-8154 (HTTPS), 
+8154 (HTTPS)
 
 This is port is used to orchestrate the SnapCenter scheduler workflows for all the managed plug-ins within the SnapCenter server host in centralized manner.
 
 To customize the port, see https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install the SnapCenter Server using the install wizard.]
+
+a|
+RabbitMQ Port
+a|
+5672 (tcp)
+
+This is the default port that RabbitMQ listens on and it is used for publisher-subscriber model communication between Scheduler service and SnapCenter.
 
 a|
 MySQL port
