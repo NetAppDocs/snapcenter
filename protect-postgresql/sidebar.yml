@@ -109,8 +109,6 @@ entries:
         url: /protect-postgresql/back-up-resource-groups-postgresql.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for PostgreSQL
         url: /protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
-      - title: Back up clusters using PowerShell cmdlets
-        url: /protect-postgresql/back-up-clusters-using-powershell-cmdlets-postgresql.html
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page

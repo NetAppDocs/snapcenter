@@ -107,8 +107,6 @@ entries:
         url: /protect-db2/back-up-resource-groups-ibm-db2.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for IBM Db2
         url: /protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html
-      - title: Back up databases using PowerShell cmdlets
-        url: /protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html
       - title: Back up db2 databases 
         url: /protect-db2/back-up-db2-databases.html
       - title: Monitor backup operations

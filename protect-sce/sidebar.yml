@@ -70,9 +70,7 @@ entries:
       - title: Back up Exchange resources groups
         url: /protect-sce/task_back_up_exchange_resources_groups.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for Exchange Server
-        url: /protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html
-      - title: Back up Exchange resources using PowerShell cmdlets
-        url: /protect-sce/task_back_up_exchange_resources_using_powershell_cmdlets.html
+        url: /protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html      
       - title: Monitor backup operations
         url: /protect-sce/task_monitor_backup_operations.html
       - title: Cancel backup operations for Exchange database

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
 ---
-= Back up IBM Db2
+= Back up IBM Db2 databases
 :icons: font
 :imagesdir: ../media/
 

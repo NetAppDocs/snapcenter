@@ -105,8 +105,6 @@ entries:
         url: /protect-mysql/back-up-resource-groups-mysql.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for MySQL
         url: /protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html
-      - title: Back up databases using PowerShell cmdlets
-        url: /protect-mysql/back-up-databases-using-powershell-cmdlets-mysql.html
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page
