@@ -83,3 +83,10 @@ If the policy selected for the on-demand backup is associated with a backup sche
 
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+--
+
+.PowerShell cmdlets
+--
+include::../_include/reuse_task_back_up_resources_using_powershell_cmdlets.adoc[]
+--
