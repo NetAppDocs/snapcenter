@@ -18,7 +18,11 @@ If you want to back up a resource that has a SnapMirror relationship with second
 NOTE: When backing up a file system, SnapCenter does not back up LUNs that are mounted on a volume mount point (VMP) in the file system that is being backed up.
 
 IMPORTANT: If you are working in a Windows file system context, do not back up database files. Doing so creates an inconsistent backup and a possible loss of data when restoring. To protect database files, you must use the appropriate SnapCenter plug-in for the database (for example, SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, or a custom plug-in for database files).
+[role="tabbed-block"]
+====
 
+.SnapCenter UI
+--
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.

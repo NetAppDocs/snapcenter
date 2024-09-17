@@ -22,6 +22,11 @@ If a database is not part of any resource group, you can back up the database or
 *Best Practice:* Do not run backups of active and passive databases at the same time. A race condition can occur and one of the backups might fail.
 |===
 
+[role="tabbed-block"]
+====
+
+.SnapCenter UI
+--
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the *Microsoft Exchange Server plug-in* from the list.
