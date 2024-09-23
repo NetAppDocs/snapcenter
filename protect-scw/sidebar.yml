@@ -79,8 +79,8 @@ entries:
     entries:
       - title: Restore Windows file system backups
         url: /protect-scw/task_restore_windows_file_system_backups.html 
-  - title: Restore resources using PowerShell cmdlets
-    url: /protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html   
+      - title: Restore resources using PowerShell cmdlets
+        url: /protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html   
       - title: Monitor restore operations
         url: /protect-scw/task_monitor_restore_operations.html
       - title: Cancel restore operations
