@@ -134,11 +134,7 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-hana/task_restore_and_recover_a_manually_added_resource_backup.html
       - title: Restore and recover an auto discovered database backup
-        url: /protect-hana/task_restore_and_recover_an_auto_discovered_database_backup.html
-      - title: Restore SAP HANA database using PowerShell cmdlets
-        url: /protect-hana/task_restore_sap_hana_database_using_powershell_cmdlets.html
-      - title: Restore resources using PowerShell cmdlets
-        url: /protect-hana/task_restore_and_recover_resources_using_powershell_cmdlets_hana.html
+        url: /protect-hana/task_restore_and_recover_an_auto_discovered_database_backup.html      
       - title: Monitor restore operations
         url: /protect-hana/task_monitor_hana_databases_restore_operations.html
   - title: Clone SAP HANA resource backups
@@ -146,9 +142,7 @@ entries:
       - title: Clone workflow
         url: /protect-hana/task_clone_sap_hana_resource_backups.html
       - title: Clone a SAP HANA database backup
-        url: /protect-hana/task_clone_a_sap_hana_database_backup.html
-      - title: Clone SAP HANA database backups using PowerShell cmdlets
-        url: /protect-hana/task_clone_sap_hana_database_backups_using_powershell_cmdlets.html
+        url: /protect-hana/task_clone_a_sap_hana_database_backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-hana/task_monitor_hana_database_clone_operations.html
       - title: Split a clone

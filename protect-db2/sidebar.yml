@@ -124,9 +124,7 @@ entries:
       - title: Restore a manually added resource backup
         url: /protect-db2/restore-manually-added-resource-backup.html
       - title: Restore an auto discovered database backup
-        url: /protect-db2/restore-auto-discovered-database-backup.html
-      - title: Restore IBM Db2 using PowerShell cmdlets
-        url: /protect-db2/restore-ibm-db2-database-using-powershell-cmdlets.html
+        url: /protect-db2/restore-auto-discovered-database-backup.html      
       - title: Monitor restore operations
         url: /protect-db2/monitor-db2-restore-operations.html
   - title: Clone IBM Db2 resource backups
@@ -134,9 +132,7 @@ entries:
       - title: Clone workflow
         url: /protect-db2/clone-ibm-db2-resource-backups.html
       - title: Clone a IBM Db2 database backup
-        url: /protect-db2/clone-ibm-db2-backup.html
-      - title: Clone IBM Db2 database backups using PowerShell cmdlets
-        url: /protect-db2/clone-ibm-db2-backups-using-powershell-cmdlets.html
+        url: /protect-db2/clone-ibm-db2-backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-db2/monitor-db2-clone-operations.html
       - title: Split a clone
