@@ -126,11 +126,7 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html
       - title: Restore and recover an auto discovered cluster backup
-        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html
-      - title: Restore PostgreSQL using PowerShell cmdlets
-        url: /protect-postgresql/restore-postgresql-using-powershell-cmdlets.html
-      - title: Restore resources using PowerShell cmdlets
-        url: /protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html
+        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html      
       - title: Monitor restore operations
         url: /protect-postgresql/monitor-postgresql-restore-operations.html
   - title: Clone PostgreSQL resource backups
@@ -138,9 +134,7 @@ entries:
       - title: Clone workflow
         url: /protect-postgresql/clone-postgresql-resource-backups.html
       - title: Clone a PostgreSQL cluster backup
-        url: /protect-postgresql/clone-postgresql-backup.html
-      - title: Clone PostgreSQL cluster backups using PowerShell cmdlets
-        url: /protect-postgresql/clone-postgresql-backups-using-powershell-cmdlets.html
+        url: /protect-postgresql/clone-postgresql-backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-postgresql/monitor-postgresql-clone-operations.html
       - title: Split a clone

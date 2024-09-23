@@ -78,9 +78,7 @@ entries:
   - title: Restore Windows file systems
     entries:
       - title: Restore Windows file system backups
-        url: /protect-scw/task_restore_windows_file_system_backups.html
-      - title: Restore and recover resources using PowerShell cmdlets
-        url: /protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html
+        url: /protect-scw/task_restore_windows_file_system_backups.html      
       - title: Monitor restore operations
         url: /protect-scw/task_monitor_restore_operations.html
       - title: Cancel restore operations
@@ -88,9 +86,7 @@ entries:
   - title: Clone Windows file systems
     entries:
       - title: Clone from a Windows file system backup
-        url: /protect-scw/task_clone_from_a_windows_file_system_backup.html
-      - title: Clone backups using PowerShell cmdlets
-        url: /protect-scw/task_clone_backups_using_powershell_cmdlets_for_windows.html
+        url: /protect-scw/task_clone_from_a_windows_file_system_backup.html      
       - title: Monitor clone operations
         url: /protect-scw/task_monitor_clone_operations.html
       - title: Cancel clone operations

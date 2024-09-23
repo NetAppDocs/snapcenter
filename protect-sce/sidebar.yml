@@ -90,9 +90,7 @@ entries:
       - title: Granular recovery of mails and mailbox
         url: /protect-sce/reference_granular_recovery_of_mails_and_mailbox.html
       - title: Restore an Exchange Server database from secondary storage
-        url: /protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html
-      - title: Restore Exchange resources using PowerShell cmdlets
-        url: /protect-sce/task_restore_exchange_resources_using_powershell_cmdlets.html
+        url: /protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html      
       - title: Reseed a passive Exchange node replica
         url: /protect-sce/task_reseed_a_passive_exchange_node_replica.html
       - title: Reseed a replica using PowerShell cmdlets for Exchange database

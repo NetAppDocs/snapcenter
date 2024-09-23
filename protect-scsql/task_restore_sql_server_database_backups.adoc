@@ -31,6 +31,7 @@ You can use the GET API to display the value of the key. SET API is not supporte
 * Most of the fields on the Restore wizard pages are self-explanatory. The following information describes fields for which you might need guidance.
 * For SnapMirror active sync restore operation, you must select the backup from the primary location.
 * For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
 [role="tabbed-block"]
 ====
 

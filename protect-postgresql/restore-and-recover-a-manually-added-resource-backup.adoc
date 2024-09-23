@@ -27,6 +27,8 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+[role="tabbed-block"]
+====
 .SnapCenter UI
 --
 .Steps
