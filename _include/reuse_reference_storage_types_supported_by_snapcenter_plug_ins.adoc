@@ -1,8 +1,7 @@
 SnapCenter supports a wide range of storage types on both physical machines and virtual machines. You must verify whether support is available for your storage type before installing the package for your host.
 
 SnapCenter provisioning and data protection support is available on Windows Server. For the latest information about supported versions, see the
-https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT
-[NetApp Interoperability Matrix Tool^].
+https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 |===
 | Machine| Storage type| Provision using| Support notes
@@ -31,8 +30,6 @@ a|
 SnapCenter GUI or PowerShell cmdlets
 a|
 Support for provisioning only.
-
-You cannot use SnapCenter to back up any data or shares using the SMB protocol.
 a|
 VMware VM
 a|
@@ -65,8 +62,6 @@ a|
 SnapCenter GUI or PowerShell cmdlets
 a|
 Support for provisioning only.
-
-You cannot use SnapCenter to back up any data or shares using the SMB protocol.
 
 a|
 VMware VM
@@ -104,8 +99,6 @@ a|
 SnapCenter GUI or PowerShell cmdlets
 a|
 Support for provisioning only.
-
-You cannot use SnapCenter to back up any data or shares using the SMB protocol.
 
 NOTE: Hyper-V pass through disks and backing up databases on VHD(x) that are provisioned on NetApp storage are not supported.
 |===
