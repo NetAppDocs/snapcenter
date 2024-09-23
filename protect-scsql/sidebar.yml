@@ -158,9 +158,7 @@ entries:
       - title: Restore an SQL Server database from secondary storage
         url: /protect-scsql/task_restore_a_sql_server_database_from_secondary_storage.html
       - title: Reseed Availability Group databases
-        url: /protect-scsql/task_reseed_availability_group_databases.html
-      - title: Restore and recover resources using PowerShell cmdlets
-        url: /protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html
+        url: /protect-scsql/task_reseed_availability_group_databases.html      
       - title: Monitor restore operations
         url: /protect-scsql/task_monitor_sql_resources_restore_operations.html
       - title: Cancel restore operations
@@ -170,9 +168,7 @@ entries:
       - title: Clone workflow
         url: /protect-scsql/reference_clone_sql_server_database_resources.html
       - title: Clone from a SQL Server database backup
-        url: /protect-scsql/task_clone_from_a_sql_server_database_backup.html
-      - title: Clone backups using PowerShell cmdlets
-        url: /protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html
+        url: /protect-scsql/task_clone_from_a_sql_server_database_backup.html      
       - title: Perform Clone Lifecycle
         url: /protect-scsql/task_perform_clone_lifecycle_management.html
       - title: Monitor clone operations in SnapCenter
