@@ -157,6 +157,8 @@ entries:
         url: /protect-scsql/task_restore_sql_server_database_backups.html
       - title: Restore an SQL Server database from secondary storage
         url: /protect-scsql/task_restore_a_sql_server_database_from_secondary_storage.html
+      - title: Restore resources using PowerShell cmdlets
+        url: /protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html
       - title: Reseed Availability Group databases
         url: /protect-scsql/task_reseed_availability_group_databases.html      
       - title: Monitor restore operations

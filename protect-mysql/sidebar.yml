@@ -122,7 +122,9 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-mysql/restore-and-recover-a-manually-added-resource-backup.html
       - title: Restore and recover an auto discovered database backup
-        url: /protect-mysql/restore-and-recover-an-auto-discovered-database-backup.html      
+        url: /protect-mysql/restore-and-recover-an-auto-discovered-database-backup.html     
+      - title:  Restore resources using PowerShell cmdlets
+        url: /protect-mysql/restore-and-recover-resources-using-powershell-cmdlets-mysql.html
       - title: Monitor restore operations
         url: /protect-mysql/monitor-mysql-restore-operations.html
   - title: Clone MySQL resource backups

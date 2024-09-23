@@ -134,7 +134,9 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-hana/task_restore_and_recover_a_manually_added_resource_backup.html
       - title: Restore and recover an auto discovered database backup
-        url: /protect-hana/task_restore_and_recover_an_auto_discovered_database_backup.html      
+        url: /protect-hana/task_restore_and_recover_an_auto_discovered_database_backup.html 
+      - title: Restore resources using PowerShell cmdlets
+        url: /protect-hana/task_restore_and_recover_resources_using_powershell_cmdlets_hana.html
       - title: Monitor restore operations
         url: /protect-hana/task_monitor_hana_databases_restore_operations.html
   - title: Clone SAP HANA resource backups

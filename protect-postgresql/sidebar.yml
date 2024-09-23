@@ -126,7 +126,9 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html
       - title: Restore and recover an auto discovered cluster backup
-        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html      
+        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html 
+      - title: Restore resources using PowerShell cmdlets
+        url: /protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html     
       - title: Monitor restore operations
         url: /protect-postgresql/monitor-postgresql-restore-operations.html
   - title: Clone PostgreSQL resource backups
