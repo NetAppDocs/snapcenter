@@ -105,8 +105,6 @@ entries:
         url: /protect-mysql/back-up-resource-groups-mysql.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for MySQL
         url: /protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html
-      - title: Back up databases using PowerShell cmdlets
-        url: /protect-mysql/back-up-databases-using-powershell-cmdlets-mysql.html
       - title: Monitor backup operations
         entries:
           - title: Monitor backup operations in the SnapCenter Jobs page
@@ -124,10 +122,8 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-mysql/restore-and-recover-a-manually-added-resource-backup.html
       - title: Restore and recover an auto discovered database backup
-        url: /protect-mysql/restore-and-recover-an-auto-discovered-database-backup.html
-      - title: Restore MySQL using PowerShell cmdlets
-        url: /protect-mysql/restore-mysql-using-powershell-cmdlets.html
-      - title: Restore resources using PowerShell cmdlets
+        url: /protect-mysql/restore-and-recover-an-auto-discovered-database-backup.html     
+      - title:  Restore resources using PowerShell cmdlets
         url: /protect-mysql/restore-and-recover-resources-using-powershell-cmdlets-mysql.html
       - title: Monitor restore operations
         url: /protect-mysql/monitor-mysql-restore-operations.html
@@ -136,9 +132,7 @@ entries:
       - title: Clone workflow
         url: /protect-mysql/clone-mysql-resource-backups.html
       - title: Clone a MySQL database backup
-        url: /protect-mysql/clone-mysql-backup.html
-      - title: Clone MySQL database backups using PowerShell cmdlets
-        url: /protect-mysql/clone-mysql-backups-using-powershell-cmdlets.html
+        url: /protect-mysql/clone-mysql-backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-mysql/monitor-mysql-clone-operations.html
       - title: Split a clone
