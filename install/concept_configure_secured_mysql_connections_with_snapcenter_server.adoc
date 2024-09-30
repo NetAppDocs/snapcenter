@@ -76,15 +76,15 @@ ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-key.pem"
 
 . Stop the SnapCenter Server web application in the Internet Information Server (IIS).
 . Restart the MySQL service.
-. Update the value of the MySQLProtocol key in the web.config file.
+. Update the value of the MySQLProtocol key in the SnapManager.Web.UI.dll.config file.
 +
-The following example shows the value of the MySQLProtocol key updated in the web.config file.
+The following example shows the value of the MySQLProtocol key updated in the SnapManager.Web.UI.dll.config file.
 +
 ----
 <add key="MySQLProtocol" value="SSL" />
 ----
 
-. Update the web.config file with the paths that were provided in the [client] section of the my.ini file.
+. Update the SnapManager.Web.UI.dll.config file with the paths that were provided in the [client] section of the my.ini file.
 +
 The following example shows the paths updated in the [client] section of the my.ini file.
 +
@@ -220,15 +220,15 @@ ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-key.pem"
 ----
 . Stop the SnapCenter Server web application in the Internet Information Server (IIS) on both the HA nodes.
 . Restart the MySQL service on both the HA nodes.
-. Update the value of the MySQLProtocol key in the web.config file for both the HA nodes.
+. Update the value of the MySQLProtocol key in the SnapManager.Web.UI.dll.config file for both the HA nodes.
 +
-The following example shows the value of MySQLProtocol key updated in the web.config file.
+The following example shows the value of MySQLProtocol key updated in the SnapManager.Web.UI.dll.config file.
 +
 ----
 <add key="MySQLProtocol" value="SSL" />
 ----
 
-. Update the web.config file with the paths that you specified in the [client] section of the my.ini file for both the HA nodes.
+. Update the SnapManager.Web.UI.dll.config file with the paths that you specified in the [client] section of the my.ini file for both the HA nodes.
 +
 The following example shows the paths updated in the [client] section of the my.ini files.
 +
