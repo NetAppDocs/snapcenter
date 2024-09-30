@@ -9,7 +9,7 @@ summary: 'To support High Availability \(HA\) in SnapCenter, you can install the
 :imagesdir: ../media/
 
 [.lead]
-To support High Availability (HA) in SnapCenter, you can install the F5 load balancer. F5 enables the SnapCenter Server to support active-passive configurations in up to two hosts that are in the same location. To use F5 Load Balancer in SnapCenter, you should configure the SnapCenter Servers and configure F5 load balancer.
+To support High Availability (HA) in SnapCenter running either on Windows or on Linux, you can install the F5 load balancer. F5 enables the SnapCenter Server to support active-passive configurations in up to two hosts that are in the same location. To use F5 Load Balancer in SnapCenter, you should configure the SnapCenter Servers and configure F5 load balancer.
 
 NOTE: SnapCenter also supports AWS Elastic Load Balancing (ELB) and Azure load balancing.
 
