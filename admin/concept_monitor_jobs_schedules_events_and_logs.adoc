@@ -25,6 +25,28 @@ You can perform the following tasks related to monitoring jobs:
 * View job details and reports.
 * Stop a scheduled job.
 
+=== Manage scheduled backup jobs
+
+From SnapCenter 6.0.1 release, a new parameter *JobConcurrencyThreshold* has been introduced that sets a threshold to the number of scheduled jobs that can run at any given time. This allows you to control the number of backups you want to run based on your configuration. The default value assigned to *JobConcurrencyThreshold* is 50.
+
+.Steps
+
+. Set the value of _JobConcurrencyThreshold_ parameter located at _C:\Program Files\NetApp\SnapCenter WebApp\SnapManager.Web.UI.dll.config_.
+. Recycle the SnapCenter application pool by clicking IIS > Application Pools > SnapCenter > Restart.
+. Restart the SnapCenter Web service by clicking IIS > Sites > SnapCenter > Restart.
+
+=== Manage stale jobs
+
+Stale jobs are created from interruptions in SnapCenter or from improper job updates. From SnapCenter 6.0.1 release, a predefined schedule has been introduced to clean up these stale jobs that are stuck for more than 72 hours. You can change the schedule frequency by editing the configurable parameter *CleanUpStaleJobsIntervalHours*.
+
+You can trigger the clean up on demand by running the schedule from *Monitor* > *Schedules* > *SnapCenter_StaleJobCleanUp*.
+
+.Steps
+
+. Set the value of _CleanUpStaleJobsIntervalHours_ parameter located at _C:\Program Files\NetApp\SnapCenter WebApp\SnapManager.Web.UI.dll.config_.
+. Recycle the SnapCenter application pool by clicking IIS > Application Pools > SnapCenter > Restart.
+. Restart the SnapCenter Web service by clicking IIS > Sites > SnapCenter > Restart.
+
 == Monitor schedules
 
 You might want to view current schedules to determine when the operation starts, when it was last run, and when it runs next. You can also determine the host on which the operation runs, along with the operation's resource group and policy information.
