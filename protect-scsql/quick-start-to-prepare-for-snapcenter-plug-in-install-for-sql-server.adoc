@@ -120,6 +120,4 @@ You should have a user with local administrator privileges with local login perm
 
 You should have a user with sysadmin permissions on the SQL Server. The plug-in uses Microsoft VDI Framework, which requires sysadmin access.
 
-If you were using SnapManager for Microsoft SQL Server and want to import data from SnapManager for Microsoft SQL Server to SnapCenter, see link:../protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html[Import archived backups^]
-
 
