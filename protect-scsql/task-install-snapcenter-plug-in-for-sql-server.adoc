@@ -1,0 +1,37 @@
+---
+permalink: protect-scsql/task-install-snapcenter-plug-in-for-sql-server.html
+sidebar: sidebar
+keywords: credentials
+summary: Provides instructions for installing the SnapCenter Plug-in for Microsoft SQL Server.
+---
+= Install SnapCenter Plug-in for Microsoft SQL Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Provides a condensed set of install instructions for the SnapCenter Plug-in for Microsoft SQL Server.
+
+== Step 1: Set up Run As Credentials to install the Plug-in for Microsoft SQL Server
+
+. In the left pane, click *Settings > Credentials > New*.
+. Enter the credentials.
++
+For a built-in domain admin username format, use: _NetBIOS\<username>_ or _<username>@<domain>_ or _<DomainFQDN>\<username>_.
++
+For a built-in local admin username format, use _<username>_.
+
+== Step 2: Add a host and install the Plug-in for Microsoft SQL Server
+
+. In the SnapCenter GUI left pane, click *Hosts > Managed Hosts > Add*.
+. In the Hosts page of the wizard, perform the following:
+  .. Host Type: Select Windows host type.
+  .. Host name: Use the SQL host or specify the FQDN of a dedicated Windows host.
+  .. Credentials: Select the valid credential name of the host that you created or create new credentials.
+. In the Select Plug-ins to Install section, select *Microsoft SQL Server*.
+. Click *More Options* to specify the following details:
+  .. Port: Either retain the default port number or specify the port number.
+  .. Installation Path: The default path is _C:\Program Files\NetApp\SnapCenter_.
+  You can optionally customize the path.
+  .. Add all hosts in the cluster: Select this check box if you are using SQL in WSFC.
+  .. Skip preinstall checks: Select this check box if you already installed the plug-ins manually or you do not want to validate whether the host meets the requirements for installing the plug-in.
+. Click *Submit*.
