@@ -1,0 +1,28 @@
+---
+permalink: protect-azure/protect-applications-azure-netapp-files.html
+sidebar: sidebar
+keywords: azure netapp files, ANF, back up, restore, clone, ANF backup, Azure Blob storage
+summary: 'You can back up, restore, and clone applications running on Azure NetApp Files.'
+---
+
+= Protect applications running on Azure NetApp Files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+SnapCenter supports protecting your applications such as Oracle, SQL, and SAP HANA residing on Azure NetApp Files. From 6.0.1 release, SnapCenter supports the Azure NetApp Files backup feature that expands the data protection capabilities of Azure NetApp Files by providing fully managed backup solution for long-term recovery, archive, and compliance.
+
+IMPORTANT: The support for Azure NetApp Files backup feature is in PREVIEW for SnapCenter 6.0.1 release.
+
+Azure NetApp Files is expensive and users want to move the backup from the Azure NetApp Files storage to an Azure object store. From SnapCenter 6.0.1 release, you can back up and clone applications residing on Azure NetApp Files to Azure Blob Storage (object store). You can maintain two copies of your data, volume snapshot copies on Azure NetApp Files storage for short term recovery and another copy on Azure Blob Storage for long term recovery.
+
+When a policy with Azure NetApp Files backup is enabled and associated with an resource, SnapCenter handles the creation of volume snapshots and backing it to Azure Blob Storage. SnapCenter creates the Backup Vault and enable backup for the volume. If you have enabled backup for the volume, SnapCenter utilizes the existing vault.
+
+== Limitations
+
+* SnapCenter supports back up, restore, and clone to Azure NetApp Files storage. However, it supports only back up and clone to Azure Blob Storage.
+* Object storage functionalities for FAS or AFF ONTAP and FSxN storage systems is not supported.
+* Oracle and SAP HANA mount and catalog workflows, backup verification from object storage, REST API support, and reporting features for object storage backups is  not supported.
+* Modifying a resource with multiple policies by detaching a policy with latest backup is not supported.  
+* Removing a host is not supported.

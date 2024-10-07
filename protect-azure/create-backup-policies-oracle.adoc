@@ -19,13 +19,16 @@ Before you use SnapCenter to back up Oracle database resources, you must create 
 . Select Oracle Database from the drop-down list.
 . Click *New*.
 . In the Name page, enter the policy name and description.
-. In the Backup Type page, perform the following steps:
+. In the Policy type page, perform the following steps:
+.. Select *Azure NetApp Files* as the storage type.
 .. Select the backup type as either online or offline backup.
-.. Specify the schedule frequency.
 .. If you want to catalog backup using Oracle Recovery Manager (RMAN), select *Catalog backup with Oracle Recovery Manager (RMAN)*.
 .. If you want to prune archive logs after backup, select *Prune archive logs after backup*.
 .. Specify the delete archive log settings.
-. In the Retention page, specify the retention settings.
+. In the Snapshot and backup page, perform the following steps:
+.. Select the frequency of the scheduled backup.
+.. Specify the retention settings.
+.. If you want to enable Azure NetApp Files backup, select *Enable backup* and specify the retention settings.
 . In the Script page, enter the path and the arguments of the prescript or postscript that you want to run before or after the backup operation, respectively.
 . In the Verification page, select the backup schedule for which you want to perform the verification operation and enter the path and the arguments of the prescript or postscript that you want to run before or after the verification operation, respectively.
 . Review the summary and click *Finish*.
