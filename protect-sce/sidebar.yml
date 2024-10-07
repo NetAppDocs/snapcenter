@@ -76,8 +76,6 @@ entries:
         url: /protect-sce/task_monitor_backup_operations.html
       - title: Cancel backup operations for Exchange database
         url: /protect-sce/task_cancel_backup_operations_for_exchange_database.html
-      - title: Remove Exchange backups using PowerShell cmdlets
-        url: /protect-sce/task_remove_exchange_backups_using_powershell_cmdlets.html
       - title: View Exchange backups in the Topology page
         url: /protect-sce/task_view_exchange_backups_in_the_topology_page.html
   - title: Restore Exchange resources

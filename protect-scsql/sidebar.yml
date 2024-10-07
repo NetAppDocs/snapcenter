@@ -131,8 +131,6 @@ entries:
         url: /protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html
       - title: View SQL Server backups and clones in the Topology page
         url: /protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html
-      - title: Remove backups using PowerShell cmdlets
-        url: /protect-scsql/task_remove_backups_using_powershell_cmdlets_for_sql.html
       - title: Clean up the secondary backup count using PowerShell cmdlets
         url: /protect-scsql/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_sql.html
   - title: Restore SQL Server resources

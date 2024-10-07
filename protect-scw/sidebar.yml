@@ -71,8 +71,6 @@ entries:
         url: /protect-scw/task_cancel_backup_operations_for_windows_file_system.html
       - title: View related backups and clones in the Topology page
         url: /protect-scw/task_view_related_backups_and_clones_in_the_topology_page.html
-      - title: Remove backups using PowerShell cmdlets
-        url: /protect-scw/task_remove_backups_using_powershell_cmdlets_for_windows.html
       - title: Clean up the secondary backup count using PowerShell cmdlets
         url: /protect-scw/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_windows.html
   - title: Restore Windows file systems
