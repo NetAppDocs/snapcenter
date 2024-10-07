@@ -65,7 +65,6 @@ entries:
         url: /protect-scw/task_back_up_a_single_resource_on_demand_for_windows_file_systems.html
       - title: Back up resource groups for Windows file systems
         url: /protect-scw/task_back_up_resource_groups_for_windows_file_systems.html
-          
       - title: Monitor backup operations
         url: /protect-scw/task_monitor_backup_operations.html
       - title: Cancel the backup operations
