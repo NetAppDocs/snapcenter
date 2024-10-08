@@ -13,7 +13,9 @@ summary: 'You can back up, restore, and clone applications running on Azure NetA
 
 SnapCenter supports protecting your applications such as Oracle, SQL, and SAP HANA residing on Azure NetApp Files. From 6.0.1 release, SnapCenter supports the Azure NetApp Files backup feature that expands the data protection capabilities of Azure NetApp Files by providing fully managed backup solution for long-term recovery, archive, and compliance.
 
-IMPORTANT: The support for Azure NetApp Files backup feature is in tech preview for SnapCenter 6.0.1 release.
+NFS over TLS is available in ONTAP 9.15.1 as a public preview. As a preview offering, NFS over TLS is not supported for production workloads in ONTAP 9.15.1.
+
+IMPORTANT: The support for Azure NetApp Files backup feature in SnapCenter 6.0.1 is available as a tech preview.
 
 Azure NetApp Files is expensive and you would want to move the backups from the Azure NetApp Files storage to an Azure object store. From SnapCenter 6.0.1 release, you can back up, restore, and clone applications residing on Azure NetApp Files to Azure Blob Storage (object store). You can maintain two copies of your data, volume snapshot copies on Azure NetApp Files storage for short term recovery and another copy on Azure Blob Storage for long term recovery.
 
