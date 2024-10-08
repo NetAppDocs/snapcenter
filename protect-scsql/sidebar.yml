@@ -126,7 +126,7 @@ entries:
       - title: Back up SQL Server resource groups
         url: /protect-scsql/task_back_up_sql_server_resource_groups.html
       - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-scsql/task_monitor_sql_resources_backup_operations.html         
+        url: /protect-scsql/task_monitor_sql_resources_backup_operations.html         
       - title: Cancel the SnapCenter Plug-in for Microsoft SQL Server backup operations
         url: /protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html
       - title: View SQL Server backups and clones in the Topology page
