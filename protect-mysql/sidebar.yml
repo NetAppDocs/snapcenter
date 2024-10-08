@@ -106,7 +106,7 @@ entries:
       - title: Back up resource groups
         url: /protect-mysql/back-up-resource-groups-mysql.html
       - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-mysql/monitor-mysql-backup-operations.html
+        url: /protect-mysql/monitor-mysql-backup-operations.html
       - title: Cancel the backup operations
         url: /protect-mysql/cancel-backup-operations-for-mysql.html
       - title: View MySQL database backups and clones in the Topology page
