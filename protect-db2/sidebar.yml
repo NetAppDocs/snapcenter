@@ -108,7 +108,7 @@ entries:
       - title: Back up resource groups
         url: /protect-db2/back-up-resource-groups-ibm-db2.html         
       - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-db2/monitor-db2-backup-operations.html
+        url: /protect-db2/monitor-db2-backup-operations.html
       - title: Cancel the backup operations
         url: /protect-db2/cancel-backup-operations-for-ibm-db2.html
       - title: View IBM Db2 database backups and clones in the Topology page

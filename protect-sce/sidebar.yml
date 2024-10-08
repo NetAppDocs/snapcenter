@@ -71,7 +71,6 @@ entries:
         url: /protect-sce/task_back_up_exchange_databases.html
       - title: Back up Exchange resources groups
         url: /protect-sce/task_back_up_exchange_resources_groups.html
-           
       - title: Monitor backup operations
         url: /protect-sce/task_monitor_backup_operations.html
       - title: Cancel backup operations for Exchange database

@@ -110,7 +110,7 @@ entries:
       - title: Back up resource groups
         url: /protect-postgresql/back-up-resource-groups-postgresql.html
       - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-postgresql/monitor-postgresql-backup-operations.html
+        url: /protect-postgresql/monitor-postgresql-backup-operations.html
       - title: Cancel the backup operations
         url: /protect-postgresql/cancel-backup-operations-for-postgresql.html
       - title: View PostgreSQL cluster backups and clones in the Topology page
