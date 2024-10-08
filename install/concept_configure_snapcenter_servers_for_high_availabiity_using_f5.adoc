@@ -91,6 +91,7 @@ You can configure high availability SnapCenter environment in Amazon Web Service
 --
 
 .Configure high availability using Azure load balancer
+-- 
 
 You can configure high availability SnapCenter environment using Azure load balancer.
 
