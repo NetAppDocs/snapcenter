@@ -10,3 +10,7 @@ summary: 'You can monitor the progress of different backup operations by using t
 
 [.lead]
 include::../_include/reuse_task_monitor_backup_operations.adoc[]
+
+== Monitor data protection operations on IBM Db2 databases in the Activity pane
+
+include::../_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]
