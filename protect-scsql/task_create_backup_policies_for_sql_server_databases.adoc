@@ -84,7 +84,7 @@ NOTE: You must increase this value if you want to run multiple backup operations
 
 .Log Backup
 --
-Back up the transaction logs.
+. Back up the transaction logs.
 . Select *Log backup*.
 --
 
@@ -125,7 +125,7 @@ NOTE: In cluster configurations, the backups are retained at each node of the cl
 +
 You can only select one schedule type for a policy.
 +
-image::../media/backup_settings.gif[Backup settings screen.]
+image:../media/backup_settings.gif[Backup settings screen.]
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
@@ -221,7 +221,7 @@ This option should be enabled for SnapMirror active sync.
 +
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 +
-See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
+See link:task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Update SnapVault
@@ -236,7 +236,7 @@ When SnapLock is configured only on the secondary from ONTAP known as SnapLock V
 +
 For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
 +
-See link:..protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
+See link:task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Secondary Policy Label
