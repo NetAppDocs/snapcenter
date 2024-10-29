@@ -18,10 +18,8 @@ Backing up a database includes establishing a connection with the SnapCenter Ser
 * If you want to back up a resource that has a SnapMirror relationship with a secondary storage, the ONTAP role assigned to the storage user should include the "`snapmirror all`" privilege. However, if you are using the "`vsadmin`" role, then the "`snapmirror all`" privilege is not required.
 * For Snapshot copy-based backup operation, ensure that all the tenant databases are valid and active.
 * For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the following paths:
-+
-For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
-+
-For Linux: _/var/opt/snapcenter/scc/allowed_commands.config_
+** Default location on the Windows host: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Default location on the Linux host: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 

@@ -16,10 +16,8 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 * You should have backed up the resources or resource group.
 * You should ensure that the aggregates hosting the volumes should be in the assigned aggregates list of the storage virtual machine (SVM).
 * For pre clone or post clone commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
-+
-For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
-+
-For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
+** Default location on the Windows host: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Default location on the Linux host: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 * For MySQL 5.7 version, you should set IGNORE_MYSQLX_PORT = true (by default false) in the MySQL. properties file.
@@ -30,7 +28,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 * For information about clone split operation limitations, see http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
 
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and earlier version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 [role="tabbed-block"]
 ====
@@ -82,11 +80,7 @@ NOTE: The scripts are run on the plug-in host.
 +
 Mount command for a volume or qtree on a Linux machine:
 +
-Example for NFS:
-+
-  mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt
-+
-NOTE: For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_ for Windows.
+Example for NFS: `mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt`
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

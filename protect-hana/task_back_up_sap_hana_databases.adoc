@@ -27,10 +27,8 @@ link:task_back_up_resource_groups_sap_hana.html[Back up resource groups]
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide]
 
 * For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the following paths:
-+
-For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
-+
-For Linux: _/var/opt/snapcenter/scc/allowed_commands_list.txt_
+** Default location on the Windows host: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Default location on the Linux host: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 
