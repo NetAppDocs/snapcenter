@@ -11,7 +11,7 @@ summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade
 [.lead]
 The plug-in packages are distributed as part of the SnapCenter upgrade.
 
-The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
+The upgrade procedure places your Windows, Linux, or AIX plug-in hosts in maintenance mode, which prevents the server host from running any scheduled jobs.
 
 .Before you begin
 
@@ -26,7 +26,6 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 
 .About this task
 
-* The upgrade procedure places your Windows, Linux, or AIX host in "`maintenance`" mode, which prevents the host from running any scheduled jobs.
 * For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to the latest version for the SCRIPTS_PATH to run.
 +
 For the existing backup and verification schedules with prescripts and postscripts enabled in the policy, the backup operations will continue to work after upgrade.
@@ -37,16 +36,16 @@ In the *Job details* page, a warning message recommends that the customer should
 
 . In the left navigation pane, click *Hosts* > *Managed Hosts*.
 . Upgrade the hosts by performing one of the following tasks:
-  * If the Overall Status column displays "`Upgrade available`" for one of the hosts, click the host name and perform the following:
+  * If the Overall Status column displays "Upgrade available" for one of the plug-inhosts, click the plug-in host name and perform the following:
     .. Click *More Options*.
-    .. Select *Skip prechecks* if you do not want to validate whether the host meets the requirements to upgrade the plug-in.
+    .. Select *Skip prechecks* if you do not want to validate whether the plug-in host meets the requirements to upgrade the plug-in.
     .. Click *Upgrade*.
-  * If you want to upgrade multiple hosts, select all the hosts, click image:../media/more_icon.gif[], and then click *Upgrade* > *OK*.
+  * If you want to upgrade multiple plug-in hosts, select all the hosts, click image:../media/more_icon.gif[], and then click *Upgrade* > *OK*.
 +  
 All the related services are restarted during the plug-in upgrade.
 +
 NOTE: All the plug-ins in the package gets selected, but only the plug-ins that were installed with the earlier version of SnapCenter are upgraded, and the remaining plug-ins are not installed. You must use the *Add plug-ins* option to install any new plug-in.
 +
-If you have not selected the *Skip prechecks* check box, the host is validated to see if it meets the requirements to install the plug-in. If the minimum requirements are not met, appropriate error or warning messages are displayed. After fixing the issue, click *Upgrade*.
+If you have not selected the *Skip prechecks* check box, the plug-in host is validated to see if it meets the requirements to install the plug-in. If the minimum requirements are not met, appropriate error or warning messages are displayed. After fixing the issue, click *Upgrade*.
 +
 NOTE: If the error is related to disk space or RAM, you can update either the web.config located at C:\Program Files\NetApp\SnapCenter WebApp, or the PowerShell config files located at C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SnapCenter\ to modify the default values. If the error is related to remaining parameters then you must fix the issue, and then validate the requirements again.

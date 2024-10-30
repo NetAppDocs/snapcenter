@@ -25,11 +25,11 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 
 .About this task
 
-* During upgrade, the host is automatically put into maintenance mode that prevents the host from running any scheduled jobs. After upgrade, the host is automatically pulled out of maintenance mode.
+* During upgrade, the SnapCenter Server host is automatically put into maintenance mode that prevents the server host from running any scheduled jobs. After upgrade, the server host is automatically pulled out of maintenance mode.
 
 * During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG and host shortname to FQDN. This is applicable only if you are using SnapCenter Server with Exchange plug-in.
 
-* Before initiating the upgrade operation, if you have manually placed the host in maintenance mode, post upgrade you need to manually bring the host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
+* Before initiating the upgrade operation, if you have manually placed the server host in maintenance mode, post upgrade you need to manually bring the server host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 
 * For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to 4.7 version for the SCRIPTS_PATH to run.
 +
@@ -70,9 +70,9 @@ At any stage if you click the *Cancel* button, the upgrade workflow will be canc
 .After you finish
 
 * If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\sc_unix_plugins_checksum.txt_ to update the _/etc/sudoers_ file.
-* You should perform a fresh discovery of resources on the hosts.
+* You should perform a fresh discovery of resources on the server host.
 +
-If the status of the host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.
+If the status of the server host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.
 //Included the above statement for BURT 1399849 for 4.5
 * If the upgrade fails, you should clean up the failed installation, reinstall the earlier version of SnapCenter, and then restore the NSM database to it's previous state.
-* After upgrading the SnapCenter Server host, you must also upgrade the plug-ins before adding any storage system.
+* After upgrading the server host, you must also upgrade the plug-ins before adding any storage system.
