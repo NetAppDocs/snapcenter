@@ -11,7 +11,7 @@ summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade
 [.lead]
 The plug-in packages are distributed as part of the SnapCenter upgrade.
 
-The upgrade procedure places your Windows, Linux, or AIX plug-in hosts in maintenance mode, which prevents the server host from running any scheduled jobs.
+You do not have to manually put each plug-in host that you want to upgrade into maintenance mode because the upgrade procedure places your Windows, Linux, or AIX plug-in hosts into maintenance mode. The maintenance mode prevents any scheduled jobs to be executed on the plug-in host during the upgrade.
 
 .Before you begin
 
