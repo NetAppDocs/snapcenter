@@ -74,7 +74,7 @@ SnapCenter 2.0 and later releases allow a non-root user to install the SnapCente
 *What you will need*
 
 * Sudo version 1.8.7 or later.
-* If the unmask is 0027, ensure that the java folder and all the files inside should have permission of 755. Otherwise plug-in installation might fail.
+* If the umask is 0027, ensure that the java folder and all the files inside should have permission of 555. Otherwise plug-in installation might fail.
 * For the non-root user, ensure that the name of the non-root user and the user's group should be the same.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +
