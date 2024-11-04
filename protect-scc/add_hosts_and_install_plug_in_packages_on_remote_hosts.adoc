@@ -1,0 +1,151 @@
+---
+permalink: protect-scc/add_hosts_and_install_plug_in_packages_on_remote_hosts.html
+sidebar: sidebar
+keywords: add hosts, custom plug-in
+summary: 'You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.'
+---
+= Add hosts and install plug-in packages on remote hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
+
+.Before you begin
+
+* You should be a user that is assigned to a role that has the plug-in install and uninstall permissions, such as the SnapCenter Admin role.
+* You should ensure that the message queueing service is running.
+* If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
++
+link:configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for custom applications]
+
+.About this task
+
+You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+
+If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
+
+.Steps
+
+. In the left navigation pane, select *Hosts*.
+. Verify that the *Managed Hosts* tab is selected at the top.
+. Select *Add*.
+. In the Hosts page, perform the following actions:
++
+|===
+| For this field...| Do this...
+
+a|
+Host Type
+a|
+Select the host type:
+
+ ** Windows
+ ** Linux
+
+NOTE: The custom plug-ins can be used in both Windows and Linux environments.
+
+a|
+Host name
+a|
+Enter the fully qualified domain name (FQDN) or the IP address of the host.
+
+SnapCenter depends on the proper configuration of the DNS. Therefore, the best practice is to enter the FQDN.
+
+For Windows environments, the IP address is supported for untrusted domain hosts only if it resolves to the FQDN.
+
+You can enter the IP addresses or FQDN of a stand-alone host.
+
+If you are adding a host by using SnapCenter and the host is part of a subdomain, you must provide the FQDN.
+a|
+Credentials
+a|
+Either select the credential name that you created, or create new credentials.
+
+The credentials must have administrative rights on the remote host. For details, see the information about creating credentials.
+
+You can view details about the credentials by positioning your cursor over the credential name that you specified.
+
+NOTE: The credentials authentication mode is determined by the host type that you specify in the Add Host wizard.
+|===
+
+. In the *Select Plug-ins to Install* section, select the plug-ins to install.
++
+You can install the following plug-ins from the list:
+
+* MongoDB
+* ORASCPM (displayed as Oracle Applications)
+* SAP ASE
+* ORASCPM
+* SAP MaxDB
+* Storage
+
+. (Optional) Select *More Options* to install the other plug-ins.
++
+|===
+| For this field...| Do this...
+
+a|
+Port
+a|
+Either retain the default port number, or specify the port number.
+
+The default port number is 8145. If the SnapCenter Server was installed on a custom port, that port number will be displayed as the default port.
+
+NOTE: If you manually installed the plug-ins and specified a custom port, you must specify the same port. Otherwise, the operation fails.
+
+a|
+Installation Path
+a|
+The custom plug-ins can be installed on either a Windows system or a Linux system.
+
+ ** For the SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter.
++
+Optionally, you can customize the path.
+
+ ** For SnapCenter Plug-ins Package for Linux, the default path is `/opt/NetApp/snapcenter`.
++
+Optionally, you can customize the path.
+
+ ** For the SnapCenter Custom Plug-ins:
+  ... In the Custom Plug-ins section, select *Browse*, and select the zipped custom plug-in folder.
++
+The zipped folder contains the custom plug-in code and the descriptor .xml file.
++
+For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
+
+  ... Select *Upload*.
++
+The descriptor .xml file in the zipped custom plug-in folder is validated before the package is uploaded.
++
+The custom plug-ins that are uploaded to the SnapCenter Server are listed.
+
+a|
+Skip preinstall checks
+a|
+Select this check box if you already installed the plug-ins manually and you do not want to validate whether the host meets the requirements for installing the plug-in.
+a|
+Use group Managed Service Account (gMSA) to run the plug-in services
+a|
+For Windows host, select this check box if you want to use group Managed Service Account (gMSA) to run the plug-in services.
+
+IMPORTANT: Provide the gMSA name in the following format: domainName\accountName$.
+
+NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in for Windows service.
+|===
+
+. Select *Submit*.
++
+If you have not selected the *Skip prechecks* checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java version (for Linux plug-ins) are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
++
+If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
++
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
+
+. If host type is Linux, verify the fingerprint, and then select *Confirm and Submit*.
++
+NOTE: Fingerprint verification is mandatory even if the same host was added earlier to SnapCenter and the fingerprint was confirmed.
+
+. Monitor the installation progress.
++
+The installation-specific log files are located at `/custom_location/snapcenter/` logs.

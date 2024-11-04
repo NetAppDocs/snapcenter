@@ -37,7 +37,8 @@ sidebar:
     - section: protect-sce
     - section: protect-db2
     - section: protect-postgresql
-    - section: protect-mysql    
+    - section: protect-mysql 
+    - section: protect-scc   
     - section: protect-scu
     - section: protect-azure 
     - section: protect-nsp   

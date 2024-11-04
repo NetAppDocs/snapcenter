@@ -1,0 +1,26 @@
+---
+permalink: protect-scc/define_a_backup_strategy.html
+sidebar: sidebar
+keywords: backup strategy
+summary: 'Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your resources. Your service-level agreement \(SLA\), recovery time objective \(RTO\), and recovery point objective \(RPO\) largely determine your backup strategy.'
+---
+= Define a backup strategy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Defining a backup strategy before you create your backup jobs ensures that you have the backups that you require to successfully restore or clone your resources. Your service-level agreement (SLA), recovery time objective (RTO), and recovery point objective (RPO) largely determine your backup strategy.
+
+.About this task
+
+An SLA defines the level of service that is expected and addresses many service-related issues, including the availability and performance of the service. RTO is the time by which a business process must be restored after a disruption in service. RPO defines the strategy for the age of the files that must be recovered from backup storage for regular operations to resume after a failure. SLA, RTO, and RPO contribute to the data protection strategy.
+
+.Steps
+
+. Determine when you should back up your resources.
+. Decide how many backup jobs you require.
+. Decide how to name your backups.
+. Decide if you want Consistency Group Snapshots and decide on appropriate options for deleting Consistency Group Snapshots.
+. Decide whether you want to use NetApp SnapMirror technology for replication or NetApp SnapVault technology for long term retention.
+. Determine the retention period for the Snapshots on the source storage system and the SnapMirror destination.
+. Determine if you want to run any commands before or after the backup operation and provide a prescript or postscript.
