@@ -22,7 +22,7 @@ The SnapCenter Plug-ins Package for AIX automatically resolves the file level sy
 
 * Create credentials with authentication mode as Linux or AIX for the install user.
 * You must have installed Java 11 on your Linux or AIX host.
-** Java from Oracle and OpenJDK is supported
+** Java from Oracle and OpenJDK is supported for Linux
 ** IBM  Java for AIX. You can download from https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?version=11&os=AIX[IBM Semeru Runtimes Downloads]
 +
 NOTE: Ensure that you have installed only the certified edition of JAVA 11 on the Linux host.

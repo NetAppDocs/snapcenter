@@ -7,7 +7,7 @@ summary: 'Accessing the API provides some perspective before you begin using it 
 
 = Get started with the REST API
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can quickly get started using the SnapCenter REST API. Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live setup.
