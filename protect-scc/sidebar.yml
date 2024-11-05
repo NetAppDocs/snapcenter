@@ -99,8 +99,6 @@ entries:
         url: /protect-scc/back_up_resource_groups_of_custom_plug_in_resources.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets
         url: /protect-scc/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html
-      - title: Back up resources using PowerShell cmdlets
-        url: /protect-scc/back_up_resources_using_powershell_cmdlets.html
       - title: Monitor backup operations
         url: /protect-scc/monitor_resources_backup_operations.html
       - title: Cancel the backup operations
@@ -123,7 +121,5 @@ entries:
         url: /protect-scc/clone_custom_plug_in_resource_backups.html
       - title: Clone from a backup
         url: /protect-scc/clone_from_a_backup.html
-      - title: Clone backups using PowerShell cmdlets
-        url: /protect-scc/clone_backups_using_powershell_cmdlets.html
       - title: Monitor clone operations in SnapCenter
         url: /protect-scc/monitor_resource_clone_operations.html

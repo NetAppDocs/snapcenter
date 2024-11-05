@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/clone_custom_plugins_resource_backups.html
+permalink: protect-scc/clone_custom_plug_in_resource_backups.html
 sidebar: sidebar
 keywords: clone, custom plug-ins
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'

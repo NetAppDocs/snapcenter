@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/view_custom_plugins_resource_backups_and_clones_in_the_topology_page.html
+permalink: protect-scc/view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html
 sidebar: sidebar
 keywords: view custom plug-in resource
 summary: 'When you are preparing to back up or clone a resource, you might find it helpful to view a graphical representation of all backups and clones on the primary and secondary storage. In the Topology page, you can see all of the backups and clones that are available for the selected resource or resource group. You can view the details of those backups and clones, and then select them to perform data protection operations.'

@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/restore_custom_plugins_resources.html
+permalink: protect-scc/restore_custom_plug_in_resources.html
 sidebar: sidebar
 keywords:
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
