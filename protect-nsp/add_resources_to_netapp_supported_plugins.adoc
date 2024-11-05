@@ -1,7 +1,7 @@
 ---
 permalink: protect-nsp/add_resources_to_netapp_supported_plugins.html
 sidebar: sidebar
-keywords: NetApp supported plug-in, resources, snapcenter
+keywords: NetApp supported plug-in, resources, NetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
 
@@ -15,8 +15,6 @@ You must add the resources that you want to back up or clone. Depending on your 
 .Before you begin
 
 * You must have completed tasks such as installing the SnapCenter Server, adding hosts, creating storage system connections, and adding credentials.
-* You must have link:develop_a_plug_in_for_your_application.html[created a custom plug-in for your application].
-
 * You must have uploaded the plug-ins to SnapCenter Server.
 
 .Steps

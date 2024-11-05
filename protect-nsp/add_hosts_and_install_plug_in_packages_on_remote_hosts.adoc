@@ -1,7 +1,7 @@
 ---
 permalink: protect-nsp/add_hosts_and_install_plug_in_packages_on_remote_hosts.html
 sidebar: sidebar
-keywords: add hosts
+keywords: add hostsNetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in
 summary: 'You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.'
 ---
 = Add hosts and install plug-in packages on remote hosts
@@ -9,7 +9,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts, and then instal
 :imagesdir: ../media/
 
 [.lead]
-You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
+You must use the SnapCenter Add Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
 
 .Before you begin
 
@@ -43,7 +43,7 @@ Select the host type:
  ** Windows
  ** Linux
 
-NOTE: The NetApp supported plug-ins can be used in both Windows and Linux environments.
+NOTE: The NetApp supported plug-ins can be used in Windows and Linux environments.
 
 a|
 Host name
@@ -76,9 +76,8 @@ You can install the following plug-ins from the list:
 * MongoDB
 * ORASCPM (displayed as Oracle Applications)
 * SAP ASE
-* ORASCPM
 * SAP MaxDB
-* Storage
+* Storage plug-in
 
 . (Optional) Select *More Options* to install the other plug-ins.
 +
@@ -97,7 +96,7 @@ NOTE: If you manually installed the plug-ins and specified a custom port, you mu
 a|
 Installation Path
 a|
-The custom plug-ins can be installed on either a Windows system or a Linux system.
+The NetApp supported plug-ins can be installed on either a Windows system or Linux system.
 
  ** For the SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter.
 +
@@ -107,18 +106,11 @@ Optionally, you can customize the path.
 +
 Optionally, you can customize the path.
 
- ** For the SnapCenter Custom Plug-ins:
-  ... In the Custom Plug-ins section, select *Browse*, and select the zipped custom plug-in folder.
-+
-The zipped folder contains the custom plug-in code and the descriptor .xml file.
-+
-For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
+** For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
 
   ... Select *Upload*.
 +
-The descriptor .xml file in the zipped custom plug-in folder is validated before the package is uploaded.
-+
-The custom plug-ins that are uploaded to the SnapCenter Server are listed.
+The NetApp supported plug-ins that are uploaded to the SnapCenter Server are listed.
 
 a|
 Skip preinstall checks

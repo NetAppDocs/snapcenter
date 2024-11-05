@@ -11,12 +11,9 @@ summary: 'Before you add a host and install the plug-ins packages, you must comp
 [.lead]
 Before you add a host and install the plug-ins packages, you must complete all the requirements. The NetApp supported plug-ins can be used in both Windows and Linux environments.
 
-* You must have created a custom plug-in. For details, see the developer information.
-+
-link:develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
 * You must have installed Java 11 on your Linux or Windows host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
-* The NetApp supported plug-ins must be available on the client host from where the add host operation is performed.
+* The NetApp supported plug-ins like MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, and Storage plug-in must be available on the client host from where the add host operation is performed.
 
 == General
 

@@ -1,7 +1,7 @@
 ---
 permalink: protect-nsp/create_policies_for_netapp_supported_plugins_resources.html
 sidebar: sidebar
-keywords: create policies, custom plnetapp_supported_pluginsug-in
+keywords: create policies, NetApp supported plug-in
 summary: 'Before you use SnapCenter to back up NetApp supported plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.'
 ---
 = Create policies for NetApp supported plug-in resources
@@ -98,7 +98,7 @@ During secondary replication, the SnapLock expiry time loads the primary SnapLoc
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
-See link:protect-nsp/view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html[View NetApp supported plug-in resource related backups and clones in the Topology page].
+See link:protect-nsp/view_netapp_supported_plugins_resource_backups_and_clones_in_the_topology_page.html[View NetApp supported plug-in resource related backups and clones in the Topology page].
 a|
 *Update SnapVault after creating a local Snapshot copy*
 a|
