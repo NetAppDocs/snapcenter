@@ -27,9 +27,11 @@ You can perform the following tasks related to monitoring jobs:
 
 === Manage scheduled backup jobs
 
-Beginning with SnapCenter 6.0.1 release, a new parameter *JobConcurrencyThreshold* has been introduced that sets a threshold to the number of scheduled jobs that can run at any given time. This allows you to control the number of backups you want to run based on your configuration.
+Beginning with SnapCenter 6.0.1 release, a new parameter *JobConcurrencyThreshold* has been introduced that sets a threshold to the number of scheduled jobs that can run at any given time. This allows you to control the number of backups you want to run based on your systems hardware configuration.
 
 The default value assigned to *JobConcurrencyThreshold* is 0 and is disabled. You can enable by assigning a value, if you observe performance degradation during the scheduled backup window.
+
+NOTE: If you enable *JobConcurrencyThreshold* to manage concurrent jobs, SnapCenter will not allow you to control the order of the backups and the backups might not be triggered at the same time specified in the schedule.
 
 .Steps
 
