@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/custom_plugin_in_snapcenter.html
+permalink: protect-scc/custom_plugins_in_snapcenter.html
 sidebar: sidebar
 keywords: Custom plug-in
 summary: 'The custom plug-in created can be installed on the host using SnapCenter Server to enable data protection of your application.'

@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/back_up_resource_groups_of_custom_plugins_resources.html
+permalink: protect-scc/back_up_resource_groups_of_custom_plug_in_resources.html
 sidebar: sidebar
 keywords: backup, custom plug-in
 summary: 'You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'

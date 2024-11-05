@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/storage_types_supported_by_custom_plug_in.html
+permalink: protect-scc/storage_types_supported_by_custom_plugins.html
 sidebar: sidebar
 keywords: custom plug-ins
 summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing custom plug-ins.'
