@@ -4,18 +4,16 @@ sidebar: sidebar
 keywords: custom plug-ins
 summary: 'You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Like other SnapCenter plug-ins, your custom plug-ins act as host-side components of the NetApp SnapCenter Software, enabling application-aware data protection and management of resources.'
 ---
-= SnapCenter Custom plug-ins overview
+= SnapCenter Custom Plug-ins overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can either use the custom plug-ins or develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Your custom plug-ins act as host-side components of the NetApp SnapCenter Software, enabling application-aware data protection and management of resources.
+You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Your custom plug-ins act as host-side components of the NetApp SnapCenter Software, enabling application-aware data protection and management of resources.
 
 When custom plug-ins are installed, you can use SnapCenter with NetApp SnapMirror technology to create mirror copies of backup sets on another volume and use NetApp SnapVault technology to perform disk-to-disk backup replication. The custom plug-ins can be used in both Windows and Linux environments.
 
 NOTE: SnapCenterCLI does not support custom plug-ins commands.
-
-NetApp provides the Storage plug-in to perform data protection operations of the data volume on the ONTAP storage using the custom plug-in framework built into SnapCenter.
 
 You can install the custom plug-in from the Add Host page.
 
