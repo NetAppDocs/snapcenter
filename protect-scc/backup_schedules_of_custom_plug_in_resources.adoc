@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/backup_schedules_of_custom_plugin_resources.html
+permalink: protect-scc/backup_schedules_of_custom_plug_in_resources.html
 sidebar: sidebar
 keywords: custom plug-in
 summary: 'The most critical factor in determining a backup schedule is the rate of change for the resource. The more often you back up your resources, the fewer archive logs SnapCenter has to use for restoring, which can result in faster restore operations.'

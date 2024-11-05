@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/add_resources_to_custom_plugins.html
+permalink: protect-scc/add_resources_to_snapcenter_custom_plug_ins.html
 sidebar: sidebar
 keywords: custom plug-in, resources, snapcenter
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'

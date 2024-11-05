@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/prerequisites_to_adding_hosts_and_installing_custom_plugins.html
+permalink: protect-scc/prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html
 sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements. The custom plug-ins can be used in both Windows and Linux environments.'

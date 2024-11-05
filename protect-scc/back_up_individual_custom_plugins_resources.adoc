@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/back_up_individual_custom_plugins_resources.html
+permalink: protect-scc/back_up_individual_custom_plug_in_resources.html
 sidebar: sidebar
 keywords: backup, custom plug-in
 summary: 'If an individual custom plug-ins resource is not part of any resource group, you can back up the resource from the Resources page. You can back up the resource on demand, or, if the resource has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'

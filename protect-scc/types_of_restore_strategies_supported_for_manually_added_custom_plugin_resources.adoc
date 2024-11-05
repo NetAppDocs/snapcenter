@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/types_of_restore_strategies_supported_for_manually_added_custom_plugins_resources.html
+permalink: protect-scc/types_of_restore_strategies_supported_for_manually_added_custom_plugin_resources.html
 sidebar: sidebar
 keywords: SnapCenter
 summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added custom plug-in resources. You cannot recover manually added custom plug-in resources.'

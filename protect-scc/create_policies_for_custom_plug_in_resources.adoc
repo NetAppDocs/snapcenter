@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/create_policies_for_custom_plugins_resources.html
+permalink: protect-scc/create_policies_for_custom_plug_in_resources.html
 sidebar: sidebar
 keywords: create policies, custom plug-in
 summary: 'Before you use SnapCenter to back up custom plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.'

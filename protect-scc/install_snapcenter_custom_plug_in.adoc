@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/install_custom_plugins.html
+permalink: protect-scc/install_snapcenter_custom_plug_in.html
 sidebar: sidebar
 keywords: install workflow, custom plug-in
 summary: 'You should install and set up SnapCenter custom plug-ins if you want to protect custom plug-in resources.'

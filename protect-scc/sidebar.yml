@@ -6,15 +6,15 @@ entries:
       - title: SnapCenter Custom Plug-ins overview
         url: /protect-scc/snapcenter_custom_plug_ins_overview.html
       - title: What you can do with the SnapCenter Custom Plug-ins
-        url: /protect-scc/what_you_can_do_with_snapcenter_custom_plug_ins.html
+        url: /protect-scc/what_you_can_do_with_custom_plug_ins.html
       - title: SnapCenter Custom Plug-ins features
         url: /protect-scc/snapcenter_custom_plug_ins_features.html
       - title: Storage types supported by SnapCenter Custom Plug-ins
-        url: /protect-scc/storage_types_supported_by_snapcenter_custom_plug_in.html
+        url: /protect-scc/storage_types_supported_by_custom_plugins.html
       - title: Minimum ONTAP privileges required for custom plug-in
-        url: /protect-scc/minimum_ontap_privileges_required_for_custom_plug_in.html
+        url: /protect-scc/minimum_ontap_privileges_required_for_custom_plugins.html
       - title: Prepare storage systems for SnapMirror and SnapVault replication
-        url: /protect-scc/prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_scc.html
+        url: /protect-scc/prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_custom_plugins.html
       - title: Define a backup strategy
         url: /protect-scc/define_a_backup_strategy.html
       - title: Backup strategy for custom plug-ins
@@ -36,7 +36,7 @@ entries:
       - title: Java style
         url: /protect-scc/java.html
       - title: Custom plug-in in SnapCenter
-        url: /protect-scc/custom_plugin_in_snapcenter.html
+        url: /protect-scc/custom_plugins_in_snapcenter.html
 - title: Prepare to install SnapCenter Custom Plug-ins
   entries:
   - title: Installation workflow of SnapCenter Custom Plug-ins
@@ -44,9 +44,9 @@ entries:
   - title: Prerequisites for adding hosts and installing SnapCenter Custom Plug-ins
     url: /protect-scc/prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html
   - title: Host requirements to install SnapCenter Plug-ins Package for Windows
-    url: /protect-scc/host_requirements_to_install_snapcenter_plug_in_package_for_windows_scc.html
+    url: /protect-scc/host_requirements_to_install_snapcenter_plug_in_package_for_windows.html
   - title: Host requirements for installing the SnapCenter Plug-ins Package for Linux
-    url: /protect-scc/host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html
+    url: /protect-scc/host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux.html
   - title: Set up credentials for SnapCenter Custom Plug-ins
     url: /protect-scc/set_up_credentials_for_snapcenter_custom_plug_in.html
   - title: Configure gMSA on Windows Server 2016 or later
@@ -54,13 +54,13 @@ entries:
   - title: Install the SnapCenter Custom Plug-ins
     entries:
       - title: Add hosts and install plug-in packages on remote hosts
-        url: /protect-scc/add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html
+        url: /protect-scc/add_hosts_and_install_plug_in_packages_on_remote_hosts.html
       - title: Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
-        url: /protect-scc/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.html
+        url: /protect-scc/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html
       - title: Install the SnapCenter Custom Plug-ins on Linux hosts by using the command-line interface
         url: /protect-scc/install_the_snapcenter_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html
       - title: Monitor SnapCenter plug-in package installation status
-        url: /protect-scc/monitor_the_status_of_installing_plugin_for_scc.html
+        url: /protect-scc/monitor_the_status_of_installing_plugin.html
   - title: Configure CA Certificate
     entries:
       - title: Generate CA Certificate CSR file
@@ -72,21 +72,21 @@ entries:
       - title: Configure CA certificate with Windows host plug-in services
         url: /protect-scc/configure_CA_certificate_with_Windows_host_plug-in_services.html
       - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Linux host
-        url: /protect-scc/configure_CA_certificate_for_SCC_on_Linux_host.html
+        url: /protect-scc/configure_CA_certificate_on_Linux_host.html
       - title: Configure the CA Certificate for the SnapCenter Custom Plug-ins service on Windows host
-        url: /protect-scc/configure_CA_certificate_for_SCC_on_windows_host.html
+        url: /protect-scc/configure_CA_certificate_on_windows_host.html
       - title: Enable CA Certificates for plug-ins
         url: /protect-scc/enable_ca_certificates_for_plug-ins.html
 - title: Prepare for data protection
   entries:
       - title: Prerequisites for using the SnapCenter Custom Plug-ins
-        url: /protect-scc/prerequisites_for_using_snapcenter_custom_plug_ins.html
+        url: /protect-scc/prerequisites_for_using_custom_plugins.html
       - title: How resources, resource groups, and policies are used for protecting custom plug-in resources
-        url: /protect-scc/how_resources_resource_groups_and_policies_are_used_for_protecting_custom_plug_in_resources.html
+        url: /protect-scc/how_resources_resource_groups_policies_used_for_protecting_custom_plugins_resources.html
 - title: Back up custom plug-in resources
   entries:
       - title: Back up workflow
-        url: /protect-scc/back_up_custom_plug_in_resources.html
+        url: /protect-scc/back_up_custom_plugins_resources.html
       - title: Add resources to SnapCenter Custom Plug-ins
         url: /protect-scc/add_resources_to_snapcenter_custom_plug_ins.html
       - title: Create policies for custom plug-in resources
