@@ -70,16 +70,6 @@ NOTE: The credentials authentication mode is determined by the host type that yo
 |===
 
 . In the *Select Plug-ins to Install* section, select the plug-ins to install.
-+
-You can install the following plug-ins from the list:
-
-* MongoDB
-* ORASCPM (displayed as Oracle Applications)
-* SAP ASE
-* ORASCPM
-* SAP MaxDB
-* Storage
-
 . (Optional) Select *More Options* to install the other plug-ins.
 +
 |===
@@ -97,7 +87,7 @@ NOTE: If you manually installed the plug-ins and specified a custom port, you mu
 a|
 Installation Path
 a|
-The custom plug-ins can be installed on either a Windows system or a Linux system.
+The SnapCenter Custom Plug-ins can be installed on either a Windows system or a Linux system.
 
  ** For the SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter.
 +

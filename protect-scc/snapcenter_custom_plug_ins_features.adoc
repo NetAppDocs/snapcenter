@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: custom plug-ins features
 summary: 'SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with custom plug-ins, you use the SnapCenter graphical user interface.'
 ---
-= Custom plug-ins features
+= SnapCenter Custom Plug-ins features
 :icons: font
 :imagesdir: ../media/
 

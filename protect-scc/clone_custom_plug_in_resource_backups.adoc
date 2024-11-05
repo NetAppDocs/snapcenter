@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clone, custom plug-ins
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
-= Clone custom plug-ins resource backups
+= Clone SnapCenter Custom Plug-ins resource backups
 :icons: font
 :imagesdir: ../media/
 

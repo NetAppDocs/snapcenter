@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, custom plug-in
 summary: 'The backup workflow includes planning, identifying the resources for backup, managing backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.'
 ---
-= Back up custom plug-ins resources
+= Back up SnapCenter Custom Plug-ins resources
 :icons: font
 :imagesdir: ../media/
 

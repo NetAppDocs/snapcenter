@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Credentials
 summary: 'Before you use SnapCenter custom plug-ins, the SnapCenter administrator must install and configure the SnapCenter Server and perform the prerequisite tasks.'
 ---
-= Prerequisites for using the custom plug-ins
+= Prerequisites for using the SnapCenter Custom Plug-ins
 :icons: font
 :imagesdir: ../media/
 

@@ -5,7 +5,7 @@ keywords: custom plug-in, resources, snapcenter
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
 
-= Add resources to custom plug-ins
+= Add resources to SnapCenter Custom Plug-ins
 :icons: font
 :imagesdir: ../media/
 

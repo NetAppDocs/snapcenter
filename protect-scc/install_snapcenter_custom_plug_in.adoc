@@ -4,13 +4,13 @@ sidebar: sidebar
 keywords: install workflow, custom plug-in
 summary: 'You should install and set up SnapCenter custom plug-ins if you want to protect custom plug-in resources.'
 ---
-= Installation workflow of SnapCenter custom plug-ins
+= Installation workflow of SnapCenter Custom Plug-ins
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should install and set up SnapCenter custom plug-ins if you want to protect custom plug-in resources.
+You should install and set up SnapCenter Custom Plug-ins if you want to protect custom plug-in resources.
 
-image::../media/scc_install_configure_workflow.png[Workflow of SnapCenter custom plug-ins]
+image::../media/scc_install_configure_workflow.png[Workflow of SnapCenter Custom Plug-ins]
 
 link:develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]

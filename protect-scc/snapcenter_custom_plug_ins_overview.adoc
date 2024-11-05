@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: custom plug-ins
 summary: 'You can develop custom plug-ins for applications that you use and then use SnapCenter to backup, restore, or clone these applications. Like other SnapCenter plug-ins, your custom plug-ins act as host-side components of the NetApp SnapCenter Software, enabling application-aware data protection and management of resources.'
 ---
-= Custom plug-ins overview
+= SnapCenter Custom plug-ins overview
 :icons: font
 :imagesdir: ../media/
 
