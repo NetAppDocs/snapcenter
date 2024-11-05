@@ -6,7 +6,7 @@ entries:
       - title: SnapCenter Custom Plug-ins overview
         url: /protect-scc/snapcenter_custom_plug_ins_overview.html
       - title: What you can do with the SnapCenter Custom Plug-ins
-        url: /protect-scc/what_you_can_do_with_custom_plug_ins.html
+        url: /protect-scc/what_you_can_do_with_custom_plugins.html
       - title: SnapCenter Custom Plug-ins features
         url: /protect-scc/snapcenter_custom_plug_ins_features.html
       - title: Storage types supported by SnapCenter Custom Plug-ins
@@ -98,13 +98,13 @@ entries:
       - title: Back up resource groups of custom plug-in resources
         url: /protect-scc/back_up_resource_groups_of_custom_plug_in_resources.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets
-        url: /protect-scc/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_scc.html
+        url: /protect-scc/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html
       - title: Back up resources using PowerShell cmdlets
         url: /protect-scc/back_up_resources_using_powershell_cmdlets.html
       - title: Monitor backup operations
-        url: /protect-scc/monitor_scc_resources_backup_operations.html
+        url: /protect-scc/monitor_resources_backup_operations.html
       - title: Cancel the backup operations
-        url: /protect-scc/cancel_backup_operations_for_scc.html
+        url: /protect-scc/cancel_backup_operations.html
       - title: View custom plug-in resource related backups and clones in the Topology page
         url: /protect-scc/view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html
 - title: Restore custom plug-in resources
@@ -114,9 +114,9 @@ entries:
       - title: Restore a resource backup
         url: /protect-scc/restore_a_resource_backup.html
       - title: Restore resources using PowerShell cmdlets
-        url: /protect-scc/restore_and_recover_resources_using_powershell_cmdlets_scc.html
+        url: /protect-scc/restore_and_recover_resources_using_powershell_cmdlets.html
       - title: Monitor restore operations
-        url: /protect-scc/monitor_scc_resources_restore_operations.html
+        url: /protect-scc/monitor_resources_restore_operations.html
 - title: Clone custom plug-in resource backups
   entries:
       - title: Clone workflow
@@ -126,4 +126,4 @@ entries:
       - title: Clone backups using PowerShell cmdlets
         url: /protect-scc/clone_backups_using_powershell_cmdlets.html
       - title: Monitor clone operations in SnapCenter
-        url: /protect-scc/monitor_scc_resource_clone_operations.html
+        url: /protect-scc/monitor_resource_clone_operations.html

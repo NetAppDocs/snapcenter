@@ -1,5 +1,5 @@
 ---
-permalink: protect-scc/minimum_ontap_privileges_required_for_custom_plugins.html
+permalink: protect-scc/minimum_ontap_privileges_required_for_custom_plug_in.html
 sidebar: sidebar
 keywords: Minimum ONTAP privileges
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'

@@ -1,10 +1,11 @@
 ---
-permalink: protect-scc/what_you_can_do_with_the_custom_plugins.html
+permalink: protect-scc/what_you_can_do_with_custom_plugins.html
 sidebar: sidebar
 keywords: custom plug-ins
 summary: 'You can use the custom plug-ins for data protection operations.'
 ---
-= What you can do with the custom plug-ins and Storage plug-in
+= What you can do with the custom plug-ins 
+
 :icons: font
 :imagesdir: ../media/
 
@@ -20,20 +21,3 @@ You can use the custom plug-in for data protection operations.
 * Schedule backup operations.
 * Monitor backup, restore, and clone operations.
 * View reports for backup, restore, and clone operations.
-
-*Storage plug-in*
-
-You can use the storage plug-in for data protection operations.
-
-* Take consistency group Snapshots of the storage volumes across ONTAP clusters.
-* Backup custom applications using the built in pre and post scripting framework
-+
-You can backup ONTAP volume, LUN, or a Qtree.
-* Update Snapshots taken on the primary to an ONTAP secondary, leveraging the existing replication relationship (SnapVault/SnapMirror/unified replication) using SnapCenter policy
-+
-ONTAP primary and secondary can be ONTAP FAS, AFF, All SAN Array (ASA), Select, or Cloud ONTAP.
-* Recover complete ONTAP volume, LUN, or files.
-+
-You should provide the respective file path manually as the browse or indexing features are not built into the product.
-+
-Qtree or directory restore is not supported but you can clone and export only the Qtree if the backup scope is defined at a Qtree level.
