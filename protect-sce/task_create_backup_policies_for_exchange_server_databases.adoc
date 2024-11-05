@@ -220,7 +220,7 @@ IMPORTANT:  The primary-only policy cannot be used if SnapMirror active sync is 
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
-See link:..protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
+See link:../protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
 a|
 Update SnapVault after creating a local Snapshot
 a|
