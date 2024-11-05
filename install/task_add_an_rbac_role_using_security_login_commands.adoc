@@ -54,8 +54,7 @@ NOTE: For consistency, the SnapCenter documentation refers to the roles as using
 +
 NOTE: You must repeat this command for each permission. Remember that all-access commands must be listed before read-only commands.
 +
-For information about the list of permissions, see link:task_create_an_ontap_cluster_role_with_minimum_privileges.html#ontap-cli-commands-for-creating-roles-and-assigning-permissions[ONTAP CLI commands for creating roles and assigning permissions^].
-
+For information about the list of permissions, see link:task_create_an_ontap_cluster_role_with_minimum_privileges.html#ontap-cli-commands-for-creating-cluster-roles-and-assigning-permissions[ONTAP CLI commands for creating roles and assigning permissions^].
 
 . Create a user name by entering the following command:
 +

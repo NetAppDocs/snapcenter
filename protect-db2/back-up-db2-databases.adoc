@@ -33,7 +33,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resource page, filter resources from the *View* drop-down list based on resource type.
 +
-Select *image:../media/filter_icon.png[]*, and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.png[] to close the filter pane.
+Select image:../media/filter_icon.png[filter icon], and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.png[filter icon] to close the filter pane.
 
 . Select the resource that you want to back up.
 . In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.
@@ -81,7 +81,7 @@ To enter the command to create a Snapshot
 a|
 Select *Other*, and then enter the command to create a Snapshot.
 |===
-image:../media/application_settings.gif[]
+image:../media/application_settings.gif[application settings]
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
@@ -223,3 +223,4 @@ JobHost                   : HOSTFQDN
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 --
+====

@@ -11,4 +11,4 @@ summary: 'You should install and set up the SnapCenter Plug-in for IBM Db2 if yo
 [.lead]
 You should install and set up the SnapCenter Plug-in for IBM Db2 if you want to protect IBM Db2 databases.
 
-image::../media/sap_hana_install_configure_workflow.gif[]
+image::../media/sap_hana_install_configure_workflow.png[Db2 plug-in installation workflow]
