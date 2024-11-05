@@ -25,4 +25,4 @@ Think of a resource group as defining _what_ you want to protect and when you wa
 
 The following image illustrates the relationship between resources, resource groups, and policies for databases:
 
-image::../media/scsql_resourcegroup_policy.gif[]
+image::../media/scsql_resourcegroup_policy.gif[resource group policy]

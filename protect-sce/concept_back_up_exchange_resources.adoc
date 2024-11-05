@@ -15,4 +15,4 @@ You can schedule multiple backups to run across servers simultaneously. Backup a
 
 The following workflow shows the sequence in which you must perform the backup operation:
 
-image:../media/sce_backup_workflow.gif[]
+image:../media/sce_backup_workflow.gif[Exchange database backup workflow]

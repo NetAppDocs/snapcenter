@@ -91,7 +91,7 @@ Delete the archive logs from the log destinations that are part of the backup
 a|
 Select *Delete archive logs from the destinations which are part of backup*.
 |===
-image:../media/sco_backuppolicy_prunning.gif[]
+image:../media/sco_backuppolicy_prunning.gif[backup policy]
 
 . In the Retention page, specify the retention settings for the backup type and the schedule type selected in the Backup Type page:
 +
