@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NetApp supported plug-ins
 summary: 'You can use the NetApp supported plug-ins for data protection operations.'
 ---
-= What you can do with the NetApp supported plug-ins and Storage plug-in
+= What you can do with the NetApp supported plug-ins 
 :icons: font
 :imagesdir: ../media/
 
