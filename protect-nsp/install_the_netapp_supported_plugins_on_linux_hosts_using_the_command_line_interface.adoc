@@ -23,7 +23,7 @@ You can access this path from the host where the SnapCenter Server is installed.
  ** -DSERVER_IP specifies the SnapCenter Server IP address.
  ** -DSERVER_HTTPS_PORT specifies the SnapCenter Server HTTPS port.
  ** -DUSER_INSTALL_DIR specifies the directory where you want to install the SnapCenter Plug-ins Package for Linux.
- ** DINSTALL_LOG_NAME specifies the name of the log file.
+ ** _DINSTALL_LOG_NAME specifies the name of the log file.
 
 +
 ----

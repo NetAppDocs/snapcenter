@@ -4,12 +4,14 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.'
 ---
-= Host requirements for installing the SnapCenter Plug-ins Package for Linux
+= Host requirements for installing the SnapCenter Plug-ins Package for Linux and AIX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.
+You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux or AIX.
+
+NOTE: Storage and Oracle applications are supported on AIX. 
 
 |===
 | Item| Requirements

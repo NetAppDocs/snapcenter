@@ -55,7 +55,7 @@ Optional: Select the image:../media/add_policy_from_resourcegroup.gif[Plus icon]
 +
 NOTE: NetApp supported plug-ins does not support automatic discovery of the resources. The storage details of physical and virtual environments are also not discovered automatically. You must provide the storage information for physical and virtual environments while creating the resources.
 +
-image::../media/storage_footprint.gif[Storage footprint]
+image::../media/storage_footprint.png[Storage footprint]
 
 . In the Resource Settings page, provide custom key-value pairs for the resource.
 +
@@ -126,7 +126,7 @@ The template must exist and be an external type of backup template. To enable sn
 If the MAXDB_BACKUP_TEMPLATES parameter is set, you must also set the MAXDB_BG_SERVER_PREFIX parameter. If you do not set the prefix, the default
 value na_bg_ is used.
 
-=== Plug-in for Sybase ASE
+=== Plug-in for SAP ASE
 
 Resource Settings:
 

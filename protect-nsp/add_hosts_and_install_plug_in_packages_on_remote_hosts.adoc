@@ -18,12 +18,13 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
 link:configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for custom applications]
+* For Windows host, you must ensure that you select SnapCenter Plug-in for Windows.
 
 .About this task
 
-You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+* You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
-If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
+* If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
 .Steps
 
@@ -42,9 +43,11 @@ Select the host type:
 
  ** Windows
  ** Linux
+ ** AIX
 
-NOTE: The NetApp supported plug-ins can be used in Windows and Linux environments.
+NOTE: The NetApp supported plug-ins can be used in Windows, Linux, and AIX environments.
 
+NOTE: Storage and Oracle applications are supported on AIX. 
 a|
 Host name
 a|
@@ -77,7 +80,7 @@ You can install the following plug-ins from the list:
 * ORASCPM (displayed as Oracle Applications)
 * SAP ASE
 * SAP MaxDB
-* Storage plug-in
+* Storage 
 
 . (Optional) Select *More Options* to install the other plug-ins.
 +
@@ -102,15 +105,9 @@ The NetApp supported plug-ins can be installed on either a Windows system or Lin
 +
 Optionally, you can customize the path.
 
- ** For SnapCenter Plug-ins Package for Linux, the default path is `/opt/NetApp/snapcenter`.
+ ** For SnapCenter Plug-ins Package for Linux and SnapCenter Plug-ins Package for AIX, the default path is `/opt/NetApp/snapcenter`.
 +
 Optionally, you can customize the path.
-
-** For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
-
-  ... Select *Upload*.
-+
-The NetApp supported plug-ins that are uploaded to the SnapCenter Server are listed.
 
 a|
 Skip preinstall checks

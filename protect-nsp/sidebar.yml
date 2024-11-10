@@ -99,8 +99,6 @@ entries:
         url: /protect-nsp/restore_netapp_supported_plugins_resources.html
       - title: Restore a resource backup
         url: /protect-nsp/restore_a_resource_backup.html   
-      - title: Restore resources using PowerShell cmdlets
-        url: /protect-nsp/restore_and_recover_resources_using_powershell_cmdlets.html
       - title: Monitor restore operations
         url: /protect-nsp/monitor_resources_restore_operations.html
 - title: Clone NetApp supported plug-ins resource backups
