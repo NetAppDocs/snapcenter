@@ -21,6 +21,8 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 
 For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+// start tabbed area
+
 [role="tabbed-block"]
 ====
 
@@ -256,3 +258,4 @@ PS C:\> Get-SmCloneReport -JobId 186
     SmJobError          :
 ----
 --
+====

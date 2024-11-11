@@ -4,14 +4,15 @@ sidebar: sidebar
 keywords: release notes, snapcenter
 summary: 'Provides important information about this release of SnapCenter Server and the SnapCenter plug-in packages, including fixed issues, known issues, cautions, and limitations.'
 ---
+
 = Release notes
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 
 Provides important information about this release of SnapCenter Server and the SnapCenter plug-in packages, including fixed issues, known issues, cautions, and limitations.
 
-For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468[SnapCenter Software 6.0 Release Notes^].
+For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468[SnapCenter Software 6.0 and 6.0.1 Release Notes^].
 
 

@@ -41,7 +41,7 @@ link:task_configure_CA_client_certificate_for_LDAPS.html[Configure CA client cer
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Global Settings*..
 . In the Global Settings page, click *Domain Settings*.
-. Click image:../media/add_policy_from_resourcegroup.gif[] to register a new domain.
+. Click image:../media/add_policy_from_resourcegroup.gif[add policy] to register a new domain.
 . In the Register New Domain page, select either *LDAP* or *LDAPS*.
 
 .. If you select *LDAP*, specify the information that is required for registering the untrusted domain for LDAP:

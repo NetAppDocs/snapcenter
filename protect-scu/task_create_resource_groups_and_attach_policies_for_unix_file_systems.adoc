@@ -19,7 +19,7 @@ Attach one or more policies to the resource group to define the type of data pro
 +
 The following image illustrates the relationship between resources, resource groups, and policies for databases:
 +
-image::../media/sco_resourcegroup_policy.gif[]
+image::../media/sco_resourcegroup_policy.gif[resource group policy]
 
 * For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 

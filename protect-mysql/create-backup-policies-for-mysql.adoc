@@ -48,7 +48,7 @@ You can provide multiple key-values to be passed to the plug-in.
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for the backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but also enables you to assign different backup schedules to each policy.
 +
-image::../media/backup_settings.gif[]
+image::../media/backup_settings.gif[backup seting]
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 . In the Snapshot settings section, specify the number of snapshots that you want to keep.

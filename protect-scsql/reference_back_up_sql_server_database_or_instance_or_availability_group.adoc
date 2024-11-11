@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: Backup workflow
 summary: 'When you install the SnapCenter Plug-in for Microsoft SQL Server in your environment, you can use SnapCenter to back up the SQL Server resources.'
 ---
+
 = Backup workflow
 :icons: font
 :imagesdir: ../media/
@@ -38,7 +39,5 @@ When SnapCenter creates a Snapshot, the entire storage system volume is captured
 If data from other SQL host servers resides on the same volume, this data cannot be restored from the Snapshot.
 
 *Find more information*
-
-link:task_back_up_resources_using_powershell_cmdlets_for_sql.html[Back up resources using PowerShell cmdlets]
 
 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail[Quiesce or grouping resources operations fail]

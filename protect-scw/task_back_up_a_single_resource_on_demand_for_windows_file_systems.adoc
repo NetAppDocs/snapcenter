@@ -18,6 +18,9 @@ If you want to back up a resource that has a SnapMirror relationship with second
 NOTE: When backing up a file system, SnapCenter does not back up LUNs that are mounted on a volume mount point (VMP) in the file system that is being backed up.
 
 IMPORTANT: If you are working in a Windows file system context, do not back up database files. Doing so creates an inconsistent backup and a possible loss of data when restoring. To protect database files, you must use the appropriate SnapCenter plug-in for the database (for example, SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, or a custom plug-in for database files).
+
+// start tabbed area
+
 [role="tabbed-block"]
 ====
 
@@ -40,11 +43,11 @@ For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname.
 +
 You can select any existing policy, and then click *Details* to determine whether you can use that policy.
 +
-If no existing policy meets your requirements, you can copy an existing policy and modify it or you can create a new policy by clicking image:../media/add_policy_from_resourcegroup.gif[] to start the policy wizard.
+If no existing policy meets your requirements, you can copy an existing policy and modify it or you can create a new policy by clicking image:../media/add_policy_from_resourcegroup.gif[add policy form resource group] to start the policy wizard.
 +
 The selected policies are listed in the Policy column in the Configure schedules for selected policies section.
 
- .. In the Configure schedules for selected policies section, click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. In the Configure schedules for selected policies section, click image:../media/add_policy_from_resourcegroup.gif[add policy from resource group] in the Configure Schedules column for the policy for which you want to configure the schedule.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
 +
 The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
@@ -172,3 +175,4 @@ PS C:\> Get-SmJobSummaryReport -Date '1/27/2016'
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 
 --
+====

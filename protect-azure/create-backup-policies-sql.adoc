@@ -18,7 +18,8 @@ You can create a backup policy for the resource or the resource group before you
 . In the Settings page, click *Policies*.
 . Click *New*.
 . In the Name page, enter the policy name and description.
-. In the Settings page, perform the following steps:
+. In the Policy type page, perform the following steps:
+.. Select *Azure NetApp Files* as the storage type.
 .. Select the backup type.
 ... Select *Full Backup and Log Backup* if you want to back up database files and transaction logs.
 ... Select *Full Backup* if you want to back up only the database files.
@@ -28,10 +29,10 @@ You can create a backup policy for the resource or the resource group before you
 ... Select Backup on preferred backup replica if you want to back up only on the replica.
 ... Select primary AG replica or the secondary AG replica for the backup.
 ... Select the backup priority.
-.. Specify the schedule type.
-. In the Retention page, depending on the backup type selected, specify the retention settings.
-+
-NOTE: Replication to secondary storage is not supported.
+. In the Snapshot and backup page, perform the following steps:
+.. Select the frequency of the scheduled backup.
+.. Specify the retention settings depending on the backup type selected.
+.. If you want to enable Azure NetApp Files backup, select *Enable backup* and specify the retention settings.
 . In the Verification page, perform the following steps:
 .. In the Run verification for following backup schedules section, select the schedule frequency.
 .. In the Database consistency check options section, perform the following actions:

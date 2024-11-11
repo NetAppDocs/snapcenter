@@ -7,7 +7,7 @@ summary: 'While REST establishes a common set of technologies and best practices
 
 = Basic operational characteristics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.

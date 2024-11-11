@@ -69,7 +69,7 @@ Select *Snapshot Based*.
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for the backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but also enables you to assign different backup schedules to each policy.
 +
-image::../media/backup_settings.gif[]
+image::../media/backup_settings.gif[backup settings]
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
@@ -127,7 +127,8 @@ During secondary replication, the SnapLock expiry time loads the primary SnapLoc
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
-See link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
+See link:../protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
+
 a|
 *Update SnapVault after creating a local Snapshot copy*
 a|
@@ -139,7 +140,7 @@ When SnapLock is configured only on the secondary from ONTAP known as SnapLock V
 
 For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
 
-See link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
+See link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
 a|
 *Secondary policy label*
 a|

@@ -48,7 +48,7 @@ Specify the path where the file system will be mounted.
 . In the Scripts page, perform the following steps:
 .. Enter the commands for pre clone or post clone that should be run before or after the clone operation, respectively.
 +
-NOTE: You should check if the commands exist in the command list available on the plug-in host from the _/opt/NetApp/snapcenter/scc/allowed_commands.config_ path.
+NOTE: You should check if the commands exist in the command list available on the plug-in host from the _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_ path.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +

@@ -25,5 +25,5 @@ If you want to locate the storage footprint of the hidden clones, run the follow
 The resource topology page is displayed.
 
 . From the Manage Copies view, select the clones either from the primary or secondary (mirrored or replicated) storage systems.
-. Select the clones, and then click image:../media/delete_icon.gif[] to delete clones or click image:../media/split_cone.gif[] to split the clones.
+. Select the clones, and then click image:../media/delete_icon.gif[delete] to delete clones or click image:../media/split_cone.gif[split] to split the clones.
 . Click *OK*.

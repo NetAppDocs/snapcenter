@@ -57,4 +57,4 @@ NOTE: You cannot rename or delete backups that are on the secondary storage syst
 +
 NOTE: You cannot rename the backups that are on the primary storage system.
 
-. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[] to delete the clone.
+. If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[delete icon] to delete the clone.
