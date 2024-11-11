@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Before you install the SnapCenter Server, you should be familiar with the space and sizing requirements. You should also apply the available system and security updates.'
 ---
+
 = Space and sizing requirements
 :icons: font
 :imagesdir: ../media/

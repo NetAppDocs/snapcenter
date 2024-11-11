@@ -28,4 +28,4 @@ If you are backing up all databases of a host, for example, you might create a r
 
 The following image illustrates the relationship between resources, resource groups, and policies for databases:
 
-image::../media/sco_resourcegroup_policy.gif[]
+image::../media/sco_resourcegroup_policy.gif[resource group policy]

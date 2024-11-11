@@ -16,11 +16,9 @@ You can use SnapCenter to restore and recover data from one or more backups.
 * You must have backed up the resource or resource groups.
 * You must have canceled any backup operation that is currently in progress for the resource or resource group that you want to restore.
 * For pre restore, post restore, mount, and unmount commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
-+
-For Windows: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
-+
-For Linux: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
-+
+** Default location on the Windows host: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Default location on the Linux host: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
+
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 
 .About this task
@@ -65,8 +63,6 @@ NOTE: If you select *All*, all the files on the volumes, qtrees, or LUNs are res
 . In the Pre ops page, enter pre restore and unmount commands to run before performing a restore job.
 
 . In the Post ops page, enter mount and post restore commands to run after performing a restore job.
-+
-NOTE: For pre and post commands for quiesce, Snapshot, and unquiesce operations, you should check if the commands exist in the command list available on the plug-in host from the _/opt/snapcenter/snapenter/scc/allowed_commands.config_ path for Linux and _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_ for Windows.
 
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
 +
@@ -157,3 +153,4 @@ Restore-SmBackup -PluginCode 'DB2' -AppObjectId cn24.sccore.test.com\DB2\db2inst
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 --
+====

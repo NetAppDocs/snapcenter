@@ -35,7 +35,7 @@ You can modify all the values that you specified while adding the application vo
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.
 . In the Resources page, select *Application Volume* from the *View* list.
-. Click image:../media/edit_icon.gif[] to modify the values.
+. Click image:../media/edit_icon.gif[edit icon] to modify the values.
 
 == Delete application volume
 
@@ -47,4 +47,4 @@ If required, SnapCenter allows you to undo the delete operation.
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.
 . In the Resources page, select *Application Volume* from the *View* list.
-. Click image:../media/delete_icon.gif[] to modify the values.
+. Click image:../media/delete_icon.gif[delete icon] to modify the values.

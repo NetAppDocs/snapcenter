@@ -34,6 +34,8 @@ You can use the GET API to display the value of the key. SET API is not supporte
 * For SnapMirror active sync restore operation, you must select the backup from the primary location.
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+// start tabbed area
+
 [role="tabbed-block"]
 ====
 
@@ -166,3 +168,5 @@ PluginName          :
 
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 --
+
+====

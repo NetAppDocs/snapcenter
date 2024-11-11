@@ -32,7 +32,7 @@ If a database is not part of any resource group, you can back up the database or
 . In the left navigation pane, click *Resources*, and then select the *Microsoft Exchange Server plug-in* from the list.
 . In the Resources page, select either *Database*, or *Database Availability Group* from the *View* list.
 +
-In the Resources page, the image:../media/not_supported_icon.png[] icon indicates that the database is on non-NetApp storage.
+In the Resources page, the image:../media/not_supported_icon.png[non supported storage] icon indicates that the database is on non-NetApp storage.
 +
 NOTE: In a DAG, If an active database copy is on a non-NetApp storage and at least one passive database copy resides on a NetApp storage, then you can protect the database.
 
@@ -174,6 +174,6 @@ This example displays a job summary report for a specific job ID:
 C:\PS> Get-SmJobSummaryReport -JobId 168
 ----
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.htmlnapCenter Software Cmdlet Reference Guide^].
-
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 --
+====

@@ -40,4 +40,4 @@ image::../media/datasets_and_policies.gif[Dataset and policy diagram]
 
 The following image illustrates the relationship between resources, resource groups, and policies for Windows files systems:
 
-image::../media/resources_and_policies_for_wfs.gif[]
+image::../media/resources_and_policies_for_wfs.gif[resources and policies]

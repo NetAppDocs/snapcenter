@@ -40,7 +40,7 @@ The SnapCenter Server installer enables the Centralized SSL Certificate Support 
 You should deploy CA certificates after installing the SnapCenter Server and the  respective plug-ins.
 For more information, see link:../install/reference_generate_CA_certificate_CSR_file.html[Generate CA Certificate CSR file].
 
-You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere. For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates[Create and import certificates^].
+You can also deploy CA certificate for SnapCenter plug-in for VMware vSphere. For more information, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_and_import_certificates.html[Create and import certificates^].
 
 == Two-way SSL communication
 
