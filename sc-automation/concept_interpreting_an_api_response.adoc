@@ -7,7 +7,7 @@ summary: Each API request generates a response back to the client. You should ex
 
 = Interpretation of an API response
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Each API request generates a response back to the client. You should examine the response to determine whether it was successful and retrieve additional data as needed.

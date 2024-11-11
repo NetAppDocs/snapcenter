@@ -18,14 +18,14 @@ Before you use SnapCenter to back up SAP HANA database resources, you must creat
 . In the Settings page, click *Policies*.
 . Click *New*.
 . In the Name page, enter the policy name and description.
-. In the Settings page, perform the following steps:
-.. Select the backup type.
-... Select *File-based Backup* if you want to perform an integrity check of the database.
-... Select *Snapshot Based* if you want to create a backup using Snapshot technology.
-.. Specify the schedule type.
-. In the Retention page, specify the retention settings for the backup type and the schedule type selected.
-+
-NOTE: Replication to secondary storage is not supported.
+. In the Policy type page, perform the following steps:
+.. Select *Azure NetApp Files* as the storage type.
+.. Select *File-Based* if you want to perform an integrity check of the database.
+.. Select *Snapshot Based* if you want to create a backup using Snapshot technology.
+. In the Snapshot and backup page, perform the following steps:
+.. Select the frequency of the scheduled backup.
+.. Specify the retention settings.
+.. If you want to enable Azure NetApp Files backup, select *Enable backup* and specify the retention settings.
 . Review the summary and click *Finish*.
 
 

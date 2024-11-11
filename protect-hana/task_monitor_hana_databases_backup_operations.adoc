@@ -13,5 +13,4 @@ include::../_include/reuse_task_monitor_backup_operations.adoc[]
 
 == Monitor data protection operations on SAP HANA databases in the Activity pane
 
-[.lead]
 include::../_include/reuse_task_monitor_operations_in_the_activity_pane.adoc[]

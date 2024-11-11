@@ -70,7 +70,7 @@ a|
 Select this to avoid forcing a WAFL consistency point.
 |===
 +
-image:../media/application_settings.gif[]
+image:../media/application_settings.gif[application setting]
 
 .. Click the *Scripts* arrow and enter the pre and post commands for quiesce, snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 .. Click the *Custom Configurations* arrow and enter the custom key-value pairs required for all data protection operations using this resource.

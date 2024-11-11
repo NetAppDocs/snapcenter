@@ -13,7 +13,7 @@ You can either create a backup of a resource (cluster) or resource group. The ba
 
 The following workflow shows the sequence in which you must perform the backup operation:
 
-image::../media/db2_backup_workflow.gif[PostgreSQL Backup workflow]
+image::../media/db2_backup_workflow.png[PostgreSQL Backup workflow]
 
 You  can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help and the cmdlet reference information contain more information about PowerShell cmdlets.
 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].

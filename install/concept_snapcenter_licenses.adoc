@@ -19,7 +19,9 @@ SnapCenter Standard controller-based
 a|
 Required for FAS, AFF, All SAN Array (ASA)
 
-SnapCenter Standard license is a controller-based license and is included as part of the premium bundle. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a Premium Bundle evaluation license by contacting the sales representative.
+SnapCenter Standard license is a controller-based license and is included as part of the ONTAP One. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a ONTAP One evaluation license by contacting the sales representative.
+
+For information on licenses included with ONTAP One, refer to https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one[Licenses included with ONTAP One].
 
 NOTE: SnapCenter is also offered as part of data protection bundle. If you have purchased A400 or later, you should purchase the data protection bundle.
 
@@ -69,7 +71,7 @@ Secondary destinations
 NOTE: It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary destinations, you cannot use SnapCenter to backup resources on the secondary destination after performing a failover operation. However, a FlexClone license is required on secondary destinations to perform clone and verification operations.
 |===
 
-NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available. The capacity-based license is no longer required for Amazon FSx for NetApp ONTAP and Cloud Volumes ONTAP. The standard licenses and capacity-based license is not required for Azure NetApp Files.
+NOTE: SnapCenter Advanced and SnapCenter NAS File Services licenses are deprecated, and are no longer available. The standard license and capacity-based license are no longer required for Amazon FSx for NetApp ONTAP, ONTAP Select, Cloud Volumes ONTAP, and Azure NetApp Files.
 
 You should install one or more SnapCenter licenses. For information on how to add licenses, see link:../install/concept_snapcenter_standard_controller_based_licenses.html[Add SnapCenter Standard controller-based licenses].
 

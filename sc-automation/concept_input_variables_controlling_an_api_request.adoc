@@ -7,7 +7,7 @@ summary: 'You can control how an API call is processed through parameters and va
 
 = Input variables controlling an API request
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can control how an API call is processed through parameters and variables set in the HTTP request.
