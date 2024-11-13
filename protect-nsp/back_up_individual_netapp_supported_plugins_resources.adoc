@@ -127,8 +127,7 @@ The username and password prompt is displayed.
 This example adds resources:
 +
 ----
-Add-SmResource -HostName '10.232.206.248' -PluginCode 'DB2' -ResourceName NONREC1 -ResourceType Database -StorageFootPrint ( @
-{"VolumeName"="DB2_NONREC1DB";"LunName"="DB2_NONREC1DB";"Vserver"="vserver_scauto_secondary"}) -Instance db2inst1
+Add-SmResource -HostName 'scc55.sccore.test.com' -PluginCode 'DummyPlugin' -ResourceName QDBVOL1 -ResourceType Database -StorageFootPrint ( @{"VolumeName"="qtree_vol1_scc55_sccore_test_com";"QTREENAME"="qtreeVol1";"StorageSystem"="vserver_scauto_primary"}) -Instance QTREE1
 ----
 
 . Create a backup policy by using the Add-SmPolicy cmdlet.
@@ -136,7 +135,7 @@ Add-SmResource -HostName '10.232.206.248' -PluginCode 'DB2' -ResourceName NONREC
 This example creates a new backup policy:
 +
 ----
-Add-SMPolicy -PolicyName 'db2VolumePolicy' -PolicyType 'Backup' -PluginPolicyType DB2  -description 'VolumePolicy'
+Add-SMPolicy -PolicyName 'test2' -PolicyType 'Backup' -PluginPolicyType DummyPlugin  -description 'testPolicy'
 ----
 
 . Add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
@@ -144,14 +143,13 @@ Add-SMPolicy -PolicyName 'db2VolumePolicy' -PolicyType 'Backup' -PluginPolicyTyp
 This example creates a new resource group with the specified policy and resources:
 +
 ----
-Add-SmResourceGroup -ResourceGroupName 'Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix' -Resources @(@
-{"Host"="10.232.206.248";"Uid"="db2inst2\NONREC"},@{"Host"="10.232.206.248";"Uid"="db2inst1\NONREC"}) -Policies db2ManualPolicy
+Add-SmResourceGroup -ResourceGroupName 'Verify_Backup_on_Multiple_Qtree_different_vserver_windows' -Resources @(@{"Host"="scc55.sccore.test.com";"Uid"="QTREE2";"PluginName"="DummyPlugin"},@{"Host"="scc55.sccore.test.com";"Uid"="QTREE";"PluginName"="DummyPlugin"}) -Policies test2 -plugincode 'DummyPlugin' -usesnapcenterwithoutfilesystemconsistency
 ----
 
 . Initiate a new backup job by using the New-SmBackup cmdlet.
 +
 ----
-New-SMBackup -DatasetName Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix -Policy db2ManualPolicy
+New-SMBackup -DatasetName Verify_Backup_on_Multiple_Qtree_different_vserver_windows -Policy test2
 ----
 
 . View the status of the backup job by using the Get-SmBackupReport cmdlet.
@@ -159,31 +157,36 @@ New-SMBackup -DatasetName Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix 
 This example displays a job summary report of all jobs that were run on the specified date:
 +
 ----
-PS C:\> Get-SmBackupReport -JobId 351
-Output:
-BackedUpObjects           : {DB1}
+Get-SmBackupReport -JobId 149
+
+BackedUpObjects           : {QTREE2, QTREE}
 FailedObjects             : {}
 IsScheduled               : False
 HasMetadata               : False
-SmBackupId                : 269
-SmJobId                   : 2361
-StartDateTime             : 10/4/2016 11:20:45 PM
-EndDateTime               : 10/4/2016 11:21:32 PM
-Duration                  : 00:00:46.2536470
-CreatedDateTime           : 10/4/2016 11:21:09 PM
+SmBackupId                : 1
+SmJobId                   : 149
+StartDateTime             : 1/15/2024 1:35:17 AM
+EndDateTime               : 1/15/2024 1:36:19 AM
+Duration                  : 00:01:02.4265750
+CreatedDateTime           : 1/15/2024 1:35:51 AM
 Status                    : Completed
-ProtectionGroupName       : Verify_ASUP_Message_windows
-SmProtectionGroupId       : 211
+ProtectionGroupName       : Verify_Backup_on_Multiple_Qtree_different_vserver_windows
+SmProtectionGroupId       : 1
 PolicyName                : test2
-SmPolicyId                : 20
-BackupName                : Verify_ASUP_Message_windows_scc54_10-04-2016_23.20.46.2758
-VerificationStatus        : NotVerified
-VerificationStatuses      :
-SmJobError                :
+SmPolicyId                : 4
+BackupName                : Verify_Backup_on_Multiple_Qtree_different_vserver_windows_scc55_01-15-2024_01.35.17.4467
+VerificationStatus        : NotApplicable
+VerificationStatuses      : 
+SmJobError                : 
 BackupType                : SCC_BACKUP
 CatalogingStatus          : NotApplicable
-CatalogingStatuses        :
-ReportDataCreatedDateTime :
+CatalogingStatuses        : 
+ReportDataCreatedDateTime : 
+PluginCode                : SCC
+PluginName                : DummyPlugin
+PluginDisplayName         : DummyPlugin
+JobTypeId                 : 
+JobHost                   : scc55.sccore.test.com
 ----
 --
 ====
