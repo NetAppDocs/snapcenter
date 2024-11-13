@@ -127,9 +127,13 @@ NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in 
 +
 If you have not selected the *Skip prechecks* checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java version (for Linux plug-ins) are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
 +
-If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
+If the error is related to disk space or RAM, you can update the web.config file located at `C:\Program Files\NetApp\SnapCenter WebApp` to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
-NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
+NOTE: In an HA setup, if you are updating SnapManager.Web.UI.dll.config, you must update the file on both nodes and restart the SnapCenter App Pool.
++
+Windows default path is `C:\Program Files\NetApp\SnapCenter WebApp\SnapManager.Web.UI.dll.config`
++ 
+Linux default path is `/opt/NetApp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config`
 
 . If host type is Linux, verify the fingerprint, and then select *Confirm and Submit*.
 +
