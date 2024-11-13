@@ -98,7 +98,7 @@ During secondary replication, the SnapLock expiry time loads the primary SnapLoc
 
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
-See link:protect-nsp/view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html[View custom plug-in resource related backups and clones in the Topology page].
+See link:protect-scc/view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html[View custom plug-in resource related backups and clones in the Topology page].
 a|
 *Update SnapVault after creating a local Snapshot copy*
 a|
