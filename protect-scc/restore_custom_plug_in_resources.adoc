@@ -1,10 +1,10 @@
 ---
-permalink: protect-nsp/restore_netapp_supported_plugins_resources.html
+permalink: protect-scc/restore_custom_plug_in_resources.html
 sidebar: sidebar
 keywords:
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
-= Restore NetApp supported plug-in resources
+= Restore custom plug-in resources
 :icons: font
 :imagesdir: ../media/
 

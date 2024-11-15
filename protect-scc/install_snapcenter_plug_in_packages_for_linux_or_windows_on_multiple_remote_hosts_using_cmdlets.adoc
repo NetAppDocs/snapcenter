@@ -1,21 +1,19 @@
 ---
-permalink: protect-nsp/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html
+permalink: protect-scc/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html
 sidebar: sidebar
 keywords: install, snapcenter
 summary: 'You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
 ---
-= Install SnapCenter Plug-in Packages for Linux, Windows, or AIX on multiple remote hosts by using cmdlets
+= Install SnapCenter Plug-in Packages for Linux or Windows on multiple remote hosts by using cmdlets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can install the SnapCenter Plug-in Packages for Linux, Windows, or AIX on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.
+You can install the SnapCenter Plug-in Packages for Linux or Windows on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.
 
 .Before you begin
 
 The user adding a host should have the administrative rights on the host.
-
-NOTE: Storage and Oracle applications are supported on AIX. 
 
 .Steps
 

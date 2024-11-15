@@ -1,7 +1,7 @@
 ---
-permalink: protect-nsp/add_hosts_and_install_plug_in_packages_on_remote_hosts.html
+permalink: protect-scc/add_hosts_and_install_plug_in_packages_on_remote_hosts.html
 sidebar: sidebar
-keywords: add hostsNetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in
+keywords: add hosts, custom plug-in
 summary: 'You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.'
 ---
 = Add hosts and install plug-in packages on remote hosts
@@ -9,7 +9,7 @@ summary: 'You must use the SnapCenterAdd Host page to add hosts, and then instal
 :imagesdir: ../media/
 
 [.lead]
-You must use the SnapCenter Add Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
+You must use the SnapCenterAdd Host page to add hosts, and then install the plug-in packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install the plug-in packages either for an individual host or for a cluster.
 
 .Before you begin
 
@@ -18,13 +18,12 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
 link:configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for custom applications]
-* For Windows host, you must ensure that you select SnapCenter Plug-in for Windows.
 
 .About this task
 
-* You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
+You cannot add a SnapCenter Server as a plug-in host to another SnapCenter Server.
 
-* If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
+If you install plug-ins on a cluster (WSFC), the plug-ins are installed on all of the nodes of the cluster.
 
 .Steps
 
@@ -43,11 +42,9 @@ Select the host type:
 
  ** Windows
  ** Linux
- ** AIX
 
-NOTE: The NetApp supported plug-ins can be used in Windows, Linux, and AIX environments.
+NOTE: The custom plug-ins can be used in both Windows and Linux environments.
 
-NOTE: Storage and Oracle applications are supported on AIX. 
 a|
 Host name
 a|
@@ -73,15 +70,6 @@ NOTE: The credentials authentication mode is determined by the host type that yo
 |===
 
 . In the *Select Plug-ins to Install* section, select the plug-ins to install.
-+
-You can install the following plug-ins from the list:
-
-* MongoDB
-* ORASCPM (displayed as Oracle Applications)
-* SAP ASE
-* SAP MaxDB
-* Storage 
-
 . (Optional) Select *More Options* to install the other plug-ins.
 +
 |===
@@ -99,15 +87,28 @@ NOTE: If you manually installed the plug-ins and specified a custom port, you mu
 a|
 Installation Path
 a|
-The NetApp supported plug-ins can be installed on either a Windows system or Linux system.
+The SnapCenter Custom Plug-ins can be installed on either a Windows system or a Linux system.
 
  ** For the SnapCenter Plug-ins Package for Windows, the default path is C:\Program Files\NetApp\SnapCenter.
 +
 Optionally, you can customize the path.
 
- ** For SnapCenter Plug-ins Package for Linux and SnapCenter Plug-ins Package for AIX, the default path is `/opt/NetApp/snapcenter`.
+ ** For SnapCenter Plug-ins Package for Linux, the default path is `/opt/NetApp/snapcenter`.
 +
 Optionally, you can customize the path.
+
+ ** For the SnapCenter Custom Plug-ins:
+  ... In the Custom Plug-ins section, select *Browse*, and select the zipped custom plug-in folder.
++
+The zipped folder contains the custom plug-in code and the descriptor .xml file.
++
+For Storage Plug-in, navigate to `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` and select `Storage.zip` folder.
+
+  ... Select *Upload*.
++
+The descriptor .xml file in the zipped custom plug-in folder is validated before the package is uploaded.
++
+The custom plug-ins that are uploaded to the SnapCenter Server are listed.
 
 a|
 Skip preinstall checks
@@ -127,13 +128,9 @@ NOTE: gMSA will be used as a log on service account only for SnapCenter Plug-in 
 +
 If you have not selected the *Skip prechecks* checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java version (for Linux plug-ins) are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
 +
-If the error is related to disk space or RAM, you can update the web.config file located at `C:\Program Files\NetApp\SnapCenter WebApp` to modify the default values. If the error is related to other parameters, you must fix the issue.
+If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
-NOTE: In an HA setup, if you are updating SnapManager.Web.UI.dll.config, you must update the file on both nodes and restart the SnapCenter App Pool.
-+
-Windows default path is `C:\Program Files\NetApp\SnapCenter WebApp\SnapManager.Web.UI.dll.config`
-+ 
-Linux default path is `/opt/NetApp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config`
+NOTE: In an HA setup, if you are updating web.config file, you must update the file on both nodes.
 
 . If host type is Linux, verify the fingerprint, and then select *Confirm and Submit*.
 +
