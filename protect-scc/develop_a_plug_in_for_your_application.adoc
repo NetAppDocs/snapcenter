@@ -1,5 +1,5 @@
 ---
-permalink: protect-nsp/develop_a_plug_in_for_your_application.html
+permalink: protect-scc/develop_a_plug_in_for_your_application.html
 sidebar: sidebar
 keywords: overview snapcenter
 summary: 'The SnapCenter Server enables you to deploy and manage your applications as plug-ins to SnapCenter.'
