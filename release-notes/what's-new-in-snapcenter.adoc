@@ -1,0 +1,217 @@
+---
+permalink: what's-new-in-snapcenter.html
+sidebar: sidebar
+keywords: what is new, features, enhancements
+summary: 'This release of SnapCenter Software includes several new features and enhancements.'
+---
+
+= What's new in SnapCenter Software 6.0 and 6.0.1
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+
+The 6.0 and 6.0.1 release of SnapCenter Software includes several new features and enhancements.
+
+== New features and enhancements of 6.0.1 release
+
+|===
+| Update | Description
+
+| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/protect-azure/protect-applications-azure-netapp-files.html[Supports Azure NetApp Files backup feature]
+a|
+SnapCenter supports the Azure NetApp Files backup feature that expands the data protection capabilities of Azure NetApp Files by providing fully managed backup solution for long-term recovery, archive, and compliance.
+
+| link:hhttps://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Supports high availability for SnapCenter running on Linux]
+a|
+Configure high availability in SnapCenter running on Windows or Linux either using F5 load balancer, Microsoft Network Load Balancing (NLB), Amazon Web Services (AWS) Elastic Load Balancing (ELB), or Azure load balancer.
+
+
+| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-scheduled-backup-jobs[Supports managing of scheduled backup jobs]
+a|
+Allows you to set a threshold to the number of scheduled jobs that can run at any given time. This allows you to control the number of backups you want to run based on your systems hardware configuration.
+
+| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs[Supports managing of stale jobs]
+a|
+Allows you to clean up these stale jobs that are stuck for more than 72 hours.
+
+| Supports IBM Db2, Oracle Application, and Storage plug-in on AIX
+a|
+Supports data protection of IBM Db2, Oracle Application, and Storage plug-in on AIX
+|===
+
+== New features and enhancements of 6.0 release
+
+|===
+| Update | Description
+
+| link:https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html#snapcenter-plug-ins[Support for enterprise workloads plug-in with NetApp support]
+a|
+SnapCenter provides plug-ins to manage workloads such as PostgreSQL, MySQL, and IBM Db2. You can auto discover, back up, restore, mount, and clone the workloads. 
+
+SnapCenter also provides plug-ins to manage workloads such as SAP ASE, SAP MaxDB, MongoDB, Oracle Applications, and ONTAP storage. You can back up, restore, and clone the workloads. 
+
+| link:https://docs.netapp.com/us-en/snapcenter/install/install_snapcenter_server_linux.html[Support for Linux version of SnapCenter for both Cloud and on-premises workloads]
+a|
+* Supports Azure NetApp Files, Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and ONTAP storage.
+* Separate binaries for Linux flavours such as Red Hat Enterprise Linux (RHEL), Oracle Linux, and SUSE Linux Enterprise Server (SLES).
+* Supports classic databases like SAP HANA, Oracle, IBM DB2, SAP ASE, SAP MaxDB.
+* Supports modern workloads like PostgreSQL, MySQL, and MongoDB.
+* Supports plug-ins for ONTAP volumes and Linux file systems for protecting any unsupported or home-grown applications.
+
+| link:https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html[Support for SnapMirror Active Sync]
+a|
+Ability to seamlessly backup, restore, and clone SAN workloads (databases and VMware VMs) configured for transparent application failover and business continuity.
+
+| link:https://docs.netapp.com/us-en/snapcenter/install/concept_create_and_manage_smb_shares.html[Support for Microsoft SQL Server over SMB3]
+a|
+The Microsoft SQL Server databases deployed on SMB3 protocol in ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP, and ONTAP Cloud Volumes can now be protected using SnapCenter.
+
+| link:https://docs.netapp.com/us-en/snapcenter/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html#storage-types-supported-on-linux[Support for NVMe/TCP]
+a|
+If you are migrating critical workloads to NVMe/TCP for better performance, you can use SnapCenter to backup and recover applications and file systems.
+
+| Support for VMware vVols
+
+a|
+If you have deployed your databases and file systems on VMware vVols, you can use SnapCenter to protect them. 
+|===
+
+== Versions qualified for SnapCenter Server and plug-ins
+
+You can find latest versions qualified for SnapCenter Server and plug-ins by referring the link:https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT#welcome[Interoperability Matrix Tool].
+
+* The latest versions qualified for SnapCenter Server:
+** ONTAP 9.15.1
+** ESXi 8.0 update2
+** VCenter 8.0 U3
+** RHEL 9.x
+** OEL 9.3
+** SLES 15 SP5
+** AIX 7.3 TL2
+** JAVA 11.0.21
+
+* The latest versions qualified for each plug-in are: 
++
+|===
+| Plug-in name | Database version | OS version
+
+a|
+Plug-in for Microsoft SQL Server
+a|
+2022
+a|
+Windows 2022
+
+a|
+Plug-in for Oracle Database
+a|
+* 23c
+* 19c
+a| 
+* RHEL 8.x
+* OEL 8.x
+* SLES 15 SP5
+
+a| 
+Plug-in for SAP HANA Database
+a|
+2.0 SPS07
+a|
+* RHEL8.2 or later
+* SLES 15 SP5
+
+a|
+Plug-in for Microsoft Exchange Server
+a|
+2019
+a|
+Windows 2022
+
+a|
+Plug-in for UNIX File Systems
+a|
+a|
+* RHEL 9.x
+* OEL 9.3
+* SLES 15 SP5
+
+a|
+Plug-in for IBM Db2
+a|
+* 10.x
+* 11.x
+a|
+* RHEL 8.x
+* RHEL 9.x
+* SLES 15 SP5
+* Windows 2022
+
+a|
+Plug-in for PostgreSQL
+a|
+* 12
+* 13
+* 14
+* 15
+* 16
+a|
+* RHEL 8.x
+* RHEL 9.x
+* SLES 15 SP5
+* Windows 2022
+
+a|
+Plug-in for MySQL
+a|
+* 5.7
+* 8.0.x
+a|
+* RHEL 8.x
+* RHEL 9.x
+* SLES 15 SP5
+* Windows 2022
+
+a|
+Plug-in for MongoDB
+a|
+3.4.7
+a|
+* RHEL 8.x
+* RHEL 9.x
+* SLES 15 SP5
+* Windows 2022
+
+a|
+Plug-in for SAP MaxDB
+a|
+7.9
+a|
+* RHEL 8.x
+* RHEL 9.x
+* SLES 15 SP5
+* Windows 2022
+
+a|
+Plug-in for SAP ASE
+a|
+ASE 16
+a|
+* RHEL 8.x
+* RHEL 9.x
+* SLES 15 SP5
+* Windows 2022
+
+a|
+Plug-in for Oracle Applications
+a|
+* 11g
+* 12c
+* 19c
+* 21c
+* 23c
+a|
+* RHEL 8.x
+* SLES 15 SP5
+* Windows 2022
+|===
