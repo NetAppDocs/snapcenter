@@ -1,5 +1,5 @@
 ---
-permalink: what's-new-in-snapcenter.html
+permalink: release-notes/what's-new-in-snapcenter.html
 sidebar: sidebar
 keywords: what is new, features, enhancements
 summary: 'This release of SnapCenter Software includes several new features and enhancements.'
@@ -7,7 +7,7 @@ summary: 'This release of SnapCenter Software includes several new features and 
 
 = What's new in SnapCenter Software 6.0 and 6.0.1
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 

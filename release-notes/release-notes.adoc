@@ -1,5 +1,5 @@
 ---
-permalink: release-notes.html
+permalink: release-notes/release-notes.html
 sidebar: sidebar
 keywords: release notes, snapcenter
 summary: 'Provides important information about this release of SnapCenter Server and the SnapCenter plug-in packages, including fixed issues, known issues, cautions, and limitations.'
