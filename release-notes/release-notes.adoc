@@ -13,7 +13,7 @@ summary: 'Provides important information about this release of SnapCenter Server
 
 Learn about the new and enhanced features available in SnapCenter 6.0 and 6.0.1.
 
-For a complete list of new features and enhancements, see link:what's-new-in-snapcenter.html[What's new in SnapCenter].
+For a complete list of new features and enhancements, see link:what's-new-in-snapcenter601.html[What's new in SnapCenter 6.0.1] and link:what's-new-in-snapcenter60.html[What's new in SnapCenter 6.0].
 
 For details about known issues, limitations, fixed issues, and new and changed commands, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468[SnapCenter Software 6.0 and 6.0.1 Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
 
