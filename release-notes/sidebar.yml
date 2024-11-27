@@ -3,5 +3,13 @@ title: Release notes
 entries:
   - title: Release Notes
     url: /release-notes/release-notes.html
-  - title: What's new in SnapCenter
-    url: /release-notes/what's-new-in-snapcenter.html
+  - title: What's new in SnapCenter 6.0.1
+    url: /release-notes/what's-new-in-snapcenter601.html
+  - title: What's new in SnapCenter 6.0
+    url: /release-notes/what's-new-in-snapcenter60.html
+  - title: Versions qualified for SnapCenter Server and plug-ins
+    url: /release-notes/versions-qualified-snapcenter.html
+  - title: Support for ONTAP features
+    url: /release-notes/support-for-ontap-features.html
+  - title: Supported upgrade paths for SnapCenter 6.0.1
+    url: /release-notes/upgrade-path.html
