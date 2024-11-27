@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to clone a backup.'
 
 [.lead]
 
-You can use SnapCenter to clone a backup.
+You can use SnapCenter to clone a backup. The clones are thick clones and are created on the parent capacity pool.
 
 .Steps
 
