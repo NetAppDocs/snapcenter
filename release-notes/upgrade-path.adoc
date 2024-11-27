@@ -11,8 +11,7 @@ summary: 'The upgrade paths supported for SnapCenter 6.0.1'
 
 [.lead]
 
-upgrade-path
-
+The upgrade path helps you to understand from which all earlier versions of SnapCenter you can upgrade to SnapCenter 6.0.1 and which versions of the plug-ins are supported.
 
 |===
 | If you are on SnapCenter Server version... | You can directly upgrade SnapCenter Server to... | Supported plug-in versions
