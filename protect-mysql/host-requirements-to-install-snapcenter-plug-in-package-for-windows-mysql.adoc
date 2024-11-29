@@ -36,7 +36,7 @@ a|
 Required software packages
 a|
 
-* DOTNET Core 8.0.5
+* DOTNET Core beginning with version 8.0.5 and including all subsequent .NET 8 patches
 * PowerShell Core 7.4.2 
 
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].

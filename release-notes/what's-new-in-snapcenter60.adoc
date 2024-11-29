@@ -25,7 +25,7 @@ SnapCenter also provides plug-ins to manage workloads such as SAP ASE, SAP MaxDB
 | link:https://docs.netapp.com/us-en/snapcenter/install/install_snapcenter_server_linux.html[Support for Linux version of SnapCenter for both Cloud and on-premises workloads]
 a|
 * Supports Azure NetApp Files, Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and ONTAP storage.
-* Separate binaries for Linux flavours such as Red Hat Enterprise Linux (RHEL), Oracle Linux, and SUSE Linux Enterprise Server (SLES).
+* Separate binaries for Linux flavors such as Red Hat Enterprise Linux (RHEL), Oracle Linux, and SUSE Linux Enterprise Server (SLES).
 * Supports classic databases like SAP HANA, Oracle, IBM DB2, SAP ASE, SAP MaxDB.
 * Supports modern workloads like PostgreSQL, MySQL, and MongoDB.
 * Supports plug-ins for ONTAP volumes and Linux file systems for protecting any unsupported or home-grown applications.
@@ -40,7 +40,7 @@ The Microsoft SQL Server databases deployed on SMB3 protocol in ONTAP, Azure Net
 
 | link:https://docs.netapp.com/us-en/snapcenter/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html#storage-types-supported-on-linux[Support for NVMe/TCP]
 a|
-If you are migrating critical workloads to NVMe/TCP for better performance, you can use SnapCenter to backup and recover applications and file systems.
+If you are migrating critical workloads to NVMe/TCP for better performance, you can use SnapCenter to back up and recover applications and file systems.
 
 | Support for VMware vVols
 

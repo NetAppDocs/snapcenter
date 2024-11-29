@@ -48,7 +48,7 @@ a|
 * Application Development Features
  ** .NET Extensibility 4.5
  ** Application Initialization
- ** ASP.NET Core Hosting Bundle (8.0.5 or later)
+ ** ASP.NET Core Hosting Bundle beginning with version 8.0.5 and including all subsequent .NET 8 patches
  ** Server-Side Includes
  ** WebSocket Protocol
 * Management Tools
@@ -65,8 +65,8 @@ a|
 +.NET Framework 8.0.5 Features+
 a|
 
-* .NET Framework 8.0.5
-* ASP.NET 8.0.5
+* .NET Framework beginning with version 8.0.5 and including all subsequent .NET 8 patches
+* ASP.NET beginning with version 8.0.5 and including all subsequent .NET 8 patches
 * Windows Communication Foundation (WCF) HTTP Activation45
  ** TCP Activation
  ** HTTP Activation
