@@ -23,3 +23,4 @@ When a policy with Azure NetApp Files backup is enabled and associated with an r
 * Oracle and SAP HANA mount and catalog workflows are not supported.
 * Backup verification from object storage, REST API support, clone lifecycle management from object storage, and reporting features for object storage backups are  not supported.
 * Restoring from backups on Azure Blob Storage to Azure NetApp Files is not supported. You can use the clone option, alternatively.
+* Clone split is not supported.

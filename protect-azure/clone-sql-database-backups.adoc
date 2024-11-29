@@ -11,7 +11,7 @@ summary: 'You can use SnapCenter to clone a backup.'
 
 [.lead]
 
-You can use SnapCenter to clone a SQL Server database backup. If you want to access or restore an older version of the data, you can clone database backups on demand.
+You can use SnapCenter to clone a SQL database using the backup of the database. The clones created are thick clones and are created on the parent capacity pool.
 
 .About this task
 
