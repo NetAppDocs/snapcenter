@@ -13,8 +13,6 @@ summary: 'The 6.0.1 release of SnapCenter Software includes several new features
 
 The 6.0.1 release of SnapCenter Software includes several new features and enhancements.
 
-https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html
-
 |===
 | Update | Description
 
