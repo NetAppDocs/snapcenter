@@ -16,20 +16,20 @@ The 6.0.1 release of SnapCenter Software includes several new features and enhan
 |===
 | Update | Description
 
-| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/protect-azure/protect-applications-azure-netapp-files.html[Support for Azure NetApp Files backup]
+| link:https://docs.netapp.com/us-en/snapcenter/protect-azure/protect-applications-azure-netapp-files.html[Support for Azure NetApp Files backup]
 a|
 SnapCenter supports the Azure NetApp Files backup feature that expands the data protection capabilities of Azure NetApp Files by providing fully managed backup solution for long-term recovery, archive, and compliance.
 
-| link:hhttps://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
+| link:https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
 a|
 Configure high availability in SnapCenter running on Windows or Linux either using F5 load balancer, Microsoft Network Load Balancing (NLB), Amazon Web Services (AWS) Elastic Load Balancing (ELB), or Azure load balancer.
 
 
-| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-scheduled-backup-jobs[Support for managing scheduled backup jobs]
+| link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-scheduled-backup-jobs[Support for managing scheduled backup jobs]
 a|
 Allows you to set a threshold to the number of scheduled jobs that can run at any given time. This allows you to control the number of backups you want to run based on your systems hardware configuration.
 
-| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs[Support for managing stale jobs]
+| link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs[Support for managing stale jobs]
 a|
 Allows you to clean up stale jobs that are stuck for more than 72 hours.
 
