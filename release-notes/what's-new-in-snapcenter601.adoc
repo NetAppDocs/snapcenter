@@ -22,7 +22,7 @@ https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.htm
 a|
 SnapCenter supports the Azure NetApp Files backup feature that expands the data protection capabilities of Azure NetApp Files by providing fully managed backup solution for long-term recovery, archive, and compliance.
 
-| link:hhttps://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
+| link:https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
 a|
 Configure high availability in SnapCenter running on Windows or Linux either using F5 load balancer, Microsoft Network Load Balancing (NLB), Amazon Web Services (AWS) Elastic Load Balancing (ELB), or Azure load balancer.
 
