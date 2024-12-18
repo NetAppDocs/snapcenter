@@ -23,6 +23,7 @@ SnapCenter supports the Azure NetApp Files backup feature that expands the data 
 | link:https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
 a|
 Support for HA configuration for SnapCenter is now extended to Linux systems. You can use the standard load balancers for this configuration:
+
 * F5 load balancer
 * Microsoft Network Load Balancing (NLB)
 * Amazon Web Services (AWS) 

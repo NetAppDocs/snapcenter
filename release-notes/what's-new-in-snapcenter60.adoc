@@ -25,6 +25,7 @@ SnapCenter also provides plug-ins to manage workloads such as SAP ASE, SAP MaxDB
 | link:https://docs.netapp.com/us-en/snapcenter/install/install_snapcenter_server_linux.html[Support for Linux version of SnapCenter for both cloud and on-premises workloads]
 a|
 Separate SnapCenter binaries are now available for Linux flavors such as Red Hat Enterprise Linux (RHEL), Oracle Linux, and SUSE Linux Enterprise Server (SLES).
+
 * Supports Azure NetApp Files, Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, and ONTAP storage.
 * Separate binaries for Linux flavors such as Red Hat Enterprise Linux (RHEL), Oracle Linux, and SUSE Linux Enterprise Server (SLES).
 * Supports classic databases like SAP HANA, Oracle, IBM DB2, SAP ASE, SAP MaxDB.
