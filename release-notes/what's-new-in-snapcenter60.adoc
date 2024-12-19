@@ -40,7 +40,7 @@ You can now use SnapCenter to configure SnapMirror active sync features and effe
 a|
 You can now use SnapCenter to protect Microsoft SQL Server databases deployed on SMB3 protocol in ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP, and Cloud Volumes ONTAP.
 
-| link:https://docs.netapp.com/us-en/snapcenter/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html#storage-types-supported-on-linux[Support for NVMe-TCP]
+| link:https://docs.netapp.com/us-en/snapcenter/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html#storage-types-supported-on-linux[Support for NVMe/TCP]
 a|
 SnapCenter now supports NVMe over TCP protocol to back up and recover applications and file systems.
 

@@ -18,7 +18,7 @@ The 6.0.1 release of SnapCenter Software includes several new features and enhan
 
 | link:https://docs.netapp.com/us-en/snapcenter/protect-azure/protect-applications-azure-netapp-files.html[Support for Azure NetApp Files backup]
 a|
-SnapCenter supports the Azure NetApp Files backup feature that expands the data protection capabilities of Azure NetApp Files by providing fully managed backup solution for long-term recovery, archive, and compliance.
+You can now use SnapCenter to back up and clone applications residing on Azure NetApp Files to Azure Blob Storage (object store).
 
 | link:https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
 a|
@@ -36,7 +36,7 @@ You can now set a threshold for your scheduled jobs to control the number of bac
 
 | link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs[Ability to manage stale jobs]
 a|
-You can now clean up stale jobs that are stuck for more than 72 hours.
+You can now set a predefined schedule to clean up stale jobs that are stuck for more than 72 hours.
 
 | Data protection functionality included for IBM Db2, Oracle Application, and Storage plug-in running on AIX
 a|
