@@ -27,7 +27,7 @@ a|
 * iSCSI-connected LUNs
 * NFS-connected volumes
 * NVMe-FC
-* NVMe-TCP
+* NVMe/TCP
 a|
 VMware ESXi
 a|
@@ -36,7 +36,7 @@ a|
 You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/plugins/scu/scucore/modules/SCU/Config_ to set the value of the *SCSI_HOSTS_OPTIMIZED_RESCAN* parameter to 1 to rescan only those HBAs that are listed in HBA_DRIVER_NAMES.
 * iSCSI LUNs connected directly to the guest system by the iSCSI initiator
 * VMDKs on NFS datastores
-* VMDKs on VMFS created over NVMe-TCP
+* VMDKs on VMFS created over NVMe/TCP
 +
 NOTE: RAC is supported on ESX 8.0U2 which has the support for shared VMDK
 * NFS volumes connected directly to the guest system
