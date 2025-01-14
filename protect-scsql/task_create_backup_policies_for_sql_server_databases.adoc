@@ -52,10 +52,12 @@ NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the 
 . In the left navigation pane, select *Settings*.
 . In the Settings page, select *Policies*.
 . Select *New*.
-. In the *Name* page, enter the policy name and description.
+. In the *Name* page, enter the policy name and details.
 
-== Step 2: Configure backup options 
+== Step 2: Configure policy options 
 // start tabbed area
+. Choose your storage type.
+
 . Choose your backup type
 
 [role="tabbed-block"]

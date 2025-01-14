@@ -13,6 +13,8 @@ If a resource is not yet part of any resource group, you can back up the resourc
 
 .About this task
 
+* To optimize the backup operation, you should create a reverse lookup record of Windows cluster names and IP addresses in the DNS server.
+
 * For Windows credentials authentication, you must set up your credential before installing the plug-ins.
 
 * For SQL Server instance authentication, you must add the credential after installing the plug-ins.
