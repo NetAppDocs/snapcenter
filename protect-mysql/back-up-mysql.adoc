@@ -29,7 +29,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resource page, filter resources from the *View* drop-down list based on resource type.
 +
-Select *image:../media/filter_icon.png[]*, and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.png[] to close the filter pane.
+Select *image:../media/filter_icon.gif[filter icon]*, and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.gif[filter icon] to close the filter pane.
 
 . Select the resource that you want to back up.
 . In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.

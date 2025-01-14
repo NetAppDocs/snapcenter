@@ -32,7 +32,7 @@ In the Resources page, the image:../media/not_supported_icon.png[] icon indicate
 NOTE: In a DAG, If an active database copy is on a non-NetApp storage and at least one passive database copy resides on a NetApp storage, then you can protect the database.
 
 +
-Click *image:../media/filter_icon.png[]*, and then select the host name and the database type to filter the resources. You can then click *image:../media/filter_icon.png[]* to close the filter pane.
+Click *image:../media/filter_icon.gif[filter icon]*, and then select the host name and the database type to filter the resources. You can then click *image:../media/filter_icon.gif[filter icon]* to close the filter pane.
 
  ** If you want to back up a database, click on the database name.
   ... If the Topology view is displayed, click *Protect*.
