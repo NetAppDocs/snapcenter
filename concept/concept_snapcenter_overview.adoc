@@ -73,7 +73,7 @@ For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/s
 +
 For more information on Windows cmdlets see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 +
-For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^].
+For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666[SnapCenter Software Command Reference Guide^].
 
 * Centralized data protection Dashboard and reporting
 * Role-Based Access Control (RBAC) for security and delegation.
