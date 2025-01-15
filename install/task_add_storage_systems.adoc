@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_storage_systems.html
 sidebar: sidebar
-keywords: add, storage system, SVM
+keywords: add, storage system, SVM, ASA r2 systems
 summary: 'You should set up the storage system that gives SnapCenter access to ONTAP storage to perform data protection and provisioning operations. You can either add a stand alone SVM or a cluster comprising of multiple SVMs.'
 ---
 = Add storage systems
@@ -9,7 +9,7 @@ summary: 'You should set up the storage system that gives SnapCenter access to O
 :imagesdir: ../media/
 
 [.lead]
-You should set up the storage system that gives SnapCenter access to ONTAP storage or Amazon FSx for NetApp ONTAP to perform data protection and provisioning operations.
+You should set up the storage system that gives SnapCenter access to ONTAP storage, ASA r2 systems, or Amazon FSx for NetApp ONTAP to perform data protection and provisioning operations.
 
 You can either add a stand-alone SVM or a cluster comprising of multiple SVMs. If you are using Amazon FSx for NetApp ONTAP, you can either add FSx admin LIF comprising of multiple SVMs using fsxadmin account or add FSx SVM in SnapCenter.
 

@@ -1,30 +1,25 @@
 ---
-permalink: protect-sco/task_create_resource_groups_and_attaching_policies_for_oracle_databases.html
+permalink: protect-sco/create-resource-groups-attach-policies-for-asa-r2-oracle-resources.html
 sidebar: sidebar
 keywords: run as
 summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
 ---
-= Create resource groups and attach policies for Oracle databases
+
+= Create resource groups and attach policies for ASA r2 Oracle resources
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.
+You should create the resource group to add the Oracle resources that are on ASA r2 systems.
+
+.Before you begin
+
+* You should ensure that you are not adding both ONTAP 9.x resources and ASA r2 resources to the same resource group.
+* You should ensure that you do not have a database with both ONTAP 9.x resources and ASA r2 resources.
 
 .About this task
 
-* A database with files in ASM disk groups must be in "MOUNT" or "OPEN" state to verify its backups using the Oracle DBVERIFY utility.
-+
-Attach one or more policies to the resource group to define the type of data protection job you want to perform.
-+
-The following image illustrates the relationship between resources, resource groups, and policies for databases:
-+
-image::../media/sco_resourcegroup_policy.gif[resource group policy]
-
-* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
-
-* Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
-* Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
+If you enabled secondary replication, the resource group is put into maintenance mode while creating the primary and secondary consistency groups. After the primary and secondary consistency groups are created, the resource group is put out of maintenance mode.
 
 .Steps
 
@@ -49,7 +44,7 @@ NOTE: You should use the exact same destination as it was set in Oracle, includi
 +
 NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
 
-. Select the resources from the Available Resources section and move them to the Selected Resources section.
+. Select the ASA r2 resources from the Available Resources section and move them to the Selected Resources section.
 +
 NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
 
@@ -72,6 +67,18 @@ The configured schedules are listed in the Applied Schedules column.
 
 +
 Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
+
+. If the secondary protection is enabled for the policy that you have selected, then Secondary Protection page is displayed and you need to perform the following steps:
+.. Select the type of the replication policy.
++
+NOTE: Synchronous replication policy is not supported. 
+.. Specify the consistency group suffix that you want to use.
+.. From the Destination Cluster and Destination SVM drop-downs select the peered cluster and SVM that you want to use.
++
+NOTE: The cluster and SVM peering is not supported by SnapCenter. You should use System Manager or ONTAP CLIs to perform cluster and SVM peering.
+
+NOTE: If the resources are already protected outside of SnapCenter, those resources will be displayed in the Secondary Protected Resources section.
+
 . On the Verification page, perform the following steps:
  .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
  .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column to configure the verification schedule for all the schedule types of the policy.
@@ -101,3 +108,4 @@ You must also specify the sender and receiver email addresses, and the subject o
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
 . Review the summary, and then click *Finish*.
+

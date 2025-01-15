@@ -13,6 +13,8 @@ entries:
         url: /install/reference_san_host_requirements.html
       - title: Supported storage systems and applications
         url: /install/reference_supported_storage_systems_and_applications.html
+      - title: Learn about supporting ASA r2 systems in SnapCenter
+        url: /install/learn-about-supporting-asa-r2-in-snapcenter.html
       - title: Supported browsers
         url: /install/reference_supported_browsers.html
       - title: Connection and port requirements
