@@ -43,7 +43,7 @@ You can use the GET API to display the value of the key. SET API is not supporte
 *Best Practice:* It's best that you configure the secondary retention policy based on the number of full and log backups, overall, that you want to retain. When you configure secondary retention policies, keep in mind that when databases and logs that are in different volumes, each backup can have three Snapshots, and when databases and logs are in the same volume, each backup can have two Snapshots.
 |===
 
-* SnapLock
+* SnapLock Lock
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 +
