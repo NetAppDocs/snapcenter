@@ -70,7 +70,7 @@ a|
 Select this to avoid forcing a WAFL consistency point.
 |===
 +
-image:../media/application_settings.gif[]
+image:../media/application_settings.gif[application settings]
 
 .. Click the *Scripts* arrow and enter the pre and post commands for quiesce, snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
 .. Click the *Custom Configurations* arrow and enter the custom key-value pairs required for all data protection operations using this resource.
@@ -157,11 +157,11 @@ Select *Other*, and then enter the command to be executed on the host to create 
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 +
 The policies are listed in the Configure schedules for selected policies section.
 
- .. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
+ .. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* for the policy you want to configure.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click *OK*.
 +
 Where, policy_name is the name of the policy that you have selected.

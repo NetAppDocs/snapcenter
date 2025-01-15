@@ -47,4 +47,4 @@ If required, SnapCenter allows you to undo the delete operation.
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.
 . In the Resources page, select *Application Volume* from the *View* list.
-. Click image:../media/delete_icon.gif[] to modify the values.
+. Click image:../media/delete_icon.gif[delete icon]elete icon] to modify the values.

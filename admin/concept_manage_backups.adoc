@@ -54,7 +54,7 @@ The resource or resource group topology page is displayed.
 +
 You cannot delete the backups that are on the secondary storage system.
 
-. Select the backup, and then click image:../media/delete_icon.gif[].
+. Select the backup, and then click image:../media/delete_icon.gif[delete icon].
 +
 If you are deleting a SAP HANA database backup, the associated SAP HANA catalogs of the backup are also deleted.
 +

@@ -5,6 +5,6 @@ The Activity pane displays information regarding backup, restore, clone, and sch
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. Click image:../media/activity_pane_icon.gif[] on the Activity pane to view the five most recent operations.
+. Click image:../media/activity_pane_icon.gif[activity pane icon] on the Activity pane to view the five most recent operations.
 +
 When you click one of the operations, the operation details are listed in the *Job Details* page.

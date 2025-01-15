@@ -41,11 +41,11 @@ For example, customtext_policy_hostname or resource_hostname. By default, a time
 . In the Policies page, perform the following tasks:
  .. In the Policies section, select one or more policies from the drop-down list.
 +
-You can create a policy by selecting *image:../media/add_policy_from_resourcegroup.gif[]* to start the policy wizard.
+You can create a policy by selecting *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* to start the policy wizard.
 +
 In the *Configure schedules for selected policies* section, the selected policies are listed.
 
- .. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. Select *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* in the Configure Schedules column for the policy for which you want to configure a schedule.
  .. In the *Add schedules for policy* `policy_name` dialog box, configure the schedule, and then select *OK*.
 +
 Here `policy_name` is the name of the policy that you have selected.
@@ -61,7 +61,7 @@ You can select multiple verification servers (local host or remote host).
 NOTE: The verification server version should be equal or above the version of the edition of the SQL server that is hosting the primary database.
 
  .. Select *Load secondary locators to verify backups on secondary* to verify your backups on secondary storage system.
- .. Select the policy for which you want to configure your verification schedule, and then select *image:../media/add_policy_from_resourcegroup.gif[]*.
+ .. Select the policy for which you want to configure your verification schedule, and then select *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
  .. In the Add Verification Schedules _policy_name_ dialog box, perform the following actions:
 +
 |===

@@ -67,4 +67,4 @@ The details of the backups and clones are displayed in a table format.
 NOTE: You cannot rename or delete backups that are on the secondary storage.
 
 . Select a clone from the table and click *Clone Split*.
-. If you want to delete a clone, select the clone from the table, and then click image:../media/delete_icon.gif[].
+. If you want to delete a clone, select the clone from the table, and then click image:../media/delete_icon.gif[delete icon].

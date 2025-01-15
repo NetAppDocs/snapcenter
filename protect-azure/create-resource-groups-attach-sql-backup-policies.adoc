@@ -42,12 +42,12 @@ Select this check box, and enter a custom name format that you want to use for t
 . Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
 . In the Policies page, perform the following steps:
 .. Select one or more policies from the drop-down list.
-.. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[]* for the policy you want to configure.
+.. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* for the policy you want to configure.
 .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click *OK*.
 .. Select the Microsoft SQL Server scheduler.
 . In the Verification page, perform the following steps:
 .. Select the verification server.
-.. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+.. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 .. Either select *Run verification after backup* or *Run scheduled verification*.
 .. Click *OK*.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.

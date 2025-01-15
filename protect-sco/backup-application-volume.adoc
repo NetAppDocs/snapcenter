@@ -47,12 +47,12 @@ Specify the destinations of the archive log files that you do not want to back u
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
- .. Click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add policy form resource group] in the Configure Schedules column for the policy for which you want to configure a schedule.
  .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then click *OK*.
 +
 _policy_name_ is the name of the policy that you have selected.

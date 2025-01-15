@@ -66,7 +66,7 @@ NOTE: You cannot rename or delete backups that are on the secondary storage.
  ** If you have selected a log backup, you can only perform rename, mount, unmount, catalog, uncatalog, and delete operations.
  ** If you have cataloged the backup using Oracle Recovery Manager (RMAN), you cannot rename those cataloged backups.
 
-. If you want to delete a clone, select the clone from the table, and then click image:../media/delete_icon.gif[].
+. If you want to delete a clone, select the clone from the table, and then click image:../media/delete_icon.gif[delete icon].
 
 If the value assigned to SnapmirrorStatusUpdateWaitTime is less, the Mirror and Vault backup copies are not listed on the topology page even if data and log volumes are successfully protected. You should increase the value assigned to SnapmirrorStatusUpdateWaitTime using _Set-SmConfigSettings_ PowerShell cmdlet.
 
