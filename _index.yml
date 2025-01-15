@@ -9,8 +9,6 @@ indexpage:
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337665 
         - title: Learn about SnapCenter
           url: /concept/concept_snapcenter_overview.html
-        - title: Quick reference to protect SQL Server databases
-          url: /protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html
         - title: Upgrade SnapCenter Server and SnapCenter plug-ins
           url: /upgrade/upgrade_workflow.html
     - title: Install SnapCenter Server

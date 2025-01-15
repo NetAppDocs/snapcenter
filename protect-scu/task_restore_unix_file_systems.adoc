@@ -37,7 +37,7 @@ The new files created after backup may not be available after restore depending 
 . In the PreOps page, enter pre restore commands to run before performing a restore job.
 . In the PostOps page, enter post restore commands to run after performing a restore job.
 +
-NOTE: You should check if the commands exist in the command list available on the plug-in host from the _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_ path.
+NOTE: You should check if the commands exist in the command list available on the plug-in host at location _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_ path.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the email notifications.
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the restore operation performed, you must select *Attach Job Report*.

@@ -84,7 +84,7 @@ NOTE: You must increase this value if you want to run multiple backup operations
 
 .Log Backup
 --
-Back up the transaction logs.
+. Back up the transaction logs.
 . Select *Log backup*.
 --
 
@@ -125,7 +125,7 @@ NOTE: In cluster configurations, the backups are retained at each node of the cl
 +
 You can only select one schedule type for a policy.
 +
-image::../media/backup_settings.gif[Backup settings screen.]
+image:../media/backup_settings.gif[Backup settings screen.]
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +

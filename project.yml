@@ -28,8 +28,7 @@ sidebar:
   entries:
     - title: SnapCenter Software 6.1 docs
       url: /index.html
-    - title: Release notes
-      url: /release-notes.html
+    - section: release-notes
     - section: concept
     - section: install
     - section: protect-scsql
@@ -39,10 +38,11 @@ sidebar:
     - section: protect-sce
     - section: protect-db2
     - section: protect-postgresql
-    - section: protect-mysql    
+    - section: protect-mysql 
+    - section: protect-scc 
+    - section: protect-nsp  
     - section: protect-scu
-    - section: protect-azure 
-    - section: protect-nsp   
+    - section: protect-azure    
     - section: admin
     - section: upgrade
     - section: tech-refresh

@@ -82,7 +82,7 @@ NOTE: You should configure SnapMirror retention policy in ONTAP for the secondar
 
 . In the Script page, enter the path and the arguments of the prescript or postscript that you want to run before or after the backup operation, respectively.
 +
-NOTE: You should check if the commands exist in the command list available on the plug-in host from the _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_ path.
+NOTE: You should check if the commands exist in the command list available on the plug-in host from the _ /opt/NetApp/snapcenter/scc/etc/allowed_commands.config_ path.
 +
 You can also specify the script timeout value. The default value is 60 seconds.
 . Review the summary, and then click *Finish*.

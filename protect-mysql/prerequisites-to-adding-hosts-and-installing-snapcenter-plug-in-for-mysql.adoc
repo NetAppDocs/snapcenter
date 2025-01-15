@@ -44,41 +44,25 @@ https://imt.netapp.com/matrix/imt.jsp?components=121071;&solution=1259&isHWU&src
 
 == Supplemental commands
 
-To run a supplemental command on the SnapCenter Plug-in for MySQL, you must include it in the `allowed_commands.config` file.
+To run a supplemental command on the SnapCenter Plug-in for MySQL, you must include it in the _allowed_commands.config_ file.
 
-`allowed_commands.config` file is located in the "etc" subdirectory of the SnapCenter Plug-in for MySQL directory.
+* Default location on the Windows host: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+* Default location on the Linux host: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
 
-.Windows hosts
+To allow supplemental commands on the plug-in host, open _allowed_commands.config_ file in an editor. Enter each command on a separate line and the commands are not case sensitive. Ensure that you specify the fully qualified pathname and enclose the pathname in quotation marks (") if it contains spaces.
 
-Default: `C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config`
-
-Custom path: `<Custom_Directory>\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config`
-
-.Linux hosts
-
-Default: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
-
-Custom path: `<Custom_Directory>allowed_commands.config`
-
-To allow supplemental commands on the plug-in host, open `allowed_commands.config` file in an editor. Enter each command on a separate line. It is not case sensitive.
-For example,
+For example:
 
 command: mount
-
 command: umount
-
-Ensure that you specify the fully qualified pathname. Enclose the pathname in quotation marks (") if it contains spaces. 
-For example,
-
 command: "C:\Program Files\NetApp\SnapCreator commands\sdcli.exe"
-
 command: myscript.bat
  
-If the `allowed_commands.config` file is not present, the commands or script execution will be blocked and the workflow will fail with the following error:
+If the _allowed_commands.config_ file is not present, the commands or script execution will be blocked and the workflow will fail with the following error:
 
 "[/mnt/mount -a] execution not allowed. Authorize by adding the command in the file %s on the plugin host."
  
-If the command or script is not present in the `allowed_commands.config`, the command or script execution will be blocked and the workflow will fail with the following error:
+If the command or script is not present in the _allowed_commands.config_, the command or script execution will be blocked and the workflow will fail with the following error:
 
 "[/mnt/mount -a] execution not allowed. Authorize by adding the command in the file %s on the plugin host."
  
@@ -91,6 +75,7 @@ SnapCenter 2.0 and later releases allow a non-root user to install the SnapCente
 *What you will need*
 
 * Sudo version 1.8.7 or later.
+* If the umask is 0027, ensure that the java folder and all the files inside should have permission of 555. Otherwise plug-in installation might fail.
 * For the non-root user, ensure that the name of the non-root user and the user's group should be the same.
 * Edit the _/etc/ssh/sshd_config_ file to configure the message authentication code algorithms: MACs hmac-sha2-256 and MACs hmac-sha2-512.
 +

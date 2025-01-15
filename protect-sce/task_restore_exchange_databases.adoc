@@ -43,6 +43,11 @@ You can use the GET API to display the value of the key. SET API is not supporte
 
 * For SnapMirror active sync restore operation, you must select the backup from the primary location.
 
+[role="tabbed-block"]
+====
+
+.SnapCenter UI
+--
 .Steps
 
 . On the left navigation pane, click *Resources* in the upper left corner of the Resource page.
@@ -107,3 +112,57 @@ You should monitor the restore process by using the *Monitor* > *Jobs* page.
 When you restore an active database from a backup, the passive database might go into suspended or failed state if there is a lag between the replica and the active database.
 
 The state change can occur when the active database's log chain forks and begins a new branch which breaks replication. Exchange Server attempts to fix the replica, but if it is unable to do so, after restore, you should create a fresh backup, and then reseed the replica.
+--
+.PowerShell cmdlets
+--
+.Steps
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the `Open-SmConnection` cmdlet.
++
+----
+Open-smconnection  -SMSbaseurl  https://snapctr.demo.netapp.com:8146/
+----
+
+. Retrieve the information about the one or more backups that you want to restore by using the `Get-SmBackup` cmdlet.
++
+This example displays information about all available backups:
++
+----
+PS C:\> Get-SmBackup
+
+BackupId                      BackupName                    BackupTime                    BackupType
+--------                      ----------                    ----------                    ----------
+341                           ResourceGroup_36304978_UTM... 12/8/2017 4:13:24 PM          Full Backup
+342                           ResourceGroup_36304978_UTM... 12/8/2017 4:16:23 PM          Full Backup
+355                           ResourceGroup_06140588_UTM... 12/8/2017 6:32:36 PM          Log Backup
+356                           ResourceGroup_06140588_UTM... 12/8/2017 6:36:20 PM          Full Backup
+----
+
+. Restore data from the backup by using the `Restore-SmBackup` cmdlet.
++
+This example restores an up-to-the-minute backup:
++
+----
+C:\PS> Restore-SmBackup -PluginCode SCE -AppObjectId 'sce-w2k12-exch.sceqa.com\sce-w2k12-exch_DB_2' -BackupId 341 -IsRecoverMount:$true
+----
++
+This example restores a point-in-time backup:
++
+----
+C:\ PS> Restore-SmBackup -PluginCode SCE -AppObjectId 'sce-w2k12-exch.sceqa.com\sce-w2k12-exch_DB_2' -BackupId 341 -IsRecoverMount:$true -LogRestoreType ByTransactionLogs -LogCount 2
+----
++
+This example restores a backup on secondary storage to primary story:
++
+----
+C:\ PS> Restore-SmBackup -PluginCode 'SCE' -AppObjectId 'DB2' -BackupId 81 -IsRecoverMount:$true -Confirm:$false
+-archive @{Primary="paw_vs:vol1";Secondary="paw_vs:vol1_mirror"} -logrestoretype All
+----
++
+The `-archive` parameter enables you to specify the primary and secondary volumes you want to use for the restore.
++
+The `-IsRecoverMount:$true` parameter enables you to mount the database after the restore.
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
+--
+====

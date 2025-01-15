@@ -25,7 +25,7 @@ a|
 Required software packages
 a|
 
-* .NET Core 8.0.5
+* .NET Core beginning with version 8.0.5 and including all subsequent .NET 8 patches
 * PowerShell Core 7.4.2
 * Java 11 Oracle Java and OpenJDK
 

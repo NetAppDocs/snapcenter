@@ -28,9 +28,9 @@ NOTE: Clones of a backup of a version-flexible mirror on a mirror-vault type vol
 
 If you have secondary relationship as SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC]), you can see following additional icons:
 
-* image:../media/topology_replica_site_up.png[replica site up] implies that the replica site is up.
-* image:../media/topology_replica_site_down.png[replica site down]  implies that the replica site is down.
-* image:../media/topology_reestablished.png[relationship is reestablished] implies that the secondary mirror or vault relationship has not been re-established.
+* image:../media/topology_replica_site_up.png[replica site up] The replica site is up.
+* image:../media/topology_replica_site_down.png[replica site down]  The replica site is down.
+* image:../media/topology_reestablished.png[relationship is reestablished] The secondary mirror or vault relationship has not been re-established.
 
 .Steps
 

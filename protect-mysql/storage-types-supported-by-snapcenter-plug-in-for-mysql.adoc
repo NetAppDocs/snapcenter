@@ -12,18 +12,25 @@ summary: 'SnapCenter supports a wide range of storage types on both physical mac
 SnapCenter supports a wide range of storage types on both physical machines and virtual machines (VMs). You must verify the support for your storage type before installing SnapCenter Plug-in for MySQL.
 
 |===
-| Machine| Storage type
+| Machine | Storage type
 
-a|
-Physical and virtual servers
-a|
-FC-connected LUNs
 a|
 Physical server
 a|
-iSCSI-connected LUNs
+* FC-connected LUNs
+* iSCSI-connected LUNs
+* NFS-connected volumes
 a|
-Physical and virtual servers
+VMware ESXi
 a|
-NFS-connected volumes
+* RDM LUNs connected by an FC or iSCSI ESXi HBAScanning of host bus adapters (HBAs) might take long time to complete because SnapCenter scans all the host bus adaptors present in the host.
++
+You can edit the *LinuxConfig.pm* file located at _/opt/NetApp/snapcenter/spl/plugins/scu/scucore/modules/SCU/Config_ to set the value of the *SCSI_HOSTS_OPTIMIZED_RESCAN* parameter to 1 to rescan only those HBAs that are listed in HBA_DRIVER_NAMES.
+* iSCSI LUNs connected directly to the guest system by the iSCSI initiator
+* VMDKs on NFS datastores
+* VMDKs on VMFS created
+* NFS volumes connected directly to the guest system
+* vVol datastores on both NFS and SAN
++
+vVol datastore can only be provisioned with ONTAP Tools for VMware vSphere.
 |===

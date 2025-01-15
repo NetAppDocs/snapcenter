@@ -103,20 +103,14 @@ entries:
         url: /protect-postgresql/create-backup-policies-for-postgresql.html
       - title: Create resource groups and attach policies
         url: /protect-postgresql/create-resource-groups-and-attach-policies.html
+      - title: Create a storage system connection and a credential using PowerShell cmdlets for PostgreSQL
+        url: /protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html   
       - title: Back up PostgreSQL
         url: /protect-postgresql/back-up-postgresql.html
       - title: Back up resource groups
         url: /protect-postgresql/back-up-resource-groups-postgresql.html
-      - title: Create a storage system connection and a credential using PowerShell cmdlets for PostgreSQL
-        url: /protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html
-      - title: Back up clusters using PowerShell cmdlets
-        url: /protect-postgresql/back-up-clusters-using-powershell-cmdlets-postgresql.html
-      - title: Monitor backup operations
-        entries:
-          - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-postgresql/monitor-postgresql-backup-operations.html
-          - title: Monitor operations in the Activity pane
-            url: /protect-postgresql/monitor-dataprotection-operations-on-postgresql-in-the-activity-pane.html
+      - title: Monitor backup operations in the SnapCenter Jobs page
+        url: /protect-postgresql/monitor-postgresql-backup-operations.html
       - title: Cancel the backup operations
         url: /protect-postgresql/cancel-backup-operations-for-postgresql.html
       - title: View PostgreSQL cluster backups and clones in the Topology page
@@ -128,11 +122,9 @@ entries:
       - title: Restore and recover a manually added resource backup
         url: /protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html
       - title: Restore and recover an auto discovered cluster backup
-        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html
-      - title: Restore PostgreSQL using PowerShell cmdlets
-        url: /protect-postgresql/restore-postgresql-using-powershell-cmdlets.html
+        url: /protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html 
       - title: Restore resources using PowerShell cmdlets
-        url: /protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html
+        url: /protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html     
       - title: Monitor restore operations
         url: /protect-postgresql/monitor-postgresql-restore-operations.html
   - title: Clone PostgreSQL resource backups
@@ -140,9 +132,7 @@ entries:
       - title: Clone workflow
         url: /protect-postgresql/clone-postgresql-resource-backups.html
       - title: Clone a PostgreSQL cluster backup
-        url: /protect-postgresql/clone-postgresql-backup.html
-      - title: Clone PostgreSQL cluster backups using PowerShell cmdlets
-        url: /protect-postgresql/clone-postgresql-backups-using-powershell-cmdlets.html
+        url: /protect-postgresql/clone-postgresql-backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-postgresql/monitor-postgresql-clone-operations.html
       - title: Split a clone

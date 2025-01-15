@@ -1,7 +1,7 @@
 ---
 permalink: protect-nsp/netapp_supported_plugins_features.html
 sidebar: sidebar
-keywords: NetApp supported plug-ins features
+keywords: NetApp supported plug-ins features, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in
 summary: 'SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with NetApp supported plug-ins, you use the SnapCenter graphical user interface.'
 ---
 = NetApp supported plug-ins features
@@ -9,7 +9,7 @@ summary: 'SnapCenter integrates with the plug-in application and with NetApp tec
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with NetApp supported plug-ins, you use the SnapCenter graphical user interface.
+SnapCenter integrates with the plug-in application and with NetApp technologies on the storage system. To work with NetApp supported plug-ins like MongoDB, ORASCPM (Oracle Applications), SAP ASE, SAP MaxDB, and Storage plug-in you use the SnapCenter graphical user interface.
 
 * *Unified graphical user interface*
 +
@@ -23,7 +23,7 @@ You can schedule backup operations, configure policy-based backup retention, and
 +
 SnapCenter uses NetApp Snapshot technology with the NetApp supported plug-ins to back up resources. Snapshots consume minimal storage space.
 
-Using the NetApp supported plug-ins feature also offers the following benefits:
+The NetApp supported plug-ins also offers the following benefits:
 
 * Support for backup, restore, and clone workflows
 * RBAC-supported security and centralized role delegation
