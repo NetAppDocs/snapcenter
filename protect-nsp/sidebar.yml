@@ -1,5 +1,5 @@
 section: protect-nsp
-title: Protect NetApp supported plug-ins
+title: Protect applications using NetApp supported plug-ins
 entries:
 - title: NetApp supported plug-ins
   entries:
@@ -25,18 +25,6 @@ entries:
             url: /protect-nsp/number_of_backup_jobs_needed.html
       - title: Types of restore strategies supported for manually added NetApp supported plug-ins resources
         url: /protect-nsp/types_of_restore_strategies_supported_for_manually_added_netapp_supported_plugins_resources.html
-- title: Develop a plug-in for your application
-  entries:
-      - title: Overview
-        url: /protect-nsp/develop_a_plug_in_for_your_application.html
-      - title: PERL-based development
-        url: /protect-nsp/perl.html
-      - title: Native style
-        url: /protect-nsp/native.html
-      - title: Java style
-        url: /protect-nsp/java.html
-      - title: Custom plug-ins in SnapCenter
-        url: /protect-nsp/custom_plugins_in_snapcenter.html
 - title: Prepare to install NetApp supported plug-ins
   entries:
   - title: Installation workflow of NetApp supported plug-ins
@@ -93,14 +81,12 @@ entries:
         url: /protect-nsp/create_policies_for_netapp_supported_plugins_resources.html
       - title: Create resource groups and attach policies
         url: /protect-nsp/create_resource_groups_and_attach_policies.html
+      - title: Create a storage system connection and a credential using PowerShell cmdlets
+        url: /protect-nsp/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html
       - title: Back up individual NetApp supported plug-ins resources
         url: /protect-nsp/back_up_individual_netapp_supported_plugins_resources.html
       - title: Back up resource groups of NetApp supported plug-in resources
         url: /protect-nsp/back_up_resource_groups_of_netapp_supported_plugins_resources.html
-      - title: Create a storage system connection and a credential using PowerShell cmdlets
-        url: /protect-nsp/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html
-      - title: Back up resources using PowerShell cmdlets
-        url: /protect-nsp/back_up_resources_using_powershell_cmdlets.html
       - title: Monitor backup operations
         url: /protect-nsp/monitor_resources_backup_operations.html
       - title: Cancel the backup operations
@@ -112,9 +98,7 @@ entries:
       - title: Restore workflow
         url: /protect-nsp/restore_netapp_supported_plugins_resources.html
       - title: Restore a resource backup
-        url: /protect-nsp/restore_a_resource_backup.html
-      - title: Restore resources using PowerShell cmdlets
-        url: /protect-nsp/restore_and_recover_resources_using_powershell_cmdlets.html
+        url: /protect-nsp/restore_a_resource_backup.html   
       - title: Monitor restore operations
         url: /protect-nsp/monitor_resources_restore_operations.html
 - title: Clone NetApp supported plug-ins resource backups
@@ -122,8 +106,6 @@ entries:
       - title: Clone workflow
         url: /protect-nsp/clone_netapp_supported_plugins_resource_backups.html
       - title: Clone from a backup
-        url: /protect-nsp/clone_from_a_backup.html
-      - title: Clone backups using PowerShell cmdlets
-        url: /protect-nsp/clone_backups_using_powershell_cmdlets.html
+        url: /protect-nsp/clone_from_a_backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-nsp/monitor_resource_clone_operations.html

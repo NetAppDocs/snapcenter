@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: restore
 summary: 'You can use SnapCenter to restore resources. The capabilities of the restore operations depends upon the plug-in that you use.'
 ---
+
 = Restore a resource backup
 :icons: font
 :imagesdir: ../media/
@@ -22,6 +23,13 @@ You can use SnapCenter to restore resources. The capabilities of the restore ope
 * The default restore operation only restores storage objects. Restore operations at the application level can only be performed if the NetApp supported plug-in provides that capability.
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.SnapCenter UI
+--
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
@@ -63,3 +71,95 @@ You must also specify the sender and receiver email addresses, and the subject o
 
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
+--
+.PowerShell cmdlets
+--
+.Steps
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
++
+----
+PS C:\> Open-Smconnection  
+----
+
+. Retrieve the information about the one or more backups that you want to restore by using the Get-SmBackup and Get-SmBackupReport cmdlets.
++
+This example displays information about all available backups:
++
+----
+PS C:\> Get-SmBackup
+
+BackupId                      BackupName                    BackupTime                    BackupType
+--------                      ----------                    ----------                    ----------
+  1               Payroll Dataset_vise-f6_08... 8/4/2015    11:02:32 AM                 Full Backup
+  2               Payroll Dataset_vise-f6_08... 8/4/2015    11:23:17 AM
+----
++
+This example displays detailed information about the backup from January 29th 2015 to February 3rd, 2015:
++
+----
+PS C:\> Get-SmBackupReport -FromDateTime "1/29/2015" -ToDateTime "2/3/2015"
+
+   SmBackupId           : 113
+   SmJobId              : 2032
+   StartDateTime        : 2/2/2015 6:57:03 AM
+   EndDateTime          : 2/2/2015 6:57:11 AM
+   Duration             : 00:00:07.3060000
+   CreatedDateTime      : 2/2/2015 6:57:23 AM
+   Status               : Completed
+   ProtectionGroupName  : Clone
+   SmProtectionGroupId  : 34
+   PolicyName           : Vault
+   SmPolicyId           : 18
+   BackupName           : Clone_SCSPR0019366001_02-02-2015_06.57.08
+   VerificationStatus   : NotVerified
+
+   SmBackupId           : 114
+   SmJobId              : 2183
+   StartDateTime        : 2/2/2015 1:02:41 PM
+   EndDateTime          : 2/2/2015 1:02:38 PM
+   Duration             : -00:00:03.2300000
+   CreatedDateTime      : 2/2/2015 1:02:53 PM
+   Status               : Completed
+   ProtectionGroupName  : Clone
+   SmProtectionGroupId  : 34
+   PolicyName           : Vault
+   SmPolicyId           : 18
+   BackupName           : Clone_SCSPR0019366001_02-02-2015_13.02.45
+   VerificationStatus   : NotVerified
+----
+
+. Restore data from the backup by using the Restore-SmBackup cmdlet.
++
+----
+Restore-SmBackup -PluginCode 'DummyPlugin' -AppObjectId 'scc54.sccore.test.com\DummyPlugin\NTP\DB1' -BackupId 269 -Confirm:$false
+output:
+Name                : Restore 'scc54.sccore.test.com\DummyPlugin\NTP\DB1'
+Id                  : 2368
+StartTime           : 10/4/2016 11:22:02 PM
+EndTime             :
+IsCancellable       : False
+IsRestartable       : False
+IsCompleted         : False
+IsVisible           : True
+IsScheduled         : False
+PercentageCompleted : 0
+Description         :
+Status              : Queued
+Owner               :
+Error               :
+Priority            : None
+Tasks               : {}
+ParentJobID         : 0
+EventId             : 0
+JobTypeId           :
+ApisJobKey          :
+ObjectId            : 0
+PluginCode          : NONE
+PluginName          :
+----
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
+--
+
+====

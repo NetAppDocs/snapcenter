@@ -11,4 +11,4 @@ summary: 'You should install and set up the SnapCenter Plug-in for SAP HANA Data
 [.lead]
 You should install and set up the SnapCenter Plug-in for SAP HANA Database if you want to protect SAP HANA databases.
 
-image::../media/sap_hana_install_configure_workflow.gif[]
+image::../media/sap_hana_install_configure_workflow.png[install HANA plug-in workflow]

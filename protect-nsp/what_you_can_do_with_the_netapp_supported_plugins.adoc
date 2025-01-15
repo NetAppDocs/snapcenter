@@ -4,14 +4,12 @@ sidebar: sidebar
 keywords: NetApp supported plug-ins
 summary: 'You can use the NetApp supported plug-ins for data protection operations.'
 ---
-= What you can do with the NetApp supported plug-ins and Storage plug-in
+= What you can do with the NetApp supported plug-ins 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the NetApp supported plug-in for data protection operations.
-
-*NetApp supported plug-ins*
+You can use the NetApp supported plug-ins like MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, and Storage plug-in for data protection operations.
 
 * Add resources such as databases, instances, documents, or tablespaces.
 * Create backups.
@@ -21,9 +19,7 @@ You can use the NetApp supported plug-in for data protection operations.
 * Monitor backup, restore, and clone operations.
 * View reports for backup, restore, and clone operations.
 
-*Storage plug-in*
-
-You can use the storage plug-in for data protection operations.
+You can use the NetApp supported plug-ins for data protection operations.
 
 * Take consistency group Snapshots of the storage volumes across ONTAP clusters.
 * Backup custom applications using the built in pre and post scripting framework

@@ -47,7 +47,7 @@ entries:
     entries:
       - title: Installation workflow of SnapCenter Plug-in for IBM Db2
         url: /protect-db2/install-snapcenter-plug-in-for-ibm-db2.html
-      - title: Prerequisites for adding hosts and installing SnapCenter Plug-in for IBM Db2
+      - title: Prerequisites for adding hosts and installing Plug-ins package for Windows, Linux, or AIX
         url: /protect-db2/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-ibm-db2.html
       - title: Host requirements to install SnapCenter Plug-ins Package for Windows
         url: /protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html
@@ -101,20 +101,14 @@ entries:
         url: /protect-db2/create-backup-policies-for-ibm-db2.html
       - title: Create resource groups and attach policies
         url: /protect-db2/create-resource-groups-and-attach-policies.html
-      - title: Back up IBM Db2
-        url: /protect-db2/back-up-ibm-db2.html
-      - title: Back up resource groups
-        url: /protect-db2/back-up-resource-groups-ibm-db2.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for IBM Db2
-        url: /protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html
-      - title: Back up databases using PowerShell cmdlets
-        url: /protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html
-      - title: Monitor backup operations
-        entries:
-          - title: Monitor backup operations in the SnapCenter Jobs page
-            url: /protect-db2/monitor-db2-backup-operations.html
-          - title: Monitor operations in the Activity pane
-            url: /protect-db2/monitor-dataprotection-operations-on-db2-in-the-activity-pane.html
+        url: /protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html 
+      - title: Back up db2 databases 
+        url: /protect-db2/back-up-db2-databases.html
+      - title: Back up resource groups
+        url: /protect-db2/back-up-resource-groups-ibm-db2.html         
+      - title: Monitor backup operations in the SnapCenter Jobs page
+        url: /protect-db2/monitor-db2-backup-operations.html
       - title: Cancel the backup operations
         url: /protect-db2/cancel-backup-operations-for-ibm-db2.html
       - title: View IBM Db2 database backups and clones in the Topology page
@@ -126,9 +120,7 @@ entries:
       - title: Restore a manually added resource backup
         url: /protect-db2/restore-manually-added-resource-backup.html
       - title: Restore an auto discovered database backup
-        url: /protect-db2/restore-auto-discovered-database-backup.html
-      - title: Restore IBM Db2 using PowerShell cmdlets
-        url: /protect-db2/restore-ibm-db2-database-using-powershell-cmdlets.html
+        url: /protect-db2/restore-auto-discovered-database-backup.html      
       - title: Monitor restore operations
         url: /protect-db2/monitor-db2-restore-operations.html
   - title: Clone IBM Db2 resource backups
@@ -136,9 +128,7 @@ entries:
       - title: Clone workflow
         url: /protect-db2/clone-ibm-db2-resource-backups.html
       - title: Clone a IBM Db2 database backup
-        url: /protect-db2/clone-ibm-db2-backup.html
-      - title: Clone IBM Db2 database backups using PowerShell cmdlets
-        url: /protect-db2/clone-ibm-db2-backups-using-powershell-cmdlets.html
+        url: /protect-db2/clone-ibm-db2-backup.html      
       - title: Monitor clone operations in SnapCenter
         url: /protect-db2/monitor-db2-clone-operations.html
       - title: Split a clone

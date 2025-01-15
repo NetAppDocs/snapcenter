@@ -19,6 +19,13 @@ NOTE: When backing up a file system, SnapCenter does not back up LUNs that are m
 
 IMPORTANT: If you are working in a Windows file system context, do not back up database files. Doing so creates an inconsistent backup and a possible loss of data when restoring. To protect database files, you must use the appropriate SnapCenter plug-in for the database (for example, SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, or a custom plug-in for database files).
 
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.SnapCenter UI
+--
 .Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
@@ -36,11 +43,11 @@ For example, customtext_resourcegroup_policy_hostname or resourcegroup_hostname.
 +
 You can select any existing policy, and then click *Details* to determine whether you can use that policy.
 +
-If no existing policy meets your requirements, you can copy an existing policy and modify it or you can create a new policy by clicking image:../media/add_policy_from_resourcegroup.gif[] to start the policy wizard.
+If no existing policy meets your requirements, you can copy an existing policy and modify it or you can create a new policy by clicking image:../media/add_policy_from_resourcegroup.gif[add policy form resource group] to start the policy wizard.
 +
 The selected policies are listed in the Policy column in the Configure schedules for selected policies section.
 
- .. In the Configure schedules for selected policies section, click image:../media/add_policy_from_resourcegroup.gif[] in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. In the Configure schedules for selected policies section, click image:../media/add_policy_from_resourcegroup.gif[add policy from resource group] in the Configure Schedules column for the policy for which you want to configure the schedule.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *Finish*.
 +
 The configured schedules are listed in the Applied Schedules column in the Configure schedules for selected policies section.
@@ -83,3 +90,89 @@ If the policy selected for the on-demand backup is associated with a backup sche
 
  .. Click *Backup*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
+
+--
+.PowerShell cmdlets
+--
+.Steps
+
+. Initiate a connection session with the SnapCenter Server for a specified user by using the Open-SmConnection cmdlet.
++
+----
+Open-smconnection  -SMSbaseurl  https://snapctr.demo.netapp.com:8146
+----
++
+The username and password prompt is displayed.
+
+. Create a backup policy by using the Add-SmPolicy cmdlet.
++
+This example creates a new backup policy with a SQL backup type of FullBackup:
++
+----
+PS C:\> Add-SmPolicy -PolicyName TESTPolicy
+-PluginPolicyType SCSQL -PolicyType Backup
+-SqlBackupType FullBackup -Verbose
+----
++
+This example creates a new backup policy with a Windows file system backup type of CrashConsistent:
++
+----
+PS C:\> Add-SmPolicy -PolicyName FileSystemBackupPolicy
+-PluginPolicyType SCW -PolicyType Backup
+-ScwBackupType CrashConsistent -Verbose
+----
+
+. Discover host resources by using the Get-SmResources cmdlet.
++
+This example discovers the resources for the Microsoft SQL plug-in on the specified host:
++
+----
+C:\PS>PS C:\> Get-SmResources -HostName vise-f6.sddev.mycompany.com
+-PluginCode SCSQL
+----
++
+This example discovers the resources for Windows file systems on the specified host:
++
+----
+C:\PS>PS C:\> Get-SmResources -HostName vise2-f6.sddev.mycompany.com
+-PluginCode SCW
+----
+
+. Add a new resource group to SnapCenter by using the Add-SmResourceGroup cmdlet.
++
+This example creates a new SQL database backup resource group with the specified policy and resources:
++
+----
+PS C:\> Add-SmResourceGroup -ResourceGroupName AccountingResource
+-Resources @{"Host"="visef6.org.com";
+"Type"="SQL Database";"Names"="vise-f6\PayrollDatabase"}
+-Policies "BackupPolicy"
+----
++
+This example creates a new Windows file system backup resource group with the specified policy and resources:
++
+----
+PS C:\> Add-SmResourceGroup -ResourceGroupName EngineeringResource
+-PluginCode SCW -Resources @{"Host"="WIN-VOK20IKID5I";
+"Type"="Windows Filesystem";"Names"="E:\"}
+-Policies "EngineeringBackupPolicy"
+----
+
+. Initiate a new backup job by using the New-SmBackup cmdlet.
++
+----
+PS C:> New-SmBackup -ResourceGroupName PayrollDataset -Policy FinancePolicy
+----
+
+. View the status of the backup job by using the Get-SmBackupReport cmdlet.
++
+This example displays a job summary report of all jobs that were run on the specified date:
++
+----
+PS C:\> Get-SmJobSummaryReport -Date '1/27/2016'
+----
+
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
+
+--
+====

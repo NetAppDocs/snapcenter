@@ -6,10 +6,7 @@ summary: Legal notices provide access to copyright statements, trademarks, paten
 ---
 
 = Legal notices
-:hardbreaks:
-:nofooter:
 :icons: font
-:linkattrs:
 :imagesdir: ./media/
 
 // Include the common notices

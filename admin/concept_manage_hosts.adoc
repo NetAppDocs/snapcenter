@@ -279,7 +279,7 @@ You should ensure that no jobs are running when restarting the services.
 . In the left navigation pane, click *Hosts*.
 . In the Hosts page, click *Managed Hosts*.
 . In the Managed Hosts page, select the host you want to start.
-. Click image:../media/more_icon.gif[] icon and click *Start Service* or *Restart Service*.
+. Click image:../media/more_icon.gif[more icon] and click *Start Service* or *Restart Service*.
 +
 You can start or restart service of multiple hosts simultaneously.
 
@@ -294,7 +294,7 @@ NOTE: You cannot suspend the schedules on a host that is down because SnapCenter
 . In the left navigation pane, click *Hosts*.
 . In the Hosts page, click *Managed Hosts*.
 . In the Managed Hosts page, select the host that you want to suspend.
-. Click the image:../media/more_icon.gif[] icon, and then click *Suspend Schedule* to place the host for this plug-in in maintenance mode.
+. Click the image:../media/more_icon.gif[more icon], and then click *Suspend Schedule* to place the host for this plug-in in maintenance mode.
 +
 You can suspend the schedule of multiple hosts simultaneously.
 +

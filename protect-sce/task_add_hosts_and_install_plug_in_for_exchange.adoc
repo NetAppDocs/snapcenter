@@ -164,7 +164,7 @@ NOTE: In an HA setup, if you are updating web.config file, you must update the f
 
 == Configure custom port for NET TCP communication
 
-By default, from SnapCenter 6.0 release, SnapCenter plug-in for Windows uses the port 909 for NET TCP communication. If the port 909 is in use, you can configure another port for NET TCP communication.
+By default, beginning with SnapCenter 6.0 release, SnapCenter plug-in for Windows uses the port 909 for NET TCP communication. If the port 909 is in use, you can configure another port for NET TCP communication.
 
 .Steps
 

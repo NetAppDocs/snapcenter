@@ -1,0 +1,101 @@
+---
+permalink: protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html
+sidebar: sidebar
+keywords: run as
+summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
+---
+= Create resource groups and attach policies for Oracle databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.
+
+.About this task
+
+* A database with files in ASM disk groups must be in "MOUNT" or "OPEN" state to verify its backups using the Oracle DBVERIFY utility.
++
+Attach one or more policies to the resource group to define the type of data protection job you want to perform.
++
+The following image illustrates the relationship between resources, resource groups, and policies for databases:
++
+image::../media/sco_resourcegroup_policy.gif[resource group policy]
+
+* For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+
+* Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
+* Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
+. In the Resources page, click *New Resource Group*.
+. In the Name page, perform the following actions:
+.. Enter a name for the resource group in the Name field.
++ 
+NOTE: The resource group name should not exceed 250 characters.
+ 
+.. Enter one or more labels in the Tag field to help you search for the resource group later.
++
+For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
+.. Select this check box, and enter a custom name format that you want to use for the Snapshot name.
++
+For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot name.
+.. Specify the destinations of the archive log files that you do not want to back up.
++
+NOTE: You should use the exact same destination as it was set in Oracle, including prefix, if needed.
+
+. In the Resources page, select an Oracle database host name from the *Host* drop-down list.
++
+NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
+
+. Select the resources from the Available Resources section and move them to the Selected Resources section.
++
+NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
+
+. In the Policies page, perform the following steps:
+ .. Select one or more policies from the drop-down list.
++
+NOTE: You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
+
++
+In the Configure schedules for selected policies section, the selected policies are listed.
+
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then click *OK*.
++
+Where, _policy_name_ is the name of the policy that you have selected.
++
+The configured schedules are listed in the Applied Schedules column.
+
++
+Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
+. On the Verification page, perform the following steps:
+ .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column to configure the verification schedule for all the schedule types of the policy.
+ .. In the Add Verification Schedules policy_name dialog box, perform the following actions:
++
+|===
+| If you want to... | Do this...
+
+a|
+Run verification after backup
+a|
+Select *Run verification after backup*.
+a|
+Schedule a verification
+a|
+Select *Run scheduled verification* and then select the schedule type from the drop-down list.
+|===
+
+ .. Select *Verify on secondary location* to verify your backups on secondary storage system.
+ .. Click *OK*.
++
+The configured verification schedules are listed in the Applied Schedules column.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.

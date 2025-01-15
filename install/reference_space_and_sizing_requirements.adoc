@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Before you install the SnapCenter Server, you should be familiar with the space and sizing requirements. You should also apply the available system and security updates.'
 ---
+
 = Space and sizing requirements
 :icons: font
 :imagesdir: ../media/
@@ -22,13 +23,13 @@ Microsoft Windows
 Only English, German, Japanese, and simplified Chinese version of the operating systems are supported.
 
 For the latest information about supported versions, see
-https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+https://imt.netapp.com/matrix/imt.jsp?components=121033;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 a|
 * Red Hat Enterprise Linux (RHEL) 8 and 9
 * SUSE Linux Enterprise Server (SLES) 15
 
 For the latest information about supported versions, see
-https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+https://imt.netapp.com/matrix/imt.jsp?components=121032;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum CPU count
@@ -69,13 +70,13 @@ Required software packages
 a|
 
 * Microsoft .NET Framework 4.7.2 or later
-* ASP.NET Core Hosting Bundle (8.0.5 or later)
+* ASP.NET Core Hosting Bundle beginning with version 8.0.5 and including all subsequent .NET 8 patches
 * PowerShell 7.4.2 or later
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity^].
 
 a|
-* ASP.NET Core Runtime 8.0.5 or later
+* ASP.NET Core Runtime beginning with version 8.0.5 and including all subsequent .NET 8 patches
 * PowerShell 7.4.2 or later
 * Nginx is a web server that can be used as a reverse proxy
 * Pam-devel

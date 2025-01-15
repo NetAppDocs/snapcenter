@@ -1,0 +1,45 @@
+---
+permalink: release-notes/what's-new-in-snapcenter601.html
+sidebar: sidebar
+keywords: what is new, features, enhancements, 6.0.1
+summary: 'The 6.0.1 release of SnapCenter Software includes several new features and enhancements.'
+---
+
+= What's new in SnapCenter Software 6.0.1
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+The 6.0.1 release of SnapCenter Software includes several new features and enhancements.
+
+|===
+| Update | Description
+
+| link:https://docs.netapp.com/us-en/snapcenter/protect-azure/protect-applications-azure-netapp-files.html[Support for Azure NetApp Files backup]
+a|
+You can now use SnapCenter to back up and clone applications residing on Azure NetApp Files to Azure Blob Storage (object store).
+
+| link:https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html[Support for high availability of SnapCenter running on Linux]
+a|
+Support for HA configuration for SnapCenter is now extended to Linux systems. You can use the standard load balancers for this configuration:
+
+* F5 load balancer
+* Microsoft Network Load Balancing (NLB)
+* Amazon Web Services (AWS) 
+* Elastic Load Balancing (ELB)
+* Azure load balancer
+
+| link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-scheduled-backup-jobs[Ability to manage scheduled backup jobs]
+a|
+You can now set a threshold for your scheduled jobs to control the number of backups that you want to run at any given time based on your system hardware configuration.
+
+| link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs[Ability to manage stale jobs]
+a|
+You can now set a predefined schedule to clean up stale jobs that are stuck for more than 72 hours.
+
+| Data protection functionality included for IBM Db2, Oracle Application, and Storage plug-in running on AIX
+a|
+Supports data protection of IBM Db2, Oracle Application, and Storage plug-in running on AIX.
+|===
+

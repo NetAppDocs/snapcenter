@@ -4,12 +4,14 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.'
 ---
-= Host requirements for installing the SnapCenter Plug-ins Package for Linux
+= Host requirements for installing the SnapCenter Plug-ins Package for Linux and AIX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.
+You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux or AIX.
+
+NOTE: Storage and Oracle applications are supported on AIX. 
 
 |===
 | Item| Requirements
@@ -42,4 +44,4 @@ If you have upgraded JAVA to the latest version, you must ensure that the JAVA_H
 
 |===
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]

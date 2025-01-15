@@ -23,7 +23,7 @@ You must use the SnapCenter Add Host page to add hosts, and then install the plu
 
 * If you are using group Managed Service Account (gMSA), you should configure gMSA with administrative privileges.
 +
-link:../protect-db2/task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Managed Service Account on Windows Server 2016 or later for IBM Db2^]
+link:../protect-db2/configure-gMSA-on-windows-server-2012-or-later.html[Configure group Managed Service Account on Windows Server 2016 or later for IBM Db2^]
 
 .About this task
 
@@ -56,7 +56,7 @@ Enter the communication host name. Enter the fully qualified domain name (FQDN) 
 a|
 Credentials
 a|
-Either select the credential name that you created or create new credentials.     The credential must have administrative rights on the remote host. For details, see the information about creating credentials.
+Either select the credential name that you created or create new credentials. The credential must have administrative rights on the remote host. For details, see the information about creating credentials.
 
 You can view details about the credentials by positioning your cursor over the credential name that you provided.
 
@@ -127,4 +127,4 @@ NOTE: Fingerprint verification is mandatory even if the same host was added earl
 
 .After you finish
 
-If you want to upgrade to SnapCenter 6.0 version, the existing PERL-based Plug-in for Db2 will be uninstalled from the remote plug-in server.
+If you want to upgrade to SnapCenter 6.0 or later, the existing PERL-based Plug-in for Db2 will be uninstalled from the remote plug-in server.
