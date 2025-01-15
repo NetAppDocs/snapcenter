@@ -1,5 +1,5 @@
 ---
-permalink: protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html
+permalink: protect-sco/task_create_resource_groups_and_attaching_policies_for_oracle_databases.html
 sidebar: sidebar
 keywords: run as
 summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
@@ -19,7 +19,7 @@ Attach one or more policies to the resource group to define the type of data pro
 +
 The following image illustrates the relationship between resources, resource groups, and policies for databases:
 +
-image::../media/sco_resourcegroup_policy.gif[]
+image::../media/sco_resourcegroup_policy.gif[resource group policy]
 
 * For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 

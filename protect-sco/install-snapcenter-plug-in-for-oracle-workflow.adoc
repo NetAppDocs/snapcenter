@@ -11,4 +11,4 @@ summary: 'You should install and set up the SnapCenter Plug-in for Oracle Databa
 [.lead]
 You should install and set up the SnapCenter Plug-in for Oracle Database if you want to protect Oracle databases.
 
-image::../media/sco_install_configure_workflow.gif[]
+image::../media/sco_install_configure_workflow.gif[install oracle plug-in]

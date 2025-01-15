@@ -27,7 +27,7 @@ If a database is not part of any resource group, you can back up the database or
 . In the left navigation pane, click *Resources*, and then select the *Microsoft Exchange Server plug-in* from the list.
 . In the Resources page, select either *Database*, or *Database Availability Group* from the *View* list.
 +
-In the Resources page, the image:../media/not_supported_icon.png[] icon indicates that the database is on non-NetApp storage.
+In the Resources page, the image:../media/not_supported_icon.gif[not supported icon] icon indicates that the database is on non-NetApp storage.
 +
 NOTE: In a DAG, If an active database copy is on a non-NetApp storage and at least one passive database copy resides on a NetApp storage, then you can protect the database.
 

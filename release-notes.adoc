@@ -6,7 +6,7 @@ summary: 'Provides important information about this release of SnapCenter Server
 ---
 = Release notes
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 

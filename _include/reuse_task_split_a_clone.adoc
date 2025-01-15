@@ -34,7 +34,7 @@ Select *Path* from the View list.
 +
 The resource topology page is displayed.
 
-. From the *Manage Copies* view, select the cloned resource (for example, the database or LUN), and then click *image:../media/split_cone.gif[Split clone icon]*.
+. From the *Manage Copies* view, select the cloned resource (for example, the database or LUN), and then click *image:../media/split_clone.gif[Split clone icon]*.
 . Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 +
