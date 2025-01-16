@@ -1,25 +1,28 @@
 ---
-permalink: protect-sco/create-resource-groups-attach-policies-for-asa-r2-oracle-resources.html
+permalink: protect-sco/create-resource-groups-secondary-protection-for-asa-r2-oracle-resources.html
 sidebar: sidebar
-keywords: run as
+keywords: asa r2, secondary protection, consistency group, primary consistency group, secondary consistency group
 summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
 ---
 
-= Create resource groups and attach policies for ASA r2 Oracle resources
+= Create resource groups and enable secondary protection for ASA r2 Oracle resources
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should create the resource group to add the Oracle resources that are on ASA r2 systems.
+You should create the resource group to add the Oracle resources that are on ASA r2 systems. You can also provision the secondary protection while creating the resource group.
 
 .Before you begin
 
 * You should ensure that you are not adding both ONTAP 9.x resources and ASA r2 resources to the same resource group.
 * You should ensure that you do not have a database with both ONTAP 9.x resources and ASA r2 resources.
+* You should ensure that the user is assigned to the role that has the *SecondaryProtection* permission.
 
 .About this task
 
 If you enabled secondary replication, the resource group is put into maintenance mode while creating the primary and secondary consistency groups. After the primary and secondary consistency groups are created, the resource group is put out of maintenance mode.
+
+SnapCenter does not support secondary protection for a clone resource.
 
 .Steps
 
