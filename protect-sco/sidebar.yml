@@ -74,7 +74,7 @@ entries:
         url: /protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html
 
       - title: Create resource groups and attach policies for ASA r2 Oracle resources
-        url: /protect-sco/create-resource-groups-secondary-protection-for-asa-r2-oracle-resources
+        url: /protect-sco/create-resource-groups-secondary-protection-for-asa-r2-oracle-resources.html
 
       - title: Back up Oracle resources
         url: /protect-sco/task_back_up_oracle_resources.html
