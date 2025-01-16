@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: RBAC, role, permission, pre-defined role
 summary: 'SnapCenter ships with pre-defined roles, each with a set of permissions already enabled. When setting up and administering role-based access control \(RBAC\), you can either use these pre-defined roles or create new ones.'
 ---
+
 = Pre-defined SnapCenter roles and permissions
 :icons: font
 :imagesdir: ../media/
@@ -215,6 +216,18 @@ a|
 Not applicable
 a|
 Full Volume Restore
+a|
+No
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+SecondaryProtection
 a|
 No
 a|
@@ -439,6 +452,18 @@ Not applicable
 a|
 Not applicable
 a|
+SecondaryProtection
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
 Job Monitor
 a|
 Yes
@@ -641,6 +666,18 @@ a|
 Not applicable
 a|
 Full Volume Restore
+a|
+No
+a|
+No
+a|
+Not applicable
+a|
+Not applicable
+a|
+Not applicable
+a|
+SecondaryProtection
 a|
 No
 a|
