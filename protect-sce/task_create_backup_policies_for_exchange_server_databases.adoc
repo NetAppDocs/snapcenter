@@ -43,7 +43,7 @@ You can use the GET API to display the value of the key. SET API is not supporte
 *Best Practice:* It's best that you configure the secondary retention policy based on the number of full and log backups, overall, that you want to retain. When you configure secondary retention policies, keep in mind that when databases and logs that are in different volumes, each backup can have three Snapshots, and when databases and logs are in the same volume, each backup can have two Snapshots.
 |===
 
-* SnapLock Lock
+* SnapLock
 
 ** If 'Retain the backup copies for a specific number of days' option is selected, then the SnapLock retention period must be lesser than or equal to the mentioned retention days.
 +
@@ -58,8 +58,8 @@ NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
 . Click *New*.
-. In the Name page, enter the policy name and description.
-. In the Backup Type page, perform the following steps:
+. In the Name page, enter the policy name and details.
+. In the Backup Type and Replicationpage, perform the following steps:
  .. Choose backup type:
 +
 |===
@@ -186,11 +186,15 @@ Retain full backups for a specific number of days
 a|
 Select the *Keep Snapshot copies for* option, and specify the number of days to keep Snapshots (full backups).
 a|
-Snapshot locking period
+Primary snapshot locking period
 a|
-Select *Snapshot copy locking period*, and select days, months, or years.
+Select *Primary snapshot copy locking period*, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
+a|
+Secondary snapshot locking period
+a|
+Select *Secondary snapshot copy locking period*, and select days, months, or years.
 |===
 +
 If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
