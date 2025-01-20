@@ -36,7 +36,7 @@ Additionally, you can specify replication, script, and application settings in t
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
 . Click *New*.
-. In the Name page, enter the policy name and description.
+. In the Name page, enter the policy name and details.
 . In the Policy type page, perform the following:
 .. Select storage type.
 .. In the *Custom backup settings* section, provide any specific backup settings that have to be passed to the plug-in in key-value format.
