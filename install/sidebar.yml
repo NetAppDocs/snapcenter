@@ -111,6 +111,8 @@ entries:
         url: /install/create-svm-roles-asa-r2-resources.html
       - title: Create ONTAP cluster roles with minimum privileges
         url: /install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
+      - title: Create ONTAP cluster roles for ASA r2 resources
+        url: /install/create-cluster-role-asa-r2-resources.html
       - title: Configure IIS Application Pools to enable Active Directory read permissions
         url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
   - title: Configure audit log settings

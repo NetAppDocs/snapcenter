@@ -16,7 +16,11 @@ The 6.1 release of SnapCenter Software includes several new features and enhance
 |===
 | Update | Description
 
-| 
+| https://docs.netapp.com/us-en/snapcenter/install/learn-about-supporting-asa-r2-in-snapcenter.html[Support for ASA r2 systems]
 a|
+SnapCenter now supports ASA r2 systems that create a simplified experience specific to the needs of SAN-only customers.
 
+| Supports secondary tamperproof snapshot
+a|
+SnapCenter allows you to specify the locking period for secondary snapshots.
 |===

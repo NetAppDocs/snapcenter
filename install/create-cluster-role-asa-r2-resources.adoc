@@ -1,10 +1,11 @@
 ---
-permalink: install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
+permalink: install/create-cluster-role-asa-r2-resources.html
 sidebar: sidebar
-keywords: ONTAP cluster role, privileges
-summary: 'You should create an ONTAP cluster role with minimum privileges so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
+keywords: ONTAP cluster role, privileges, asa r2
+summary: 'You should create an ONTAP cluster roles for ASA r2 resurces so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
 ---
-= Create ONTAP cluster roles with minimum privileges
+
+= Create ONTAP cluster roles for ASA r2 resources
 :icons: font
 :imagesdir: ../media/
 
@@ -149,3 +150,12 @@ There are several ONTAP CLI commands you should run to create cluster roles and 
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver iscsi connection show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver modify" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "storage-unit" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "consistency-group" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror protect" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume delete" show" -access all`
+
+
+
+
+

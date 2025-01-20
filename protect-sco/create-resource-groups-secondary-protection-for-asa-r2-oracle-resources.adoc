@@ -16,13 +16,12 @@ You should create the resource group to add the Oracle resources that are on ASA
 
 * You should ensure that you are not adding both ONTAP 9.x resources and ASA r2 resources to the same resource group.
 * You should ensure that you do not have a database with both ONTAP 9.x resources and ASA r2 resources.
-* You should ensure that the user is assigned to the role that has the *SecondaryProtection* permission.
 
 .About this task
 
-If you enabled secondary replication, the resource group is put into maintenance mode while creating the primary and secondary consistency groups. After the primary and secondary consistency groups are created, the resource group is put out of maintenance mode.
-
-SnapCenter does not support secondary protection for a clone resource.
+* The secondary protection is available only if the logged-in user is assigned to the role that has the *SecondaryProtection* capability enabled.
+* If you enabled secondary protection, the resource group is put into maintenance mode while creating the primary and secondary consistency groups. After the primary and secondary consistency groups are created, the resource group is put out of maintenance mode.
+* SnapCenter does not support secondary protection for a clone resource.
 
 .Steps
 
@@ -48,8 +47,6 @@ NOTE: You should use the exact same destination as it was set in Oracle, includi
 NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
 
 . Select the ASA r2 resources from the Available Resources section and move them to the Selected Resources section.
-+
-NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
 
 . In the Application Settings page, select the backup option.
 
@@ -111,4 +108,3 @@ You must also specify the sender and receiver email addresses, and the subject o
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
 . Review the summary, and then click *Finish*.
-
