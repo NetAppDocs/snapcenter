@@ -50,8 +50,6 @@ You can use the GET API to display the value of the key. SET API is not supporte
 Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires.  This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 +
 For ONTAP 9.12.1 and below versions, the clones created from the SnapLock Vault Snapshots will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
-+
-NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
 .Steps
 
@@ -129,6 +127,60 @@ NOTE: You can specify the schedule (start date, end date) for backup operations 
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
+.. In the Select secondary replication options section, select one or both of the following secondary replication options:
+
+NOTE: Select both the secondary replication options for *Secondary snapshot copy locking period* to be effective.
++
+You can select *Secondary snapshot copy locking period* in the Retention page.
+
+|===
+| For this field...| Do this...
+
+a|
+Update SnapMirror after creating a local Snapshot 
+a|
+Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
+
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
+
+This option should be enabled for SnapMirror active sync. 
+
+IMPORTANT:  The primary-only policy cannot be used if SnapMirror active sync is set up for Exchange ONTAP volumes. SnapCenter does not allow this. You should enable the "Mirror" option.
+
+Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
+
+See link:../protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
+a|
+Update SnapVault after creating a local Snapshot
+a|
+Select this option to perform disk-to-disk backup replication.
+a|
+Secondary policy label
+a|
+Select a Snapshot label.
+
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
+
+NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
+a|
+Error retry count
+a|
+Enter the number of replication attempts that should occur before the process halts.
+|===
++
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
+
+. In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
++
+** Prescript backup arguments include "`$Database`" and "`$ServerInstance`".
++
+** Postscript backup arguments include "`$Database`", "`$ServerInstance`", "`$BackupName`", "`$LogDirectory`", and "`$LogSnapshot`".
++
+You can run a script to update SNMP traps, automate alerts, send logs, and so on.
++
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
+
 . In the Retention page, configure the retention settings.
 +
 The options displayed depend upon the backup type and frequency type you previously selected.
@@ -195,6 +247,11 @@ a|
 Secondary snapshot locking period
 a|
 Select *Secondary snapshot copy locking period*, and select days, months, or years.
+
+For this option to be effective you must do the following tasks:
+
+* Select the *Primary snapshot copy locking period*.
+* Select both the secondary replication options.
 |===
 +
 If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
@@ -206,54 +263,6 @@ If you have a database with only log backups and no full backups on a host in a 
 +
 In the example, the value 10 means you keep up to 10 log backups on the host.
 
-. In the Replication page, select one or both of the following secondary replication options:
-+
-|===
-| For this field...| Do this...
 
-a|
-Update SnapMirror after creating a local Snapshot 
-a|
-Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
-
-During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
-
-This option should be enabled for SnapMirror active sync. 
-
-IMPORTANT:  The primary-only policy cannot be used if SnapMirror active sync is set up for Exchange ONTAP volumes. SnapCenter does not allow this. You should enable the "Mirror" option.
-
-Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-
-See link:../protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
-a|
-Update SnapVault after creating a local Snapshot
-a|
-Select this option to perform disk-to-disk backup replication.
-a|
-Secondary policy label
-a|
-Select a Snapshot label.
-
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
-
-a|
-Error retry count
-a|
-Enter the number of replication attempts that should occur before the process halts.
-|===
-+
-NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
-
-. In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
-+
-** Prescript backup arguments include "`$Database`" and "`$ServerInstance`".
-+
-** Postscript backup arguments include "`$Database`", "`$ServerInstance`", "`$BackupName`", "`$LogDirectory`", and "`$LogSnapshot`".
-+
-You can run a script to update SNMP traps, automate alerts, send logs, and so on.
-+
-NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
 . Review the summary, and then click *Finish*.
