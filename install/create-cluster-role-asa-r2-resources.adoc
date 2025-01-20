@@ -2,7 +2,7 @@
 permalink: install/create-cluster-role-asa-r2-resources.html
 sidebar: sidebar
 keywords: ONTAP cluster role, privileges, asa r2
-summary: 'You should create an ONTAP cluster roles for ASA r2 resurces so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
+summary: 'You should create an ONTAP cluster roles for ASA r2 resources so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
 ---
 
 = Create ONTAP cluster roles for ASA r2 resources
