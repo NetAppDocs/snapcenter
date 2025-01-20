@@ -26,8 +26,6 @@ Before you use SnapCenter to back up Unix file systems, you must create a backup
 Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires.  This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 +
 For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
-+
-NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
 .Steps
 
@@ -49,7 +47,9 @@ Depending on the Snapshot label that you select, ONTAP applies the secondary Sna
 +
 NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 
-.. Specify the replication settings:
+.. In the Select secondary replication options section, select one or both of the following secondary replication options:
++
+NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. The *Secondary snapshot copy locking period* option is available in the Retention page.
 +
 |===
 | For this field... | Do this...
@@ -106,9 +106,14 @@ If you want to specify the snapshot locking period for the primary, select Snaps
 
 Snaplock retention period should be less than 100 years.
 a|
-Secondary snapshot copy locking period
+Secondary snapshot locking period
 a|
-If you want to specify the snapshot locking period for the secondary, select Snapshot copy locking period and select days, months, or years.
+Select *Secondary snapshot copy locking period*, and select days, months, or years.
+
+For this option to be effective you must do the following tasks:
+
+* Select the *Primary snapshot copy locking period*.
+* Select one or both of the secondary replication options.
 |===
 +
 NOTE:  You can retain archive log backups only if you have selected the archive log files as part of your backup.
