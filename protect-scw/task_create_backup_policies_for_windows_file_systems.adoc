@@ -44,23 +44,13 @@ You can use the GET API to display the value of the key. SET API is not supporte
 ** Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires. This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 ** For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
-NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
-
 .Steps
 
-. In the left navigation pane, click *Settings*.
-. In the Settings page, click *Policies*.
-. To determine if you can use an existing policy, select the policy name and then click *Details*.
-+
-After reviewing the existing policies, you can perform one of the following:
-
- ** Use an existing policy.
- ** Copy an existing policy and modify the policy configuration.
- ** Create a new policy.
-
-. To create a new policy, click *New*.
-. In the Name page, enter the policy name and a description.
-. In the Backup Options page, perform the following tasks:
+. In the left navigation pane, select *Settings*.
+. In the Settings page, select *Policies*.
+. Select *New*.
+. In the *Name* page, enter the policy name and details.
+. In the Backup and Replication page, perform the following tasks:
  .. Select a backup setting.
 +
 |===
@@ -76,43 +66,27 @@ a|
 Choose this option if you do not want SnapCenter to quiesce the disk drive on which the file system resides.
 |===
 
- .. Select a schedule frequency (also called a policy type).
+.. Select a schedule frequency (also called a policy type).
 +
 The policy specifies the backup frequency only. The specific protection schedule for backing up is defined in the resource group. Therefore, two or more resource groups can share the same policy and backup frequency but have different backup schedules.
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
-. On the Retention page, specify the retention settings for on-demand backups and for each schedule frequency you selected.
+
+.. Select a policy label.
 +
-
-|===
-| Option | Description
-
-a|
-Total Snapshot copies to retain
-a|
-Choose this option if you want to specify the number of Snapshots SnapCenter stores before automatically deleting them.
-a|
-Delete Snapshot copies older than
-a|
-Choose this option if you want to specify the number of days SnapCenter retains a backup copy before deleting it.
-a|
-Snapshot copy locking period
-a|
-Select Snapshot locking period, and select days, months, or years.
-
-SnapLock retention period should be less than 100 years.
-|===
-IMPORTANT: You should set the retention count to 2 or higher. The minimum value for the retention count is 2.
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
 +
-NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 
-. In the Replication page, specify replication to the secondary storage system:
+. In the Select secondary replication options section, select one or both of the following secondary replication options:
++
+NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. 
 +
 |===
 | For this field... | Do this...
 
 a|
-*Update SnapMirror after creating a local Snapshot copy*
+Update SnapMirror after creating a local Snapshot copy
 a|
 Select this option to create mirror copies of backup sets on another volume (SnapMirror).
 
@@ -132,20 +106,45 @@ When SnapLock is configured only on the secondary from ONTAP known as SnapLock V
 
 For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
 a|
-Secondary policy label
-a|
-Select a Snapshot label.
-
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
-
-a|
 Error retry count
 a|
 Enter the number of replication attempts that should occur before the process halts.
 |===
 NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
+
+. In the Retention settings page, specify the retention settings for on-demand backups and for each schedule frequency you selected.
++
+
+|===
+| Option | Description
+
+a|
+Total Snapshot copies to keep
+a|
+Choose this option if you want to specify the number of Snapshots SnapCenter stores before automatically deleting them.
+a|
+Keep Snapshot copies for
+a|
+Choose this option if you want to specify the number of days SnapCenter retains a backup copy before deleting it.
+a|
+Primary snapshot copy locking period
+a|
+Select Snapshot locking period, and select days, months, or years.
+
+SnapLock retention period should be less than 100 years.
+a|
+Secondary snapshot copy locking period
+a|
+Select *Secondary snapshot copy locking period*, and select days, months, or years.
+
+For this option to be effective you must do the following tasks:
+
+* Select the *Primary snapshot copy locking period*.
+* Select one or both of the secondary replication options.
+|===
+IMPORTANT: You should set the retention count to 2 or higher. The minimum value for the retention count is 2.
++
+NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
 . In the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
 +

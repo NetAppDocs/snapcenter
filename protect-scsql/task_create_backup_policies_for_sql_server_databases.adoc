@@ -132,7 +132,6 @@ NOTE: You can specify the schedule (start date, end date, and frequency) for bac
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
- I
 == Step 5: Configure up-to-the minute retention settings
 
 . In the Up-to-the minute retention settings section, depending on the backup type selected in the backup type page, perform one or more of the following actions:
@@ -160,9 +159,9 @@ Retain the backup copies for a specific number of days.
 
 // end tabbed area
 
-== Step 5: Configure Snapshot settings
+== Step 6: Configure Snapshot settings
 
-. In the *Snapshot settings* section for the Full backup retention settings, perform the following actions:
+. For the Full backup retention settings, perform the following actions:
 .. Specify total number of snapshots to keep
 ... To specify the number of snapshots to keep, select *Copies to keep*.
 ... If the number of snapshots exceeds the specified number, the snapshots are deleted with the oldest copies deleted first.
@@ -185,40 +184,15 @@ For this option to be effective you must do the following tasks:
 
 * Select the *Primary snapshot copy locking period*.
 * Select one or both of the secondary replication options.
-
-== Step 6: Configure Full backup retentions settings
-
-. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
-.. Specify total number of Snapshots to keep
-... To specify the number of Snapshots to keep, select *Copies to keep*. If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
-
-IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
-
-[loweralpha,start=2]
-. Length of time to keep snapshots 
-.. To specify the number of days for which you want to keep the Snapshots before deleting them, select *Retain copies for*.
-
-. If you want to specify the Primary snapshot copy locking period, select *Primary snapshot copy locking period* and select days, months, or years.
 +
-SnapLock retention period should be less than 100 years.
-+
-The log Snapshot retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot retention.
-
-.. If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
-+
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
-
 This example sets the log Snapshot retention to 2:
-
++
 .Show Example
 [%collapisble]
 ====
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
 ====
-
++
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
 
 .. Select a Snapshot label
