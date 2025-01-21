@@ -27,7 +27,7 @@ If a resource is not yet part of any resource group, you can back up the resourc
 The *File System Consistency* option is applicable only for applications running on Windows hosts.
 . In the Policies page, perform the following steps:
 .. Select one or more policies from the drop-down list.
-.. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+.. Select *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* in the Configure Schedules column for the policy for which you want to configure a schedule.
 .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
 +
 _policy_name_ is the name of the policy that you selected.

@@ -23,7 +23,7 @@ For cloud environment, you can configure high availability using either Amazon W
 
 The workflow image lists the steps to configure SnapCenter Servers for high availability using F5 load balancer. For detailed instruction, refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[How to configure SnapCenter Servers for high availability using F5 Load Balancer^].
 
-image::../media/sc-F5-configure-workflow.png[HA configuration using F5]
+image::../media/sc-F5-configure-workflow.gif[F5 configuration workflow]
 
 You must be a member of the Local Administrators group on the SnapCenter Servers (in addition to being assigned to the SnapCenterAdmin role) to use the following cmdlets for adding and removing F5 clusters:
 

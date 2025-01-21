@@ -128,9 +128,10 @@ During secondary replication, the SnapLock expiry time loads the primary SnapLoc
 When SnapLock is configured only on the secondary from ONTAP known as SnapLock Vault, clicking the *Refresh* button in the Topology page refreshes the locking period on the secondary that is retrieved from ONTAP.
 
 For more information on SnapLock Vault see Commit Snapshots to WORM on a vault
-destination
+destination.
 
 See link:view_netapp_supported_plugins_resource_backups_and_clones_in_the_topology_page.html[View NetApp supported plug-ins resource related backups and clones in the Topology page].
+
 a|
 *Error retry count*
 a|

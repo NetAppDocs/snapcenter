@@ -27,7 +27,7 @@ After splitting clone2, you can perform the clone split operation on clone1 beca
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
-. Select the cloned resource, (for example, the database or LUN) and then click image:../media/split_cone.gif[].
+. Select the cloned resource, (for example, the database or LUN) and then click image:../media/split_clone.gif[split clone].
 . Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 +

@@ -53,6 +53,8 @@ NOTE: The resources are listed in the Available Resources section only if the re
 +
 NOTE: You can add databases from both Linux and AIX hosts in a single resource group.
 
+. In the Application Settings page, select the backup option.
+
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +

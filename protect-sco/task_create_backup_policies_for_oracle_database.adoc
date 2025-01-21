@@ -86,7 +86,7 @@ Delete the archive logs from the log destinations that are part of the backup
 a|
 Select *Delete archive logs from the destinations which are part of backup*.
 |===
-image:../media/sco_backuppolicy_prunning.gif[backup policy]
+image:../media/sco_backuppolicy_prunning.gif[prunning policy]
 
 . In the Snapshot and Replication page,  perform the following steps:
 

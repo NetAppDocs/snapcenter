@@ -42,7 +42,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resource page, filter resources from the *View* drop-down list based on resource type.
 +
-Select image:../media/filter_icon.png[filter icon], and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.png[filter icon] to close the filter pane.
+Select *image:../media/filter_icon.gif[filter icon]*, and then select the host name and the resource type to filter the resources. You can then select image:../media/filter_icon.gif[filter icon] to close the filter pane.
 
 . Select the resource that you want to back up.
 . In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.
@@ -94,11 +94,11 @@ image:../media/application_settings.gif[application settings]
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
- .. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. Select *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* in the Configure Schedules column for the policy for which you want to configure a schedule.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
 +
 _policy_name_ is the name of the policy that you selected.

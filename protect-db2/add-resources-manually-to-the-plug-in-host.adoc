@@ -56,7 +56,7 @@ This is optional.
 
 . In the Provide Storage Footprint page, select a storage type and choose one or more volumes, LUNs, and qtrees, and then click *Save*.
 +
-Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[]* icon to add more volumes, LUNs, and qtrees from other storage systems.
+Optional: You can click the *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* icon to add more volumes, LUNs, and qtrees from other storage systems.
 
 . Optional: In the Resource Settings page, for resources on the Windows host, enter custom key-value pairs for IBM Db2 plug-in
 

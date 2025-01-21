@@ -142,7 +142,6 @@ During secondary replication, the SnapLock expiry time loads the primary SnapLoc
 Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 
 See link:../protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
-
 a|
 *Update SnapVault after creating a local Snapshot copy*
 a|
@@ -154,7 +153,7 @@ When SnapLock is configured only on the secondary from ONTAP known as SnapLock V
 
 For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
 
-See link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
+See link:../protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html[View SAP HANA database backups and clones in the Topology page].
 a|
 *Error retry count*
 a|

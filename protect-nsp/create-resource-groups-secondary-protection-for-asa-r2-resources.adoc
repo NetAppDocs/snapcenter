@@ -1,0 +1,13 @@
+---
+permalink: protect-nsp/create-resource-groups-secondary-protection-for-asa-r2-resources.html
+sidebar: sidebar
+keywords: asa r2, secondary protection, consistency group, primary consistency group, secondary consistency group
+summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
+---
+
+= Create resource groups and enable secondary protection for ASA r2 resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/reuse-create-resource-groups-secondary-protection-for-asa-r2-resources.adoc[]

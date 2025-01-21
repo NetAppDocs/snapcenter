@@ -68,7 +68,7 @@ If you have deleted an Oracle database on the host, SnapCenter Server will not b
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the *View* list.
 +
-Click image:../media/filter_icon.png[filter icon], and then select the host name and the database type to filter the resources. You can then click the image:../media/filter_icon.png[filter icon] icon to close the filter pane.
+Click image:../media/filter_icon.gif[filter icon]ilter icon], and then select the host name and the database type to filter the resources. You can then click the imagfilter_icon.gif[filter icon]_icon.png[] icon to close the filter pane.
 
 . Click *Refresh Resources*.
 +

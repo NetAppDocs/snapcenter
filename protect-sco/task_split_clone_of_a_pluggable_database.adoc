@@ -22,6 +22,6 @@ NOTE: The PDB clones are not displayed in the inventory or resources view.
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . Select the source container database (CDB) from the resource or resource group view.
 . From the Manage Copies view, select *Clones* either from the primary or secondary (mirrored or replicated) storage systems.
-. Select the PDB clone (targetCDB:PDBClone) and then click image:../media/split_cone.gif[].
+. Select the PDB clone (targetCDB:PDBClone) and then click image:../media/split_clone.gif[split clone].
 . Review the estimated size of the clone that is to be split and the required space available on the aggregate, and then click *Start*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.

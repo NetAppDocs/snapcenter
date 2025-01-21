@@ -11,5 +11,5 @@ summary: 'You should install and set up SnapCenter NetApp supported plug-ins if 
 [.lead]
 You should install and set up SnapCenter NetApp supported plug-ins if you want to protect NetApp supported plug-in resources.
 
-image::../media/sap_hana_install_configure_workflow.png[][Workflow of SnapCenter NetApp supported plug-ins]
+image::../media/scc_install_configure_workflow.gif[Workflow of SnapCenter NetApp supported plug-ins]
 

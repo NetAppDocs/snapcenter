@@ -223,7 +223,7 @@ This option should be enabled for SnapMirror active sync.
 +
 During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time. Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
 +
-See link:task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
+See link:../protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 
 .Update SnapVault
@@ -238,7 +238,7 @@ When SnapLock is configured only on the secondary from ONTAP known as SnapLock V
 +
 For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html[Commit Snapshot copies to WORM on a vault destination]
 +
-See link:task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
+See link:../protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
 .Error Retry Count
 --

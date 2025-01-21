@@ -1,0 +1,156 @@
+---
+permalink: install/create-cluster-roles-asa-r2-resources.html
+sidebar: sidebar
+keywords: cluster role, privileges, asa r2
+summary: 'You should create an ONTAP cluster roles for ASA r2 resources so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
+
+---
+= Create ONTAP cluster roles for ASA r2 resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should create an ONTAP cluster role with minimum privileges so that you do not have to use the ONTAP admin role to perform operations in SnapCenter. You can run several ONTAP CLI commands to create the ONTAP cluster role and assign minimum privileges.
+
+*Steps*
+
+. On the storage system, create a role and assign all the permissions to the role.
++
+`security login role create –vserver <cluster_name\>- role <role_name\> -cmddirname <permission\>`
++
+NOTE: You should repeat this command for each permission.
+
+. Create a user and assign the role to that user.
++
+`security login create -user <user_name\> -vserver <cluster_name\> -application ontapi -authmethod password -role <role_name\>`
+. Unlock the user.
++
+`security login unlock -user <user_name\> -vserver <cluster_name\>`
+
+== ONTAP CLI commands for creating cluster roles and assigning permissions
+There are several ONTAP CLI commands you should run to create cluster roles and assign permissions.
+
+* `security login role create -vserver Cluster_name or cluster_name -role Role_Name -cmddirname "metrocluster show" -access readonly`
+* `security login role create -vserver Cluster_name or cluster_name -role Role_Name -cmddirname "cluster identity modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster identity show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster peer show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "event generate-autosupport-log" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "job history show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "job show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "job stop" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun igroup add" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun igroup create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun igroup delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun igroup modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun igroup rename" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun igroup show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun mapping add-reporting-nodes" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun mapping create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun mapping delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun mapping remove-reporting-nodes" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun mapping show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun move-in-volume" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun offline" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun online" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun persistent-reservation clear" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun resize" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun serial" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "lun show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "network interface create" -access readonly`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "network interface delete" -access readonly`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "network interface modify" -access readonly`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "network interface show" -access readonly`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem map" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem host" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem controller" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "security login" -access readonly`
+* `security login role create -role Role_Name -cmddirname "snapmirror create" -vserver Cluster_name -access all`
+* `security login role create -role Role_Name -cmddirname "snapmirror list-destinations" -vserver Cluster_name -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy add-rule" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy modify-rule" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy remove-rule" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror policy show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror restore" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror show-history" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror update" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror update-ls-set" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system license add" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system license clean-up" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system license delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system license show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system license status show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system node modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system node show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "system status show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "version" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume clone create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume clone show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume clone split start" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume clone split stop" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume destroy" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume file clone create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume file show-disk-usage" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot modify-snaplock-expiry-time" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume offline" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume online" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume qtree create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume qtree delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume qtree modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume qtree show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume restrict" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot promote" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot rename" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot restore" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot restore-file" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume snapshot show-delta" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume unmount" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs share modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs share create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs share delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs share modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs share show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver cifs show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy rule create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy rule delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy rule modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy rule show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver export-policy show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver iscsi connection show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "storage-unit" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "consistency-group" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror protect" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume delete" show" -access all`
