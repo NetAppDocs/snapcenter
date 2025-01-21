@@ -47,6 +47,7 @@ SnapCenter allows you to perform the following operations on all the application
 * Hierarchical consistency group
 * Migration from ONTAP 9.x to ASA r2
 * Renaming of snapshots
+* The secondary provisioning of the log directory of SQL plug-in host is not supported by SnapCenter. You should manually configure using either ONTAP CLI or System Manager.
 
 
 

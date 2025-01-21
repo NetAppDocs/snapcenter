@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: ports, port requirements
 summary: 'You should ensure that the connections and ports requirements are met before installing the SnapCenter Server and application or database plug-ins.'
 ---
+
 = Connection and port requirements
 :icons: font
 :imagesdir: ../media/
@@ -168,31 +169,41 @@ a|
 * 443 (HTTPS)
 * 80 (HTTP)
 a|
-HTTPS/HTTP
+* HTTPS
+* HTTP
 a|
 Bidirectional
 a|
 The port is used by the SAL (Storage Abstraction Layer) for communication between the host running SnapCenter Server and SVM. The port is currently also used by the SAL on SnapCenter for Windows Plug-in hosts for communication between the SnapCenter plug-in host and SVM.
 
-|===
+a|
+SnapCenter Plug-in for SAP HANA Database
+a|
+* 3instance_number13
+* 3instance_number15
+a|
+* HTTPS
+* HTTP
+a|
+Bidirectional
+a|
+For a multitenant database container (MDC) single tenant, the port number ends with 13; for non MDC, the port number ends with 15. 
+
+You can customize the port number.
 
 a|
-SnapCenter Plug-in for SAP HANA Database vCode Spell Checkerports
+SnapCenter Plug-in for PostgreSQL
 a|
-3instance_number13 or 3instance_number15, HTTP or HTTPS, bidirectional, and customizable
-
-For a multitenant database container (MDC) single tenant, the port number ends with 13; for non MDC, the port number ends with 15.
-
-For example, 32013 is the port number for instance 20 and 31015 is the port number for instance 10.
-
-To customize the port, see https://docs.netapp.com/us-en/snapcenter/protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html[Add hosts and install plug-in packages on remote hosts.]
+5432
+a|
 
 a|
-Domain controller communication port
-a|
-See the Microsoft documentation to identify the ports that should be opened in the firewall on a domain controller for authentication to work properly.
 
-It is necessary to open the Microsoft required ports on the domain controller so that the SnapCenter Server, Plug-in hosts, or other Windows client can authenticate the users.
+a|
+This port is the default PostgreSQL port used for communication by the plug-in for PostgreSQL to the PostgreSQL cluster.
+
+You can customize the port number.
+
 |===
 
 To modify the port details, see link:../admin/concept_manage_hosts.html#modify-plug-in-hosts[Modify plug-in hosts].
