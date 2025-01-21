@@ -45,19 +45,21 @@ You can use the GET API to display the value of the key. SET API is not supporte
 Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires.  This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 +
 For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
-+
-NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
 == Step 1: Create Policy Name
 . In the left navigation pane, select *Settings*.
 . In the Settings page, select *Policies*.
 . Select *New*.
-. In the *Name* page, enter the policy name and description.
+. In the *Name* page, enter the policy name and details.
 
-== Step 2: Configure backup options 
+== Step 2: Configure policy options 
 // start tabbed area
-. Choose your backup type
+. In the Policy type page, perform the following steps:
 
+.. Select your storage type.
+
+.. Select your policy scope.
++
 [role="tabbed-block"]
 ====
 
@@ -96,13 +98,13 @@ Keeping the transaction logs intact allows any backup application to restore the
 
 NOTE: Microsoft SQL does not support the *Copy only backup* option together with the *Full backup and Log backup* option for secondary storage.
 --
-
 ====
 
 // end tabbed area
 
-[start=2]
- . In the Availability Group Settings section, perform the following actions:
+== Step 3: Configure Availability Group settings
+
+. In the Availability Group Settings section, perform the following actions:
 
 .. Backup on preferred backup replica only.
 +
@@ -121,21 +123,21 @@ By default, the minimum priority is 1 and maximum priority is 100.
 +
 NOTE: In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the AG changes, the backups are taken according to the retention settings and the backups of the previous owner node will be retained. The retention for AG is applicable only at the node level.
 
- . Schedule the backup frequency for this policy. Specify the schedule type by selecting either *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
+== Step 4: Configure Snapshot and Replication settings
+
+. In the Snapshot and Replication page, perform the following steps:
+.. Specify the schedule type by selecting *On demand*, *Hourly*, *Daily*, *Weekly*, or *Monthly*.
 +
 You can only select one schedule type for a policy.
-+
-image:../media/backup_settings.gif[Backup settings screen.]
 +
 NOTE: You can specify the schedule (start date, end date, and frequency) for backup operation while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
 
-== Step 3: Configure retention settings
-In the Retention page, depending on the backup type selected in the backup type page, perform one or more of the following actions:
+== Step 5: Configure up-to-the minute retention settings
 
- . In the Retention settings for the up-to-the-minute restore operation section, perform one of the following actions:
- 
+. In the Up-to-the minute retention settings section, depending on the backup type selected in the backup type page, perform one or more of the following actions:
++
 // start tabbed area
 
 [role="tabbed-block"]
@@ -159,53 +161,53 @@ Retain the backup copies for a specific number of days.
 
 // end tabbed area
 
-[start=2]
-. In the *Full backup retentions settings* section for the On Demand retention settings, perform the following actions:
-.. Specify total number of Snapshots to keep
-... To specify the number of Snapshots to keep, select *Total Snapshot copies to keep*.
-... If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
+== Step 6: Configure Snapshot settings
+
+. For the Full backup retention settings, perform the following actions:
+.. Specify total number of snapshots to keep
+... To specify the number of snapshots to keep, select *Copies to keep*.
+... If the number of snapshots exceeds the specified number, the snapshots are deleted with the oldest copies deleted first.
  
-IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
+IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
 
 NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
 [loweralpha,start=2]
-.. Length of time to keep Snapshots
-... If you want to specify the number of days for which you want to keep the Snapshots before deleting them, select *Keep Snapshot copies for*.
+.. Length of time to keep snapshots
+... If you want to specify the number of days for which you want to keep the snapshots before deleting them, select *Retain copies for*.
 
-.. If you want to specify the Snapshot locking period, select *Snapshot copy locking period* and select days, months, or years.
+.. If you want to specify the Primary snapshot copy locking period, select *Primary snapshot copy locking period* and select days, months, or years.
 +
 Snaplock retention period should be less than 100 years.
 
-[start=3]
-. In the *Full backup retentions settings* section for the Hourly, Daily, Weekly and Monthly retention settings, specify the retention settings for the schedule type selected in Backup Type page.
-.. Specify total number of Snapshots to keep
-... To specify the number of Snapshots to keep, select *Total Snapshot copies to keep*. If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
-
-IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
-
-[loweralpha,start=2]
-. Length of time to keep Snapshots 
-.. To specify the number of days for which you want to keep the Snapshots before deleting them, select *Keep Snapshot copies for*.
-
-. If you want to specify the Snapshot locking period, select *Snapshot copy locking period* and select days, months, or years.
+.. If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
 +
-SnapLock retention period should be less than 100 years.
-+
-The log Snapshot retention is set to 7 days by default. Use Set-SmPolicy cmdlet to change the log Snapshot retention.
+For this option to be effective you must do the following tasks:
 
+* Select the *Primary snapshot copy locking period*.
+* Select one or both of the secondary replication options.
++
 This example sets the log Snapshot retention to 2:
-
++
 .Show Example
 [%collapisble]
 ====
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
 ====
-
++
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
 
-== Step 4: Configure replication settings
-. In the Replication page, specify replication to the secondary storage system:
+.. Select a Snapshot label
++
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot  retention policy that matches the label.
++
+NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
+== Step 7: Configure secondary replication options
+
+. In the Select secondary replication options section, select one or both of the following secondary replication options:
++
+NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. 
 // start tabbed area
 
 [role="tabbed-block"]
@@ -238,16 +240,6 @@ For more information on SnapLock Vault see https://docs.netapp.com/us-en/ontap/s
 +
 See link:../protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html[View SQL Server backups and clones in the Topology page].
 --
-
-.Secondary Policy Label
---
-. Select a Snapshot label.
-
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot  retention policy that matches the label.
-
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
---
-
 .Error Retry Count
 --
 . Enter the number of replication attempts that should occur before the process halts.
@@ -258,7 +250,7 @@ NOTE: If you have selected *Update SnapMirror after creating a local Snapshot co
 // end tabbed area
 
 
-== Step 5: Configure script settings
+== Step 8: Configure script settings
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +
 For example, you can run a script to update SNMP traps, automate alerts, and send logs.
@@ -267,7 +259,7 @@ NOTE: The prescripts or postscripts path should not include drives or shares. Th
 +
 NOTE: You must configure the SnapMirror retention policy in ONTAP so that the secondary storage does not reach the maximum limit of Snapshots.
 
-== Step 6: Configure verification settings 
+== Step 9: Configure verification settings 
 In the Verification page, perform the following steps:
 
  . In the Run verification for following backup schedules section, select the schedule frequency.
@@ -289,5 +281,5 @@ In the Verification page, perform the following steps:
 +
 NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
 
-== Step 7: Review summary
+== Step 10: Review summary
 . Review the summary, and then select *Finish*.
