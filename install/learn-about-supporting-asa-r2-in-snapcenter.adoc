@@ -18,6 +18,7 @@ ASA r2 systems support all SAN protocols (iSCSI, FC, and NVMe over TCP/IP) on a 
 NOTE: SnapCenter supports only VMware Virtual Machine File System (VMFS) on ASA r2 systems.
 
 ASA r2 systems introduce the use of storage units with consistency groups:
+
 * A storage unit makes storage space available to your SAN hosts for data operations. A storage unit refers to a LUN for SCSI hosts or an NVMe namespace for NVMe hosts.
 * A consistency group is a collection of storage units that are managed as a single unit.
 
