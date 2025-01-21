@@ -50,16 +50,14 @@ You can use the GET API to display the value of the key. SET API is not supporte
 Specifying a Snapshot locking period prevents deletion of the Snapshots until the retention period expires.  This could lead to retaining a larger number of Snapshots than the count specified in the policy.
 +
 For ONTAP 9.12.1 and below versions, the clones created from the SnapLock Vault Snapshots will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
-+
-NOTE: Primary SnapLock settings are managed in SnapCenter backup policy and the secondary SnapLock settings are managed by ONTAP.
 
 .Steps
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Policies*.
 . Click *New*.
-. In the Name page, enter the policy name and description.
-. In the Backup Type page, perform the following steps:
+. In the Name page, enter the policy name and details.
+. In the Backup Type and Replication page, perform the following steps:
  .. Choose backup type:
 +
 |===
@@ -100,7 +98,7 @@ NOTE: You should define the space required for log backups based on the full bac
 +
 NOTE: Create separate vault policies for logs and databases when dealing with Exchange volumes (LUNs), and set the keep (retention) for the log policy to twice the number for each label as the database policy, using the same labels. For more information see, https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_for_Exchange_Backups_only_keep_half_the_Snapshots_on_the_Vault_destination_log_volume[SnapCenter for Exchange Backups only keep half the Snapshots on the Vault destination log volume^]
 
- .. In the Database Availability Group Settings section, select an action:
+.. In the Database Availability Group Settings section, select an action:
 +
 |===
 | For this field...| Do this...
@@ -123,11 +121,50 @@ For DAGs, this option backs up both active and passive copies of all databases o
 +
 NOTE: In cluster configurations, the backups are retained at each node of the cluster according to the retention settings set in the policy. If the owner node of the cluster changes, the backups of the previous owner node will be retained. The retention is applicable only at the node level.
 
- .. In the Schedule frequency section, select one or more of the frequency types: *On demand*, *Hourly*, *Daily*, *Weekly*, and *Monthly*.
+.. In the Schedule frequency section, select one or more of the frequency types: *On demand*, *Hourly*, *Daily*, *Weekly*, and *Monthly*.
 +
 NOTE: You can specify the schedule (start date, end date) for backup operations while creating a resource group. This enables you to create resource groups that share the same policy and backup frequency, but lets you assign different backup schedules to each policy.
 +
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
+
+.. Select the Policy label.
++
+Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
++
+NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+
+.. In the Select secondary replication options section, select one or both of the following secondary replication options:
++
+NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. The *Secondary snapshot copy locking period* option is available in the Retention page.
++
+|===
+| For this field...| Do this...
+
+a|
+Update SnapMirror after creating a local Snapshot 
+a|
+Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
+
+During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
+
+This option should be enabled for SnapMirror active sync. 
+
+IMPORTANT:  The primary-only policy cannot be used if SnapMirror active sync is set up for Exchange ONTAP volumes. SnapCenter does not allow this. You should enable the "Mirror" option.
+
+Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
+
+See link:../protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
+a|
+Update SnapVault after creating a local Snapshot
+a|
+Select this option to perform disk-to-disk backup replication.
+a|
+Error retry count
+a|
+Enter the number of replication attempts that should occur before the process halts.
+|===
++
+NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
 
 . In the Retention page, configure the retention settings.
 +
@@ -170,7 +207,7 @@ SnapLock retention period should be less than 100 years.
 |===
 If you selected *Log backup* as the backup type, log backups are retained as part of the up-to-the-minute retention settings for full backups.
 
- .. In the Full backup retention settings section, select one of the following for on-demand backups, and then select one for full backups:
+.. In the Full backup retention settings section, select one of the following for on-demand backups, and then select one for full backups:
 +
 |===
 | For this field...| Do this...
@@ -186,11 +223,20 @@ Retain full backups for a specific number of days
 a|
 Select the *Keep Snapshot copies for* option, and specify the number of days to keep Snapshots (full backups).
 a|
-Snapshot locking period
+Primary snapshot locking period
 a|
-Select *Snapshot copy locking period*, and select days, months, or years.
+Select *Primary snapshot copy locking period*, and select days, months, or years.
 
 SnapLock retention period should be less than 100 years.
+a|
+Secondary snapshot locking period
+a|
+Select *Secondary snapshot copy locking period*, and select days, months, or years.
+
+For this option to be effective you must do the following tasks:
+
+* Select the *Primary snapshot copy locking period*.
+* Select one or both of the secondary replication options.
 |===
 +
 If you have a database with only log backups and no full backups on a host in a DAG configuration, the log backups are retained in the following ways:
@@ -201,46 +247,6 @@ If you have a database with only log backups and no full backups on a host in a 
   <add key="MaxLogBackupOnlyCountWithoutFullBackup" value="10">
 +
 In the example, the value 10 means you keep up to 10 log backups on the host.
-
-. In the Replication page, select one or both of the following secondary replication options:
-+
-|===
-| For this field...| Do this...
-
-a|
-Update SnapMirror after creating a local Snapshot 
-a|
-Select this option to keep mirror copies of backup sets on another volume (SnapMirror).
-
-During secondary replication, the SnapLock expiry time loads the primary SnapLock expiry time.
-
-This option should be enabled for SnapMirror active sync. 
-
-IMPORTANT:  The primary-only policy cannot be used if SnapMirror active sync is set up for Exchange ONTAP volumes. SnapCenter does not allow this. You should enable the "Mirror" option.
-
-Clicking the *Refresh* button in the Topology page refreshes the secondary and primary SnapLock expiry time that are retrieved from ONTAP.
-
-See link:../protect-sce/task_view_exchange_backups_in_the_topology_page.html[View Exchange backups in the Topology page].
-a|
-Update SnapVault after creating a local Snapshot
-a|
-Select this option to perform disk-to-disk backup replication.
-a|
-Secondary policy label
-a|
-Select a Snapshot label.
-
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
-
-a|
-Error retry count
-a|
-Enter the number of replication attempts that should occur before the process halts.
-|===
-+
-NOTE: You should configure SnapMirror retention policy in ONTAP for the secondary storage to avoid reaching the maximum limit of Snapshots on the secondary storage.
 
 . In the Script page, enter the path and the arguments of the prescript or postscript that should be run before or after the backup operation, respectively.
 +
