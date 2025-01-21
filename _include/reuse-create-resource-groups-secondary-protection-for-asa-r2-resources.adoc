@@ -1,4 +1,4 @@
-You should create the resource group to add the Oracle resources that are on ASA r2 systems. You can also provision the secondary protection while creating the resource group.
+You should create the resource group to add the resources that are on ASA r2 systems. You can also provision the secondary protection while creating the resource group.
 
 .Before you begin
 

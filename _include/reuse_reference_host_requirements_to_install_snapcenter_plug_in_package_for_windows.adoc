@@ -28,6 +28,8 @@ a|
 * .NET Core beginning with version 8.0.5 and including all subsequent .NET 8 patches
 * PowerShell Core 7.4.2
 * Java 11 Oracle Java and OpenJDK
++
+Java 11 Oracle Java and OpenJDK is required only for SAP HANA, IBM Db2, PostgreSQL, MySQL, NetApp supported plug-ins, and other custom applications which can be installed on Windows host.
 
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
