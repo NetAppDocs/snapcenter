@@ -103,6 +103,8 @@ entries:
         url: /protect-postgresql/create-backup-policies-for-postgresql.html
       - title: Create resource groups and attach policies
         url: /protect-postgresql/create-resource-groups-and-attach-policies.html
+      - title: Create resource groups and enable secondary protection for ASA r2 PostgreSQL resources
+        url: /protect-postgresql/create-resource-groups-secondary-protection-for-asa-r2-postgresql-resources.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for PostgreSQL
         url: /protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html   
       - title: Back up PostgreSQL

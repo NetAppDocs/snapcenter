@@ -59,6 +59,8 @@ entries:
         url: /protect-scw/task_create_backup_policies_for_windows_file_systems.html
       - title: Create resource groups for Windows file systems
         url: /protect-scw/task_create_resource_groups_for_windows_file_systems.html
+      - title: Create resource groups and enable secondary protection for ASA r2 Windows file systems
+        url: /protect-scw/create-resource-groups-secondary-protection-for-asa-r2-windows-file-systems.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets
         url: /protect-scw/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_windows.html    
       - title: Back up a single resource on demand for Windows file systems
