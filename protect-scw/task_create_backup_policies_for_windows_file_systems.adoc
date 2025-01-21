@@ -49,7 +49,7 @@ You can use the GET API to display the value of the key. SET API is not supporte
 . In the left navigation pane, select *Settings*.
 . In the Settings page, select *Policies*.
 . Select *New*.
-. In the *Name* page, enter the policy name and details.
+. In the Name page, enter the policy name and details.
 . In the Backup and Replication page, perform the following tasks:
  .. Select a backup setting.
 +

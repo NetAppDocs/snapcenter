@@ -54,9 +54,11 @@ For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault S
 
 == Step 2: Configure policy options 
 // start tabbed area
-. Select your storage type.
+. In the Policy type page, perform the following steps:
 
-. Select your policy scope.
+.. Select your storage type.
+
+.. Select your policy scope.
 +
 [role="tabbed-block"]
 ====
