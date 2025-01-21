@@ -57,7 +57,7 @@ For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault S
 . Select your storage type.
 
 . Select your policy scope.
-
++
 [role="tabbed-block"]
 ====
 
@@ -96,13 +96,10 @@ Keeping the transaction logs intact allows any backup application to restore the
 
 NOTE: Microsoft SQL does not support the *Copy only backup* option together with the *Full backup and Log backup* option for secondary storage.
 --
-
 ====
 
 // end tabbed area
-
-[start=2]
- . In the Availability Group Settings section, perform the following actions:
+. In the Availability Group Settings section, perform the following actions:
 
 .. Backup on preferred backup replica only.
 +
@@ -131,8 +128,8 @@ NOTE: You can specify the schedule (start date, end date, and frequency) for bac
 NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered during daylight saving time (DST).
  I
 == Step 3: Configure retention settings
-. In the Up-to-the minute retention settings section, depending on the backup type selected in the backup type page, perform one or more of the following actions:
- 
+.. In the Up-to-the minute retention settings section, depending on the backup type selected in the backup type page, perform one or more of the following actions:
++
 // start tabbed area
 
 [role="tabbed-block"]
@@ -156,8 +153,6 @@ Retain the backup copies for a specific number of days.
 
 // end tabbed area
 
-[start=2]
-.Snapshot settings
 . In the *Snapshot settings* section for the Full backup retention settings, perform the following actions:
 .. Specify total number of snapshots to keep
 ... To specify the number of snapshots to keep, select *Copies to keep*.
