@@ -35,6 +35,14 @@ For the existing backup and verification schedules with prescripts and postscrip
 +
 In the *Job details* page, a warning message recommends that the customer should copy the scripts to the SCRIPTS_PATH and edit the policy to provide a path that is relative to the SCRIPTS_PATH. For the clone lifecycle job, the warning message appears at the sub-job level.
 
+* If you are upgrading from versions earlier than SnapCenter 5.0 P2 to SnapCenter 6.1, a migration script runs during SnapCenter upgrade to mitigate MySQL from crashing. You will have to perform the migration steps to complete the upgrade.
++
+For customers who are not planning to upgrade, refer the following link to download the script.
++
+https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/How_to_proactively_avoid_MySQL_crashes_due_to_system_hard_reboot_in_SnapCenter[How to avoid MySQL crashes due to hard reboot in SnapCenter]
+
+NOTE: This is not applicable to new installations of SnapCenter 5.0 P2, 6.0, and 6.0.1 versions.
+
 .Steps
 
 . Download the SnapCenter Server installation package from the NetApp Support Site.
