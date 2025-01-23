@@ -1,15 +1,16 @@
 ---
 permalink: install/create-svm-roles-asa-r2-resources.html
 sidebar: sidebar
-keywords: svm role, privileges, asa r2
-summary: 'You should create SVM roles if you configure SVMs in ASA r2 to use with SanpCenter and do not want to use the vsadmin role.'
+keywords: svm role, privileges, asa r2 systems
+summary: 'You should create SVM roles if you configure SVMs in ASA r2 systems to use with SanpCenter and do not want to use the vsadmin role.'
+
 ---
-= Create SVM roles for ASA r2 resources
+= Create SVM roles for ASA r2 systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-There are several ONTAP CLI commands you must run to you create a role for a new SVM user in ASA r2. This role is required if you configure SVMs in ASA r2 to use with SnapCenter and you do not want to use the vsadmin role.
+There are several ONTAP CLI commands you must run to you create a role for a new SVM user in ASA r2 systems. This role is required if you configure SVMs in ASA r2 systems to use with SnapCenter and you do not want to use the vsadmin role.
 
 *Steps*
 
@@ -21,7 +22,7 @@ NOTE: You should repeat this command for each permission.
 
 . Create a user and assign the role to that user.
 +
-`security login create -user <user_name\> -vserver <svm_name\> -application ontapi -authmethod password -role <SVM_Role_Name\>`
+`security login create -user <user_name\> -vserver <svm_name\> -application http -authmethod password -role <SVM_Role_Name\>`
 . Unlock the user.
 +
 `security login unlock -user <user_name\> -vserver <svm_name\>`

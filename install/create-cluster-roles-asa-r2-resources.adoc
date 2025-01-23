@@ -1,11 +1,11 @@
 ---
 permalink: install/create-cluster-roles-asa-r2-resources.html
 sidebar: sidebar
-keywords: cluster role, privileges, asa r2
-summary: 'You should create an ONTAP cluster roles for ASA r2 resources so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
+keywords: cluster role, privileges, asa r2 systems
+summary: 'You should create an ONTAP cluster roles for ASA r2 systems so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
 
 ---
-= Create ONTAP cluster roles for ASA r2 resources
+= Create ONTAP cluster roles for ASA r2 systems
 :icons: font
 :imagesdir: ../media/
 
@@ -22,7 +22,7 @@ NOTE: You should repeat this command for each permission.
 
 . Create a user and assign the role to that user.
 +
-`security login create -user <user_name\> -vserver <cluster_name\> -application ontapi -authmethod password -role <role_name\>`
+`security login create -user <user_name\> -vserver <cluster_name\> -application http -authmethod password -role <role_name\>`
 . Unlock the user.
 +
 `security login unlock -user <user_name\> -vserver <cluster_name\>`
