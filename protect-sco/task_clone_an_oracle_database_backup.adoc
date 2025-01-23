@@ -32,7 +32,7 @@ NOTE: In a Flex ASM setup, you cannot perform clone operation on Leaf nodes if t
 
 * For SnapLock enabled policies, for ONTAP 9.12.1 and below version, if you specify a Snapshot locking period, the clones created from the tamper proof Snapshots as part of restore will inherit the SnapLock expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select either *Database* or *Resource Group* from the *View* list.
@@ -276,3 +276,22 @@ Locking or renaming of devices will not affect the clone deletion operation. For
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_recover_a_cloned_database[Failed to recover a cloned database^]
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems[Customizable parameters for backup, restore and clone operations on AIX systems^]
+
+== Update the preferred IP on the host
+
+After the clone operation completes, the path provided by the Storage Access Layer (SAL) to the clone will be in _<nfs_lif_IP>:<JunctionPath>_ format.  To provide the preferred IP,  you must  configure it on the host using the SCCLI commands.
+
+.Steps
+. Login to the database host.
+. Initiate a PowerShell connection session with SnapCenter, for a specified user.
++
+Open-SmConnection 
+. Create an empty file.
++
+touch /var/opt/snapcenter/scu/etc/storagepreference.properties
+. Configure the preferred data LIF for the SVM.
++
+Add-SvmPreferredDataPath -SVM <SVM Name> -DataPath <IP address or FQDN>
+. Verify the preferred path.
++
+Get-SvmPreferredDataPath to confirm
