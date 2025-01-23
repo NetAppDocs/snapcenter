@@ -5,7 +5,7 @@ keywords: asa r2, secondary protection, consistency group, primary consistency g
 summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
 ---
 
-= Create resource groups and enable secondary protection for ASA r2 Windows file systems
+= Create resource groups and enable secondary protection for Windows file systems on ASA r2 systems
 :icons: font
 :imagesdir: ../media/
 

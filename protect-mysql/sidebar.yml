@@ -99,7 +99,7 @@ entries:
         url: /protect-mysql/create-backup-policies-for-mysql.html
       - title: Create resource groups and attach policies
         url: /protect-mysql/create-resource-groups-and-attach-policies.html
-      - title: Create resource groups and enable secondary protection for ASA r2 MySQL resources
+      - title: Create resource groups and enable secondary protection for MySQL resources on ASA r2 systems
         url: /protect-mysql/create-resource-groups-secondary-protection-for-asa-r2-mysql-resources.html
       - title: Create a storage system connection and a credential using PowerShell cmdlets for MySQL
         url: /protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html

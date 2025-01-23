@@ -24,9 +24,9 @@ ASA r2 systems introduce the use of storage units with consistency groups:
 
 ASA r2 systems use storage units and consistency groups to simplify storage management and data protection. For example, suppose you have a database consisting of 10 storage units in a consistency group, and you need to back up the entire database. Instead of backing up each storage unit individually, you can protect the entire database by backing up the consistency group.
 
-For information on ASA r2, refer to https://docs.netapp.com/us-en/asa-r2/index.html[ASA r2 documentation].
+https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems].
 
-== What is supported in SnapCenter 6.1 for ASA r2 resources
+== What is supported in SnapCenter 6.1 for ASA r2 systems
 
 SnapCenter allows you to perform the following operations on all the applications that are supported by SnapCenter if you are using ASA r2 storage systems:
 
@@ -37,7 +37,7 @@ SnapCenter allows you to perform the following operations on all the application
 ** Connect and copy restore from both primary and secondary storage
 * Cloning the backups and also cloning to alternate location
 
-== What is not supported in SnapCenter 6.1 for ASA r2 resources
+== What is not supported in SnapCenter 6.1 for ASA r2 systems
 
 * Raw Device Mapping (RDM)
 * Application volumes for Oracle
@@ -46,7 +46,7 @@ SnapCenter allows you to perform the following operations on all the application
 * Tamperproof snapshot
 * Flex Group
 * Hierarchical consistency group
-* Migration from ONTAP 9.x to ASA r2
+* Migration from ONTAP 9.x to ASA r2 systems
 * Renaming of snapshots
 * The secondary provisioning of the log directory of SQL plug-in host is not supported by SnapCenter. You should manually configure using either ONTAP CLI or System Manager.
 

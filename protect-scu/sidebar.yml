@@ -27,7 +27,7 @@ entries:
         url: /protect-scu/task_create_backup_policies_for_unix_file_systems.html
       - title: Create resource groups
         url: /protect-scu/task_create_resource_groups_and_attach_policies_for_unix_file_systems.html
-      - title: Create resource groups and enable secondary protection for ASA r2 Unix file systems
+      - title: Create resource groups and enable secondary protection for Unix file systems on ASA r2 systems
         url: /protect-scu/create-resource-groups-secondary-protection-for-asa-r2-unix-resources.html
       - title: Back up UNIX file systems
         url: /protect-scu/task_back_up_unix_file_systems.html
