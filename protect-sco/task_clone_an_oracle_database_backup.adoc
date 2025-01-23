@@ -294,4 +294,4 @@ touch /var/opt/snapcenter/scu/etc/storagepreference.properties
 Add-SvmPreferredDataPath -SVM <SVM Name> -DataPath <IP address or FQDN>
 . Verify the preferred path.
 +
-Get-SvmPreferredDataPath to confirm
+Get-SvmPreferredDataPath
