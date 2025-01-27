@@ -83,3 +83,5 @@ a|
 +
 PAM (Pluggable Authentication Modules) is a system security tool which allows system administrators to set authentication policy without having to recompile programs which do authentication. 
 |===
+
+NOTE: ASP.NET Core needs IIS USRS to have access to the temp file system.

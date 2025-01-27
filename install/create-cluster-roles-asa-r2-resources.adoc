@@ -150,7 +150,7 @@ There are several ONTAP CLI commands you should run to create cluster roles and 
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver iscsi connection show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver modify" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "vserver show" -access all`
-* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "storage-unit" show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "storage-unit show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "consistency-group" show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "snapmirror protect" show" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "volume delete" show" -access all`
