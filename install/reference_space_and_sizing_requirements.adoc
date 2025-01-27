@@ -69,7 +69,7 @@ a|
 Required software packages
 a|
 
-* Microsoft .NET Framework 4.7.2 or later
+* .NET Framework 8.0.12 (and all subsequent 8.0.x patches)
 * ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle
 * PowerShell 7.4.2 or later
 
