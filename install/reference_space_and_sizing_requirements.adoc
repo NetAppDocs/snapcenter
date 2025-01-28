@@ -68,15 +68,13 @@ Not applicable
 a|
 Required software packages
 a|
-
-* .NET Framework 8.0.12 (and all subsequent 8.0.x patches)
 * ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle
 * PowerShell 7.4.2 or later
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity^].
 
 a|
-* ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle
+* .NET Framework 8.0.12 (and all subsequent 8.0.x patches)
 * PowerShell 7.4.2 or later
 * Nginx is a web server that can be used as a reverse proxy
 * Pam-devel
@@ -84,4 +82,4 @@ a|
 PAM (Pluggable Authentication Modules) is a system security tool which allows system administrators to set authentication policy without having to recompile programs which do authentication. 
 |===
 
-NOTE: ASP.NET Core needs IIS_IUSRS to have access to the temp file system.
+NOTE: ASP.NET core needs IIS_IUSRS to access the temp file system in SnapCenter Server on Windows.
