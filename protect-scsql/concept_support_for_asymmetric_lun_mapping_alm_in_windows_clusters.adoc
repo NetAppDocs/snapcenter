@@ -18,7 +18,7 @@ Following is an example of an ALM configuration:
 * Two failover cluster instances (FCI) in a multi-site datacenter
 * FCI for local high availability (HA) and Availability Group (AG) for disaster recovery with a stand-alone instance at the disaster recovery site
 
-image::../media/asymmetric_lun_mapping_diagram.gif[lun mapping]
+image::../media/asymmetric_lun_mapping_diagram.gif[asymmetric lun mapping]
 
 The storage in the primary datacenter is shared between the FCI nodes present in the primary datacenter. The storage in the disaster recovery datacenter is shared between the FCI nodes present in the disaster recovery datacenter.
 

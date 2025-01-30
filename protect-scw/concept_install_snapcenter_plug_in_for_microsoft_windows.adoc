@@ -11,4 +11,4 @@ summary: 'You must install and set up SnapCenter Plug-in for Microsoft Windows i
 [.lead]
 You must install and set up SnapCenter Plug-in for Microsoft Windows if you want to protect Windows files that are not database files.
 
-image::../media/scw_workflow_for_installing.png[install workflow]
+image::../media/scw_workflow_for_installing.gif[install workflow]

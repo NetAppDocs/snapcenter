@@ -28,7 +28,7 @@ a|
 Activity pane
 a|
 
- .. After initiating the restore operation, click image:../media/activity_pane_icon.gif[icons on activity pane] on the Activity pane to view the five most recent operations.
+ .. After initiating the restore operation, click image:../media/activity_pane_icon.gif[activity pane icon] on the Activity pane to view the five most recent operations.
  .. Select the operation.
  .. In the Job Details page, click *Cancel Job*.
 |===

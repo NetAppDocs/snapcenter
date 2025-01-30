@@ -19,4 +19,4 @@ You might clone databases for the following reasons:
 
 The following workflow shows the sequence in which you must perform the clone operation:
 
-image::../media/sco_scc_wfs_clone_workflow.png[clone workflow]
+image::../media/sco_scc_wfs_clone_workflow.gif[clone workflow]

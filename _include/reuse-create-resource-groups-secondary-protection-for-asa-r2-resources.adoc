@@ -1,0 +1,98 @@
+You should create the resource group to add the resources that are on ASA r2 systems. You can also provision the secondary protection while creating the resource group.
+
+.Before you begin
+
+* You should ensure that you are not adding both ONTAP 9.x resources and ASA r2 resources to the same resource group.
+* You should ensure that you do not have a database with both ONTAP 9.x resources and ASA r2 resources.
+
+.About this task
+
+* The secondary protection is available only if the logged-in user is assigned to the role that has the *SecondaryProtection* capability enabled.
+* If you enabled secondary protection, the resource group is put into maintenance mode while creating the primary and secondary consistency groups. After the primary and secondary consistency groups are created, the resource group is put out of maintenance mode.
+* SnapCenter does not support secondary protection for a clone resource.
+
+.Steps
+
+. In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
+. In the Resources page, click *New Resource Group*.
+. In the Name page, perform the following actions:
+.. Enter a name for the resource group in the Name field.
++ 
+NOTE: The resource group name should not exceed 250 characters.
+ 
+.. Enter one or more labels in the Tag field to help you search for the resource group later.
++
+For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
+.. Select this check box, and enter a custom name format that you want to use for the Snapshot name.
++
+For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the Snapshot name.
+.. Specify the destinations of the archive log files that you do not want to back up.
++
+NOTE: You should use the exact same destination as it was set in the application including prefix, if needed.
+
+. In the Resources page, select the database host name from the *Host* drop-down list.
++
+NOTE: The resources are listed in the Available Resources section only if the resource is discovered successfully. If you have recently added resources, they will appear on the list of available resources only after you refresh your resource list.
+
+. Select the ASA r2 resources from the Available Resources section and move them to the Selected Resources section.
+
+. In the Application Settings page, select the backup option.
+
+. In the Policies page, perform the following steps:
+ .. Select one or more policies from the drop-down list.
++
+NOTE: You can also create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
+
++
+In the Configure schedules for selected policies section, the selected policies are listed.
+
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column for the policy for which you want to configure a schedule.
+ .. In the Add schedules for policy _policy_name_ window, configure the schedule, and then click *OK*.
++
+Where, _policy_name_ is the name of the policy that you have selected.
++
+The configured schedules are listed in the Applied Schedules column.
+
++
+Third party backup schedules are not supported when they overlap with SnapCenter backup schedules.
+
+. If the secondary protection is enabled for the policy that you have selected, then Secondary Protection page is displayed and you need to perform the following steps:
+.. Select the type of the replication policy.
++
+NOTE: Synchronous replication policy is not supported. 
+.. Specify the consistency group suffix that you want to use.
+.. From the Destination Cluster and Destination SVM drop-downs select the peered cluster and SVM that you want to use.
++
+NOTE: The cluster and SVM peering is not supported by SnapCenter. You should use System Manager or ONTAP CLIs to perform cluster and SVM peering.
+
+NOTE: If the resources are already protected outside of SnapCenter, those resources will be displayed in the Secondary Protected Resources section.
+
+. On the Verification page, perform the following steps:
+ .. Click *Load locators* to load the SnapMirror or SnapVault volumes to perform verification on secondary storage.
+ .. Click image:../media/add_policy_from_resourcegroup.gif[add symbol] in the Configure Schedules column to configure the verification schedule for all the schedule types of the policy.
+ .. In the Add Verification Schedules policy_name dialog box, perform the following actions:
++
+|===
+| If you want to... | Do this...
+
+a|
+Run verification after backup
+a|
+Select *Run verification after backup*.
+a|
+Schedule a verification
+a|
+Select *Run scheduled verification* and then select the schedule type from the drop-down list.
+|===
+
+ .. Select *Verify on secondary location* to verify your backups on secondary storage system.
+ .. Click *OK*.
++
+The configured verification schedules are listed in the Applied Schedules column.
+. In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.
++
+You must also specify the sender and receiver email addresses, and the subject of the email. If you want to attach the report of the operation performed on the resource group, select *Attach Job Report*.
++
+NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
+
+. Review the summary, and then click *Finish*.

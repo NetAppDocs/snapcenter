@@ -26,7 +26,7 @@ For example, if the production database is db1, database clone1 is cloned from b
 The resource or the resource group topology page is displayed.
 
 . From the Manage Copies view, select *Clones* either from the primary or secondary (mirrored or replicated) storage systems.
-. Select the clone, and then click image:../media/delete_icon.gif[].
+. Select the clone, and then click image:../media/delete_icon.gif[delete icon].
 +
 If you are deleting SAP HANA database clones, in the Delete Clone page, perform the following actions:
 

@@ -26,12 +26,12 @@ NOTE: You cannot modify or remove permissions for the SnapCenterAdmin role.
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Roles*.
 . From the Role name field, click the role you want to modify.
-. In the Role Details page alter the permissions or unassign the members as needed.
 . Select *All members of this role can see other members' objects* to enable other members of the role to see resources such as volumes and hosts after they refresh the resources list.
 +
 Deselect this option if you do not want members of this role to see objects to which other members are assigned.
 +
 NOTE: When this option is enabled, assigning users access to objects or resources is not required if users belong to the same role as the user who created the objects or resources.
+. In the Role Details page alter the permissions or unassign the members as needed.
 
 . Click *Submit*.
 

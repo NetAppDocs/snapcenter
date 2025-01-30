@@ -24,7 +24,7 @@ NOTE: The connection session is valid only for 24 hours. However, you can create
 
 You should execute the following commands to establish the connection with the SnapCenter Server, discover the Oracle database instances, add policy and resource group, backup and verify the backup.
 
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running Get-Help _command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666[SnapCenter Software Command Reference Guide^].
 
 *Steps*
 

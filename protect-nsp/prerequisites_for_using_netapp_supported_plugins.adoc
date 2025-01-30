@@ -19,7 +19,7 @@ Before you use SnapCenter NetApp supported plug-ins, the SnapCenter administrato
 * If you have multiple data paths (LIFs) or a dNFS configuration, you can perform the following using the SnapCenter CLI on the database host:
  ** By default, all the IP addresses of the database host are added to the NFS storage export policy in storage virtual machine (SVM) for the cloned volumes. If you want to have a specific IP address or restrict to a subset of the IP addresses, run the Set-PreferredHostIPsInStorageExportPolicy CLI.
  ** If you have multiple data paths (LIFs) in SVMs, SnapCenter chooses the appropriate data path (LIF) for mounting the NFS cloned volume. However, if you want to specify a specific data path (LIF), you must run the Set-SvmPreferredDataPath CLI.
-The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^].
+The information regarding the parameters that can be used with the command and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666[SnapCenter Software Command Reference Guide^].
 
 * Set up SnapMirror and SnapVault, if you want backup replication.
 * Ensure that port 9090 is not used by any other application on the host.

@@ -67,4 +67,4 @@ You should have removed the hosts, users, groups, and credentials that are assoc
 . In the Settings page, click *Global Settings*.
 . In the Global Settings page, click *Domain Settings*.
 . From the list of domains, select the domain that you want to unregister.
-. Click image:../media/delete_icon.gif[], and then click *OK*.
+. Click image:../media/delete_icon.gif[delete icon], and then click *OK*.

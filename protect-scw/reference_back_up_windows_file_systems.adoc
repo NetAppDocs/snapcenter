@@ -15,6 +15,7 @@ You can schedule multiple backups to run across servers simultaneously. Backup a
 
 The following workflow shows the sequence in which you must perform the backup operations:
 
+image::../media/sce_backup_workflow.gif[backup workflow]
 image::../media/sce_backup_workflow.gif[backup workflow of Exchange database]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup, restore, and clone operations. The SnapCenter cmdlet help or the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^] contains detailed information about PowerShell cmdlets.

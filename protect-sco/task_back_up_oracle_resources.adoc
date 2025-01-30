@@ -15,9 +15,9 @@ If a resource is not part of any resource group, you can back up the resource fr
 
 . In the left navigation pane, select *Resources*, and the appropriate plug-in from the list.
 . In the Resources page, select *Database* from the View list.
-. Click image:../media/filter_icon.png[Filter icon], and then select the host name and the database type to filter the resources.
+. Click image:../media/filter_icon.gif[filter icon], and then select the host name and the database type to filter the resources.
 +
-You can then click image:../media/filter_icon.png[Filter icon] to close the filter pane.
+You can then click image:../media/filter_icon.gif[filter icon] to close the filter pane.
 
 . Select the database that you want to back up.
 +

@@ -33,7 +33,7 @@ See link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_
  ** If you have multiple data paths (LIFs) in SVM, SnapCenter chooses the appropriate data path (LIF) for mounting the NFS cloned volume. However, if you want to specify a specific data path (LIF), you must run the Set-SvmPreferredDataPath CLI.
 The command reference guide has more information.
 * If you have Oracle databases on SAN environments, ensure that the SAN environment is configured as per the recommendation mentioned in the following guides:
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547957[Recommended Host Settings for Linux Unified Host Utilities^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547958[Using Linux Hosts with ONTAP storage^]
 ** https://library.netapp.com/ecm/ecm_download_file/ECMP1119218[Host Settings Affected by AIX Host Utilities^]
 * If you have Oracle databases on LVM in Oracle Linux or RHEL operating systems, install the latest version of Logical Volume Management (LVM).
 * If you are using SnapManager for Oracle and want to migrate to SnapCenter Plug-in for Oracle Database, you can migrate the profiles to policies and resource groups of SnapCenter by using the sccli command sc-migrate.

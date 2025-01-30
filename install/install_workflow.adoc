@@ -11,4 +11,4 @@ summary: 'Workflow image shows the steps to install and configure SnapCenter Ser
 [.lead]
 The workflow shows the different tasks required to install and configure the SnapCenter Server.
 
-image::../media/install_snapcenter_server.png[Install SnapCenter Server]
+image::../media/install_snapcenter_server.gif[Install SnapCenter Server]
