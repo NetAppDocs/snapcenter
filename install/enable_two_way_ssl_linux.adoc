@@ -19,7 +19,7 @@ You can enable two-way SSL communication to secure the mutual communication betw
 .. Log into SnapCenter GUI.
 .. Click *Settings* > *Global Settings* and select *Enable certificate validation on SnapCenter Server*.
 .. Click *Hosts* > *Managed Hosts* and select the plug-in host for which you want to enable one-way SSL.
-.. Click image:../media/more_icon.gif[more icon], and then click *Enable certificate validation*.
+.. Click image:../media/more_icon.gif[more icon] icon, and then click *Enable certificate validation*.
 . Enable two-way SSL communication from the SnapCenter Server Linux host.
 * `Open-SmConnection`
 * `Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName <Plugin Host Name>`

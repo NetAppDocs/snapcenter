@@ -59,12 +59,12 @@ NOTE: If you have recently added resources, they will appear on the list of Avai
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[]*.
+NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
- .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure the schedule.
+ .. In the Configure schedules for selected policies section, click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* in the Configure Schedules column for the policy for which you want to configure the schedule.
  .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule by specifying the start date, expiration date, and frequency, and then click *OK*.
 +
 You must do this for each frequency listed in the policy. The configured schedules are listed in the Applied Schedules column in the *Configure schedules for selected policies* section.
@@ -85,7 +85,7 @@ The list includes all the SQL Servers added in SnapCenter. You can select multip
 NOTE: The verification server version should match the version and edition of the SQL server that is hosting the primary database.
 
  .. Click *Load locators* to load the SnapMirror and SnapVault volumes to perform verification on secondary storage.
- .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+ .. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
  .. In the Add Verification Schedules policy_name dialog box, perform the following actions:
 +
 |===

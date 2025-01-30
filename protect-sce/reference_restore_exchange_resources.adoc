@@ -13,6 +13,6 @@ You can use SnapCenter to restore Exchange databases by restoring one or more ba
 
 The following workflow shows the sequence in which you must perform the Exchange database restore operations:
 
-image:../media/all_plug_ins_restore_workflow.png[Restore workflow]
+image:../media/all_plug_ins_restore_workflow.gif[Restore workflow]
 
 You can also use PowerShell cmdlets manually or in scripts to perform backup and restore operations. For detailed information about PowerShell cmdlets, use the SnapCenter cmdlet help or see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].

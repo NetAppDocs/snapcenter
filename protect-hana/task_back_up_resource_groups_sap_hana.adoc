@@ -25,7 +25,7 @@ You can back up a resource group on demand from the Resources page. If a resourc
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, select *Resource Group* from the *View* list.
 +
-You can search the resource group either by entering the resource group name in the search box or by selecting image:../media/filter_icon.png[filter icon], and then selecting the tag. You can then select image:../media/filter_icon.png[filter icon] to close the filter pane.
+You can search the resource group either by entering the resource group name in the search box or by selecting image:../media/filter_icon.gif[filter icon], and then selecting the tag. You can then select image:../media/filter_icon.gif[filter icon] to close the filter pane.
 . In the Resource Groups page, select the resource group that you want to back up, and then select *Back up Now*.
 . In the Backup page, perform the following steps:
  .. If you associated multiple policies with the resource group, from the *Policy* drop-down list, select the policy that you want to use for backup.

@@ -13,6 +13,8 @@ entries:
         url: /install/reference_san_host_requirements.html
       - title: Supported storage systems and applications
         url: /install/reference_supported_storage_systems_and_applications.html
+      - title: Learn about supporting ASA r2 systems in SnapCenter
+        url: /install/learn-about-supporting-asa-r2-in-snapcenter.html
       - title: Supported browsers
         url: /install/reference_supported_browsers.html
       - title: Connection and port requirements
@@ -105,8 +107,12 @@ entries:
         url: /install/task_add_an_rbac_role_using_security_login_commands.html
       - title: Create SVM roles with minimum privileges
         url: /install/create-svm-roles-minimum-privileges.html
+      - title: Create SVM roles for ASA r2 systems
+        url: /install/create-svm-roles-asa-r2-resources.html
       - title: Create ONTAP cluster roles with minimum privileges
         url: /install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
+      - title: Create ONTAP cluster roles for ASA r2 systems
+        url: /install/create-cluster-roles-asa-r2-resources.html
       - title: Configure IIS Application Pools to enable Active Directory read permissions
         url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
   - title: Configure audit log settings

@@ -13,4 +13,4 @@ The restore workflow includes planning, performing the restore operations, and m
 
 The following workflow shows the sequence in which you must perform the restore operation:
 
-image::../media/all_plug_ins_restore_workflow.png[all_plug-ins_restore_workflow]
+image::../media/all_plug_ins_restore_workflow.gif[all_plug-ins_restore_workflow]

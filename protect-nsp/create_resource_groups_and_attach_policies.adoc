@@ -9,7 +9,6 @@ summary: 'A resource group is the container to which you must add resources that
 :imagesdir: ../media/
 
 [.lead]
-
 A resource group is the container to which you must add resources that you want to back up and protect. It enables you to back up all the data that is associated with a given application simultaneously. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.
 
 .Steps

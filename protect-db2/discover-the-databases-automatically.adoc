@@ -27,9 +27,9 @@ The automatically discovered resources cannot be modified or deleted.
 
 . In the left navigation pane, click *Resources*, and then select the Plug-in for IBM Db2 from the list.
 . In the Resources page select the resource type from the View list.
-. (Optional) Click *image:../media/filter_icon.png[filter icon]*, and then select the host name.
+. (Optional) Click *image:../media/filter_icon.gif[filter icon]*, and then select the host name.
 +
-You can then click *image:../media/filter_icon.png[filter icon]* to close the filter pane.
+You can then click *image:../media/filter_icon.gif[filter icon]* to close the filter pane.
 
 . Click *Refresh Resources* to discover the resources available on the host.
 +

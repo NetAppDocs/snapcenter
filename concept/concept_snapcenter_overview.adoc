@@ -25,6 +25,7 @@ SnapCenter can be deployed in the following ways:
 ** Data that is on ONTAP FAS, AFF, or All SAN Array (ASA) primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
 ** Data that is on ONTAP Select primary systems
 ** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to local StorageGRID object storage 
+** Data that is on ONTAP ASA r2 primary and secondary systems
 
 * On premise in a Hybrid Cloud to protect the following:
 ** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to Cloud Volumes ONTAP
@@ -73,7 +74,7 @@ For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/s
 +
 For more information on Windows cmdlets see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 +
-For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470[SnapCenter Software Command Reference Guide^].
+For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666[SnapCenter Software Command Reference Guide^].
 
 * Centralized data protection Dashboard and reporting
 * Role-Based Access Control (RBAC) for security and delegation.
@@ -97,9 +98,9 @@ You can recover the SnapCenter Server in the event of disasters like resource co
 
 * SnapLock
 +
-SnapLock is a high-performance compliance solution for organizations that use write once, read many (WORM) storage to retain files in unmodified form for regulatory and governance purposes.
+SnapLock is a high-performance compliance solution for organizations that use write once, read many (WORM) storage to retain files in unmodified form for regulatory and governance purposes. For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is].
 +
-For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is]
+Locking snapshots ensures that they can't be deleted accidentally or maliciously. SnapCenter allows you to specify the locking period for both primary and secondary snapshots.
 
 * SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC])
 +

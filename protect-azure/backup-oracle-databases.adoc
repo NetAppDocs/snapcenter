@@ -19,11 +19,11 @@ If a resource is not yet part of any resource group, you can back up the resourc
 . In the Resource page, select *Use custom name format for Snapshot copy*, and then enter a custom name format that you want to use for the Snapshot name.
 . In the Policies page, perform the following steps:
 .. Select one or more policies from the drop-down list.
-.. Select *image:../media/add_policy_from_resourcegroup.gif[]* in the Configure Schedules column for the policy for which you want to configure a schedule.
+.. Select *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* in the Configure Schedules column for the policy for which you want to configure a schedule.
 .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
 . In the Verification page, perform the following steps:
 .. Select the verification server.
-.. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[]*.
+.. Select the policy for which you want to configure your verification schedule, and then click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 .. Either select *Run verification after backup* or *Run scheduled verification*.
 .. Click OK.
 . In the Notification page, from the *Email preference* drop-down list, select the scenarios in which you want to send the emails.

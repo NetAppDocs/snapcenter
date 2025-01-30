@@ -11,7 +11,7 @@ summary: 'Configure high availability in SnapCenter using either F5, Network Loa
 [.lead]
 To support High Availability (HA) in SnapCenter running either on Windows or on Linux, you can install the F5 load balancer. F5 enables the SnapCenter Server to support active-passive configurations in up to two hosts that are in the same location. To use F5 Load Balancer in SnapCenter, you should configure the SnapCenter Servers and configure F5 load balancer.
 
-You can also configure Microsoft Network Load Balancing (NLB) to set up SnapCenter High Availability. You should manually configure NLB outside of SnapCenter installation for high availability.
+You can also configure Network Load Balancing (NLB) to set up SnapCenter High Availability. You should manually configure NLB outside of SnapCenter installation for high availability.
 
 For cloud environment, you can configure high availability using either Amazon Web Services (AWS) Elastic Load Balancing (ELB) and Azure load balancer.
 
@@ -23,7 +23,7 @@ For cloud environment, you can configure high availability using either Amazon W
 
 The workflow image lists the steps to configure SnapCenter Servers for high availability using F5 load balancer. For detailed instruction, refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer[How to configure SnapCenter Servers for high availability using F5 Load Balancer^].
 
-image::../media/sc-F5-configure-workflow.png[HA configuration using F5]
+image::../media/sc-F5-configure-workflow.gif[F5 configuration workflow]
 
 You must be a member of the Local Administrators group on the SnapCenter Servers (in addition to being assigned to the SnapCenterAdmin role) to use the following cmdlets for adding and removing F5 clusters:
 
@@ -45,7 +45,7 @@ Additional information
 .Configure high availability using Network Load Balancing (NLB)
 --
 
-You can configure Microsoft Network Load Balancing (NLB) to set up SnapCenter High Availability. You should manually configure NLB outside of SnapCenter installation for high availability.
+You can configure Network Load Balancing (NLB) to set up SnapCenter High Availability. You should manually configure NLB outside of SnapCenter installation for high availability.
 
 For information about how to configure Network Load Balancing (NLB) with SnapCenter refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_NLB_and_ARR_with_SnapCenter[How to configure NLB with SnapCenter^].
 --

@@ -19,7 +19,7 @@ NOTE: Ensure that *OpenSSL 1.0.2g* is installed on the host where you want to in
 Validate the signature of the binary package by running the command:
 
 * For Linux host: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
-* For AIX host: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_linux_host_plugin.bsx.sig snapcenter_linux_host_plugin.bsx`
+* For AIX host: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_aix_host_plugin.bsx.sig snapcenter_aix_host_plugin.bsx`
 
 == Install on multiple remote hosts using cmdlets
 
