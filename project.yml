@@ -10,7 +10,7 @@ settings:
     - version-number: "6.1"
       url: /snapcenter
     - version-number: "6.0"
-      url: /snapcenter-6.0
+      url: /snapcenter-60
     - version-number: "5.0"
       url: /snapcenter-50  
     - version-number: "4.9"
