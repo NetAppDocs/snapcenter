@@ -43,8 +43,6 @@ entries:
             url: /protect-scsql/concept_when_to_schedule_verification_jobs.html
       - title: Restoration strategy for SQL Server
         entries:
-          - title: Define a restoration strategy for SQL Server
-            url: /protect-scsql/task_define_a_restoration_strategy_for_sql_server.html
           - title: Sources and destinations for a restore operation
             url: /protect-scsql/reference_sources_and_destinations_for_a_restore_operation.html
           - title: SQL Server recovery models supported by SnapCenter
