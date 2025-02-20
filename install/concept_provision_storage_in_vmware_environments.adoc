@@ -111,4 +111,4 @@ Initiators must be either FC or Microsoft iSCSI, but not both.
 Before you can use FC RDM LUNs to share storage between nodes in a Microsoft cluster, you must first create the shared quorum disk and shared storage disk, and then add them to both virtual machines in the cluster.
 
 The shared disk is not created using the Plug-in for Windows. You should create and then add the shared LUN to each virtual machine in the cluster.
-For information, see https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.mscs.doc/GUID-1A2476C0-CA66-4B80-B6F9-8421B6983808.html[Cluster Virtual Machines Across Physical Hosts^].
+For information, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/setup-for-failover-clustering-and-microsoft-cluster-service.html[Cluster Virtual Machines Across Physical Hosts^].
