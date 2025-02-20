@@ -31,12 +31,6 @@ The supported use cases are:
 The storage tech refresh is supported for replacing the primary storage with new storage. You cannot convert the existing secondary storage to a primary storage.
 * Secondary storage refresh
 
-The other supported scenarios are:
-
-* SVM name change
-* Volume name change
-
-
 == Update the backups of the primary storage
 
 When the storage is tech refreshed, you should run the storage tech refresh API or cmdlet to update the old backups in SnapCenter with the new storage details.
