@@ -91,7 +91,7 @@ SnapCenter is now reflected as a relying party with the provided display name.
 
 SnapCenter MFA functionality can also be enabled using REST APIs.
 
-For troubleshooting information, refer to https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_MFA_login_error_The_SAML_message_response_1_doesnt_match_the_expected_response_2[Simultaneous login attempts in multiple tabs shows MFA error].
+For troubleshooting information, see https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_MFA_login_error_The_SAML_message_response_1_doesnt_match_the_expected_response_2[Simultaneous login attempts in multiple tabs shows MFA error].
 
 == Update AD FS MFA Metadata
 
@@ -113,8 +113,8 @@ You should update the SnapCenter MFA metadata in AD FS whenever there is any mod
 .Steps
 
 . In the AD FS host, open AD FS management wizard and perform the following steps:
-.. Click *Relying Party Trusts*.
-.. Right click on the relying party trust that was created for SnapCenter and click *Delete*.
+.. Select *Relying Party Trusts*.
+.. Right click on the relying party trust that was created for SnapCenter and select *Delete*.
 +
 The user defined name of the relying party trust will be displayed.
 .. Enable Multi-factor authentication (MFA).
