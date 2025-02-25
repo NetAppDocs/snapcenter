@@ -1,5 +1,5 @@
 ---
-permalink: concept/reference_data_security.html
+permalink: get-started/reference_data_security.html
 sidebar: sidebar
 keywords: security,authentication, CA certificates
 summary: 'SnapCenter employs strict security and authentication features to enable you to keep your data secure.'

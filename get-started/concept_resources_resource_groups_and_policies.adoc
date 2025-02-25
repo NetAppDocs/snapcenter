@@ -1,5 +1,5 @@
 ---
-permalink: concept/concept_resources_resource_groups_and_policies.html
+permalink: get-started/concept_resources_resource_groups_and_policies.html
 sidebar: sidebar
 keywords: resource, resource group, policy
 summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. You interact with resources, resource groups, and policies for different operations.'

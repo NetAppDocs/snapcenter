@@ -1,5 +1,5 @@
 ---
-permalink: concept/reference_role_based_access_control_permissions_and_roles.html
+permalink: get-started/reference_role_based_access_control_permissions_and_roles.html
 sidebar: sidebar
 keywords: RBAC, roles, permissions
 summary: 'SnapCenter role-based access control (RBAC) enables you to create roles and add permissions to those roles, and then assign users or groups of users to the roles. This enables SnapCenter administrators to create a centrally managed environment, while application administrators can manage data protection jobs. SnapCenter ships with some predefined roles and permissions.'

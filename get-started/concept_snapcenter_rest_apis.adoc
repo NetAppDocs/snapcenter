@@ -1,5 +1,5 @@
 ---
-permalink: concept/concept_snapcenter_rest_apis.html
+permalink: get-started/concept_snapcenter_rest_apis.html
 sidebar: sidebar
 keywords: REST APIs
 summary: 'You can use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the REST API documentation, as well as to manually issue an API call. You can use REST APIs to help manage your SnapCenter Server or your SnapCenter vSphere host.'

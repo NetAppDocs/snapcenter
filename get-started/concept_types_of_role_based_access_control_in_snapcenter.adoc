@@ -1,5 +1,5 @@
 ---
-permalink: concept/concept_types_of_role_based_access_control_in_snapcenter.html
+permalink: get-started/concept_types_of_role_based_access_control_in_snapcenter.html
 sidebar: sidebar
 keywords: RBAC, roles, permissions, application-level RBAC, ONTAP permissions
 summary: 'SnapCenter role-based access control (RBAC) and ONTAP permissions enable SnapCenter administrators to create roles and set access permissions. This centrally managed access empowers application administrators to work securely within delegated environments.'

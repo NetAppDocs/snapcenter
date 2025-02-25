@@ -1,5 +1,5 @@
 ---
-permalink: concept/reference_pre_defined_snapcenter_roles_and_permissions.html
+permalink: get-started/reference_pre_defined_snapcenter_roles_and_permissions.html
 sidebar: sidebar
 keywords: RBAC, role, permission, pre-defined role
 summary: 'SnapCenter ships with pre-defined roles, each with a set of permissions already enabled. When setting up and administering role-based access control \(RBAC\), you can either use these pre-defined roles or create new ones.'

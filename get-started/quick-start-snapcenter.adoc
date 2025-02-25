@@ -1,0 +1,13 @@
+---
+permalink: get-started/quick-start-snapcenter.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Quick start for SnapCenter software
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The quick start guide provides the basic steps to install and configure the SnapCenter software.
+
