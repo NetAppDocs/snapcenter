@@ -17,7 +17,7 @@ SnapCenter requires several licenses to enable data protection of applications, 
 a|
 SnapCenter Standard controller-based
 a|
-Required for FAS, AFF, All SAN Array (ASA)
+Required for FAS, AFF, ASA
 
 SnapCenter Standard license is a controller-based license and is included as part of the ONTAP One. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a ONTAP One evaluation license by contacting the sales representative.
 

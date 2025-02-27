@@ -19,7 +19,7 @@ When a policy with Azure NetApp Files backup is enabled and associated with an r
 
 == Limitations
 
-* Object storage functionalities for FAS or AFF ONTAP and FSxN storage systems is not supported.
+* Object storage functionalities for FAS, ASA, or AFF ONTAP and FSx storage systems is not supported.
 * Oracle and SAP HANA mount and catalog workflows are not supported for object storage backups but are supported for snapshots.
 * Oracle PDB clones are not supported for object storage backups but are supported for snapshots.
 * Backup verification from object storage, REST API support, clone lifecycle management from object storage, and reporting features for object storage backups are  not supported.

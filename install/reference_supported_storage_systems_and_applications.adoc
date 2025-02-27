@@ -12,6 +12,8 @@ summary: 'You should know the supported storage system, applications and databas
 You should know the supported storage system, applications, and databases.
 
 * SnapCenter supports ONTAP 9.12.1 and later to protect your data.
++
+For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 
 * SnapCenter 6.1 supports NetApp ASA r2 systems (ASA A1K, ASA A70, and ASA A90) that are running ONTAP 9.16.1.
 +
