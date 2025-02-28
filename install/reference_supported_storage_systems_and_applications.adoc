@@ -13,9 +13,9 @@ You should know the supported storage system, applications, and databases.
 
 * SnapCenter supports ONTAP 9.12.1 and later to protect your data.
 
-* SnapCenter 6.1 supports NetApp ASA r2 systems (ASA A1K, ASA A70, and ASA A90) that are running ONTAP 9.16.1.
+* SnapCenter 6.1 supports NetApp ASA r2 systems that are running ONTAP 9.16.1.
 +
-ASA r2 systems offer a unified hardware and software solution for SAN-only environments built on all flash platforms. ASA r2 systems vary from other ONTAP systems (ASA, AFF, and FAS) in the implementation of its storage layer, supported protocols, and ONTAP personality.
+ASA r2 systems offer a unified hardware and software solution for SAN-only environments built on all flash platforms. 
 +
 For information on ASA r2 systems, see https://docs.netapp.com/us-en/asa-r2/index.html[ASA r2 documentation^].
 
@@ -34,3 +34,5 @@ For detailed information about the supported applications and databases, see htt
 * SnapCenter 4.9 P1 and later supports protection of Oracle and Microsoft SQL workloads in VMware Cloud on Amazon Web Services (AWS) Software-Defined Data Center (SDDC) environments.  
 +
 For more information, see https://community.netapp.com/t5/Tech-ONTAP-Blogs/Protect-Oracle-MS-SQL-workloads-using-NetApp-SnapCenter-in-VMware-Cloud-on-AWS/ba-p/449168[Protect Oracle, MS SQL workloads using NetApp SnapCenter in VMware Cloud on AWS SDDC environments].
+
+// 2025 Feb 26, SNAPDOC-321
