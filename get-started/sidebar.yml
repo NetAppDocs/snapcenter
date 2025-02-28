@@ -26,4 +26,4 @@ entries:
       - title: SnapCenter Automation using REST APIs
         url: /get-started/concept_snapcenter_rest_apis.html
   - title: Quick start
-  
+    url: /get-started/quick_start.html
