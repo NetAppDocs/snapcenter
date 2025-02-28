@@ -1,8 +1,6 @@
 section: install
 title: SnapCenter Server installation
 entries:
-  - title: Installation workflow
-    url: /install/install_workflow.html
   - title: Prepare for installing the SnapCenter Server
     entries:
       - title: Domain and workgroup requirements
