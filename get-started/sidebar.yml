@@ -21,6 +21,8 @@ entries:
         url: /get-started/concept_resources_resource_groups_and_policies.html
       - title: Prescripts and postscripts
         url: /get-started/concept_prescripts_and_postscripts.html
+      - title: Learn about supporting ASA r2 systems in SnapCenter
+        url: /get-started/learn-about-supporting-asa-r2-in-snapcenter.html
       - title: SnapCenter Automation using REST APIs
         url: /get-started/concept_snapcenter_rest_apis.html
   - title: Quick start

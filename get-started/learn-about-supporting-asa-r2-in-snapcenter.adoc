@@ -1,5 +1,5 @@
 ---
-permalink: install/learn-about-supporting-asa-r2-in-snapcenter.html
+permalink: get-started/learn-about-supporting-asa-r2-in-snapcenter.html
 sidebar: sidebar
 keywords: ASA r2 systems
 summary: 'SnapCenter 6.1 supports ASA r2 systems that create a simplified experience specific to the needs of SAN-only customers.'
