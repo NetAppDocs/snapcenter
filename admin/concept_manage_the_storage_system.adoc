@@ -76,3 +76,28 @@ NOTE: You cannot select the SVM that is part of a cluster.
 . In the Delete Storage System Connection Settings page, click *OK*.
 +
 NOTE: If an SVM is deleted from ONTAP cluster using ONTAP GUI, in the SnapCenter GUI click *Rediscover* to update the SVM list.
+
+== REST API support 
+
+All storage connections to ONTAP and ASA.r2 storage systems will go through ZAPI by default.  REST API can be enabled for select ONTAP versions.  
++
+You can modify the config keys in the following configuration files:
+* IsRestEnabledForStorageConnection 
++
+Default value is false.
+* MinOntapVersionToUseREST
++
+Default value is 9.13.1.
+
+.Enable connection through REST API
+. Set IsRestEnabledForStorageConnection to true.
+. Add the key in SMCoreServiceHost.dll.config and SnapDriveService.dll.config on both the server and the Windows plug-in hosts.
++
+_<add key="IsRestEnabledForStorageConnection" value="true" />_
+
+.Limit connection through REST API to specific version of ONTAP
+. Set the config parameter MinOntapVersionToUseREST to true.
+. Add the key in SMCoreServiceHost.dll.config and SnapDriveService.dll.config on both the server and the Windows plug-in hosts.
++
+_<add key="MinOntapVersionToUseREST" value="9.13.1" />_
+. Restart the service for SmCore on the server and the plug-in and SnapDrive service on the plug-in machine.
