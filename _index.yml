@@ -8,7 +8,7 @@ indexpage:
         - title: Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337665 
         - title: Learn about SnapCenter
-          url: /concept/concept_snapcenter_overview.html
+          url: /get-started/concept_snapcenter_overview.html
         - title: Upgrade SnapCenter Server and SnapCenter plug-ins
           url: /upgrade/upgrade_workflow.html
     - title: Install SnapCenter Server
