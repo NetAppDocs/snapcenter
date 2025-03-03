@@ -11,19 +11,23 @@ summary: ''
 [.lead]
 The quick start guide provides the basic steps to install and configure the SnapCenter software.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install SnapCenter Server
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for installing SnapCenter Server
 
-You ensure that all the requirements to install the SnapCenter Server are met and then install the SnapCenter Server.
+You should ensure that all the requirements to install the SnapCenter Server are met.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure SnapCenter Server
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install SnapCenter Server
+
+Install the SnapCenter Server.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configure SnapCenter Server
 
 After installing the SnapCenter Server, you should configure it based on your environment.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Install the plug-in for your application
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Install the plug-in for your application
 
 Depending on the application that you are using, you should ensure that the all the requirements to install the plug-in are met and then install the application specific plug-in.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Protect your application
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Protect your application
 
 After installing the SnapCenter Server and the plug-ins, you can create backups of your application. When needed, you can use these backups to restore and clone.
 

@@ -11,6 +11,8 @@ entries:
         url: /get-started/rbac-snapcenter.html
       - title: Disaster Recovery in SnapCenter
         url: /get-started/concept_disaster_recovery.html
+      - title: SnapMirror active sync in SnapCenter
+        url: /get-started/snapmirror-active-sync-snapcenter.html
       - title: Usage of Resources, resource groups, and policies in SnapCenter
         url: /get-started/concept_resources_resource_groups_and_policies.html
       - title: Usage of prescripts and postscripts in SnapCenter
