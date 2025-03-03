@@ -79,7 +79,7 @@ NOTE: If an SVM is deleted from ONTAP cluster using ONTAP GUI, in the SnapCenter
 
 == REST API support 
 
-All storage connections to ONTAP and ASA.r2 storage systems will go through ZAPI by default.  REST API can be enabled for select ONTAP versions.  
+All storage connections to ONTAP and ASA r2 storage systems will go through ZAPI by default.  REST API can be enabled for select ONTAP versions.  
 
 You can modify the config keys in the following configuration files:
 
