@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Disaster Recovery
 summary: 'You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.'
 ---
-= SnapCenter Disaster Recovery
+= Disaster recovery in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
@@ -25,4 +25,4 @@ This section describes the two types of disaster recovery (DR) in SnapCenter:
 
 DR is supported only for SnapCenter Plug-in for SQL Server. When the SnapCenter Plug-in for SQL Server is down, switch to a different SQL host and recover the data by performing few steps. See link:../protect-scsql/task_disaster_recovery_scsql.html[Disaster recovery of SnapCenter Plug-in for SQL Server].
 
-SnapCenter uses ONTAP SnapMirror technology to replicate data. It can be used to replicate data to a secondary site for DR and keep it in sync. A failover can be initiated by breaking the replication relationship in SnapMirror. During failback the synchronization can be reversed and data from the DR site can be replicated back to the primary location.
+SnapCenter uses ONTAP SnapMirror technology to replicate data. It can be used to replicate data to a secondary site for DR and keep it in sync. A failover can be initiated by breaking the replication relationship in SnapMirror. During fallback, the synchronization can be reversed and data from the DR site can be replicated back to the primary location.

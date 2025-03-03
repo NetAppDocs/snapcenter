@@ -1,0 +1,27 @@
+---
+permalink: get-started/snapmirror-active-sync-snapcenter.html
+sidebar: sidebar
+keywords: snapmirror active sync
+summary: 'You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.'
+---
+
+= SnapMirror active sync in SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
+
+For more information on SnapMirror active sync refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror active sync overview].
+
+For SnapMirror active sync, ensure that you have met the various hardware, software, and system configuration requirements. For information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
+
+The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
+
+NOTE: To support host initiator proximity in SnapCenter, it's value, either source or destination should be set in ONTAP.
+
+The use cases not supported in SnapCenter:
+
+* If you convert the existing asymmetric SnapMirror active sync workloads to symmetric by changing the policy on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
+* If there are backups of a resource group (already protected in SnapCenter) and then storage policy is changed on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
+

@@ -19,10 +19,10 @@ SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and Sn
 
 SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate deployment of plug-ins to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
 
-SnapCenter can be deployed in the following ways:
+SnapCenter can be installed either on on-premise or on a public cloud to protect data.
 
 * On premise to protect the following:
-** Data that is on ONTAP FAS, AFF, or All SAN Array (ASA) primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
+** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
 ** Data that is on ONTAP Select primary systems
 ** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to local StorageGRID object storage 
 ** Data that is on ONTAP ASA r2 primary and secondary systems
@@ -36,15 +36,15 @@ SnapCenter can be deployed in the following ways:
 ** Data that is on Amazon FSX for ONTAP
 ** Data that is on primary Azure NetApp Files (Oracle, Microsoft SQL, and SAP HANA)
 
-SnapCenter includes the following key features:
+== Key features
 
-* Centralized, application-consistent data protection
+SnapCenter provides the following key features:
+
+* Centralized, application-consistent data protection of different applications
 +
 Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, IBM Db2, PostgreSQL, MySQL, and Windows Host Filesystems running on ONTAP systems.
 +
-Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter plug-ins for MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM. Apart from this, you can create your own plug-in using the developer's guide. 
-+
-link:../protect-scc/develop_a_plug_in_for_your_application.html[Develop a plug-in for your application]
+Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter plug-ins for MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM. You can also create your own plug-in using the developer's guide. 
 
 * Policy-based backups
 +
@@ -64,138 +64,37 @@ SnapCenter provides quick, space-efficient, application-consistent cloning, whic
 
 * Single user management graphical user interface (GUI)
 +
-The SnapCenter GUI provides a single, one-stop interface for managing backups and clones of a resource in any destination in the Hybrid Cloud.
+SnapCenter provides a GUI that is a single, one-stop interface for managing backups and clones of a resource in any destination in the Hybrid Cloud.
 
 * REST APIs, Windows cmdlets, UNIX commands
 +
-SnapCenter includes REST APIs for most functionality for integration with any orchestration software, and use of Windows PowerShell cmdlets and command-line interface.
-+
-For more information on REST APIs see https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html[REST API overview].
-+
-For more information on Windows cmdlets see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
-+
-For more information on UNIX commands see https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666[SnapCenter Software Command Reference Guide^].
+SnapCenter provides REST APIs for most functionality for integration with any orchestration software, and use of Windows PowerShell cmdlets and command-line interface.
 
-* Centralized data protection Dashboard and reporting
-* Role-Based Access Control (RBAC) for security and delegation.
-* Repository database with High Availability
-+
-SnapCenter provides a built-in repository database with High Availability to store all backup metadata.
-
+* Centralized data protection dashboard and reporting
+* Role-Based Access Control (RBAC) for security and delegation
+* A built-in repository database with high-availability to store all backup metadata
 * Automated push install of plug-ins
-+
-You can automate a remote push of SnapCenter plug-ins from the SnapCenter Server host to application hosts.
-
 * High Availability
-// Removed load balancing as per Manohar's comments
-+
-High availability for SnapCenter is set up using external load balancer (F5). Up to two nodes are supported within the same datacenter.
-// Changed the description as per Manohar's comments
-
 * Disaster Recovery (DR)
-+
-You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash.
-
-* SnapLock
-+
-SnapLock is a high-performance compliance solution for organizations that use write once, read many (WORM) storage to retain files in unmodified form for regulatory and governance purposes. For more information on SnapLock refer https://docs.netapp.com/us-en/ontap/snaplock/[What SnapLock is].
-+
-Locking snapshots ensures that they can't be deleted accidentally or maliciously. SnapCenter allows you to specify the locking period for both primary and secondary snapshots.
-
+* SnapLock https://docs.netapp.com/us-en/ontap/snaplock/[Learn More]
 * SnapMirror active sync (initially released as SnapMirror Business Continuity [SM-BC])
-+
-SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SnapMirror active sync.
-+
-The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
-+
-NOTE: To support host initiator proximity in SnapCenter, it's value, either source or destination should be set in ONTAP.
-+
-SnapMirror active sync functionality not supported in SnapCenter:
+* Synchronous mirroring https://docs.netapp.com/us-en/e-series-santricity/sm-mirroring/overview-mirroring-sync.html[Learn More]
 
-** If you convert the existing asymmetric SnapMirror active sync workloads to symmetric by changing the policy on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
-** If there are backups of a resource group (already protected in SnapCenter) and then storage policy is changed on the SnapMirror active sync relationships from _automatedfailover_ to _automatedfailoverduplex_ in ONTAP, the same is not supported in SnapCenter.
-+
-For more information on SnapMirror active sync refer https://docs.netapp.com/us-en/ontap/smbc/index.html[SnapMirror active sync overview]
-+
-For SnapMirror active sync, ensure that you have met the various hardware, software, and system configuration requirements. For more information refer https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html[Prerequisites]
+== SnapCenter architecture and components
 
-* Synchronous mirroring
-+
-The Synchronous mirroring feature provides online, real-time data replication between storage arrays over a remote distance.
-+
-For more information on Sync mirror refer https://docs.netapp.com/us-en/e-series-santricity/sm-mirroring/overview-mirroring-sync.html[Synchronous mirroring overview]
+The SnapCenter platform is based on a multitiered architecture that includes a centralized management server and a plug-in host. SnapCenter supports multisite data center. The SnapCenter server host and the plug-in host can be at different geographical locations.
 
-== SnapCenter architecture
+image::../media/saphana-br-scs-image6.png["Figure showing input/output dialog or representing written content"]
 
-The SnapCenter platform is based on a multitiered architecture that includes a centralized management server (SnapCenter Server) and a SnapCenter plug-in host.
+SnapCenter includes the SnapCenter Server, the SnapCenter Plug-in package for Windows, and the SnapCenter Plug-In Package for Linux. Each package contains plug-ins for various applications and infrastructure components.
 
-SnapCenter supports multisite data center. The SnapCenter Server and the plug-in host can be at different geographical locations.
+=== SnapCenter Server
 
-image::../media/snapcenter_architecture.gif[snapcenter architecture]
-
-== SnapCenter components
-
-SnapCenter consists of the SnapCenter Server and SnapCenter plug-ins. You should install only the plug-ins that are appropriate for the data you want to protect.
-
-* SnapCenter Server
-* SnapCenter Plug-ins Package for Windows, which includes the following plug-ins:
- ** SnapCenter Plug-in for Microsoft SQL Server
- ** SnapCenter Plug-in for Microsoft Windows
- ** SnapCenter Plug-in for Microsoft Exchange Server
- ** SnapCenter Plug-in for SAP HANA Database
- ** SnapCenter Plug-in for IBM Db2
- ** SnapCenter Plug-in for PostgreSQL
- ** SnapCenter Plug-in for MySQL
- ** SnapCenter Plug-in for MongoDB
- ** SnapCenter Plug-in for ORASCPM (Oracle Applications)
- ** SnapCenter Plug-in for SAP ASE
- ** SnapCenter Plug-in for SAP MaxDB
- ** SnapCenter Plug-in for Storage plug-in
- 
-* SnapCenter Plug-ins Package for Linux, which includes the following plug-ins:
- ** SnapCenter Plug-in for Oracle Database
- ** SnapCenter Plug-in for SAP HANA Database
- ** SnapCenter Plug-in for UNIX file systems
- ** SnapCenter Plug-in for IBM Db2
- ** SnapCenter Plug-in for PostgreSQL
- ** SnapCenter Plug-in for MySQL
- ** SnapCenter Plug-in for MongoDB
- ** SnapCenter Plug-in for ORASCPM (Oracle Applications)
- ** SnapCenter Plug-in for SAP ASE
- ** SnapCenter Plug-in for SAP MaxDB
- ** SnapCenter Plug-in for Storage plug-in
-
-* SnapCenter Plug-ins Package for AIX, which includes the following plug-ins:
- ** SnapCenter Plug-in for Oracle Database
- ** SnapCenter Plug-in for UNIX file systems
- ** SnapCenter Plug-in for IBM Db2
-
-SnapCenter Plug-in for VMware vSphere, formerly NetApp Data Broker, is a standalone virtual appliance that supports SnapCenter data protection operations on virtualized databases and file systems.
-
-== SnapCenter Server
-
-The SnapCenter Server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
-
-SnapCenter Server supports both Microsoft Windows and Linux (RHEL 8.x, RHEL 9.x, SLES 15 SP5)
-
-If you are using the SnapCenter Plug-ins Package for Linux or the SnapCenter Plug-ins Package for AIX, schedules are executed centrally using the Quartz scheduler.
-
-* For SnapCenter Plug-in for Oracle Database, the host agent that runs on the SnapCenter Server host communicates with the SnapCenter Plug-in Loader (SPL) that runs on the Linux or AIX host to perform different data protection operations.
-* For SnapCenter Plug-in for SAP HANA Database and SnapCenter Custom Plug-ins, the SnapCenter Server communicates with these plug-ins through the SCCore agent that runs on the host.
+The SnapCenter Server supports Microsoft Windows and Linux (RHEL 8.x, RHEL 9.x, SLES 15 SP5) operating systems. SnapCenter server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 
 The SnapCenter Server and plug-ins communicate with the host agent using HTTPS. Information about SnapCenter operations is stored in the SnapCenter repository.
 
-NOTE: SnapCenter supports disjoint namespace for Windows hosts. If you face issues when using disjoint namespace, refer to https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_is_unable_to_discover_resources_when_using_disjoint_namespace[SnapCenter is unable to discover resources when using disjoint namespace].
-
-You should run the following commands to know the status of the SnapCenter components running on Linux host:
-
-* `systemctl status snapmanagerweb`
-* `systemctl status scheduler`
-* `systemctl status smcore`
-* `systemctl status nginx`
-* `systemctl status rabbitmq-server`
-
-== SnapCenter plug-ins
+=== SnapCenter plug-ins
 
 Each SnapCenter plug-in supports specific environments, databases, and applications.
 
@@ -203,9 +102,9 @@ Each SnapCenter plug-in supports specific environments, databases, and applicati
 | Plug-in name | Included in install package | Requires other plug-ins | Installed on host | Platform supported
 
 a|
-Plug-in for SQL Server
+SnapCenter plug-in for Microsoft SQL Server
 a|
-Plug-ins Package for Windows
+Plug-ins package for Windows
 a|
 Plug-in for Windows
 a|
@@ -213,9 +112,9 @@ SQL Server host
 a|
 Windows
 a|
-Plug-in for Windows
+SnapCenter plug-in for Windows
 a|
-Plug-ins Package for Windows
+Plug-ins package for Windows
 a|
 
 a|
@@ -223,9 +122,9 @@ Windows host
 a|
 Windows
 a|
-Plug-in for Exchange
+SnapCenter plug-in for Microsoft Exchange Server
 a|
-Plug-ins Package for Windows
+Plug-ins package for Windows
 a|
 Plug-in for Windows
 a|
@@ -233,9 +132,9 @@ Exchange Server host
 a|
 Windows
 a|
-Plug-in for Oracle Database
+SnapCentre plug-in for Oracle Database
 a|
-Plug-ins Package for Linux and Plug-ins Package for AIX
+Plug-ins package for Linux and plug-ins Package for AIX
 a|
 Plug-in for UNIX
 a|
@@ -243,172 +142,112 @@ Oracle host
 a|
 Linux or AIX
 a|
-Plug-in for SAP HANA Database
+SnapCenter plug-in for SAP HANA Database
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 HDBSQL client host
 a|
 Linux or Windows
 a|
-Custom Plug-ins
+SnapCenter Custom Plug-ins
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-For file system backups, Plug-in for Windows
+For file system backups, plug-in for Windows
 a|
 Custom application host
 a|
 Linux or Windows
 a|
-Plug-in for IBM Db2
+SnapCenter plug-in for IBM Db2
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins Package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 Db2 host
 a|
-Linux or Windows
+Linux, AIX, or Windows
 a|
-Plug-in for PostgreSQL
+SnapCenter plug-in for PostgreSQL
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 PostgreSQL host
 a|
 Linux or Windows
 a|
-Plug-in for MySQL
+SnaoCenter plug-in for MySQL
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
 Plug-in for UNIX or Plug-in for Windows
 a|
-Db2MySQL host
+MySQL host
 a|
 Linux or Windows
 a|
-Plug-in for MongoDB
+SnapCenter plug-in for MongoDB
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 MongoDB host
 a|
 Linux or Windows
 a|
-Plug-in for ORASCPM (Oracle Applications)
+SnapCenter plug-in for ORASCPM (Oracle Applications)
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 Oracle host
 a|
 Linux or Windows
 a|
-Plug-in for SAP ASE
+SnapCenter plug-in for SAP ASE
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 SAP host
 a|
 Linux or Windows
 a|
-Plug-in for SAP MaxDB
+SnapCenter plug-in for SAP MaxDB
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 SAP MaxDB host
 a|
 Linux or Windows
 a|
-Plug-in for Storage plug-in
+SnapCenter plug-in for Storage plug-in
 a|
-Plug-ins Package for Linux and Plug-ins Package for Windows
+Plug-ins package for Linux and Plug-ins package for Windows
 a|
-Plug-in for UNIX or Plug-in for Windows
+Plug-in for UNIX or plug-in for Windows
 a|
 Storage host
 a|
 Linux or Windows
 |===
-NOTE: The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs), and it supports the SnapCenter application-specific plug-ins to protect application-consistent backup and restore operations for virtualized databases and file systems.
 
-For SnapCenter 4.1.1 users, the SnapCenter Plug-in for VMware vSphere 4.1.1 documentation has information on protecting virtualized databases and file systems. For SnapCenter 4.2.x users, the NetApp Data Broker 1.0 and 1.0.1, documentation has information on protecting virtualized databases and file systems using the SnapCenter Plug-in for VMware vSphere that is provided by the Linux-based NetApp Data Broker virtual appliance (Open Virtual Appliance format). For users using SnapCenter 4.3 or later, the https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation^] has information on protecting virtualized databases and file systems using the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format).
+The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs), and it supports the SnapCenter application-specific plug-ins to protect application-consistent backup and restore operations for virtualized databases and file systems.
 
-=== SnapCenter Plug-in for Microsoft SQL Server features
+If your database or filesystem is stored on VMs, or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance. For information, refer https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation^].
 
-* Automates application-aware backup, restore, and clone operations for Microsoft SQL Server databases in your SnapCenter environment.
-* Supports Microsoft SQL Server databases on VMDK and raw device mapping (RDM) LUNs when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter
-* Supports provisioning SMB shares only. Support is not provided for backing up SQL Server databases on SMB shares.
-* Supports importing backups from SnapManager for Microsoft SQL Server to SnapCenter.
-
-=== SnapCenter Plug-in for Microsoft Windows features
-
-* Enables application-aware data protection for other plug-ins that are running in Windows hosts in your SnapCenter environment
-* Automates application-aware backup, restore, and clone operations for Microsoft file systems in your SnapCenter environment
-* Supports storage provisioning, Snapshot consistency, and space reclamation for Windows hosts
-+
-NOTE: The Plug-in for Windows provisions SMB shares and Windows file systems on physical and RDM LUNs but does not support backup operations for Windows file systems on SMB shares.
-
-=== SnapCenter Plug-in for Microsoft Exchange Server features
-
-* Automates application-aware backup and restore operations for Microsoft Exchange Server databases and Database Availability Groups (DAGs) in your SnapCenter environment
-* Supports virtualized Exchange Servers on RDM LUNs when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter
-
-=== SnapCenter Plug-in for Oracle Database features
-
-* Automates application-aware backup, restore, recovery, verify, mount, unmount, and clone operations for Oracle databases in your SnapCenter environment
-* Supports Oracle databases for SAP, however, SAP BR*Tools integration is not provided
-
-=== SnapCenter Plug-in for UNIX features
-
-* Enables the Plug-in for Oracle Database to perform data protection operations on Oracle databases by handling the underlying host storage stack on Linux or AIX systems
-* Supports Network File System (NFS) and storage area network (SAN) protocols on a storage system that is running ONTAP.
-* For Linux systems, Oracle databases on VMDK and RDM LUNs is supported when you deploy the SnapCenter Plug-in for VMware vSphere and register the plug-in with SnapCenter.
-* Supports Mount Guard for AIX on SAN filesystems and LVM layout.
-* Supports Enhanced Journaled File System (JFS2) with inline logging on SAN filesystems and LVM layout for AIX systems only.
-+
-SAN native devices, filesystems, and LVM layouts built on SAN devices are supported.
-// [SD]: Updated this section for BURT 1391312 in 4.5
-* Automates application-aware backup, restore, and clone operations for UNIX file systems in your SnapCenter environment
-
-=== SnapCenter Plug-in for SAP HANA Database features
-
-Automates application-aware backup, restore, and cloning of SAP HANA databases in your SnapCenter environment.
-
-=== NetApp supported plug-ins features
-
-NetApp supported plug-ins are MongoDB, ORASCPM (Oracle Applications), SAP ASE, SAP MaxDB, and Storage plug-in.
-
-* Supports other plug-ins to manage applications or databases that are not supported by other SnapCenter plug-ins. NetApp supported plug-ins are not provided as part of the SnapCenter installation.
-* Supports creating mirror copies of backup sets on another volume and performing disk-to-disk backup replication.
-* Supports both Windows and Linux environments. In Windows environments, custom applications via custom plug-ins can optionally utilize SnapCenter Plug-in for Microsoft Windows to take file system consistent backups.
-
-=== SnapCenter Plug-in for IBM Db2
-
-Automates application-aware backup, restore, and cloning of IBM Db2 databases in your SnapCenter environment.
-
-=== SnapCenter Plug-in for PostgreSQL
-
-Automates application-aware backup, restore, and cloning of PostgreSQL instances in your SnapCenter environment.
-
-=== SnapCenter Plug-in for MySQL
-
-Automates application-aware backup, restore, and cloning of MySQL instances in your SnapCenter environment.
-
-== SnapCenter repository
+=== SnapCenter repository
 
 The SnapCenter repository, sometimes referred to as the NSM database, stores information and metadata for every SnapCenter operation.
 

@@ -5,7 +5,7 @@ keywords: ASA r2 systems
 summary: 'SnapCenter 6.1 supports ASA r2 systems that create a simplified experience specific to the needs of SAN-only customers.'
 ---
 
-= Learn about supporting ASA r2 systems in SnapCenter
+= Learn about ASA r2 systems in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
