@@ -13,8 +13,10 @@ The quick start guide provides the basic steps to install and configure the Snap
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for installing SnapCenter Server
 
+[role="quick-margin-para"]
 You should ensure that all the requirements to install the SnapCenter Server are met.
 
+[role="quick-margin-list"]
 * link:../install/reference_domain_and_workgroup_requirements.html[Domain and workgroup requirements]
 * link:../install/reference_space_and_sizing_requirements.html[Space and sizing requirements]
 * link:../install/reference_san_host_requirements.html[SAN host requirements]
@@ -30,18 +32,26 @@ You should ensure that all the requirements to install the SnapCenter Server are
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install SnapCenter Server
 
+[role="quick-margin-para"]
 Install the SnapCenter Server.
+
+[role="quick-margin-list"]
+* link:../install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install SnapCenter server on Windows]
+* link:../install/install_snapcenter_server_linux.html[Install SnapCenter Server on Linux]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configure SnapCenter Server
 
+[role="quick-margin-para"]
 After installing the SnapCenter Server, you should configure it based on your environment.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Install the plug-in for your application
 
+[role="quick-margin-para"]
 Depending on the application that you are using, you should ensure that the all the requirements to install the plug-in are met and then install the application specific plug-in.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Protect your application
 
+[role="quick-margin-para"]
 After installing the SnapCenter Server and the plug-ins, you can create backups of your application. When needed, you can use these backups to restore and clone.
 
 
