@@ -136,15 +136,10 @@ a|
 Secondary snapshot copy locking period
 a|
 Select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 IMPORTANT: You should set the retention count to 2 or higher. The minimum value for the retention count is 2.
 +
-NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+NOTE: The maximum retention value is 1018. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
 . In the Script page, enter the path of the prescript or postscript that you want the SnapCenter Server to run before or after the backup operation, respectively and a time limit that SnapCenter waits for the script to execute before timing out.
 +

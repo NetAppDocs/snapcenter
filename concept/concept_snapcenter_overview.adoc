@@ -22,7 +22,7 @@ SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. 
 SnapCenter can be deployed in the following ways:
 
 * On premise to protect the following:
-** Data that is on ONTAP FAS, AFF, or All SAN Array (ASA) primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
+** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
 ** Data that is on ONTAP Select primary systems
 ** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to local StorageGRID object storage 
 ** Data that is on ONTAP ASA r2 primary and secondary systems
