@@ -3,21 +3,19 @@ title: Get started
 entries:
   - title: Learn about SnapCenter Software
     entries:
-      - title: SnapCenter overview
+      - title: Overview
         url: /get-started/concept_snapcenter_overview.html
-      - title: Security features in SnapCenter
+      - title: Security and authentication features
         url: /get-started/reference_data_security.html
-      - title: Role-based access control in SnapCenter
+      - title: Role-based access control
         url: /get-started/rbac-snapcenter.html
-      - title: Disaster Recovery in SnapCenter
+      - title: Disaster Recovery
         url: /get-started/concept_disaster_recovery.html
-      - title: SnapMirror active sync in SnapCenter
+      - title: SnapMirror active sync
         url: /get-started/snapmirror-active-sync-snapcenter.html
-      - title: Usage of Resources, resource groups, and policies in SnapCenter
+      - title: Key concepts of data protection
         url: /get-started/concept_resources_resource_groups_and_policies.html
-      - title: Usage of prescripts and postscripts in SnapCenter
-        url: /get-started/concept_prescripts_and_postscripts.html
-      - title: Learn about ASA r2 systems in SnapCenter
+      - title: SnapCenter features supported on ASA r2 systems
         url: /get-started/learn-about-supporting-asa-r2-in-snapcenter.html
   - title: Quick start
     url: /get-started/quick-start-snapcenter.html
