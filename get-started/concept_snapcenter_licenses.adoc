@@ -1,5 +1,5 @@
 ---
-permalink: install/get-started_snapcenter_licenses.html
+permalink: get-started/concept_snapcenter_licenses.html
 sidebar: sidebar
 keywords: licenses, FAS, AFF, ASA, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery
 summary: 'SnapCenter requires several licenses to enable data protection operations. The type of SnapCenter licenses you install depends on your storage environment and the features that you want to use.'

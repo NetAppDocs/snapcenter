@@ -21,7 +21,7 @@ You should ensure that all the requirements to install the SnapCenter Server are
 * link:../install/reference_space_and_sizing_requirements.html[Space and sizing requirements]
 * link:../install/reference_san_host_requirements.html[SAN host requirements]
 * link:../install/reference_supported_browsers.html[Supported browsers]
-* link:../install/reference_reference_connection_and_port_requirements.html[Connection and port requirements]
+* link:../install/reference_connection_and_port_requirements.html[Connection and port requirements]
 * link:../install/register_enable_software_access.html[Register to access SnapCenter software]
 * link:../install/concept_authentication_methods_for_your_credentials.html[Authentication methods for your credentials]
 * link:../install/concept_svm_connections_and_credentials.html[SVM connections and credentials]

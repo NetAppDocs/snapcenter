@@ -14,7 +14,7 @@ indexpage:
     - title: Install SnapCenter Server
       links:
         - title: Required licenses
-          url: /install/concept_snapcenter_licenses.html
+          url: /get-started/concept_snapcenter_licenses.html
         - title: Configure ports
           url: /install/reference_connection_and_port_requirements.html
         - title: Register to access the SnapCenter software
