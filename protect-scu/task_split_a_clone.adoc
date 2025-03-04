@@ -4,7 +4,9 @@ sidebar: sidebar
 keywords: split clone, snapcenter
 summary: 'You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.'
 ---
+
 = Split a clone
+
 :icons: font
 :imagesdir: ../media/
 

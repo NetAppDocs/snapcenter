@@ -19,9 +19,9 @@ SnapCenter Standard controller-based
 a|
 Required for FAS, AFF, ASA
 
-SnapCenter Standard license is a controller-based license and is included as part of the ONTAP One. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a ONTAP One evaluation license by contacting the sales representative.
+SnapCenter Standard license is a controller-based license and is included as part of NetApp ONTAP One. If you have the SnapManager Suite license, you also get the SnapCenter Standard license entitlement. If you want to install SnapCenter on a trial basis with FAS, AFF, or ASA storage, you can obtain a NetApp ONTAP One evaluation license by contacting the sales representative.
 
-For information on licenses included with ONTAP One, refer to https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one[Licenses included with ONTAP One].
+For information on licenses included with NetApp ONTAP One, refer to https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one[Licenses included with NetApp ONTAP One].
 
 NOTE: SnapCenter is also offered as part of data protection bundle. If you have purchased A400 or later, you should purchase the data protection bundle.
 

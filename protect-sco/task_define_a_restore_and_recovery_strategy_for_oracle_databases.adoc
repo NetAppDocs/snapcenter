@@ -65,6 +65,8 @@ Even if you have forcefully enabled in-place restore, SnapCenter performs connec
 
 If the database layout is similar to the backup and has not undergone any configuration change on the storage and database stack, in-place restore is performed, wherein the restore of file or LUN is performed on ONTAP. SnapCenter supports only Single File SnapRestore (SFSR) as part of the in-place restore method.
 
+NOTE: NetApp ONTAP supports in-place restore from secondary location.
+
 If you want to perform in-place restore on the database, ensure that you have only datafiles on the ASM disk group. You must create a backup after any changes are made to the ASM disk group or in the physical structure of the database. After performing in-place restore, the disk group will contain the same number datafiles as at the time of backup.
 
 The in-place restore will be applied automatically when disk group or mount point matches the following criteria:

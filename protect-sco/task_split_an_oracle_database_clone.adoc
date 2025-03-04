@@ -20,7 +20,8 @@ For example, after you create clone1 from a database backup, you can create a ba
 After splitting clone2, you can perform the clone split operation on clone1 because clone1 is no longer the intermediate clone.
 
 * When you split a clone, the backup copies of the clone are deleted.
-* For information about clone split operation limitations, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
+* For information about FlexClone volume split operations, see,  
+https://docs.netapp.com/us-en/ontap/volumes/split-flexclone-from-parent-task.html[Split a FlexClone volume from its parent volume]
 * Ensure that the volume or aggregate on the storage system is online.
 
 *Steps*
