@@ -170,7 +170,7 @@ Retain the backup copies for a specific number of days.
  
 IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
 
-NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+NOTE: The maximum retention value is 1018. Backups will fail if retention is set to a value higher than what the underlying NetApp ONTAP version supports.
 
 [loweralpha,start=2]
 .. Length of time to keep snapshots
@@ -182,12 +182,7 @@ Snaplock retention period should be less than 100 years.
 
 .. If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
 +
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
-+
-This example sets the log Snapshot retention to 2:
+This example sets the log snapshot retention to 2:
 +
 .Show Example
 [%collapisble]

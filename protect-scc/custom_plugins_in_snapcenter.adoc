@@ -32,7 +32,7 @@ For plug-ins created in NATIVE style, ensure that you do not provide the extensi
 a|
 Version
 a|
-Plug-in version. Can include both major and minor version. For example, 1.0, 1.1, 2.0, 2.1
+Plug-in version. Can include both major and minor version. For example, 5.0, 6.0, 6.1
 a|
 DisplayName
 a|

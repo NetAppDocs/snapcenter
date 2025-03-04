@@ -11,7 +11,7 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 [.lead]
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
 
-* All-access commands: Minimum privileges required for ONTAP 8.3.0 and later
+* All-access commands: Minimum privileges required for ONTAP 9.12.1 and later
 ** event generate-autosupport-log
 ** job history show
 ** job stop

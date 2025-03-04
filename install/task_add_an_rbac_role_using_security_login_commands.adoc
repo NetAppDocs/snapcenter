@@ -1,15 +1,15 @@
 ---
 permalink: install/task_add_an_rbac_role_using_security_login_commands.html
 sidebar: sidebar
-keywords: RBAC roles, add, ONTAP RBAC role
-summary: 'You can use the security login commands to add an ONTAP RBAC role when your storage systems are running clustered ONTAP.'
+keywords: RBAC roles, add, NetApp ONTAP RBAC role
+summary: 'You can use the security login commands to add an NetApp ONTAP RBAC role when your storage systems are running clustered NetApp ONTAP.'
 ---
-= Add an ONTAP RBAC role using security login commands
+= Add an NetApp ONTAP RBAC role using security login commands
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the security login commands to add an ONTAP RBAC role when your storage systems are running clustered ONTAP.
+You can use the security login commands to add a NetApp ONTAP RBAC role when your storage systems are running clustered ONTAP.
 
 .Before you begin
 
@@ -31,11 +31,11 @@ You must always assign the all-access privileges first.
 
 *About this task*
 
-To simplify configuring these roles on storage systems, you can use the RBAC User Creator for Data ONTAP tool, which is posted on the NetApp Communities Forum.
+To simplify configuring these roles on storage systems, you can use the RBAC User Creator for NetApp ONTAP tool, which is posted on the NetApp Communities Forum.
 
-This tool automatically handles setting up the ONTAP privileges correctly. For example, RBAC User Creator for Data ONTAP tool automatically adds the privileges in the correct order so that the all-access privileges appear first. If you add the read-only privileges first and then add the all-access privileges, ONTAP marks the all-access privileges as duplicates and ignores them.
+This tool automatically handles setting up the ONTAP privileges correctly. For example, RBAC User Creator for NetApp ONTAP tool automatically adds the privileges in the correct order so that the all-access privileges appear first. If you add the read-only privileges first and then add the all-access privileges, ONTAP marks the all-access privileges as duplicates and ignores them.
 
-NOTE: If you later upgrade SnapCenter or ONTAP, you should re-run the RBAC User Creator for Data ONTAP tool to update the user roles you created previously. User roles created for an earlier version of SnapCenter or ONTAP do not work properly with upgraded versions. When you re-run the tool, it automatically handles the upgrade. You do not need to recreate the roles.
+NOTE: If you later upgrade SnapCenter or ONTAP, you should re-run the RBAC User Creator for NetApp ONTAP tool to update the user roles you created previously. User roles created for an earlier version of SnapCenter or ONTAP do not work properly with upgraded versions. When you re-run the tool, it automatically handles the upgrade. You do not need to recreate the roles.
 
 More information about setting up ONTAP RBAC roles, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-adm-auth-rbac/home.html[ONTAP 9 Administrator Authentication and RBAC Power Guide^].
 
