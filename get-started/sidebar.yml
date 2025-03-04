@@ -5,17 +5,19 @@ entries:
     entries:
       - title: Overview
         url: /get-started/concept_snapcenter_overview.html
-      - title: Security and authentication features
+      - title: Security and authentication
         url: /get-started/reference_data_security.html
       - title: Role-based access control
         url: /get-started/rbac-snapcenter.html
       - title: Disaster Recovery
         url: /get-started/concept_disaster_recovery.html
+      - title: Licensing
+        url: /get-started/concept_snapcenter_licenses.html
       - title: SnapMirror active sync
         url: /get-started/snapmirror-active-sync-snapcenter.html
       - title: Key concepts of data protection
         url: /get-started/concept_resources_resource_groups_and_policies.html
-      - title: SnapCenter features supported on ASA r2 systems
-        url: /get-started/learn-about-supporting-asa-r2-in-snapcenter.html
+      - title: Supported storage systems and applications
+        url: /get-started/reference_supported_storage_systems_and_applications.html
   - title: Quick start
     url: /get-started/quick-start-snapcenter.html
