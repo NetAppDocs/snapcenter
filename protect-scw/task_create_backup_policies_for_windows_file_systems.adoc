@@ -136,11 +136,6 @@ a|
 Secondary snapshot copy locking period
 a|
 Select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 IMPORTANT: You should set the retention count to 2 or higher. The minimum value for the retention count is 2.
 +

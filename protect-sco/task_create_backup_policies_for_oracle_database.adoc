@@ -125,11 +125,6 @@ a|
 Secondary snapshot copy locking period
 a|
 If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 +
 NOTE:  You can retain archive log backups only if you have selected the archive log files as part of your backup.
@@ -163,11 +158,6 @@ a|
 Secondary snapshot copy locking period
 a|
 If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 +
 NOTE:  You can retain archive log backups only if you have selected the archive log files as part of your backup.

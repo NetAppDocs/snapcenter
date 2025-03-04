@@ -73,11 +73,6 @@ a|
 Secondary snapshot locking period
 a|
 Select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 +
 IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.

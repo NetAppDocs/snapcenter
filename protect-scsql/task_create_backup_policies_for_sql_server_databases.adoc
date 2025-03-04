@@ -182,11 +182,6 @@ Snaplock retention period should be less than 100 years.
 
 .. If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
 +
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
-+
 This example sets the log snapshot retention to 2:
 +
 .Show Example
