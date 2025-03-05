@@ -9,13 +9,13 @@ summary: 'A SnapCenter Standard controller-based license is required if you are 
 :imagesdir: ../media/
 
 [.lead]
-A SnapCenter Standard controller-based license is required if you are using FAS, AFF, or All SAN Array (ASA) storage controllers.
+A SnapCenter Standard controller-based license is required if you are using FAS, AFF, or ASA storage controllers.
 
 The controller-based license has the following characteristics:
 
 * SnapCenter Standard entitlement included with purchase of Premium or Flash Bundle (not with the base pack)
 * Unlimited storage usage
-* Enabled by adding it directly to the FAS, AFF, or ASA storage controller by using either the ONTAP System Manager or the storage cluster command line
+* Enabled by adding it directly to the FAS, AFF, or ASA storage controller by using either ONTAP System Manager or the ONTAP CLI.
 +
 NOTE: You do not enter any license information in the SnapCenter GUI for the SnapCenter controller-based licenses.
 
@@ -139,7 +139,7 @@ All-Flash Optimized: false
 
 == Step 4: Retrieve the serial number of the controller-based license
 
-If you are using FAS or AFF storage, you can retrieve the SnapCenter controller-based license from the NetApp Support Site before you can install it using the ONTAP command line.
+If you are using FAS, ASA, or AFF storage, you can retrieve the SnapCenter controller-based license from the NetApp Support Site before you can install it using the ONTAP command line.
 
 .Before you begin
 

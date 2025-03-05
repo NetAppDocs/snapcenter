@@ -13,15 +13,9 @@ If you need to reseed a replica copy, for instance when a copy is corrupt, you c
 
 .Before you begin
 
-* You must be using SnapCenter Server 4.1 or later, and Plug-in for Exchange 4.1 or later.
+You must have created a backup of the database you want to reseed.
 +
-Reseeding a replica is not supported in SnapCenter versions earlier than 4.1.
-
-* You must have created a backup of the database you want to reseed.
-
-|===
-*Best Practice:* To avoid lagging between nodes, we recommend that you either create a new backup before you perform a reseed operation, or choose the host with the latest backup.
-|===
+To avoid lagging between nodes, you can either create a new backup before you perform a reseed operation, or choose the host with the latest backup.
 
 .Steps
 

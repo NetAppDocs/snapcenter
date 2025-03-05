@@ -70,7 +70,7 @@ NOTE: You should not use a wildcard entry (*) to allow all commands.
 
 == Configure sudo privileges for non-root users for Linux host
 
-SnapCenter 2.0 and later releases allow a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. The plug-in processes will be running as an effective non-root user. You should configure sudo privileges for the non-root user to provide access to several paths.
+SnapCenter allows a non-root user to install the SnapCenter Plug-ins Package for Linux and to start the plug-in process. The plug-in processes will be running as an effective non-root user. You should configure sudo privileges for the non-root user to provide access to several paths.
 
 *What you will need*
 

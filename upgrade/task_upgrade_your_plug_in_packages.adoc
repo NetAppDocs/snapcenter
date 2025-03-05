@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: upgrade, upgrade plug-in packages
 summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade.'
 ---
+
 = Upgrade your plug-in packages
 :icons: font
 :imagesdir: ../media/

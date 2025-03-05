@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: upgrade, upgrade snapcenter server, windows
 summary: 'You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.'
 ---
+
 = Upgrade the SnapCenter Server on Windows host
 :icons: font
 :imagesdir: ../media/
@@ -30,9 +31,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 
 * Before initiating the upgrade operation, if you have manually placed the server host in maintenance mode, post upgrade you need to manually bring the server host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
 
-* For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to 4.7 version for the SCRIPTS_PATH to run.
-+
-For the existing backup and verification schedules with prescripts and postscripts enabled in the policy, the backup operations will continue to work after upgrade.
+* For the existing backup and verification schedules with prescripts and postscripts enabled in the policy, the backup operations will continue to work after upgrade.
 +
 In the *Job details* page, a warning message recommends that the customer should copy the scripts to the SCRIPTS_PATH and edit the policy to provide a path that is relative to the SCRIPTS_PATH. For the clone lifecycle job, the warning message appears at the sub-job level.
 

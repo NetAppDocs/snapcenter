@@ -107,7 +107,7 @@ Select *Copies to keep*, and then specify the number of Snapshots that you want 
 
 If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
 
-NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+NOTE: The maximum retention value is 1018. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
 IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
 
@@ -125,11 +125,6 @@ a|
 Secondary snapshot copy locking period
 a|
 If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 +
 NOTE:  You can retain archive log backups only if you have selected the archive log files as part of your backup.
@@ -145,7 +140,7 @@ Select *Copies to keep*, and then specify the number of Snapshots that you want 
 
 If the number of Snapshots exceeds the specified number, the Snapshots are deleted with the oldest copies deleted first.
 
-NOTE: The maximum retention value is 1018 for resources on ONTAP 9.4 or later, and 254 for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
+NOTE: The maximum retention value is 1018. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports.
 
 IMPORTANT: You must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first Snapshot is the reference Snapshot for the SnapVault relationship until a newer Snapshot is replicated to the target.
 
@@ -163,11 +158,6 @@ a|
 Secondary snapshot copy locking period
 a|
 If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
-
-For this option to be effective you must do the following tasks:
-
-* Select the *Primary snapshot copy locking period*.
-* Select one or both of the secondary replication options.
 |===
 +
 NOTE:  You can retain archive log backups only if you have selected the archive log files as part of your backup.

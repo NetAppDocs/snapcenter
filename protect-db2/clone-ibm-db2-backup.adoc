@@ -25,7 +25,8 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 .About this task
 
-* For information about clone split operation limitations, see http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide^].
+* For information about FlexClone volume split operations, see,  
+https://docs.netapp.com/us-en/ontap/volumes/split-flexclone-from-parent-task.html[Split a FlexClone volume from its parent volume].
 
 * For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault Snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
 

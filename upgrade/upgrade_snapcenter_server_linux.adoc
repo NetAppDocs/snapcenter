@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: upgrade, upgrade snapcenter server, linux
 summary: 'You can use the SnapCenter Server installer file to upgrade the SnapCenter Server.'
 ---
+
 = Upgrade the SnapCenter Server on Linux host
 :icons: font
 :imagesdir: ../media/
