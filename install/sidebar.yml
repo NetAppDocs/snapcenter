@@ -3,16 +3,8 @@ title: SnapCenter Server installation
 entries:
   - title: Prepare for installing the SnapCenter Server
     entries:
-      - title: Domain and workgroup requirements
-        url: /install/reference_domain_and_workgroup_requirements.html
-      - title: Space and sizing requirements
-        url: /install/reference_space_and_sizing_requirements.html
-      - title: SAN host requirements
-        url: /install/reference_san_host_requirements.html
-      - title: Supported browsers
-        url: /install/reference_supported_browsers.html
-      - title: Connection and port requirements
-        url: /install/reference_connection_and_port_requirements.html
+      - title: Requirements
+        url: /install/requirements-to-install-snapcenter-server.html
       - title: Register to access the SnapCenter software
         url: /install/register_enable_software_access.html
       - title: Authentication methods for your credentials

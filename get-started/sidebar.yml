@@ -19,5 +19,7 @@ entries:
         url: /get-started/concept_resources_resource_groups_and_policies.html
       - title: Supported storage systems and applications
         url: /get-started/reference_supported_storage_systems_and_applications.html
+      - title: Authentication methods
+        url: /get-started/concept_authentication_methods_for_your_credentials.html
   - title: Quick start
     url: /get-started/quick-start-snapcenter.html
