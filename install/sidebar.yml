@@ -22,7 +22,7 @@ entries:
       - title: Install the SnapCenter Server on Linux host
         url: /install/install_snapcenter_server_linux.html
       - title: Register SnapCenter Software
-        url: /install/register_snapcenter_software.html
+        url: /install/register-snapcenter-software.html
       - title: Log in to SnapCenter
         url: /install/task_log_in_to_snapcenter.html
   - title: Configure CA Certificate for Windows host

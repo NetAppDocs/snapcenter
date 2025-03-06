@@ -314,7 +314,7 @@ You must configure credentials that are used to perform data protection operatio
 *About this task*
 
 You should review the different authentication methods supported for Oracle database. For information, see
-link:../install/concept_authentication_methods_for_your_credentials.html[Authentication methods for your credentials^].
+link:../get-started/concept_authentication_methods_for_your_credentials.html[Authentication methods for your credentials^].
 
 If you set up credentials for individual resource groups and the user name does not have full admin privileges, the user name must at least have resource group and backup privileges.
 

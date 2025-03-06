@@ -1,5 +1,5 @@
 ---
-permalink: install/register_enable_software_access.html
+permalink: install/register-snapcenter-software.html
 sidebar: sidebar
 keywords: register, new customer, NetApp account, enable support
 summary: 'If you do not have an existing NetApp account, you should register the product to enable support.'
