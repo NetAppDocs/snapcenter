@@ -7,10 +7,6 @@ entries:
         url: /install/requirements-to-install-snapcenter-server.html
       - title: Register to access the SnapCenter software
         url: /install/register_enable_software_access.html
-      - title: Authentication methods for your credentials
-        url: /install/concept_authentication_methods_for_your_credentials.html
-      - title: Storage Virtual Machine connections and credentials
-        url: /install/concept_svm_connections_and_credentials.html
       - title: Multi-factor authentication (MFA)
         entries:
           - title: Manage Multi-factor authentication (MFA)
@@ -103,6 +99,8 @@ entries:
     url: /install/task_configure_audit_log_settings.html
   - title: Add storage systems
     url: /install/task_add_storage_systems.html
+  - title: Storage Virtual Machine connections and credentials
+    url: /install/concept_svm_connections_and_credentials.html
   - title: Add SnapCenter Standard controller-based licenses
     url: /install/concept_snapcenter_standard_controller_based_licenses.html
   - title: Provision your storage system
