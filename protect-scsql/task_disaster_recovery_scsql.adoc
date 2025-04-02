@@ -24,4 +24,4 @@ When the SnapCenter Plug-in for SQL Server is down, use the following steps to s
 
 .Related information
 
-See the link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.
+See the link:https://www.youtube.com/watch?v=_8NG-tTGy8k&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg[Disaster Recovery APIs^] video.
