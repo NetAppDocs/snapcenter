@@ -2,7 +2,7 @@
 permalink: install/reference_supported_browsers.html
 sidebar: sidebar
 keywords: SnapCenter, browsers, chrome, IE, Edge
-summary: 'SnapCenter Software can be used on multiple browsers.'
+summary: 'SnapCenter software can be used on multiple browsers.'
 ---
 
 = Supported browsers
@@ -10,7 +10,7 @@ summary: 'SnapCenter Software can be used on multiple browsers.'
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter Software can be used on multiple browsers.
+SnapCenter software can be used on multiple browsers.
 
 * Chrome version 125 and later
 * Microsoft Edge 110.0.1587.17 and later
