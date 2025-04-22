@@ -2,16 +2,16 @@
 permalink: release-notes/what's-new-in-snapcenter61.html
 sidebar: sidebar
 keywords: what is new, features, enhancements, 6.1
-summary: 'The 6.1 release of SnapCenter Software includes several new features and enhancements.'
+summary: 'The 6.1 release of SnapCenter software includes several new features and enhancements.'
 ---
 
-= What's new in SnapCenter Software 6.1
+= What's new in SnapCenter software 6.1
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-The 6.1 release of SnapCenter Software includes several new features and enhancements.
+The 6.1 release of SnapCenter software includes several new features and enhancements.
 
 |===
 | Update | Description

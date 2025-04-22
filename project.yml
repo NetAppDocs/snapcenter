@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Software
+  name: SnapCenter software
   internal:
     pdf_enabled: true
   prod:
@@ -26,7 +26,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter Software 6.1 docs
+    - title: SnapCenter software 6.1 docs
       url: /index.html
     - section: release-notes
     - section: get-started

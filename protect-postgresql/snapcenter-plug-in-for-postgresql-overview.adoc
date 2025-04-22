@@ -17,5 +17,5 @@ When the Plug-in for PostgreSQL cluster is installed, you can use SnapCenter wit
 
 SnapCenter Plug-in for PostgreSQL supports NFS and SAN on ONTAP and Azure NetApp File storage layouts.
 
-VMDK or virtual storage layout is supported.
+VMDK, vVol, and RDM virtual storage layout is supported.
 
