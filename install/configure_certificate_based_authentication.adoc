@@ -1,0 +1,195 @@
+---
+permalink: install/configure_certificate_based_authentication.html
+sidebar: sidebar
+keywords: exporting certificates, enable certificate-based authentication, certificate-based authentication, configure CA signed key pair, configure root, configure intermediate certificates, security,authentication, export CA certificates
+summary: 'Export SnapCenter certificates.'
+---
+= Configure Certificate-based authentication
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Certificate-based authentication enhances security by verifying the identity of both the SnapCenter Server and plug-in hosts, ensuring secure and encrypted communication.
+
+== Export Certificate Authority (CA) certificates from SnapCenter Server
+You should export the CA certificates from the SnapCenter Server to the plug-in hosts using the Microsoft management console (MMC). 
+
+.Before you begin
+
+You should have configured the two-way SSL.
+
+*Steps*
+
+.  Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
+.  In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
+.  In the Certificates Snap-in window, select the *Computer Account* option, and then click *Finish*.
+.  Click *Console Root* > *Certificates - Local Computer* > *Personal* > *Certificates*.
+.  Right-click on the procured CA certificate, which is used for SnapCenter Server and then select *All Tasks* > *Export* to start the export wizard.
+.  Perform the following actions in the wizard.
+
+|===
+| For this option... | Do the following...
+
+a|
+Export Private Key
+a|
+Select *No, do not export the private key*, and then click *Next*.
+a|
+Export File Format
+a|
+Click *Next*.
+a|
+File Name
+a|
+Click *Browse* and specify the file path to save the certificate, and click *Next*.
+a|
+Completing the Certificate Export Wizard
+a|
+Review the summary, and then click *Finish* to start the export.
+a|
+|===
+
+NOTE: Certificate based authentication is not supported for SnapCenter HA configurations and SnapCenter Plug-in for VMware vSphere.
+
+== Import CA certificate to the Windows plug-in hosts
+
+To use the exported SnapCenter Server CA certificate, you should import the related certificate to the SnapCenter Windows plug-in hosts using the Microsoft management console (MMC). 
+
+*Steps*
+
+.  Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snapin*.
+.  In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
+.  In the Certificates Snap-in window, select the *Computer Account* option, and then click *Finish*.
+.  Click *Console Root* > *Certificates - Local Computer* > *Personal* > *Certificates*.
+.  Right-click on the folder “Personal”, and then select *All Tasks* > *Import* to start the import wizard.
+.  Perform the following actions in the wizard.
+
+|===
+| For this option... | Do the following...
+
+a|
+Store Location
+a|
+Click *Next*.
+a|
+File to Import
+a|
+Select the SnapCenter Server certificate that ends with .cer extension.
+a|
+Certificate Store
+a|
+Click *Next*.
+a|
+Completing the Certificate Export Wizard
+a|
+Review the summary, and then click *Finish* to start the import.
+a|
+|===
+
+== Import CA Certificate to the UNIX plug-in hosts
+
+You should import the CA certificate to the UNIX plug-in hosts.
+
+*About this task*
+
+* You can manage the password for SPL keystore, and the alias of the CA signed key pair in use. 
+* The password for SPL keystore and for all the associated alias password of the private key should be same.
+
+*Steps*
+
+. You can retrieve SPL keystore default password from SPL property file. It is the value corresponding to the key `SPL_KEYSTORE_PASS`.
+. Change the keystore password:
+`$ keytool -storepasswd -keystore keystore.jks`
+. Change the password for all aliases of private key entries in the keystore to the same password used for the keystore:
+`$ keytool -keypasswd -alias "<alias_name>" -keystore keystore.jks`
+. Update the same for the key SPL_KEYSTORE_PASS in `spl.properties`` file.
+. Restart the service after changing the password.
+
+=== Configure root or intermediate certificates to SPL trust-store
+
+You should configure the root or intermediate certificates to SPL trust-store. You should add the root CA certificate and then the intermediate CA certificates.
+
+*Steps*
+
+. Navigate to the folder containing the SPL keystore: `/var/opt/snapcenter/spl/etc`.
+. Locate the file `keystore.jks`.
+. List the added certificates in the keystore:
+`$ keytool -list -v -keystore keystore.jks`
+. Add a root or intermediate certificate:
+`$ keytool -import -trustcacerts -alias <AliasNameForCerticateToBeImported> -file /<CertificatePath> -keystore` `keystore.jks`
+. Restart the service after configuring the root or intermediate certificates to SPL trust-store.
+
+=== Configure CA signed key pair to SPL trust-store
+
+You should configure the CA signed key pair to SPL trust-store.
+
+*Steps*
+
+. Navigate to the folder containing the SPL’s keystore `/var/opt/snapcenter/spl/etc`.
+. Locate the file `keystore.jks``.
+. List the added certificates in the keystore:
+`$ keytool -list -v -keystore keystore.jks`
+. Add the CA certificate having both private and public key.
+`$ keytool -importkeystore -srckeystore <CertificatePathToImport> -srcstoretype pkcs12 -destkeystore keystore.jks` `-deststoretype JKS`
+. List the added certificates in the keystore.
+`$ keytool -list -v -keystore keystore.jks`
+. Verify that the keystore contains the alias corresponding to the new CA certificate, which was added to the keystore.
+. Change the added private key password for CA certificate to the keystore password.
++
+Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in `spl.properties` file.
++
+`$ keytool -keypasswd -alias "<aliasNameOfAddedCertInKeystore>" -keystore keystore.jks``
+. If the alias name in the CA certificate is long and contains space or special characters ("*",","), change the alias name to a simple name:
+`$ keytool -changealias -alias "<OrignalAliasName>" -destalias "<NewAliasName>" -keystore keystore.jks``
+. Configure the alias name from the keystore located in `spl.properties` file.
+Update this value against the key SPL_CERTIFICATE_ALIAS.
+. Restart the service after configuring the CA signed key pair to SPL trust-store.
+
+== Enable Certificate-based authentication
+
+To enable certificate-based authentication for SnapCenter Server and the Windows plug-in hosts, run the following PowerShell cmdlet.  For the Linux plug-in hosts, the certificate-based authentication will be enabled when you enable the two-way SSL. 
+
+* To enable client certificate-based authentication:
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `<<hostname>>`
+* To disable client certificate-based authentication:
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
+
+== Export SnapCenter certificates
+
+You should export the SnapCenter certificates in .pfx format.
+
+*Steps*
+
+. Go to the Microsoft management console (MMC), and then click *File* > *Add/Remove Snap-in*.
+. In the Add or Remove Snap-ins window, select *Certificates* and then click *Add*.
+. In the Certificates snap-in window, select the *My user account* option, and then click *Finish*.
+. Click *Console Root* > *Certificates - Current User* > *Trusted Root Certification Authorities* > *Certificates*.
+. Right-click the certificate that has the SnapCenter Friendly Name, and then select *All Tasks* > *Export* to start the export wizard.
+. Complete the wizard, as follows:
++
+|===
+| In this wizard window... | Do the following...
+
+a|
+Export Private Key
+a|
+Select the option *Yes, export the private key*, and then click *Next*.
+a|
+Export File Format
+a|
+Make no changes; click *Next*.
+a|
+Security
+a|
+Specify the new password to be used for the exported certificate, and then click *Next*.
+a|
+File to Export
+a|
+Specify a file name for the exported certificate (you must use .pfx), and then click *Next*.
+a|
+Completing the Certificate Export Wizard
+a|
+Review the summary, and then click *Finish* to start the export.
+|===

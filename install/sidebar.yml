@@ -29,6 +29,8 @@ entries:
         url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
       - title: Features enabled on Linux host during installation
         url: /install/features_enabled_on_linux_host.html
+  - title: Configure Certificate-based Authentication
+    url: /install/configure_certificate_based_authentication.html 
   - title: Configure CA Certificate for Windows host
     entries:
       - title: Generate CA Certificate CSR file
@@ -57,22 +59,6 @@ entries:
         url: /install/configure_two_way_ssl_linux.html
       - title: Enable SSL communication on Linux host
         url: /install/enable_two_way_ssl_linux.html    
-  - title: Configure Certificate-based Authentication 
-    entries:
-      - title: Export Certificate Authority (CA) certificates from SnapCenter Server 
-        url: /install/task_export_ca_certificates_from_snapcenter_server.html
-      - title: Import CA Certificate to the Windows host plug-ins   
-        url: /install/task_import_ca_certificate_to_windows_plugin_hosts.html
-      - title: Import CA Certificate to the UNIX host plug-ins and configure root or intermediate certificates to SPL trust-store
-        entries:
-        - title: Import CA Certificate to the UNIX host plug-ins    
-          url: /install/task_import_ca_certificate_to_unix_plugin_hosts.html
-        - title: Configure root or intermediate certificates to SPL trust-store
-          url: /install/task_configure_root_or_intermediate_certificates_to_trust_store.html
-      - title: Enable certificate-based authentication
-        url: /install/task_enable_certificate_based_authentication.html
-      - title: Export SnapCenter certificates
-        url: /install/task_export_snapcenter_certificates.html
   - title: Configure Active Directory, LDAP, and LDAPS
     entries:
       - title: Register untrusted Active Directory domains
