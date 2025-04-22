@@ -1,7 +1,7 @@
 ---
 permalink: install/register_enable_software_access.html
 sidebar: sidebar
-keywords: install, snapcenter software, install, register, new customer, NetApp account, enable
+keywords: install, snapcenter software, install, register, new customer, NetApp account, enable, Amazon FSx for NetApp ONTAP, Azure NetApp Files
 summary: 'If you do not have an existing NetApp account, you should follow these steps to register for accessing software.'
 ---
 

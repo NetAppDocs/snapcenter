@@ -1,7 +1,7 @@
 section: get-started
 title: Get started
 entries:
-  - title: Learn about SnapCenter Software
+  - title: Learn about SnapCenter software
     entries:
       - title: Overview
         url: /get-started/concept_snapcenter_overview.html

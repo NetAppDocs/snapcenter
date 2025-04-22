@@ -24,7 +24,7 @@ You should ensure that all the requirements to install the SnapCenter Server are
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install SnapCenter Server
 
 [role="quick-margin-para"]
-Install the SnapCenter Server.
+You can install the SnapCenter Server either on Windows or Linux host. Download the SnapCenter Server installation package from the https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[NetApp Support Site^] and run the executable.
 
 [role="quick-margin-list"]
 * link:../install/task_install_the_snapcenter_server_using_the_install_wizard.html[Install SnapCenter server on Windows]

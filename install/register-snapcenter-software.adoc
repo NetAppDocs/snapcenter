@@ -5,14 +5,14 @@ keywords: register, new customer, NetApp account, enable support
 summary: 'If you do not have an existing NetApp account, you should register the product to enable support.'
 ---
 
-= Register SnapCenter Software
+= Register SnapCenter
 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-If you are new to NetApp products and do not have an existing NetApp account, you should register the product to enable support.
+If you are new to NetApp products and do not have an existing NetApp account, you should register SnapCenter to enable support.
 
 .Steps
 

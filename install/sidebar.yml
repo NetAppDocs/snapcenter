@@ -21,10 +21,14 @@ entries:
         url: /install/task_install_the_snapcenter_server_using_the_install_wizard.html
       - title: Install the SnapCenter Server on Linux host
         url: /install/install_snapcenter_server_linux.html
-      - title: Register SnapCenter Software
+      - title: Register SnapCenter
         url: /install/register-snapcenter-software.html
       - title: Log in to SnapCenter
         url: /install/task_log_in_to_snapcenter.html
+      - title: Features enabled on your Windows host during installation
+        url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
+      - title: Features enabled on Linux host during installation
+        url: /install/features_enabled_on_linux_host.html
   - title: Configure CA Certificate for Windows host
     entries:
       - title: Generate CA Certificate CSR file
@@ -127,7 +131,3 @@ entries:
         url: /install/concept_provision_storage_in_vmware_environments.html
   - title: Configure secured MySQL connections with SnapCenter Server
     url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
-  - title: Features enabled on your Windows host during installation
-    url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
-  - title: Features enabled on Linux host during installation
-    url: /install/features_enabled_on_linux_host.html
