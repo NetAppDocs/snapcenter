@@ -11,6 +11,18 @@ summary: 'Export SnapCenter certificates.'
 [.lead]
 Certificate-based authentication enhances security by verifying the identity of both the SnapCenter Server and plug-in hosts, ensuring secure and encrypted communication.
 
+
+== Enable Certificate-based authentication
+
+To enable certificate-based authentication for SnapCenter Server and the Windows plug-in hosts, run the following PowerShell cmdlet.  For the Linux plug-in hosts, the certificate-based authentication will be enabled when you enable the two-way SSL. 
+
+* To enable client certificate-based authentication:
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `<<hostname>>`
+* To disable client certificate-based authentication:
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
+
 == Export Certificate Authority (CA) certificates from SnapCenter Server
 You should export the CA certificates from the SnapCenter Server to the plug-in hosts using the Microsoft management console (MMC). 
 
@@ -144,17 +156,6 @@ Default SPL keystore password is the value of the key SPL_KEYSTORE_PASS in `spl.
 . Configure the alias name from the keystore located in `spl.properties` file.
 Update this value against the key SPL_CERTIFICATE_ALIAS.
 . Restart the service after configuring the CA signed key pair to SPL trust-store.
-
-== Enable Certificate-based authentication
-
-To enable certificate-based authentication for SnapCenter Server and the Windows plug-in hosts, run the following PowerShell cmdlet.  For the Linux plug-in hosts, the certificate-based authentication will be enabled when you enable the two-way SSL. 
-
-* To enable client certificate-based authentication:
-+
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `<<hostname>>`
-* To disable client certificate-based authentication:
-+
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
 
 == Export SnapCenter certificates
 
