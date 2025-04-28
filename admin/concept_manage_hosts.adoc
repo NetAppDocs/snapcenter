@@ -115,7 +115,7 @@ Yes
 a|
 Yes
 a|
-Start plug-in services
+Start plug-in services (Only applicable for plug-ins running on Windows host)
 a|
 Yes
 a|
@@ -123,7 +123,7 @@ Yes
 a|
 Yes
 a|
-Yes
+No
 a|
 Yes
 a|
