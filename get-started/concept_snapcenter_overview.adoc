@@ -9,7 +9,7 @@ summary: 'SnapCenter software is a simple, centralized, scalable platform that p
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter software is a simple, centralized, scalable platform that provides application-consistent data protection for applications, databases, host file systems, and VMs running on ONTAP systems anywhere in the Hybrid Cloud.
+SnapCenter software is a simple, centralized, scalable platform that offers application-consistent data protection for applications, databases, host file systems, and VMs operating on ONTAP systems in the Hybrid Cloud.
 
 SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and SnapVault technologies to provide the following:
 
@@ -17,7 +17,7 @@ SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and Sn
 * Rapid, granular restore, and application-consistent recovery
 * Quick, space-efficient cloning
 
-SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate deployment of plug-ins to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
+SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate plug-in deployment to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
 
 SnapCenter can be installed either on on-premise or on a public cloud to protect data.
 

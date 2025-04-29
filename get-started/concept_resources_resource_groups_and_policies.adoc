@@ -9,41 +9,37 @@ summary: 'Before you use SnapCenter, it is helpful to understand basic concepts 
 :imagesdir: ../media/
 
 [.lead]
-Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform. 
+Before using SnapCenter, understand key concepts for backup, clone, and restore. 
 
 == Resources
 
-Resources are typically databases, Windows file systems, or file shares that you back up or clone with SnapCenter.
-
-However, depending on your environment, resources might be database instances, Microsoft SQL Server availability groups, Oracle databases, Oracle RAC databases, Windows file systems, or a group of custom applications.
+Resources include databases, Windows file systems, or file shares backed up or cloned with SnapCenter. Depending on your environment, resources might also be database instances, SQL Server availability groups, Oracle databases, RAC databases, or custom application groups.
 
 == Resource group
 
-A resource group is a collection of resources on a host or cluster. The resource group can also contain resources from multiple hosts and multiple clusters.
+A resource group is a collection of resources on a host or cluster, potentially from multiple hosts and clusters. Operations performed on a resource group apply to all its resources based on the specified schedule. You can perform on-demand or scheduled backups for individual resources or groups.
 
-When you perform an operation on a resource group, you perform that operation on all the resources defined in the resource group according to the schedule you specify for the resource group.
+NOTE: If one host in a shared resource group enters maintenance mode, all scheduled operations for that group will be suspended across all hosts.
 
-You can back up on demand a single resource or a resource group. You also can configure scheduled backups for single resources and resource groups.
-
-NOTE: If you put one host of a shared resource group on maintenance mode, and if there are schedules associated with the same shared resource group, all the scheduled operations will be suspended for all of the other hosts of the shared resource group.
-
-You should use a database plug-in to back up databases, a file system plug-in to back up file systems, and the SnapCenter Plug-in for VMware vSphere to backup VMs and datastores.
+Use relevant plug-ins to back up specific resources: database plug-ins for databases, file system plug-ins for file systems, and SnapCenter Plug-in for VMware vSphere for VMs and datastores.
 
 == Policies
 
 Policies specify the backup frequency, copy retention, replication, scripts, and other characteristics of data protection operations.
 
-When you create a resource group, you select one or more policies for that group. You can also select a policy when you perform a backup on demand.
+One or more policies can be selected when creating a resource group or when performing an on-demand backup.
 
-Think of a resource group as defining _what_ you want to protect and when you want to protect it in terms of day and time. Think of a policy as defining _how_ you want to protect it. If you are backing up all databases or backing up all file systems of a host, for example, you might create a resource group that includes all the databases or all the file systems in the host. You could then attach two policies to the resource group: a daily policy and an hourly policy.
+A resource group defines what needs to be protected and when it should be protected in terms of day and time. A policy describes how the protection will be carried out. For example, if backing up all databases or file systems of a host is necessary, a resource group including all databases or file systems in the host might be created. Two policies could then be attached to the resource group: a daily policy and an hourly policy.
 
-When you create the resource group and attach the policies, you might configure the resource group to perform a full backup daily and another schedule that performs log backups hourly.
+When creating the resource group and attaching the policies, it is possible to configure it to perform a full backup daily and another schedule for log backups hourly.
 
-You can use custom prescripts and postscripts as part of your data protection operations. These scripts enable automation either before your data protection job or after. For example, you might include a script that automatically notifies you of data protection job failures or warnings. Before you set up your prescripts and postscripts, you should understand some of the requirements for creating these scripts.
+Custom prescripts and postscripts can be used in data protection operations. These scripts allow automation either before or after the data protection job. For instance, a script could automatically notify of data protection job failures or warnings. Understanding the requirements for creating these scripts is crucial before setting up prescripts and postscripts.
+
 
 == Usage of prescripts and postscripts
 
-You can use custom prescripts and postscripts as part of your data protection operations. These scripts enable automation either before your data protection job or after. For example, you might include a script that automatically notifies you of data protection job failures or warnings. Before you set up your prescripts and postscripts, you should understand some of the requirements for creating these scripts.
+
+Custom prescripts and postscripts can automate your data protection tasks before or after the job. For instance, you can add a script to notify you of job failures or warnings. Before setting them up, ensure you understand the requirements for these scripts.
 
 === Supported script types
 
@@ -63,7 +59,7 @@ NOTE: Along with default bash shell other shells like sh-shell, k-shell, and c-s
 
 === Script path
 
-All prescripts and postscripts that are run as part of SnapCenter operations, on nonvirtualized and on virtualized storage systems, are executed on the plug-in host.
+All prescripts and postscripts that are run as part of SnapCenter operations on both nonvirtualized and virtualized storage systems, are executed on the plug-in host.
 
 * The Windows scripts should be located on the plug-in host. 
 
@@ -75,7 +71,7 @@ NOTE: The script path is validated at the time of execution.
 
 === Where to specify scripts
 
-Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and postscript arguments.
+Scripts are specified in backup policies. When a backup job starts, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and postscript arguments.
 
 NOTE: You cannot specify multiple scripts.
 

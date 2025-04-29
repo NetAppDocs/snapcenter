@@ -13,7 +13,7 @@ summary: 'SnapCenter role-based access control (RBAC) and ONTAP permissions enab
 
 SnapCenter role-based access control (RBAC) and ONTAP permissions enable SnapCenter administrators to delegate control of SnapCenter resources to different users or groups of users. This centrally managed access empowers application administrators to work securely within delegated environments.
 
-You can create and modify roles, and add resource access to users at any time, but when you are setting up SnapCenter for the first time, you should at least add Active Directory users or group to roles, and then add resource access to those users or groups.
+You can create and modify roles, and add resource access to users any time. However, when you are setting up SnapCenter for the first time, you should at least add Active Directory users or group to roles, and then add resource access to those users or groups.
 
 NOTE: You cannot use SnapCenter to create user or group accounts. You should create user or group accounts in Active Directory of the operating system or database.
 
