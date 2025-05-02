@@ -14,8 +14,6 @@ You can run the SnapCenter Server installer executable to install the SnapCenter
 .Before you begin
 
 * If you want to install the SnapCenter Server using non-root user who does not have enough privileges to install SnapCenter, get the sudoers checksum file from the NetApp Support site. You should use appropriate checksum file based on the Linux Version.
-* During the installation of .NET runtime, if the installation fails to resolve the dependencies of _libicu_ library, then install _libicu_ by running the command: `yum install -y libicu`
-* If the installation of SnapCenter Server fails due to the non-availability of _Perl_, then install _Perl_ by running the command: `yum install -y perl` 
 * If the sudo package is not available in SUSE Linux, then install the sudo package to avoid authentication failure.
 * For SUSE Linux, configure the hostname to avoid the installation failure.
 * Check the secure Linux status by running the command `sestatus`. If the _SELinux status_ is "enabled" and the _Current mode_ is "enforcing", perform the following:
@@ -48,6 +46,8 @@ If the command return "nothing to do", rerun the command after installing SnapCe
 ** Windows plug-ins  
 ** Active Directory (Supports only the local users, both root and non-root user with creds)
 ** Key based authentication to log into SnapCenter
+* During the installation of .NET runtime, if the installation fails to resolve the dependencies of _libicu_ library, then install _libicu_ by running the command: `yum install -y libicu`
+* If the installation of SnapCenter Server fails due to the non-availability of _Perl_, then install _Perl_ by running the command: `yum install -y perl` 
 
 .Steps
 
@@ -111,24 +111,6 @@ Parameters to be passed for installing SnapCenter Server:
 ** `ausearch -c 'nginx' --raw | audit2allow -M my-nginx`
 ** `semodule -i my-nginx.pp`
 . Run `setsebool -P httpd_can_network_connect on`
-
-== Register the product to enable support
-
-If you are new to NetApp and do not have an existing NetApp account, you should register the product to enable support.
-
-.Steps
-
-. After installing SnapCenter, navigate to *Help > About*.
-. In the _About SnapCenter_ dialog box, make a note of the SnapCenter Instance, a 20 digit number that starts with 971.
-. Click https://register.netapp.com.
-. Click *I am not a registered NetApp Customer*.
-. Specify your details to register yourself.
-. Leave the NetApp Reference SN field blank.
-. Select *SnapCenter* from the Product Line drop-down.
-. Select the billing provider.
-. Enter the 20-digit SnapCenter instance ID.
-. Click *Submit*.
-
 
 
 

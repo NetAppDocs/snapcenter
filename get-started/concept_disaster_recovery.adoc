@@ -1,0 +1,29 @@
+---
+permalink: get-started/concept_disaster_recovery.html
+sidebar: sidebar
+keywords: Disaster Recovery, DR, crash, resource deleted
+summary: 'You can recover the SnapCenter Server in the event of disasters like resource corruption or server crash using the SnapCenter disaster recovery feature.'
+---
+= Disaster recovery in SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapCenter disaster recovery (DR) feature lets you recover from disasters like resource corruption or server crashes. It helps to restore the SnapCenter repository, server schedules, configuration components, and the SnapCenter Plug-in for SQL Server and its storage.
+
+This section explains the two types of DR in SnapCenter:
+
+== SnapCenter Server DR
+
+
+* SnapCenter Server data is backed up and can be recovered without any plug-in added to or managed by the SnapCenter Server.
+* Secondary SnapCenter Server should be installed on the same installation directory and on the same port as the primary SnapCenter Server.
+* For Multi-factor authentication (MFA), during SnapCenter Server DR, close all the browser tabs and reopen a browser to log in again. This will clear the existing or active session cookies and update that the correct configuration data.
+* SnapCenter disaster recovery functionality uses REST APIs to backup the SnapCenter Server. See link:../tech-refresh/task_tech_refresh_server_host.html[REST API workflows for disaster recovery of SnapCenter Server].
+* Audit settings-related configuration file is not backed up in DR backup and neither on the DR server after the restore operation. You should manually repeat the Audit log settings.
+
+== SnapCenter Plug-in and Storage DR
+
+DR is available only for SnapCenter Plug-in for SQL Server. If the plug-in is down, switch to another SQL host and recover the data by following a few steps. See link:../protect-scsql/task_disaster_recovery_scsql.html[Disaster recovery of SnapCenter Plug-in for SQL Server].
+
+SnapCenter uses ONTAP SnapMirror to replicate data, which can be used for DR by keeping data synchronized at to a secondary site. To initiate failover, break the SnapMirror replication. During fallback, reverse the synchronization to replicate data from the DR site back to the primary location.

@@ -1,7 +1,7 @@
 ---
 permalink: install/register_enable_software_access.html
 sidebar: sidebar
-keywords: install, snapcenter software, install, register, new customer, NetApp account, enable
+keywords: install, snapcenter software, install, register, new customer, NetApp account, enable, Amazon FSx for NetApp ONTAP, Azure NetApp Files
 summary: 'If you do not have an existing NetApp account, you should follow these steps to register for accessing software.'
 ---
 
@@ -12,7 +12,7 @@ summary: 'If you do not have an existing NetApp account, you should follow these
 
 [.lead]
 
-You can access the SnapCenter software if you are new to Amazon FSx for NetApp ONTAP or Azure NetApp Files and do not have an existing NetApp account.
+You should register to access the SnapCenter software if you are new to Amazon FSx for NetApp ONTAP or Azure NetApp Files and do not have an existing NetApp account.
 
 .Before you begin
 
@@ -22,17 +22,15 @@ You can access the SnapCenter software if you are new to Amazon FSx for NetApp O
 
 .About this task
 
-Your registration is subject to information validations and may take up to a day to confirm and upgrade new NetApp Support Site (NSS) account to "full" access from "guest" access.
+Your registration is subject to information validations and may take up to a day to confirm and upgrade new NetApp Support Site (NSS) account to *full* access from *guest* access.
 
 .Steps
 
 . Click https://mysupport.netapp.com/site/user/registration for registration.
-. Enter your corporate email ID, complete the captcha, and accept NetApp's privacy policy and click *Submit*.
+. Enter your corporate email ID, complete the captcha, accept NetApp's privacy policy, and click *Submit*.
 . Authenticate the registration by entering the OTP sent to your email ID and click *Continue*.
 . On the registration completion page, enter the following details to complete the registration.
 .. Select *NetApp Customer / End User*.
-.. In the SERIAL NUMBER field, enter one of the following:
-*** Azure subscription ID if you are using Azure NetApp Files.
-*** File System ID if you are using Amazon FSx for NetApp ONTAP.
+.. In the SERIAL NUMBER field, either enter the Azure subscription ID if you are using Azure NetApp Files or the File System ID if you are using Amazon FSx for NetApp ONTAP.
 
 NOTE: You can raise a ticket at https://mysupport.netapp.com/site/help if you face any issue during registration or to know the status.

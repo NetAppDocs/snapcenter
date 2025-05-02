@@ -39,7 +39,8 @@ You should perform the following steps if the database is relocated:
 . Perform the SnapCenter operations.
 . If you have relocated a database from one node to another node and if the oratab entry in the earlier node is not deleted, manually delete the oratab entry to avoid the same database being displayed twice.
 
-== For Oracle versions 12cR2 to 18c
+== For Oracle versions 12cR2 to 18c, 19c, or 21c
+
 .RAC database
 The RAC databases are discovered using the srvctl config command.
 You should have the database entries in the /etc/oratab file.

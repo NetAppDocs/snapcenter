@@ -4,14 +4,13 @@ sidebar: sidebar
 keywords: REST APIs, swagger
 summary: 'Describes how to use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.'
 ---
-= Overview of REST APIs
+= SnapCenter automation using REST APIs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-REST APIs can be used to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page.
 
-You can access the Swagger web page available at _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/_ to display the REST API documentation, as well as to manually issue an API call.
+You can use REST APIs to perform several SnapCenter management operations. REST APIs are exposed through the Swagger web page. You can access the Swagger web page available at _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/_ to display the REST API documentation, as well as to manually issue an API call.
 
 The plug-ins that support REST APIs are:
 
@@ -19,3 +18,5 @@ The plug-ins that support REST APIs are:
 * Plug-in for SAP HANA Database
 * Custom Plug-ins
 * Plug-in for Oracle Database
+
+For information on SnapCenter Plug-in for VMware vSphere REST APIs, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html[SnapCenter Plug-in for VMware vSphere REST APIs^]

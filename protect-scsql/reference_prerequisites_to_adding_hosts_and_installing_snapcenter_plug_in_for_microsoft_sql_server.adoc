@@ -18,7 +18,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 +
 SnapCenter Plug-in for Microsoft SQL Server uses Microsoft VDI Framework, which requires sysadmin access.
 +
-http://support.microsoft.com/kb/2926557/[Microsoft Support Article 2926557: SQL Server VDI backup and restore operations require Sysadmin privileges]
+https://mskb.pkisolutions.com/kb/2926557[Microsoft Support Article 2926557: SQL Server VDI backup and restore operations require Sysadmin privileges]
 
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host.
 * If SnapManager for Microsoft SQL Server is installed, you must have stopped or disabled the service and schedules.

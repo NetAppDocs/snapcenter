@@ -21,7 +21,7 @@ NOTE: You do not enter any license information in the SnapCenter GUI for the Sna
 
 * Locked to the controller's serial number
 
-For information on the licenses required, see link:../install/concept_snapcenter_licenses.html[SnapCenter licenses^].
+For information on the licenses required, see link:../get-started/concept_snapcenter_licenses.html[SnapCenter licenses].
 
 
 == Step 1: Verify if the SnapManager Suite license is installed

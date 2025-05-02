@@ -1,0 +1,87 @@
+---
+permalink: get-started/concept_resources_resource_groups_and_policies.html
+sidebar: sidebar
+keywords: resource, resource group, policy
+summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform.'
+---
+= Key concepts of data protection
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before using SnapCenter, understand key concepts for backup, clone, and restore. 
+
+== Resources
+
+Resources include databases, Windows file systems, or file shares backed up or cloned with SnapCenter. Depending on your environment, resources might also be database instances, SQL Server availability groups, Oracle databases, RAC databases, or custom application groups.
+
+== Resource group
+
+A resource group is a collection of resources on a host or cluster, potentially from multiple hosts and clusters. Operations performed on a resource group apply to all its resources based on the specified schedule. You can perform on-demand or scheduled backups for individual resources or groups.
+
+NOTE: If one host in a shared resource group enters maintenance mode, all scheduled operations for that group will be suspended across all hosts.
+
+Use relevant plug-ins to back up specific resources: database plug-ins for databases, file system plug-ins for file systems, and SnapCenter Plug-in for VMware vSphere for VMs and datastores.
+
+== Policies
+
+Policies specify the backup frequency, copy retention, replication, scripts, and other characteristics of data protection operations.
+
+One or more policies can be selected when creating a resource group or when performing an on-demand backup.
+
+A resource group defines what needs to be protected and when it should be protected in terms of day and time. A policy describes how the protection will be carried out. For example, if backing up all databases or file systems of a host is necessary, a resource group including all databases or file systems in the host might be created. Two policies could then be attached to the resource group: a daily policy and an hourly policy.
+
+When creating the resource group and attaching the policies, it is possible to configure it to perform a full backup daily and another schedule for log backups hourly.
+
+Custom prescripts and postscripts can be used in data protection operations. These scripts allow automation either before or after the data protection job. For instance, a script could automatically notify of data protection job failures or warnings. Understanding the requirements for creating these scripts is crucial before setting up prescripts and postscripts.
+
+
+== Usage of prescripts and postscripts
+
+
+Custom prescripts and postscripts can automate your data protection tasks before or after the job. For instance, you can add a script to notify you of job failures or warnings. Before setting them up, ensure you understand the requirements for these scripts.
+
+=== Supported script types
+
+The following types of scripts are supported for Windows:
+
+* Batch files
+* PowerShell scripts
+* Perl scripts
+
+The following types of scripts are supported for UNIX:
+
+* Perl scripts
+* Python scripts
+* Shell scripts
++
+NOTE: Along with default bash shell other shells like sh-shell, k-shell, and c-shell are also supported.
+
+=== Script path
+
+All prescripts and postscripts that are run as part of SnapCenter operations on both nonvirtualized and virtualized storage systems, are executed on the plug-in host.
+
+* The Windows scripts should be located on the plug-in host. 
+
+NOTE: The prescripts or postscripts path should not include drives or shares. The path should be relative to the SCRIPTS_PATH.
+
+* The UNIX scripts should be located on the plug-in host.
+
+NOTE: The script path is validated at the time of execution.
+
+=== Where to specify scripts
+
+Scripts are specified in backup policies. When a backup job starts, the policy automatically associates the script with the resources being backed up. When you create a backup policy, you can specify the prescript and postscript arguments.
+
+NOTE: You cannot specify multiple scripts.
+
+=== Script timeouts
+
+The timeout is set to 60 seconds, by default. You can modify the timeout value.
+
+=== Script output
+
+The default directory for the Windows prescripts and postscripts output files is Windows\System32.
+
+There is no default location for the UNIX prescripts and postscripts. You can redirect the output file to any preferred location.
+

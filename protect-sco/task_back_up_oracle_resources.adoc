@@ -23,7 +23,7 @@ You can then click image:../media/filter_icon.gif[filter icon] to close the filt
 +
 The Database-Protect page is displayed.
 
-. In the Resources page, you can perform the following steps:
+. In the Resources page, perform the following steps:
  .. Select the check box, and enter a custom name format that you want to use for the Snapshot name.
 + 
 For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is appended to the Snapshot name by default.
@@ -32,7 +32,7 @@ For example, `customtext_policy_hostname` or `resource_hostname`. A timestamp is
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
+You can create a policy by clicking image:../media/add_policy_from_resourcegroup.gif[add symbol].
 +
 In the Configure schedules for selected policies section, the selected policies are listed.
 
