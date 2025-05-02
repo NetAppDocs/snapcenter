@@ -1,0 +1,60 @@
+---
+permalink: get-started/reference_supported_storage_systems_and_applications.html
+sidebar: sidebar
+keywords: storage system, ONTAP version, ASA r2 systems
+summary: 'You should know the supported storage system, applications and databases.'
+---
+
+= Storage systems and applications supported by SnapCenter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should know the storage systems, applications, and databases supported by SnapCenter.
+
+== Supported storage systems
+
+* NetApp ONTAP 9.12.1 and later
+* Azure NetApp Files
+* Amazon FSx for NetApp ONTAP
++
+Supports non-volatile memory express (NVMe) over Transport Control Protocol (TCP).
++
+For information about Amazon FSx for NetApp ONTAP, see https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html[Amazon FSx for NetApp ONTAP documentation^].
+* NetApp ASA r2 systems that are running NetApp ONTAP 9.16.1.
++
+ASA r2 systems offer a unified hardware and software solution for SAN-only environments built on all flash platforms. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems].
++
+NOTE: SnapCenter supports only VMware Virtual Machine File System (VMFS) on ASA r2 systems.
++
+|===
+| Operations supported | Operations not supported
+
+a|
+* Creating primary backups of applications over VMDK
+* Transferring consistency group snapshots to secondary storage system
+* Restoring the backups and restoring from alternate location
+** In-place restore from both primary and secondary storage using VMware vMotion
+** Connect and copy restore from both primary and secondary storage
+* Cloning the backups and also cloning to alternate location
+a|
+* Raw Device Mapping (RDM)
+* Application volumes for Oracle
+* SAP HANA NDV 
+* LockVault
+* Tamperproof snapshot
+* Flex Group
+* Hierarchical consistency group
+* Migration from ONTAP 9.x to ASA r2 systems
+* Renaming of snapshots
+* The secondary provisioning of the log directory of SQL plug-in host is not supported by SnapCenter. You should manually configure using either ONTAP CLI or System Manager.
+|===
+
+== Supported applications and databases
+
+SnapCenter supports protection of different applications and databases. For detailed information about the supported applications and databases, see https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+
+SnapCenter supports protection of Oracle and Microsoft SQL workloads in VMware Cloud on Amazon Web Services (AWS) Software-Defined Data Center (SDDC) environments.
+https://community.netapp.com/t5/Tech-ONTAP-Blogs/Protect-Oracle-MS-SQL-workloads-using-NetApp-SnapCenter-in-VMware-Cloud-on-AWS/ba-p/449168[Learn More^].
+
+// 2025 Feb 26, SNAPDOC-321

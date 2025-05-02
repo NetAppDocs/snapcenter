@@ -1,33 +1,80 @@
 ---
-permalink: concept/reference_pre_defined_snapcenter_roles_and_permissions.html
+permalink: get-started/rbac-snapcenter.html
 sidebar: sidebar
-keywords: RBAC, role, permission, pre-defined role
-summary: 'SnapCenter ships with pre-defined roles, each with a set of permissions already enabled. When setting up and administering role-based access control \(RBAC\), you can either use these pre-defined roles or create new ones.'
+keywords: RBAC, roles, permissions, application-level RBAC, ONTAP permissions, default snapcenter roles, ONTAP permissions, SnapCenter Admin role
+summary: 'SnapCenter role-based access control (RBAC) and ONTAP permissions enable SnapCenter administrators to create roles and set access permissions. This centrally managed access empowers application administrators to work securely within delegated environments.'
 ---
 
-= Pre-defined SnapCenter roles and permissions
+= Role-based access control in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter ships with pre-defined roles, each with a set of permissions already enabled. When setting up and administering role-based access control (RBAC), you can either use these pre-defined roles or create new ones.
 
-SnapCenter includes the following pre-defined roles:
+SnapCenter role-based access control (RBAC) and ONTAP permissions enable SnapCenter administrators to delegate control of SnapCenter resources to different users or groups of users. This centrally managed access empowers application administrators to work securely within delegated environments.
+
+You can create and modify roles, and add resource access to users any time. However, when you are setting up SnapCenter for the first time, you should at least add Active Directory users or group to roles, and then add resource access to those users or groups.
+
+NOTE: You cannot use SnapCenter to create user or group accounts. You should create user or group accounts in Active Directory of the operating system or database.
+
+== Types of RBAC in SnapCenter
+
+SnapCenter uses the following types of role-based access control:
+
+* SnapCenter RBAC
+* Application-level RBAC
+* SnapCenter plug-in for VMware vSphere RBAC
+* ONTAP permissions
+
+=== SnapCenter RBAC
+
+SnapCenter has predefined roles and you can assign users or groups of users to these roles. The predefined roles are:
 
 * SnapCenter Admin role
 * App Backup and Clone Admin role
 * Backup and Clone Viewer role
 * Infrastructure Admin role
 
+When you assign a role to a user, only jobs that are relevant to that user are visible in the Jobs page unless you assigned the SnapCenterAdmin role.
+
+You can also create new roles and manage permissions and users. You can assign permissions to users or groups to access SnapCenter objects such as hosts, storage connections, and resource groups. 
+
+You can assign RBAC permissions to users and groups within the same forest and to users belonging to different forests. You cannot assign RBAC permissions to users belonging to nested groups across forests.
+
+NOTE: If you create a custom role, it must contain all of the permissions of the SnapCenterAdmin role. If you only copy some of the permissions, for example, Host add or Host remove, you cannot perform those operations.
+
+Users are required to provide authentication during login, through the graphical user interface (GUI) or using PowerShell cmdlets. If users are members of more than one role, after entering login credentials, they are prompted to specify the role they want to use. Users are also required to provide authentication to run the APIs.
+
+=== Application-level RBAC
+
+SnapCenter uses credentials to verify that authorized SnapCenter users also have application-level permissions.
+
+For example, if you want to perform data protection operations in a SQL Server environment, you must set credentials with the proper Windows or SQL credentials. The SnapCenter Server authenticates the credentials set using either method. If you want to perform data protection operations in a Windows file system environment on ONTAP storage, the SnapCenter admin role must have admin privileges on the Windows host.
+
+Similarly, if you want to perform data protection operations on an Oracle database and if the operating system (OS) authentication is disabled in the database host, you must set credentials with the Oracle database or Oracle ASM credentials. The SnapCenter Server authenticates the credentials set using one of these methods depending on the operation.
+
+=== SnapCenter Plug-in for VMware vSphere RBAC
+
+If you are using the SnapCenter VMware plug-in for VM-consistent data protection, the vCenter Server provides an additional level of RBAC. The SnapCenter VMware plug-in supports both vCenter Server RBAC and ONTAP RBAC. https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html[Learn More^]
+
+|===
+*Best Practice:* NetApp recommends that you create one ONTAP role for SnapCenter Plug-in for VMware vSphere operations and assign it all the required privileges.
+|===
+
+=== ONTAP permissions
+
+You should create vsadmin account with required permissions to access the storage system. link:../install/task_add_a_user_or_group_and_assign_role_and_assets.html[Learn More]
+
+== Permissions assigned to the pre-defined SnapCenter roles
 When you add a user to a role, you must assign either the StorageConnection permission to enable storage virtual machine (SVM) communication, or assign an SVM to the user to enable permission to use the SVM. The Storage Connection permission enables users to create SVM connections.
 
 For example, a user with the SnapCenter Admin role can create SVM connections and assign them to a user with the App Backup and Clone Admin role, which by default does not have permission to create or edit SVM connections. Without an SVM connection, users cannot complete any backup, clone, or restore operations.
 
-== SnapCenter Admin role
+=== SnapCenter Admin role
 
 The SnapCenter Admin role has all permissions enabled. You cannot modify the permissions for this role. You can add users and groups to the role or remove them.
 
-== App Backup and Clone Admin role
+=== App Backup and Clone Admin role
 
 The App Backup and Clone Admin role has the permissions required to perform administrative actions for application backups and clone-related tasks. This role does not have permissions for host management, provisioning, storage connection management, or remote installation.
 
@@ -252,7 +299,7 @@ a|
 Not applicable
 |===
 
-== Backup and Clone Viewer role
+=== Backup and Clone Viewer role
 
 The Backup and Clone Viewer role has read-only view of all permissions. This role also has permissions enabled for discovery, reporting, and access to the Dashboard.
 
@@ -477,7 +524,7 @@ a|
 Not applicable
 |===
 
-== Infrastructure Admin role
+=== Infrastructure Admin role
 
 The Infrastructure Admin role has permissions enabled for host management, storage management, provisioning, resource groups, remote installation reports, and access to the Dashboard.
 
@@ -701,3 +748,4 @@ Not applicable
 a|
 Not applicable
 |===
+

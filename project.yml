@@ -29,7 +29,7 @@ sidebar:
     - title: SnapCenter software 6.1 docs
       url: /index.html
     - section: release-notes
-    - section: concept
+    - section: get-started
     - section: install
     - section: protect-scsql
     - section: protect-hana
