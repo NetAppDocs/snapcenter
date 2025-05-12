@@ -78,6 +78,7 @@ a|
 +
 NOTE: Ensure that no other applications uses the MSMQ service that SnapCenter creates and manages.
 * RabbitMQ
+* Erlang 
 
 a|
 Windows Process Activation Service
