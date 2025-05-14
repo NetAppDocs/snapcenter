@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: IIS application pool, active directory, enable
 summary: 'You can configure Internet Information Services \(IIS\) on your Windows Server to create a custom Application Pool account when you need to enable Active Directory read permissions for SnapCenter.'
 ---
+
 = Configure IIS Application Pools to enable Active Directory read permissions
 :icons: font
 :imagesdir: ../media/

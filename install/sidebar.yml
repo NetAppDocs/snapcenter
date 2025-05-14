@@ -35,8 +35,6 @@ entries:
             url: /install/concept_high_availability_for_snapcenter_mysql_repository.html
       - title: Configure role-based access control (RBAC)
         entries:
-          - title: Add a user or group and assign role and assets
-            url: /install/task_add_a_user_or_group_and_assign_role_and_assets.html
           - title: Create a role
             url: /install/task_create_a_role.html
           - title: Add an ONTAP RBAC role using security login commands
@@ -49,8 +47,8 @@ entries:
             url: /install/task_create_an_ontap_cluster_role_with_minimum_privileges.html
           - title: Create ONTAP cluster roles for ASA r2 systems
             url: /install/create-cluster-roles-asa-r2-resources.html
-          - title: Configure IIS Application Pools to enable Active Directory read permissions
-            url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
+          - title: Add a user or group and assign role and assets
+            url: /install/task_add_a_user_or_group_and_assign_role_and_assets.html
       - title: Configure audit log settings
         url: /install/task_configure_audit_log_settings.html
       - title: Add storage systems
@@ -113,5 +111,7 @@ entries:
     entries:
       - title: Register untrusted Active Directory domains
         url: /install/task_register_untrusted_active_directory_domains.html
+      - title: Configure IIS Application Pools to enable Active Directory read permissions
+        url: /install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html
       - title: Configure CA client certificate for LDAPS
         url: /install/task_configure_CA_client_certificate_for_LDAPS.html
