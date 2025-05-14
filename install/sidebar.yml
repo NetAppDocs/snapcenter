@@ -1,5 +1,5 @@
 section: install
-title: SnapCenter Server installation
+title: Install and configure SnapCenter Server
 entries:
   - title: Prepare for installing the SnapCenter Server
     entries:
@@ -25,10 +25,6 @@ entries:
         url: /install/register-snapcenter-software.html
       - title: Log in to SnapCenter
         url: /install/task_log_in_to_snapcenter.html
-      - title: Features enabled on your Windows host during installation
-        url: /install/reference_features_enabled_on_your_windows_host_during_installation.html
-      - title: Features enabled on Linux host during installation
-        url: /install/features_enabled_on_linux_host.html
   - title: Configure Certificate-based Authentication
     url: /install/configure_certificate_based_authentication.html 
   - title: Configure CA Certificate for Windows host
