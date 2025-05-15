@@ -27,6 +27,30 @@ entries:
         url: /install/task_log_in_to_snapcenter.html
   - title: Configure the SnapCenter Server
     entries:
+      - title: Add and provision the storage system
+        entries:
+          - title: Add storage systems
+            url: /install/task_add_storage_systems.html
+          - title: Storage Virtual Machine connections and credentials
+            url: /install/concept_svm_connections_and_credentials.html
+          - title: Provision storage on Windows hosts
+            entries:
+              - title: Configure LUN storage
+                url: /install/concept_configure_lun_storage.html
+              - title: Create and manage igroups
+                url: /install/concept_create_and_manage_igroups.html
+              - title: Create and manage disks
+                url: /install/task_create_and_manage_disks.html
+              - title: Create and manage SMB shares
+                url: /install/concept_create_and_manage_smb_shares.html
+              - title: Reclaim space on the storage system
+                url: /install/task_reclaim_space_on_the_storage_system.html
+              - title: Provision storage using PowerShell cmdlets
+                url: /install/reference_provision_storage_using_powershell_cmdlets.html
+          - title: Provision storage in VMware environments
+            url: /install/concept_provision_storage_in_vmware_environments.html
+      - title: Add SnapCenter Standard controller-based licenses
+        url: /install/concept_snapcenter_standard_controller_based_licenses.html
       - title: Configure High Availability
         entries:
           - title: Configure SnapCenter Servers for High Availability
@@ -51,30 +75,6 @@ entries:
             url: /install/task_add_a_user_or_group_and_assign_role_and_assets.html
       - title: Configure audit log settings
         url: /install/task_configure_audit_log_settings.html
-      - title: Add storage systems
-        url: /install/task_add_storage_systems.html
-      - title: Storage Virtual Machine connections and credentials
-        url: /install/concept_svm_connections_and_credentials.html
-      - title: Add SnapCenter Standard controller-based licenses
-        url: /install/concept_snapcenter_standard_controller_based_licenses.html
-      - title: Provision your storage system
-        entries:
-          - title: Provision storage on Windows hosts
-            entries:
-              - title: Configure LUN storage
-                url: /install/concept_configure_lun_storage.html
-              - title: Create and manage igroups
-                url: /install/concept_create_and_manage_igroups.html
-              - title: Create and manage disks
-                url: /install/task_create_and_manage_disks.html
-              - title: Create and manage SMB shares
-                url: /install/concept_create_and_manage_smb_shares.html
-              - title: Reclaim space on the storage system
-                url: /install/task_reclaim_space_on_the_storage_system.html
-              - title: Provision storage using PowerShell cmdlets
-                url: /install/reference_provision_storage_using_powershell_cmdlets.html
-          - title: Provision storage in VMware environments
-            url: /install/concept_provision_storage_in_vmware_environments.html
       - title: Configure secured MySQL connections with SnapCenter Server
         url: /install/concept_configure_secured_mysql_connections_with_snapcenter_server.html
   - title: Configure Certificate-based Authentication
