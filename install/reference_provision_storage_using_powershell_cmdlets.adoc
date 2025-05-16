@@ -9,7 +9,7 @@ summary: 'If you do not want to use the SnapCenter GUI to perform host provision
 :imagesdir: ../media/
 
 [.lead]
-If you do not want to use the SnapCenter GUI to perform host provisioning and space reclamation jobs, you can use the PowerShell cmdlets that are provided by SnapCenter Plug-in for Microsoft Windows. You can use cmdlets directly or add them to scripts.
+If you do not want to use the SnapCenter GUI to perform host provisioning and space reclamation jobs, you can use the PowerShell cmdlets. You can use cmdlets directly or add them to scripts.
 
 If you are running the cmdlets on a remote plug-in host, you must run the SnapCenter Open-SMConnection cmdlet to open a connection to the SnapCenter Server.
 

@@ -31,12 +31,10 @@ entries:
         entries:
           - title: Add storage systems
             url: /install/task_add_storage_systems.html
-          - title: Storage Virtual Machine connections and credentials
+          - title: Storage connections and credentials
             url: /install/concept_svm_connections_and_credentials.html
           - title: Provision storage on Windows hosts
             entries:
-              - title: Configure LUN storage
-                url: /install/concept_configure_lun_storage.html
               - title: Create and manage igroups
                 url: /install/concept_create_and_manage_igroups.html
               - title: Create and manage disks
