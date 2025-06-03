@@ -11,17 +11,17 @@ summary: 'In addition to using the existing SnapCenter roles, you can create you
 [.lead]
 In addition to using the existing SnapCenter roles, you can create your own roles and customize the permissions.
 
-You should have logged in as the "SnapCenterAdmin" role.
+To create your own roles, it is necessary to log in as the "SnapCenterAdmin" role.
 
-*Steps*
+.Steps
 
 . In the left navigation pane, click *Settings*.
 . In the Settings page, click *Roles*.
 . Click image:../media/add_icon_configure_database.gif[add icon in configuring database screen].
-. In the Add Role page, specify a name and description for the new role.
+. Specify a name and description for the new role.
 //Updated this note for BURT 1389838 for 4.5 and BURT 1411528 in 4.6
 +
-NOTE: You can include only the following special characters in user names and group names: space ( ), hyphen (-), underscore (_), and colon (:).
+NOTE: Only the following special characters can be used in user names and group names: space ( ), hyphen (-), underscore (_), and colon (:).
 . Select *All members of this role can see other members' objects* to enable other members of the role to see resources such as volumes and hosts after they refresh the resources list.
 +
 You should deselect this option if you do not want members of this role to see objects to which other members are assigned.

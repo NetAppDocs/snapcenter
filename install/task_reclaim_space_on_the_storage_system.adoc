@@ -1,7 +1,7 @@
 ---
 permalink: install/task_reclaim_space_on_the_storage_system.html
 sidebar: sidebar
-keywords: space
+keywords: space, storage system, reclaim
 summary: 'Although NTFS tracks the available space on a LUN when files are deleted or modified, it does not report the new information to the storage system. You can run the space reclamation PowerShell cmdlet on the Plug-in for Windows host to ensure that newly freed blocks are marked as available in storage.'
 ---
 = Reclaim space on the storage system
