@@ -15,7 +15,7 @@ Audit logs are secured by means of generating digitally signed digest for each a
 
 You should have logged in as the "SnapCenterAdmin" role.
 
-*About this task*
+.About this task
 
 * Alerts are sent in the following scenarios:
 **	Audit log integrity check schedule or Syslog server is enabled or disabled
@@ -32,7 +32,7 @@ Shared or network mounted drives are not supported.
 +
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running Get-Help command_name. Alternatively, you can also refer the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 
-*Steps*
+.Steps
 
 . In the *Settings* page, navigate to *Settings* > *Global Settings* > *Audit log Settings*.
 . In the Audit log section, enter the details.

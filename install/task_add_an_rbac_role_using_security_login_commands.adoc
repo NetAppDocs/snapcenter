@@ -1,9 +1,10 @@
 ---
 permalink: install/task_add_an_rbac_role_using_security_login_commands.html
 sidebar: sidebar
-keywords: RBAC roles, add, NetApp ONTAP RBAC role
+keywords: RBAC roles, add, NetApp ONTAP RBAC role, storage system
 summary: 'You can use the security login commands to add an NetApp ONTAP RBAC role when your storage systems are running clustered NetApp ONTAP.'
 ---
+
 = Add an NetApp ONTAP RBAC role using security login commands
 :icons: font
 :imagesdir: ../media/
@@ -13,25 +14,19 @@ You can use the security login commands to add a NetApp ONTAP RBAC role when you
 
 .Before you begin
 
-* Before you create an ONTAP RBAC role for storage systems running clustered ONTAP, you must identify the following:
-
-** The task (or tasks) that you want to perform
-** The privileges required to perform these tasks
-
-* Configuring an RBAC role requires that you perform the following actions:
-
-** Grant privileges to commands and/or command directories.
+* Identify the task (or tasks) that you want to perform and the privileges required to perform these tasks.
+* Grant privileges to commands and/or command directories.
 +
 There are two levels of access for each command/command directory: all-access and read-only.
 +
 You must always assign the all-access privileges first.
 
-** Assign roles to users.
-** Vary your configuration depending on whether your SnapCenter plug-ins are connected to the Cluster Administrator IP for the entire cluster or directly connected to a SVM within the cluster.
+* Assign roles to users.
+* Identify your configuration depending on whether your SnapCenter plug-ins are connected to the Cluster Administrator IP for the entire cluster or directly connected to a SVM within the cluster.
 
-*About this task*
+.About this task
 
-To simplify configuring these roles on storage systems, you can use the RBAC User Creator for NetApp ONTAP tool, which is posted on the NetApp Communities Forum.
+To simplify the configuration of these roles on storage systems, you can use the RBAC User Creator for NetApp ONTAP tool, which is posted on the NetApp Communities Forum.
 
 This tool automatically handles setting up the ONTAP privileges correctly. For example, RBAC User Creator for NetApp ONTAP tool automatically adds the privileges in the correct order so that the all-access privileges appear first. If you add the read-only privileges first and then add the all-access privileges, ONTAP marks the all-access privileges as duplicates and ignores them.
 
@@ -39,10 +34,7 @@ NOTE: If you later upgrade SnapCenter or ONTAP, you should re-run the RBAC User 
 
 More information about setting up ONTAP RBAC roles, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-adm-auth-rbac/home.html[ONTAP 9 Administrator Authentication and RBAC Power Guide^].
 
-
-NOTE: For consistency, the SnapCenter documentation refers to the roles as using privileges. The OnCommand System Manager GUI uses the term _attribute_ instead of _privilege_. When setting up ONTAP RBAC roles, both these terms mean the same thing.
-
-*Steps*
+.Steps
 
 . On the storage system, create a new role by entering the following command:
 +

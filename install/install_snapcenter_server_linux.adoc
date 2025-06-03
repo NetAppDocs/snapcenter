@@ -113,4 +113,12 @@ Parameters to be passed for installing SnapCenter Server:
 . Run `setsebool -P httpd_can_network_connect on`
 
 
+== Features enabled on Linux host during installation
+
+The SnapCenter Server installs below software packages which can help in troubleshooting and maintaining the host system.
+
+* Rabbitmq
+* Erlang
+
+
 
