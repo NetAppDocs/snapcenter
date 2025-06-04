@@ -13,7 +13,7 @@ Before you add a host and install the plug-in packages, you must complete all th
 
 * You must have installed Java 11 on your host.
 +
-NOTE: IBM Java is not supported. 
+NOTE: IBM Java is not supported on Windows and Linux host.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for IBM Db2 is installed as domain administrator.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the IBM Db2 plug-in on Windows hosts.
 * SnapCenter Server should have access to the 8145 or custom port of Plug-in for IBM Db2 host.
@@ -25,7 +25,7 @@ NOTE: IBM Java is not supported.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 11 on your Windows host.
 +
-http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
+http://www.java.com/en/download/manual.jsp[Download JAVA for Windows]
 +
 https://imt.netapp.com/matrix/imt.jsp?components=121066;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
@@ -35,7 +35,9 @@ https://imt.netapp.com/matrix/imt.jsp?components=121066;&solution=1259&isHWU&src
 
 * You must have installed Java 11 on your Linux host.
 +
-http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
+http://www.java.com/en/download/manual.jsp[Download JAVA for Linux]
++
+https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM[Download JAVA for AIX]
 +
 https://imt.netapp.com/matrix/imt.jsp?components=121066;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 

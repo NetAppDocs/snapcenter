@@ -154,7 +154,8 @@ Resource Settings:
 * ORA_TEMP specifies the directory for temporary files.
 * ORACLE_HOME specifies the directory where the Oracle software is installed.
 * ARCHIVE_LOG_ONLY specifies whether to back up the archive logs or not.
-* ORACLE_BACKUP_MODE specifies whether to perform online or offline backup.
+* ORACLE_BACKUPMODE specifies whether to perform online or offline backup.
+* ORACLE_EXPORT_PARAMETERS specifies whether you can export environment variables while running _bin/su_. The value for ORACLE_EXPORT_PARAMETERS should be set to *y*.
 
 
 

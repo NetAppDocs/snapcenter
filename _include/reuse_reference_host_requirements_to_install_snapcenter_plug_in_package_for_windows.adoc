@@ -8,7 +8,7 @@ Operating Systems
 a|
 Microsoft Windows
 
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://imt.netapp.com/imt/imt.jsp?components=134502;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 a|
 Minimum RAM for the SnapCenter plug-in on host
