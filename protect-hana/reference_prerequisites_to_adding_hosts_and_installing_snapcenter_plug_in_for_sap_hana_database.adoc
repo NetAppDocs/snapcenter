@@ -13,7 +13,7 @@ Before you add a host and install the plug-in packages, you must complete all th
 
 * You must have installed Java 11 on your host.
 +
-NOTE: IBM Java is not supported. 
+NOTE: IBM Java is not supported on Windows and Linux host.
 * You must have installed SAP HANA database interactive terminal (HDBSQL client) on the host.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for SAP HANA Database is installed as domain administrator.
 * For Windows, user store keys should be created as SYSTEM user.
@@ -28,7 +28,7 @@ NOTE: IBM Java is not supported.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 11 on your Windows host.
 +
-http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
+http://www.java.com/en/download/manual.jsp[Download JAVA for All Operating Systems]
 +
 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
@@ -37,7 +37,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 11 on your Linux host.
 +
-http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems]
+http://www.java.com/en/download/manual.jsp[Download JAVA for All Operating Systems]
 +
 https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
 
