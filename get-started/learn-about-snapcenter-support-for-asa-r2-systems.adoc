@@ -5,42 +5,37 @@ keywords: storage system, ONTAP version, ASA r2 systems
 summary: 'You should know the supported storage system, applications and databases.'
 ---
 
-= Learn about SnapCenter support for ASA r2 systems
+= Supported SnapCenter operations for ASA r2 systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-ASA r2 systems offer a hardware and software solution for SAN-only environments built on all flash platforms. ASA r2 systems differ from other ONTAP systems (ASA, AFF, and FAS) in implementing their storage layer, supported protocols, and ONTAP personality.
-
-On an ASA r2 system, ONTAP software is streamlined to support essential SAN functionality while limiting the visibility and availability of non-SAN related features and functions. For example, System Manager running on an ASA r2 system does not display options to create home directories for NAS clients.
-
-ASA r2 systems use aggregates as the base unit of storage. An aggregate owns a specific set of disks available in a storage system. The aggregate allocates space on the disks it owns for LUNs and namespaces, which are considered storage units. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems]
+ASA r2 storage systems are supported beginning with SnapCenter 6.1. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems]
 
 SnapCenter leverages REST APIs to perform all operations on ASA r2 systems, which do not support ZAPIs.
 
-|===
-| Operations supported | Operations not supported
+*Operations supported by SnapCenter for ASA r2 systems*
 
-a|
 * Creating primary backups of applications over VMDK
 * Transferring consistency group snapshots to secondary storage system
 * Restoring the backups and restoring from alternate location
 ** In-place restore from both primary and secondary storage using VMware vMotion
 ** Connect and copy restore from both primary and secondary storage
 * Cloning the backups and also cloning to alternate location
-a|
+
+*Operations not supported by SnapCenter for ASA r2 systems*
+
 * Raw Device Mapping (RDM)
 * Application volumes for Oracle
 * SAP HANA NDV 
 * LockVault
 * Tamperproof snapshot
-* Flex Group
+* FlexGroup volumes
 * Hierarchical consistency group
-* Migration from ONTAP 9.x to ASA r2 systems
-* Protection of database with both ONTAP 9.x resources and ASA r2 resources
+* Migration from ASA, AFF, or FAS systems to ASA r2 systems
+* Protection of database that has ASA, AFF, or FAS resources and ASA r2 resources
 * Renaming of snapshots
-* The secondary provisioning of the log directory of SQL plug-in host is not supported by SnapCenter. You should manually configure using either ONTAP CLI or System Manager.
-|===
+* Secondary provisioning of the log directory of SQL plug-in host
 
 NOTE: SnapCenter supports only VMware Virtual Machine File System (VMFS) on ASA r2 systems.
 
