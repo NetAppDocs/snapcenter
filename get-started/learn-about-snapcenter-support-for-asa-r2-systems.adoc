@@ -18,10 +18,10 @@ SnapCenter leverages REST APIs to perform all operations on ASA r2 systems, whic
 
 * Creating primary backups of applications over VMDK
 * Transferring consistency group snapshots to secondary storage system
-* Restoring the backups and restoring from alternate location
+* Restoring the backups from primary and secondary storage to the original host or to the alternate host
 ** In-place restore from both primary and secondary storage using VMware vMotion
 ** Connect and copy restore from both primary and secondary storage
-* Cloning the backups and also cloning to alternate location
+* Cloning the backups to the original host or to the alternate host
 
 *Operations not supported by SnapCenter for ASA r2 systems*
 
@@ -39,7 +39,7 @@ SnapCenter leverages REST APIs to perform all operations on ASA r2 systems, whic
 
 NOTE: SnapCenter supports only VMware Virtual Machine File System (VMFS) on ASA r2 systems.
 
-SnapCenter can discover or create ONTAP consistency groups and optimally place the storage units as child consistency groups. It can also provision and initialize SnapMirror relationships to the destination cluster for secondary protection.
+SnapCenter can discover or create ONTAP consistency groups. It can also provision and initialize SnapMirror relationships to the destination cluster for secondary protection.
 
 For information on enabling secondary protection for your application, refer to:
 
