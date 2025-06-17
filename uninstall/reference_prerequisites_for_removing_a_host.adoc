@@ -14,7 +14,6 @@ You can remove hosts and uninstall individual plug-ins or plug-in packages using
 Before you remove a host from SnapCenter Server, you should complete the prerequisites.
 
 * You should log in as an administrator.
-* If you are using SnapCenter Custom Plug-ins, you should delete all the clones from SnapCenter that are associated with the host.
 * You should ensure that discovery jobs are not running on the host.
 * You should be assigned a role with the required permissions to remove all of the objects associated with the host. Otherwise, the remove operation fails.
 * You should confirm the fingerprint if the SSH key was modified after adding the host to SnapCenter.
