@@ -1,12 +1,12 @@
-You should manage the password of the custom plug-ins keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to the custom plug-ins trust-store, and configure CA signed key pair to custom plug-ins trust-store with SnapCenter Custom Plug-ins service to activate the installed digital certificate.
+You should manage the password of the plug-ins keystore and its certificate, configure the CA certificate, configure  root or intermediate certificates to the plug-ins trust-store, and configure CA signed key pair to plug-ins trust-store with SnapCenter plug-ins service to activate the installed digital certificate.
 
-Custom plug-ins uses the file _keystore.jks_, which is located at _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_ both as its trust-store and key-store.
+The plug-ins uses the file _keystore.jks_, which is located at _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_ both as its trust-store and key-store.
 
-== Manage password for custom plug-in keystore and alias of the CA signed key pair in use
+== Manage password for plug-in keystore and alias of the CA signed key pair in use
 
 .Steps
 
-. You can retrieve custom plug-in keystore default password from custom plug-in agent property file.
+. You can retrieve plug-in keystore default password from plug-in agent property file.
 +
 It is the value corresponding to the key _KEYSTORE_PASS_.
 
@@ -25,15 +25,15 @@ _keytool -keypasswd -alias "alias_name_in_cert" -keystore keystore.jks_
 Update the same for the key KEYSTORE_PASS in _agent.properties_ file.
 .  Restart the service after changing the password.
 +
-NOTE: Password for custom plug-in keystore and for all the associated alias password of the private key should be same.
+NOTE: Password for plug-in keystore and for all the associated alias password of the private key should be same.
 
-== Configure root or intermediate certificates to custom plug-in trust-store
+== Configure root or intermediate certificates to plug-in trust-store
 
-You should configure the root or intermediate certificates without the private key to custom plug-in trust-store.
+You should configure the root or intermediate certificates without the private key to plug-in trust-store.
 
 .Steps
 
-. Navigate to the folder containing the custom plug-in keystore  _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_
+. Navigate to the folder containing the plug-in keystore  _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_
 . Locate the file 'keystore.jks'.
 . List the added certificates in the keystore:
 +
@@ -43,17 +43,17 @@ _keytool -list -v -keystore keystore.jks_
 +
 _keytool -import -trustcacerts -alias myRootCA -file /root/USERTrustRSA_Root.cer -keystore keystore.jks_
 
-. Restart the service after configuring the root or intermediate certificates to custom plug-in trust-store.
+. Restart the service after configuring the root or intermediate certificates to plug-in trust-store.
 
 NOTE: You should add the root CA certificate and then the intermediate CA certificates.
 
-== Configure CA signed key pair to custom plug-in trust-store
+== Configure CA signed key pair to plug-in trust-store
 
-You should configure the CA signed key pair to the custom plug-in trust-store.
+You should configure the CA signed key pair to the plug-in trust-store.
 
 .Steps
 
-. Navigate to the folder containing the custom plug-in keystore _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_
+. Navigate to the folder containing the plug-in keystore _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_
 . Locate the file _keystore.jks_.
 . List the added certificates in the keystore:
 +
@@ -71,7 +71,7 @@ _keytool -list -v -keystore keystore.jks_
 
 . Change the added private key password for CA certificate to the keystore password.
 +
-Default custom plug-in keystore password is the value of the key KEYSTORE_PASS in agent.properties file.
+Default plug-in keystore password is the value of the key KEYSTORE_PASS in agent.properties file.
 +
 _keytool -keypasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks_
 
@@ -79,15 +79,15 @@ _keytool -keypasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks_
 +
 Update this value against the key SCC_CERTIFICATE_ALIAS.
 
-. Restart the service after configuring the CA signed key pair to custom plug-in trust-store.
+. Restart the service after configuring the CA signed key pair to plug-in trust-store.
 
-== Configure certificate revocation list (CRL) for SnapCenter Custom Plug-ins
+== Configure certificate revocation list (CRL) for SnapCenter plug-ins
 
 .About this task
 
 * To download the latest CRL file for the related CA certificate see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_update_certificate_revocation_list_file_in_SnapCenter_CA_Certificate[How to update certificate revocation list file in SnapCenter CA Certificate].
-* SnapCenter Custom Plug-ins will search for the CRL files in a pre-configured directory.
-* Default directory for the CRL files for SnapCenter Custom Plug-ins is _'C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\ etc\crl'_.
+* SnapCenter plug-ins will search for the CRL files in a pre-configured directory.
+* Default directory for the CRL files for SnapCenter plug-ins is _'C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\ etc\crl'_.
 
 .Steps
 

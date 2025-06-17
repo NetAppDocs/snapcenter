@@ -95,7 +95,6 @@ You can use APIs to perform different operations.
 * restore a SQL database backup
 * restore an Oracle database backup
 * restore a custom application backup
-* create a custom plug-in resource
 * create a SAP HANA resource
 * protect a custom resource using plug-in for custom application
 * protect a Microsoft SQL Server resource using plug-in for Microsoft SQL Server
@@ -216,7 +215,6 @@ You can use APIs to perform different operations.
 * configure the SAP HANA database using a key
 * configure the Oracle database using a key
 * restore a custom application backup using a key
-* create a custom plug-in resource
 * create a SAP HANA resource
 * create an Oracle application volume resource
 * protect a custom resource using plug-in for custom application
