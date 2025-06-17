@@ -258,9 +258,9 @@ HTTPS
 a|
 
 a|
-This is an internal port that is used only on the custom plug-in host; no firewall exception is required.
+This is an internal port that is used only on the plug-in host; no firewall exception is required.
 
-Communication between the SnapCenter Server and custom plug-ins is routed through port 8145.
+Communication between the SnapCenter Server and plug-ins is routed through port 8145.
 
 a|
 ONTAP cluster or SVM communication port

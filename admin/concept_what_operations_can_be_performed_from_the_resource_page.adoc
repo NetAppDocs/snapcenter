@@ -14,12 +14,10 @@ You can discover resources and perform data protection operations from the Resou
 From the Resources page, you can perform the following tasks:
 
 |===
-| You can perform these tasks...| For Microsoft Exchange Server| For Microsoft SQL Server| For Microsoft Windows| For Oracle Database| For SAP HANA Database| For Custom Plug-ins
+| You can perform these tasks...| For Microsoft Exchange Server| For Microsoft SQL Server| For Microsoft Windows| For Oracle Database| For SAP HANA Database
 
 a|
 Determine whether resources are available for backup
-a|
-Yes
 a|
 Yes
 a|
@@ -43,11 +41,7 @@ Yes
 a|
 Yes
 a|
-Yes
-a|
 Restore from backups
-a|
-Yes
 a|
 Yes
 a|
@@ -71,11 +65,7 @@ Yes
 a|
 Yes
 a|
-Yes
-a|
 Manage backups
-a|
-Yes
 a|
 Yes
 a|
@@ -99,11 +89,7 @@ Yes
 a|
 Yes
 a|
-Yes
-a|
 Manage policies
-a|
-Yes
 a|
 Yes
 a|
@@ -127,8 +113,6 @@ Yes
 a|
 Yes
 a|
-Yes
-a|
 Mount backups
 a|
 No
@@ -138,8 +122,6 @@ a|
 No
 a|
 Yes
-a|
-No
 a|
 No
 a|
@@ -155,11 +137,7 @@ Yes
 a|
 No
 a|
-No
-a|
 View details
-a|
-Yes
 a|
 Yes
 a|

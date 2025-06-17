@@ -42,9 +42,7 @@ SnapCenter provides the following key features:
 
 * Centralized, application-consistent data protection of different applications
 +
-Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, IBM Db2, PostgreSQL, MySQL, and Windows Host Filesystems running on ONTAP systems.
-+
-Data protection is also supported for other standard or custom applications and databases by providing a framework to create user-defined SnapCenter plug-ins. This enables data protection for other applications and databases from the same single-pane-of-glass. By leveraging this framework, NetApp has released SnapCenter plug-ins for MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM. You can also create your own plug-in using the developer's guide. 
+Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server, Oracle Databases on Linux or AIX, SAP HANA database, IBM Db2, PostgreSQL, MySQL, and Windows Host Filesystems running on ONTAP systems. SnapCenter also supports protection of applications such as MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM.
 
 * Policy-based backups
 +
@@ -149,16 +147,6 @@ a|
 Plug-in for UNIX or plug-in for Windows
 a|
 HDBSQL client host
-a|
-Linux or Windows
-a|
-SnapCenter Custom Plug-ins
-a|
-Plug-ins package for Linux and plug-ins package for Windows
-a|
-For file system backups, plug-in for Windows
-a|
-Custom application host
 a|
 Linux or Windows
 a|

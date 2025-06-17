@@ -32,7 +32,6 @@ link:task_configure_gMSA_on_windows_server_2012_or_later.html[Configure group Ma
  ** Microsoft Exchange Server
  ** Microsoft SQL Server
  ** SAP HANA
- ** Custom plug-ins
 * Installing plug-ins on a cluster
 +
 If you install plug-ins on a cluster (WSFC, Oracle RAC, or Exchange DAG), they are installed on all of the nodes of the cluster.

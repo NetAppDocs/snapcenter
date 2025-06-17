@@ -62,8 +62,6 @@ The details of the backups and clones are displayed in a table format.
 . Select the backup from the table, and then click the data protection icons to perform restore, clone, rename, and delete operations.
 +
 NOTE: You cannot rename or delete backups that are on the secondary storage system.
-+
-If you are using SnapCenter Custom Plug-ins, you cannot rename the backups that are on the primary storage system.
 
 . If you want to delete a clone, then select the clone from the table and click image:../media/delete_icon.gif[delete icon] to delete the clone.
 

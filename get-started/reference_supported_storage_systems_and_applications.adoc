@@ -22,33 +22,6 @@ Supports non-volatile memory express (NVMe) over Transport Control Protocol (TCP
 +
 For information about Amazon FSx for NetApp ONTAP, see https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html[Amazon FSx for NetApp ONTAP documentation^].
 * NetApp ASA r2 systems that are running NetApp ONTAP 9.16.1.
-+
-ASA r2 systems offer a unified hardware and software solution for SAN-only environments built on all flash platforms. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems].
-+
-NOTE: SnapCenter supports only VMware Virtual Machine File System (VMFS) on ASA r2 systems.
-+
-|===
-| Operations supported | Operations not supported
-
-a|
-* Creating primary backups of applications over VMDK
-* Transferring consistency group snapshots to secondary storage system
-* Restoring the backups and restoring from alternate location
-** In-place restore from both primary and secondary storage using VMware vMotion
-** Connect and copy restore from both primary and secondary storage
-* Cloning the backups and also cloning to alternate location
-a|
-* Raw Device Mapping (RDM)
-* Application volumes for Oracle
-* SAP HANA NDV 
-* LockVault
-* Tamperproof snapshot
-* Flex Group
-* Hierarchical consistency group
-* Migration from ONTAP 9.x to ASA r2 systems
-* Renaming of snapshots
-* The secondary provisioning of the log directory of SQL plug-in host is not supported by SnapCenter. You should manually configure using either ONTAP CLI or System Manager.
-|===
 
 == Supported applications and databases
 
