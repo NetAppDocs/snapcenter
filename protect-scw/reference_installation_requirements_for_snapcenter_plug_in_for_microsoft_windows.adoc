@@ -35,6 +35,8 @@ Microsoft Windows
 
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
+If you are on a Windows cluster setup, you should also install and configure the Windows Remote Management (WinRM).
+
 a|
 Minimum RAM for the SnapCenter plug-in on host
 a|
