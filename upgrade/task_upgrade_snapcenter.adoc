@@ -10,26 +10,33 @@ summary: 'You can use the SnapCenter Server installer executable file to upgrade
 :imagesdir: ../media/
 
 [.lead]
-You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.
+You should upgrade the SnapCenter Server to access the latest features and enhancements provided in the newest version.
 
 .Before you begin
 
-* The SnapCenter Server host must be up to date with Windows updates, with no pending system restarts.
-* You should ensure that no other operations are running before initiating the upgrade operation.
-* You should install ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle and PowerShell 7.4.2 or later.
-* You should back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running. This is recommended before upgrading SnapCenter Server and the Exchange plug-in.
+* Update the SnapCenter Server host with the latest Windows updates and ensure there are no pending system restarts.
+* Ensure no other operations are running before you start the upgrade.
+* Install ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle and PowerShell 7.4.2 or later.
+* Back up the SnapCenter repository (MySQL) database after ensuring that no jobs are running. This is recommended before upgrading SnapCenter Server and the Exchange plug-in.
 +
 For information, see link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository[Back up the SnapCenter repository^].
 
-* You should back up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
+* Back up all the modified SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
 +
 Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
 
+* If you have installed multiple versions of custom plug-in in SnapCenter 5.0, before upgrading to 6.0 or later, you should run the powershell cmdlets to remove all the earlier versions of the custom plug-in (except the latest one) from the SnapCenter repository (NSM database).
++
+** Run `Open-SmConnection` and login using the SnapCenterAdmin role credentials
+** Run `Remove-SmPluginPackage -PluginName M<plug-in name> -PluginVersion <version number>`
++
+For more information, refer to https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SnapCenter_6.0_upgrade_fails_in_nsm_repository_upgrade_SQL_script_8[Upgrade to SnapCenter 6.0 or later fails].
+
 .About this task
 
-* During upgrade, a SQL script is executed to update the Exchange data in NSM database, which converts the DAG and host shortname to FQDN. This is applicable only if you are using SnapCenter Server with Exchange plug-in.
+* During upgrade, SnapCenter executes a SQL script to update the Exchange data in the NSM database, converting the DAG and host shortname to FQDN. This applies only if you use SnapCenter Server with the Exchange plug-in.
 
-* Before initiating the upgrade operation, if you have manually placed the server host in maintenance mode, post upgrade you need to manually bring the server host out of maintenance mode by clicking *Hosts* > *Activate Schedule*.
+* If you have manually placed the server host in maintenance mode, after the upgrade select *Hosts* > *Activate Schedule* to bring the server host out of maintenance mode.
 
 * For the existing backup and verification schedules with prescripts and postscripts enabled in the policy, the backup operations will continue to work after upgrade.
 +
@@ -42,7 +49,7 @@ In the *Job details* page, a warning message recommends that the customer should
 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
 
 . Create a copy of the web.config located at C:\Program Files\NetApp\SnapCenter WebApp.
-. Export the SnapCenter schedules related to plug-in host from windows task schedule so that you can use it to restore the schedules if upgrade fails.
+. Export the SnapCenter plug-in host schedules from the Windows Task Scheduler to restore them if the upgrade fails.
 +
 `md d:\\SCBackup``schtasks /query /xml /TN taskname >> "D:\SCBackup\taskname.xml"`
 . Create the SnapCenter MySQL database dump if the repository backup is not configured.
@@ -51,26 +58,24 @@ https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab
 +
 When prompted, enter the password.
 
-. Initiate the SnapCenter Server upgrade by double-clicking the downloaded .exe file.
+. Double-click the downloaded .exe file to initiate the SnapCenter Server upgrade.
 +
-After you initiate the upgrade, all the prechecks are performed, and if the minimum requirements are not met, appropriate error or warning messages are displayed. You can ignore the warning messages and proceed with the installation. However, errors should be fixed.
+After you start the upgrade, SnapCenter runs prechecks. If the system does not meet the minimum requirements, SnapCenter shows error or warning messages. You can ignore warnings and continue with the installation, but you must fix any errors.
 +
-NOTE: SnapCenter will continue to use the existing MySQL Server repository database password provided during installation of the earlier version of SnapCenter Server.
+NOTE: SnapCenter continues to use the existing MySQL Server repository database password provided during installation of the earlier version of SnapCenter Server.
 
-. Click *Upgrade*.
+. Select *Upgrade*.
 +
-At any stage if you click the *Cancel* button, the upgrade workflow will be cancelled. It will not rollback the SnapCenter Server to previous state.
+If you select *Cancel* at any stage, SnapCenter stops the upgrade. It will not rollback the SnapCenter Server to previous state.
 +
-|===
-*Best Practice:* You should either log out and then log into SnapCenter, or close and then open a new browser to access SnapCenter GUI.
-|===
+*Best Practice:* Log out and log in again, or open a new browser to access the SnapCenter User Interface.
 
 .After you finish
 
 * If the plug-in is installed using a sudo user, you should copy the sha224 keys available at _C:\ProgramData\NetApp\SnapCenter\Package Repository\sc_unix_plugins_checksum.txt_ to update the _/etc/sudoers_ file.
 * You should perform a fresh discovery of resources on the server host.
 +
-If the status of the server host is displayed as stopped, you can wait for sometime and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.
+If SnapCenter displays the server host status as stopped, wait for some time and perform a fresh discovery. You can also change the value of *HostRefreshInterval* parameter (default value is 3600 seconds) to any value more than 10 minutes.
 //Included the above statement for BURT 1399849 for 4.5
-* If the upgrade fails, you should clean up the failed installation, reinstall the earlier version of SnapCenter, and then restore the NSM database to it's previous state.
+* If the upgrade fails, clean up the failed installation, reinstall the earlier version of SnapCenter, and restore the NSM database to the state it was in before.
 * After upgrading the server host, you must also upgrade the plug-ins before adding any storage system.
