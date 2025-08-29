@@ -21,7 +21,7 @@ NOTE: You should repeat this command for each permission.
 
 . Create a user and assign the role to that user.
 +
-`security login create -user <user_name\> -vserver <cluster_name\> -application ontapi -authmethod password -role <role_name\>`
+`security login create -user <user_name\> -vserver <cluster_name\> -application ontapi http -authmethod password -role <role_name\>`
 . Unlock the user.
 +
 `security login unlock -user <user_name\> -vserver <cluster_name\>`
