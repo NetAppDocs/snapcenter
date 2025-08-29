@@ -9,25 +9,25 @@ summary: 'SnapCenter software is a simple, centralized, scalable platform that p
 :imagesdir: ../media/
 
 [.lead]
-SnapCenter software is a simple, centralized, scalable platform that offers application-consistent data protection for applications, databases, host file systems, and VMs operating on ONTAP systems in the Hybrid Cloud.
+SnapCenter software is a simple, centralized, and scalable platform for application-consistent data protection. It protects applications, databases, host file systems, and VMs on ONTAP systems in the Hybrid Cloud.
 
-SnapCenter leverages NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and SnapVault technologies to provide the following:
+SnapCenter uses NetApp Snapshot, SnapRestore, FlexClone, SnapMirror, and SnapVault technologies to provide:
 
 * Fast, space-efficient, application-consistent, disk-based backups
-* Rapid, granular restore, and application-consistent recovery
+* Fast, detailed restore, and application-consistent recovery
 * Quick, space-efficient cloning
 
-SnapCenter includes both SnapCenter Server and individual lightweight plug-ins. You can automate plug-in deployment to remote application hosts, schedule backup, verification, and clone operations, and monitor all data protection operations.
+SnapCenter includes SnapCenter Server and lightweight plug-ins. You can automate plug-in deployment to remote application hosts, schedule backup, verification, and clone operations, and monitor data protection operations.
 
-SnapCenter can be installed either on on-premise or on a public cloud to protect data.
+You can install SnapCenter either on on-premises or on a public cloud to protect data.
 
-* On premise to protect the following:
+* On-premises to protect the following:
 ** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to ONTAP FAS, AFF, or ASA secondary systems
 ** Data that is on ONTAP Select primary systems
 ** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to local StorageGRID object storage 
 ** Data that is on ONTAP ASA r2 primary and secondary systems
 
-* On premise in a Hybrid Cloud to protect the following:
+* On-premises in a Hybrid Cloud to protect the following:
 ** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to Cloud Volumes ONTAP
 ** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to object and archive storage in cloud (using BlueXP backup and recovery integration)
 
@@ -46,11 +46,11 @@ Data protection is supported for Microsoft Exchange Server, Microsoft SQL Server
 
 * Policy-based backups
 +
-Policy-based backups leverage NetApp Snapshot technology to create fast, space-efficient, application-consistent, disk-based backups. Optionally, you can automate protection of these backups to secondary storage by updates to existing protection relationships.
+Policy-based backups leverage NetApp Snapshot technology to create fast, space-efficient, application-consistent, disk-based backups. You can also set up automatic protection of these backups to secondary storage by updating existing protection relationships.
 
-* Back ups for multiple resources
+* Backups for multiple resources
 +
-You can back up multiple resources (applications, databases, or host file systems) of the same type, at the same time, by using SnapCenter resource groups.
+You can back up multiple resources (applications, databases, or host file systems) of the same type at once using SnapCenter resource groups.
 
 * Restore and recovery
 +
@@ -58,11 +58,11 @@ SnapCenter provides rapid, granular restores of backups and application-consiste
 
 * Cloning
 +
-SnapCenter provides quick, space-efficient, application-consistent cloning, which enables accelerated software development. You can clone on any destination in the Hybrid Cloud.
+SnapCenter provides quick, space-efficient, and application-consistent cloning. You can clone on any destination in the Hybrid Cloud.
 
-* Single user management graphical user interface (GUI)
+* Single user management graphical user interface
 +
-SnapCenter provides a GUI that is a single, one-stop interface for managing backups and clones of a resource in any destination in the Hybrid Cloud.
+SnapCenter provides a single interface to manage backups and clones in any Hybrid Cloud destination.
 
 * REST APIs, Windows cmdlets, UNIX commands
 +
@@ -80,7 +80,7 @@ SnapCenter provides REST APIs for most functionality for integration with any or
 
 == SnapCenter architecture and components
 
-The SnapCenter platform is based on a multitiered architecture that includes a centralized management server and a plug-in host. SnapCenter supports multisite data center. The SnapCenter server host and the plug-in host can be at different geographical locations.
+SnapCenter uses a layered design with a central management server and plug-in hosts. The server and plug-in hosts can be in different locations.
 
 image::../media/saphana-br-scs-image6.png["Figure showing input/output dialog or representing written content"]
 
@@ -90,7 +90,7 @@ SnapCenter includes the SnapCenter Server, the SnapCenter Plug-in package for Wi
 
 The SnapCenter Server supports Microsoft Windows and Linux (RHEL 8.x, RHEL 9.x, SLES 15 SP5) operating systems. SnapCenter server includes a web server, a centralized HTML5-based user interface, PowerShell cmdlets, REST APIs, and the SnapCenter repository.
 
-The SnapCenter Server and plug-ins communicate with the host agent using HTTPS. Information about SnapCenter operations is stored in the SnapCenter repository.
+SnapCenter stores information about its operations in the SnapCenter repository.
 
 === SnapCenter plug-ins
 
@@ -231,17 +231,17 @@ a|
 Linux or Windows
 |===
 
-The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs), and it supports the SnapCenter application-specific plug-ins to protect application-consistent backup and restore operations for virtualized databases and file systems.
+The SnapCenter Plug-in for VMware vSphere supports crash-consistent and VM-consistent backup and restore operations for virtual machines (VMs), datastores, and Virtual Machine Disks (VMDKs). It also supports application-consistent backup and restore operations for virtualized databases and file systems.
 
-If your database or filesystem is stored on VMs, or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance. For information, refer https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation^].
+To protect databases, filesystems, VMs, or datastores on VMs, deploy the SnapCenter Plug-in for VMware vSphere appliance. For information, refer https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation^].
 
 === SnapCenter repository
 
 The SnapCenter repository, sometimes referred to as the NSM database, stores information and metadata for every SnapCenter operation.
 
-MySQL Server repository database is installed by default when you install the SnapCenter Server. If MySQL Server is already installed and you are doing a fresh installation of SnapCenter Server, you should uninstall MySQL Server.
+The SnapCenter Server installation installs the MySQL Server repository database by default. If you have already installed MySQL Server and want to perform a fresh installation of SnapCenter Server, you must uninstall MySQL Server.
 
-SnapCenter supports MySQL Server 8.0.37 or later as the SnapCenter repository database. If you were using an earlier version of MySQL Server with an earlier release of SnapCenter, during SnapCenter upgrade, the MySQL Server is upgraded to 8.0.37 or later.
+SnapCenter supports MySQL Server 8.0.37 or later as the SnapCenter repository database. If you use an earlier version of MySQL Server with an earlier release of SnapCenter, the SnapCenter upgrade process upgrades MySQL Server to version 8.0.37 or later.
 
 The SnapCenter repository stores the following information and metadata:
 
