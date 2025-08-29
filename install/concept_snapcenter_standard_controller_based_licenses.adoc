@@ -15,9 +15,9 @@ The controller-based license has the following characteristics:
 
 * SnapCenter Standard entitlement included with purchase of Premium or Flash Bundle (not with the base pack)
 * Unlimited storage usage
-* Enabled by adding it directly to the FAS, AFF, or ASA storage controller by using either ONTAP System Manager or the ONTAP CLI.
+* Added directly to the FAS, AFF, or ASA storage controller by using either ONTAP System Manager or the ONTAP CLI.
 +
-NOTE: You do not enter any license information in the SnapCenter GUI for the SnapCenter controller-based licenses.
+NOTE: You do not enter any license information in the SnapCenter user interface for the SnapCenter controller-based licenses.
 
 * Locked to the controller's serial number
 
@@ -26,9 +26,9 @@ For information on the licenses required, see link:../get-started/concept_snapce
 
 == Step 1: Verify if the SnapManager Suite license is installed
 
-You can use the SnapCenter GUI to view whether a SnapManager Suite license is installed on FAS, AFF, or ASA primary storage systems, and to identify which storage systems might require SnapManager Suite licenses. SnapManager Suite licenses apply only to FAS, AFF, and ASA SVMs or clusters on primary storage systems.
+You can use the SnapCenter user interface to check if a SnapManager Suite license is installed on FAS, AFF, or ASA primary storage systems and identify which systems that need licenses. SnapManager Suite licenses apply only to FAS, AFF, and ASA SVMs or clusters on primary storage systems.
 
-NOTE: If you already have a SnapManager Suite license on your controller, SnapCenter Standard controller-based license entitlement is provided automatically. The names SnapManagerSuite license and SnapCenter Standard controller-based license are used interchangeably, but they refer to the same license.
+NOTE: If you already have a SnapManager Suite license on your controller, SnapCenter automatically provides the Standard controller-based license entitlement. The names SnapManagerSuite license and SnapCenter Standard controller-based license are used interchangeably, but they refer to the same license.
 
 .Steps
 
@@ -50,12 +50,12 @@ The Controller License column displays the following status:
 
 You can use the ONTAP command line to view all the licenses installed on your controller. You should be a cluster administrator on the FAS, AFF, or ASA system.
 
-NOTE: The SnapCenter Standard controller-based license is displayed as SnapManagerSuite license on the controller.
+NOTE: The controller displays the SnapCenter Standard controller-based license as the SnapManagerSuite license.
 
 .Steps
 
 . Log in to the NetApp controller using the ONTAP command line.
-. Enter the license show command, and then view the output to determine whether the SnapManagerSuite license is installed.
+. Enter the license show command, and then view the output to see if the SnapManagerSuite license is installed.
 +
 .Example output
 [%collapsible]
@@ -90,7 +90,7 @@ In the example, the SnapManagerSuite license is installed, therefore, no additio
 
 == Step 3: Retrieve the controller serial number
 
-You need to have the controller serial number to retrieve the serial number of your controller-based license. You can retrieve the controller serial number using the ONTAP command line. You should be a cluster administrator on the FAS, AFF, or ASA system.
+Get the controller serial number using the ONTAP command line. You must be a cluster administrator on the FAS, AFF, or ASA system to get your controller-based license serial number.
 
 .Steps
 
@@ -139,13 +139,13 @@ All-Flash Optimized: false
 
 == Step 4: Retrieve the serial number of the controller-based license
 
-If you are using FAS, ASA, or AFF storage, you can retrieve the SnapCenter controller-based license from the NetApp Support Site before you can install it using the ONTAP command line.
+If you are using FAS, ASA, or AFF storage, you can retrieve the SnapCenter controller-based license from the NetApp Support Site before you install it using the ONTAP command line.
 
 .Before you begin
 
 * You should have a valid NetApp Support Site login credentials.
 +
-If you do not enter valid credentials, no information is returned for your search.
+If you do not enter valid credentials, the system does not return any information for your search.
 
 * You should have the controller serial number.
 
@@ -190,21 +190,21 @@ This command is available at the admin privilege level.
 
 == Step 6: Remove the trial license
 
-If you are using a controller-based SnapCenter Standard license and need to remove the capacity-based trial license (serial number ending with "`50`"), you should use MySQL commands to remove the trial license manually. The trial license cannot be deleted using the SnapCenter GUI.
+If you are using a controller-based SnapCenter Standard license and need to remove the capacity-based trial license (serial number ending with "`50`"), you should use MySQL commands to remove the trial license manually. The trial license cannot be deleted using the SnapCenter user interface.
 
 NOTE: Removing a trial license manually is only required if you are using a SnapCenter Standard controller-based license.
 
 .Steps
 
 . On the SnapCenter Server, open a PowerShell window to reset the MySQL password.
- .. Run the Open-SmConnection cmdlet to initiate a connection session with the SnapCenter Server for a SnapCenterAdmin account.
+ .. Run the Open-SmConnection cmdlet to establish connection with the SnapCenter Server for a SnapCenterAdmin account.
  .. Run the Set-SmRepositoryPassword to reset the MySQL password.
 +
-For information about the cmdlets, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205[SnapCenter Software Cmdlet Reference Guide^].
+For information about the cmdlets, see https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 . Open the command prompt and run mysql -u root -p to log into MySQL.
 +
 MySQL prompts you for the password. Enter the credentials you provided while resetting the password.
 
 . Remove the trial license from the database:
 +
-`use nsm;``DELETE FROM nsm_License WHERE nsm_License_Serial_Number='510000050';`
+`use nsm;DELETE FROM nsm_License WHERE nsm_License_Serial_Number='510000050';`
