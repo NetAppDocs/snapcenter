@@ -6,7 +6,7 @@ indexpage:
     - title: Get started
       links:
         - title: Release notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337665 
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467
         - title: Learn about SnapCenter
           url: /get-started/concept_snapcenter_overview.html
         - title: Supported SnapCenter operations for ASA r2 systems
@@ -78,7 +78,7 @@ indexpage:
         - title: Cmdlet Reference Guide
           url: https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html
         - title: Command Reference Guide
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3359469
         - title: Documentation for earlier versions of SnapCenter
           url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
         - title: NetApp Knowledge Base - SnapCenter

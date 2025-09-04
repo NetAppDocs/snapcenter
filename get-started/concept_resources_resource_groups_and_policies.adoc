@@ -35,9 +35,11 @@ When creating the resource group and attaching the policies, it is possible to c
 
 Custom prescripts and postscripts can be used in data protection operations. These scripts allow automation either before or after the data protection job. For instance, a script could automatically notify of data protection job failures or warnings. Understanding the requirements for creating these scripts is crucial before setting up prescripts and postscripts.
 
+== Consistency group (CG)
+
+A consistency group is a collection of volumes managed as a single unit. CGs are synchronized for data consistency across storage units and volumes. In ONTAP, they provide easy management and a protection guarantee for an application workload spanning multiple volumes. Learn more about link:https://docs.netapp.com/us-en/ontap/architecture/consistency_groups.html[consistency groups].
 
 == Usage of prescripts and postscripts
-
 
 Custom prescripts and postscripts can automate your data protection tasks before or after the job. For instance, you can add a script to notify you of job failures or warnings. Before setting them up, ensure you understand the requirements for these scripts.
 

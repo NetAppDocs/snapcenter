@@ -18,10 +18,12 @@ You should know the storage systems, applications, and databases supported by Sn
 * Azure NetApp Files
 * Amazon FSx for NetApp ONTAP
 +
-Supports non-volatile memory express (NVMe) over Transport Control Protocol (TCP).
+Amazon FSx for NetApp ONTAP supports non-volatile memory express (NVMe) over Transport Control Protocol (TCP).
 +
 For information about Amazon FSx for NetApp ONTAP, see https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html[Amazon FSx for NetApp ONTAP documentation^].
-* NetApp ASA r2 systems that are running NetApp ONTAP 9.16.1.
+* NetApp ASA r2 systems that are running NetApp ONTAP 9.16.1 and later
++
+You should use ONTAP 9.17.1, if you are using SnapCenter Server 6.2 and SnapCenter plug-ins 6.2.
 
 == Supported applications and databases
 

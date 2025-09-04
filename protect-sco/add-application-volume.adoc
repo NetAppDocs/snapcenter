@@ -21,9 +21,12 @@ NOTE: Application volumes support only direct NFS and direct iSCSI connections.
 +
 * In the Name field, enter the name of the application volume.
 * In the Host Name field, enter the name of the host.
-. In the Storage Footprint page, enter the storage system name, select one or volumes, and specify the associated LUNs or Qtrees.
+. In the Storage Footprint page, perform the following actions:
+* Select the storage type.
+* Enter the storage system name.
+* Select the storage units.
 +
-You can add multiple storage systems.
+You can add multiple storage units.
 . Review the summary, and then click *Finish*.
 . In the Resources page, select *Application Volume* from the *View* list to view all the application volumes that you have added.
 
@@ -48,4 +51,4 @@ If required, SnapCenter allows you to undo the delete operation.
 
 . In the left navigation pane, click *Resources*, and then select the Oracle Database plug-in from the list.
 . In the Resources page, select *Application Volume* from the *View* list.
-. Click image:../media/delete_icon.gif[delete icon]elete icon] to modify the values.
+. Click image:../media/delete_icon.gif[delete icon] to delete the application volume.

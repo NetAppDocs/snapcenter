@@ -18,25 +18,15 @@ image::../media/upgrade_workflow.gif[upgrade workflow]
 
 == Supported upgrade paths
 
-The upgrade path helps you to understand from which all earlier versions of SnapCenter you can upgrade to the latest versions of SnapCenter and which versions of the plug-ins are supported.
+The upgrade path shows which SnapCenter versions you can upgrade from and which plug-in versions are supported.
+
+NOTE: If you upgrade SnapCenter Server to 6.2, also upgrade the plug-ins to 6.2.
 
 |===
 | If you are on SnapCenter Server version... | You can directly upgrade SnapCenter Server to... | Supported plug-in versions
 
-.3+| 5.0
-| 6.0
-a|
-* 5.0
-* 6.0
-
+.3+| 6.0
 | 6.0.1
-a|
-* 6.0.1
-|6.1
-a|* 6.1
-
-.2+| 6.0
-a| 6.0.1
 a|
 * 6.0
 * 6.0.1
@@ -44,13 +34,24 @@ a|
 | 6.1
 a|
 * 6.1
+|6.2
+a|* 6.2
 
-|6.0.1
- | 6.1
-a| 
-* 6.0.1
+.2+| 6.0.1
+a| 6.1
+a|
 * 6.1
 
+| 6.2
+a|
+* 6.2
+
+|6.1
+ | 6.2
+a| 
+* 6.2
+
 |===
+
 
 For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
