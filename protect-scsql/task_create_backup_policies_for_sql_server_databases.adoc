@@ -176,7 +176,7 @@ NOTE: The maximum retention value is 1018. Backups will fail if retention is set
 .. Length of time to keep snapshots
 ... If you want to specify the number of days for which you want to keep the snapshots before deleting them, select *Retain copies for*.
 
-.. Select *Primary snapshot copy locking period* and specify the duration in days, months, or years.
+.. Select *Snapshot copy locking period* and specify the duration in days, months, or years.
 +
 Snaplock retention period should be less than 100 years.
 
@@ -187,8 +187,6 @@ NOTE: You can assign SnapMirror labels to primary snapshots for remote replicati
 == Step 7: Configure secondary replication options
 
 . In the Select secondary replication options section, select one or both of the following secondary replication options:
-+
-NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. 
 // start tabbed area
 
 [role="tabbed-block"]
