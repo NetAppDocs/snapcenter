@@ -129,13 +129,9 @@ NOTE: If you have scheduled for 2:00 a.m., the schedule will not be triggered du
 
 .. Select the Policy label.
 +
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-+
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+NOTE: You can assign SnapMirror labels to primary snapshots for remote replication, allowing the primary snapshots to offload the snapshot replication operation from SnapCenter to ONTAP secondary systems. This can be done without enabling SnapMirror or SnapVault option in the policy page.
 
 .. In the Select secondary replication options section, select one or both of the following secondary replication options:
-+
-NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. The *Secondary snapshot copy locking period* option is available in the Retention page.
 +
 |===
 | For this field...| Do this...
