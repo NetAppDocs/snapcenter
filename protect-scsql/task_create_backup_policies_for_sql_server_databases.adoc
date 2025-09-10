@@ -167,42 +167,26 @@ Retain the backup copies for a specific number of days.
 .. Specify total number of snapshots to keep
 ... To specify the number of snapshots to keep, select *Copies to keep*.
 ... If the number of snapshots exceeds the specified number, the snapshots are deleted with the oldest copies deleted first.
- 
++
 IMPORTANT: By default, the value of retention count is set to 2. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
-
++
 NOTE: The maximum retention value is 1018. Backups will fail if retention is set to a value higher than what the underlying NetApp ONTAP version supports.
 
 [loweralpha,start=2]
 .. Length of time to keep snapshots
 ... If you want to specify the number of days for which you want to keep the snapshots before deleting them, select *Retain copies for*.
 
-.. If you want to specify the Primary snapshot copy locking period, select *Primary snapshot copy locking period* and select days, months, or years.
+.. Select *Snapshot copy locking period* and specify the duration in days, months, or years.
 +
 Snaplock retention period should be less than 100 years.
 
-.. If you want to specify the Secondary snapshot copy locking period, select *Secondary snapshot copy locking period*, and select days, months, or years.
+.. Select a Policy label.
 +
-This example sets the log snapshot retention to 2:
-+
-.Show Example
-[%collapisble]
-====
-Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
-====
-+
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database[SnapCenter retains Snapshot copies of the database]
-
-.. Select a Snapshot label
-+
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot  retention policy that matches the label.
-+
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+NOTE: You can assign SnapMirror labels to primary snapshots for remote replication, allowing the primary snapshots to offload the snapshot replication operation from SnapCenter to ONTAP secondary systems. This can be done without enabling SnapMirror or SnapVault option in the policy page.
 
 == Step 7: Configure secondary replication options
 
 . In the Select secondary replication options section, select one or both of the following secondary replication options:
-+
-NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. 
 // start tabbed area
 
 [role="tabbed-block"]
