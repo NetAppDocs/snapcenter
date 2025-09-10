@@ -64,26 +64,18 @@ Keep the Snapshots for a certain number of days
 a|
 Select *Retain copies for*, and then specify the number of days for which you want to keep the Snapshots before deleting them.
 a|
-Primary snapshot copy locking period
+Snapshot copy locking period
 a|
-If you want to specify the snapshot locking period for the primary, select Snapshot copy locking period and select days, months, or years.
+Select *Snapshot copy locking period* and specify days, months, or years.
 
 Snaplock retention period should be less than 100 years.
-a|
-Secondary snapshot locking period
-a|
-Select *Secondary snapshot copy locking period*, and select days, months, or years.
 |===
 +
 IMPORTANT: For Snapshot copy-based backups, you must set the retention count to 2 or higher if you plan to enable SnapVault replication. If you set the retention count to 1, the retention operation might fail because the first snapshot is the reference snapshot for the SnapVault relationship until a newer snapshot is replicated to the target.
-.. Select a Snapshot label.
+.. Specify the Policy label.
 +
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-+
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
+You can assign SnapMirror labels to primary snapshots for remote replication, allowing the primary snapshots to offload the snapshot replication operation from SnapCenter to ONTAP secondary systems. This can be done without enabling SnapMirror or SnapVault option in the policy page.
 . In the Select secondary replication options section, select one or both of the following secondary replication options:
-+
-NOTE: You must select the secondary replication options for *Secondary snapshot copy locking period* to be effective. 
 +
 |===
 | For this field... | Do this...
@@ -98,14 +90,6 @@ a|
 Update SnapVault after creating a local Snapshot copy
 a|
 Select this option to perform disk-to-disk backup replication (SnapVault backups).
-a|
-Secondary policy label
-a|
-Select a Snapshot label.
-
-Depending on the Snapshot label that you select, ONTAP applies the secondary Snapshot retention policy that matches the label.
-
-NOTE: If you have selected *Update SnapMirror after creating a local Snapshot copy*, you can optionally specify the secondary policy label. However, if you have selected *Update SnapVault after creating a local Snapshot copy*, you should specify the secondary policy label.
 a|
 Error retry count
 a|
