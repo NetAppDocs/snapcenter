@@ -19,4 +19,6 @@ The 6.2 release of SnapCenter software includes the following new feature.
 | link:../get-started/reference_supported_storage_systems_and_applications.html[Support for ASA r2 systems]
 a|
 SnapCenter 6.2 (server and plug-ins) along with ONTAP 9.17.1 supports hierarchical consistency groups on ASA r2 systems.
+
+After you upgrade to SnapCenter 6.2 and ONTAP 9.17.1, SnapCenter changes flat consistency groups to hierarchical consistency groups during the first scheduled backup.
 |===

@@ -12,13 +12,13 @@ summary: 'Describes how to upgrade SnapCenter Server and the plug-ins and what a
 [.lead]
 Each release of SnapCenter contains an updated SnapCenter Server and plug-in package. Plug-in package updates are distributed with the SnapCenter installer. You can configure SnapCenter to check for available updates.
 
-The workflow shows the different tasks required to upgrade the SnapCenter Server and the Plug-in packages.
+The workflow lists the tasks you must complete to upgrade SnapCenter Server and Plug-in packages.
 
 image::../media/upgrade_workflow.gif[upgrade workflow]
 
 == Supported upgrade paths
 
-The upgrade path shows which SnapCenter versions you can upgrade from and which plug-in versions are supported.
+This section shows which SnapCenter versions you can upgrade from and which plug-in versions are supported.
 
 NOTE: If you upgrade SnapCenter Server to 6.2, also upgrade the plug-ins to 6.2.
 
@@ -54,4 +54,4 @@ a|
 |===
 
 
-For information about upgrading the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
+To learn how to upgrade the SnapCenter Plug-in for VMware vSphere, see https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[Upgrade SnapCenter Plug-in for VMware vSphere^].
