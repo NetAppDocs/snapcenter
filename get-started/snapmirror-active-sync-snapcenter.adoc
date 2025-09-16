@@ -18,6 +18,14 @@ For SnapMirror active sync, ensure that you have met the various hardware, softw
 
 The plug-ins supported for this feature are SnapCenter Plug-in for SQL Server, SnapCenter Plug-in for Windows, SnapCenter Plug-in for Oracle database, SnapCenter Plug-in for SAP HANA database, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Unix.
 
+After installing the SnapCenter Server and plug-ins, you should enable the REST API for SnapCenter to detect SnapMirror active sync relationships.
+
+* On the SnapCenter server host, edit the _C:\Program Files\NetApp\SMCore\SMCoreServiceHost.dll.config_ file to modify the value of the _IsRestEnabledForStorageConnection_ parameter to _true_ and then restart the SnapCenter SMCore service.
+* On the Windows plug-in hosts:
+** Edit the _C:\Program Files\NetApp\SnapCenter\SMCore\SMCoreServiceHost.dll.config_ file to modify the value of the _IsRestEnabledForStorageConnection_ parameter to _true_.
+** Edit the _C:\Program Files\NetApp\SnapCenter\SMCore\SnapDriveService.dll.config_ file to modify the value of the _IsRestEnabledForStorageConnection_ parameter to _true_.
+** Restart the SnapCenter SMCore service. 
+
 NOTE: To support host initiator proximity in SnapCenter, it's value, either source or destination should be set in ONTAP.
 
 The use cases not supported in SnapCenter:

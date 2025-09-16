@@ -12,13 +12,13 @@ summary: 'You should know the supported storage system, applications and databas
 [.lead]
 ASA r2 storage systems are supported beginning with SnapCenter 6.1. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems]
 
-SnapCenter uses REST APIs for all operations on ASA r2 systems. ASA r2 systems do not support ZAPIs.
+SnapCenter supports protection of applications running on physical systems and Virtual Machine File Systems (VMFS). SnapCenter uses REST APIs for all operations on ASA r2 systems. ASA r2 systems do not support ZAPIs.
 
 NOTE: After you upgrade to SnapCenter 6.2 (server and plug-ins) and ONTAP 9.17.1, SnapCenter changes flat consistency groups to hierarchical consistency groups during the first scheduled backup.
 
 *Operations supported by SnapCenter for ASA r2 systems*
 
-* Creating primary backups of applications over VMDK
+* Creating primary backups of applications
 * Moving hierarchical consistency group snapshots to secondary storage system
 * Restoring backups from primary and secondary storage systems to the original or alternate host
 ** In-place restore from both primary and secondary storage systems using VMware vMotion
@@ -48,13 +48,13 @@ To learn how to enable secondary protection on ASA r2 systems for your applicati
 
 * Tamperproof snapshots
 * FlexGroup volumes
-* Hierarchical consistency group
 * Migration from ASA, AFF, or FAS storage systems to ASA r2 storage systems
 * Protection of databases with a mix of ASA, AFF, or FAS resources and ASA r2 resources
 * Renaming of snapshots
 * Provisioning of Windows resources on ASA r2 systems
 * Secondary protection if there is SnapMirror active sync failover
 * Nonvolatile memory express (NVMe) protocol if SnapMirror active sync is enabled
+* Protection on applications running on AIX platform
 
 
 
