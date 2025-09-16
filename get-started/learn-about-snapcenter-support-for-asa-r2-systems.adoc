@@ -54,7 +54,7 @@ To learn how to enable secondary protection on ASA r2 systems for your applicati
 * Provisioning of Windows resources on ASA r2 systems
 * Secondary protection if there is SnapMirror active sync failover
 * Nonvolatile memory express (NVMe) protocol if SnapMirror active sync is enabled
-* Protection on applications running on AIX platform
+* Protection of applications running on AIX platform
 
 
 
