@@ -10,7 +10,7 @@ summary: 'You should create SVM roles if you configure SVMs in ASA r2 systems to
 :imagesdir: ../media/
 
 [.lead]
-There are several ONTAP CLI commands you must run to you create a role for a new SVM user in ASA r2 systems. This role is required if you configure SVMs in ASA r2 systems to use with SnapCenter and you do not want to use the vsadmin role.
+There are several ONTAP CLI commands you must run to create a role for a new SVM user in ASA r2 systems. This role is required if you configure SVMs in ASA r2 systems to use with SnapCenter and you do not want to use the vsadmin role.
 
 *Steps*
 
