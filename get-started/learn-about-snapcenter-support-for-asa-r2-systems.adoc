@@ -10,22 +10,29 @@ summary: 'You should know the supported storage system, applications and databas
 :imagesdir: ../media/
 
 [.lead]
-ASA r2 storage systems are supported beginning with SnapCenter 6.1. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems]
+ASA r2 storage systems are supported beginning with SnapCenter 6.1. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about ASA r2 systems^].
 
-SnapCenter leverages REST APIs to perform all operations on ASA r2 systems, which do not support ZAPIs.
+SnapCenter supports both primary and secondary protection of applications running on physical systems and on Virtual Machine File Systems (VMFS). SnapCenter uses REST APIs for all operations on ASA r2 systems. ASA r2 systems do not support ZAPIs.
 
 *Operations supported by SnapCenter for ASA r2 systems*
 
-* Creating primary backups of applications over VMDK
-* Transferring consistency group snapshots to secondary storage system
-* Restoring the backups from primary and secondary storage systems to the original host or to the alternate host
+* Creating primary backups of applications
+* Moving hierarchical consistency group snapshots to secondary storage system
+* Restoring backups from primary and secondary storage systems to the original or alternate host
 ** In-place restore from both primary and secondary storage systems using VMware vMotion
 ** Connect and copy restore from both primary and secondary storage systems
 * Cloning the backups to the original host or to the alternate host
+* Raw Device Mapping (RDM)
+* Protection of application volumes for Oracle
+* Protection of SAP HANA NDV
+* LockVault
+* Secondary provisioning of the log directory of SQL plug-in host
 
-SnapCenter can discover or create ONTAP consistency groups. It can also provision and initialize SnapMirror relationships to the destination cluster for secondary protection.
+SnapCenter discovers or creates ONTAP consistency groups. It sets up SnapMirror relationships on the destination cluster for secondary protection. https://docs.netapp.com/us-en/ontap/consistency-groups[Learn more about ONTAP consistency groups^].
 
-For information on enabling secondary protection on ASA r2 systems for your application, refer to:
+NOTE: After you upgrade to SnapCenter 6.2 (server and plug-ins) and ONTAP 9.17.1, SnapCenter changes flat consistency groups to hierarchical consistency groups during the first scheduled backup.
+
+To learn how to enable secondary protection on ASA r2 systems for your application, see:
 
 * https://docs.netapp.com/us-en/snapcenter/protect-scsql/create-resource-groups-secondary-protection-for-asa-r2-mssql-resources.html[Enable secondary protection for Microsoft SQL Server resources]
 * https://docs.netapp.com/us-en/snapcenter/protect-hana/create-resource-groups-secondary-protection-for-asa-r2-hana-resources.html[Enable secondary protection for SAP HANA resources]
@@ -39,16 +46,18 @@ For information on enabling secondary protection on ASA r2 systems for your appl
 
 *Operations not supported by SnapCenter for ASA r2 systems*
 
-* Raw Device Mapping (RDM)
-* Application volumes for Oracle
-* SAP HANA NDV 
-* LockVault
 * Tamperproof snapshots
 * FlexGroup volumes
-* Hierarchical consistency group
 * Migration from ASA, AFF, or FAS storage systems to ASA r2 storage systems
-* Protection of databases that have mix of ASA, AFF, or FAS resources and ASA r2 resources
+* Protection of databases with a mix of ASA, AFF, or FAS resources and ASA r2 resources
 * Renaming of snapshots
-* Secondary provisioning of the log directory of SQL plug-in host
+* Provisioning of Windows resources
+* Secondary protection if there is SnapMirror active sync failover
+* Nonvolatile memory express (NVMe) protocol if SnapMirror active sync is enabled
+* Protection of applications running on AIX
+* Tech refresh
+* Disaster recovery of Microsoft SQL resources
+
+
 
 

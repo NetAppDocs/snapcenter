@@ -1,26 +1,24 @@
 ---
 permalink: release-notes/what's-new-in-snapcenter61.html
 sidebar: sidebar
-keywords: what is new, features, enhancements, 6.1
+keywords: what is new, features, enhancements, 6.2
 summary: 'The 6.1 release of SnapCenter software includes several new features and enhancements.'
 ---
 
-= What's new in SnapCenter software 6.1
+= What's new in SnapCenter software 6.2
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-The 6.1 release of SnapCenter software includes several new features and enhancements.
+The 6.2 release of SnapCenter software includes the following new feature.
 
 |===
 | Update | Description
 
 | link:../get-started/reference_supported_storage_systems_and_applications.html[Support for ASA r2 systems]
 a|
-SnapCenter now supports ASA r2 systems that create a simplified experience specific to the needs of SAN-only customers.
+SnapCenter 6.2 (server and plug-ins) along with ONTAP 9.17.1 supports both primary and secondary protection of applications running on physical systems (Linux and Windows) and Virtual Machine File Systems (VMFS) utilizing hierarchical consistency groups.
 
-| Supports secondary tamperproof snapshot
-a|
-SnapCenter allows you to specify the locking period for secondary snapshots.
+After you upgrade to SnapCenter 6.2 and ONTAP 9.17.1, SnapCenter changes flat consistency groups to hierarchical consistency groups during the first scheduled backup.
 |===

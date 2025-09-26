@@ -7,8 +7,10 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
   versions:
-    - version-number: "6.1"
+    - version-number: "6.2"
       url: /snapcenter
+    - version-number: "6.1"
+      url: /snapcenter-61
     - version-number: "6.0"
       url: /snapcenter-60
     - version-number: "5.0"
@@ -26,7 +28,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter software 6.1 docs
+    - title: SnapCenter software 6.2 docs
       url: /index.html
     - section: release-notes
     - section: get-started
