@@ -37,7 +37,7 @@ Custom prescripts and postscripts can be used in data protection operations. The
 
 == Consistency group (CG)
 
-A consistency group is a collection of volumes managed as a single unit. CGs are synchronized for data consistency across storage units and volumes. In ONTAP, they provide easy management and a protection guarantee for an application workload spanning multiple volumes. Learn more about link:https://docs.netapp.com/us-en/ontap/architecture/consistency_groups.html[consistency groups^].
+A consistency group is a collection of volumes managed as a single unit. CGs are synchronized for data consistency across storage units and volumes. In ONTAP, they provide easy management and a protection guarantee for an application workload spanning multiple volumes. Learn more about link:https://docs.netapp.com/us-en/ontap/consistency-groups[consistency groups^].
 
 == Usage of prescripts and postscripts
 
