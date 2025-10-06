@@ -29,7 +29,7 @@ You can install SnapCenter either on on-premises or on a public cloud to protect
 
 * On-premises in a Hybrid Cloud to protect the following:
 ** Data that is on ONTAP FAS, AFF, or ASA primary systems and replicated to Cloud Volumes ONTAP
-** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to object and archive storage in cloud (using BlueXP backup and recovery integration)
+** Data that is on ONTAP FAS, AFF, or ASA primary and secondary systems and protected to object and archive storage in cloud using NetApp backup and recovery integration
 
 * In a public cloud to protect the following:
 ** Data that is on Cloud Volumes ONTAP (formerly ONTAP Cloud) primary systems

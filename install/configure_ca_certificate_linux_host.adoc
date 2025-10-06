@@ -10,7 +10,7 @@ summary: 'You should configure the CA certificate with SnapCenter Server on Linu
 
 [.lead]
 
-After installing the SnapCenter Server on Linux, the installer creates the self-signed certificate. If you want to use the CA certificate, you should configure the certificates for nginx reverse proxy, audit logging, and SnapCenter services.
+After installing the SnapCenter Server on Linux, the installer creates the self-signed certificate. If you want to use the CA certificate, you should configure the certificates for nginx reverse proxy, audit logging, and SnapCenter.
 
 == Configure nginx certificate
 
@@ -39,7 +39,7 @@ Only _.pfx_ format is supported for audit log certificate.
 . Restart the *snapmanagerweb* service: `$ systemctl restart snapmanagerweb`
 
 
-== Configure SnapCenter services certificate
+== Configure SnapCenter certificate
 
 .Steps
 
@@ -52,7 +52,7 @@ The default value of _INSTALL_DIR_ is _/opt_.
 
 . Edit the *SERVICE_CERTIFICATE_PATH* and *SERVICE_CERTIFICATE_PASSWORD* keys to include the CA certificate path and password respectively.
 +
-Only _.pfx_ format is supported for SnapCenter services certificate.  
+Only _.pfx_ format is supported for SnapCenter certificate.  
 
 . Save and close the files. 
 . Restart all the services. 
