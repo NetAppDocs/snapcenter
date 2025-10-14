@@ -132,7 +132,7 @@ The following table lists the different ports and their default values.
 | Port Name | Port Numbers | Protocol | Direction | Description
 
 a|
-SnapCenter port
+SnapCenter web port
 a|
 8146
 a| 
