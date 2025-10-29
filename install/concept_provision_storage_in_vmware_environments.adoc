@@ -25,9 +25,6 @@ Support for a maximum of 56 RDM LUNs with four LSI Logic SCSI controllers for no
 Supports VMware ParaVirtual SCSI Controller. 256 disks can be supported on RDM disks.
 //Included the above statement for BURT 1444933 in 4.6
 
-For the latest information about supported versions, see https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
-
-
 === VMware ESXi server-related limitations
 
 * Installing the Plug-in for Windows on a Microsoft cluster on virtual machines using ESXi credentials is not supported.
