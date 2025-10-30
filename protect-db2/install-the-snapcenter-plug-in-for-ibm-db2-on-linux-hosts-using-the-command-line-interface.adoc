@@ -16,9 +16,7 @@ You should install the SnapCenter Plug-in for IBM Db2 Database by using the Snap
 * You should install the Plug-in for IBM Db2 Database on each of the Linux host where the IBM Db2 client resides.
 * The Linux host on which you are installing the SnapCenter Plug-in for IBM Db2 Database must meet the dependent software, database, and operating system requirements.
 +
-The Interoperability Matrix Tool (IMT) contains the latest information about the supported configurations.
-+
-https://imt.netapp.com/matrix/imt.jsp?components=121066;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+The https://imt.netapp.com/imt/imt.jsp?components=180320;180326;&solution=1257&isHWU&src=IMT[Interoperability Matrix Tool (IMT)] contains the latest information about the supported configurations.
 
 * The SnapCenter Plug-in for IBM Db2 Database is part of SnapCenter Plug-ins Package for Linux. Before you install SnapCenter Plug-ins Package for Linux, you should have already installed SnapCenter on a Windows host.
 
