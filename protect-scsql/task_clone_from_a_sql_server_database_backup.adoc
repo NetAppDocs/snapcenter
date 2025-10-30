@@ -126,14 +126,10 @@ For EMS, you can refer to https://docs.netapp.com/us-en/snapcenter/admin/concept
 
 . Review the summary, and then select *Finish*.
 . Monitor the operation progress by selecting *Monitor* > *Jobs*.
-
-.After you finish
-
-After the clone is created, you should never rename it.
++
+NOTE: After the clone is created, you should never rename it.
 
 .Related information
-
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value[Clone operation might fail or take longer time to complete with default TCP_TIMEOUT value]
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/The_failover_cluster_instance_database_clone_fails[The failover cluster instance database clone fails]
 --

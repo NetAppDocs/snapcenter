@@ -69,5 +69,3 @@ NOTE: NFS on AIX and filesystem is not supported.
 +
 Supports inline logging on SAN filesystems and LVM layout.
 |===
-
-The https://imt.netapp.com/matrix/imt.jsp?components=121071;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool] contains the latest information about the supported versions.

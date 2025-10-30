@@ -19,8 +19,8 @@ a|
 Operating Systems
 a|
 Microsoft Windows
-
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
++
+For the latest information about supported versions, see the https://imt.netapp.com/imt/imt.jsp?components=180321;180339;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool].
 
 a|
 Minimum RAM for the SnapCenter plug-in on host
@@ -40,8 +40,6 @@ a|
 * ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle
 * PowerShell Core 7.4.2 
 * Java 11 Oracle Java and OpenJDK
-
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1258&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_upgrade_or_install_fails_with_This_KB_is_not_related_to_the_OS[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity.]
 |===
