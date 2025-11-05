@@ -10,19 +10,15 @@ summary: 'You can use SnapCenter to restore and recover data from one or more ba
 :imagesdir: ../media/
 
 [.lead]
-You can use SnapCenter to restore backed-up SQL Server databases. Database restoration is a multiphase process that copies all the data and log pages from a specified SQL Server backup to a specified database.
+You can use SnapCenter to restore SQL Server databases. Restoring a database is a multiphase process that copies all the data and log pages from a specified SQL Server backup to a specified database.
 
 .Before you begin
 
 * Configure the target instance with an active directory user who belongs to the SMB ADactive directory domain and has permissions to set the file permissions appropriately. 
-* Configure the credentials in SnapCenter at instance level.
-* If the SQL database exists on CIFS share, then the RunAS account and SQL service account (domain account)of the plug-in host need to be part of the `BUILTIN\Administrators` group of the CIFS server in ONTAP.
-
-.About this task
-
-The SQL authentication for target instance will not be supported for SMB configurations. The target instance should be configured in SnapCenter with the active directory user having the required permissions.
-
-If the SnapCenter Plug-in services service account is not an active directory user then while performing restore to alternate host, the user who have the full control over the source volumes is required so that it can be impersonated and perform the required operation.
+* Configure the credentials at SnapCenter instance level.
+* If the SQL database exists on CIFS share, then the RunAS account and SQL service account (domain account) of the plug-in host need to be part of the `BUILTIN\Administrators` group of the CIFS server in ONTAP.
+* SMB configurations do not support SQL authentication for the target instance. Configure the target instance in SnapCenter with an active directory user who has the required permissions.
+* If the SnapCenter Plug-in service account is not an active directory user, ensure that a user with full control over the source volumes is available when restoring to an alternate host.
 
 .Steps
 
@@ -32,8 +28,8 @@ If the SnapCenter Plug-in services service account is not an active directory us
 . From the Manage Copies view, select *Backups* from storage system.
 . Select the backup from the table, and then click the image:../media/restore_icon.gif[restore icon] icon.
 . In the Restore Scope page, select one of the following options:
-.. Select *Restore the database to the same host where the backup was created* if you want to restore the database to the same SQL server where the backups are taken.
-.. Select *Restore the database to an alternate host* if you want the database to be restored to a different SQL server in the same or different host where backups are taken.
+.. Select *Restore the database to the same host where the backup was created* to restore the database to the same SQL server.
+.. Select *Restore the database to an alternate host* if you want to restore the database to a different SQL server in the same or another host where backups are taken.
 . In the Recovery Scope page, select one of the following options:
 .. Select *None* when you need to restore only the full backup without any logs.
 .. Select *All log backups* up-to-the-minute backup restore operation to restore all the available log backups after the full backup.
