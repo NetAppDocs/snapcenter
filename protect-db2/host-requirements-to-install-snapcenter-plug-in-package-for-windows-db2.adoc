@@ -19,7 +19,7 @@ a|
 Operating Systems
 a|
 Microsoft Windows
-+
+
 For the latest information about supported versions, see the https://imt.netapp.com/imt/imt.jsp?components=180321;180339;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool].
 
 a|
