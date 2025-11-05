@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for MySQL is available in both Windows and Linux environments.'
 ---
+
 = Prerequisites to add hosts and install SnapCenter Plug-in for MySQL
 :icons: font
 :imagesdir: ../media/
@@ -18,6 +19,7 @@ NOTE: IBM Java is not supported on Windows and Linux host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in or if the user belongs to a local workgroup user, you must disable UAC on the host. SnapCenter Plug-in for Microsoft Windows will be deployed by default with the MySQL plug-in on Windows hosts.
 * SnapCenter Server should have access to the 8145 or custom port of Plug-in for MySQL host.
 * For MySQL 5.7, binlog should be specified in mysql config (my.cnf or mysql-server.cnf) file.
+* If you are using MySQL version earlier than 8.0, you should manually install and enable the MySQLX plug-in. The MySQLX plug-in is installed and enabled by default for MySQL 8.0 or later.
 
 == Windows hosts
 
