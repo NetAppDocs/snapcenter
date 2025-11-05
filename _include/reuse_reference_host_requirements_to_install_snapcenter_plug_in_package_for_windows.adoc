@@ -28,8 +28,6 @@ a|
 * ASP.NET Core Runtime 8.0.12 (and all subsequent 8.0.x patches) Hosting Bundle
 * PowerShell Core 7.4.2
 * Java 11 Oracle Java and OpenJDK
-+
-Java 11 Oracle Java and OpenJDK is required only for SAP HANA, IBM Db2, PostgreSQL, MySQL, NetApp supported plug-ins, and other custom applications which can be installed on Windows host.
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_upgrade_or_install_fails_with_This_KB_is_not_related_to_the_OS[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity.]
 |===

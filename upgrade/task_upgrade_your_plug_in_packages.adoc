@@ -5,48 +5,44 @@ keywords: upgrade, upgrade plug-in packages
 summary: 'The plug-in packages are distributed as part of the SnapCenter upgrade.'
 ---
 
-= Upgrade your plug-in packages
+= Upgrade the SnapCenter plug-in packages
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The plug-in packages are distributed as part of the SnapCenter upgrade.
+The plug-in packages are distributed as part of the SnapCenter upgrade. The upgrade procedure automatically places your Windows, Linux, or AIX plug-in hosts into maintenance mode. The maintenance mode prevents the plug-in host from executing any scheduled jobs during the upgrade.
 
-You do not have to manually put each plug-in host that you want to upgrade into maintenance mode because the upgrade procedure places your Windows, Linux, or AIX plug-in hosts into maintenance mode. The maintenance mode prevents any scheduled jobs to be executed on the plug-in host during the upgrade.
+The system selects all the plug-ins in the package, but upgrades only the plug-ins that you installed with the earlier version of SnapCenter. The system does not install the remaining plug-ins. Use the *Add plug-ins* option to install any new plug-in.
 
 .Before you begin
 
 * If you are a non-root user with access to the Linux machines, you should update the _/etc/sudoers_ file with the latest checksum values before performing the upgrade operation.
+* Ensure that PowerShell Core 7.4.2 is installed on the Windows plug-in host.
+* Ensure that Java 11 Oracle Java and OpenJDK are installed on Windows and Linux plug-in hosts.
 * By default SnapCenter detects JAVA_HOME from the environment. If you want to use a fixed JAVA_HOME and if you are upgrading the plug-ins on a Linux host, you should manually add the SKIP_JAVAHOME_UPDATE parameter in the _spl.properties_ file located at _/var/opt/snapcenter/spl/etc/_ and set the value to TRUE.
 +
 The value of JAVA_HOME gets updated when the plug-in is upgraded or when the SnapCenter plug-in loader (SPL) service restarts. Before upgrading or restarting the SPL, if you add the SKIP_JAVAHOME_UPDATE parameter and set the value to TRUE, the value of JAVA_HOME is not updated.
 
-* You should have backed up all the SnapCenter configuration files that you have modified either on the SnapCenter Server host or the plug-in host.
-+
-Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on.
+* Back up all modified SnapCenter configuration files (such as SnapDriveService.exe.config, SMCoreServiceHost.exe.config, and so on) on the SnapCenter Server host or plug-in host.
 
 .About this task
 
-* For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to the latest version for the SCRIPTS_PATH to run.
-+
+For SnapCenter Plug-in for Microsoft SQL Server, SnapCenter Plug-in for Microsoft Exchange Server, and SnapCenter Plug-in for Microsoft Windows, it is recommended to upgrade both the server and the plug-in hosts to the latest version for the SCRIPTS_PATH to run.
+
 For the existing backup and verification schedules with prescripts and postscripts enabled in the policy, the backup operations will continue to work after upgrade.
-+
+
 In the *Job details* page, a warning message recommends that the customer should copy the scripts to the SCRIPTS_PATH and edit the policy to provide a path that is relative to the SCRIPTS_PATH. For the clone lifecycle job, the warning message appears at the sub-job level.
 
 .Steps
 
 . In the left navigation pane, click *Hosts* > *Managed Hosts*.
 . Upgrade the hosts by performing one of the following tasks:
-  * If the Overall Status column displays "Upgrade available" for one of the plug-inhosts, click the plug-in host name and perform the following:
-    .. Click *More Options*.
-    .. Select *Skip prechecks* if you do not want to validate whether the plug-in host meets the requirements to upgrade the plug-in.
-    .. Click *Upgrade*.
-  * If you want to upgrade multiple hosts, select all the hosts, click image:../media/more_icon.gif[more icon], and then click *Upgrade* > *OK*.
+* If the Overall Status column displays "Upgrade available" for one of the plug-in hosts, click the plug-in host name and perform the following:
+.. Click *More Options*.
+.. Select *Skip prechecks* if you do not want to validate whether the plug-in host meets the requirements to upgrade the plug-in.
++ 
+NOTE: If you do not select *Skip prechecks*, SnapCenter checks if the plug-in host meets the requirements. If requirements are not met, error or warning messages appear. If the error is related to disk space or RAM, you can update either the web.config located at _C:\Program Files\NetApp\SnapCenter WebApp_, or the PowerShell config files located at _C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SnapCenter\_ to modify the default values. If the error is related to remaining parameters then you must fix the issue, and then validate the requirements again.
+.. Click *Upgrade*.
+* If you want to upgrade multiple hosts, select all the hosts, click image:../media/more_icon.gif[more icon], and then click *Upgrade* > *OK*.
 +  
 All the related services are restarted during the plug-in upgrade.
-+
-NOTE: All the plug-ins in the package gets selected, but only the plug-ins that were installed with the earlier version of SnapCenter are upgraded, and the remaining plug-ins are not installed. You must use the *Add plug-ins* option to install any new plug-in.
-+
-If you have not selected the *Skip prechecks* check box, the plug-in host is validated to see if it meets the requirements to install the plug-in. If the minimum requirements are not met, appropriate error or warning messages are displayed. After fixing the issue, click *Upgrade*.
-+
-NOTE: If the error is related to disk space or RAM, you can update either the web.config located at C:\Program Files\NetApp\SnapCenter WebApp, or the PowerShell config files located at C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SnapCenter\ to modify the default values. If the error is related to remaining parameters then you must fix the issue, and then validate the requirements again.

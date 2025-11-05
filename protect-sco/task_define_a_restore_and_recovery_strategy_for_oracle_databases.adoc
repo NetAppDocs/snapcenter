@@ -131,6 +131,7 @@ The following restore and recovery operations are not supported:
 * Restore and recovery of tablespaces of the root container database (CDB)
 * Restore of temporary tablespaces and temporary tablespaces associated with PDBs
 * Restore and recovery of tablespaces from multiple PDBs simultaneously
+* Restore of temporary files because plug-in for Oracle does not back up temporary files
 * Restore of log backups
 * Restore of backups to a different location
 * Restore of redo log files in any configuration other than Data Guard standby or Active Data Guard standby databases
