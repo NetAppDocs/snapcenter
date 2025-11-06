@@ -4,6 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for Microsoft SQL Server
 summary: 'When the SnapCenter Plug-in for Microsoft SQL Server is installed in your environment, you can use SnapCenter to back up, restore, and clone SQL Server databases.'
 ---
+
 = What you can do with the SnapCenter Plug-in for Microsoft SQL Server
 :icons: font
 :imagesdir: ../media/
@@ -35,5 +36,3 @@ Verification of SQL Server system database is not supported. SnapCenter clones t
 
 * Schedule backup operations and clone operations
 * Monitor backup operations, restore operations, and clone operations
-
-NOTE: The Plug-in for SQL Server does not support backup and recovery of SQL Server databases on SMB shares.
