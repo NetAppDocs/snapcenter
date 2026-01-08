@@ -109,15 +109,9 @@ ARCHIVE_LOG_EXT
 a|
 file_extension
 a|
-Specifies the archive log file
-extension length.
+Specifies the archive log file extension.
 
-For example, if the
-archive log is
-log_backup_0_0_0_0.161518551942
-9 and if the file_extension value is 5,
-then the extension of the log will
-retain 5 digits, which is 16151.
+For example, if the archive log is log_backup_0_1.log, specify .log as the file extension.
 a|
 ARCHIVE_LOG_RECURSIVE_SE
 ARCH
@@ -174,3 +168,5 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 You must also specify the sender and receiver email addresses, and the subject of the email. The SMTP server must be configured in *Settings* > *Global Settings*.
 
 . Review the summary, and then click *Finish*.
+
+// 7-JAN-2026 SNAPCDOC-386 and GH-210
