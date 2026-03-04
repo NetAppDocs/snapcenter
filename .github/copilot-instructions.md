@@ -33,9 +33,30 @@ SnapCenter software provides application-consistent data protection for applicat
 
 - **Server + plug-in architecture:** SnapCenter Server is the central management plane; data protection operations are performed by plug-ins installed on application hosts.
 - **Resources, resource groups, and policies:** A *resource* is an individual database, file system, or application instance. A *resource group* is a collection of resources backed up together. A *policy* defines backup schedules, retention, and replication settings and is attached to a resource group.
-- **Plug-in naming conventions:** Plug-ins are referred to as "SnapCenter Plug-in for <technology>" (for example, SnapCenter Plug-in for Microsoft SQL Server). Avoid shortening to just "the plug-in" without the qualifier on first reference.
-- **NetApp supported plug-ins:** A SnapCenter component that provides a framework for plug-ins not included in the dedicated plug-in offerings. The framework ships with several pre-built plug-ins (MongoDB, Oracle Applications, SAP ASE, SAP MaxDB, Storage). Always use the exact capitalization "NetApp supported plug-ins" (only "NetApp" is capitalized). When referring to this component in general text, use "NetApp supported plug-ins" without inserting "SnapCenter" into the phrase; if context requires mentioning SnapCenter, use patterns like "NetApp supported plug-ins in SnapCenter" or "NetApp supported plug-ins for SnapCenter" Do not use "custom plug-ins" as a synonym for this component.
-- **Plug-ins Package:** When referring to plug-in installation packages, use "the Plug-ins Package for [platform]" (for example, "the Plug-ins Package for Linux"). Include the article "the" before "Plug-ins Package."
+- **Plug-in naming conventions:** Plug-ins are referred to as "SnapCenter Plug-in for <technology>" with the exact technology name. Use these approved names:
+  - SnapCenter Plug-in for Microsoft SQL Server
+  - SnapCenter Plug-in for Oracle Database
+  - SnapCenter Plug-in for SAP HANA Database
+  - SnapCenter Plug-in for Microsoft Windows
+  - SnapCenter Plug-in for Microsoft Exchange Server
+  - SnapCenter Plug-in for IBM Db2
+  - SnapCenter Plug-in for PostgreSQL
+  - SnapCenter Plug-in for MySQL
+  - SnapCenter Plug-in for Unix
+  - SnapCenter Plug-in for MongoDB
+  - SnapCenter Plug-in for Oracle Applications
+  - SnapCenter Plug-in for SAP ASE
+  - SnapCenter Plug-in for SAP MaxDB
+  - SnapCenter Plug-in for Storage
+  
+  Avoid shortening to just "the plug-in" without the qualifier on first reference. Do not shorten technology names (for example, use "Oracle Database" not "Oracle"). When referring to a specific plug-in in context, use "the SnapCenter Plug-in for [technology]" with the article "the."
+
+- **NetApp supported plug-ins:** A SnapCenter component that provides a framework for plug-ins not included in the dedicated plug-in offerings. The framework ships with several pre-built plug-ins (MongoDB, Oracle Applications, SAP ASE, SAP MaxDB, Storage). Always use the exact capitalization "NetApp supported plug-ins" (only "NetApp" is capitalized). When referring to this component in general text, use "NetApp supported plug-ins" without inserting "SnapCenter" into the phrase; if context requires mentioning SnapCenter, use patterns like "NetApp supported plug-ins in SnapCenter" or "NetApp supported plug-ins for SnapCenter." Do not use "custom plug-ins" as a synonym for this component.
+
+- **Plug-ins Package:** When referring to plug-in installation packages, use "the Plug-ins Package for [platform]" (for example, "the Plug-ins Package for Linux"). Always include the article "the" before "Plug-ins Package."
+
+- **SnapCenter Server:** When referring to the server component in context, use "the SnapCenter Server" or "SnapCenter Server" (both are acceptable, but "the" is preferred when referring to a specific instance).
+
 - **Snapshot-based backups:** All backups are ONTAP Snapshot copies; the terms "backup" and "Snapshot copy" are used deliberately—do not substitute "snapshot" (lowercase) unless quoting UI text.
 - **SnapMirror and SnapVault:** Secondary protection is achieved via SnapMirror (replication) or SnapVault (backup to secondary); these are distinct and should not be used interchangeably.
 - **ASA r2 systems:** A subset of SnapCenter operations are supported on NetApp ASA r2 all-flash SAN arrays; content specific to ASA r2 is in dedicated files named `create-resource-groups-secondary-protection-for-asa-r2-*.adoc`.
