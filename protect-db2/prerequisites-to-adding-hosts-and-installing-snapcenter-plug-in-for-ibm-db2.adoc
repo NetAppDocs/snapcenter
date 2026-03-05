@@ -25,7 +25,7 @@ NOTE: IBM Java is not supported on Windows and Linux host.
 * You must have enabled the password-based SSH connection for the root or non-root user.
 * You must have installed Java 11 on your Windows host.
 +
-http://www.java.com/en/download/manual.jsp[Download JAVA for Windows]
+link:https://www.oracle.com/java/technologies/downloads/#java11-windows[Download JAVA for Windows]
 
 == Linux and AIX hosts
 
@@ -33,9 +33,9 @@ http://www.java.com/en/download/manual.jsp[Download JAVA for Windows]
 
 * You must have installed Java 11 on your Linux host.
 +
-http://www.java.com/en/download/manual.jsp[Download JAVA for Linux]
+link:https://www.oracle.com/java/technologies/downloads/#java11-linux[Download JAVA for Linux]
 +
-https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM[Download JAVA for AIX]
+link:https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM[Download JAVA for AIX]
 
 * For IBM Db2 databases that are running on a Linux host, while installing Plug-in for IBM Db2, SnapCenter Plug-in for UNIX is installed automatically.
 * You should have *bash* as the default shell for plug-in installation.
@@ -206,4 +206,4 @@ You can obtain the _checksum_value_ from the *sc_unix_plugins_checksum.txt* file
 
 IMPORTANT: The example should be used only as a reference for creating your own data.
 
-
+// SNAPCDOC-391, 2026-MAR-05
