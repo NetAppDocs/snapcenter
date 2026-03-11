@@ -13,7 +13,7 @@ A resource group is the container to which you must add resources that you want 
 
 .About this task
 
-* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage administrators should manually cleanup the clones after the SnapLock expiry time.
 
 .Steps
 
@@ -38,7 +38,7 @@ Enter one or more labels that will help you later search for the resource group.
 
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
 a|
-Use custom name format for snapshot copy
+Use custom name format for snapshot
 a|
 Select this check box, and enter a custom name format that you want to use for the snapshot name.
 
@@ -150,7 +150,7 @@ SnapCenter to create a storage level snapshot
 a|
 Select *SnapCenter without File System Consistency*.
 a|
-To enter the command to be executed on the host to create snapshot copies.
+To enter the command to be executed on the host to create snapshots.
 a|
 Select *Other*, and then enter the command to be executed on the host to create a snapshot.
 |===

@@ -31,7 +31,7 @@ link:https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.htm
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
 
-* You must have installed Java 11 on your Linux host.
+* You must have installed Java 11 on your Linux or AIX hosts.
 +
 link:https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html[Download JAVA for Linux^]
 +
