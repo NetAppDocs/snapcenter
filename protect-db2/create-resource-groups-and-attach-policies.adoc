@@ -13,7 +13,7 @@ A resource group is the container to which you must add resources that you want 
 
 .About this task
 
-* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage administrators should manually cleanup the clones after the SnapLock expiry time.
+* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage administrators should manually clean up the clones after the SnapLock expiry time.
 
 .Steps
 
