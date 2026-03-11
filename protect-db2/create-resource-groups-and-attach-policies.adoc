@@ -49,7 +49,7 @@ For example, customtext_resource group_policy_hostname or resource group_hostnam
 +
 This helps to filter information on the screen.
 
-. Select the resources from the *Available Resources* section, and then select the right arrow to move them to the *Selected Resources* section.
+. Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
 . In the Application Settings page, do the following:
 .. Select the *Backups* arrow to set additional backup options:
 +
