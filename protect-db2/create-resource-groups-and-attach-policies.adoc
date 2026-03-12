@@ -13,12 +13,12 @@ A resource group is the container to which you must add resources that you want 
 
 .About this task
 
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage administrators should manually clean up the clones after the SnapLock expiry time.
 
 .Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, click *New Resource Group*.
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *New Resource Group*.
 . In the Name page, perform the following actions:
 +
 |===
@@ -38,7 +38,7 @@ Enter one or more labels that will help you later search for the resource group.
 
 For example, if you add HR as a tag to multiple resource groups, you can later find all resource groups associated with the HR tag.
 a|
-Use custom name format for snapshot copy
+Use custom name format for snapshot
 a|
 Select this check box, and enter a custom name format that you want to use for the snapshot name.
 
@@ -51,7 +51,7 @@ This helps to filter information on the screen.
 
 . Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
 . In the Application Settings page, do the following:
-.. Click the *Backups* arrow to set additional backup options:
+.. Select the *Backups* arrow to set additional backup options:
 +
 Enable consistency group backup and perform the following tasks:
 +
@@ -72,8 +72,8 @@ Select this to avoid forcing a WAFL consistency point.
 +
 image:../media/application_settings.gif[application settings]
 
-.. Click the *Scripts* arrow and enter the pre and post commands for quiesce, snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
-.. Click the *Custom Configurations* arrow and enter the custom key-value pairs required for all data protection operations using this resource.
+.. Select the *Scripts* arrow and enter the pre and post commands for quiesce, snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+.. Select the *Custom Configurations* arrow and enter the custom key-value pairs required for all data protection operations using this resource.
 +
 |===
 | Parameter | Setting | Description
@@ -136,7 +136,7 @@ a|
 +
 NOTE: The custom key-value pairs are supported for IBM Db2 Linux plug-in systems and not supported for IBM Db2 database registered as a centralized windows plug-in.
 
-.. Click the *Snapshot Copy Tool* arrow to select the tool to create snapshots:
+.. Select the *Snapshot Copy Tool* arrow to select the tool to create snapshots:
 +
 |===
 | If you want...| Then...
@@ -150,7 +150,7 @@ SnapCenter to create a storage level snapshot
 a|
 Select *SnapCenter without File System Consistency*.
 a|
-To enter the command to be executed on the host to create snapshot copies.
+To enter the command to be executed on the host to create snapshots.
 a|
 Select *Other*, and then enter the command to be executed on the host to create a snapshot.
 |===
@@ -162,7 +162,7 @@ NOTE: You can also create a policy by clicking *image:../media/add_policy_from_r
 The policies are listed in the Configure schedules for selected policies section.
 
  .. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* for the policy you want to configure.
- .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click *OK*.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
 +
 Where, policy_name is the name of the policy that you have selected.
 +
