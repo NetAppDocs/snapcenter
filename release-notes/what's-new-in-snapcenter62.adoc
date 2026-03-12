@@ -1,17 +1,16 @@
 ---
-permalink: release-notes/what's-new-in-snapcenter61.html
+permalink: release-notes/what's-new-in-snapcenter62.html
 sidebar: sidebar
 keywords: what is new, features, enhancements, 6.2
-summary: 'The 6.1 release of SnapCenter software includes several new features and enhancements.'
+summary: 'The 6.2 release of SnapCenter software includes several new features and enhancements.'
 ---
-
 = What's new in SnapCenter software 6.2
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-The 6.2 release of SnapCenter software includes the following new feature.
+The 6.2 release of SnapCenter software includes the following expanded feature.
 
 |===
 | Update | Description
@@ -28,3 +27,5 @@ After you upgrade to SnapCenter 6.2 and ONTAP 9.17.1, SnapCenter changes flat co
 The NetApp Console, built on the enhanced and restructured BlueXP foundation, provides centralized management of NetApp storage and NetApp Data Services across on-premises and cloud environments at enterprise grade—delivering real-time insights, faster workflows, and simplified administration, that is highly secure and compliant.
  
 For details on what has changed, see the link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html[NetApp Console release notes^].
+
+// Gh issue #215, 2026-MAR-10

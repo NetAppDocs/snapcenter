@@ -110,7 +110,7 @@ file_extension
 a|
 Specifies a regular expression that matches the file name extensions of the log files.
 
-For log files ending in a number of digits, use a regular expression, such as "[0-9]+" or (from 6.0) "\d+" (any length of digits of at least one character) as the value for the parameter, which represents any log sequence number in SAP HANA.
+For log files ending in a number of digits, use a regular expression, such as "0-9+" or (from 6.0) "\d+" (any length of digits of at least one character) as the value for the parameter, which represents any log sequence number in SAP HANA.
 a|
 ARCHIVE_LOG_RECURSIVE_SEARCH
 a|
