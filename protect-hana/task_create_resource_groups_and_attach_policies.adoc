@@ -15,7 +15,7 @@ A resource group is the container to which you must add resources that you want 
 
 * To create SAP HANA system replication backups, it is recommended to add all the resources of the SAP HANA system into one resource group. This ensures a seamless backup during takeover-failback mode.
 
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. The storage administrator should manually cleanup the clones post the SnapLock expiry time.
 
 * Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
 * Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
@@ -47,7 +47,7 @@ Use custom name format for snapshots.
 a|
 Select this check box, and enter a custom name format that you want to use for the snapshot name.
 
-For example, customtext_resource group_policy_hostname or resource group_hostname. By default, a timestamp is appended to the snapshot name.
+For example, customtext_resourcegroup_policy_hostname or resource group_hostname. By default, a timestamp is appended to the snapshot name.
 |===
 
 . In the Resources page, select a host name from the *Host* drop-down list and resource type from the *Resource Type* drop-down list.
@@ -122,7 +122,7 @@ You should use this parameter if the archive logs are located under subdirectori
 a|
 |===
 +
-NOTE: The custom key-value pairs are supported for SAP HANA Linux plug-in systems and not supported for SAP HANA database registered as a centralized Windows plug-in.
+NOTE: Custom key-value pairs are supported for the SnapCenter Plug-in for SAP HANA Database on Linux systems, but not for SAP HANA databases registered with the SnapCenter Plug-in for Microsoft Windows.
 
 .. Click the *Snapshot Copy Tool* arrow to select the tool to create snapshots:
 +
