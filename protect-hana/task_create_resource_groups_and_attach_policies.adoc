@@ -15,15 +15,15 @@ A resource group is the container to which you must add resources that you want 
 
 * To create SAP HANA system replication backups, it is recommended to add all the resources of the SAP HANA system into one resource group. This ensures a seamless backup during takeover-failback mode.
 
-* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. The storage administrator should manually cleanup the clones post the SnapLock expiry time.
+* For ONTAP 9.12.1 and earlier, the clones created from the SnapLock Vault snapshots as part of restore inherit the SnapLock Vault expiry time. The storage administrator should manually cleanup the clones post the SnapLock expiry time.
 
 * Adding new databases without SnapMirror active sync to an existing resource group which contains resources with SnapMirror active sync, is not supported.
 * Adding new databases to an existing resource group in failover mode of SnapMirror active sync is not supported. You can add resources to the resource group only in regular or fail-back state.
 
 .Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
-. In the Resources page, click *New Resource Group*.
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
+. In the Resources page, select *New Resource Group*.
 . In the Name page, perform the following actions:
 +
 |===
@@ -54,9 +54,9 @@ For example, customtext_resourcegroup_policy_hostname or resource group_hostname
 +
 This helps to filter information on the screen.
 
-. Select the resources from the *Available Resources* section, and then click the right arrow to move them to the *Selected Resources* section.
+. Select the resources from the *Available Resources* section, and then select the right arrow to move them to the *Selected Resources* section.
 . In the Application Settings page, do the following:
-.. Click the *Backups* arrow to set additional backup options:
+.. Select the *Backups* arrow to set additional backup options:
 +
 Enable consistency group backup and perform the following tasks:
 +
@@ -77,8 +77,8 @@ Select this to avoid forcing a WAFL consistency point.
 +
 image:../media/application_settings.gif[application settings]
 
-.. Click the *Scripts* arrow and enter the pre and post commands for quiesce, snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
-.. Click the *Custom Configurations* arrow and enter the custom key-value pairs required for all data protection operations using this resource.
+.. Select the *Scripts* arrow and enter the pre and post commands for quiesce, snapshot, and unquiesce operations. You can also enter the pre commands to be executed before exiting in the event of a failure.
+.. Select the *Custom Configurations* arrow and enter the custom key-value pairs required for all data protection operations using this resource.
 +
 |===
 | Parameter | Setting | Description
@@ -124,7 +124,7 @@ a|
 +
 NOTE: Custom key-value pairs are supported for the SnapCenter Plug-in for SAP HANA Database on Linux systems, but not for SAP HANA databases registered with the SnapCenter Plug-in for Microsoft Windows.
 
-.. Click the *Snapshot Copy Tool* arrow to select the tool to create snapshots:
+.. Select the *Snapshot Copy Tool* arrow to select the tool to create snapshots:
 +
 |===
 | If you want...| Then...
@@ -147,12 +147,12 @@ Select *Other*, and then enter the command to be executed on the host to create 
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
-NOTE: You can also create a policy by clicking *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
+NOTE: You can also create a policy by selecting *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]*.
 +
 The policies are listed in the Configure schedules for selected policies section.
 
- .. In the Configure Schedules column, click *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* for the policy you want to configure.
- .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then click *OK*.
+ .. In the Configure Schedules column, select *image:../media/add_policy_from_resourcegroup.gif[add policy form resource group]* for the policy you want to configure.
+ .. In the Add schedules for policy _policy_name_ dialog box, configure the schedule, and then select *OK*.
 +
 Where, policy_name is the name of the policy that you have selected.
 +
@@ -163,6 +163,6 @@ Third party backup schedules are not supported when they overlap with SnapCenter
 +
 You must also specify the sender and receiver email addresses, and the subject of the email. The SMTP server must be configured in *Settings* > *Global Settings*.
 
-. Review the summary, and then click *Finish*.
+. Review the summary, and then select *Finish*.
 
 // GH issue #217, 2026-MAR-12

@@ -28,4 +28,4 @@ The NetApp Console, built on the enhanced and restructured BlueXP foundation, pr
  
 For details on what has changed, see the link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html[NetApp Console release notes^].
 
-// Gh issue #215, 2026-MAR-10
+// GH issue #215, 2026-MAR-10
