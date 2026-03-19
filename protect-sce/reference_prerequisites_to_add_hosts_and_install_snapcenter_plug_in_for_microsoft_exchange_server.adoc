@@ -71,6 +71,4 @@ You must have a domain user with local administrator privileges, and with local 
 * Suspend-MailboxDatabaseCopy
 * Update-MailboxDatabaseCopy
 
-== Host requirements to install SnapCenter Plug-ins Package for Windows
-
-include::../_include/reuse_reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows.adoc[]
+// GH ISSUE #220, 2026-MAR-12
