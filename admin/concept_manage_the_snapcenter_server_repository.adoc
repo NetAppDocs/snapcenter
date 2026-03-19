@@ -141,6 +141,6 @@ Successfully updated the MySQL server password.
 
 .Related information
 
-The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running the _Get-Help command-name_ command. Alternatively, you can refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
+The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running the `Get-Help command_name` command. Alternatively, you can refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 
 // GH issue #222, 2026-MAR-12 
