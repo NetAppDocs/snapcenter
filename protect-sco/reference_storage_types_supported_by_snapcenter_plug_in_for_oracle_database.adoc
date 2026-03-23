@@ -43,6 +43,18 @@ NOTE: RAC is supported on ESX 8.0U2 which has the support for shared VMDK
 * vVol datastores on both NFS and SAN
 +
 vVol datastore can only be provisioned with ONTAP Tools for VMware vSphere.
+a|
+Other hypervisors
+a|
+Linux running under KVM, Xen, Hyper-V and hyperscaler hypervisors is supported where the guest OS has direct TCP/IP access to the required ONTAP storage resources using the following methods:
+
+* iSCSI-connected LUNs
+
+* NFS-connected volumes
+
+* NVMe/TCP
+
+NOTE: Datastores and raw device presentations are not supported outside VMware.
 |===
 
 == Storage types supported on AIX
@@ -69,3 +81,5 @@ NOTE: NFS on AIX and filesystem is not supported.
 +
 Supports inline logging on SAN filesystems and LVM layout.
 |===
+
+// GH issue #219, 2026-MAR-23
