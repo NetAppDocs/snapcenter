@@ -82,4 +82,4 @@ NOTE: NFS on AIX and filesystem is not supported.
 Supports inline logging on SAN filesystems and LVM layout.
 |===
 
-// GH issue #219, 2026-MAR-23 - trying a rebuild
+// GH issue #219, 2026-MAR-23
