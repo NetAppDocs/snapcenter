@@ -18,7 +18,9 @@ To address such scenarios where volumes are shared across ASM disk groups or LVM
 
 .Steps
 
-. Navigate to the following configuration file on the SnapCenter server: `C:\Program Files\NetApp\SMCore\SMCoreServiceHost.dll.config`.
+. Navigate to the following configuration file on the SnapCenter server: 
++
+`C:\Program Files\NetApp\SMCore\SMCoreServiceHost.dll.config`.
 . Locate the `isCgSnapshotForRg` parameter and change its value from *false* to *true*.
 . Restart the `SMCoreService` service for the change to take effect.
 
