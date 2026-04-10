@@ -13,12 +13,13 @@ By default, the SnapCenter Plug-in for Oracle Database creates consistency group
 
 However, if ASM disk groups or LVM volume groups share underlying ONTAP volumes, the consistency group snapshot might fail due to duplicate snapshot conflicts. In such cases, SnapCenter automatically falls back to volume-level snapshots.
 
+.About this task
 To address such scenarios where volumes are shared across ASM disk groups or LVM volume groups, SnapCenter supports enabling consistency group snapshots at the resource group level. This ensures that all ASM disk groups or LVM volume groups associated with databases within the resource group are captured under a single consistency group snapshot. The followings steps outline how to use this feature.
 
 .Steps
 
-* Navigate to the following configuration file on the SnapCenter server: `C:\Program Files\NetApp\SMCore\SMCoreServiceHost.dll.config`.
-* Locate the `isCgSnapshotForRg` parameter and change its value from *false* to *true*.
-* Restart the `SMCoreService` service for the change to take affect.
+. Navigate to the following configuration file on the SnapCenter server: `C:\Program Files\NetApp\SMCore\SMCoreServiceHost.dll.config`.
+. Locate the `isCgSnapshotForRg` parameter and change its value from *false* to *true*.
+. Restart the `SMCoreService` service for the change to take effect.
 
 // SNAPCDOC-397, 2026-APR-09
