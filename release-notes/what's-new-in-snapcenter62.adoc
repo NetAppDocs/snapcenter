@@ -4,11 +4,17 @@ sidebar: sidebar
 keywords: what is new, features, enhancements, 6.2
 summary: 'The 6.2 release of SnapCenter software includes several new features and enhancements.'
 ---
-= What's new in SnapCenter software 6.2
+= What's new in SnapCenter software
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Learn about the new features and enhancements in supported versions of SnapCenter software.
+
+== SnapCenter software 6.2.1
+The 6.2.1 release of SnapCenter software has no new features. It includes only bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter 6.2.1 Release Notes^] for further details.
+
+== SnapCenter software 6.2
 
 The 6.2 release of SnapCenter software includes the following expanded feature.
 
