@@ -4,7 +4,6 @@ sidebar: sidebar
 keywords: upgrade paths, supported, upgrade to SnapCenter
 summary: 'The upgrade paths supported for SnapCenter.'
 ---
-
 = Supported upgrade paths for SnapCenter
 :icons: font
 :imagesdir: ../media/
