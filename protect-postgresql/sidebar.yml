@@ -94,7 +94,9 @@ entries:
   - title: Back up PostgreSQL resources
     entries:
       - title: Back up workflow
-        url: /protect-postgresql/back-up-postgresql-resources.html      
+        url: /protect-postgresql/back-up-postgresql-resources.html 
+      - title: Configure credentials for the PostgreSQL cluster
+        url: /protect-postgresql/configure-credentials-for-postgresql-cluster.html    
       - title: Discover the clusters automatically
         url: /protect-postgresql/discover-the-clusters-automatically.html          
       - title: Add resources manually to the plug-in host
