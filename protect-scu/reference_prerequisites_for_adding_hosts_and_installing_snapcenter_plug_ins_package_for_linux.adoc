@@ -19,9 +19,9 @@ SnapCenter Plug-in for Unix File Systems can be installed by a non-root user. Ho
 * Create credentials with authentication mode as Linux for the install user.
 * You must have installed Java 17 on your Linux host.
 +
-NOTE: Ensure that you have installed only the certified edition of JAVA 17 on the Linux host.
+NOTE: Ensure that you have installed only the certified edition of Java 17 on the Linux host.
 +
-For information to download JAVA, see: http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems^]
+For information to download Java, see: http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems^].
 
 * You should have *bash* as the default shell for plug-in installation.
 
@@ -54,11 +54,11 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 17 Oracle Java and OpenJDK
+Java 17 (Oracle Java and OpenJDK)
 
-NOTE: Ensure that you have installed only the certified edition of JAVA 17 on the Linux host.
+NOTE: Ensure that you have installed only the certified edition of Java 17 on the Linux host.
 
-If you have upgraded JAVA to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct JAVA version and the correct path.
+If you have upgraded Java to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct Java version and the correct path.
 
 |===
 
