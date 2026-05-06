@@ -21,7 +21,7 @@ SnapCenter Plug-in for Unix File Systems can be installed by a non-root user. Ho
 +
 NOTE: Ensure that you have installed only the certified edition of Java 17 on the Linux host.
 +
-For information to download Java, see: http://www.java.com/en/download/manual.jsp[Java Downloads for All Operating Systems^].
+For information on Java downloads, refer to link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for all operating systems^].
 
 * You should have *bash* as the default shell for plug-in installation.
 

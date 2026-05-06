@@ -29,7 +29,7 @@ If you are using iSCSI, the iSCSI service should be running.
 * If you manage cluster nodes in SnapCenter, you must have a user with administrative privileges to all the nodes in the cluster.
 * You must manually choose SnapCenter Plug-in for Microsoft Windows.
 +
-http://www.java.com/en/download/manual.jsp[Download JAVA for Windows]
+link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Windows]
 
 == Linux and AIX hosts
 
@@ -40,9 +40,9 @@ NOTE: Storage and Oracle applications are supported on AIX.
 +
 If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 17.
 +
-http://www.java.com/en/download/manual.jsp[Download JAVA for Linux]
+link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Linux]
 +
-https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM[Download JAVA for AIX]
+https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM[Download Java for AIX]
 
 * You must configure sudo privileges for the non-root user to provide access to several paths. Add the following lines to the /etc/sudoers file by using the visudo Linux utility. 
 +
