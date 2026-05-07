@@ -1,0 +1,27 @@
+---
+permalink: protect-sco/enable-consistency-group-snapshots-resource-group-level.html
+sidebar: sidebar
+keywords: consistency group, enable, create, resource group level
+summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
+---
+= Enable consistency group snapshots at the resource group level
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+By default, the SnapCenter Plug-in for Oracle Database creates consistency group snapshots at the Automatic Storage Management (ASM) disk group or Logical Volume Management (LVM) volume group level. As a best practice, databases within a single resource group should not share ONTAP volumes across ASM disk groups or LVM volume groups.
+
+However, if ASM disk groups or LVM volume groups share underlying ONTAP volumes, the consistency group snapshot might fail due to duplicate snapshot conflicts. In such cases, SnapCenter automatically falls back to volume-level snapshots.
+
+.About this task
+In scenarios where volumes are shared across ASM disk groups or LVM volume groups, SnapCenter supports enabling consistency group snapshots at the resource group level. This ensures that all ASM disk groups or LVM volume groups associated with databases within the resource group are captured under a single consistency group snapshot. The following steps outline how to use this feature.
+
+.Steps
+
+. Navigate to the following configuration file on the SnapCenter server: 
++
+`C:\Program Files\NetApp\SMCore\SMCoreServiceHost.dll.config`.
+. Locate the `isCgSnapshotForRg` parameter and change its value from *false* to *true*.
+. Restart the `SMCoreService` service for the change to take effect.
+
+// SNAPCDOC-397, 2026-APR-09
