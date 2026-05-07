@@ -9,7 +9,6 @@ summary: 'The 6.2 release of SnapCenter software includes several new features a
 :imagesdir: ../media/
 
 [.lead]
-
 The 6.2 release of SnapCenter software includes the following expanded feature.
 
 |===

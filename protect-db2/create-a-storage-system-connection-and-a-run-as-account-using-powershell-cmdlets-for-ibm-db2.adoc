@@ -25,7 +25,7 @@ SnapCenter does not support multiple storage systems with the same name on diffe
 
 .Steps
 
-. Click *SnapCenterPS* to launch the PowerShell Core.
+. Select *SnapCenterPS* to launch the PowerShell.
 
 . Create a new connection to the storage system by using the Add-SmStorageConnection cmdlet.
 +
