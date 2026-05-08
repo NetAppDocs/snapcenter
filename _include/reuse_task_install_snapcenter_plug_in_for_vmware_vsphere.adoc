@@ -4,7 +4,7 @@ For information to deploy, see https://docs.netapp.com/us-en/sc-plugin-vmware-vs
 
 == Deploy CA certificate
 
-To configure the CA Certificate with SnapCenter Plug-in for VMware vSphere, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[Create or import SSL certificate^].
+To configure the CA Certificate with SnapCenter Plug-in for VMware vSphere, see https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere[Create or import SSL certificate^].
 
 == Configure the CRL file
 

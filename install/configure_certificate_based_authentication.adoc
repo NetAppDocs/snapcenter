@@ -18,10 +18,10 @@ To enable certificate-based authentication for SnapCenter Server and the Windows
 
 * To enable client certificate-based authentication:
 +
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `<<hostname>>`
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `hostname`
 * To disable client certificate-based authentication:
 +
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `hostname`
 
 == Export Certificate Authority (CA) certificates from SnapCenter Server
 You should export the CA certificates from the SnapCenter Server to the plug-in hosts using the Microsoft management console (MMC). 
