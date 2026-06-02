@@ -55,7 +55,9 @@ NOTE: The resources are listed in the Available Resources section only if the re
 NOTE: For File System Consistent, Consistency group snapshots will be taken for LUNs involved in Volume group.
 ** Select *Crash Consistent* if you want to ensure that file systems cached data is flushed before creating the backup.
 +
-NOTE: If you have added different file systems in the resource group, then all volumes from different file systems in the resource group will be put in a Consistency group.
+NOTE: If you have added different file systems in the resource group, then all volumes from different file systems in the resource group will be put in a Consistency group. Note too when selecting crash consistent backups, by default, even if there is only one filesystem or volume, a consistency (cg) snapshot is taken.
+
+
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.
 +
@@ -81,3 +83,5 @@ You must also specify the sender and receiver email addresses, and the subject o
 NOTE: For email notification, you must have specified the SMTP server details using the either the GUI or the PowerShell command Set-SmSmtpServer.
 
 . Review the summary, and then click *Finish*.
+
+// GH ISSUE #240, 2026-JUN-02

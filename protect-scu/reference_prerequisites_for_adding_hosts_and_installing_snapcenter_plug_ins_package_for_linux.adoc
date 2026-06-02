@@ -14,6 +14,10 @@ Before you add a host and install the plug-ins package for Linux, you must compl
 * If you are using iSCSI, the iSCSI service must be running.
 * You can either use the password-based authentication for the root or non-root user or SSH key based authentication.
 +
+
+NOTE: The RSA key is the only SSH supported key format for SnapCenter. Refer to the Knowledge Base article link:../media/ssh_key_creation_steps.adoc[How to create an RSA key for SnapCenter SSH Key Based credential] for details on how to create the SSH key.
+
++
 SnapCenter Plug-in for Unix File Systems can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective non-root user.
 
 * Create credentials with authentication mode as Linux for the install user.
@@ -54,7 +58,7 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 17 (Oracle Java and OpenJDK)
+Java 17 (Oracle Java or OpenJDK) (or Java 11 for SnapCenter 6.2)
 
 NOTE: Ensure that you have installed only the certified edition of Java 17 on the Linux host.
 
@@ -63,3 +67,6 @@ If you have upgraded Java to the latest version, you must ensure that the JAVA_H
 |===
 
 For the latest information about supported versions, see the https://imt.netapp.com/imt/imt.jsp?components=180320;180338;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool].
+
+// GH ISSUE #239, 2026-JUN-02
+// SNAPCDOC-402, 2026-JUN-02
