@@ -52,11 +52,10 @@ NOTE: The resources are listed in the Available Resources section only if the re
 * Select one of the backup consistency options:
 ** Select *File System Consistent* if you want to ensure that file systems cached data is flushed before creating the backup and no input or output operations are allowed on filesystem while creating the backup.
 +
-NOTE: For File System Consistent, Consistency group snapshots are taken for LUNs involved in Volume group.
+NOTE: For File System Consistent, Consistency group snapshots are taken for the LUNs involved in Volume group.
 ** Select *Crash Consistent* if you want to ensure that file systems cached data is flushed before creating the backup.
 +
-NOTE: If you have added different file systems in the resource group, then all volumes from different file systems in the resource group are put in a Consistency group. Note too when selecting crash consistent backups, by default, even if there is only one filesystem or volume, a Consistency group snapshot is taken.
-
+NOTE: If you have added different file systems in the resource group, then all volumes from different file systems in the resource group are put in a Consistency group. For crash-consistent backups, a Consistency group snapshot is taken by default even if there is only one file system or volume.
 
 . In the Policies page, perform the following steps:
  .. Select one or more policies from the drop-down list.

@@ -106,10 +106,10 @@ a|
 * Web Management Tools
 
 a|
-+.NET Framework 8.0.24 Features+
-a|
-* ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle
-* Windows Communication Foundation (WCF) HTTP Activation45
++.NET Framework Features+
+ a|
+ * ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle
+ * Windows Communication Foundation (WCF) HTTP Activation45
  ** TCP Activation
  ** HTTP Activation
 
