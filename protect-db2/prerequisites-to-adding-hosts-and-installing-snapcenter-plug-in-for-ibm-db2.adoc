@@ -11,7 +11,7 @@ summary: 'Before you add a host and install the plug-in packages, you must compl
 [.lead]
 Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for IBM Db2 supported on Windows, Linux, and AIX environments.
 
-* You must have installed Java 17 on your host.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your host.
 +
 NOTE: IBM Java is not supported on Windows and Linux host.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for IBM Db2 is installed as domain administrator.
@@ -23,7 +23,7 @@ NOTE: IBM Java is not supported on Windows and Linux host.
 * You must have a domain user with local administrator privileges with local login permissions on the remote host.
 * While installing Plug-in for IBM Db2 on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 17 on your Windows host.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Windows host.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Windows^]
 
@@ -31,7 +31,7 @@ link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java fo
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
 
-* You must have installed Java 17 on your Linux or AIX hosts.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Linux or AIX hosts.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Linux^]
 +
@@ -207,3 +207,4 @@ You can obtain the _checksum_value_ from the *sc_unix_plugins_checksum.txt* file
 IMPORTANT: The example should be used only as a reference for creating your own data.
 
 // SNAPCDOC-391, 2026-MAR-05
+// SNAPCDOC-402, 2026-JUN-02

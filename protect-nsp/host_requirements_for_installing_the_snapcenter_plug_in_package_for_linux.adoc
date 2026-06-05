@@ -38,8 +38,9 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 17 (Oracle Java or OpenJDK)
+Java 17 (Oracle Java or OpenJDK), Java 11 (for SnapCenter 6.2 only)
 
 If you have upgraded Java to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct Java version and the correct path.
 |===
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool]
+
+// SNAPCDOC-402, 2026-JUN-02

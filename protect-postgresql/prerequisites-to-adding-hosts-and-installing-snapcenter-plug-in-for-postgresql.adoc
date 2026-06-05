@@ -11,7 +11,7 @@ summary: 'Before you add a host and install the plug-in packages, you must compl
 [.lead]
 Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for PostgreSQL is available in both Windows and Linux environments.
 
-* You must have installed Java 17 on your host.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your host.
 +
 NOTE: IBM Java is not supported on Windows and Linux host.
 * For Windows, plug-in Creator Service should be running using the "`LocalSystem`" windows user, which is the default behavior when Plug-in for PostgreSQL is installed as domain administrator.
@@ -23,14 +23,14 @@ NOTE: IBM Java is not supported on Windows and Linux host.
 * You must have a domain user with local administrator privileges with local login permissions on the remote host.
 * While installing Plug-in for PostgreSQL on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 17 on your Windows host.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Windows host.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for all operating systems]
 
 == Linux hosts
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 17 on your Linux host.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Linux host.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for all operating systems]
 
@@ -130,3 +130,4 @@ _ if SnapCenter Server in installed on Linux host.
 
 IMPORTANT: The example should be used only as a reference for creating your own data.
 
+// SNAPCDOC-402, 2026-JUN-02
