@@ -16,7 +16,7 @@ The system selects all the plug-ins in the package, but upgrades only the plug-i
 .Before you begin
 
 * If you are a non-root user with access to the Linux machines, you should update the _/etc/sudoers_ file with the latest checksum values before performing the upgrade operation.
-* Ensure that ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle and PowerShell 7.4.13 or later is installed on the Windows plug-in host.
+* Ensure that ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle and PowerShell 7.4.13 or later are installed on the Windows plug-in host.
 * Ensure that Java 17 (Oracle Java or OpenJDK) is installed on Windows and Linux plug-in hosts (or Java 11 for SnapCenter 6.2 only).
 * By default SnapCenter detects JAVA_HOME from the environment. If you want to use a fixed JAVA_HOME and if you are upgrading the plug-ins on a Linux host, you should manually add the SKIP_JAVAHOME_UPDATE parameter in the _spl.properties_ file located at _/var/opt/snapcenter/spl/etc/_ and set the value to TRUE.
 +

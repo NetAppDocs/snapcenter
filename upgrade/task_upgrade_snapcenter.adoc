@@ -80,4 +80,4 @@ If SnapCenter displays the server host status as stopped, wait for some time and
 * After upgrading the server host, you must also upgrade the plug-ins before adding any storage system.
 
 // SNAPCDOC-403, 2026-JUN-02
-// GH issue #243, 2026-JUN-10
+// GH issue #244, 2026-JUN-10
