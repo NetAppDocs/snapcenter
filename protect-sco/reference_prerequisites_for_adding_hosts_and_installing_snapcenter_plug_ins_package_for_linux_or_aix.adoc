@@ -21,7 +21,7 @@ SnapCenter Plug-in for Oracle Database can be installed by a non-root user. Howe
 The SnapCenter Plug-ins Package for AIX automatically resolves the file level symbolic link but not the directory level symbolic links to obtain the JAVA_HOME absolute path.
 
 * Create credentials with authentication mode as Linux or AIX for the install user.
-* You must have installed Javva 17, Java 11 (for SnapCenter 6.2 only) on your Linux or AIX host.
+* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Linux or AIX host.
 ** Java from Oracle and OpenJDK is supported for Linux.
 ** IBM Java for AIX. You can download from https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?version=17&os=AIX[IBM Semeru Runtimes Downloads^].
 +
@@ -365,3 +365,4 @@ For more information, refer to link:../protect-sco/task_define_a_backup_strategy
 
 // SNAPCDOC-394, 2026-APR-09
 // SNAPCDOC-402, 2026-JUN-02
+// GH issue #245, 2026-JUN-10
