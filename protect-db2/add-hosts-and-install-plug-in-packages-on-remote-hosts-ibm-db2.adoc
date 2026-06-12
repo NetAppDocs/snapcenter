@@ -108,7 +108,7 @@ gMSA will be used as a log on service account only for SnapCenter Plug-in for Wi
 
 . Click *Submit*.
 +
-If you have not selected the *Skip prechecks* checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java 17, Java 11 (for SnapCenter 6.2 only) for both Windows and Linux plug-ins are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
+If you have not selected the *Skip prechecks* checkbox, the host is validated to verify whether the host meets the requirements for installing the plug-in. The disk space, RAM, PowerShell version, .NET version, location (for Windows plug-ins), and Java 17 (for SnapCenter 6.2.1 and later) or Java 11 (for SnapCenter 6.2 and earlier) for both Windows and Linux plug-ins are validated against the minimum requirements. If the minimum requirements are not met, appropriate error or warning messages are displayed.
 +
 If the error is related to disk space or RAM, you can update the web.config file located at C:\Program Files\NetApp\SnapCenter WebApp to modify the default values. If the error is related to other parameters, you must fix the issue.
 +
