@@ -13,7 +13,8 @@ Before you add a host and install the plug-ins packages, you must complete all t
 
 NOTE: Storage and Oracle applications are supported on AIX. 
 
-* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Linux, Windows, or AIX host.
+* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* Java 11 for SnapCenter 6.2 and earlier on your Linux, Windows, or AIX host.
 +
 NOTE: IBM Java is not supported on Windows and Linux host.
 * When installing a plug-in on a Windows host, if you specify a credential that is not built-in, or if the user belongs to a local workgroup user, you must disable UAC on the host.
@@ -36,9 +37,10 @@ link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java fo
 NOTE: Storage and Oracle applications are supported on AIX. 
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Linux host.
+* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* Java 11 for SnapCenter 6.2 and earlier on your Linux host.
 +
-If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 17, Java 11 (for SnapCenter 6.2 only).
+If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Linux]
 +
@@ -100,7 +102,8 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 17, Java 11 (for SnapCenter 6.2 only), IBM Java
+* Java 17 for SnapCenter 6.2.1 and later, IBM Java or
+* Java 11 for SnapCenter 6.2 and earlier, IBM Java
 
 If you have upgraded Java to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct Java version and the correct path.
 |===

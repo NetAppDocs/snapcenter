@@ -21,9 +21,10 @@ NOTE: The RSA key is the only SSH supported key format for SnapCenter. Refer to 
 SnapCenter Plug-in for Unix File Systems can be installed by a non-root user. However, you should configure the sudo privileges for the non-root user to install and start the plug-in process. After installing the plug-in, the processes will be running as an effective non-root user.
 
 * Create credentials with authentication mode as Linux for the install user.
-* You must have installed Java 17, Java 11 (for SnapCenter 6.2 only) on your Linux host.
+* You must have installed Java 17 for SnapCenter 6.2.1 and later or 
+* Java 11 for SnapCenter 6.2 and earlier on your Linux host.
 +
-NOTE: Ensure that you have installed only the certified edition of Java 17, Java 11 (for SnapCenter 6.2 only) on the Linux host.
+NOTE: Ensure that you have installed only the certified edition of Java 17 for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier on the Linux host.
 +
 For information on Java downloads, refer to link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for all operating systems^].
 
@@ -58,9 +59,10 @@ NOTE: You should allocate sufficient disk space and monitor the storage consumpt
 a|
 Required software packages
 a|
-Java 17 (Oracle Java or OpenJDK), Java 11 (for SnapCenter 6.2 only)
+* Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* Java 11 for SnapCenter 6.2 and earlier
 
-NOTE: Ensure that you have installed only the certified edition of Java 17, Java 11 (for SnapCenter 6.2 only) on the Linux host.
+NOTE: Ensure that you have installed only the certified edition of Java 17 for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier on the Linux host.
 
 If you have upgraded Java to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct Java version and the correct path.
 
