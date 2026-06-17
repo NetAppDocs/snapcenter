@@ -4,7 +4,6 @@ sidebar: sidebar
 keywords: RBAC, roles, permissions, application-level RBAC, ONTAP permissions, default snapcenter roles, ONTAP permissions, SnapCenter Admin role
 summary: 'SnapCenter role-based access control (RBAC) and ONTAP permissions enable SnapCenter administrators to create roles and set access permissions. This centrally managed access empowers application administrators to work securely within delegated environments.'
 ---
-
 = Role-based access control in SnapCenter
 :icons: font
 :imagesdir: ../media/
@@ -160,7 +159,7 @@ No
 a|
 Yes
 a|
-No
+Yes
 a|
 No
 a|
@@ -747,3 +746,4 @@ a|
 Not applicable
 |===
 
+// SNAPCDOC-404 & 407, 2026-JUN-17
