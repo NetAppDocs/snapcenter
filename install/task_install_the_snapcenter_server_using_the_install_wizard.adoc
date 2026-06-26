@@ -92,7 +92,7 @@ a|
 * Application Development Features
  ** .NET Extensibility 4.5
  ** Application Initialization
- ** ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle
+ ** ASP.NET Core 10.0.7 Hosting Bundle (or later)
  ** Server-Side Includes
  ** WebSocket Protocol
 * Management Tools
@@ -108,7 +108,7 @@ a|
 a|
 +.NET Framework Features+
  a|
- * ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle
+ * ASP.NET Core Runtime 10.0.7 Hosting Bundle (or later)
  * Windows Communication Foundation (WCF) HTTP Activation45
  ** TCP Activation
  ** HTTP Activation
@@ -128,3 +128,4 @@ All
 
 // SNAPCDOC-403, 2026-JUN-02
 // GH issue #243, 2026-JUN-10
+// SNAPCDOC-408, 2026-JUN-26

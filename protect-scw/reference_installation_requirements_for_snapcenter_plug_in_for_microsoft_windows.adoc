@@ -52,8 +52,8 @@ a|
 Required software packages
 a|
 
-* ASP.NET Core Runtime 8.0.24 (and all subsequent 8.0.x patches) Hosting Bundle
-* PowerShell 7.4.13
+* ASP.NET Core Runtime 10.0.7 Hosting Bundle (or later)
+* PowerShell 7.6.1 (or later)
 
 For .NET specific troubleshooting information, see https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_upgrade_or_install_fails_with_This_KB_is_not_related_to_the_OS[SnapCenter upgrade or install fails for legacy systems that do not have internet connectivity.]
 |===
@@ -120,3 +120,4 @@ After you finish setting up credentials, you might want to assign credential mai
 include::../_include/reuse_task_configure_gMSA_on_windows_server_2012_or_later.adoc[]
 
 // SNAPCDOC-403, 2026-JUN-02
+// SNAPCDOC-408, 2026-JUN-26
