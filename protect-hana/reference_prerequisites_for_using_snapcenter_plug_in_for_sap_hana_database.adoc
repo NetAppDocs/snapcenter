@@ -14,7 +14,7 @@ Before you use SnapCenter Plug-in for SAP HANA Database, the SnapCenter administ
 * Install and configure SnapCenter Server.
 * Log in to SnapCenter Server.
 * Configure the SnapCenter environment by adding storage system connections and creating credentials, if applicable.
-* Install Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* Install Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
 * Java 11 for SnapCenter 6.2 and earlier on your Linux or Windows host.
 +
 You must set the Java path in the environmental path variable of the host machine.

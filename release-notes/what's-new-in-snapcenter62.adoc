@@ -9,7 +9,7 @@ summary: 'The 6.2 release of SnapCenter software includes several new features a
 :imagesdir: ../media/
 
 [.lead]
-The 6.2 release of SnapCenter software includes the following expanded feature.
+The 6.2 release of SnapCenter software includes known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. It also includes the following expanded feature. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter 6.2.2 Release Notes^] for further details.
 
 |===
 | Update | Description
@@ -28,3 +28,4 @@ The NetApp Console, built on the enhanced and restructured BlueXP foundation, pr
 For details on what has changed, see the link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html[NetApp Console release notes^].
 
 // GH issue #215, 2026-MAR-10
+// SNAPCDOC-408, 2026-JUN-29

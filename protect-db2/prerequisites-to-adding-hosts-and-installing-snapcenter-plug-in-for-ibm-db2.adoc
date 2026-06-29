@@ -11,7 +11,7 @@ summary: 'Before you add a host and install the plug-in packages, you must compl
 [.lead]
 Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for IBM Db2 supported on Windows, Linux, and AIX environments.
 
-* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* You must have installed Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
 * Java 11 for SnapCenter 6.2 and earlier on your host.
 +
 NOTE: IBM Java is not supported on Windows and Linux host.
@@ -24,7 +24,7 @@ NOTE: IBM Java is not supported on Windows and Linux host.
 * You must have a domain user with local administrator privileges with local login permissions on the remote host.
 * While installing Plug-in for IBM Db2 on a Windows host, SnapCenter Plug-in for Microsoft Windows is installed automatically.
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* You must have installed Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
 * Java 11 for SnapCenter 6.2 and earlier on your host.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Windows^]
@@ -33,7 +33,7 @@ link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java fo
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
 
-* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* You must have installed Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
 * Java 11 for SnapCenter 6.2 and earlier on your Linux or AIX hosts.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Linux^]

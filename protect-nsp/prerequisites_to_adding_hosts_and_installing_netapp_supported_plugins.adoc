@@ -13,7 +13,7 @@ Before you add a host and install the plug-ins packages, you must complete all t
 
 NOTE: Storage and Oracle applications are supported on AIX. 
 
-* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* You must have installed Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
 * Java 11 for SnapCenter 6.2 and earlier on your Linux, Windows, or AIX host.
 +
 NOTE: IBM Java is not supported on Windows and Linux host.
@@ -37,10 +37,10 @@ link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java fo
 NOTE: Storage and Oracle applications are supported on AIX. 
 
 * You must have enabled the password-based SSH connection for the root or non-root user.
-* You must have installed Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or
+* You must have installed Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
 * Java 11 for SnapCenter 6.2 and earlier on your Linux host.
 +
-If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 17 (Oracle Java or OpenJDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier.
+If you are using Windows Server 2019 or Windows Server 2016 for the SnapCenter Server host, you must install Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for Linux]
 +
