@@ -60,7 +60,7 @@ a|
 Required software packages
 a|
 * Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or
-* Java 11 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2 and earlier
+* Java 11 for SnapCenter 6.2 and earlier
 
 NOTE: Ensure that you have installed only the certified edition of Java 17 for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier on the Linux host.
 
