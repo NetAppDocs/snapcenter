@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multitenant database containers
 summary: 'For SAP HANA hosts directly registered in SnapCenter, installing or upgrading the SnapCenter Plug-in for SAP HANA Database will trigger an automatic discovery for resources on the host. After installing or upgrading the plug-in, for every multitenant database containers \(MDC\) resource that was located on the plug-in host, another MDC resource will be automatically discovered with a different GUID format and registered in SnapCenter. The new resource will be in “locked” state.'
 ---
-= Prepare multitenant database containers for data protection
+= Prepare multitenant database containers for data protection in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

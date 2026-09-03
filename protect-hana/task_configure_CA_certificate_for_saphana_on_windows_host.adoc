@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Windows host
+= Configure a CA certificate for SnapCenter SAP HANA plug-in services on a Windows host
 :icons: font
 :imagesdir: ../media/
 
