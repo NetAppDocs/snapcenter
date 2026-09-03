@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for mysql
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
-= Restore and recover an auto discovered database backup
+= Restore and recover an auto-discovered MySQL database backup
 :icons: font
 :imagesdir: ../media/
 
