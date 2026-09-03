@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: role, create, permission
 summary: 'In addition to using the existing SnapCenter roles, you can create your own roles and customize the permissions.'
 ---
-= Create a role
+= Create a role in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

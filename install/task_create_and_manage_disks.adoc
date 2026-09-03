@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disks, create, manage, clustered disks, view
 summary: 'The Windows host sees LUNs on your storage system as virtual disks. You can use SnapCenter to create and configure an FC-connected or iSCSI-connected LUN.'
 ---
-= Create and manage disks
+= Create and manage disks in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: igroup
 summary: 'You create initiator groups (igroups) to specify which hosts can access a given LUN on the storage system. You can use SnapCenter to create, rename, modify, or delete an igroup on a Windows host.'
 ---
-= Create and manage igroups
+= Create and manage igroups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

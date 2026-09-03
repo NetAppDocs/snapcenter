@@ -5,7 +5,7 @@ keywords: security,enable two-way ssL, windows host, one-way ssl
 summary: 'You can enable SSL communication to secure the mutual communication between SnapCenter Server on Linux host and the plug-ins using PowerShell commands.'
 ---
 
-= Enable SSL communication on Linux host
+= Enable two-way SSL communication on a SnapCenter Linux host
 :icons: font
 :imagesdir: ../media/
 
