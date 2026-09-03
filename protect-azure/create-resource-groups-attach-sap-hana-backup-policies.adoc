@@ -5,7 +5,7 @@ keywords: resource groups, attach policies, snapcenter, SAP HANA, backup polices
 summary: 'A resource group is the container to which you must add resources that you want to back up and protect.'
 ---
 
-= Create resource groups and attach SAP HANA backup policies
+= Create SnapCenter resource groups and attach SAP HANA backup policies
 :icons: font
 :imagesdir: ../media/
 

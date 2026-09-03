@@ -5,7 +5,7 @@ keywords: add, add SAP HANA database, manual discovery, automatic discovery
 summary: 'Add the SAP HANA databases.'
 ---
 
-= Add SAP HANA database
+= Add an SAP HANA database in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

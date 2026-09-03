@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for Oracle Database, back up, databases, Azure NetA
 summary: 'Back up the resource from the Resources page.'
 ---
 
-= Back up Oracle databases running on Azure NetApp Files
+= Back up Oracle databases on Azure NetApp Files with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

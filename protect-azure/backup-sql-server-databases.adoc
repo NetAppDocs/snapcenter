@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for SQL Server Database, back up, databases, Azure 
 summary: 'Back up the resource from the Resources page.'
 ---
 
-= Back up SQL Server databases running on Azure NetApp Files
+= Back up SQL Server databases on Azure NetApp Files with SnapCenter
 :icons: font
 :imagesdir: ../media/
 
