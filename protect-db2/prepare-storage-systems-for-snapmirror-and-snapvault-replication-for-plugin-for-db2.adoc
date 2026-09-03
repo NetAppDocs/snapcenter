@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: snapmirror, snapvault, storage system, replication
 summary: 'You can use a SnapCenter plug-in with ONTAP SnapMirror and SnapVault technologies'
 ---
-= Prepare storage systems for SnapMirror and SnapVault replication for IBM Db2
+= How SnapCenter prepares storage systems for SnapMirror and SnapVault replication
 :icons: font
 :imagesdir: ../media/
 

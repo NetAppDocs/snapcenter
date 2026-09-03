@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'Defining a backup strategy before you create your backup jobs helps you to have the backups that you require to successfully restore or clone your resources. Your service-level agreement \(SLA\), recovery time objective \(RTO\), and recovery point objective \(RPO\) largely determine your backup strategy.'
 ---
-= Define a backup strategy for IBM Db2
+= Define a backup strategy for IBM Db2 in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
