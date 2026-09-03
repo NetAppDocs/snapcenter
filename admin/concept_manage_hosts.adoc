@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Manage hosts
 summary: 'You can add hosts and install SnapCenter plug-in packages, add a verification server, remove hosts, migrate backup jobs, and update host to upgrade plug-in packages or add new plug-in packages. Depending on the plug-in you are using, you can also provision disks, manage SMB shares, manage initiator groups \(igroups\), manage iSCSI sessions, and migrate data.'
 ---
-= Manage hosts
+= Manage hosts in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

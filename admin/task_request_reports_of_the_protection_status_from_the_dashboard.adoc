@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dashboard
 summary: 'You can request protection details for resources managed by specific plug-ins using the Dashboard.'
 ---
-= Request reports of the protection status from the dashboard
+= Request protection status reports from the SnapCenter dashboard
 :icons: font
 :imagesdir: ../media/
 

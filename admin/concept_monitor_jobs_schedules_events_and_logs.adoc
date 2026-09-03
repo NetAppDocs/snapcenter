@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Monitor jobs, schedules, events, logs
 summary: 'You can monitor the progress of your jobs, get information about scheduled jobs, and review events and logs from the Monitor page.'
 ---
-= Monitor jobs, schedules, events, and logs
+= Monitor SnapCenter jobs, schedules, events, and logs
 :icons: font
 :imagesdir: ../media/
 

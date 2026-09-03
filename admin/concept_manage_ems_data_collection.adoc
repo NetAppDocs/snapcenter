@@ -5,7 +5,7 @@ keywords: EMS data collection
 summary: 'You can schedule and manage Event Management System (EMS) data collection using PowerShell cmdlets. EMS data collection involves gathering details about the SnapCenter Server, the installed SnapCenter plug-in packages, the hosts, and similar information, and then sending it to a specified ONTAP storage virtual machine \(SVM\).'
 ---
 
-= Manage EMS data collection
+= Manage EMS data collection in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dashboard
 summary: 'From the SnapCenter left navigation pane, you can view various Dashboard tiles, or displays, along with associated system details. The number of displays available in the Dashboard is fixed and cannot be changed. The content provided within each display is dependent on role-based access control \(RBAC\).'
 ---
-= How to view information on the dashboard
+= View information on the SnapCenter dashboard
 :icons: font
 :imagesdir: ../media/
 
