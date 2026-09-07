@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: prerequisites, iSCSI, host requirement for Linux, sudo privileges, non-root user, credentials, authenticate, domain administrator, local administrator, workgroup, sudo, root user
 summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements.'
 ---
-= Prerequisites for adding hosts and installing Plug-ins Package for Linux
+= Prerequisites for adding hosts and installing the SnapCenter Plug-ins Package for Linux
 :icons: font
 :imagesdir: ../media/
 

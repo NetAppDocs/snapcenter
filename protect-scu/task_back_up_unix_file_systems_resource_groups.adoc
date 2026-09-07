@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, resource group
 summary: 'A backup operation on the resource group is performed on all resources defined in the resource group.'
 ---
-= Back up Unix file systems resource groups
+= Back up SnapCenter UNIX file systems resource groups
 :icons: font
 :imagesdir: ../media/
 
