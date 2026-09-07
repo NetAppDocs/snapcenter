@@ -5,7 +5,7 @@ keywords: tech refresh, SnapCenter Server, cmdlet, APIs, F5, rollback, decommiss
 summary: 'Install the same version of SnapCenter Server on the new host and then run the APIs or execute cmdlets to backup the SnapCenter from old server and restore it in on the new server.'
 ---
 
-= Tech refresh of SnapCenter Server host
+= Perform a tech refresh of the SnapCenter Server host
 
 :icons: font
 :imagesdir: ../media/
