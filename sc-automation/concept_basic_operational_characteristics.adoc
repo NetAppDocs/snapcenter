@@ -5,7 +5,7 @@ keywords: request and response, object identifiers, synchronous, asynchronous
 summary: 'While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.'
 ---
 
-= Basic operational characteristics
+= Basic operational characteristics of the SnapCenter REST API
 :icons: font
 :imagesdir: ../media/
 
