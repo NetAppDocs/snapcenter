@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore operation
 summary: 'You can use SnapCenter to restore backed-up SQL Server databases. Database restoration is a multiphase process that copies all of the data and log pages from a specified SQL Server backup to a specified database.'
 ---
-= Restore SQL Server database backups
+= Restore SQL Server database backups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

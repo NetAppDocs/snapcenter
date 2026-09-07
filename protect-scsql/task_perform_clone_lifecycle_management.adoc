@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Using SnapCenter, you can create clones from a resource group or database. You can either perform on-demand clone or you can schedule recurring clone operations of a resource group or database . If you clone a backup periodically, you can use the clone to develop applications, populate data, or recover data.'
 ---
-= Perform Clone Lifecycle
+= Perform SnapCenter clone lifecycle management
 :icons: font
 :imagesdir: ../media/
 

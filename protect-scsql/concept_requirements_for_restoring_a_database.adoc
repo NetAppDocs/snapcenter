@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Requirements
 summary: 'Before you restore a SQL Server database from a SnapCenter Plug-in for Microsoft SQL Server backup, you must ensure that several requirements are met.'
 ---
-= Requirements for restoring a database
+= Requirements for restoring a SQL Server database with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

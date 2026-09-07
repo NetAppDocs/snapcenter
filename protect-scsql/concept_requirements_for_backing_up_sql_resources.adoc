@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Requirements
 summary: 'Before you backup a SQL resource, you must ensure that several requirements are met.'
 ---
-= Requirements for backing up SQL resources
+= Requirements for backing up SQL resources in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

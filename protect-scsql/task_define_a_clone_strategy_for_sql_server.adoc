@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clone strategy
 summary: 'Defining a cloning strategy enables you to clone your database successfully.'
 ---
-= Define a cloning strategy for SQL Server
+= Cloning strategy for SQL Server in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

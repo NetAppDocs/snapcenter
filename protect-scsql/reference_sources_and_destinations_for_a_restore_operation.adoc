@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore operation
 summary: 'You can restore a SQL Server database from a backup copy on either primary or secondary storage. You also can restore the database to different destinations in addition to its original location, enabling you to choose the destination that supports your requirements.'
 ---
-= Sources and destinations for a restore operation
+= Sources and destinations for SQL Server restore operations in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

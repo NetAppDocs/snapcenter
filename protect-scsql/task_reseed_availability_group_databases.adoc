@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: reseed
 summary: 'Reseed is an option to restore Availability Group \(AG\) databases. If a secondary database gets out of synchronization with the primary database in an AG, you can reseed the secondary database.'
 ---
-= Reseed Availability Group databases
+= Reseed Availability Group databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

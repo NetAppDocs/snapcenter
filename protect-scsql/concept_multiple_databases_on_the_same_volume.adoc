@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Multiple databases
 summary: 'You can put all databases on the same volume, because the backup policy has an option to set the maximum databases per backup \(default value is 100\).'
 ---
-= Multiple databases on the same volume
+= Multiple databases on the same volume in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
