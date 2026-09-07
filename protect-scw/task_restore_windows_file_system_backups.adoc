@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore
 summary: 'You can use SnapCenter to restore file system backups. File system restoration is a multiphase process that copies all the data from a specified backup to the original location of the file system.'
 ---
-= Restore Windows file system backups
+= Restore Windows file system backups with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

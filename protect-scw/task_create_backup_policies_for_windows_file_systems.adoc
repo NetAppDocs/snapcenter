@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policy
 summary: 'You can create a new backup policy for resources before you use SnapCenter to back up Windows file systems, or you can create a new backup policy at the time you create a resource group or when you back up a resource.'
 ---
-= Create backup policies for Windows file systems
+= Create SnapCenter backup policies for Windows file systems
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: availability
 summary: 'Resources are the LUNs and similar components in your file system that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs on multiple resources, but first you must identify which resources you have available. Discovering available resources also verifies that the plug-in installation was completed successfully.'
 ---
-= Determine resource availability for Windows file systems
+= Determine SnapCenter resource availability for Windows file systems
 :icons: font
 :imagesdir: ../media/
 

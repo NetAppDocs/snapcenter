@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cancel restore
 summary: 'You can cancel restore jobs that are queued.'
 ---
-= Cancel restore operations
+= Cancel restore operations in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
