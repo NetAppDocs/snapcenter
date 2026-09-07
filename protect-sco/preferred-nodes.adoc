@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: oracle databases discover
 summary: 'How SnapCenter discovers Oracle databases.'
 ---
-= Preferred nodes in RAC setup
+= How SnapCenter uses preferred nodes in a RAC setup
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials,SnapCenter Plug-in for Oracle Databases, non-database entries, oratab
 summary: 'Resources are Oracle databases on the host that are managed by SnapCenter. You can add these databases to resource groups to perform data protection operations after you discover the databases that are available.'
 ---
-= Discover Oracle databases available for backup
+= Discover Oracle databases available for backup in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

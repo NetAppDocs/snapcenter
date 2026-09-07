@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clone, CLI, commands
 summary: 'The clone workflow includes planning, performing the clone operation, and monitoring the operation.'
 ---
-= Clone Oracle database backups using UNIX commands
+= Clone Oracle database backups using UNIX commands in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

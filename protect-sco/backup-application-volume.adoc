@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: application volume, back up
 summary: 'You can back up the application volume from the Resources page if the application volume is not part of any resource group.'
 ---
-= Back up application volume
+= Back up an application volume in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

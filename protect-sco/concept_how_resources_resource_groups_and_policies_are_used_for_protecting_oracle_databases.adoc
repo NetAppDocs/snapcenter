@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for Oracle Database
 summary: 'Before you use SnapCenter, it is helpful to understand basic concepts related to the backup, clone, and restore operations you want to perform.'
 ---
-= How resources, resource groups, and policies are used for protecting Oracle databases
+= How SnapCenter uses resource groups and policies for Oracle databases
 :icons: font
 :imagesdir: ../media/
 

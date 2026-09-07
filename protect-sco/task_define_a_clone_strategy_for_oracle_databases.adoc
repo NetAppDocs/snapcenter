@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup types, cloning type, clone name, limitations
 summary: 'Defining a strategy before cloning your database ensures that the cloning operation is successful.'
 ---
-= Define a clone strategy for Oracle databases
+= Learn about clone strategies for Oracle databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

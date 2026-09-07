@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, cli, commands
 summary: 'The backup workflow includes planning, identifying the resources for backup, creating backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.'
 ---
-= Back up Oracle databases using UNIX commands
+= Back up Oracle databases using UNIX commands in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
