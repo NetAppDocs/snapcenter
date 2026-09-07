@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
 summary: 'You can either create a backup of a resource \(cluster\) or resource group. The backup workflow includes planning, identifying the clusters for backup, managing backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.'
 ---
-= Back up PostgreSQL resources
+= Backup workflow for SnapCenter PostgreSQL resources
 :icons: font
 :imagesdir: ../media/
 

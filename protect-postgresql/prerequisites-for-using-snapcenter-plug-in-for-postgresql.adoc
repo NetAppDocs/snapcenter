@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Credentials,SnapCenter Plug-in for postgresql
 summary: 'Before you use SnapCenter Plug-in for PostgreSQL, the SnapCenter administrator must install and configure the SnapCenter Server and perform the prerequisite tasks.'
 ---
-= Prerequisites for using the SnapCenter Plug-in for PostgreSQL
+= Prerequisites to use the SnapCenter Plug-in for PostgreSQL
 :icons: font
 :imagesdir: ../media/
 
