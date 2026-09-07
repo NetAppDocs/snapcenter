@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Resources are the databases, Exchange Database Availability Groups that are maintained by the plug-ins you have installed. You can add those resources to resource groups so that you can perform data protection jobs, but first you must identify which resources you have available. Determining available resources also verifies that the plug-in installation has completed successfully.'
 ---
-= Determine whether Exchange resources are available for backup
+= Determine whether Exchange resources are available for backup in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

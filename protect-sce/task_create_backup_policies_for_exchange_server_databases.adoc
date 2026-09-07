@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can create a backup policy for the Exchange resources or for the resource groups before you use SnapCenter to back up Microsoft Exchange Server resources, or you can create a backup policy at the time you create a resource group or back up a single resource.'
 ---
-= Create backup policies for Exchange Server databases
+= Create backup policies for Exchange Server databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

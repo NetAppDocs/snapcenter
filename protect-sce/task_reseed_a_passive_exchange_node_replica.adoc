@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'If you need to reseed a replica copy, for instance when a copy is corrupt, you can reseed to the latest backup using the reseed feature in SnapCenter.'
 ---
-= Reseed a passive Exchange node replica
+= Reseed a passive Exchange node replica in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
