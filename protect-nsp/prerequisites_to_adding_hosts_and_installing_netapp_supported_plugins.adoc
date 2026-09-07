@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements. The NetApp supported plug-ins can be used in both Windows, Linux, or AIX environments.'
 ---
-= Prerequisites for adding hosts and installing Plug-ins package for Windows, Linux, or AIX
+= Prerequisites for adding hosts and installing SnapCenter plug-ins
 :icons: font
 :imagesdir: ../media/
 

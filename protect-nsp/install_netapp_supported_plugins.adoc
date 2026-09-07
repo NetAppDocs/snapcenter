@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install workflow, NetApp supported plug-in
 summary: 'You should install and set up SnapCenter NetApp supported plug-ins if you want to protect NetApp supported plug-in resources.'
 ---
-= Installation workflow of SnapCenter NetApp supported plug-ins
+= Installation workflow for SnapCenter NetApp supported plug-ins
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added NetApp supported plug-in resources. You cannot recover manually added NetApp supported plug-in resources.'
 ---
-= Types of restore strategies supported for manually added NetApp supported plug-in resources
+= NetApp supported plug-in resource restore strategies in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
