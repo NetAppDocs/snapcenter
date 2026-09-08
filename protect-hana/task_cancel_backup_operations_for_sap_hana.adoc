@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: plug-in for SAP HANA database
 summary: 'You can cancel backup operations that are queued.'
 ---
-= Cancel backup operations for SAP HANA
+= Cancel SnapCenter backup operations for SAP HANA
 :icons: font
 :imagesdir: ../media/
 

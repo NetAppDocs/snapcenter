@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'Before you use SnapCenter to back up SAP HANA database resources, you must create a backup policy for the resource or resource group that you want to back up. A backup policy is a set of rules that governs how you manage, schedule, and retain backups.'
 ---
-= Create backup policies for SAP HANA databases
+= Create SnapCenter backup policies for SAP HANA databases
 :icons: font
 :imagesdir: ../media/
 

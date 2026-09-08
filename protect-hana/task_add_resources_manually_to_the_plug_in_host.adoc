@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'Automatic discovery is not supported for certain HANA instances. You must add these resources manually.'
 ---
-= Add resources manually to the plug-in host
+= Add resources manually to the SnapCenter plug-in host for SAP HANA
 :icons: font
 :imagesdir: ../media/
 
