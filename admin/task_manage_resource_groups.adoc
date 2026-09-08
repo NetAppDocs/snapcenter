@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Manage resource groups
 summary: 'You can perform various operations on resource groups.'
 ---
-= Manage resource groups
+= Manage resource groups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

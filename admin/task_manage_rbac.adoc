@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify RBAC, role, users, groups
 summary: 'SnapCenter allows you to modify roles, users, and groups.'
 ---
-= Manage RBAC
+= Manage RBAC in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

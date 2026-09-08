@@ -14,7 +14,7 @@ When the SnapCenter Plug-in for SQL Server is down, use the following steps to s
 .Before you begin
 
 * The secondary host should have the same operating system, application, and host name as the primary host.
-* Push the SnapCenter Plug-in for SQL Server to an alternative host using *Add host* or *Modify host* page. See link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Manage hosts] for more information.
+* Push the SnapCenter Plug-in for SQL Server to an alternative host using *Add host* or *Modify host* page. See link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html[Manage hosts in SnapCenter] for more information.
 
 .Steps
 
