@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore resources
 summary: 'Restoring a resource backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
-= Restore resources using PowerShell cmdlets
+= Restore resources using SnapCenter PowerShell cmdlets for SQL Server
 :icons: font
 :imagesdir: ../media/
 

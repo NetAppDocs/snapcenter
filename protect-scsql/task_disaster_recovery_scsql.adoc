@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disaster recovery
 summary: 'When the SnapCenter Plug-in for SQL Server is down, perform the following manual steps to recover the plug-in.'
 ---
-= Disaster recovery of SnapCenter Plug-in for SQL Server
+= Recover SnapCenter Plug-in for SQL Server after a disaster
 :icons: font
 :imagesdir: ../media/
 

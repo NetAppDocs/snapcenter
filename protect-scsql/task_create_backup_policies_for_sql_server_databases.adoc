@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policy
 summary: 'You can create a backup policy for the resource or the resource group before you use SnapCenter to back up SQL Server resources, or you can create a backup policy at the time you create a resource group or backup a single resource.'
 ---
-= Create backup policies for SQL Server databases  
+= Create backup policies for SQL Server databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

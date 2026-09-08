@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: retain transaction log backups
 summary: 'SnapCenter Plug-in for Microsoft SQL Server needs transaction log backups to perform up-to-the-minute restore operations, which restore your database to a time between two full backups.'
 ---
-= How long to retain transaction log backups on the source storage system
+= How long to retain transaction log backups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'You can install the SnapCenter Plug-in for Microsoft SQL Server on multiple hosts simultaneously by using the Install-SmHostPackage PowerShell cmdlet.'
 ---
-= Install SnapCenter Plug-in for Microsoft SQL Server on multiple remote hosts by using cmdlets
+= Install SnapCenter Plug-in for Microsoft SQL Server on multiple hosts using cmdlets
 :icons: font
 :imagesdir: ../media/
 
