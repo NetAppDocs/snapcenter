@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for SQL Server Database, restore, recover
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
 
-= Restore and recover SQL Server databases
+= Restore and recover SQL Server databases with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

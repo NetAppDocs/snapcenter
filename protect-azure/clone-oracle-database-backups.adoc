@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for Oracle Database, clone, database, backups. spli
 summary: 'You can use SnapCenter to clone a backup.'
 ---
 
-= Clone Oracle database backup
+= Clone Oracle Database backups with SnapCenter
 :icons: font
 :imagesdir: ../media/
 
