@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can cancel restore jobs that are queued.'
 ---
-= Cancel restore operations for Exchange database
+= Cancel restore operations for Exchange databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

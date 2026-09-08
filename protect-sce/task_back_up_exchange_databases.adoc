@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'If a database is not part of any resource group, you can back up the database or Database Availability Group from the Resources page.'
 ---
-= Back up Exchange databases
+= Back up Exchange databases with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'You should install the Plug-in for Exchange from the SnapCenter GUI. If you do not want to use the GUI, you can use PowerShell cmdlets on the SnapCenter Server host or on a remote host.'
 ---
-= Install Plug-in for Exchange from the SnapCenter Server host using PowerShell cmdlets
+= Install the SnapCenter Plug-in for Exchange using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 

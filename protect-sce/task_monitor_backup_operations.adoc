@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for Exchange Server
 summary: 'You can monitor the progress of different backup operations by using the SnapCenterJobs page. You might want to check the progress to determine when it is complete or if there is an issue.'
 ---
-= Monitor backup operations
+= Monitor SnapCenter backup operations for Exchange Server
 :icons: font
 :imagesdir: ../media/
 
