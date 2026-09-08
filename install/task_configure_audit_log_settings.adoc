@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: audit, log, configure
 summary: 'You can configure to log the security events of software platforms and all the software running on those platforms.'
 ---
-= Configure audit log settings
+= Configure audit log settings in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -5,7 +5,7 @@ keywords: cluster role, privileges, asa r2 systems
 summary: 'You should create an ONTAP cluster roles for ASA r2 systems so that you do not have to use the ONTAP admin role to perform operations in SnapCenter.'
 
 ---
-= Create ONTAP cluster roles for ASA r2 systems
+= Create ONTAP cluster roles for ASA r2 systems in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

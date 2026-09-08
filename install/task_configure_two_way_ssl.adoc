@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security,two-way ssl,configure two-way ssl, windows host
 summary: 'You should configure the two-way SSL communication to secure the mutual communication between SnapCenter Server on Windows host and the plug-ins.  '
 ---
-= Configure two-way SSL communication on Windows host
+= Configure two-way SSL communication on a SnapCenter Windows host
 :icons: font
 :imagesdir: ../media/
 
