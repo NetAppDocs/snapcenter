@@ -5,7 +5,7 @@ keywords: install, VMware vSphere
 summary: 'If your database is stored on virtual machines (VMs), or if you want to protect VMs and datastores, you must deploy the SnapCenter Plug-in for VMware vSphere virtual appliance.'
 ---
 
-= Install SnapCenter Plug-in for VMware vSphere
+= Install the SnapCenter Plug-in for VMware vSphere
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backing up
 summary: 'If a resource is not in a resource group, you can back up the resource on demand from the Resources page.'
 ---
-= Back up a single resource on demand for Windows file systems
+= Back up a Windows file system resource on demand in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
