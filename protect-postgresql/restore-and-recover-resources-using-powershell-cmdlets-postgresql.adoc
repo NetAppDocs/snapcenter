@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore resources, snapcenter
 summary: 'Restoring a resource backup includes initiating a connection session with the SnapCenter Server, listing the backups and retrieving backup information, and restoring a backup.'
 ---
-= Restore resources using PowerShell cmdlets
+= Restore SnapCenter Plug-in for PostgreSQL resources using PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 

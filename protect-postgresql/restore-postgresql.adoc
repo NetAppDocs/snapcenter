@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql
 summary: 'The restore and recovery workflow includes planning, performing the restore operations, and monitoring the operations.'
 ---
-= Restore workflow
+= SnapCenter Plug-in for PostgreSQL restore workflow
 :icons: font
 :imagesdir: ../media/
 

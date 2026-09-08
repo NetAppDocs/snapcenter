@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
 summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
 ---
-= Back up PostgreSQL
+= Back up PostgreSQL in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

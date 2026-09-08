@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
-= Restore and recover an auto discovered cluster backup
+= Restore and recover an auto-discovered cluster backup with the SnapCenter Plug-in for PostgreSQL
 :icons: font
 :imagesdir: ../media/
 

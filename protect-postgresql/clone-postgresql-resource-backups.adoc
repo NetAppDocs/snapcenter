@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for PostgreSQL
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
-= Clone workflow
+= SnapCenter PostgreSQL resource clone workflow
 :icons: font
 :imagesdir: ../media/
 

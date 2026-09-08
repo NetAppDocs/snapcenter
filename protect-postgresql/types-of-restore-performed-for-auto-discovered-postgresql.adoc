@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql
 summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered PostgreSQL clusters.'
 ---
-= Types of restore operations for auto discovered PostgreSQL
+= Restore types for auto-discovered PostgreSQL in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
