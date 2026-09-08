@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA certificate with Windows host plug-in services'
 ---
-= Configure CA certificate with Windows host plug-in services
+= Configure the CA certificate with Windows host plug-in services for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

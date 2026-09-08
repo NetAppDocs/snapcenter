@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
-= Clone workflow
+= MySQL backup clone workflow
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter MySQL Plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the SnapCenter MySQL Plug-ins service on Windows host
+= Configure the SnapCenter Plug-in for MySQL CA certificate on a Windows host
 :icons: font
 :imagesdir: ../media/
 

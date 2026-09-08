@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'You must use the SnapCenter Add Host page to add hosts, and then install the plug-ins packages. The plug-ins are automatically installed on the remote hosts. You can add a host and install plug-in packages either for an individual host or for a cluster.'
 ---
-= Add hosts and install plug-in packages on remote hosts
+= Add hosts and install plug-in packages on remote hosts for MySQL
 :icons: font
 :imagesdir: ../media/
 

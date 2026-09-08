@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter MySQL lug-ins service on Linux host'
 ---
-= Configure the CA Certificate for the SnapCenter MySQL Plug-ins service on Linux host
+= Configure the SnapCenter Plug-in for MySQL CA certificate on a Linux host
 :icons: font
 :imagesdir: ../media/
 

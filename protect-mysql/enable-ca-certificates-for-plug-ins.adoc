@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'You should configure the CA certificates and deploy the CA certificates in the SnapCenter Server and the corresponding plug-in hosts.'
 ---
-= Enable CA Certificates for plug-ins
+= Enable CA certificates for SnapCenter plug-ins
 :icons: font
 :imagesdir: ../media/
 
