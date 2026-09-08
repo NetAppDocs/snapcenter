@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter IBM Db2 Plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the SnapCenter IBM Db2 Plug-ins service on Windows host
+= Configure the CA certificate for the SnapCenter IBM Db2 Plug-in service on a Windows host
 :icons: font
 :imagesdir: ../media/
 

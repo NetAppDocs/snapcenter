@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'The clone workflow includes performing the clone operation and monitoring the operation.'
 ---
-= Clone workflow
+= IBM Db2 clone workflow in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

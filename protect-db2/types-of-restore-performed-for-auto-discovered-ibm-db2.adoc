@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered IBM Db2 databases.'
 ---
-= Types of restore operations for auto discovered IBM Db2
+= Restore types for auto-discovered IBM Db2 databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
