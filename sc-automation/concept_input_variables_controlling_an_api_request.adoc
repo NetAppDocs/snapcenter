@@ -5,7 +5,7 @@ keywords: http methods, request headers, request body, filtering objects, size, 
 summary: 'You can control how an API call is processed through parameters and variables set in the HTTP request.'
 ---
 
-= Input variables controlling an API request
+= Input variables controlling a SnapCenter REST API request
 :icons: font
 :imagesdir: ../media/
 

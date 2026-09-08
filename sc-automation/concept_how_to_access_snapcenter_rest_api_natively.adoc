@@ -5,7 +5,7 @@ keywords: REST APIs, swagger
 summary: 'Accessing REST APIs natively. REST APIs are exposed through the Swagger web page.'
 ---
 
-= How to access SnapCenter REST API natively
+= Native access to the SnapCenter REST API
 :icons: font
 :imagesdir: ../media/
 
