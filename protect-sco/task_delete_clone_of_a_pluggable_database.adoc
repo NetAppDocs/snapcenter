@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, PDB, clone PDB
 summary: 'You can delete the clone of a pluggable database \(PDB\) if you no longer require.'
 ---
-= Delete clone of a pluggable database
+= Delete a clone of a pluggable database in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

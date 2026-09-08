@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Credentials, alternate host, clone, FRA, OMF
 summary: 'You can use SnapCenter to clone an Oracle database using the backup of the database.'
 ---
-= Clone an Oracle database backup
+= Clone an Oracle database backup with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

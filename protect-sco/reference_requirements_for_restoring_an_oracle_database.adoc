@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Before restoring an Oracle database, you should ensure that prerequisites are completed.'
 ---
-= Requirements for restoring an Oracle database
+= SnapCenter requirements for restoring an Oracle database
 :icons: font
 :imagesdir: ../media/
 

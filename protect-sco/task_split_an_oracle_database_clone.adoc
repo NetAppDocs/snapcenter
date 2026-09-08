@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: split a clone, split
 summary: 'You can use SnapCenter to split a cloned resource from the parent resource. The clone that is split becomes independent of the parent resource.'
 ---
-= Split an Oracle Database Clone
+= Split an Oracle database clone in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

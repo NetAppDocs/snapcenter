@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: oracle databases discover
 summary: 'How SnapCenter discovers Oracle databases.'
 ---
-= How to catalog backups with Oracle Recovery Manager
+= How SnapCenter catalogs backups using Oracle RMAN
 :icons: font
 :imagesdir: ../media/
 

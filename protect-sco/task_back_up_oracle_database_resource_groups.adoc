@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, resource group
 summary: 'A resource group is a collection of resources on a host or cluster. A backup operation on the resource group is performed on all resources defined in the resource group.'
 ---
-= Back up Oracle database resource groups
+= Back up Oracle database resource groups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

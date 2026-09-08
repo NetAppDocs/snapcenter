@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: oracle databases discover
 summary: 'Backup retention options.'
 ---
-= Backup retention options
+= Backup retention options in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

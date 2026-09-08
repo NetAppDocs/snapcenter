@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: prerequisites, iSCSI, Oracle path, host requirement for Linux, sudo privileges, non-root user, host requirements for AIX, credentials, authenticate, domain administrator, local administrator, workgroup, sudo, root user
 summary: 'Before you add a host and install the plug-ins packages, you must complete all the requirements.'
 ---
-= Prerequisites for adding hosts and installing Plug-ins Package for Linux or AIX
+= Prerequisites to add hosts and install the SnapCenter Plug-ins Package for Linux or AIX
 :icons: font
 :imagesdir: ../media/
 
