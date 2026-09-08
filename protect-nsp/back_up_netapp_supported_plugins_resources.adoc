@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup
 summary: 'The backup workflow includes planning, identifying the resources for backup, managing backup policies, creating resource groups and attaching policies, creating backups, and monitoring the operations.'
 ---
-= Back up NetApp supported plug-ins resources
+= SnapCenter backup workflow for NetApp supported plug-ins resources
 :icons: font
 :imagesdir: ../media/
 

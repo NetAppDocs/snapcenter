@@ -5,7 +5,7 @@ keywords: SnapCenter, CA certificate
 summary: 'Get the CA certificate thumbprint.'
 ---
 
-= Get the CA certificate thumbprint
+= Get the CA certificate thumbprint in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -5,7 +5,7 @@ keywords: SnapCenter
 summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate.'
 ---
 
-= Generate CA Certificate CSR file
+= CA certificate CSR file generation for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create policies, NetApp supported plug-in
 summary: 'Before you use SnapCenter to back up NetApp supported plug-in specific resources, you must create a backup policy for the resource or resource group that you want to back up.'
 ---
-= Create policies for NetApp supported plug-in resources
+= Create SnapCenter policies for NetApp supported plug-in resources
 :icons: font
 :imagesdir: ../media/
 

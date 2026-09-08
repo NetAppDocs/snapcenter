@@ -5,7 +5,7 @@ keywords: NetApp supported plug-in, resources, NetApp supported plug-ins, MongoD
 summary: 'You must add the resources that you want to back up or clone. Depending on your environment, resources might be either database instances or collections that you want to back up or clone.'
 ---
 
-= Add resources to NetApp supported plug-ins
+= Add resources to NetApp supported plug-ins for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

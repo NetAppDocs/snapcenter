@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NetApp supported plug-in
 summary: 'The most critical factor in determining a backup schedule is the rate of change for the resource. The more often you back up your resources, the fewer archive logs SnapCenter has to use for restoring, which can result in faster restore operations.'
 ---
-= Backup schedules of NetApp supported plug-in resources
+= SnapCenter backup schedules for NetApp supported plug-ins resources
 :icons: font
 :imagesdir: ../media/
 

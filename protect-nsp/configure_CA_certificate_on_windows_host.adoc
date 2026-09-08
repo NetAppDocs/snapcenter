@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the NetApp supported plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the NetApp supported plug-ins service on Windows host
+= Configure a CA certificate for SnapCenter plug-ins on a Windows host
 :icons: font
 :imagesdir: ../media/
 
