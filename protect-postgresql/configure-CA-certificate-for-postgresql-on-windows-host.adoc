@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter PostgreSQL Plug-ins service on Windows host'
 ---
-= Configure the CA Certificate for the SnapCenter PostgreSQL Plug-ins service on Windows host
+= Configure a CA certificate for the SnapCenter PostgreSQL plug-in on a Windows host
 :icons: font
 :imagesdir: ../media/
 

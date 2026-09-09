@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database, back up, resource groups
 summary: 'A resource group is a collection of resources on a host. A backup operation on the resource group is performed on all resources defined in the resource group.'
 ---
 
-= Back up SAP HANA resource groups
+= Back up SAP HANA resource groups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

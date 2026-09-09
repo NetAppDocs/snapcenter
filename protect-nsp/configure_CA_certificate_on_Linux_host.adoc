@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the NetApp supported plug-ins service on Linux host'
 ---
-= Configure the CA Certificate for the NetApp supported plug-ins service on Linux host
+= Configure a CA certificate on a Linux host for SnapCenter plug-ins
 :icons: font
 :imagesdir: ../media/
 

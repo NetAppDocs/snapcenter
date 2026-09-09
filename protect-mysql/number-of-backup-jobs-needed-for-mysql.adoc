@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL
 summary: 'Factors that determine the number of backup jobs that you need include the size of the resource, the number of volumes used, the rate of change of the resource, and your Service Level Agreement \(SLA\).'
 ---
-= Number of backup jobs needed for MySQL
+= Number of backup jobs needed by the SnapCenter Plug-in for MySQL
 :icons: font
 :imagesdir: ../media/
 

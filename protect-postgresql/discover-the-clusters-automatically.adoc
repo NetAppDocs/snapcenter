@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Resources are PostgreSQL clusters on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the PostgreSQL clusters that are available.'
 ---
-= Discover the clusters automatically
+= Discover PostgreSQL clusters automatically in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

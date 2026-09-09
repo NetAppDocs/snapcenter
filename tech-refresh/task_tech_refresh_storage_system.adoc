@@ -5,7 +5,7 @@ keywords: tech refresh, storage system,
 summary: 'Perform tech refresh of storage system by moving the data from old storage to new storage, mounting the new storage to the respective hosts, and then bringing up the databases.'
 ---
 
-= Tech refresh of storage system
+= Perform a tech refresh of a storage system in SnapCenter
 
 :icons: font
 :imagesdir: ../media/

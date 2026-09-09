@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, SAP HANA database, clone operations
 summary: 'You can monitor the progress of SnapCenter clone operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
 ---
-= Monitor SAP HANA database clone operations
+= Monitor SnapCenter clone operations for SAP HANA databases
 :icons: font
 :imagesdir: ../media/
 

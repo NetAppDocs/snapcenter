@@ -5,7 +5,7 @@ keywords: create policies, sql, backup policies
 summary: 'Create a backup policy for the resource or resource group that you want to back up.'
 ---
 
-= Create backup policies for SQL Server databases
+= Create backup policies for SQL Server databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

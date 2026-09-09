@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SQL Server
 summary: 'You can use SnapCenter to perform different types of restore operations on SQL Server resources.'
 ---
-= Types of restore operations
+= SQL Server restore operation types in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

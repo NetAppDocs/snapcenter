@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Backup schedules
 summary: 'Backup frequency \(schedule type\) is specified in policies; a backup schedule is specified in the resource group configuration.'
 ---
-= Backup schedules for Plug-in for SQL server
+= Backup schedules for SnapCenter Plug-in for SQL Server
 :icons: font
 :imagesdir: ../media/
 

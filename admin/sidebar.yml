@@ -3,37 +3,37 @@ title: Manage SnapCenter Server and plug-ins
 entries:
     - title: View dashboard
       entries:
-        - title: Overview of dashboard
+        - title: Learn about the SnapCenter dashboard
           url: /admin/concept_overview_of_dashboard.html
-        - title: How to view information on the dashboard
+        - title: View information on the SnapCenter dashboard
           url: /admin/task_how_to_view_information_on_the_dashboard.html
-        - title: Request status reports of the jobs from the dashboard
+        - title: Request status reports of jobs from the SnapCenter dashboard
           url: /admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html
-        - title: Request reports of the protection status from the dashboard
+        - title: Request protection status reports from the SnapCenter dashboard
           url: /admin/task_request_reports_of_the_protection_status_from_the_dashboard.html
-    - title: Manage RBAC
+    - title: Manage RBAC in SnapCenter
       url: /admin/task_manage_rbac.html
-    - title: Manage hosts
+    - title: Manage hosts in SnapCenter
       url: /admin/concept_manage_hosts.html
-    - title: Operations supported from the Resources page
+    - title: Operations supported from the SnapCenter Resources page
       url: /admin/concept_what_operations_can_be_performed_from_the_resource_page.html
-    - title: Manage policies
+    - title: Manage policies in SnapCenter
       url: /admin/concept_manage_policies.html
-    - title: Manage resource groups
+    - title: Manage resource groups in SnapCenter
       url: /admin/task_manage_resource_groups.html
-    - title: Manage backups
+    - title: Manage backups in SnapCenter
       url: /admin/concept_manage_backups.html
-    - title: Delete clones
+    - title: Delete SnapCenter clones
       url: /admin/task_delete_clones.html
-    - title: Monitor jobs, schedules, events, and logs
+    - title: Monitor SnapCenter jobs, schedules, events, and logs
       url: /admin/concept_monitor_jobs_schedules_events_and_logs.html
-    - title: Overview of SnapCenter reporting capabilities
+    - title: Learn about SnapCenter reporting capabilities
       url: /admin/concept_overview_of_snapcenter_reports.html
     - title: Manage the SnapCenter Server repository
       url: /admin/concept_manage_the_snapcenter_server_repository.html
-    - title: Manage resources of untrusted domains
+    - title: Manage SnapCenter resources in untrusted domains
       url: /admin/concept_manage_resources_of_untrusted_domains.html
-    - title: Manage the storage system
+    - title: Manage the storage system in SnapCenter
       url: /admin/concept_manage_the_storage_system.html
-    - title: Manage EMS data collection
+    - title: Manage EMS data collection in SnapCenter
       url: /admin/concept_manage_ems_data_collection.html

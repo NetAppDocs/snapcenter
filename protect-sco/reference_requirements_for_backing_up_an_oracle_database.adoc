@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: requirements, prerequisites
 summary: 'Before backing up an Oracle database, you should ensure that prerequisites are completed.'
 ---
-= Requirements for backing up an Oracle database
+= Requirements for backing up an Oracle database with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

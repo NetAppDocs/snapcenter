@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials, install plug-in, Linux, AIX, GUI, add host, monitor
 summary: 'You can use the SnapCenter Add Host page to add hosts, and then install the SnapCenter Plug-ins Package for Linux or SnapCenter Plug-ins Package for AIX. The plug-ins are automatically installed on the remote hosts.'
 ---
-= Add hosts and install Plug-ins Package for Linux or AIX using GUI
+= Add hosts and install SnapCenter Plug-ins Package for Linux or AIX
 :icons: font
 :imagesdir: ../media/
 

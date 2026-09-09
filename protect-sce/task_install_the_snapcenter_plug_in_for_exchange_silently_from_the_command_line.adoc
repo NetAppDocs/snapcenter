@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'You should install Plug-in for Exchange from within the SnapCenter user interface. However, if you cannot for some reason, you can run the Plug-in for Exchange installation program unattended in silent mode from the Windows command line.'
 ---
-= Install the SnapCenter Plug-in for Exchange silently from the command line
+= Install the SnapCenter Plug-in for Exchange from the command line
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mfa, authentication, multifactor authentication
 summary: 'You can use Rest API, PowerShell, and SCCLI interfaces to manage MFA.'
 ---
-= Manage multi-factor authentication (MFA) using Rest API, PowerShell, and SCCLI
+= Manage MFA in SnapCenter using REST API, PowerShell, and SCCLI
 :icons: font
 :imagesdir: ../media/
 

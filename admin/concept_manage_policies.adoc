@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Manage policies
 summary: 'You can detach policies from a resource or resource group, modify, delete, view, and copy.'
 ---
-= Manage policies
+= Manage policies in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

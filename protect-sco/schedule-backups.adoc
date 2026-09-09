@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: oracle databases discover
 summary: 'How SnapCenter discovers Oracle databases.'
 ---
-= Backup schedules
+= Backup schedules in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

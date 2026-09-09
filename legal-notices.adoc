@@ -5,7 +5,7 @@ keywords: copyrights, notice, trademarks, patents, privacy, open source
 summary: Legal notices provide access to copyright statements, trademarks, patents, and more.
 ---
 
-= Legal notices
+= Legal notices for SnapCenter
 :icons: font
 :imagesdir: ./media/
 

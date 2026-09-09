@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restoring an Exchange database
 summary: 'Before you restore an Exchange Server database from a SnapCenter Plug-in for Microsoft Exchange Server backup, you must ensure that several requirements are met.'
 ---
-= Requirements for restoring an Exchange database
+= Restore requirements for the SnapCenter Plug-in for Microsoft Exchange Server
 :icons: font
 :imagesdir: ../media/
 

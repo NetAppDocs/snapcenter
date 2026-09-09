@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Databases
 summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for automatically discovered SAP HANA databases.'
 ---
-= Types of restore strategies supported for automatically discovered SAP HANA databases
+= SnapCenter restore strategies for automatically discovered SAP HANA databases
 :icons: font
 :imagesdir: ../media/
 

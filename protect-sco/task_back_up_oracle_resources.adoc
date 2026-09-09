@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, Oracle database, policy, schedule, verification, resources
 summary: 'If a resource is not part of any resource group, you can back up the resource from the Resources page.'
 ---
-= Back up Oracle resources
+= Back up Oracle resources in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, upgrade snapcenter server, windows
 summary: 'You can use the SnapCenter Server installer executable file to upgrade the SnapCenter Server.'
 ---
-= Upgrade the SnapCenter Server on Windows host
+= Upgrade the SnapCenter Server on a Windows host
 :icons: font
 :imagesdir: ../media/
 

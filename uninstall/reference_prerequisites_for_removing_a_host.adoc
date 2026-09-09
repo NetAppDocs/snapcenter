@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall, prerequisites, plug-in, plug-in packages
 summary: 'You can remove a host if you no longer want to use SnapCenter to manage its data protection jobs. For example, you might want to remove a host if it no longer has data that needs to be protected. Before you remove a host from SnapCenter Server, you must perform the prerequisite tasks.'
 ---
-= Prerequisites for removing a host
+= Prerequisites for removing a host from SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Get the CA certificate thumbprint.'
 ---
-= Get the CA certificate thumbprint
+= Get the CA certificate thumbprint for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

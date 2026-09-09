@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Delete clones
 summary: 'You can delete clones if you find them no longer necessary.'
 ---
-= Delete clones
+= Delete SnapCenter clones
 :icons: font
 :imagesdir: ../media/
 

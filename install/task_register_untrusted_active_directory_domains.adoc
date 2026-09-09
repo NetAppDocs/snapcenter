@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Active Directory
 summary: 'You should register the Active Directory with SnapCenter Server to manage hosts, users, and groups from multiple untrusted Active Directory domains.'
 ---
-= Register untrusted Active Directory domains
+= Register untrusted Active Directory domains with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

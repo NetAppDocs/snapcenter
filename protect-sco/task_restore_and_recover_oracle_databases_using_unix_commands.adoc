@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore, recover, CLI
 summary: 'The restore and recovery workflow includes planning, performing the restore and recovery operations, and monitoring the operations.'
 ---
-= Restore and recover Oracle databases using UNIX commands
+= Restore and recover Oracle databases using UNIX commands in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL
 summary: 'Resources are MySQL instances on the Linux host that are managed by SnapCenter. After installing the SnapCenter Plug-in for MySQL plug-in, the MySQL databases on that Linux host are automatically discovered and displayed in the Resources page.'
 ---
-= Automatic discovery of resources on Linux host
+= Automatic discovery of MySQL resources on a Linux host
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: exporting certificates, enable certificate-based authentication, certificate-based authentication, configure CA signed key pair, configure root, configure intermediate certificates, security,authentication, export CA certificates
 summary: 'Export SnapCenter certificates.'
 ---
-= Configure Certificate-based authentication
+= Configure certificate-based authentication for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

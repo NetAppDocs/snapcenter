@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SQL Server
 summary: 'You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'
 ---
-= Back up SQL Server resource groups
+= Back up SQL Server resource groups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -5,7 +5,7 @@ keywords: SnapCenter
 summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate.'
 ---
 
-= Generate CA Certificate CSR file
+= Generate a CA certificate CSR file for the SnapCenter Plug-in for Microsoft Exchange Server
 :icons: font
 :imagesdir: ../media/
 

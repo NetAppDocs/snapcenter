@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: oracle databases discover
 summary: 'How SnapCenter discovers Oracle databases.'
 ---
-= Backup naming conventions
+= SnapCenter backup naming conventions
 :icons: font
 :imagesdir: ../media/
 

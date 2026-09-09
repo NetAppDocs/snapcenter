@@ -1,6 +1,6 @@
 You can cancel backup operations that are queued.
 
-*What you will need*
+.Before you begin
 
 * You must be logged in as the SnapCenter Admin or job owner to cancel operations.
 * You can cancel a backup operation from either the *Monitor* page or the *Activity* pane.
@@ -9,7 +9,7 @@ You can cancel backup operations that are queued.
 * The *Cancel Job* button is disabled for operations that cannot be canceled.
 * If you selected *All members of this role can see and operate on other members objects* in Users\Groups page while creating a role, you can cancel the queued backup operations of other members while using that role.
 
-*Steps*
+.Steps
 
 . Perform one of the following actions:
 +
@@ -20,16 +20,16 @@ a|
 Monitor page
 a|
 
- .. In the left navigation pane, click *Monitor* > *Jobs*.
- .. Select the operation, and then click *Cancel Job*.
+ .. In the left navigation pane, select *Monitor* > *Jobs*.
+ .. Select the operation, and then select *Cancel Job*.
 
 a|
 Activity pane
 a|
 
- .. After initiating the backup operation, click *image:../media/activity_pane_icon.gif[activity pane icon]* on the Activity pane to view the five most recent operations.
+ .. After initiating the backup operation, select *image:../media/activity_pane_icon.gif[activity pane icon]* on the Activity pane to view the five most recent operations.
  .. Select the operation.
- .. In the Job Details page, click *Cancel Job*.
+ .. In the Job Details page, select *Cancel Job*.
 
 +
 |===

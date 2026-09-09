@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cancel, restore
 summary: 'You can cancel restore jobs that are queued.'
 ---
-= Cancel Oracle database restore operations
+= Cancel Oracle database restore operations in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

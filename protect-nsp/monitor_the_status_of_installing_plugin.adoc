@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, NetApp supported plug-in
 summary: 'You can monitor the progress of SnapCenter plug-in package installation by using the Jobs page. You might want to check the progress of installation to determine when it is complete or if there is an issue.'
 ---
-= Monitor the status of installing NetApp supported plug-ins
+= Monitor the status of installing NetApp supported plug-ins in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

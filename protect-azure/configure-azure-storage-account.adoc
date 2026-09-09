@@ -5,7 +5,7 @@ keywords: snapcenter, azure, azure storage account, subscription ID, azure crede
 summary: 'Configure the Azure storage account in SnapCenter.'
 ---
 
-= Configure the Azure storage account
+= Configure the Azure storage account in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

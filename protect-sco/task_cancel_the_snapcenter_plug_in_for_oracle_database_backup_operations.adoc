@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can cancel backup operations that are either running, queued, or non-responsive.'
 ---
-= Cancel backup operations of Oracle databases
+= Cancel Oracle database backup operations in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

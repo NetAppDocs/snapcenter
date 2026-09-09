@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, snapcenter software, install, linux host
 summary: 'You can install the SnapCenter Server on the Linux host.'
 ---
-= Install the SnapCenter Server on Linux host
+= Install the SnapCenter Server on a Linux host
 :icons: font
 :imagesdir: ../media/
 

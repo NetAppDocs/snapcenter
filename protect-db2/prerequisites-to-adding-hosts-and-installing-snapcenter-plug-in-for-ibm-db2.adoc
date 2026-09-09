@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials, Windows, Linux, AIX
 summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for IBM Db2 supported on Windows, Linux, and AIX environments.'
 ---
-= Prerequisites for adding hosts and installing Plug-ins package for Windows, Linux, or AIX
+= Prerequisites to add hosts and install the SnapCenter Plug-in for IBM Db2
 :icons: font
 :imagesdir: ../media/
 

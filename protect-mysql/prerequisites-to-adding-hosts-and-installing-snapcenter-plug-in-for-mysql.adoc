@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for MySQL is available in both Windows and Linux environments.'
 ---
-= Prerequisites to add hosts and install SnapCenter Plug-in for MySQL
+= Prerequisites to add hosts and install the SnapCenter Plug-in for MySQL
 :icons: font
 :imagesdir: ../media/
 

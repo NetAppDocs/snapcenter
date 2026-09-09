@@ -5,7 +5,7 @@ keywords: snapcenter server, azure virtual machine, install
 summary: 'Download and install SnapCenter on Azure Virtual Machine.'
 ---
 
-= Install SnapCenter on Azure Virtual Machine
+= Install SnapCenter on an Azure virtual machine
 :icons: font
 :imagesdir: ../media/
 

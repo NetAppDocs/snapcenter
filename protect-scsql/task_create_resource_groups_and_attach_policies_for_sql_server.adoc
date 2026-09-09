@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: run as
 summary: 'A resource group is a container to which you add resources that you want to back up and protect together. A resource group enables you to back up all of the data that is associated with a given application simultaneously. A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform.'
 ---
-= Create resource groups and attach policies for SQL Server
+= Create resource groups and attach policies for SQL Server in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

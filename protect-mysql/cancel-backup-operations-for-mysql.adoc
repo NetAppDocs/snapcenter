@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Plug-in for MySQL
 summary: 'You can cancel backup operations that are queued.'
 ---
-= Cancel backup operations for MySQL
+= Cancel backup operations for MySQL in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

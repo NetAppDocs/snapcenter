@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: svm role, privileges
 summary: 'You should create SVM roles if you configure SVMs in ONTAP to use with SanpCenter and do not want to use the vsadmin role.'
 ---
-= Create SVM roles with minimum privileges
+= Create SVM roles with minimum privileges in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

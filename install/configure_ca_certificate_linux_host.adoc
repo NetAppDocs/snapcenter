@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter, configure, CA certificate, linux, linux host
 summary: 'You should configure the CA certificate with SnapCenter Server on Linux host.'
 ---
-= Configure CA Certificate for Linux host
+= Configure a CA certificate for SnapCenter on a Linux host
 :icons: font
 :imagesdir: ../media/
 

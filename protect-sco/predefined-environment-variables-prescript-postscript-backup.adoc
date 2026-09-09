@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: environment variable, predefined, prescript, postscript, backup, policy
 summary: 'SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript while creating backup policies.'
 ---
-= Predefined environment variables for backup specific prescript and postscript
+= SnapCenter prescript and postscript environment variables for backup
 :icons: font
 :imagesdir: ../media/
 

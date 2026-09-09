@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for UNIX file systems, discovery,file systems, UNIX
 summary: 'After installing the plug-in for Unix file systems, the file systems on the host are automatically discovered and displayed in the Resources page.'
 ---
 
-= Discover the UNIX file systems available for backup
+= Discover the UNIX file systems available for backup in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

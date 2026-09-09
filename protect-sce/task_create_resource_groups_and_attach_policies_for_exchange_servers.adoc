@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: resource group
 summary: 'A resource group is required for any data protection job. You must also attach one or more policies to the resource group to define the type of data protection job that you want to perform and the protection schedule.'
 ---
-= Create resource groups and attach policies for Exchange Servers
+= Create resource groups and attach policies for Exchange Servers in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

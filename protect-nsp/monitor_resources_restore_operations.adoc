@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, NetApp supported plug-in
 summary: 'You can monitor the progress of different SnapCenter restore operations by using the Jobs page. You might want to check the progress of an operation to determine when it is complete or if there is an issue.'
 ---
-= Monitor NetApp supported plug-in resources restore operations
+= Monitor restore operations for NetApp supported plug-in resources in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

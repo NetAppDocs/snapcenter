@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security,disable two-way SSL,enable two-way SSL, windows host
 summary: 'You can enable two-way SSL communication to secure the mutual communication between SnapCenter Server on Windows host and the plug-ins using PowerShell commands.'
 ---
-= Enable two-way SSL communication on Windows host
+= Enable two-way SSL communication on a SnapCenter Windows host
 :icons: font
 :imagesdir: ../media/
 

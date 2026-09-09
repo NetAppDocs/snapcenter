@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'A resource group is a collection of resources on a host or Exchange DAG, and the resource group can include either a whole DAG or individual databases. You can backup the resources groups from the Resources page.'
 ---
-= Back up Exchange resources groups
+= Back up Exchange resource groups with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

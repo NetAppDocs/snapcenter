@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Linux host'
 ---
-= Configure the CA Certificate for the SnapCenter SAP HANA Plug-ins service on Linux host
+= Configure a CA certificate for SnapCenter SAP HANA plug-in services on a Linux host
 :icons: font
 :imagesdir: ../media/
 

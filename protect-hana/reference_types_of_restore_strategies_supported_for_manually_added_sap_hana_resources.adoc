@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'You must define a strategy before you can successfully perform restore operations using SnapCenter. There are two types of restore strategies for manually added SAP HANA resources. You cannot recover manually added SAP HANA resources.'
 ---
-= Types of restore strategies supported for manually added SAP HANA resources
+= Restore strategies for manually added SAP HANA resources in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

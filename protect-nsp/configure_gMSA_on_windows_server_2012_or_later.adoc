@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: gMSA
 summary: 'Windows Server 2016 or later enables you to create a group Managed Service Account \(gMSA\) that provides automated service account password management from a managed domain account.'
 ---
-= Configure gMSA on Windows Server 2016 or later
+= Configure a gMSA for SnapCenter on Windows Server 2016 or later
 :icons: font
 :imagesdir: ../media/
 

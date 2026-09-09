@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Manage backups
 summary: 'You can rename and delete backups. You can also delete multiple backups simultaneously.'
 ---
-= Manage backups
+= Manage backups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 
