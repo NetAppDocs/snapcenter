@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: REST API, Swagger
 summary: 'REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server REST APIs, as well as to manually issue an API call. You can use REST APIs to help manage your SnapCenter Server or to perform data protection operations.'
 ---
-= How to access REST APIs using the Swagger API web page
+= Access SnapCenter REST APIs through the Swagger web page
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: environment variable, predefined, prescript, postscript, restore
 summary: 'SnapCenter allows you to use the predefined environment variables when you execute the prescript and postscript while restoring a database.'
 ---
-= Predefined environment variables for restore specific prescript and postscript
+= SnapCenter prescript and postscript environment variables for restore
 :icons: font
 :imagesdir: ../media/
 

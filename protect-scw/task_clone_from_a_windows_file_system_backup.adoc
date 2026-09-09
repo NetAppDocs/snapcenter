@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clone
 summary: 'You can use SnapCenter to clone a Windows file system backup. If you want a copy of a single file that was mistakenly deleted or changed, then you can clone a backup and access that file in the clone.'
 ---
-= Clone from a Windows file system backup
+= Clone a Windows file system backup with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

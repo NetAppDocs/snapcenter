@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can restore a backed up Exchange Server database from secondary storage (mirror or vault).'
 ---
-= Restore an Exchange Server database from secondary storage
+= Restore an Exchange database from secondary storage in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

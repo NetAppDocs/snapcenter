@@ -5,7 +5,7 @@ keywords: azure netapp files, ANF, back up, restore, clone, ANF backup, Azure Bl
 summary: 'You can back up, restore, and clone applications running on Azure NetApp Files.'
 ---
 
-= Protect applications running on Azure NetApp Files
+= Learn about Azure NetApp Files application protection with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: CA client certificate, LDAPS
 summary: 'You should configure the CA client certificate for LDAPS on the SnapCenter Server when the Windows Active Directory LDAPS is configured with the CA certificates.'
 ---
-= Configure CA client certificate for LDAPS
+= Configure CA client certificate for LDAPS in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

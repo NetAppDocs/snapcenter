@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL,run as
 summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'
 ---
-= Clone a MySQL backup
+= Clone a MySQL backup in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

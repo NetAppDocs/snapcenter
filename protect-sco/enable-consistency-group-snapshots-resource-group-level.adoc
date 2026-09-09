@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: consistency group, enable, create, resource group level
 summary: 'A resource group is a container where you add resources that you want to back up and protect. A resource group allows you to back up all the data that is associated with a given application simultaneously.'
 ---
-= Enable consistency group snapshots at the resource group level
+= Enable SnapCenter consistency group snapshots at the resource group level
 :icons: font
 :imagesdir: ../media/
 

@@ -5,7 +5,7 @@ keywords: http status code, error code
 summary: Each API request generates a response back to the client. You should examine the response to determine whether it was successful and retrieve additional data as needed.
 ---
 
-= Interpretation of an API response
+= Interpreting a SnapCenter REST API response
 :icons: font
 :imagesdir: ../media/
 

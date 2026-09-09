@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: import, SnapManager for Oracle, SnapManager for SAP
 summary: 'Importing data from SnapManager for Oracle and SnapManager for SAP to SnapCenter enables you to continue to use your data from previous versions.'
 ---
-= Import data from SnapManager for Oracle and SnapManager for SAP to SnapCenter
+= How SnapCenter imports data from SnapManager for Oracle and SAP
 :icons: font
 :imagesdir: ../media/
 

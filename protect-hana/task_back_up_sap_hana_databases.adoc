@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'If a resource is not yet part of any resource group, you can back up the resource from the Resources page.'
 ---
-= Back up SAP HANA databases
+= Back up SAP HANA databases with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

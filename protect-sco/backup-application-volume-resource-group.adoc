@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: application volume, resource group, back up, database
 summary: 'You can back up the resource group containing only application volumes or a mix of application volumes and database.'
 ---
-= Back up the application volumes resource group
+= Back up an application volumes resource group in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

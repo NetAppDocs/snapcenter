@@ -5,7 +5,7 @@ keywords: overview, unix file system, plug-in for unix file system, backup, rest
 summary: 'Plug-in for Unix file systems supports back up, restore, and clone tof Unix file systems.'
 ---
 
-= What you can do with the SnapCenter Plug-in for Unix file systems
+= Learn about the SnapCenter Plug-in for UNIX file systems
 :icons: font
 :imagesdir: ../media/
 

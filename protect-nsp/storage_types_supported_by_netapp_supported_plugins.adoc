@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NetApp supported plug-ins
 summary: 'SnapCenter supports a wide range of storage types on both physical and virtual machines. You must verify the support for your storage type before installing NetApp supported plug-ins.'
 ---
-= Storage types supported by NetApp supported plug-ins
+= Storage types supported by NetApp supported plug-ins in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

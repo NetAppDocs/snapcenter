@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Resources are MySQL databases on the Linux host that are managed by SnapCenter. You can add these resources to resource groups to perform data protection operations after you discover the MySQL databases that are available.'
 ---
-= Discover the databases automatically
+= Discover MySQL databases automatically in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

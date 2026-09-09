@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cancel clone
 summary: 'You can cancel clone jobs that are queued.'
 ---
-= Cancel clone operations
+= Cancel clone operations in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

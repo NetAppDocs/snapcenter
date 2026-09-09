@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup types, restore methods, connect-and-copy restore, full restore, partial restore, in-place restore, recovery type, limitations
 summary: 'You must define a strategy before you restore and recover your database so that you can perform restore and recover operations successfully.'
 ---
-= Define a restore and recovery strategy for Oracle databases
+= Learn about restore and recovery strategies for Oracle databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

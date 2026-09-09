@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter, certificate signing request, ca,
 summary: 'You can generate a Certificate Signing Request (CSR) and import the certificate that can be obtained from a Certificate Authority (CA) using the generated CSR. The certificate will have a private key associated with it.'
 ---
-= Generate CA Certificate CSR file
+= CA certificate CSR files in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

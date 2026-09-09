@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, NetApp supported plug-ins
 summary: 'You can back up a resource group on demand from the Resources page. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'
 ---
-= Back up resource groups of NetApp supported plug-in resources
+= Back up resource groups of NetApp supported plug-ins in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'Import the CA certificates of the SnapCenter Server and the Windows host plug-ins'
 ---
-= Import CA certificates
+= Import CA certificates for SnapCenter
 :icons: font
 :imagesdir: ../media/
 

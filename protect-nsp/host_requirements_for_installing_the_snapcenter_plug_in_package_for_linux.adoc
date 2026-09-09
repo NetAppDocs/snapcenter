@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter
 summary: 'You should ensure that the host meets the requirements before installing the SnapCenter Plug-ins Package for Linux.'
 ---
-= Host requirements for installing the SnapCenter Plug-ins Package for Linux and AIX
+= Host requirements for the SnapCenter Plug-ins Package for Linux and AIX
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, restore, clone, oracle database
 summary: 'You can use the Plug-in for Oracle Database to back up, verify, restore, recover, mount, unmount, and clone Oracle databases and their resources. You can also catalog or uncatalog the database backups with Oracle Recovery Manager (RMAN).'
 ---
-= What can you do with the Plug-in for Oracle Database
+= Capabilities of the SnapCenter Plug-in for Oracle Database
 :icons: font
 :imagesdir: ../media/
 

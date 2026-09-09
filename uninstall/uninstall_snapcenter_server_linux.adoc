@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall, snapcenter server, linux
 summary: 'If you no longer wish to use the SnapCenter Server to manage data protection jobs, you can uninstall SnapCenter Server.'
 ---
-= Uninstall the SnapCenter Server on Linux host
+= Uninstall the SnapCenter Server on a Linux host
 :icons: font
 :imagesdir: ../media/
 

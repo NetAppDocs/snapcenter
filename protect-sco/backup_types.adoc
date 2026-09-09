@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup type, preferred nodes, catalog backups, schedules, backup name format, retention, verification
 summary: 'Types of backup supported for Oracle databases.'
 ---
-= Types of backup supported for Oracle databases
+= Types of backup supported for Oracle databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

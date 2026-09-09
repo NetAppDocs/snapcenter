@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failback, snapcenter
 summary: 'After the SnapCenter Plug-in for SQL Server primary storage is back online, you should failback to the primary storage.'
 ---
-=  Failback from SnapCenter Plug-in for SQL Server secondary storage to primary storage
+= Fail back to primary storage for SnapCenter Plug-in for SQL Server
 :icons: font
 :imagesdir: ../media/
 

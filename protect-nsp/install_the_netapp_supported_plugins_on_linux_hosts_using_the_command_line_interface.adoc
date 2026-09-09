@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, NetApp supported plug-in
 summary: 'You should install the SnapCenter NetApp supported plug-ins by using the SnapCenter user interface (UI). If your environment does not allow remote installation of the plug-in from the SnapCenter UI, you can install the NetApp supported plug-in either in console mode or in silent mode by using the command-line interface (CLI).'
 ---
-= Install the NetApp supported plug-ins on Linux hosts by using the command-line interface
+= Install NetApp supported plug-ins on Linux hosts using the SnapCenter CLI
 :icons: font
 :imagesdir: ../media/
 

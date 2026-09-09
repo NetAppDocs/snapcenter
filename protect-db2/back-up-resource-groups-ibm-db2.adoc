@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'A resource group is a collection of resources on a host. A backup operation on the resource group is performed on all resources defined in the resource group.'
 ---
-= Back up resource groups
+= Back up IBM Db2 resource groups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

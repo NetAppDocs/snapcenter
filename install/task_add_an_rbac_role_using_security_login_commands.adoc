@@ -5,7 +5,7 @@ keywords: RBAC roles, add, NetApp ONTAP RBAC role, storage system
 summary: 'You can use the security login commands to add an NetApp ONTAP RBAC role when your storage systems are running clustered NetApp ONTAP.'
 ---
 
-= Add an NetApp ONTAP RBAC role using security login commands
+= Add an ONTAP RBAC role for SnapCenter using security login commands
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policies, policies, unix file systems, file systems
 summary: 'Create a backup policy for the Unix file systems that you want to back up.'
 ---
-= Create backup policies for Unix file systems
+= Create backup policies for UNIX file systems in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

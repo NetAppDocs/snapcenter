@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: application volume, clone, split a clone
 summary: 'You can use SnapCenter to clone the application volume backups, split the clone, and delete the clone.'
 ---
-= Clone application volume backup
+= Clone application volume backups in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

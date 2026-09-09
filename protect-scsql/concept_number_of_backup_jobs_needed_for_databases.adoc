@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Number of backup jobs
 summary: 'Factors that determine the number of backup jobs that you need include the size of the database, the number of volumes used, the rate of change of the database, and your Service Level Agreement \(SLA\).'
 ---
-= Number of backup jobs needed for databases
+= Number of backup jobs needed for databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

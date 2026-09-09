@@ -1,10 +1,10 @@
 section: tech-refresh
 title: Tech refresh
 entries:
-  - title: Tech refresh of SnapCenter Server host
+  - title: Perform a tech refresh of the SnapCenter Server host
     url: /tech-refresh/task_tech_refresh_server_host.html
-  - title: Tech refresh of SnapCenter plug-in hosts
+  - title: Perform a tech refresh of SnapCenter plug-in hosts
     url: /tech-refresh/task_tech_refresh_plugin_host.html
-  - title: Tech refresh of storage system
+  - title: Perform a tech refresh of a storage system in SnapCenter
     url: /tech-refresh/task_tech_refresh_storage_system.html
 

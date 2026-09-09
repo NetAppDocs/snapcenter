@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: split, PDB, cloned PDB
 summary: 'You can use SnapCenter to split a cloned pluggable database \(PDB\).'
 ---
-= Split clone of a pluggable database
+= Split a pluggable database clone in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

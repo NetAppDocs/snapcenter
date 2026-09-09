@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mfa, authentication, multifactor authentication
 summary: 'SnapCenter employs strict security and authentication features to enable you to keep your data secure.'
 ---
-= Manage multi-factor authentication (MFA)
+= Manage multi-factor authentication in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, snapcenter
 summary: 'You can monitor the progress of SnapCenter plug-in package installation by using the Jobs page. You might want to check the progress of installation to determine when it is complete or if there is an issue.'
 ---
-= Monitor the status of installing Plug-in for SQL Server
+= Monitor installation status of the SnapCenter Plug-in for SQL Server
 :icons: font
 :imagesdir: ../media/
 

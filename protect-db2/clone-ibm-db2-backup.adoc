@@ -5,7 +5,7 @@ keywords: SnapCenter Plug-in for IBM Db2,run as
 summary: 'You can use SnapCenter to clone a backup. You can clone from primary or secondary backup.'
 ---
 
-= Clone a IBM Db2 backup
+= Clone an IBM Db2 backup with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

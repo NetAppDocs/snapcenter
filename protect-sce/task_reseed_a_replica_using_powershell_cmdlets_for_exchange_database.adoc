@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server
 summary: 'You can use PowerShell cmdlets to restore an unhealthy replica by using either the most recent copy on the same host or the most recent copy from an alternate host.'
 ---
-= Reseed a replica using PowerShell cmdlets for Exchange database
+= Reseed an Exchange replica using SnapCenter PowerShell cmdlets
 :icons: font
 :imagesdir: ../media/
 

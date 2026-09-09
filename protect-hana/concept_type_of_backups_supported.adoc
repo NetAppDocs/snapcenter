@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'Backup type specifies the type of backup that you want to create. SnapCenter supports File-Based Backup and Snapshot copy-based backup types for SAP HANA databases.'
 ---
-= Type of backups supported
+= Types of backups supported by SnapCenter for SAP HANA databases
 :icons: font
 :imagesdir: ../media/
 

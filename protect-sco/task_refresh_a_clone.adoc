@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: refresh clone, clone
 summary: 'You can refresh the clone by running the “Refresh-SmClone” command. This command creates a backup of the database, deletes the existing clone, and creates a clone with the same name.'
 ---
-= Refresh a clone
+= Refresh a clone for Oracle databases in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

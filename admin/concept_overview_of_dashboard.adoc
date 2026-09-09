@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dashboard
 summary: 'From the SnapCenter left navigation pane, the Dashboard gives you a first glance into the health of your system, including recent job activity, alerts, protection summary, storage efficiency and usage, status of SnapCenter jobs \(Backup, Clone, Restore\), configuration status for standalone and Windows cluster hosts, number of Storage Virtual Machines (SVMs) managed by SnapCenter, and license capacity.'
 ---
-= Overview of dashboard
+= Learn about the SnapCenter dashboard
 :icons: font
 :imagesdir: ../media/
 

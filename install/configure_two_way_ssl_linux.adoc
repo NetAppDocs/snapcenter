@@ -5,7 +5,7 @@ keywords: security,two-way ssl,configure two-way ssl, linux host
 summary: 'You should configure the two-way SSL communication to secure the mutual communication between SnapCenter Server on Linux host and the plug-ins.  '
 ---
 
-= Configure two-way SSL communication on Linux host
+= Configure two-way SSL communication on a SnapCenter Linux host
 :icons: font
 :imagesdir: ../media/
 

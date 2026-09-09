@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ALM
 summary: 'SnapCenter Plug-in for Microsoft SQL Server supports discovery in SQL Server 2012 and later, Asymmetric LUN Mapping \(ALM\) configurations for high availability, and availability groups for disaster recovery. When discovering resources, SnapCenter discovers databases on local hosts and on remote hosts in ALM configurations.'
 ---
-= Support for Asymmetric LUN Mapping in Windows clusters
+= SnapCenter support for Asymmetric LUN Mapping in Windows clusters
 :icons: font
 :imagesdir: ../media/
 

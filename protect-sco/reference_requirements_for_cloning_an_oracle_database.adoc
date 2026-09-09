@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Before cloning an Oracle database, you should ensure that prerequisites are completed.'
 ---
-= Requirements for cloning an Oracle database
+= Requirements for cloning an Oracle database with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

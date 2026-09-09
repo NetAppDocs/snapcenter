@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials
 summary: 'Before you add a host and install the plug-in packages, you must complete all the requirements. SnapCenter Plug-in for SAP HANA Database is available in both Windows and Linux environments.'
 ---
-= Prerequisites for adding hosts and installing SnapCenter Plug-in for SAP HANA Database
+= Host and installation prerequisites for the SnapCenter Plug-in for SAP HANA Database
 :icons: font
 :imagesdir: ../media/
 

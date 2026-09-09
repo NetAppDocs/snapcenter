@@ -5,7 +5,7 @@ keywords: REST API
 summary: 'Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live setup.'
 ---
 
-= Get started with the REST API
+= Get started with the SnapCenter REST API
 :icons: font
 :imagesdir: ../media/
 

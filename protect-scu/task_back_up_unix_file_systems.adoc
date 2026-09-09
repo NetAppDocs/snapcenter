@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, Unix file system, policy, schedule, resources
 summary: 'If a resource is not part of any resource group, you can back up the resource from the Resources page.'
 ---
-= Back up Unix file systems
+= Back up UNIX file systems with SnapCenter
 :icons: font
 :imagesdir: ../media/
 

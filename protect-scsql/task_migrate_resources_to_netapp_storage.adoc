@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: migrate resources
 summary: 'After you have provisioned your NetApp storage system using SnapCenter Plug-in for Microsoft Windows, you can migrate your resources to the NetApp storage system or from one NetApp LUN to another NetApp LUN using either the SnapCenter graphical user interface \(GUI\) or using the PowerShell cmdlets.'
 ---
-= Migrate resources to NetApp storage system
+= Migrate resources to NetApp storage in SnapCenter
 :icons: font
 :imagesdir: ../media/
 

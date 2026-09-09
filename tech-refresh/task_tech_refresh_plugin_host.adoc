@@ -5,7 +5,7 @@ keywords: tech refresh, plug-in host, supported plug-ins, prerequisites to refre
 summary: 'Move the resources from old host to new host to perform tech refresh of the plug-in hosts.'
 ---
 
-= Tech refresh of SnapCenter plug-in hosts
+= Perform a tech refresh of SnapCenter plug-in hosts
 
 :icons: font
 :imagesdir: ../media/
