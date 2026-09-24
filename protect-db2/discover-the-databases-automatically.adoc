@@ -14,7 +14,7 @@ Resources are IBM Db2 databases on the Linux host that are managed by SnapCenter
 .Before you begin
 
 * You must have already completed tasks such as installing the SnapCenter Server, adding hosts, and setting up the storage system connections.
-* SnapCenter Plug-in for IBM Db2 does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually.
+* SnapCenter Plug-in for IBM Db2 does not support automatic discovery of the resources residing on RDM/VMDK virtual environments. You must provide the storage information for virtual environments while adding the databases manually. Refer to <<resources_rdm_vmdk_virtual_environments,Resources residing on RDM/VMDK virtual environments>> for details.
 
 .About this task
 
@@ -43,8 +43,9 @@ IMPORTANT: You must refresh the resources if the databases are renamed outside o
 
 
 .Resources residing on RDM/VMDK virtual environments
+[[resources_rdm_vmdk_virtual_environments]]
 
-Resources residing on RDM/VMDK virtual environments cannot be discovered automatically. You must disable auto-discovery and add the instance manually for the IBM Db2 plugin.
+Resources residing on RDM/VMDK virtual environments cannot be discovered automatically. You must disable auto-discovery and add the instance manually for the IBM Db2 plugin, as follows:
 
 ----
 Set-SmConfigSettings -Agent -Hostname <HOST_NAME> -configSettings @{"DISABLE_AUTO_DISCOVERY"="true"}
@@ -52,5 +53,7 @@ Set-SmConfigSettings -Agent -Hostname <HOST_NAME> -configSettings @{"DISABLE_AUT
 PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint 
 (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="windb2svm"})
 ----
+
+Refer to link:back-up-db2-databases.html[Back up IBM Db2 databases] for more information.
 
 // SNAPCDOC-406, 2026-SEPT-24
