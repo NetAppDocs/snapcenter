@@ -54,6 +54,6 @@ PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Inst
 (@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="windb2svm"})
 ----
 
-Refer to link:back-up-db2-databases.html[Back up IBM Db2 databases] for more information.
+Refer to link:back-up-db2-databases.html[Back up IBM Db2 databases, PowerShell cmdlets] for more information.
 
 // SNAPCDOC-406, 2026-SEPT-24
