@@ -2,7 +2,7 @@
 permalink: protect-postgresql/configure-gMSA-on-windows-server-2012-or-later.html
 sidebar: sidebar
 keywords:
-summary: 'Windows Server 2016 or later enables you to create a group Managed Service Account \(gMSA\) that provides automated service account password management from a managed domain account.'
+summary: 'Windows Server 2016 or later enables you to create a group Managed Service Account (gMSA) that provides automated service account password management from a managed domain account.'
 ---
 = Configure gMSA on Windows Server hosts running the SnapCenter Plug-in for PostgreSQL
 :icons: font
