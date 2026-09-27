@@ -2,7 +2,7 @@
 permalink: protect-hana/reference_types_of_restore_performed_for_auto_discovered_sap_hana_databases.html
 sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Databases
-summary: 'SnapCenter supports volume-based SnapRestore \(VBSR\), Single File SnapRestore, and connect-and-copy restore types for automatically discovered SAP HANA databases.'
+summary: 'SnapCenter supports volume-based SnapRestore (VBSR), Single File SnapRestore, and connect-and-copy restore types for automatically discovered SAP HANA databases.'
 ---
 = Restore operations for auto-discovered SAP HANA databases in SnapCenter
 :icons: font
