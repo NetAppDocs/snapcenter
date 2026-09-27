@@ -2,7 +2,7 @@
 permalink: protect-sco/task_restore_and_recovere_tablespaces_using_point_in_time_recovery.html
 sidebar: sidebar
 keywords: restore, PITR, point-in-time recovery, RMAN, tablespaces
-summary: 'You can restore a subset of tablespaces that has been corrupted or dropped without impacting the other tablespaces in the database. SnapCenter uses RMAN to perform point-in-time recovery \(PITR\) of the tablespaces.'
+summary: 'You can restore a subset of tablespaces that has been corrupted or dropped without impacting the other tablespaces in the database. SnapCenter uses RMAN to perform point-in-time recovery (PITR) of the tablespaces.'
 ---
 = Restore tablespaces using point-in-time recovery in SnapCenter
 :icons: font
