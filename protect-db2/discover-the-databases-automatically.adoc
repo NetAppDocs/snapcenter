@@ -45,7 +45,7 @@ IMPORTANT: You must refresh the resources if the databases are renamed outside o
 .Resources residing on RDM/VMDK virtual environments
 [[resources_rdm_vmdk_virtual_environments]]
 
-Resources residing on RDM/VMDK virtual environments cannot be discovered automatically. You must disable auto-discovery and add the instance manually for the IBM Db2 plugin, as follows:
+Resources residing on RDM/VMDK virtual environments cannot be discovered automatically. You must disable auto-discovery and add the instance manually for the SnapCenter Plug-in for IBM Db2, as follows:
 
 ----
 Set-SmConfigSettings -Agent -Hostname <HOST_NAME> -configSettings @{"DISABLE_AUTO_DISCOVERY"="true"}
