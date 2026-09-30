@@ -2,7 +2,7 @@
 permalink: admin/concept_manage_resources_of_untrusted_domains.html
 sidebar: sidebar
 keywords: Manage resources
-summary: 'In addition to managing hosts in Active Directory \(AD\) trusted domains, SnapCenter also manages hosts in multiple AD untrusted domains. The untrusted AD domains must be registered with the SnapCenter Server. SnapCenter supports users and groups of multiple untrusted AD domains.'
+summary: 'In addition to managing hosts in Active Directory (AD) trusted domains, SnapCenter also manages hosts in multiple AD untrusted domains. The untrusted AD domains must be registered with the SnapCenter Server. SnapCenter supports users and groups of multiple untrusted AD domains.'
 ---
 = Manage SnapCenter resources in untrusted domains
 :icons: font

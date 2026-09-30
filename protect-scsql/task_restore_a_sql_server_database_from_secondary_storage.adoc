@@ -2,7 +2,7 @@
 permalink: protect-scsql/task_restore_a_sql_server_database_from_secondary_storage.html
 sidebar: sidebar
 keywords: restore operation
-summary: 'You can restore the backed-up SQL Server databases from the physical LUNs \(RDM, iSCSI, or FCP\) on a secondary storage system. The Restore feature is a multiphase process that copies all of the data and the log pages from a specified SQL Server backup residing on the secondary storage system to a specified database.'
+summary: 'You can restore the backed-up SQL Server databases from the physical LUNs (RDM, iSCSI, or FCP) on a secondary storage system. The Restore feature is a multiphase process that copies all of the data and the log pages from a specified SQL Server backup residing on the secondary storage system to a specified database.'
 ---
 = Restore an SQL Server database from secondary storage in SnapCenter
 :icons: font
