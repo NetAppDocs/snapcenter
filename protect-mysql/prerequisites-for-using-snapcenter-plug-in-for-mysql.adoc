@@ -16,8 +16,11 @@ Before you use SnapCenter Plug-in for MySQL, the SnapCenter administrator must i
 * Configure the SnapCenter environment by adding storage system connections and creating credentials, if applicable.
 * Install Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier on your Linux or Windows host.
 +
+NOTE: Non-root users must have execute permissions to run Java.
++
 You must set the Java path in the environmental path variable of the host machine.
 
 * Set up SnapMirror and SnapVault, if you want backup replication.
 
 // SNAPCDOC-402, 2026-JUN-02
+// SNAPCDOC-413, 2026-SEPT-29

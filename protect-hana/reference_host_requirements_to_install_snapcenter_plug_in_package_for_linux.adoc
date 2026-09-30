@@ -39,8 +39,11 @@ a|
 Required software packages
 a|
 * Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier
++
+NOTE: Non-root users must have execute permissions to run Java.``
 
 If you have upgraded Java to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct Java version and the correct path.
 |===
 
 // SNAPCDOC-402, 2026-JUN-02
+// SNAPCDOC-413, 2026-SEPT-29

@@ -15,6 +15,8 @@ Certificate-based authentication enhances security by verifying the identity of 
 == Enable Certificate-based authentication
 
 To enable certificate-based authentication for SnapCenter Server and the Windows plug-in hosts, run the following PowerShell cmdlet.  For the Linux plug-in hosts, the certificate-based authentication will be enabled when you enable the two-way SSL. 
++
+NOTE: Non-root users must have execute permissions to run Java.
 
 * To enable client certificate-based authentication:
 +
@@ -58,7 +60,6 @@ a|
 Completing the Certificate Export Wizard
 a|
 Review the summary, and then click *Finish* to start the export.
-a|
 |===
 
 NOTE: Certificate based authentication is not supported for SnapCenter HA configurations and SnapCenter Plug-in for VMware vSphere.
@@ -95,7 +96,6 @@ a|
 Completing the Certificate Export Wizard
 a|
 Review the summary, and then click *Finish* to start the import.
-a|
 |===
 
 == Import CA Certificate to the UNIX plug-in hosts
@@ -194,3 +194,5 @@ Completing the Certificate Export Wizard
 a|
 Review the summary, and then click *Finish* to start the export.
 |===
+
+// 

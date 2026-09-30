@@ -20,6 +20,8 @@ The system selects all the plug-ins in the package, but upgrades only the plug-i
 +
 Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Software Release Notes^] for the latest qualified versions of ASP.NET Core and PowerShell for your specific SnapCenter version.
 * Ensure that Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier, is installed on Windows and Linux plug-in hosts.
++
+NOTE: Non-root users must have execute permissions to run Java.
 * By default SnapCenter detects JAVA_HOME from the environment. If you want to use a fixed JAVA_HOME and if you are upgrading the plug-ins on a Linux host, you should manually add the SKIP_JAVAHOME_UPDATE parameter in the _spl.properties_ file located at _/var/opt/snapcenter/spl/etc/_ and set the value to TRUE.
 +
 The value of JAVA_HOME gets updated when the plug-in is upgraded or when the SnapCenter plug-in loader (SPL) service restarts. Before upgrading or restarting the SPL, if you add the SKIP_JAVAHOME_UPDATE parameter and set the value to TRUE, the value of JAVA_HOME is not updated.
@@ -49,3 +51,4 @@ NOTE: If you do not select *Skip prechecks*, SnapCenter checks if the plug-in ho
 All the related services are restarted during the plug-in upgrade.
 
 // SNAPCDOC-402, 2026-JUN-02
+// SNAPCDOC-413, 2026-SEPT-29
