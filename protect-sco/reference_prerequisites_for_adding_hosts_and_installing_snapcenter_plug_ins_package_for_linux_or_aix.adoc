@@ -22,6 +22,9 @@ The SnapCenter Plug-ins Package for AIX automatically resolves the file level sy
 
 * Create credentials with authentication mode as Linux or AIX for the install user.
 * You must have installed Java 17 (for SnapCenter 6.2.1 and later) or Java 11 (for SnapCenter 6.2 and earlier) on your Linux or AIX host.
++
+NOTE: Non-root users must have execute permissions to run Java.
+
 ** Java from Oracle, OpenJDK, or SAP JDK is supported for Linux.
 ** IBM Java for AIX. You can download from https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?version=17&os=AIX[IBM Semeru Runtimes Downloads^].
 +
@@ -176,6 +179,8 @@ a|
 Required software packages
 a|
 * IBM Java 17 for SnapCenter 6.2.1 and later or IBM Java 11 for SnapCenter 6.2 and earlier
++
+NOTE: Non-root users must have execute permissions to run Java.
 
 If you have upgraded Java to the latest version, you must ensure that the JAVA_HOME option located at /var/opt/snapcenter/spl/etc/spl.properties is set to the correct Java version and the correct path.
 
@@ -366,3 +371,4 @@ For more information, refer to link:../protect-sco/task_define_a_backup_strategy
 // SNAPCDOC-394, 2026-APR-09
 // SNAPCDOC-402, 2026-JUN-02
 // GH issue #245, 2026-JUN-10
+// SNAPCDOC-413, 2026-SEPT-29
