@@ -36,6 +36,8 @@ link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java fo
 * You must have installed Java 17 (Oracle Java, OpenJDK, or SAP JDK) for SnapCenter 6.2.1 and later or Java 11 for SnapCenter 6.2 and earlier on your Linux host.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17[Download Java for all operating systems]
++
+NOTE: Non-root users must have execute permissions to run Java.
 
 * For SAP HANA databases that are running on a Linux host, while installing Plug-in for SAP HANA Database, SnapCenter Plug-in for UNIX is installed automatically.
 * You should have *bash* as the default shell for plug-in installation.
@@ -140,3 +142,4 @@ You can obtain the _checksum_value_ from the *sc_unix_plugins_checksum.txt* file
 IMPORTANT: The example should be used only as a reference for creating your own data.
 
 // SNAPCDOC-402, 2026-JUN-02
+// SNAPCDOC-413, 2026-SEPT-29

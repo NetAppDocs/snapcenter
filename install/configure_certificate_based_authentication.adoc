@@ -58,7 +58,6 @@ a|
 Completing the Certificate Export Wizard
 a|
 Review the summary, and then click *Finish* to start the export.
-a|
 |===
 
 NOTE: Certificate based authentication is not supported for SnapCenter HA configurations and SnapCenter Plug-in for VMware vSphere.
@@ -95,7 +94,6 @@ a|
 Completing the Certificate Export Wizard
 a|
 Review the summary, and then click *Finish* to start the import.
-a|
 |===
 
 == Import CA Certificate to the UNIX plug-in hosts
