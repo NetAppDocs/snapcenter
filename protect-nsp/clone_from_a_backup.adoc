@@ -20,8 +20,7 @@ You can use SnapCenter to clone a backup. You can clone from primary or secondar
 [NOTE]
 ==================
 * For NVMe over TCP and NVMe over FC storage layouts, SnapCenter automatically creates an NVMe subsystem if one does not already exist during LUN restore or clone operations. 
-* SnapCenter does not delete the subsystem created as part of a delete clone operation. It is retained for further clone or restore operations. If you are deleting the subsystem, you must delete it from ONTAP and disconnect from the host by using the following command:
-`nvme disconnect -n nqn.1992-08.com.netapp:sn.548b73c187df11efa4b9d039ea4f5426:subsystem.snapcenter_51bb3c11_e231_48af_85dc_86a359e980c5_subsystem`
+* SnapCenter does not delete the subsystem created as part of a delete clone operation. It is retained for further clone or restore operations. If you delete the subsystem, delete it from ONTAP and disconnect it from the host by using the following command: `nvme disconnect -n <subsystem_NQN>` replacing `<subsystem_NQN>` with the actual NQN of the subsystem.
 ==================
 
 .About this task
