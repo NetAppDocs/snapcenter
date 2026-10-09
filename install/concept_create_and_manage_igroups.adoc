@@ -11,6 +11,12 @@ summary: 'You create initiator groups (igroups) to specify which hosts can acces
 [.lead]
 You create initiator groups (igroups) to specify which hosts can access a given LUN on the storage system. You can use SnapCenter to create, rename, modify, or delete an igroup on a Windows host.
 
+[NOTE]
+===================
+* SnapCenter automatically creates an igroup if one does not already exist when performing LUN restore or clone operations. The igroup is created with the following name format: `snapcenter_<id>_igroup`
+* SnapCenter does not delete an igroup created as part of a delete clone operation. It is retained for further clone or restore operations.
+===================
+
 == Create an igroup
 
 You can use SnapCenter to create an igroup on a Windows host. The igroup will be available in the Create Disk or Connect Disk wizard when you map the igroup to a LUN.
@@ -89,3 +95,5 @@ You can use SnapCenter to delete an igroup when you no longer need it.
 . In the Delete igroup dialog box, click *OK*.
 +
 SnapCenter deletes the igroup.
+
+// SNAPCDOC-414, 2026-OCT-07
