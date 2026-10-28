@@ -10,8 +10,9 @@ summary: 'Provides important information about this release of SnapCenter Server
 
 [.lead]
 
-Learn about the new and enhanced features available in SnapCenter 6.2, 6.2.1, and 6.2.2.
+Learn about the new and enhanced features available in SnapCenter 6.2, 6.2.1, 6.2.2, and 6.2.3.
 
+For a complete list of new features and enhancements, refer to link:what's-new-in-snapcenter623.html[What's new in SnapCenter 6.2.3].
 For a complete list of new features and enhancements, refer to link:what's-new-in-snapcenter622.html[What's new in SnapCenter 6.2.2].
 
 For a complete list of new features and enhancements, refer to link:what's-new-in-snapcenter621.html[What's new in SnapCenter 6.2.1].
