@@ -9,4 +9,8 @@ summary: 'The 6.2.3 release of SnapCenter software has no new features or enhanc
 :imagesdir: ../media/
 
 [.lead]
-The 6.2.3 release of SnapCenter software has no new features or enhancements. It includes only known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] for further details.
+The 6.2.3 release of SnapCenter software has no new features or enhancements. 
+
+It includes only known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] for further details.
+
+For upgrading your hosts to SnapCenter 6.2.3, refer to *Upgrade Hosts to SnapCenter 6.2.3* in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] for further details on upgrading your hosts.

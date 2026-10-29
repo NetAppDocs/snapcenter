@@ -19,6 +19,8 @@ NetApp recommends upgrading to the latest supported SnapCenter version, 6.2.3, t
 
 CAUTION: To upgrade to SnapCenter 6.2.3 from a version earlier than 6.0 or from 6.0, first upgrade to 6.1P3, which supports .NET 8 and Java 11, and then upgrade to 6.2.3, which supports .NET 10 and Java 17. Do not use 6.2.2 or any other intermediate version as part of the upgrade path unless you are already using it.
 
+Refer to *Upgrade Hosts to SnapCenter 6.2.3* in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] for further details on upgrading your hosts.
+
 === Supported upgrade paths
 
 |===
