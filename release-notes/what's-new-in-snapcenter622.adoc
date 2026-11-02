@@ -11,4 +11,4 @@ summary: 'The 6.2.2 release of SnapCenter software has no new features or enhanc
 [.lead]
 The 6.2.2 release of SnapCenter software has no new features or enhancements. 
 
-It includes only known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenterRelease Notes^] for further details.
+It includes only known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] for further details.
