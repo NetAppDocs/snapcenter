@@ -9,7 +9,9 @@ summary: 'The 6.2 release of SnapCenter software includes several new features a
 :imagesdir: ../media/
 
 [.lead]
-The 6.2 release of SnapCenter software includes known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. It also includes the following expanded feature. Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter 6.2.2 Release Notes^] for further details.
+The 6.2 release of SnapCenter software includes known bug fixes and updates of the qualified versions for the SnapCenter Server and plug-ins. It also includes the following expanded feature. 
+
+Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] for further details.
 
 |===
 | Update | Description
