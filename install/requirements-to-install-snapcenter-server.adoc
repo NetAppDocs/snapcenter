@@ -265,6 +265,64 @@ a| -
 a| SPL communication when SMCore is present
 |===
 
+=== SAP HANA SQL ports (client connections, instance NN)
+
+|===
+| Database | Port pattern | Instance 00 | Instance 01
+
+a| SYSTEMDB (multitenant)	
+a| 3NN13	
+a| 30013	
+a| 30113
+
+a| First tenant, or single-container database	
+a| 3NN15	
+a| 30015	
+a| 30115
+
+a| Second tenant	
+a| 3NN41	
+a| 30041	
+a| 30141
+
+a| Each additional tenant	
+a| Previous port + 3	
+a| 30044, 30047, …	
+a| 30144, 30147, …
+|===
+
+=== SAP HANA system replication (HSR) ports, instance NN
+
+|===
+| Port | Protocol | Direction | Purpose
+
+a| 4NN00–4NN99	
+a| TCP
+a| Primary host ↔ secondary host
+a| Full range reserved for HSR. Must be free on both sites.
+
+a| 4NN01	
+a| TCP
+a| Primary → secondary
+a| Log and data shipping (multitenant)
+
+a| 4NN02	
+a| TCP
+a| Primary ↔ secondary
+a| Unencrypted metadata. Used by `hdbnsutil -sr_register`.
+
+a| 4NN06
+a| TCP
+a| Primary ↔ secondary
+a| Encrypted metadata
+|===
+
+[NOTE]
+===================
+* Default replication port offset for multitenant systems is 10000.
+* A system converted from single container keeps offset 100, so instance NN+1 must be free on both sites.
+===================
+
 // GH issue #187, 2026-NOV-20
 // SNAPCDOC-403, 2026-JUN-02
 // GH issue #243, 2026-JUN-10
