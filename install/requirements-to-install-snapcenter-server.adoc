@@ -10,7 +10,8 @@ summary: 'You should ensure that all the requirements are met before installing 
 
 [.lead]
 
-Before you install SnapCenter Server either on Windows or Linux host, you should review and ensure that all the requirements are met for your environment.
+Before you install SnapCenter Server either on Windows or Linux host, you should review and ensure that all the requirements are met for your environment. Refer to the latest link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter release notes^] and link:
+https://docs.netapp.com/us-en/snapcenter/release-notes/upgrade-path.html[SnapCenter upgrade paths^] for your environment.
 
 == Domain and workgroup requirements for Windows host
 
