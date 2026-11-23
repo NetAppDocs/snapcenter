@@ -1,5 +1,5 @@
 ---
-permalink: learn-about-hosts-upgrades.html
+permalink: learn-about-host-upgrades.html
 sidebar: sidebar
 keywords: upgrade, supported upgrade paths
 summary: 'Upgrade notes describe new requirements and changes in support between the last release of the product and this one, including any deprecated features. Review this information carefully before upgrading to the new release.'
