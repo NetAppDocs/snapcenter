@@ -12,7 +12,13 @@ summary: 'You should ensure that all the requirements are met before installing 
 
 Before you install SnapCenter Server either on Windows or Linux host, you should review and ensure that all the requirements are met for your environment.
 
-Refer to the latest link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter release notes^] and the relevant link:https://docs.netapp.com/us-en/snapcenter/release-notes/upgrade-path.html[SnapCenter upgrade path^] for your SnapCenter version.
+Refer to the following for the latest information about SnapCenter requirements and supported configurations:
+
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter release notes^] 
+
+* link:https://docs.netapp.com/us-en/snapcenter/release-notes/upgrade-path.html[SnapCenter upgrade path^] 
+
+* link:get-started/learn-about-hosts-upgrades.html[Upgrading hosts for the latest SnapCenter version^]
 
 == Domain and workgroup requirements for Windows host
 
@@ -80,7 +86,7 @@ Minimum hard drive space for the SnapCenter repository
 a|
 8 GB
 
-NOTE: NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 15 GB.
+NOTE: If you have the SnapCenter Server in the same drive where SnapCenter repository is installed, then it is recommended to have 15 GB.
 a|
 Not applicable
 
