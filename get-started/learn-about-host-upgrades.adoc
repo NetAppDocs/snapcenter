@@ -14,7 +14,7 @@ SnapCenter 6.2.3 requires a newer Java, .NET, and PowerShell version on the Snap
 Retaining the previous Java and .NET versions installed next to the new versions does not affect SnapCenter, provided `JAVA_HOME` points to Java 17.
 
 .Before you begin
-* Before changing prerequisites, review link:reference_upgrade_notes.html[SnapCenter upgrade notes] and confirm the supported upgrade path. If you are running SnapCenter 6.0 or earlier, first upgrade to 6.1P3 before following this procedure.
+* Before changing prerequisites, review link:../release-notes/upgrade-path.html[SnapCenter upgrade notes] and confirm the supported upgrade path. If you are running SnapCenter 6.0 or earlier, first upgrade to 6.1P3 before following this procedure.
 * Read the SnapCenter 6.2.3 release notes and confirm the exact Java, .NET, and PowerShell versions required for your Server and plug-in hosts.
 * Take note of every host that will be upgraded, including the SnapCenter Server and each Windows or Linux plug-in host.
 * Schedule a maintenance window. Suspend or complete running backup, restore, clone, and verification jobs before you change prerequisites or start the upgrade.
