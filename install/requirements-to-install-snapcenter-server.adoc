@@ -14,9 +14,9 @@ Before you install SnapCenter Server either on Windows or Linux host, you should
 
 Refer to the following for the latest information about SnapCenter requirements and supported configurations:
 
-* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter release notes^] 
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^] 
 
-* link:https://docs.netapp.com/us-en/snapcenter/release-notes/upgrade-path.html[SnapCenter upgrade path^] 
+* link:https://docs.netapp.com/us-en/snapcenter/release-notes/upgrade-path.html[SnapCenter Upgrade Path^] 
 
 * link:../get-started/learn-about-host-upgrades.html[Upgrading hosts for the latest SnapCenter version]
 
@@ -51,7 +51,7 @@ For the latest information about supported versions, see
 https://imt.netapp.com/imt/imt.jsp?components=180321;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 a|
 * Red Hat Enterprise Linux (RHEL) 8 and 9
-* SUSE Linux Enterprise Server (SLES) 15
+* SUSE Linux Enterprise Server (SLES) 15 SP7
 
 For the latest information about supported versions, see
 https://imt.netapp.com/imt/imt.jsp?components=180320;&solution=1257&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
@@ -93,8 +93,8 @@ Not applicable
 a|
 Required software packages
 a|
-* ASP.NET Core Runtime 10.0.7 Hosting Bundle (or later)
-* PowerShell 7.6.1 (or later)
+* ASP.NET Core Runtime 10.0.10 Hosting Bundle (or later)
+* PowerShell 7.6.4 (or later)
 
 Refer to the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Software Release Notes^] for the latest qualified versions of ASP.NET Core and PowerShell for your specific SnapCenter version.
 
@@ -102,7 +102,7 @@ For .NET specific troubleshooting information, see https://kb.netapp.com/Advice_
 
 a|
 * .NET Framework 8.0.12 (and all subsequent 8.0.x patches)
-* PowerShell 7.6.1 (or later)
+* PowerShell 7.6.4 (or later)
 * Nginx is a web server that can be used as a reverse proxy
 * Perl
 * Pam-devel
