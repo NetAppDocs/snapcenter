@@ -18,7 +18,7 @@ Refer to the following for the latest information about SnapCenter requirements 
 
 * link:https://docs.netapp.com/us-en/snapcenter/release-notes/upgrade-path.html[SnapCenter upgrade path^] 
 
-* link:https://docs.netapp.com/us-en/snapcenter/get-started/learn-about-host-upgrades.html[Upgrading hosts for the latest SnapCenter version^]
+* link:../get-started/learn-about-host-upgrades.html[Upgrading hosts for the latest SnapCenter version]
 
 == Domain and workgroup requirements for Windows host
 
