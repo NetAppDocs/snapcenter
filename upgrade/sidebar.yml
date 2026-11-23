@@ -5,6 +5,8 @@ entries:
     url: /upgrade/task_configure_snapcenter_to_check_for_available_updates.html
   - title: Upgrade Workflow
     url: /upgrade/upgrade_workflow.html
+  - title: Upgrade hosts to latest SnapCenter version
+    url: /upgrade/learn-about-host-upgrades.html
   - title: Upgrade the SnapCenter Server on Windows host
     url: /upgrade/task_upgrade_snapcenter.html
   - title: Upgrade the SnapCenter Server on Linux host
