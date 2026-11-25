@@ -2,33 +2,23 @@
 permalink: upgrade/upgrade-hosts-plugins.html
 sidebar: sidebar
 keywords: upgrade, supported upgrade paths plugins hosts
-summary: 'Upgrade notes describe new requirements and changes in support between the last release of the product and this one, including any deprecated features. Review this information carefully before upgrading to the new release.'
+summary: 'Upgrade SnapCenter plug-ins from SnapCenter, or upgrade only the Java, .NET, or PowerShell components on plug-in hosts without changing the plug-in version.'
 ---
 = Upgrade SnapCenter plug-ins and hosts
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Before you upgrade SnapCenter plug-ins, install the required Java, .NET, and PowerShell versions on the SnapCenter Server and plug-in hosts, and then upgrade the SnapCenter Server and each plug-in.
+You can upgrade SnapCenter plug-ins from SnapCenter, or you can upgrade only the Java, .NET, or PowerShell components on a host without changing the plug-in version. Choose the option that fits your environment, and put the hosts in maintenance mode before you start.
 
-There are two options you can follow based on your environment and upgrade requirements.
-
+[options="header"]
 |===
-| *Option* | *When to use* | *User stops services?*
-| 
-*Plug-in upgrade from SnapCenter* | You upgrade the plug-in from SnapCenter UI / workflow | *No* - SnapCenter manages service stop/start
-| 
-*Component-only upgrade* | You change only Java / .NET / PowerShell (for example CVE); plug-in version stays the same | *Yes* - User must stop and start services manually
+| Option | When to use | Do you stop and start the services manually?
+| Plug-in upgrade from SnapCenter | You upgrade the plug-in by using the SnapCenter user interface. | No. SnapCenter stops and starts the services.
+| Component-only upgrade | You change only Java, .NET, or PowerShell (for example, to address a CVE). The plug-in version stays the same. | Yes. You must stop and start the services.
 |===
 
-.Before you begin
-For both available options, do the following:
-
-* Put hosts into maintenance mode 
-* Verify that the hosts are healthy after the upgrade
-* Take hosts out of maintenance mode
-
-NOTE: Do not remove older Java / .NET / PowerShell versions until the host is healthy with the new versions.
+NOTE: Keep the older Java, .NET, and PowerShell versions installed until you verify that the host is healthy with the new versions.
 
 == Plug-in upgrade from SnapCenter
 
@@ -36,93 +26,95 @@ NOTE: Do not remove older Java / .NET / PowerShell versions until the host is he
 . Place all affected hosts in maintenance mode.
 . Prepare prerequisites before the plug-in upgrade (install side by side; do not remove the old version yet):
 .. Java 17 — set `JAVA_HOME` to Java 17; verify that the command `java -version` shows version as 17 (On Windows, if the registry default is still Java 11, the upgrade might fail even when Java 17 is installed.)
-.. .NET/PowerShell as required by your SnapCenter release
+.. .NET andPowerShell as required by your SnapCenter release.
 . From SnapCenter, upgrade the plug-in on the host.
 . Confirm the host and services are healthy in SnapCenter.
-. Remove unused older components only if they are not needed by anything else.
+. Uninstall the older Java, .NET, and PowerShell versions if no other application on the host requires them.
 . Take hosts out of maintenance mode.
 
 [NOTE]
 =========================================
-* You do not need to manually stop SPL/SCC/PluginCreatorService or use `pkill`.
-* SnapCenter plug-in upgrade handles the service lifecycle.
-* If the host is not prepared correctly (for example, wrong Java/JAVA_HOME), the upgrade might fail or services might not start after upgrade.
+* You do not need to manually stop the SnapCenter Plug-in Loader (SPL), SnapCenter Plug-in Creator (SCC), or `PluginCreatorService` services, or use `pkill`.
+* The SnapCenter plug-in upgrade stops and starts the services for you.
+* If the host is not prepared correctly (for example, wrong Java version or `JAVA_HOME`), the upgrade might fail or services might not start after the upgrade.
 =========================================
 
 == Component-only upgrade (no plug-in upgrade)
 
 .Steps
 . Place all affected hosts in maintenance mode.
-. Stop SnapCenter plug-in services (see below).
+. Stop the SnapCenter plug-in services as described in <<stop-services,Stop services before the upgrade>>.
 . Clear stale processes if the stop process did not clean them up.
-. Install the new Java / .NET / PowerShell versions and update the configuration as needed (for example, set `JAVA_HOME`).
-. Start the SnapCenter plug-in services.
+. Install the new Java, .NET, and PowerShell versions and update the configuration as needed (for example, set `JAVA_HOME`).
+. Start the SnapCenter plug-in services as described in <<start-services,Start services after the upgrade>>.
 . Confirm the host status and services in SnapCenter.
-. Remove unused older components only if they are not needed by anything else.
+. Uninstall the older Java, .NET, and PowerShell versions if no other application on the host requires them.
 . Take hosts out of maintenance mode.
 
+[[stop-services]]
 === Stop services before the upgrade
-.Linux/AIX
-. `/opt/NetApp/snapcenter/spl/bin/spl stop`
-. `/opt/NetApp/snapcenter/scc/bin/scc stop`
-. Check: `ps -ef | grep -i snapcenter`
-. If stale processes remain:
-	.. `pkill -f scAgent`
-	.. `pkill -f '/opt/NetApp/snapcenter/spl'`
-	.. `pkill -f '/opt/NetApp/snapcenter/scc'`
-. Recheck with `ps -ef | grep -i snapcenter` before continuing.
+Stop the SnapCenter plug-in services on the host before you install the new Java, .NET, or PowerShell versions.
 
-.Windows
-. Run `Stop-Service -Name PluginCreatorService -Force`
-. Confirm the service is stopped.
-. Stop any remaining Java / agent processes before continuing.
+.Steps for Linux and AIX hosts
+. Run the following commands on the plug-in host:
+.. `/opt/NetApp/snapcenter/spl/bin/spl stop`
+.. `/opt/NetApp/snapcenter/scc/bin/scc stop`
+. Check for remaining SnapCenter processes by running `ps -ef | grep -i snapcenter`.
+. If stale processes remain, run the following commands:
+.. `pkill -f scAgent`
+.. `pkill -f '/opt/NetApp/snapcenter/spl'`
+.. `pkill -f '/opt/NetApp/snapcenter/scc'`
+. Run `ps -ef | grep -i snapcenter` again to confirm that no SnapCenter processes remain before you continue.
 
+.Steps for Windows hosts
+. In PowerShell on the plug-in host, run `Stop-Service -Name PluginCreatorService -Force`.
+. Confirm that the service is stopped.
+. Stop any remaining Java and agent processes before you continue.
+
+[[start-services]]
 === Start services after the upgrade
-.Linux/AIX
-. `/opt/NetApp/snapcenter/spl/bin/spl start`
-. `/opt/NetApp/snapcenter/scc/bin/scc start`
+After you install and configure the new Java, .NET, or PowerShell versions, start the SnapCenter plug-in services on the host.
 
-.Windows
-. Run `Start-Service -Name PluginCreatorService -Force`
+.Steps for Linux and AIX hosts
+. Run the following commands on the plug-in host:
+.. `/opt/NetApp/snapcenter/spl/bin/spl start`
+.. `/opt/NetApp/snapcenter/scc/bin/scc start`
 
-Install the new versions on the SnapCenter Server and on each plug-in host before you upgrade any plug-in. Leave the currently installed Java and .NET in place.
-
+.Steps for Windows hosts
+. In PowerShell on the plug-in host, run `Start-Service -Name PluginCreatorService -Force`.
 
 == Process checklist
 
-// start of tabbed content 
 [role="tabbed-block"] 
 ====
 
 .Plug-in upgrade
 
 --
-. Hosts placed in maintenance mode
-. Prerequisites ready (Java 17 + JAVA_HOME, .NET, PowerShell as required)
-. Plug-in upgraded from SnapCenter
-. Host verified
-. Old unused components removed only after verification
-. Hosts taken out of maintenance mode
+. Place the hosts in maintenance mode.
+. Install the prerequisites side by side: Java 17 with `JAVA_HOME` set, and .NET and PowerShell as required.
+. Upgrade the plug-in from SnapCenter.
+. Confirm the host and services are healthy.
+. Uninstall the older Java, .NET, and PowerShell versions if no other application on the host requires them.
+. Take the hosts out of maintenance mode.
 --
 
 .Component-only upgrade
 --
-. Hosts placed in maintenance mode
-. Services stopped; stale processes cleared (`pkill` on Linux/AIX if needed)
-. New component installed and configured
-. Services started
-. Host verified
-. Old unused components removed only after verification
-. Hosts out of maintenance mode
+. Place the hosts in maintenance mode.
+. Stop the services and clear stale processes (use `pkill` on Linux and AIX if needed).
+. Install the new Java, .NET, and PowerShell versions and update the configuration.
+. Start the services.
+. Confirm the host and services are healthy.
+. Uninstall the older Java, .NET, and PowerShell versions if no other application on the host requires them.
+. Take the hosts out of maintenance mode.
 --
 ====
 
-// end of tabbed content
-
 [NOTE]
 ======
-* The .NET/PowerShell versions to use are specified in the latest link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^].
-* The applicable Java version for this procedure is Java 17. 
+* The .NET and PowerShell versions to use are specified in the latest link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^].
+* The applicable Java version for this procedure is *Java 17*. 
 * Use your site install path if it differs from `/opt/NetApp/snapcenter`.
 ======
 
