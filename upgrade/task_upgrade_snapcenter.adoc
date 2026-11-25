@@ -29,7 +29,7 @@ Examples of SnapCenter configuration files: SnapDriveService.exe.config, SMCoreS
 * If you have installed multiple versions of custom plug-in in SnapCenter 5.0, before upgrading to 6.0 or later, you should run the powershell cmdlets to remove all the earlier versions of the custom plug-in (except the latest one) from the SnapCenter repository (NSM database).
 +
 ** Run `Open-SmConnection` and login using the SnapCenterAdmin role credentials
-** Run `Remove-SmPluginPackage -PluginName M<plug-in name> -PluginVersion <version number>`
+** Run `Remove-SmPluginPackage -PluginName <plug-in name> -PluginVersion <version number>`
 +
 For more information, refer to https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SnapCenter_6.0_upgrade_fails_in_nsm_repository_upgrade_SQL_script_8[Upgrade to SnapCenter 6.0 or later fails].
 

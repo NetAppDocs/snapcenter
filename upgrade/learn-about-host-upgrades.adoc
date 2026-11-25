@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, supported upgrade paths
 summary: 'Upgrade notes describe new requirements and changes in support between the last release of the product and this one, including any deprecated features. Review this information carefully before upgrading to the new release.'
 ---
-= Upgrading hosts to the latest SnapCenter version
+= Upgrade hosts to the latest SnapCenter version
 :icons: font
 :imagesdir: ./media/
 
