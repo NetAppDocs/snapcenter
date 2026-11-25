@@ -4,7 +4,6 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2
 summary: 'You can use SnapCenter to restore and recover data from one or more backups.'
 ---
-
 = Restore and recover an auto-discovered database backup with SnapCenter
 :icons: font
 :imagesdir: ../media/
@@ -16,28 +15,48 @@ You can use SnapCenter to restore and recover data from one or more backups.
 
 * You must have backed up the resource or resource groups.
 * You must have canceled any backup operation that is currently in progress for the resource or resource group that you want to restore.
+* No application should be connected to the database. SnapCenter checks for connections and fails the restore if any exist.
 * For pre restore, post restore, mount, and unmount commands, you should check if the commands exist in the command list available on the plug-in host from the following paths:
-** Default location on the Windows host: _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
-** Default location on the Linux host: _/opt/NetApp/snapcenter/scc/etc/allowed_commands.config_
+** Default location on the Windows host: `C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config`
+** Default location on the Linux host: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
 
 NOTE: If the commands do not exist in the command list, then the operation will fail.
 
 .About this task
 
-* For Auto-discovered resources, restore is supported with SFSR.
-* Auto-recovery is not supported.
-* For ONTAP 9.12.1 and below version, the clones created from the SnapLock Vault snapshots as part of restore will inherit the SnapLock Vault expiry time. Storage admin should manually cleanup the clones post the SnapLock expiry time.
+* When you select *Complete Resource*, SnapCenter restores the database by using Single File SnapRestore (SFSR). It does not revert the volume, and volume revert is not offered for auto-discovered Db2 resources. The files that are restored depend on the storage type, as described in the table.
+* Data files are the files under the database storage paths, the tablespace containers, the local database directory, and the database path. The active log path, the instance home directory, and the archive log paths are excluded.
+* On NAS, SnapCenter does not restore the Db2 online (active) log files or the archived log files, even though they are part of the Snapshot copy. Therefore, transactions written after the backup remain available to roll forward. This is not true on SAN when the logs share a LUN with the data (see the table).
+* SnapCenter does not run the Db2 `ROLLFORWARD` command after a restore, and auto-recovery is not supported. Run the command manually after the restore completes.
+* For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault Snapshot copies as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
+
+The following table describes how SnapCenter performs a complete resource restore of an auto-discovered resource, based on the storage type.
+
+[options="header"]
+|===
+| Storage | Complete resource restore
+a| NAS a| 
+* SFSR of the recorded Db2 data files only. 
+* Volume revert is not used. 
+* Online and archived logs are not restored.
+a| SAN a| 
+* SFSR of whole LUNs: every LUN behind a file system that contains data files. 
+* Anything else on those LUNs is restored too, including log files that share a LUN with data. 
+* A file system that holds only log or archive files is not restored.
+|===
+
+NOTE: Manually added resources, except for Azure NetApp Files resources, also offer file-level restore. In file-level restore, you select the paths or LUNs to restore.
 
 .Steps
 
-. In the left navigation pane, click *Resources*, and then select the appropriate plug-in from the list.
+. In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
 . In the Resources page, filter resources from the *View* drop-down list based on resource type.
 +
 The resources are displayed along with type, host, associated resource groups and policies, and status.
 +
 NOTE: Although a backup might be for a resource group, when you restore, you must select the individual resources you want to restore.
 +
-If the resource is not protected, "`Not protected`" is displayed in the Overall Status column. This can mean either that the resource is not protected, or that the resource was backed up by a different user.
+If the resource is not protected, `Not protected` is displayed in the Overall Status column. This can mean either that the resource is not protected, or that the resource was backed up by a different user.
 
 . Select the resource, or select a resource group and then select a resource in that group.
 +
@@ -61,8 +80,11 @@ Mount commands are not required for auto discovered resources.
 +
 You must also specify the sender and receiver email addresses and the subject of the email. SMTP must also be configured on the *Settings* > *Global Settings* page.
 
-. Review the summary, and then click *Finish*.
-. Monitor the operation progress by clicking *Monitor* > *Jobs*.
+. Review the summary, and then select *Finish*.
+. Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
 .After you finish
-Recovery is possible only if the Rollforward status is in "DB pending" status.  This status is applicable to Db2 databases with archive logging enabled.
+* Archive logging enabled: the database is initialized as MIRROR and stays in "DB pending" state. Run `ROLLFORWARD DATABASE <name> TO END OF LOGS AND STOP` (or to a point in time) manually. Because the logs are not overwritten on NAS, you can roll forward to the end of logs.
+* Circular logging: the database is initialized as `SNAPSHOT` and no roll forward is needed.
+
+// SNAPCDOC-419, 2026-NOV-25
