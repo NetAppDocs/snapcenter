@@ -23,11 +23,11 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 .About this task
 
-For manually added resources, SnapCenter runs no Db2 commands during the restore. It does not check for connections to the database or run `ROLLFORWARD`.
+* For manually added resources, SnapCenter runs no Db2 commands during the restore. It does not check for connections to the database or run `ROLLFORWARD`.
 
-Volume revert is used only for restores from primary backups. On Linux and AIX hosts, when you restore SAN resources from a secondary (mirrored or vaulted) backup, SnapCenter uses a SnapMirror restore of the LUNs.
+* Volume revert is used only for restores from primary backups. On Linux and AIX hosts, when you restore SAN resources from a secondary (mirrored or vaulted) backup, SnapCenter uses a SnapMirror restore of the LUNs.
 
-For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault snapshots as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
+* For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault snapshots as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
 
 The following table describes how SnapCenter performs a complete resource restore of a manually added resource, based on the storage type.
 
@@ -84,8 +84,8 @@ You must also specify the sender and receiver email addresses and the subject of
 . Review the summary, and then click *Finish*.
 . Monitor the operation progress by clicking *Monitor* > *Jobs*.
 
-.After you finish
-Recovery is possible only if the `ROLLFORWARD DATABASE ... QUERY STATUS` output shows the rollforward status as `DB pending`. This status applies to Db2 databases with archive logging enabled.
+//.After you finish
+//Recovery is possible only if the `ROLLFORWARD DATABASE ... QUERY STATUS` output shows the rollforward status as `DB pending`. This status applies to Db2 databases with archive logging enabled.
 --
 .PowerShell cmdlets
 --

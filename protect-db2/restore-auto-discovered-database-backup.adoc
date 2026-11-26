@@ -25,12 +25,13 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 .About this task
 
-When you select Complete Resource, SnapCenter restores the database by using Single File SnapRestore (SFSR). It does not revert the volume, and volume revert is not offered for auto-discovered Db2 resources. The table describes what is restored for each storage type.
+* When you select Complete Resource, SnapCenter restores the database by using Single File SnapRestore (SFSR). It does not revert the volume, and volume revert is not offered for auto-discovered Db2 resources. The table describes what is restored for each storage type.
 
-Data files are the files under the database storage paths, the tablespace containers, the local database directory, and the database path. The active log path, the instance home directory, and the archive log paths are excluded.
+* Data files are the files under the database storage paths, the tablespace containers, the local database directory, and the database path. The active log path, the instance home directory, and the archive log paths are excluded.
 
-SnapCenter does not run the Db2 `ROLLFORWARD` command after a restore, and auto-recovery is not supported. For databases with archive logging, run `ROLLFORWARD` manually after the restore completes.
-When you restore from a secondary (mirrored or vaulted) backup, SnapCenter uses a SnapMirror restore of the same files (NAS) or LUNs (SAN).
+* SnapCenter does not run the Db2 `ROLLFORWARD` command after a restore, and auto-recovery is not supported. For databases with archive logging, run `ROLLFORWARD` manually after the restore completes.
+
+* When you restore from a secondary (mirrored or vaulted) backup, SnapCenter uses a SnapMirror restore of the same files (NAS) or LUNs (SAN).
 
 
 The following table describes how SnapCenter performs a complete resource restore of an auto-discovered resource, based on the storage type.
@@ -80,8 +81,8 @@ You must also specify the sender and receiver email addresses and the subject of
 . Monitor the operation progress by selecting *Monitor* > *Jobs*.
 
 .After you finish
-* Archive logging: SnapCenter initializes the database as `MIRROR`, and it stays in the `DB pending` state. SnapCenter checks the rollforward status after initializing. If the status is neither `DB pending` nor `not pending`, the restore job fails. Run ``ROLLFORWARD DATABASE <name> TO END OF LOGS AND STOP`` or to a point in time, manually. On NAS, the logs are not overwritten, so you can roll forward to the end of logs.
+* *Archive logging* SnapCenter initializes the database as `MIRROR` and it stays in the `DB pending` state. SnapCenter checks the rollforward status after initializing. If the status is neither `DB pending` nor `not pending`, the restore job fails. Run `ROLLFORWARD DATABASE <name> TO END OF LOGS AND STOP` or to a point in time, manually. On NAS, the logs are not overwritten, so you can roll forward to the end of logs.
 
-* Circular logging: SnapCenter initializes the database as `SNAPSHOT` and no roll forward is needed.
+* *Circular logging* SnapCenter initializes the database as `SNAPSHOT` and no roll forward is needed.
 
 // SNAPCDOC-419, 2026-NOV-25
