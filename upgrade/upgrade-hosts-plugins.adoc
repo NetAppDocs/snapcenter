@@ -81,7 +81,7 @@ After you install and configure the new Java, .NET, or PowerShell versions, star
 .. `/opt/NetApp/snapcenter/scc/bin/scc start`
 
 .Steps for Windows hosts
-. In PowerShell on the plug-in host, run `Start-Service -Name PluginCreatorService -Force`.
+. In PowerShell on the plug-in host, run `Start-Service -Name PluginCreatorService`.
 
 == Process checklist
 
@@ -114,7 +114,7 @@ After you install and configure the new Java, .NET, or PowerShell versions, star
 [NOTE]
 ======
 * The .NET and PowerShell versions to use are specified in the latest link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467[SnapCenter Release Notes^].
-* The applicable Java version for this procedure is *Java 17*. 
+* For a plug-in upgrade, use the Java version supported by the target SnapCenter release. For a component-only upgrade, use the Java version supported by the installed release. SnapCenter 6.2.1 and later require Java 17; SnapCenter 6.2 and earlier require Java 11. 
 * Use your site install path if it differs from `/opt/NetApp/snapcenter`.
 ======
 

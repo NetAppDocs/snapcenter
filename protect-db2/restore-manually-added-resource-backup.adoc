@@ -29,7 +29,7 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 * For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault snapshots as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
 
-The following table describes how SnapCenter performs a complete resource restore of a manually added resource, based on the storage type.
+The following table describes how SnapCenter performs a complete resource restore of a manually added resource from a primary backup, based on the storage type.
 
 [options="header"]
 |===

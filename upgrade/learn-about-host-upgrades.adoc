@@ -36,7 +36,7 @@ Installing Java 17 does not automatically configure SnapCenter to use it. If an 
 
 . Set `JAVA_HOME` as a system environment variable, so SnapCenter services see it. A user-only variable is not sufficient.
 . Set the value to the Java 17 installation directory. Use the home directory, not the `bin` folder.
-. On Linux plug-in hosts, set the same system-wide `JAVA_HOME` to the Java 17 home directory.
+. . On Linux plug-in hosts, set the same system-wide `JAVA_HOME` to the Java 17 home directory. If `SKIP_JAVAHOME_UPDATE=TRUE` is configured in `/var/opt/snapcenter/spl/etc/spl.properties`, also update that file's `JAVA_HOME` to the Java 17 directory. After restarting SPL, verify that its configured Java path points to Java 17 before removing the older runtime.
 . Ensure the system `PATH` includes `%JAVA_HOME%\bin` (Windows) or `$JAVA_HOME/bin` (Linux).
 . Open a new command prompt, or sign in again, so the updated variables are loaded. In the new session, confirm the following:
 
