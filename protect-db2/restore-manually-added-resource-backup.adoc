@@ -23,7 +23,11 @@ NOTE: If the commands do not exist in the command list, then the operation will 
 
 .About this task
 
-* For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault snapshots as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
+For manually added resources, SnapCenter runs no Db2 commands during the restore. It does not check for connections to the database or run `ROLLFORWARD`.
+
+Volume revert is used only for restores from primary backups. On Linux and AIX hosts, when you restore SAN resources from a secondary (mirrored or vaulted) backup, SnapCenter uses a SnapMirror restore of the LUNs.
+
+For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault snapshots as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
 
 The following table describes how SnapCenter performs a complete resource restore of a manually added resource, based on the storage type.
 
@@ -31,7 +35,7 @@ The following table describes how SnapCenter performs a complete resource restor
 |===
 | Storage | Complete resource restore
 a| NAS a| Volume revert (volume SnapRestore), because SnapCenter does not know the files on the volume.
-a| SAN a| SFSR of whole LUNs, as for auto-discovered SAN.
+a| SAN a| SFSR of whole LUNs. Anything else on those LUNs is restored too.
 |===
 
 [role="tabbed-block"]
@@ -59,13 +63,13 @@ The resource topology page is displayed.
 +
 image::../media/restoring_resource.gif[restoring resources]
 
-. In the Restore Scope page, select *Complete Resource*.
- .. If you select *Complete Resource*, all of the configured data volumes of the IBM Db2 database are restored.
+. In the Restore Scope page, select *Complete Resource* to restore all configured data volumes (NAS) or LUNs (SAN) of the Db2 database.
 +
 If the resource contains volumes or qtrees, the snapshots taken after the snapshot selected for restore on such volumes or qtrees are deleted and cannot be recovered. Also, if any other resource is hosted on same volumes or qtrees, then that resource is also deleted.
+
+. Select the volumes, qtrees, or LUNs that you want to restore.
 +
 You can select multiple LUNs.
-
 +
 NOTE: If you select *All*, all the files on the volumes, qtrees, or LUNs are restored.
 
@@ -163,5 +167,8 @@ Restore-SmBackup -PluginCode 'DB2' -AppObjectId cn24.sccore.test.com\DB2\db2inst
 The information regarding the parameters that can be used with the cmdlet and their descriptions can be obtained by running _Get-Help command_name_. Alternatively, you can also refer to the https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html[SnapCenter Software Cmdlet Reference Guide^].
 --
 ====
+
+.After you finish
+SnapCenter does not initialize the restored database or run a roll forward for manually added resources.
 
 // SNAPCDOC-419, 2026-NOV-25
