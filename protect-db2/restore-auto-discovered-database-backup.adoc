@@ -45,8 +45,6 @@ a| SAN a| SFSR of whole LUNs - every LUN behind a file system that contains data
 
 For ONTAP 9.12.1 and earlier versions, the clones that are created from SnapLock Vault snapshots as part of a restore inherit the SnapLock Vault expiry time. After the SnapLock expiry time passes, the storage administrator must manually clean up the clones.
 
-// NOTE: Manually added resources, except for Azure NetApp Files resources, also offer file-level restore. In file-level restore, you select the paths or LUNs to restore.
-
 .Steps
 
 . In the left navigation pane, select *Resources*, and then select the appropriate plug-in from the list.
