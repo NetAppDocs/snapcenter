@@ -1,0 +1,71 @@
+---
+permalink: upgrade/learn-about-host-upgrades.html
+sidebar: sidebar
+keywords: upgrade, supported upgrade paths
+summary: 'Upgrade notes describe new requirements and changes in support between the last release of the product and this one, including any deprecated features. Review this information carefully before upgrading to the new release.'
+---
+= Upgrade hosts to the latest SnapCenter version
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+SnapCenter 6.2.3 requires a newer Java, .NET, and PowerShell version on the SnapCenter Server and on every host whose plug-ins will be upgraded. Install those versions first and leave the existing versions in place. Remove older Java or .NET versions only after the SnapCenter Server and all plug-ins on that host have been upgraded successfully.
+
+Retaining the previous Java and .NET versions installed next to the new versions does not affect SnapCenter, provided `JAVA_HOME` points to Java 17.
+
+.Before you begin
+* Before changing prerequisites, review link:../release-notes/upgrade-path.html[SnapCenter upgrade notes] and confirm the supported upgrade path. If you are running SnapCenter 6.0 or earlier, first upgrade to 6.1P3 before following this procedure.
+* Read the SnapCenter 6.2.3 release notes and confirm the exact Java, .NET, and PowerShell versions required for your Server and plug-in hosts.
+* Take note of every host that will be upgraded, including the SnapCenter Server and each Windows or Linux plug-in host.
+* Schedule a maintenance window. Suspend or complete running backup, restore, clone, and verification jobs before you change prerequisites or start the upgrade.
+* Back up the SnapCenter repository and confirm you can restore it. Record the current SnapCenter Server version and the plug-in version on each host.
+* Confirm that the account used for the upgrade can set system environment variables and can install software on each host.
+
+== Install the required runtimes
+
+Install the new versions on the SnapCenter Server and on each plug-in host before you upgrade any plug-in. Leave the currently installed Java and .NET in place.
+
+. Install the Java 17 build required by SnapCenter 6.2.3.
+. Install the required .NET or ASP.NET Core hosting bundle for the applicable host.
+. Install the required PowerShell 7 release for the applicable host. PowerShell 7 is installed side by side with Windows PowerShell 5.1.
+. Complete the installers and allow any requested restarts. If a restart is required, restart the host before you continue.
+
+== Point JAVA_HOME to Java 17
+
+Installing Java 17 does not automatically configure SnapCenter to use it. If an older Java version is still installed, you must explicitly set `JAVA_HOME` as a system environment variable so that SnapCenter uses Java 17.
+
+. Set `JAVA_HOME` as a system environment variable, so SnapCenter services see it. A user-only variable is not sufficient.
+. Set the value to the Java 17 installation directory. Use the home directory, not the `bin` folder.
+. . On Linux plug-in hosts, set the same system-wide `JAVA_HOME` to the Java 17 home directory. If `SKIP_JAVAHOME_UPDATE=TRUE` is configured in `/var/opt/snapcenter/spl/etc/spl.properties`, also update that file's `JAVA_HOME` to the Java 17 directory. After restarting SPL, verify that its configured Java path points to Java 17 before removing the older runtime.
+. Ensure the system `PATH` includes `%JAVA_HOME%\bin` (Windows) or `$JAVA_HOME/bin` (Linux).
+. Open a new command prompt, or sign in again, so the updated variables are loaded. In the new session, confirm the following:
+
+.. `java -version` shows Java 17
+.. `echo %JAVA_HOME%` (Windows) or `echo $JAVA_HOME` (Linux) shows the Java 17 directory
+
+. Confirm the .NET hosting bundle and PowerShell versions with commands appropriate to those installers (for example, `dotnet --list-runtimes` and `pwsh --version`).
+. Restart the SnapCenter services, or restart the host, after changing `JAVA_HOME`, so services use the new value. Do this before you start the plug-in upgrade.
+
+== Upgrade SnapCenter followed by the plug-ins
+. Upgrade the SnapCenter Server to 6.2.3 and confirm the Server is up and the Web interface is available.
+. From the SnapCenter Server, upgrade the plug-ins on each host. Wait until each plug-in upgrade job completes successfully in the job monitor.
+. Confirm each host shows the 6.2.3 plug-in version and that the host connection is up.
+. Run a simple operation against a representative resource (for example, a discovery or a small backup) before you remove any older runtime.
+
+== Remove older Java and .NET versions only after the upgrade completes
+. Uninstall a previous Java or .NET version only after both of the following are true for that host:
+.. The SnapCenter Server is on 6.2.3.
+.. Every SnapCenter plug-in on that host has been upgraded and the upgrade job has succeeded.
++
+Removing Java or .NET before the plug-ins are upgraded can cause the plug-in upgrade to fail or leave the plug-in installation unusable.
+. After a successful upgrade you can either:
+.. Leave the previous Java and .NET installed. Side-by-side installations do not affect SnapCenter while `JAVA_HOME` points to Java 17.
+.. Uninstall the previous Java and .NET if no other application on the host requires them.
+
+. If you uninstall the older Java version:
+
+.. Confirm `JAVA_HOME` and `PATH` point to Java 17.
+.. Open a new session and confirm `java -version` shows Java 17.
+.. Restart the SnapCenter services, or the host, and confirm that the host and plug-ins are still up.
+
+// GH issue #187, 2026-NOV-20
